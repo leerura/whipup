@@ -41,9 +41,13 @@ Monorepo로 관리한다.
 project-root/
 ├── app/        # Flutter
 ├── backend/    # Spring Boot
-├── docs/       # Product / UX / Domain / Development docs
+├── data/       # 운영 Dataset source
+│   ├── ingredients.csv
+│   └── recipes/
+├── docs/       # Source of Truth documents
 ├── AGENTS.md
 ├── README.md
+├── .env.example
 └── .gitignore
 ```
 
@@ -105,6 +109,7 @@ Ingredient나 Recipe 비즈니스 로직을 처리하지 않는다.
 - Recipe Step
 - DRAFT / PUBLISHED lifecycle
 - Recipe Detail 조회
+- YouTube Shorts reference 기반 thumbnail 제공
 
 User가 Recipe를 만들 수 있는지 판단하지 않는다.
 
@@ -338,7 +343,7 @@ feature/
 └── data/
 ```
 
-State Management Library가 결정되면 `state/` 이름이나 세부 구조는 변경할 수 있다.
+State Management는 Riverpod, Navigation은 `go_router`를 사용한다. 단순한 feature 구조를 유지하며 Riverpod 도입을 이유로 별도 UseCase/Repository Interface/Mapper 계층을 만들지 않는다.
 
 ### presentation
 
@@ -381,9 +386,7 @@ Feature Business Logic을 넣지 않는다.
 
 ## api_generated/
 
-OpenAPI Code Generation을 사용하게 되면 생성 코드를 수동 코드와 분리한다.
-
-Generated code는 직접 수정하지 않는다.
+OpenAPI Generator로 생성한 Flutter API client를 수동 코드와 분리한다. 생성 코드는 Repository에 commit하고 직접 수정하지 않는다. 인증 토큰 주입 등 필요한 최소 공통 처리만 수동 코드에 둔다.
 
 ---
 
@@ -405,21 +408,25 @@ Business Rule과 Recommendation 판단은 Backend가 책임진다.
 
 # Authentication
 
-Architecture 수준의 인증 흐름은 다음까지만 고정한다.
+MVP 인증 흐름은 다음과 같다.
 
 ```plain text
 Flutter
+  ↓ Kakao Login
+Authorization Code
   ↓
-Kakao Login
+Spring Boot Backend
+  ↓ Authorization Code 교환
+Kakao Token / Kakao User 검증
   ↓
-Backend
+USER / USER_AUTH_ACCOUNT 조회 또는 생성
   ↓
-USER / USER_AUTH_ACCOUNT
+WhipUp JWT Access Token
   ↓
-서비스 인증 상태
+Flutter
 ```
 
-Spring Security 세부 구성과 내부 인증 방식은 구현 전 별도로 결정한다.
+Client가 전달한 사용자 프로필을 신뢰하지 않고 Backend가 Kakao를 통해 인증 결과를 검증한다. 서비스 인증은 JWT Access Token을 사용한다. MVP에서는 Refresh Token을 만들지 않고 Access Token 유효기간은 7일로 한다. 인증 실패는 User API에서 기본적으로 `401 UNAUTHORIZED`로 처리한다.
 
 ---
 
@@ -434,7 +441,7 @@ App과 Backend 사이의 API Contract는 OpenAPI로 관리한다.
 - Generated code는 수동 수정하지 않는다.
 - API 구현과 명세가 어긋나지 않도록 관리한다.
 
-Code-first / contract-first와 구체적인 Code Generation 전략은 `../api/api-specification.md` 작성 단계에서 결정한다.
+Flutter client generation은 OpenAPI Generator를 사용하고 생성 결과를 Repository에 commit한다. Generated client는 직접 수정하지 않는다.
 
 ---
 
@@ -455,20 +462,37 @@ Recommendation 결과는 저장된 Source of Truth가 아니다. 현재 DB 상�
 
 ---
 
+# Operational Data Import
+
+대량 Ingredient/Recipe 운영 데이터는 관리자 HTTP CRUD API나 Flyway 대량 INSERT로 관리하지 않는다.
+
+```plain text
+Repository data/
+  ↓ validation / mapping
+Bulk Import command
+  ↓ Spring Service / Repository
+PostgreSQL
+```
+
+Importer는 애플리케이션 부팅 시 자동 실행하지 않고 명시적인 CLI/command로 실행한다. 세부 Dataset schema와 upsert/failure 규칙은 `data-import.md`를 따른다.
+
+# Local Environment & Secrets
+
+Local PostgreSQL은 Docker Compose로 실행한다. Backend 설정은 Spring configuration + environment variable 방식으로 관리한다.
+
+Repository에는 `.env.example`만 commit할 수 있고 실제 `.env`, Kakao credential, JWT secret, DB password 등 secret은 commit하지 않는다. `.gitignore`는 실제 `.env` 파일을 제외해야 한다.
+
+# Testing
+
+자동 테스트와 API integration test는 MVP 초기 범위에서 작성하지 않는다.
+
 # Deferred
 
 필요성이 생기기 전까지 결정하거나 도입하지 않는다.
 
-- Flutter state management library
-- Flutter navigation library
-- HTTP client
-- Kakao SDK 세부 연동
-- YouTube Shorts 재생 방식
-- Spring Security 세부 구성
-- 내부 인증 방식
-- OpenAPI Code Generation 전략
+- YouTube Shorts 재생 SDK/구현 방식
+- Refresh Token
 - Cache / Redis
-- Docker
 - Cloud infrastructure
 - CI/CD
 - Monitoring

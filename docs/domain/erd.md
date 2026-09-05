@@ -8,12 +8,14 @@ Recommendation 결과는 저장하지 않는다. 현재 User의 보유 재료와
 
 # Tables
 
-현재 ERD는 9개 테이블로 구성한다.
+현재 ERD는 11개 테이블로 구성한다.
 
 ```plain text
 USER
 USER_AUTH_ACCOUNT
 INGREDIENT
+INGREDIENT_CATEGORY
+INGREDIENT_CATEGORY_MAPPING
 FORM_TYPE
 INGREDIENT_FORM
 USER_INGREDIENT
@@ -29,7 +31,9 @@ RECIPE_STEP
 주요 컬럼:
 
 ```plain text
-user_id PK
+user_id BIGINT IDENTITY PK
+created_at TIMESTAMPTZ
+updated_at TIMESTAMPTZ
 ```
 
 외부 인증 Provider 식별자는 USER에 직접 저장하지 않는다.
@@ -41,10 +45,12 @@ user_id PK
 주요 컬럼:
 
 ```plain text
-auth_account_id PK
+auth_account_id BIGINT IDENTITY PK
 user_id FK → USER.user_id
 provider
 provider_user_id
+created_at TIMESTAMPTZ
+updated_at TIMESTAMPTZ
 ```
 
 제약조건:
@@ -62,8 +68,10 @@ UNIQUE(provider, provider_user_id)
 주요 컬럼:
 
 ```plain text
-ingredient_id PK
+ingredient_id BIGINT IDENTITY PK
 canonical_name
+created_at TIMESTAMPTZ
+updated_at TIMESTAMPTZ
 ```
 
 제약조건:
@@ -73,6 +81,48 @@ UNIQUE(canonical_name)
 ```
 
 `마늘`, `양파`, `삼겹살`처럼 가능한 한 순수한 재료만 저장한다. `다진 마늘`, `편마늘`, `대패삼겹살`은 별도 Ingredient가 아니다.
+
+## INGREDIENT_CATEGORY
+
+Ingredient Master 탐색과 표시를 위한 Category Master.
+
+주요 컬럼:
+
+```plain text
+ingredient_category_id BIGINT IDENTITY PK
+code
+display_name
+sort_order
+```
+
+제약조건:
+
+```plain text
+UNIQUE(code)
+```
+
+Category는 추천 계산용 속성이 아니다. 식품학적으로 단 하나의 분류를 강제하지 않으며 사용자가 재료를 탐색하기 위한 분류로 사용한다.
+
+## INGREDIENT_CATEGORY_MAPPING
+
+canonical Ingredient와 Category의 N:M 관계를 저장한다.
+
+주요 컬럼:
+
+```plain text
+ingredient_id FK → INGREDIENT.ingredient_id
+ingredient_category_id FK → INGREDIENT_CATEGORY.ingredient_category_id
+```
+
+제약조건:
+
+```plain text
+PRIMARY KEY (ingredient_id, ingredient_category_id)
+```
+
+하나의 Ingredient는 하나 이상의 Category에 속할 수 있다. 예를 들어 하나의 재료가 `VEGETABLE`과 `PROCESSED`에 동시에 매핑될 수 있다.
+
+Ingredient Form에는 별도 Category FK/Mapping을 두지 않는다. Form은 canonical Ingredient에 연결된 Category를 그대로 따른다. MVP에서는 primary category도 두지 않는다.
 
 ## FORM_TYPE
 
@@ -109,10 +159,12 @@ UNIQUE(code)
 주요 컬럼:
 
 ```plain text
-ingredient_form_id PK
+ingredient_form_id BIGINT IDENTITY PK
 ingredient_id FK → INGREDIENT.ingredient_id
 form_type_id FK → FORM_TYPE.form_type_id
 display_name
+created_at TIMESTAMPTZ
+updated_at TIMESTAMPTZ
 ```
 
 예:
@@ -136,10 +188,11 @@ User가 현재 보유한 재료 상태.
 주요 컬럼:
 
 ```plain text
-user_ingredient_id PK
+user_ingredient_id BIGINT IDENTITY PK
 user_id FK → USER.user_id
 ingredient_id FK → INGREDIENT.ingredient_id
 ingredient_form_id FK → INGREDIENT_FORM.ingredient_form_id NULL
+created_at TIMESTAMPTZ
 ```
 
 canonical Ingredient는 필수고 Form은 선택이다.
@@ -165,10 +218,13 @@ Draft부터 Published까지 Recipe lifecycle을 관리한다.
 주요 컬럼:
 
 ```plain text
-recipe_id PK
+recipe_id BIGINT IDENTITY PK
+dataset_key
 name
 status
 shorts_reference
+created_at TIMESTAMPTZ
+updated_at TIMESTAMPTZ
 ```
 
 상태:
@@ -178,9 +234,17 @@ DRAFT
 PUBLISHED
 ```
 
-Recipe Draft를 별도 테이블로 만들지 않는다.
+제약조건:
 
-`shorts_reference`는 YouTube Shorts의 외부 reference이며 별도 SHORTS 테이블은 만들지 않는다.
+```plain text
+UNIQUE(dataset_key)
+```
+
+`dataset_key`는 Repository Dataset과 DB Recipe를 안정적으로 연결하는 식별자이며 User API에 노출하지 않는다.
+
+Recipe Draft를 별도 테이블로 만들지 않는다. MVP 기본 운영 workflow에서는 Draft를 Dataset 파일로 관리하고 검증된 데이터만 `PUBLISHED`로 import하지만, DB는 향후 확장을 위해 `DRAFT` 상태도 표현할 수 있다.
+
+`shorts_reference`는 YouTube Shorts의 외부 reference이며 별도 SHORTS 테이블은 만들지 않는다. Recipe thumbnail은 별도 파일/컬럼으로 관리하지 않고 Shorts reference를 기반으로 가져온다.
 
 ## RECIPE_INGREDIENT
 
@@ -195,8 +259,9 @@ ingredient_id FK → INGREDIENT.ingredient_id NULL
 ingredient_form_id FK → INGREDIENT_FORM.ingredient_form_id NULL
 display_name
 raw_text
-amount
-unit
+amount NULL
+unit NULL
+display_order
 ```
 
 의미:
@@ -205,7 +270,8 @@ unit
 - `ingredient_form_id` — 선택적 Form
 - `display_name` — 사용자에게 보여줄 실제 조리 표현
 - `raw_text` — 원본에서 추출한 표현
-- `amount`, `unit` — 조리 참고용 필요량
+- `amount`, `unit` — nullable 조리 참고용 필요량
+- `display_order` — 사용자에게 표시할 Recipe Ingredient 순서
 
 Draft에서는 canonical mapping이 완료되지 않을 수 있으므로 `ingredient_id`가 `NULL`일 수 있다.
 
@@ -215,6 +281,14 @@ PUBLISHED → ingredient_id 필수
 ```
 
 `ingredient_form_id`가 존재한다면 반드시 같은 `ingredient_id`에 속한 Form이어야 한다.
+
+제약조건:
+
+```plain text
+UNIQUE(recipe_id, display_order)
+```
+
+Dataset의 ingredients 배열 순서를 `display_order`로 저장한다.
 
 같은 Recipe 안에서 동일 canonical Ingredient가 여러 번 등장할 수 있으므로 다음 Unique Constraint는 두지 않는다.
 
@@ -257,6 +331,9 @@ erDiagram
     USER ||--|{ USER_AUTH_ACCOUNT : authenticates_with
     USER ||--o{ USER_INGREDIENT : owns
 
+    INGREDIENT ||--|{ INGREDIENT_CATEGORY_MAPPING : categorized_as
+    INGREDIENT_CATEGORY ||--o{ INGREDIENT_CATEGORY_MAPPING : contains
+
     INGREDIENT ||--o{ INGREDIENT_FORM : has
     FORM_TYPE ||--o{ INGREDIENT_FORM : defines
 
@@ -276,6 +353,7 @@ erDiagram
 USER 1:N USER_AUTH_ACCOUNT
 USER 1:N USER_INGREDIENT
 
+INGREDIENT N:M INGREDIENT_CATEGORY (via INGREDIENT_CATEGORY_MAPPING)
 INGREDIENT 1:N INGREDIENT_FORM
 FORM_TYPE 1:N INGREDIENT_FORM
 
@@ -311,7 +389,7 @@ Missing Count
 = COUNT(DISTINCT Missing Ingredient)
 ```
 
-Recommendation에서는 `ingredient_form_id`, `amount`, `unit`을 사용하지 않는다.
+Recommendation에서는 Ingredient Category, `ingredient_form_id`, `amount`, `unit`을 사용하지 않는다.
 
 같은 User가 `마늘 + MINCED`, `마늘 + SLICE`를 모두 보유해도 추천에서는 `마늘` 하나를 보유한 것으로 본다.
 
@@ -322,6 +400,12 @@ Recommendation에서는 `ingredient_form_id`, `amount`, `unit`을 사용하지 �
 # Integrity Rules
 
 DB 제약조건과 Application Validation을 함께 사용해 다음 조건을 보장한다.
+
+## Category Consistency
+
+- 하나의 Ingredient는 하나 이상의 Category mapping을 가질 수 있다.
+- 동일한 `(ingredient_id, ingredient_category_id)` mapping은 중복될 수 없다.
+- Ingredient Form은 별도 Category mapping을 갖지 않고 canonical Ingredient의 Category를 따른다.
 
 ## Form Consistency
 
@@ -339,7 +423,9 @@ DB 제약조건과 Application Validation을 함께 사용해 다음 조건을 �
 - Shorts reference 존재
 - 하나 이상의 Recipe Ingredient 존재
 - 모든 Recipe Ingredient의 `ingredient_id` 존재
-- 실제 조리 표현과 필요한 양 존재
+- 실제 조리 표현 존재
+- `amount`, `unit`은 nullable
+- Recipe Ingredient `display_order` 유효
 - 하나 이상의 Recipe Step 존재
 - Recipe Step 순서 유효
 
@@ -368,6 +454,14 @@ Recipe 삭제 시 연결된 `RECIPE_INGREDIENT`, `RECIPE_STEP`도 함께 제거�
 삭제하지 않는다.
 
 Recipe와 User Ingredient가 참조하는 canonical master이므로 MVP 운영에서는 조회/추가/수정만 허용한다.
+
+## INGREDIENT_CATEGORY
+
+MVP 운영에서는 Dataset으로 관리하며 참조 중인 Category는 삭제하지 않는다.
+
+## INGREDIENT_CATEGORY_MAPPING
+
+Ingredient Category 분류 변경 시 mapping을 추가/삭제할 수 있다. Category mapping 변경은 Recommendation 결과에 영향을 주지 않는다.
 
 ## FORM_TYPE
 
@@ -402,6 +496,15 @@ Recipe와 User Ingredient가 참조하는 canonical master이므로 MVP 운영�
 Form Compatibility나 Ingredient Substitution이 실제 제품 요구사항이 되면 별도 관계를 추가한다. 현재 ERD에는 미리 넣지 않는다.
 
 ---
+
+# Database Conventions
+
+- PK는 `BIGINT IDENTITY`를 사용한다.
+- DB/table/column naming은 `snake_case`를 사용한다.
+- Enum 값은 ordinal이 아니라 문자열로 저장한다.
+- 시간 컬럼은 PostgreSQL `TIMESTAMPTZ`를 사용하고 기준 instant는 UTC로 저장한다. 사용자 표시가 필요하면 `Asia/Seoul`로 변환한다.
+- Ingredient 이름은 import/input 단계에서 trim한 뒤 `canonical_name` DB unique constraint로 중복을 방지한다.
+- Recipe name은 중복을 허용하며 Dataset 식별은 `dataset_key`를 사용한다.
 
 # Schema Management
 

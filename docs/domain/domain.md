@@ -42,6 +42,19 @@ MVP 추천은 단순하게 유지한다. Form 정보는 향후 형태/전처리 
 
 사용자는 서비스에서 관리하는 Ingredient만 보유 재료로 등록할 수 있으며 임의의 Ingredient를 생성할 수 없다.
 
+## Ingredient Category
+
+Ingredient Master를 사용자가 탐색하기 위한 분류 메타데이터다.
+
+- 하나의 canonical Ingredient는 하나 이상의 Category에 속할 수 있다.
+- 하나의 Category에는 여러 Ingredient가 속할 수 있으므로 Ingredient와 Category는 N:M 관계다.
+- Category는 식품학적으로 하나의 정답을 강제하기 위한 분류가 아니라 재료 탐색과 표시를 위한 분류다.
+- 같은 Ingredient가 여러 Category 화면에 나타나는 것을 허용한다.
+- Ingredient Form은 별도의 Category를 가지지 않고 canonical Ingredient의 Category를 그대로 따른다.
+- 대표 Category(primary category)는 MVP에서 두지 않는다.
+- Category는 Recommendation 계산에 사용하지 않는다.
+- `자주 쓰는 재료`, 인기순, 사용자별 사용 빈도는 Category와 별개의 개념이며 MVP 모델에 포함하지 않는다.
+
 ## Ingredient Form
 
 canonical Ingredient의 구체적인 형태를 표현한다.
@@ -61,7 +74,7 @@ Form은 `Form Type`과 `Ingredient Form`으로 구분한다.
 - `Form Type` — `WHOLE`, `SLICE`, `MINCED`, `THIN_SLICE` 같은 공통 형태 vocabulary
 - `Ingredient Form` — 특정 Ingredient와 Form Type의 조합. 예: `마늘 + MINCED = 다진 마늘`
 
-Form 모델은 **향후 형태/전처리 호환성 판단을 확장하기 위한 구조적 준비**다. MVP에서는 Form 간 변환 가능 여부나 호환성을 판단하지 않는다.
+Form 모델은 향후 형태/전처리 호환성 판단을 확장하기 위한 구조적 준비이면서, **MVP 재료 등록과 표시에도 사용한다.** 사용자는 canonical Ingredient 자체 또는 서비스에 등록된 Ingredient Form을 보유 재료로 등록할 수 있다. 다만 MVP에서는 Form 간 변환 가능 여부나 호환성을 판단하지 않는다.
 
 ## Owned Ingredient
 
@@ -137,18 +150,18 @@ Step별 시간, 온도, 조리 도구, Ingredient 연결, 타이머는 MVP에서
 
 ## Recipe Draft
 
-AI가 YouTube Shorts를 분석하여 생성했지만 아직 운영자가 확정하지 않은 Recipe 상태다.
+MVP의 기본 운영 workflow에서는 AI가 생성한 Recipe Draft와 검수 중 데이터는 **Repository Dataset 파일**에서 관리한다. 불완전한 Draft를 DB에 넣지 않고, 사람이 검수하고 canonical mapping을 확정한 데이터만 Bulk Import한다.
 
-별도 도메인 객체나 별도 저장 구조로 분리하지 않고 Recipe lifecycle의 `DRAFT` 상태로 다룬다.
-
-Draft에서는 정보가 누락되거나 Ingredient mapping이 완료되지 않은 상태를 허용한다.
+DB의 Recipe lifecycle에는 향후 운영 확장을 위해 `DRAFT` / `PUBLISHED` 상태를 허용한다. 즉 DB가 DRAFT를 표현할 수는 있지만 MVP 기본 importer는 검증 실패/미완성 Draft를 저장하지 않는다.
 
 ```plain text
-DRAFT
+AI Draft File
   ↓ 운영자 검토 / 수정
   ↓ Ingredient mapping
-  ↓ 필수 정보 검증
-PUBLISHED
+  ↓ validation
+Validated Dataset
+  ↓ Bulk Import
+PUBLISHED Recipe
 ```
 
 AI 또는 시스템은 Ingredient mapping을 제안할 수 있지만 최종 판단은 운영자가 한다.
@@ -232,7 +245,9 @@ User가 Recipe에 필요하지 않은 Ingredient를 추가로 가지고 있는 �
 - 원본 YouTube Shorts reference가 존재한다.
 - 하나 이상의 Recipe Ingredient가 존재한다.
 - 모든 Recipe Ingredient가 canonical Ingredient와 연결되어 있다.
-- 각 Recipe Ingredient의 실제 조리 표현과 필요한 양이 존재한다.
+- 각 Recipe Ingredient의 실제 조리 표현이 존재한다.
+- `amount`, `unit`은 둘 다 nullable이며 레시피 원문에 값이 있을 때 저장한다.
+- Recipe Ingredient의 표시 순서가 유효하다.
 - 하나 이상의 Recipe Step이 존재하고 순서가 정의되어 있다.
 - 운영자가 내용을 검토하고 최종 확정했다.
 
@@ -270,10 +285,13 @@ Published Recipe를 수정한 뒤에도 위 조건을 만족해야 한다. 삭�
 1. Owned Ingredient는 반드시 서비스의 canonical Ingredient와 연결된다.
 2. `PUBLISHED` Recipe의 모든 Recipe Ingredient는 canonical Ingredient와 연결된다.
 3. `PUBLISHED` Recipe는 레시피명, Shorts reference, 하나 이상의 Ingredient, 하나 이상의 Step을 가진다.
-4. Recommendation은 현재 User의 보유 상태와 현재 Published Recipe를 기준으로 계산한다.
-5. Missing Count는 부족한 **고유 canonical Ingredient 개수**다.
-6. Form 정보가 존재하더라도 MVP Recommendation 결과에는 영향을 주지 않는다.
-7. 서로 다른 Ingredient의 대체 가능성을 canonicalization으로 표현하지 않는다.
+4. Recipe Ingredient의 사용자 표시 순서는 Dataset에서 검수된 배열 순서를 보존한다.
+5. Recommendation은 현재 User의 보유 상태와 현재 Published Recipe를 기준으로 계산한다.
+6. Missing Count는 부족한 **고유 canonical Ingredient 개수**다.
+7. Form 정보는 MVP 재료 등록/표시에 사용하지만 Recommendation 결과에는 영향을 주지 않는다.
+8. 하나의 Ingredient는 하나 이상의 Category에 속할 수 있으며 Category는 Recommendation 결과에 영향을 주지 않는다.
+9. Ingredient Form은 canonical Ingredient의 Category를 상속하며 별도 Category mapping을 가지지 않는다.
+10. 서로 다른 Ingredient의 대체 가능성을 canonicalization으로 표현하지 않는다.
 
 ---
 
@@ -286,6 +304,7 @@ User
    └─ Ingredient Form (optional)
 
 Ingredient
+├─ Ingredient Category (N:M)
 └─ Ingredient Form
    └─ Form Type
 
