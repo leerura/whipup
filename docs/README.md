@@ -32,9 +32,13 @@ Monorepo, Backend/Flutter 구조, 인증, 데이터 import, 설정 및 책임 �
 
 확정된 기술과 라이브러리 선택을 요약한다.
 
+## [ai-data-pipeline.md](development/ai-data-pipeline.md)
+
+YouTube Shorts를 Gemini API로 분석하여 Ingredient / Recipe의 Validated Dataset을 생성하는 파이프라인, 캐시, 재처리, validation/review 규칙을 정의한다.
+
 ## [data-import.md](development/data-import.md)
 
-초기 Ingredient / Recipe Dataset 형식, 검증, upsert, 실행 규칙을 정의한다.
+AI Data Pipeline 등에서 생성된 최종 Validated Dataset을 PostgreSQL에 반영하는 형식, 검증, upsert, 실행 규칙을 정의한다.
 
 ## [api-specification.md](api/api-specification.md)
 
@@ -55,9 +59,10 @@ App ↔ Backend의 machine-readable API Contract다. Request/Response 구조는 
 4. erd.md
 5. architecture.md
 6. tech-stack.md
-7. data-import.md (운영 데이터 작업 시)
-8. api-specification.md
-9. openapi.yaml
+7. ai-data-pipeline.md (AI Dataset 생성 작업 시)
+8. data-import.md (운영 데이터 DB 반영 작업 시)
+9. api-specification.md
+10. openapi.yaml
 ```
 
 DB 작업:
@@ -83,7 +88,8 @@ Business Rule             → domain.md
 Persistent Data Structure → erd.md
 Architecture / Packages   → architecture.md
 Technology Choice         → tech-stack.md
-Operational Dataset       → data-import.md
+AI Dataset Generation     → ai-data-pipeline.md
+Operational Dataset Import → data-import.md
 API Behavior              → api-specification.md
 API Contract              → openapi.yaml
 DB Schema History         → Flyway Migration
@@ -120,6 +126,7 @@ domain.md               ✅
 erd.md                  ✅
 architecture.md         ✅
 tech-stack.md           ✅
+ai-data-pipeline.md     ✅
 data-import.md          ✅
 api-specification.md    ✅
 openapi.yaml            ✅

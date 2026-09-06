@@ -41,9 +41,32 @@ Monorepo로 관리한다.
 project-root/
 ├── app/        # Flutter
 ├── backend/    # Spring Boot
-├── data/       # 운영 Dataset source
+├── data/       # 최종 확정 운영 Dataset
 │   ├── ingredients.csv
+│   ├── ingredient-categories.csv
+│   ├── ingredient-category-mappings.csv
+│   ├── ingredient-forms.csv
 │   └── recipes/
+├── tools/      # 개발/운영 보조 도구
+│   └── data-pipeline/
+│       ├── input/
+│       │   └── shorts-urls.txt
+│       ├── ingredient/
+│       │   ├── raw/
+│       │   ├── review/
+│       │   └── manifest.json
+│       ├── recipe/
+│       │   ├── raw/
+│       │   ├── review/
+│       │   └── manifest.json
+│       ├── src/
+│       │   ├── ingredients.py
+│       │   ├── recipes.py
+│       │   ├── gemini_client.py
+│       │   ├── youtube.py
+│       │   └── cache.py
+│       ├── requirements.txt
+│       └── README.md
 ├── docs/       # Source of Truth documents
 ├── AGENTS.md
 ├── README.md
@@ -52,6 +75,8 @@ project-root/
 ```
 
 App과 Backend는 코드를 직접 공유하지 않는다. 두 영역이 공유하는 것은 **Product/Domain 문서와 API Contract**다.
+
+`tools/`는 서비스 런타임 코드가 아닌 개발/운영 보조 도구 영역이다. YouTube Shorts → Ingredient/Recipe Dataset 생성 파이프라인은 `tools/data-pipeline/`에서 관리하며 Backend 패키지에 포함하지 않는다. 파이프라인의 상세 동작과 캐시/검증 규칙은 `ai-data-pipeline.md`를 따른다.
 
 구현 단계에서는 Repository의 `docs/`를 개발 문서의 Source of Truth로 사용한다.
 
