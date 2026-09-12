@@ -26,19 +26,41 @@ Dataset은 Git으로 변경 이력을 관리한다.
 
 MVP Ingredient Master는 canonical Ingredient만 관리하므로 단일 `ingredients.csv`를 사용한다.
 
-canonical name은 import 전에 trim한다. canonical Ingredient의 식별은 별도 dataset key를 만들지 않고 `canonical_name` natural key를 사용하며 DB에서도 unique다.
+## Ingredient CSV Schema
 
-개념 예시:
+`data/ingredients.csv`는 현재 서비스가 알고 있는 canonical Ingredient 목록만 저장한다.
 
 ```javascript
 canonical_name
+계란
+김치
+깨
 마늘
 삼겹살
 양파
-깨
+진간장
 ```
 
-MVP에서는 Ingredient Category, Ingredient Form, Alias를 별도 Dataset으로 관리하지 않는다. 실제 재료 표현은 Recipe Dataset의 `displayName`, `rawText`에 보존한다. 향후 필요성이 확인되면 canonical Ingredient를 기준으로 별도 Dataset/테이블을 추가한다.
+컬럼은 MVP에서 다음 하나만 사용한다.
+
+| Column | Required | Description |
+| --- | --- | --- |
+| `canonical_name` | Y | 서비스에서 사용하는 canonical Ingredient 이름 |
+
+규칙:
+
+- UTF-8 CSV를 사용한다.
+- 첫 번째 row는 header다.
+- `canonical_name`은 필수이며 빈 문자열을 허용하지 않는다.
+- import 전에 앞뒤 공백을 trim한다.
+- trim 이후 동일한 `canonical_name`의 중복을 허용하지 않는다.
+- `canonical_name`은 DB의 `INGREDIENT.canonical_name`과 대응하며 DB에서도 UNIQUE다.
+- canonical Ingredient의 식별을 위한 별도 dataset key는 MVP에서 만들지 않는다.
+- CSV는 사람이 검토하기 쉽도록 `canonical_name` 가나다순 정렬을 기본 규칙으로 한다.
+- Ingredient Category, Ingredient Form, Alias는 MVP Ingredient Dataset에서 관리하지 않는다.
+- `다진 마늘`, `편마늘`, `참깨`, `대패삼겹살` 같은 실제 표현은 별도 canonical Ingredient로 저장하지 않고 가능한 경우 기존 canonical Ingredient에 매핑한다.
+- 실제 영상/레시피 표현은 Recipe Dataset의 `displayName`, `rawText`에 보존한다.
+- 향후 필요성이 확인되면 canonical Ingredient를 기준으로 Form, Category, Alias 등의 별도 Dataset/테이블을 추가할 수 있다.
 
 ---
 
