@@ -18,7 +18,7 @@ Repository로 옮긴 뒤에는 동일한 구조의 `docs/`가 Source of Truth가
 
 ## [domain.md](domain/domain.md)
 
-도메인 의미, canonical Ingredient / Form, Recipe, Recommendation 계산 규칙과 invariant를 정의한다.
+도메인 의미, canonical Ingredient, Recipe, Recommendation 계산 규칙과 향후 Ingredient 확장 방향을 정의한다.
 
 ## [erd.md](domain/erd.md)
 
@@ -107,7 +107,7 @@ Visual Design             → Figma
 3. DB 변경은 Flyway Migration으로만 수행한다.
 4. 실행된 Migration 파일은 수정하지 않는다.
 5. DB 구조가 바뀌면 `erd.md`도 함께 갱신한다.
-6. Ingredient Form은 MVP 재료 등록/표시에 사용하지만 Recommendation 판단에는 사용하지 않는다. 추천은 DISTINCT canonical Ingredient만 비교한다.
+6. MVP의 재료 등록, 보유 상태, Recommendation 판단은 모두 canonical Ingredient만 사용한다. Form/Category/Alias는 별도 Domain/API/DB 구조로 구현하지 않고 향후 확장 대상으로 둔다.
 7. Generated OpenAPI Client는 직접 수정하지 않는다.
 8. 필요하지 않은 계층, Interface, Adapter, Mapper, UseCase 추상화를 미리 만들지 않는다.
 9. Backend Business Rule을 Flutter에서 중복 구현하지 않는다.

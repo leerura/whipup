@@ -8,21 +8,19 @@ Recommendation 결과는 저장하지 않는다. 현재 User의 보유 재료와
 
 # Tables
 
-현재 ERD는 11개 테이블로 구성한다.
+현재 MVP ERD는 7개 테이블로 구성한다.
 
 ```plain text
 USER
 USER_AUTH_ACCOUNT
 INGREDIENT
-INGREDIENT_CATEGORY
-INGREDIENT_CATEGORY_MAPPING
-FORM_TYPE
-INGREDIENT_FORM
 USER_INGREDIENT
 RECIPE
 RECIPE_INGREDIENT
 RECIPE_STEP
 ```
+
+Ingredient Form, Category, Alias는 MVP에서 별도 테이블로 만들지 않는다. 실제 조리 표현은 `RECIPE_INGREDIENT.display_name`, `raw_text`에 보존하여 향후 구조화할 수 있도록 한다.
 
 ## USER
 
@@ -82,108 +80,23 @@ UNIQUE(canonical_name)
 
 `마늘`, `양파`, `삼겹살`처럼 가능한 한 순수한 재료만 저장한다. `다진 마늘`, `편마늘`, `대패삼겹살`은 별도 Ingredient가 아니다.
 
-## INGREDIENT_CATEGORY
+## Future Ingredient Extension
 
-Ingredient Master 탐색과 표시를 위한 Category Master.
+MVP에서는 Category/Form/Alias 관련 테이블을 생성하지 않는다.
 
-주요 컬럼:
+향후 필요성이 확인되면 canonical `INGREDIENT`를 중심으로 다음 구조를 추가할 수 있다.
 
-```plain text
-ingredient_category_id BIGINT IDENTITY PK
-code
-display_name
-sort_order
-```
+- `INGREDIENT_FORM`
+- `FORM_TYPE`
+- `INGREDIENT_CATEGORY`
+- `INGREDIENT_CATEGORY_MAPPING`
+- Ingredient Alias 관련 구조
 
-제약조건:
-
-```plain text
-UNIQUE(code)
-```
-
-Category는 추천 계산용 속성이 아니다. 식품학적으로 단 하나의 분류를 강제하지 않으며 사용자가 재료를 탐색하기 위한 분류로 사용한다.
-
-## INGREDIENT_CATEGORY_MAPPING
-
-canonical Ingredient와 Category의 N:M 관계를 저장한다.
-
-주요 컬럼:
-
-```plain text
-ingredient_id FK → INGREDIENT.ingredient_id
-ingredient_category_id FK → INGREDIENT_CATEGORY.ingredient_category_id
-```
-
-제약조건:
-
-```plain text
-PRIMARY KEY (ingredient_id, ingredient_category_id)
-```
-
-하나의 Ingredient는 하나 이상의 Category에 속할 수 있다. 예를 들어 하나의 재료가 `VEGETABLE`과 `PROCESSED`에 동시에 매핑될 수 있다.
-
-Ingredient Form에는 별도 Category FK/Mapping을 두지 않는다. Form은 canonical Ingredient에 연결된 Category를 그대로 따른다. MVP에서는 primary category도 두지 않는다.
-
-## FORM_TYPE
-
-Ingredient에 독립적인 공통 Form vocabulary.
-
-주요 컬럼:
-
-```plain text
-form_type_id PK
-code
-```
-
-예:
-
-```plain text
-WHOLE
-BLOCK
-SLICE
-THIN_SLICE
-MINCED
-CRUSHED
-```
-
-제약조건:
-
-```plain text
-UNIQUE(code)
-```
-
-## INGREDIENT_FORM
-
-특정 Ingredient에 특정 Form Type이 적용된 실제 형태.
-
-주요 컬럼:
-
-```plain text
-ingredient_form_id BIGINT IDENTITY PK
-ingredient_id FK → INGREDIENT.ingredient_id
-form_type_id FK → FORM_TYPE.form_type_id
-display_name
-created_at TIMESTAMPTZ
-updated_at TIMESTAMPTZ
-```
-
-예:
-
-```plain text
-마늘 + MINCED = 다진 마늘
-마늘 + SLICE = 편마늘
-삼겹살 + THIN_SLICE = 대패삼겹살
-```
-
-제약조건:
-
-```plain text
-UNIQUE(ingredient_id, form_type_id)
-```
+기존 Recipe의 실제 표현은 `RECIPE_INGREDIENT.display_name`, `raw_text`에 남아 있으므로 이후 재분석 및 구조화에 사용할 수 있다.
 
 ## USER_INGREDIENT
 
-User가 현재 보유한 재료 상태.
+User가 현재 보유한 canonical Ingredient 상태.
 
 주요 컬럼:
 
@@ -191,25 +104,18 @@ User가 현재 보유한 재료 상태.
 user_ingredient_id BIGINT IDENTITY PK
 user_id FK → USER.user_id
 ingredient_id FK → INGREDIENT.ingredient_id
-ingredient_form_id FK → INGREDIENT_FORM.ingredient_form_id NULL
 created_at TIMESTAMPTZ
 ```
 
-canonical Ingredient는 필수고 Form은 선택이다.
+MVP에서는 형태를 별도로 저장하지 않는다. 사용자가 실제로 `대패삼겹살`을 가지고 있어도 canonical `삼겹살` 보유로 등록한다.
+
+제약조건:
 
 ```plain text
-삼겹살 보유
-→ ingredient_id = 삼겹살
-→ ingredient_form_id = NULL
-
-대패삼겹살 보유
-→ ingredient_id = 삼겹살
-→ ingredient_form_id = 삼겹살 + THIN_SLICE
+UNIQUE(user_id, ingredient_id)
 ```
 
-같은 User가 동일 canonical Ingredient의 서로 다른 Form을 동시에 보유할 수 있으므로 `(user_id, ingredient_id)`를 PK나 단순 Unique Key로 사용하지 않는다.
-
-동일한 **user + ingredient + optional form 상태**의 중복은 허용하지 않는다. `NULL`을 포함한 실제 DB Unique Constraint 구현 방식은 Migration 작성 시 PostgreSQL 동작을 고려해 결정한다.
+동일 User가 같은 canonical Ingredient를 중복 등록할 수 없다.
 
 ## RECIPE
 
@@ -256,7 +162,6 @@ Recipe의 필요 재료와 실제 조리 표현을 저장한다.
 recipe_ingredient_id PK
 recipe_id FK → RECIPE.recipe_id
 ingredient_id FK → INGREDIENT.ingredient_id NULL
-ingredient_form_id FK → INGREDIENT_FORM.ingredient_form_id NULL
 display_name
 raw_text
 amount NULL
@@ -267,7 +172,6 @@ display_order
 의미:
 
 - `ingredient_id` — 추천 비교에 사용하는 canonical Ingredient
-- `ingredient_form_id` — 선택적 Form
 - `display_name` — 사용자에게 보여줄 실제 조리 표현
 - `raw_text` — 원본에서 추출한 표현
 - `amount`, `unit` — nullable 조리 참고용 필요량
@@ -279,8 +183,6 @@ Draft에서는 canonical mapping이 완료되지 않을 수 있으므로 `ingred
 DRAFT → ingredient_id NULL 가능
 PUBLISHED → ingredient_id 필수
 ```
-
-`ingredient_form_id`가 존재한다면 반드시 같은 `ingredient_id`에 속한 Form이어야 한다.
 
 제약조건:
 
@@ -299,8 +201,8 @@ UNIQUE(recipe_id, ingredient_id)  X
 예:
 
 ```plain text
-다진 마늘 1큰술 → 마늘 + MINCED
-편마늘 5알 → 마늘 + SLICE
+다진 마늘 1큰술 → 마늘
+편마늘 5알 → 마늘
 ```
 
 ## RECIPE_STEP
@@ -331,20 +233,12 @@ erDiagram
     USER ||--|{ USER_AUTH_ACCOUNT : authenticates_with
     USER ||--o{ USER_INGREDIENT : owns
 
-    INGREDIENT ||--|{ INGREDIENT_CATEGORY_MAPPING : categorized_as
-    INGREDIENT_CATEGORY ||--o{ INGREDIENT_CATEGORY_MAPPING : contains
-
-    INGREDIENT ||--o{ INGREDIENT_FORM : has
-    FORM_TYPE ||--o{ INGREDIENT_FORM : defines
-
     INGREDIENT ||--o{ USER_INGREDIENT : canonicalizes
-    INGREDIENT_FORM o|--o{ USER_INGREDIENT : describes
 
     RECIPE ||--o{ RECIPE_INGREDIENT : requires
     RECIPE ||--o{ RECIPE_STEP : contains
 
     INGREDIENT o|--o{ RECIPE_INGREDIENT : canonicalizes
-    INGREDIENT_FORM o|--o{ RECIPE_INGREDIENT : describes
 ```
 
 핵심 관계:
@@ -353,18 +247,12 @@ erDiagram
 USER 1:N USER_AUTH_ACCOUNT
 USER 1:N USER_INGREDIENT
 
-INGREDIENT N:M INGREDIENT_CATEGORY (via INGREDIENT_CATEGORY_MAPPING)
-INGREDIENT 1:N INGREDIENT_FORM
-FORM_TYPE 1:N INGREDIENT_FORM
-
 INGREDIENT 1:N USER_INGREDIENT
-INGREDIENT_FORM 0..1:N USER_INGREDIENT
 
 RECIPE 1:N RECIPE_INGREDIENT
 RECIPE 1:N RECIPE_STEP
 
 INGREDIENT 0..1:N RECIPE_INGREDIENT
-INGREDIENT_FORM 0..1:N RECIPE_INGREDIENT
 ```
 
 `RECIPE_INGREDIENT.ingredient_id`가 optional인 이유는 Draft 상태를 허용하기 때문이다. Published Recipe에서는 application rule로 필수다.
@@ -389,9 +277,7 @@ Missing Count
 = COUNT(DISTINCT Missing Ingredient)
 ```
 
-Recommendation에서는 Ingredient Category, `ingredient_form_id`, `amount`, `unit`을 사용하지 않는다.
-
-같은 User가 `마늘 + MINCED`, `마늘 + SLICE`를 모두 보유해도 추천에서는 `마늘` 하나를 보유한 것으로 본다.
+Recommendation에서는 `amount`, `unit`, 실제 표현/형태를 사용하지 않는다. User의 보유 재료 자체가 canonical Ingredient 단위이므로 동일 canonical Ingredient는 한 번만 보유 상태로 존재한다.
 
 같은 Recipe에 마늘이 여러 Recipe Ingredient로 존재해도 Missing Count에서는 한 번만 계산한다.
 
@@ -401,19 +287,11 @@ Recommendation에서는 Ingredient Category, `ingredient_form_id`, `amount`, `un
 
 DB 제약조건과 Application Validation을 함께 사용해 다음 조건을 보장한다.
 
-## Category Consistency
+## Ingredient Consistency
 
-- 하나의 Ingredient는 하나 이상의 Category mapping을 가질 수 있다.
-- 동일한 `(ingredient_id, ingredient_category_id)` mapping은 중복될 수 없다.
-- Ingredient Form은 별도 Category mapping을 갖지 않고 canonical Ingredient의 Category를 따른다.
-
-## Form Consistency
-
-`USER_INGREDIENT.ingredient_form_id`가 존재하면 해당 Form의 `ingredient_id`는 `USER_INGREDIENT.ingredient_id`와 같아야 한다.
-
-`RECIPE_INGREDIENT.ingredient_form_id`가 존재하면 해당 Form의 `ingredient_id`는 `RECIPE_INGREDIENT.ingredient_id`와 같아야 한다.
-
-`RECIPE_INGREDIENT.ingredient_id`가 `NULL`이면 `ingredient_form_id`도 `NULL`이어야 한다.
+- `USER_INGREDIENT`는 `(user_id, ingredient_id)` 기준으로 중복될 수 없다.
+- `PUBLISHED` Recipe의 모든 `RECIPE_INGREDIENT`는 canonical `INGREDIENT`와 연결되어야 한다.
+- 실제 표현/형태는 `display_name`, `raw_text`로 보존하며 별도 Form FK를 두지 않는다.
 
 ## Published Recipe
 
@@ -454,24 +332,6 @@ Recipe 삭제 시 연결된 `RECIPE_INGREDIENT`, `RECIPE_STEP`도 함께 제거�
 삭제하지 않는다.
 
 Recipe와 User Ingredient가 참조하는 canonical master이므로 MVP 운영에서는 조회/추가/수정만 허용한다.
-
-## INGREDIENT_CATEGORY
-
-MVP 운영에서는 Dataset으로 관리하며 참조 중인 Category는 삭제하지 않는다.
-
-## INGREDIENT_CATEGORY_MAPPING
-
-Ingredient Category 분류 변경 시 mapping을 추가/삭제할 수 있다. Category mapping 변경은 Recommendation 결과에 영향을 주지 않는다.
-
-## FORM_TYPE
-
-삭제하지 않는다.
-
-공통 vocabulary로 관리한다.
-
-## INGREDIENT_FORM
-
-참조 중인 Form은 삭제하지 않는다.
 
 ## USER / USER_AUTH_ACCOUNT
 

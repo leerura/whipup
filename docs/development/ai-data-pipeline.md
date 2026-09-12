@@ -116,17 +116,48 @@ tools/data-pipeline/ingredient/raw/{videoId}.json
 
 ## 1.3 Ingredient Master Reconciliation
 
-모든 Raw Ingredient 표현을 취합한 뒤 기존 Ingredient Master와 비교하여 canonical Ingredient, Ingredient Form, Category 변경 후보를 만든다.
+모든 Raw Ingredient 표현을 취합한 뒤 현재 Repository의 Ingredient Master Dataset과 비교하여 **기존 Master에 존재하지 않는 항목만 변경 후보(Proposal)로 생성한다.**
+
+비교 기준이 되는 현재 Ingredient Master는 다음 파일이다.
+
+```plain text
+data/ingredients.csv
+```
+
+MVP Ingredient Master는 canonical Ingredient만 관리한다.
+
+Ingredient Master Reconciliation의 목적은 전체 Master를 다시 생성하는 것이 아니라, Raw Ingredient 표현을 현재 Master에 대입하여 **추가 또는 검토가 필요한 차이만 식별하는 것**이다.
 
 ```plain text
 Raw Ingredient Expressions
 +
-Existing Ingredient Master
+Existing Ingredient Master Dataset
     ↓
 Gemini Reconciliation
     ↓
-Master Change Proposal
+Master Change Proposal (Diff Only)
 ```
+
+Proposal에는 다음 항목만 포함한다.
+
+- 기존 Master에 없는 canonical Ingredient 후보
+- 현재 Master로 의미상 매핑할 수 없는 `UNRESOLVED` 표현
+
+Raw 표현이 기존 canonical Ingredient의 동의어, 통상적 표현, 형태 차이로 판단되어 의미상 매핑 가능하면 새로운 Ingredient 후보를 생성하지 않는다.
+
+```plain text
+참깨 → 깨
+통깨 → 깨
+다진 마늘 → 마늘
+편마늘 → 마늘
+대패삼겹살 → 삼겹살
+```
+
+반대로 서로 다른 실제 재료는 억지로 하나로 합치지 않는다. 예를 들어 `들깨`는 단순히 `깨`의 다른 표현으로 처리하지 않는다.
+
+이미 Master에 존재하거나 기존 Master로 의미상 매핑 가능한 Raw 표현은 Proposal에 다시 포함하지 않는다.
+
+즉 `ingredient-master-proposal`은 Ingredient Master 전체 스냅샷이 아니라 **현재 Master Dataset에 대한 변경 제안(diff)** 이다.
 
 예시 후보:
 
@@ -134,36 +165,29 @@ Master Change Proposal
 {
   "existingMappings": [
     {
-      "raw": "진간장",
-      "ingredient": "진간장"
+      "raw": "참깨",
+      "ingredient": "깨"
     }
   ],
   "newIngredients": [
     {
-      "canonicalName": "우삼겹"
-    }
-  ],
-  "newForms": [
-    {
-      "canonicalIngredient": "삼겹살",
-      "displayName": "대패삼겹살",
-      "formType": "THIN_SLICE"
+      "canonicalName": "들깨",
+      "sourceExpressions": ["들깨", "들깨가루"]
     }
   ],
   "unresolved": []
 }
 ```
 
-AI의 결과는 Master 변경 **제안**으로 취급한다. 최종 반영 전 validation/review를 거친다.
+AI의 결과는 Master를 직접 변경하는 명령이 아니라 Master 변경 **제안(Proposal)** 으로 취급한다. Proposal은 validation 및 필요한 review를 거친 뒤 최종 Dataset에 반영한다.
 
-최종 Ingredient Dataset은 기존 데이터 설계에 따라 다음 파일로 관리한다.
+최종 Ingredient Dataset은 다음 단일 파일로 관리한다.
 
 ```plain text
 data/ingredients.csv
-data/ingredient-categories.csv
-data/ingredient-category-mappings.csv
-data/ingredient-forms.csv
 ```
+
+Ingredient Category, Ingredient Form, Alias는 MVP에서 별도 Dataset으로 구조화하지 않는다.
 
 # 2. Recipe Pipeline
 
@@ -185,7 +209,7 @@ Validation
 
 Recipe Pipeline은 Ingredient Master를 읽을 수 있지만 수정할 수 없다.
 
-영상의 재료를 기존 Ingredient/Form에 매핑할 수 없는 경우 새로운 Ingredient를 임의 생성하지 않고 `UNMAPPED`로 표시한다.
+영상의 재료를 기존 canonical Ingredient에 매핑할 수 없는 경우 새로운 Ingredient를 임의 생성하지 않고 `UNMAPPED`로 표시한다.
 
 ```json
 {
@@ -204,7 +228,6 @@ Recipe 생성 결과는 최소한 다음 조건을 검증한다.
 - 이름과 Shorts reference가 존재한다.
 - Ingredient가 1개 이상 존재한다.
 - 모든 Ingredient가 canonical Ingredient에 매핑되어 있다.
-- Ingredient Form이 지정된 경우 canonical Ingredient와 일치한다.
 - 실제 영상 표현을 위한 display/raw 값이 보존되어 있다.
 - 조리 Step이 1개 이상 존재한다.
 - Ingredient/Step 순서를 보존한다.
@@ -287,9 +310,6 @@ whipup/
 ├── backend/
 ├── data/
 │   ├── ingredients.csv
-│   ├── ingredient-categories.csv
-│   ├── ingredient-category-mappings.csv
-│   ├── ingredient-forms.csv
 │   └── recipes/
 ├── docs/
 └── tools/

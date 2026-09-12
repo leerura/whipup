@@ -2,7 +2,7 @@
 
 WhipUp의 핵심 도메인은 **사용자의 현재 보유 재료와 레시피의 필요 재료를 같은 canonical Ingredient 기준으로 비교하여 추천하는 것**이다.
 
-MVP 추천은 단순하게 유지한다. Form 정보는 향후 형태/전처리 호환성 판단을 확장하기 위한 구조적 준비이며, **현재 추천 판단에는 canonical Ingredient만 사용한다.**
+MVP 추천과 사용자 보유 재료 관리는 단순하게 유지하며 **canonical Ingredient만 사용한다.** 실제 조리 표현은 Recipe 데이터에 보존하고, Ingredient Form/Category/Alias 등은 필요성이 확인되면 이후 구조화한다.
 
 ---
 
@@ -42,60 +42,43 @@ MVP 추천은 단순하게 유지한다. Form 정보는 향후 형태/전처리 
 
 사용자는 서비스에서 관리하는 Ingredient만 보유 재료로 등록할 수 있으며 임의의 Ingredient를 생성할 수 없다.
 
-## Ingredient Category
+## Future Ingredient Structure
 
-Ingredient Master를 사용자가 탐색하기 위한 분류 메타데이터다.
+MVP에서는 Ingredient Category, Ingredient Form, Ingredient Alias, Processing/Preparation State를 독립 Domain으로 구조화하지 않는다.
 
-- 하나의 canonical Ingredient는 하나 이상의 Category에 속할 수 있다.
-- 하나의 Category에는 여러 Ingredient가 속할 수 있으므로 Ingredient와 Category는 N:M 관계다.
-- Category는 식품학적으로 하나의 정답을 강제하기 위한 분류가 아니라 재료 탐색과 표시를 위한 분류다.
-- 같은 Ingredient가 여러 Category 화면에 나타나는 것을 허용한다.
-- Ingredient Form은 별도의 Category를 가지지 않고 canonical Ingredient의 Category를 그대로 따른다.
-- 대표 Category(primary category)는 MVP에서 두지 않는다.
-- Category는 Recommendation 계산에 사용하지 않는다.
-- `자주 쓰는 재료`, 인기순, 사용자별 사용 빈도는 Category와 별개의 개념이며 MVP 모델에 포함하지 않는다.
-
-## Ingredient Form
-
-canonical Ingredient의 구체적인 형태를 표현한다.
+실제 영상이나 레시피에서 등장하는 `다진 마늘`, `편마늘`, `대패삼겹살`, `참깨` 같은 표현은 가능한 경우 기존 canonical Ingredient에 의미상 매핑한다.
 
 ```plain text
-Ingredient: 마늘
-Form: MINCED
-→ 다진 마늘
-
-Ingredient: 마늘
-Form: SLICE
-→ 편마늘
+다진 마늘 → 마늘
+편마늘 → 마늘
+대패삼겹살 → 삼겹살
+참깨 → 깨
 ```
 
-Form은 `Form Type`과 `Ingredient Form`으로 구분한다.
+이러한 표현 차이는 Recipe Ingredient의 `displayName`, `rawText`에 보존한다.
 
-- `Form Type` — `WHOLE`, `SLICE`, `MINCED`, `THIN_SLICE` 같은 공통 형태 vocabulary
-- `Ingredient Form` — 특정 Ingredient와 Form Type의 조합. 예: `마늘 + MINCED = 다진 마늘`
+향후 필요성이 확인되면 canonical `Ingredient`를 기준으로 다음 구조를 추가할 수 있다.
 
-Form 모델은 향후 형태/전처리 호환성 판단을 확장하기 위한 구조적 준비이면서, **MVP 재료 등록과 표시에도 사용한다.** 사용자는 canonical Ingredient 자체 또는 서비스에 등록된 Ingredient Form을 보유 재료로 등록할 수 있다. 다만 MVP에서는 Form 간 변환 가능 여부나 호환성을 판단하지 않는다.
+- Ingredient Form
+- Ingredient Category
+- Ingredient Alias
+- Processing / Preparation State
+- Form Compatibility
+
+MVP에서는 위 개념을 사용자 보유 재료, 추천 계산, Ingredient Master의 별도 구조로 사용하지 않는다.
 
 ## Owned Ingredient
 
-특정 User가 현재 보유하고 있는 재료다.
+특정 User가 현재 보유하고 있는 canonical Ingredient다.
 
-- canonical Ingredient는 필수다.
-- Ingredient Form은 선택적으로 가질 수 있다.
+- canonical Ingredient만 등록한다.
+- 동일 User가 같은 canonical Ingredient를 중복 보유 상태로 등록할 수 없다.
 - 수량, 중량, 용량은 관리하지 않는다.
 - 추가와 삭제만 가능하며 다른 재료로 수정하지 않는다.
 - 마지막 보유 재료도 삭제할 수 있다.
 - 조미료도 동일하게 취급한다.
 
-같은 canonical Ingredient라도 서로 다른 Form이라면 별도의 보유 상태로 존재할 수 있다.
-
-```plain text
-User
-├─ 삼겹살 + THIN_SLICE
-└─ 삼겹살 + BLOCK
-```
-
-하지만 MVP 추천에서는 둘 다 canonical `삼겹살`을 보유한 것으로만 판단한다.
+예를 들어 사용자가 실제로 `대패삼겹살`을 보유하고 있어도 MVP 보유 재료에는 canonical `삼겹살`로 등록한다.
 
 ## Recipe
 
@@ -121,7 +104,6 @@ Recipe를 조리하는 데 필요한 하나의 재료 항목이다.
 
 ```plain text
 canonical Ingredient: 마늘
-Ingredient Form: MINCED
 실제 표현: 다진 마늘
 필요량: 1큰술
 ```
@@ -131,8 +113,8 @@ Ingredient Form: MINCED
 같은 Recipe 안에서 여러 Recipe Ingredient가 같은 canonical Ingredient에 연결될 수 있다.
 
 ```plain text
-다진 마늘 1큰술 → 마늘 + MINCED
-편마늘 5알      → 마늘 + SLICE
+다진 마늘 1큰술 → 마늘
+편마늘 5알      → 마늘
 ```
 
 이 경우 Recipe Ingredient는 두 개지만 MVP 추천에서 필요한 canonical Ingredient `마늘`은 한 번만 계산한다.
@@ -185,7 +167,7 @@ Recommendation 결과에는 다음 정보가 포함될 수 있다.
 
 ## Comparison
 
-MVP에서는 Form, 수량, 전처리 상태를 무시하고 **고유 canonical Ingredient 집합만 비교한다.**
+MVP에서는 **고유 canonical Ingredient 집합만 비교한다.** 형태, 표현, 수량, 전처리 상태는 추천 판단에 사용하지 않는다.
 
 ```plain text
 Owned = DISTINCT User Owned canonical Ingredients
@@ -204,7 +186,7 @@ Missing Count = COUNT(Missing)
 
 사용자가 `마늘`을 보유하지 않았다면 Missing Count는 `2`가 아니라 `1`이다.
 
-동일 User가 `다진 마늘`과 `편마늘`을 모두 보유하더라도 추천에서는 `마늘`을 한 번 보유한 것으로 취급한다.
+사용자 보유 재료 자체가 canonical Ingredient 단위이므로 `마늘`은 한 번만 보유 상태로 존재한다.
 
 ## Classification
 
@@ -226,14 +208,14 @@ User가 Recipe에 필요하지 않은 Ingredient를 추가로 가지고 있는 �
 - 실제 보유 수량
 - 중량 / 용량
 - Recipe 필요량 충족 여부
-- Ingredient Form
+- 실제 재료 표현 / 형태
 - preparation / processing state
-- Form 간 호환성
+- 형태 간 호환성
 - 재료 중요도
 - 필수 / 선택 재료 구분
 - 대체 가능한 재료 관계
 
-따라서 사용자가 `통마늘`을 보유하고 Recipe가 `편마늘`을 요구하더라도 canonical Ingredient가 모두 `마늘`이면 MVP에서는 충족으로 판단한다. 실제 조리에 적합하지 않은 경우가 추천될 수 있으며 이는 현재 MVP에서 허용하는 단순화다.
+따라서 사용자가 실제로 `통마늘`을 가지고 있어 앱에 canonical `마늘`을 등록했고 Recipe의 실제 표현이 `편마늘`이어도 canonical Ingredient가 `마늘`이면 MVP에서는 충족으로 판단한다. 실제 조리에 적합하지 않은 경우가 추천될 수 있으며 이는 현재 MVP에서 허용하는 단순화다.
 
 ---
 
@@ -271,7 +253,7 @@ Published Recipe를 수정한 뒤에도 위 조건을 만족해야 한다. 삭�
 ```
 
 - 표현이 달라도 동일한 실제 재료라면 같은 canonical Ingredient에 연결할 수 있다.
-- 같은 canonical Ingredient라는 이유만으로 Form 간 조리 호환성을 보장하지 않는다.
+- 같은 canonical Ingredient에 매핑되더라도 실제 형태 간 조리 호환성을 보장하지 않는다.
 - 단순히 서로 대체 가능하다는 이유로 서로 다른 재료를 하나의 Ingredient로 합치지 않는다.
 - 적절한 Ingredient가 없으면 운영자가 Ingredient Master에 추가한다.
 - 잘못된 Ingredient 정보는 운영자가 수정할 수 있다.
@@ -288,9 +270,9 @@ Published Recipe를 수정한 뒤에도 위 조건을 만족해야 한다. 삭�
 4. Recipe Ingredient의 사용자 표시 순서는 Dataset에서 검수된 배열 순서를 보존한다.
 5. Recommendation은 현재 User의 보유 상태와 현재 Published Recipe를 기준으로 계산한다.
 6. Missing Count는 부족한 **고유 canonical Ingredient 개수**다.
-7. Form 정보는 MVP 재료 등록/표시에 사용하지만 Recommendation 결과에는 영향을 주지 않는다.
-8. 하나의 Ingredient는 하나 이상의 Category에 속할 수 있으며 Category는 Recommendation 결과에 영향을 주지 않는다.
-9. Ingredient Form은 canonical Ingredient의 Category를 상속하며 별도 Category mapping을 가지지 않는다.
+7. MVP의 사용자 보유 재료와 Recommendation은 canonical Ingredient만 사용한다.
+8. 실제 조리 표현은 `Recipe Ingredient.displayName`, `rawText`에 보존한다.
+9. Form, Category, Alias는 MVP에서 별도 Domain으로 구조화하지 않으며 향후 canonical Ingredient를 기준으로 확장할 수 있다.
 10. 서로 다른 Ingredient의 대체 가능성을 canonicalization으로 표현하지 않는다.
 
 ---
@@ -300,18 +282,11 @@ Published Recipe를 수정한 뒤에도 위 조건을 만족해야 한다. 삭�
 ```plain text
 User
 └─ Owned Ingredient
-   ├─ Ingredient
-   └─ Ingredient Form (optional)
-
-Ingredient
-├─ Ingredient Category (N:M)
-└─ Ingredient Form
-   └─ Form Type
+   └─ Ingredient
 
 Recipe
 ├─ Recipe Ingredient
 │  ├─ Ingredient
-│  ├─ Ingredient Form (optional)
 │  ├─ 실제 조리 표현
 │  └─ 필요한 양
 ├─ Recipe Step

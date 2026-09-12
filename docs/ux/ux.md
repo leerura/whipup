@@ -105,8 +105,8 @@ App
 
 **주요 UI**
 
-- 등록 가능한 canonical Ingredient 및 Ingredient Form 목록
-- 표시 재료명 검색
+- 등록 가능한 canonical Ingredient 목록
+- canonical Ingredient 이름 검색
 - 복수 재료 선택 / 선택 취소
 - 선택한 재료 등록
 
@@ -145,7 +145,7 @@ App
 
 - `Default` — 현재 보유 재료 표시
 - `Add Mode` — 추가할 재료 탐색 및 선택
-- `Existing Disabled` — 이미 보유한 동일 `Ingredient + Form` 옵션은 확인 가능하지만 다시 선택 불가. 같은 canonical Ingredient의 다른 Form은 선택 가능
+- `Existing Disabled` — 이미 보유한 canonical Ingredient는 확인 가능하지만 다시 선택 불가
 - `No Result` — 검색 결과 없음
 - `Empty Owned` — 마지막 재료 삭제 후 보유 재료 0개. 현재 화면 유지
 
@@ -266,4 +266,4 @@ S-04에서 레시피를 선택한 경우. 100% 가능 / 1개 부족 / 2개 부�
 
 운영자의 레시피 초안 생성, 검토, Ingredient Master 관리 역시 일반 사용자 앱 Screen 범위에 포함하지 않는다.
 
-Ingredient Form은 재료 등록/표시 UX에 포함한다. 예를 들어 `삼겹살`, `통삼겹`, `대패삼겹살`을 각각 선택 가능한 옵션으로 제공할 수 있다. 추천 계산에서 Form 호환성을 판단하지 않는 것은 Backend Domain Rule이며 UX에서 이를 별도 계산하지 않는다.
+MVP의 재료 등록/보유 UX는 canonical Ingredient만 노출한다. 예를 들어 `대패삼겹살`, `통삼겹`처럼 실제 형태가 달라도 사용자는 canonical `삼겹살`을 등록한다. Form/Category 기반 탐색과 세부 표현 선택은 MVP 이후 확장 대상으로 둔다.

@@ -35,9 +35,6 @@ paths:
         - name: query
           in: query
           schema: { type: string }
-        - name: categoryId
-          in: query
-          schema: { type: integer, format: int64 }
         - $ref: '#/components/parameters/Page'
         - $ref: '#/components/parameters/Size'
       responses:
@@ -223,28 +220,12 @@ components:
       properties:
         userId: { type: integer, format: int64 }
 
-    IngredientCategory:
-      type: object
-      required: [categoryId, code, displayName]
-      properties:
-        categoryId: { type: integer, format: int64 }
-        code: { type: string }
-        displayName: { type: string }
-
     IngredientOption:
       type: object
-      required: [ingredientId, displayName, categories]
+      required: [ingredientId, displayName]
       properties:
         ingredientId: { type: integer, format: int64 }
-        ingredientFormId:
-          type: integer
-          format: int64
-          nullable: true
         displayName: { type: string }
-        categories:
-          type: array
-          minItems: 1
-          items: { $ref: '#/components/schemas/IngredientCategory' }
 
     IngredientOptionPage:
       type: object
@@ -263,10 +244,6 @@ components:
       properties:
         userIngredientId: { type: integer, format: int64 }
         ingredientId: { type: integer, format: int64 }
-        ingredientFormId:
-          type: integer
-          format: int64
-          nullable: true
         displayName: { type: string }
 
     OwnedIngredientListResponse:
@@ -292,10 +269,6 @@ components:
       required: [ingredientId]
       properties:
         ingredientId: { type: integer, format: int64 }
-        ingredientFormId:
-          type: integer
-          format: int64
-          nullable: true
 
     RecommendationPage:
       type: object
@@ -353,10 +326,6 @@ components:
       properties:
         recipeIngredientId: { type: integer, format: int64 }
         ingredientId: { type: integer, format: int64 }
-        ingredientFormId:
-          type: integer
-          format: int64
-          nullable: true
         displayName: { type: string }
         amount:
           type: string

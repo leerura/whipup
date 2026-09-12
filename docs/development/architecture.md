@@ -43,9 +43,6 @@ project-root/
 ├── backend/    # Spring Boot
 ├── data/       # 최종 확정 운영 Dataset
 │   ├── ingredients.csv
-│   ├── ingredient-categories.csv
-│   ├── ingredient-category-mappings.csv
-│   ├── ingredient-forms.csv
 │   └── recipes/
 ├── tools/      # 개발/운영 보조 도구
 │   └── data-pipeline/
@@ -121,11 +118,12 @@ Ingredient나 Recipe 비즈니스 로직을 처리하지 않는다.
 
 ### ingredient
 
-- Ingredient Master
-- Form Type / Ingredient Form
+- canonical Ingredient Master
 - User Owned Ingredient 조회/추가/삭제
 
 추천 계산은 담당하지 않는다.
+
+Ingredient Form/Category/Alias는 MVP에서 별도 Domain/Entity로 구현하지 않고 향후 확장 대상으로 둔다.
 
 ### recipe
 
@@ -226,8 +224,6 @@ Entity는 해당 Feature의 `domain/`에 둔다.
 ```plain text
 ingredient/domain/
 ├── Ingredient.java
-├── FormType.java
-├── IngredientForm.java
 └── UserIngredient.java
 
 recipe/domain/

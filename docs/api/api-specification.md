@@ -183,7 +183,7 @@ Kakao 인증 실패 시 User 로그인 상태를 생성하지 않는다.
 
 ## GET /ingredients
 
-사용자가 보유 재료로 선택할 수 있는 canonical Ingredient 및 Ingredient Form 옵션을 조회한다.
+사용자가 보유 재료로 선택할 수 있는 canonical Ingredient를 조회한다.
 
 ```plain text
 GET /api/v1/ingredients
@@ -192,10 +192,9 @@ GET /api/v1/ingredients
 ### Query Parameters
 
 ```plain text
-query       optional  표시 재료 이름 검색
-categoryId  optional  Ingredient Category 필터
-page        optional  0-based, default 0
-size        optional  default 30, max 100
+query  optional  canonical Ingredient 이름 검색
+page   optional  0-based, default 0
+size   optional  default 30, max 100
 ```
 
 예:
@@ -211,16 +210,11 @@ GET /api/v1/ingredients?query=마늘
   "items": [
     {
       "ingredientId": 12,
-      "ingredientFormId": null,
-      "displayName": "마늘",
-      "categories": [
-        { "categoryId": 2, "code": "VEGETABLE", "displayName": "채소" }
-      ]
+      "displayName": "마늘"
     },
     {
       "ingredientId": 20,
-      "ingredientFormId": 101,
-      "displayName": "대패삼겹살"
+      "displayName": "삼겹살"
     }
   ],
   "page": 0,
@@ -229,19 +223,15 @@ GET /api/v1/ingredients?query=마늘
 }
 ```
 
-MVP User 화면에는 canonical Ingredient 자체와 등록된 Ingredient Form을 모두 선택 옵션으로 노출한다. 같은 canonical Ingredient의 서로 다른 Form은 별도 옵션이다. 검색은 표시 이름 contains 방식이며 query는 trim 후 빈 문자열이면 전체 조회로 처리한다. 기본 정렬은 `displayName ASC`다.
+MVP User 화면에는 canonical Ingredient만 선택 옵션으로 노출한다. 검색은 canonical Ingredient 이름 contains 방식이며 query는 trim 후 빈 문자열이면 전체 조회로 처리한다. 기본 정렬은 `displayName ASC`다.
 
-각 옵션은 canonical Ingredient의 Category 목록을 함께 반환한다. Ingredient Form은 별도 Category를 가지지 않고 canonical Ingredient의 Category를 그대로 사용한다. 하나의 Ingredient가 여러 Category에 속할 수 있으므로 `categories`는 배열이다.
-
-`categoryId`가 주어지면 해당 Category에 매핑된 canonical Ingredient 및 그 Ingredient Form만 조회한다. 같은 Ingredient가 여러 Category에 속하는 것은 정상이며, Category는 Recommendation 계산에 사용하지 않는다.
+Ingredient Form과 Category는 MVP API에 노출하지 않는다. `다진 마늘`, `대패삼겹살` 같은 실제 표현은 Recipe 데이터에서 보존하지만 사용자 보유 재료 선택 단위는 각각 canonical `마늘`, `삼겹살`이다.
 
 ### Rules
 
 - 사용자가 직접 Ingredient를 생성할 수 없다.
-- 검색은 canonical 및 Form의 표시 이름 기준이다.
-- 하나의 canonical Ingredient는 여러 Category에 속할 수 있다.
-- Ingredient Form은 canonical Ingredient의 Category를 따른다.
-- Category는 탐색/표시용이며 Recommendation에는 사용하지 않는다.
+- 검색은 canonical Ingredient 이름 기준이다.
+- Form/Category 기반 탐색은 MVP에서 제공하지 않는다.
 - 자주 쓰는 재료/인기순은 MVP에서 관리하지 않는다.
 
 ---
@@ -279,7 +269,7 @@ GET /api/v1/me/ingredients
 }
 ```
 
-MVP App에서도 Form을 보유 재료로 등록할 수 있으므로 Form이 있는 보유 재료는 `ingredientFormId`와 표시 이름을 반환한다. canonical 자체를 등록한 경우 `ingredientFormId`는 null이다.
+MVP App의 보유 재료는 canonical Ingredient만 저장하고 반환한다.
 
 ---
 
@@ -296,8 +286,8 @@ POST /api/v1/me/ingredients
 ```json
 {
   "items": [
-    { "ingredientId": 3, "ingredientFormId": null },
-    { "ingredientId": 10, "ingredientFormId": 101 }
+    { "ingredientId": 3 },
+    { "ingredientId": 10 }
   ]
 }
 ```
@@ -306,10 +296,8 @@ POST /api/v1/me/ingredients
 
 - 최소 하나 이상의 Ingredient가 필요하다.
 - 모든 `ingredientId`는 Ingredient Master에 존재해야 한다.
-- 같은 canonical Ingredient라도 서로 다른 Form은 각각 등록할 수 있다.
-- 동일한 `Ingredient + Form` 조합 또는 Form 없는 동일 canonical 옵션은 중복 등록할 수 없다.
-- `ingredientFormId`가 존재하면 반드시 요청의 `ingredientId`에 속한 Form이어야 한다.
-- Request 내부의 동일 옵션 중복도 허용하지 않는다.
+- 동일한 canonical Ingredient는 중복 등록할 수 없다.
+- Request 내부의 동일 `ingredientId` 중복도 허용하지 않는다.
 - 하나라도 유효하지 않으면 전체 등록을 실패시킨다.
 - 부분 등록은 하지 않는다.
 - 수량, 중량, 용량은 받지 않는다.
@@ -382,7 +370,7 @@ DELETE /api/v1/me/ingredients/{userIngredientId}
 
 ## GET /recommendations
 
-현재 User의 보유 canonical Ingredient와 Published Recipe의 필요 canonical Ingredient를 비교하여 추천을 계산한다. User가 canonical 자체 또는 어떤 Ingredient Form을 보유하든 추천에서는 `ingredientId`만 DISTINCT 처리한다.
+현재 User의 보유 canonical Ingredient와 Published Recipe의 필요 canonical Ingredient를 비교하여 추천을 계산한다.
 
 ```plain text
 GET /api/v1/recommendations?missingCount=0
@@ -434,9 +422,8 @@ Missing Count = COUNT(Missing)
 ### Rules
 
 - `PUBLISHED` Recipe만 대상으로 한다.
-- Ingredient Form은 추천 판단에서 무시한다.
+- 실제 재료 표현/형태는 추천 판단에서 무시하고 canonical Ingredient만 비교한다.
 - 같은 canonical Ingredient가 여러 Recipe Ingredient에 존재해도 한 번만 계산한다.
-- User가 같은 canonical Ingredient를 여러 Form으로 보유해도 한 번만 보유한 것으로 계산한다.
 - 수량 / 중량 / 용량 / Recipe 필요량은 판단에 사용하지 않는다.
 - 보유 재료가 변경되면 다음 조회부터 새 상태로 계산한다.
 - 같은 Missing Count 내 기본 정렬은 `recipeId ASC`로 고정하여 pagination 결과 순서를 안정적으로 유지한다.
@@ -521,7 +508,7 @@ GET /api/v1/recipes/{recipeId}
 - `PUBLISHED` Recipe만 조회할 수 있다.
 - Recipe Ingredient의 실제 조리 표현과 양을 `displayOrder ASC` 순서로 반환한다.
 - `amount`, `unit`은 nullable이다.
-- Form이 매핑된 Recipe Ingredient는 `ingredientFormId`를 반환한다.
+- Recipe Ingredient는 canonical `ingredientId`와 실제 조리 표현을 반환한다. MVP API에는 `ingredientFormId`를 두지 않는다.
 - `thumbnailUrl`은 별도 업로드 이미지가 아니라 YouTube Shorts reference를 기준으로 가져온 thumbnail이다.
 - `owned`는 현재 User의 canonical Ingredient 보유 상태를 기준으로 계산한다.
 - 동일 canonical Ingredient가 Recipe 안에서 여러 번 등장해도 각각의 Recipe Ingredient 표현은 모두 반환한다.
@@ -587,7 +574,7 @@ canonical_name
 두부
 ```
 
-향후 Category 같은 Master Data가 확정되면 컬럼을 추가할 수 있다.
+MVP Ingredient Dataset은 canonical Ingredient만 관리한다. Category/Form/Alias는 별도 Dataset으로 관리하지 않는다.
 
 ## Recipe Dataset
 
@@ -685,8 +672,7 @@ MVP에서는 필요하지 않은 관리용 HTTP API를 미리 만들지 않는�
 - Pagination 기본 page size
 - Recommendation 추가 정렬 기준
 - Recipe thumbnail / image 정책
-- Ingredient Category / 자주 쓰는 재료 정책
-- Ingredient Form을 User UX에 노출하는 방식
+- 자주 쓰는 재료 정책
 - Operational Dataset 실제 파일 Schema
 - Bulk Importer의 실행 방식
 - AI Recipe extraction script의 구현 방식

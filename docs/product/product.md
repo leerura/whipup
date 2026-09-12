@@ -45,15 +45,15 @@ MVP에서 가장 중요한 성공 기준은 **사용자가 앱을 통해 평소 
 
 ## Ingredient Management
 
-사용자는 서비스에 미리 등록된 canonical Ingredient와 해당 Ingredient Form 중 자신이 가진 재료를 등록한다. 예를 들어 canonical `삼겹살`뿐 아니라 `통삼겹`, `대패삼겹살`처럼 서비스에 등록된 Form 표현도 선택할 수 있다.
+사용자는 서비스에 미리 등록된 **canonical Ingredient** 중 자신이 가진 재료를 등록한다. MVP에서는 Ingredient Form과 Category를 사용자 등록 모델로 구조화하지 않는다. 예를 들어 사용자가 `대패삼겹살`을 가지고 있더라도 앱에서는 canonical `삼겹살`을 등록한다.
 
 - 재료 목록 탐색과 이름 검색을 지원한다.
 - 사용자가 임의의 재료를 직접 생성할 수 없다.
 - 여러 재료를 선택한 뒤 한 번에 등록할 수 있다.
 - 최종 등록 전 선택을 취소할 수 있다.
 - 등록하지 않고 화면을 나가면 선택 내용은 저장하지 않는다.
-- 동일한 canonical Ingredient라도 서로 다른 Form은 각각 보유 재료로 등록할 수 있다.
-- 동일한 `Ingredient + Form` 조합(또는 Form 없는 canonical 자체)은 중복 등록할 수 없다.
+- 동일한 canonical Ingredient는 한 번만 보유 재료로 등록할 수 있다.
+- 실제 재료의 형태나 표현 차이는 MVP 보유 재료 모델에서 별도로 구분하지 않는다.
 - 보유 재료 개수에 제한을 두지 않는다.
 - 수량, 중량, 용량은 관리하지 않고 **보유 여부만** 관리한다.
 - 조미료도 일반 재료와 동일하게 취급한다.
@@ -86,7 +86,7 @@ missing 3+ → 추천 제외
 - 보유 재료가 0개면 추천하지 않고 재료 등록으로 이동한다.
 - 특정 단계의 추천 결과가 없더라도 다른 단계의 결과는 정상적으로 제공한다.
 
-Ingredient Form은 MVP 재료 등록과 표시에는 사용하지만, 추천 가능 여부와 부족 재료 계산에는 사용하지 않는다. 추천은 Form과 무관하게 DISTINCT canonical Ingredient만 비교한다.
+MVP에서는 사용자 보유 재료와 추천 계산 모두 canonical Ingredient만 사용한다. `다진 마늘`, `편마늘`, `대패삼겹살` 같은 실제 표현은 Recipe 데이터에서 보존하되 사용자 보유 재료 등록 단위로는 구조화하지 않는다.
 
 MVP 추천 판단에는 다음 요소를 사용하지 않는다.
 
@@ -98,7 +98,7 @@ MVP 추천 판단에는 다음 요소를 사용하지 않는다.
 
 추천 결과를 탭, 필터, 섹션 중 어떤 UI로 구분할지는 Product Requirement에서 고정하지 않는다.
 
-> 추천 계산의 정확한 canonical Ingredient / Form 처리 규칙은 `../domain/domain.md`를 따른다.
+> 추천 계산의 정확한 canonical Ingredient 처리 규칙과 향후 Form/Category 확장 방향은 `../domain/domain.md`를 따른다.
 
 ## Recipe Detail
 

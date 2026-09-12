@@ -12,9 +12,6 @@
 project-root/
 └── data/
     ├── ingredients.csv
-    ├── ingredient-categories.csv
-    ├── ingredient-category-mappings.csv
-    ├── ingredient-forms.csv
     └── recipes/
         ├── dubu-jorim-001.json
         ├── kimchi-bokkeumbap-001.json
@@ -27,38 +24,21 @@ Dataset은 Git으로 변경 이력을 관리한다.
 
 # Ingredient Dataset
 
-Ingredient Master는 단순한 tabular data이므로 CSV를 사용한다.
+MVP Ingredient Master는 canonical Ingredient만 관리하므로 단일 `ingredients.csv`를 사용한다.
 
 canonical name은 import 전에 trim한다. canonical Ingredient의 식별은 별도 dataset key를 만들지 않고 `canonical_name` natural key를 사용하며 DB에서도 unique다.
 
-Ingredient Category는 canonical Ingredient와 N:M 관계이므로 Ingredient row에 단일 `category_code`를 넣지 않고 별도 Dataset으로 관리한다.
-
-```plain text
-ingredients.csv
-→ canonical Ingredient Master
-
-ingredient-categories.csv
-→ Category Master (`code`, `display_name`, `sort_order`)
-
-ingredient-category-mappings.csv
-→ canonical Ingredient ↔ Category N:M mapping
-
-ingredient-forms.csv
-→ canonical Ingredient ↔ Form Type ↔ display name
-```
-
-예를 들어 `ingredient-category-mappings.csv`에는 같은 Ingredient가 여러 번 등장할 수 있다.
+개념 예시:
 
 ```javascript
-ingredient,category
-김치,VEGETABLE
-김치,PROCESSED
-두부,TOFU_BEAN
-두부,PROCESSED
-삼겹살,MEAT
+canonical_name
+마늘
+삼겹살
+양파
+깨
 ```
 
-Ingredient Form은 별도 Category mapping을 가지지 않고 canonical Ingredient의 Category를 따른다. Primary Category는 두지 않는다. 실제 CSV column schema의 세부 사항은 importer 구현 직전에 이 문서에 최종 확정한다.
+MVP에서는 Ingredient Category, Ingredient Form, Alias를 별도 Dataset으로 관리하지 않는다. 실제 재료 표현은 Recipe Dataset의 `displayName`, `rawText`에 보존한다. 향후 필요성이 확인되면 canonical Ingredient를 기준으로 별도 Dataset/테이블을 추가한다.
 
 ---
 
@@ -76,7 +56,6 @@ Recipe는 ingredients와 steps가 중첩되므로 JSON을 사용한다. Recipe �
   "ingredients": [
     {
       "canonicalIngredient": "두부",
-      "form": null,
       "displayName": "두부",
       "rawText": "두부 1모",
       "amount": "1",
@@ -111,7 +90,7 @@ Draft JSON file
   ↓
 Human review / correction
   ↓
-Canonical Ingredient / Form mapping
+Canonical Ingredient mapping
   ↓
 Validation
   ↓
@@ -159,7 +138,6 @@ Published로 import하려는 Recipe는 최소 다음을 만족해야 한다.
 - YouTube Shorts reference 존재
 - 하나 이상의 Recipe Ingredient 존재
 - 모든 Recipe Ingredient가 canonical Ingredient에 mapping됨
-- Ingredient Form이 있으면 해당 canonical Ingredient 소속 Form임
 - display name 존재
 - ingredient display order 유효
 - 하나 이상의 Recipe Step 존재
@@ -184,7 +162,7 @@ Flyway
 → table / column / index / constraint / schema history
 
 Dataset + Bulk Importer
-→ Ingredient / Ingredient Category / Category Mapping / Ingredient Form / Recipe editorial content
+→ canonical Ingredient / Recipe editorial content
 ```
 
 대량 Recipe/Ingredient content를 Flyway SQL migration에 넣지 않는다.
