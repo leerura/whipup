@@ -16,9 +16,6 @@ RAW_DIR = ROOT / "ingredient" / "raw"
 REVIEW_DIR = ROOT / "ingredient" / "review"
 MANIFEST_FILE = ROOT / "ingredient" / "manifest.json"
 INGREDIENTS_FILE = DATA_DIR / "ingredients.csv"
-INGREDIENT_CATEGORIES_FILE = DATA_DIR / "ingredient-categories.csv"
-INGREDIENT_CATEGORY_MAPPINGS_FILE = DATA_DIR / "ingredient-category-mappings.csv"
-INGREDIENT_FORMS_FILE = DATA_DIR / "ingredient-forms.csv"
 
 
 def read_urls(path: Path) -> list[str]:
@@ -76,38 +73,17 @@ def read_csv_rows(path: Path) -> list[dict]:
         return list(csv.DictReader(file))
 
 
-def load_existing_master() -> dict:
+def load_existing_master() -> set[str]:
     ingredient_rows = read_csv_rows(INGREDIENTS_FILE)
-    form_rows = read_csv_rows(INGREDIENT_FORMS_FILE)
-    category_rows = read_csv_rows(INGREDIENT_CATEGORIES_FILE)
-    mapping_rows = read_csv_rows(INGREDIENT_CATEGORY_MAPPINGS_FILE)
-
-    forms_by_display_name = {}
-    for row in form_rows:
-        display_name = row.get("display_name", "").strip()
-        if not display_name:
-            continue
-
-        forms_by_display_name[display_name] = row.get("ingredient", "").strip() or display_name
-
     return {
-        "ingredients": {
-            row["canonical_name"].strip()
-            for row in ingredient_rows
-            if row.get("canonical_name")
-        },
-        "formsByDisplayName": forms_by_display_name,
-        "categories": {
-            row["code"].strip()
-            for row in category_rows
-            if row.get("code")
-        },
-        "categoryMappings": {
-            (row["ingredient"].strip(), row["category"].strip())
-            for row in mapping_rows
-            if row.get("ingredient") and row.get("category")
-        },
+        row["canonical_name"].strip()
+        for row in ingredient_rows
+        if row.get("canonical_name")
     }
+
+
+def raw_texts_for(items: list[dict]) -> list[str]:
+    return sorted({item["rawText"] for item in items if item.get("rawText")})
 
 
 def run_raw_extraction(model: str, force: bool) -> None:
@@ -177,7 +153,7 @@ def build_review_proposal() -> None:
     new_ingredients = []
 
     for name in sorted(expressions):
-        if name in master["ingredients"]:
+        if name in master:
             existing_mappings.append(
                 {
                     "raw": name,
@@ -186,23 +162,16 @@ def build_review_proposal() -> None:
             )
             continue
 
-        if name in master["formsByDisplayName"]:
-            existing_mappings.append(
-                {
-                    "raw": name,
-                    "ingredient": master["formsByDisplayName"][name],
-                }
-            )
-            continue
-
-        new_ingredients.append({"canonicalName": name})
+        new_ingredients.append(
+            {
+                "canonicalName": name,
+                "sourceExpressions": raw_texts_for(expressions[name]),
+            }
+        )
 
     proposal = {
         "existingMappings": existing_mappings,
         "newIngredients": new_ingredients,
-        "newForms": [],
-        "newCategories": [],
-        "newCategoryMappings": [],
         "unresolved": [],
         "sourceExpressions": expressions,
     }
