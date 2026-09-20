@@ -4,8 +4,8 @@ import os
 from google import genai
 from google.genai import types
 
-
-PROMPT = """
+#TODO: 프롬프트 외부 관리 필요. 현재는 코드에 하드코딩되어 있음. 추후 프롬프트를 외부 파일로 관리하고, 필요시 로드하도록 변경 필요.
+INGREDIENT_PROMPT = """
 You are extracting ingredient expressions from a Korean YouTube Shorts cooking video.
 
 Rules:
@@ -27,6 +27,58 @@ Schema:
     }
   ]
 }
+"""
+
+RECIPE_PROMPT = """
+You are extracting a recipe from a Korean YouTube Shorts cooking video.
+
+Rules:
+- Extract only recipe information that is visible or explicitly mentioned in the video.
+- Do not invent missing ingredients or cooking steps.
+- Use only the provided canonical ingredient master for canonicalIngredient.
+- The only valid canonicalIngredient values are the names listed under Canonical ingredient master.
+- canonicalIngredient must exactly match one of the provided canonical ingredient names.
+- If a video ingredient cannot be mapped to the provided master, set canonicalIngredient to null and mappingStatus to "UNMAPPED".
+- Do not create new canonical ingredients.
+- Preserve the original expression in displayName and rawText.
+- If amount or unit is unclear, use null.
+- Keep ingredient and step order as shown in the video.
+- Return JSON only.
+
+Recipe key rule:
+- Create a stable lowercase key from the recipe name and video id.
+- Use kebab-case ASCII when possible.
+- If Korean romanization is uncertain, use "recipe-{videoId}".
+
+Schema:
+{
+  "key": string,
+  "name": string,
+  "ingredients": [
+    {
+      "canonicalIngredient": string | null,
+      "displayName": string,
+      "rawText": string,
+      "amount": string | null,
+      "unit": string | null,
+      "mappingStatus": "MAPPED" | "UNMAPPED"
+    }
+  ],
+  "steps": [string]
+}
+"""
+
+
+def _recipe_prompt(video_id: str, ingredient_master: list[str]) -> str:
+    master = "\n".join(f"- {name}" for name in ingredient_master)
+    return f"""
+{RECIPE_PROMPT}
+
+Video ID:
+{video_id}
+
+Canonical ingredient master:
+{master}
 """
 
 
@@ -62,7 +114,7 @@ class GeminiClient:
         response = self._client.models.generate_content(
             model=self._model,
             contents=[
-                PROMPT,
+                INGREDIENT_PROMPT,
                 types.Part.from_uri(file_uri=source_url, mime_type="video/mp4"),
             ],
             config=types.GenerateContentConfig(response_mime_type="application/json"),
@@ -70,3 +122,20 @@ class GeminiClient:
 
         payload = _parse_json_response(response.text or "")
         return payload.get("ingredients", [])
+
+    def extract_recipe(
+        self,
+        source_url: str,
+        video_id: str,
+        ingredient_master: list[str],
+    ) -> dict:
+        response = self._client.models.generate_content(
+            model=self._model,
+            contents=[
+                _recipe_prompt(video_id, ingredient_master),
+                types.Part.from_uri(file_uri=source_url, mime_type="video/mp4"),
+            ],
+            config=types.GenerateContentConfig(response_mime_type="application/json"),
+        )
+
+        return _parse_json_response(response.text or "")
