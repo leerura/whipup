@@ -32,13 +32,17 @@ MVP Ingredient Master는 canonical Ingredient만 관리하므로 단일 `ingredi
 
 ```javascript
 canonical_name
+간장
 계란
 김치
 깨
 마늘
+배추
 삼겹살
+소시지
+양배추
 양파
-진간장
+파스타면
 ```
 
 컬럼은 MVP에서 다음 하나만 사용한다.
@@ -58,7 +62,9 @@ canonical_name
 - canonical Ingredient의 식별을 위한 별도 dataset key는 MVP에서 만들지 않는다.
 - CSV는 사람이 검토하기 쉽도록 `canonical_name` 가나다순 정렬을 기본 규칙으로 한다.
 - Ingredient Category, Ingredient Form, Alias는 MVP Ingredient Dataset에서 관리하지 않는다.
-- `다진 마늘`, `편마늘`, `참깨`, `대패삼겹살` 같은 실제 표현은 별도 canonical Ingredient로 저장하지 않고 가능한 경우 기존 canonical Ingredient에 매핑한다.
+- `다진 마늘`, `편마늘`, `참깨`, `대패삼겹살`, `진간장`, `비엔나소시지`, `알배추`, `스파게티면` 같은 실제 표현은 별도 canonical Ingredient로 저장하지 않고 가능한 경우 기존 canonical Ingredient에 매핑한다.
+- canonical 기준은 단순한 이름의 상하위 관계가 아니라 추천에서 같은 재료를 보유했다고 간주해도 되는 수준인지로 판단한다. 예: `진간장 → 간장`, `비엔나소시지 → 소시지`, `알배추 → 배추`, `스파게티면 → 파스타면`.
+- 서로 다른 실제 재료는 억지로 합치지 않는다. 예: `양배추`와 `배추`, `햄`과 `소시지`, `베이컨`과 `소시지`는 별도 canonical Ingredient로 관리한다.
 - 실제 영상/레시피 표현은 Recipe Dataset의 `displayName`, `rawText`에 보존한다.
 - 향후 필요성이 확인되면 canonical Ingredient를 기준으로 Form, Category, Alias 등의 별도 Dataset/테이블을 추가할 수 있다.
 
@@ -98,6 +104,29 @@ Recipe Ingredient의 배열 순서는 사용자에게 표시할 순서이며 imp
 `amount`, `unit`은 둘 다 nullable이다. `displayName`과 `rawText`는 보존한다.
 
 Recipe thumbnail은 Dataset에서 별도 이미지 파일로 관리하지 않는다. YouTube Shorts reference를 기준으로 thumbnail을 가져온다.
+
+## Recipe Ingredient Master Reference
+
+Recipe Dataset은 확정된 `data/ingredients.csv`의 Ingredient Master를 기준으로 작성한다.
+
+- Recipe의 `canonicalIngredient`는 반드시 `data/ingredients.csv`에 존재하는 `canonical_name` 중 하나여야 한다.
+- `canonicalIngredient`는 `canonical_name`과 정확히 일치해야 한다.
+- Recipe 생성 또는 Import 과정에서 새로운 canonical Ingredient를 자동 생성하거나 Ingredient Master를 수정하지 않는다.
+- 기존 Ingredient Master에 매핑할 canonical Ingredient가 없으면 해당 Recipe는 validation에 실패한다.
+- 새로운 canonical Ingredient가 필요하면 먼저 `ingredients.csv`를 수정하여 Ingredient Master를 확정한 뒤 Recipe를 다시 작성하거나 검증한다.
+- `canonical_name`은 현재 Ingredient Dataset의 natural key이므로 이름을 변경하면 이를 참조하는 Recipe JSON의 `canonicalIngredient`도 함께 변경해야 한다.
+
+예를 들어 Ingredient Master에 `간장`만 존재하고 `진간장`은 존재하지 않는다면 Recipe는 원본 표현을 보존하면서 canonical 값은 `간장`을 참조한다.
+
+```json
+{
+  "canonicalIngredient": "간장",
+  "displayName": "진간장",
+  "rawText": "진간장 2스푼",
+  "amount": "2",
+  "unit": "스푼"
+}
+```
 
 ---
 
@@ -160,6 +189,7 @@ Published로 import하려는 Recipe는 최소 다음을 만족해야 한다.
 - YouTube Shorts reference 존재
 - 하나 이상의 Recipe Ingredient 존재
 - 모든 Recipe Ingredient가 canonical Ingredient에 mapping됨
+- 모든 `canonicalIngredient`가 현재 `data/ingredients.csv`의 `canonical_name`에 존재하고 정확히 일치함
 - display name 존재
 - ingredient display order 유효
 - 하나 이상의 Recipe Step 존재

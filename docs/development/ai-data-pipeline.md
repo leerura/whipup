@@ -21,6 +21,9 @@ PostgreSQL
 - 파이프라인은 Ingredient Pipeline과 Recipe Pipeline으로 분리한다.
 - 입력 영상은 URL 문자열이 아니라 YouTube `videoId`를 실질 식별자로 사용한다.
 - 동일 영상에 대한 불필요한 Gemini Video 호출을 피하기 위해 중간 결과를 캐시한다.
+- Gemini 호출 전에 전체 입력의 `videoId`를 먼저 정규화/중복 제거하고 cache/manifest를 일괄 확인하여 실제 처리 대상만 추린다.
+- 처리 대상 영상은 API 제한과 context 크기 범위 안에서 가능한 만큼 묶어 batch 요청하여 request quota 사용량을 줄인다.
+- Gemini 요청은 batch 단위로 하더라도 결과와 상태는 반드시 `videoId` 단위로 분리해 저장한다.
 - AI가 영상에서 확인할 수 없는 내용을 추측하여 채우지 않는다.
 - Raw Extraction과 Canonicalization/Mapping을 분리한다.
 - Recipe Pipeline은 확정된 Ingredient Master를 기준으로만 매핑한다.
@@ -32,18 +35,23 @@ PostgreSQL
 
 ```mermaid
 graph TD
-    A["shorts-urls.txt"] --> B["Ingredient Pipeline"]
-    A --> C["Recipe Pipeline"]
-    B --> D["Raw Ingredient Extraction"]
-    D --> E["Raw Ingredient Data"]
-    E --> F["Ingredient Master Reconciliation"]
-    F --> G["Review / Validation"]
-    G --> H["Final Ingredient Dataset"]
-    H --> C
-    C --> I["Recipe Extraction"]
-    I --> J["Validation"]
-    J -->|PASS| K["Final Recipe Dataset"]
-    J -->|FAIL| L["Review Required"]
+    A["shorts-urls.txt"] --> B["Normalize / Deduplicate videoId"]
+    B --> C["Load Cache / Manifest"]
+    C --> D["Classify VALID / STALE / NEW / FAILED"]
+    D -->|VALID| E["SKIP / Reuse"]
+    D -->|STALE / NEW / Retry| F["Pending Videos"]
+    F --> G["Split into Request Batches"]
+    G --> H["Gemini Batch Call"]
+    H --> I["Split Result by videoId"]
+    I --> J["Per-video Raw Cache / Status"]
+    J --> K["Ingredient Master Reconciliation"]
+    K --> L["Review / Validation"]
+    L --> M["Final Ingredient Dataset"]
+    M --> N["Recipe Pipeline"]
+    N --> O["Recipe Extraction / Mapping"]
+    O --> P["Validation"]
+    P -->|PASS| Q["Final Recipe Dataset"]
+    P -->|FAIL / UNMAPPED| R["Review Required"]
 ```
 
 # 입력
@@ -68,7 +76,7 @@ https://www.youtube.com/watch?v=ccc
 
 ## 1.1 Raw Ingredient Extraction
 
-각 영상을 Gemini Video 입력으로 분석하여 영상에서 실제로 확인되는 재료 표현을 추출한다.
+전체 입력의 처리 상태를 먼저 확인한 뒤, 아직 처리되지 않았거나 재처리가 필요한 영상만 Gemini Video 입력으로 분석한다. 처리 대상이 여러 개라면 API가 허용하는 범위에서 하나의 request batch로 묶어 영상에서 실제로 확인되는 재료 표현을 추출한다.
 
 이 단계에서는 기존 Ingredient Master를 Gemini에게 전달하지 않는다. 목적은 정규화가 아니라 **영상의 원본 표현을 보존하는 것**이다.
 
@@ -151,9 +159,15 @@ Raw 표현이 기존 canonical Ingredient의 동의어, 통상적 표현, 형태
 다진 마늘 → 마늘
 편마늘 → 마늘
 대패삼겹살 → 삼겹살
+진간장 → 간장
+비엔나소시지 → 소시지
+알배추 → 배추
+스파게티면 → 파스타면
 ```
 
-반대로 서로 다른 실제 재료는 억지로 하나로 합치지 않는다. 예를 들어 `들깨`는 단순히 `깨`의 다른 표현으로 처리하지 않는다.
+반대로 서로 다른 실제 재료는 억지로 하나로 합치지 않는다. 예를 들어 `들깨`는 단순히 `깨`의 다른 표현으로 처리하지 않고, `양배추`와 `배추`, `햄`과 `소시지`, `베이컨`과 `소시지`도 별도 canonical Ingredient로 관리한다.
+
+표현만으로 정확한 canonical Ingredient를 판단할 수 없는 경우에는 임의로 추정하지 않는다. 예를 들어 영상에서 `파`라고만 표현되어 `대파`인지 `쪽파`인지 확정할 근거가 없다면 `UNRESOLVED`로 분류하여 review 대상으로 보낸다.
 
 이미 Master에 존재하거나 기존 Master로 의미상 매핑 가능한 Raw 표현은 Proposal에 다시 포함하지 않는다.
 
@@ -207,7 +221,7 @@ Validation
 
 ## 2.1 Ingredient Mapping Rule
 
-Recipe Pipeline은 Ingredient Master를 읽을 수 있지만 수정할 수 없다.
+Recipe Pipeline은 확정된 `data/ingredients.csv`를 Ingredient Master로 읽을 수 있지만 수정할 수 없다. Recipe의 `canonicalIngredient`는 반드시 현재 `ingredients.csv`의 `canonical_name` 중 하나와 정확히 일치해야 한다.
 
 영상의 재료를 기존 canonical Ingredient에 매핑할 수 없는 경우 새로운 Ingredient를 임의 생성하지 않고 `UNMAPPED`로 표시한다.
 
@@ -228,6 +242,7 @@ Recipe 생성 결과는 최소한 다음 조건을 검증한다.
 - 이름과 Shorts reference가 존재한다.
 - Ingredient가 1개 이상 존재한다.
 - 모든 Ingredient가 canonical Ingredient에 매핑되어 있다.
+- 모든 `canonicalIngredient`가 현재 `data/ingredients.csv`의 `canonical_name`에 존재하고 정확히 일치한다.
 - 실제 영상 표현을 위한 display/raw 값이 보존되어 있다.
 - 조리 Step이 1개 이상 존재한다.
 - Ingredient/Step 순서를 보존한다.
@@ -244,7 +259,32 @@ FAIL / UNMAPPED
 
 # 3. 캐시와 재처리
 
-단순히 결과 파일 존재 여부만으로 영구 skip하지 않는다. Prompt, 모델, 파이프라인 로직이 변경될 수 있으므로 결과에 Pipeline metadata를 기록한다.
+Gemini API를 호출하기 전에 입력 전체의 `videoId`를 기준으로 cache/manifest를 먼저 조회하여 처리 대상을 확정한다. 단순히 결과 파일 존재 여부만으로 영구 skip하지 않는다. Prompt, 모델, 파이프라인 로직이 변경될 수 있으므로 결과에 Pipeline metadata를 기록한다.
+
+실행 전 분류 원칙:
+
+```plain text
+Input URLs
+    ↓
+Normalize to videoId
+    ↓
+Deduplicate
+    ↓
+Load Manifest / Cache
+    ↓
+VALID CACHE → SKIP
+STALE       → PENDING
+NEW         → PENDING
+FAILED      → RETRY 대상
+    ↓
+Pending Videos만 Request Batch 생성
+    ↓
+Gemini API Call
+    ↓
+Result를 videoId별로 분리 저장
+```
+
+한 번에 처리할 영상 수는 고정하지 않는다. API의 요청당 영상 수 제한, context 크기, 모델 특성에 따라 pending videos를 하나 이상의 batch로 나눈다. Batch 요청이 실패하더라도 영상별 상태를 보존하고 재시도 가능한 단위는 `videoId`로 유지한다.
 
 개념 예:
 
@@ -287,7 +327,7 @@ Ingredient Master Hash는 최종 Ingredient Dataset의 내용이 변경되었는
 - `FAILED`
 - `REVIEW_REQUIRED`
 
-한 영상의 실패가 전체 Batch를 중단시키지 않는다. 성공한 영상 결과는 보존하고 실패한 영상만 재시도할 수 있어야 한다.
+결과와 상태는 영상별로 관리한다. 하나의 영상 처리 실패 때문에 이미 성공한 다른 영상 결과를 버리지 않는다. Batch 요청 자체가 실패한 경우 해당 batch의 영상들을 재시도 대상으로 되돌릴 수 있어야 하며, 정상 응답에서 일부 영상 결과만 실패한 경우 실패한 `videoId`만 재시도할 수 있어야 한다.
 
 개념 예:
 
@@ -351,11 +391,14 @@ whipup/
 # 6. 비용 및 토큰 절감 원칙
 
 1. 동일 영상의 정상 처리 결과가 유효하면 Gemini Video API를 다시 호출하지 않는다.
-2. URL 문자열이 아니라 `videoId` 기준으로 중복을 제거한다.
-3. Ingredient Raw Extraction에는 Ingredient Master를 전달하지 않는다.
-4. Recipe Extraction에는 매핑에 필요한 Ingredient Master를 전달한다.
-5. Pipeline/Prompt/Model/Master가 동일하면 기존 결과를 재사용한다.
-6. Batch 일부가 실패하면 실패한 영상만 재시도한다.
+2. API 호출 전에 전체 입력의 cache/manifest를 먼저 확인하여 `VALID` 영상은 제외하고 `NEW`, `STALE`, 재시도 대상만 pending으로 만든다.
+3. pending 영상이 여러 개면 API가 허용하는 범위에서 가능한 만큼 하나의 request batch로 묶어 Gemini 호출 횟수를 줄인다.
+4. 요청은 batch 단위로 하더라도 결과, cache, 상태, 재시도 단위는 `videoId`별로 유지한다.
+5. URL 문자열이 아니라 `videoId` 기준으로 중복을 제거한다.
+6. Ingredient Raw Extraction에는 Ingredient Master를 전달하지 않는다.
+7. Recipe Extraction에는 매핑에 필요한 Ingredient Master를 전달한다.
+8. Pipeline/Prompt/Model/Master가 동일하면 기존 결과를 재사용한다.
+9. Batch 일부가 실패하면 실패한 영상만 재시도한다.
 
 # 7. 실행 인터페이스 방향
 
