@@ -5,11 +5,9 @@ import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import org.springframework.lang.Nullable;
-import org.openapitools.jackson.nullable.JsonNullable;
 import java.time.OffsetDateTime;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
-import io.swagger.v3.oas.annotations.media.Schema;
 
 
 import java.util.*;
@@ -49,7 +47,6 @@ public class RecipeStep {
    * @return order
    */
   @NotNull @Min(value = 1) 
-  @Schema(name = "order", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("order")
   public Integer getOrder() {
     return order;
@@ -70,7 +67,6 @@ public class RecipeStep {
    * @return content
    */
   @NotNull 
-  @Schema(name = "content", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("content")
   public String getContent() {
     return content;

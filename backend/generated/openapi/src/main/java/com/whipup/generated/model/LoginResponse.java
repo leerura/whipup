@@ -6,11 +6,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.whipup.generated.model.UserSummary;
 import org.springframework.lang.Nullable;
-import org.openapitools.jackson.nullable.JsonNullable;
 import java.time.OffsetDateTime;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
-import io.swagger.v3.oas.annotations.media.Schema;
 
 
 import java.util.*;
@@ -52,7 +50,6 @@ public class LoginResponse {
    * @return accessToken
    */
   @NotNull 
-  @Schema(name = "accessToken", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("accessToken")
   public String getAccessToken() {
     return accessToken;
@@ -73,7 +70,6 @@ public class LoginResponse {
    * @return user
    */
   @NotNull @Valid 
-  @Schema(name = "user", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("user")
   public UserSummary getUser() {
     return user;
@@ -94,7 +90,6 @@ public class LoginResponse {
    * @return hasOwnedIngredients
    */
   @NotNull 
-  @Schema(name = "hasOwnedIngredients", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("hasOwnedIngredients")
   public Boolean getHasOwnedIngredients() {
     return hasOwnedIngredients;

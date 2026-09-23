@@ -11,11 +11,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.springframework.lang.Nullable;
-import org.openapitools.jackson.nullable.JsonNullable;
 import java.time.OffsetDateTime;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
-import io.swagger.v3.oas.annotations.media.Schema;
 
 
 import java.util.*;
@@ -69,7 +67,6 @@ public class RecipeDetailResponse {
    * @return recipeId
    */
   @NotNull 
-  @Schema(name = "recipeId", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("recipeId")
   public Long getRecipeId() {
     return recipeId;
@@ -90,7 +87,6 @@ public class RecipeDetailResponse {
    * @return name
    */
   @NotNull 
-  @Schema(name = "name", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("name")
   public String getName() {
     return name;
@@ -111,7 +107,6 @@ public class RecipeDetailResponse {
    * @return shortsReference
    */
   @NotNull @Valid 
-  @Schema(name = "shortsReference", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("shortsReference")
   public URI getShortsReference() {
     return shortsReference;
@@ -132,7 +127,6 @@ public class RecipeDetailResponse {
    * @return thumbnailUrl
    */
   @NotNull @Valid 
-  @Schema(name = "thumbnailUrl", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("thumbnailUrl")
   public URI getThumbnailUrl() {
     return thumbnailUrl;
@@ -154,7 +148,6 @@ public class RecipeDetailResponse {
    * @return missingCount
    */
   @NotNull @Min(value = 0) 
-  @Schema(name = "missingCount", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("missingCount")
   public Integer getMissingCount() {
     return missingCount;
@@ -183,7 +176,6 @@ public class RecipeDetailResponse {
    * @return ingredients
    */
   @NotNull @Valid 
-  @Schema(name = "ingredients", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("ingredients")
   public List<@Valid RecipeIngredient> getIngredients() {
     return ingredients;
@@ -212,7 +204,6 @@ public class RecipeDetailResponse {
    * @return steps
    */
   @NotNull @Valid 
-  @Schema(name = "steps", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("steps")
   public List<@Valid RecipeStep> getSteps() {
     return steps;

@@ -5,6 +5,7 @@ WORKDIR /workspace
 COPY gradlew settings.gradle build.gradle ./
 COPY gradle ./gradle
 COPY src ./src
+COPY generated/openapi/src/main/java ./generated/openapi/src/main/java
 
 RUN chmod +x ./gradlew
 RUN ./gradlew bootJar --no-daemon

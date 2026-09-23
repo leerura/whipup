@@ -7,18 +7,6 @@ package com.whipup.generated.api;
 
 import com.whipup.generated.model.ErrorResponse;
 import com.whipup.generated.model.RecipeDetailResponse;
-import io.swagger.v3.oas.annotations.ExternalDocumentation;
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.Parameters;
-import io.swagger.v3.oas.annotations.media.ArraySchema;
-import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.security.SecurityRequirement;
-import io.swagger.v3.oas.annotations.tags.Tag;
-import io.swagger.v3.oas.annotations.enums.ParameterIn;
-import io.swagger.v3.oas.annotations.media.ExampleObject;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -32,7 +20,6 @@ import jakarta.annotation.Generated;
 
 @Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
 @Validated
-@Tag(name = "Recipe", description = "the Recipe API")
 public interface RecipeApi {
 
     default RecipeApiDelegate getDelegate() {
@@ -48,31 +35,13 @@ public interface RecipeApi {
      *         or Authentication failed or missing (status code 401)
      *         or Resource not found (status code 404)
      */
-    @Operation(
-        operationId = "getRecipeDetail",
-        tags = { "Recipe" },
-        responses = {
-            @ApiResponse(responseCode = "200", description = "Recipe detail", content = {
-                @Content(mediaType = "application/json", schema = @Schema(implementation = RecipeDetailResponse.class))
-            }),
-            @ApiResponse(responseCode = "401", description = "Authentication failed or missing", content = {
-                @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorResponse.class))
-            }),
-            @ApiResponse(responseCode = "404", description = "Resource not found", content = {
-                @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorResponse.class))
-            })
-        },
-        security = {
-            @SecurityRequirement(name = "bearerAuth")
-        }
-    )
     @RequestMapping(
         method = RequestMethod.GET,
         value = RecipeApi.PATH_GET_RECIPE_DETAIL,
         produces = { "application/json" }
     )
     default ResponseEntity<RecipeDetailResponse> getRecipeDetail(
-        @Parameter(name = "recipeId", description = "", required = true, in = ParameterIn.PATH) @PathVariable("recipeId") Long recipeId
+         @PathVariable("recipeId") Long recipeId
     ) {
         return getDelegate().getRecipeDetail(recipeId);
     }

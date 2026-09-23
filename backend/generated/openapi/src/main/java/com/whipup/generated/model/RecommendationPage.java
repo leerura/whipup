@@ -9,11 +9,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.springframework.lang.Nullable;
-import org.openapitools.jackson.nullable.JsonNullable;
 import java.time.OffsetDateTime;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
-import io.swagger.v3.oas.annotations.media.Schema;
 
 
 import java.util.*;
@@ -66,7 +64,6 @@ public class RecommendationPage {
    * @return items
    */
   @NotNull @Valid 
-  @Schema(name = "items", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("items")
   public List<@Valid RecommendationItem> getItems() {
     return items;
@@ -87,7 +84,6 @@ public class RecommendationPage {
    * @return page
    */
   @NotNull 
-  @Schema(name = "page", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("page")
   public Integer getPage() {
     return page;
@@ -108,7 +104,6 @@ public class RecommendationPage {
    * @return size
    */
   @NotNull 
-  @Schema(name = "size", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("size")
   public Integer getSize() {
     return size;
@@ -129,7 +124,6 @@ public class RecommendationPage {
    * @return hasNext
    */
   @NotNull 
-  @Schema(name = "hasNext", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("hasNext")
   public Boolean getHasNext() {
     return hasNext;

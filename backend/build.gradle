@@ -18,8 +18,20 @@ repositories {
 	mavenCentral()
 }
 
+sourceSets {
+	main {
+		java {
+			srcDir 'generated/openapi/src/main/java'
+			exclude 'com/whipup/generated/OpenApiGeneratorApplication.java'
+			exclude 'com/whipup/generated/RFC3339DateFormat.java'
+			exclude 'org/openapitools/configuration/**'
+		}
+	}
+}
+
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-webmvc'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.flywaydb:flyway-core'
 

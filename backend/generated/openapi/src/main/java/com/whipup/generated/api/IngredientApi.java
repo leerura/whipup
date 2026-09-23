@@ -7,18 +7,6 @@ package com.whipup.generated.api;
 
 import com.whipup.generated.model.ErrorResponse;
 import com.whipup.generated.model.IngredientOptionListResponse;
-import io.swagger.v3.oas.annotations.ExternalDocumentation;
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.Parameters;
-import io.swagger.v3.oas.annotations.media.ArraySchema;
-import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.security.SecurityRequirement;
-import io.swagger.v3.oas.annotations.tags.Tag;
-import io.swagger.v3.oas.annotations.enums.ParameterIn;
-import io.swagger.v3.oas.annotations.media.ExampleObject;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -32,7 +20,6 @@ import jakarta.annotation.Generated;
 
 @Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
 @Validated
-@Tag(name = "Ingredient", description = "the Ingredient API")
 public interface IngredientApi {
 
     default IngredientApiDelegate getDelegate() {
@@ -46,21 +33,6 @@ public interface IngredientApi {
      * @return All ingredient options (status code 200)
      *         or Authentication failed or missing (status code 401)
      */
-    @Operation(
-        operationId = "getIngredientOptions",
-        tags = { "Ingredient" },
-        responses = {
-            @ApiResponse(responseCode = "200", description = "All ingredient options", content = {
-                @Content(mediaType = "application/json", schema = @Schema(implementation = IngredientOptionListResponse.class))
-            }),
-            @ApiResponse(responseCode = "401", description = "Authentication failed or missing", content = {
-                @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorResponse.class))
-            })
-        },
-        security = {
-            @SecurityRequirement(name = "bearerAuth")
-        }
-    )
     @RequestMapping(
         method = RequestMethod.GET,
         value = IngredientApi.PATH_GET_INGREDIENT_OPTIONS,

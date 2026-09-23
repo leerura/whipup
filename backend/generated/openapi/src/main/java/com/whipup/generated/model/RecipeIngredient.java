@@ -4,15 +4,10 @@ import java.net.URI;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import java.util.Arrays;
-import org.openapitools.jackson.nullable.JsonNullable;
 import org.springframework.lang.Nullable;
-import java.util.NoSuchElementException;
-import org.openapitools.jackson.nullable.JsonNullable;
 import java.time.OffsetDateTime;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
-import io.swagger.v3.oas.annotations.media.Schema;
 
 
 import java.util.*;
@@ -31,9 +26,9 @@ public class RecipeIngredient {
 
   private String displayName;
 
-  private JsonNullable<String> amount = JsonNullable.<String>undefined();
+  private @Nullable String amount = null;
 
-  private JsonNullable<String> unit = JsonNullable.<String>undefined();
+  private @Nullable String unit = null;
 
   private Integer displayOrder;
 
@@ -64,7 +59,6 @@ public class RecipeIngredient {
    * @return recipeIngredientId
    */
   @NotNull 
-  @Schema(name = "recipeIngredientId", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("recipeIngredientId")
   public Long getRecipeIngredientId() {
     return recipeIngredientId;
@@ -85,7 +79,6 @@ public class RecipeIngredient {
    * @return ingredientId
    */
   @NotNull 
-  @Schema(name = "ingredientId", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("ingredientId")
   public Long getIngredientId() {
     return ingredientId;
@@ -106,7 +99,6 @@ public class RecipeIngredient {
    * @return displayName
    */
   @NotNull 
-  @Schema(name = "displayName", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("displayName")
   public String getDisplayName() {
     return displayName;
@@ -117,8 +109,8 @@ public class RecipeIngredient {
     this.displayName = displayName;
   }
 
-  public RecipeIngredient amount(String amount) {
-    this.amount = JsonNullable.of(amount);
+  public RecipeIngredient amount(@Nullable String amount) {
+    this.amount = amount;
     return this;
   }
 
@@ -127,18 +119,18 @@ public class RecipeIngredient {
    * @return amount
    */
   
-  @Schema(name = "amount", requiredMode = Schema.RequiredMode.NOT_REQUIRED, nullable = true)
   @JsonProperty("amount")
-  public JsonNullable<String> getAmount() {
+  public @Nullable String getAmount() {
     return amount;
   }
 
-  public void setAmount(JsonNullable<String> amount) {
+  @JsonProperty("amount")
+  public void setAmount(@Nullable String amount) {
     this.amount = amount;
   }
 
-  public RecipeIngredient unit(String unit) {
-    this.unit = JsonNullable.of(unit);
+  public RecipeIngredient unit(@Nullable String unit) {
+    this.unit = unit;
     return this;
   }
 
@@ -147,13 +139,13 @@ public class RecipeIngredient {
    * @return unit
    */
   
-  @Schema(name = "unit", requiredMode = Schema.RequiredMode.NOT_REQUIRED, nullable = true)
   @JsonProperty("unit")
-  public JsonNullable<String> getUnit() {
+  public @Nullable String getUnit() {
     return unit;
   }
 
-  public void setUnit(JsonNullable<String> unit) {
+  @JsonProperty("unit")
+  public void setUnit(@Nullable String unit) {
     this.unit = unit;
   }
 
@@ -168,7 +160,6 @@ public class RecipeIngredient {
    * @return displayOrder
    */
   @NotNull @Min(value = 1) 
-  @Schema(name = "displayOrder", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("displayOrder")
   public Integer getDisplayOrder() {
     return displayOrder;
@@ -189,7 +180,6 @@ public class RecipeIngredient {
    * @return owned
    */
   @NotNull 
-  @Schema(name = "owned", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("owned")
   public Boolean getOwned() {
     return owned;
@@ -212,26 +202,15 @@ public class RecipeIngredient {
     return Objects.equals(this.recipeIngredientId, recipeIngredient.recipeIngredientId) &&
         Objects.equals(this.ingredientId, recipeIngredient.ingredientId) &&
         Objects.equals(this.displayName, recipeIngredient.displayName) &&
-        equalsNullable(this.amount, recipeIngredient.amount) &&
-        equalsNullable(this.unit, recipeIngredient.unit) &&
+        Objects.equals(this.amount, recipeIngredient.amount) &&
+        Objects.equals(this.unit, recipeIngredient.unit) &&
         Objects.equals(this.displayOrder, recipeIngredient.displayOrder) &&
         Objects.equals(this.owned, recipeIngredient.owned);
   }
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
-
   @Override
   public int hashCode() {
-    return Objects.hash(recipeIngredientId, ingredientId, displayName, hashCodeNullable(amount), hashCodeNullable(unit), displayOrder, owned);
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
-    }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+    return Objects.hash(recipeIngredientId, ingredientId, displayName, amount, unit, displayOrder, owned);
   }
 
   @Override

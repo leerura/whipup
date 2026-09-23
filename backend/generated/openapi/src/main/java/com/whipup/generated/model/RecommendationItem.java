@@ -11,11 +11,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.springframework.lang.Nullable;
-import org.openapitools.jackson.nullable.JsonNullable;
 import java.time.OffsetDateTime;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
-import io.swagger.v3.oas.annotations.media.Schema;
 
 
 import java.util.*;
@@ -100,7 +98,6 @@ public class RecommendationItem {
    * @return recipeId
    */
   @NotNull 
-  @Schema(name = "recipeId", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("recipeId")
   public Long getRecipeId() {
     return recipeId;
@@ -121,7 +118,6 @@ public class RecommendationItem {
    * @return name
    */
   @NotNull 
-  @Schema(name = "name", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("name")
   public String getName() {
     return name;
@@ -142,7 +138,6 @@ public class RecommendationItem {
    * @return thumbnailUrl
    */
   @NotNull @Valid 
-  @Schema(name = "thumbnailUrl", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("thumbnailUrl")
   public URI getThumbnailUrl() {
     return thumbnailUrl;
@@ -163,7 +158,6 @@ public class RecommendationItem {
    * @return missingCount
    */
   @NotNull 
-  @Schema(name = "missingCount", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("missingCount")
   public MissingCountEnum getMissingCount() {
     return missingCount;
@@ -192,7 +186,6 @@ public class RecommendationItem {
    * @return missingIngredients
    */
   @NotNull @Valid 
-  @Schema(name = "missingIngredients", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("missingIngredients")
   public List<@Valid MissingIngredient> getMissingIngredients() {
     return missingIngredients;

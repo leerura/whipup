@@ -8,18 +8,6 @@ package com.whipup.generated.api;
 import com.whipup.generated.model.AddOwnedIngredientsRequest;
 import com.whipup.generated.model.ErrorResponse;
 import com.whipup.generated.model.OwnedIngredientListResponse;
-import io.swagger.v3.oas.annotations.ExternalDocumentation;
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.Parameters;
-import io.swagger.v3.oas.annotations.media.ArraySchema;
-import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.security.SecurityRequirement;
-import io.swagger.v3.oas.annotations.tags.Tag;
-import io.swagger.v3.oas.annotations.enums.ParameterIn;
-import io.swagger.v3.oas.annotations.media.ExampleObject;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -33,7 +21,6 @@ import jakarta.annotation.Generated;
 
 @Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
 @Validated
-@Tag(name = "OwnedIngredient", description = "the OwnedIngredient API")
 public interface OwnedIngredientApi {
 
     default OwnedIngredientApiDelegate getDelegate() {
@@ -51,30 +38,6 @@ public interface OwnedIngredientApi {
      *         or Request conflicts with current state (status code 409)
      *         or Authentication failed or missing (status code 401)
      */
-    @Operation(
-        operationId = "addOwnedIngredients",
-        tags = { "OwnedIngredient" },
-        responses = {
-            @ApiResponse(responseCode = "201", description = "Created", content = {
-                @Content(mediaType = "application/json", schema = @Schema(implementation = OwnedIngredientListResponse.class))
-            }),
-            @ApiResponse(responseCode = "400", description = "Invalid request", content = {
-                @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorResponse.class))
-            }),
-            @ApiResponse(responseCode = "404", description = "Resource not found", content = {
-                @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorResponse.class))
-            }),
-            @ApiResponse(responseCode = "409", description = "Request conflicts with current state", content = {
-                @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorResponse.class))
-            }),
-            @ApiResponse(responseCode = "401", description = "Authentication failed or missing", content = {
-                @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorResponse.class))
-            })
-        },
-        security = {
-            @SecurityRequirement(name = "bearerAuth")
-        }
-    )
     @RequestMapping(
         method = RequestMethod.POST,
         value = OwnedIngredientApi.PATH_ADD_OWNED_INGREDIENTS,
@@ -82,7 +45,7 @@ public interface OwnedIngredientApi {
         consumes = { "application/json" }
     )
     default ResponseEntity<OwnedIngredientListResponse> addOwnedIngredients(
-        @Parameter(name = "AddOwnedIngredientsRequest", description = "", required = true) @Valid @RequestBody AddOwnedIngredientsRequest addOwnedIngredientsRequest
+         @Valid @RequestBody AddOwnedIngredientsRequest addOwnedIngredientsRequest
     ) {
         return getDelegate().addOwnedIngredients(addOwnedIngredientsRequest);
     }
@@ -97,29 +60,13 @@ public interface OwnedIngredientApi {
      *         or Resource not found (status code 404)
      *         or Authentication failed or missing (status code 401)
      */
-    @Operation(
-        operationId = "deleteOwnedIngredient",
-        tags = { "OwnedIngredient" },
-        responses = {
-            @ApiResponse(responseCode = "204", description = "Deleted"),
-            @ApiResponse(responseCode = "404", description = "Resource not found", content = {
-                @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorResponse.class))
-            }),
-            @ApiResponse(responseCode = "401", description = "Authentication failed or missing", content = {
-                @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorResponse.class))
-            })
-        },
-        security = {
-            @SecurityRequirement(name = "bearerAuth")
-        }
-    )
     @RequestMapping(
         method = RequestMethod.DELETE,
         value = OwnedIngredientApi.PATH_DELETE_OWNED_INGREDIENT,
         produces = { "application/json" }
     )
     default ResponseEntity<Void> deleteOwnedIngredient(
-        @Parameter(name = "userIngredientId", description = "", required = true, in = ParameterIn.PATH) @PathVariable("userIngredientId") Long userIngredientId
+         @PathVariable("userIngredientId") Long userIngredientId
     ) {
         return getDelegate().deleteOwnedIngredient(userIngredientId);
     }
@@ -132,21 +79,6 @@ public interface OwnedIngredientApi {
      * @return Owned ingredients (status code 200)
      *         or Authentication failed or missing (status code 401)
      */
-    @Operation(
-        operationId = "getOwnedIngredients",
-        tags = { "OwnedIngredient" },
-        responses = {
-            @ApiResponse(responseCode = "200", description = "Owned ingredients", content = {
-                @Content(mediaType = "application/json", schema = @Schema(implementation = OwnedIngredientListResponse.class))
-            }),
-            @ApiResponse(responseCode = "401", description = "Authentication failed or missing", content = {
-                @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorResponse.class))
-            })
-        },
-        security = {
-            @SecurityRequirement(name = "bearerAuth")
-        }
-    )
     @RequestMapping(
         method = RequestMethod.GET,
         value = OwnedIngredientApi.PATH_GET_OWNED_INGREDIENTS,

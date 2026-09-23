@@ -5,11 +5,9 @@ import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import org.springframework.lang.Nullable;
-import org.openapitools.jackson.nullable.JsonNullable;
 import java.time.OffsetDateTime;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
-import io.swagger.v3.oas.annotations.media.Schema;
 
 
 import java.util.*;
@@ -48,7 +46,6 @@ public class IngredientOption {
    * @return ingredientId
    */
   @NotNull 
-  @Schema(name = "ingredientId", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("ingredientId")
   public Long getIngredientId() {
     return ingredientId;
@@ -69,7 +66,6 @@ public class IngredientOption {
    * @return displayName
    */
   @NotNull 
-  @Schema(name = "displayName", requiredMode = Schema.RequiredMode.REQUIRED)
   @JsonProperty("displayName")
   public String getDisplayName() {
     return displayName;

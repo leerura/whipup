@@ -6,18 +6,6 @@
 package com.whipup.generated.api;
 
 import com.whipup.generated.model.HealthResponse;
-import io.swagger.v3.oas.annotations.ExternalDocumentation;
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.Parameters;
-import io.swagger.v3.oas.annotations.media.ArraySchema;
-import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.security.SecurityRequirement;
-import io.swagger.v3.oas.annotations.tags.Tag;
-import io.swagger.v3.oas.annotations.enums.ParameterIn;
-import io.swagger.v3.oas.annotations.media.ExampleObject;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -31,7 +19,6 @@ import jakarta.annotation.Generated;
 
 @Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
 @Validated
-@Tag(name = "Health", description = "the Health API")
 public interface HealthApi {
 
     default HealthApiDelegate getDelegate() {
@@ -44,15 +31,6 @@ public interface HealthApi {
      *
      * @return Backend is healthy (status code 200)
      */
-    @Operation(
-        operationId = "getHealth",
-        tags = { "Health" },
-        responses = {
-            @ApiResponse(responseCode = "200", description = "Backend is healthy", content = {
-                @Content(mediaType = "application/json", schema = @Schema(implementation = HealthResponse.class))
-            })
-        }
-    )
     @RequestMapping(
         method = RequestMethod.GET,
         value = HealthApi.PATH_GET_HEALTH,

@@ -8,18 +8,6 @@ package com.whipup.generated.api;
 import com.whipup.generated.model.ErrorResponse;
 import com.whipup.generated.model.KakaoLoginRequest;
 import com.whipup.generated.model.LoginResponse;
-import io.swagger.v3.oas.annotations.ExternalDocumentation;
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.Parameters;
-import io.swagger.v3.oas.annotations.media.ArraySchema;
-import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.security.SecurityRequirement;
-import io.swagger.v3.oas.annotations.tags.Tag;
-import io.swagger.v3.oas.annotations.enums.ParameterIn;
-import io.swagger.v3.oas.annotations.media.ExampleObject;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -33,7 +21,6 @@ import jakarta.annotation.Generated;
 
 @Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
 @Validated
-@Tag(name = "Auth", description = "the Auth API")
 public interface AuthApi {
 
     default AuthApiDelegate getDelegate() {
@@ -48,18 +35,6 @@ public interface AuthApi {
      * @return Login success (status code 200)
      *         or Authentication failed or missing (status code 401)
      */
-    @Operation(
-        operationId = "loginWithKakao",
-        tags = { "Auth" },
-        responses = {
-            @ApiResponse(responseCode = "200", description = "Login success", content = {
-                @Content(mediaType = "application/json", schema = @Schema(implementation = LoginResponse.class))
-            }),
-            @ApiResponse(responseCode = "401", description = "Authentication failed or missing", content = {
-                @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorResponse.class))
-            })
-        }
-    )
     @RequestMapping(
         method = RequestMethod.POST,
         value = AuthApi.PATH_LOGIN_WITH_KAKAO,
@@ -67,7 +42,7 @@ public interface AuthApi {
         consumes = { "application/json" }
     )
     default ResponseEntity<LoginResponse> loginWithKakao(
-        @Parameter(name = "KakaoLoginRequest", description = "", required = true) @Valid @RequestBody KakaoLoginRequest kakaoLoginRequest
+         @Valid @RequestBody KakaoLoginRequest kakaoLoginRequest
     ) {
         return getDelegate().loginWithKakao(kakaoLoginRequest);
     }
