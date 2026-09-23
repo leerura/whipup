@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../features/auth/presentation/onboarding_flow.dart';
+import 'theme.dart';
+
 class WhipupApp extends StatelessWidget {
   const WhipupApp({super.key});
 
@@ -7,8 +10,8 @@ class WhipupApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Whipup',
-      theme: ThemeData(useMaterial3: true),
-      home: const SizedBox.shrink(),
+      theme: AppTheme.light,
+      home: const OnboardingFlow(),
     );
   }
 }

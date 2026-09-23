@@ -8,13 +8,13 @@ part of 'kakao_login_request.dart';
 
 class _$KakaoLoginRequest extends KakaoLoginRequest {
   @override
-  final String authorizationCode;
+  final String kakaoAccessToken;
 
   factory _$KakaoLoginRequest(
           [void Function(KakaoLoginRequestBuilder)? updates]) =>
       (KakaoLoginRequestBuilder()..update(updates))._build();
 
-  _$KakaoLoginRequest._({required this.authorizationCode}) : super._();
+  _$KakaoLoginRequest._({required this.kakaoAccessToken}) : super._();
   @override
   KakaoLoginRequest rebuild(void Function(KakaoLoginRequestBuilder) updates) =>
       (toBuilder()..update(updates)).build();
@@ -27,13 +27,13 @@ class _$KakaoLoginRequest extends KakaoLoginRequest {
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
     return other is KakaoLoginRequest &&
-        authorizationCode == other.authorizationCode;
+        kakaoAccessToken == other.kakaoAccessToken;
   }
 
   @override
   int get hashCode {
     var _$hash = 0;
-    _$hash = $jc(_$hash, authorizationCode.hashCode);
+    _$hash = $jc(_$hash, kakaoAccessToken.hashCode);
     _$hash = $jf(_$hash);
     return _$hash;
   }
@@ -41,7 +41,7 @@ class _$KakaoLoginRequest extends KakaoLoginRequest {
   @override
   String toString() {
     return (newBuiltValueToStringHelper(r'KakaoLoginRequest')
-          ..add('authorizationCode', authorizationCode))
+          ..add('kakaoAccessToken', kakaoAccessToken))
         .toString();
   }
 }
@@ -50,10 +50,10 @@ class KakaoLoginRequestBuilder
     implements Builder<KakaoLoginRequest, KakaoLoginRequestBuilder> {
   _$KakaoLoginRequest? _$v;
 
-  String? _authorizationCode;
-  String? get authorizationCode => _$this._authorizationCode;
-  set authorizationCode(String? authorizationCode) =>
-      _$this._authorizationCode = authorizationCode;
+  String? _kakaoAccessToken;
+  String? get kakaoAccessToken => _$this._kakaoAccessToken;
+  set kakaoAccessToken(String? kakaoAccessToken) =>
+      _$this._kakaoAccessToken = kakaoAccessToken;
 
   KakaoLoginRequestBuilder() {
     KakaoLoginRequest._defaults(this);
@@ -62,7 +62,7 @@ class KakaoLoginRequestBuilder
   KakaoLoginRequestBuilder get _$this {
     final $v = _$v;
     if ($v != null) {
-      _authorizationCode = $v.authorizationCode;
+      _kakaoAccessToken = $v.kakaoAccessToken;
       _$v = null;
     }
     return this;
@@ -84,8 +84,8 @@ class KakaoLoginRequestBuilder
   _$KakaoLoginRequest _build() {
     final _$result = _$v ??
         _$KakaoLoginRequest._(
-          authorizationCode: BuiltValueNullFieldError.checkNotNull(
-              authorizationCode, r'KakaoLoginRequest', 'authorizationCode'),
+          kakaoAccessToken: BuiltValueNullFieldError.checkNotNull(
+              kakaoAccessToken, r'KakaoLoginRequest', 'kakaoAccessToken'),
         );
     replace(_$result);
     return _$result;

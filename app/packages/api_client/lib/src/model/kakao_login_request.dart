@@ -11,11 +11,11 @@ part 'kakao_login_request.g.dart';
 /// KakaoLoginRequest
 ///
 /// Properties:
-/// * [authorizationCode] 
+/// * [kakaoAccessToken] 
 @BuiltValue()
 abstract class KakaoLoginRequest implements Built<KakaoLoginRequest, KakaoLoginRequestBuilder> {
-  @BuiltValueField(wireName: r'authorizationCode')
-  String get authorizationCode;
+  @BuiltValueField(wireName: r'kakaoAccessToken')
+  String get kakaoAccessToken;
 
   KakaoLoginRequest._();
 
@@ -40,9 +40,9 @@ class _$KakaoLoginRequestSerializer implements PrimitiveSerializer<KakaoLoginReq
     KakaoLoginRequest object, {
     FullType specifiedType = FullType.unspecified,
   }) sync* {
-    yield r'authorizationCode';
+    yield r'kakaoAccessToken';
     yield serializers.serialize(
-      object.authorizationCode,
+      object.kakaoAccessToken,
       specifiedType: const FullType(String),
     );
   }
@@ -68,12 +68,12 @@ class _$KakaoLoginRequestSerializer implements PrimitiveSerializer<KakaoLoginReq
       final key = serializedList[i] as String;
       final value = serializedList[i + 1];
       switch (key) {
-        case r'authorizationCode':
+        case r'kakaoAccessToken':
           final valueDes = serializers.deserialize(
             value,
             specifiedType: const FullType(String),
           ) as String;
-          result.authorizationCode = valueDes;
+          result.kakaoAccessToken = valueDes;
           break;
         default:
           unhandled.add(key);
