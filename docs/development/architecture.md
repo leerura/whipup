@@ -65,6 +65,7 @@ project-root/
 │       ├── requirements.txt
 │       └── README.md
 ├── docs/       # Source of Truth documents
+├── Makefile    # OpenAPI code generation entry point
 ├── AGENTS.md
 ├── README.md
 ├── .env.example
@@ -337,7 +338,10 @@ app/
     │   ├── recommendation/
     │   └── recipe/
     ├── core/
-    └── api_generated/
+    └── ...
+
+app/packages/
+└── api_client/    # OpenAPI Generator generated Dart package
 ```
 
 ## app/
@@ -405,9 +409,9 @@ core/
 
 Feature Business Logic을 넣지 않는다.
 
-## api_generated/
+## Generated API Client
 
-OpenAPI Generator로 생성한 Flutter API client를 수동 코드와 분리한다. 생성 코드는 Repository에 commit하고 직접 수정하지 않는다. 인증 토큰 주입 등 필요한 최소 공통 처리만 수동 코드에 둔다.
+OpenAPI Generator로 생성한 Flutter API client는 `app/packages/api_client/`의 별도 Dart package로 관리하여 수동 코드와 분리한다. `dart-dio` + `built_value`를 사용한다. 생성 코드는 Repository에 commit하고 직접 수정하지 않는다. 인증 토큰 주입 등 필요한 최소 공통 처리는 `core/network` 등 수동 코드에 둔다.
 
 ---
 
@@ -461,6 +465,8 @@ App과 Backend 사이의 API Contract는 OpenAPI로 관리한다.
 - Backend와 App이 서로 다른 Contract를 임의로 정의하지 않는다.
 - Generated code는 수동 수정하지 않는다.
 - API 구현과 명세가 어긋나지 않도록 관리한다.
+
+Flutter와 Backend 모두 OpenAPI Generator를 사용한다. Flutter는 `dart-dio`, Backend는 Spring `delegatePattern`으로 HTTP Contract Layer를 생성한다. Backend Generated Source는 `backend/generated/openapi/`에 분리하고 Gradle compile source에 연결한다. 생성 결과는 Repository에 commit하며 직접 수정하지 않는다. 실행 및 Generator 설정은 [openapi-codegen.md](../api/openapi-codegen.md)를 따른다.
 
 Flutter client generation은 OpenAPI Generator를 사용하고 생성 결과를 Repository에 commit한다. Generated client는 직접 수정하지 않는다.
 

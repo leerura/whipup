@@ -107,6 +107,7 @@ Response:
 
 | Method | Endpoint | Purpose |
 | --- | --- | --- |
+| GET | `/health` | Backend Health Check |
 | POST | `/auth/kakao` | Kakao Login |
 | GET | `/ingredients` | Ingredient Master 조회/검색 |
 | GET | `/me/ingredients` | 내 보유 재료 조회 |
@@ -116,6 +117,34 @@ Response:
 | GET | `/recipes/{recipeId}` | Recipe Detail 조회 |
 
 MVP App에서 사용하지 않는 관리자용 HTTP API는 만들지 않는다.
+
+---
+
+# Health
+
+## GET /health
+
+Backend process가 정상적으로 요청을 처리할 수 있는지 확인하는 public health endpoint다. App API의 `/api/v1` Base Path 밖에 둔다.
+
+```plain text
+GET /health
+```
+
+인증이 필요하지 않는다.
+
+### Response `200 OK`
+
+```json
+{
+  "status": "UP"
+}
+```
+
+Local Docker Compose 실행 확인에도 이 endpoint를 사용한다.
+
+```bash
+curl http://localhost:8080/health
+```
 
 ---
 
@@ -676,6 +705,6 @@ MVP에서는 필요하지 않은 관리용 HTTP API를 미리 만들지 않는�
 - Operational Dataset 실제 파일 Schema
 - Bulk Importer의 실행 방식
 - AI Recipe extraction script의 구현 방식
-- OpenAPI Code Generation 전략
+- OpenAPI Code Generation 전략은 [openapi-codegen.md](openapi-codegen.md)에서 확정하여 관리한다.
 
 이 항목들은 관련 구현 단계에서 필요한 시점에 결정한다.

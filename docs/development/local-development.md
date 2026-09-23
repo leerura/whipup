@@ -245,6 +245,20 @@ PostgreSQL
 localhost:5432
 ```
 
+Backend readiness는 public health endpoint로 확인한다.
+
+```bash
+curl http://localhost:8080/health
+```
+
+정상 응답:
+
+```json
+{
+  "status": "UP"
+}
+```
+
 종료:
 
 ```bash

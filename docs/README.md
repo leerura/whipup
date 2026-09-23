@@ -48,6 +48,10 @@ App ↔ Backend API의 의미, 동작, 오류, pagination, 정렬 규칙을 정�
 
 App ↔ Backend의 machine-readable API Contract다. Request/Response 구조는 이 문서와 일치해야 한다.
 
+## [openapi-codegen.md](api/openapi-codegen.md)
+
+OpenAPI Contract에서 Flutter Client와 Spring HTTP Layer를 생성하는 Generator, Docker 실행, Makefile, Generated Source 경계와 재생성 규칙을 정의한다.
+
 ---
 
 # Reading Order
@@ -63,6 +67,7 @@ App ↔ Backend의 machine-readable API Contract다. Request/Response 구조는 
 8. data-import.md (운영 데이터 DB 반영 작업 시)
 9. api-specification.md
 10. openapi.yaml
+11. openapi-codegen.md
 ```
 
 DB 작업:
@@ -92,6 +97,7 @@ AI Dataset Generation     → ai-data-pipeline.md
 Operational Dataset Import → data-import.md
 API Behavior              → api-specification.md
 API Contract              → openapi.yaml
+OpenAPI Code Generation   → openapi-codegen.md
 DB Schema History         → Flyway Migration
 Visual Design             → Figma
 ```
@@ -108,7 +114,7 @@ Visual Design             → Figma
 4. 실행된 Migration 파일은 수정하지 않는다.
 5. DB 구조가 바뀌면 `erd.md`도 함께 갱신한다.
 6. MVP의 재료 등록, 보유 상태, Recommendation 판단은 모두 canonical Ingredient만 사용한다. Form/Category/Alias는 별도 Domain/API/DB 구조로 구현하지 않고 향후 확장 대상으로 둔다.
-7. Generated OpenAPI Client는 직접 수정하지 않는다.
+7. Generated OpenAPI Client와 Spring HTTP Layer는 직접 수정하지 않는다. Codegen 규칙은 [openapi-codegen.md](api/openapi-codegen.md)를 따른다.
 8. 필요하지 않은 계층, Interface, Adapter, Mapper, UseCase 추상화를 미리 만들지 않는다.
 9. Backend Business Rule을 Flutter에서 중복 구현하지 않는다.
 10. 실제 secret은 Git에 커밋하지 않는다.
@@ -130,6 +136,7 @@ ai-data-pipeline.md     ✅
 data-import.md          ✅
 api-specification.md    ✅
 openapi.yaml            ✅
+openapi-codegen.md      ✅
 ```
 
 이제 구현 설계의 기준은 Repo Docs다.

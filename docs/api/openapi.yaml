@@ -6,6 +6,21 @@ servers:
   - url: /api/v1
 
 paths:
+  /health:
+    get:
+      tags: [Health]
+      operationId: getHealth
+      servers:
+        - url: /
+      security: []
+      responses:
+        '200':
+          description: Backend is healthy
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponse'
+
   /auth/kakao:
     post:
       tags: [Auth]
@@ -199,6 +214,14 @@ components:
           schema: { $ref: '#/components/schemas/ErrorResponse' }
 
   schemas:
+    HealthResponse:
+      type: object
+      required: [status]
+      properties:
+        status:
+          type: string
+          example: UP
+
     KakaoLoginRequest:
       type: object
       required: [authorizationCode]
