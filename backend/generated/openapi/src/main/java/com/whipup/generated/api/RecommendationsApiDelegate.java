@@ -20,7 +20,7 @@ import jakarta.annotation.Generated;
  * A delegate to be called by the {@link RecommendationsApiController}}.
  * Implement this interface with a {@link org.springframework.stereotype.Service} annotated class.
  */
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-09-23T01:37:49.076375542Z[Etc/UTC]", comments = "Generator version: 7.19.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.19.0")
 public interface RecommendationsApiDelegate {
 
     default Optional<NativeWebRequest> getRequest() {

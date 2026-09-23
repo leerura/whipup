@@ -25,7 +25,7 @@ import jakarta.annotation.Generated;
  * RecommendationItem
  */
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-09-23T01:37:49.076375542Z[Etc/UTC]", comments = "Generator version: 7.19.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.19.0")
 public class RecommendationItem {
 
   private Long recipeId;
