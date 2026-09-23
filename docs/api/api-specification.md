@@ -77,9 +77,11 @@ Error Code 전체 목록도 미리 만들지 않고 실제 구현에 필요한 �
 
 ## Pagination
 
-Ingredient Master와 Recommendation처럼 결과가 많아질 수 있는 API는 pagination을 지원한다.
+Recommendation처럼 결과가 많아질 수 있는 API는 pagination을 지원한다.
 
-MVP에서는 익숙하고 단순한 **page 기반 pagination**을 사용한다.
+Ingredient Master는 MVP 규모에서 전체 목록을 한 번에 조회하며 pagination을 사용하지 않는다.
+
+Recommendation은 **page 기반 pagination**을 사용한다.
 
 Request:
 
@@ -99,7 +101,7 @@ Response:
 }
 ```
 
-현재 App UX에서는 전체 페이지 수나 전체 데이터 개수를 표시할 필요가 없으므로 `totalPages`, `totalCount`는 기본 응답에 포함하지 않는다. `page`는 0-based, 기본 `size`는 30, 최대 `size`는 100이다. Backend는 전체 count가 필요 없는 Spring Data `Slice` 방식으로 구현한다.
+Recommendation에서는 전체 페이지 수나 전체 데이터 개수를 표시하지 않으므로 `totalPages`, `totalCount`를 기본 응답에 포함하지 않는다. `page`는 0-based, 기본 `size`는 30, 최대 `size`는 100이다. Backend는 전체 count가 필요 없는 Spring Data `Slice` 방식으로 구현한다.
 
 ---
 
@@ -218,19 +220,9 @@ Kakao 인증 실패 시 User 로그인 상태를 생성하지 않는다.
 GET /api/v1/ingredients
 ```
 
-### Query Parameters
+### Request
 
-```plain text
-query  optional  canonical Ingredient 이름 검색
-page   optional  0-based, default 0
-size   optional  default 30, max 100
-```
-
-예:
-
-```plain text
-GET /api/v1/ingredients?query=마늘
-```
+Query Parameter와 pagination을 사용하지 않는다. Ingredient Master 전체를 한 번에 조회한다.
 
 ### Response `200 OK`
 
@@ -245,23 +237,22 @@ GET /api/v1/ingredients?query=마늘
       "ingredientId": 20,
       "displayName": "삼겹살"
     }
-  ],
-  "page": 0,
-  "size": 30,
-  "hasNext": false
+  ]
 }
 ```
 
-MVP User 화면에는 canonical Ingredient만 선택 옵션으로 노출한다. 검색은 canonical Ingredient 이름 contains 방식이며 query는 trim 후 빈 문자열이면 전체 조회로 처리한다. 기본 정렬은 `displayName ASC`다.
+MVP User 화면에는 canonical Ingredient만 선택 옵션으로 노출한다. 기본 정렬은 `displayName ASC`다. 검색, 검색 결과 개수 계산, 보유 여부와의 조합은 Flutter가 전체 Ingredient Master와 현재 보유 재료 목록을 이용해 로컬에서 처리한다.
 
 Ingredient Form과 Category는 MVP API에 노출하지 않는다. `다진 마늘`, `대패삼겹살` 같은 실제 표현은 Recipe 데이터에서 보존하지만 사용자 보유 재료 선택 단위는 각각 canonical `마늘`, `삼겹살`이다.
 
 ### Rules
 
 - 사용자가 직접 Ingredient를 생성할 수 없다.
-- 검색은 canonical Ingredient 이름 기준이다.
+- Backend는 Ingredient 검색 API를 별도로 제공하지 않는다.
+- Flutter가 전체 canonical Ingredient 목록을 대상으로 이름 검색을 수행한다.
 - Form/Category 기반 탐색은 MVP에서 제공하지 않는다.
-- 자주 쓰는 재료/인기순은 MVP에서 관리하지 않는다.
+- `자주 쓰는 재료` 목록은 MVP에서 Flutter static data로 관리하며 Backend/DB에서 관리하지 않는다.
+- Ingredient 썸네일/아이콘은 Flutter local asset과 Ingredient를 매핑하여 사용하며 Backend/DB/API에 icon 정보를 두지 않는다. 향후 필요 시 Storage 기반 구조로 이전할 수 있다.
 
 ---
 
@@ -700,8 +691,8 @@ MVP에서는 필요하지 않은 관리용 HTTP API를 미리 만들지 않는�
 - 서비스 Access Token 상세 형식 / Refresh Token
 - Pagination 기본 page size
 - Recommendation 추가 정렬 기준
-- Recipe thumbnail / image 정책
-- 자주 쓰는 재료 정책
+- Ingredient Category 정책
+- Ingredient Form을 User UX에 노출하는 방식
 - Operational Dataset 실제 파일 Schema
 - Bulk Importer의 실행 방식
 - AI Recipe extraction script의 구현 방식

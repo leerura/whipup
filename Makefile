@@ -1,7 +1,27 @@
-.PHONY: pipeline-clean-ingredient
+.PHONY: generate-api generate-api-flutter generate-api-backend pipeline-clean-ingredient
+
+OPENAPI_GENERATOR_IMAGE := openapitools/openapi-generator-cli:v7.19.0
+OPENAPI_SPEC := /local/docs/api/openapi.yaml
+OPENAPI_DOCKER := docker run --rm -v "$(CURDIR):/local" $(OPENAPI_GENERATOR_IMAGE)
 
 PIPELINE_DIR := tools/data-pipeline
 INGREDIENT_DIR := $(PIPELINE_DIR)/ingredient
+
+generate-api: generate-api-flutter generate-api-backend
+
+generate-api-flutter:
+	$(OPENAPI_DOCKER) generate \
+		-i $(OPENAPI_SPEC) \
+		-g dart-dio \
+		-c /local/docs/api/codegen/flutter.yaml \
+		-o /local/app/packages/api_client
+
+generate-api-backend:
+	$(OPENAPI_DOCKER) generate \
+		-i $(OPENAPI_SPEC) \
+		-g spring \
+		-c /local/docs/api/codegen/backend.yaml \
+		-o /local/backend/generated/openapi
 
 pipeline-clean-ingredient:
 	rm -f $(INGREDIENT_DIR)/raw/*.json

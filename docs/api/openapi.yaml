@@ -46,19 +46,13 @@ paths:
     get:
       tags: [Ingredient]
       operationId: getIngredientOptions
-      parameters:
-        - name: query
-          in: query
-          schema: { type: string }
-        - $ref: '#/components/parameters/Page'
-        - $ref: '#/components/parameters/Size'
       responses:
         '200':
-          description: Ingredient options
+          description: All ingredient options
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/IngredientOptionPage'
+                $ref: '#/components/schemas/IngredientOptionListResponse'
         '401':
           $ref: '#/components/responses/Unauthorized'
 
@@ -250,16 +244,13 @@ components:
         ingredientId: { type: integer, format: int64 }
         displayName: { type: string }
 
-    IngredientOptionPage:
+    IngredientOptionListResponse:
       type: object
-      required: [items, page, size, hasNext]
+      required: [items]
       properties:
         items:
           type: array
           items: { $ref: '#/components/schemas/IngredientOption' }
-        page: { type: integer, format: int32 }
-        size: { type: integer, format: int32 }
-        hasNext: { type: boolean }
 
     OwnedIngredient:
       type: object

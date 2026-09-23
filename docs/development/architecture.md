@@ -126,6 +126,10 @@ Ingredient나 Recipe 비즈니스 로직을 처리하지 않는다.
 
 Ingredient Form/Category/Alias는 MVP에서 별도 Domain/Entity로 구현하지 않고 향후 확장 대상으로 둔다.
 
+Ingredient Master는 Backend에서 pagination/search 없이 전체 목록을 반환한다. 재료 검색, 검색 결과 개수, 현재 보유 여부 조합은 Flutter에서 처리한다.
+
+`자주 쓰는 재료`는 Flutter static data로 관리하고, 재료 썸네일/아이콘은 Flutter local asset에 매핑한다. Backend/DB/API에는 해당 UI 메타데이터를 저장하지 않는다.
+
 ### recipe
 
 - Recipe
@@ -134,6 +138,7 @@ Ingredient Form/Category/Alias는 MVP에서 별도 Domain/Entity로 구현하지
 - DRAFT / PUBLISHED lifecycle
 - Recipe Detail 조회
 - YouTube Shorts reference 기반 thumbnail 제공
+- 추천 카드와 Recipe Detail 음식 이미지는 YouTube Shorts thumbnail 사용
 
 User가 Recipe를 만들 수 있는지 판단하지 않는다.
 
