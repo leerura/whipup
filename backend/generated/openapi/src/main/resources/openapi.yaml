@@ -1,0 +1,698 @@
+openapi: 3.0.3
+info:
+  title: WhipUp API
+  version: 1.0.0
+servers:
+- url: /api/v1
+security:
+- bearerAuth: []
+paths:
+  /health:
+    get:
+      operationId: getHealth
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthResponse"
+          description: Backend is healthy
+      security: []
+      servers:
+      - url: /
+      tags:
+      - Health
+      x-accepts:
+      - application/json
+      x-tags:
+      - tag: Health
+  /auth/kakao:
+    post:
+      operationId: loginWithKakao
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/KakaoLoginRequest"
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LoginResponse"
+          description: Login success
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Authentication failed or missing
+      security: []
+      tags:
+      - Auth
+      x-content-type: application/json
+      x-accepts:
+      - application/json
+      x-tags:
+      - tag: Auth
+  /ingredients:
+    get:
+      operationId: getIngredientOptions
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/IngredientOptionListResponse"
+          description: All ingredient options
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Authentication failed or missing
+      tags:
+      - Ingredient
+      x-accepts:
+      - application/json
+      x-tags:
+      - tag: Ingredient
+  /me/ingredients:
+    get:
+      operationId: getOwnedIngredients
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OwnedIngredientListResponse"
+          description: Owned ingredients
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Authentication failed or missing
+      tags:
+      - OwnedIngredient
+      x-accepts:
+      - application/json
+      x-tags:
+      - tag: OwnedIngredient
+    post:
+      operationId: addOwnedIngredients
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AddOwnedIngredientsRequest"
+        required: true
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OwnedIngredientListResponse"
+          description: Created
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Invalid request
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Resource not found
+        "409":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Request conflicts with current state
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Authentication failed or missing
+      tags:
+      - OwnedIngredient
+      x-content-type: application/json
+      x-accepts:
+      - application/json
+      x-tags:
+      - tag: OwnedIngredient
+  /me/ingredients/{userIngredientId}:
+    delete:
+      operationId: deleteOwnedIngredient
+      parameters:
+      - explode: false
+        in: path
+        name: userIngredientId
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "204":
+          description: Deleted
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Resource not found
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Authentication failed or missing
+      tags:
+      - OwnedIngredient
+      x-accepts:
+      - application/json
+      x-tags:
+      - tag: OwnedIngredient
+  /recommendations:
+    get:
+      operationId: getRecommendations
+      parameters:
+      - explode: true
+        in: query
+        name: missingCount
+        required: true
+        schema:
+          enum:
+          - 0
+          - 1
+          - 2
+          format: int32
+          type: integer
+        style: form
+      - explode: true
+        in: query
+        name: page
+        required: false
+        schema:
+          default: 0
+          format: int32
+          minimum: 0
+          type: integer
+        style: form
+      - explode: true
+        in: query
+        name: size
+        required: false
+        schema:
+          default: 30
+          format: int32
+          maximum: 100
+          minimum: 1
+          type: integer
+        style: form
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RecommendationPage"
+          description: Recommendations
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Invalid request
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Authentication failed or missing
+        "409":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Request conflicts with current state
+      tags:
+      - Recommendation
+      x-accepts:
+      - application/json
+      x-tags:
+      - tag: Recommendation
+  /recipes/{recipeId}:
+    get:
+      operationId: getRecipeDetail
+      parameters:
+      - explode: false
+        in: path
+        name: recipeId
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RecipeDetailResponse"
+          description: Recipe detail
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Authentication failed or missing
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Resource not found
+      tags:
+      - Recipe
+      x-accepts:
+      - application/json
+      x-tags:
+      - tag: Recipe
+components:
+  parameters:
+    Page:
+      explode: true
+      in: query
+      name: page
+      required: false
+      schema:
+        default: 0
+        format: int32
+        minimum: 0
+        type: integer
+      style: form
+    Size:
+      explode: true
+      in: query
+      name: size
+      required: false
+      schema:
+        default: 30
+        format: int32
+        maximum: 100
+        minimum: 1
+        type: integer
+      style: form
+  responses:
+    BadRequest:
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+      description: Invalid request
+    Unauthorized:
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+      description: Authentication failed or missing
+    NotFound:
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+      description: Resource not found
+    Conflict:
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorResponse"
+      description: Request conflicts with current state
+  schemas:
+    HealthResponse:
+      example:
+        status: UP
+      properties:
+        status:
+          example: UP
+          type: string
+      required:
+      - status
+      type: object
+    KakaoLoginRequest:
+      example:
+        authorizationCode: authorizationCode
+      properties:
+        authorizationCode:
+          type: string
+      required:
+      - authorizationCode
+      type: object
+    LoginResponse:
+      example:
+        hasOwnedIngredients: true
+        accessToken: accessToken
+        user:
+          userId: 0
+      properties:
+        accessToken:
+          type: string
+        user:
+          $ref: "#/components/schemas/UserSummary"
+        hasOwnedIngredients:
+          type: boolean
+      required:
+      - accessToken
+      - hasOwnedIngredients
+      - user
+      type: object
+    UserSummary:
+      example:
+        userId: 0
+      properties:
+        userId:
+          format: int64
+          type: integer
+      required:
+      - userId
+      type: object
+    IngredientOption:
+      example:
+        ingredientId: 0
+        displayName: displayName
+      properties:
+        ingredientId:
+          format: int64
+          type: integer
+        displayName:
+          type: string
+      required:
+      - displayName
+      - ingredientId
+      type: object
+    IngredientOptionListResponse:
+      example:
+        items:
+        - ingredientId: 0
+          displayName: displayName
+        - ingredientId: 0
+          displayName: displayName
+      properties:
+        items:
+          items:
+            $ref: "#/components/schemas/IngredientOption"
+          type: array
+      required:
+      - items
+      type: object
+    OwnedIngredient:
+      example:
+        ingredientId: 6
+        displayName: displayName
+        userIngredientId: 0
+      properties:
+        userIngredientId:
+          format: int64
+          type: integer
+        ingredientId:
+          format: int64
+          type: integer
+        displayName:
+          type: string
+      required:
+      - displayName
+      - ingredientId
+      - userIngredientId
+      type: object
+    OwnedIngredientListResponse:
+      example:
+        items:
+        - ingredientId: 6
+          displayName: displayName
+          userIngredientId: 0
+        - ingredientId: 6
+          displayName: displayName
+          userIngredientId: 0
+      properties:
+        items:
+          items:
+            $ref: "#/components/schemas/OwnedIngredient"
+          type: array
+      required:
+      - items
+      type: object
+    AddOwnedIngredientsRequest:
+      example:
+        items:
+        - ingredientId: 0
+        - ingredientId: 0
+      properties:
+        items:
+          items:
+            $ref: "#/components/schemas/OwnedIngredientSelection"
+          minItems: 1
+          type: array
+      required:
+      - items
+      type: object
+    OwnedIngredientSelection:
+      example:
+        ingredientId: 0
+      properties:
+        ingredientId:
+          format: int64
+          type: integer
+      required:
+      - ingredientId
+      type: object
+    RecommendationPage:
+      example:
+        size: 5
+        hasNext: true
+        page: 5
+        items:
+        - missingCount: 6
+          name: name
+          missingIngredients:
+          - ingredientId: 1
+            name: name
+          - ingredientId: 1
+            name: name
+          recipeId: 0
+          thumbnailUrl: https://openapi-generator.tech
+        - missingCount: 6
+          name: name
+          missingIngredients:
+          - ingredientId: 1
+            name: name
+          - ingredientId: 1
+            name: name
+          recipeId: 0
+          thumbnailUrl: https://openapi-generator.tech
+      properties:
+        items:
+          items:
+            $ref: "#/components/schemas/RecommendationItem"
+          type: array
+        page:
+          format: int32
+          type: integer
+        size:
+          format: int32
+          type: integer
+        hasNext:
+          type: boolean
+      required:
+      - hasNext
+      - items
+      - page
+      - size
+      type: object
+    RecommendationItem:
+      example:
+        missingCount: 6
+        name: name
+        missingIngredients:
+        - ingredientId: 1
+          name: name
+        - ingredientId: 1
+          name: name
+        recipeId: 0
+        thumbnailUrl: https://openapi-generator.tech
+      properties:
+        recipeId:
+          format: int64
+          type: integer
+        name:
+          type: string
+        thumbnailUrl:
+          format: uri
+          type: string
+        missingCount:
+          enum:
+          - 0
+          - 1
+          - 2
+          format: int32
+          type: integer
+        missingIngredients:
+          items:
+            $ref: "#/components/schemas/MissingIngredient"
+          type: array
+      required:
+      - missingCount
+      - missingIngredients
+      - name
+      - recipeId
+      - thumbnailUrl
+      type: object
+    MissingIngredient:
+      example:
+        ingredientId: 1
+        name: name
+      properties:
+        ingredientId:
+          format: int64
+          type: integer
+        name:
+          type: string
+      required:
+      - ingredientId
+      - name
+      type: object
+    RecipeDetailResponse:
+      example:
+        missingCount: 0
+        shortsReference: https://openapi-generator.tech
+        name: name
+        ingredients:
+        - ingredientId: 5
+          amount: amount
+          unit: unit
+          displayName: displayName
+          owned: true
+          displayOrder: 1
+          recipeIngredientId: 1
+        - ingredientId: 5
+          amount: amount
+          unit: unit
+          displayName: displayName
+          owned: true
+          displayOrder: 1
+          recipeIngredientId: 1
+        steps:
+        - content: content
+          order: 1
+        - content: content
+          order: 1
+        recipeId: 0
+        thumbnailUrl: https://openapi-generator.tech
+      properties:
+        recipeId:
+          format: int64
+          type: integer
+        name:
+          type: string
+        shortsReference:
+          format: uri
+          type: string
+        thumbnailUrl:
+          format: uri
+          type: string
+        missingCount:
+          format: int32
+          minimum: 0
+          type: integer
+        ingredients:
+          items:
+            $ref: "#/components/schemas/RecipeIngredient"
+          type: array
+        steps:
+          items:
+            $ref: "#/components/schemas/RecipeStep"
+          type: array
+      required:
+      - ingredients
+      - missingCount
+      - name
+      - recipeId
+      - shortsReference
+      - steps
+      - thumbnailUrl
+      type: object
+    RecipeIngredient:
+      example:
+        ingredientId: 5
+        amount: amount
+        unit: unit
+        displayName: displayName
+        owned: true
+        displayOrder: 1
+        recipeIngredientId: 1
+      properties:
+        recipeIngredientId:
+          format: int64
+          type: integer
+        ingredientId:
+          format: int64
+          type: integer
+        displayName:
+          type: string
+        amount:
+          nullable: true
+          type: string
+        unit:
+          nullable: true
+          type: string
+        displayOrder:
+          format: int32
+          minimum: 1
+          type: integer
+        owned:
+          type: boolean
+      required:
+      - displayName
+      - displayOrder
+      - ingredientId
+      - owned
+      - recipeIngredientId
+      type: object
+    RecipeStep:
+      example:
+        content: content
+        order: 1
+      properties:
+        order:
+          format: int32
+          minimum: 1
+          type: integer
+        content:
+          type: string
+      required:
+      - content
+      - order
+      type: object
+    ErrorResponse:
+      example:
+        code: code
+        message: message
+      properties:
+        code:
+          type: string
+        message:
+          type: string
+      required:
+      - code
+      - message
+      type: object
+  securitySchemes:
+    bearerAuth:
+      bearerFormat: JWT
+      scheme: bearer
+      type: http

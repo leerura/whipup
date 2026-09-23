@@ -3,6 +3,7 @@
 OPENAPI_GENERATOR_IMAGE := openapitools/openapi-generator-cli:v7.19.0
 OPENAPI_SPEC := /local/docs/api/openapi.yaml
 OPENAPI_DOCKER := docker run --rm -v "$(CURDIR):/local" $(OPENAPI_GENERATOR_IMAGE)
+FLUTTER_API_CLIENT_DIR := app/packages/api_client
 
 PIPELINE_DIR := tools/data-pipeline
 INGREDIENT_DIR := $(PIPELINE_DIR)/ingredient
@@ -15,6 +16,8 @@ generate-api-flutter:
 		-g dart-dio \
 		-c /local/docs/api/codegen/flutter.yaml \
 		-o /local/app/packages/api_client
+	cd $(FLUTTER_API_CLIENT_DIR) && dart pub get
+	cd $(FLUTTER_API_CLIENT_DIR) && dart run build_runner build --delete-conflicting-outputs
 
 generate-api-backend:
 	$(OPENAPI_DOCKER) generate \
