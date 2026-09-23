@@ -32,7 +32,7 @@ application/json
 Authorization: Bearer <token>
 ```
 
-서비스 인증은 JWT Access Token을 사용한다. MVP에서는 Refresh Token을 사용하지 않으며 Access Token 유효기간은 7일이다. 실제 secret은 environment variable로 주입하고 Git에 저장하지 않는다.
+서비스 인증은 WhipUp JWT Access Token 하나만 사용한다. Refresh Token, Server Session, 인증 Cookie는 사용하지 않는다. Access Token 유효기간은 30일이며 HS256으로 서명한다. JWT에는 최소 `sub = WhipUp userId`, `iat`, `exp`를 포함한다. `JWT_SECRET`은 environment variable로 주입하고 Git에 저장하지 않는다. Kakao Access Token은 로그인 검증에만 사용하고 Backend DB에 저장하지 않는다.
 
 ## IDs
 
@@ -162,15 +162,15 @@ POST /api/v1/auth/kakao
 
 ### Request
 
-Client가 Kakao Login에서 획득한 Authorization Code를 Backend에 전달한다.
+Client는 Kakao Flutter SDK 로그인으로 획득한 Kakao Access Token을 Backend에 전달한다.
 
 ```json
 {
-  "authorizationCode": "kakao-authorization-code"
+  "kakaoAccessToken": "kakao-access-token"
 }
 ```
 
-Backend가 Authorization Code를 Kakao token으로 교환하고 Kakao 사용자 정보를 직접 검증한다. Client가 전달한 사용자 프로필 정보는 인증 근거로 신뢰하지 않는다.
+Backend는 전달받은 Kakao Access Token으로 Kakao 사용자 정보 API를 호출하여 provider user id를 검증한다. Client가 전달한 사용자 프로필 정보는 인증 근거로 신뢰하지 않는다. Kakao Access Token은 검증에만 사용하고 저장하지 않는다.
 
 ### Behavior
 
@@ -178,7 +178,7 @@ Backend가 Authorization Code를 Kakao token으로 교환하고 Kakao 사용자 
 2. `(provider, providerUserId)`에 해당하는 Auth Account를 조회한다.
 3. 최초 로그인이라면 User와 Auth Account를 생성한다.
 4. 기존 사용자라면 연결된 User를 조회한다.
-5. 서비스 내부 인증 정보를 발급한다.
+5. `sub = WhipUp userId`, `iat`, `exp`를 포함한 30일 만료 HS256 WhipUp JWT Access Token을 발급한다.
 6. 현재 User의 보유 재료 존재 여부를 함께 반환한다.
 
 ### Response `200 OK`
@@ -206,7 +206,7 @@ true  → 추천
 401 KAKAO_AUTH_FAILED
 ```
 
-Kakao 인증 실패 시 User 로그인 상태를 생성하지 않는다.
+Kakao 인증 실패 시 User 로그인 상태를 생성하지 않는다. 보호된 API에서 WhipUp JWT가 없거나 유효하지 않거나 만료된 경우에도 `401`을 반환한다. Client는 `401`을 받으면 저장된 WhipUp JWT를 삭제하고 로그인 화면으로 이동한다. 로그아웃은 별도 Backend API 없이 Client가 로컬 JWT를 삭제하여 처리한다.
 
 ---
 
@@ -688,7 +688,6 @@ MVP에서는 필요하지 않은 관리용 HTTP API를 미리 만들지 않는�
 
 현재 문서에서 의도적으로 확정하지 않은 항목:
 
-- 서비스 Access Token 상세 형식 / Refresh Token
 - Pagination 기본 page size
 - Recommendation 추가 정렬 기준
 - Ingredient Category 정책

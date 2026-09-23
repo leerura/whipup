@@ -223,9 +223,11 @@ API Error를 그대로 사용자에게 출력하지 않는다. 필요한 경우 
 
 ## 20. Authentication
 
-Kakao Login 성공 후 `POST /auth/kakao`를 통해 서비스 JWT를 받는다.
+Kakao Flutter SDK로 로그인하여 Kakao Access Token을 획득한 뒤 `POST /api/v1/auth/kakao`에 `kakaoAccessToken`을 전달하고 WhipUp JWT Access Token을 받는다. Kakao Access Token은 WhipUp API 인증에 사용하지 않는다.
 
-JWT는 Generated Code 내부에 저장하지 않는다. `core/auth` 또는 `core/network`에서 관리하고 Generated API Client 요청에 주입한다.
+WhipUp JWT는 30일 만료 Access Token 하나만 사용하며 Refresh Token과 인증 Cookie를 사용하지 않는다. Flutter는 JWT를 secure storage에 저장하고 `core/auth` 또는 `core/network`에서 관리하여 Generated API Client 요청에 `Authorization: Bearer <JWT>`로 주입한다. Generated Code 내부에 인증 상태를 저장하지 않는다.
+
+앱 재실행 시 저장된 JWT를 복원하여 사용한다. 보호된 API에서 `401`을 받으면 저장된 JWT를 삭제하고 로그인 화면으로 이동한다. 로그아웃은 별도 Backend API 없이 로컬 JWT를 삭제하여 처리한다.
 
 로그인 응답의 `hasOwnedIngredients`가 false면 Ingredient Setup, true면 Recommendation으로 이동한다. 구체적인 secure storage package는 구현 시 결정한다.
 

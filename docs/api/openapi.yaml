@@ -216,9 +216,9 @@ components:
 
     KakaoLoginRequest:
       type: object
-      required: [authorizationCode]
+      required: [kakaoAccessToken]
       properties:
-        authorizationCode: { type: string }
+        kakaoAccessToken: { type: string }
 
     LoginResponse:
       type: object

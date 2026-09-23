@@ -442,21 +442,23 @@ MVP 인증 흐름은 다음과 같다.
 
 ```plain text
 Flutter
-  ↓ Kakao Login
-Authorization Code
-  ↓
+  ↓ Kakao Flutter SDK Login
+Kakao Access Token
+  ↓ POST /api/v1/auth/kakao
 Spring Boot Backend
-  ↓ Authorization Code 교환
-Kakao Token / Kakao User 검증
+  ↓ Kakao User API 호출
+Kakao provider user id 검증
   ↓
 USER / USER_AUTH_ACCOUNT 조회 또는 생성
   ↓
-WhipUp JWT Access Token
+WhipUp JWT Access Token (HS256, 30일)
   ↓
-Flutter
+Flutter Secure Storage
+  ↓ Authorization: Bearer <JWT>
+Spring Boot API
 ```
 
-Client가 전달한 사용자 프로필을 신뢰하지 않고 Backend가 Kakao를 통해 인증 결과를 검증한다. 서비스 인증은 JWT Access Token을 사용한다. MVP에서는 Refresh Token을 만들지 않고 Access Token 유효기간은 7일로 한다. 인증 실패는 User API에서 기본적으로 `401 UNAUTHORIZED`로 처리한다.
+Client가 전달한 사용자 프로필을 신뢰하지 않고 Backend가 Kakao Access Token으로 Kakao 사용자 정보를 직접 검증한다. Kakao Access Token은 검증에만 사용하고 DB에 저장하지 않는다. 서비스 인증은 WhipUp JWT Access Token 하나만 사용하며 Refresh Token, Server Session, 인증 Cookie는 사용하지 않는다. JWT는 HS256으로 서명하고 `sub = WhipUp userId`, `iat`, `exp`를 포함하며 유효기간은 30일이다. `JWT_SECRET`은 environment variable로 주입한다. 인증 실패 또는 JWT 만료/무효는 `401 UNAUTHORIZED`로 처리한다.
 
 ---
 
