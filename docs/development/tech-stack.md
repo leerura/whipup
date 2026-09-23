@@ -15,8 +15,8 @@
 | API                | REST                                                       |
 | API Contract       | OpenAPI                                                    |
 | Flutter API Client | OpenAPI Generator generated client                         |
-| External Auth      | Kakao Login                                                |
-| Service Auth       | JWT Access Token                                           |
+| External Auth      | Kakao Flutter SDK + Kakao Access Token                     |
+| Service Auth       | WhipUp JWT Access Token (HS256, 30 days)                   |
 | Operational Data   | CSV Ingredient Dataset + JSON Recipe Dataset + Bulk Import |
 | Automated Test     | MVP 초기 범위에서 제외                                     |
 
@@ -38,7 +38,9 @@ REST API와 OpenAPI Contract를 사용한다. Flutter client는 OpenAPI Generato
 
 ## Authentication
 
-Kakao Login의 Authorization Code를 Backend로 전달하고 Backend가 Kakao와 token 교환 및 사용자 검증을 수행한다. 서비스 내부 인증은 JWT Access Token을 사용하며 MVP에서는 Refresh Token을 사용하지 않는다. Access Token 유효기간은 7일이다.
+Flutter는 Kakao Flutter SDK로 로그인하여 Kakao Access Token을 획득하고 `POST /api/v1/auth/kakao`에 전달한다. Backend는 별도의 Authorization Code → Token 교환을 수행하지 않고, 전달받은 Kakao Access Token으로 Kakao 사용자 정보 API를 호출하여 provider user id를 검증한다. Kakao Access Token은 로그인 검증에만 사용하고 DB에 저장하지 않는다.
+
+서비스 내부 인증은 WhipUp JWT Access Token 하나만 사용한다. JWT는 HS256으로 서명하고 `sub = WhipUp userId`, `iat`, `exp`를 포함하며 유효기간은 30일이다. Refresh Token, Server Session, 인증 Cookie는 사용하지 않는다. `JWT_SECRET`은 environment variable로 주입하고 Git에 저장하지 않는다.
 
 ## Operational Dataset
 
