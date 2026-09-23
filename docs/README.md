@@ -16,6 +16,10 @@ Repository로 옮긴 뒤에는 동일한 구조의 `docs/`가 Source of Truth가
 
 사용자 화면, 상태, 이동 규칙을 정의한다. 시각 디자인은 Figma를 따른다.
 
+## [flutter-development.md](development/flutter-development.md)
+
+Figma와 API Contract를 Flutter로 구현하는 구조, Riverpod 상태, Navigation, local search/asset, 화면별 API 연결과 AI Agent 구현 규칙을 정의한다.
+
 ## [domain.md](domain/domain.md)
 
 도메인 의미, canonical Ingredient, Recipe, Recommendation 계산 규칙과 향후 Ingredient 확장 방향을 정의한다.
@@ -59,15 +63,16 @@ OpenAPI Contract에서 Flutter Client와 Spring HTTP Layer를 생성하는 Gener
 ```plain text
 1. product.md
 2. ux.md (화면 작업 시)
-3. domain.md
-4. erd.md
-5. architecture.md
-6. tech-stack.md
-7. ai-data-pipeline.md (AI Dataset 생성 작업 시)
-8. data-import.md (운영 데이터 DB 반영 작업 시)
-9. api-specification.md
-10. openapi.yaml
-11. openapi-codegen.md
+3. flutter-development.md (Flutter 작업 시)
+4. domain.md
+5. erd.md
+6. architecture.md
+7. tech-stack.md
+8. ai-data-pipeline.md (AI Dataset 생성 작업 시)
+9. data-import.md (운영 데이터 DB 반영 작업 시)
+10. api-specification.md
+11. openapi.yaml
+12. openapi-codegen.md
 ```
 
 DB 작업:
@@ -89,6 +94,7 @@ JPA Entity
 ```plain text
 제품 요구사항              → product.md
 화면 / Navigation / State → ux.md
+Flutter Implementation    → flutter-development.md
 Business Rule             → domain.md
 Persistent Data Structure → erd.md
 Architecture / Packages   → architecture.md
@@ -128,6 +134,7 @@ Visual Design             → Figma
 ```plain text
 product.md              ✅
 ux.md                   ✅
+flutter-development.md  ✅
 domain.md               ✅
 erd.md                  ✅
 architecture.md         ✅
