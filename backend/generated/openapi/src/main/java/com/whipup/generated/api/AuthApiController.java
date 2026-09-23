@@ -27,9 +27,9 @@ import java.util.Map;
 import java.util.Optional;
 import jakarta.annotation.Generated;
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.19.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
 @Controller
-@RequestMapping("${openapi.whipUp.base-path:/api/v1}")
+@RequestMapping("${openapi.whipUp.base-path:}")
 public class AuthApiController implements AuthApi {
 
     private final AuthApiDelegate delegate;

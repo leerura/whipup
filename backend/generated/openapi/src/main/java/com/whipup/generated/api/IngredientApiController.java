@@ -1,8 +1,7 @@
 package com.whipup.generated.api;
 
-import com.whipup.generated.model.AddOwnedIngredientsRequest;
 import com.whipup.generated.model.ErrorResponse;
-import com.whipup.generated.model.OwnedIngredientListResponse;
+import com.whipup.generated.model.IngredientOptionListResponse;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,19 +26,19 @@ import java.util.Map;
 import java.util.Optional;
 import jakarta.annotation.Generated;
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.19.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
 @Controller
-@RequestMapping("${openapi.whipUp.base-path:/api/v1}")
-public class MeApiController implements MeApi {
+@RequestMapping("${openapi.whipUp.base-path:}")
+public class IngredientApiController implements IngredientApi {
 
-    private final MeApiDelegate delegate;
+    private final IngredientApiDelegate delegate;
 
-    public MeApiController(@Autowired(required = false) MeApiDelegate delegate) {
-        this.delegate = Optional.ofNullable(delegate).orElse(new MeApiDelegate() {});
+    public IngredientApiController(@Autowired(required = false) IngredientApiDelegate delegate) {
+        this.delegate = Optional.ofNullable(delegate).orElse(new IngredientApiDelegate() {});
     }
 
     @Override
-    public MeApiDelegate getDelegate() {
+    public IngredientApiDelegate getDelegate() {
         return delegate;
     }
 

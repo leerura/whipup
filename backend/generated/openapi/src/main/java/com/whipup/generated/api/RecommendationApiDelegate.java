@@ -17,18 +17,18 @@ import java.util.Optional;
 import jakarta.annotation.Generated;
 
 /**
- * A delegate to be called by the {@link RecommendationsApiController}}.
+ * A delegate to be called by the {@link RecommendationApiController}}.
  * Implement this interface with a {@link org.springframework.stereotype.Service} annotated class.
  */
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.19.0")
-public interface RecommendationsApiDelegate {
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
+public interface RecommendationApiDelegate {
 
     default Optional<NativeWebRequest> getRequest() {
         return Optional.empty();
     }
 
     /**
-     * GET /recommendations
+     * GET /api/v1/recommendations
      *
      * @param missingCount  (required)
      * @param page  (optional, default to 0)
@@ -37,7 +37,7 @@ public interface RecommendationsApiDelegate {
      *         or Invalid request (status code 400)
      *         or Authentication failed or missing (status code 401)
      *         or Request conflicts with current state (status code 409)
-     * @see RecommendationsApi#getRecommendations
+     * @see RecommendationApi#getRecommendations
      */
     default ResponseEntity<RecommendationPage> getRecommendations(Integer missingCount,
         Integer page,
@@ -45,7 +45,7 @@ public interface RecommendationsApiDelegate {
         getRequest().ifPresent(request -> {
             for (MediaType mediaType: MediaType.parseMediaTypes(request.getHeader("Accept"))) {
                 if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
-                    String exampleString = "{ \"size\" : 5, \"hasNext\" : true, \"page\" : 5, \"items\" : [ { \"missingCount\" : 6, \"name\" : \"name\", \"missingIngredients\" : [ { \"ingredientId\" : 1, \"name\" : \"name\" }, { \"ingredientId\" : 1, \"name\" : \"name\" } ], \"recipeId\" : 0, \"thumbnailUrl\" : \"https://openapi-generator.tech\" }, { \"missingCount\" : 6, \"name\" : \"name\", \"missingIngredients\" : [ { \"ingredientId\" : 1, \"name\" : \"name\" }, { \"ingredientId\" : 1, \"name\" : \"name\" } ], \"recipeId\" : 0, \"thumbnailUrl\" : \"https://openapi-generator.tech\" } ] }";
+                    String exampleString = "{ \"items\" : [ { \"recipeId\" : 0, \"name\" : \"name\", \"thumbnailUrl\" : \"https://openapi-generator.tech\", \"missingCount\" : 6, \"missingIngredients\" : [ { \"ingredientId\" : 1, \"name\" : \"name\" }, { \"ingredientId\" : 1, \"name\" : \"name\" } ] }, { \"recipeId\" : 0, \"name\" : \"name\", \"thumbnailUrl\" : \"https://openapi-generator.tech\", \"missingCount\" : 6, \"missingIngredients\" : [ { \"ingredientId\" : 1, \"name\" : \"name\" }, { \"ingredientId\" : 1, \"name\" : \"name\" } ] } ], \"page\" : 5, \"size\" : 5, \"hasNext\" : true }";
                     ApiUtil.setExampleResponse(request, "application/json", exampleString);
                     break;
                 }

@@ -104,3 +104,4 @@ class _$KakaoLoginRequestSerializer implements PrimitiveSerializer<KakaoLoginReq
   }
 }
 
+

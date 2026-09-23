@@ -5,11 +5,11 @@
 import 'package:api_client/api.dart';
 ```
 
-All URIs are relative to */api/v1*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**loginWithKakao**](AuthApi.md#loginwithkakao) | **POST** /auth/kakao | 
+[**loginWithKakao**](AuthApi.md#loginwithkakao) | **POST** /api/v1/auth/kakao | 
 
 
 # **loginWithKakao**

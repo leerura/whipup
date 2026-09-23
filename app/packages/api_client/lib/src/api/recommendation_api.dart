@@ -47,7 +47,7 @@ class RecommendationApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/recommendations';
+    final _path = r'/api/v1/recommendations';
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{

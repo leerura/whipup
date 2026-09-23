@@ -203,3 +203,4 @@ class _$RecipeDetailResponseSerializer implements PrimitiveSerializer<RecipeDeta
   }
 }
 
+

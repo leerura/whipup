@@ -104,3 +104,4 @@ class _$UserSummarySerializer implements PrimitiveSerializer<UserSummary> {
   }
 }
 
+

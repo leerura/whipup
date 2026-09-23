@@ -3,7 +3,7 @@ info:
   title: WhipUp API
   version: 1.0.0
 servers:
-- url: /api/v1
+- url: /
 security:
 - bearerAuth: []
 paths:
@@ -18,15 +18,13 @@ paths:
                 $ref: "#/components/schemas/HealthResponse"
           description: Backend is healthy
       security: []
-      servers:
-      - url: /
       tags:
       - Health
       x-accepts:
       - application/json
       x-tags:
       - tag: Health
-  /auth/kakao:
+  /api/v1/auth/kakao:
     post:
       operationId: loginWithKakao
       requestBody:
@@ -56,7 +54,7 @@ paths:
       - application/json
       x-tags:
       - tag: Auth
-  /ingredients:
+  /api/v1/ingredients:
     get:
       operationId: getIngredientOptions
       responses:
@@ -78,7 +76,7 @@ paths:
       - application/json
       x-tags:
       - tag: Ingredient
-  /me/ingredients:
+  /api/v1/me/ingredients:
     get:
       operationId: getOwnedIngredients
       responses:
@@ -146,7 +144,7 @@ paths:
       - application/json
       x-tags:
       - tag: OwnedIngredient
-  /me/ingredients/{userIngredientId}:
+  /api/v1/me/ingredients/{userIngredientId}:
     delete:
       operationId: deleteOwnedIngredient
       parameters:
@@ -179,7 +177,7 @@ paths:
       - application/json
       x-tags:
       - tag: OwnedIngredient
-  /recommendations:
+  /api/v1/recommendations:
     get:
       operationId: getRecommendations
       parameters:
@@ -247,7 +245,7 @@ paths:
       - application/json
       x-tags:
       - tag: Recommendation
-  /recipes/{recipeId}:
+  /api/v1/recipes/{recipeId}:
     get:
       operationId: getRecipeDetail
       parameters:
@@ -356,10 +354,10 @@ components:
       type: object
     LoginResponse:
       example:
-        hasOwnedIngredients: true
         accessToken: accessToken
         user:
           userId: 0
+        hasOwnedIngredients: true
       properties:
         accessToken:
           type: string
@@ -413,9 +411,9 @@ components:
       type: object
     OwnedIngredient:
       example:
+        userIngredientId: 0
         ingredientId: 6
         displayName: displayName
-        userIngredientId: 0
       properties:
         userIngredientId:
           format: int64
@@ -433,12 +431,12 @@ components:
     OwnedIngredientListResponse:
       example:
         items:
-        - ingredientId: 6
+        - userIngredientId: 0
+          ingredientId: 6
           displayName: displayName
-          userIngredientId: 0
-        - ingredientId: 6
+        - userIngredientId: 0
+          ingredientId: 6
           displayName: displayName
-          userIngredientId: 0
       properties:
         items:
           items:
@@ -473,28 +471,28 @@ components:
       type: object
     RecommendationPage:
       example:
+        items:
+        - recipeId: 0
+          name: name
+          thumbnailUrl: https://openapi-generator.tech
+          missingCount: 6
+          missingIngredients:
+          - ingredientId: 1
+            name: name
+          - ingredientId: 1
+            name: name
+        - recipeId: 0
+          name: name
+          thumbnailUrl: https://openapi-generator.tech
+          missingCount: 6
+          missingIngredients:
+          - ingredientId: 1
+            name: name
+          - ingredientId: 1
+            name: name
+        page: 5
         size: 5
         hasNext: true
-        page: 5
-        items:
-        - missingCount: 6
-          name: name
-          missingIngredients:
-          - ingredientId: 1
-            name: name
-          - ingredientId: 1
-            name: name
-          recipeId: 0
-          thumbnailUrl: https://openapi-generator.tech
-        - missingCount: 6
-          name: name
-          missingIngredients:
-          - ingredientId: 1
-            name: name
-          - ingredientId: 1
-            name: name
-          recipeId: 0
-          thumbnailUrl: https://openapi-generator.tech
       properties:
         items:
           items:
@@ -516,15 +514,15 @@ components:
       type: object
     RecommendationItem:
       example:
-        missingCount: 6
+        recipeId: 0
         name: name
+        thumbnailUrl: https://openapi-generator.tech
+        missingCount: 6
         missingIngredients:
         - ingredientId: 1
           name: name
         - ingredientId: 1
           name: name
-        recipeId: 0
-        thumbnailUrl: https://openapi-generator.tech
       properties:
         recipeId:
           format: int64
@@ -568,31 +566,31 @@ components:
       type: object
     RecipeDetailResponse:
       example:
-        missingCount: 0
-        shortsReference: https://openapi-generator.tech
-        name: name
-        ingredients:
-        - ingredientId: 5
-          amount: amount
-          unit: unit
-          displayName: displayName
-          owned: true
-          displayOrder: 1
-          recipeIngredientId: 1
-        - ingredientId: 5
-          amount: amount
-          unit: unit
-          displayName: displayName
-          owned: true
-          displayOrder: 1
-          recipeIngredientId: 1
-        steps:
-        - content: content
-          order: 1
-        - content: content
-          order: 1
         recipeId: 0
+        name: name
+        shortsReference: https://openapi-generator.tech
         thumbnailUrl: https://openapi-generator.tech
+        missingCount: 0
+        ingredients:
+        - recipeIngredientId: 1
+          ingredientId: 5
+          displayName: displayName
+          amount: amount
+          unit: unit
+          displayOrder: 1
+          owned: true
+        - recipeIngredientId: 1
+          ingredientId: 5
+          displayName: displayName
+          amount: amount
+          unit: unit
+          displayOrder: 1
+          owned: true
+        steps:
+        - order: 1
+          content: content
+        - order: 1
+          content: content
       properties:
         recipeId:
           format: int64
@@ -628,13 +626,13 @@ components:
       type: object
     RecipeIngredient:
       example:
+        recipeIngredientId: 1
         ingredientId: 5
+        displayName: displayName
         amount: amount
         unit: unit
-        displayName: displayName
-        owned: true
         displayOrder: 1
-        recipeIngredientId: 1
+        owned: true
       properties:
         recipeIngredientId:
           format: int64
@@ -665,8 +663,8 @@ components:
       type: object
     RecipeStep:
       example:
-        content: content
         order: 1
+        content: content
       properties:
         order:
           format: int32

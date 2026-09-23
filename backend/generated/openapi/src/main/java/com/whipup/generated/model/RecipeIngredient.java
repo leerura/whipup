@@ -22,7 +22,7 @@ import jakarta.annotation.Generated;
  * RecipeIngredient
  */
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.19.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
 public class RecipeIngredient {
 
   private Long recipeIngredientId;
@@ -70,6 +70,7 @@ public class RecipeIngredient {
     return recipeIngredientId;
   }
 
+  @JsonProperty("recipeIngredientId")
   public void setRecipeIngredientId(Long recipeIngredientId) {
     this.recipeIngredientId = recipeIngredientId;
   }
@@ -90,6 +91,7 @@ public class RecipeIngredient {
     return ingredientId;
   }
 
+  @JsonProperty("ingredientId")
   public void setIngredientId(Long ingredientId) {
     this.ingredientId = ingredientId;
   }
@@ -110,6 +112,7 @@ public class RecipeIngredient {
     return displayName;
   }
 
+  @JsonProperty("displayName")
   public void setDisplayName(String displayName) {
     this.displayName = displayName;
   }
@@ -124,7 +127,7 @@ public class RecipeIngredient {
    * @return amount
    */
   
-  @Schema(name = "amount", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
+  @Schema(name = "amount", requiredMode = Schema.RequiredMode.NOT_REQUIRED, nullable = true)
   @JsonProperty("amount")
   public JsonNullable<String> getAmount() {
     return amount;
@@ -144,7 +147,7 @@ public class RecipeIngredient {
    * @return unit
    */
   
-  @Schema(name = "unit", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
+  @Schema(name = "unit", requiredMode = Schema.RequiredMode.NOT_REQUIRED, nullable = true)
   @JsonProperty("unit")
   public JsonNullable<String> getUnit() {
     return unit;
@@ -171,6 +174,7 @@ public class RecipeIngredient {
     return displayOrder;
   }
 
+  @JsonProperty("displayOrder")
   public void setDisplayOrder(Integer displayOrder) {
     this.displayOrder = displayOrder;
   }
@@ -191,6 +195,7 @@ public class RecipeIngredient {
     return owned;
   }
 
+  @JsonProperty("owned")
   public void setOwned(Boolean owned) {
     this.owned = owned;
   }
@@ -249,10 +254,7 @@ public class RecipeIngredient {
    * (except the first line).
    */
   private String toIndentedString(@Nullable Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 }
 

@@ -106,3 +106,4 @@ class _$IngredientOptionListResponseSerializer implements PrimitiveSerializer<In
   }
 }
 
+

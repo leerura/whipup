@@ -17,18 +17,18 @@ import java.util.Optional;
 import jakarta.annotation.Generated;
 
 /**
- * A delegate to be called by the {@link MeApiController}}.
+ * A delegate to be called by the {@link OwnedIngredientApiController}}.
  * Implement this interface with a {@link org.springframework.stereotype.Service} annotated class.
  */
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.19.0")
-public interface MeApiDelegate {
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
+public interface OwnedIngredientApiDelegate {
 
     default Optional<NativeWebRequest> getRequest() {
         return Optional.empty();
     }
 
     /**
-     * POST /me/ingredients
+     * POST /api/v1/me/ingredients
      *
      * @param addOwnedIngredientsRequest  (required)
      * @return Created (status code 201)
@@ -36,13 +36,13 @@ public interface MeApiDelegate {
      *         or Resource not found (status code 404)
      *         or Request conflicts with current state (status code 409)
      *         or Authentication failed or missing (status code 401)
-     * @see MeApi#addOwnedIngredients
+     * @see OwnedIngredientApi#addOwnedIngredients
      */
     default ResponseEntity<OwnedIngredientListResponse> addOwnedIngredients(AddOwnedIngredientsRequest addOwnedIngredientsRequest) {
         getRequest().ifPresent(request -> {
             for (MediaType mediaType: MediaType.parseMediaTypes(request.getHeader("Accept"))) {
                 if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
-                    String exampleString = "{ \"items\" : [ { \"ingredientId\" : 6, \"displayName\" : \"displayName\", \"userIngredientId\" : 0 }, { \"ingredientId\" : 6, \"displayName\" : \"displayName\", \"userIngredientId\" : 0 } ] }";
+                    String exampleString = "{ \"items\" : [ { \"userIngredientId\" : 0, \"ingredientId\" : 6, \"displayName\" : \"displayName\" }, { \"userIngredientId\" : 0, \"ingredientId\" : 6, \"displayName\" : \"displayName\" } ] }";
                     ApiUtil.setExampleResponse(request, "application/json", exampleString);
                     break;
                 }
@@ -73,13 +73,13 @@ public interface MeApiDelegate {
     }
 
     /**
-     * DELETE /me/ingredients/{userIngredientId}
+     * DELETE /api/v1/me/ingredients/{userIngredientId}
      *
      * @param userIngredientId  (required)
      * @return Deleted (status code 204)
      *         or Resource not found (status code 404)
      *         or Authentication failed or missing (status code 401)
-     * @see MeApi#deleteOwnedIngredient
+     * @see OwnedIngredientApi#deleteOwnedIngredient
      */
     default ResponseEntity<Void> deleteOwnedIngredient(Long userIngredientId) {
         getRequest().ifPresent(request -> {
@@ -101,17 +101,17 @@ public interface MeApiDelegate {
     }
 
     /**
-     * GET /me/ingredients
+     * GET /api/v1/me/ingredients
      *
      * @return Owned ingredients (status code 200)
      *         or Authentication failed or missing (status code 401)
-     * @see MeApi#getOwnedIngredients
+     * @see OwnedIngredientApi#getOwnedIngredients
      */
     default ResponseEntity<OwnedIngredientListResponse> getOwnedIngredients() {
         getRequest().ifPresent(request -> {
             for (MediaType mediaType: MediaType.parseMediaTypes(request.getHeader("Accept"))) {
                 if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
-                    String exampleString = "{ \"items\" : [ { \"ingredientId\" : 6, \"displayName\" : \"displayName\", \"userIngredientId\" : 0 }, { \"ingredientId\" : 6, \"displayName\" : \"displayName\", \"userIngredientId\" : 0 } ] }";
+                    String exampleString = "{ \"items\" : [ { \"userIngredientId\" : 0, \"ingredientId\" : 6, \"displayName\" : \"displayName\" }, { \"userIngredientId\" : 0, \"ingredientId\" : 6, \"displayName\" : \"displayName\" } ] }";
                     ApiUtil.setExampleResponse(request, "application/json", exampleString);
                     break;
                 }

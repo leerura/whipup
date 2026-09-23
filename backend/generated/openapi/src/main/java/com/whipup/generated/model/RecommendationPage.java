@@ -23,10 +23,9 @@ import jakarta.annotation.Generated;
  * RecommendationPage
  */
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.19.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
 public class RecommendationPage {
 
-  @Valid
   private List<@Valid RecommendationItem> items = new ArrayList<>();
 
   private Integer page;
@@ -73,6 +72,7 @@ public class RecommendationPage {
     return items;
   }
 
+  @JsonProperty("items")
   public void setItems(List<@Valid RecommendationItem> items) {
     this.items = items;
   }
@@ -93,6 +93,7 @@ public class RecommendationPage {
     return page;
   }
 
+  @JsonProperty("page")
   public void setPage(Integer page) {
     this.page = page;
   }
@@ -113,6 +114,7 @@ public class RecommendationPage {
     return size;
   }
 
+  @JsonProperty("size")
   public void setSize(Integer size) {
     this.size = size;
   }
@@ -133,6 +135,7 @@ public class RecommendationPage {
     return hasNext;
   }
 
+  @JsonProperty("hasNext")
   public void setHasNext(Boolean hasNext) {
     this.hasNext = hasNext;
   }
@@ -174,10 +177,7 @@ public class RecommendationPage {
    * (except the first line).
    */
   private String toIndentedString(@Nullable Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 }
 

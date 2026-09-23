@@ -5,11 +5,11 @@
 import 'package:api_client/api.dart';
 ```
 
-All URIs are relative to */api/v1*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getIngredientOptions**](IngredientApi.md#getingredientoptions) | **GET** /ingredients | 
+[**getIngredientOptions**](IngredientApi.md#getingredientoptions) | **GET** /api/v1/ingredients | 
 
 
 # **getIngredientOptions**

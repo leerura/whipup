@@ -43,7 +43,7 @@ class AuthApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/auth/kakao';
+    final _path = r'/api/v1/auth/kakao';
     final _options = Options(
       method: r'POST',
       headers: <String, dynamic>{

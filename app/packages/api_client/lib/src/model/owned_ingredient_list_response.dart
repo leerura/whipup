@@ -106,3 +106,4 @@ class _$OwnedIngredientListResponseSerializer implements PrimitiveSerializer<Own
   }
 }
 
+

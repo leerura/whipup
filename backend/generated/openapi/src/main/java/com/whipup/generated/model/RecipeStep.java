@@ -19,7 +19,7 @@ import jakarta.annotation.Generated;
  * RecipeStep
  */
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.19.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
 public class RecipeStep {
 
   private Integer order;
@@ -55,6 +55,7 @@ public class RecipeStep {
     return order;
   }
 
+  @JsonProperty("order")
   public void setOrder(Integer order) {
     this.order = order;
   }
@@ -75,6 +76,7 @@ public class RecipeStep {
     return content;
   }
 
+  @JsonProperty("content")
   public void setContent(String content) {
     this.content = content;
   }
@@ -112,10 +114,7 @@ public class RecipeStep {
    * (except the first line).
    */
   private String toIndentedString(@Nullable Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 }
 

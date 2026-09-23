@@ -1,8 +1,7 @@
 package com.whipup.generated.api;
 
 import com.whipup.generated.model.ErrorResponse;
-import org.springframework.lang.Nullable;
-import com.whipup.generated.model.RecommendationPage;
+import com.whipup.generated.model.RecipeDetailResponse;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,19 +26,19 @@ import java.util.Map;
 import java.util.Optional;
 import jakarta.annotation.Generated;
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.19.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
 @Controller
-@RequestMapping("${openapi.whipUp.base-path:/api/v1}")
-public class RecommendationsApiController implements RecommendationsApi {
+@RequestMapping("${openapi.whipUp.base-path:}")
+public class RecipeApiController implements RecipeApi {
 
-    private final RecommendationsApiDelegate delegate;
+    private final RecipeApiDelegate delegate;
 
-    public RecommendationsApiController(@Autowired(required = false) RecommendationsApiDelegate delegate) {
-        this.delegate = Optional.ofNullable(delegate).orElse(new RecommendationsApiDelegate() {});
+    public RecipeApiController(@Autowired(required = false) RecipeApiDelegate delegate) {
+        this.delegate = Optional.ofNullable(delegate).orElse(new RecipeApiDelegate() {});
     }
 
     @Override
-    public RecommendationsApiDelegate getDelegate() {
+    public RecipeApiDelegate getDelegate() {
         return delegate;
     }
 

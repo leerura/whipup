@@ -16,22 +16,22 @@ import java.util.Optional;
 import jakarta.annotation.Generated;
 
 /**
- * A delegate to be called by the {@link IngredientsApiController}}.
+ * A delegate to be called by the {@link IngredientApiController}}.
  * Implement this interface with a {@link org.springframework.stereotype.Service} annotated class.
  */
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.19.0")
-public interface IngredientsApiDelegate {
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
+public interface IngredientApiDelegate {
 
     default Optional<NativeWebRequest> getRequest() {
         return Optional.empty();
     }
 
     /**
-     * GET /ingredients
+     * GET /api/v1/ingredients
      *
      * @return All ingredient options (status code 200)
      *         or Authentication failed or missing (status code 401)
-     * @see IngredientsApi#getIngredientOptions
+     * @see IngredientApi#getIngredientOptions
      */
     default ResponseEntity<IngredientOptionListResponse> getIngredientOptions() {
         getRequest().ifPresent(request -> {

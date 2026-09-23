@@ -40,7 +40,7 @@ class IngredientApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/ingredients';
+    final _path = r'/api/v1/ingredients';
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{

@@ -120,3 +120,4 @@ class _$IngredientOptionSerializer implements PrimitiveSerializer<IngredientOpti
   }
 }
 
+

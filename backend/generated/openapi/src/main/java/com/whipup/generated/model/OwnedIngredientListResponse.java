@@ -23,10 +23,9 @@ import jakarta.annotation.Generated;
  * OwnedIngredientListResponse
  */
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.19.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
 public class OwnedIngredientListResponse {
 
-  @Valid
   private List<@Valid OwnedIngredient> items = new ArrayList<>();
 
   public OwnedIngredientListResponse() {
@@ -64,6 +63,7 @@ public class OwnedIngredientListResponse {
     return items;
   }
 
+  @JsonProperty("items")
   public void setItems(List<@Valid OwnedIngredient> items) {
     this.items = items;
   }
@@ -99,10 +99,7 @@ public class OwnedIngredientListResponse {
    * (except the first line).
    */
   private String toIndentedString(@Nullable Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 }
 

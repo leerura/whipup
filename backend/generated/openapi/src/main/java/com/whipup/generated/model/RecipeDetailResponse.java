@@ -25,7 +25,7 @@ import jakarta.annotation.Generated;
  * RecipeDetailResponse
  */
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.19.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
 public class RecipeDetailResponse {
 
   private Long recipeId;
@@ -38,10 +38,8 @@ public class RecipeDetailResponse {
 
   private Integer missingCount;
 
-  @Valid
   private List<@Valid RecipeIngredient> ingredients = new ArrayList<>();
 
-  @Valid
   private List<@Valid RecipeStep> steps = new ArrayList<>();
 
   public RecipeDetailResponse() {
@@ -77,6 +75,7 @@ public class RecipeDetailResponse {
     return recipeId;
   }
 
+  @JsonProperty("recipeId")
   public void setRecipeId(Long recipeId) {
     this.recipeId = recipeId;
   }
@@ -97,6 +96,7 @@ public class RecipeDetailResponse {
     return name;
   }
 
+  @JsonProperty("name")
   public void setName(String name) {
     this.name = name;
   }
@@ -117,6 +117,7 @@ public class RecipeDetailResponse {
     return shortsReference;
   }
 
+  @JsonProperty("shortsReference")
   public void setShortsReference(URI shortsReference) {
     this.shortsReference = shortsReference;
   }
@@ -137,6 +138,7 @@ public class RecipeDetailResponse {
     return thumbnailUrl;
   }
 
+  @JsonProperty("thumbnailUrl")
   public void setThumbnailUrl(URI thumbnailUrl) {
     this.thumbnailUrl = thumbnailUrl;
   }
@@ -158,6 +160,7 @@ public class RecipeDetailResponse {
     return missingCount;
   }
 
+  @JsonProperty("missingCount")
   public void setMissingCount(Integer missingCount) {
     this.missingCount = missingCount;
   }
@@ -186,6 +189,7 @@ public class RecipeDetailResponse {
     return ingredients;
   }
 
+  @JsonProperty("ingredients")
   public void setIngredients(List<@Valid RecipeIngredient> ingredients) {
     this.ingredients = ingredients;
   }
@@ -214,6 +218,7 @@ public class RecipeDetailResponse {
     return steps;
   }
 
+  @JsonProperty("steps")
   public void setSteps(List<@Valid RecipeStep> steps) {
     this.steps = steps;
   }
@@ -261,10 +266,7 @@ public class RecipeDetailResponse {
    * (except the first line).
    */
   private String toIndentedString(@Nullable Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 }
 

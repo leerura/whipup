@@ -54,6 +54,34 @@ part 'serializers.g.dart';
   UserSummary,
 ])
 Serializers serializers = (_$serializers.toBuilder()
+      ..addBuilderFactory(
+        const FullType(BuiltList, [FullType(OwnedIngredientSelection)]),
+        () => ListBuilder<OwnedIngredientSelection>(),
+      )
+      ..addBuilderFactory(
+        const FullType(BuiltList, [FullType(MissingIngredient)]),
+        () => ListBuilder<MissingIngredient>(),
+      )
+      ..addBuilderFactory(
+        const FullType(BuiltList, [FullType(OwnedIngredient)]),
+        () => ListBuilder<OwnedIngredient>(),
+      )
+      ..addBuilderFactory(
+        const FullType(BuiltList, [FullType(RecipeIngredient)]),
+        () => ListBuilder<RecipeIngredient>(),
+      )
+      ..addBuilderFactory(
+        const FullType(BuiltList, [FullType(RecipeStep)]),
+        () => ListBuilder<RecipeStep>(),
+      )
+      ..addBuilderFactory(
+        const FullType(BuiltList, [FullType(RecommendationItem)]),
+        () => ListBuilder<RecommendationItem>(),
+      )
+      ..addBuilderFactory(
+        const FullType(BuiltList, [FullType(IngredientOption)]),
+        () => ListBuilder<IngredientOption>(),
+      )
       ..add(const OneOfSerializer())
       ..add(const AnyOfSerializer())
       ..add(const DateSerializer())

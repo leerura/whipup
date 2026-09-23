@@ -3,15 +3,13 @@ info:
   title: WhipUp API
   version: 1.0.0
 servers:
-  - url: /api/v1
+  - url: /
 
 paths:
   /health:
     get:
       tags: [Health]
       operationId: getHealth
-      servers:
-        - url: /
       security: []
       responses:
         '200':
@@ -21,7 +19,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/HealthResponse'
 
-  /auth/kakao:
+  /api/v1/auth/kakao:
     post:
       tags: [Auth]
       operationId: loginWithKakao
@@ -42,7 +40,7 @@ paths:
         '401':
           $ref: '#/components/responses/Unauthorized'
 
-  /ingredients:
+  /api/v1/ingredients:
     get:
       tags: [Ingredient]
       operationId: getIngredientOptions
@@ -56,7 +54,7 @@ paths:
         '401':
           $ref: '#/components/responses/Unauthorized'
 
-  /me/ingredients:
+  /api/v1/me/ingredients:
     get:
       tags: [OwnedIngredient]
       operationId: getOwnedIngredients
@@ -94,7 +92,7 @@ paths:
         '401':
           $ref: '#/components/responses/Unauthorized'
 
-  /me/ingredients/{userIngredientId}:
+  /api/v1/me/ingredients/{userIngredientId}:
     delete:
       tags: [OwnedIngredient]
       operationId: deleteOwnedIngredient
@@ -110,7 +108,7 @@ paths:
         '401':
           $ref: '#/components/responses/Unauthorized'
 
-  /recommendations:
+  /api/v1/recommendations:
     get:
       tags: [Recommendation]
       operationId: getRecommendations
@@ -138,7 +136,7 @@ paths:
         '409':
           $ref: '#/components/responses/Conflict'
 
-  /recipes/{recipeId}:
+  /api/v1/recipes/{recipeId}:
     get:
       tags: [Recipe]
       operationId: getRecipeDetail

@@ -19,7 +19,7 @@ import jakarta.annotation.Generated;
  * ErrorResponse
  */
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.19.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
 public class ErrorResponse {
 
   private String code;
@@ -54,6 +54,7 @@ public class ErrorResponse {
     return code;
   }
 
+  @JsonProperty("code")
   public void setCode(String code) {
     this.code = code;
   }
@@ -74,6 +75,7 @@ public class ErrorResponse {
     return message;
   }
 
+  @JsonProperty("message")
   public void setMessage(String message) {
     this.message = message;
   }
@@ -111,10 +113,7 @@ public class ErrorResponse {
    * (except the first line).
    */
   private String toIndentedString(@Nullable Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 }
 

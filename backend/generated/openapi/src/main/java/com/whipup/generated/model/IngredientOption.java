@@ -19,7 +19,7 @@ import jakarta.annotation.Generated;
  * IngredientOption
  */
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.19.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
 public class IngredientOption {
 
   private Long ingredientId;
@@ -54,6 +54,7 @@ public class IngredientOption {
     return ingredientId;
   }
 
+  @JsonProperty("ingredientId")
   public void setIngredientId(Long ingredientId) {
     this.ingredientId = ingredientId;
   }
@@ -74,6 +75,7 @@ public class IngredientOption {
     return displayName;
   }
 
+  @JsonProperty("displayName")
   public void setDisplayName(String displayName) {
     this.displayName = displayName;
   }
@@ -111,10 +113,7 @@ public class IngredientOption {
    * (except the first line).
    */
   private String toIndentedString(@Nullable Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 }
 

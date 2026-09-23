@@ -120,3 +120,4 @@ class _$ErrorResponseSerializer implements PrimitiveSerializer<ErrorResponse> {
   }
 }
 
+

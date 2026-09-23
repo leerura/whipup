@@ -18,7 +18,7 @@ import jakarta.annotation.Generated;
  * A delegate to be called by the {@link HealthApiController}}.
  * Implement this interface with a {@link org.springframework.stereotype.Service} annotated class.
  */
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.19.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
 public interface HealthApiDelegate {
 
     default Optional<NativeWebRequest> getRequest() {

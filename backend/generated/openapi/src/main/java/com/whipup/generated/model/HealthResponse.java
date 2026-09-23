@@ -19,7 +19,7 @@ import jakarta.annotation.Generated;
  * HealthResponse
  */
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.19.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
 public class HealthResponse {
 
   private String status;
@@ -51,6 +51,7 @@ public class HealthResponse {
     return status;
   }
 
+  @JsonProperty("status")
   public void setStatus(String status) {
     this.status = status;
   }
@@ -86,10 +87,7 @@ public class HealthResponse {
    * (except the first line).
    */
   private String toIndentedString(@Nullable Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 }
 

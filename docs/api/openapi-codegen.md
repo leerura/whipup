@@ -32,7 +32,7 @@ OpenAPI Generator는 개발 머신에 직접 설치하지 않고 공식 Docker I
 초기 고정 버전:
 
 ```plain text
-openapitools/openapi-generator-cli:v7.19.0
+openapitools/openapi-generator-cli:v7.25.0
 ```
 
 `latest` tag는 사용하지 않는다. Generator는 상시 서비스가 아니므로 `compose.yaml`에 포함하지 않는다. 버전을 변경하면 Flutter와 Backend Generated Code를 모두 다시 생성하고 diff를 확인한다.
@@ -135,12 +135,13 @@ Backend HTTP Contract는 `spring` generator를 사용한다.
 
 ```plain text
 delegatePattern=true
-useSpringBoot3=true
+useSpringBoot4=true
+useJackson3=true
 useBeanValidation=true
 interfaceOnly=false
 ```
 
-`useSpringBoot3=true`를 사용하여 Spring Boot 3 / Jakarta namespace 기준으로 생성한다.
+`useSpringBoot4=true`와 `useJackson3=true`를 사용하여 Spring Boot 4 / Jackson 3 / Jakarta namespace 기준으로 생성한다.
 
 OpenAPI Generator의 책임은 HTTP Contract Layer까지다.
 
@@ -209,7 +210,7 @@ Flutter 개념 명령:
 ```bash
 docker run --rm \
   -v "${PWD}:/local" \
-  openapitools/openapi-generator-cli:v7.19.0 generate \
+  openapitools/openapi-generator-cli:v7.25.0 generate \
   -i /local/docs/api/openapi.yaml \
   -g dart-dio \
   -c /local/docs/api/codegen/flutter.yaml \
@@ -221,7 +222,7 @@ Backend 개념 명령:
 ```bash
 docker run --rm \
   -v "${PWD}:/local" \
-  openapitools/openapi-generator-cli:v7.19.0 generate \
+  openapitools/openapi-generator-cli:v7.25.0 generate \
   -i /local/docs/api/openapi.yaml \
   -g spring \
   -c /local/docs/api/codegen/backend.yaml \

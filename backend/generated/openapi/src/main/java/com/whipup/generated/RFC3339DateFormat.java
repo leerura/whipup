@@ -1,6 +1,6 @@
 package com.whipup.generated;
 
-import com.fasterxml.jackson.databind.util.StdDateFormat;
+import tools.jackson.databind.util.StdDateFormat;
 
 import java.text.DateFormat;
 import java.text.FieldPosition;

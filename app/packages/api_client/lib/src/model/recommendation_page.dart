@@ -154,3 +154,4 @@ class _$RecommendationPageSerializer implements PrimitiveSerializer<Recommendati
   }
 }
 
+

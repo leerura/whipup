@@ -20,7 +20,7 @@ import jakarta.annotation.Generated;
  * A delegate to be called by the {@link AuthApiController}}.
  * Implement this interface with a {@link org.springframework.stereotype.Service} annotated class.
  */
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.19.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
 public interface AuthApiDelegate {
 
     default Optional<NativeWebRequest> getRequest() {
@@ -28,7 +28,7 @@ public interface AuthApiDelegate {
     }
 
     /**
-     * POST /auth/kakao
+     * POST /api/v1/auth/kakao
      *
      * @param kakaoLoginRequest  (required)
      * @return Login success (status code 200)
@@ -39,7 +39,7 @@ public interface AuthApiDelegate {
         getRequest().ifPresent(request -> {
             for (MediaType mediaType: MediaType.parseMediaTypes(request.getHeader("Accept"))) {
                 if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
-                    String exampleString = "{ \"hasOwnedIngredients\" : true, \"accessToken\" : \"accessToken\", \"user\" : { \"userId\" : 0 } }";
+                    String exampleString = "{ \"accessToken\" : \"accessToken\", \"user\" : { \"userId\" : 0 }, \"hasOwnedIngredients\" : true }";
                     ApiUtil.setExampleResponse(request, "application/json", exampleString);
                     break;
                 }

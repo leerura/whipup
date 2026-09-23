@@ -171,6 +171,7 @@ class _$RecommendationItemSerializer implements PrimitiveSerializer<Recommendati
   }
 }
 
+
 class RecommendationItemMissingCountEnum extends EnumClass {
 
   @BuiltValueEnumConst(wireNumber: 0)

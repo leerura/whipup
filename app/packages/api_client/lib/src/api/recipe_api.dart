@@ -43,7 +43,7 @@ class RecipeApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/recipes/{recipeId}'.replaceAll('{' r'recipeId' '}', encodeQueryParameter(_serializers, recipeId, const FullType(int)).toString());
+    final _path = r'/api/v1/recipes/{recipeId}'.replaceAll('{' r'recipeId' '}', encodeQueryParameter(_serializers, recipeId, const FullType(int)).toString());
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{

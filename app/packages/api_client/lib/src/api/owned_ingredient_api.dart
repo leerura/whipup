@@ -44,7 +44,7 @@ class OwnedIngredientApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/me/ingredients';
+    final _path = r'/api/v1/me/ingredients';
     final _options = Options(
       method: r'POST',
       headers: <String, dynamic>{
@@ -145,7 +145,7 @@ class OwnedIngredientApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/me/ingredients/{userIngredientId}'.replaceAll('{' r'userIngredientId' '}', encodeQueryParameter(_serializers, userIngredientId, const FullType(int)).toString());
+    final _path = r'/api/v1/me/ingredients/{userIngredientId}'.replaceAll('{' r'userIngredientId' '}', encodeQueryParameter(_serializers, userIngredientId, const FullType(int)).toString());
     final _options = Options(
       method: r'DELETE',
       headers: <String, dynamic>{
@@ -196,7 +196,7 @@ class OwnedIngredientApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/me/ingredients';
+    final _path = r'/api/v1/me/ingredients';
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{

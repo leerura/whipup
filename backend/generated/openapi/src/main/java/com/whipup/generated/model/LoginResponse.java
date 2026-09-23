@@ -20,7 +20,7 @@ import jakarta.annotation.Generated;
  * LoginResponse
  */
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.19.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
 public class LoginResponse {
 
   private String accessToken;
@@ -58,6 +58,7 @@ public class LoginResponse {
     return accessToken;
   }
 
+  @JsonProperty("accessToken")
   public void setAccessToken(String accessToken) {
     this.accessToken = accessToken;
   }
@@ -78,6 +79,7 @@ public class LoginResponse {
     return user;
   }
 
+  @JsonProperty("user")
   public void setUser(UserSummary user) {
     this.user = user;
   }
@@ -98,6 +100,7 @@ public class LoginResponse {
     return hasOwnedIngredients;
   }
 
+  @JsonProperty("hasOwnedIngredients")
   public void setHasOwnedIngredients(Boolean hasOwnedIngredients) {
     this.hasOwnedIngredients = hasOwnedIngredients;
   }
@@ -137,10 +140,7 @@ public class LoginResponse {
    * (except the first line).
    */
   private String toIndentedString(@Nullable Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 }
 

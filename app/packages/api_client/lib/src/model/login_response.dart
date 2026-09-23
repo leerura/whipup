@@ -137,3 +137,4 @@ class _$LoginResponseSerializer implements PrimitiveSerializer<LoginResponse> {
   }
 }
 
+

@@ -19,7 +19,7 @@ import jakarta.annotation.Generated;
  * KakaoLoginRequest
  */
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.19.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
 public class KakaoLoginRequest {
 
   private String authorizationCode;
@@ -51,6 +51,7 @@ public class KakaoLoginRequest {
     return authorizationCode;
   }
 
+  @JsonProperty("authorizationCode")
   public void setAuthorizationCode(String authorizationCode) {
     this.authorizationCode = authorizationCode;
   }
@@ -86,10 +87,7 @@ public class KakaoLoginRequest {
    * (except the first line).
    */
   private String toIndentedString(@Nullable Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 }
 

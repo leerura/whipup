@@ -206,3 +206,4 @@ class _$RecipeIngredientSerializer implements PrimitiveSerializer<RecipeIngredie
   }
 }
 
+

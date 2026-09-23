@@ -5,13 +5,13 @@
 import 'package:api_client/api.dart';
 ```
 
-All URIs are relative to */api/v1*
+All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**addOwnedIngredients**](OwnedIngredientApi.md#addownedingredients) | **POST** /me/ingredients | 
-[**deleteOwnedIngredient**](OwnedIngredientApi.md#deleteownedingredient) | **DELETE** /me/ingredients/{userIngredientId} | 
-[**getOwnedIngredients**](OwnedIngredientApi.md#getownedingredients) | **GET** /me/ingredients | 
+[**addOwnedIngredients**](OwnedIngredientApi.md#addownedingredients) | **POST** /api/v1/me/ingredients | 
+[**deleteOwnedIngredient**](OwnedIngredientApi.md#deleteownedingredient) | **DELETE** /api/v1/me/ingredients/{userIngredientId} | 
+[**getOwnedIngredients**](OwnedIngredientApi.md#getownedingredients) | **GET** /api/v1/me/ingredients | 
 
 
 # **addOwnedIngredients**

@@ -25,7 +25,7 @@ import jakarta.annotation.Generated;
  * RecommendationItem
  */
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.19.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
 public class RecommendationItem {
 
   private Long recipeId;
@@ -73,7 +73,6 @@ public class RecommendationItem {
 
   private MissingCountEnum missingCount;
 
-  @Valid
   private List<@Valid MissingIngredient> missingIngredients = new ArrayList<>();
 
   public RecommendationItem() {
@@ -107,6 +106,7 @@ public class RecommendationItem {
     return recipeId;
   }
 
+  @JsonProperty("recipeId")
   public void setRecipeId(Long recipeId) {
     this.recipeId = recipeId;
   }
@@ -127,6 +127,7 @@ public class RecommendationItem {
     return name;
   }
 
+  @JsonProperty("name")
   public void setName(String name) {
     this.name = name;
   }
@@ -147,6 +148,7 @@ public class RecommendationItem {
     return thumbnailUrl;
   }
 
+  @JsonProperty("thumbnailUrl")
   public void setThumbnailUrl(URI thumbnailUrl) {
     this.thumbnailUrl = thumbnailUrl;
   }
@@ -167,6 +169,7 @@ public class RecommendationItem {
     return missingCount;
   }
 
+  @JsonProperty("missingCount")
   public void setMissingCount(MissingCountEnum missingCount) {
     this.missingCount = missingCount;
   }
@@ -195,6 +198,7 @@ public class RecommendationItem {
     return missingIngredients;
   }
 
+  @JsonProperty("missingIngredients")
   public void setMissingIngredients(List<@Valid MissingIngredient> missingIngredients) {
     this.missingIngredients = missingIngredients;
   }
@@ -238,10 +242,7 @@ public class RecommendationItem {
    * (except the first line).
    */
   private String toIndentedString(@Nullable Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 }
 
