@@ -160,23 +160,13 @@ DB의 `DRAFT` status는 향후 운영 확장을 위해 허용하지만 MVP 기�
 
 # Import Behavior
 
-## Recipe Upsert
+최신 상세 동작은 아래 `Dataset Import Contract`를 따른다.
 
-`dataset_key` 기준으로 idempotent upsert한다.
-
-- DB에 key가 없으면 insert
-- DB에 같은 key가 있으면 update
-- 같은 Dataset을 여러 번 실행해도 Recipe가 계속 중복 생성되지 않아야 한다.
-
-## Deletion
-
-Dataset 파일이 삭제되었다는 이유만으로 DB Recipe를 자동 삭제하지 않는다. Importer는 insert/update를 담당한다. Recipe 삭제가 필요하면 별도의 명시적인 작업으로 수행한다.
-
-## Failure Unit
-
-한 Recipe의 validation/import가 실패해도 다른 정상 Recipe의 import는 계속한다. 실패한 Recipe는 DB에 반영하지 않고 실행 결과에 실패 파일/key와 원인을 명확히 출력한다.
-
-부분적으로 불완전한 하나의 Recipe를 저장하지 않는다.
+- Ingredient Master는 `ingredients.csv` 기준 전체 동기화한다.
+- Recipe는 `dataset_key` 기준으로 insert/update하며 child data는 현재 JSON 기준 Replace한다.
+- Recipe Dataset에서 제거된 Recipe는 DB에서도 삭제한다.
+- 전체 Dataset을 먼저 검증하며 하나라도 실패하면 DB를 변경하지 않는다.
+- 전체 DB synchronization은 하나의 transaction으로 처리하며 오류 시 전체 rollback한다.
 
 ---
 
@@ -201,9 +191,9 @@ Published로 import하려는 Recipe는 최소 다음을 만족해야 한다.
 
 # Execution
 
-Importer는 Spring Boot 애플리케이션 시작 시 자동 실행하지 않는다. 개발자/운영자가 의도적으로 실행하는 **명시적 CLI/command** 형태로 제공한다.
+Importer는 Spring Boot 애플리케이션 시작 시 자동 실행하지 않는다. 개발자/운영자가 의도적으로 `make import-data`를 실행할 때만 동작한다.
 
-정확한 Gradle task 또는 Spring command 구현 방식은 코드 구조에 맞게 정할 수 있지만, HTTP Admin API로 노출하지 않는다.
+Makefile은 Docker Compose 기반 local PostgreSQL에 연결되는 backend Import Command의 진입점을 제공한다. 정확한 내부 Spring/Gradle 실행 방식은 코드 구조에 맞게 정할 수 있으며 HTTP Admin API로 노출하지 않는다.
 
 ---
 
@@ -218,3 +208,91 @@ Dataset + Bulk Importer
 ```
 
 대량 Recipe/Ingredient content를 Flyway SQL migration에 넣지 않는다.
+
+---
+
+# Dataset Import Contract
+
+이 절은 MVP 개발 환경의 deterministic Dataset Import 구현 명세다.
+
+## Source of Truth
+
+MVP 개발 환경의 운영 데이터 Source of Truth는 Repository Dataset이다.
+
+- Ingredient Master: `data/ingredients.csv`
+- Recipe Dataset: `data/recipes/*.json`
+
+PostgreSQL의 Ingredient / Recipe editorial data를 직접 관리하지 않는다. Dataset을 수정한 뒤 Import Command를 실행해 DB에 반영한다. 이 정책은 MVP 개발용이며 실서비스 배포 이후의 운영 데이터 관리 방식은 별도로 설계한다.
+
+## Responsibility Boundary
+
+AI / Gemini의 책임은 Validated Dataset 생성까지다. DB 반영은 AI를 호출하지 않는 deterministic Import Command가 수행한다.
+
+Ingredient CSV / Recipe JSON → 전체 Validation → Import Command → PostgreSQL.
+
+Importer는 PostgreSQL Docker Volume을 직접 조작하지 않는다. 일반적인 PostgreSQL connection을 통해 write하고, 실제 영속화는 PostgreSQL container와 `postgres_data` volume이 담당한다.
+
+## Recipe Dataset → Database Mapping
+
+### RECIPE
+
+- `key → dataset_key`
+- `name → name`
+- `shortsReference → shorts_reference`
+- import된 Recipe의 `status = PUBLISHED`
+- `recipe_id`는 DB에서 생성한다.
+
+### RECIPE_INGREDIENT
+
+- `canonicalIngredient → INGREDIENT.canonical_name` 조회 후 `ingredient_id`
+- `displayName → display_name`
+- `rawText → raw_text`
+- `amount → amount`
+- `unit → unit`
+- ingredients 배열의 index + 1 → `display_order`
+- `mappingStatus`는 Pipeline/Dataset validation metadata이며 DB에 저장하지 않는다.
+
+### RECIPE_STEP
+
+- steps 배열의 index + 1 → `step_order`
+- step String → `content`
+
+## Full Dataset Validation
+
+DB 변경 전에 **전체 Dataset을 먼저 검증**한다. 하나라도 실패하면 Import 전체를 중단하고 DB를 변경하지 않는다.
+
+Ingredient Dataset은 CSV header `canonical_name`, blank/trim 후 빈 값 금지, canonical_name 중복 금지를 검증한다.
+
+Recipe Dataset은 key 존재 및 전체 중복 금지, name/shortsReference 존재, ingredients/steps 비어 있지 않음, 모든 `mappingStatus = MAPPED`, canonicalIngredient 존재 및 현재 Ingredient Dataset에 존재, 동일 Recipe 내 canonicalIngredient 중복 금지, displayName/rawText 존재를 검증한다. amount와 unit은 nullable이다.
+
+## Transaction Policy
+
+모든 Validation이 성공한 이후 DB synchronization을 시작한다. **전체 Dataset Import를 하나의 transaction으로 처리**한다. DB constraint violation 또는 예상하지 못한 오류가 발생하면 전체 transaction을 rollback하며 부분 Import 상태를 허용하지 않는다.
+
+## Ingredient Full Synchronization
+
+`data/ingredients.csv`는 Ingredient Master 전체의 Source of Truth다. Import 완료 후 DB의 INGREDIENT는 CSV와 동기화되어야 한다.
+
+- CSV에 있고 DB에 없으면 INSERT
+- CSV와 DB 모두에 있으면 유지
+- DB에 있지만 CSV에 없으면 DELETE
+
+Importer는 Ingredient 삭제 때문에 참조 데이터를 자동 수정하거나 삭제하지 않는다. 삭제 대상 Ingredient를 USER_INGREDIENT 또는 기타 데이터가 참조하지 않도록 Dataset 관리자가 직접 보장한다. FK constraint 때문에 삭제할 수 없으면 Import 전체를 실패시키고 rollback한다.
+
+## Recipe Synchronization
+
+Recipe는 `dataset_key`를 식별자로 사용한다. DB에 동일한 dataset_key가 없으면 RECIPE와 현재 Dataset의 RECIPE_INGREDIENT / RECIPE_STEP을 INSERT한다.
+
+DB에 동일한 dataset_key가 있으면 RECIPE 기본 정보를 UPDATE하고, 기존 RECIPE_INGREDIENT와 RECIPE_STEP을 각각 DELETE한 뒤 현재 Dataset 기준으로 다시 INSERT한다. Recipe child data는 현재 JSON을 기준으로 Replace한다.
+
+**Repository의 `data/recipes/*.json`에 존재하지 않는 기존 DB Recipe는 DELETE한다.** 따라서 Recipe Dataset 역시 현재 DB에 존재해야 하는 Recipe 전체의 Source of Truth다. Recipe 삭제 시 기존 child row는 ERD의 delete policy에 따라 함께 제거된다.
+
+## Execution Interface
+
+전체 Dataset Import의 개발자 진입점은 다음으로 통일한다.
+
+```bash
+make import-data
+```
+
+단건 Recipe import는 MVP에서 제공하지 않는다. `make import-data`는 Docker Compose 기반 local PostgreSQL에 연결되는 backend Import Command를 실행한다. Makefile은 실행 진입점만 제공하며, 내부 Spring/Gradle 실행 방식은 구현 구조에 맞게 결정할 수 있다. HTTP Admin API로 노출하지 않는다.

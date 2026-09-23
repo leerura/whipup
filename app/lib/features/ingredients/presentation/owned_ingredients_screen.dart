@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../../../app/theme.dart';
+import '../../../shared/presentation/widgets/main_bottom_navigation.dart';
 
 class OwnedIngredientsScreen extends StatefulWidget {
   const OwnedIngredientsScreen({
@@ -25,8 +26,7 @@ class OwnedIngredientsScreen extends StatefulWidget {
   final VoidCallback? onRecommendationsSelected;
 
   @override
-  State<OwnedIngredientsScreen> createState() =>
-      _OwnedIngredientsScreenState();
+  State<OwnedIngredientsScreen> createState() => _OwnedIngredientsScreenState();
 }
 
 class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
@@ -85,7 +85,8 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
       value: SystemUiOverlayStyle.dark,
       child: Scaffold(
         backgroundColor: Colors.white,
-        bottomNavigationBar: _IngredientsBottomNavigation(
+        bottomNavigationBar: MainBottomNavigation(
+          selectedTab: MainTab.ingredients,
           onRecommendationsSelected: widget.onRecommendationsSelected,
         ),
         body: SafeArea(
@@ -276,10 +277,7 @@ class _IngredientSearchField extends StatelessWidget {
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8),
-            borderSide: const BorderSide(
-              color: AppColors.primary,
-              width: 1.5,
-            ),
+            borderSide: const BorderSide(color: AppColors.primary, width: 1.5),
           ),
         ),
       ),
@@ -452,9 +450,7 @@ class _IngredientTile extends StatelessWidget {
                 color: isOwned ? AppColors.primary : Colors.white,
                 borderRadius: BorderRadius.circular(6),
                 border: Border.all(
-                  color: isOwned
-                      ? AppColors.primary
-                      : const Color(0xFFD1D1D6),
+                  color: isOwned ? AppColors.primary : const Color(0xFFD1D1D6),
                 ),
               ),
               child: isOwned
@@ -565,94 +561,6 @@ class _EmptyIngredients extends StatelessWidget {
             child: const Text('재료 등록하기'),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class _IngredientsBottomNavigation extends StatelessWidget {
-  const _IngredientsBottomNavigation({this.onRecommendationsSelected});
-
-  final VoidCallback? onRecommendationsSelected;
-
-  @override
-  Widget build(BuildContext context) {
-    return DecoratedBox(
-      decoration: const BoxDecoration(
-        color: Colors.white,
-        border: Border(top: BorderSide(color: Color(0xFFF2F2F7))),
-      ),
-      child: SafeArea(
-        top: false,
-        child: SizedBox(
-          height: 62,
-          child: Row(
-            children: [
-              const _NavigationItem(icon: Icons.home_outlined, label: '홈'),
-              const _NavigationItem(
-                icon: Icons.kitchen_rounded,
-                label: '재료',
-                isSelected: true,
-              ),
-              _NavigationItem(
-                icon: Icons.menu_book_outlined,
-                label: '레시피',
-                onTap: onRecommendationsSelected,
-              ),
-              const _NavigationItem(
-                icon: Icons.person_outline_rounded,
-                label: '마이',
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class _NavigationItem extends StatelessWidget {
-  const _NavigationItem({
-    required this.icon,
-    required this.label,
-    this.isSelected = false,
-    this.onTap,
-  });
-
-  final IconData icon;
-  final String label;
-  final bool isSelected;
-  final VoidCallback? onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    final color = isSelected ? AppColors.primary : const Color(0xFF8E8E93);
-
-    return Expanded(
-      child: Semantics(
-        button: onTap != null,
-        selected: isSelected,
-        child: InkWell(
-          onTap: onTap,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(icon, size: 24, color: color),
-              const SizedBox(height: 3),
-              Text(
-                label,
-                style: TextStyle(
-                  color: color,
-                  fontSize: 11,
-                  fontWeight: isSelected
-                      ? FontWeight.w700
-                      : FontWeight.w500,
-                  letterSpacing: 0,
-                ),
-              ),
-            ],
-          ),
-        ),
       ),
     );
   }

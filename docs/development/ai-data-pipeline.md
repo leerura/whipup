@@ -437,3 +437,55 @@ DB 반영, upsert, import failure 정책 등은 `data-import.md`의 규칙을 �
 4. Pipeline Version 및 Ingredient Master Hash의 구체적인 생성 규칙
 5. Gemini Structured Output의 최종 JSON Schema
 6. 재시도 횟수와 retry/backoff 정책
+
+---
+
+# Recipe Ingredient Extraction Rules
+
+Recipe Dataset의 각 ingredient는 `canonicalIngredient`, `displayName`, `rawText`, `amount`, `unit`, `mappingStatus`를 가진다.
+
+## canonicalIngredient
+
+추천 매칭에 사용하는 canonical Ingredient 이름이며 `data/ingredients.csv`의 `canonical_name`과 정확히 일치해야 한다. 실제 표현은 가능한 경우 기존 canonical Ingredient에 의미상 매핑한다. 예: `다진 마늘 → 마늘`, `통마늘 → 마늘`, `진간장 → 간장`, `비엔나 → 소시지`, `스파게티 → 파스타면`.
+
+확정할 수 없는 표현은 임의로 추측하지 않고 review 대상으로 보낸다.
+
+## displayName
+
+사용자에게 보여줄 실제 재료 표현이다. **수량과 단위는 포함하지 않는다.** 형태와 실제 표현은 보존하고 canonicalization은 `canonicalIngredient`에서만 수행한다.
+
+예: `다진 마늘 1스푼 → 다진 마늘`, `통마늘 한 줌 → 통마늘`, `진간장 3스푼 → 진간장`, `햇반 하나 (210g) → 햇반`, `우삼겹 100-120g → 우삼겹`.
+
+## rawText
+
+영상에서 추출한 원본 또는 대표 재료 표현을 보존한다. `rawText`는 추적을 위한 원본 표현이며 구조화 데이터의 유일한 근거는 아니다.
+
+## amount / unit
+
+`amount`와 `unit`은 각각 nullable String이다. 의미를 훼손하지 않는 범위에서 자연어 수량을 정규화한다.
+
+- `계란 두 알 → amount "2", unit "알"`
+- `밥 한 공기 → amount "1", unit "공기"`
+- `양파 반 개 → amount "0.5", unit "개"`
+- `양파 1/2개 → amount "0.5", unit "개"`
+- `양파 1/3개 → amount "1/3", unit "개"`
+- `간장 한 스푼 → amount "1", unit "스푼"`
+- `우삼겹 100-120g → amount "100-120", unit "g"`
+- `간장 1 → amount "1", unit null`
+- `후추 → amount null, unit null`
+
+물리적인 단위 변환은 하지 않는다. 예를 들어 1스푼을 임의로 ml로 바꾸거나 양파 반 개를 gram으로 변환하지 않는다.
+
+## Evidence Rule
+
+`amount`와 `unit`은 `rawText`만을 기준으로 판단하지 않는다. Gemini는 영상의 음성, 자막/화면 텍스트, 명확하게 확인되는 계량 행동 등 **영상 전체에서 확인되는 정보**를 사용할 수 있다.
+
+예를 들어 `rawText`가 `간장 2`여도 영상에서 두 스푼을 계량하는 것이 명확하면 `amount = "2"`, `unit = "스푼"`으로 구조화할 수 있다.
+
+영상에서 확인되지 않는 양이나 단위를 일반적인 조리 지식으로 추측해서는 안 된다.
+
+## Duplicate Canonical Ingredient
+
+하나의 Recipe에는 동일한 `canonicalIngredient`가 두 번 이상 존재하면 안 된다. 동일 재료가 여러 단계에서 사용되면 안전하게 합칠 수 있는 경우 하나의 ingredient로 합치고 단계별 사용 정보는 `steps`에 보존한다. 예: `케찹 2 + 케찹 1 → 케찹 3`.
+
+수량이나 단위를 안전하게 합칠 수 없는 경우 임의의 합계를 만들지 않고 review 대상으로 보낸다.

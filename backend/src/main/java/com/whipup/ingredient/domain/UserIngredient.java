@@ -43,4 +43,21 @@ public class UserIngredient {
 
 	protected UserIngredient() {
 	}
+
+	private UserIngredient(User user, Ingredient ingredient) {
+		this.user = user;
+		this.ingredient = ingredient;
+	}
+
+	public static UserIngredient create(User user, Ingredient ingredient) {
+		return new UserIngredient(user, ingredient);
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public Ingredient getIngredient() {
+		return ingredient;
+	}
 }

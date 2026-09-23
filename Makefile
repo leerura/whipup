@@ -1,4 +1,4 @@
-.PHONY: generate-api generate-api-flutter generate-api-backend pipeline-clean-ingredient
+.PHONY: generate-api generate-api-flutter generate-api-backend pipeline-clean-ingredient import-data
 
 OPENAPI_GENERATOR_IMAGE := openapitools/openapi-generator-cli:v7.25.0
 OPENAPI_SPEC := /local/docs/api/openapi.yaml
@@ -34,3 +34,13 @@ pipeline-clean-ingredient:
 	rm -f $(INGREDIENT_DIR)/review/*.json
 	printf '{\n  "videos": {}\n}\n' > $(INGREDIENT_DIR)/manifest.json
 	rm -rf $(PIPELINE_DIR)/src/__pycache__
+
+import-data:
+	docker compose build backend
+	docker compose up -d postgres
+	docker compose run --rm \
+		-v "$(CURDIR)/data:/data:ro" \
+		backend \
+		--spring.main.web-application-type=none \
+		--whipup.command=import-data \
+		--whipup.data-directory=/data

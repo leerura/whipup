@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../../../app/theme.dart';
+import '../../../shared/presentation/widgets/main_bottom_navigation.dart';
 
 class RecommendationScreen extends StatefulWidget {
   const RecommendationScreen({
@@ -81,7 +82,8 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
       ),
       child: Scaffold(
         backgroundColor: AppColors.white,
-        bottomNavigationBar: _RecommendationBottomNavigation(
+        bottomNavigationBar: MainBottomNavigation(
+          selectedTab: MainTab.recommendations,
           onIngredientsSelected: widget.onIngredientsSelected,
         ),
         body: SafeArea(
@@ -96,18 +98,18 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
                     Text(
                       '내 재료 ${widget.ownedIngredientCount}개 기준',
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: AppColors.textSecondary,
-                            fontSize: 14,
-                          ),
+                        color: AppColors.textSecondary,
+                        fontSize: 14,
+                      ),
                     ),
                     const SizedBox(height: 6),
                     Text(
                       '만들 수 있는 메뉴예요',
                       style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                            color: AppColors.textPrimary,
-                            fontSize: 24,
-                            fontWeight: FontWeight.w700,
-                          ),
+                        color: AppColors.textPrimary,
+                        fontSize: 24,
+                        fontWeight: FontWeight.w700,
+                      ),
                     ),
                     const SizedBox(height: 24),
                     _RecommendationSelector(
@@ -152,10 +154,10 @@ class _ScreenHeader extends StatelessWidget {
           child: Text(
             'whippy',
             style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                  color: AppColors.primary,
-                  fontSize: 22,
-                  fontWeight: FontWeight.w700,
-                ),
+              color: AppColors.primary,
+              fontSize: 22,
+              fontWeight: FontWeight.w700,
+            ),
           ),
         ),
       ),
@@ -202,12 +204,12 @@ class _RecommendationSelector extends StatelessWidget {
                     child: Text(
                       _labels[index],
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: isSelected
-                                ? AppColors.white
-                                : AppColors.textSecondary,
-                            fontSize: 14,
-                            fontWeight: FontWeight.w600,
-                          ),
+                        color: isSelected
+                            ? AppColors.white
+                            : AppColors.textSecondary,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                   ),
                 ),
@@ -221,10 +223,7 @@ class _RecommendationSelector extends StatelessWidget {
 }
 
 class _RecipeGrid extends StatelessWidget {
-  const _RecipeGrid({
-    required this.items,
-    required this.onRecipeSelected,
-  });
+  const _RecipeGrid({required this.items, required this.onRecipeSelected});
 
   final List<_RecommendationPreview> items;
   final ValueChanged<int>? onRecipeSelected;
@@ -309,10 +308,10 @@ class _RecipeCard extends StatelessWidget {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: AppColors.textPrimary,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w700,
-                          ),
+                        color: AppColors.textPrimary,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700,
+                      ),
                     ),
                     const SizedBox(height: 5),
                     Text(
@@ -322,9 +321,9 @@ class _RecipeCard extends StatelessWidget {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: AppColors.textSecondary,
-                            fontSize: 13,
-                          ),
+                        color: AppColors.textSecondary,
+                        fontSize: 13,
+                      ),
                     ),
                   ],
                 ),
@@ -403,10 +402,10 @@ class _MissingIngredientBadge extends StatelessWidget {
       child: Text(
         ingredient.characters.first,
         style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-              color: AppColors.primary,
-              fontSize: 13,
-              fontWeight: FontWeight.w700,
-            ),
+          color: AppColors.primary,
+          fontSize: 13,
+          fontWeight: FontWeight.w700,
+        ),
       ),
     );
   }
@@ -433,20 +432,20 @@ class _EmptyRecommendations extends StatelessWidget {
             '$missingCount개 부족 메뉴가 없어요',
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                  color: AppColors.textPrimary,
-                  fontSize: 20,
-                  fontWeight: FontWeight.w700,
-                ),
+              color: AppColors.textPrimary,
+              fontSize: 20,
+              fontWeight: FontWeight.w700,
+            ),
           ),
           const SizedBox(height: 10),
           Text(
             '다른 메뉴를 확인하거나\n재료를 더 등록해 보세요',
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                  color: AppColors.textSecondary,
-                  fontSize: 14,
-                  height: 1.5,
-                ),
+              color: AppColors.textSecondary,
+              fontSize: 14,
+              height: 1.5,
+            ),
           ),
           const SizedBox(height: 24),
           SizedBox(
@@ -522,92 +521,6 @@ class _EmptyPlateIllustration extends StatelessWidget {
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class _RecommendationBottomNavigation extends StatelessWidget {
-  const _RecommendationBottomNavigation({this.onIngredientsSelected});
-
-  final VoidCallback? onIngredientsSelected;
-
-  @override
-  Widget build(BuildContext context) {
-    return DecoratedBox(
-      decoration: const BoxDecoration(
-        color: AppColors.white,
-        border: Border(top: BorderSide(color: AppColors.border)),
-      ),
-      child: SafeArea(
-        top: false,
-        child: SizedBox(
-          height: 64,
-          child: Row(
-            children: [
-              const _BottomNavigationItem(
-                icon: Icons.home_outlined,
-                label: '홈',
-              ),
-              _BottomNavigationItem(
-                icon: Icons.kitchen_outlined,
-                label: '재료',
-                onTap: onIngredientsSelected,
-              ),
-              const _BottomNavigationItem(
-                icon: Icons.room_service_outlined,
-                label: '추천',
-                selected: true,
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class _BottomNavigationItem extends StatelessWidget {
-  const _BottomNavigationItem({
-    required this.icon,
-    required this.label,
-    this.selected = false,
-    this.onTap,
-  });
-
-  final IconData icon;
-  final String label;
-  final bool selected;
-  final VoidCallback? onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    final color = selected ? AppColors.primary : AppColors.textMuted;
-
-    return Expanded(
-      child: Semantics(
-        button: onTap != null,
-        selected: selected,
-        child: InkWell(
-          onTap: onTap,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(icon, size: 24, color: color),
-              const SizedBox(height: 4),
-              Text(
-                label,
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: color,
-                      fontSize: 11,
-                      fontWeight: selected
-                          ? FontWeight.w700
-                          : FontWeight.w500,
-                    ),
-              ),
-            ],
-          ),
-        ),
       ),
     );
   }

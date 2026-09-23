@@ -110,14 +110,11 @@ canonical Ingredient: 마늘
 
 실제 조리 표현은 canonicalization 이후에도 보존한다.
 
-같은 Recipe 안에서 여러 Recipe Ingredient가 같은 canonical Ingredient에 연결될 수 있다.
+하나의 Recipe에서 동일한 canonical Ingredient는 최대 한 번만 존재한다.
 
-```plain text
-다진 마늘 1큰술 → 마늘
-편마늘 5알      → 마늘
-```
+`RECIPE_INGREDIENT`는 조리 단계별 투입 내역이 아니라 해당 Recipe에 필요한 canonical Ingredient 목록을 표현한다.
 
-이 경우 Recipe Ingredient는 두 개지만 MVP 추천에서 필요한 canonical Ingredient `마늘`은 한 번만 계산한다.
+동일한 Ingredient가 여러 조리 단계에서 사용되는 경우 가능한 범위에서 하나의 Recipe Ingredient로 합치고, 단계별 사용 정보는 Recipe Step에 보존한다.
 
 필요량은 사용자에게 조리 정보를 제공하기 위한 값이며 추천 판단에는 사용하지 않는다.
 
@@ -177,16 +174,7 @@ Missing = Required - Owned
 Missing Count = COUNT(Missing)
 ```
 
-예를 들어 Recipe에 다음 두 항목이 있어도:
-
-```plain text
-다진 마늘 1큰술 → 마늘
-편마늘 5알      → 마늘
-```
-
-사용자가 `마늘`을 보유하지 않았다면 Missing Count는 `2`가 아니라 `1`이다.
-
-사용자 보유 재료 자체가 canonical Ingredient 단위이므로 `마늘`은 한 번만 보유 상태로 존재한다.
+Recipe Dataset 자체가 동일 canonical Ingredient의 중복을 허용하지 않는다. 사용자 보유 재료 역시 canonical Ingredient 단위이므로 같은 Ingredient는 한 번만 보유 상태로 존재한다.
 
 ## Classification
 
@@ -274,6 +262,7 @@ Published Recipe를 수정한 뒤에도 위 조건을 만족해야 한다. 삭�
 8. 실제 조리 표현은 `Recipe Ingredient.displayName`, `rawText`에 보존한다.
 9. Form, Category, Alias는 MVP에서 별도 Domain으로 구조화하지 않으며 향후 canonical Ingredient를 기준으로 확장할 수 있다.
 10. 서로 다른 Ingredient의 대체 가능성을 canonicalization으로 표현하지 않는다.
+11. 하나의 Recipe에서 동일한 canonical Ingredient는 최대 한 번만 존재한다.
 
 ---
 
@@ -282,11 +271,18 @@ Published Recipe를 수정한 뒤에도 위 조건을 만족해야 한다. 삭�
 ```plain text
 User
 └─ Owned Ingredient
-   └─ Ingredient
+   ├─ Ingredient
+   └─ Ingredient Form (optional)
+
+Ingredient
+├─ Ingredient Category (N:M)
+└─ Ingredient Form
+   └─ Form Type
 
 Recipe
 ├─ Recipe Ingredient
 │  ├─ Ingredient
+│  ├─ Ingredient Form (optional)
 │  ├─ 실제 조리 표현
 │  └─ 필요한 양
 ├─ Recipe Step

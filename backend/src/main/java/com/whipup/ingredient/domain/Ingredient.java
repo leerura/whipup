@@ -37,6 +37,20 @@ public class Ingredient {
 	@Column(name = "updated_at", nullable = false)
 	private OffsetDateTime updatedAt;
 
-	protected Ingredient() {
-	}
+    protected Ingredient() {
+    }
+
+    public static Ingredient create(String canonicalName) {
+        Ingredient ingredient = new Ingredient();
+        ingredient.canonicalName = canonicalName;
+        return ingredient;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getCanonicalName() {
+        return canonicalName;
+    }
 }

@@ -188,22 +188,12 @@ PUBLISHED → ingredient_id 필수
 
 ```plain text
 UNIQUE(recipe_id, display_order)
+UNIQUE(recipe_id, ingredient_id)
 ```
 
 Dataset의 ingredients 배열 순서를 `display_order`로 저장한다.
 
-같은 Recipe 안에서 동일 canonical Ingredient가 여러 번 등장할 수 있으므로 다음 Unique Constraint는 두지 않는다.
-
-```plain text
-UNIQUE(recipe_id, ingredient_id)  X
-```
-
-예:
-
-```plain text
-다진 마늘 1큰술 → 마늘
-편마늘 5알 → 마늘
-```
+하나의 Recipe에서 동일 canonical Ingredient를 중복 저장하지 않는다. `RECIPE_INGREDIENT`는 조리 단계별 투입 내역이 아니라 Recipe의 필요 canonical Ingredient 목록을 표현하며, 단계별 사용 정보는 `RECIPE_STEP`에 보존한다.
 
 ## RECIPE_STEP
 
