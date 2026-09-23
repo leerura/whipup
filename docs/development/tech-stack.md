@@ -2,27 +2,27 @@
 
 현재 확정된 MVP 기술 선택을 기록한다. 세부 구조와 책임은 `architecture.md`를 따른다.
 
-| Area | Technology |
-| --- | --- |
-| App | Dart + Flutter |
-| State Management | Riverpod |
-| Navigation | go_router |
-| Backend | Java 21 + Spring Boot |
-| Database | PostgreSQL |
-| Local DB | Docker Compose |
-| ORM | JPA / Hibernate |
-| Migration | Flyway |
-| API | REST |
-| API Contract | OpenAPI |
-| Flutter API Client | OpenAPI Generator generated client |
-| External Auth | Kakao Login |
-| Service Auth | JWT Access Token |
-| Operational Data | CSV Ingredient Dataset + JSON Recipe Dataset + Bulk Import |
-| Automated Test | MVP 초기 범위에서 제외 |
+| Area               | Technology                                                 |
+| ------------------ | ---------------------------------------------------------- |
+| App                | Dart + Flutter                                             |
+| State Management   | Riverpod                                                   |
+| Navigation         | go_router                                                  |
+| Backend            | Java 17 + Spring Boot                                      |
+| Database           | PostgreSQL                                                 |
+| Local DB           | Docker Compose                                             |
+| ORM                | JPA / Hibernate                                            |
+| Migration          | Flyway                                                     |
+| API                | REST                                                       |
+| API Contract       | OpenAPI                                                    |
+| Flutter API Client | OpenAPI Generator generated client                         |
+| External Auth      | Kakao Login                                                |
+| Service Auth       | JWT Access Token                                           |
+| Operational Data   | CSV Ingredient Dataset + JSON Recipe Dataset + Bulk Import |
+| Automated Test     | MVP 초기 범위에서 제외                                     |
 
 ## Backend
 
-Java 21 / Spring Boot를 사용한다. JPA/Hibernate를 활용하며 Schema는 Flyway가 관리한다. Hibernate Schema Auto Update는 사용하지 않고 `ddl-auto=validate`를 사용한다.
+Java 17 / Spring Boot를 사용한다. JPA/Hibernate를 활용하며 Schema는 Flyway가 관리한다. Hibernate Schema Auto Update는 사용하지 않고 `ddl-auto=validate`를 사용한다.
 
 ## Database
 
