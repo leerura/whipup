@@ -345,12 +345,12 @@ components:
       type: object
     KakaoLoginRequest:
       example:
-        authorizationCode: authorizationCode
+        kakaoAccessToken: kakaoAccessToken
       properties:
-        authorizationCode:
+        kakaoAccessToken:
           type: string
       required:
-      - authorizationCode
+      - kakaoAccessToken
       type: object
     LoginResponse:
       example:

@@ -20,7 +20,7 @@ import jakarta.annotation.Generated;
 @Generated(value = "org.openapitools.codegen.languages.SpringCodegen", comments = "Generator version: 7.25.0")
 public class KakaoLoginRequest {
 
-  private String authorizationCode;
+  private String kakaoAccessToken;
 
   public KakaoLoginRequest() {
     super();
@@ -29,28 +29,28 @@ public class KakaoLoginRequest {
   /**
    * Constructor with only required parameters
    */
-  public KakaoLoginRequest(String authorizationCode) {
-    this.authorizationCode = authorizationCode;
+  public KakaoLoginRequest(String kakaoAccessToken) {
+    this.kakaoAccessToken = kakaoAccessToken;
   }
 
-  public KakaoLoginRequest authorizationCode(String authorizationCode) {
-    this.authorizationCode = authorizationCode;
+  public KakaoLoginRequest kakaoAccessToken(String kakaoAccessToken) {
+    this.kakaoAccessToken = kakaoAccessToken;
     return this;
   }
 
   /**
-   * Get authorizationCode
-   * @return authorizationCode
+   * Get kakaoAccessToken
+   * @return kakaoAccessToken
    */
   @NotNull 
-  @JsonProperty("authorizationCode")
-  public String getAuthorizationCode() {
-    return authorizationCode;
+  @JsonProperty("kakaoAccessToken")
+  public String getKakaoAccessToken() {
+    return kakaoAccessToken;
   }
 
-  @JsonProperty("authorizationCode")
-  public void setAuthorizationCode(String authorizationCode) {
-    this.authorizationCode = authorizationCode;
+  @JsonProperty("kakaoAccessToken")
+  public void setKakaoAccessToken(String kakaoAccessToken) {
+    this.kakaoAccessToken = kakaoAccessToken;
   }
 
   @Override
@@ -62,19 +62,19 @@ public class KakaoLoginRequest {
       return false;
     }
     KakaoLoginRequest kakaoLoginRequest = (KakaoLoginRequest) o;
-    return Objects.equals(this.authorizationCode, kakaoLoginRequest.authorizationCode);
+    return Objects.equals(this.kakaoAccessToken, kakaoLoginRequest.kakaoAccessToken);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(authorizationCode);
+    return Objects.hash(kakaoAccessToken);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class KakaoLoginRequest {\n");
-    sb.append("    authorizationCode: ").append(toIndentedString(authorizationCode)).append("\n");
+    sb.append("    kakaoAccessToken: ").append(toIndentedString(kakaoAccessToken)).append("\n");
     sb.append("}");
     return sb.toString();
   }
