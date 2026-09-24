@@ -7,6 +7,7 @@ import '../../../app/theme.dart';
 class KakaoLoginScreen extends StatelessWidget {
   const KakaoLoginScreen({
     required this.onKakaoLogin,
+    this.isLoading = false,
     this.hasError = false,
     super.key,
   });
@@ -14,6 +15,7 @@ class KakaoLoginScreen extends StatelessWidget {
   static const _designWidth = 390.0;
 
   final VoidCallback onKakaoLogin;
+  final bool isLoading;
   final bool hasError;
 
   @override
@@ -150,7 +152,7 @@ class KakaoLoginScreen extends StatelessWidget {
                   bottom: 70 * scale,
                   height: 56,
                   child: FilledButton(
-                    onPressed: onKakaoLogin,
+                    onPressed: isLoading ? null : onKakaoLogin,
                     style: FilledButton.styleFrom(
                       elevation: 0,
                       backgroundColor: AppColors.kakao,
@@ -159,7 +161,13 @@ class KakaoLoginScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(8),
                       ),
                     ),
-                    child: const Text('카카오로 시작하기'),
+                    child: isLoading
+                        ? const SizedBox(
+                            width: 22,
+                            height: 22,
+                            child: CircularProgressIndicator(strokeWidth: 2),
+                          )
+                        : const Text('카카오로 시작하기'),
                   ),
                 ),
               ],

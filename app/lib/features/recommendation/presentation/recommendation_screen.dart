@@ -1,3 +1,4 @@
+import 'package:api_client/api_client.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -7,12 +8,14 @@ import '../../../shared/presentation/widgets/main_bottom_navigation.dart';
 class RecommendationScreen extends StatefulWidget {
   const RecommendationScreen({
     super.key,
+    required this.apiClient,
     this.ownedIngredientCount = 8,
     this.onRegisterIngredients,
     this.onIngredientsSelected,
     this.onRecipeSelected,
   });
 
+  final ApiClient apiClient;
   final int ownedIngredientCount;
   final VoidCallback? onRegisterIngredients;
   final VoidCallback? onIngredientsSelected;
@@ -24,57 +27,57 @@ class RecommendationScreen extends StatefulWidget {
 
 class _RecommendationScreenState extends State<RecommendationScreen> {
   int _selectedMissingCount = 0;
+  List<RecommendationItem> _items = const [];
+  bool _isLoading = true;
+  bool _hasLoadError = false;
+  int _requestId = 0;
 
-  static const Map<int, List<_RecommendationPreview>> _previews = {
-    0: [
-      _RecommendationPreview(
-        recipeId: 1,
-        name: '김치볶음밥',
-        accentColor: Color(0xFFFFE1D5),
-      ),
-      _RecommendationPreview(
-        recipeId: 2,
-        name: '계란말이',
-        accentColor: Color(0xFFFFF0B8),
-      ),
-      _RecommendationPreview(
-        recipeId: 3,
-        name: '감자채볶음',
-        accentColor: Color(0xFFE9F1C7),
-      ),
-      _RecommendationPreview(
-        recipeId: 4,
-        name: '참치마요 덮밥',
-        accentColor: Color(0xFFDCECF8),
-      ),
-    ],
-    1: [
-      _RecommendationPreview(
-        recipeId: 5,
-        name: '두부조림',
-        missingIngredients: ['두부'],
-        accentColor: Color(0xFFF3E7D5),
-      ),
-      _RecommendationPreview(
-        recipeId: 6,
-        name: '애호박전',
-        missingIngredients: ['애호박'],
-        accentColor: Color(0xFFE4F1C9),
-      ),
-      _RecommendationPreview(
-        recipeId: 7,
-        name: '소시지 야채볶음',
-        missingIngredients: ['소시지'],
-        accentColor: Color(0xFFFFDFD8),
-      ),
-    ],
-    2: [],
-  };
+  @override
+  void initState() {
+    super.initState();
+    _loadRecommendations();
+  }
+
+  Future<void> _loadRecommendations() async {
+    final requestId = ++_requestId;
+
+    setState(() {
+      _isLoading = true;
+      _hasLoadError = false;
+      _items = const [];
+    });
+
+    try {
+      final response = await widget.apiClient
+          .getRecommendationApi()
+          .getRecommendations(
+            missingCount: _selectedMissingCount,
+            page: 0,
+            size: 30,
+          );
+      final page = response.data;
+      if (page == null) {
+        throw StateError('The recommendation response body is empty.');
+      }
+      if (!mounted || requestId != _requestId) return;
+
+      setState(() {
+        _items = page.items.toList(growable: false);
+        _isLoading = false;
+      });
+    } catch (error) {
+      debugPrint('Failed to load recommendations: $error');
+      if (!mounted || requestId != _requestId) return;
+
+      setState(() {
+        _hasLoadError = true;
+        _isLoading = false;
+      });
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
-    final items = _previews[_selectedMissingCount] ?? const [];
-
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: SystemUiOverlayStyle.dark.copyWith(
         statusBarColor: Colors.transparent,
@@ -115,18 +118,29 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
                     _RecommendationSelector(
                       selectedMissingCount: _selectedMissingCount,
                       onChanged: (value) {
+                        if (value == _selectedMissingCount) return;
                         setState(() => _selectedMissingCount = value);
+                        _loadRecommendations();
                       },
                     ),
                     const SizedBox(height: 24),
-                    if (items.isEmpty)
+                    if (_isLoading)
+                      const Padding(
+                        padding: EdgeInsets.only(top: 72),
+                        child: Center(child: CircularProgressIndicator()),
+                      )
+                    else if (_hasLoadError)
+                      _RecommendationLoadError(
+                        onRetry: _loadRecommendations,
+                      )
+                    else if (_items.isEmpty)
                       _EmptyRecommendations(
                         missingCount: _selectedMissingCount,
                         onRegisterIngredients: widget.onRegisterIngredients,
                       )
                     else
                       _RecipeGrid(
-                        items: items,
+                        items: _items,
                         onRecipeSelected: widget.onRecipeSelected,
                       ),
                   ],
@@ -225,7 +239,7 @@ class _RecommendationSelector extends StatelessWidget {
 class _RecipeGrid extends StatelessWidget {
   const _RecipeGrid({required this.items, required this.onRecipeSelected});
 
-  final List<_RecommendationPreview> items;
+  final List<RecommendationItem> items;
   final ValueChanged<int>? onRecipeSelected;
 
   @override
@@ -260,12 +274,14 @@ class _RecipeGrid extends StatelessWidget {
 class _RecipeCard extends StatelessWidget {
   const _RecipeCard({required this.item, this.onTap});
 
-  final _RecommendationPreview item;
+  final RecommendationItem item;
   final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
-    final missingIngredient = item.missingIngredients.firstOrNull;
+    final missingIngredient = item.missingIngredients.isEmpty
+        ? null
+        : item.missingIngredients.first.name;
 
     return Semantics(
       button: onTap != null,
@@ -339,20 +355,30 @@ class _RecipeCard extends StatelessWidget {
 class _RecipeThumbnail extends StatelessWidget {
   const _RecipeThumbnail({required this.item});
 
-  final _RecommendationPreview item;
+  final RecommendationItem item;
+
+  static const _fallbackColors = [
+    Color(0xFFFFE1D5),
+    Color(0xFFFFF0B8),
+    Color(0xFFE9F1C7),
+    Color(0xFFDCECF8),
+  ];
 
   @override
   Widget build(BuildContext context) {
-    if (item.thumbnailUrl case final url?) {
+    final fallbackColor =
+        _fallbackColors[item.recipeId.abs() % _fallbackColors.length];
+
+    if (item.thumbnailUrl.isNotEmpty) {
       return Image.network(
-        url,
+        item.thumbnailUrl,
         fit: BoxFit.cover,
         errorBuilder: (context, error, stackTrace) =>
-            _ThumbnailPlaceholder(color: item.accentColor),
+            _ThumbnailPlaceholder(color: fallbackColor),
       );
     }
 
-    return _ThumbnailPlaceholder(color: item.accentColor);
+    return _ThumbnailPlaceholder(color: fallbackColor);
   }
 }
 
@@ -476,6 +502,43 @@ class _EmptyRecommendations extends StatelessWidget {
   }
 }
 
+class _RecommendationLoadError extends StatelessWidget {
+  const _RecommendationLoadError({required this.onRetry});
+
+  final VoidCallback onRetry;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(top: 54),
+      child: Column(
+        children: [
+          const Icon(
+            Icons.error_outline_rounded,
+            size: 44,
+            color: AppColors.textMuted,
+          ),
+          const SizedBox(height: 18),
+          Text(
+            '추천 메뉴를 불러오지 못했어요',
+            style: Theme.of(context).textTheme.titleLarge?.copyWith(
+              color: AppColors.textPrimary,
+              fontSize: 20,
+              fontWeight: FontWeight.w700,
+            ),
+          ),
+          const SizedBox(height: 14),
+          TextButton.icon(
+            onPressed: onRetry,
+            icon: const Icon(Icons.refresh_rounded),
+            label: const Text('다시 시도'),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 class _EmptyPlateIllustration extends StatelessWidget {
   const _EmptyPlateIllustration();
 
@@ -524,24 +587,4 @@ class _EmptyPlateIllustration extends StatelessWidget {
       ),
     );
   }
-}
-
-class _RecommendationPreview {
-  const _RecommendationPreview({
-    required this.recipeId,
-    required this.name,
-    required this.accentColor,
-    this.thumbnailUrl,
-    this.missingIngredients = const [],
-  });
-
-  final int recipeId;
-  final String name;
-  final String? thumbnailUrl;
-  final List<String> missingIngredients;
-  final Color accentColor;
-}
-
-extension<T> on List<T> {
-  T? get firstOrNull => isEmpty ? null : first;
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../../app/theme.dart';
+import 'ingredient_thumbnail.dart';
 
 class IngredientRow extends StatelessWidget {
   const IngredientRow({
@@ -13,7 +13,7 @@ class IngredientRow extends StatelessWidget {
   });
 
   final String label;
-  final String assetPath;
+  final String? assetPath;
   final bool selected;
   final ValueChanged<bool> onChanged;
 
@@ -48,12 +48,7 @@ class IngredientRow extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 10),
-              SvgPicture.asset(
-                assetPath,
-                width: 34,
-                height: 34,
-                semanticsLabel: '$label 썸네일',
-              ),
+              IngredientThumbnail(displayName: label, assetPath: assetPath),
               const SizedBox(width: 10),
               Expanded(
                 child: Text(

@@ -1,27 +1,23 @@
+import 'package:api_client/api_client.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../../../app/theme.dart';
 import '../../../shared/presentation/widgets/main_bottom_navigation.dart';
+import '../../ingredient/presentation/ingredient_ui_item.dart';
+import '../../ingredient/presentation/widgets/ingredient_thumbnail.dart';
 
 class OwnedIngredientsScreen extends StatefulWidget {
   const OwnedIngredientsScreen({
-    this.initialOwnedIngredients = const {
-      '계란',
-      '대파',
-      '고추장',
-      '김치',
-      '삼겹살',
-      '양파',
-      '간장',
-      '밥',
-    },
+    required this.apiClient,
+    this.onRegisterIngredients,
     this.onOwnedIngredientsChanged,
     this.onRecommendationsSelected,
     super.key,
   });
 
-  final Set<String> initialOwnedIngredients;
+  final ApiClient apiClient;
+  final VoidCallback? onRegisterIngredients;
   final ValueChanged<Set<String>>? onOwnedIngredientsChanged;
   final VoidCallback? onRecommendationsSelected;
 
@@ -32,14 +28,62 @@ class OwnedIngredientsScreen extends StatefulWidget {
 class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
   final _searchController = TextEditingController();
   final _searchFocusNode = FocusNode();
-  late final Set<String> _ownedIngredients;
+  final Set<int> _pendingIngredientIds = {};
 
+  List<IngredientUiItem> _ingredients = const [];
   String _query = '';
+  String? _loadError;
+  bool _isLoading = true;
 
   @override
   void initState() {
     super.initState();
-    _ownedIngredients = {...widget.initialOwnedIngredients};
+    _loadIngredients();
+  }
+
+  Future<void> _loadIngredients() async {
+    setState(() {
+      _isLoading = true;
+      _loadError = null;
+    });
+    try {
+      final ingredientResponse = await widget.apiClient
+          .getIngredientApi()
+          .getIngredientOptions();
+      final ownedResponse = await widget.apiClient
+          .getOwnedIngredientApi()
+          .getOwnedIngredients();
+      final ingredientData = ingredientResponse.data;
+      final ownedData = ownedResponse.data;
+      if (ingredientData == null || ownedData == null) {
+        throw StateError('The ingredient response body is empty.');
+      }
+      final ownedById = {
+        for (final item in ownedData.items) item.ingredientId: item,
+      };
+      final ingredients = ingredientData.items
+          .map(
+            (item) => IngredientUiItem(
+              ingredientId: item.ingredientId,
+              displayName: item.displayName,
+              userIngredientId: ownedById[item.ingredientId]?.userIngredientId,
+            ),
+          )
+          .toList(growable: false);
+      if (!mounted) return;
+      setState(() {
+        _ingredients = ingredients;
+        _isLoading = false;
+      });
+      _notifyOwnedIngredientsChanged();
+    } catch (error) {
+      debugPrint('Owned ingredient loading failed: $error');
+      if (!mounted) return;
+      setState(() {
+        _isLoading = false;
+        _loadError = '보유 재료를 불러오지 못했어요.';
+      });
+    }
   }
 
   @override
@@ -49,14 +93,72 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
     super.dispose();
   }
 
-  void _toggleIngredient(String ingredientName) {
-    setState(() {
-      if (!_ownedIngredients.add(ingredientName)) {
-        _ownedIngredients.remove(ingredientName);
+  Future<void> _toggleIngredient(IngredientUiItem ingredient) async {
+    if (_pendingIngredientIds.contains(ingredient.ingredientId)) return;
+    setState(() => _pendingIngredientIds.add(ingredient.ingredientId));
+    try {
+      if (ingredient.isOwned) {
+        await widget.apiClient.getOwnedIngredientApi().deleteOwnedIngredient(
+          userIngredientId: ingredient.userIngredientId!,
+        );
+        _replaceIngredient(ingredient.copyWith(clearUserIngredientId: true));
+      } else {
+        final response = await widget.apiClient
+            .getOwnedIngredientApi()
+            .addOwnedIngredients(
+              addOwnedIngredientsRequest: AddOwnedIngredientsRequest(
+                (builder) => builder.items.add(
+                  OwnedIngredientSelection(
+                    (builder) => builder.ingredientId = ingredient.ingredientId,
+                  ),
+                ),
+              ),
+            );
+        final data = response.data;
+        if (data == null) {
+          throw StateError('The owned ingredient response body is empty.');
+        }
+        final saved = data.items.firstWhere(
+          (item) => item.ingredientId == ingredient.ingredientId,
+        );
+        _replaceIngredient(
+          ingredient.copyWith(userIngredientId: saved.userIngredientId),
+        );
       }
+      _notifyOwnedIngredientsChanged();
+    } catch (error) {
+      debugPrint('Owned ingredient update failed: $error');
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('보유 재료를 변경하지 못했어요. 다시 시도해주세요.')),
+      );
+    } finally {
+      if (mounted) {
+        setState(() => _pendingIngredientIds.remove(ingredient.ingredientId));
+      }
+    }
+  }
+
+  void _replaceIngredient(IngredientUiItem replacement) {
+    if (!mounted) return;
+    setState(() {
+      _ingredients = _ingredients
+          .map(
+            (item) => item.ingredientId == replacement.ingredientId
+                ? replacement
+                : item,
+          )
+          .toList(growable: false);
     });
+  }
+
+  void _notifyOwnedIngredientsChanged() {
     widget.onOwnedIngredientsChanged?.call(
-      Set<String>.unmodifiable(_ownedIngredients),
+      Set<String>.unmodifiable(
+        _ingredients
+            .where((item) => item.isOwned)
+            .map((item) => item.displayName),
+      ),
     );
   }
 
@@ -69,17 +171,20 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
   @override
   Widget build(BuildContext context) {
     final owned = _ingredients
-        .where((ingredient) => _ownedIngredients.contains(ingredient.name))
-        .toList();
+        .where((ingredient) => ingredient.isOwned)
+        .toList(growable: false);
     final available = _ingredients
-        .where((ingredient) => !_ownedIngredients.contains(ingredient.name))
-        .toList();
+        .where((ingredient) => !ingredient.isOwned)
+        .toList(growable: false);
     final normalizedQuery = _query.trim();
     final searchResults = normalizedQuery.isEmpty
-        ? const <_Ingredient>[]
+        ? const <IngredientUiItem>[]
         : _ingredients
-              .where((ingredient) => ingredient.name.contains(normalizedQuery))
-              .toList();
+              .where(
+                (ingredient) =>
+                    ingredient.displayName.contains(normalizedQuery),
+              )
+              .toList(growable: false);
 
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: SystemUiOverlayStyle.dark,
@@ -95,74 +200,84 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
             children: [
               const _ScreenHeader(),
               Expanded(
-                child: SingleChildScrollView(
+                child: ListView(
                   keyboardDismissBehavior:
                       ScrollViewKeyboardDismissBehavior.onDrag,
+                  physics: const AlwaysScrollableScrollPhysics(),
                   padding: const EdgeInsets.fromLTRB(20, 24, 20, 36),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      Text(
-                        '현재 가지고 있는 재료예요',
-                        style: Theme.of(context).textTheme.headlineSmall
-                            ?.copyWith(
-                              fontSize: 24,
-                              height: 1.35,
-                              letterSpacing: 0,
-                            ),
-                      ),
-                      const SizedBox(height: 6),
-                      Text(
-                        '여기 있는 재료로 메뉴를 찾아봐요',
-                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                          color: const Color(0xFF636366),
-                          letterSpacing: 0,
-                        ),
-                      ),
-                      const SizedBox(height: 24),
-                      _IngredientSearchField(
-                        controller: _searchController,
-                        focusNode: _searchFocusNode,
-                        query: _query,
-                        onChanged: (value) => setState(() => _query = value),
-                        onClear: _clearSearch,
-                      ),
-                      const SizedBox(height: 30),
-                      if (normalizedQuery.isNotEmpty)
-                        _SearchResults(
-                          query: normalizedQuery,
-                          ingredients: searchResults,
-                          ownedIngredients: _ownedIngredients,
-                          onToggle: _toggleIngredient,
-                        )
-                      else if (owned.isEmpty)
-                        _EmptyIngredients(
-                          onRegister: () => _searchFocusNode.requestFocus(),
-                        )
-                      else ...[
-                        _IngredientSection(
-                          title: '보유 중 ${owned.length}개',
-                          ingredients: owned,
-                          ownedIngredients: _ownedIngredients,
-                          onToggle: _toggleIngredient,
-                        ),
-                        const Padding(
-                          padding: EdgeInsets.symmetric(vertical: 28),
-                          child: Divider(
-                            height: 1,
-                            thickness: 1,
-                            color: Color(0xFFE5E5EA),
+                  children: [
+                    Text(
+                      '현재 가지고 있는 재료예요',
+                      style: Theme.of(context).textTheme.headlineSmall
+                          ?.copyWith(
+                            fontSize: 24,
+                            height: 1.35,
+                            letterSpacing: 0,
                           ),
+                    ),
+                    const SizedBox(height: 6),
+                    Text(
+                      '여기 있는 재료로 메뉴를 찾아봐요',
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                        color: const Color(0xFF636366),
+                        letterSpacing: 0,
+                      ),
+                    ),
+                    const SizedBox(height: 24),
+                    _IngredientSearchField(
+                      controller: _searchController,
+                      focusNode: _searchFocusNode,
+                      query: _query,
+                      onChanged: (value) => setState(() => _query = value),
+                      onClear: _clearSearch,
+                    ),
+                    const SizedBox(height: 30),
+                    if (_isLoading)
+                      const Padding(
+                        padding: EdgeInsets.symmetric(vertical: 64),
+                        child: Center(child: CircularProgressIndicator()),
+                      )
+                    else if (_loadError != null)
+                      _LoadError(
+                        message: _loadError!,
+                        onRetry: _loadIngredients,
+                      )
+                    else if (normalizedQuery.isNotEmpty)
+                      _SearchResults(
+                        query: normalizedQuery,
+                        ingredients: searchResults,
+                        pendingIngredientIds: _pendingIngredientIds,
+                        onToggle: _toggleIngredient,
+                      )
+                    else if (owned.isEmpty)
+                      _EmptyIngredients(
+                        onRegister:
+                            widget.onRegisterIngredients ??
+                            () => _searchFocusNode.requestFocus(),
+                      )
+                    else ...[
+                      _IngredientSection(
+                        title: '보유 중 ${owned.length}개',
+                        ingredients: owned,
+                        pendingIngredientIds: _pendingIngredientIds,
+                        onToggle: _toggleIngredient,
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.symmetric(vertical: 28),
+                        child: Divider(
+                          height: 1,
+                          thickness: 1,
+                          color: Color(0xFFE5E5EA),
                         ),
-                        _IngredientSection(
-                          title: '재료 더 담기 ${available.length}개',
-                          ingredients: available,
-                          ownedIngredients: _ownedIngredients,
-                          onToggle: _toggleIngredient,
-                        ),
-                      ],
+                      ),
+                      _IngredientSection(
+                        title: '재료 더 담기 ${available.length}개',
+                        ingredients: available,
+                        pendingIngredientIds: _pendingIngredientIds,
+                        onToggle: _toggleIngredient,
+                      ),
                     ],
-                  ),
+                  ],
                 ),
               ),
             ],
@@ -289,14 +404,14 @@ class _SearchResults extends StatelessWidget {
   const _SearchResults({
     required this.query,
     required this.ingredients,
-    required this.ownedIngredients,
+    required this.pendingIngredientIds,
     required this.onToggle,
   });
 
   final String query;
-  final List<_Ingredient> ingredients;
-  final Set<String> ownedIngredients;
-  final ValueChanged<String> onToggle;
+  final List<IngredientUiItem> ingredients;
+  final Set<int> pendingIngredientIds;
+  final ValueChanged<IngredientUiItem> onToggle;
 
   @override
   Widget build(BuildContext context) {
@@ -306,7 +421,7 @@ class _SearchResults extends StatelessWidget {
         _IngredientSection(
           title: "'$query' 검색 결과 ${ingredients.length}개",
           ingredients: ingredients,
-          ownedIngredients: ownedIngredients,
+          pendingIngredientIds: pendingIngredientIds,
           onToggle: onToggle,
           emptyMessage: '검색 결과가 없어요',
         ),
@@ -350,15 +465,15 @@ class _IngredientSection extends StatelessWidget {
   const _IngredientSection({
     required this.title,
     required this.ingredients,
-    required this.ownedIngredients,
+    required this.pendingIngredientIds,
     required this.onToggle,
     this.emptyMessage,
   });
 
   final String title;
-  final List<_Ingredient> ingredients;
-  final Set<String> ownedIngredients;
-  final ValueChanged<String> onToggle;
+  final List<IngredientUiItem> ingredients;
+  final Set<int> pendingIngredientIds;
+  final ValueChanged<IngredientUiItem> onToggle;
   final String? emptyMessage;
 
   @override
@@ -407,8 +522,10 @@ class _IngredientSection extends StatelessWidget {
                       height: 56,
                       child: _IngredientTile(
                         ingredient: ingredient,
-                        isOwned: ownedIngredients.contains(ingredient.name),
-                        onToggle: () => onToggle(ingredient.name),
+                        isPending: pendingIngredientIds.contains(
+                          ingredient.ingredientId,
+                        ),
+                        onToggle: () => onToggle(ingredient),
                       ),
                     ),
                 ],
@@ -423,22 +540,22 @@ class _IngredientSection extends StatelessWidget {
 class _IngredientTile extends StatelessWidget {
   const _IngredientTile({
     required this.ingredient,
-    required this.isOwned,
+    required this.isPending,
     required this.onToggle,
   });
 
-  final _Ingredient ingredient;
-  final bool isOwned;
+  final IngredientUiItem ingredient;
+  final bool isPending;
   final VoidCallback onToggle;
 
   @override
   Widget build(BuildContext context) {
     return Semantics(
-      checked: isOwned,
+      checked: ingredient.isOwned,
       button: true,
-      label: ingredient.name,
+      label: ingredient.displayName,
       child: InkWell(
-        onTap: onToggle,
+        onTap: isPending ? null : onToggle,
         borderRadius: BorderRadius.circular(6),
         child: Row(
           children: [
@@ -447,13 +564,20 @@ class _IngredientTile extends StatelessWidget {
               width: 24,
               height: 24,
               decoration: BoxDecoration(
-                color: isOwned ? AppColors.primary : Colors.white,
+                color: ingredient.isOwned ? AppColors.primary : Colors.white,
                 borderRadius: BorderRadius.circular(6),
                 border: Border.all(
-                  color: isOwned ? AppColors.primary : const Color(0xFFD1D1D6),
+                  color: ingredient.isOwned
+                      ? AppColors.primary
+                      : const Color(0xFFD1D1D6),
                 ),
               ),
-              child: isOwned
+              child: isPending
+                  ? const Padding(
+                      padding: EdgeInsets.all(4),
+                      child: CircularProgressIndicator(strokeWidth: 2),
+                    )
+                  : ingredient.isOwned
                   ? const Icon(
                       Icons.check_rounded,
                       size: 17,
@@ -462,23 +586,14 @@ class _IngredientTile extends StatelessWidget {
                   : null,
             ),
             const SizedBox(width: 10),
-            Container(
-              width: 34,
-              height: 34,
-              decoration: BoxDecoration(
-                color: ingredient.color,
-                shape: BoxShape.circle,
-              ),
-              child: Icon(
-                ingredient.icon,
-                size: 20,
-                color: ingredient.iconColor,
-              ),
+            IngredientThumbnail(
+              displayName: ingredient.displayName,
+              assetPath: ingredient.assetPath,
             ),
             const SizedBox(width: 8),
             Expanded(
               child: Text(
-                ingredient.name,
+                ingredient.displayName,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: const TextStyle(
@@ -491,6 +606,27 @@ class _IngredientTile extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class _LoadError extends StatelessWidget {
+  const _LoadError({required this.message, required this.onRetry});
+
+  final String message;
+  final VoidCallback onRetry;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 48),
+      child: Column(
+        children: [
+          Text(message, style: Theme.of(context).textTheme.bodyMedium),
+          const SizedBox(height: 8),
+          TextButton(onPressed: onRetry, child: const Text('다시 시도')),
+        ],
       ),
     );
   }
@@ -565,274 +701,3 @@ class _EmptyIngredients extends StatelessWidget {
     );
   }
 }
-
-class _Ingredient {
-  const _Ingredient({
-    required this.name,
-    required this.icon,
-    required this.color,
-    this.iconColor = const Color(0xFF636366),
-  });
-
-  final String name;
-  final IconData icon;
-  final Color color;
-  final Color iconColor;
-}
-
-const _ingredients = <_Ingredient>[
-  _Ingredient(
-    name: '계란',
-    icon: Icons.egg_alt_rounded,
-    color: Color(0xFFFFF2BE),
-    iconColor: Color(0xFFD99B00),
-  ),
-  _Ingredient(
-    name: '대파',
-    icon: Icons.grass_rounded,
-    color: Color(0xFFE6F3D9),
-    iconColor: Color(0xFF4F8E35),
-  ),
-  _Ingredient(
-    name: '고추장',
-    icon: Icons.soup_kitchen_rounded,
-    color: Color(0xFFFFDDD3),
-    iconColor: Color(0xFFD84315),
-  ),
-  _Ingredient(
-    name: '김치',
-    icon: Icons.ramen_dining_rounded,
-    color: Color(0xFFFFE1D6),
-    iconColor: Color(0xFFE6531A),
-  ),
-  _Ingredient(
-    name: '삼겹살',
-    icon: Icons.set_meal_rounded,
-    color: Color(0xFFFFE4E4),
-    iconColor: Color(0xFFCA6E6E),
-  ),
-  _Ingredient(
-    name: '양파',
-    icon: Icons.spa_rounded,
-    color: Color(0xFFF0E4F4),
-    iconColor: Color(0xFF8D6B9B),
-  ),
-  _Ingredient(
-    name: '간장',
-    icon: Icons.water_drop_rounded,
-    color: Color(0xFFE9DED5),
-    iconColor: Color(0xFF76513C),
-  ),
-  _Ingredient(
-    name: '밥',
-    icon: Icons.rice_bowl_rounded,
-    color: Color(0xFFF2F2F2),
-  ),
-  _Ingredient(
-    name: '두부',
-    icon: Icons.view_in_ar_rounded,
-    color: Color(0xFFFFF5CE),
-    iconColor: Color(0xFFB99B36),
-  ),
-  _Ingredient(
-    name: '마늘',
-    icon: Icons.eco_rounded,
-    color: Color(0xFFF2EDD4),
-    iconColor: Color(0xFF8D8449),
-  ),
-  _Ingredient(
-    name: '팽이버섯',
-    icon: Icons.park_rounded,
-    color: Color(0xFFF0E9DD),
-    iconColor: Color(0xFF8A7358),
-  ),
-  _Ingredient(
-    name: '양배추',
-    icon: Icons.local_florist_rounded,
-    color: Color(0xFFE4F1D5),
-    iconColor: Color(0xFF679047),
-  ),
-  _Ingredient(
-    name: '치즈',
-    icon: Icons.breakfast_dining_rounded,
-    color: Color(0xFFFFEDB5),
-    iconColor: Color(0xFFE1A91B),
-  ),
-  _Ingredient(
-    name: '우유',
-    icon: Icons.local_drink_rounded,
-    color: Color(0xFFE7F1F7),
-    iconColor: Color(0xFF6D8C9F),
-  ),
-  _Ingredient(
-    name: '깨',
-    icon: Icons.scatter_plot_rounded,
-    color: Color(0xFFF1E8D7),
-    iconColor: Color(0xFF8A7252),
-  ),
-  _Ingredient(
-    name: '고쵧가루',
-    icon: Icons.grain_rounded,
-    color: Color(0xFFFFE0D8),
-    iconColor: Color(0xFFD84B29),
-  ),
-  _Ingredient(
-    name: '물',
-    icon: Icons.water_drop_outlined,
-    color: Color(0xFFDFF2FB),
-    iconColor: Color(0xFF4A9BC4),
-  ),
-  _Ingredient(
-    name: '설탕',
-    icon: Icons.blur_on_rounded,
-    color: Color(0xFFF4F4F4),
-  ),
-  _Ingredient(
-    name: '코인육수',
-    icon: Icons.circle_rounded,
-    color: Color(0xFFF4E1C5),
-    iconColor: Color(0xFF9B6C35),
-  ),
-  _Ingredient(
-    name: '참기름',
-    icon: Icons.opacity_rounded,
-    color: Color(0xFFF1E1C6),
-    iconColor: Color(0xFF8B5B27),
-  ),
-  _Ingredient(
-    name: '치킨스톡',
-    icon: Icons.soup_kitchen_outlined,
-    color: Color(0xFFFFEACB),
-    iconColor: Color(0xFFC6862A),
-  ),
-  _Ingredient(
-    name: '식용유',
-    icon: Icons.opacity_rounded,
-    color: Color(0xFFFFF0BF),
-    iconColor: Color(0xFFD2A21C),
-  ),
-  _Ingredient(
-    name: '후추',
-    icon: Icons.more_horiz_rounded,
-    color: Color(0xFFE7E3DF),
-    iconColor: Color(0xFF5D5751),
-  ),
-  _Ingredient(
-    name: '참치액',
-    icon: Icons.water_drop_rounded,
-    color: Color(0xFFE8E0D8),
-    iconColor: Color(0xFF725B4A),
-  ),
-  _Ingredient(
-    name: '올리브오일',
-    icon: Icons.opacity_rounded,
-    color: Color(0xFFE9EDCF),
-    iconColor: Color(0xFF78803A),
-  ),
-  _Ingredient(
-    name: '레드페퍼',
-    icon: Icons.local_fire_department_rounded,
-    color: Color(0xFFFFE0D7),
-    iconColor: Color(0xFFD94A27),
-  ),
-  _Ingredient(
-    name: '맛술',
-    icon: Icons.local_bar_rounded,
-    color: Color(0xFFF3E7D3),
-    iconColor: Color(0xFF9B7546),
-  ),
-  _Ingredient(
-    name: '식초',
-    icon: Icons.science_outlined,
-    color: Color(0xFFE8F0D8),
-    iconColor: Color(0xFF6D8846),
-  ),
-  _Ingredient(
-    name: '알룰로스',
-    icon: Icons.blur_on_rounded,
-    color: Color(0xFFF2F0EC),
-  ),
-  _Ingredient(
-    name: '와사비',
-    icon: Icons.grass_rounded,
-    color: Color(0xFFE0F0CD),
-    iconColor: Color(0xFF6B983B),
-  ),
-  _Ingredient(
-    name: '버터',
-    icon: Icons.rectangle_rounded,
-    color: Color(0xFFFFF0B8),
-    iconColor: Color(0xFFD6A720),
-  ),
-  _Ingredient(
-    name: '소금',
-    icon: Icons.blur_on_rounded,
-    color: Color(0xFFF3F3F3),
-  ),
-  _Ingredient(
-    name: '파스타면',
-    icon: Icons.ramen_dining_rounded,
-    color: Color(0xFFFFEBC2),
-    iconColor: Color(0xFFC99429),
-  ),
-  _Ingredient(
-    name: '물엿',
-    icon: Icons.water_drop_rounded,
-    color: Color(0xFFF1E1D2),
-    iconColor: Color(0xFF9B6848),
-  ),
-  _Ingredient(
-    name: '케찹',
-    icon: Icons.water_drop_rounded,
-    color: Color(0xFFFFDED8),
-    iconColor: Color(0xFFD9472E),
-  ),
-  _Ingredient(
-    name: '굴소스',
-    icon: Icons.water_drop_rounded,
-    color: Color(0xFFE8DFD8),
-    iconColor: Color(0xFF715848),
-  ),
-  _Ingredient(
-    name: '고추',
-    icon: Icons.local_fire_department_rounded,
-    color: Color(0xFFE2F1D5),
-    iconColor: Color(0xFF4D933E),
-  ),
-  _Ingredient(
-    name: '감자',
-    icon: Icons.circle_rounded,
-    color: Color(0xFFF3E3C6),
-    iconColor: Color(0xFFB28547),
-  ),
-  _Ingredient(
-    name: '당근',
-    icon: Icons.eco_rounded,
-    color: Color(0xFFFFE4D2),
-    iconColor: Color(0xFFE86B28),
-  ),
-  _Ingredient(
-    name: '애호박',
-    icon: Icons.eco_rounded,
-    color: Color(0xFFE4F1D5),
-    iconColor: Color(0xFF669342),
-  ),
-  _Ingredient(
-    name: '오이',
-    icon: Icons.eco_rounded,
-    color: Color(0xFFDDF0D3),
-    iconColor: Color(0xFF4D913E),
-  ),
-  _Ingredient(
-    name: '버섯',
-    icon: Icons.park_rounded,
-    color: Color(0xFFECE4DA),
-    iconColor: Color(0xFF8A7059),
-  ),
-  _Ingredient(
-    name: '베이컨',
-    icon: Icons.set_meal_rounded,
-    color: Color(0xFFFFE1DF),
-    iconColor: Color(0xFFC75D5A),
-  ),
-];
