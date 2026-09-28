@@ -1,0 +1,539 @@
+openapi: 3.0.3
+info:
+  title: WhipUp API
+  version: 1.0.0-v2-design
+servers:
+  - url: /
+
+paths:
+  /health:
+    get:
+      tags: [Health]
+      operationId: getHealth
+      security: []
+      responses:
+        '200':
+          description: Backend is healthy
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponse'
+
+  /api/v1/auth/kakao:
+    post:
+      tags: [Auth]
+      operationId: loginWithKakao
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/KakaoLoginRequest'
+      responses:
+        '200':
+          description: Login success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LoginResponse'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /api/v1/ingredients/search:
+    get:
+      tags: [Ingredient]
+      operationId: searchIngredientGroups
+      parameters:
+        - name: query
+          in: query
+          required: true
+          schema:
+            type: string
+            minLength: 1
+      responses:
+        '200':
+          description: Registerable ingredient variants grouped for selection UX
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IngredientGroupListResponse'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /api/v1/me/ingredients:
+    get:
+      tags: [OwnedIngredient]
+      operationId: getOwnedIngredients
+      responses:
+        '200':
+          description: Owned ingredient variants
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OwnedIngredientListResponse'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+    post:
+      tags: [OwnedIngredient]
+      operationId: addOwnedIngredient
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AddOwnedIngredientRequest'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OwnedIngredient'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '409':
+          $ref: '#/components/responses/Conflict'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /api/v1/me/ingredients/{userIngredientId}:
+    delete:
+      tags: [OwnedIngredient]
+      operationId: deleteOwnedIngredient
+      parameters:
+        - name: userIngredientId
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '204':
+          description: Deleted
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /api/v1/recipes/recommendations:
+    get:
+      tags: [Recommendation]
+      operationId: getRecipeRecommendations
+      parameters:
+        - name: mode
+          in: query
+          required: true
+          schema:
+            $ref: '#/components/schemas/RecommendationMode'
+      responses:
+        '200':
+          description: Recipe recommendations for the selected exploration mode
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RecommendationListResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '409':
+          $ref: '#/components/responses/Conflict'
+
+  /api/v1/recipes/{recipeId}:
+    get:
+      tags: [Recipe]
+      operationId: getRecipeDetail
+      parameters:
+        - name: recipeId
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Recipe detail projected with current user matching state
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RecipeDetailResponse'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '404':
+          $ref: '#/components/responses/NotFound'
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  responses:
+    BadRequest:
+      description: Invalid request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    Unauthorized:
+      description: Authentication failed or missing
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    NotFound:
+      description: Resource not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    Conflict:
+      description: Request conflicts with current state
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+
+  schemas:
+    HealthResponse:
+      type: object
+      required: [status]
+      properties:
+        status:
+          type: string
+          example: UP
+
+    KakaoLoginRequest:
+      type: object
+      required: [kakaoAccessToken]
+      properties:
+        kakaoAccessToken:
+          type: string
+
+    LoginResponse:
+      type: object
+      required: [accessToken, user, hasOwnedIngredients]
+      properties:
+        accessToken:
+          type: string
+        user:
+          $ref: '#/components/schemas/UserSummary'
+        hasOwnedIngredients:
+          type: boolean
+
+    UserSummary:
+      type: object
+      required: [userId]
+      properties:
+        userId:
+          type: integer
+          format: int64
+
+    IngredientGroupListResponse:
+      type: object
+      required: [groups]
+      properties:
+        groups:
+          type: array
+          items:
+            $ref: '#/components/schemas/IngredientGroup'
+
+    IngredientGroup:
+      type: object
+      required: [name, items]
+      properties:
+        name:
+          type: string
+        items:
+          type: array
+          minItems: 1
+          items:
+            $ref: '#/components/schemas/IngredientVariantOption'
+
+    IngredientVariantOption:
+      type: object
+      required: [variantId, name]
+      properties:
+        variantId:
+          type: integer
+          format: int64
+        name:
+          type: string
+
+    OwnedIngredient:
+      type: object
+      required: [userIngredientId, variantId, name]
+      properties:
+        userIngredientId:
+          type: integer
+          format: int64
+        variantId:
+          type: integer
+          format: int64
+        name:
+          type: string
+
+    OwnedIngredientListResponse:
+      type: object
+      required: [items]
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/OwnedIngredient'
+
+    AddOwnedIngredientRequest:
+      type: object
+      required: [variantId]
+      properties:
+        variantId:
+          type: integer
+          format: int64
+
+    RecommendationMode:
+      type: string
+      enum: [AVAILABLE, MISSING_INGREDIENTS]
+
+    RecommendationListResponse:
+      type: object
+      required: [items]
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/RecommendationItem'
+
+    RecommendationItem:
+      type: object
+      required:
+        - recipeId
+        - name
+        - thumbnailUrl
+        - missingCount
+        - requirementResults
+      properties:
+        recipeId:
+          type: integer
+          format: int64
+        name:
+          type: string
+        thumbnailUrl:
+          type: string
+          format: uri
+        missingCount:
+          type: integer
+          format: int32
+          minimum: 0
+        requirementResults:
+          type: array
+          items:
+            $ref: '#/components/schemas/RequirementResult'
+
+    RequirementResult:
+      oneOf:
+        - $ref: '#/components/schemas/SatisfiedRequirementResult'
+        - $ref: '#/components/schemas/MissingRequirementResult'
+      discriminator:
+        propertyName: status
+        mapping:
+          SATISFIED: '#/components/schemas/SatisfiedRequirementResult'
+          MISSING: '#/components/schemas/MissingRequirementResult'
+
+    SatisfiedRequirementResult:
+      type: object
+      required: [status, matches]
+      properties:
+        status:
+          type: string
+          enum: [SATISFIED]
+        matches:
+          type: array
+          minItems: 1
+          items:
+            $ref: '#/components/schemas/IngredientMatch'
+
+    MissingRequirementResult:
+      type: object
+      required: [status, missingOptions]
+      properties:
+        status:
+          type: string
+          enum: [MISSING]
+        missingOptions:
+          type: array
+          minItems: 1
+          items:
+            $ref: '#/components/schemas/MissingOption'
+
+    IngredientMatch:
+      type: object
+      required: [type, requiredName, ownedName]
+      properties:
+        type:
+          type: string
+          enum: [DIRECT, PREPARATION, SUBSTITUTE]
+        requiredName:
+          type: string
+        ownedName:
+          type: string
+
+    MissingOption:
+      type: object
+      required: [requiredName, substitutes]
+      properties:
+        requiredName:
+          type: string
+        substitutes:
+          type: array
+          items:
+            $ref: '#/components/schemas/MissingSubstitute'
+
+    MissingSubstitute:
+      type: object
+      required: [name]
+      properties:
+        name:
+          type: string
+
+    RecipeDetailResponse:
+      type: object
+      required:
+        - recipeId
+        - name
+        - shortsReference
+        - thumbnailUrl
+        - missingCount
+        - requirements
+        - optionalIngredients
+        - steps
+      properties:
+        recipeId:
+          type: integer
+          format: int64
+        name:
+          type: string
+        shortsReference:
+          type: string
+          format: uri
+        thumbnailUrl:
+          type: string
+          format: uri
+        missingCount:
+          type: integer
+          format: int32
+          minimum: 0
+        requirements:
+          type: array
+          items:
+            $ref: '#/components/schemas/DetailRequirement'
+        optionalIngredients:
+          type: array
+          items:
+            $ref: '#/components/schemas/DetailIngredientDisplay'
+        steps:
+          type: array
+          items:
+            $ref: '#/components/schemas/RecipeStep'
+
+    DetailRequirement:
+      oneOf:
+        - $ref: '#/components/schemas/SatisfiedDetailRequirement'
+        - $ref: '#/components/schemas/MissingDetailRequirement'
+      discriminator:
+        propertyName: status
+        mapping:
+          SATISFIED: '#/components/schemas/SatisfiedDetailRequirement'
+          MISSING: '#/components/schemas/MissingDetailRequirement'
+
+    SatisfiedDetailRequirement:
+      type: object
+      required: [status, options, matches]
+      properties:
+        status:
+          type: string
+          enum: [SATISFIED]
+        options:
+          type: array
+          minItems: 1
+          items:
+            $ref: '#/components/schemas/DetailRequirementOption'
+        matches:
+          type: array
+          minItems: 1
+          items:
+            $ref: '#/components/schemas/IngredientMatch'
+
+    MissingDetailRequirement:
+      type: object
+      required: [status, options]
+      properties:
+        status:
+          type: string
+          enum: [MISSING]
+        options:
+          type: array
+          minItems: 1
+          items:
+            $ref: '#/components/schemas/DetailRequirementOption'
+
+    DetailRequirementOption:
+      type: object
+      required: [displayName, rawText, substitutes]
+      properties:
+        displayName:
+          type: string
+        rawText:
+          type: string
+        amount:
+          type: string
+          nullable: true
+        unit:
+          type: string
+          nullable: true
+        substitutes:
+          type: array
+          items:
+            $ref: '#/components/schemas/DetailIngredientDisplay'
+
+    DetailIngredientDisplay:
+      type: object
+      required: [displayName, rawText]
+      properties:
+        displayName:
+          type: string
+        rawText:
+          type: string
+        amount:
+          type: string
+          nullable: true
+        unit:
+          type: string
+          nullable: true
+
+    RecipeStep:
+      type: object
+      required: [order, content]
+      properties:
+        order:
+          type: integer
+          format: int32
+          minimum: 1
+        content:
+          type: string
+
+    ErrorResponse:
+      type: object
+      required: [code, message]
+      properties:
+        code:
+          type: string
+        message:
+          type: string
+
+security:
+  - bearerAuth: []
+
