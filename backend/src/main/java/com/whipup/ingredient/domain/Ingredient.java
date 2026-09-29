@@ -26,6 +26,9 @@ public class Ingredient {
 	@Column(name = "ingredient_id")
 	private Long id;
 
+	@Column(name = "key", nullable = false, unique = true, length = 255)
+	private String key;
+
 	@Column(name = "canonical_name", nullable = false, length = 255)
 	private String canonicalName;
 
@@ -40,10 +43,15 @@ public class Ingredient {
     protected Ingredient() {
     }
 
-    public static Ingredient create(String canonicalName) {
+    public static Ingredient create(String key, String canonicalName) {
         Ingredient ingredient = new Ingredient();
+        ingredient.key = key;
         ingredient.canonicalName = canonicalName;
         return ingredient;
+    }
+
+    public static Ingredient create(String canonicalName) {
+        return create(canonicalName, canonicalName);
     }
 
     public Long getId() {
@@ -52,5 +60,9 @@ public class Ingredient {
 
     public String getCanonicalName() {
         return canonicalName;
+    }
+
+    public String getKey() {
+        return key;
     }
 }

@@ -1,6 +1,7 @@
 package com.whipup.recipe.domain;
 
 import com.whipup.ingredient.domain.Ingredient;
+import com.whipup.ingredient.domain.IngredientVariant;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -25,8 +26,8 @@ public class RecipeIngredient {
     private Recipe recipe;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "ingredient_id")
-    private Ingredient ingredient;
+    @JoinColumn(name = "ingredient_variant_id")
+    private IngredientVariant ingredientVariant;
 
     @Column(name = "display_name", nullable = false)
     private String displayName;
@@ -41,7 +42,30 @@ public class RecipeIngredient {
     @Column(name = "display_order", nullable = false)
     private int displayOrder;
 
+    @Column(name = "is_optional", nullable = false)
+    private boolean optional;
+
     protected RecipeIngredient() {
+    }
+
+    public static RecipeIngredient create(
+        IngredientVariant ingredientVariant,
+        String displayName,
+        String rawText,
+        String amount,
+        String unit,
+        int displayOrder,
+        boolean optional
+    ) {
+        RecipeIngredient recipeIngredient = new RecipeIngredient();
+        recipeIngredient.ingredientVariant = ingredientVariant;
+        recipeIngredient.displayName = displayName;
+        recipeIngredient.rawText = rawText;
+        recipeIngredient.amount = amount;
+        recipeIngredient.unit = unit;
+        recipeIngredient.displayOrder = displayOrder;
+        recipeIngredient.optional = optional;
+        return recipeIngredient;
     }
 
     public static RecipeIngredient create(
@@ -52,14 +76,7 @@ public class RecipeIngredient {
         String unit,
         int displayOrder
     ) {
-        RecipeIngredient recipeIngredient = new RecipeIngredient();
-        recipeIngredient.ingredient = ingredient;
-        recipeIngredient.displayName = displayName;
-        recipeIngredient.rawText = rawText;
-        recipeIngredient.amount = amount;
-        recipeIngredient.unit = unit;
-        recipeIngredient.displayOrder = displayOrder;
-        return recipeIngredient;
+        return create(null, displayName, rawText, amount, unit, displayOrder, false);
     }
 
     void assignRecipe(Recipe recipe) {
@@ -71,7 +88,11 @@ public class RecipeIngredient {
     }
 
     public Ingredient getIngredient() {
-        return ingredient;
+        return ingredientVariant == null ? null : ingredientVariant.getIngredient();
+    }
+
+    public IngredientVariant getIngredientVariant() {
+        return ingredientVariant;
     }
 
     public String getDisplayName() {
@@ -88,5 +109,9 @@ public class RecipeIngredient {
 
     public int getDisplayOrder() {
         return displayOrder;
+    }
+
+    public boolean isOptional() {
+        return optional;
     }
 }

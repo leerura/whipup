@@ -18,8 +18,8 @@ import org.hibernate.annotations.CreationTimestamp;
 @Table(
 		name = "user_ingredient",
 		uniqueConstraints = @UniqueConstraint(
-				name = "uq_user_ingredient_user_ingredient",
-				columnNames = { "user_id", "ingredient_id" }
+				name = "uq_user_ingredient_user_variant",
+				columnNames = { "user_id", "ingredient_variant_id" }
 		)
 )
 public class UserIngredient {
@@ -34,8 +34,8 @@ public class UserIngredient {
 	private User user;
 
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
-	@JoinColumn(name = "ingredient_id", nullable = false)
-	private Ingredient ingredient;
+	@JoinColumn(name = "ingredient_variant_id", nullable = false)
+	private IngredientVariant ingredientVariant;
 
 	@CreationTimestamp
 	@Column(name = "created_at", nullable = false, updatable = false)
@@ -44,13 +44,19 @@ public class UserIngredient {
 	protected UserIngredient() {
 	}
 
-	private UserIngredient(User user, Ingredient ingredient) {
+	private UserIngredient(User user, IngredientVariant ingredientVariant) {
 		this.user = user;
-		this.ingredient = ingredient;
+		this.ingredientVariant = ingredientVariant;
+	}
+
+	public static UserIngredient create(User user, IngredientVariant ingredientVariant) {
+		return new UserIngredient(user, ingredientVariant);
 	}
 
 	public static UserIngredient create(User user, Ingredient ingredient) {
-		return new UserIngredient(user, ingredient);
+		throw new UnsupportedOperationException(
+			"UserIngredient must be created with an IngredientVariant"
+		);
 	}
 
 	public Long getId() {
@@ -58,6 +64,10 @@ public class UserIngredient {
 	}
 
 	public Ingredient getIngredient() {
-		return ingredient;
+		return ingredientVariant.getIngredient();
+	}
+
+	public IngredientVariant getIngredientVariant() {
+		return ingredientVariant;
 	}
 }
