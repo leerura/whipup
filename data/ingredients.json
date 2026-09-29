@@ -1,0 +1,81 @@
+{
+  "ingredients": [
+    {
+      "key": "sesame",
+      "name": "깨",
+      "variants": [
+        { "key": "sesame", "name": "깨", "base": true }
+      ],
+      "relations": []
+    },
+    {
+      "key": "kimchi",
+      "name": "김치",
+      "variants": [
+        { "key": "kimchi", "name": "김치", "base": true }
+      ],
+      "relations": []
+    },
+    {
+      "key": "pork-belly",
+      "name": "삼겹살",
+      "variants": [
+        { "key": "pork-belly", "name": "삼겹살", "base": true }
+      ],
+      "relations": []
+    },
+    {
+      "key": "water",
+      "name": "물",
+      "variants": [
+        { "key": "water", "name": "물", "base": true }
+      ],
+      "relations": []
+    },
+    {
+      "key": "red-pepper-powder",
+      "name": "고춧가루",
+      "variants": [
+        { "key": "red-pepper-powder", "name": "고춧가루", "base": true }
+      ],
+      "relations": []
+    },
+    {
+      "key": "sugar",
+      "name": "설탕",
+      "variants": [
+        { "key": "sugar", "name": "설탕", "base": true }
+      ],
+      "relations": []
+    },
+    {
+      "key": "garlic",
+      "name": "마늘",
+      "variants": [
+        { "key": "garlic", "name": "마늘", "base": true },
+        { "key": "minced-garlic", "name": "다진 마늘", "base": false }
+      ],
+      "relations": [
+        { "source": "garlic", "target": "minced-garlic" }
+      ]
+    },
+    {
+      "key": "soy-sauce",
+      "name": "간장",
+      "variants": [
+        { "key": "soy-sauce", "name": "간장", "base": true },
+        { "key": "dark-soy-sauce", "name": "진간장", "base": false },
+        { "key": "soup-soy-sauce", "name": "국간장", "base": false }
+      ],
+      "relations": []
+    },
+    {
+      "key": "coin-broth",
+      "name": "코인육수",
+      "variants": [
+        { "key": "coin-broth", "name": "코인육수", "base": true }
+      ],
+      "relations": []
+    }
+  ]
+}

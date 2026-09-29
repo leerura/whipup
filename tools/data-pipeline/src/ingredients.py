@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT.parents[1] / "data"
 INPUT_FILE = ROOT / "input" / "shorts-urls.txt"
 RAW_DIR = ROOT / "ingredient" / "raw"
-REVIEW_DIR = ROOT / "ingredient" / "review"
+APPROVED_DIR = ROOT / "ingredient" / "approved"
 MANIFEST_FILE = ROOT / "ingredient" / "manifest.json"
 
 
@@ -81,6 +81,23 @@ def assign_source_ids(ingredients: list[dict]) -> list[dict]:
         }
         for index, ingredient in enumerate(ingredients, start=1)
     ]
+
+
+def approve_stage_one_result(video_id: str) -> None:
+    raw_path = RAW_DIR / f"{video_id}.json"
+    result = load_json(raw_path, None)
+    if result is None:
+        raise RuntimeError(f"Stage 1 result not found for videoId: {video_id}")
+    if not isinstance(result.get("ingredients"), list):
+        raise RuntimeError(f"Stage 1 result has no ingredients list: {video_id}")
+
+    write_json(APPROVED_DIR / f"{video_id}.json", result)
+    update_manifest(
+        video_id,
+        "APPROVED",
+        sourceUrl=result.get("sourceUrl"),
+    )
+    print(f"[approve] {video_id} APPROVED")
 
 
 def run_raw_extraction(model: str, force: bool) -> None:
@@ -145,7 +162,18 @@ def main() -> None:
         "--model",
         default=os.environ.get("GEMINI_MODEL", "models/gemini-2.5-flash"),
     )
+    parser.add_argument(
+        "--approve",
+        metavar="VIDEO_ID",
+        help="Copy a human-reviewed Stage 1 result into the approved input set.",
+    )
     args = parser.parse_args()
+
+    if args.approve:
+        if args.force:
+            parser.error("--approve cannot be used with --force")
+        approve_stage_one_result(args.approve)
+        return
 
     run_raw_extraction(model=args.model, force=args.force)
 

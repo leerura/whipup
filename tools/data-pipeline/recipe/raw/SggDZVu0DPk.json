@@ -2,96 +2,200 @@
   "videoId": "SggDZVu0DPk",
   "sourceUrl": "https://youtu.be/SggDZVu0DPk?si=CG6FjijHLCA0Q0Uc",
   "pipeline": {
-    "type": "RECIPE_EXTRACTION",
-    "version": 1,
+    "type": "RECIPE_STAGE_2_STRUCTURING",
+    "version": 3,
     "model": "models/gemini-2.5-flash",
-    "ingredientMasterHash": "2c3051c59fa2c228b97f5425882672aaa6d981cb5a816192046b49028797b69e"
+    "ingredientMasterHash": "45889115c4fd5c520e9760f77310dd1d210578ccb5ddd97efd30290310da23e8"
   },
-  "recipe": {
-    "key": "samgyeopsal-kimchi-jjim-sggdzvu0dpk",
-    "name": "삼겹살 김치찜",
-    "ingredients": [
-      {
-        "canonicalIngredient": "김치",
-        "displayName": "잘 익은 김치",
-        "rawText": "잘 익은 김치랑",
-        "amount": null,
-        "unit": null,
-        "mappingStatus": "MAPPED"
-      },
-      {
-        "canonicalIngredient": "삼겹살",
-        "displayName": "삼겹살",
-        "rawText": "삼겹살을",
-        "amount": null,
-        "unit": null,
-        "mappingStatus": "MAPPED"
-      },
-      {
-        "canonicalIngredient": "물",
-        "displayName": "물 350ml",
-        "rawText": "물 350ml",
-        "amount": "350",
-        "unit": "ml",
-        "mappingStatus": "MAPPED"
-      },
-      {
-        "canonicalIngredient": "고춧가루",
-        "displayName": "고춧가루 1",
-        "rawText": "고춧가루 1",
-        "amount": "1",
-        "unit": null,
-        "mappingStatus": "MAPPED"
-      },
-      {
-        "canonicalIngredient": "설탕",
-        "displayName": "설탕 0.5",
-        "rawText": "설탕 0.5",
-        "amount": "0.5",
-        "unit": null,
-        "mappingStatus": "MAPPED"
-      },
-      {
-        "canonicalIngredient": "마늘",
-        "displayName": "다진 마늘",
-        "rawText": "다진 마늘",
-        "amount": null,
-        "unit": null,
-        "mappingStatus": "MAPPED"
-      },
-      {
-        "canonicalIngredient": "간장",
-        "displayName": "진간장 1",
-        "rawText": "진간장 1",
-        "amount": "1",
-        "unit": null,
-        "mappingStatus": "MAPPED"
-      },
-      {
-        "canonicalIngredient": "코인육수",
-        "displayName": "코인육수 1알",
-        "rawText": "코인육수도 1알",
-        "amount": "1",
-        "unit": "알",
-        "mappingStatus": "MAPPED"
-      },
-      {
-        "canonicalIngredient": "깨",
-        "displayName": "깨",
-        "rawText": "깨",
-        "amount": null,
-        "unit": null,
-        "mappingStatus": "MAPPED"
-      }
-    ],
-    "steps": [
-      "냄비에 잘 익은 김치와 삼겹살을 먼저 올린다.",
-      "물 350ml를 넣는다.",
-      "고춧가루 1, 설탕 0.5, 다진 마늘, 진간장 1을 넣는다.",
-      "코인육수 1알을 넣는다.",
-      "뚜껑을 닫고 30분 이상 푹 끓인다.",
-      "완성된 김치찜 위에 깨를 뿌린다."
-    ],
-    "shortsReference": "https://youtu.be/SggDZVu0DPk?si=CG6FjijHLCA0Q0Uc"
+  "result": {
+    "recipe": {
+      "key": "recipe-536767445a56753044506b",
+      "name": "삼겹살 김치찜",
+      "status": "DRAFT",
+      "ingredients": [
+        {
+          "sourceId": "ingredient-1",
+          "key": "sesame",
+          "variant": "sesame",
+          "displayName": "참깨",
+          "rawText": "참깨",
+          "amount": null,
+          "unit": null,
+          "optional": false
+        },
+        {
+          "sourceId": "ingredient-2",
+          "key": "kimchi",
+          "variant": "kimchi",
+          "displayName": "김치",
+          "rawText": "잘 익은 김치",
+          "amount": null,
+          "unit": null,
+          "optional": false
+        },
+        {
+          "sourceId": "ingredient-3",
+          "key": "pork-belly",
+          "variant": "pork-belly",
+          "displayName": "삼겹살",
+          "rawText": "삼겹살",
+          "amount": null,
+          "unit": null,
+          "optional": false
+        },
+        {
+          "sourceId": "ingredient-4",
+          "key": "water",
+          "variant": "water",
+          "displayName": "물",
+          "rawText": "물 350ml",
+          "amount": "350",
+          "unit": "ml",
+          "optional": false
+        },
+        {
+          "sourceId": "ingredient-5",
+          "key": "red-pepper-powder",
+          "variant": "red-pepper-powder",
+          "displayName": "고춧가루",
+          "rawText": "고춧가루 1",
+          "amount": "1",
+          "unit": null,
+          "optional": false
+        },
+        {
+          "sourceId": "ingredient-6",
+          "key": "sugar",
+          "variant": "sugar",
+          "displayName": "설탕",
+          "rawText": "설탕 0.5",
+          "amount": "0.5",
+          "unit": null,
+          "optional": false
+        },
+        {
+          "sourceId": "ingredient-7",
+          "key": "garlic",
+          "variant": "minced-garlic",
+          "displayName": "다진마늘",
+          "rawText": "다진마늘 1",
+          "amount": "1",
+          "unit": null,
+          "optional": false
+        },
+        {
+          "sourceId": "ingredient-8",
+          "key": "soy-sauce",
+          "variant": "dark-soy-sauce",
+          "displayName": "진간장",
+          "rawText": "진간장 1",
+          "amount": "1",
+          "unit": null,
+          "optional": false
+        },
+        {
+          "sourceId": "ingredient-9",
+          "key": "coin-broth",
+          "variant": "coin-broth",
+          "displayName": "코인육수",
+          "rawText": "코인육수 1알",
+          "amount": "1",
+          "unit": "알",
+          "optional": false
+        }
+      ],
+      "requirements": [
+        {
+          "options": [
+            {
+              "ingredient": "sesame",
+              "substitutes": [],
+              "allowedVariants": []
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "ingredient": "kimchi",
+              "substitutes": [],
+              "allowedVariants": []
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "ingredient": "pork-belly",
+              "substitutes": [],
+              "allowedVariants": []
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "ingredient": "water",
+              "substitutes": [],
+              "allowedVariants": []
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "ingredient": "red-pepper-powder",
+              "substitutes": [],
+              "allowedVariants": []
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "ingredient": "sugar",
+              "substitutes": [],
+              "allowedVariants": []
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "ingredient": "garlic",
+              "substitutes": [],
+              "allowedVariants": []
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "ingredient": "soy-sauce",
+              "substitutes": [],
+              "allowedVariants": []
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "ingredient": "coin-broth",
+              "substitutes": [],
+              "allowedVariants": []
+            }
+          ]
+        }
+      ],
+      "steps": [
+        "냄비에 잘 익은 김치랑 삼겹살을 먼저 올려주세요.",
+        "물 350ml를 넣어주세요.",
+        "고춧가루 1, 설탕 0.5, 다진마늘 1, 진간장 1, 코인육수 1알을 넣어주세요.",
+        "뚜껑을 닫고 30분 이상 푹 끓여주세요.",
+        "마지막으로 참깨를 뿌려주세요."
+      ],
+      "shortsReference": "https://youtu.be/SggDZVu0DPk?si=CG6FjijHLCA0Q0Uc"
+    },
+    "mappingFailures": []
   }
 }
