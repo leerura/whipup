@@ -2,64 +2,241 @@
   "videoId": "SggDZVu0DPk",
   "sourceUrl": "https://youtu.be/SggDZVu0DPk?si=CG6FjijHLCA0Q0Uc",
   "pipeline": {
-    "type": "INGREDIENT_RAW_EXTRACTION",
-    "version": 1,
+    "type": "INGREDIENT_STAGE_1_EXTRACTION",
+    "version": 2,
     "model": "models/gemini-2.5-flash"
   },
   "ingredients": [
     {
+      "sourceId": "ingredient-1",
+      "rawText": "참깨",
+      "displayName": "참깨",
+      "amount": null,
+      "unit": null,
+      "evidences": [
+        {
+          "type": "VISUAL_ACTION",
+          "text": "Sprinkling white sesame seeds",
+          "timestamp": "00:00"
+        }
+      ]
+    },
+    {
+      "sourceId": "ingredient-2",
       "rawText": "잘 익은 김치",
       "displayName": "김치",
       "amount": null,
-      "unit": null
+      "unit": null,
+      "evidences": [
+        {
+          "type": "SUBTITLE",
+          "text": "삼겹살 김치찜 레시피에요",
+          "timestamp": "00:01"
+        },
+        {
+          "type": "SPEECH",
+          "text": "삼겹살 김치찜 레시피에요",
+          "timestamp": "00:01"
+        },
+        {
+          "type": "SUBTITLE",
+          "text": "냄비에 잘 익은 김치랑",
+          "timestamp": "00:04"
+        },
+        {
+          "type": "SPEECH",
+          "text": "냄비에 잘 익은 김치랑",
+          "timestamp": "00:04"
+        },
+        {
+          "type": "VISUAL_ACTION",
+          "text": "Placing a large piece of kimchi into the pan",
+          "timestamp": "00:04"
+        }
+      ]
     },
     {
+      "sourceId": "ingredient-3",
       "rawText": "삼겹살",
       "displayName": "삼겹살",
       "amount": null,
-      "unit": null
+      "unit": null,
+      "evidences": [
+        {
+          "type": "SUBTITLE",
+          "text": "삼겹살 김치찜 레시피에요",
+          "timestamp": "00:01"
+        },
+        {
+          "type": "SPEECH",
+          "text": "삼겹살 김치찜 레시피에요",
+          "timestamp": "00:01"
+        },
+        {
+          "type": "SUBTITLE",
+          "text": "삼겹살을 먼저 올려주고",
+          "timestamp": "00:05"
+        },
+        {
+          "type": "SPEECH",
+          "text": "삼겹살을 먼저 올려주고",
+          "timestamp": "00:05"
+        },
+        {
+          "type": "VISUAL_ACTION",
+          "text": "Placing chopped pork belly into the pan",
+          "timestamp": "00:05"
+        }
+      ]
     },
     {
+      "sourceId": "ingredient-4",
       "rawText": "물 350ml",
       "displayName": "물",
       "amount": "350",
-      "unit": "ml"
+      "unit": "ml",
+      "evidences": [
+        {
+          "type": "SUBTITLE",
+          "text": "여기에 물 350ml 넣어주세요",
+          "timestamp": "00:07"
+        },
+        {
+          "type": "SPEECH",
+          "text": "여기에 물 350ml 넣어주세요",
+          "timestamp": "00:07"
+        },
+        {
+          "type": "VISUAL_ACTION",
+          "text": "Pouring water from a measuring cup",
+          "timestamp": "00:07"
+        }
+      ]
     },
     {
+      "sourceId": "ingredient-5",
       "rawText": "고춧가루 1",
       "displayName": "고춧가루",
       "amount": "1",
-      "unit": null
+      "unit": null,
+      "evidences": [
+        {
+          "type": "SUBTITLE",
+          "text": "양념은 고춧가루 1",
+          "timestamp": "00:09"
+        },
+        {
+          "type": "SPEECH",
+          "text": "고춧가루",
+          "timestamp": "00:09"
+        },
+        {
+          "type": "VISUAL_ACTION",
+          "text": "Adding red powder (gochugaru)",
+          "timestamp": "00:09"
+        }
+      ]
     },
     {
+      "sourceId": "ingredient-6",
       "rawText": "설탕 0.5",
       "displayName": "설탕",
       "amount": "0.5",
-      "unit": null
+      "unit": null,
+      "evidences": [
+        {
+          "type": "SUBTITLE",
+          "text": "설탕 0.5",
+          "timestamp": "00:09"
+        },
+        {
+          "type": "SPEECH",
+          "text": "설탕",
+          "timestamp": "00:09"
+        },
+        {
+          "type": "VISUAL_ACTION",
+          "text": "Adding light yellow powder (sugar)",
+          "timestamp": "00:09"
+        }
+      ]
     },
     {
-      "rawText": "다진마늘",
+      "sourceId": "ingredient-7",
+      "rawText": "다진마늘 1",
       "displayName": "다진마늘",
-      "amount": null,
-      "unit": null
+      "amount": "1",
+      "unit": null,
+      "evidences": [
+        {
+          "type": "SUBTITLE",
+          "text": "다진마늘 1",
+          "timestamp": "00:10"
+        },
+        {
+          "type": "SPEECH",
+          "text": "다진마늘",
+          "timestamp": "00:10"
+        },
+        {
+          "type": "VISUAL_ACTION",
+          "text": "Adding minced garlic",
+          "timestamp": "00:10"
+        }
+      ]
     },
     {
+      "sourceId": "ingredient-8",
       "rawText": "진간장 1",
       "displayName": "진간장",
       "amount": "1",
-      "unit": null
+      "unit": null,
+      "evidences": [
+        {
+          "type": "SUBTITLE",
+          "text": "진간장 1을 넣어주고",
+          "timestamp": "00:11"
+        },
+        {
+          "type": "SPEECH",
+          "text": "진간장 1을 넣어주고",
+          "timestamp": "00:11"
+        },
+        {
+          "type": "VISUAL_ACTION",
+          "text": "Adding dark liquid (soy sauce)",
+          "timestamp": "00:11"
+        }
+      ]
     },
     {
+      "sourceId": "ingredient-9",
       "rawText": "코인육수 1알",
       "displayName": "코인육수",
       "amount": "1",
-      "unit": "알"
-    },
-    {
-      "rawText": "깨",
-      "displayName": "깨",
-      "amount": null,
-      "unit": null
+      "unit": "알",
+      "evidences": [
+        {
+          "type": "SUBTITLE",
+          "text": "코인육수도 1알 넣어주세요",
+          "timestamp": "00:12"
+        },
+        {
+          "type": "SPEECH",
+          "text": "코인육수도 1알 넣어주세요",
+          "timestamp": "00:12"
+        },
+        {
+          "type": "ON_SCREEN_TEXT",
+          "text": "코인육수",
+          "timestamp": "00:12"
+        },
+        {
+          "type": "VISUAL_ACTION",
+          "text": "Adding a small packet of coin broth",
+          "timestamp": "00:12"
+        }
+      ]
     }
   ]
 }

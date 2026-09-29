@@ -5,6 +5,8 @@ from typing import Any
 PIPELINE_TYPE = "INGREDIENT_RAW_EXTRACTION"
 PIPELINE_VERSION = 1
 RECIPE_PIPELINE_TYPE = "RECIPE_EXTRACTION"
+INGREDIENT_STAGE_ONE_PIPELINE_TYPE = "INGREDIENT_STAGE_1_EXTRACTION"
+INGREDIENT_STAGE_ONE_PIPELINE_VERSION = 2
 
 
 def load_json(path: Path, default: Any) -> Any:
@@ -26,12 +28,13 @@ def is_current_result(
     data: dict,
     model: str,
     pipeline_type: str = PIPELINE_TYPE,
+    pipeline_version: int = PIPELINE_VERSION,
     ingredient_master_hash: str | None = None,
 ) -> bool:
     pipeline = data.get("pipeline", {})
     is_current = (
         pipeline.get("type") == pipeline_type
-        and pipeline.get("version") == PIPELINE_VERSION
+        and pipeline.get("version") == pipeline_version
         and pipeline.get("model") == model
     )
 
@@ -47,11 +50,12 @@ def is_current_result(
 def metadata(
     model: str,
     pipeline_type: str = PIPELINE_TYPE,
+    pipeline_version: int = PIPELINE_VERSION,
     **extra: object,
 ) -> dict:
     return {
         "type": pipeline_type,
-        "version": PIPELINE_VERSION,
+        "version": pipeline_version,
         "model": model,
         **extra,
     }

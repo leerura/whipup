@@ -4,16 +4,17 @@ import os
 from google import genai
 from google.genai import types
 
-#TODO: 프롬프트 외부 관리 필요. 현재는 코드에 하드코딩되어 있음. 추후 프롬프트를 외부 파일로 관리하고, 필요시 로드하도록 변경 필요.
-INGREDIENT_PROMPT = """
-You are extracting ingredient expressions from a Korean YouTube Shorts cooking video.
+# TODO: Move prompts into external files when prompt versioning becomes necessary.
+INGREDIENT_STAGE_ONE_PROMPT = """
+You are performing Stage 1 ingredient extraction from a Korean YouTube Shorts cooking video.
 
 Rules:
 - Extract only ingredients directly visible or explicitly mentioned in the video.
 - Do not guess missing ingredients.
 - Preserve the original cooking expression as much as possible.
-- Do not canonicalize ingredients.
+- Do not canonicalize, map, add, or remove ingredients.
 - If amount or unit is unclear, use null.
+- Do not invent evidence or a timestamp that is not observable in the video.
 - Return JSON only.
 
 Schema:
@@ -23,7 +24,14 @@ Schema:
       "rawText": string,
       "displayName": string,
       "amount": string | null,
-      "unit": string | null
+      "unit": string | null,
+      "evidences": [
+        {
+          "type": "SPEECH" | "SUBTITLE" | "ON_SCREEN_TEXT" | "VISUAL_ACTION",
+          "text": string,
+          "timestamp": string | null
+        }
+      ]
     }
   ]
 }
@@ -110,11 +118,11 @@ class GeminiClient:
         self._client = genai.Client(api_key=api_key)
         self._model = model
 
-    def extract_ingredients(self, source_url: str) -> list[dict]:
+    def extract_stage_one_ingredients(self, source_url: str) -> list[dict]:
         response = self._client.models.generate_content(
             model=self._model,
             contents=[
-                INGREDIENT_PROMPT,
+                INGREDIENT_STAGE_ONE_PROMPT,
                 types.Part.from_uri(file_uri=source_url, mime_type="video/mp4"),
             ],
             config=types.GenerateContentConfig(response_mime_type="application/json"),
