@@ -26,7 +26,7 @@ class RecommendationScreen extends StatefulWidget {
 }
 
 class _RecommendationScreenState extends State<RecommendationScreen> {
-  int _selectedMissingCount = 0;
+  RecommendationMode _selectedMode = RecommendationMode.AVAILABLE;
   List<RecommendationItem> _items = const [];
   bool _isLoading = true;
   bool _hasLoadError = false;
@@ -50,19 +50,15 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
     try {
       final response = await widget.apiClient
           .getRecommendationApi()
-          .getRecommendations(
-            missingCount: _selectedMissingCount,
-            page: 0,
-            size: 30,
-          );
-      final page = response.data;
-      if (page == null) {
+          .getRecipeRecommendations(mode: _selectedMode);
+      final data = response.data;
+      if (data == null) {
         throw StateError('The recommendation response body is empty.');
       }
       if (!mounted || requestId != _requestId) return;
 
       setState(() {
-        _items = page.items.toList(growable: false);
+        _items = data.items.toList(growable: false);
         _isLoading = false;
       });
     } catch (error) {
@@ -116,10 +112,10 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
                     ),
                     const SizedBox(height: 24),
                     _RecommendationSelector(
-                      selectedMissingCount: _selectedMissingCount,
+                      selectedMode: _selectedMode,
                       onChanged: (value) {
-                        if (value == _selectedMissingCount) return;
-                        setState(() => _selectedMissingCount = value);
+                        if (value == _selectedMode) return;
+                        setState(() => _selectedMode = value);
                         _loadRecommendations();
                       },
                     ),
@@ -135,7 +131,7 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
                       )
                     else if (_items.isEmpty)
                       _EmptyRecommendations(
-                        missingCount: _selectedMissingCount,
+                        mode: _selectedMode,
                         onRegisterIngredients: widget.onRegisterIngredients,
                       )
                     else
@@ -181,14 +177,18 @@ class _ScreenHeader extends StatelessWidget {
 
 class _RecommendationSelector extends StatelessWidget {
   const _RecommendationSelector({
-    required this.selectedMissingCount,
+    required this.selectedMode,
     required this.onChanged,
   });
 
-  final int selectedMissingCount;
-  final ValueChanged<int> onChanged;
+  final RecommendationMode selectedMode;
+  final ValueChanged<RecommendationMode> onChanged;
 
-  static const _labels = ['바로 가능', '1개 부족', '2개 부족'];
+  static const _modes = [
+    RecommendationMode.AVAILABLE,
+    RecommendationMode.MISSING_INGREDIENTS,
+  ];
+  static const _labels = ['지금 있는 걸로', '재료 추가해서'];
 
   @override
   Widget build(BuildContext context) {
@@ -202,7 +202,7 @@ class _RecommendationSelector extends StatelessWidget {
       ),
       child: Row(
         children: List.generate(_labels.length, (index) {
-          final isSelected = selectedMissingCount == index;
+          final isSelected = selectedMode == _modes[index];
 
           return Expanded(
             child: Semantics(
@@ -212,7 +212,7 @@ class _RecommendationSelector extends StatelessWidget {
                 color: isSelected ? AppColors.primary : Colors.transparent,
                 borderRadius: BorderRadius.circular(18),
                 child: InkWell(
-                  onTap: () => onChanged(index),
+                  onTap: () => onChanged(_modes[index]),
                   borderRadius: BorderRadius.circular(18),
                   child: Center(
                     child: Text(
@@ -279,9 +279,7 @@ class _RecipeCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final missingIngredient = item.missingIngredients.isEmpty
-        ? null
-        : item.missingIngredients.first.name;
+    final copy = _RecommendationCopy.fromItem(item);
 
     return Semantics(
       button: onTap != null,
@@ -299,20 +297,7 @@ class _RecipeCard extends StatelessWidget {
             children: [
               AspectRatio(
                 aspectRatio: 1.28,
-                child: Stack(
-                  fit: StackFit.expand,
-                  children: [
-                    _RecipeThumbnail(item: item),
-                    if (missingIngredient != null)
-                      Positioned(
-                        top: 10,
-                        right: 10,
-                        child: _MissingIngredientBadge(
-                          ingredient: missingIngredient,
-                        ),
-                      ),
-                  ],
-                ),
+                child: _RecipeThumbnail(item: item),
               ),
               Padding(
                 padding: const EdgeInsets.fromLTRB(12, 12, 12, 14),
@@ -321,8 +306,6 @@ class _RecipeCard extends StatelessWidget {
                   children: [
                     Text(
                       item.name,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                         color: AppColors.textPrimary,
                         fontSize: 16,
@@ -331,16 +314,28 @@ class _RecipeCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 5),
                     Text(
-                      missingIngredient == null
-                          ? '재료가 다 있어요'
-                          : '$missingIngredient만 있으면 돼요',
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
+                      copy.primary,
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        color: AppColors.textSecondary,
+                        color: item.missingCount > 0
+                            ? AppColors.primary
+                            : AppColors.textSecondary,
                         fontSize: 13,
+                        height: 1.6,
+                        letterSpacing: 0,
                       ),
                     ),
+                    for (final note in copy.secondary) ...[
+                      const SizedBox(height: 4),
+                      Text(
+                        note,
+                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                          color: AppColors.textMuted,
+                          fontSize: 12,
+                          height: 1.6,
+                          letterSpacing: 0,
+                        ),
+                      ),
+                    ],
                   ],
                 ),
               ),
@@ -402,48 +397,88 @@ class _ThumbnailPlaceholder extends StatelessWidget {
   }
 }
 
-class _MissingIngredientBadge extends StatelessWidget {
-  const _MissingIngredientBadge({required this.ingredient});
+class _RecommendationCopy {
+  const _RecommendationCopy({required this.primary, this.secondary = const []});
 
-  final String ingredient;
+  final String primary;
+  final List<String> secondary;
 
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 34,
-      height: 34,
-      alignment: Alignment.center,
-      decoration: BoxDecoration(
-        color: AppColors.white,
-        shape: BoxShape.circle,
-        border: Border.all(color: AppColors.border),
-        boxShadow: const [
-          BoxShadow(
-            color: Color(0x14000000),
-            blurRadius: 8,
-            offset: Offset(0, 2),
-          ),
-        ],
-      ),
-      child: Text(
-        ingredient.characters.first,
-        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-          color: AppColors.primary,
-          fontSize: 13,
-          fontWeight: FontWeight.w700,
-        ),
-      ),
+  factory _RecommendationCopy.fromItem(RecommendationItem item) {
+    final missing = <MissingRequirementResult>[];
+    final matchNotes = <String>{};
+    for (final result in item.requirementResults) {
+      final value = result.oneOf.value;
+      if (value is MissingRequirementResult) {
+        missing.add(value);
+      } else if (value is SatisfiedRequirementResult) {
+        for (final match in value.matches) {
+          if (match.type == IngredientMatchTypeEnum.PREPARATION) {
+            matchNotes.add('${_withParticle(match.requiredName, '은', '는')} 가지고 있는 ${_withParticle(match.ownedName, '을', '를')} 활용할 수 있어요');
+          } else if (match.type == IngredientMatchTypeEnum.SUBSTITUTE) {
+            matchNotes.add('${_withParticle(match.requiredName, '은', '는')} 가지고 있는 ${_withParticle(match.ownedName, '으로', '로', rieulAsVowel: true)} 대신해도 돼요');
+          }
+        }
+      }
+    }
+
+    if (item.missingCount > 1) {
+      return _RecommendationCopy(
+        primary: '재료 ${item.missingCount}개가 더 필요해요',
+        secondary: matchNotes.take(1).toList(growable: false),
+      );
+    }
+    if (item.missingCount == 1) {
+      final options = missing.isEmpty
+          ? const <MissingOption>[]
+          : missing.first.missingOptions.toList(growable: false);
+      final names = options.map((option) => option.requiredName).join(' 또는 ');
+      final substituteNotes = <String>[
+        for (final option in options)
+          if (option.substitutes.isNotEmpty)
+            '${_withParticle(option.requiredName, '은', '는')} ${_withParticle(option.substitutes.map((substitute) => substitute.name).join(' 또는 '), '으로', '로', rieulAsVowel: true)} 대신해도 돼요',
+      ];
+      return _RecommendationCopy(
+        primary: options.isEmpty
+            ? '재료 1개가 더 필요해요'
+            : options.length > 1
+                ? '$names 중 하나만 있으면 돼요'
+                : options.single.substitutes.isEmpty
+                    ? '$names만 있으면 돼요'
+                    : '${_withParticle(names, '이', '가')} 필요해요',
+        secondary: [...substituteNotes, ...matchNotes.take(1)],
+      );
+    }
+    if (matchNotes.isEmpty) {
+      return const _RecommendationCopy(primary: '지금 바로 만들 수 있어요');
+    }
+    return _RecommendationCopy(
+      primary: matchNotes.first,
+      secondary: matchNotes.skip(1).take(1).toList(growable: false),
     );
+  }
+
+  static String _withParticle(
+    String text,
+    String consonant,
+    String vowel, {
+    bool rieulAsVowel = false,
+  }) {
+    if (text.isEmpty) return text;
+    final last = text.runes.last;
+    if (last < 0xAC00 || last > 0xD7A3) return '$text($consonant/$vowel)';
+    final finalConsonant = (last - 0xAC00) % 28;
+    final useVowel = finalConsonant == 0 || (rieulAsVowel && finalConsonant == 8);
+    return '$text${useVowel ? vowel : consonant}';
   }
 }
 
 class _EmptyRecommendations extends StatelessWidget {
   const _EmptyRecommendations({
-    required this.missingCount,
+    required this.mode,
     required this.onRegisterIngredients,
   });
 
-  final int missingCount;
+  final RecommendationMode mode;
   final VoidCallback? onRegisterIngredients;
 
   @override
@@ -455,7 +490,9 @@ class _EmptyRecommendations extends StatelessWidget {
           const _EmptyPlateIllustration(),
           const SizedBox(height: 26),
           Text(
-            '$missingCount개 부족 메뉴가 없어요',
+            mode == RecommendationMode.AVAILABLE
+                ? '지금 만들 수 있는 메뉴가 없어요'
+                : '재료를 추가해서 만들 메뉴가 없어요',
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.titleLarge?.copyWith(
               color: AppColors.textPrimary,

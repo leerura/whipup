@@ -6,29 +6,27 @@ import '../../../app/theme.dart';
 class IngredientRegistrationCompleteSheet extends StatelessWidget {
   const IngredientRegistrationCompleteSheet({
     required this.ingredientCount,
-    required this.recommendationPage,
+    required this.recommendationList,
     required this.onViewRecommendations,
     super.key,
   });
 
   final int ingredientCount;
-  final RecommendationPage? recommendationPage;
+  final RecommendationListResponse? recommendationList;
   final VoidCallback onViewRecommendations;
 
   @override
   Widget build(BuildContext context) {
-    final recommendations = recommendationPage?.items
+    final recommendations = recommendationList?.items
         .take(5)
         .toList(growable: false) ?? const <RecommendationItem>[];
     late final String title;
-    if (recommendationPage == null) {
+    if (recommendationList == null) {
       title = '추천 메뉴는\n다음 화면에서 확인해 주세요';
     } else if (recommendations.isEmpty) {
       title = '지금 바로 만들 수 있는\n메뉴가 아직 없어요';
-    } else if (recommendationPage!.hasNext) {
-      title = '지금 바로 만들 수 있는\n메뉴가 ${recommendations.length}개 이상 있어요';
     } else {
-      title = '지금 바로 만들 수 있는\n메뉴가 ${recommendations.length}개 있어요';
+      title = '지금 바로 만들 수 있는\n메뉴가 ${recommendationList!.items.length}개 있어요';
     }
 
     return Material(
@@ -89,7 +87,7 @@ class IngredientRegistrationCompleteSheet extends StatelessWidget {
                     ? Padding(
                         padding: const EdgeInsets.only(right: 24),
                         child: _RecommendationPreviewMessage(
-                          hasError: recommendationPage == null,
+                          hasError: recommendationList == null,
                         ),
                       )
                     : ListView.separated(

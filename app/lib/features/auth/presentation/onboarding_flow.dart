@@ -77,7 +77,7 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
         }
 
         registeredIngredients = data.items
-            .map((ingredient) => ingredient.displayName)
+            .map((ingredient) => ingredient.name)
             .toSet();
       }
 
@@ -114,10 +114,6 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
 
   void _showRecommendations() {
     setState(() => _stage = _OnboardingStage.recommendations);
-  }
-
-  void _showIngredients() {
-    setState(() => _stage = _OnboardingStage.ingredients);
   }
 
   void _showOwnedIngredients() {
@@ -164,14 +160,14 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
           key: const ValueKey(_OnboardingStage.recommendations),
           apiClient: _apiClient,
           ownedIngredientCount: _registeredIngredients.length,
-          onRegisterIngredients: _showIngredients,
+          onRegisterIngredients: _showOwnedIngredients,
           onIngredientsSelected: _showOwnedIngredients,
           onRecipeSelected: _showRecipeDetail,
         ),
         _OnboardingStage.ownedIngredients => OwnedIngredientsScreen(
           key: const ValueKey(_OnboardingStage.ownedIngredients),
           apiClient: _apiClient,
-          onRegisterIngredients: _showIngredients,
+          onRegisterIngredients: _showOwnedIngredients,
           onOwnedIngredientsChanged: _handleOwnedIngredientsChanged,
           onRecommendationsSelected: _showRecommendations,
         ),

@@ -9,8 +9,9 @@ import 'package:built_value/serializer.dart';
 import 'package:dio/dio.dart';
 
 import 'package:api_client/src/api_util.dart';
-import 'package:api_client/src/model/add_owned_ingredients_request.dart';
+import 'package:api_client/src/model/add_owned_ingredient_request.dart';
 import 'package:api_client/src/model/error_response.dart';
+import 'package:api_client/src/model/owned_ingredient.dart';
 import 'package:api_client/src/model/owned_ingredient_list_response.dart';
 
 class OwnedIngredientApi {
@@ -21,11 +22,11 @@ class OwnedIngredientApi {
 
   const OwnedIngredientApi(this._dio, this._serializers);
 
-  /// addOwnedIngredients
+  /// addOwnedIngredient
   /// 
   ///
   /// Parameters:
-  /// * [addOwnedIngredientsRequest] 
+  /// * [addOwnedIngredientRequest] 
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -33,10 +34,10 @@ class OwnedIngredientApi {
   /// * [onSendProgress] - A [ProgressCallback] that can be used to get the send progress
   /// * [onReceiveProgress] - A [ProgressCallback] that can be used to get the receive progress
   ///
-  /// Returns a [Future] containing a [Response] with a [OwnedIngredientListResponse] as data
+  /// Returns a [Future] containing a [Response] with a [OwnedIngredient] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<OwnedIngredientListResponse>> addOwnedIngredients({ 
-    required AddOwnedIngredientsRequest addOwnedIngredientsRequest,
+  Future<Response<OwnedIngredient>> addOwnedIngredient({ 
+    required AddOwnedIngredientRequest addOwnedIngredientRequest,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -67,8 +68,8 @@ class OwnedIngredientApi {
     dynamic _bodyData;
 
     try {
-      const _type = FullType(AddOwnedIngredientsRequest);
-      _bodyData = _serializers.serialize(addOwnedIngredientsRequest, specifiedType: _type);
+      const _type = FullType(AddOwnedIngredientRequest);
+      _bodyData = _serializers.serialize(addOwnedIngredientRequest, specifiedType: _type);
 
     } catch(error, stackTrace) {
       throw DioException(
@@ -91,14 +92,14 @@ class OwnedIngredientApi {
       onReceiveProgress: onReceiveProgress,
     );
 
-    OwnedIngredientListResponse? _responseData;
+    OwnedIngredient? _responseData;
 
     try {
       final rawResponse = _response.data;
       _responseData = rawResponse == null ? null : _serializers.deserialize(
         rawResponse,
-        specifiedType: const FullType(OwnedIngredientListResponse),
-      ) as OwnedIngredientListResponse;
+        specifiedType: const FullType(OwnedIngredient),
+      ) as OwnedIngredient;
 
     } catch (error, stackTrace) {
       throw DioException(
@@ -110,7 +111,7 @@ class OwnedIngredientApi {
       );
     }
 
-    return Response<OwnedIngredientListResponse>(
+    return Response<OwnedIngredient>(
       data: _responseData,
       headers: _response.headers,
       isRedirect: _response.isRedirect,

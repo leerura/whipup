@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import '../../../app/theme.dart';
 import '../../../shared/presentation/widgets/main_bottom_navigation.dart';
 import '../../ingredient/presentation/ingredient_ui_item.dart';
-import '../../ingredient/presentation/widgets/ingredient_thumbnail.dart';
+import '../../ingredient/presentation/widgets/ingredient_group_selector.dart';
 
 class OwnedIngredientsScreen extends StatefulWidget {
   const OwnedIngredientsScreen({
@@ -31,6 +31,7 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
   final Set<int> _pendingIngredientIds = {};
 
   List<IngredientUiItem> _ingredients = const [];
+  List<IngredientGroup> _groups = const [];
   String _query = '';
   String? _loadError;
   bool _isLoading = true;
@@ -49,7 +50,7 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
     try {
       final ingredientResponse = await widget.apiClient
           .getIngredientApi()
-          .getIngredientOptions();
+          .getIngredientGroups();
       final ownedResponse = await widget.apiClient
           .getOwnedIngredientApi()
           .getOwnedIngredients();
@@ -59,20 +60,21 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
         throw StateError('The ingredient response body is empty.');
       }
       final ownedById = {
-        for (final item in ownedData.items) item.ingredientId: item,
+        for (final item in ownedData.items) item.variantId: item,
       };
-      final ingredients = ingredientData.items
+      final ingredients = ingredientData.groups.expand((group) => group.items)
           .map(
             (item) => IngredientUiItem(
-              ingredientId: item.ingredientId,
-              displayName: item.displayName,
-              userIngredientId: ownedById[item.ingredientId]?.userIngredientId,
+              ingredientId: item.variantId,
+              displayName: item.name,
+              userIngredientId: ownedById[item.variantId]?.userIngredientId,
             ),
           )
           .toList(growable: false);
       if (!mounted) return;
       setState(() {
         _ingredients = ingredients;
+        _groups = ingredientData.groups.toList(growable: false);
         _isLoading = false;
       });
       _notifyOwnedIngredientsChanged();
@@ -105,22 +107,16 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
       } else {
         final response = await widget.apiClient
             .getOwnedIngredientApi()
-            .addOwnedIngredients(
-              addOwnedIngredientsRequest: AddOwnedIngredientsRequest(
-                (builder) => builder.items.add(
-                  OwnedIngredientSelection(
-                    (builder) => builder.ingredientId = ingredient.ingredientId,
-                  ),
-                ),
+            .addOwnedIngredient(
+              addOwnedIngredientRequest: AddOwnedIngredientRequest(
+                (builder) => builder.variantId = ingredient.ingredientId,
               ),
             );
         final data = response.data;
         if (data == null) {
           throw StateError('The owned ingredient response body is empty.');
         }
-        final saved = data.items.firstWhere(
-          (item) => item.ingredientId == ingredient.ingredientId,
-        );
+        final saved = data;
         _replaceIngredient(
           ingredient.copyWith(userIngredientId: saved.userIngredientId),
         );
@@ -168,6 +164,19 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
     _searchFocusNode.requestFocus();
   }
 
+  Widget _groupSelector(List<IngredientGroup> groups, {String query = ''}) {
+    return IngredientGroupSelector(
+      groups: groups,
+      query: query,
+      selectedVariantIds: _ingredients.where((item) => item.isOwned)
+          .map((item) => item.ingredientId).toSet(),
+      pendingVariantIds: _pendingIngredientIds,
+      onToggle: (id) => _toggleIngredient(
+        _ingredients.firstWhere((item) => item.ingredientId == id),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final owned = _ingredients
@@ -177,14 +186,6 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
         .where((ingredient) => !ingredient.isOwned)
         .toList(growable: false);
     final normalizedQuery = _query.trim();
-    final searchResults = normalizedQuery.isEmpty
-        ? const <IngredientUiItem>[]
-        : _ingredients
-              .where(
-                (ingredient) =>
-                    ingredient.displayName.contains(normalizedQuery),
-              )
-              .toList(growable: false);
 
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: SystemUiOverlayStyle.dark,
@@ -207,7 +208,7 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
                   padding: const EdgeInsets.fromLTRB(20, 24, 20, 36),
                   children: [
                     Text(
-                      '현재 가지고 있는 재료예요',
+                      owned.isEmpty ? '재료를 골라 담아보세요' : '현재 가지고 있는 재료예요',
                       style: Theme.of(context).textTheme.headlineSmall
                           ?.copyWith(
                             fontSize: 24,
@@ -217,7 +218,9 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
                     ),
                     const SizedBox(height: 6),
                     Text(
-                      '여기 있는 재료로 메뉴를 찾아봐요',
+                      owned.isEmpty
+                          ? '가지고 있는 형태를 그대로 선택하면 돼요'
+                          : '여기 있는 재료로 메뉴를 찾아봐요',
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                         color: const Color(0xFF636366),
                         letterSpacing: 0,
@@ -238,30 +241,24 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
                         child: Center(child: CircularProgressIndicator()),
                       )
                     else if (_loadError != null)
-                      _LoadError(
-                        message: _loadError!,
-                        onRetry: _loadIngredients,
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 48),
+                        child: Column(children: [
+                          Text(_loadError!, style: Theme.of(context).textTheme.bodyMedium),
+                          const SizedBox(height: 8),
+                          TextButton(onPressed: _loadIngredients, child: const Text('다시 시도')),
+                        ]),
                       )
                     else if (normalizedQuery.isNotEmpty)
-                      _SearchResults(
-                        query: normalizedQuery,
-                        ingredients: searchResults,
-                        pendingIngredientIds: _pendingIngredientIds,
-                        onToggle: _toggleIngredient,
-                      )
+                      _groupSelector(_groups, query: normalizedQuery)
                     else if (owned.isEmpty)
-                      _EmptyIngredients(
-                        onRegister:
-                            widget.onRegisterIngredients ??
-                            () => _searchFocusNode.requestFocus(),
-                      )
+                      _groupSelector(_groups)
                     else ...[
-                      _IngredientSection(
-                        title: '보유 중 ${owned.length}개',
-                        ingredients: owned,
-                        pendingIngredientIds: _pendingIngredientIds,
-                        onToggle: _toggleIngredient,
-                      ),
+                      Text('보유 중 ${owned.length}개'),
+                      const SizedBox(height: 14),
+                      _groupSelector(_groups.where((group) => group.items.any(
+                        (variant) => owned.any((item) => item.ingredientId == variant.variantId),
+                      )).toList()),
                       const Padding(
                         padding: EdgeInsets.symmetric(vertical: 28),
                         child: Divider(
@@ -270,12 +267,13 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
                           color: Color(0xFFE5E5EA),
                         ),
                       ),
-                      _IngredientSection(
-                        title: '재료 더 담기 ${available.length}개',
-                        ingredients: available,
-                        pendingIngredientIds: _pendingIngredientIds,
-                        onToggle: _toggleIngredient,
-                      ),
+                      if (available.isNotEmpty) ...[
+                        const Text('재료 더 담기'),
+                        const SizedBox(height: 14),
+                        _groupSelector(_groups.where((group) => group.items.any(
+                          (variant) => available.any((item) => item.ingredientId == variant.variantId),
+                        )).toList()),
+                      ],
                     ],
                   ],
                 ),
@@ -363,7 +361,7 @@ class _IngredientSearchField extends StatelessWidget {
           letterSpacing: 0,
         ),
         decoration: InputDecoration(
-          hintText: '재료 추가하기',
+          hintText: '재료명을 검색하세요',
           hintStyle: const TextStyle(
             color: Color(0xFFADA39E),
             fontSize: 15,
@@ -395,308 +393,6 @@ class _IngredientSearchField extends StatelessWidget {
             borderSide: const BorderSide(color: AppColors.primary, width: 1.5),
           ),
         ),
-      ),
-    );
-  }
-}
-
-class _SearchResults extends StatelessWidget {
-  const _SearchResults({
-    required this.query,
-    required this.ingredients,
-    required this.pendingIngredientIds,
-    required this.onToggle,
-  });
-
-  final String query;
-  final List<IngredientUiItem> ingredients;
-  final Set<int> pendingIngredientIds;
-  final ValueChanged<IngredientUiItem> onToggle;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        _IngredientSection(
-          title: "'$query' 검색 결과 ${ingredients.length}개",
-          ingredients: ingredients,
-          pendingIngredientIds: pendingIngredientIds,
-          onToggle: onToggle,
-          emptyMessage: '검색 결과가 없어요',
-        ),
-        const SizedBox(height: 28),
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-          decoration: BoxDecoration(
-            color: const Color(0xFFFFF5F0),
-            borderRadius: BorderRadius.circular(8),
-          ),
-          child: const Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Icon(
-                Icons.info_outline_rounded,
-                size: 19,
-                color: AppColors.primary,
-              ),
-              SizedBox(width: 8),
-              Expanded(
-                child: Text(
-                  '체크하면 바로 담기고, 체크를 풀면 삭제돼요',
-                  style: TextStyle(
-                    color: Color(0xFF636366),
-                    fontSize: 13,
-                    fontWeight: FontWeight.w500,
-                    height: 1.45,
-                    letterSpacing: 0,
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ],
-    );
-  }
-}
-
-class _IngredientSection extends StatelessWidget {
-  const _IngredientSection({
-    required this.title,
-    required this.ingredients,
-    required this.pendingIngredientIds,
-    required this.onToggle,
-    this.emptyMessage,
-  });
-
-  final String title;
-  final List<IngredientUiItem> ingredients;
-  final Set<int> pendingIngredientIds;
-  final ValueChanged<IngredientUiItem> onToggle;
-  final String? emptyMessage;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Text(
-          title,
-          style: const TextStyle(
-            color: AppColors.textPrimary,
-            fontSize: 16,
-            fontWeight: FontWeight.w700,
-            height: 1.5,
-            letterSpacing: 0,
-          ),
-        ),
-        const SizedBox(height: 14),
-        if (ingredients.isEmpty)
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 36),
-            child: Text(
-              emptyMessage ?? '등록된 재료가 없어요',
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                color: Color(0xFF8E8E93),
-                fontSize: 14,
-                fontWeight: FontWeight.w500,
-                letterSpacing: 0,
-              ),
-            ),
-          )
-        else
-          LayoutBuilder(
-            builder: (context, constraints) {
-              const gap = 10.0;
-              final itemWidth = (constraints.maxWidth - gap) / 2;
-
-              return Wrap(
-                spacing: gap,
-                runSpacing: 4,
-                children: [
-                  for (final ingredient in ingredients)
-                    SizedBox(
-                      width: itemWidth,
-                      height: 56,
-                      child: _IngredientTile(
-                        ingredient: ingredient,
-                        isPending: pendingIngredientIds.contains(
-                          ingredient.ingredientId,
-                        ),
-                        onToggle: () => onToggle(ingredient),
-                      ),
-                    ),
-                ],
-              );
-            },
-          ),
-      ],
-    );
-  }
-}
-
-class _IngredientTile extends StatelessWidget {
-  const _IngredientTile({
-    required this.ingredient,
-    required this.isPending,
-    required this.onToggle,
-  });
-
-  final IngredientUiItem ingredient;
-  final bool isPending;
-  final VoidCallback onToggle;
-
-  @override
-  Widget build(BuildContext context) {
-    return Semantics(
-      checked: ingredient.isOwned,
-      button: true,
-      label: ingredient.displayName,
-      child: InkWell(
-        onTap: isPending ? null : onToggle,
-        borderRadius: BorderRadius.circular(6),
-        child: Row(
-          children: [
-            AnimatedContainer(
-              duration: const Duration(milliseconds: 160),
-              width: 24,
-              height: 24,
-              decoration: BoxDecoration(
-                color: ingredient.isOwned ? AppColors.primary : Colors.white,
-                borderRadius: BorderRadius.circular(6),
-                border: Border.all(
-                  color: ingredient.isOwned
-                      ? AppColors.primary
-                      : const Color(0xFFD1D1D6),
-                ),
-              ),
-              child: isPending
-                  ? const Padding(
-                      padding: EdgeInsets.all(4),
-                      child: CircularProgressIndicator(strokeWidth: 2),
-                    )
-                  : ingredient.isOwned
-                  ? const Icon(
-                      Icons.check_rounded,
-                      size: 17,
-                      color: Colors.white,
-                    )
-                  : null,
-            ),
-            const SizedBox(width: 10),
-            IngredientThumbnail(
-              displayName: ingredient.displayName,
-              assetPath: ingredient.assetPath,
-            ),
-            const SizedBox(width: 8),
-            Expanded(
-              child: Text(
-                ingredient.displayName,
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-                style: const TextStyle(
-                  color: AppColors.textPrimary,
-                  fontSize: 14,
-                  fontWeight: FontWeight.w600,
-                  letterSpacing: 0,
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class _LoadError extends StatelessWidget {
-  const _LoadError({required this.message, required this.onRetry});
-
-  final String message;
-  final VoidCallback onRetry;
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 48),
-      child: Column(
-        children: [
-          Text(message, style: Theme.of(context).textTheme.bodyMedium),
-          const SizedBox(height: 8),
-          TextButton(onPressed: onRetry, child: const Text('다시 시도')),
-        ],
-      ),
-    );
-  }
-}
-
-class _EmptyIngredients extends StatelessWidget {
-  const _EmptyIngredients({required this.onRegister});
-
-  final VoidCallback onRegister;
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 36),
-      child: Column(
-        children: [
-          Container(
-            width: 140,
-            height: 140,
-            decoration: const BoxDecoration(
-              color: Color(0xFFFFF5F0),
-              shape: BoxShape.circle,
-            ),
-            child: const Icon(
-              Icons.kitchen_outlined,
-              size: 64,
-              color: AppColors.primary,
-            ),
-          ),
-          const SizedBox(height: 24),
-          const Text(
-            '등록된 재료가 없어요',
-            style: TextStyle(
-              color: AppColors.textPrimary,
-              fontSize: 18,
-              fontWeight: FontWeight.w700,
-              letterSpacing: 0,
-            ),
-          ),
-          const SizedBox(height: 8),
-          const Text(
-            '재료를 등록하면 만들 수 있는 메뉴를\n찾아드릴게요',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Color(0xFF8E8E93),
-              fontSize: 14,
-              fontWeight: FontWeight.w500,
-              height: 1.5,
-              letterSpacing: 0,
-            ),
-          ),
-          const SizedBox(height: 24),
-          OutlinedButton(
-            onPressed: onRegister,
-            style: OutlinedButton.styleFrom(
-              foregroundColor: AppColors.primary,
-              side: const BorderSide(color: AppColors.primary),
-              minimumSize: const Size(126, 44),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(22),
-              ),
-              textStyle: const TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.w600,
-                letterSpacing: 0,
-              ),
-            ),
-            child: const Text('재료 등록하기'),
-          ),
-        ],
       ),
     );
   }

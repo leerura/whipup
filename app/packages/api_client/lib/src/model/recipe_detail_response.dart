@@ -3,9 +3,10 @@
 //
 
 // ignore_for_file: unused_element
+import 'package:api_client/src/model/detail_requirement.dart';
 import 'package:api_client/src/model/recipe_step.dart';
 import 'package:built_collection/built_collection.dart';
-import 'package:api_client/src/model/recipe_ingredient.dart';
+import 'package:api_client/src/model/detail_ingredient_display.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 
@@ -19,7 +20,8 @@ part 'recipe_detail_response.g.dart';
 /// * [shortsReference] 
 /// * [thumbnailUrl] 
 /// * [missingCount] 
-/// * [ingredients] 
+/// * [requirements] 
+/// * [optionalIngredients] 
 /// * [steps] 
 @BuiltValue()
 abstract class RecipeDetailResponse implements Built<RecipeDetailResponse, RecipeDetailResponseBuilder> {
@@ -38,8 +40,11 @@ abstract class RecipeDetailResponse implements Built<RecipeDetailResponse, Recip
   @BuiltValueField(wireName: r'missingCount')
   int get missingCount;
 
-  @BuiltValueField(wireName: r'ingredients')
-  BuiltList<RecipeIngredient> get ingredients;
+  @BuiltValueField(wireName: r'requirements')
+  BuiltList<DetailRequirement> get requirements;
+
+  @BuiltValueField(wireName: r'optionalIngredients')
+  BuiltList<DetailIngredientDisplay> get optionalIngredients;
 
   @BuiltValueField(wireName: r'steps')
   BuiltList<RecipeStep> get steps;
@@ -92,10 +97,15 @@ class _$RecipeDetailResponseSerializer implements PrimitiveSerializer<RecipeDeta
       object.missingCount,
       specifiedType: const FullType(int),
     );
-    yield r'ingredients';
+    yield r'requirements';
     yield serializers.serialize(
-      object.ingredients,
-      specifiedType: const FullType(BuiltList, [FullType(RecipeIngredient)]),
+      object.requirements,
+      specifiedType: const FullType(BuiltList, [FullType(DetailRequirement)]),
+    );
+    yield r'optionalIngredients';
+    yield serializers.serialize(
+      object.optionalIngredients,
+      specifiedType: const FullType(BuiltList, [FullType(DetailIngredientDisplay)]),
     );
     yield r'steps';
     yield serializers.serialize(
@@ -160,12 +170,19 @@ class _$RecipeDetailResponseSerializer implements PrimitiveSerializer<RecipeDeta
           ) as int;
           result.missingCount = valueDes;
           break;
-        case r'ingredients':
+        case r'requirements':
           final valueDes = serializers.deserialize(
             value,
-            specifiedType: const FullType(BuiltList, [FullType(RecipeIngredient)]),
-          ) as BuiltList<RecipeIngredient>;
-          result.ingredients.replace(valueDes);
+            specifiedType: const FullType(BuiltList, [FullType(DetailRequirement)]),
+          ) as BuiltList<DetailRequirement>;
+          result.requirements.replace(valueDes);
+          break;
+        case r'optionalIngredients':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(BuiltList, [FullType(DetailIngredientDisplay)]),
+          ) as BuiltList<DetailIngredientDisplay>;
+          result.optionalIngredients.replace(valueDes);
           break;
         case r'steps':
           final valueDes = serializers.deserialize(

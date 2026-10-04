@@ -1,13 +1,12 @@
 import 'package:api_client/api_client.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../app/theme.dart';
 import 'ingredient_ui_item.dart';
 import 'ingredient_registration_complete_sheet.dart';
 import 'widgets/ingredient_chip.dart';
-import 'widgets/ingredient_row.dart';
+import 'widgets/ingredient_group_selector.dart';
 import 'widgets/ingredient_search_field.dart';
 
 class InitialIngredientScreen extends StatefulWidget {
@@ -32,23 +31,13 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
 
   final TextEditingController _searchController = TextEditingController();
   final Set<int> _selectedIds = {};
+  final Set<int> _savedVariantIds = {};
+  List<IngredientGroup> _groups = const [];
   List<IngredientUiItem> _ingredients = const [];
   String _query = '';
   String? _loadError;
   bool _isLoading = true;
   bool _isSubmitting = false;
-
-  List<IngredientUiItem> get _visibleIngredients {
-    final normalizedQuery = _query.trim().toLowerCase();
-    if (normalizedQuery.isEmpty) return _ingredients;
-
-    return _ingredients
-        .where(
-          (ingredient) =>
-              ingredient.displayName.toLowerCase().contains(normalizedQuery),
-        )
-        .toList(growable: false);
-  }
 
   List<IngredientUiItem> get _selectedIngredients => _ingredients
       .where((ingredient) => _selectedIds.contains(ingredient.ingredientId))
@@ -83,17 +72,17 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
     try {
       final response = await widget.apiClient
           .getIngredientApi()
-          .getIngredientOptions();
+          .getIngredientGroups();
       final data = response.data;
       if (data == null) {
         throw StateError('The ingredient response body is empty.');
       }
 
-      final ingredients = data.items
+      final ingredients = data.groups.expand((group) => group.items)
           .map(
             (item) => IngredientUiItem(
-              ingredientId: item.ingredientId,
-              displayName: item.displayName,
+              ingredientId: item.variantId,
+              displayName: item.name,
             ),
           )
           .toList(growable: false);
@@ -101,6 +90,7 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
       if (!mounted) return;
       setState(() {
         _ingredients = ingredients;
+        _groups = data.groups.toList(growable: false);
         _isLoading = false;
       });
     } catch (error) {
@@ -120,9 +110,11 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
   }
 
   void _selectPreset() {
+    if (_isSubmitting) return;
     setState(() {
       _selectedIds
         ..clear()
+        ..addAll(_savedVariantIds)
         ..addAll(
           _ingredients
               .where(
@@ -134,6 +126,7 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
   }
 
   void _setIngredientSelected(int id, bool selected) {
+    if (_isSubmitting || _savedVariantIds.contains(id)) return;
     setState(() {
       if (selected) {
         _selectedIds.add(id);
@@ -148,23 +141,11 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
     setState(() => _query = '');
   }
 
-  void _setSuggestedIngredient(int id, bool selected) {
-    _searchController.clear();
-    setState(() {
-      _query = '';
-      if (selected) {
-        _selectedIds.add(id);
-      } else {
-        _selectedIds.remove(id);
-      }
-    });
-  }
-
-  Future<RecommendationPage?> _loadRecommendationPreview() async {
+  Future<RecommendationListResponse?> _loadRecommendationPreview() async {
     try {
       final response = await widget.apiClient
           .getRecommendationApi()
-          .getRecommendations(missingCount: 0, page: 0, size: 5);
+          .getRecipeRecommendations(mode: RecommendationMode.AVAILABLE);
       return response.data;
     } catch (error) {
       debugPrint('Recommendation preview loading failed: $error');
@@ -177,24 +158,26 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
     setState(() => _isSubmitting = true);
 
     try {
-      final request = AddOwnedIngredientsRequest(
-        (builder) => builder.items.addAll(
-          _selectedIds.map(
-            (id) => OwnedIngredientSelection(
-              (builder) => builder.ingredientId = id,
-            ),
-          ),
-        ),
-      );
-      final response = await widget.apiClient
-          .getOwnedIngredientApi()
-          .addOwnedIngredients(addOwnedIngredientsRequest: request);
-      if (response.data == null) {
-        throw StateError('The owned ingredient response body is empty.');
+      final selectedIds = Set<int>.of(_selectedIds);
+      for (final id in selectedIds) {
+        if (_savedVariantIds.contains(id)) continue;
+        final response = await widget.apiClient
+            .getOwnedIngredientApi()
+            .addOwnedIngredient(
+              addOwnedIngredientRequest: AddOwnedIngredientRequest(
+                (builder) => builder.variantId = id,
+              ),
+            );
+        if (response.data == null) {
+          throw StateError('The owned ingredient response body is empty.');
+        }
+        _savedVariantIds.add(id);
+        if (!mounted) return;
       }
 
-      final recommendationPage = await _loadRecommendationPreview();
+      final recommendationList = await _loadRecommendationPreview();
       final selectedLabels = Set<String>.unmodifiable(_selectedLabels);
+      if (!mounted) return;
       widget.onSubmit?.call(selectedLabels);
       if (!mounted) return;
 
@@ -205,7 +188,7 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
         barrierColor: const Color(0x6B1C1C1E),
         builder: (sheetContext) => IngredientRegistrationCompleteSheet(
           ingredientCount: selectedLabels.length,
-          recommendationPage: recommendationPage,
+          recommendationList: recommendationList,
           onViewRecommendations: () => Navigator.of(sheetContext).pop(true),
         ),
       );
@@ -218,7 +201,11 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
       debugPrint('Ingredient registration failed: $error');
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('재료를 등록하지 못했어요. 다시 시도해주세요.')),
+        SnackBar(content: Text(
+          _savedVariantIds.isEmpty
+              ? '재료를 등록하지 못했어요. 다시 시도해주세요.'
+              : '${_savedVariantIds.length}개는 등록됐어요. 다시 시도하면 나머지 재료를 등록해요.',
+        )),
       );
     } finally {
       if (mounted) {
@@ -231,7 +218,6 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
   Widget build(BuildContext context) {
     final selectedCount = _selectedIds.length;
     final hasQuery = _query.trim().isNotEmpty;
-    final hasNoSearchResults = hasQuery && _visibleIngredients.isEmpty;
 
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: const SystemUiOverlayStyle(
@@ -309,65 +295,23 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
                 )
               else
                 const SizedBox.shrink(),
-              if (!_isLoading && _loadError == null && hasNoSearchResults) ...[
-                const SizedBox(height: 48),
-                _SearchEmptyState(
-                  query: _query.trim(),
-                  suggestions: _ingredients
-                      .where(
-                        (ingredient) => const {
-                          '삼겹살',
-                          '우삼겹',
-                        }.contains(ingredient.displayName),
-                      )
-                      .toList(growable: false),
-                  selectedIds: _selectedIds,
-                  onChanged: _setSuggestedIngredient,
-                ),
-              ] else if (!_isLoading && _loadError == null) ...[
-                const SizedBox(height: 24),
-                SvgPicture.asset(
-                  'assets/ingredient/divider.svg',
-                  width: double.infinity,
-                  height: 1,
-                  fit: BoxFit.fill,
-                ),
+              if (!_isLoading && _loadError == null) ...[
                 const SizedBox(height: 24),
                 Text(
-                  hasQuery
-                      ? '검색 결과'
-                      : _selectedIds.isEmpty
-                      ? '또는 직접 고르기'
-                      : '전체 재료',
+                  hasQuery ? '검색 결과' : '전체 재료',
                   style: Theme.of(context).textTheme.labelMedium,
                 ),
                 const SizedBox(height: 8),
-                LayoutBuilder(
-                  builder: (context, constraints) {
-                    final itemWidth = (constraints.maxWidth - 10) / 2;
-
-                    return Wrap(
-                      spacing: 10,
-                      runSpacing: 8,
-                      children: [
-                        for (final ingredient in _visibleIngredients)
-                          SizedBox(
-                            width: itemWidth,
-                            child: IngredientRow(
-                              label: ingredient.displayName,
-                              assetPath: ingredient.assetPath,
-                              selected: _selectedIds.contains(
-                                ingredient.ingredientId,
-                              ),
-                              onChanged: (selected) => _setIngredientSelected(
-                                ingredient.ingredientId,
-                                selected,
-                              ),
-                            ),
-                          ),
-                      ],
-                    );
-                  },
+                IngredientGroupSelector(
+                  groups: _groups,
+                  query: _query,
+                  selectedVariantIds: _selectedIds,
+                  pendingVariantIds: _isSubmitting
+                      ? _ingredients.map((item) => item.ingredientId).toSet()
+                      : const <int>{},
+                  onToggle: (id) => _setIngredientSelected(
+                    id, !_selectedIds.contains(id),
+                  ),
                 ),
               ],
             ],
@@ -508,74 +452,6 @@ class _SelectedIngredientSummary extends StatelessWidget {
               ),
           ],
         ),
-      ],
-    );
-  }
-}
-
-class _SearchEmptyState extends StatelessWidget {
-  const _SearchEmptyState({
-    required this.query,
-    required this.suggestions,
-    required this.selectedIds,
-    required this.onChanged,
-  });
-
-  final String query;
-  final List<IngredientUiItem> suggestions;
-  final Set<int> selectedIds;
-  final void Function(int id, bool selected) onChanged;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SvgPicture.asset(
-          'assets/ingredient/search_empty.svg',
-          width: 66,
-          height: 66,
-          semanticsLabel: '검색 결과 없음',
-        ),
-        const SizedBox(height: 12),
-        Text(
-          '‘$query’ 검색 결과가 없어요',
-          style: Theme.of(context).textTheme.labelLarge
-              ?.copyWith(color: AppColors.textSecondary),
-          textAlign: TextAlign.center,
-        ),
-        const SizedBox(height: 4),
-        Text(
-          '등록된 재료 중에서만 고를 수 있어요',
-          style: Theme.of(context).textTheme.bodyMedium
-              ?.copyWith(color: const Color(0xFFAEAEB2)),
-          textAlign: TextAlign.center,
-        ),
-        if (suggestions.isNotEmpty) ...[
-          const SizedBox(height: 52),
-          SvgPicture.asset(
-            'assets/ingredient/divider.svg',
-            width: double.infinity,
-            height: 1,
-            fit: BoxFit.fill,
-          ),
-          const SizedBox(height: 20),
-          Align(
-            alignment: Alignment.centerLeft,
-            child: Text(
-              '혹시 이걸 찾으셨나요?',
-              style: Theme.of(context).textTheme.labelMedium,
-            ),
-          ),
-          const SizedBox(height: 4),
-          for (final ingredient in suggestions)
-            IngredientRow(
-              label: ingredient.displayName,
-              assetPath: ingredient.assetPath,
-              selected: selectedIds.contains(ingredient.ingredientId),
-              onChanged: (selected) =>
-                  onChanged(ingredient.ingredientId, selected),
-            ),
-        ],
       ],
     );
   }
