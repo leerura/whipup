@@ -1,7 +1,7 @@
 .PHONY: generate-api generate-api-flutter generate-api-backend pipeline-clean-ingredient import-data
 
 OPENAPI_GENERATOR_IMAGE := openapitools/openapi-generator-cli:v7.25.0
-OPENAPI_SPEC := /local/docs/api/openapi.yaml
+OPENAPI_SPEC := /local/docs/v2/api/openapi.yaml
 OPENAPI_DOCKER := docker run --rm -v "$(CURDIR):/local" $(OPENAPI_GENERATOR_IMAGE)
 FLUTTER_API_CLIENT_DIR := app/packages/api_client
 BACKEND_OPENAPI_DIR := $(CURDIR)/backend/generated/openapi
@@ -27,6 +27,7 @@ generate-api-backend:
 		-i $(OPENAPI_SPEC) \
 		-g spring \
 		-c /local/docs/api/codegen/backend.yaml \
+		-t /local/docs/api/codegen/backend-templates \
 		-o /local/backend/generated/openapi
 
 pipeline-clean-ingredient:

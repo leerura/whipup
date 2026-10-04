@@ -15,8 +15,8 @@ Dataset은 DB numeric ID를 사용하지 않고 stable string key를 사용한�
       "key": "garlic",
       "name": "마늘",
       "variants": [
-        { "key": "garlic", "name": "마늘", "base": true },
-        { "key": "minced-garlic", "name": "다진 마늘", "base": false }
+        { "key": "garlic", "name": "마늘", "base": true, "aliases": [] },
+        { "key": "minced-garlic", "name": "다진 마늘", "base": false, "aliases": [] }
       ],
       "relations": [
         { "source": "garlic", "target": "minced-garlic" }
@@ -34,7 +34,20 @@ Dataset은 DB numeric ID를 사용하지 않고 stable string key를 사용한�
 - source != target
 - source/target 같은 Ingredient
 - Relation은 방향성
-- alias/category/form/action은 두지 않음
+- Variant의 `aliases`는 recipe source 표현을 기존 Variant로 정규화하기 위한 문자열 배열
+- Alias는 사용자 등록 항목을 추가하지 않으며 추천 Matching 관계로 사용하지 않음
+- Alias는 의미가 사실상 같은 표현에만 등록하며 context-dependent 상위 표현은 특정 Variant Alias로 고정하지 않음
+- category/form/action은 두지 않음
+Alias 예:
+```json
+{
+  "key": "sesame-seed",
+  "name": "참깨",
+  "base": true,
+  "aliases": ["깨"]
+}
+```
+이 경우 Recipe source의 `깨`는 `참깨` Variant에 mapping할 수 있지만 사용자가 등록하는 재료 항목에는 `참깨`만 노출한다.
 ## Recipe JSON
 ```json
 {
@@ -96,4 +109,3 @@ PUBLISHED에서 optional=false Recipe Ingredient는 정확히 하나의 Option �
 배열 순서가 step_order다.
 ## Ordering
 Dataset의 ordered array가 유일한 순서 Source of Truth다. JSON에 displayOrder를 중복 저장하지 않는다. Importer가 배열 index를 DB display_order/step_order로 변환한다.
-

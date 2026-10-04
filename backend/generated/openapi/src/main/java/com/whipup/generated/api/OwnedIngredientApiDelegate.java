@@ -1,7 +1,8 @@
 package com.whipup.generated.api;
 
-import com.whipup.generated.model.AddOwnedIngredientsRequest;
+import com.whipup.generated.model.AddOwnedIngredientRequest;
 import com.whipup.generated.model.ErrorResponse;
+import com.whipup.generated.model.OwnedIngredient;
 import com.whipup.generated.model.OwnedIngredientListResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -30,19 +31,19 @@ public interface OwnedIngredientApiDelegate {
     /**
      * POST /api/v1/me/ingredients
      *
-     * @param addOwnedIngredientsRequest  (required)
+     * @param addOwnedIngredientRequest  (required)
      * @return Created (status code 201)
      *         or Invalid request (status code 400)
      *         or Resource not found (status code 404)
      *         or Request conflicts with current state (status code 409)
      *         or Authentication failed or missing (status code 401)
-     * @see OwnedIngredientApi#addOwnedIngredients
+     * @see OwnedIngredientApi#addOwnedIngredient
      */
-    default ResponseEntity<OwnedIngredientListResponse> addOwnedIngredients(AddOwnedIngredientsRequest addOwnedIngredientsRequest) {
+    default ResponseEntity<OwnedIngredient> addOwnedIngredient(AddOwnedIngredientRequest addOwnedIngredientRequest) {
         getRequest().ifPresent(request -> {
             for (MediaType mediaType: MediaType.parseMediaTypes(request.getHeader("Accept"))) {
                 if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
-                    String exampleString = "{ \"items\" : [ { \"userIngredientId\" : 0, \"ingredientId\" : 6, \"displayName\" : \"displayName\" }, { \"userIngredientId\" : 0, \"ingredientId\" : 6, \"displayName\" : \"displayName\" } ] }";
+                    String exampleString = "{ \"userIngredientId\" : 0, \"variantId\" : 6, \"name\" : \"name\" }";
                     ApiUtil.setExampleResponse(request, "application/json", exampleString);
                     break;
                 }
@@ -103,7 +104,7 @@ public interface OwnedIngredientApiDelegate {
     /**
      * GET /api/v1/me/ingredients
      *
-     * @return Owned ingredients (status code 200)
+     * @return Owned ingredient variants (status code 200)
      *         or Authentication failed or missing (status code 401)
      * @see OwnedIngredientApi#getOwnedIngredients
      */
@@ -111,7 +112,7 @@ public interface OwnedIngredientApiDelegate {
         getRequest().ifPresent(request -> {
             for (MediaType mediaType: MediaType.parseMediaTypes(request.getHeader("Accept"))) {
                 if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
-                    String exampleString = "{ \"items\" : [ { \"userIngredientId\" : 0, \"ingredientId\" : 6, \"displayName\" : \"displayName\" }, { \"userIngredientId\" : 0, \"ingredientId\" : 6, \"displayName\" : \"displayName\" } ] }";
+                    String exampleString = "{ \"items\" : [ { \"userIngredientId\" : 0, \"variantId\" : 6, \"name\" : \"name\" }, { \"userIngredientId\" : 0, \"variantId\" : 6, \"name\" : \"name\" } ] }";
                     ApiUtil.setExampleResponse(request, "application/json", exampleString);
                     break;
                 }

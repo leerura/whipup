@@ -99,6 +99,10 @@ public class RecipeIngredient {
         return displayName;
     }
 
+    public String getRawText() {
+        return rawText;
+    }
+
     public String getAmount() {
         return amount;
     }

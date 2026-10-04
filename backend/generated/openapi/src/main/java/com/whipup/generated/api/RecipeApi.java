@@ -31,7 +31,7 @@ public interface RecipeApi {
      * GET /api/v1/recipes/{recipeId}
      *
      * @param recipeId  (required)
-     * @return Recipe detail (status code 200)
+     * @return Recipe detail projected with current user matching state (status code 200)
      *         or Authentication failed or missing (status code 401)
      *         or Resource not found (status code 404)
      */

@@ -58,17 +58,25 @@ public class Recipe {
     }
 
     public static Recipe createPublished(String datasetKey, String name, String shortsReference) {
+        return create(datasetKey, name, RecipeStatus.PUBLISHED, shortsReference);
+    }
+
+    public static Recipe create(String datasetKey, String name, RecipeStatus status, String shortsReference) {
         Recipe recipe = new Recipe();
         recipe.datasetKey = datasetKey;
         recipe.name = name;
-        recipe.status = RecipeStatus.PUBLISHED;
+        recipe.status = status;
         recipe.shortsReference = shortsReference;
         return recipe;
     }
 
     public void updatePublished(String name, String shortsReference) {
+        update(name, RecipeStatus.PUBLISHED, shortsReference);
+    }
+
+    public void update(String name, RecipeStatus status, String shortsReference) {
         this.name = name;
-        this.status = RecipeStatus.PUBLISHED;
+        this.status = status;
         this.shortsReference = shortsReference;
     }
 

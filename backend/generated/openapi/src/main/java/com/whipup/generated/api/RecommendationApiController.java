@@ -1,8 +1,8 @@
 package com.whipup.generated.api;
 
 import com.whipup.generated.model.ErrorResponse;
-import org.springframework.lang.Nullable;
-import com.whipup.generated.model.RecommendationPage;
+import com.whipup.generated.model.RecommendationListResponse;
+import com.whipup.generated.model.RecommendationMode;
 
 
 import org.springframework.beans.factory.annotation.Autowired;

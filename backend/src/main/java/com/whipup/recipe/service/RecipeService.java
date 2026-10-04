@@ -1,22 +1,30 @@
 package com.whipup.recipe.service;
 
 import com.whipup.common.security.CurrentUserProvider;
+import com.whipup.generated.model.DetailIngredientDisplay;
+import com.whipup.generated.model.DetailRequirement;
+import com.whipup.generated.model.DetailRequirementOption;
+import com.whipup.generated.model.IngredientMatch;
+import com.whipup.generated.model.MissingDetailRequirement;
 import com.whipup.generated.model.RecipeDetailResponse;
-import com.whipup.ingredient.domain.Ingredient;
+import com.whipup.generated.model.SatisfiedDetailRequirement;
+import com.whipup.ingredient.domain.IngredientVariant;
 import com.whipup.ingredient.domain.UserIngredient;
 import com.whipup.ingredient.repository.UserIngredientRepository;
 import com.whipup.recipe.domain.Recipe;
+import com.whipup.recipe.domain.RecipeIngredient;
+import com.whipup.recipe.domain.RecipeRequirementOption;
+import com.whipup.recipe.domain.RecipeRequirementSubstitute;
 import com.whipup.recipe.domain.RecipeStatus;
 import com.whipup.recipe.exception.RecipeNotFoundException;
 import com.whipup.recipe.repository.RecipeRepository;
+import com.whipup.recipe.service.RecipeMatchResult.IngredientMatchResult;
 import java.net.URI;
 import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -29,15 +37,18 @@ public class RecipeService {
     private final RecipeRepository recipeRepository;
     private final UserIngredientRepository userIngredientRepository;
     private final CurrentUserProvider currentUserProvider;
+    private final RecipeMatchService recipeMatchService;
 
     public RecipeService(
         RecipeRepository recipeRepository,
         UserIngredientRepository userIngredientRepository,
-        CurrentUserProvider currentUserProvider
+        CurrentUserProvider currentUserProvider,
+        RecipeMatchService recipeMatchService
     ) {
         this.recipeRepository = recipeRepository;
         this.userIngredientRepository = userIngredientRepository;
         this.currentUserProvider = currentUserProvider;
+        this.recipeMatchService = recipeMatchService;
     }
 
     @Transactional(readOnly = true)
@@ -47,20 +58,28 @@ public class RecipeService {
             .findByIdAndStatus(recipeId, RecipeStatus.PUBLISHED)
             .orElseThrow(RecipeNotFoundException::new);
 
-        Set<Long> ownedIngredientIds = userIngredientRepository
-            .findAllByUser_IdOrderByIngredient_CanonicalNameAsc(userId)
+        List<IngredientVariant> ownedVariants = userIngredientRepository
+            .findAllByUser_IdOrderByIngredientVariant_NameAsc(userId)
             .stream()
-            .map(UserIngredient::getIngredient)
-            .map(Ingredient::getId)
-            .collect(Collectors.toSet());
+            .map(UserIngredient::getIngredientVariant)
+            .toList();
 
-        List<com.whipup.generated.model.RecipeIngredient> ingredients = recipe
+        RecipeMatchResult matchResult = recipeMatchService.match(
+            recipe,
+            ownedVariants
+        );
+
+        List<DetailRequirement> requirements = matchResult.requirements()
+            .stream()
+            .map(this::toDetailRequirement)
+            .toList();
+
+        List<DetailIngredientDisplay> optionalIngredients = recipe
             .getIngredients()
             .stream()
-            .sorted(Comparator.comparingInt(
-                com.whipup.recipe.domain.RecipeIngredient::getDisplayOrder
-            ))
-            .map(ingredient -> toResponse(ingredient, ownedIngredientIds))
+            .filter(RecipeIngredient::isOptional)
+            .sorted(Comparator.comparingInt(RecipeIngredient::getDisplayOrder))
+            .map(this::toIngredientDisplay)
             .toList();
 
         List<com.whipup.generated.model.RecipeStep> steps = recipe
@@ -75,15 +94,6 @@ public class RecipeService {
             ))
             .toList();
 
-        int missingCount = (int) recipe
-            .getIngredients()
-            .stream()
-            .map(com.whipup.recipe.domain.RecipeIngredient::getIngredient)
-            .map(Ingredient::getId)
-            .distinct()
-            .filter(ingredientId -> !ownedIngredientIds.contains(ingredientId))
-            .count();
-
         URI shortsReference = URI.create(recipe.getShortsReference());
         URI thumbnailUrl = URI.create(YOUTUBE_THUMBNAIL_URL.formatted(
             extractYoutubeVideoId(shortsReference)
@@ -94,26 +104,91 @@ public class RecipeService {
             recipe.getName(),
             shortsReference,
             thumbnailUrl,
-            missingCount,
-            ingredients,
+            matchResult.missingCount(),
+            requirements,
+            optionalIngredients,
             steps
         );
     }
 
-    private com.whipup.generated.model.RecipeIngredient toResponse(
-        com.whipup.recipe.domain.RecipeIngredient ingredient,
-        Set<Long> ownedIngredientIds
+    private DetailRequirement toDetailRequirement(
+        RecipeMatchResult.RequirementResult result
     ) {
-        Long ingredientId = ingredient.getIngredient().getId();
-        return new com.whipup.generated.model.RecipeIngredient(
-            ingredient.getId(),
-            ingredientId,
+        List<DetailRequirementOption> options = result.requirement()
+            .getOptions()
+            .stream()
+            .sorted(Comparator.comparingInt(
+                RecipeRequirementOption::getDisplayOrder
+            ))
+            .map(this::toDetailRequirementOption)
+            .toList();
+
+        if (result.satisfied()) {
+            List<IngredientMatch> matches = result.matches()
+                .stream()
+                .map(this::toIngredientMatch)
+                .toList();
+
+            return new SatisfiedDetailRequirement(
+                SatisfiedDetailRequirement.StatusEnum.SATISFIED,
+                options,
+                matches
+            );
+        }
+
+        return new MissingDetailRequirement(
+            MissingDetailRequirement.StatusEnum.MISSING,
+            options
+        );
+    }
+
+    private DetailRequirementOption toDetailRequirementOption(
+        RecipeRequirementOption option
+    ) {
+        RecipeIngredient ingredient = option.getIngredient();
+        List<DetailIngredientDisplay> substitutes = option.getSubstitutes()
+            .stream()
+            .sorted(Comparator.comparingInt(
+                RecipeRequirementSubstitute::getDisplayOrder
+            ))
+            .map(RecipeRequirementSubstitute::getIngredient)
+            .map(this::toIngredientDisplay)
+            .toList();
+
+        return new DetailRequirementOption(
             ingredient.getDisplayName(),
-            ingredient.getDisplayOrder(),
-            ownedIngredientIds.contains(ingredientId)
+            ingredient.getRawText(),
+            substitutes
         )
             .amount(ingredient.getAmount())
             .unit(ingredient.getUnit());
+    }
+
+    private DetailIngredientDisplay toIngredientDisplay(
+        RecipeIngredient ingredient
+    ) {
+        return new DetailIngredientDisplay(
+            ingredient.getDisplayName(),
+            ingredient.getRawText()
+        )
+            .amount(ingredient.getAmount())
+            .unit(ingredient.getUnit());
+    }
+
+    private IngredientMatch toIngredientMatch(IngredientMatchResult match) {
+        return new IngredientMatch(
+            toMatchType(match),
+            match.option().getIngredient().getDisplayName(),
+            match.ownedVariant().getName()
+        );
+    }
+
+    private IngredientMatch.TypeEnum toMatchType(IngredientMatchResult match) {
+        return switch (match.type()) {
+            case DIRECT -> IngredientMatch.TypeEnum.DIRECT;
+            case PREPARATION -> IngredientMatch.TypeEnum.PREPARATION;
+            case SUBSTITUTE -> IngredientMatch.TypeEnum.SUBSTITUTE;
+        };
     }
 
     private String extractYoutubeVideoId(URI reference) {

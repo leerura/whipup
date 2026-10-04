@@ -6,7 +6,7 @@
 package com.whipup.generated.api;
 
 import com.whipup.generated.model.ErrorResponse;
-import com.whipup.generated.model.IngredientOptionListResponse;
+import com.whipup.generated.model.IngredientGroupListResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -26,22 +26,22 @@ public interface IngredientApi {
         return new IngredientApiDelegate() {};
     }
 
-    String PATH_GET_INGREDIENT_OPTIONS = "/api/v1/ingredients";
+    String PATH_GET_INGREDIENT_GROUPS = "/api/v1/ingredients";
     /**
      * GET /api/v1/ingredients
      *
-     * @return All ingredient options (status code 200)
+     * @return All registerable ingredient variants grouped for selection UX. Client performs local filtering. (status code 200)
      *         or Authentication failed or missing (status code 401)
      */
     @RequestMapping(
         method = RequestMethod.GET,
-        value = IngredientApi.PATH_GET_INGREDIENT_OPTIONS,
+        value = IngredientApi.PATH_GET_INGREDIENT_GROUPS,
         produces = { "application/json" }
     )
-    default ResponseEntity<IngredientOptionListResponse> getIngredientOptions(
+    default ResponseEntity<IngredientGroupListResponse> getIngredientGroups(
         
     ) {
-        return getDelegate().getIngredientOptions();
+        return getDelegate().getIngredientGroups();
     }
 
 }

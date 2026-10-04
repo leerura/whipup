@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: WhipUp API
-  version: 1.0.0
+  version: 1.0.0-v2-design
 servers:
 - url: /
 security:
@@ -56,14 +56,15 @@ paths:
       - tag: Auth
   /api/v1/ingredients:
     get:
-      operationId: getIngredientOptions
+      operationId: getIngredientGroups
       responses:
         "200":
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/IngredientOptionListResponse"
-          description: All ingredient options
+                $ref: "#/components/schemas/IngredientGroupListResponse"
+          description: All registerable ingredient variants grouped for selection
+            UX. Client performs local filtering.
         "401":
           content:
             application/json:
@@ -85,7 +86,7 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/OwnedIngredientListResponse"
-          description: Owned ingredients
+          description: Owned ingredient variants
         "401":
           content:
             application/json:
@@ -99,19 +100,19 @@ paths:
       x-tags:
       - tag: OwnedIngredient
     post:
-      operationId: addOwnedIngredients
+      operationId: addOwnedIngredient
       requestBody:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/AddOwnedIngredientsRequest"
+              $ref: "#/components/schemas/AddOwnedIngredientRequest"
         required: true
       responses:
         "201":
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/OwnedIngredientListResponse"
+                $ref: "#/components/schemas/OwnedIngredient"
           description: Created
         "400":
           content:
@@ -177,50 +178,24 @@ paths:
       - application/json
       x-tags:
       - tag: OwnedIngredient
-  /api/v1/recommendations:
+  /api/v1/recipes/recommendations:
     get:
-      operationId: getRecommendations
+      operationId: getRecipeRecommendations
       parameters:
       - explode: true
         in: query
-        name: missingCount
+        name: mode
         required: true
         schema:
-          enum:
-          - 0
-          - 1
-          - 2
-          format: int32
-          type: integer
-        style: form
-      - explode: true
-        in: query
-        name: page
-        required: false
-        schema:
-          default: 0
-          format: int32
-          minimum: 0
-          type: integer
-        style: form
-      - explode: true
-        in: query
-        name: size
-        required: false
-        schema:
-          default: 30
-          format: int32
-          maximum: 100
-          minimum: 1
-          type: integer
+          $ref: "#/components/schemas/RecommendationMode"
         style: form
       responses:
         "200":
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/RecommendationPage"
-          description: Recommendations
+                $ref: "#/components/schemas/RecommendationListResponse"
+          description: Recipe recommendations for the selected exploration mode
         "400":
           content:
             application/json:
@@ -263,7 +238,7 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/RecipeDetailResponse"
-          description: Recipe detail
+          description: Recipe detail projected with current user matching state
         "401":
           content:
             application/json:
@@ -283,30 +258,6 @@ paths:
       x-tags:
       - tag: Recipe
 components:
-  parameters:
-    Page:
-      explode: true
-      in: query
-      name: page
-      required: false
-      schema:
-        default: 0
-        format: int32
-        minimum: 0
-        type: integer
-      style: form
-    Size:
-      explode: true
-      in: query
-      name: size
-      required: false
-      schema:
-        default: 30
-        format: int32
-        maximum: 100
-        minimum: 1
-        type: integer
-      style: form
   responses:
     BadRequest:
       content:
@@ -380,63 +331,91 @@ components:
       required:
       - userId
       type: object
-    IngredientOption:
+    IngredientGroupListResponse:
       example:
-        ingredientId: 0
-        displayName: displayName
+        groups:
+        - name: name
+          items:
+          - variantId: 0
+            name: name
+          - variantId: 0
+            name: name
+        - name: name
+          items:
+          - variantId: 0
+            name: name
+          - variantId: 0
+            name: name
       properties:
-        ingredientId:
-          format: int64
-          type: integer
-        displayName:
-          type: string
+        groups:
+          items:
+            $ref: "#/components/schemas/IngredientGroup"
+          type: array
       required:
-      - displayName
-      - ingredientId
+      - groups
       type: object
-    IngredientOptionListResponse:
+    IngredientGroup:
       example:
+        name: name
         items:
-        - ingredientId: 0
-          displayName: displayName
-        - ingredientId: 0
-          displayName: displayName
+        - variantId: 0
+          name: name
+        - variantId: 0
+          name: name
       properties:
+        name:
+          type: string
         items:
           items:
-            $ref: "#/components/schemas/IngredientOption"
+            $ref: "#/components/schemas/IngredientVariantOption"
+          minItems: 1
           type: array
       required:
       - items
+      - name
+      type: object
+    IngredientVariantOption:
+      example:
+        variantId: 0
+        name: name
+      properties:
+        variantId:
+          format: int64
+          type: integer
+        name:
+          type: string
+      required:
+      - name
+      - variantId
       type: object
     OwnedIngredient:
       example:
         userIngredientId: 0
-        ingredientId: 6
-        displayName: displayName
+        variantId: 6
+        name: name
       properties:
         userIngredientId:
           format: int64
           type: integer
-        ingredientId:
+        variantId:
           format: int64
           type: integer
-        displayName:
+        name:
           type: string
       required:
-      - displayName
-      - ingredientId
+      - name
       - userIngredientId
+      - variantId
       type: object
     OwnedIngredientListResponse:
       example:
         items:
         - userIngredientId: 0
-          ingredientId: 6
-          displayName: displayName
+          variantId: 6
+          name: name
         - userIngredientId: 0
-          ingredientId: 6
-          displayName: displayName
+          variantId: 6
+          name: name
       properties:
         items:
           items:
@@ -445,84 +424,97 @@ components:
       required:
       - items
       type: object
-    AddOwnedIngredientsRequest:
+    AddOwnedIngredientRequest:
       example:
-        items:
-        - ingredientId: 0
-        - ingredientId: 0
+        variantId: 0
       properties:
-        items:
-          items:
-            $ref: "#/components/schemas/OwnedIngredientSelection"
-          minItems: 1
-          type: array
-      required:
-      - items
-      type: object
-    OwnedIngredientSelection:
-      example:
-        ingredientId: 0
-      properties:
-        ingredientId:
+        variantId:
           format: int64
           type: integer
       required:
-      - ingredientId
+      - variantId
       type: object
-    RecommendationPage:
+    RecommendationMode:
+      enum:
+      - AVAILABLE
+      - MISSING_INGREDIENTS
+      type: string
+    RecommendationListResponse:
       example:
         items:
         - recipeId: 0
           name: name
           thumbnailUrl: https://openapi-generator.tech
-          missingCount: 6
-          missingIngredients:
-          - ingredientId: 1
-            name: name
-          - ingredientId: 1
-            name: name
+          missingCount: 0
+          requirementResults:
+          - status: SATISFIED
+            matches:
+            - type: DIRECT
+              requiredName: requiredName
+              ownedName: ownedName
+            - type: DIRECT
+              requiredName: requiredName
+              ownedName: ownedName
+          - status: SATISFIED
+            matches:
+            - type: DIRECT
+              requiredName: requiredName
+              ownedName: ownedName
+            - type: DIRECT
+              requiredName: requiredName
+              ownedName: ownedName
         - recipeId: 0
           name: name
           thumbnailUrl: https://openapi-generator.tech
-          missingCount: 6
-          missingIngredients:
-          - ingredientId: 1
-            name: name
-          - ingredientId: 1
-            name: name
-        page: 5
-        size: 5
-        hasNext: true
+          missingCount: 0
+          requirementResults:
+          - status: SATISFIED
+            matches:
+            - type: DIRECT
+              requiredName: requiredName
+              ownedName: ownedName
+            - type: DIRECT
+              requiredName: requiredName
+              ownedName: ownedName
+          - status: SATISFIED
+            matches:
+            - type: DIRECT
+              requiredName: requiredName
+              ownedName: ownedName
+            - type: DIRECT
+              requiredName: requiredName
+              ownedName: ownedName
       properties:
         items:
           items:
             $ref: "#/components/schemas/RecommendationItem"
           type: array
-        page:
-          format: int32
-          type: integer
-        size:
-          format: int32
-          type: integer
-        hasNext:
-          type: boolean
       required:
-      - hasNext
       - items
-      - page
-      - size
       type: object
     RecommendationItem:
       example:
         recipeId: 0
         name: name
         thumbnailUrl: https://openapi-generator.tech
-        missingCount: 6
-        missingIngredients:
-        - ingredientId: 1
-          name: name
-        - ingredientId: 1
-          name: name
+        missingCount: 0
+        requirementResults:
+        - status: SATISFIED
+          matches:
+          - type: DIRECT
+            requiredName: requiredName
+            ownedName: ownedName
+          - type: DIRECT
+            requiredName: requiredName
+            ownedName: ownedName
+        - status: SATISFIED
+          matches:
+          - type: DIRECT
+            requiredName: requiredName
+            ownedName: ownedName
+          - type: DIRECT
+            requiredName: requiredName
+            ownedName: ownedName
       properties:
         recipeId:
           format: int64
@@ -533,35 +525,107 @@ components:
           format: uri
           type: string
         missingCount:
-          enum:
-          - 0
-          - 1
-          - 2
           format: int32
+          minimum: 0
           type: integer
-        missingIngredients:
+        requirementResults:
           items:
-            $ref: "#/components/schemas/MissingIngredient"
+            $ref: "#/components/schemas/RequirementResult"
           type: array
       required:
       - missingCount
-      - missingIngredients
       - name
       - recipeId
+      - requirementResults
       - thumbnailUrl
       type: object
-    MissingIngredient:
+    RequirementResult:
+      discriminator:
+        mapping:
+          SATISFIED: "#/components/schemas/SatisfiedRequirementResult"
+          MISSING: "#/components/schemas/MissingRequirementResult"
+        propertyName: status
+      oneOf:
+      - $ref: "#/components/schemas/SatisfiedRequirementResult"
+      - $ref: "#/components/schemas/MissingRequirementResult"
+      x-one-of-name: RequirementResult
+    SatisfiedRequirementResult:
       example:
-        ingredientId: 1
-        name: name
+        status: SATISFIED
+        matches:
+        - type: DIRECT
+          requiredName: requiredName
+          ownedName: ownedName
+        - type: DIRECT
+          requiredName: requiredName
+          ownedName: ownedName
       properties:
-        ingredientId:
-          format: int64
-          type: integer
+        status:
+          enum:
+          - SATISFIED
+          type: string
+        matches:
+          items:
+            $ref: "#/components/schemas/IngredientMatch"
+          minItems: 1
+          type: array
+      required:
+      - matches
+      - status
+      type: object
+    MissingRequirementResult:
+      properties:
+        status:
+          enum:
+          - MISSING
+          type: string
+        missingOptions:
+          items:
+            $ref: "#/components/schemas/MissingOption"
+          minItems: 1
+          type: array
+      required:
+      - missingOptions
+      - status
+      type: object
+    IngredientMatch:
+      example:
+        type: DIRECT
+        requiredName: requiredName
+        ownedName: ownedName
+      properties:
+        type:
+          enum:
+          - DIRECT
+          - PREPARATION
+          - SUBSTITUTE
+          type: string
+        requiredName:
+          type: string
+        ownedName:
+          type: string
+      required:
+      - ownedName
+      - requiredName
+      - type
+      type: object
+    MissingOption:
+      properties:
+        requiredName:
+          type: string
+        substitutes:
+          items:
+            $ref: "#/components/schemas/MissingSubstitute"
+          type: array
+      required:
+      - requiredName
+      - substitutes
+      type: object
+    MissingSubstitute:
+      properties:
         name:
           type: string
       required:
-      - ingredientId
       - name
       type: object
     RecipeDetailResponse:
@@ -571,21 +635,86 @@ components:
         shortsReference: https://openapi-generator.tech
         thumbnailUrl: https://openapi-generator.tech
         missingCount: 0
-        ingredients:
-        - recipeIngredientId: 1
-          ingredientId: 5
-          displayName: displayName
+        requirements:
+        - status: SATISFIED
+          options:
+          - displayName: displayName
+            rawText: rawText
+            amount: amount
+            unit: unit
+            substitutes:
+            - displayName: displayName
+              rawText: rawText
+              amount: amount
+              unit: unit
+            - displayName: displayName
+              rawText: rawText
+              amount: amount
+              unit: unit
+          - displayName: displayName
+            rawText: rawText
+            amount: amount
+            unit: unit
+            substitutes:
+            - displayName: displayName
+              rawText: rawText
+              amount: amount
+              unit: unit
+            - displayName: displayName
+              rawText: rawText
+              amount: amount
+              unit: unit
+          matches:
+          - type: DIRECT
+            requiredName: requiredName
+            ownedName: ownedName
+          - type: DIRECT
+            requiredName: requiredName
+            ownedName: ownedName
+        - status: SATISFIED
+          options:
+          - displayName: displayName
+            rawText: rawText
+            amount: amount
+            unit: unit
+            substitutes:
+            - displayName: displayName
+              rawText: rawText
+              amount: amount
+              unit: unit
+            - displayName: displayName
+              rawText: rawText
+              amount: amount
+              unit: unit
+          - displayName: displayName
+            rawText: rawText
+            amount: amount
+            unit: unit
+            substitutes:
+            - displayName: displayName
+              rawText: rawText
+              amount: amount
+              unit: unit
+            - displayName: displayName
+              rawText: rawText
+              amount: amount
+              unit: unit
+          matches:
+          - type: DIRECT
+            requiredName: requiredName
+            ownedName: ownedName
+          - type: DIRECT
+            requiredName: requiredName
+            ownedName: ownedName
+        optionalIngredients:
+        - displayName: displayName
+          rawText: rawText
           amount: amount
           unit: unit
-          displayOrder: 1
-          owned: true
-        - recipeIngredientId: 1
-          ingredientId: 5
-          displayName: displayName
+        - displayName: displayName
+          rawText: rawText
           amount: amount
           unit: unit
-          displayOrder: 1
-          owned: true
         steps:
         - order: 1
           content: content
@@ -607,40 +736,129 @@ components:
           format: int32
           minimum: 0
           type: integer
-        ingredients:
+        requirements:
           items:
-            $ref: "#/components/schemas/RecipeIngredient"
+            $ref: "#/components/schemas/DetailRequirement"
+          type: array
+        optionalIngredients:
+          items:
+            $ref: "#/components/schemas/DetailIngredientDisplay"
           type: array
         steps:
           items:
             $ref: "#/components/schemas/RecipeStep"
           type: array
       required:
-      - ingredients
       - missingCount
       - name
+      - optionalIngredients
       - recipeId
+      - requirements
       - shortsReference
       - steps
       - thumbnailUrl
       type: object
-    RecipeIngredient:
+    DetailRequirement:
+      discriminator:
+        mapping:
+          SATISFIED: "#/components/schemas/SatisfiedDetailRequirement"
+          MISSING: "#/components/schemas/MissingDetailRequirement"
+        propertyName: status
+      oneOf:
+      - $ref: "#/components/schemas/SatisfiedDetailRequirement"
+      - $ref: "#/components/schemas/MissingDetailRequirement"
+      x-one-of-name: DetailRequirement
+    SatisfiedDetailRequirement:
       example:
-        recipeIngredientId: 1
-        ingredientId: 5
+        status: SATISFIED
+        options:
+        - displayName: displayName
+          rawText: rawText
+          amount: amount
+          unit: unit
+          substitutes:
+          - displayName: displayName
+            rawText: rawText
+            amount: amount
+            unit: unit
+          - displayName: displayName
+            rawText: rawText
+            amount: amount
+            unit: unit
+        - displayName: displayName
+          rawText: rawText
+          amount: amount
+          unit: unit
+          substitutes:
+          - displayName: displayName
+            rawText: rawText
+            amount: amount
+            unit: unit
+          - displayName: displayName
+            rawText: rawText
+            amount: amount
+            unit: unit
+        matches:
+        - type: DIRECT
+          requiredName: requiredName
+          ownedName: ownedName
+        - type: DIRECT
+          requiredName: requiredName
+          ownedName: ownedName
+      properties:
+        status:
+          enum:
+          - SATISFIED
+          type: string
+        options:
+          items:
+            $ref: "#/components/schemas/DetailRequirementOption"
+          minItems: 1
+          type: array
+        matches:
+          items:
+            $ref: "#/components/schemas/IngredientMatch"
+          minItems: 1
+          type: array
+      required:
+      - matches
+      - options
+      - status
+      type: object
+    MissingDetailRequirement:
+      properties:
+        status:
+          enum:
+          - MISSING
+          type: string
+        options:
+          items:
+            $ref: "#/components/schemas/DetailRequirementOption"
+          minItems: 1
+          type: array
+      required:
+      - options
+      - status
+      type: object
+    DetailRequirementOption:
+      example:
         displayName: displayName
+        rawText: rawText
         amount: amount
         unit: unit
-        displayOrder: 1
-        owned: true
+        substitutes:
+        - displayName: displayName
+          rawText: rawText
+          amount: amount
+          unit: unit
+        - displayName: displayName
+          rawText: rawText
+          amount: amount
+          unit: unit
       properties:
-        recipeIngredientId:
-          format: int64
-          type: integer
-        ingredientId:
-          format: int64
-          type: integer
         displayName:
+          type: string
+        rawText:
           type: string
         amount:
           nullable: true
@@ -648,18 +866,35 @@ components:
         unit:
           nullable: true
           type: string
-        displayOrder:
-          format: int32
-          minimum: 1
-          type: integer
-        owned:
-          type: boolean
+        substitutes:
+          items:
+            $ref: "#/components/schemas/DetailIngredientDisplay"
+          type: array
       required:
       - displayName
-      - displayOrder
-      - ingredientId
-      - owned
-      - recipeIngredientId
+      - rawText
+      - substitutes
+      type: object
+    DetailIngredientDisplay:
+      example:
+        displayName: displayName
+        rawText: rawText
+        amount: amount
+        unit: unit
+      properties:
+        displayName:
+          type: string
+        rawText:
+          type: string
+        amount:
+          nullable: true
+          type: string
+        unit:
+          nullable: true
+          type: string
+      required:
+      - displayName
+      - rawText
       type: object
     RecipeStep:
       example:

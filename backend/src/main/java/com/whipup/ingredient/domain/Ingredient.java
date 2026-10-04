@@ -54,6 +54,10 @@ public class Ingredient {
         return create(canonicalName, canonicalName);
     }
 
+    public void update(String canonicalName) {
+        this.canonicalName = canonicalName;
+    }
+
     public Long getId() {
         return id;
     }

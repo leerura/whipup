@@ -40,20 +40,13 @@ paths:
         '401':
           $ref: '#/components/responses/Unauthorized'
 
-  /api/v1/ingredients/search:
+  /api/v1/ingredients:
     get:
       tags: [Ingredient]
-      operationId: searchIngredientGroups
-      parameters:
-        - name: query
-          in: query
-          required: true
-          schema:
-            type: string
-            minLength: 1
+      operationId: getIngredientGroups
       responses:
         '200':
-          description: Registerable ingredient variants grouped for selection UX
+          description: All registerable ingredient variants grouped for selection UX. Client performs local filtering.
           content:
             application/json:
               schema:
@@ -536,4 +529,3 @@ components:
 
 security:
   - bearerAuth: []
-

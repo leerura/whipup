@@ -5,14 +5,14 @@ V2에서도 기존 API version을 유지한다.
 ```
 ## Ingredient API
 ```javascript
-GET    /api/v1/ingredients/search?query=마늘
+GET    /api/v1/ingredients
 GET    /api/v1/me/ingredients
 POST   /api/v1/me/ingredients
 DELETE /api/v1/me/ingredients/{userIngredientId}
 ```
 사용자 API의 ingredient는 등록 가능한 보유 단위, 즉 IngredientVariant를 의미한다.
 canonical Ingredient의 내부 ID/Domain 구조는 노출하지 않는다.
-검색 결과는 registration UX를 위해 group 형태로 반환한다.
+`GET /api/v1/ingredients`는 등록 가능한 전체 재료를 group 형태로 한 번에 반환한다. Server-side 검색 API는 두지 않는다. Flutter가 전체 응답을 대상으로 local filtering을 수행한다.
 ```json
 {
   "groups": [
@@ -137,4 +137,3 @@ Flutter가 UX copy를 만든다.
 Flutter는 API에 없는 의미나 preparation action을 추론하지 않는다.
 ## Unchanged
 Auth, JWT, Health, error 기본 구조, YouTube Shorts thumbnail 방식은 기존 V1 계약을 유지한다.
-

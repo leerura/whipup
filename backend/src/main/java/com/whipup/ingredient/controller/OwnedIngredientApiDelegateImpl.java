@@ -2,11 +2,10 @@ package com.whipup.ingredient.controller;
 
 import com.whipup.common.security.CurrentUserProvider;
 import com.whipup.generated.api.OwnedIngredientApiDelegate;
-import com.whipup.generated.model.AddOwnedIngredientsRequest;
+import com.whipup.generated.model.AddOwnedIngredientRequest;
+import com.whipup.generated.model.OwnedIngredient;
 import com.whipup.generated.model.OwnedIngredientListResponse;
-import com.whipup.generated.model.OwnedIngredientSelection;
 import com.whipup.ingredient.service.OwnedIngredientService;
-import java.util.List;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -35,17 +34,14 @@ public class OwnedIngredientApiDelegateImpl implements OwnedIngredientApiDelegat
 	}
 
 	@Override
-	public ResponseEntity<OwnedIngredientListResponse> addOwnedIngredients(
-			AddOwnedIngredientsRequest request
+	public ResponseEntity<OwnedIngredient> addOwnedIngredient(
+			AddOwnedIngredientRequest request
 	) {
 		Long userId = currentUserProvider.getUserId();
-		List<Long> ingredientIds = request.getItems()
-				.stream()
-				.map(OwnedIngredientSelection::getIngredientId)
-				.toList();
-
-		OwnedIngredientListResponse response =
-				ownedIngredientService.addOwnedIngredients(userId, ingredientIds);
+		OwnedIngredient response = ownedIngredientService.addOwnedIngredient(
+				userId,
+				request.getVariantId()
+		);
 
 		return ResponseEntity
 				.status(HttpStatus.CREATED)

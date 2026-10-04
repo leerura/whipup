@@ -1,0 +1,20 @@
+{{>additionalOneOfTypeAnnotations}}
+{{#withXml}}
+{{>xmlAnnotation}}
+
+{{/withXml}}
+{{#discriminator}}
+{{>typeInfoAnnotation}}
+
+{{/discriminator}}
+{{#vendorExtensions.x-class-extra-annotation}}
+{{{vendorExtensions.x-class-extra-annotation}}}
+{{/vendorExtensions.x-class-extra-annotation}}
+{{#vendorExtensions.x-interface-extra-annotation}}
+{{{vendorExtensions.x-interface-extra-annotation}}}
+{{/vendorExtensions.x-interface-extra-annotation}}
+{{>generatedAnnotation}}
+
+{{! Discriminator access remains on each concrete subtype. }}
+public {{>sealed}}interface {{classname}}{{#vendorExtensions.x-implements}}{{#-first}} extends {{{.}}}{{/-first}}{{^-first}}, {{{.}}}{{/-first}}{{/vendorExtensions.x-implements}} {{>permits}}{
+}

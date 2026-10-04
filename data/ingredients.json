@@ -1,71 +1,66 @@
 {
   "ingredients": [
     {
-      "key": "sesame",
-      "name": "깨",
+      "key": "allulose",
+      "name": "알룰로스",
       "variants": [
-        { "key": "sesame", "name": "깨", "base": true }
+        { "key": "allulose", "name": "알룰로스", "base": true, "aliases": [] }
       ],
       "relations": []
     },
     {
-      "key": "kimchi",
-      "name": "김치",
+      "key": "bacon",
+      "name": "베이컨",
       "variants": [
-        { "key": "kimchi", "name": "김치", "base": true }
+        { "key": "bacon", "name": "베이컨", "base": true, "aliases": [] }
       ],
       "relations": []
     },
     {
-      "key": "pork-belly",
-      "name": "삼겹살",
+      "key": "beef-belly",
+      "name": "우삼겹",
       "variants": [
-        { "key": "pork-belly", "name": "삼겹살", "base": true }
+        { "key": "beef-belly", "name": "우삼겹", "base": true, "aliases": [] }
       ],
       "relations": []
     },
     {
-      "key": "water",
-      "name": "물",
+      "key": "black-pepper",
+      "name": "후추",
       "variants": [
-        { "key": "water", "name": "물", "base": true }
+        { "key": "black-pepper", "name": "후추", "base": true, "aliases": [] }
       ],
       "relations": []
     },
     {
-      "key": "red-pepper-powder",
-      "name": "고춧가루",
+      "key": "butter",
+      "name": "버터",
       "variants": [
-        { "key": "red-pepper-powder", "name": "고춧가루", "base": true }
+        { "key": "butter", "name": "버터", "base": true, "aliases": ["빠다"] }
       ],
       "relations": []
     },
     {
-      "key": "sugar",
-      "name": "설탕",
+      "key": "cheese",
+      "name": "치즈",
       "variants": [
-        { "key": "sugar", "name": "설탕", "base": true }
+        { "key": "cheese", "name": "치즈", "base": true, "aliases": [] }
       ],
       "relations": []
     },
     {
-      "key": "garlic",
-      "name": "마늘",
+      "key": "chicken-stock",
+      "name": "치킨스톡",
       "variants": [
-        { "key": "garlic", "name": "마늘", "base": true },
-        { "key": "minced-garlic", "name": "다진 마늘", "base": false }
+        { "key": "chicken-stock", "name": "치킨스톡", "base": true, "aliases": [] }
       ],
-      "relations": [
-        { "source": "garlic", "target": "minced-garlic" }
-      ]
+      "relations": []
     },
     {
-      "key": "soy-sauce",
-      "name": "간장",
+      "key": "chili-pepper",
+      "name": "고추",
       "variants": [
-        { "key": "soy-sauce", "name": "간장", "base": true },
-        { "key": "dark-soy-sauce", "name": "진간장", "base": false },
-        { "key": "soup-soy-sauce", "name": "국간장", "base": false }
+        { "key": "chili-pepper", "name": "고추", "base": true, "aliases": [] }
       ],
       "relations": []
     },
@@ -73,7 +68,257 @@
       "key": "coin-broth",
       "name": "코인육수",
       "variants": [
-        { "key": "coin-broth", "name": "코인육수", "base": true }
+        { "key": "coin-broth", "name": "코인육수", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "cooking-oil",
+      "name": "식용유",
+      "variants": [
+        { "key": "cooking-oil", "name": "식용유", "base": true, "aliases": [] },
+        { "key": "olive-oil", "name": "올리브오일", "base": false, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "cooking-wine",
+      "name": "맛술",
+      "variants": [
+        { "key": "cooking-wine", "name": "맛술", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "corn-syrup",
+      "name": "물엿",
+      "variants": [
+        { "key": "corn-syrup", "name": "물엿", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "cooked-rice",
+      "name": "밥",
+      "variants": [
+        { "key": "cooked-rice", "name": "밥", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "dumpling",
+      "name": "만두",
+      "variants": [
+        { "key": "dumpling", "name": "만두", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "egg",
+      "name": "계란",
+      "variants": [
+        { "key": "egg", "name": "계란", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "enoki-mushroom",
+      "name": "팽이버섯",
+      "variants": [
+        { "key": "enoki-mushroom", "name": "팽이버섯", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "garlic",
+      "name": "마늘",
+      "variants": [
+        { "key": "garlic", "name": "마늘", "base": true, "aliases": ["통마늘"] },
+        { "key": "minced-garlic", "name": "다진 마늘", "base": false, "aliases": [] }
+      ],
+      "relations": [
+        { "source": "garlic", "target": "minced-garlic" }
+      ]
+    },
+    {
+      "key": "gochujang",
+      "name": "고추장",
+      "variants": [
+        { "key": "gochujang", "name": "고추장", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "green-onion",
+      "name": "대파",
+      "variants": [
+        { "key": "green-onion", "name": "대파", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "ketchup",
+      "name": "케첩",
+      "variants": [
+        { "key": "ketchup", "name": "케첩", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "kimchi",
+      "name": "김치",
+      "variants": [
+        { "key": "kimchi", "name": "김치", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "milk",
+      "name": "우유",
+      "variants": [
+        { "key": "milk", "name": "우유", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "onion",
+      "name": "양파",
+      "variants": [
+        { "key": "onion", "name": "양파", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "oyster-sauce",
+      "name": "굴소스",
+      "variants": [
+        { "key": "oyster-sauce", "name": "굴소스", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "pasta-noodle",
+      "name": "파스타면",
+      "variants": [
+        { "key": "pasta-noodle", "name": "파스타면", "base": true, "aliases": [] },
+        { "key": "spaghetti-noodle", "name": "스파게티면", "base": false, "aliases": ["스파게티"] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "pork-belly",
+      "name": "삼겹살",
+      "variants": [
+        { "key": "pork-belly", "name": "삼겹살", "base": true, "aliases": [] },
+        { "key": "thin-sliced-pork-belly", "name": "대패삼겹살", "base": false, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "red-pepper",
+      "name": "레드페퍼",
+      "variants": [
+        { "key": "red-pepper", "name": "레드페퍼", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "red-pepper-powder",
+      "name": "고춧가루",
+      "variants": [
+        { "key": "red-pepper-powder", "name": "고춧가루", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "sausage",
+      "name": "소시지",
+      "variants": [
+        { "key": "sausage", "name": "소시지", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "seaweed",
+      "name": "김",
+      "variants": [
+        { "key": "seaweed", "name": "김", "base": true, "aliases": [] },
+        { "key": "seaweed-flakes", "name": "김가루", "base": false, "aliases": [] }
+      ],
+      "relations": [
+        { "source": "seaweed", "target": "seaweed-flakes" }
+      ]
+    },
+    {
+      "key": "sesame-oil",
+      "name": "참기름",
+      "variants": [
+        { "key": "sesame-oil", "name": "참기름", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "sesame-seed",
+      "name": "참깨",
+      "variants": [
+        { "key": "sesame-seed", "name": "참깨", "base": true, "aliases": ["깨"] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "salt",
+      "name": "소금",
+      "variants": [
+        { "key": "salt", "name": "소금", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "soy-sauce",
+      "name": "간장",
+      "variants": [
+        { "key": "soy-sauce", "name": "간장", "base": true, "aliases": [] },
+        { "key": "dark-soy-sauce", "name": "진간장", "base": false, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "sugar",
+      "name": "설탕",
+      "variants": [
+        { "key": "sugar", "name": "설탕", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "tuna-extract",
+      "name": "참치액",
+      "variants": [
+        { "key": "tuna-extract", "name": "참치액", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "vinegar",
+      "name": "식초",
+      "variants": [
+        { "key": "vinegar", "name": "식초", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "wasabi",
+      "name": "와사비",
+      "variants": [
+        { "key": "wasabi", "name": "와사비", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "water",
+      "name": "물",
+      "variants": [
+        { "key": "water", "name": "물", "base": true, "aliases": [] }
       ],
       "relations": []
     }

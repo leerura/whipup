@@ -22,9 +22,9 @@ public class OwnedIngredient {
 
   private Long userIngredientId;
 
-  private Long ingredientId;
+  private Long variantId;
 
-  private String displayName;
+  private String name;
 
   public OwnedIngredient() {
     super();
@@ -33,10 +33,10 @@ public class OwnedIngredient {
   /**
    * Constructor with only required parameters
    */
-  public OwnedIngredient(Long userIngredientId, Long ingredientId, String displayName) {
+  public OwnedIngredient(Long userIngredientId, Long variantId, String name) {
     this.userIngredientId = userIngredientId;
-    this.ingredientId = ingredientId;
-    this.displayName = displayName;
+    this.variantId = variantId;
+    this.name = name;
   }
 
   public OwnedIngredient userIngredientId(Long userIngredientId) {
@@ -59,44 +59,44 @@ public class OwnedIngredient {
     this.userIngredientId = userIngredientId;
   }
 
-  public OwnedIngredient ingredientId(Long ingredientId) {
-    this.ingredientId = ingredientId;
+  public OwnedIngredient variantId(Long variantId) {
+    this.variantId = variantId;
     return this;
   }
 
   /**
-   * Get ingredientId
-   * @return ingredientId
+   * Get variantId
+   * @return variantId
    */
   @NotNull 
-  @JsonProperty("ingredientId")
-  public Long getIngredientId() {
-    return ingredientId;
+  @JsonProperty("variantId")
+  public Long getVariantId() {
+    return variantId;
   }
 
-  @JsonProperty("ingredientId")
-  public void setIngredientId(Long ingredientId) {
-    this.ingredientId = ingredientId;
+  @JsonProperty("variantId")
+  public void setVariantId(Long variantId) {
+    this.variantId = variantId;
   }
 
-  public OwnedIngredient displayName(String displayName) {
-    this.displayName = displayName;
+  public OwnedIngredient name(String name) {
+    this.name = name;
     return this;
   }
 
   /**
-   * Get displayName
-   * @return displayName
+   * Get name
+   * @return name
    */
   @NotNull 
-  @JsonProperty("displayName")
-  public String getDisplayName() {
-    return displayName;
+  @JsonProperty("name")
+  public String getName() {
+    return name;
   }
 
-  @JsonProperty("displayName")
-  public void setDisplayName(String displayName) {
-    this.displayName = displayName;
+  @JsonProperty("name")
+  public void setName(String name) {
+    this.name = name;
   }
 
   @Override
@@ -109,13 +109,13 @@ public class OwnedIngredient {
     }
     OwnedIngredient ownedIngredient = (OwnedIngredient) o;
     return Objects.equals(this.userIngredientId, ownedIngredient.userIngredientId) &&
-        Objects.equals(this.ingredientId, ownedIngredient.ingredientId) &&
-        Objects.equals(this.displayName, ownedIngredient.displayName);
+        Objects.equals(this.variantId, ownedIngredient.variantId) &&
+        Objects.equals(this.name, ownedIngredient.name);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(userIngredientId, ingredientId, displayName);
+    return Objects.hash(userIngredientId, variantId, name);
   }
 
   @Override
@@ -123,8 +123,8 @@ public class OwnedIngredient {
     StringBuilder sb = new StringBuilder();
     sb.append("class OwnedIngredient {\n");
     sb.append("    userIngredientId: ").append(toIndentedString(userIngredientId)).append("\n");
-    sb.append("    ingredientId: ").append(toIndentedString(ingredientId)).append("\n");
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
+    sb.append("    variantId: ").append(toIndentedString(variantId)).append("\n");
+    sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("}");
     return sb.toString();
   }

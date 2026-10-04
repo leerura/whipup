@@ -4,8 +4,7 @@ import java.net.URI;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-import com.whipup.generated.model.MissingIngredient;
+import com.whipup.generated.model.RequirementResult;
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -32,46 +31,9 @@ public class RecommendationItem {
 
   private URI thumbnailUrl;
 
-  /**
-   * Gets or Sets missingCount
-   */
-  public enum MissingCountEnum {
-    NUMBER_0(0),
-    
-    NUMBER_1(1),
-    
-    NUMBER_2(2);
+  private Integer missingCount;
 
-    private final Integer value;
-
-    MissingCountEnum(Integer value) {
-      this.value = value;
-    }
-
-    @JsonValue
-    public Integer getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    @JsonCreator
-    public static MissingCountEnum fromValue(Integer value) {
-      for (MissingCountEnum b : MissingCountEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      throw new IllegalArgumentException("Unexpected value '" + value + "'");
-    }
-  }
-
-  private MissingCountEnum missingCount;
-
-  private List<@Valid MissingIngredient> missingIngredients = new ArrayList<>();
+  private List<RequirementResult> requirementResults = new ArrayList<>();
 
   public RecommendationItem() {
     super();
@@ -80,12 +42,12 @@ public class RecommendationItem {
   /**
    * Constructor with only required parameters
    */
-  public RecommendationItem(Long recipeId, String name, URI thumbnailUrl, MissingCountEnum missingCount, List<@Valid MissingIngredient> missingIngredients) {
+  public RecommendationItem(Long recipeId, String name, URI thumbnailUrl, Integer missingCount, List<RequirementResult> requirementResults) {
     this.recipeId = recipeId;
     this.name = name;
     this.thumbnailUrl = thumbnailUrl;
     this.missingCount = missingCount;
-    this.missingIngredients = missingIngredients;
+    this.requirementResults = requirementResults;
   }
 
   public RecommendationItem recipeId(Long recipeId) {
@@ -148,52 +110,53 @@ public class RecommendationItem {
     this.thumbnailUrl = thumbnailUrl;
   }
 
-  public RecommendationItem missingCount(MissingCountEnum missingCount) {
+  public RecommendationItem missingCount(Integer missingCount) {
     this.missingCount = missingCount;
     return this;
   }
 
   /**
    * Get missingCount
+   * minimum: 0
    * @return missingCount
    */
-  @NotNull 
+  @NotNull @Min(value = 0) 
   @JsonProperty("missingCount")
-  public MissingCountEnum getMissingCount() {
+  public Integer getMissingCount() {
     return missingCount;
   }
 
   @JsonProperty("missingCount")
-  public void setMissingCount(MissingCountEnum missingCount) {
+  public void setMissingCount(Integer missingCount) {
     this.missingCount = missingCount;
   }
 
-  public RecommendationItem missingIngredients(List<@Valid MissingIngredient> missingIngredients) {
-    this.missingIngredients = missingIngredients;
+  public RecommendationItem requirementResults(List<RequirementResult> requirementResults) {
+    this.requirementResults = requirementResults;
     return this;
   }
 
-  public RecommendationItem addMissingIngredientsItem(MissingIngredient missingIngredientsItem) {
-    if (this.missingIngredients == null) {
-      this.missingIngredients = new ArrayList<>();
+  public RecommendationItem addRequirementResultsItem(RequirementResult requirementResultsItem) {
+    if (this.requirementResults == null) {
+      this.requirementResults = new ArrayList<>();
     }
-    this.missingIngredients.add(missingIngredientsItem);
+    this.requirementResults.add(requirementResultsItem);
     return this;
   }
 
   /**
-   * Get missingIngredients
-   * @return missingIngredients
+   * Get requirementResults
+   * @return requirementResults
    */
   @NotNull @Valid 
-  @JsonProperty("missingIngredients")
-  public List<@Valid MissingIngredient> getMissingIngredients() {
-    return missingIngredients;
+  @JsonProperty("requirementResults")
+  public List<RequirementResult> getRequirementResults() {
+    return requirementResults;
   }
 
-  @JsonProperty("missingIngredients")
-  public void setMissingIngredients(List<@Valid MissingIngredient> missingIngredients) {
-    this.missingIngredients = missingIngredients;
+  @JsonProperty("requirementResults")
+  public void setRequirementResults(List<RequirementResult> requirementResults) {
+    this.requirementResults = requirementResults;
   }
 
   @Override
@@ -209,12 +172,12 @@ public class RecommendationItem {
         Objects.equals(this.name, recommendationItem.name) &&
         Objects.equals(this.thumbnailUrl, recommendationItem.thumbnailUrl) &&
         Objects.equals(this.missingCount, recommendationItem.missingCount) &&
-        Objects.equals(this.missingIngredients, recommendationItem.missingIngredients);
+        Objects.equals(this.requirementResults, recommendationItem.requirementResults);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(recipeId, name, thumbnailUrl, missingCount, missingIngredients);
+    return Objects.hash(recipeId, name, thumbnailUrl, missingCount, requirementResults);
   }
 
   @Override
@@ -225,7 +188,7 @@ public class RecommendationItem {
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    thumbnailUrl: ").append(toIndentedString(thumbnailUrl)).append("\n");
     sb.append("    missingCount: ").append(toIndentedString(missingCount)).append("\n");
-    sb.append("    missingIngredients: ").append(toIndentedString(missingIngredients)).append("\n");
+    sb.append("    requirementResults: ").append(toIndentedString(requirementResults)).append("\n");
     sb.append("}");
     return sb.toString();
   }

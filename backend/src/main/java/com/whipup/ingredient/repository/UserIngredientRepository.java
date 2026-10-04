@@ -10,12 +10,14 @@ public interface UserIngredientRepository extends JpaRepository<UserIngredient, 
 
 	boolean existsByUser_Id(Long userId);
 
-	boolean existsByUser_IdAndIngredient_IdIn(
+	boolean existsByUser_IdAndIngredientVariant_IdIn(
 			Long userId,
-			Collection<Long> ingredientIds
+			Collection<Long> variantIds
 	);
 
-	List<UserIngredient> findAllByUser_IdOrderByIngredient_CanonicalNameAsc(
+	boolean existsByIngredientVariant_IdIn(Collection<Long> variantIds);
+
+	List<UserIngredient> findAllByUser_IdOrderByIngredientVariant_NameAsc(
 			Long userId
 	);
 

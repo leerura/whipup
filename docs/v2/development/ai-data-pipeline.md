@@ -47,6 +47,10 @@ AI는 `ingredients.json`을 수정하지 않는다.
 Mapping:
 - 가장 의미적으로 정확한 기존 Variant에 매핑
 - 문자열 exact match는 필수 아님
+- Variant `aliases`는 동일 의미 표현의 deterministic mapping hint로 사용할 수 있음
+- 예: source 표현 `깨`는 alias를 통해 `참깨` Variant에 mapping
+- Alias로 mapping해도 Stage 1의 `displayName` / `rawText` / evidence 원문은 변경하지 않음
+- 문맥에 따라 달라질 수 있는 상위 표현을 요리 상식만으로 특정 Variant에 구체화하지 않음. 예: `간장 → 진간장`, `파 → 대파`를 자동 확정하지 않음
 - 형태 차이를 canonical base로 뭉개지 않음
 - Variant Relation은 mapping 용도로 사용하지 않음
 - Ingredient 없음 → INGREDIENT_MAPPING_FAILED
@@ -61,4 +65,3 @@ Stage 2가 master 부족으로 실패하면 사람이 master update를 결정한
 ## Validator
 AI output 이후 deterministic validator가 Dataset schema, key/ref, sourceId bijection, immutable fields, optional/requirement 규칙, PUBLISHED mapping completeness, allowed variant 규칙 등을 검증한다.
 sourceId는 검증 후 final Recipe JSON에서 제거한다.
-

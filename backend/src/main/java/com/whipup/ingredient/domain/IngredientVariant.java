@@ -56,6 +56,12 @@ public class IngredientVariant {
         return variant;
     }
 
+    public void update(Ingredient ingredient, String name, boolean base) {
+        this.ingredient = ingredient;
+        this.name = name;
+        this.base = base;
+    }
+
     public Long getId() {
         return id;
     }
