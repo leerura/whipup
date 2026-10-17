@@ -1,0 +1,58 @@
+# V3 구현 영향과 완료 기준
+
+이 문서는 V3 명세를 코드 작업으로 옮길 때의 범위 및 확인 기준이다. 제품 의미는 [domain](../domain/domain.md), 논리 저장 구조는 [ERD](../domain/erd.md), fixture/data contract는 [Dataset](../data/dataset-schema.md), 외부 계약은 [API](../api/api-specification.md)를 따른다. 구현자는 이 문서와 링크된 V3 규격만으로 구현 의도를 파악할 수 있어야 한다. 현재 코드는 구현 위치와 기존 관례를 확인하는 자료이며 V3 결정을 덮어쓰지 않는다.
+
+## 영향 범위
+
+### Ingredient catalog와 inventory
+
+- Ingredient group 응답 및 선택 화면은 그룹과 selectable item을 이미 구분하는 구조를 유지한다.
+- inventory unique key는 user + selectable variant이며, 같은 group의 서로 다른 variant 보유를 계속 허용한다.
+- catalog와 importer에서 `is_base`/기본 variant 전제를 제거한다. group 자체가 선택 가능한지는 카탈로그 item 목록으로만 표현한다.
+- group 제목은 보유 수량/선택 상태를 가진 inventory row로 취급하지 않는다. UX 원칙은 [재료 등록 UX](../ux/ux.md)를 따른다.
+
+### Recipe data와 matching
+
+- RecipeIngredient의 source text/표시/양/단위와 optional 의미를 보존한다.
+- nullable exact variant를 유지하면서 recipe-local accepted variant collection을 추가한다.
+- Dataset importer, domain/entity mapping, recommendation match 계산을 모두 이 collection을 읽도록 변경한다.
+- Match 우선순위와 Requirement/Option/Substitute graph 동작은 [domain 규칙](../domain/domain.md)을 따른다. 임의로 priority를 바꾸거나 Requirement를 평탄화하지 않는다.
+- PUBLISHED completeness validation은 exact OR accepted 후보 존재를 검사한다. DRAFT는 미해결 required mapping을 허용하고 추천에서 제외한다.
+- API DTO 외형은 유지하되 `requiredName`은 source display, `ownedName`은 실제 inventory item으로 반환한다.
+
+## Migration 및 dataset 재구성
+
+- V2 사업 데이터를 초기화할 예정이므로 V2 RecipeIngredient를 새 후보 집합으로 추론 backfill하지 않는다.
+- 실행된 migration을 수정하지 않는다. 새 forward migration에서 base column/제약 제거와 accepted mapping relation 저장 구조를 추가한다.
+- 현재 실제 DB명, ORM mapping, migration framework, importer transaction 전략을 확인하고 V3 논리 모델에 맞춘다. 논리 테이블명과 구현 명칭을 억지로 일치시키려 별도 architecture를 만들지 않는다.
+- 새 catalog/dataset을 기준으로 importer validation과 API를 연결한다. importer는 잘못된 key/reference를 조용히 무시하거나 문자열 유사도로 추측하지 않는다.
+
+## 검증 시나리오
+
+구현 검증은 기존 test framework와 repository convention에 맞춰 아래 행동을 확인한다.
+
+1. 한 group에 selectable item이 여러 개이고 base가 없어도 dataset validation 및 ingredient 목록 응답이 성공한다.
+2. 한 사용자가 같은 group의 서로 다른 두 item을 보유할 수 있고, 정확히 같은 item의 중복 등록은 기존 중복 오류를 반환한다.
+3. source 표현이 포괄적이고 accepted 후보에 서로 다른 group의 item 여러 개가 있는 경우 어느 후보든 보유하면 DIRECT SATISFIED가 된다. Match의 required/owned 이름이 각각 source/owned label을 보존한다.
+4. 레시피 상세에서 요구명과 매치된 owned item명이 다르면 요구명은 그대로 두고 owned item명을 보조 문구로 노출한다. 두 이름이 같으면 중복 안내를 만들지 않는다.
+5. accepted 후보 집합에 하나도 일치하지 않으면 미충족이다. 같은 이름 또는 group 소속만으로 자동 충족하지 않는다.
+6. exact/accepted direct match가 preparation/substitute보다 우선하고, direct가 없을 때만 방향성 preparation을 판정한다. 역방향 관계는 매치되지 않는다.
+7. accepted 후보를 준비해 얻는 target이 있으면 PREPARATION으로 판정한다. 한 단계보다 긴 전이 추론을 새로 추가하지 않는다.
+8. 한 Option 안에서 original과 substitute가 함께 충족될 때 domain 우선순위가 적용되고, Substitute 자체에는 preparation relation이 적용되지 않는다. 서로 다른 OR Option이 충족되면 requirement는 satisfied다.
+9. 필수 미매핑 source가 있는 PUBLISHED dataset은 거부되고, 동일 Recipe가 DRAFT이면 저장되지만 recommendations 및 detail API에서 노출되지 않는다.
+10. optional ingredient는 missingCount/Requirement 결과에 추가되지 않는다. accepted 후보는 구매 후보 목록을 늘리지 않는다.
+11. 기존 API JSON shape, 정렬, error contract, authentication이 회귀하지 않는다.
+
+적절한 검증은 도메인 matcher, importer validator, API/integration 경계를 기존 코드 구조에 따라 선택한다. 테스트가 내부 구현 세부를 복제하는 데 그치지 않고 위의 관찰 가능한 결과를 확인해야 한다.
+
+## 완료 전 리뷰
+
+- V3 docs와 일치하는지, 특히 `base` 가정과 global compatibility 추측이 남지 않았는지 확인한다.
+- 신규 migration 외에 과거 적용 migration이 수정되지 않았는지 확인한다.
+- importer가 V3 fixture를 검증/적용하고, 잘못된 fixture는 진단 가능한 오류로 거부하는지 확인한다.
+- 추천 및 detail endpoint에서 DRAFT 제외, count/sort, response shape가 유지되는지 확인한다.
+- 관련 테스트 및 repository 필수 검증을 수행하고 최종 diff에서 unrelated change를 제거한다.
+
+## 범위 밖
+
+Gemini extraction/validation workflow, sub-agent 분업, 무료 API quota 대응, 자동 batch scheduling, 영상 재생·증거 확인 여부, review queue UI는 별도 pipeline 논의에서 결정한다. 이 문서로 V2 파이프라인 절차를 승인하거나 새 파이프라인을 설계하지 않는다.

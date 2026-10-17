@@ -1,43 +1,65 @@
-# V3 도메인 원칙
+# V3 도메인 규칙
 
-이 문서는 도메인 의미와 판정 책임만 정한다. 구체 Dataset 필드, API, DB 구조는 아직 확정하지 않는다.
+이 문서는 보유 재료, 레시피 원문 재료, 요구 충족 판단의 의미와 규칙을 정의한다. 직렬화 형식은 [Dataset 스키마](../data/dataset-schema.md), 저장 구조는 [데이터 모델](erd.md), 외부 동작은 [API 계약](../api/api-specification.md)을 따른다.
 
-## 용어와 책임
+## 핵심 개념
 
-### 보유 재료
+### Ingredient group과 selectable owned item
 
-사용자가 실제 가지고 있는, 해당 재료 그룹에서 선택 가능한 구체 단위다. 모든 그룹 이름이 등록 가능한 보유 재료인 것은 아니다.
+`Ingredient`는 재료 탐색을 위한 그룹이고, `IngredientVariant`는 사용자가 실제 보유 단위로 선택하고 등록하는 항목이다. 이 도메인에서 “보유 재료”는 selectable item을 뜻한다. 그룹 제목은 자동으로 선택 항목이 되지 않으며, 그룹에는 선택 항목이 하나 이상 있을 수 있고 별도의 기본 항목은 없다.
 
-- `진간장`, `국간장`, `양조간장`은 간장 그룹 아래의 별도 보유 재료다.
-- `통마늘`, `다진 마늘`은 마늘 그룹 아래의 별도 보유 재료다.
-- `삼겹살`과 `대패삼겹살`은 모두 등록 가능한 보유 단위다. `삼겹살`은 여기서 포괄 그룹명만이 아니라 일반적인 삼겹살 부위를 뜻하는 선택 항목이기도 하다.
-- `형태 미지정` 보유 항목은 만들지 않는다.
+그룹/항목의 이름이 같아도 항목이 그 이름으로 실제 보유할 수 있는 구체 단위라면 둘 다 존재할 수 있다. 반대로 그룹명이 포괄 개념이라면 같은 이름의 owned item을 만들지 않을 수 있다. 이는 각 재료의 사용자 인식과 보유 관리 필요에 따라 편집하는 카탈로그 결정이다. 모든 그룹에 동일한 분류 공식을 적용하지 않는다. 사례는 [제품 결정](../product/product.md)의 비일반화 원칙을 따른다.
 
-### 레시피 요구
+사용자는 같은 그룹에서 서로 다른 selectable item을 동시에 보유할 수 있다. 같은 selectable item을 중복 등록하는 것은 허용하지 않는다.
 
-레시피가 특정 조리에 필요하다고 표현한 재료다. 보유 재료 카탈로그와 같은 선택 항목일 필요가 없으며, 소스 표현을 보존한다.
+### RecipeIngredient: source fact
 
-예를 들어 Recipe Requirement `간장`은 보유 항목 `간장`을 만들거나 요구하지 않는다. 해당 레시피의 맥락으로 판단한 구체 보유 항목을 그 요구에 연결한다.
+`RecipeIngredient`는 레시피 원문에 있는 재료 표현 및 표시 근거를 보존한다. 이는 재료 카탈로그 항목과 동일 개념이 아니며, `variant`가 없어도 유효하다. `displayName`, `rawText`, 양, 단위, optional 여부는 원문에 근거해 저장한다. source 표현을 canonical owned item 이름으로 덮어쓰지 않는다.
 
-### 레시피별 충족 연결
+### Accepted owned item: recipe-local 판정
 
-구체 보유 재료가 특정 레시피의 특정 요구를 충족할 수 있음을 나타낸다. 이 판단은 해당 레시피에 귀속되며 다른 레시피에 자동 전파되지 않는다.
+각 필수 `RecipeIngredient`에는 해당 재료 요구를 충족할 수 있다고 그 레시피 맥락에서 판단한 owned item을 0개 이상 연결할 수 있다. 한 source ingredient가 여러 보유 item으로 충족될 수 있고, 한 owned item이 여러 레시피에서 서로 다른 source 표현을 충족할 수 있다. 연결은 레시피별이며 전역 Alias/Relation로 전파되지 않는다. 서로 다른 Ingredient group의 owned item도 연결할 수 있다.
 
-- 한 요구가 여러 구체 보유 재료로 충족될 수 있다.
-- 영상에 등장한 재료는 판단 근거가 될 수 있지만, 그 재료만 가능하다는 제약을 자동으로 뜻하지 않는다.
-- 전체 레시피 맥락으로도 판단이 어려운 경우 해당 필수 요구를 검토 대상으로 표시한다.
-- 검토되지 않은 필수 요구가 남아 있는 Recipe는 `DRAFT`이고 추천 대상에서 제외한다.
+이 연결은 정확한 source 정규화와 별개다. `variant`는 source가 특정 owned item과 정확히 대응한다고 판단된 경우에만 사용한다. `acceptedOwnedVariants`는 문맥에 따른 수용 가능 집합이며 exact identity를 주장하지 않는다. 둘 다 지정되면 exact 항목도 충족 후보에 포함되고, accepted 집합은 추가 후보를 나타낸다. 중복 항목은 허용하지 않는다.
 
-## 전역 관계와 레시피별 판단
+맥락을 검토해도 필수 source ingredient에 충족 후보를 확정할 수 없으면 미해결 상태로 둔다. 미해결 필수 요구가 하나라도 있는 Recipe는 `DRAFT`이며 추천·상세 공개 대상이 아니다. 런타임은 미해결 후보를 추측하거나 AI로 보충하지 않는다.
 
-전역 관계는 손질·준비를 통해 보유 재료의 형태를 바꾸는 명확한 경우에만 사용한다. 방향은 실제 가능한 준비 방향을 뜻한다. 예: 통마늘을 다져 다진 마늘로 준비 가능.
+## 기존 기능과의 경계
 
-레시피 요구와 보유 재료의 의미상 대응은 전역 Alias나 Variant 호환 관계에 넣지 않는다. 예: `진간장 → 간장 요구`, `대파 → 파 요구`는 레시피별 충족 연결로 판단한다.
+- **Alias**: 같은 owned item의 동의 표현을 정규화한다. 상위/포괄 표현이나 문맥 의존 호환성을 표현하지 않는다.
+- **Global Variant Relation**: 한 보유 형태를 명시적인 손질·준비를 거쳐 다른 형태로 만드는 방향 관계다. 역방향·동일 그룹이라는 이유만으로 성립하지 않는다.
+- **Accepted owned item mapping**: 특정 레시피 source ingredient를 충족하는 보유 항목의 recipe-local 판정이다. 전역 호환성을 만들지 않는다.
+- **Allowed Variant**: 기존 Recipe Option의 정확한 owned item 대신 허용되는 동일 Ingredient group의 selectable item이다. accepted mapping과 별도 필드/의미로 유지한다.
+- **Substitute**: 기존 Recipe Option에 선언된 fallback source ingredient다. OR option이나 accepted mapping으로 평탄화하지 않는다.
 
-Recipe-declared Substitute와 Recipe-context Allowed Variant는 각각 기존 의미를 유지하는 별도 개념이다. 레시피별 보유 항목 충족 연결을 이 필드들에 재사용하거나 대체하지 않는다.
+## 요구 구조와 충족 판정
 
-## 판단과 미정 사항
+필수 단위는 `Requirement`다. Requirement의 Option은 OR이며, 여러 Requirement는 모두 충족되어야 한다. 각 Option은 원본 RecipeIngredient와 0개 이상의 Substitute를 가진다. Optional RecipeIngredient는 Requirement/Option/Substitute 역할에 참여하지 않고 추천의 missingCount에도 포함되지 않는다.
 
-소스와 조리 맥락 전체를 고려해 충족 가능한 보유 항목을 정한다. 모든 재료 관계를 미리 일반화하거나 영상의 시각적 재료만으로 허용 범위를 좁히지 않는다.
+각 Option의 inventory 후보는 아래 순서로 계산한다. 같은 owned item이 여러 경로에 해당하면 더 높은 우선순위 유형 한 번만 반환한다.
 
-추출·검증 에이전트의 세부 책임, 증거 형식, 자동화, 검토 작업 흐름은 파이프라인 논의에서 정한다. 현재 문서는 그 절차를 확정하지 않는다.
+1. **DIRECT**: 원본 RecipeIngredient의 exact `variant`, `acceptedOwnedVariants`, 그리고 Option의 `allowedVariants`에 속하는 owned item과 일치한다.
+2. **PREPARATION**: 직접 일치가 없을 때, 보유 item에서 허용 후보 방향으로 이어지는 global Relation이 한 단계 존재한다.
+3. **SUBSTITUTE**: 직접/준비 일치가 없을 때, 해당 Option의 선언된 Substitute RecipeIngredient의 exact/accepted owned item과 직접 일치한다. 기존처럼 Substitute 자체에는 preparation relation을 적용하지 않는다.
+4. **MISSING**: 위 경로에 해당하지 않는다.
+
+위의 우선순위는 Option 단위이며 V2 코드의 동작을 유지한다. OR Requirement에서 하나 이상의 Option이 충족되면 Requirement는 SATISFIED이며, 충족한 모든 Option의 유효 match를 보존한다. 한 Option 안에서 원본과 Substitute가 함께 충족되면 원본/직접 및 준비 경로를 우선하여 Substitute 경로를 추가하지 않는다. 이 규칙은 recipe-local 후보 집합을 기존 직접/준비 판정에 포함한다.
+
+보유 항목이 accepted 집합 중 여러 개에 해당하면 각각을 유효 match로 보존한다. 서버는 실제 보유 항목의 이름과 source 표현의 이름을 각각 응답한다. 클라이언트는 재료 관계를 다시 해석하지 않는다.
+
+Recommendation의 `missingCount`는 충족하지 못한 필수 Requirement 수다. `AVAILABLE`은 0, `MISSING_INGREDIENTS`는 1 이상이다. `DRAFT`는 두 모드 모두 제외한다.
+
+## Publish 불변조건
+
+`PUBLISHED` Recipe는 모든 필수 source ingredient의 충족 판정을 완료해야 한다. 각 필수 ingredient는 아래 둘 중 하나 이상을 가져야 한다.
+
+- 정확한 `variant` 연결
+- 한 개 이상의 `acceptedOwnedVariants`
+
+동시에 exact와 accepted 연결을 가질 수 있다. 중복된 동일 variant는 금지한다. Optional ingredient에는 exact/accepted 연결을 둘 수 있지만, Requirement 참가가 없으므로 추천 충족에 사용되지 않는다. DRAFT는 불완전하거나 검토 중인 source 및 판정을 보존할 수 있다.
+
+PUBLISHED의 비선택 optional=false RecipeIngredient는 정확히 하나의 Requirement Option 또는 Substitute 역할에 참가한다. Option과 Substitute는 같은 Recipe 안의 ingredient만 참조한다. Requirement에는 한 개 이상 Option이 있어야 한다.
+
+## 판정 예시의 범위
+
+제품 문서의 재료 예시는 각 상황에서의 판단 원리를 보여준다. 목록 전체나 다른 재료 분류의 선례가 아니다. 새로운 group, item, source-to-owned 연결은 위 개념과 제품 문서의 사용자 관리 기준으로 개별 판단한다. 기준으로 결론을 낼 수 없으면 파이프라인 운영 또는 제품 결정으로 되돌리고 임의 분류하지 않는다.

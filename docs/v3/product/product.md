@@ -71,4 +71,5 @@ V2의 Recipe-declared Substitute와 Recipe-context Allowed Variant는 각각 기
 
 - 그룹별 등록 가능한 구체 항목의 전체 목록과 목록 확장·관리 기준.
 - 요구 충족 판단에서 검토 대상으로 보내는 구체 기준과 근거 기록 방식. 파이프라인과 에이전트 역할 논의에서 정한다.
-- 확정된 도메인 의미를 Dataset, API, DB 구조에 반영하는 방법.
+
+위 항목은 카탈로그 콘텐츠 및 운영 판단의 열린 결정이다. 확정된 V3 domain/data/API 표현은 각 상세 규격 문서를 따른다.
