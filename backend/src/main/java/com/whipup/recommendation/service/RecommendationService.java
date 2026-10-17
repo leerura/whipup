@@ -1,15 +1,26 @@
 package com.whipup.recommendation.service;
 
-import com.whipup.generated.model.MissingIngredient;
+import com.whipup.generated.model.IngredientMatch;
+import com.whipup.generated.model.MissingOption;
+import com.whipup.generated.model.MissingRequirementResult;
+import com.whipup.generated.model.MissingSubstitute;
 import com.whipup.generated.model.RecommendationItem;
-import com.whipup.generated.model.RecommendationPage;
-import com.whipup.ingredient.domain.Ingredient;
+import com.whipup.generated.model.RecommendationListResponse;
+import com.whipup.generated.model.RecommendationMode;
+import com.whipup.generated.model.RequirementResult;
+import com.whipup.generated.model.SatisfiedRequirementResult;
+import com.whipup.ingredient.domain.IngredientVariant;
 import com.whipup.ingredient.domain.UserIngredient;
 import com.whipup.ingredient.repository.UserIngredientRepository;
 import com.whipup.recipe.domain.Recipe;
-import com.whipup.recipe.domain.RecipeIngredient;
+import com.whipup.recipe.domain.RecipeRequirementOption;
+import com.whipup.recipe.domain.RecipeRequirementSubstitute;
 import com.whipup.recipe.domain.RecipeStatus;
 import com.whipup.recipe.repository.RecipeRepository;
+import com.whipup.recipe.service.RecipeMatchResult;
+import com.whipup.recipe.service.RecipeMatchResult.IngredientMatchResult;
+import com.whipup.recipe.service.RecipeMatchService;
+import com.whipup.recipe.service.RecipeMatchService.MatchedRecipe;
 import com.whipup.recommendation.exception.RecommendationException;
 import java.net.URI;
 import java.net.URLDecoder;
@@ -17,8 +28,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -30,103 +39,162 @@ public class RecommendationService {
 
     private final RecipeRepository recipeRepository;
     private final UserIngredientRepository userIngredientRepository;
+    private final RecipeMatchService recipeMatchService;
 
     public RecommendationService(
         RecipeRepository recipeRepository,
-        UserIngredientRepository userIngredientRepository
+        UserIngredientRepository userIngredientRepository,
+        RecipeMatchService recipeMatchService
     ) {
         this.recipeRepository = recipeRepository;
         this.userIngredientRepository = userIngredientRepository;
+        this.recipeMatchService = recipeMatchService;
     }
 
     @Transactional(readOnly = true)
-    public RecommendationPage getRecommendations(
+    public RecommendationListResponse getRecipeRecommendations(
         Long userId,
-        Integer missingCount,
-        Integer page,
-        Integer size
+        RecommendationMode mode
     ) {
-        RecommendationItem.MissingCountEnum missingCountEnum = toMissingCountEnum(
-            missingCount
-        );
+        if (mode == null) {
+            throw RecommendationException.invalidRequest();
+        }
 
-        Set<Long> ownedIngredientIds = userIngredientRepository
-            .findAllByUser_IdOrderByIngredient_CanonicalNameAsc(userId)
+        List<IngredientVariant> ownedVariants = userIngredientRepository
+            .findAllByUser_IdOrderByIngredientVariant_NameAsc(userId)
             .stream()
-            .map(UserIngredient::getIngredient)
-            .map(Ingredient::getId)
-            .collect(Collectors.toSet());
+            .map(UserIngredient::getIngredientVariant)
+            .toList();
 
-        if (ownedIngredientIds.isEmpty()) {
+        if (ownedVariants.isEmpty()) {
             throw RecommendationException.noOwnedIngredients();
         }
 
-        List<RecommendationItem> allItems = recipeRepository
-            .findAllByStatusOrderByIdAsc(RecipeStatus.PUBLISHED)
+        List<Recipe> recipes = recipeRepository
+            .findAllByStatusOrderByIdAsc(RecipeStatus.PUBLISHED);
+
+        List<RecommendationItem> items = recipeMatchService
+            .matchAll(recipes, ownedVariants)
             .stream()
-            .map(recipe -> toCandidate(recipe, ownedIngredientIds))
-            .filter(candidate -> candidate.missingIngredients().size() == missingCount)
-            .map(candidate -> toRecommendationItem(candidate, missingCountEnum))
+            .filter(matchedRecipe -> matchesMode(matchedRecipe, mode))
+            .sorted(recommendationComparator(mode))
+            .map(this::toRecommendationItem)
             .toList();
 
-        int fromIndex = Math.min(page * size, allItems.size());
-        int toIndex = Math.min(fromIndex + size, allItems.size());
-
-        return new RecommendationPage(
-            allItems.subList(fromIndex, toIndex),
-            page,
-            size,
-            toIndex < allItems.size()
-        );
+        return new RecommendationListResponse(items);
     }
 
-    private RecommendationCandidate toCandidate(
-        Recipe recipe,
-        Set<Long> ownedIngredientIds
+    private boolean matchesMode(
+        MatchedRecipe matchedRecipe,
+        RecommendationMode mode
     ) {
-        List<MissingIngredient> missingIngredients = recipe
-            .getIngredients()
-            .stream()
-            .filter(recipeIngredient -> !ownedIngredientIds.contains(
-                recipeIngredient.getIngredient().getId()
-            ))
-            .sorted(Comparator.comparingInt(RecipeIngredient::getDisplayOrder))
-            .map(recipeIngredient -> new MissingIngredient(
-                recipeIngredient.getIngredient().getId(),
-                recipeIngredient.getIngredient().getCanonicalName()
-            ))
-            .toList();
+        int missingCount = matchedRecipe.matchResult().missingCount();
 
-        return new RecommendationCandidate(recipe, missingIngredients);
+        return switch (mode) {
+            case AVAILABLE -> missingCount == 0;
+            case MISSING_INGREDIENTS -> missingCount >= 1;
+        };
     }
 
-    private RecommendationItem toRecommendationItem(
-        RecommendationCandidate candidate,
-        RecommendationItem.MissingCountEnum missingCount
+    private Comparator<MatchedRecipe> recommendationComparator(
+        RecommendationMode mode
     ) {
-        Recipe recipe = candidate.recipe();
+        if (mode == RecommendationMode.AVAILABLE) {
+            return Comparator.comparing(matchedRecipe ->
+                matchedRecipe.recipe().getId()
+            );
+        }
+
+        return Comparator
+            .comparingInt((MatchedRecipe matchedRecipe) ->
+                matchedRecipe.matchResult().missingCount()
+            )
+            .thenComparing(matchedRecipe -> matchedRecipe.recipe().getId());
+    }
+
+    private RecommendationItem toRecommendationItem(MatchedRecipe matchedRecipe) {
+        Recipe recipe = matchedRecipe.recipe();
+        RecipeMatchResult matchResult = matchedRecipe.matchResult();
         URI shortsReference = URI.create(recipe.getShortsReference());
         URI thumbnailUrl = URI.create(YOUTUBE_THUMBNAIL_URL.formatted(
             extractYoutubeVideoId(shortsReference)
         ));
 
+        List<RequirementResult> requirementResults = matchResult.requirements()
+            .stream()
+            .map(this::toRequirementResult)
+            .toList();
+
         return new RecommendationItem(
             recipe.getId(),
             recipe.getName(),
             thumbnailUrl,
-            missingCount,
-            candidate.missingIngredients()
+            matchResult.missingCount(),
+            requirementResults
         );
     }
 
-    private RecommendationItem.MissingCountEnum toMissingCountEnum(
-        Integer missingCount
+    private RequirementResult toRequirementResult(
+        RecipeMatchResult.RequirementResult result
     ) {
-        try {
-            return RecommendationItem.MissingCountEnum.fromValue(missingCount);
-        } catch (IllegalArgumentException exception) {
-            throw RecommendationException.invalidRequest();
+        if (result.satisfied()) {
+            List<IngredientMatch> matches = result.matches()
+                .stream()
+                .map(this::toIngredientMatch)
+                .toList();
+
+            return new SatisfiedRequirementResult(
+                SatisfiedRequirementResult.StatusEnum.SATISFIED,
+                matches
+            );
         }
+
+        List<MissingOption> missingOptions = result.requirement()
+            .getOptions()
+            .stream()
+            .sorted(Comparator.comparingInt(
+                RecipeRequirementOption::getDisplayOrder
+            ))
+            .map(this::toMissingOption)
+            .toList();
+
+        return new MissingRequirementResult(
+            MissingRequirementResult.StatusEnum.MISSING,
+            missingOptions
+        );
+    }
+
+    private IngredientMatch toIngredientMatch(IngredientMatchResult match) {
+        return new IngredientMatch(
+            toMatchType(match),
+            match.option().getIngredient().getDisplayName(),
+            match.ownedVariant().getName()
+        );
+    }
+
+    private IngredientMatch.TypeEnum toMatchType(IngredientMatchResult match) {
+        return switch (match.type()) {
+            case DIRECT -> IngredientMatch.TypeEnum.DIRECT;
+            case PREPARATION -> IngredientMatch.TypeEnum.PREPARATION;
+            case SUBSTITUTE -> IngredientMatch.TypeEnum.SUBSTITUTE;
+        };
+    }
+
+    private MissingOption toMissingOption(RecipeRequirementOption option) {
+        List<MissingSubstitute> substitutes = option.getSubstitutes()
+            .stream()
+            .sorted(Comparator.comparingInt(
+                RecipeRequirementSubstitute::getDisplayOrder
+            ))
+            .map(substitute -> new MissingSubstitute(
+                substitute.getIngredient().getDisplayName()
+            ))
+            .toList();
+
+        return new MissingOption(
+            option.getIngredient().getDisplayName(),
+            substitutes
+        );
     }
 
     private String extractYoutubeVideoId(URI reference) {
@@ -172,11 +240,5 @@ public class RecommendationService {
             .orElseThrow(() -> new IllegalStateException(
                 "YouTube reference does not contain video id"
             ));
-    }
-
-    private record RecommendationCandidate(
-        Recipe recipe,
-        List<MissingIngredient> missingIngredients
-    ) {
     }
 }

@@ -12,18 +12,18 @@ part 'owned_ingredient.g.dart';
 ///
 /// Properties:
 /// * [userIngredientId] 
-/// * [ingredientId] 
-/// * [displayName] 
+/// * [variantId] 
+/// * [name] 
 @BuiltValue()
 abstract class OwnedIngredient implements Built<OwnedIngredient, OwnedIngredientBuilder> {
   @BuiltValueField(wireName: r'userIngredientId')
   int get userIngredientId;
 
-  @BuiltValueField(wireName: r'ingredientId')
-  int get ingredientId;
+  @BuiltValueField(wireName: r'variantId')
+  int get variantId;
 
-  @BuiltValueField(wireName: r'displayName')
-  String get displayName;
+  @BuiltValueField(wireName: r'name')
+  String get name;
 
   OwnedIngredient._();
 
@@ -53,14 +53,14 @@ class _$OwnedIngredientSerializer implements PrimitiveSerializer<OwnedIngredient
       object.userIngredientId,
       specifiedType: const FullType(int),
     );
-    yield r'ingredientId';
+    yield r'variantId';
     yield serializers.serialize(
-      object.ingredientId,
+      object.variantId,
       specifiedType: const FullType(int),
     );
-    yield r'displayName';
+    yield r'name';
     yield serializers.serialize(
-      object.displayName,
+      object.name,
       specifiedType: const FullType(String),
     );
   }
@@ -93,19 +93,19 @@ class _$OwnedIngredientSerializer implements PrimitiveSerializer<OwnedIngredient
           ) as int;
           result.userIngredientId = valueDes;
           break;
-        case r'ingredientId':
+        case r'variantId':
           final valueDes = serializers.deserialize(
             value,
             specifiedType: const FullType(int),
           ) as int;
-          result.ingredientId = valueDes;
+          result.variantId = valueDes;
           break;
-        case r'displayName':
+        case r'name':
           final valueDes = serializers.deserialize(
             value,
             specifiedType: const FullType(String),
           ) as String;
-          result.displayName = valueDes;
+          result.name = valueDes;
           break;
         default:
           unhandled.add(key);

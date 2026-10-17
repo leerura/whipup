@@ -1,7 +1,7 @@
 package com.whipup.ingredient.controller;
 
 import com.whipup.generated.api.IngredientApiDelegate;
-import com.whipup.generated.model.IngredientOptionListResponse;
+import com.whipup.generated.model.IngredientGroupListResponse;
 import com.whipup.ingredient.service.IngredientService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -16,7 +16,7 @@ public class IngredientApiDelegateImpl implements IngredientApiDelegate {
     }
 
     @Override
-    public ResponseEntity<IngredientOptionListResponse> getIngredientOptions() {
-        return ResponseEntity.ok(ingredientService.getIngredientOptions());
+    public ResponseEntity<IngredientGroupListResponse> getIngredientGroups() {
+        return ResponseEntity.ok(ingredientService.getIngredientGroups());
     }
 }

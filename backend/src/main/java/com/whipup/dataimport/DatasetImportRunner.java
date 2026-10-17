@@ -41,8 +41,9 @@ public class DatasetImportRunner implements ApplicationRunner {
         DatasetImportService.ImportResult result = importService.synchronize(dataset);
 
         log.info(
-            "Dataset import completed: {} ingredients, {} recipes",
+            "Dataset import completed: {} ingredients, {} variants, {} recipes",
             result.ingredientCount(),
+            result.variantCount(),
             result.recipeCount()
         );
         SpringApplication.exit(applicationContext);

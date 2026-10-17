@@ -4,7 +4,7 @@
 
 // ignore_for_file: unused_element
 import 'package:built_collection/built_collection.dart';
-import 'package:api_client/src/model/missing_ingredient.dart';
+import 'package:api_client/src/model/requirement_result.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 
@@ -17,7 +17,7 @@ part 'recommendation_item.g.dart';
 /// * [name] 
 /// * [thumbnailUrl] 
 /// * [missingCount] 
-/// * [missingIngredients] 
+/// * [requirementResults] 
 @BuiltValue()
 abstract class RecommendationItem implements Built<RecommendationItem, RecommendationItemBuilder> {
   @BuiltValueField(wireName: r'recipeId')
@@ -30,11 +30,10 @@ abstract class RecommendationItem implements Built<RecommendationItem, Recommend
   String get thumbnailUrl;
 
   @BuiltValueField(wireName: r'missingCount')
-  RecommendationItemMissingCountEnum get missingCount;
-  // enum missingCountEnum {  0,  1,  2,  };
+  int get missingCount;
 
-  @BuiltValueField(wireName: r'missingIngredients')
-  BuiltList<MissingIngredient> get missingIngredients;
+  @BuiltValueField(wireName: r'requirementResults')
+  BuiltList<RequirementResult> get requirementResults;
 
   RecommendationItem._();
 
@@ -77,12 +76,12 @@ class _$RecommendationItemSerializer implements PrimitiveSerializer<Recommendati
     yield r'missingCount';
     yield serializers.serialize(
       object.missingCount,
-      specifiedType: const FullType(RecommendationItemMissingCountEnum),
+      specifiedType: const FullType(int),
     );
-    yield r'missingIngredients';
+    yield r'requirementResults';
     yield serializers.serialize(
-      object.missingIngredients,
-      specifiedType: const FullType(BuiltList, [FullType(MissingIngredient)]),
+      object.requirementResults,
+      specifiedType: const FullType(BuiltList, [FullType(RequirementResult)]),
     );
   }
 
@@ -131,16 +130,16 @@ class _$RecommendationItemSerializer implements PrimitiveSerializer<Recommendati
         case r'missingCount':
           final valueDes = serializers.deserialize(
             value,
-            specifiedType: const FullType(RecommendationItemMissingCountEnum),
-          ) as RecommendationItemMissingCountEnum;
+            specifiedType: const FullType(int),
+          ) as int;
           result.missingCount = valueDes;
           break;
-        case r'missingIngredients':
+        case r'requirementResults':
           final valueDes = serializers.deserialize(
             value,
-            specifiedType: const FullType(BuiltList, [FullType(MissingIngredient)]),
-          ) as BuiltList<MissingIngredient>;
-          result.missingIngredients.replace(valueDes);
+            specifiedType: const FullType(BuiltList, [FullType(RequirementResult)]),
+          ) as BuiltList<RequirementResult>;
+          result.requirementResults.replace(valueDes);
           break;
         default:
           unhandled.add(key);
@@ -171,21 +170,4 @@ class _$RecommendationItemSerializer implements PrimitiveSerializer<Recommendati
   }
 }
 
-
-class RecommendationItemMissingCountEnum extends EnumClass {
-
-  @BuiltValueEnumConst(wireNumber: 0)
-  static const RecommendationItemMissingCountEnum number0 = _$recommendationItemMissingCountEnum_number0;
-  @BuiltValueEnumConst(wireNumber: 1)
-  static const RecommendationItemMissingCountEnum number1 = _$recommendationItemMissingCountEnum_number1;
-  @BuiltValueEnumConst(wireNumber: 2)
-  static const RecommendationItemMissingCountEnum number2 = _$recommendationItemMissingCountEnum_number2;
-
-  static Serializer<RecommendationItemMissingCountEnum> get serializer => _$recommendationItemMissingCountEnumSerializer;
-
-  const RecommendationItemMissingCountEnum._(String name): super(name);
-
-  static BuiltSet<RecommendationItemMissingCountEnum> get values => _$recommendationItemMissingCountEnumValues;
-  static RecommendationItemMissingCountEnum valueOf(String name) => _$recommendationItemMissingCountEnumValueOf(name);
-}
 

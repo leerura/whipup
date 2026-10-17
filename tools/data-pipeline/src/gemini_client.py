@@ -4,16 +4,17 @@ import os
 from google import genai
 from google.genai import types
 
-#TODO: 프롬프트 외부 관리 필요. 현재는 코드에 하드코딩되어 있음. 추후 프롬프트를 외부 파일로 관리하고, 필요시 로드하도록 변경 필요.
-INGREDIENT_PROMPT = """
-You are extracting ingredient expressions from a Korean YouTube Shorts cooking video.
+# TODO: Move prompts into external files when prompt versioning becomes necessary.
+INGREDIENT_STAGE_ONE_PROMPT = """
+You are performing Stage 1 ingredient extraction from a Korean YouTube Shorts cooking video.
 
 Rules:
 - Extract only ingredients directly visible or explicitly mentioned in the video.
 - Do not guess missing ingredients.
 - Preserve the original cooking expression as much as possible.
-- Do not canonicalize ingredients.
+- Do not canonicalize, map, add, or remove ingredients.
 - If amount or unit is unclear, use null.
+- Do not invent evidence or a timestamp that is not observable in the video.
 - Return JSON only.
 
 Schema:
@@ -23,26 +24,50 @@ Schema:
       "rawText": string,
       "displayName": string,
       "amount": string | null,
-      "unit": string | null
+      "unit": string | null,
+      "evidences": [
+        {
+          "type": "SPEECH" | "SUBTITLE" | "ON_SCREEN_TEXT" | "VISUAL_ACTION",
+          "text": string,
+          "timestamp": string | null
+        }
+      ]
     }
   ]
 }
 """
 
-RECIPE_PROMPT = """
-You are extracting a recipe from a Korean YouTube Shorts cooking video.
+RECIPE_STAGE_TWO_PROMPT = """
+You are structuring a Korean cooking video into a V2 Recipe Dataset draft.
 
 Rules:
-- Extract only recipe information that is visible or explicitly mentioned in the video.
-- Do not invent missing ingredients or cooking steps.
-- Use only the provided canonical ingredient master for canonicalIngredient.
-- The only valid canonicalIngredient values are the names listed under Canonical ingredient master.
-- canonicalIngredient must exactly match one of the provided canonical ingredient names.
-- If a video ingredient cannot be mapped to the provided master, set canonicalIngredient to null and mappingStatus to "UNMAPPED".
-- Do not create new canonical ingredients.
-- Preserve the original expression in displayName and rawText.
-- If amount or unit is unclear, use null.
-- Keep ingredient and step order as shown in the video.
+- Extract only information that is visible or explicitly mentioned in the video.
+- Use every supplied approved Stage 1 ingredient exactly once. Do not add, remove,
+  split, merge, or alter sourceId, displayName, rawText, amount, or unit.
+- Map only to supplied IngredientVariant keys. Exact text equality is not required.
+- Use supplied Variant aliases only as mapping hints for equivalent expressions
+  (for example, 깨 maps to 참깨). Never treat aliases as matching relations or
+  additional user-owned Variants. Preserve approved source fields and evidence.
+- Do not infer a specific Variant from an ambiguous broader expression based on
+  cooking knowledge alone (for example, do not automatically map 파 to 대파).
+- V2 deliberately consolidates soy sauce into the supplied 간장 Variant:
+  진간장, 국간장, and 양조간장 may map to soy-sauce without changing their
+  original source expressions. This exception is not a general compatibility rule.
+- Preserve meaningful forms: 통마늘 and 다진 마늘 remain separate Variants.
+  Do not collapse a specific form into the canonical base Variant.
+- Never use Ingredient Variant Relations as mapping permission.
+- When no exact semantic mapping exists or confidence is insufficient, set variant
+  to null and add a mappingFailures entry with INGREDIENT_MAPPING_FAILED or
+  VARIANT_MAPPING_FAILED.
+- Optional, OR, Substitute, and Allowed Variant declarations require explicit
+  source evidence. A Substitute is directional and is not an OR option.
+- Every non-optional Recipe Ingredient must participate exactly once in an
+  Option or Substitute role. When no OR or Substitute evidence exists, create
+  one Single Requirement with that Ingredient as its only Option.
+- Use lowercase ASCII kebab-case for the Recipe key.
+- Write recipe name, user-facing ingredient text, and recipe steps in Korean.
+- Do not create Ingredients, Variants, or master changes.
+- If a video does not reveal a value, leave it null or empty instead of guessing.
 - Return JSON only.
 
 Recipe key rule:
@@ -52,32 +77,63 @@ Recipe key rule:
 
 Schema:
 {
-  "key": string,
-  "name": string,
-  "ingredients": [
+  "recipe": {
+    "key": string,
+    "name": string,
+    "status": "DRAFT",
+    "ingredients": [
+      {
+        "sourceId": string,
+        "key": string,
+        "variant": string | null,
+        "displayName": string,
+        "rawText": string,
+        "amount": string | null,
+        "unit": string | null,
+        "optional": boolean
+      }
+    ],
+    "requirements": [
+      {
+        "options": [
+          {
+            "ingredient": string,
+            "substitutes": [string],
+            "allowedVariants": [string]
+          }
+        ]
+      }
+    ],
+    "steps": [string]
+  },
+  "mappingFailures": [
     {
-      "canonicalIngredient": string | null,
-      "displayName": string,
-      "rawText": string,
-      "amount": string | null,
-      "unit": string | null,
-      "mappingStatus": "MAPPED" | "UNMAPPED"
+      "sourceId": string,
+      "code": "INGREDIENT_MAPPING_FAILED" | "VARIANT_MAPPING_FAILED",
+      "message": string
     }
-  ],
-  "steps": [string]
+  ]
 }
 """
 
 
-def _recipe_prompt(video_id: str, ingredient_master: list[str]) -> str:
-    master = "\n".join(f"- {name}" for name in ingredient_master)
+def _stage_two_recipe_prompt(
+    video_id: str,
+    approved_ingredients: list[dict],
+    ingredient_master: dict,
+) -> str:
+    approved = json.dumps(approved_ingredients, ensure_ascii=False, indent=2)
+    master = json.dumps(ingredient_master, ensure_ascii=False, indent=2)
     return f"""
-{RECIPE_PROMPT}
+{RECIPE_STAGE_TWO_PROMPT}
 
 Video ID:
 {video_id}
 
-Canonical ingredient master:
+Approved Stage 1 ingredients:
+{approved}
+
+Immutable Ingredient/Variant master:
 {master}
 """
 
@@ -110,11 +166,11 @@ class GeminiClient:
         self._client = genai.Client(api_key=api_key)
         self._model = model
 
-    def extract_ingredients(self, source_url: str) -> list[dict]:
+    def extract_stage_one_ingredients(self, source_url: str) -> list[dict]:
         response = self._client.models.generate_content(
             model=self._model,
             contents=[
-                INGREDIENT_PROMPT,
+                INGREDIENT_STAGE_ONE_PROMPT,
                 types.Part.from_uri(file_uri=source_url, mime_type="video/mp4"),
             ],
             config=types.GenerateContentConfig(response_mime_type="application/json"),
@@ -123,16 +179,21 @@ class GeminiClient:
         payload = _parse_json_response(response.text or "")
         return payload.get("ingredients", [])
 
-    def extract_recipe(
+    def structure_recipe(
         self,
         source_url: str,
         video_id: str,
-        ingredient_master: list[str],
+        approved_ingredients: list[dict],
+        ingredient_master: dict,
     ) -> dict:
         response = self._client.models.generate_content(
             model=self._model,
             contents=[
-                _recipe_prompt(video_id, ingredient_master),
+                _stage_two_recipe_prompt(
+                    video_id,
+                    approved_ingredients,
+                    ingredient_master,
+                ),
                 types.Part.from_uri(file_uri=source_url, mime_type="video/mp4"),
             ],
             config=types.GenerateContentConfig(response_mime_type="application/json"),

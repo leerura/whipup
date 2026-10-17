@@ -4,7 +4,8 @@ import java.net.URI;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.whipup.generated.model.RecipeIngredient;
+import com.whipup.generated.model.DetailIngredientDisplay;
+import com.whipup.generated.model.DetailRequirement;
 import com.whipup.generated.model.RecipeStep;
 import java.net.URI;
 import java.util.ArrayList;
@@ -36,7 +37,9 @@ public class RecipeDetailResponse {
 
   private Integer missingCount;
 
-  private List<@Valid RecipeIngredient> ingredients = new ArrayList<>();
+  private List<DetailRequirement> requirements = new ArrayList<>();
+
+  private List<@Valid DetailIngredientDisplay> optionalIngredients = new ArrayList<>();
 
   private List<@Valid RecipeStep> steps = new ArrayList<>();
 
@@ -47,13 +50,14 @@ public class RecipeDetailResponse {
   /**
    * Constructor with only required parameters
    */
-  public RecipeDetailResponse(Long recipeId, String name, URI shortsReference, URI thumbnailUrl, Integer missingCount, List<@Valid RecipeIngredient> ingredients, List<@Valid RecipeStep> steps) {
+  public RecipeDetailResponse(Long recipeId, String name, URI shortsReference, URI thumbnailUrl, Integer missingCount, List<DetailRequirement> requirements, List<@Valid DetailIngredientDisplay> optionalIngredients, List<@Valid RecipeStep> steps) {
     this.recipeId = recipeId;
     this.name = name;
     this.shortsReference = shortsReference;
     this.thumbnailUrl = thumbnailUrl;
     this.missingCount = missingCount;
-    this.ingredients = ingredients;
+    this.requirements = requirements;
+    this.optionalIngredients = optionalIngredients;
     this.steps = steps;
   }
 
@@ -158,32 +162,60 @@ public class RecipeDetailResponse {
     this.missingCount = missingCount;
   }
 
-  public RecipeDetailResponse ingredients(List<@Valid RecipeIngredient> ingredients) {
-    this.ingredients = ingredients;
+  public RecipeDetailResponse requirements(List<DetailRequirement> requirements) {
+    this.requirements = requirements;
     return this;
   }
 
-  public RecipeDetailResponse addIngredientsItem(RecipeIngredient ingredientsItem) {
-    if (this.ingredients == null) {
-      this.ingredients = new ArrayList<>();
+  public RecipeDetailResponse addRequirementsItem(DetailRequirement requirementsItem) {
+    if (this.requirements == null) {
+      this.requirements = new ArrayList<>();
     }
-    this.ingredients.add(ingredientsItem);
+    this.requirements.add(requirementsItem);
     return this;
   }
 
   /**
-   * Get ingredients
-   * @return ingredients
+   * Get requirements
+   * @return requirements
    */
   @NotNull @Valid 
-  @JsonProperty("ingredients")
-  public List<@Valid RecipeIngredient> getIngredients() {
-    return ingredients;
+  @JsonProperty("requirements")
+  public List<DetailRequirement> getRequirements() {
+    return requirements;
   }
 
-  @JsonProperty("ingredients")
-  public void setIngredients(List<@Valid RecipeIngredient> ingredients) {
-    this.ingredients = ingredients;
+  @JsonProperty("requirements")
+  public void setRequirements(List<DetailRequirement> requirements) {
+    this.requirements = requirements;
+  }
+
+  public RecipeDetailResponse optionalIngredients(List<@Valid DetailIngredientDisplay> optionalIngredients) {
+    this.optionalIngredients = optionalIngredients;
+    return this;
+  }
+
+  public RecipeDetailResponse addOptionalIngredientsItem(DetailIngredientDisplay optionalIngredientsItem) {
+    if (this.optionalIngredients == null) {
+      this.optionalIngredients = new ArrayList<>();
+    }
+    this.optionalIngredients.add(optionalIngredientsItem);
+    return this;
+  }
+
+  /**
+   * Get optionalIngredients
+   * @return optionalIngredients
+   */
+  @NotNull @Valid 
+  @JsonProperty("optionalIngredients")
+  public List<@Valid DetailIngredientDisplay> getOptionalIngredients() {
+    return optionalIngredients;
+  }
+
+  @JsonProperty("optionalIngredients")
+  public void setOptionalIngredients(List<@Valid DetailIngredientDisplay> optionalIngredients) {
+    this.optionalIngredients = optionalIngredients;
   }
 
   public RecipeDetailResponse steps(List<@Valid RecipeStep> steps) {
@@ -228,13 +260,14 @@ public class RecipeDetailResponse {
         Objects.equals(this.shortsReference, recipeDetailResponse.shortsReference) &&
         Objects.equals(this.thumbnailUrl, recipeDetailResponse.thumbnailUrl) &&
         Objects.equals(this.missingCount, recipeDetailResponse.missingCount) &&
-        Objects.equals(this.ingredients, recipeDetailResponse.ingredients) &&
+        Objects.equals(this.requirements, recipeDetailResponse.requirements) &&
+        Objects.equals(this.optionalIngredients, recipeDetailResponse.optionalIngredients) &&
         Objects.equals(this.steps, recipeDetailResponse.steps);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(recipeId, name, shortsReference, thumbnailUrl, missingCount, ingredients, steps);
+    return Objects.hash(recipeId, name, shortsReference, thumbnailUrl, missingCount, requirements, optionalIngredients, steps);
   }
 
   @Override
@@ -246,7 +279,8 @@ public class RecipeDetailResponse {
     sb.append("    shortsReference: ").append(toIndentedString(shortsReference)).append("\n");
     sb.append("    thumbnailUrl: ").append(toIndentedString(thumbnailUrl)).append("\n");
     sb.append("    missingCount: ").append(toIndentedString(missingCount)).append("\n");
-    sb.append("    ingredients: ").append(toIndentedString(ingredients)).append("\n");
+    sb.append("    requirements: ").append(toIndentedString(requirements)).append("\n");
+    sb.append("    optionalIngredients: ").append(toIndentedString(optionalIngredients)).append("\n");
     sb.append("    steps: ").append(toIndentedString(steps)).append("\n");
     sb.append("}");
     return sb.toString();

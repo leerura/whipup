@@ -51,21 +51,32 @@ public class Recipe {
     @OneToMany(mappedBy = "recipe", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<RecipeStep> steps = new ArrayList<>();
 
+    @OneToMany(mappedBy = "recipe", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<RecipeRequirement> requirements = new ArrayList<>();
+
     protected Recipe() {
     }
 
     public static Recipe createPublished(String datasetKey, String name, String shortsReference) {
+        return create(datasetKey, name, RecipeStatus.PUBLISHED, shortsReference);
+    }
+
+    public static Recipe create(String datasetKey, String name, RecipeStatus status, String shortsReference) {
         Recipe recipe = new Recipe();
         recipe.datasetKey = datasetKey;
         recipe.name = name;
-        recipe.status = RecipeStatus.PUBLISHED;
+        recipe.status = status;
         recipe.shortsReference = shortsReference;
         return recipe;
     }
 
     public void updatePublished(String name, String shortsReference) {
+        update(name, RecipeStatus.PUBLISHED, shortsReference);
+    }
+
+    public void update(String name, RecipeStatus status, String shortsReference) {
         this.name = name;
-        this.status = RecipeStatus.PUBLISHED;
+        this.status = status;
         this.shortsReference = shortsReference;
     }
 
@@ -82,6 +93,14 @@ public class Recipe {
         steps.forEach(step -> {
             step.assignRecipe(this);
             this.steps.add(step);
+        });
+    }
+
+    public void replaceRequirements(List<RecipeRequirement> requirements) {
+        this.requirements.clear();
+        requirements.forEach(requirement -> {
+            requirement.assignRecipe(this);
+            this.requirements.add(requirement);
         });
     }
 
@@ -111,6 +130,10 @@ public class Recipe {
 
     public List<RecipeStep> getSteps() {
         return steps;
+    }
+
+    public List<RecipeRequirement> getRequirements() {
+        return requirements;
     }
 
     @PrePersist

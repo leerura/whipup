@@ -1,8 +1,8 @@
 package com.whipup.generated.api;
 
 import com.whipup.generated.model.ErrorResponse;
-import org.springframework.lang.Nullable;
-import com.whipup.generated.model.RecommendationPage;
+import com.whipup.generated.model.RecommendationListResponse;
+import com.whipup.generated.model.RecommendationMode;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -28,24 +28,20 @@ public interface RecommendationApiDelegate {
     }
 
     /**
-     * GET /api/v1/recommendations
+     * GET /api/v1/recipes/recommendations
      *
-     * @param missingCount  (required)
-     * @param page  (optional, default to 0)
-     * @param size  (optional, default to 30)
-     * @return Recommendations (status code 200)
+     * @param mode  (required)
+     * @return Recipe recommendations for the selected exploration mode (status code 200)
      *         or Invalid request (status code 400)
      *         or Authentication failed or missing (status code 401)
      *         or Request conflicts with current state (status code 409)
-     * @see RecommendationApi#getRecommendations
+     * @see RecommendationApi#getRecipeRecommendations
      */
-    default ResponseEntity<RecommendationPage> getRecommendations(Integer missingCount,
-        Integer page,
-        Integer size) {
+    default ResponseEntity<RecommendationListResponse> getRecipeRecommendations(RecommendationMode mode) {
         getRequest().ifPresent(request -> {
             for (MediaType mediaType: MediaType.parseMediaTypes(request.getHeader("Accept"))) {
                 if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
-                    String exampleString = "{ \"items\" : [ { \"recipeId\" : 0, \"name\" : \"name\", \"thumbnailUrl\" : \"https://openapi-generator.tech\", \"missingCount\" : 6, \"missingIngredients\" : [ { \"ingredientId\" : 1, \"name\" : \"name\" }, { \"ingredientId\" : 1, \"name\" : \"name\" } ] }, { \"recipeId\" : 0, \"name\" : \"name\", \"thumbnailUrl\" : \"https://openapi-generator.tech\", \"missingCount\" : 6, \"missingIngredients\" : [ { \"ingredientId\" : 1, \"name\" : \"name\" }, { \"ingredientId\" : 1, \"name\" : \"name\" } ] } ], \"page\" : 5, \"size\" : 5, \"hasNext\" : true }";
+                    String exampleString = "{ \"items\" : [ { \"recipeId\" : 0, \"name\" : \"name\", \"thumbnailUrl\" : \"https://openapi-generator.tech\", \"missingCount\" : 0, \"requirementResults\" : [ { \"status\" : \"SATISFIED\", \"matches\" : [ { \"type\" : \"DIRECT\", \"requiredName\" : \"requiredName\", \"ownedName\" : \"ownedName\" }, { \"type\" : \"DIRECT\", \"requiredName\" : \"requiredName\", \"ownedName\" : \"ownedName\" } ] }, { \"status\" : \"SATISFIED\", \"matches\" : [ { \"type\" : \"DIRECT\", \"requiredName\" : \"requiredName\", \"ownedName\" : \"ownedName\" }, { \"type\" : \"DIRECT\", \"requiredName\" : \"requiredName\", \"ownedName\" : \"ownedName\" } ] } ] }, { \"recipeId\" : 0, \"name\" : \"name\", \"thumbnailUrl\" : \"https://openapi-generator.tech\", \"missingCount\" : 0, \"requirementResults\" : [ { \"status\" : \"SATISFIED\", \"matches\" : [ { \"type\" : \"DIRECT\", \"requiredName\" : \"requiredName\", \"ownedName\" : \"ownedName\" }, { \"type\" : \"DIRECT\", \"requiredName\" : \"requiredName\", \"ownedName\" : \"ownedName\" } ] }, { \"status\" : \"SATISFIED\", \"matches\" : [ { \"type\" : \"DIRECT\", \"requiredName\" : \"requiredName\", \"ownedName\" : \"ownedName\" }, { \"type\" : \"DIRECT\", \"requiredName\" : \"requiredName\", \"ownedName\" : \"ownedName\" } ] } ] } ] }";
                     ApiUtil.setExampleResponse(request, "application/json", exampleString);
                     break;
                 }

@@ -1,11 +1,17 @@
 import argparse
-import csv
 import os
 from pathlib import Path
 
 from dotenv import load_dotenv
 
-from cache import is_current_result, load_json, metadata, write_json
+from cache import (
+    INGREDIENT_STAGE_ONE_PIPELINE_TYPE,
+    INGREDIENT_STAGE_ONE_PIPELINE_VERSION,
+    is_current_result,
+    load_json,
+    metadata,
+    write_json,
+)
 from gemini_client import GeminiClient
 from youtube import extract_video_id
 
@@ -13,9 +19,8 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT.parents[1] / "data"
 INPUT_FILE = ROOT / "input" / "shorts-urls.txt"
 RAW_DIR = ROOT / "ingredient" / "raw"
-REVIEW_DIR = ROOT / "ingredient" / "review"
+APPROVED_DIR = ROOT / "ingredient" / "approved"
 MANIFEST_FILE = ROOT / "ingredient" / "manifest.json"
-INGREDIENTS_FILE = DATA_DIR / "ingredients.csv"
 
 
 def read_urls(path: Path) -> list[str]:
@@ -43,11 +48,14 @@ def read_urls(path: Path) -> list[str]:
 def update_manifest(video_id: str, status: str, **extra: object) -> None:
     manifest = load_json(MANIFEST_FILE, {"videos": {}})
     current = manifest["videos"].get(video_id, {})
-    manifest["videos"][video_id] = {
+    entry = {
         **current,
         "status": status,
         **extra,
     }
+    if status != "FAILED":
+        entry.pop("error", None)
+    manifest["videos"][video_id] = entry
     write_json(MANIFEST_FILE, manifest)
 
 
@@ -65,25 +73,31 @@ def cleanup_stale_results(active_video_ids: set[str]) -> None:
     write_json(MANIFEST_FILE, manifest)
 
 
-def read_csv_rows(path: Path) -> list[dict]:
-    if not path.exists() or path.stat().st_size == 0:
-        return []
-
-    with path.open(encoding="utf-8", newline="") as file:
-        return list(csv.DictReader(file))
-
-
-def load_existing_master() -> set[str]:
-    ingredient_rows = read_csv_rows(INGREDIENTS_FILE)
-    return {
-        row["canonical_name"].strip()
-        for row in ingredient_rows
-        if row.get("canonical_name")
-    }
+def assign_source_ids(ingredients: list[dict]) -> list[dict]:
+    return [
+        {
+            "sourceId": f"ingredient-{index}",
+            **ingredient,
+        }
+        for index, ingredient in enumerate(ingredients, start=1)
+    ]
 
 
-def raw_texts_for(items: list[dict]) -> list[str]:
-    return sorted({item["rawText"] for item in items if item.get("rawText")})
+def approve_stage_one_result(video_id: str) -> None:
+    raw_path = RAW_DIR / f"{video_id}.json"
+    result = load_json(raw_path, None)
+    if result is None:
+        raise RuntimeError(f"Stage 1 result not found for videoId: {video_id}")
+    if not isinstance(result.get("ingredients"), list):
+        raise RuntimeError(f"Stage 1 result has no ingredients list: {video_id}")
+
+    write_json(APPROVED_DIR / f"{video_id}.json", result)
+    update_manifest(
+        video_id,
+        "APPROVED",
+        sourceUrl=result.get("sourceUrl"),
+    )
+    print(f"[approve] {video_id} APPROVED")
 
 
 def run_raw_extraction(model: str, force: bool) -> None:
@@ -100,24 +114,35 @@ def run_raw_extraction(model: str, force: bool) -> None:
         progress = f"[{index}/{total}] {video_id}"
 
         existing = load_json(raw_path, None)
-        if not force and existing and is_current_result(existing, model):
+        if not force and existing and is_current_result(
+            existing,
+            model,
+            pipeline_type=INGREDIENT_STAGE_ONE_PIPELINE_TYPE,
+            pipeline_version=INGREDIENT_STAGE_ONE_PIPELINE_VERSION,
+        ):
             print(f"{progress} SKIP cached result")
-            update_manifest(video_id, "COMPLETED", sourceUrl=source_url, skipped=True)
+            update_manifest(video_id, "REVIEW_REQUIRED", sourceUrl=source_url, skipped=True)
             continue
 
         print(f"{progress} PROCESS {source_url}")
         update_manifest(video_id, "PROCESSING", sourceUrl=source_url)
 
         try:
-            ingredients = client.extract_ingredients(source_url)
+            ingredients = assign_source_ids(
+                client.extract_stage_one_ingredients(source_url)
+            )
             result = {
                 "videoId": video_id,
                 "sourceUrl": source_url,
-                "pipeline": metadata(model),
+                "pipeline": metadata(
+                    model,
+                    pipeline_type=INGREDIENT_STAGE_ONE_PIPELINE_TYPE,
+                    pipeline_version=INGREDIENT_STAGE_ONE_PIPELINE_VERSION,
+                ),
                 "ingredients": ingredients,
             }
             write_json(raw_path, result)
-            update_manifest(video_id, "COMPLETED", sourceUrl=source_url)
+            update_manifest(video_id, "REVIEW_REQUIRED", sourceUrl=source_url)
             print(f"{progress} DONE extracted {len(ingredients)} ingredients")
         except Exception as exc:
             update_manifest(
@@ -127,57 +152,6 @@ def run_raw_extraction(model: str, force: bool) -> None:
                 error=str(exc),
             )
             print(f"{progress} FAILED {exc}")
-
-
-def build_review_proposal() -> None:
-    expressions = {}
-
-    for path in sorted(RAW_DIR.glob("*.json")):
-        data = load_json(path, {})
-        for ingredient in data.get("ingredients", []):
-            display_name = ingredient.get("displayName")
-            if not display_name:
-                continue
-
-            expressions.setdefault(display_name, []).append(
-                {
-                    "videoId": data.get("videoId"),
-                    "rawText": ingredient.get("rawText"),
-                    "amount": ingredient.get("amount"),
-                    "unit": ingredient.get("unit"),
-                }
-            )
-
-    master = load_existing_master()
-    existing_mappings = []
-    new_ingredients = []
-
-    for name in sorted(expressions):
-        if name in master:
-            existing_mappings.append(
-                {
-                    "raw": name,
-                    "ingredient": name,
-                }
-            )
-            continue
-
-        new_ingredients.append(
-            {
-                "canonicalName": name,
-                "sourceExpressions": raw_texts_for(expressions[name]),
-            }
-        )
-
-    proposal = {
-        "existingMappings": existing_mappings,
-        "newIngredients": new_ingredients,
-        "unresolved": [],
-        "sourceExpressions": expressions,
-    }
-
-    write_json(REVIEW_DIR / "ingredient-master-proposal.json", proposal)
-
 
 def main() -> None:
     load_dotenv()
@@ -189,16 +163,19 @@ def main() -> None:
         default=os.environ.get("GEMINI_MODEL", "models/gemini-2.5-flash"),
     )
     parser.add_argument(
-        "--skip-review",
-        action="store_true",
-        help="Only run raw extraction and do not create review proposal.",
+        "--approve",
+        metavar="VIDEO_ID",
+        help="Copy a human-reviewed Stage 1 result into the approved input set.",
     )
     args = parser.parse_args()
 
-    run_raw_extraction(model=args.model, force=args.force)
+    if args.approve:
+        if args.force:
+            parser.error("--approve cannot be used with --force")
+        approve_stage_one_result(args.approve)
+        return
 
-    if not args.skip_review:
-        build_review_proposal()
+    run_raw_extraction(model=args.model, force=args.force)
 
 
 if __name__ == "__main__":

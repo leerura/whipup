@@ -1,7 +1,8 @@
 package com.whipup.generated.api;
 
-import com.whipup.generated.model.AddOwnedIngredientsRequest;
+import com.whipup.generated.model.AddOwnedIngredientRequest;
 import com.whipup.generated.model.ErrorResponse;
+import com.whipup.generated.model.OwnedIngredient;
 import com.whipup.generated.model.OwnedIngredientListResponse;
 
 

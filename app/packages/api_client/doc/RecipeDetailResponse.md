@@ -13,7 +13,8 @@ Name | Type | Description | Notes
 **shortsReference** | **String** |  | 
 **thumbnailUrl** | **String** |  | 
 **missingCount** | **int** |  | 
-**ingredients** | [**BuiltList&lt;RecipeIngredient&gt;**](RecipeIngredient.md) |  | 
+**requirements** | [**BuiltList&lt;DetailRequirement&gt;**](DetailRequirement.md) |  | 
+**optionalIngredients** | [**BuiltList&lt;DetailIngredientDisplay&gt;**](DetailIngredientDisplay.md) |  | 
 **steps** | [**BuiltList&lt;RecipeStep&gt;**](RecipeStep.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -6,8 +6,8 @@
 package com.whipup.generated.api;
 
 import com.whipup.generated.model.ErrorResponse;
-import org.springframework.lang.Nullable;
-import com.whipup.generated.model.RecommendationPage;
+import com.whipup.generated.model.RecommendationListResponse;
+import com.whipup.generated.model.RecommendationMode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -27,29 +27,25 @@ public interface RecommendationApi {
         return new RecommendationApiDelegate() {};
     }
 
-    String PATH_GET_RECOMMENDATIONS = "/api/v1/recommendations";
+    String PATH_GET_RECIPE_RECOMMENDATIONS = "/api/v1/recipes/recommendations";
     /**
-     * GET /api/v1/recommendations
+     * GET /api/v1/recipes/recommendations
      *
-     * @param missingCount  (required)
-     * @param page  (optional, default to 0)
-     * @param size  (optional, default to 30)
-     * @return Recommendations (status code 200)
+     * @param mode  (required)
+     * @return Recipe recommendations for the selected exploration mode (status code 200)
      *         or Invalid request (status code 400)
      *         or Authentication failed or missing (status code 401)
      *         or Request conflicts with current state (status code 409)
      */
     @RequestMapping(
         method = RequestMethod.GET,
-        value = RecommendationApi.PATH_GET_RECOMMENDATIONS,
+        value = RecommendationApi.PATH_GET_RECIPE_RECOMMENDATIONS,
         produces = { "application/json" }
     )
-    default ResponseEntity<RecommendationPage> getRecommendations(
-        @NotNull  @Valid @RequestParam(value = "missingCount", required = true) Integer missingCount,
-        @Min(value = 0)  @Valid @RequestParam(value = "page", required = false, defaultValue = "0") Integer page,
-        @Min(value = 1) @Max(value = 100)  @Valid @RequestParam(value = "size", required = false, defaultValue = "30") Integer size
+    default ResponseEntity<RecommendationListResponse> getRecipeRecommendations(
+        @NotNull  @Valid @RequestParam(value = "mode", required = true) RecommendationMode mode
     ) {
-        return getDelegate().getRecommendations(missingCount, page, size);
+        return getDelegate().getRecipeRecommendations(mode);
     }
 
 }

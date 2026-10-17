@@ -9,7 +9,7 @@ import 'package:built_value/serializer.dart';
 import 'package:dio/dio.dart';
 
 import 'package:api_client/src/model/error_response.dart';
-import 'package:api_client/src/model/ingredient_option_list_response.dart';
+import 'package:api_client/src/model/ingredient_group_list_response.dart';
 
 class IngredientApi {
 
@@ -19,7 +19,7 @@ class IngredientApi {
 
   const IngredientApi(this._dio, this._serializers);
 
-  /// getIngredientOptions
+  /// getIngredientGroups
   /// 
   ///
   /// Parameters:
@@ -30,9 +30,9 @@ class IngredientApi {
   /// * [onSendProgress] - A [ProgressCallback] that can be used to get the send progress
   /// * [onReceiveProgress] - A [ProgressCallback] that can be used to get the receive progress
   ///
-  /// Returns a [Future] containing a [Response] with a [IngredientOptionListResponse] as data
+  /// Returns a [Future] containing a [Response] with a [IngredientGroupListResponse] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<IngredientOptionListResponse>> getIngredientOptions({ 
+  Future<Response<IngredientGroupListResponse>> getIngredientGroups({ 
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -67,14 +67,14 @@ class IngredientApi {
       onReceiveProgress: onReceiveProgress,
     );
 
-    IngredientOptionListResponse? _responseData;
+    IngredientGroupListResponse? _responseData;
 
     try {
       final rawResponse = _response.data;
       _responseData = rawResponse == null ? null : _serializers.deserialize(
         rawResponse,
-        specifiedType: const FullType(IngredientOptionListResponse),
-      ) as IngredientOptionListResponse;
+        specifiedType: const FullType(IngredientGroupListResponse),
+      ) as IngredientGroupListResponse;
 
     } catch (error, stackTrace) {
       throw DioException(
@@ -86,7 +86,7 @@ class IngredientApi {
       );
     }
 
-    return Response<IngredientOptionListResponse>(
+    return Response<IngredientGroupListResponse>(
       data: _responseData,
       headers: _response.headers,
       isRedirect: _response.isRedirect,

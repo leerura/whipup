@@ -9,11 +9,11 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getRecommendations**](RecommendationApi.md#getrecommendations) | **GET** /api/v1/recommendations | 
+[**getRecipeRecommendations**](RecommendationApi.md#getreciperecommendations) | **GET** /api/v1/recipes/recommendations | 
 
 
-# **getRecommendations**
-> RecommendationPage getRecommendations(missingCount, page, size)
+# **getRecipeRecommendations**
+> RecommendationListResponse getRecipeRecommendations(mode)
 
 
 
@@ -22,15 +22,13 @@ Method | HTTP request | Description
 import 'package:api_client/api.dart';
 
 final api = ApiClient().getRecommendationApi();
-final int missingCount = 56; // int | 
-final int page = 56; // int | 
-final int size = 56; // int | 
+final RecommendationMode mode = ; // RecommendationMode | 
 
 try {
-    final response = api.getRecommendations(missingCount, page, size);
+    final response = api.getRecipeRecommendations(mode);
     print(response);
 } on DioException catch (e) {
-    print('Exception when calling RecommendationApi->getRecommendations: $e\n');
+    print('Exception when calling RecommendationApi->getRecipeRecommendations: $e\n');
 }
 ```
 
@@ -38,13 +36,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **missingCount** | **int**|  | 
- **page** | **int**|  | [optional] [default to 0]
- **size** | **int**|  | [optional] [default to 30]
+ **mode** | [**RecommendationMode**](.md)|  | 
 
 ### Return type
 
-[**RecommendationPage**](RecommendationPage.md)
+[**RecommendationListResponse**](RecommendationListResponse.md)
 
 ### Authorization
 

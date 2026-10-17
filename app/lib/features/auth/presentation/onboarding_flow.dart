@@ -41,19 +41,36 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
       _hasLoginError = false;
     });
 
+    var loginStep = 'checking KakaoTalk availability';
     try {
       late final OAuthToken kakaoToken;
 
-      if (await isKakaoTalkInstalled()) {
+      final isTalkInstalled = await isKakaoTalkInstalled();
+      debugPrint('[Kakao login] KakaoTalk installed: $isTalkInstalled');
+      if (isTalkInstalled) {
         try {
+          loginStep = 'KakaoTalk login';
+          debugPrint('[Kakao login] Starting KakaoTalk login');
           kakaoToken = await UserApi.instance.loginWithKakaoTalk();
-        } catch (_) {
+        } catch (error, stackTrace) {
+          debugPrint('[Kakao login] KakaoTalk login failed: $error');
+          debugPrintStack(
+            label: '[Kakao login] KakaoTalk failure stack',
+            stackTrace: stackTrace,
+          );
+          loginStep = 'Kakao Account login after KakaoTalk failure';
+          debugPrint('[Kakao login] Falling back to Kakao Account login');
           kakaoToken = await UserApi.instance.loginWithKakaoAccount();
         }
       } else {
+        loginStep = 'Kakao Account login without KakaoTalk';
+        debugPrint('[Kakao login] Starting Kakao Account login');
         kakaoToken = await UserApi.instance.loginWithKakaoAccount();
       }
 
+      debugPrint('[Kakao login] SDK login completed');
+      loginStep = 'backend token exchange';
+      debugPrint('[Kakao login] Starting backend token exchange');
       final response = await _apiClient.getAuthApi().loginWithKakao(
         kakaoLoginRequest: KakaoLoginRequest(
           (builder) => builder.kakaoAccessToken = kakaoToken.accessToken,
@@ -65,9 +82,11 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
       }
 
       _apiClient.setBearerAuth('bearerAuth', loginResponse.accessToken);
+      debugPrint('[Kakao login] Backend token exchange completed');
 
       Set<String> registeredIngredients = const {};
       if (loginResponse.hasOwnedIngredients) {
+        loginStep = 'loading owned ingredients';
         final response = await _apiClient
             .getOwnedIngredientApi()
             .getOwnedIngredients();
@@ -77,7 +96,7 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
         }
 
         registeredIngredients = data.items
-            .map((ingredient) => ingredient.displayName)
+            .map((ingredient) => ingredient.name)
             .toSet();
       }
 
@@ -92,8 +111,12 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
             ? _OnboardingStage.ingredients
             : _OnboardingStage.recommendations;
       });
-    } catch (error) {
-      debugPrint('Kakao login failed: $error');
+    } catch (error, stackTrace) {
+      debugPrint('[Kakao login] Failed during $loginStep: $error');
+      debugPrintStack(
+        label: '[Kakao login] Failure stack',
+        stackTrace: stackTrace,
+      );
       if (!mounted) return;
 
       setState(() => _hasLoginError = true);
@@ -114,10 +137,6 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
 
   void _showRecommendations() {
     setState(() => _stage = _OnboardingStage.recommendations);
-  }
-
-  void _showIngredients() {
-    setState(() => _stage = _OnboardingStage.ingredients);
   }
 
   void _showOwnedIngredients() {
@@ -164,14 +183,14 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
           key: const ValueKey(_OnboardingStage.recommendations),
           apiClient: _apiClient,
           ownedIngredientCount: _registeredIngredients.length,
-          onRegisterIngredients: _showIngredients,
+          onRegisterIngredients: _showOwnedIngredients,
           onIngredientsSelected: _showOwnedIngredients,
           onRecipeSelected: _showRecipeDetail,
         ),
         _OnboardingStage.ownedIngredients => OwnedIngredientsScreen(
           key: const ValueKey(_OnboardingStage.ownedIngredients),
           apiClient: _apiClient,
-          onRegisterIngredients: _showIngredients,
+          onRegisterIngredients: _showOwnedIngredients,
           onOwnedIngredientsChanged: _handleOwnedIngredientsChanged,
           onRecommendationsSelected: _showRecommendations,
         ),

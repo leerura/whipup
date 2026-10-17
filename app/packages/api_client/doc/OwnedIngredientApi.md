@@ -9,13 +9,13 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**addOwnedIngredients**](OwnedIngredientApi.md#addownedingredients) | **POST** /api/v1/me/ingredients | 
+[**addOwnedIngredient**](OwnedIngredientApi.md#addownedingredient) | **POST** /api/v1/me/ingredients | 
 [**deleteOwnedIngredient**](OwnedIngredientApi.md#deleteownedingredient) | **DELETE** /api/v1/me/ingredients/{userIngredientId} | 
 [**getOwnedIngredients**](OwnedIngredientApi.md#getownedingredients) | **GET** /api/v1/me/ingredients | 
 
 
-# **addOwnedIngredients**
-> OwnedIngredientListResponse addOwnedIngredients(addOwnedIngredientsRequest)
+# **addOwnedIngredient**
+> OwnedIngredient addOwnedIngredient(addOwnedIngredientRequest)
 
 
 
@@ -24,13 +24,13 @@ Method | HTTP request | Description
 import 'package:api_client/api.dart';
 
 final api = ApiClient().getOwnedIngredientApi();
-final AddOwnedIngredientsRequest addOwnedIngredientsRequest = ; // AddOwnedIngredientsRequest | 
+final AddOwnedIngredientRequest addOwnedIngredientRequest = ; // AddOwnedIngredientRequest | 
 
 try {
-    final response = api.addOwnedIngredients(addOwnedIngredientsRequest);
+    final response = api.addOwnedIngredient(addOwnedIngredientRequest);
     print(response);
 } on DioException catch (e) {
-    print('Exception when calling OwnedIngredientApi->addOwnedIngredients: $e\n');
+    print('Exception when calling OwnedIngredientApi->addOwnedIngredient: $e\n');
 }
 ```
 
@@ -38,11 +38,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **addOwnedIngredientsRequest** | [**AddOwnedIngredientsRequest**](AddOwnedIngredientsRequest.md)|  | 
+ **addOwnedIngredientRequest** | [**AddOwnedIngredientRequest**](AddOwnedIngredientRequest.md)|  | 
 
 ### Return type
 
-[**OwnedIngredientListResponse**](OwnedIngredientListResponse.md)
+[**OwnedIngredient**](OwnedIngredient.md)
 
 ### Authorization
 

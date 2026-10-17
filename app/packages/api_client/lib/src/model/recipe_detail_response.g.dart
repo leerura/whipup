@@ -18,7 +18,9 @@ class _$RecipeDetailResponse extends RecipeDetailResponse {
   @override
   final int missingCount;
   @override
-  final BuiltList<RecipeIngredient> ingredients;
+  final BuiltList<DetailRequirement> requirements;
+  @override
+  final BuiltList<DetailIngredientDisplay> optionalIngredients;
   @override
   final BuiltList<RecipeStep> steps;
 
@@ -32,7 +34,8 @@ class _$RecipeDetailResponse extends RecipeDetailResponse {
       required this.shortsReference,
       required this.thumbnailUrl,
       required this.missingCount,
-      required this.ingredients,
+      required this.requirements,
+      required this.optionalIngredients,
       required this.steps})
       : super._();
   @override
@@ -53,7 +56,8 @@ class _$RecipeDetailResponse extends RecipeDetailResponse {
         shortsReference == other.shortsReference &&
         thumbnailUrl == other.thumbnailUrl &&
         missingCount == other.missingCount &&
-        ingredients == other.ingredients &&
+        requirements == other.requirements &&
+        optionalIngredients == other.optionalIngredients &&
         steps == other.steps;
   }
 
@@ -65,7 +69,8 @@ class _$RecipeDetailResponse extends RecipeDetailResponse {
     _$hash = $jc(_$hash, shortsReference.hashCode);
     _$hash = $jc(_$hash, thumbnailUrl.hashCode);
     _$hash = $jc(_$hash, missingCount.hashCode);
-    _$hash = $jc(_$hash, ingredients.hashCode);
+    _$hash = $jc(_$hash, requirements.hashCode);
+    _$hash = $jc(_$hash, optionalIngredients.hashCode);
     _$hash = $jc(_$hash, steps.hashCode);
     _$hash = $jf(_$hash);
     return _$hash;
@@ -79,7 +84,8 @@ class _$RecipeDetailResponse extends RecipeDetailResponse {
           ..add('shortsReference', shortsReference)
           ..add('thumbnailUrl', thumbnailUrl)
           ..add('missingCount', missingCount)
-          ..add('ingredients', ingredients)
+          ..add('requirements', requirements)
+          ..add('optionalIngredients', optionalIngredients)
           ..add('steps', steps))
         .toString();
   }
@@ -110,11 +116,18 @@ class RecipeDetailResponseBuilder
   int? get missingCount => _$this._missingCount;
   set missingCount(int? missingCount) => _$this._missingCount = missingCount;
 
-  ListBuilder<RecipeIngredient>? _ingredients;
-  ListBuilder<RecipeIngredient> get ingredients =>
-      _$this._ingredients ??= ListBuilder<RecipeIngredient>();
-  set ingredients(ListBuilder<RecipeIngredient>? ingredients) =>
-      _$this._ingredients = ingredients;
+  ListBuilder<DetailRequirement>? _requirements;
+  ListBuilder<DetailRequirement> get requirements =>
+      _$this._requirements ??= ListBuilder<DetailRequirement>();
+  set requirements(ListBuilder<DetailRequirement>? requirements) =>
+      _$this._requirements = requirements;
+
+  ListBuilder<DetailIngredientDisplay>? _optionalIngredients;
+  ListBuilder<DetailIngredientDisplay> get optionalIngredients =>
+      _$this._optionalIngredients ??= ListBuilder<DetailIngredientDisplay>();
+  set optionalIngredients(
+          ListBuilder<DetailIngredientDisplay>? optionalIngredients) =>
+      _$this._optionalIngredients = optionalIngredients;
 
   ListBuilder<RecipeStep>? _steps;
   ListBuilder<RecipeStep> get steps =>
@@ -133,7 +146,8 @@ class RecipeDetailResponseBuilder
       _shortsReference = $v.shortsReference;
       _thumbnailUrl = $v.thumbnailUrl;
       _missingCount = $v.missingCount;
-      _ingredients = $v.ingredients.toBuilder();
+      _requirements = $v.requirements.toBuilder();
+      _optionalIngredients = $v.optionalIngredients.toBuilder();
       _steps = $v.steps.toBuilder();
       _$v = null;
     }
@@ -168,14 +182,17 @@ class RecipeDetailResponseBuilder
                 thumbnailUrl, r'RecipeDetailResponse', 'thumbnailUrl'),
             missingCount: BuiltValueNullFieldError.checkNotNull(
                 missingCount, r'RecipeDetailResponse', 'missingCount'),
-            ingredients: ingredients.build(),
+            requirements: requirements.build(),
+            optionalIngredients: optionalIngredients.build(),
             steps: steps.build(),
           );
     } catch (_) {
       late String _$failedField;
       try {
-        _$failedField = 'ingredients';
-        ingredients.build();
+        _$failedField = 'requirements';
+        requirements.build();
+        _$failedField = 'optionalIngredients';
+        optionalIngredients.build();
         _$failedField = 'steps';
         steps.build();
       } catch (e) {

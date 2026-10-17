@@ -122,12 +122,15 @@ class _RecipeDetailContent extends StatelessWidget {
                   : AppColors.primary,
             ),
             const SizedBox(width: 7),
-            Text(
-              availabilityMessage,
-              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: AppColors.textSecondary,
-                fontSize: 14,
-                fontWeight: FontWeight.w600,
+            Expanded(
+              child: Text(
+                availabilityMessage,
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  color: AppColors.textSecondary,
+                  fontSize: 14,
+                  fontWeight: FontWeight.w600,
+                  letterSpacing: 0,
+                ),
               ),
             ),
           ],
@@ -135,11 +138,19 @@ class _RecipeDetailContent extends StatelessWidget {
         const SizedBox(height: 30),
         const Divider(height: 1, color: AppColors.border),
         const SizedBox(height: 28),
-        _SectionTitle(title: '필요한 재료', count: recipe.ingredients.length),
+        _SectionTitle(title: '필요한 재료', count: recipe.requirements.length),
         const SizedBox(height: 14),
-        ...recipe.ingredients.map(
-          (ingredient) => _IngredientRow(ingredient: ingredient),
+        ...recipe.requirements.map(
+          (requirement) => _RequirementRow(requirement: requirement),
         ),
+        if (recipe.optionalIngredients.isNotEmpty) ...[
+          const SizedBox(height: 28),
+          _SectionTitle(title: '선택 재료', count: recipe.optionalIngredients.length),
+          const SizedBox(height: 14),
+          ...recipe.optionalIngredients.map(
+            (ingredient) => _OptionalIngredientRow(ingredient: ingredient),
+          ),
+        ],
         const SizedBox(height: 28),
         const Divider(height: 1, color: AppColors.border),
         const SizedBox(height: 28),
@@ -221,63 +232,188 @@ class _SectionTitle extends StatelessWidget {
   }
 }
 
-class _IngredientRow extends StatelessWidget {
-  const _IngredientRow({required this.ingredient});
+String _quantity(String? amount, String? unit) {
+  return [amount, unit]
+      .whereType<String>()
+      .map((value) => value.trim())
+      .where((value) => value.isNotEmpty)
+      .join(' ');
+}
 
-  final RecipeIngredient ingredient;
+String _withParticle(
+  String text,
+  String consonant,
+  String vowel, {
+  bool rieulAsVowel = false,
+}) {
+  if (text.isEmpty) return text;
+  final last = text.runes.last;
+  if (last < 0xAC00 || last > 0xD7A3) return '$text($consonant/$vowel)';
+  final finalConsonant = (last - 0xAC00) % 28;
+  final useVowel = finalConsonant == 0 || (rieulAsVowel && finalConsonant == 8);
+  return '$text${useVowel ? vowel : consonant}';
+}
+
+class _RequirementRow extends StatelessWidget {
+  const _RequirementRow({required this.requirement});
+
+  final DetailRequirement requirement;
 
   @override
   Widget build(BuildContext context) {
-    final quantity = [
-      ingredient.amount,
-      ingredient.unit,
-    ].whereType<String>().where((value) => value.trim().isNotEmpty).join(' ');
+    final value = requirement.oneOf.value;
+    final List<DetailRequirementOption> options;
+    final List<IngredientMatch> matches;
+    final bool satisfied;
+    if (value is SatisfiedDetailRequirement) {
+      options = value.options.toList(growable: false);
+      matches = value.matches.toList(growable: false);
+      satisfied = true;
+    } else if (value is MissingDetailRequirement) {
+      options = value.options.toList(growable: false);
+      matches = const [];
+      satisfied = false;
+    } else {
+      throw StateError('Unsupported detail requirement type: ${value.runtimeType}');
+    }
 
+    final quantities = options.map((option) => _quantity(option.amount, option.unit)).toSet();
+    final sharedQuantity = quantities.length == 1 ? quantities.single : '';
+    final name = options.map((option) {
+      final quantity = _quantity(option.amount, option.unit);
+      return quantities.length > 1 && quantity.isNotEmpty
+          ? '${option.displayName} $quantity'
+          : option.displayName;
+    }).join(' 또는 ');
+    final notes = <String>{};
+    if (satisfied) {
+      for (final match in matches) {
+        if (match.type == IngredientMatchTypeEnum.PREPARATION) {
+          notes.add('가지고 있는 ${_withParticle(match.ownedName, '을', '를')} 활용할 수 있어요');
+        } else if (match.type == IngredientMatchTypeEnum.SUBSTITUTE) {
+          notes.add('${_withParticle(match.requiredName, '은', '는')} 가지고 있는 ${_withParticle(match.ownedName, '으로', '로', rieulAsVowel: true)} 대신할 수 있어요');
+        } else if (options.length > 1) {
+          notes.add('가지고 있는 ${_withParticle(match.ownedName, '을', '를')} 사용할 수 있어요');
+        }
+      }
+    } else {
+      notes.add(options.length > 1 ? '이 중 하나가 더 필요해요' : '이 재료가 더 필요해요');
+      for (final option in options) {
+        if (option.substitutes.isEmpty) continue;
+        final substitutes = option.substitutes.map((substitute) {
+          final quantity = _quantity(substitute.amount, substitute.unit);
+          return quantity.isEmpty
+              ? substitute.displayName
+              : '${substitute.displayName} ($quantity)';
+        }).join(' 또는 ');
+        notes.add('${option.displayName}: $substitutes 대체 가능');
+      }
+    }
+
+    return Semantics(
+      label: '${satisfied ? '충족' : '부족'}, $name',
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 10),
+        decoration: const BoxDecoration(
+          border: Border(bottom: BorderSide(color: AppColors.border)),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Icon(
+                  satisfied ? Icons.check_rounded : Icons.radio_button_unchecked_rounded,
+                  size: 18,
+                  color: satisfied ? AppColors.primary : AppColors.textMuted,
+                ),
+                const SizedBox(width: 8),
+                Expanded(
+                  flex: 3,
+                  child: Text(
+                    name,
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                      color: AppColors.textPrimary,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w500,
+                      letterSpacing: 0,
+                    ),
+                  ),
+                ),
+                if (sharedQuantity.isNotEmpty) ...[
+                  const SizedBox(width: 12),
+                  Flexible(
+                    child: Text(
+                      sharedQuantity,
+                      textAlign: TextAlign.end,
+                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                        color: satisfied ? AppColors.textMuted : AppColors.primary,
+                        letterSpacing: 0,
+                      ),
+                    ),
+                  ),
+                ],
+              ],
+            ),
+            for (final note in notes) ...[
+              const SizedBox(height: 6),
+              Text(
+                note,
+                style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                  color: !satisfied && note == notes.first
+                      ? AppColors.primary
+                      : AppColors.textSecondary,
+                  fontSize: 13,
+                  height: 1.5,
+                  letterSpacing: 0,
+                ),
+              ),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _OptionalIngredientRow extends StatelessWidget {
+  const _OptionalIngredientRow({required this.ingredient});
+
+  final DetailIngredientDisplay ingredient;
+
+  @override
+  Widget build(BuildContext context) {
+    final quantity = _quantity(ingredient.amount, ingredient.unit);
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 10),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Icon(
-            ingredient.owned
-                ? Icons.check_circle_rounded
-                : Icons.remove_circle_outline_rounded,
-            size: 21,
-            color: ingredient.owned
-                ? const Color(0xFF2E8B57)
-                : AppColors.primary,
-          ),
-          const SizedBox(width: 10),
+          const Icon(Icons.radio_button_unchecked_rounded,
+            size: 18, color: AppColors.textMuted),
+          const SizedBox(width: 8),
           Expanded(
+            flex: 3,
             child: Text(
               ingredient.displayName,
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: AppColors.textPrimary,
-                fontSize: 15,
-                fontWeight: FontWeight.w600,
+                fontSize: 14, color: AppColors.textPrimary, letterSpacing: 0,
               ),
             ),
           ),
           if (quantity.isNotEmpty) ...[
             const SizedBox(width: 12),
-            Text(
-              quantity,
-              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: AppColors.textSecondary,
-                fontSize: 14,
+            Flexible(
+              child: Text(
+                quantity,
+                textAlign: TextAlign.end,
+                style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                  color: AppColors.textMuted, letterSpacing: 0,
+                ),
               ),
             ),
           ],
-          const SizedBox(width: 12),
-          Text(
-            ingredient.owned ? '보유' : '부족',
-            style: Theme.of(context).textTheme.bodySmall?.copyWith(
-              color: ingredient.owned
-                  ? const Color(0xFF2E8B57)
-                  : AppColors.primary,
-              fontSize: 12,
-              fontWeight: FontWeight.w700,
-            ),
-          ),
         ],
       ),
     );

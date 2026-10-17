@@ -9,11 +9,11 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getIngredientOptions**](IngredientApi.md#getingredientoptions) | **GET** /api/v1/ingredients | 
+[**getIngredientGroups**](IngredientApi.md#getingredientgroups) | **GET** /api/v1/ingredients | 
 
 
-# **getIngredientOptions**
-> IngredientOptionListResponse getIngredientOptions()
+# **getIngredientGroups**
+> IngredientGroupListResponse getIngredientGroups()
 
 
 
@@ -24,10 +24,10 @@ import 'package:api_client/api.dart';
 final api = ApiClient().getIngredientApi();
 
 try {
-    final response = api.getIngredientOptions();
+    final response = api.getIngredientGroups();
     print(response);
 } on DioException catch (e) {
-    print('Exception when calling IngredientApi->getIngredientOptions: $e\n');
+    print('Exception when calling IngredientApi->getIngredientGroups: $e\n');
 }
 ```
 
@@ -36,7 +36,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**IngredientOptionListResponse**](IngredientOptionListResponse.md)
+[**IngredientGroupListResponse**](IngredientGroupListResponse.md)
 
 ### Authorization
 

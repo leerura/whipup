@@ -5,6 +5,7 @@ String? ingredientAssetPathFor(String canonicalName) {
 const _ingredientAssetPaths = <String, String>{
   '계란': 'assets/ingredient/egg.png',
   '마늘': 'assets/ingredient/garlic.png',
+  '통마늘': 'assets/ingredient/garlic.png',
   '김치': 'assets/ingredient/kimchi.png',
   '대파': 'assets/ingredient/green_onion.png',
   '양파': 'assets/ingredient/onion.png',

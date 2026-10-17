@@ -5,8 +5,9 @@
  */
 package com.whipup.generated.api;
 
-import com.whipup.generated.model.AddOwnedIngredientsRequest;
+import com.whipup.generated.model.AddOwnedIngredientRequest;
 import com.whipup.generated.model.ErrorResponse;
+import com.whipup.generated.model.OwnedIngredient;
 import com.whipup.generated.model.OwnedIngredientListResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -27,11 +28,11 @@ public interface OwnedIngredientApi {
         return new OwnedIngredientApiDelegate() {};
     }
 
-    String PATH_ADD_OWNED_INGREDIENTS = "/api/v1/me/ingredients";
+    String PATH_ADD_OWNED_INGREDIENT = "/api/v1/me/ingredients";
     /**
      * POST /api/v1/me/ingredients
      *
-     * @param addOwnedIngredientsRequest  (required)
+     * @param addOwnedIngredientRequest  (required)
      * @return Created (status code 201)
      *         or Invalid request (status code 400)
      *         or Resource not found (status code 404)
@@ -40,14 +41,14 @@ public interface OwnedIngredientApi {
      */
     @RequestMapping(
         method = RequestMethod.POST,
-        value = OwnedIngredientApi.PATH_ADD_OWNED_INGREDIENTS,
+        value = OwnedIngredientApi.PATH_ADD_OWNED_INGREDIENT,
         produces = { "application/json" },
         consumes = { "application/json" }
     )
-    default ResponseEntity<OwnedIngredientListResponse> addOwnedIngredients(
-         @Valid @RequestBody AddOwnedIngredientsRequest addOwnedIngredientsRequest
+    default ResponseEntity<OwnedIngredient> addOwnedIngredient(
+         @Valid @RequestBody AddOwnedIngredientRequest addOwnedIngredientRequest
     ) {
-        return getDelegate().addOwnedIngredients(addOwnedIngredientsRequest);
+        return getDelegate().addOwnedIngredient(addOwnedIngredientRequest);
     }
 
 
@@ -76,7 +77,7 @@ public interface OwnedIngredientApi {
     /**
      * GET /api/v1/me/ingredients
      *
-     * @return Owned ingredients (status code 200)
+     * @return Owned ingredient variants (status code 200)
      *         or Authentication failed or missing (status code 401)
      */
     @RequestMapping(

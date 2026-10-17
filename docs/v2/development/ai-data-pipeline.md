@@ -1,0 +1,68 @@
+## 흐름
+```plain text
+Source
+→ Stage 1 Ingredient Extraction
+→ Human Review / Approve
+→ Stage 2 Recipe Structuring
+   + approved ingredients
+   + ingredients.json
+   + source
+→ Deterministic Validator
+→ Final Recipe JSON
+```
+## Stage 1
+목표는 소스에 실제로 등장한 재료를 추출하는 것이다.
+```json
+{
+  "ingredients": [
+    {
+      "sourceId": "ingredient-1",
+      "displayName": "마늘",
+      "rawText": "마늘 3알",
+      "amount": "3",
+      "unit": "알",
+      "evidences": [
+        {
+          "type": "SPEECH",
+          "text": "마늘 세 알 넣어줄게요",
+          "timestamp": "00:23"
+        }
+      ]
+    }
+  ]
+}
+```
+Evidence type: SPEECH / SUBTITLE / ON_SCREEN_TEXT / VISUAL_ACTION.
+실제로 없는 timestamp를 만들지 않는다.
+## Stage 2
+Stage 1에서 승인된 재료의 의미와 관계를 구조화한다.
+Stage 2는 Stage 1 재료를 추가/삭제/변경할 수 없다.
+불변 필드:
+- sourceId
+- displayName
+- rawText
+- amount
+- unit
+AI는 `ingredients.json`을 수정하지 않는다.
+Mapping:
+- 가장 의미적으로 정확한 기존 Variant에 매핑
+- 문자열 exact match는 필수 아님
+- Variant `aliases`는 동일 의미 표현의 deterministic mapping hint로 사용할 수 있음
+- 예: source 표현 `깨`는 alias를 통해 `참깨` Variant에 mapping
+- Alias로 mapping해도 Stage 1의 `displayName` / `rawText` / evidence 원문은 변경하지 않음
+- 문맥에 따라 달라질 수 있는 상위 표현을 요리 상식만으로 특정 Variant에 구체화하지 않음. 예: `파 → 대파`를 자동 확정하지 않음
+- 단, V2에서 세부 종류를 의도적으로 통합하기로 한 Ingredient는 source의 세부 표현을 단일 관리 Variant로 정규화할 수 있음. 예: `진간장`, `국간장`, `양조간장` → V2 Variant `간장`. 이 경우에도 Stage 1의 `displayName` / `rawText` / evidence는 원문 그대로 보존
+- 형태 차이를 canonical base로 뭉개지 않음. 예: 마늘은 `통마늘`, `다진 마늘`을 별도 Variant로 유지
+- Variant Relation은 mapping 용도로 사용하지 않음
+- Ingredient 없음 → INGREDIENT_MAPPING_FAILED
+- 필요한 Variant 없음 → VARIANT_MAPPING_FAILED
+- 불확실 → 실패
+Semantic evidence:
+- Optional: source가 명시한 경우만
+- OR: 동등 대안이 source에 명시된 경우만
+- Substitute: 방향성 있는 fallback이 source에 명시된 경우만
+- Allowed Variant: 해당 Recipe에서 original과 다른 같은-Ingredient Variant를 실제로 사용할 수 있다는 근거가 있을 때만. 예: 통마늘 Requirement에 대해 다진 마늘도 해당 Recipe를 만드는 데 사용할 수 있으면 `allowedVariants`에 포함
+Stage 2가 master 부족으로 실패하면 사람이 master update를 결정한 뒤 다시 실행한다.
+## Validator
+AI output 이후 deterministic validator가 Dataset schema, key/ref, sourceId bijection, immutable fields, optional/requirement 규칙, PUBLISHED mapping completeness, allowed variant 규칙 등을 검증한다.
+sourceId는 검증 후 final Recipe JSON에서 제거한다.

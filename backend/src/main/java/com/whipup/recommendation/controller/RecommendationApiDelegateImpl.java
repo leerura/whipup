@@ -2,7 +2,8 @@ package com.whipup.recommendation.controller;
 
 import com.whipup.common.security.CurrentUserProvider;
 import com.whipup.generated.api.RecommendationApiDelegate;
-import com.whipup.generated.model.RecommendationPage;
+import com.whipup.generated.model.RecommendationListResponse;
+import com.whipup.generated.model.RecommendationMode;
 import com.whipup.recommendation.service.RecommendationService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -22,15 +23,13 @@ public class RecommendationApiDelegateImpl implements RecommendationApiDelegate 
     }
 
     @Override
-    public ResponseEntity<RecommendationPage> getRecommendations(
-        Integer missingCount,
-        Integer page,
-        Integer size
+    public ResponseEntity<RecommendationListResponse> getRecipeRecommendations(
+        RecommendationMode mode
     ) {
         Long userId = currentUserProvider.getUserId();
 
         return ResponseEntity.ok(
-            recommendationService.getRecommendations(userId, missingCount, page, size)
+            recommendationService.getRecipeRecommendations(userId, mode)
         );
     }
 }

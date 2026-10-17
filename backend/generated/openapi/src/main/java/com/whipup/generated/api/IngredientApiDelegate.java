@@ -1,7 +1,7 @@
 package com.whipup.generated.api;
 
 import com.whipup.generated.model.ErrorResponse;
-import com.whipup.generated.model.IngredientOptionListResponse;
+import com.whipup.generated.model.IngredientGroupListResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -29,15 +29,15 @@ public interface IngredientApiDelegate {
     /**
      * GET /api/v1/ingredients
      *
-     * @return All ingredient options (status code 200)
+     * @return All registerable ingredient variants grouped for selection UX. Client performs local filtering. (status code 200)
      *         or Authentication failed or missing (status code 401)
-     * @see IngredientApi#getIngredientOptions
+     * @see IngredientApi#getIngredientGroups
      */
-    default ResponseEntity<IngredientOptionListResponse> getIngredientOptions() {
+    default ResponseEntity<IngredientGroupListResponse> getIngredientGroups() {
         getRequest().ifPresent(request -> {
             for (MediaType mediaType: MediaType.parseMediaTypes(request.getHeader("Accept"))) {
                 if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
-                    String exampleString = "{ \"items\" : [ { \"ingredientId\" : 0, \"displayName\" : \"displayName\" }, { \"ingredientId\" : 0, \"displayName\" : \"displayName\" } ] }";
+                    String exampleString = "{ \"groups\" : [ { \"name\" : \"name\", \"items\" : [ { \"variantId\" : 0, \"name\" : \"name\" }, { \"variantId\" : 0, \"name\" : \"name\" } ] }, { \"name\" : \"name\", \"items\" : [ { \"variantId\" : 0, \"name\" : \"name\" }, { \"variantId\" : 0, \"name\" : \"name\" } ] } ] }";
                     ApiUtil.setExampleResponse(request, "application/json", exampleString);
                     break;
                 }
