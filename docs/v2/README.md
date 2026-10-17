@@ -11,6 +11,8 @@ GitHub에서는 `docs/v2/` 아래에 동일한 구조로 관리한다. 기존 `d
 - `development/`: AI Pipeline, Importer, Flutter/Server 구현 원칙
 - `ux/`: 재료 등록, 추천, 상세 UX
 
+로컬 Backend 연결과 iOS Local Network / ATS 설정은 [local-development.md](development/local-development.md)를 따른다.
+
 ## 공통 결정
 
 - API base path는 V2에서도 `/api/v1`을 유지한다.
@@ -18,4 +20,3 @@ GitHub에서는 `docs/v2/` 아래에 동일한 구조로 관리한다. 기존 `d
 - V1→V2 row migration은 하지 않는다. V2 데이터 전환 시 재료/레시피 관련 운영 데이터를 새 Dataset 기준으로 초기화·재적재한다.
 - 사용자 보유 재료의 실제 저장 단위는 IngredientVariant다.
 - Server가 추천/매칭 Domain 판정을 수행하고 Flutter는 결과를 표현한다.
-

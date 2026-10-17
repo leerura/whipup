@@ -45,6 +45,16 @@ Rules:
 - Use every supplied approved Stage 1 ingredient exactly once. Do not add, remove,
   split, merge, or alter sourceId, displayName, rawText, amount, or unit.
 - Map only to supplied IngredientVariant keys. Exact text equality is not required.
+- Use supplied Variant aliases only as mapping hints for equivalent expressions
+  (for example, 깨 maps to 참깨). Never treat aliases as matching relations or
+  additional user-owned Variants. Preserve approved source fields and evidence.
+- Do not infer a specific Variant from an ambiguous broader expression based on
+  cooking knowledge alone (for example, do not automatically map 파 to 대파).
+- V2 deliberately consolidates soy sauce into the supplied 간장 Variant:
+  진간장, 국간장, and 양조간장 may map to soy-sauce without changing their
+  original source expressions. This exception is not a general compatibility rule.
+- Preserve meaningful forms: 통마늘 and 다진 마늘 remain separate Variants.
+  Do not collapse a specific form into the canonical base Variant.
 - Never use Ingredient Variant Relations as mapping permission.
 - When no exact semantic mapping exists or confidence is insufficient, set variant
   to null and add a mappingFailures entry with INGREDIENT_MAPPING_FAILED or

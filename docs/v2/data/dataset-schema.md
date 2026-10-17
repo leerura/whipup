@@ -15,11 +15,11 @@ Dataset은 DB numeric ID를 사용하지 않고 stable string key를 사용한�
       "key": "garlic",
       "name": "마늘",
       "variants": [
-        { "key": "garlic", "name": "마늘", "base": true, "aliases": [] },
+        { "key": "whole-garlic", "name": "통마늘", "base": true, "aliases": [] },
         { "key": "minced-garlic", "name": "다진 마늘", "base": false, "aliases": [] }
       ],
       "relations": [
-        { "source": "garlic", "target": "minced-garlic" }
+        { "source": "whole-garlic", "target": "minced-garlic" }
       ]
     }
   ]
@@ -38,6 +38,7 @@ Dataset은 DB numeric ID를 사용하지 않고 stable string key를 사용한�
 - Alias는 사용자 등록 항목을 추가하지 않으며 추천 Matching 관계로 사용하지 않음
 - Alias는 의미가 사실상 같은 표현에만 등록하며 context-dependent 상위 표현은 특정 Variant Alias로 고정하지 않음
 - category/form/action은 두지 않음
+- V2에서 세부 종류를 의도적으로 구분하지 않는 Ingredient는 하나의 Variant만 둠. 예: 간장은 `간장` 하나로 관리하며 진간장/국간장/양조간장을 별도 Variant로 만들지 않음
 Alias 예:
 ```json
 {
@@ -65,7 +66,7 @@ status는 기존 코드와 맞춰 `DRAFT | PUBLISHED`를 사용한다.
 ```json
 {
   "key": "sauce-garlic",
-  "variant": "garlic",
+  "variant": "whole-garlic",
   "displayName": "마늘",
   "rawText": "마늘 3알",
   "amount": "3",
@@ -84,7 +85,7 @@ status는 기존 코드와 맞춰 `DRAFT | PUBLISHED`를 사용한다.
 {
   "options": [
     {
-      "ingredient": "garlic",
+      "ingredient": "sauce-garlic",
       "substitutes": [],
       "allowedVariants": ["minced-garlic"]
     }

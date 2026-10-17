@@ -7,7 +7,7 @@ import 'core/config/app_config.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await AppConfig.initialize();
-  KakaoSdk.init(nativeAppKey: AppConfig.kakaoNativeAppKey);
+  await KakaoSdk.init(nativeAppKey: AppConfig.kakaoNativeAppKey);
 
   runApp(const WhipupApp());
 }

@@ -27,7 +27,7 @@ class InitialIngredientScreen extends StatefulWidget {
 }
 
 class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
-  static const _presetNames = {'계란', '대파', '고추장', '김치', '양파', '마늘', '밥', '간장'};
+  static const _presetNames = {'계란', '대파', '고추장', '김치', '양파', '통마늘', '밥', '간장'};
 
   final TextEditingController _searchController = TextEditingController();
   final Set<int> _selectedIds = {};

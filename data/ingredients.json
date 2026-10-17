@@ -41,10 +41,19 @@
       "relations": []
     },
     {
+      "key": "cabbage",
+      "name": "양배추",
+      "variants": [
+        { "key": "cabbage", "name": "양배추", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
       "key": "cheese",
       "name": "치즈",
       "variants": [
-        { "key": "cheese", "name": "치즈", "base": true, "aliases": [] }
+        { "key": "cheese", "name": "치즈", "base": true, "aliases": [] },
+        { "key": "cheddar-cheese", "name": "체다 치즈", "base": false, "aliases": [] }
       ],
       "relations": []
     },
@@ -133,12 +142,20 @@
       "key": "garlic",
       "name": "마늘",
       "variants": [
-        { "key": "garlic", "name": "마늘", "base": true, "aliases": ["통마늘"] },
+        { "key": "garlic", "name": "통마늘", "base": true, "aliases": ["마늘"] },
         { "key": "minced-garlic", "name": "다진 마늘", "base": false, "aliases": [] }
       ],
       "relations": [
         { "source": "garlic", "target": "minced-garlic" }
       ]
+    },
+    {
+      "key": "ginger",
+      "name": "생강",
+      "variants": [
+        { "key": "ginger", "name": "생강", "base": true, "aliases": [] }
+      ],
+      "relations": []
     },
     {
       "key": "gochujang",
@@ -150,11 +167,15 @@
     },
     {
       "key": "green-onion",
-      "name": "대파",
+      "name": "파",
       "variants": [
-        { "key": "green-onion", "name": "대파", "base": true, "aliases": [] }
+        { "key": "green-onion", "name": "대파", "base": true, "aliases": [] },
+        { "key": "scallion", "name": "쪽파", "base": false, "aliases": [] },
+        { "key": "shredded-green-onion", "name": "파채", "base": false, "aliases": [] }
       ],
-      "relations": []
+      "relations": [
+        { "source": "green-onion", "target": "shredded-green-onion" }
+      ]
     },
     {
       "key": "ketchup",
@@ -169,6 +190,14 @@
       "name": "김치",
       "variants": [
         { "key": "kimchi", "name": "김치", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "lettuce",
+      "name": "상추",
+      "variants": [
+        { "key": "lettuce", "name": "상추", "base": true, "aliases": [] }
       ],
       "relations": []
     },
@@ -206,11 +235,36 @@
       "relations": []
     },
     {
+      "key": "plum-extract",
+      "name": "매실액",
+      "variants": [
+        { "key": "plum-extract", "name": "매실액", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
       "key": "pork-belly",
       "name": "삼겹살",
       "variants": [
         { "key": "pork-belly", "name": "삼겹살", "base": true, "aliases": [] },
         { "key": "thin-sliced-pork-belly", "name": "대패삼겹살", "base": false, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "pork-front-leg",
+      "name": "앞다리살",
+      "variants": [
+        { "key": "pork-front-leg", "name": "앞다리살", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "pork-neck",
+      "name": "목살",
+      "variants": [
+        { "key": "pork-neck", "name": "목살", "base": true, "aliases": [] },
+        { "key": "thin-sliced-pork-neck", "name": "대패 목살", "base": false, "aliases": [] }
       ],
       "relations": []
     },
@@ -261,7 +315,7 @@
       "key": "sesame-seed",
       "name": "참깨",
       "variants": [
-        { "key": "sesame-seed", "name": "참깨", "base": true, "aliases": ["깨"] }
+        { "key": "sesame-seed", "name": "참깨", "base": true, "aliases": ["깨", "통깨"] }
       ],
       "relations": []
     },
@@ -277,8 +331,7 @@
       "key": "soy-sauce",
       "name": "간장",
       "variants": [
-        { "key": "soy-sauce", "name": "간장", "base": true, "aliases": [] },
-        { "key": "dark-soy-sauce", "name": "진간장", "base": false, "aliases": [] }
+        { "key": "soy-sauce", "name": "간장", "base": true, "aliases": [] }
       ],
       "relations": []
     },
@@ -319,6 +372,14 @@
       "name": "물",
       "variants": [
         { "key": "water", "name": "물", "base": true, "aliases": [] }
+      ],
+      "relations": []
+    },
+    {
+      "key": "yukhoe",
+      "name": "육회",
+      "variants": [
+        { "key": "yukhoe", "name": "육회", "base": true, "aliases": [] }
       ],
       "relations": []
     }

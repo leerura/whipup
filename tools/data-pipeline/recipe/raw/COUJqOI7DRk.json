@@ -5,7 +5,7 @@
     "type": "RECIPE_STAGE_2_STRUCTURING",
     "version": 3,
     "model": "models/gemini-2.5-flash",
-    "ingredientMasterHash": "a3bcf9e6bceba51fc679d791849d97feeef21a235c4b8914e9db8b0b7ed18ecf"
+    "ingredientMasterHash": "7851289b3fa2559051a80af7879de8f6e26d7a2f891de59d3feda8337c78e7ea"
   },
   "result": {
     "recipe": {
@@ -15,7 +15,7 @@
       "ingredients": [
         {
           "sourceId": "ingredient-1",
-          "key": "pork-belly",
+          "key": "ingredient-1",
           "variant": "pork-belly",
           "displayName": "삼겹살",
           "rawText": "삼겹살 300g",
@@ -25,7 +25,7 @@
         },
         {
           "sourceId": "ingredient-2",
-          "key": "green-onion",
+          "key": "ingredient-2",
           "variant": "green-onion",
           "displayName": "대파",
           "rawText": "대파 반 대",
@@ -35,7 +35,7 @@
         },
         {
           "sourceId": "ingredient-3",
-          "key": "kimchi",
+          "key": "ingredient-3",
           "variant": "kimchi",
           "displayName": "김치",
           "rawText": "김치 300g 정도",
@@ -45,7 +45,7 @@
         },
         {
           "sourceId": "ingredient-4",
-          "key": "onion",
+          "key": "ingredient-4",
           "variant": "onion",
           "displayName": "양파",
           "rawText": "양파도 가로세로 잘게 썰어 한 줌 가득",
@@ -55,7 +55,7 @@
         },
         {
           "sourceId": "ingredient-5",
-          "key": "red-pepper-powder",
+          "key": "ingredient-5",
           "variant": "red-pepper-powder",
           "displayName": "고춧가루",
           "rawText": "고춧가루 1스푼",
@@ -65,7 +65,7 @@
         },
         {
           "sourceId": "ingredient-6",
-          "key": "water",
+          "key": "ingredient-6",
           "variant": "water",
           "displayName": "물",
           "rawText": "물 1컵 (약 180ml)",
@@ -75,7 +75,7 @@
         },
         {
           "sourceId": "ingredient-7",
-          "key": "garlic",
+          "key": "ingredient-7",
           "variant": "minced-garlic",
           "displayName": "다진 마늘",
           "rawText": "다진 마늘 1스푼",
@@ -85,7 +85,7 @@
         },
         {
           "sourceId": "ingredient-8",
-          "key": "chicken-stock",
+          "key": "ingredient-8",
           "variant": "chicken-stock",
           "displayName": "치킨스톡",
           "rawText": "치킨스톡 1/2스푼",
@@ -95,7 +95,7 @@
         },
         {
           "sourceId": "ingredient-9",
-          "key": "seaweed",
+          "key": "ingredient-9",
           "variant": "seaweed-flakes",
           "displayName": "김가루",
           "rawText": "김가루",
@@ -105,7 +105,7 @@
         },
         {
           "sourceId": "ingredient-10",
-          "key": "sesame-oil",
+          "key": "ingredient-10",
           "variant": "sesame-oil",
           "displayName": "참기름",
           "rawText": "참기름 1스푼",
@@ -118,7 +118,7 @@
         {
           "options": [
             {
-              "ingredient": "pork-belly",
+              "ingredient": "ingredient-1",
               "substitutes": [],
               "allowedVariants": []
             }
@@ -127,7 +127,7 @@
         {
           "options": [
             {
-              "ingredient": "green-onion",
+              "ingredient": "ingredient-2",
               "substitutes": [],
               "allowedVariants": []
             }
@@ -136,7 +136,7 @@
         {
           "options": [
             {
-              "ingredient": "kimchi",
+              "ingredient": "ingredient-3",
               "substitutes": [],
               "allowedVariants": []
             }
@@ -145,7 +145,7 @@
         {
           "options": [
             {
-              "ingredient": "onion",
+              "ingredient": "ingredient-4",
               "substitutes": [],
               "allowedVariants": []
             }
@@ -154,7 +154,7 @@
         {
           "options": [
             {
-              "ingredient": "red-pepper-powder",
+              "ingredient": "ingredient-5",
               "substitutes": [],
               "allowedVariants": []
             }
@@ -163,7 +163,7 @@
         {
           "options": [
             {
-              "ingredient": "water",
+              "ingredient": "ingredient-6",
               "substitutes": [],
               "allowedVariants": []
             }
@@ -172,7 +172,7 @@
         {
           "options": [
             {
-              "ingredient": "garlic",
+              "ingredient": "ingredient-7",
               "substitutes": [],
               "allowedVariants": []
             }
@@ -181,7 +181,7 @@
         {
           "options": [
             {
-              "ingredient": "chicken-stock",
+              "ingredient": "ingredient-8",
               "substitutes": [],
               "allowedVariants": []
             }
@@ -190,7 +190,7 @@
         {
           "options": [
             {
-              "ingredient": "seaweed",
+              "ingredient": "ingredient-9",
               "substitutes": [],
               "allowedVariants": []
             }
@@ -199,7 +199,7 @@
         {
           "options": [
             {
-              "ingredient": "sesame-oil",
+              "ingredient": "ingredient-10",
               "substitutes": [],
               "allowedVariants": []
             }
@@ -207,16 +207,23 @@
         }
       ],
       "steps": [
-        "먼저 삼겹살 300g을 잘게 썰어서 올려주고",
-        "대파 반 대도 잘게 썰어 올려 준 뒤에",
-        "다 같이 한번 볶아 줍니다.",
-        "어느 정도 삼겹살이 익었을 때쯤에 다른 김치도 삼겹살과 비슷한 양으로 300g 정도 넣고",
+        "먼저 삼겹살 300g만 잘게 썰어서 올려주고",
+        "대파 반 대도 잘게 썰어서 올려 준 뒤에",
+        "다 같이 한 번 볶아 줍니다.",
+        "어느 정도 삼겹살이 익었을 때쯤에",
+        "김치도 삼겹살과 비슷한 양으로 300g 정도 넣고",
         "양파도 가로세로 잘게 썰어 한 줌 가득 넣어 줍니다.",
         "양파가 숨이 죽을 때까지 볶아졌으면",
-        "고춧가루 1스푼을 추가해 주고 풋내만 살짝 날려 준 뒤에",
-        "물 1컵과 다진 마늘 1스푼, 치킨스톡 반 스푼만 넣어 주면 오늘 양념장은 끝입니다.",
-        "모든 재료를 잘게 썰어 넣고 미리 볶아 놨기 때문에 인제 뚜껑 덮고 딱 5분만 끓여 주면 초간단 5분 김치찜이 완성됩니다.",
-        "이건 뜨끈한 흰밥에 먹을 만큼 올려가 김가루와 참기름 한 스푼을 싹 둘러 준 뒤에 비벼서 먹으면 진짜 맛있습니다."
+        "고춧가루 1스푼을 추가해 주고",
+        "풋내만 살짝 날려 준 뒤에",
+        "물 1컵과",
+        "다진 마늘 1스푼",
+        "치킨스톡 1/2스푼만 넣어 주면 오늘 양념장은 끝입니다.",
+        "모든 재료를 잘게 썰어 넣고 미리 볶아 놨기 때문에",
+        "뚜껑 덮고 딱 5분만 끓여 주면 초간단 5분 김치찜이 완성됩니다.",
+        "뜨끈한 흰밥에 먹을 만큼 올려가",
+        "김가루와 참기름 1스푼을 싹 둘러 준 뒤에",
+        "비벼서 먹으면 진짜 맛있습니다."
       ],
       "shortsReference": "https://youtu.be/COUJqOI7DRk?si=jgMIYuImpRfYO4lz"
     },

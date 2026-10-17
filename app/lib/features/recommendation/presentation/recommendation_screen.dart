@@ -412,9 +412,7 @@ class _RecommendationCopy {
         missing.add(value);
       } else if (value is SatisfiedRequirementResult) {
         for (final match in value.matches) {
-          if (match.type == IngredientMatchTypeEnum.PREPARATION) {
-            matchNotes.add('${_withParticle(match.requiredName, '은', '는')} 가지고 있는 ${_withParticle(match.ownedName, '을', '를')} 활용할 수 있어요');
-          } else if (match.type == IngredientMatchTypeEnum.SUBSTITUTE) {
+          if (match.type == IngredientMatchTypeEnum.SUBSTITUTE) {
             matchNotes.add('${_withParticle(match.requiredName, '은', '는')} 가지고 있는 ${_withParticle(match.ownedName, '으로', '로', rieulAsVowel: true)} 대신해도 돼요');
           }
         }
@@ -422,40 +420,64 @@ class _RecommendationCopy {
     }
 
     if (item.missingCount > 1) {
+      final names = missing.take(2).map((requirement) {
+        final options = requirement.missingOptions.toList(growable: false);
+        if (options.isEmpty) return '재료';
+        final name = _optionNames(options);
+        return options.length > 1 ? '$name 중 하나' : name;
+      }).toList(growable: false);
+      final summary = names.length == 2
+          ? '${_withParticle(names.first, '과', '와')} ${names.last}'
+          : names.isEmpty
+              ? '재료'
+              : names.single;
       return _RecommendationCopy(
-        primary: '재료 ${item.missingCount}개가 더 필요해요',
-        secondary: matchNotes.take(1).toList(growable: false),
+        primary: names.length < 2
+            ? '재료 ${item.missingCount}개가 더 필요해요'
+            : item.missingCount == 2
+                ? '${_withParticle(summary, '이', '가')} 필요해요'
+                : '$summary 외 ${item.missingCount - 2}개가 더 필요해요',
+        secondary: [
+          for (final requirement in missing.take(2))
+            ..._substituteNotes(requirement.missingOptions.toList(growable: false)),
+          ...matchNotes.take(1),
+        ],
       );
     }
     if (item.missingCount == 1) {
       final options = missing.isEmpty
           ? const <MissingOption>[]
           : missing.first.missingOptions.toList(growable: false);
-      final names = options.map((option) => option.requiredName).join(' 또는 ');
-      final substituteNotes = <String>[
-        for (final option in options)
-          if (option.substitutes.isNotEmpty)
-            '${_withParticle(option.requiredName, '은', '는')} ${_withParticle(option.substitutes.map((substitute) => substitute.name).join(' 또는 '), '으로', '로', rieulAsVowel: true)} 대신해도 돼요',
-      ];
+      final names = _optionNames(options);
       return _RecommendationCopy(
         primary: options.isEmpty
             ? '재료 1개가 더 필요해요'
             : options.length > 1
                 ? '$names 중 하나만 있으면 돼요'
-                : options.single.substitutes.isEmpty
-                    ? '$names만 있으면 돼요'
-                    : '${_withParticle(names, '이', '가')} 필요해요',
-        secondary: [...substituteNotes, ...matchNotes.take(1)],
+                : '${_withParticle(names, '이', '가')} 필요해요',
+        secondary: [..._substituteNotes(options), ...matchNotes.take(1)],
       );
     }
-    if (matchNotes.isEmpty) {
-      return const _RecommendationCopy(primary: '지금 바로 만들 수 있어요');
-    }
     return _RecommendationCopy(
-      primary: matchNotes.first,
-      secondary: matchNotes.skip(1).take(1).toList(growable: false),
+      primary: '지금 바로 만들 수 있어요',
+      secondary: matchNotes.take(1).toList(growable: false),
     );
   }
+
+  static String _optionNames(List<MissingOption> options) {
+    if (options.isEmpty) return '';
+    return [
+      for (final option in options.take(options.length - 1))
+        _withParticle(option.requiredName, '이나', '나'),
+      options.last.requiredName,
+    ].join(' ');
+  }
+
+  static List<String> _substituteNotes(List<MissingOption> options) => [
+    for (final option in options)
+      if (option.substitutes.isNotEmpty)
+        '${_withParticle(option.requiredName, '은', '는')} ${_withParticle(option.substitutes.map((substitute) => substitute.name).join(' 또는 '), '으로', '로', rieulAsVowel: true)} 대신해도 돼요',
+  ];
 
   static String _withParticle(
     String text,

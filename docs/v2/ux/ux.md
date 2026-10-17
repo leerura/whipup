@@ -3,7 +3,7 @@ Flat Variant list를 사용하지 않는다.
 같은 Ingredient에 속한 등록 가능한 Variant를 하나의 group으로 보여준다.
 ```plain text
 마늘
-[ 마늘 ] [ 다진 마늘 ]
+[ 통마늘 ] [ 다진 마늘 ]
 
 삼겹살
 [ 삼겹살 ] [ 대패삼겹살 ]
@@ -19,9 +19,9 @@ Variant가 하나뿐이면 바로 추가할 수 있다.
 missingCount = 0.
 카드:
 - 추가 행동이 없으면 `지금 바로 만들 수 있어요`
-- PREPARATION은 표시
-- SUBSTITUTE는 표시
 - DIRECT를 모두 나열하지 않음
+- PREPARATION의 활용 안내는 카드에서 생략하고 Recipe Detail에서 표시
+- SUBSTITUTE처럼 선택 전에 알아야 하는 정보는 카드에 보조 정보로 표시할 수 있음
 ### 재료 추가해서
 missingCount \>= 1.
 MISSING을 가장 먼저 보여준다.
@@ -45,7 +45,11 @@ OR + Substitute:
 알룰로스는 설탕으로 대신해도 돼요
 ```
 Substitute를 Option과 평탄화하지 않는다.
-부족 Requirement가 많으면 카드에서는 요약하고 상세에서 전체를 보여준다.
+카드의 부족 재료 문구는 `missingCount`에 따라 요약한다.
+- 1개: 부족한 재료명 1개를 직접 표시. 예: `양파가 필요해요`
+- 2개: 부족한 재료명 2개를 모두 표시. 예: `양파와 대파가 필요해요`
+- 3개 이상: 앞의 2개 재료명과 나머지 개수를 표시. 예: `양파와 대파 외 2개가 더 필요해요`
+상세에서는 부족 Requirement 전체를 보여준다.
 ## Recipe Detail
 상단에 전체 가능 여부를 요약한다.
 필수 재료는 Recipe Requirement 기준으로 보여준다.
@@ -56,7 +60,7 @@ Substitute를 Option과 평탄화하지 않는다.
 ✓ 삼겹살 300g
 
 ✓ 다진 마늘 1큰술
-  가지고 있는 마늘을 활용할 수 있어요
+  가지고 있는 통마늘을 활용할 수 있어요
 
 ✓ 알룰로스 1큰술
   가지고 있는 설탕으로 대신할 수 있어요
@@ -70,4 +74,3 @@ Substitute는 해당 Option의 보조 설명으로만 표현한다.
 ## Domain fact와 Copy
 Server는 상태/매칭 구조를 반환하고 Flutter가 최종 문구를 만든다.
 Flutter는 API에 없는 action을 임의 추론하지 않는다. Relation에 Action을 저장하지 않으므로 PREPARATION을 보고 무조건 `다져서 사용` 같은 문구를 만들지 않는다.
-
