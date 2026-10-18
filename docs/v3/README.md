@@ -18,10 +18,11 @@ V3 문서의 재료명과 사례는 원칙을 설명하는 예시이며, 허용�
 - [OpenAPI 계약](api/openapi.yaml)
 - [재료 등록 UX 원칙](ux/ux.md)
 - [구현 영향과 완료 기준](development/implementation-guide.md)
+- [재료·레시피 추출 및 검증 파이프라인](development/recipe-pipeline.md)
 
 ## 범위 메모
 
 - 현재 문서는 재료 보유 단위, 레시피 요구, 요구 충족 판단의 제품·도메인 방향을 정한다.
 - 이 디렉터리는 V3 구현에 필요한 데이터 및 API 계약도 포함한다. 구현자는 V2 문서를 구현 기준으로 사용하지 않는다.
-- 데이터 파이프라인과 Gemini 무료 API 자동화의 재설계는 별도 논의로 미뤘다. V2 파이프라인 절차를 V3 요구사항으로 간주하지 않는다.
+- V3 recipe pipeline과 Gemini 무료 API 작업 흐름은 [pipeline 명세](development/recipe-pipeline.md)를 따른다. V2 파이프라인 절차를 V3 요구사항으로 간주하지 않는다.
 - `열린 결정`으로 표시한 항목만 구현 전에 Main Agent와 합의한다. 확정된 동작은 본 문서의 링크된 규격을 따른다.

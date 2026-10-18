@@ -129,7 +129,12 @@ public class RecipeMatchService {
         Map<Long, Set<Long>> preparationTargetsBySource
     ) {
         Set<Long> acceptedVariantIds = new HashSet<>();
-        acceptedVariantIds.add(option.getIngredient().getIngredientVariant().getId());
+        if (option.getIngredient().getIngredientVariant() != null) {
+            acceptedVariantIds.add(option.getIngredient().getIngredientVariant().getId());
+        }
+        option.getIngredient().getAcceptedOwnedVariants().stream()
+            .map(IngredientVariant::getId)
+            .forEach(acceptedVariantIds::add);
         option.getAllowedVariants()
             .stream()
             .map(IngredientVariant::getId)
@@ -169,9 +174,16 @@ public class RecipeMatchService {
                 RecipeRequirementSubstitute::getDisplayOrder
             ))
             .map(RecipeRequirementSubstitute::getIngredient)
-            .map(ingredient -> ownedVariantsById.get(
-                ingredient.getIngredientVariant().getId()
-            ))
+            .flatMap(ingredient -> {
+                Set<Long> substituteVariantIds = new HashSet<>();
+                if (ingredient.getIngredientVariant() != null) {
+                    substituteVariantIds.add(ingredient.getIngredientVariant().getId());
+                }
+                ingredient.getAcceptedOwnedVariants().stream()
+                    .map(IngredientVariant::getId)
+                    .forEach(substituteVariantIds::add);
+                return substituteVariantIds.stream().map(ownedVariantsById::get);
+            })
             .filter(owned -> owned != null)
             .map(owned -> new IngredientMatchResult(
                 MatchType.SUBSTITUTE,

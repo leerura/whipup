@@ -292,6 +292,8 @@ class _RequirementRow extends StatelessWidget {
           notes.add('가지고 있는 ${_withParticle(match.ownedName, '을', '를')} 활용할 수 있어요');
         } else if (match.type == IngredientMatchTypeEnum.SUBSTITUTE) {
           notes.add('${_withParticle(match.requiredName, '은', '는')} 가지고 있는 ${_withParticle(match.ownedName, '으로', '로', rieulAsVowel: true)} 대신할 수 있어요');
+        } else if (match.requiredName != match.ownedName) {
+          notes.add('보유한 ${_withParticle(match.ownedName, '으로', '로', rieulAsVowel: true)} 만들 수 있어요');
         } else if (options.length > 1) {
           notes.add('가지고 있는 ${_withParticle(match.ownedName, '을', '를')} 사용할 수 있어요');
         }

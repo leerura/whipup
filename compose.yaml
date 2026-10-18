@@ -1,4 +1,18 @@
 services:
+  recipe-pipeline:
+    build:
+      context: .
+      dockerfile: tools/data-pipeline/Dockerfile
+    command: ["python", "/workspace/tools/data-pipeline/src/pipeline.py"]
+    environment:
+      GEMINI_API_KEY: ${GEMINI_API_KEY}
+      GEMINI_MODEL: ${GEMINI_MODEL:-models/gemini-2.5-flash}
+      PIPELINE_POLL_SECONDS: ${PIPELINE_POLL_SECONDS:-20}
+    volumes:
+      - ./tools/data-pipeline/input:/workspace/tools/data-pipeline/input
+      - ./tools/data-pipeline/state:/workspace/tools/data-pipeline/state
+      - ./data:/workspace/data
+
   backend:
     build:
       context: ./backend

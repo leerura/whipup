@@ -1,302 +1,171 @@
+"""Small structural checks for V3 Gemini drafts; never performs semantic review."""
+
 import re
-from pathlib import Path
-
-from cache import write_json
 
 
-IMMUTABLE_STAGE_ONE_FIELDS = ("displayName", "rawText", "amount", "unit")
+SOURCE_FIELDS = ("displayName", "rawText", "amount", "unit")
 
 
-def _text(value: object) -> str | None:
-    if not isinstance(value, str):
-        return None
-    value = value.strip()
-    return value or None
+def _is_nonempty_string(value: object) -> bool:
+    return isinstance(value, str) and bool(value.strip())
 
 
-def _list(value: object) -> list | None:
-    return value if isinstance(value, list) else None
-
-
-def _master_variant_owners(ingredient_master: dict, errors: list[str]) -> dict[str, str]:
-    owners: dict[str, str] = {}
-    ingredient_keys: set[str] = set()
-
-    for ingredient_index, ingredient in enumerate(ingredient_master.get("ingredients", [])):
-        path = f"ingredients[{ingredient_index}]"
-        if not isinstance(ingredient, dict):
-            errors.append(f"{path} must be an object")
+def _catalog_keys(catalog: dict, additions: dict) -> tuple[set[str], set[str]]:
+    groups: set[str] = set()
+    variants: set[str] = set()
+    all_catalogs = (catalog, additions)
+    for source in all_catalogs:
+        ingredients = source.get("ingredients", []) if isinstance(source, dict) else []
+        if not isinstance(ingredients, list):
             continue
-
-        ingredient_key = _text(ingredient.get("key"))
-        if ingredient_key is None:
-            errors.append(f"{path}.key is required")
-            continue
-        if ingredient_key in ingredient_keys:
-            errors.append(f"duplicate Ingredient key: {ingredient_key}")
-            continue
-        ingredient_keys.add(ingredient_key)
-
-        variants = _list(ingredient.get("variants"))
-        if not variants:
-            errors.append(f"{path}.variants must not be empty")
-            continue
-
-        base_count = 0
-        ingredient_variant_keys: set[str] = set()
-        for variant_index, variant in enumerate(variants):
-            variant_path = f"{path}.variants[{variant_index}]"
-            if not isinstance(variant, dict):
-                errors.append(f"{variant_path} must be an object")
+        for ingredient in ingredients:
+            if not isinstance(ingredient, dict):
                 continue
-
-            variant_key = _text(variant.get("key"))
-            if variant_key is None:
-                errors.append(f"{variant_path}.key is required")
+            if _is_nonempty_string(ingredient.get("key")):
+                groups.add(ingredient["key"])
+            variants_value = ingredient.get("variants", [])
+            if not isinstance(variants_value, list):
                 continue
-            if variant_key in owners:
-                errors.append(f"duplicate Variant key: {variant_key}")
-                continue
-
-            owners[variant_key] = ingredient_key
-            ingredient_variant_keys.add(variant_key)
-            if variant.get("base") is True:
-                base_count += 1
-
-        if base_count != 1:
-            errors.append(f"{path} must contain exactly one base Variant")
-
-        relations = _list(ingredient.get("relations"))
-        if relations is None:
-            errors.append(f"{path}.relations must be an array")
-            continue
-        for relation_index, relation in enumerate(relations):
-            relation_path = f"{path}.relations[{relation_index}]"
-            if not isinstance(relation, dict):
-                errors.append(f"{relation_path} must be an object")
-                continue
-            source = _text(relation.get("source"))
-            target = _text(relation.get("target"))
-            if source not in ingredient_variant_keys or target not in ingredient_variant_keys:
-                errors.append(f"{relation_path} must reference Variants of the same Ingredient")
-            elif source == target:
-                errors.append(f"{relation_path}.source and target must differ")
-
-    return owners
+            for variant in variants_value:
+                if isinstance(variant, dict) and _is_nonempty_string(variant.get("key")):
+                    variants.add(variant["key"])
+    return groups, variants
 
 
-def _approved_by_source(approved_stage_one: dict, errors: list[str]) -> dict[str, dict]:
-    approved: dict[str, dict] = {}
-    ingredients = _list(approved_stage_one.get("ingredients"))
-    if ingredients is None:
-        errors.append("approved Stage 1 result must contain an ingredients array")
-        return approved
-
-    for index, ingredient in enumerate(ingredients):
-        path = f"approved.ingredients[{index}]"
-        if not isinstance(ingredient, dict):
-            errors.append(f"{path} must be an object")
-            continue
-        source_id = _text(ingredient.get("sourceId"))
-        if source_id is None:
-            errors.append(f"{path}.sourceId is required")
-            continue
-        if source_id in approved:
-            errors.append(f"duplicate approved sourceId: {source_id}")
-            continue
-        approved[source_id] = ingredient
-    return approved
-
-
-def validate_and_publish(
-    approved_stage_one: dict,
-    ingredient_master: dict,
-    stage_two_result: dict,
-    recipes_directory: Path,
-) -> list[str]:
+def validate_draft(stage_one: dict, stage_two: dict, catalog: dict) -> list[str]:
     errors: list[str] = []
-    variant_owners = _master_variant_owners(ingredient_master, errors)
-    approved = _approved_by_source(approved_stage_one, errors)
-
-    recipe = stage_two_result.get("recipe")
+    additions = stage_two.get("catalogAdditions", {"ingredients": []})
+    if not isinstance(additions, dict) or not isinstance(additions.get("ingredients", []), list):
+        errors.append("catalogAdditions.ingredients must be an array")
+        additions = {"ingredients": []}
+    recipe = stage_two.get("recipe")
     if not isinstance(recipe, dict):
-        return [*errors, "Stage 2 result must contain a recipe object"]
-
-    mapping_failures = _list(stage_two_result.get("mappingFailures"))
-    if mapping_failures is None:
-        errors.append("mappingFailures must be an array")
-    elif mapping_failures:
-        for index, failure in enumerate(mapping_failures):
-            if isinstance(failure, dict):
-                source_id = failure.get("sourceId", "unknown")
-                code = failure.get("code", "unknown")
-                errors.append(f"mapping failure for {source_id}: {code}")
-            else:
-                errors.append(f"mappingFailures[{index}] must be an object")
-
-    key = _text(recipe.get("key"))
-    name = _text(recipe.get("name"))
-    shorts_reference = _text(recipe.get("shortsReference"))
-    if key is None:
+        return ["Stage 2 result must contain a recipe object"]
+    if not _is_nonempty_string(recipe.get("key")):
         errors.append("recipe.key is required")
-    elif re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", key) is None:
+    elif re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", recipe["key"]) is None:
         errors.append("recipe.key must be lowercase ASCII kebab-case")
-    if name is None:
+    if not _is_nonempty_string(recipe.get("name")):
         errors.append("recipe.name is required")
-    if shorts_reference is None:
+    if recipe.get("status") != "DRAFT":
+        errors.append("Gemini draft recipe.status must be DRAFT")
+    if not _is_nonempty_string(recipe.get("shortsReference")):
         errors.append("recipe.shortsReference is required")
 
-    ingredients = _list(recipe.get("ingredients"))
-    if ingredients is None:
+    stage_one_ingredients = stage_one.get("ingredients")
+    recipe_ingredients = recipe.get("ingredients")
+    if not isinstance(stage_one_ingredients, list):
+        errors.append("Stage 1 result must contain an ingredients array")
+        stage_one_ingredients = []
+    if not isinstance(recipe_ingredients, list):
         errors.append("recipe.ingredients must be an array")
-        ingredients = []
+        recipe_ingredients = []
 
-    local_ingredients: dict[str, dict] = {}
-    structured_source_ids: set[str] = set()
-    for index, ingredient in enumerate(ingredients):
+    source_map: dict[str, dict] = {}
+    for index, ingredient in enumerate(stage_one_ingredients):
+        if not isinstance(ingredient, dict) or not _is_nonempty_string(ingredient.get("sourceId")):
+            errors.append(f"Stage 1 ingredients[{index}].sourceId is required")
+            continue
+        source_id = ingredient["sourceId"]
+        if source_id in source_map:
+            errors.append(f"duplicate Stage 1 sourceId: {source_id}")
+        source_map[source_id] = ingredient
+
+    source_ids: set[str] = set()
+    recipe_keys: set[str] = set()
+    _, variants = _catalog_keys(catalog, additions)
+    optional_by_key: dict[str, bool] = {}
+    for index, ingredient in enumerate(recipe_ingredients):
         path = f"recipe.ingredients[{index}]"
         if not isinstance(ingredient, dict):
             errors.append(f"{path} must be an object")
             continue
-
-        source_id = _text(ingredient.get("sourceId"))
-        if source_id is None:
+        source_id = ingredient.get("sourceId")
+        if not _is_nonempty_string(source_id):
             errors.append(f"{path}.sourceId is required")
-        elif source_id in structured_source_ids:
+        elif source_id in source_ids:
             errors.append(f"duplicate recipe sourceId: {source_id}")
         else:
-            structured_source_ids.add(source_id)
-            approved_ingredient = approved.get(source_id)
-            if approved_ingredient is None:
-                errors.append(f"{path}.sourceId is not an approved Stage 1 sourceId: {source_id}")
+            source_ids.add(source_id)
+            source = source_map.get(source_id)
+            if source is None:
+                errors.append(f"{path}.sourceId is not present in Stage 1")
             else:
-                for field in IMMUTABLE_STAGE_ONE_FIELDS:
-                    if ingredient.get(field) != approved_ingredient.get(field):
-                        errors.append(f"{path}.{field} differs from approved Stage 1 input")
-
-        local_key = _text(ingredient.get("key"))
-        if local_key is None:
+                for field in SOURCE_FIELDS:
+                    if ingredient.get(field) != source.get(field):
+                        errors.append(f"{path}.{field} differs from Stage 1 source")
+        key = ingredient.get("key")
+        if not _is_nonempty_string(key):
             errors.append(f"{path}.key is required")
-        elif local_key in local_ingredients:
-            errors.append(f"duplicate recipe ingredient key: {local_key}")
+        elif key in recipe_keys:
+            errors.append(f"duplicate recipe ingredient key: {key}")
         else:
-            local_ingredients[local_key] = ingredient
-
-        variant = _text(ingredient.get("variant"))
-        if variant is None:
-            errors.append(f"{path}.variant is required for a PUBLISHED Recipe")
-        elif variant not in variant_owners:
-            errors.append(f"{path}.variant is not in ingredients.json: {variant}")
-
+            recipe_keys.add(key)
         if not isinstance(ingredient.get("optional"), bool):
             errors.append(f"{path}.optional must be a boolean")
+        elif _is_nonempty_string(key):
+            optional_by_key[key] = ingredient["optional"]
+        variant = ingredient.get("variant")
+        if variant is not None and (not isinstance(variant, str) or variant not in variants):
+            errors.append(f"{path}.variant is neither in the catalog nor proposed additions")
+        accepted = ingredient.get("acceptedOwnedVariants", [])
+        if not isinstance(accepted, list) or any(not isinstance(value, str) for value in accepted):
+            errors.append(f"{path}.acceptedOwnedVariants must be an array of strings")
+        elif any(value not in variants for value in accepted):
+            errors.append(f"{path}.acceptedOwnedVariants contains a key absent from catalog/additions")
+        elif len(accepted) != len(set(accepted)):
+            errors.append(f"{path}.acceptedOwnedVariants must not contain duplicates")
+        if isinstance(accepted, list) and ingredient.get("variant") in accepted:
+            errors.append(f"{path}.acceptedOwnedVariants must not repeat variant")
 
-    if structured_source_ids != set(approved):
-        missing = sorted(set(approved) - structured_source_ids)
-        unexpected = sorted(structured_source_ids - set(approved))
-        if missing:
-            errors.append(f"missing approved sourceIds: {', '.join(missing)}")
-        if unexpected:
-            errors.append(f"unexpected sourceIds: {', '.join(unexpected)}")
+    if source_ids != set(source_map):
+        errors.append("recipe.ingredients must contain each Stage 1 sourceId exactly once")
 
-    role_counts = {local_key: 0 for local_key in local_ingredients}
-    requirements = _list(recipe.get("requirements"))
-    if requirements is None:
+    requirements = recipe.get("requirements")
+    if not isinstance(requirements, list):
         errors.append("recipe.requirements must be an array")
         requirements = []
-
-    for requirement_index, requirement in enumerate(requirements):
-        requirement_path = f"recipe.requirements[{requirement_index}]"
-        if not isinstance(requirement, dict):
-            errors.append(f"{requirement_path} must be an object")
+    role_counts = {key: 0 for key in recipe_keys}
+    for req_index, requirement in enumerate(requirements):
+        options = requirement.get("options") if isinstance(requirement, dict) else None
+        if not isinstance(options, list) or not options:
+            errors.append(f"recipe.requirements[{req_index}].options must be a non-empty array")
             continue
-        options = _list(requirement.get("options"))
-        if not options:
-            errors.append(f"{requirement_path}.options must contain at least one Option")
-            continue
-
         for option_index, option in enumerate(options):
-            option_path = f"{requirement_path}.options[{option_index}]"
             if not isinstance(option, dict):
-                errors.append(f"{option_path} must be an object")
+                errors.append(f"recipe.requirements[{req_index}].options[{option_index}] must be an object")
                 continue
-            original_key = _text(option.get("ingredient"))
-            original = local_ingredients.get(original_key) if original_key else None
-            if original is None:
-                errors.append(f"{option_path}.ingredient must reference a Recipe Ingredient")
-                continue
-            if original.get("optional") is True:
-                errors.append(f"{option_path}.ingredient must not reference an optional Ingredient")
-            role_counts[original_key] += 1
+            original = option.get("ingredient")
+            if not isinstance(original, str) or original not in recipe_keys:
+                errors.append(f"recipe.requirements[{req_index}].options[{option_index}].ingredient is unknown")
+            elif optional_by_key.get(original, False):
+                errors.append(f"recipe.requirements[{req_index}].options[{option_index}].ingredient must not be optional")
+            else:
+                role_counts[original] += 1
+            substitutes = option.get("substitutes")
+            if not isinstance(substitutes, list):
+                errors.append(f"recipe.requirements[{req_index}].options[{option_index}].substitutes must be an array")
+            else:
+                for substitute in substitutes:
+                    if not isinstance(substitute, str) or substitute not in recipe_keys:
+                        errors.append(f"recipe.requirements[{req_index}].options[{option_index}] has unknown substitute")
+                    elif optional_by_key.get(substitute, False):
+                        errors.append(f"recipe.requirements[{req_index}].options[{option_index}] substitute must not be optional")
+                    else:
+                        role_counts[substitute] += 1
+            allowed = option.get("allowedVariants")
+            if not isinstance(allowed, list):
+                errors.append(f"recipe.requirements[{req_index}].options[{option_index}].allowedVariants must be an array")
+            elif any(not isinstance(value, str) or value not in variants for value in allowed):
+                errors.append(f"recipe.requirements[{req_index}].options[{option_index}].allowedVariants contains an unknown Variant")
 
-            substitutes = _list(option.get("substitutes"))
-            if substitutes is None:
-                errors.append(f"{option_path}.substitutes must be an array")
-                substitutes = []
-            for substitute_index, substitute_key_value in enumerate(substitutes):
-                substitute_path = f"{option_path}.substitutes[{substitute_index}]"
-                substitute_key = _text(substitute_key_value)
-                substitute = local_ingredients.get(substitute_key) if substitute_key else None
-                if substitute is None:
-                    errors.append(f"{substitute_path} must reference a Recipe Ingredient")
-                    continue
-                if substitute_key == original_key:
-                    errors.append(f"{substitute_path} must differ from the original Option")
-                if substitute.get("optional") is True:
-                    errors.append(f"{substitute_path} must not reference an optional Ingredient")
-                role_counts[substitute_key] += 1
-
-            allowed_variants = _list(option.get("allowedVariants"))
-            if allowed_variants is None:
-                errors.append(f"{option_path}.allowedVariants must be an array")
-                continue
-            original_variant = _text(original.get("variant"))
-            original_owner = variant_owners.get(original_variant)
-            for allowed_index, allowed_variant_value in enumerate(allowed_variants):
-                allowed_path = f"{option_path}.allowedVariants[{allowed_index}]"
-                allowed_variant = _text(allowed_variant_value)
-                allowed_owner = variant_owners.get(allowed_variant)
-                if allowed_owner is None:
-                    errors.append(f"{allowed_path} is not in ingredients.json")
-                elif allowed_variant == original_variant or allowed_owner != original_owner:
-                    errors.append(
-                        f"{allowed_path} must be a different Variant of the original Ingredient"
-                    )
-
-    for local_key, ingredient in local_ingredients.items():
-        if ingredient.get("optional") is False and role_counts[local_key] != 1:
-            errors.append(
-                f"recipe ingredient {local_key} must participate exactly once as an Option or Substitute"
-            )
-
-    steps = _list(recipe.get("steps"))
-    if not steps:
-        errors.append("recipe.steps must contain at least one step")
-    elif any(_text(step) is None for step in steps):
-        errors.append("recipe.steps must not contain blank steps")
-
-    if errors:
-        return errors
-
-    final_recipe = {
-        "key": key,
-        "name": name,
-        "status": "PUBLISHED",
-        "shortsReference": shorts_reference,
-        "ingredients": [
-            {
-                "key": ingredient["key"],
-                "variant": ingredient["variant"],
-                "displayName": ingredient["displayName"],
-                "rawText": ingredient["rawText"],
-                "amount": ingredient["amount"],
-                "unit": ingredient["unit"],
-                "optional": ingredient["optional"],
-            }
-            for ingredient in ingredients
-        ],
-        "requirements": requirements,
-        "steps": steps,
-    }
-    write_json(recipes_directory / f"{key}.json", final_recipe)
-    return []
+    for key, optional in optional_by_key.items():
+        if not optional and role_counts[key] != 1:
+            errors.append(f"required recipe ingredient {key} must participate exactly once in a requirement")
+    steps = recipe.get("steps")
+    if not isinstance(steps, list) or not steps or any(not _is_nonempty_string(step) for step in steps):
+        errors.append("recipe.steps must contain non-empty strings")
+    failures = stage_two.get("mappingFailures", [])
+    if not isinstance(failures, list):
+        errors.append("mappingFailures must be an array")
+    return errors

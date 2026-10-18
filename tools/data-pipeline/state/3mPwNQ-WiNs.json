@@ -1,0 +1,1066 @@
+{
+  "videoId": "3mPwNQ-WiNs",
+  "status": "COMPLETED",
+  "stages": {
+    "stage1": {
+      "status": "COMPLETED",
+      "pipeline": {
+        "type": "V3_INGREDIENT_EXTRACTION",
+        "version": 3,
+        "model": "models/gemini-2.5-flash"
+      },
+      "completedAt": "2026-10-18T07:25:17.502067+00:00",
+      "ingredients": [
+        {
+          "sourceId": "ingredient-1",
+          "rawText": "밥",
+          "displayName": "rice",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Rice is shown being served into a bowl.",
+              "timestamp": "0:00"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "A full bowl of rice with toppings is shown.",
+              "timestamp": "0:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "A spoonful of the dish with rice is lifted.",
+              "timestamp": "0:05"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-2",
+          "rawText": "우삼겹",
+          "displayName": "beef belly/brisket",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Cooked sliced beef is visible on top of the rice.",
+              "timestamp": "0:00"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Raw thinly sliced beef (looks like U-samgyeop) is added to a pan.",
+              "timestamp": "0:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "오늘같이 우삼겹으로 만들면",
+              "timestamp": "0:25"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-3",
+          "rawText": "양파",
+          "displayName": "onion",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Sliced cooked onions are visible on top of the rice.",
+              "timestamp": "0:00"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 양파 1kg: 2,290원",
+              "timestamp": "0:24"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Sliced onions are added to the pan with the beef.",
+              "timestamp": "0:24"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-4",
+          "rawText": "계란",
+          "displayName": "egg",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 30구: 6,700원",
+              "timestamp": "0:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "A carton containing 30 eggs is shown.",
+              "timestamp": "0:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "(30구 6천원이면 강혜자 선생님급..)",
+              "timestamp": "0:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "An egg is cracked and separated, with the yolk being used.",
+              "timestamp": "0:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "An egg yolk is placed on the dish.",
+              "timestamp": "0:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "(흰자는 버리지 말고)",
+              "timestamp": "0:26"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Egg white (or beaten egg) is poured into the pan.",
+              "timestamp": "0:26"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-5",
+          "rawText": "대파",
+          "displayName": "green onion",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Chopped green onions are sprinkled over the dish.",
+              "timestamp": "0:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Chopped green onions are visible on the finished dish.",
+              "timestamp": "0:03"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-6",
+          "rawText": "설탕",
+          "displayName": "sugar",
+          "amount": "1",
+          "unit": "스푼",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "[양념레시피] 설탕 1스푼",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "A spoonful of white granulated powder (sugar) is added to a bowl.",
+              "timestamp": "0:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "[양념레시피] 설탕 1스푼",
+              "timestamp": "0:17"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-7",
+          "rawText": "진간장",
+          "displayName": "soy sauce",
+          "amount": "2",
+          "unit": "스푼",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "[양념레시피] 진간장 2스푼",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Soy sauce is poured from a bottle into a spoon, then into a bowl.",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "[양념레시피] 진간장 2스푼",
+              "timestamp": "0:17"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-8",
+          "rawText": "미림",
+          "displayName": "mirin (cooking wine)",
+          "amount": "2",
+          "unit": "스푼",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "[양념레시피] 미림(맛술) 2스푼",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청정원 맛술 830ml: 2,900원",
+              "timestamp": "0:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "미림",
+              "timestamp": "0:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Mirin (cooking wine) is poured from a bottle into a spoon, then into a bowl.",
+              "timestamp": "0:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "[양념레시피] 미림(맛술) 2스푼",
+              "timestamp": "0:17"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-9",
+          "rawText": "굴소스",
+          "displayName": "oyster sauce",
+          "amount": "반",
+          "unit": "스푼",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "PANDA BRAND OYSTER SAUCE",
+              "timestamp": "0:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "굴소스",
+              "timestamp": "0:16"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Oyster sauce is poured from a bottle into a spoon, then into a bowl.",
+              "timestamp": "0:16"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "[양념레시피] 굴소스 반스푼",
+              "timestamp": "0:17"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-10",
+          "rawText": "물",
+          "displayName": "water",
+          "amount": "2~3",
+          "unit": "스푼",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "[양념레시피] +물 2~3스푼",
+              "timestamp": "0:17"
+            }
+          ]
+        }
+      ],
+      "retryCount": 0,
+      "originalGeminiIngredients": [
+        {
+          "sourceId": "ingredient-1",
+          "rawText": "밥",
+          "displayName": "rice",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Rice is shown being served into a bowl.",
+              "timestamp": "0:00"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "A full bowl of rice with toppings is shown.",
+              "timestamp": "0:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "A spoonful of the dish with rice is lifted.",
+              "timestamp": "0:05"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-2",
+          "rawText": "우삼겹",
+          "displayName": "beef belly/brisket",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Cooked sliced beef is visible on top of the rice.",
+              "timestamp": "0:00"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Raw thinly sliced beef (looks like U-samgyeop) is added to a pan.",
+              "timestamp": "0:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "오늘같이 우삼겹으로 만들면",
+              "timestamp": "0:25"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-3",
+          "rawText": "양파",
+          "displayName": "onion",
+          "amount": "1",
+          "unit": "kg",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Sliced cooked onions are visible on top of the rice.",
+              "timestamp": "0:00"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 양파 1kg: 2,290원",
+              "timestamp": "0:24"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Sliced onions are added to the pan with the beef.",
+              "timestamp": "0:24"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-4",
+          "rawText": "계란",
+          "displayName": "egg",
+          "amount": "30",
+          "unit": "구",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 30구: 6,700원",
+              "timestamp": "0:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "A carton containing 30 eggs is shown.",
+              "timestamp": "0:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "(30구 6천원이면 강혜자 선생님급..)",
+              "timestamp": "0:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "An egg is cracked and separated, with the yolk being used.",
+              "timestamp": "0:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "An egg yolk is placed on the dish.",
+              "timestamp": "0:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "(흰자는 버리지 말고)",
+              "timestamp": "0:26"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Egg white (or beaten egg) is poured into the pan.",
+              "timestamp": "0:26"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-5",
+          "rawText": "대파",
+          "displayName": "green onion",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Chopped green onions are sprinkled over the dish.",
+              "timestamp": "0:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Chopped green onions are visible on the finished dish.",
+              "timestamp": "0:03"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-6",
+          "rawText": "설탕",
+          "displayName": "sugar",
+          "amount": "1",
+          "unit": "스푼",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "[양념레시피] 설탕 1스푼",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "A spoonful of white granulated powder (sugar) is added to a bowl.",
+              "timestamp": "0:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "[양념레시피] 설탕 1스푼",
+              "timestamp": "0:17"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-7",
+          "rawText": "진간장",
+          "displayName": "soy sauce",
+          "amount": "2",
+          "unit": "스푼",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "[양념레시피] 진간장 2스푼",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Soy sauce is poured from a bottle into a spoon, then into a bowl.",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "[양념레시피] 진간장 2스푼",
+              "timestamp": "0:17"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-8",
+          "rawText": "미림",
+          "displayName": "mirin (cooking wine)",
+          "amount": "2",
+          "unit": "스푼",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "[양념레시피] 미림(맛술) 2스푼",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청정원 맛술 830ml: 2,900원",
+              "timestamp": "0:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "미림",
+              "timestamp": "0:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Mirin (cooking wine) is poured from a bottle into a spoon, then into a bowl.",
+              "timestamp": "0:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "[양념레시피] 미림(맛술) 2스푼",
+              "timestamp": "0:17"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-9",
+          "rawText": "굴소스",
+          "displayName": "oyster sauce",
+          "amount": "반",
+          "unit": "스푼",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "PANDA BRAND OYSTER SAUCE",
+              "timestamp": "0:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "굴소스",
+              "timestamp": "0:16"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Oyster sauce is poured from a bottle into a spoon, then into a bowl.",
+              "timestamp": "0:16"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "[양념레시피] 굴소스 반스푼",
+              "timestamp": "0:17"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-10",
+          "rawText": "물",
+          "displayName": "water",
+          "amount": "2~3",
+          "unit": "스푼",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "[양념레시피] +물 2~3스푼",
+              "timestamp": "0:17"
+            }
+          ]
+        }
+      ],
+      "reviewNote": "영상의 0:24 양파 1kg 및 0:07 계란 30구 표기는 각각 가격·판매 포장 정보이므로 조리량이 아니다. 조리량 미확인으로 amount/unit을 비움."
+    },
+    "stage2": {
+      "status": "COMPLETED",
+      "pipeline": {
+        "type": "V3_RECIPE_STRUCTURING",
+        "version": 4,
+        "model": "models/gemini-2.5-flash",
+        "ingredientCatalogHash": "1fc6417fb810b7860921365efdab53097bf3fac1e02f2cc9e3f0530356952a8f"
+      },
+      "completedAt": "2026-10-18T07:36:31.333770+00:00",
+      "result": {
+        "recipe": {
+          "key": "usamgyeop-rice-bowl",
+          "name": "규동",
+          "status": "PUBLISHED",
+          "shortsReference": "https://youtu.be/3mPwNQ-WiNs?si=3OM4OJJBK0Uh5dhA",
+          "ingredients": [
+            {
+              "key": "rice",
+              "variant": "rice-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-1",
+              "displayName": "rice",
+              "rawText": "밥",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "beef-belly",
+              "variant": "beef-belly-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-2",
+              "displayName": "beef belly/brisket",
+              "rawText": "우삼겹",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "onion",
+              "variant": "onion-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-3",
+              "displayName": "onion",
+              "rawText": "양파",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "egg",
+              "variant": "egg-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-4",
+              "displayName": "egg",
+              "rawText": "계란",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "green-onion",
+              "variant": "green-onion-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-5",
+              "displayName": "green onion",
+              "rawText": "대파",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "sugar",
+              "variant": "sugar-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-6",
+              "displayName": "sugar",
+              "rawText": "설탕",
+              "amount": "1",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "soy-sauce",
+              "variant": "dark-soy-sauce",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-7",
+              "displayName": "soy sauce",
+              "rawText": "진간장",
+              "amount": "2",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "mirin",
+              "variant": "mirin-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-8",
+              "displayName": "mirin (cooking wine)",
+              "rawText": "미림",
+              "amount": "2",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "oyster-sauce",
+              "variant": "oyster-sauce-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-9",
+              "displayName": "oyster sauce",
+              "rawText": "굴소스",
+              "amount": "반",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "water",
+              "variant": "water-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-10",
+              "displayName": "water",
+              "rawText": "물",
+              "amount": "2~3",
+              "unit": "스푼",
+              "optional": false
+            }
+          ],
+          "requirements": [
+            {
+              "options": [
+                {
+                  "ingredient": "beef-belly",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "onion",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "egg",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "green-onion",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "sugar",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "soy-sauce",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "mirin",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "oyster-sauce",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "rice",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "water",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            }
+          ],
+          "steps": [
+            "계란은 노른자와 흰자를 분리해주세요.",
+            "설탕 1스푼, 진간장 2스푼, 미림(맛술) 2스푼, 굴소스 반 스푼, 물 2~3스푼을 섞어 양념을 만들어주세요.",
+            "팬에 우삼겹을 넣고 익혀주세요.",
+            "슬라이스한 양파를 넣고 함께 볶아주세요.",
+            "만들어둔 양념을 붓고 끓여주세요.",
+            "계란 흰자를 넣고 부드럽게 익혀주세요.",
+            "그릇에 밥을 담고, 익힌 우삼겹과 양파를 올려주세요.",
+            "계란 노른자와 송송 썬 대파를 올려 완성해주세요."
+          ]
+        },
+        "catalogAdditions": {
+          "ingredients": []
+        },
+        "mappingFailures": []
+      },
+      "structuralErrors": [],
+      "retryCount": 0,
+      "originalGeminiResult": {
+        "recipe": {
+          "key": "usamgyeop-rice-bowl",
+          "name": "규동",
+          "status": "DRAFT",
+          "shortsReference": "https://youtu.be/3mPwNQ-WiNs?si=3OM4OJJBK0Uh5dhA",
+          "ingredients": [
+            {
+              "key": "rice",
+              "variant": null,
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-1",
+              "displayName": "rice",
+              "rawText": "밥",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "beef-belly",
+              "variant": "beef-belly-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-2",
+              "displayName": "beef belly/brisket",
+              "rawText": "우삼겹",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "onion",
+              "variant": "onion-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-3",
+              "displayName": "onion",
+              "rawText": "양파",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "egg",
+              "variant": "egg-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-4",
+              "displayName": "egg",
+              "rawText": "계란",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "green-onion",
+              "variant": "green-onion-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-5",
+              "displayName": "green onion",
+              "rawText": "대파",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "sugar",
+              "variant": "sugar-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-6",
+              "displayName": "sugar",
+              "rawText": "설탕",
+              "amount": "1",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "soy-sauce",
+              "variant": "dark-soy-sauce",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-7",
+              "displayName": "soy sauce",
+              "rawText": "진간장",
+              "amount": "2",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "mirin",
+              "variant": "mirin-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-8",
+              "displayName": "mirin (cooking wine)",
+              "rawText": "미림",
+              "amount": "2",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "oyster-sauce",
+              "variant": "oyster-sauce-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-9",
+              "displayName": "oyster sauce",
+              "rawText": "굴소스",
+              "amount": "반",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "water",
+              "variant": "water-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-10",
+              "displayName": "water",
+              "rawText": "물",
+              "amount": "2~3",
+              "unit": "스푼",
+              "optional": false
+            }
+          ],
+          "requirements": [
+            {
+              "options": [
+                {
+                  "ingredient": "rice",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "beef-belly",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "onion",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "egg",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "green-onion",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "sugar",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "soy-sauce",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "mirin",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "oyster-sauce",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "water",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            }
+          ],
+          "steps": [
+            "계란은 노른자와 흰자를 분리해주세요.",
+            "설탕 1스푼, 진간장 2스푼, 미림(맛술) 2스푼, 굴소스 반 스푼, 물 2~3스푼을 섞어 양념을 만들어주세요.",
+            "팬에 우삼겹을 넣고 익혀주세요.",
+            "슬라이스한 양파를 넣고 함께 볶아주세요.",
+            "만들어둔 양념을 붓고 끓여주세요.",
+            "계란 흰자를 넣고 부드럽게 익혀주세요.",
+            "그릇에 밥을 담고, 익힌 우삼겹과 양파를 올려주세요.",
+            "계란 노른자와 송송 썬 대파를 올려 완성해주세요."
+          ]
+        },
+        "catalogAdditions": {
+          "ingredients": [
+            {
+              "key": "rice",
+              "name": "밥",
+              "variants": [
+                {
+                  "key": "rice-item",
+                  "name": "밥",
+                  "aliases": []
+                }
+              ],
+              "relations": []
+            },
+            {
+              "key": "green-onion",
+              "name": "대파",
+              "variants": [
+                {
+                  "key": "green-onion-item",
+                  "name": "대파",
+                  "aliases": []
+                }
+              ],
+              "relations": []
+            },
+            {
+              "key": "water",
+              "name": "물",
+              "variants": [
+                {
+                  "key": "water-item",
+                  "name": "물",
+                  "aliases": []
+                }
+              ],
+              "relations": []
+            }
+          ]
+        },
+        "mappingFailures": []
+      }
+    }
+  },
+  "sourceUrl": "https://youtu.be/3mPwNQ-WiNs?si=3OM4OJJBK0Uh5dhA",
+  "pipelineVersion": 1,
+  "review": {
+    "status": "COMPLETED",
+    "outcome": "PUBLISHED",
+    "required": "source_video_and_semantic_review",
+    "datasetKey": "usamgyeop-rice-bowl",
+    "notes": [
+      "밥과 물은 보유 가능한 재료 항목으로 카탈로그에 등록하고 필수 재료로 매핑함.",
+      "영상 제목에는 요리명이 없어 화면에 보이는 재료/형태에 따라 우삼겹 덮밥으로 표시함.",
+      "양파 1kg과 계란 30구는 구매 가격/판매 포장 표기라 조리량으로 저장하지 않음.",
+      "사용자 승인으로 검토 완료된 recipe를 PUBLISHED로 게시함."
+    ]
+  }
+}

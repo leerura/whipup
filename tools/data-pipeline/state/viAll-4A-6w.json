@@ -1,0 +1,841 @@
+{
+  "videoId": "viAll-4A-6w",
+  "status": "COMPLETED",
+  "stages": {
+    "stage1": {
+      "status": "COMPLETED",
+      "pipeline": {
+        "type": "V3_INGREDIENT_EXTRACTION",
+        "version": 3,
+        "model": "models/gemini-2.5-flash"
+      },
+      "completedAt": "2026-10-18T07:24:39.932840+00:00",
+      "ingredients": [
+        {
+          "sourceId": "ingredient-1",
+          "rawText": "밥",
+          "displayName": "Cooked rice",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Cooked white rice serving as the base in the bowl",
+              "timestamp": "0:01"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-2",
+          "rawText": "파채",
+          "displayName": "Shredded green onion",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Shredded green onions already in the bowl",
+              "timestamp": "0:01"
+            },
+            {
+              "type": "SPEECH",
+              "text": "파채도 곁들이구요",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "파채도",
+              "timestamp": "0:13"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-3",
+          "rawText": "육회",
+          "displayName": "Yukhoe (Korean beef tartare)",
+          "amount": "100",
+          "unit": "g",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마트에서 만원 파는 육회랑",
+              "timestamp": "0:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "육회랑",
+              "timestamp": "0:01"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Yukhoe being placed into the bowl",
+              "timestamp": "0:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "육회 200g인데",
+              "timestamp": "0:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "육회 200g인데",
+              "timestamp": "0:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "1인분 기준으로 100g만 쓰면 돼요",
+              "timestamp": "0:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "1인분 기준으로 100g만 쓰면 돼요",
+              "timestamp": "0:15"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-4",
+          "rawText": "고추장",
+          "displayName": "Gochujang (Korean chili paste)",
+          "amount": "1",
+          "unit": "스푼",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 크게 1스푼",
+              "timestamp": "0:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장 크게 한 스푼",
+              "timestamp": "0:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding red paste to the sauce bowl",
+              "timestamp": "0:07"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-5",
+          "rawText": "양조간장",
+          "displayName": "Brewed soy sauce",
+          "amount": "2",
+          "unit": "스푼",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장 2스푼",
+              "timestamp": "0:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장 두 스푼",
+              "timestamp": "0:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding dark liquid from a measuring cup to the sauce bowl",
+              "timestamp": "0:08"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-6",
+          "rawText": "매실액",
+          "displayName": "Plum extract",
+          "amount": "2",
+          "unit": "스푼",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "매실액 2스푼",
+              "timestamp": "0:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "매실액 두 스푼",
+              "timestamp": "0:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding dark liquid from a measuring cup to the sauce bowl",
+              "timestamp": "0:08"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-7",
+          "rawText": "마늘",
+          "displayName": "Garlic",
+          "amount": "1",
+          "unit": "스푼",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마늘 1스푼",
+              "timestamp": "0:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마늘 한 스푼",
+              "timestamp": "0:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding minced garlic to the sauce bowl",
+              "timestamp": "0:09"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-8",
+          "rawText": "참기름",
+          "displayName": "Sesame oil",
+          "amount": "1",
+          "unit": "스푼",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1스푼",
+              "timestamp": "0:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름 한 스푼",
+              "timestamp": "0:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding oil to the sauce bowl",
+              "timestamp": "0:10"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-9",
+          "rawText": "통깨",
+          "displayName": "Sesame seeds",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "통깨",
+              "timestamp": "0:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "통깨 뿌려서",
+              "timestamp": "0:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Sprinkling sesame seeds into the sauce bowl",
+              "timestamp": "0:11"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-10",
+          "rawText": "상추",
+          "displayName": "Lettuce",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "상추랑 파채도 곁들이구요",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "상추랑",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding lettuce to the bowl",
+              "timestamp": "0:13"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-11",
+          "rawText": "계란 노른자",
+          "displayName": "Egg yolk",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding an egg yolk to the bowl of bibimbap ingredients",
+              "timestamp": "0:16"
+            }
+          ]
+        }
+      ],
+      "retryCount": 0
+    },
+    "stage2": {
+      "status": "COMPLETED",
+      "pipeline": {
+        "type": "V3_RECIPE_STRUCTURING",
+        "version": 4,
+        "model": "models/gemini-2.5-flash",
+        "ingredientCatalogHash": "1fc6417fb810b7860921365efdab53097bf3fac1e02f2cc9e3f0530356952a8f"
+      },
+      "completedAt": "2026-10-18T07:36:09.241154+00:00",
+      "result": {
+        "recipe": {
+          "key": "yukhoe-bibimbap",
+          "name": "육회 비빔밥",
+          "status": "PUBLISHED",
+          "shortsReference": "https://youtu.be/viAll-4A-6w?si=H3j6knYeAHnPVrvD",
+          "ingredients": [
+            {
+              "key": "rice",
+              "variant": "rice-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-1",
+              "displayName": "Cooked rice",
+              "rawText": "밥",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "green-onion",
+              "variant": "shredded-green-onion",
+              "acceptedOwnedVariants": [
+                "green-onion-item"
+              ],
+              "sourceId": "ingredient-2",
+              "displayName": "Shredded green onion",
+              "rawText": "파채",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "yukhoe",
+              "variant": "yukhoe-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-3",
+              "displayName": "Yukhoe (Korean beef tartare)",
+              "rawText": "육회",
+              "amount": "100",
+              "unit": "g",
+              "optional": false
+            },
+            {
+              "key": "gochujang",
+              "variant": "gochujang-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-4",
+              "displayName": "Gochujang (Korean chili paste)",
+              "rawText": "고추장",
+              "amount": "1",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "soy-sauce",
+              "variant": "brewed-soy-sauce",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-5",
+              "displayName": "Brewed soy sauce",
+              "rawText": "양조간장",
+              "amount": "2",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "plum-extract",
+              "variant": "plum-extract-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-6",
+              "displayName": "Plum extract",
+              "rawText": "매실액",
+              "amount": "2",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "garlic",
+              "variant": "minced-garlic",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-7",
+              "displayName": "Garlic",
+              "rawText": "마늘",
+              "amount": "1",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "sesame-oil",
+              "variant": "sesame-oil-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-8",
+              "displayName": "Sesame oil",
+              "rawText": "참기름",
+              "amount": "1",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "sesame-seeds",
+              "variant": "sesame-seeds",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-9",
+              "displayName": "Sesame seeds",
+              "rawText": "통깨",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "lettuce",
+              "variant": "lettuce-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-10",
+              "displayName": "Lettuce",
+              "rawText": "상추",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "egg",
+              "variant": null,
+              "acceptedOwnedVariants": [
+                "egg-item"
+              ],
+              "sourceId": "ingredient-11",
+              "displayName": "Egg yolk",
+              "rawText": "계란 노른자",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            }
+          ],
+          "requirements": [
+            {
+              "options": [
+                {
+                  "ingredient": "rice",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "green-onion",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "yukhoe",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "gochujang",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "soy-sauce",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "plum-extract",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "garlic",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "sesame-oil",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "sesame-seeds",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "lettuce",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "egg",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            }
+          ],
+          "steps": [
+            "양념장을 만듭니다. 고추장 크게 1스푼, 양조간장 2스푼, 매실액 2스푼, 다진 마늘 1스푼, 참기름 1스푼, 통깨를 한 그릇에 넣고 잘 버무립니다.",
+            "그릇에 밥을 담고 그 위에 파채와 상추를 곁들입니다.",
+            "육회 100g을 올리고, 계란 노른자를 가운데에 놓습니다.",
+            "만들어둔 양념장을 2~3스푼 정도 넣고 기호에 맞게 비벼서 맛있게 드세요."
+          ]
+        },
+        "catalogAdditions": {
+          "ingredients": []
+        },
+        "mappingFailures": []
+      },
+      "structuralErrors": [],
+      "retryCount": 0,
+      "originalGeminiResult": {
+        "recipe": {
+          "key": "yukhoe-bibimbap",
+          "name": "육회 비빔밥",
+          "status": "DRAFT",
+          "shortsReference": "https://youtu.be/viAll-4A-6w?si=H3j6knYeAHnPVrvD",
+          "ingredients": [
+            {
+              "key": "cooked-rice",
+              "variant": "white-rice",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-1",
+              "displayName": "Cooked rice",
+              "rawText": "밥",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "green-onion",
+              "variant": "shredded-green-onion",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-2",
+              "displayName": "Shredded green onion",
+              "rawText": "파채",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "yukhoe",
+              "variant": "yukhoe-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-3",
+              "displayName": "Yukhoe (Korean beef tartare)",
+              "rawText": "육회",
+              "amount": "100",
+              "unit": "g",
+              "optional": false
+            },
+            {
+              "key": "gochujang",
+              "variant": "gochujang-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-4",
+              "displayName": "Gochujang (Korean chili paste)",
+              "rawText": "고추장",
+              "amount": "1",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "soy-sauce",
+              "variant": "brewed-soy-sauce",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-5",
+              "displayName": "Brewed soy sauce",
+              "rawText": "양조간장",
+              "amount": "2",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "plum-extract",
+              "variant": "plum-extract-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-6",
+              "displayName": "Plum extract",
+              "rawText": "매실액",
+              "amount": "2",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "garlic",
+              "variant": "minced-garlic",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-7",
+              "displayName": "Garlic",
+              "rawText": "마늘",
+              "amount": "1",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "sesame-oil",
+              "variant": "sesame-oil-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-8",
+              "displayName": "Sesame oil",
+              "rawText": "참기름",
+              "amount": "1",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "sesame-seeds",
+              "variant": "sesame-seeds",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-9",
+              "displayName": "Sesame seeds",
+              "rawText": "통깨",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "lettuce",
+              "variant": "lettuce-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-10",
+              "displayName": "Lettuce",
+              "rawText": "상추",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "egg",
+              "variant": "egg-yolk",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-11",
+              "displayName": "Egg yolk",
+              "rawText": "계란 노른자",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            }
+          ],
+          "requirements": [
+            {
+              "options": [
+                {
+                  "ingredient": "cooked-rice",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "green-onion",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "yukhoe",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "gochujang",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "soy-sauce",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "plum-extract",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "garlic",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "sesame-oil",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "sesame-seeds",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "lettuce",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "egg",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            }
+          ],
+          "steps": [
+            "양념장을 만듭니다. 고추장 크게 1스푼, 양조간장 2스푼, 매실액 2스푼, 다진 마늘 1스푼, 참기름 1스푼, 통깨를 한 그릇에 넣고 잘 버무립니다.",
+            "그릇에 밥을 담고 그 위에 파채와 상추를 곁들입니다.",
+            "육회 100g을 올리고, 계란 노른자를 가운데에 놓습니다.",
+            "만들어둔 양념장을 2~3스푼 정도 넣고 기호에 맞게 비벼서 맛있게 드세요."
+          ]
+        },
+        "catalogAdditions": {
+          "ingredients": [
+            {
+              "key": "cooked-rice",
+              "name": "밥",
+              "variants": [
+                {
+                  "key": "white-rice",
+                  "name": "흰쌀밥",
+                  "aliases": []
+                }
+              ],
+              "relations": []
+            },
+            {
+              "key": "green-onion",
+              "name": "파",
+              "variants": [
+                {
+                  "key": "shredded-green-onion",
+                  "name": "파채",
+                  "aliases": []
+                }
+              ],
+              "relations": []
+            },
+            {
+              "key": "egg",
+              "name": "계란",
+              "variants": [
+                {
+                  "key": "egg-item",
+                  "name": "계란",
+                  "aliases": [
+                    "달걀"
+                  ]
+                },
+                {
+                  "key": "egg-yolk",
+                  "name": "계란 노른자",
+                  "aliases": []
+                }
+              ],
+              "relations": []
+            }
+          ]
+        },
+        "mappingFailures": []
+      }
+    }
+  },
+  "sourceUrl": "https://youtu.be/viAll-4A-6w?si=H3j6knYeAHnPVrvD",
+  "pipelineVersion": 1,
+  "review": {
+    "status": "COMPLETED",
+    "outcome": "PUBLISHED",
+    "required": "source_video_and_semantic_review",
+    "datasetKey": "yukhoe-bibimbap",
+    "notes": [
+      "밥을 보유 가능한 구체 항목 밥(rice-item)으로 매핑함.",
+      "파채는 정확한 보유 항목으로 추가하고, 대파도 이 레시피에서 허용하는 추가 보유 후보로만 설정함. 전역 관계는 추가하지 않음.",
+      "원문 요구는 마늘이며 영상에서 다진 마늘을 쓰므로 이 레시피에 한해 다진 마늘을 accepted로 둠.",
+      "계란 노른자는 영상에서 통계란을 분리해 사용하므로 계란 보유 항목을 이 레시피의 accepted 보유 항목으로 둠.",
+      "사용자 승인으로 검토 완료된 recipe를 PUBLISHED로 게시함."
+    ]
+  }
+}

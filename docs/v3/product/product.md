@@ -56,6 +56,12 @@
 
 `진간장 → 간장 요구`, `대파 → 파 요구`처럼 레시피 요구 충족 여부를 나타내는 관계는 전역 규칙으로 두지 않고 각 레시피의 요구에 기록한다.
 
+### 새 보유 재료 항목은 검증 후 AI가 카탈로그에 추가할 수 있다
+
+현재 V3 Ingredient catalog에 없는 selectable owned item이나 새 Ingredient group이 필요하면 AI pipeline이 추가를 진행할 수 있다. 자동 추가는 재료 표시명, 사용자 보유 단위 판단, 그룹 분류가 제품의 보유 단위 기준과 일치하고 source/video 검증 및 deterministic validation을 통과한 경우에 한한다. 새 항목은 예시를 표면적으로 복사해 만들지 않고 해당 재료 자체를 기준으로 판단한다.
+
+새 selectable item/group이 추가된 레시피는 같은 검증 조건을 모두 통과하면 자동 `PUBLISHED`할 수 있다. 새 재료의 보유 단위나 그룹 분류를 합리적으로 확정할 수 없거나 검증 단계가 source를 확인하지 못한 경우에는 추측해 추가·게시하지 않고 `DRAFT` 및 검토 대상으로 남긴다.
+
 ### 기존 요구 기능과 새 요구 연결을 구분한다
 
 V2의 Recipe-declared Substitute와 Recipe-context Allowed Variant는 각각 기존 의미를 유지하며, V3의 레시피별 보유 항목 충족 판단과 혼합하지 않는다. 대체재가 이미 지원된다는 사실을 새 문제로 취급하지 않는다.
@@ -69,7 +75,6 @@ V2의 Recipe-declared Substitute와 Recipe-context Allowed Variant는 각각 기
 
 ## 열린 결정
 
-- 그룹별 등록 가능한 구체 항목의 전체 목록과 목록 확장·관리 기준.
 - 요구 충족 판단에서 검토 대상으로 보내는 구체 기준과 근거 기록 방식. 파이프라인과 에이전트 역할 논의에서 정한다.
 
-위 항목은 카탈로그 콘텐츠 및 운영 판단의 열린 결정이다. 확정된 V3 domain/data/API 표현은 각 상세 규격 문서를 따른다.
+위 항목은 검토 workflow 및 운영 기준의 열린 결정이다. 확정된 V3 domain/data/API 표현은 각 상세 규격 문서를 따른다.

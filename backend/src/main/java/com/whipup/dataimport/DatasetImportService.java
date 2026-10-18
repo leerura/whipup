@@ -77,9 +77,9 @@ public class DatasetImportService {
             for (Dataset.VariantData variantData : data.variants()) {
                 IngredientVariant variant = variantByKey.get(variantData.key());
                 if (variant == null) {
-                    variant = IngredientVariant.create(variantData.key(), ingredient, variantData.name(), variantData.base());
+                    variant = IngredientVariant.create(variantData.key(), ingredient, variantData.name());
                     variantByKey.put(variantData.key(), variant);
-                } else variant.update(ingredient, variantData.name(), variantData.base());
+                } else variant.update(ingredient, variantData.name());
             }
         }
         variants.saveAllAndFlush(variantByKey.values());
@@ -104,12 +104,20 @@ public class DatasetImportService {
             Recipe recipe = byKey.get(data.key());
             RecipeStatus status = RecipeStatus.valueOf(data.status());
             if (recipe == null) recipe = Recipe.create(data.key(), data.name(), status, data.shortsReference());
-            else recipe.update(data.name(), status, data.shortsReference());
+            else {
+                recipe.update(data.name(), status, data.shortsReference());
+                recipe.replaceRequirements(List.of());
+                recipes.flush();
+                recipe.replaceIngredients(List.of());
+                recipe.replaceSteps(List.of());
+                recipes.flush();
+            }
             Map<String, RecipeIngredient> local = new HashMap<>();
             List<RecipeIngredient> items = new ArrayList<>();
             for (int i = 0; i < data.ingredients().size(); i++) {
                 Dataset.RecipeIngredientData item = data.ingredients().get(i);
-                RecipeIngredient entity = RecipeIngredient.create(variantsByKey.get(item.variant()), item.displayName(),
+                RecipeIngredient entity = RecipeIngredient.create(variantsByKey.get(item.variant()),
+                    item.acceptedOwnedVariants().stream().map(variantsByKey::get).toList(), item.displayName(),
                     item.rawText(), item.amount(), item.unit(), i + 1, item.optional());
                 items.add(entity); local.put(item.key(), entity);
             }

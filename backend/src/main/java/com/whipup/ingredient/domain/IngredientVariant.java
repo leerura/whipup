@@ -36,30 +36,24 @@ public class IngredientVariant {
     @Column(nullable = false, length = 255)
     private String name;
 
-    @Column(name = "is_base", nullable = false)
-    private boolean base;
-
     protected IngredientVariant() {
     }
 
     public static IngredientVariant create(
         String key,
         Ingredient ingredient,
-        String name,
-        boolean base
+        String name
     ) {
         IngredientVariant variant = new IngredientVariant();
         variant.key = key;
         variant.ingredient = ingredient;
         variant.name = name;
-        variant.base = base;
         return variant;
     }
 
-    public void update(Ingredient ingredient, String name, boolean base) {
+    public void update(Ingredient ingredient, String name) {
         this.ingredient = ingredient;
         this.name = name;
-        this.base = base;
     }
 
     public Long getId() {
@@ -78,7 +72,4 @@ public class IngredientVariant {
         return name;
     }
 
-    public boolean isBase() {
-        return base;
-    }
 }

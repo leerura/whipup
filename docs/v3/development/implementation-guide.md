@@ -27,6 +27,18 @@
 - 현재 실제 DB명, ORM mapping, migration framework, importer transaction 전략을 확인하고 V3 논리 모델에 맞춘다. 논리 테이블명과 구현 명칭을 억지로 일치시키려 별도 architecture를 만들지 않는다.
 - 새 catalog/dataset을 기준으로 importer validation과 API를 연결한다. importer는 잘못된 key/reference를 조용히 무시하거나 문자열 유사도로 추측하지 않는다.
 
+### 로컬 개발 DB 초기화
+
+V3 개발 전환은 기존 데이터를 변환하지 않고 로컬 Compose PostgreSQL 볼륨 전체를 제거해 새 DB와 V3 schema를 만든다. 계정, 인증 정보, 보유 재료, 레시피를 포함한 해당 Compose 프로젝트의 DB 데이터가 모두 사라진다. 다른 프로젝트의 볼륨과 저장소의 dataset 파일은 삭제하지 않는다.
+
+저장소 루트에서 아래 명령을 실행하면 확인 절차를 통과한 경우에만 현재 저장소의 Compose 프로젝트를 내리고 그 프로젝트 볼륨을 제거한 뒤, backend와 PostgreSQL을 다시 빌드/시작한다. Flyway가 처음부터 migration을 적용한다.
+
+```sh
+ALLOW_WHIPUP_LOCAL_DB_RESET=YES ./scripts/reset-v3-local-db.sh
+```
+
+이 스크립트는 의도적으로 dataset import를 실행하지 않는다. V2 business dataset은 제거했으며 현재 `data/`에 V3 catalog와 recipe fixture가 아직 없다. V3 catalog와 recipe dataset을 준비하고 validator를 통과시킨 뒤 `make import-data`로 넣는다. 초기화 후 dataset을 넣기 전에는 앱이 사용자/재료/레시피 데이터 없이 실행된다.
+
 ## 검증 시나리오
 
 구현 검증은 기존 test framework와 repository convention에 맞춰 아래 행동을 확인한다.
@@ -53,6 +65,6 @@
 - 추천 및 detail endpoint에서 DRAFT 제외, count/sort, response shape가 유지되는지 확인한다.
 - 관련 테스트 및 repository 필수 검증을 수행하고 최종 diff에서 unrelated change를 제거한다.
 
-## 범위 밖
+## 별도 작업 명세
 
-Gemini extraction/validation workflow, sub-agent 분업, 무료 API quota 대응, 자동 batch scheduling, 영상 재생·증거 확인 여부, review queue UI는 별도 pipeline 논의에서 결정한다. 이 문서로 V2 파이프라인 절차를 승인하거나 새 파이프라인을 설계하지 않는다.
+Gemini extraction, agent video verification, quota retry, Compose 실행과 checkpoint 요구사항은 [V3 recipe pipeline 명세](recipe-pipeline.md)를 따른다. 이 문서와 pipeline 명세에 없는 V2 절차를 구현 요구로 가져오지 않는다.

@@ -63,26 +63,15 @@ public class DatasetLoader {
             }
             List<Dataset.VariantData> variants = new ArrayList<>();
             Set<String> ownVariantKeys = new HashSet<>();
-            int baseCount = 0;
             for (int variantIndex = 0; variantIndex < ingredient.variants().size(); variantIndex++) {
                 VariantJson variant = ingredient.variants().get(variantIndex);
                 String variantPath = basePath + ".variants[%d]".formatted(variantIndex);
                 String variantKey = requiredKey(file, variantPath + ".key", variant.key(), errors);
                 String variantName = requiredText(file, variantPath + ".name", variant.name(), errors);
-                if (variant.base() == null) {
-                    error(errors, "INVALID_SCHEMA", file, variantPath + ".base", "must be boolean");
-                    continue;
-                }
                 duplicate(variantKeys, variantKey, errors, file, variantPath + ".key", "variant");
                 ownVariantKeys.add(variantKey);
-                if (variant.base()) {
-                    baseCount++;
-                }
                 List<String> aliases = variant.aliases() == null ? List.of() : variant.aliases();
-                variants.add(new Dataset.VariantData(variantKey, variantName, variant.base(), aliases));
-            }
-            if (baseCount != 1) {
-                error(errors, "INVALID_SCHEMA", file, basePath + ".variants", "must contain exactly one base variant");
+                variants.add(new Dataset.VariantData(variantKey, variantName, aliases));
             }
 
             List<Dataset.RelationData> relations = new ArrayList<>();
@@ -189,17 +178,35 @@ public class DatasetLoader {
             String key = requiredKey(file, path + ".key", json.key(), errors);
             String variant = optionalText(json.variant());
             duplicate(keys, key, errors, file, path + ".key", "recipe ingredient");
-            if ("PUBLISHED".equals(status) && variant == null) {
-                error(errors, "INVALID_PUBLISHED_RECIPE", file, path + ".variant", "is required for PUBLISHED recipes");
-            }
             if (variant != null && !master.ingredientKeyByVariant().containsKey(variant)) {
                 error(errors, "UNKNOWN_REFERENCE", file, path + ".variant", "unknown variant '%s'".formatted(variant));
+            }
+            List<String> accepted = json.acceptedOwnedVariants() == null ? List.of() : json.acceptedOwnedVariants();
+            Set<String> acceptedKeys = new HashSet<>();
+            for (int candidateIndex = 0; candidateIndex < accepted.size(); candidateIndex++) {
+                String candidate = optionalText(accepted.get(candidateIndex));
+                String candidatePath = path + ".acceptedOwnedVariants[%d]".formatted(candidateIndex);
+                if (candidate == null) {
+                    error(errors, "INVALID_SCHEMA", file, candidatePath, "must not be blank");
+                    continue;
+                }
+                duplicate(acceptedKeys, candidate, errors, file, candidatePath, "accepted owned variant");
+                if (!master.ingredientKeyByVariant().containsKey(candidate)) {
+                    error(errors, "UNKNOWN_REFERENCE", file, candidatePath, "unknown variant '%s'".formatted(candidate));
+                }
+                if (candidate.equals(variant)) {
+                    error(errors, "INVALID_PUBLISHED_RECIPE", file, candidatePath, "must differ from exact variant");
+                }
+            }
+            boolean optional = Boolean.TRUE.equals(json.optional());
+            if ("PUBLISHED".equals(status) && !optional && variant == null && acceptedKeys.isEmpty()) {
+                error(errors, "INVALID_PUBLISHED_RECIPE", file, path, "required ingredient needs variant or acceptedOwnedVariants");
             }
             if (json.optional() == null) {
                 error(errors, "INVALID_SCHEMA", file, path + ".optional", "must be boolean");
             }
             result.add(new Dataset.RecipeIngredientData(
-                key, variant, requiredText(file, path + ".displayName", json.displayName(), errors),
+                key, variant, accepted, requiredText(file, path + ".displayName", json.displayName(), errors),
                 requiredText(file, path + ".rawText", json.rawText(), errors), optionalText(json.amount()),
                 optionalText(json.unit()), Boolean.TRUE.equals(json.optional())
             ));
@@ -252,7 +259,8 @@ public class DatasetLoader {
                 for (int variantIndex = 0; variantIndex < allowedVariants.size(); variantIndex++) {
                     String allowed = allowedVariants.get(variantIndex);
                     String allowedPath = optionPath + ".allowedVariants[%d]".formatted(variantIndex);
-                    String originalIngredient = original == null ? null : master.ingredientKeyByVariant().get(original.variant());
+                    String originalIngredient = original == null || original.variant() == null
+                        ? null : master.ingredientKeyByVariant().get(original.variant());
                     String allowedIngredient = master.ingredientKeyByVariant().get(allowed);
                     if (allowedIngredient == null) {
                         error(errors, "UNKNOWN_REFERENCE", file, allowedPath, "unknown variant '%s'".formatted(allowed));
@@ -367,7 +375,7 @@ public class DatasetLoader {
     private record IngredientJson(String key, String name, List<VariantJson> variants, List<RelationJson> relations) { }
 
     @JsonIgnoreProperties(ignoreUnknown = false)
-    private record VariantJson(String key, String name, Boolean base, List<String> aliases) { }
+    private record VariantJson(String key, String name, List<String> aliases) { }
 
     @JsonIgnoreProperties(ignoreUnknown = false)
     private record RelationJson(String source, String target) { }
@@ -380,7 +388,8 @@ public class DatasetLoader {
 
     @JsonIgnoreProperties(ignoreUnknown = false)
     private record RecipeIngredientJson(
-        String key, String variant, String displayName, String rawText, String amount, String unit, Boolean optional
+        String key, String variant, List<String> acceptedOwnedVariants,
+        String displayName, String rawText, String amount, String unit, Boolean optional
     ) { }
 
     @JsonIgnoreProperties(ignoreUnknown = false)
