@@ -18,7 +18,13 @@
     "MRbACNyWF-o"
   ],
   "excluded": {
-    "MRbACNyWF-o": "소고기는 카탈로그와 레시피에서 제외하기로 한 사용자 결정에 따라, 소고기 덮밥은 최종 데이터셋에 넣지 않음."
+    "MRbACNyWF-o": "소고기는 카탈로그와 레시피에서 제외하기로 한 사용자 결정에 따라, 소고기 덮밥은 최종 데이터셋에 넣지 않음.",
+    "9XhL1i6gxzw": "사용자가 훈제오리 덮밥을 AI가 만든 듯한 레시피로 판단해 삭제 요청함. 최종 데이터셋에 추가하지 않음.",
+    "O4to4O0gJ_g": "사용자가 건강한 한 끼 레시피를 데이터셋에서 삭제하도록 요청함. 최종 데이터셋에 추가하지 않음.",
+    "TYmMQzegf7c": "사용자 결정에 따라 칠리새우 덮밥을 삭제함. 레몬주스 카탈로그 항목도 더 이상 쓰이지 않아 제거.",
+    "Ahg8ibo2zKE": "사용자 결정에 따라 스테이크 소스가 필요한 간장 닭고기 덮밥을 삭제함.",
+    "Ueclkp33peA": "사용자 결정에 따라 빵을 요구하는 달걀 감바스를 삭제함.",
+    "fqb5fsZRHCY": "사용자 결정에 따라 빵을 요구하는 계란샌드위치를 삭제함."
   },
   "decisions": {
     "M0YJddtAWUE": {
@@ -38,12 +44,6 @@
       "name": "콩나물국",
       "status": "DRAFT",
       "reason": "육수 종류가 추출에 특정되지 않아 필수 매핑을 확정하지 않음."
-    },
-    "O4to4O0gJ_g": {
-      "recipeKey": "potato-onion-egg-skillet-o4to",
-      "name": "감자 양파 달걀 팬구이",
-      "status": "PUBLISHED",
-      "reason": "필수 source item을 기존 catalog 또는 recipe-local acceptedOwnedVariants에 매핑했고 추출 사실을 보존함."
     },
     "OTO10oLhO7g": {
       "recipeKey": "bacon-kimchi-fried-rice-oto10",
@@ -78,12 +78,6 @@
     "Rkk9Mku4g5g": {
       "recipeKey": "beef-brisket-rice-bowl-rkk9",
       "name": "차돌박이 덮밥",
-      "status": "PUBLISHED",
-      "reason": "필수 source item을 기존 catalog 또는 recipe-local acceptedOwnedVariants에 매핑했고 추출 사실을 보존함."
-    },
-    "TYmMQzegf7c": {
-      "recipeKey": "chili-shrimp-rice-bowl-tym",
-      "name": "칠리새우 덮밥",
       "status": "PUBLISHED",
       "reason": "필수 source item을 기존 catalog 또는 recipe-local acceptedOwnedVariants에 매핑했고 추출 사실을 보존함."
     },
@@ -126,11 +120,6 @@
         "key": "honey",
         "variant": "honey-item",
         "name": "꿀"
-      },
-      {
-        "key": "lemon-juice",
-        "variant": "lemon-juice-item",
-        "name": "레몬즙"
       },
       {
         "key": "chili-pepper",

@@ -21,7 +21,8 @@
   "excluded": {
     "4UG7r_xX9Ug": "에어프라이어 180도 8분 조리가 필수인 레시피로, 특수 조리기구 없이 만들 수 있는 자취 요리 범위에 맞지 않아 데이터셋에서 제외.",
     "5qJxbu81gkc": "FAILED after server disconnect; incomplete result.",
-    "BlFh-1-NrQA": "WAITING_RETRY due to quota."
+    "BlFh-1-NrQA": "WAITING_RETRY due to quota.",
+    "Ahg8ibo2zKE": "사용자 결정에 따라 스테이크 소스가 필요한 간장 닭고기 덮밥을 삭제함."
   },
   "decisions": {
     "3WdLJTFfwyU": {
@@ -76,10 +77,6 @@
       "status": "PUBLISHED",
       "reason": "All required ingredients mapped under V3 rules; quantities left as extracted, including null where absent."
     },
-    "Ahg8ibo2zKE": {
-      "status": "PUBLISHED",
-      "reason": "All required ingredients mapped under V3 rules; quantities left as extracted, including null where absent."
-    },
     "AvWjziPWjRE": {
       "status": "DRAFT",
       "reason": "여러 반찬과 밥을 포함한 한상 추출이며, 조리 전 쌀과 흑미가 카탈로그의 완성된 밥 보유 단위와 다르고 Gemini도 쌀 비율/찌개 액체 종류를 unresolved로 남겨 미매핑 유지."
@@ -99,16 +96,8 @@
       "item": "starch-powder-item"
     },
     {
-      "group": "steak-sauce",
-      "item": "steak-sauce-item"
-    },
-    {
       "group": "sausage",
       "item": "chicken-breast-sausage-item"
-    },
-    {
-      "group": "mayonnaise",
-      "item": "low-calorie-mayonnaise-item"
     }
   ],
   "dbBefore": {
@@ -152,19 +141,9 @@
         "name": "전분가루"
       },
       {
-        "key": "steak-sauce",
-        "variant": "steak-sauce-item",
-        "name": "스테이크 소스"
-      },
-      {
         "key": "sausage",
         "variant": "chicken-breast-sausage-item",
         "name": "닭가슴살 소시지"
-      },
-      {
-        "key": "mayonnaise",
-        "variant": "low-calorie-mayonnaise-item",
-        "name": "저칼로리 마요네즈"
       }
     ]
   }

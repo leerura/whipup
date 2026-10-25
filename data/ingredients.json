@@ -86,12 +86,27 @@
       "relations": []
     },
     {
-      "key": "cheddar-cheese",
-      "name": "체다 치즈",
+      "key": "cheese",
+      "name": "치즈",
       "variants": [
         {
           "key": "cheddar-cheese-item",
           "name": "체다 치즈",
+          "aliases": []
+        },
+        {
+          "key": "mozzarella-cheese-item",
+          "name": "모차렐라 치즈",
+          "aliases": []
+        },
+        {
+          "key": "sliced-cheese-item",
+          "name": "슬라이스 치즈",
+          "aliases": []
+        },
+        {
+          "key": "pizza-cheese-item",
+          "name": "피자치즈",
           "aliases": []
         }
       ],
@@ -628,11 +643,6 @@
           "key": "mayonnaise-item",
           "name": "마요네즈",
           "aliases": []
-        },
-        {
-          "key": "low-calorie-mayonnaise-item",
-          "name": "저칼로리 마요네즈",
-          "aliases": []
         }
       ],
       "relations": []
@@ -842,18 +852,6 @@
       "relations": []
     },
     {
-      "key": "mozzarella-cheese",
-      "name": "모차렐라 치즈",
-      "variants": [
-        {
-          "key": "mozzarella-cheese-item",
-          "name": "모차렐라 치즈",
-          "aliases": []
-        }
-      ],
-      "relations": []
-    },
-    {
       "key": "pork-jowl",
       "name": "항정살",
       "variants": [
@@ -909,6 +907,11 @@
           "key": "dashima-stock-cube-item",
           "name": "코인 육수",
           "aliases": []
+        },
+        {
+          "key": "beef-bone-stock-cube-item",
+          "name": "사골 코인 육수",
+          "aliases": []
         }
       ],
       "relations": []
@@ -920,18 +923,6 @@
         {
           "key": "cooking-wine-item",
           "name": "맛술",
-          "aliases": []
-        }
-      ],
-      "relations": []
-    },
-    {
-      "key": "bread",
-      "name": "식빵",
-      "variants": [
-        {
-          "key": "bread-item",
-          "name": "식빵",
           "aliases": []
         }
       ],
@@ -1087,30 +1078,6 @@
       "relations": []
     },
     {
-      "key": "sliced-cheese",
-      "name": "슬라이스 치즈",
-      "variants": [
-        {
-          "key": "sliced-cheese-item",
-          "name": "슬라이스 치즈",
-          "aliases": []
-        }
-      ],
-      "relations": []
-    },
-    {
-      "key": "pizza-cheese",
-      "name": "피자치즈",
-      "variants": [
-        {
-          "key": "pizza-cheese-item",
-          "name": "피자치즈",
-          "aliases": []
-        }
-      ],
-      "relations": []
-    },
-    {
       "key": "parsley-powder",
       "name": "파슬리 가루",
       "variants": [
@@ -1128,7 +1095,7 @@
       "variants": [
         {
           "key": "minced-ginger-item",
-          "name": "다진 생강",
+          "name": "생강",
           "aliases": []
         }
       ],
@@ -1147,36 +1114,12 @@
       "relations": []
     },
     {
-      "key": "steak-sauce",
-      "name": "스테이크 소스",
-      "variants": [
-        {
-          "key": "steak-sauce-item",
-          "name": "스테이크 소스",
-          "aliases": []
-        }
-      ],
-      "relations": []
-    },
-    {
       "key": "anchovy-stock",
       "name": "멸치육수",
       "variants": [
         {
           "key": "anchovy-stock-item",
           "name": "멸치육수",
-          "aliases": []
-        }
-      ],
-      "relations": []
-    },
-    {
-      "key": "beef-bone-stock-cube",
-      "name": "사골 코인 육수",
-      "variants": [
-        {
-          "key": "beef-bone-stock-cube-item",
-          "name": "사골 코인 육수",
           "aliases": []
         }
       ],
@@ -1231,12 +1174,33 @@
       "relations": []
     },
     {
-      "key": "lemon-juice",
-      "name": "레몬즙",
+      "key": "curry",
+      "name": "카레",
       "variants": [
         {
-          "key": "lemon-juice-item",
-          "name": "레몬즙",
+          "key": "curry-powder-item",
+          "name": "카레가루",
+          "aliases": [
+            "카레 가루"
+          ]
+        },
+        {
+          "key": "curry-block-item",
+          "name": "고형카레",
+          "aliases": [
+            "고형 카레"
+          ]
+        }
+      ],
+      "relations": []
+    },
+    {
+      "key": "sweet-potato",
+      "name": "고구마",
+      "variants": [
+        {
+          "key": "sweet-potato-item",
+          "name": "고구마",
           "aliases": []
         }
       ],

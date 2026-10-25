@@ -20,12 +20,10 @@
     "F2RYGg9U_RM",
     "6EFzDoOWkn4",
     "W333fpSFxL0",
-    "fqb5fsZRHCY",
     "X8oI4ULOELE",
     "CDc9arjUXzg",
     "8ST0dkF-TxY",
     "PKypzoDwrR4",
-    "Ueclkp33peA",
     "OQUxlEUUofw",
     "DhFHUZ1ZiwU",
     "sPeEcFdaD0M",
@@ -90,15 +88,6 @@
         "name": "마요네즈"
       },
       "reason": "원본 자막에 마요네즈 1큰술이 명시; catalog에 없음. shared catalog 수정은 하지 않음."
-    },
-    {
-      "key": "bread",
-      "name": "식빵",
-      "reason": "계란 샌드위치 영상에서 명시/사용 확인; 현재 catalog에 없음",
-      "selectableItem": {
-        "key": "bread-item",
-        "name": "식빵"
-      }
     },
     {
       "key": "tofu",
@@ -839,86 +828,6 @@
         "팬에 기름을 두른다.",
         "대파를 넣고 볶는다.",
         "계란 2개를 넣고 익힌다."
-      ]
-    },
-    {
-      "key": "egg-sandwich-fqb5fszrhcy",
-      "name": "계란 샌드위치",
-      "status": "DRAFT",
-      "shortsReference": "https://www.youtube.com/shorts/fqb5fsZRHCY",
-      "ingredients": [
-        {
-          "key": "egg",
-          "variant": "egg-item",
-          "acceptedOwnedVariants": [],
-          "displayName": "달걀",
-          "rawText": "삶은 달걀 (영상 조리 장면)",
-          "amount": null,
-          "unit": null,
-          "optional": false
-        },
-        {
-          "key": "allulose",
-          "variant": "allulose-item",
-          "acceptedOwnedVariants": [],
-          "displayName": "알룰로스",
-          "rawText": "알룰로스 0.5T",
-          "amount": "0.5",
-          "unit": "T",
-          "optional": false
-        },
-        {
-          "key": "bread",
-          "variant": null,
-          "acceptedOwnedVariants": [],
-          "displayName": "식빵",
-          "rawText": "식빵",
-          "amount": null,
-          "unit": null,
-          "optional": false
-        }
-      ],
-      "requirements": [
-        {
-          "options": [
-            {
-              "ingredient": "egg",
-              "substitutes": [],
-              "allowedVariants": []
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "ingredient": "allulose",
-              "substitutes": [],
-              "allowedVariants": []
-            }
-          ]
-        },
-        {
-          "options": [
-            {
-              "ingredient": "bread",
-              "substitutes": [],
-              "allowedVariants": []
-            }
-          ]
-        }
-      ],
-      "steps": [
-        "달걀을 삶는다.",
-        "삶은 달걀을 찬물에 담가 껍질을 벗긴다.",
-        "노른자를 분리해 으깨고 알룰로스 0.5T를 넣는다.",
-        "흰자는 잘게 썰어 노른자와 함께 부드럽게 섞는다.",
-        "식빵에 달걀 속을 넣어 샌드위치로 만든다."
-      ],
-      "sourceEvidence": [
-        "영상 자막: 먼저 계란을 / 삶아주세요",
-        "화면에 찬물에 담가 껍질 벗기는 장면",
-        "화면 자막: 흰자와 노른자 분리, 으깬 노른자에 알룰로스 0.5T",
-        "흰자를 잘게 썰어 노른자와 부드럽게 섞고 식빵에 채워 완성"
       ]
     },
     {
@@ -4403,75 +4312,6 @@
       ]
     },
     {
-      "key": "tomato-egg-gambas-ueclkp33pea",
-      "name": "토마토 달걀 감바스",
-      "status": "DRAFT",
-      "shortsReference": "https://www.youtube.com/shorts/Ueclkp33peA",
-      "ingredients": [
-        {
-          "key": "olive-oil",
-          "variant": "olive-oil-item",
-          "acceptedOwnedVariants": [],
-          "displayName": "올리브유",
-          "rawText": "팬에 올리브오일을 붓는다",
-          "amount": null,
-          "unit": null,
-          "optional": false
-        },
-        {
-          "key": "garlic",
-          "variant": "minced-garlic",
-          "acceptedOwnedVariants": [],
-          "displayName": "다진 마늘",
-          "rawText": "다진 마늘을 넣는다",
-          "amount": null,
-          "unit": null,
-          "optional": false
-        },
-        {
-          "key": "cherry-tomato",
-          "variant": "cherry-tomato-item",
-          "acceptedOwnedVariants": [],
-          "displayName": "방울토마토",
-          "rawText": "방울토마토를 반으로 잘라 넣는다",
-          "amount": null,
-          "unit": null,
-          "optional": false
-        },
-        {
-          "key": "egg",
-          "variant": "egg-item",
-          "acceptedOwnedVariants": [],
-          "displayName": "계란",
-          "rawText": "달걀을 팬에 깨 넣는다",
-          "amount": null,
-          "unit": null,
-          "optional": false
-        }
-      ],
-      "requirements": [
-        {
-          "options": [
-            {
-              "ingredient": "egg",
-              "substitutes": [],
-              "allowedVariants": [
-                "egg-item"
-              ]
-            }
-          ]
-        }
-      ],
-      "steps": [
-        "팬에 올리브오일과 다진 마늘을 넣어 익힌다.",
-        "방울토마토를 반으로 잘라 넣고 익힌다.",
-        "달걀을 팬에 깨 넣어 익힌다."
-      ],
-      "reviewNotes": [
-        "영상에는 새우 없이 달걀을 넣는 방식이 보인다. 양은 영상에 제시되지 않아 미기재. 방울토마토 catalog addition 필요."
-      ]
-    },
-    {
       "key": "gochujang-pork-belly-rice-bowl-gayjyssyr8c",
       "name": "고추장 대패삼겹 덮밥",
       "status": "DRAFT",
@@ -5766,95 +5606,6 @@
       "reasonForExclusion": "영상에서 작은 계란빵/디저트 완성물을 확인. 간식·디저트."
     },
     {
-      "videoId": "fqb5fsZRHCY",
-      "url": "https://www.youtube.com/shorts/fqb5fsZRHCY",
-      "actualVideoTitle": "든든한 아침메뉴 계란샌드위치 정착 레시피 #에그마요샌드위치 #샌드위치레시피 #계란요리 #간식 #레시피 #토스트 #계란샌드위치 #간단요리 #아침메뉴",
-      "reviewStatus": "reviewed",
-      "classification": "main dish",
-      "evidenceSummary": "실제 영상에서 달걀 삶기(타이머 5분 구간), 찬물에 담가 껍질 벗기기, 흰자/노른자 분리, 노른자에 알룰로스 0.5T, 흰자 다져 섞기, 식빵에 채워 샌드위치 완성까지 확인. 아침 한 끼용 샌드위치로 분류. 다른 속재료/수량은 추정하지 않아 DRAFT.",
-      "recipeCandidate": {
-        "key": "egg-sandwich-fqb5fszrhcy",
-        "name": "계란 샌드위치",
-        "status": "DRAFT",
-        "shortsReference": "https://www.youtube.com/shorts/fqb5fsZRHCY",
-        "ingredients": [
-          {
-            "key": "egg",
-            "variant": "egg-item",
-            "acceptedOwnedVariants": [],
-            "displayName": "달걀",
-            "rawText": "삶은 달걀 (영상 조리 장면)",
-            "amount": null,
-            "unit": null,
-            "optional": false
-          },
-          {
-            "key": "allulose",
-            "variant": "allulose-item",
-            "acceptedOwnedVariants": [],
-            "displayName": "알룰로스",
-            "rawText": "알룰로스 0.5T",
-            "amount": "0.5",
-            "unit": "T",
-            "optional": false
-          },
-          {
-            "key": "bread",
-            "variant": null,
-            "acceptedOwnedVariants": [],
-            "displayName": "식빵",
-            "rawText": "식빵",
-            "amount": null,
-            "unit": null,
-            "optional": false
-          }
-        ],
-        "requirements": [
-          {
-            "options": [
-              {
-                "ingredient": "egg",
-                "substitutes": [],
-                "allowedVariants": []
-              }
-            ]
-          },
-          {
-            "options": [
-              {
-                "ingredient": "allulose",
-                "substitutes": [],
-                "allowedVariants": []
-              }
-            ]
-          },
-          {
-            "options": [
-              {
-                "ingredient": "bread",
-                "substitutes": [],
-                "allowedVariants": []
-              }
-            ]
-          }
-        ],
-        "steps": [
-          "달걀을 삶는다.",
-          "삶은 달걀을 찬물에 담가 껍질을 벗긴다.",
-          "노른자를 분리해 으깨고 알룰로스 0.5T를 넣는다.",
-          "흰자는 잘게 썰어 노른자와 함께 부드럽게 섞는다.",
-          "식빵에 달걀 속을 넣어 샌드위치로 만든다."
-        ],
-        "sourceEvidence": [
-          "영상 자막: 먼저 계란을 / 삶아주세요",
-          "화면에 찬물에 담가 껍질 벗기는 장면",
-          "화면 자막: 흰자와 노른자 분리, 으깬 노른자에 알룰로스 0.5T",
-          "흰자를 잘게 썰어 노른자와 부드럽게 섞고 식빵에 채워 완성"
-        ]
-      },
-      "reasonForExclusion": null
-    },
-    {
       "videoId": "X8oI4ULOELE",
       "url": "https://www.youtube.com/shorts/X8oI4ULOELE",
       "actualVideoTitle": "감자와 계란 있죠? #아침메뉴 #간식",
@@ -5963,16 +5714,6 @@
           "계란 2개를 넣고 익힌다."
         ]
       },
-      "reasonForExclusion": null
-    },
-    {
-      "videoId": "Ueclkp33peA",
-      "url": "https://www.youtube.com/shorts/Ueclkp33peA",
-      "actualVideoTitle": "달걀으로 충분한 고급 브런치 #달걀감바스 #브런치레시피 #혼밥레시피 #방울토마토요리 #홈브런치 #감바스레시피 #건강한한끼 #계란요리 #에그레시피 #eggrecipe",
-      "reviewStatus": "reviewed",
-      "classification": "main dish",
-      "evidenceSummary": "실제 영상은 빵에 올리브유를 뿌리는 브런치 장면부터 확인됨. egg gambas 한 끼 요리로 보이나 재료/조리 단계와 양을 확인하지 못함.",
-      "recipeCandidate": null,
       "reasonForExclusion": null
     },
     {
