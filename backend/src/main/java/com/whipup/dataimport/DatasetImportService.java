@@ -99,7 +99,8 @@ public class DatasetImportService {
         List<Recipe> existing = recipes.findAll();
         Map<String, Recipe> byKey = existing.stream().collect(Collectors.toMap(Recipe::getDatasetKey, Function.identity()));
         Set<String> targetKeys = dataset.recipes().stream().map(Dataset.RecipeData::key).collect(Collectors.toSet());
-        recipes.deleteAll(existing.stream().filter(recipe -> !targetKeys.contains(recipe.getDatasetKey())).toList());
+        Set<String> removedKeys = existing.stream().map(Recipe::getDatasetKey)
+            .filter(key -> !targetKeys.contains(key)).collect(Collectors.toSet());
         for (Dataset.RecipeData data : dataset.recipes()) {
             Recipe recipe = byKey.get(data.key());
             RecipeStatus status = RecipeStatus.valueOf(data.status());
@@ -145,6 +146,7 @@ public class DatasetImportService {
             recipes.save(recipe);
         }
         recipes.flush();
+        if (!removedKeys.isEmpty()) recipes.deleteAllByDatasetKeyIn(removedKeys);
     }
 
     public record ImportResult(int ingredientCount, int variantCount, int recipeCount) { }
