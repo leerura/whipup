@@ -39,6 +39,22 @@ ALLOW_WHIPUP_LOCAL_DB_RESET=YES ./scripts/reset-v3-local-db.sh
 
 이 스크립트는 의도적으로 dataset import를 실행하지 않는다. V2 business dataset은 제거했으며 현재 `data/`에 V3 catalog와 recipe fixture가 아직 없다. V3 catalog와 recipe dataset을 준비하고 validator를 통과시킨 뒤 `make import-data`로 넣는다. 초기화 후 dataset을 넣기 전에는 앱이 사용자/재료/레시피 데이터 없이 실행된다.
 
+### 외부 API 접근
+
+- Windows 개발 서버의 backend(`localhost:8080`)를 Tailscale Funnel로 공개 HTTPS 주소에 연결한다. 공유기 포트 포워딩이나 공인 IP 직접 접근에 의존하지 않는다.
+- Windows에서는 Tailscale을 unattended mode로 연결하고 Funnel을 background mode로 실행해 재부팅 후에도 설정이 복구되게 한다. 노트북이나 backend가 꺼져 있으면 API도 사용할 수 없다.
+- iOS 실기기 debug 빌드는 기존 로컬 설정 주소를 사용한다. iOS 실기기 release 빌드는 `WHIPUP_API_BASE_URL` 빌드 값으로 받은 HTTPS 주소만 사용하며, 값이 없거나 HTTP이면 시작 오류로 드러낸다. 시뮬레이터의 로컬 개발 주소는 유지한다.
+- 공개 URL은 앱 빌드에만 전달한다. Tailscale 계정 인증 정보나 서버 비밀값을 저장소에 넣지 않는다.
+- 완료 확인은 Funnel의 HTTPS 인증서와 외부 요청의 backend 응답, release 앱의 API 접속으로 한다.
+
+현재 Windows 서버의 Funnel 주소는 `https://lee.taild32a96.ts.net`이다. iPhone release 실행과 App Store용 빌드에는 같은 빌드 값을 전달한다.
+
+```sh
+cd app
+flutter run --release -d <device-id> --dart-define=WHIPUP_API_BASE_URL=https://lee.taild32a96.ts.net
+flutter build ipa --dart-define=WHIPUP_API_BASE_URL=https://lee.taild32a96.ts.net
+```
+
 ## 검증 시나리오
 
 구현 검증은 기존 test framework와 repository convention에 맞춰 아래 행동을 확인한다.
