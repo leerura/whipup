@@ -1,911 +1,301 @@
 {
   "videoId": "bySe9k8Rcsw",
-  "status": "COMPLETED",
-  "stages": {
-    "stage1": {
-      "status": "COMPLETED",
-      "pipeline": {
-        "type": "V3_INGREDIENT_EXTRACTION",
-        "version": 3,
-        "model": "models/gemini-2.5-flash"
-      },
-      "completedAt": "2026-10-18T08:08:11.787673+00:00",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://youtu.be/bySe9k8Rcsw?si=6MKx0d3TxoS7kQNz",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T09:36:32.173926+00:00",
+    "rawResponse": "{\n  \"title\": \"계란볶음밥\",\n  \"description\": null,\n  \"servings\": \"1\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"대파 10cm\",\n      \"displayName\": \"대파\",\n      \"amount\": \"10\",\n      \"unit\": \"cm\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 10cm\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파 10cm 송송 잘라주는데\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 3큰술\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"3\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 3큰술\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"프라이팬에 식용유 세 큰술\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1큰술\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 1큰술\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘 한 큰술\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 2알\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"알\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2알\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 2알 잘 깨서\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 1큰술\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 1큰술\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 한 큰술 넣어\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"치킨스톡 0.5작은술\",\n      \"displayName\": \"치킨스톡\",\n      \"amount\": \"0.5\",\n      \"unit\": \"작은술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"치킨스톡 0.5작은술\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"치킨스톡 반 작은술\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"햇반 하나 (210g)\",\n      \"displayName\": \"햇반\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"햇반 하나 (210g)\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"햇반 하나 그대로 넣어서\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추까지 뿌려주면\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그라인더로 볶음밥 위에 후추를 갈아서 뿌림\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"대파 10cm를 송송 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파 10cm 송송 잘라주는데\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도마 위에서 대파를 얇게 송송 썬다\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"프라이팬에 식용유 3큰술, 다진 마늘 1큰술, 썰어놓은 대파를 전부 넣고 마늘이 갈색빛이 되기 직전까지 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"프라이팬에 식용유 세 큰술, 다진 마늘 한 큰술, 썰어놓은 대파 전부 넣고 마늘이 갈색빛이 되기 직전까지 볶아주세요.\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 기름, 다진 마늘, 대파를 넣고 주걱으로 볶는다\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볶은 대파와 마늘을 팬 한쪽으로 치워두고, 계란 2알을 깨 넣은 뒤 노른자를 터트려 휘저어가며 스크램블을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 한 쪽으로 치워놓고 계란 2알 잘 깨서 노른자 톡 터트린 다음 마구 휘저어 스크램블 만들어주셨다면\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬의 빈 공간에 계란 2개를 깨 넣고 노른자를 터트려 저어가며 스크램블 에그를 만든다\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"스크램블 에그를 대파, 마늘과 함께 합쳐서 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다시 대파랑 합쳐서 볶고\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란 스크램블과 대파 기름을 함께 섞어가며 볶는다\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"간장 1큰술을 넣어 팬 가장자리에 눌리며 볶다가 치킨스톡 0.5작은술을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 한 큰술 넣어 눌리며 볶다가 치킨스톡 반 작은술\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 간장과 치킨스톡을 차례로 넣고 재료와 섞어 볶는다\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"햇반 하나(210g)를 데우지 않고 그대로 넣고 밥알을 으깨며 고슬고슬하게 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"햇반 하나 그대로 넣어서 마구 부셔주세요. 이 과정을 신경 써서 해주셔야 밥알이 살아 움직이는 볶음밥이 되는 거예요.\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"데우지 않은 즉석밥을 넣고 주걱으로 으깨며 팬을 돌려가며 볶는다\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 볶음밥을 그릇에 담고 후추를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추까지 뿌려주면 계란볶음밥 봉인해제\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"접시에 담긴 볶음밥 위에 후추를 뿌린다\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"영상 초반(00:10)에는 실수로 '햇반 작은공기(130g)'를 구매했다고 언급 및 보여주었으나, 실제 조리 시 자막(00:37)에는 '햇반 하나 (210g)'로 표기되어 있어 실제 조리에 사용된 즉석밥의 용량(130g vs 210g)에 차이가 있음\"\n  ]\n}",
+    "result": {
+      "title": "계란볶음밥",
+      "description": null,
+      "servings": "1",
       "ingredients": [
         {
-          "sourceId": "ingredient-1",
           "rawText": "대파 10cm",
-          "displayName": "Green onion",
+          "displayName": "대파",
           "amount": "10",
           "unit": "cm",
+          "optional": false,
           "evidences": [
             {
               "type": "ON_SCREEN_TEXT",
               "text": "대파 10cm",
-              "timestamp": "0:13"
+              "timestamp": "00:13"
             },
             {
               "type": "SPEECH",
-              "text": "대파 10cm",
-              "timestamp": "0:13"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "person cutting green onion",
-              "timestamp": "0:13"
+              "text": "대파 10cm 송송 잘라주는데",
+              "timestamp": "00:13"
             }
-          ]
+          ],
+          "sourceId": "ingredient-1"
         },
         {
-          "sourceId": "ingredient-2",
           "rawText": "식용유 3큰술",
-          "displayName": "Cooking oil",
+          "displayName": "식용유",
           "amount": "3",
-          "unit": "tablespoons",
+          "unit": "큰술",
+          "optional": false,
           "evidences": [
             {
               "type": "ON_SCREEN_TEXT",
               "text": "식용유 3큰술",
-              "timestamp": "0:17"
+              "timestamp": "00:17"
             },
             {
               "type": "SPEECH",
-              "text": "식용유 세 큰술",
-              "timestamp": "0:17"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "person pouring oil into pan",
-              "timestamp": "0:17"
+              "text": "프라이팬에 식용유 세 큰술",
+              "timestamp": "00:17"
             }
-          ]
+          ],
+          "sourceId": "ingredient-2"
         },
         {
-          "sourceId": "ingredient-3",
           "rawText": "다진 마늘 1큰술",
-          "displayName": "Minced garlic",
+          "displayName": "다진 마늘",
           "amount": "1",
-          "unit": "tablespoon",
+          "unit": "큰술",
+          "optional": false,
           "evidences": [
             {
               "type": "ON_SCREEN_TEXT",
               "text": "다진 마늘 1큰술",
-              "timestamp": "0:18"
+              "timestamp": "00:18"
             },
             {
               "type": "SPEECH",
               "text": "다진 마늘 한 큰술",
-              "timestamp": "0:18"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "person adding minced garlic to pan",
-              "timestamp": "0:18"
+              "timestamp": "00:18"
             }
-          ]
+          ],
+          "sourceId": "ingredient-3"
         },
         {
-          "sourceId": "ingredient-4",
           "rawText": "계란 2알",
-          "displayName": "Egg",
+          "displayName": "계란",
           "amount": "2",
-          "unit": null,
+          "unit": "알",
+          "optional": false,
           "evidences": [
-            {
-              "type": "VISUAL_ACTION",
-              "text": "person cracking two eggs into pan",
-              "timestamp": "0:05"
-            },
             {
               "type": "ON_SCREEN_TEXT",
               "text": "계란 2알",
-              "timestamp": "0:28"
+              "timestamp": "00:27"
             },
             {
               "type": "SPEECH",
-              "text": "계란 두 알",
-              "timestamp": "0:28"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "person cracking two eggs into pan",
-              "timestamp": "0:28"
+              "text": "계란 2알 잘 깨서",
+              "timestamp": "00:28"
             }
-          ]
+          ],
+          "sourceId": "ingredient-4"
         },
         {
-          "sourceId": "ingredient-5",
           "rawText": "간장 1큰술",
-          "displayName": "Soy sauce",
+          "displayName": "간장",
           "amount": "1",
-          "unit": "tablespoon",
+          "unit": "큰술",
+          "optional": false,
           "evidences": [
             {
               "type": "ON_SCREEN_TEXT",
               "text": "간장 1큰술",
-              "timestamp": "0:34"
+              "timestamp": "00:34"
             },
             {
               "type": "SPEECH",
-              "text": "간장 한 큰술",
-              "timestamp": "0:34"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "person adding soy sauce to pan",
-              "timestamp": "0:34"
+              "text": "간장 한 큰술 넣어",
+              "timestamp": "00:34"
             }
-          ]
+          ],
+          "sourceId": "ingredient-5"
         },
         {
-          "sourceId": "ingredient-6",
           "rawText": "치킨스톡 0.5작은술",
-          "displayName": "Chicken stock",
+          "displayName": "치킨스톡",
           "amount": "0.5",
-          "unit": "teaspoon",
+          "unit": "작은술",
+          "optional": false,
           "evidences": [
             {
               "type": "ON_SCREEN_TEXT",
               "text": "치킨스톡 0.5작은술",
-              "timestamp": "0:36"
+              "timestamp": "00:36"
             },
             {
               "type": "SPEECH",
-              "text": "치킨스톡 반 작은 술",
-              "timestamp": "0:36"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "person adding chicken stock to pan",
-              "timestamp": "0:36"
+              "text": "치킨스톡 반 작은술",
+              "timestamp": "00:36"
             }
-          ]
+          ],
+          "sourceId": "ingredient-6"
         },
         {
-          "sourceId": "ingredient-7",
           "rawText": "햇반 하나 (210g)",
-          "displayName": "Cooked white rice",
-          "amount": "210",
-          "unit": "g",
+          "displayName": "햇반",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
           "evidences": [
-            {
-              "type": "VISUAL_ACTION",
-              "text": "person holding instant rice package",
-              "timestamp": "0:09"
-            },
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "햇반 작은공기",
-              "timestamp": "0:11"
-            },
-            {
-              "type": "SPEECH",
-              "text": "햇반 사왔는데",
-              "timestamp": "0:10"
-            },
-            {
-              "type": "SPEECH",
-              "text": "햇반 작은공기 사왔습니다",
-              "timestamp": "0:12"
-            },
             {
               "type": "ON_SCREEN_TEXT",
               "text": "햇반 하나 (210g)",
-              "timestamp": "0:37"
+              "timestamp": "00:37"
             },
             {
               "type": "SPEECH",
-              "text": "햇반 하나",
-              "timestamp": "0:37"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "person adding instant cooked rice to pan",
-              "timestamp": "0:37"
+              "text": "햇반 하나 그대로 넣어서",
+              "timestamp": "00:37"
             }
-          ]
+          ],
+          "sourceId": "ingredient-7"
         },
         {
-          "sourceId": "ingredient-8",
           "rawText": "후추",
-          "displayName": "Black pepper",
+          "displayName": "후추",
           "amount": null,
           "unit": null,
+          "optional": false,
           "evidences": [
             {
               "type": "ON_SCREEN_TEXT",
               "text": "후추",
-              "timestamp": "0:44"
+              "timestamp": "00:44"
             },
             {
               "type": "SPEECH",
-              "text": "후추까지",
-              "timestamp": "0:44"
+              "text": "후추까지 뿌려주면",
+              "timestamp": "00:44"
             },
             {
               "type": "VISUAL_ACTION",
-              "text": "person grinding black pepper onto dish",
-              "timestamp": "0:44"
+              "text": "그라인더로 볶음밥 위에 후추를 갈아서 뿌림",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        }
+      ],
+      "steps": [
+        {
+          "text": "대파 10cm를 송송 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파 10cm 송송 잘라주는데",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도마 위에서 대파를 얇게 송송 썬다",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "프라이팬에 식용유 3큰술, 다진 마늘 1큰술, 썰어놓은 대파를 전부 넣고 마늘이 갈색빛이 되기 직전까지 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "프라이팬에 식용유 세 큰술, 다진 마늘 한 큰술, 썰어놓은 대파 전부 넣고 마늘이 갈색빛이 되기 직전까지 볶아주세요.",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 기름, 다진 마늘, 대파를 넣고 주걱으로 볶는다",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "볶은 대파와 마늘을 팬 한쪽으로 치워두고, 계란 2알을 깨 넣은 뒤 노른자를 터트려 휘저어가며 스크램블을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 한 쪽으로 치워놓고 계란 2알 잘 깨서 노른자 톡 터트린 다음 마구 휘저어 스크램블 만들어주셨다면",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬의 빈 공간에 계란 2개를 깨 넣고 노른자를 터트려 저어가며 스크램블 에그를 만든다",
+              "timestamp": "00:28"
+            }
+          ]
+        },
+        {
+          "text": "스크램블 에그를 대파, 마늘과 함께 합쳐서 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다시 대파랑 합쳐서 볶고",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란 스크램블과 대파 기름을 함께 섞어가며 볶는다",
+              "timestamp": "00:33"
+            }
+          ]
+        },
+        {
+          "text": "간장 1큰술을 넣어 팬 가장자리에 눌리며 볶다가 치킨스톡 0.5작은술을 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "간장 한 큰술 넣어 눌리며 볶다가 치킨스톡 반 작은술",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 간장과 치킨스톡을 차례로 넣고 재료와 섞어 볶는다",
+              "timestamp": "00:34"
+            }
+          ]
+        },
+        {
+          "text": "햇반 하나(210g)를 데우지 않고 그대로 넣고 밥알을 으깨며 고슬고슬하게 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "햇반 하나 그대로 넣어서 마구 부셔주세요. 이 과정을 신경 써서 해주셔야 밥알이 살아 움직이는 볶음밥이 되는 거예요.",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "데우지 않은 즉석밥을 넣고 주걱으로 으깨며 팬을 돌려가며 볶는다",
+              "timestamp": "00:38"
+            }
+          ]
+        },
+        {
+          "text": "완성된 볶음밥을 그릇에 담고 후추를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후추까지 뿌려주면 계란볶음밥 봉인해제",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "접시에 담긴 볶음밥 위에 후추를 뿌린다",
+              "timestamp": "00:44"
             }
           ]
         }
       ],
-      "retryCount": 0,
-      "originalGeminiIngredients": [
-        {
-          "sourceId": "ingredient-1",
-          "rawText": "대파 10cm",
-          "displayName": "Green onion",
-          "amount": "10",
-          "unit": "cm",
-          "evidences": [
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "대파 10cm",
-              "timestamp": "0:13"
-            },
-            {
-              "type": "SPEECH",
-              "text": "대파 10cm",
-              "timestamp": "0:13"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "person cutting green onion",
-              "timestamp": "0:13"
-            }
-          ]
-        },
-        {
-          "sourceId": "ingredient-2",
-          "rawText": "식용유 3큰술",
-          "displayName": "Cooking oil",
-          "amount": "3",
-          "unit": "tablespoons",
-          "evidences": [
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "식용유 3큰술",
-              "timestamp": "0:17"
-            },
-            {
-              "type": "SPEECH",
-              "text": "식용유 세 큰술",
-              "timestamp": "0:17"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "person pouring oil into pan",
-              "timestamp": "0:17"
-            }
-          ]
-        },
-        {
-          "sourceId": "ingredient-3",
-          "rawText": "다진 마늘 1큰술",
-          "displayName": "Minced garlic",
-          "amount": "1",
-          "unit": "tablespoon",
-          "evidences": [
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "다진 마늘 1큰술",
-              "timestamp": "0:18"
-            },
-            {
-              "type": "SPEECH",
-              "text": "다진 마늘 한 큰술",
-              "timestamp": "0:18"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "person adding minced garlic to pan",
-              "timestamp": "0:18"
-            }
-          ]
-        },
-        {
-          "sourceId": "ingredient-4",
-          "rawText": "계란 2알",
-          "displayName": "Egg",
-          "amount": "2",
-          "unit": null,
-          "evidences": [
-            {
-              "type": "VISUAL_ACTION",
-              "text": "person cracking two eggs into pan",
-              "timestamp": "0:05"
-            },
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "계란 2알",
-              "timestamp": "0:28"
-            },
-            {
-              "type": "SPEECH",
-              "text": "계란 두 알",
-              "timestamp": "0:28"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "person cracking two eggs into pan",
-              "timestamp": "0:28"
-            }
-          ]
-        },
-        {
-          "sourceId": "ingredient-5",
-          "rawText": "간장 1큰술",
-          "displayName": "Soy sauce",
-          "amount": "1",
-          "unit": "tablespoon",
-          "evidences": [
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "간장 1큰술",
-              "timestamp": "0:34"
-            },
-            {
-              "type": "SPEECH",
-              "text": "간장 한 큰술",
-              "timestamp": "0:34"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "person adding soy sauce to pan",
-              "timestamp": "0:34"
-            }
-          ]
-        },
-        {
-          "sourceId": "ingredient-6",
-          "rawText": "치킨스톡 0.5작은술",
-          "displayName": "Chicken stock",
-          "amount": "0.5",
-          "unit": "teaspoon",
-          "evidences": [
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "치킨스톡 0.5작은술",
-              "timestamp": "0:36"
-            },
-            {
-              "type": "SPEECH",
-              "text": "치킨스톡 반 작은 술",
-              "timestamp": "0:36"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "person adding chicken stock to pan",
-              "timestamp": "0:36"
-            }
-          ]
-        },
-        {
-          "sourceId": "ingredient-7",
-          "rawText": "햇반 하나 (210g)",
-          "displayName": "Cooked white rice",
-          "amount": "210",
-          "unit": "g",
-          "evidences": [
-            {
-              "type": "VISUAL_ACTION",
-              "text": "person holding instant rice package",
-              "timestamp": "0:09"
-            },
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "햇반 작은공기",
-              "timestamp": "0:11"
-            },
-            {
-              "type": "SPEECH",
-              "text": "햇반 사왔는데",
-              "timestamp": "0:10"
-            },
-            {
-              "type": "SPEECH",
-              "text": "햇반 작은공기 사왔습니다",
-              "timestamp": "0:12"
-            },
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "햇반 하나 (210g)",
-              "timestamp": "0:37"
-            },
-            {
-              "type": "SPEECH",
-              "text": "햇반 하나",
-              "timestamp": "0:37"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "person adding instant cooked rice to pan",
-              "timestamp": "0:37"
-            }
-          ]
-        },
-        {
-          "sourceId": "ingredient-8",
-          "rawText": "후추",
-          "displayName": "Black pepper",
-          "amount": null,
-          "unit": null,
-          "evidences": [
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "후추",
-              "timestamp": "0:44"
-            },
-            {
-              "type": "SPEECH",
-              "text": "후추까지",
-              "timestamp": "0:44"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "person grinding black pepper onto dish",
-              "timestamp": "0:44"
-            }
-          ]
-        }
+      "unresolved": [
+        "영상 초반(00:10)에는 실수로 '햇반 작은공기(130g)'를 구매했다고 언급 및 보여주었으나, 실제 조리 시 자막(00:37)에는 '햇반 하나 (210g)'로 표기되어 있어 실제 조리에 사용된 즉석밥의 용량(130g vs 210g)에 차이가 있음"
       ]
     },
-    "stage2": {
-      "status": "COMPLETED",
-      "pipeline": {
-        "type": "V3_RECIPE_STRUCTURING",
-        "version": 4,
-        "model": "models/gemini-2.5-flash",
-        "ingredientCatalogHash": "1da18d0b4c61dbbcfc4ca8437beef443b274dfbfc46997ae2ba1124b07080fc9"
-      },
-      "completedAt": "2026-10-18T08:08:44.145282+00:00",
-      "result": {
-        "recipe": {
-          "key": "egg-fried-rice",
-          "name": "계란 볶음밥",
-          "status": "PUBLISHED",
-          "shortsReference": "https://youtu.be/bySe9k8Rcsw?si=6MKx0d3TxoS7kQNz",
-          "ingredients": [
-            {
-              "key": "green-onion",
-              "variant": "green-onion-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-1",
-              "displayName": "Green onion",
-              "rawText": "대파 10cm",
-              "amount": "10",
-              "unit": "cm",
-              "optional": false
-            },
-            {
-              "key": "cooking-oil",
-              "variant": "cooking-oil-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-2",
-              "displayName": "Cooking oil",
-              "rawText": "식용유 3큰술",
-              "amount": "3",
-              "unit": "tablespoons",
-              "optional": false
-            },
-            {
-              "key": "garlic",
-              "variant": "minced-garlic",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-3",
-              "displayName": "Minced garlic",
-              "rawText": "다진 마늘 1큰술",
-              "amount": "1",
-              "unit": "tablespoon",
-              "optional": false
-            },
-            {
-              "key": "egg",
-              "variant": "egg-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-4",
-              "displayName": "Egg",
-              "rawText": "계란 2알",
-              "amount": "2",
-              "unit": null,
-              "optional": false
-            },
-            {
-              "key": "soy-sauce",
-              "variant": null,
-              "acceptedOwnedVariants": [
-                "dark-soy-sauce",
-                "soup-soy-sauce",
-                "brewed-soy-sauce"
-              ],
-              "sourceId": "ingredient-5",
-              "displayName": "Soy sauce",
-              "rawText": "간장 1큰술",
-              "amount": "1",
-              "unit": "tablespoon",
-              "optional": false
-            },
-            {
-              "key": "chicken-stock",
-              "variant": "chicken-stock-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-6",
-              "displayName": "Chicken stock",
-              "rawText": "치킨스톡 0.5작은술",
-              "amount": "0.5",
-              "unit": "teaspoon",
-              "optional": false
-            },
-            {
-              "key": "rice",
-              "variant": "rice-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-7",
-              "displayName": "Cooked white rice",
-              "rawText": "햇반 하나 (210g)",
-              "amount": "210",
-              "unit": "g",
-              "optional": false
-            },
-            {
-              "key": "black-pepper",
-              "variant": "black-pepper-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-8",
-              "displayName": "Black pepper",
-              "rawText": "후추",
-              "amount": null,
-              "unit": null,
-              "optional": false
-            }
-          ],
-          "requirements": [
-            {
-              "options": [
-                {
-                  "ingredient": "green-onion",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "cooking-oil",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "garlic",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "egg",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "soy-sauce",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "chicken-stock",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "rice",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "black-pepper",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            }
-          ],
-          "steps": [
-            "대파 10cm를 송송 썰어줍니다.",
-            "프라이팬에 식용유 3큰술, 다진 마늘 1큰술, 썰어 놓은 대파를 넣고 마늘이 갈색빛이 되기 직전까지 볶아줍니다.",
-            "볶은 재료를 한쪽으로 밀어 놓고, 계란 2알을 깨서 노른자를 터트린 다음 스크램블 에그를 만들어줍니다.",
-            "모든 재료를 합쳐서 볶아줍니다.",
-            "간장 1큰술을 넣고 눌리며 볶다가, 치킨스톡 0.5작은술을 추가합니다.",
-            "햇반 하나(210g)를 넣고 밥알이 뭉치지 않도록 풀어주며 볶아줍니다.",
-            "그릇에 담고 후추를 뿌려 마무리합니다."
-          ]
-        },
-        "catalogAdditions": {
-          "ingredients": []
-        },
-        "mappingFailures": []
-      },
-      "structuralErrors": [],
-      "retryCount": 0,
-      "originalGeminiResult": {
-        "recipe": {
-          "key": "계란-볶음밥",
-          "name": "계란 볶음밥",
-          "status": "DRAFT",
-          "shortsReference": "https://youtu.be/bySe9k8Rcsw?si=6MKx0d3TxoS7kQNz",
-          "ingredients": [
-            {
-              "key": "green-onion",
-              "variant": "green-onion-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-1",
-              "displayName": "Green onion",
-              "rawText": "대파 10cm",
-              "amount": "10",
-              "unit": "cm",
-              "optional": false
-            },
-            {
-              "key": "cooking-oil",
-              "variant": null,
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-2",
-              "displayName": "Cooking oil",
-              "rawText": "식용유 3큰술",
-              "amount": "3",
-              "unit": "tablespoons",
-              "optional": false
-            },
-            {
-              "key": "garlic",
-              "variant": "minced-garlic",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-3",
-              "displayName": "Minced garlic",
-              "rawText": "다진 마늘 1큰술",
-              "amount": "1",
-              "unit": "tablespoon",
-              "optional": false
-            },
-            {
-              "key": "egg",
-              "variant": "egg-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-4",
-              "displayName": "Egg",
-              "rawText": "계란 2알",
-              "amount": "2",
-              "unit": null,
-              "optional": false
-            },
-            {
-              "key": "soy-sauce",
-              "variant": null,
-              "acceptedOwnedVariants": [
-                "dark-soy-sauce",
-                "soup-soy-sauce",
-                "brewed-soy-sauce"
-              ],
-              "sourceId": "ingredient-5",
-              "displayName": "Soy sauce",
-              "rawText": "간장 1큰술",
-              "amount": "1",
-              "unit": "tablespoon",
-              "optional": false
-            },
-            {
-              "key": "chicken-stock",
-              "variant": null,
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-6",
-              "displayName": "Chicken stock",
-              "rawText": "치킨스톡 0.5작은술",
-              "amount": "0.5",
-              "unit": "teaspoon",
-              "optional": false
-            },
-            {
-              "key": "rice",
-              "variant": "rice-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-7",
-              "displayName": "Cooked white rice",
-              "rawText": "햇반 하나 (210g)",
-              "amount": "210",
-              "unit": "g",
-              "optional": false
-            },
-            {
-              "key": "black-pepper",
-              "variant": "black-pepper-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-8",
-              "displayName": "Black pepper",
-              "rawText": "후추",
-              "amount": null,
-              "unit": null,
-              "optional": false
-            }
-          ],
-          "requirements": [
-            {
-              "options": [
-                {
-                  "ingredient": "green-onion",
-                  "substitutes": [],
-                  "allowedVariants": [
-                    "green-onion-item"
-                  ]
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "cooking-oil",
-                  "substitutes": [],
-                  "allowedVariants": [
-                    "cooking-oil-item",
-                    "canola-oil",
-                    "olive-oil"
-                  ]
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "garlic",
-                  "substitutes": [],
-                  "allowedVariants": [
-                    "minced-garlic"
-                  ]
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "egg",
-                  "substitutes": [],
-                  "allowedVariants": [
-                    "egg-item"
-                  ]
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "soy-sauce",
-                  "substitutes": [],
-                  "allowedVariants": [
-                    "dark-soy-sauce",
-                    "soup-soy-sauce",
-                    "brewed-soy-sauce"
-                  ]
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "chicken-stock",
-                  "substitutes": [],
-                  "allowedVariants": [
-                    "chicken-stock-item"
-                  ]
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "rice",
-                  "substitutes": [],
-                  "allowedVariants": [
-                    "rice-item"
-                  ]
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "black-pepper",
-                  "substitutes": [],
-                  "allowedVariants": [
-                    "black-pepper-item"
-                  ]
-                }
-              ]
-            }
-          ],
-          "steps": [
-            "대파 10cm를 송송 썰어줍니다.",
-            "프라이팬에 식용유 3큰술, 다진 마늘 1큰술, 썰어 놓은 대파를 넣고 마늘이 갈색빛이 되기 직전까지 볶아줍니다.",
-            "볶은 재료를 한쪽으로 밀어 놓고, 계란 2알을 깨서 노른자를 터트린 다음 스크램블 에그를 만들어줍니다.",
-            "모든 재료를 합쳐서 볶아줍니다.",
-            "간장 1큰술을 넣고 눌리며 볶다가, 치킨스톡 0.5작은술을 추가합니다.",
-            "햇반 하나(210g)를 넣고 밥알이 뭉치지 않도록 풀어주며 볶아줍니다.",
-            "그릇에 담고 후추를 뿌려 마무리합니다."
-          ]
-        },
-        "catalogAdditions": {
-          "ingredients": [
-            {
-              "key": "cooking-oil",
-              "name": "식용유",
-              "variants": [
-                {
-                  "key": "cooking-oil-item",
-                  "name": "식용유",
-                  "aliases": []
-                },
-                {
-                  "key": "canola-oil",
-                  "name": "카놀라유",
-                  "aliases": []
-                },
-                {
-                  "key": "olive-oil",
-                  "name": "올리브유",
-                  "aliases": []
-                }
-              ],
-              "relations": []
-            },
-            {
-              "key": "chicken-stock",
-              "name": "치킨스톡",
-              "variants": [
-                {
-                  "key": "chicken-stock-item",
-                  "name": "치킨스톡",
-                  "aliases": []
-                }
-              ],
-              "relations": []
-            }
-          ]
-        },
-        "mappingFailures": []
-      }
-    }
-  },
-  "sourceUrl": "https://youtu.be/bySe9k8Rcsw?si=6MKx0d3TxoS7kQNz",
-  "pipelineVersion": 1,
-  "review": {
-    "status": "COMPLETED",
-    "outcome": "PUBLISHED",
-    "required": "source_video_and_semantic_review",
-    "datasetKey": "egg-fried-rice",
-    "notes": [
-      "식용유·다진 마늘·대파를 볶고 계란 2알, 간장, 치킨스톡, 햇반 1개를 볶은 뒤 후추로 마무리하는 과정을 확인함.",
-      "원본 영상 검증 및 게시 완전성 검사 완료; 사용자 승인 범위에 따라 PUBLISHED dataset에 반영함."
-    ]
+    "structuralErrors": [],
+    "retryCount": 0
   }
 }

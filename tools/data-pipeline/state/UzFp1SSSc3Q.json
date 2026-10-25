@@ -1,0 +1,301 @@
+{
+  "videoId": "UzFp1SSSc3Q",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/UzFp1SSSc3Q",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T23:19:41.957252+00:00",
+    "rawResponse": "{\n  \"title\": \"계란 볶음밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"식용유 (10숟갈)\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"10\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 (10숟갈)\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 달궈진 냄비에 식용유 열 숟갈 넣고\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진대파\",\n      \"displayName\": \"다진대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진대파 추가해서\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진대파 추가해서 파기름을 충분히 내주세요\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"스팸\",\n      \"displayName\": \"스팸\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스팸 넣고\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"파가 노릇해졌으면 스팸 넣고 2분 정도 볶아주고\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란물\",\n      \"displayName\": \"계란물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란물 추가해서\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"한쪽으로 몰아서 계란물 추가해서 스크램블 만들어 주세요\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 4숟갈\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"4\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 4숟갈 넣고\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 네 숟갈 넣고 살짝 태워주세요\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 (1.5숟갈)\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1.5\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 (1.5숟갈)\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 굴소스 1.5숟갈\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 (1숟갈)\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 (1숟갈)\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 한 숟갈 넣고 한번 섞어주고\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"찬밥이나 햇반\",\n      \"displayName\": \"찬밥이나 햇반\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"찬밥이나 햇반 넣어주세요\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 찬밥이나 햇반 넣어주세요\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 (2숟갈)\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"2\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 (2숟갈)\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름 두 숟갈\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"볶은깨 (1숟갈)\",\n      \"displayName\": \"볶은깨\",\n      \"amount\": \"1\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볶은깨 (1숟갈)\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"볶은깨 한 숟갈 넣고 한번 더 볶아주면\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"달궈진 냄비에 식용유 10숟갈을 두르고 다진 대파를 넣어 파기름을 충분히 내준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 달궈진 냄비에 식용유 열 숟갈 넣고 다진대파 추가해서 파기름을 충분히 내주세요\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"파가 노릇해지면 썰어둔 스팸을 넣고 약 2분간 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"파가 노릇해졌으면 스팸 넣고 2분 정도 볶아주고\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볶은 재료를 한쪽으로 몰아두고, 빈 공간에 계란물을 부어 스크램블 에그를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"한쪽으로 몰아서 계란물 추가해서 스크램블 만들어 주세요\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"진간장 4숟갈을 넣고 살짝 눌어붙도록 태워 불향을 낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 네 숟갈 넣고 살짝 태워주세요\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"굴소스 1.5숟갈과 설탕 1숟갈을 넣고 함께 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 굴소스 1.5숟갈 설탕 한 숟갈 넣고 한번 섞어주고\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"찬밥이나 햇반(전자레인지에 돌리지 않은 상태)을 넣고 밥알이 고슬고슬해질 때까지 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 찬밥이나 햇반 넣어주세요 햇반은 전자레인지 안 돌리고 넣어야 더 고슬고슬해질 거예요\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥알이 고슬고슬하게 볶아지면 참기름 2숟갈과 볶은깨 1숟갈을 넣고 한 번 더 볶아 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥알이 고슬고슬 볶아졌으면 참기름 두 숟갈 볶은깨 한 숟갈 넣고 한번 더 볶아주면\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"다진대파, 스팸, 계란, 찬밥(햇반)의 정확한 중량이나 개수가 영상 자막 및 음성으로 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "계란 볶음밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "식용유 (10숟갈)",
+          "displayName": "식용유",
+          "amount": "10",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 (10숟갈)",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 달궈진 냄비에 식용유 열 숟갈 넣고",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "다진대파",
+          "displayName": "다진대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진대파 추가해서",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진대파 추가해서 파기름을 충분히 내주세요",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "스팸",
+          "displayName": "스팸",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스팸 넣고",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "파가 노릇해졌으면 스팸 넣고 2분 정도 볶아주고",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "계란물",
+          "displayName": "계란물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란물 추가해서",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "한쪽으로 몰아서 계란물 추가해서 스크램블 만들어 주세요",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "진간장 4숟갈",
+          "displayName": "진간장",
+          "amount": "4",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 4숟갈 넣고",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장 네 숟갈 넣고 살짝 태워주세요",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "굴소스 (1.5숟갈)",
+          "displayName": "굴소스",
+          "amount": "1.5",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 (1.5숟갈)",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 굴소스 1.5숟갈",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "설탕 (1숟갈)",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 (1숟갈)",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 한 숟갈 넣고 한번 섞어주고",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "찬밥이나 햇반",
+          "displayName": "찬밥이나 햇반",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "찬밥이나 햇반 넣어주세요",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 찬밥이나 햇반 넣어주세요",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "참기름 (2숟갈)",
+          "displayName": "참기름",
+          "amount": "2",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 (2숟갈)",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름 두 숟갈",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "볶은깨 (1숟갈)",
+          "displayName": "볶은깨",
+          "amount": "1",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볶은깨 (1숟갈)",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "SPEECH",
+              "text": "볶은깨 한 숟갈 넣고 한번 더 볶아주면",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "달궈진 냄비에 식용유 10숟갈을 두르고 다진 대파를 넣어 파기름을 충분히 내준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 달궈진 냄비에 식용유 열 숟갈 넣고 다진대파 추가해서 파기름을 충분히 내주세요",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "파가 노릇해지면 썰어둔 스팸을 넣고 약 2분간 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "파가 노릇해졌으면 스팸 넣고 2분 정도 볶아주고",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "볶은 재료를 한쪽으로 몰아두고, 빈 공간에 계란물을 부어 스크램블 에그를 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "한쪽으로 몰아서 계란물 추가해서 스크램블 만들어 주세요",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "진간장 4숟갈을 넣고 살짝 눌어붙도록 태워 불향을 낸다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "진간장 네 숟갈 넣고 살짝 태워주세요",
+              "timestamp": "00:21"
+            }
+          ]
+        },
+        {
+          "text": "굴소스 1.5숟갈과 설탕 1숟갈을 넣고 함께 섞어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 굴소스 1.5숟갈 설탕 한 숟갈 넣고 한번 섞어주고",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "찬밥이나 햇반(전자레인지에 돌리지 않은 상태)을 넣고 밥알이 고슬고슬해질 때까지 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 찬밥이나 햇반 넣어주세요 햇반은 전자레인지 안 돌리고 넣어야 더 고슬고슬해질 거예요",
+              "timestamp": "00:29"
+            }
+          ]
+        },
+        {
+          "text": "밥알이 고슬고슬하게 볶아지면 참기름 2숟갈과 볶은깨 1숟갈을 넣고 한 번 더 볶아 마무리한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥알이 고슬고슬 볶아졌으면 참기름 두 숟갈 볶은깨 한 숟갈 넣고 한번 더 볶아주면",
+              "timestamp": "00:34"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "다진대파, 스팸, 계란, 찬밥(햇반)의 정확한 중량이나 개수가 영상 자막 및 음성으로 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

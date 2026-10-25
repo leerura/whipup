@@ -1,0 +1,398 @@
+{
+  "videoId": "LMicIBiHZW4",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/LMicIBiHZW4",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T15:30:42.359890+00:00",
+    "rawResponse": "{\n  \"title\": \"간장항정살덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"양조간장 2스푼\",\n      \"displayName\": \"양조간장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양조간장 2스푼\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양조간장 2스푼\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 2스푼\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"맛술 2스푼\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술 2스푼\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 조금\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"조금\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진 마늘 조금\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘 조금\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"알룰로스 1스푼\",\n      \"displayName\": \"알룰로스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"알룰로스 1스푼 넣고\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"알룰로스 1스푼 넣고\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"채썬 양배추 한 줌\",\n      \"displayName\": \"채썬 양배추\",\n      \"amount\": \"1\",\n      \"unit\": \"줌\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"채썬 양배추 한 줌은\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"채썬 양배추 한 줌은\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름 살짝\",\n      \"displayName\": \"기름\",\n      \"amount\": \"살짝\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기름 살짝 두르고\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기름 살짝 두르고\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소금, 후추,\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금, 후추,\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소금, 후추,\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금, 후추,\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 1스푼\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"맛술 1스푼 넣고\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술 1스푼 넣고\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 밥을 담는 모습\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥 위에 대파 한 줌,\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"항정살\",\n      \"displayName\": \"항정살\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"항정살은 먼저 노릇하게 구워주세요.\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"항정살은 먼저 노릇하게 구워주세요.\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 한 줌\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"줌\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥 위에 대파 한 줌,\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"소스 및 볶아지는 고기에 섞여 있는 송송 썬 대파\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추\",\n      \"displayName\": \"고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"소스 컵에 송송 썰려 들어가 있는 청양고추 또는 고추 조각들\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란후라이\",\n      \"displayName\": \"계란\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란후라이까지 올려요.\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란후라이까지 올려요.\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 덮밥 위에 뿌려져 있는 통깨\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양조간장 2스푼, 맛술 2스푼, 다진 마늘 조금, 알룰로스 1스푼을 섞고 송송 썬 고추와 대파를 넣어 소스를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양조간장 2스푼 맛술 2스푼 다진 마늘 조금 알룰로스 1스푼 넣고 소스를 만들어요.\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"간장 소스에 썬 파와 고추가 섞여 있는 모습\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 기름을 살짝 두르고 채 썬 양배추 한 줌, 소금, 후추, 맛술 1스푼을 넣고 숨만 살짝 죽을 정도로 볶아둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"채썬 양배추 한 줌은 기름 살짝 두르고 소금, 후추, 맛술 1스푼 넣고 숨만 살짝 죽이면 돼요. 양배추는 오래 볶지 마세요. 그래야 덮밥에 올렸을 때 아삭함이 남아요.\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 밥을 담는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 밥을 담는 모습\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 항정살을 올리고 겉면이 노릇해질 때까지 굽는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"항정살은 먼저 노릇하게 구워주세요. 겉면이 노릇해질 때까지 기다리는 게 포인트에요.\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"기름이 많으면 살짝 닦아내고 준비한 소스를 부어 윤기 나게 졸인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기름이 많으면 살짝 닦고, 소스를 부어 윤기 나게 졸여줍니다.\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 위에 볶은 양배추, 간장 항정살(및 대파)을 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥 위에 대파 한 줌, 볶은 양배추, 간장 항정살을 올리고\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란후라이를 만들어 덮밥 위에 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란후라이까지 올려요.\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"항정살, 밥, 계란, 소금, 후추, 통깨의 정확한 중량 및 계량 미표기\",\n    \"소스에 들어간 썬 고추(청양고추 추정)의 명칭 및 분량이 음성/자막으로 직접 언급되지 않고 시각적으로만 확인됨\",\n    \"대파가 소스에 함께 조리된 것인지 밥 위에 고명으로 얹는 것인지 자막('밥 위에 대파 한 줌')과 조리 화면(소스에 섞여 조리됨) 간 구성 차이 존재\"\n  ]\n}",
+    "result": {
+      "title": "간장항정살덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "양조간장 2스푼",
+          "displayName": "양조간장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양조간장 2스푼",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양조간장 2스푼",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "맛술 2스푼",
+          "displayName": "맛술",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "맛술 2스푼",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "맛술 2스푼",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "다진 마늘 조금",
+          "displayName": "다진 마늘",
+          "amount": "조금",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다진 마늘 조금",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘 조금",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "알룰로스 1스푼",
+          "displayName": "알룰로스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "알룰로스 1스푼 넣고",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "알룰로스 1스푼 넣고",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "채썬 양배추 한 줌",
+          "displayName": "채썬 양배추",
+          "amount": "1",
+          "unit": "줌",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "채썬 양배추 한 줌은",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "채썬 양배추 한 줌은",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "기름 살짝",
+          "displayName": "기름",
+          "amount": "살짝",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "기름 살짝 두르고",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "기름 살짝 두르고",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "소금",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "소금, 후추,",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소금, 후추,",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "소금, 후추,",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소금, 후추,",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "맛술 1스푼",
+          "displayName": "맛술",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "맛술 1스푼 넣고",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "맛술 1스푼 넣고",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 밥을 담는 모습",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "밥 위에 대파 한 줌,",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "항정살",
+          "displayName": "항정살",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "항정살은 먼저 노릇하게 구워주세요.",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "항정살은 먼저 노릇하게 구워주세요.",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "대파 한 줌",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "줌",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "밥 위에 대파 한 줌,",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "소스 및 볶아지는 고기에 섞여 있는 송송 썬 대파",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "고추",
+          "displayName": "고추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "소스 컵에 송송 썰려 들어가 있는 청양고추 또는 고추 조각들",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "계란후라이",
+          "displayName": "계란",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "계란후라이까지 올려요.",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란후라이까지 올려요.",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 덮밥 위에 뿌려져 있는 통깨",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양조간장 2스푼, 맛술 2스푼, 다진 마늘 조금, 알룰로스 1스푼을 섞고 송송 썬 고추와 대파를 넣어 소스를 만든다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양조간장 2스푼 맛술 2스푼 다진 마늘 조금 알룰로스 1스푼 넣고 소스를 만들어요.",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "간장 소스에 썬 파와 고추가 섞여 있는 모습",
+              "timestamp": "00:31"
+            }
+          ]
+        },
+        {
+          "text": "팬에 기름을 살짝 두르고 채 썬 양배추 한 줌, 소금, 후추, 맛술 1스푼을 넣고 숨만 살짝 죽을 정도로 볶아둔다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "채썬 양배추 한 줌은 기름 살짝 두르고 소금, 후추, 맛술 1스푼 넣고 숨만 살짝 죽이면 돼요. 양배추는 오래 볶지 마세요. 그래야 덮밥에 올렸을 때 아삭함이 남아요.",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 밥을 담는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 밥을 담는 모습",
+              "timestamp": "00:25"
+            }
+          ]
+        },
+        {
+          "text": "팬에 항정살을 올리고 겉면이 노릇해질 때까지 굽는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "항정살은 먼저 노릇하게 구워주세요. 겉면이 노릇해질 때까지 기다리는 게 포인트에요.",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "기름이 많으면 살짝 닦아내고 준비한 소스를 부어 윤기 나게 졸인다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "기름이 많으면 살짝 닦고, 소스를 부어 윤기 나게 졸여줍니다.",
+              "timestamp": "00:33"
+            }
+          ]
+        },
+        {
+          "text": "밥 위에 볶은 양배추, 간장 항정살(및 대파)을 올린다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "밥 위에 대파 한 줌, 볶은 양배추, 간장 항정살을 올리고",
+              "timestamp": "00:38"
+            }
+          ]
+        },
+        {
+          "text": "계란후라이를 만들어 덮밥 위에 올린다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "계란후라이까지 올려요.",
+              "timestamp": "00:41"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "항정살, 밥, 계란, 소금, 후추, 통깨의 정확한 중량 및 계량 미표기",
+        "소스에 들어간 썬 고추(청양고추 추정)의 명칭 및 분량이 음성/자막으로 직접 언급되지 않고 시각적으로만 확인됨",
+        "대파가 소스에 함께 조리된 것인지 밥 위에 고명으로 얹는 것인지 자막('밥 위에 대파 한 줌')과 조리 화면(소스에 섞여 조리됨) 간 구성 차이 존재"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

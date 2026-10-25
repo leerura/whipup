@@ -1,0 +1,269 @@
+{
+  "videoId": "I0wuFPoYhek",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/I0wuFPoYhek",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T14:58:58.059944+00:00",
+    "rawResponse": "{\n  \"title\": \"양파계란덮밥\",\n  \"description\": \"집에 있는 양파와 계란으로 간단하게 만드는 한 그릇 덮밥 요리\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 이 양파 원하는 굵기로 썰어주고\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양파 1개를 손질하여 도마 위에 올리고 채 썬다\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기름 두른 팬에\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 식용유를 두른다\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 두꼬집\",\n      \"displayName\": \"소금\",\n      \"amount\": \"2\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금 두꼬집 넣어서\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소금 두꼬집\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 한개\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 간장 한개\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"간장 한개\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치액 한개\",\n      \"displayName\": \"참치액\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치액 한개\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참치액 한개\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 반개\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.5\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕은 반개\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 반개\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 150ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"150\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 부어주고\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 150ml\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 대충 풀어서 부어주고\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 푼 계란 2개를 팬에 부어준다\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 밥 위에 뿌려주면 되는데\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 담긴 밥 위에 요리를 붓는다\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양파를 원하는 굵기로 채 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 이 양파 원하는 굵기로 썰어주고\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"기름을 두른 팬에 양파와 소금 두 꼬집을 넣어 노릇하게 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기름 두른 팬에 양파랑 소금 두꼬집 넣어서 노릇하게 볶아주세요\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"간장 1숟가락, 참치액 1숟가락, 설탕 0.5숟가락, 물 150ml를 넣고 강불에서 2분 정도 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 간장 한개 참치액 한개 설탕은 반개 물 부어주고 강불에서 2분 정도 끓여주다가\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란을 대충 풀어 팬에 둘러 부어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 대충 풀어서 부어주고\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란이 어느 정도 익으면 불을 끄고 뚜껑을 덮어 1분간 뜸을 들인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"어느 정도 익었다 싶을 때 불을 끄고 뚜껑 덮어서 1분만 기다려주세요\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 위에 완성된 양파계란을 얹어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 밥 위에 뿌려주면 되는데\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "양파계란덮밥",
+      "description": "집에 있는 양파와 계란으로 간단하게 만드는 한 그릇 덮밥 요리",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 이 양파 원하는 굵기로 썰어주고",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양파 1개를 손질하여 도마 위에 올리고 채 썬다",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "기름 두른 팬에",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 식용유를 두른다",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "소금 두꼬집",
+          "displayName": "소금",
+          "amount": "2",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소금 두꼬집 넣어서",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "소금 두꼬집",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "간장 한개",
+          "displayName": "간장",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 간장 한개",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "간장 한개",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "참치액 한개",
+          "displayName": "참치액",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "참치액 한개",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "참치액 한개",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "설탕 반개",
+          "displayName": "설탕",
+          "amount": "0.5",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "설탕은 반개",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 반개",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "물 150ml",
+          "displayName": "물",
+          "amount": "150",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 부어주고",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 150ml",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "계란",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 대충 풀어서 부어주고",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 푼 계란 2개를 팬에 부어준다",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 밥 위에 뿌려주면 되는데",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 담긴 밥 위에 요리를 붓는다",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양파를 원하는 굵기로 채 썰어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 이 양파 원하는 굵기로 썰어주고",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "기름을 두른 팬에 양파와 소금 두 꼬집을 넣어 노릇하게 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "기름 두른 팬에 양파랑 소금 두꼬집 넣어서 노릇하게 볶아주세요",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "간장 1숟가락, 참치액 1숟가락, 설탕 0.5숟가락, 물 150ml를 넣고 강불에서 2분 정도 끓여준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 간장 한개 참치액 한개 설탕은 반개 물 부어주고 강불에서 2분 정도 끓여주다가",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "계란을 대충 풀어 팬에 둘러 부어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 대충 풀어서 부어주고",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "계란이 어느 정도 익으면 불을 끄고 뚜껑을 덮어 1분간 뜸을 들인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "어느 정도 익었다 싶을 때 불을 끄고 뚜껑 덮어서 1분만 기다려주세요",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "밥 위에 완성된 양파계란을 얹어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 밥 위에 뿌려주면 되는데",
+              "timestamp": "00:21"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

@@ -27,6 +27,9 @@ public class User {
 	@Column(name = "updated_at", nullable = false)
 	private OffsetDateTime updatedAt;
 
+	@Column(name = "onboarding_completed", nullable = false)
+	private boolean onboardingCompleted;
+
 	protected User() {
 	}
 
@@ -36,5 +39,13 @@ public class User {
 
 	public Long getId() {
 		return id;
+	}
+
+	public boolean isOnboardingCompleted() {
+		return onboardingCompleted;
+	}
+
+	public void markOnboardingCompleted() {
+		this.onboardingCompleted = true;
 	}
 }

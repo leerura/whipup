@@ -1,0 +1,401 @@
+{
+  "videoId": "qSTGiNYDKOk",
+  "status": "REVIEW_PENDING",
+  "stages": {
+    "stage1": {
+      "status": "COMPLETED",
+      "pipeline": {
+        "type": "V3_INGREDIENT_EXTRACTION",
+        "version": 3,
+        "model": "models/gemini-2.5-flash"
+      },
+      "completedAt": "2026-10-24T09:09:51.336800+00:00",
+      "ingredients": [
+        {
+          "sourceId": "ingredient-1",
+          "rawText": "순두부",
+          "displayName": "Soft Tofu",
+          "amount": "0.5",
+          "unit": "개",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "순두부 하나만 있으면",
+              "timestamp": "0:00"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Package of soft tofu visible",
+              "timestamp": "0:05"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "순두부 반개",
+              "timestamp": "0:15"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-2",
+          "rawText": "고춧가루 1T",
+          "displayName": "Gochugaru",
+          "amount": "1",
+          "unit": "T",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1T",
+              "timestamp": "0:09"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-3",
+          "rawText": "간장 1T",
+          "displayName": "Soy Sauce",
+          "amount": "1",
+          "unit": "T",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 1T",
+              "timestamp": "0:09"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-4",
+          "rawText": "굴소스 1T",
+          "displayName": "Oyster Sauce",
+          "amount": "1",
+          "unit": "T",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1T",
+              "timestamp": "0:10"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-5",
+          "rawText": "알룰로스 1T",
+          "displayName": "Allulose",
+          "amount": "1",
+          "unit": "T",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "알룰로스 1T",
+              "timestamp": "0:11"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-6",
+          "rawText": "참기름 1T",
+          "displayName": "Sesame Oil",
+          "amount": "1",
+          "unit": "T",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1T",
+              "timestamp": "0:12"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-7",
+          "rawText": "밥 150g",
+          "displayName": "Rice",
+          "amount": "150",
+          "unit": "g",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 150g",
+              "timestamp": "0:14"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-8",
+          "rawText": "계란 한개",
+          "displayName": "Egg",
+          "amount": "1",
+          "unit": "개",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 한개",
+              "timestamp": "0:19"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-9",
+          "rawText": "깨 솔솔",
+          "displayName": "Sesame Seeds",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깨 솔솔",
+              "timestamp": "0:25"
+            }
+          ]
+        }
+      ],
+      "retryCount": 0
+    },
+    "stage2": {
+      "status": "COMPLETED",
+      "pipeline": {
+        "type": "V3_RECIPE_STRUCTURING",
+        "version": 4,
+        "model": "models/gemini-2.5-flash",
+        "ingredientCatalogHash": "1cfffbf82968915c48b0033c79f653588cb37ba31b2269dd61af8f5e18016bce"
+      },
+      "completedAt": "2026-10-24T09:10:11.958567+00:00",
+      "result": {
+        "recipe": {
+          "key": "sundubu-bapdoduk-recipe",
+          "name": "초간단 순두부 밥도둑 레시피",
+          "status": "DRAFT",
+          "shortsReference": "https://www.youtube.com/shorts/qSTGiNYDKOk",
+          "ingredients": [
+            {
+              "key": "soft-tofu",
+              "variant": "soft-tofu-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-1",
+              "displayName": "Soft Tofu",
+              "rawText": "순두부",
+              "amount": "0.5",
+              "unit": "개",
+              "optional": false
+            },
+            {
+              "key": "red-pepper-powder",
+              "variant": "red-pepper-powder-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-2",
+              "displayName": "Gochugaru",
+              "rawText": "고춧가루 1T",
+              "amount": "1",
+              "unit": "T",
+              "optional": false
+            },
+            {
+              "key": "soy-sauce",
+              "variant": null,
+              "acceptedOwnedVariants": [
+                "dark-soy-sauce",
+                "brewed-soy-sauce"
+              ],
+              "sourceId": "ingredient-3",
+              "displayName": "Soy Sauce",
+              "rawText": "간장 1T",
+              "amount": "1",
+              "unit": "T",
+              "optional": false
+            },
+            {
+              "key": "oyster-sauce",
+              "variant": "oyster-sauce-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-4",
+              "displayName": "Oyster Sauce",
+              "rawText": "굴소스 1T",
+              "amount": "1",
+              "unit": "T",
+              "optional": false
+            },
+            {
+              "key": "allulose",
+              "variant": "allulose-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-5",
+              "displayName": "Allulose",
+              "rawText": "알룰로스 1T",
+              "amount": "1",
+              "unit": "T",
+              "optional": false
+            },
+            {
+              "key": "sesame-oil",
+              "variant": "sesame-oil-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-6",
+              "displayName": "Sesame Oil",
+              "rawText": "참기름 1T",
+              "amount": "1",
+              "unit": "T",
+              "optional": false
+            },
+            {
+              "key": "rice",
+              "variant": "rice-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-7",
+              "displayName": "Rice",
+              "rawText": "밥 150g",
+              "amount": "150",
+              "unit": "g",
+              "optional": false
+            },
+            {
+              "key": "egg",
+              "variant": "egg-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-8",
+              "displayName": "Egg",
+              "rawText": "계란 한개",
+              "amount": "1",
+              "unit": "개",
+              "optional": false
+            },
+            {
+              "key": "sesame-seeds",
+              "variant": "sesame-seeds",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-9",
+              "displayName": "Sesame Seeds",
+              "rawText": "깨 솔솔",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            }
+          ],
+          "requirements": [
+            {
+              "options": [
+                {
+                  "ingredient": "soft-tofu",
+                  "substitutes": [],
+                  "allowedVariants": [
+                    "soft-tofu-item"
+                  ]
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "red-pepper-powder",
+                  "substitutes": [],
+                  "allowedVariants": [
+                    "red-pepper-powder-item"
+                  ]
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "soy-sauce",
+                  "substitutes": [],
+                  "allowedVariants": [
+                    "dark-soy-sauce",
+                    "brewed-soy-sauce"
+                  ]
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "oyster-sauce",
+                  "substitutes": [],
+                  "allowedVariants": [
+                    "oyster-sauce-item"
+                  ]
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "allulose",
+                  "substitutes": [],
+                  "allowedVariants": [
+                    "allulose-item"
+                  ]
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "sesame-oil",
+                  "substitutes": [],
+                  "allowedVariants": [
+                    "sesame-oil-item"
+                  ]
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "rice",
+                  "substitutes": [],
+                  "allowedVariants": [
+                    "rice-item"
+                  ]
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "egg",
+                  "substitutes": [],
+                  "allowedVariants": [
+                    "egg-item"
+                  ]
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "sesame-seeds",
+                  "substitutes": [],
+                  "allowedVariants": [
+                    "sesame-seeds"
+                  ]
+                }
+              ]
+            }
+          ],
+          "steps": [
+            "순두부 반개를 적당한 크기로 잘라줍니다.",
+            "그릇에 고춧가루 1T, 간장 1T, 굴소스 1T, 알룰로스 1T, 참기름 1T를 넣고 잘 섞어 소스를 만듭니다.",
+            "전자레인지용 용기에 밥 150g을 담고, 그 위에 잘라둔 순두부를 올립니다.",
+            "만들어 둔 소스를 순두부와 밥 위에 골고루 뿌립니다.",
+            "계란 한 개를 넣고 포크로 노른자를 톡 터뜨려 줍니다.",
+            "뚜껑을 덮고 전자레인지에 2분간 조리합니다.",
+            "조리가 끝나면 깨를 솔솔 뿌려줍니다.",
+            "모든 재료를 맛있게 비벼서 드시면 완성입니다."
+          ]
+        },
+        "catalogAdditions": {
+          "ingredients": []
+        },
+        "mappingFailures": []
+      },
+      "structuralErrors": [],
+      "retryCount": 0
+    }
+  },
+  "sourceUrl": "https://www.youtube.com/shorts/qSTGiNYDKOk",
+  "pipelineVersion": 1,
+  "review": {
+    "status": "PENDING",
+    "required": "source_video_and_semantic_review",
+    "structuralErrors": []
+  }
+}

@@ -1,0 +1,332 @@
+{
+  "videoId": "c_YVjP2Lfsw",
+  "status": "REVIEW_PENDING",
+  "stages": {
+    "stage1": {
+      "status": "COMPLETED",
+      "pipeline": {
+        "type": "V3_INGREDIENT_EXTRACTION",
+        "version": 3,
+        "model": "models/gemini-2.5-flash"
+      },
+      "completedAt": "2026-10-24T09:06:50.123375+00:00",
+      "ingredients": [
+        {
+          "sourceId": "ingredient-1",
+          "rawText": "물",
+          "displayName": "Water",
+          "amount": "2",
+          "unit": null,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 둘",
+              "timestamp": "0:05"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 두",
+              "timestamp": "0:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Liquid is added to a spoon",
+              "timestamp": "0:05"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-2",
+          "rawText": "간장",
+          "displayName": "Soy sauce",
+          "amount": "2",
+          "unit": null,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "간장 둘",
+              "timestamp": "0:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 둘",
+              "timestamp": "0:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Dark liquid (soy sauce) is added to a spoon",
+              "timestamp": "0:06"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-3",
+          "rawText": "참기름",
+          "displayName": "Sesame oil",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "참기름 섞어서",
+              "timestamp": "0:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 섞어서",
+              "timestamp": "0:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Sesame oil is poured",
+              "timestamp": "0:06"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-4",
+          "rawText": "계란",
+          "displayName": "Egg",
+          "amount": "2",
+          "unit": null,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 두 알 까서",
+              "timestamp": "0:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2알 까서",
+              "timestamp": "0:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Two eggs are cracked into a bowl",
+              "timestamp": "0:08"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-5",
+          "rawText": "밥",
+          "displayName": "Rice",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥 위에 얹고",
+              "timestamp": "0:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "이제 밥 위에 얹고",
+              "timestamp": "0:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Cooked eggs are placed on top of a bowl of rice",
+              "timestamp": "0:11"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-6",
+          "rawText": "깨",
+          "displayName": "Sesame seeds",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "깨 솔솔 뿌려",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깨 솔솔 뿌려",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Sesame seeds are sprinkled on the dish",
+              "timestamp": "0:13"
+            }
+          ]
+        }
+      ],
+      "retryCount": 0
+    },
+    "stage2": {
+      "status": "COMPLETED",
+      "pipeline": {
+        "type": "V3_RECIPE_STRUCTURING",
+        "version": 4,
+        "model": "models/gemini-2.5-flash",
+        "ingredientCatalogHash": "1cfffbf82968915c48b0033c79f653588cb37ba31b2269dd61af8f5e18016bce"
+      },
+      "completedAt": "2026-10-24T09:07:07.532672+00:00",
+      "result": {
+        "recipe": {
+          "key": "ganjang-gyeran-bap",
+          "name": "간장 계란밥",
+          "status": "DRAFT",
+          "shortsReference": "https://www.youtube.com/shorts/c_YVjP2Lfsw",
+          "ingredients": [
+            {
+              "key": "water",
+              "variant": "water-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-1",
+              "displayName": "Water",
+              "rawText": "물",
+              "amount": "2",
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "soy-sauce",
+              "variant": null,
+              "acceptedOwnedVariants": [
+                "dark-soy-sauce",
+                "soup-soy-sauce",
+                "brewed-soy-sauce"
+              ],
+              "sourceId": "ingredient-2",
+              "displayName": "Soy sauce",
+              "rawText": "간장",
+              "amount": "2",
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "sesame-oil",
+              "variant": "sesame-oil-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-3",
+              "displayName": "Sesame oil",
+              "rawText": "참기름",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "egg",
+              "variant": "egg-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-4",
+              "displayName": "Egg",
+              "rawText": "계란",
+              "amount": "2",
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "rice",
+              "variant": "rice-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-5",
+              "displayName": "Rice",
+              "rawText": "밥",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "sesame-seeds",
+              "variant": "sesame-seeds",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-6",
+              "displayName": "Sesame seeds",
+              "rawText": "깨",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            }
+          ],
+          "requirements": [
+            {
+              "options": [
+                {
+                  "ingredient": "water",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "soy-sauce",
+                  "substitutes": [],
+                  "allowedVariants": [
+                    "dark-soy-sauce",
+                    "soup-soy-sauce",
+                    "brewed-soy-sauce"
+                  ]
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "sesame-oil",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "egg",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "rice",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "sesame-seeds",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            }
+          ],
+          "steps": [
+            "물 2, 간장 2, 참기름을 섞어 간장 소스를 만듭니다.",
+            "만든 소스에 계란 2개를 까서 넣고, 노른자를 콕 찌릅니다.",
+            "전자레인지에 2분 돌려줍니다.",
+            "밥 위에 익힌 계란과 소스를 얹습니다.",
+            "깨를 솔솔 뿌려 슥슥 비벼 먹습니다."
+          ]
+        },
+        "catalogAdditions": {
+          "ingredients": []
+        },
+        "mappingFailures": []
+      },
+      "structuralErrors": [],
+      "retryCount": 0
+    }
+  },
+  "sourceUrl": "https://www.youtube.com/shorts/c_YVjP2Lfsw",
+  "pipelineVersion": 1,
+  "review": {
+    "status": "PENDING",
+    "required": "source_video_and_semantic_review",
+    "structuralErrors": []
+  }
+}

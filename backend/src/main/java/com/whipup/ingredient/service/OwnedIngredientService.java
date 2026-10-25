@@ -59,9 +59,9 @@ public class OwnedIngredientService {
 		UserIngredient userIngredient = UserIngredient.create(user, ingredientVariant);
 
 		try {
-			return toOwnedIngredient(
-					userIngredientRepository.saveAndFlush(userIngredient)
-			);
+			UserIngredient saved = userIngredientRepository.saveAndFlush(userIngredient);
+			user.markOnboardingCompleted();
+			return toOwnedIngredient(saved);
 		} catch (DataIntegrityViolationException exception) {
 			throw OwnedIngredientException.alreadyExists();
 		}

@@ -1,0 +1,312 @@
+{
+  "videoId": "BlFh-1-NrQA",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/BlFh-1-NrQA",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T14:35:55.580106+00:00",
+    "rawResponse": "{\n  \"title\": \"편스토랑 어남선생 달걀덮밥 (다마고동)\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"식용유 네바퀴\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"4\",\n      \"unit\": \"바퀴\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"식용유 네바퀴\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식용유 네 바퀴\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 하나\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 하나\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 하나\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 두꼬집 (모르겠다 싶으시면 숟가락으로 3/2 이)\",\n      \"displayName\": \"소금\",\n      \"amount\": \"2\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소금 두꼬집\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금 두 꼬집. 모르겠다 싶으시면 숟가락으로 3분의 2 넣어주세요\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 150미리\",\n      \"displayName\": \"물\",\n      \"amount\": \"150\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 150미리\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 150미리\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 하나\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"간장 하나\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 하나\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치액 하나\",\n      \"displayName\": \"참치액\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참치액 하나\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치액 하나\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 반숟갈\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.5\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 반숟갈\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 반 숟갈\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 2개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 달걀 2개를 깨뜨려 넣음\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란은 대충 풀어주면 좋아요\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 담긴 밥 위에 조리된 달걀양파 볶음을 올림\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깨\",\n      \"displayName\": \"깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 달걀덮밥 위에 통깨/깨소금을 뿌림\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 식용유 네 바퀴를 두르고, 얇게 썬 양파 1개를 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식용유 네 바퀴, 양파 하나. 양파는 얇게 썰어주는 게 포인트. 칼 어려우시면 채칼 쓰셔도 돼요.\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"식용유 네바퀴 / 양파 하나 / 얇게 썰어주는게 포인트 / 채칼 쓰셔도 돼요\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소금 두 꼬집을 넣고 양파를 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금 두 꼬집. 모르겠다 싶으시면 숟가락으로 3분의 2 넣어주세요.\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소금 두꼬집 / 모르겠다 싶으시면 숟가락으로 3/2 이 넣어주세요\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 150ml, 간장 1숟가락, 참치액 1숟가락, 설탕 반 숟가락을 넣고 섞어 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 150미리, 간장 하나, 참치액 하나, 설탕 반 숟갈. 참치액 꼭 들어가야 돼요! 액젓 바꾸면 다른 요리가 돼요! 꼭 참치액이 들어가야 돼요!\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 150미리 / 간장 하나 / 참치액 하나 / 설탕 반숟갈 / 꼭 참치액이 들어가야 돼요!!\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 2개를 흰자와 노른자가 완전히 섞이지 않도록 대충 푼 뒤 팬에 둘러 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란은 대충 풀어주면 좋아요. 흰자 노른자 완전히 안 섞이게. 이게 포인트!\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대충 풀어주면 좋아요 / 흰자 노른자 완전히 안섞이게 / 이게 포인트\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뚜껑을 닫고 약 1분 정도 취향껏 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"뚜껑 닫고 1분 정도 익히면 완성! 달걀은 취향껏 익히면 돼요. 계란이 살짝 덜 익었을 때 먹어야 제맛.\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"뚜껑 닫고 1분 정도 익히면 완성 / 달걀은 취향껏 익히면 돼요 / 계란이 살짝 덜익었을때 먹어야 제맛\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 위에 완성된 달걀을 얹고 깨를 뿌려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 달걀양파를 붓고 깨를 뿌려 완성\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"자막에 표기된 '숟가락으로 3/2 이'는 음성에서 '3분의 2'로 발음되었으나, 소금 두 꼬집 대비 숟가락 단위 양 표기에 대한 의도(예: 1/3 작은술 또는 2/3 작은술 등)가 명확하지 않음\"\n  ]\n}",
+    "result": {
+      "title": "편스토랑 어남선생 달걀덮밥 (다마고동)",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "식용유 네바퀴",
+          "displayName": "식용유",
+          "amount": "4",
+          "unit": "바퀴",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "식용유 네바퀴",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "식용유 네 바퀴",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파 하나",
+          "displayName": "양파",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파 하나",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파 하나",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "소금 두꼬집 (모르겠다 싶으시면 숟가락으로 3/2 이)",
+          "displayName": "소금",
+          "amount": "2",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "소금 두꼬집",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소금 두 꼬집. 모르겠다 싶으시면 숟가락으로 3분의 2 넣어주세요",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "물 150미리",
+          "displayName": "물",
+          "amount": "150",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 150미리",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 150미리",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "간장 하나",
+          "displayName": "간장",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "간장 하나",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장 하나",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "참치액 하나",
+          "displayName": "참치액",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "참치액 하나",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참치액 하나",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "설탕 반숟갈",
+          "displayName": "설탕",
+          "amount": "0.5",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 반숟갈",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 반 숟갈",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "계란 2개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 달걀 2개를 깨뜨려 넣음",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란은 대충 풀어주면 좋아요",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 담긴 밥 위에 조리된 달걀양파 볶음을 올림",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "깨",
+          "displayName": "깨",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 달걀덮밥 위에 통깨/깨소금을 뿌림",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 식용유 네 바퀴를 두르고, 얇게 썬 양파 1개를 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "식용유 네 바퀴, 양파 하나. 양파는 얇게 썰어주는 게 포인트. 칼 어려우시면 채칼 쓰셔도 돼요.",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "식용유 네바퀴 / 양파 하나 / 얇게 썰어주는게 포인트 / 채칼 쓰셔도 돼요",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "소금 두 꼬집을 넣고 양파를 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소금 두 꼬집. 모르겠다 싶으시면 숟가락으로 3분의 2 넣어주세요.",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "소금 두꼬집 / 모르겠다 싶으시면 숟가락으로 3/2 이 넣어주세요",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "물 150ml, 간장 1숟가락, 참치액 1숟가락, 설탕 반 숟가락을 넣고 섞어 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 150미리, 간장 하나, 참치액 하나, 설탕 반 숟갈. 참치액 꼭 들어가야 돼요! 액젓 바꾸면 다른 요리가 돼요! 꼭 참치액이 들어가야 돼요!",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 150미리 / 간장 하나 / 참치액 하나 / 설탕 반숟갈 / 꼭 참치액이 들어가야 돼요!!",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "계란 2개를 흰자와 노른자가 완전히 섞이지 않도록 대충 푼 뒤 팬에 둘러 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란은 대충 풀어주면 좋아요. 흰자 노른자 완전히 안 섞이게. 이게 포인트!",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대충 풀어주면 좋아요 / 흰자 노른자 완전히 안섞이게 / 이게 포인트",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "뚜껑을 닫고 약 1분 정도 취향껏 익힌다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "뚜껑 닫고 1분 정도 익히면 완성! 달걀은 취향껏 익히면 돼요. 계란이 살짝 덜 익었을 때 먹어야 제맛.",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "뚜껑 닫고 1분 정도 익히면 완성 / 달걀은 취향껏 익히면 돼요 / 계란이 살짝 덜익었을때 먹어야 제맛",
+              "timestamp": "00:31"
+            }
+          ]
+        },
+        {
+          "text": "밥 위에 완성된 달걀을 얹고 깨를 뿌려 마무리한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 달걀양파를 붓고 깨를 뿌려 완성",
+              "timestamp": "00:34"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "자막에 표기된 '숟가락으로 3/2 이'는 음성에서 '3분의 2'로 발음되었으나, 소금 두 꼬집 대비 숟가락 단위 양 표기에 대한 의도(예: 1/3 작은술 또는 2/3 작은술 등)가 명확하지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  },
+  "agentReviewNote": "Excluded from this batch: WAITING_RETRY due to Gemini quota; no completed extraction to apply.",
+  "previousQuotaWait": {
+    "retryAt": "2026-10-25T07:00:00.026092+00:00",
+    "reason": "provider_retry_info",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 17h9m7.007577919s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '61747s'}]}}"
+  }
+}

@@ -1,0 +1,502 @@
+{
+  "videoId": "yLCLvr-JRd4",
+  "status": "REVIEW_PENDING",
+  "stages": {
+    "stage1": {
+      "status": "COMPLETED",
+      "pipeline": {
+        "type": "V3_INGREDIENT_EXTRACTION",
+        "version": 3,
+        "model": "models/gemini-2.5-flash"
+      },
+      "completedAt": "2026-10-24T09:13:17.223007+00:00",
+      "ingredients": [
+        {
+          "sourceId": "ingredient-1",
+          "rawText": "김치를 2~3스푼",
+          "displayName": "Kimchi",
+          "amount": "2~3",
+          "unit": "스푼",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김치를 두세 스푼 준비해 줍니다.",
+              "timestamp": "00:00:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "김치를 2~3스푼 준비해 줍니다.",
+              "timestamp": "00:00:01"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Kimchi is scooped into a bowl",
+              "timestamp": "00:00:00"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-2",
+          "rawText": "대파를 넉넉하게",
+          "displayName": "Green onion",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파를 넉넉하게 넣어주고",
+              "timestamp": "00:00:03"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대파도 넉넉하게 넣어주고",
+              "timestamp": "00:00:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Chopped green onions are added to the bowl",
+              "timestamp": "00:00:03"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-3",
+          "rawText": "진간장 1스푼",
+          "displayName": "Soy sauce",
+          "amount": "1",
+          "unit": "스푼",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "짭짤하게 진간장 1스푼",
+              "timestamp": "00:00:04"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "짭짤하게 진간장 1스푼",
+              "timestamp": "00:00:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Soy sauce is poured from a spoon into the bowl",
+              "timestamp": "00:00:04"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-4",
+          "rawText": "설탕 1/2스푼",
+          "displayName": "Sugar",
+          "amount": "1/2",
+          "unit": "스푼",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "설탕 반스푼을 넣고",
+              "timestamp": "00:00:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 1/2스푼",
+              "timestamp": "00:00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Granulated sugar is added from a spoon into the bowl",
+              "timestamp": "00:00:06"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-5",
+          "rawText": "고춧가루 1스푼",
+          "displayName": "Chili powder",
+          "amount": "1",
+          "unit": "스푼",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 1스푼과",
+              "timestamp": "00:00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루 1스푼과",
+              "timestamp": "00:00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Red chili powder is added from a spoon into the bowl",
+              "timestamp": "00:00:07"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-6",
+          "rawText": "마요네즈를 1스푼",
+          "displayName": "Mayonnaise",
+          "amount": "1",
+          "unit": "스푼",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마요네즈를 1스푼 넣어줍니다.",
+              "timestamp": "00:00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마요네즈를 1스푼 넣어줍니다.",
+              "timestamp": "00:00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Mayonnaise is squeezed into the bowl",
+              "timestamp": "00:00:09"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-7",
+          "rawText": "식용유를 한두스푼",
+          "displayName": "Cooking oil",
+          "amount": "1~2",
+          "unit": "스푼",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "식용유를 한두 스푼 둘러주고",
+              "timestamp": "00:00:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "식용유를 한두스푼 둘러주고",
+              "timestamp": "00:00:23"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Cooking oil is poured into a pan",
+              "timestamp": "00:00:22"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-8",
+          "rawText": "밥 한 공기를",
+          "displayName": "Cooked rice",
+          "amount": "1",
+          "unit": "공기",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 밥 한 공기를 넣고",
+              "timestamp": "00:00:31"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 밥 한 공기를 넣고",
+              "timestamp": "00:00:31"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Cooked rice is added to the pan",
+              "timestamp": "00:00:30"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-9",
+          "rawText": "참치 1캔",
+          "displayName": "Canned tuna",
+          "amount": "1",
+          "unit": "캔",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "참치 1캔을 기름과 같이 다 넣어줍니다.",
+              "timestamp": "00:00:41"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "참치 1캔을 기름과 같이 다 넣어줍니다.",
+              "timestamp": "00:00:42"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Canned tuna is added to the pan",
+              "timestamp": "00:00:41"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-10",
+          "rawText": null,
+          "displayName": "Green flakes (garnish)",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Green flakes are sprinkled over the fried rice",
+              "timestamp": "00:00:54"
+            }
+          ]
+        }
+      ],
+      "retryCount": 0
+    },
+    "stage2": {
+      "status": "COMPLETED",
+      "pipeline": {
+        "type": "V3_RECIPE_STRUCTURING",
+        "version": 4,
+        "model": "models/gemini-2.5-flash",
+        "ingredientCatalogHash": "e7d8b5f501b126f730135c7c5823ac082568ab3ac549643dbd57d9903df754b2"
+      },
+      "completedAt": "2026-10-24T09:13:46.122273+00:00",
+      "result": {
+        "recipe": {
+          "key": "10x-delicious-fried-rice-yLCLvr-JRd4",
+          "name": "10배 더 맛있게 볶음밥 만드는 법",
+          "status": "DRAFT",
+          "shortsReference": "https://www.youtube.com/shorts/yLCLvr-JRd4",
+          "ingredients": [
+            {
+              "key": "kimchi",
+              "variant": "kimchi-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-1",
+              "displayName": "Kimchi",
+              "rawText": "김치를 2~3스푼",
+              "amount": "2~3",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "green-onion",
+              "variant": "green-onion-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-2",
+              "displayName": "Green onion",
+              "rawText": "대파를 넉넉하게",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "soy-sauce",
+              "variant": "dark-soy-sauce",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-3",
+              "displayName": "Soy sauce",
+              "rawText": "진간장 1스푼",
+              "amount": "1",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "sugar",
+              "variant": "sugar-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-4",
+              "displayName": "Sugar",
+              "rawText": "설탕 1/2스푼",
+              "amount": "1/2",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "red-pepper-powder",
+              "variant": "red-pepper-powder-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-5",
+              "displayName": "Chili powder",
+              "rawText": "고춧가루 1스푼",
+              "amount": "1",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "mayonnaise",
+              "variant": "mayonnaise-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-6",
+              "displayName": "Mayonnaise",
+              "rawText": "마요네즈를 1스푼",
+              "amount": "1",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "cooking-oil",
+              "variant": "cooking-oil-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-7",
+              "displayName": "Cooking oil",
+              "rawText": "식용유를 한두스푼",
+              "amount": "1~2",
+              "unit": "스푼",
+              "optional": false
+            },
+            {
+              "key": "rice",
+              "variant": "rice-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-8",
+              "displayName": "Cooked rice",
+              "rawText": "밥 한 공기를",
+              "amount": "1",
+              "unit": "공기",
+              "optional": false
+            },
+            {
+              "key": "canned-tuna",
+              "variant": "canned-tuna-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-9",
+              "displayName": "Canned tuna",
+              "rawText": "참치 1캔",
+              "amount": "1",
+              "unit": "캔",
+              "optional": false
+            },
+            {
+              "key": "green-garnish-flakes",
+              "variant": "green-garnish-flakes-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-10",
+              "displayName": "Green flakes (garnish)",
+              "rawText": null,
+              "amount": null,
+              "unit": null,
+              "optional": true
+            }
+          ],
+          "requirements": [
+            {
+              "options": [
+                {
+                  "ingredient": "kimchi",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "green-onion",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "soy-sauce",
+                  "substitutes": [],
+                  "allowedVariants": [
+                    "dark-soy-sauce"
+                  ]
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "sugar",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "red-pepper-powder",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "mayonnaise",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "cooking-oil",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "rice",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "canned-tuna",
+                  "substitutes": [],
+                  "allowedVariants": [
+                    "canned-tuna-item"
+                  ]
+                }
+              ]
+            }
+          ],
+          "steps": [
+            "김치, 대파, 진간장, 설탕, 고춧가루, 마요네즈를 볼에 넣고 잘 섞어줍니다.",
+            "팬에 식용유를 두르고 섞어둔 김치 양념을 넣고 뻑뻑한 느낌이 들 때까지 볶아줍니다.",
+            "밥 한 공기를 넣고 양념이 타지 않도록 약한 불에서 잘 섞어주며 볶아줍니다.",
+            "참치 1캔을 기름과 함께 다 넣고 잘 섞어주며 볶아줍니다.",
+            "기호에 따라 초록 플레이크 고명을 뿌려줍니다."
+          ]
+        },
+        "catalogAdditions": {
+          "ingredients": [
+            {
+              "key": "green-garnish-flakes",
+              "name": "초록 플레이크 (고명)",
+              "variants": [
+                {
+                  "key": "green-garnish-flakes-item",
+                  "name": "초록 플레이크",
+                  "aliases": []
+                }
+              ],
+              "relations": []
+            }
+          ]
+        },
+        "mappingFailures": []
+      },
+      "structuralErrors": [
+        "recipe.key must be lowercase ASCII kebab-case"
+      ],
+      "retryCount": 0
+    }
+  },
+  "sourceUrl": "https://www.youtube.com/shorts/yLCLvr-JRd4",
+  "pipelineVersion": 1,
+  "review": {
+    "status": "PENDING",
+    "required": "source_video_and_semantic_review",
+    "structuralErrors": [
+      "recipe.key must be lowercase ASCII kebab-case"
+    ]
+  }
+}

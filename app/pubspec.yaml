@@ -11,17 +11,24 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_svg: ^2.3.0
+  webview_flutter: ^4.14.1
+  webview_flutter_android: ^4.13.0
+  webview_flutter_wkwebview: ^3.26.0
   device_info_plus: ^12.4.0
   kakao_flutter_sdk_user: ^2.0.1
   api_client:
     path: packages/api_client
 
 dev_dependencies:
+  dio: ^5.7.0
+  flutter_test:
+    sdk: flutter
   flutter_lints: ^6.0.0
 
 flutter:
   uses-material-design: true
   assets:
+    - assets/home_pantry_illustration.svg
     - assets/onboarding/
     - assets/ingredient/
     - assets/recipe/

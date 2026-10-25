@@ -1,0 +1,244 @@
+{
+  "videoId": "KHAC6M57vcI",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/KHAC6M57vcI",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T15:22:59.612364+00:00",
+    "rawResponse": "{\n  \"title\": \"치킨마요 덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"너겟 7~8개\",\n      \"displayName\": \"너겟\",\n      \"amount\": \"7~8\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"너겟 노릇하게 구워주다가\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"7~8개\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 1.5큰술\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1.5\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 넣고\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1.5큰술\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1큰술\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 넣고\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1큰술\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 2개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"에그스크램블 만들어주고\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2개\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쌀밥\",\n      \"displayName\": \"쌀밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"쌀밥 위에\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쌀밥 위에\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루 (도시락김)\",\n      \"displayName\": \"도시락김\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김가루 올리고\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"도시락김 뿌셔뿌셔\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마요네즈 취향껏 듬뿍\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마요네즈 뿌려주면\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"취향껏 듬뿍\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 너겟 7~8개를 노릇하게 구워준 뒤 가위로 작게 잘라준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"너겟 노릇하게 구워주다가 작게 잘라주고\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에서 노릇하게 익힌 너겟을 가위로 작게 자르는 모습\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"자른 너겟에 간장 1.5큰술과 설탕 1큰술을 넣고 잘 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 넣고 설탕 넣고 볶아준 뒤\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 간장과 설탕을 붓고 너겟과 볶는 모습\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 2개를 풀어 팬에 붓고 에그스크램블을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"에그스크램블 만들어주고\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 계란물을 부어 젓가락으로 스크램블 에그를 만드는 모습\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 쌀밥을 담고 그 위에 스크램블 에그와 조린 너겟을 순서대로 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"쌀밥 위에 계란 올리고 너겟 올리고\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 담긴 밥 위에 에그스크램블과 너겟을 차례로 얹는 모습\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"도시락김을 부숴 김가루를 올리고, 마요네즈를 취향껏 듬뿍 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김가루 올리고 마요네즈 뿌려주면 완성\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도시락김을 손으로 부숴 얹은 뒤 마요네즈를 듬뿍 뿌리는 모습\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "치킨마요 덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "너겟 7~8개",
+          "displayName": "너겟",
+          "amount": "7~8",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "너겟 노릇하게 구워주다가",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "7~8개",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "간장 1.5큰술",
+          "displayName": "간장",
+          "amount": "1.5",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "간장 넣고",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1.5큰술",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "설탕 1큰술",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "설탕 넣고",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1큰술",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "계란 2개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "에그스크램블 만들어주고",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2개",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "쌀밥",
+          "displayName": "쌀밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "쌀밥 위에",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쌀밥 위에",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "김가루 (도시락김)",
+          "displayName": "도시락김",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김가루 올리고",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "도시락김 뿌셔뿌셔",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "마요네즈 취향껏 듬뿍",
+          "displayName": "마요네즈",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마요네즈 뿌려주면",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "취향껏 듬뿍",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 너겟 7~8개를 노릇하게 구워준 뒤 가위로 작게 잘라준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "너겟 노릇하게 구워주다가 작게 잘라주고",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에서 노릇하게 익힌 너겟을 가위로 작게 자르는 모습",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "자른 너겟에 간장 1.5큰술과 설탕 1큰술을 넣고 잘 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "간장 넣고 설탕 넣고 볶아준 뒤",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 간장과 설탕을 붓고 너겟과 볶는 모습",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "계란 2개를 풀어 팬에 붓고 에그스크램블을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "에그스크램블 만들어주고",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 계란물을 부어 젓가락으로 스크램블 에그를 만드는 모습",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 쌀밥을 담고 그 위에 스크램블 에그와 조린 너겟을 순서대로 올린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "쌀밥 위에 계란 올리고 너겟 올리고",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 담긴 밥 위에 에그스크램블과 너겟을 차례로 얹는 모습",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "도시락김을 부숴 김가루를 올리고, 마요네즈를 취향껏 듬뿍 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김가루 올리고 마요네즈 뿌려주면 완성",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도시락김을 손으로 부숴 얹은 뒤 마요네즈를 듬뿍 뿌리는 모습",
+              "timestamp": "00:14"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

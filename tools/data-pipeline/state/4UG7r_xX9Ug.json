@@ -1,0 +1,212 @@
+{
+  "videoId": "4UG7r_xX9Ug",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/4UG7r_xX9Ug",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T13:04:38.200776+00:00",
+    "rawResponse": "{\n  \"title\": \"눌러먹는 구운 주먹밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"즉석밥 용기에서 밥을 볼에 담는다\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥에\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름\",\n      \"displayName\": \"참기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 참기름을 붓는다\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깨\",\n      \"displayName\": \"깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 통깨를 뿌린다\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 한 스푼\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 2스푼\",\n      \"displayName\": \"간장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"간장 2스푼\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 두 스푼 넣고\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김\",\n      \"displayName\": \"김\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김을 붙여주고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"직사각형으로 자른 김을 주먹밥 중앙에 붙인다\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"볼에 밥을 담고 참기름과 깨를 넣어 잘 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볼에 즉석밥, 참기름, 깨를 넣고 젓가락으로 섞는다\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥을 동그랗게 모양 잡아 납작하게 눌러준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"동그랗게 모양 잡아 납작하게 눌러준 다음\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"동그랗게 모양 잡아 납작하게 눌러준 다음\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 설탕 1스푼, 간장 2스푼을 넣고 잘 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 한 스푼 간장 두 스푼 넣고 잘 섞어서\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 1스푼 간장 2스푼 잘 섞어서\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥에 소스를 앞뒤로 바르고 김을 붙여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥에 앞뒤로 발라 김을 붙여주고\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥에 앞뒤로 발라 붙여주고\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"에어프라이어에 넣고 180도에서 8분간 돌려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"에어프라이어에 180도 8분 돌려주면?\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"에어프라이어에 180도 8분 돌려주면?\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"밥, 참기름, 깨, 김의 정확한 계량 분량 미표기\"\n  ]\n}",
+    "result": {
+      "title": "눌러먹는 구운 주먹밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "즉석밥 용기에서 밥을 볼에 담는다",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밥에",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "참기름",
+          "displayName": "참기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 참기름을 붓는다",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "깨",
+          "displayName": "깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 통깨를 뿌린다",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "설탕 1스푼",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 1스푼",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 한 스푼",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "간장 2스푼",
+          "displayName": "간장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "간장 2스푼",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장 두 스푼 넣고",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "김",
+          "displayName": "김",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김을 붙여주고",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "직사각형으로 자른 김을 주먹밥 중앙에 붙인다",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        }
+      ],
+      "steps": [
+        {
+          "text": "볼에 밥을 담고 참기름과 깨를 넣어 잘 섞어준다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볼에 즉석밥, 참기름, 깨를 넣고 젓가락으로 섞는다",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "밥을 동그랗게 모양 잡아 납작하게 눌러준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "동그랗게 모양 잡아 납작하게 눌러준 다음",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "동그랗게 모양 잡아 납작하게 눌러준 다음",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 설탕 1스푼, 간장 2스푼을 넣고 잘 섞어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "설탕 한 스푼 간장 두 스푼 넣고 잘 섞어서",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 1스푼 간장 2스푼 잘 섞어서",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "밥에 소스를 앞뒤로 바르고 김을 붙여준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥에 앞뒤로 발라 김을 붙여주고",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "밥에 앞뒤로 발라 붙여주고",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "에어프라이어에 넣고 180도에서 8분간 돌려준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "에어프라이어에 180도 8분 돌려주면?",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "에어프라이어에 180도 8분 돌려주면?",
+              "timestamp": "00:16"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "밥, 참기름, 깨, 김의 정확한 계량 분량 미표기"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  },
+  "agentReviewNote": "Not imported: 에어프라이어 180도 8분 조리가 필수인 레시피로, 특수 조리기구 없이 만들 수 있는 자취 요리 범위에 맞지 않아 데이터셋에서 제외."
+}

@@ -25,7 +25,8 @@ public class AuthApiDelegateImpl implements AuthApiDelegate {
 		LoginResponse response = new LoginResponse(
 				result.accessToken(),
 				new UserSummary(result.userId()),
-				result.hasOwnedIngredients()
+				result.hasOwnedIngredients(),
+				result.onboardingCompleted()
 		);
 
 		return ResponseEntity.ok(response);

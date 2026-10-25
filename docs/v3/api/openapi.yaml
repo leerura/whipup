@@ -209,7 +209,7 @@ components:
 
     LoginResponse:
       type: object
-      required: [accessToken, user, hasOwnedIngredients]
+      required: [accessToken, user, hasOwnedIngredients, onboardingCompleted]
       properties:
         accessToken:
           type: string
@@ -217,6 +217,10 @@ components:
           $ref: '#/components/schemas/UserSummary'
         hasOwnedIngredients:
           type: boolean
+          description: Whether the account currently has any owned ingredient rows.
+        onboardingCompleted:
+          type: boolean
+          description: Whether the account has completed initial ingredient registration. Remains true if all owned ingredients are later deleted.
 
     UserSummary:
       type: object
@@ -380,6 +384,7 @@ components:
       properties:
         requiredName:
           type: string
+          description: Concise missing-item label for recommendation cards. Use the exact selectable item's name when the source ingredient has an exact variant; otherwise use the source requirement display name.
         substitutes:
           type: array
           items:

@@ -1,707 +1,234 @@
 {
   "videoId": "39hBkCuPjFc",
-  "status": "COMPLETED",
-  "stages": {
-    "stage1": {
-      "status": "COMPLETED",
-      "pipeline": {
-        "type": "V3_INGREDIENT_EXTRACTION",
-        "version": 3,
-        "model": "models/gemini-2.5-flash"
-      },
-      "completedAt": "2026-10-18T08:06:23.458169+00:00",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://youtu.be/39hBkCuPjFc?si=OI7Cca9Dpzlr9BUM",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T09:32:13.288471+00:00",
+    "rawResponse": "{\n  \"title\": \"일매출 2000만원 대파닭구이\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"순살 닭다리 정육\",\n      \"displayName\": \"순살 닭다리 정육\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"첫번째는 순살 닭다리 정육을 준비하는건데\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"순살 닭다리 정육 2조각을 팬에 올려 조리함\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금만 뿌려주면 준비 끝이고\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"닭고기에 소금을 뿌려 밑간함\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": \"살짝\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 기름을 살짝 두르고\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 식용유를 두름\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 닭만큼\",\n      \"displayName\": \"대파\",\n      \"amount\": \"닭만큼\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파도 닭만큼 넣어주고\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"큼직하게 썬 대파를 팬에 넣음\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 2스푼\",\n      \"displayName\": \"간장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 2스푼\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1스푼\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1스푼\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕만 넣고\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"순살 닭다리 정육의 수분을 키친타월로 닦아내고 소금을 뿌려 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이걸 치킨타올로 닦아주고 소금만 뿌려주면 준비 끝이고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"키친타월로 닭다리살을 닦은 뒤 소금을 뿌림\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 기름을 살짝 두르고 닭다리살을 껍질부터 올려 앞뒤로 노릇하게 구워준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"두번째로는 팬에 기름을 살짝 두르고 껍질부터 넣고 닭다리살을 앞뒤로 노릇하게 구워주다가\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 기름을 두르고 닭 껍질 면부터 구운 후 뒤집음\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파를 닭고기 양만큼 넣고 한입 크기로 자른 뒤 골고루 노릇하게 굽는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파도 닭만큼 넣어주고 한입 사이즈로 자른다음 골고루 노릇하게 같이 구워주자\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"대파를 넣고 가위로 닭고기를 한입 크기로 자름\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"간장 2스푼, 굴소스 1스푼, 설탕 1스푼을 넣고 1분 정도 볶아 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 2스푼\\n굴소스 1스푼\\n설탕 1스푼\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"세번째로는 간장 굴소스 설탕만 넣고 1분 정도만 볶아주면 대파닭구이가 뚝딱인데\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양념을 넣고 골고루 볶아 졸여냄\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "일매출 2000만원 대파닭구이",
+      "description": null,
+      "servings": null,
       "ingredients": [
         {
-          "sourceId": "ingredient-1",
           "rawText": "순살 닭다리 정육",
-          "displayName": "Boneless Chicken Thigh Meat",
+          "displayName": "순살 닭다리 정육",
           "amount": null,
           "unit": null,
+          "optional": false,
           "evidences": [
             {
               "type": "SPEECH",
-              "text": "첫번째는 순살 닭다리 정육을 준비하는건데 이게 브라질 쌈바 닭다리 정육이고 2kg에 1만원이라는",
-              "timestamp": "0:04"
-            },
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "2.00 kg",
-              "timestamp": "0:07"
+              "text": "첫번째는 순살 닭다리 정육을 준비하는건데",
+              "timestamp": "00:04"
             },
             {
               "type": "VISUAL_ACTION",
-              "text": "Bag of chicken labeled 2.00 kg is shown.",
-              "timestamp": "0:07"
+              "text": "순살 닭다리 정육 2조각을 팬에 올려 조리함",
+              "timestamp": "00:18"
             }
           ],
-          "reviewNote": "영상 0:04~0:07의 2kg은 순살 닭다리 정육의 판매 포장량/가격 설명이며 조리 사용량이 아니다. 조리량 미확인으로 비움."
+          "sourceId": "ingredient-1"
         },
         {
-          "sourceId": "ingredient-2",
-          "rawText": "기름",
-          "displayName": "Oil",
-          "amount": null,
-          "unit": null,
-          "evidences": [
-            {
-              "type": "SPEECH",
-              "text": "두번째로는 팬에 기름을 살짝 두르고",
-              "timestamp": "0:17"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "Oil is poured into a pan.",
-              "timestamp": "0:17"
-            }
-          ]
-        },
-        {
-          "sourceId": "ingredient-3",
           "rawText": "소금",
-          "displayName": "Salt",
+          "displayName": "소금",
           "amount": null,
           "unit": null,
+          "optional": false,
           "evidences": [
             {
               "type": "SPEECH",
-              "text": "소금만 뿌려주면",
-              "timestamp": "0:16"
+              "text": "소금만 뿌려주면 준비 끝이고",
+              "timestamp": "00:16"
             },
             {
               "type": "VISUAL_ACTION",
-              "text": "Salt is sprinkled on the chicken.",
-              "timestamp": "0:16"
+              "text": "닭고기에 소금을 뿌려 밑간함",
+              "timestamp": "00:16"
             }
-          ]
+          ],
+          "sourceId": "ingredient-2"
         },
         {
-          "sourceId": "ingredient-4",
-          "rawText": "대파",
-          "displayName": "Green Onion",
-          "amount": null,
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": "살짝",
           "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 기름을 살짝 두르고",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 식용유를 두름",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "대파 닭만큼",
+          "displayName": "대파",
+          "amount": "닭만큼",
+          "unit": null,
+          "optional": false,
           "evidences": [
             {
               "type": "SPEECH",
               "text": "대파도 닭만큼 넣어주고",
-              "timestamp": "0:22"
+              "timestamp": "00:21"
             },
             {
               "type": "VISUAL_ACTION",
-              "text": "Chopped green onions are added to the pan with chicken.",
-              "timestamp": "0:22"
+              "text": "큼직하게 썬 대파를 팬에 넣음",
+              "timestamp": "00:22"
             }
-          ]
+          ],
+          "sourceId": "ingredient-4"
         },
         {
-          "sourceId": "ingredient-5",
-          "rawText": "간장",
-          "displayName": "Soy Sauce",
-          "amount": null,
-          "unit": null,
+          "rawText": "간장 2스푼",
+          "displayName": "간장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
           "evidences": [
             {
-              "type": "SPEECH",
-              "text": "간장, 굴소스, 설탕만 넣고",
-              "timestamp": "0:26"
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 2스푼",
+              "timestamp": "00:25"
             },
             {
-              "type": "VISUAL_ACTION",
-              "text": "A dark liquid, likely soy sauce, is poured into the pan.",
-              "timestamp": "0:26"
+              "type": "SPEECH",
+              "text": "간장",
+              "timestamp": "00:25"
             }
-          ]
+          ],
+          "sourceId": "ingredient-5"
         },
         {
-          "sourceId": "ingredient-6",
-          "rawText": "굴소스",
-          "displayName": "Oyster Sauce",
+          "rawText": "굴소스 1스푼",
+          "displayName": "굴소스",
           "amount": "1",
-          "unit": "spoon",
+          "unit": "스푼",
+          "optional": false,
           "evidences": [
-            {
-              "type": "SPEECH",
-              "text": "굴소스 1스푼",
-              "timestamp": "0:26"
-            },
             {
               "type": "ON_SCREEN_TEXT",
               "text": "굴소스 1스푼",
-              "timestamp": "0:26"
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "굴소스",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "설탕 1스푼",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1스푼",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕만 넣고",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "순살 닭다리 정육의 수분을 키친타월로 닦아내고 소금을 뿌려 준비한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이걸 치킨타올로 닦아주고 소금만 뿌려주면 준비 끝이고",
+              "timestamp": "00:15"
             },
             {
               "type": "VISUAL_ACTION",
-              "text": "Oyster sauce is scooped with a spoon and added to the pan.",
-              "timestamp": "0:26"
+              "text": "키친타월로 닭다리살을 닦은 뒤 소금을 뿌림",
+              "timestamp": "00:15"
             }
           ]
         },
         {
-          "sourceId": "ingredient-7",
-          "rawText": "설탕",
-          "displayName": "Sugar",
-          "amount": "1",
-          "unit": "spoon",
+          "text": "팬에 기름을 살짝 두르고 닭다리살을 껍질부터 올려 앞뒤로 노릇하게 구워준다.",
           "evidences": [
             {
               "type": "SPEECH",
-              "text": "설탕 1스푼",
-              "timestamp": "0:27"
-            },
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "설탕 1스푼",
-              "timestamp": "0:27"
+              "text": "두번째로는 팬에 기름을 살짝 두르고 껍질부터 넣고 닭다리살을 앞뒤로 노릇하게 구워주다가",
+              "timestamp": "00:17"
             },
             {
               "type": "VISUAL_ACTION",
-              "text": "Sugar is added from a bowl into the pan.",
-              "timestamp": "0:27"
+              "text": "팬에 기름을 두르고 닭 껍질 면부터 구운 후 뒤집음",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "대파를 닭고기 양만큼 넣고 한입 크기로 자른 뒤 골고루 노릇하게 굽는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파도 닭만큼 넣어주고 한입 사이즈로 자른다음 골고루 노릇하게 같이 구워주자",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "대파를 넣고 가위로 닭고기를 한입 크기로 자름",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "간장 2스푼, 굴소스 1스푼, 설탕 1스푼을 넣고 1분 정도 볶아 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 2스푼\n굴소스 1스푼\n설탕 1스푼",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "세번째로는 간장 굴소스 설탕만 넣고 1분 정도만 볶아주면 대파닭구이가 뚝딱인데",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양념을 넣고 골고루 볶아 졸여냄",
+              "timestamp": "00:25"
             }
           ]
         }
       ],
-      "retryCount": 0,
-      "originalGeminiIngredients": [
-        {
-          "sourceId": "ingredient-1",
-          "rawText": "순살 닭다리 정육",
-          "displayName": "Boneless Chicken Thigh Meat",
-          "amount": null,
-          "unit": null,
-          "evidences": [
-            {
-              "type": "SPEECH",
-              "text": "첫번째는 순살 닭다리 정육을 준비하는건데 이게 브라질 쌈바 닭다리 정육이고 2kg에 1만원이라는",
-              "timestamp": "0:04"
-            },
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "2.00 kg",
-              "timestamp": "0:07"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "Bag of chicken labeled 2.00 kg is shown.",
-              "timestamp": "0:07"
-            }
-          ],
-          "reviewNote": "영상 0:04~0:07의 2kg은 순살 닭다리 정육의 판매 포장량/가격 설명이며 조리 사용량이 아니다. 조리량 미확인으로 비움."
-        },
-        {
-          "sourceId": "ingredient-2",
-          "rawText": "기름",
-          "displayName": "Oil",
-          "amount": null,
-          "unit": null,
-          "evidences": [
-            {
-              "type": "SPEECH",
-              "text": "두번째로는 팬에 기름을 살짝 두르고",
-              "timestamp": "0:17"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "Oil is poured into a pan.",
-              "timestamp": "0:17"
-            }
-          ]
-        },
-        {
-          "sourceId": "ingredient-3",
-          "rawText": "소금",
-          "displayName": "Salt",
-          "amount": null,
-          "unit": null,
-          "evidences": [
-            {
-              "type": "SPEECH",
-              "text": "소금만 뿌려주면",
-              "timestamp": "0:16"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "Salt is sprinkled on the chicken.",
-              "timestamp": "0:16"
-            }
-          ]
-        },
-        {
-          "sourceId": "ingredient-4",
-          "rawText": "대파",
-          "displayName": "Green Onion",
-          "amount": null,
-          "unit": null,
-          "evidences": [
-            {
-              "type": "SPEECH",
-              "text": "대파도 닭만큼 넣어주고",
-              "timestamp": "0:22"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "Chopped green onions are added to the pan with chicken.",
-              "timestamp": "0:22"
-            }
-          ]
-        },
-        {
-          "sourceId": "ingredient-5",
-          "rawText": "간장",
-          "displayName": "Soy Sauce",
-          "amount": null,
-          "unit": null,
-          "evidences": [
-            {
-              "type": "SPEECH",
-              "text": "간장, 굴소스, 설탕만 넣고",
-              "timestamp": "0:26"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "A dark liquid, likely soy sauce, is poured into the pan.",
-              "timestamp": "0:26"
-            }
-          ]
-        },
-        {
-          "sourceId": "ingredient-6",
-          "rawText": "굴소스",
-          "displayName": "Oyster Sauce",
-          "amount": "1",
-          "unit": "spoon",
-          "evidences": [
-            {
-              "type": "SPEECH",
-              "text": "굴소스 1스푼",
-              "timestamp": "0:26"
-            },
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "굴소스 1스푼",
-              "timestamp": "0:26"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "Oyster sauce is scooped with a spoon and added to the pan.",
-              "timestamp": "0:26"
-            }
-          ]
-        },
-        {
-          "sourceId": "ingredient-7",
-          "rawText": "설탕",
-          "displayName": "Sugar",
-          "amount": "1",
-          "unit": "spoon",
-          "evidences": [
-            {
-              "type": "SPEECH",
-              "text": "설탕 1스푼",
-              "timestamp": "0:27"
-            },
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "설탕 1스푼",
-              "timestamp": "0:27"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "Sugar is added from a bowl into the pan.",
-              "timestamp": "0:27"
-            }
-          ]
-        }
-      ]
+      "unresolved": []
     },
-    "stage2": {
-      "status": "COMPLETED",
-      "pipeline": {
-        "type": "V3_RECIPE_STRUCTURING",
-        "version": 4,
-        "model": "models/gemini-2.5-flash",
-        "ingredientCatalogHash": "1da18d0b4c61dbbcfc4ca8437beef443b274dfbfc46997ae2ba1124b07080fc9"
-      },
-      "completedAt": "2026-10-18T08:06:41.468120+00:00",
-      "result": {
-        "recipe": {
-          "key": "green-onion-chicken-grill",
-          "name": "대파 닭구이",
-          "status": "PUBLISHED",
-          "shortsReference": "https://youtu.be/39hBkCuPjFc?si=OI7Cca9Dpzlr9BUM",
-          "ingredients": [
-            {
-              "key": "chicken-thigh-boneless",
-              "variant": "chicken-thigh-boneless-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-1",
-              "displayName": "Boneless Chicken Thigh Meat",
-              "rawText": "순살 닭다리 정육",
-              "amount": null,
-              "unit": null,
-              "optional": false
-            },
-            {
-              "key": "cooking-oil",
-              "variant": null,
-              "acceptedOwnedVariants": [
-                "cooking-oil-item",
-                "olive-oil-item"
-              ],
-              "sourceId": "ingredient-2",
-              "displayName": "Oil",
-              "rawText": "기름",
-              "amount": null,
-              "unit": null,
-              "optional": false
-            },
-            {
-              "key": "salt",
-              "variant": "salt-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-3",
-              "displayName": "Salt",
-              "rawText": "소금",
-              "amount": null,
-              "unit": null,
-              "optional": false
-            },
-            {
-              "key": "green-onion",
-              "variant": "green-onion-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-4",
-              "displayName": "Green Onion",
-              "rawText": "대파",
-              "amount": null,
-              "unit": null,
-              "optional": false
-            },
-            {
-              "key": "soy-sauce",
-              "variant": null,
-              "acceptedOwnedVariants": [
-                "dark-soy-sauce",
-                "soup-soy-sauce",
-                "brewed-soy-sauce"
-              ],
-              "sourceId": "ingredient-5",
-              "displayName": "Soy Sauce",
-              "rawText": "간장",
-              "amount": null,
-              "unit": null,
-              "optional": false
-            },
-            {
-              "key": "oyster-sauce",
-              "variant": "oyster-sauce-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-6",
-              "displayName": "Oyster Sauce",
-              "rawText": "굴소스",
-              "amount": "1",
-              "unit": "spoon",
-              "optional": false
-            },
-            {
-              "key": "sugar",
-              "variant": "sugar-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-7",
-              "displayName": "Sugar",
-              "rawText": "설탕",
-              "amount": "1",
-              "unit": "spoon",
-              "optional": false
-            }
-          ],
-          "requirements": [
-            {
-              "options": [
-                {
-                  "ingredient": "chicken-thigh-boneless",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "cooking-oil",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "salt",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "green-onion",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "soy-sauce",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "oyster-sauce",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "sugar",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            }
-          ],
-          "steps": [
-            "순살 닭다리 정육을 준비하고 치킨타월로 물기를 닦아준 후 소금을 뿌려 밑간을 합니다.",
-            "팬에 기름을 살짝 두르고 껍질부터 닭다리살을 앞뒤로 노릇하게 구워줍니다.",
-            "닭다리살이 노릇하게 구워지면 대파를 닭만큼 넣어주고 닭다리살을 한입 크기로 자른 다음 골고루 노릇하게 더 구워줍니다.",
-            "간장, 굴소스 1스푼, 설탕 1스푼을 넣고 1분 정도만 볶아주면 대파 닭구이가 완성됩니다."
-          ]
-        },
-        "catalogAdditions": {
-          "ingredients": []
-        },
-        "mappingFailures": []
-      },
-      "structuralErrors": [],
-      "retryCount": 0,
-      "originalGeminiResult": {
-        "recipe": {
-          "key": "green-onion-chicken-grill",
-          "name": "대파 닭구이",
-          "status": "DRAFT",
-          "shortsReference": "https://youtu.be/39hBkCuPjFc?si=OI7Cca9Dpzlr9BUM",
-          "ingredients": [
-            {
-              "key": "chicken-thigh-boneless",
-              "variant": null,
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-1",
-              "displayName": "Boneless Chicken Thigh Meat",
-              "rawText": "순살 닭다리 정육",
-              "amount": null,
-              "unit": null,
-              "optional": false
-            },
-            {
-              "key": "cooking-oil",
-              "variant": null,
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-2",
-              "displayName": "Oil",
-              "rawText": "기름",
-              "amount": null,
-              "unit": null,
-              "optional": false
-            },
-            {
-              "key": "salt",
-              "variant": "salt-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-3",
-              "displayName": "Salt",
-              "rawText": "소금",
-              "amount": null,
-              "unit": null,
-              "optional": false
-            },
-            {
-              "key": "green-onion",
-              "variant": "green-onion-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-4",
-              "displayName": "Green Onion",
-              "rawText": "대파",
-              "amount": null,
-              "unit": null,
-              "optional": false
-            },
-            {
-              "key": "soy-sauce",
-              "variant": null,
-              "acceptedOwnedVariants": [
-                "dark-soy-sauce",
-                "soup-soy-sauce",
-                "brewed-soy-sauce"
-              ],
-              "sourceId": "ingredient-5",
-              "displayName": "Soy Sauce",
-              "rawText": "간장",
-              "amount": null,
-              "unit": null,
-              "optional": false
-            },
-            {
-              "key": "oyster-sauce",
-              "variant": "oyster-sauce-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-6",
-              "displayName": "Oyster Sauce",
-              "rawText": "굴소스",
-              "amount": "1",
-              "unit": "spoon",
-              "optional": false
-            },
-            {
-              "key": "sugar",
-              "variant": "sugar-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-7",
-              "displayName": "Sugar",
-              "rawText": "설탕",
-              "amount": "1",
-              "unit": "spoon",
-              "optional": false
-            }
-          ],
-          "requirements": [
-            {
-              "options": [
-                {
-                  "ingredient": "chicken-thigh-boneless",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "cooking-oil",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "salt",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "green-onion",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "soy-sauce",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "oyster-sauce",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "sugar",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            }
-          ],
-          "steps": [
-            "순살 닭다리 정육을 준비하고 치킨타월로 물기를 닦아준 후 소금을 뿌려 밑간을 합니다.",
-            "팬에 기름을 살짝 두르고 껍질부터 닭다리살을 앞뒤로 노릇하게 구워줍니다.",
-            "닭다리살이 노릇하게 구워지면 대파를 닭만큼 넣어주고 닭다리살을 한입 크기로 자른 다음 골고루 노릇하게 더 구워줍니다.",
-            "간장, 굴소스 1스푼, 설탕 1스푼을 넣고 1분 정도만 볶아주면 대파 닭구이가 완성됩니다."
-          ]
-        },
-        "catalogAdditions": {
-          "ingredients": [
-            {
-              "key": "chicken-thigh-boneless",
-              "name": "순살 닭다리 정육",
-              "variants": [
-                {
-                  "key": "chicken-thigh-boneless-item",
-                  "name": "순살 닭다리 정육",
-                  "aliases": []
-                }
-              ],
-              "relations": []
-            },
-            {
-              "key": "cooking-oil",
-              "name": "식용유",
-              "variants": [
-                {
-                  "key": "cooking-oil-item",
-                  "name": "식용유",
-                  "aliases": [
-                    "기름",
-                    "카놀라유",
-                    "식물성 기름"
-                  ]
-                }
-              ],
-              "relations": []
-            }
-          ]
-        },
-        "mappingFailures": []
-      }
-    }
-  },
-  "sourceUrl": "https://youtu.be/39hBkCuPjFc?si=OI7Cca9Dpzlr9BUM",
-  "pipelineVersion": 1,
-  "review": {
-    "status": "COMPLETED",
-    "outcome": "PUBLISHED",
-    "required": "source_video_and_semantic_review",
-    "datasetKey": "green-onion-chicken-grill",
-    "notes": [
-      "2kg은 포장/판매량 표기라 조리량에서 제외함.",
-      "기름 종류가 특정되지 않아 식용유와 올리브유를 레시피 내 허용 후보로 지정함.",
-      "원본 영상 검증 및 게시 완전성 검사 완료; 사용자 승인 범위에 따라 PUBLISHED dataset에 반영함."
-    ]
+    "structuralErrors": [],
+    "retryCount": 0
   }
 }

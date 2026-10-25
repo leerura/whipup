@@ -1,0 +1,107 @@
+{
+  "videoId": "F2RYGg9U_RM",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/F2RYGg9U_RM",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T14:45:41.674183+00:00",
+    "rawResponse": "{\n  \"title\": \"오믈렛\",\n  \"description\": \"호텔 조식 스타일로 겉은 노랗고 속은 반숙으로 부드러운 오믈렛 만드는 법\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"계란 3개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"3\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계량컵에 계란 3개를 깨뜨려 넣는 모습\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"호텔 조식으로 먹던 오믈렛\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"계란을 용기에 깨뜨려 넣고 포크나 젓가락으로 곱게 풀어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계량컵에 계란 3개를 넣고 도구로 저어 푼다\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"풀어둔 계란물을 체에 걸러 알끈과 덩어리를 제거한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란물을 체망에 부어 거른다\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 계란물을 붓고 젓가락으로 빠르게 저어가며 몽글몽글하게 반숙 상태로 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"프라이팬에 계란물을 붓고 젓가락으로 저어 스크램블을 만든다\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"겉은 노랗고 속은 반숙으로 보들보들\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양쪽 가장자리를 접고 프라이팬 끝으로 밀어낸 뒤, 뒤집으면서 앞쪽으로 굴려 매끄러운 럭비공 모양으로 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양쪽을 접고 후라이팬 끝으로 밀어내요\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"뒤집으면서 앞쪽으로 다시 넘어오면 완성\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"주걱과 팬의 반동을 이용해 오믈렛을 말아 모양을 잡는다\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"팬을 코팅하기 위해 사용된 식용유 또는 버터의 구체적인 종류와 분량은 명시되지 않음\",\n    \"소금 등의 간 첨가 여부는 영상에서 확인되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "오믈렛",
+      "description": "호텔 조식 스타일로 겉은 노랗고 속은 반숙으로 부드러운 오믈렛 만드는 법",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "계란 3개",
+          "displayName": "계란",
+          "amount": "3",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계량컵에 계란 3개를 깨뜨려 넣는 모습",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "SPEECH",
+              "text": "호텔 조식으로 먹던 오믈렛",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        }
+      ],
+      "steps": [
+        {
+          "text": "계란을 용기에 깨뜨려 넣고 포크나 젓가락으로 곱게 풀어준다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계량컵에 계란 3개를 넣고 도구로 저어 푼다",
+              "timestamp": "00:02"
+            }
+          ]
+        },
+        {
+          "text": "풀어둔 계란물을 체에 걸러 알끈과 덩어리를 제거한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란물을 체망에 부어 거른다",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "팬에 계란물을 붓고 젓가락으로 빠르게 저어가며 몽글몽글하게 반숙 상태로 익힌다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "프라이팬에 계란물을 붓고 젓가락으로 저어 스크램블을 만든다",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "겉은 노랗고 속은 반숙으로 보들보들",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "양쪽 가장자리를 접고 프라이팬 끝으로 밀어낸 뒤, 뒤집으면서 앞쪽으로 굴려 매끄러운 럭비공 모양으로 완성한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양쪽을 접고 후라이팬 끝으로 밀어내요",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "뒤집으면서 앞쪽으로 다시 넘어오면 완성",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "주걱과 팬의 반동을 이용해 오믈렛을 말아 모양을 잡는다",
+              "timestamp": "00:11"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "팬을 코팅하기 위해 사용된 식용유 또는 버터의 구체적인 종류와 분량은 명시되지 않음",
+        "소금 등의 간 첨가 여부는 영상에서 확인되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

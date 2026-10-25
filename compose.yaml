@@ -5,13 +5,15 @@ services:
       dockerfile: tools/data-pipeline/Dockerfile
     command: ["python", "/workspace/tools/data-pipeline/src/pipeline.py"]
     environment:
-      GEMINI_API_KEY: ${GEMINI_API_KEY}
-      GEMINI_MODEL: ${GEMINI_MODEL:-models/gemini-2.5-flash}
+      GEMINI_MODEL: ${GEMINI_MODEL:-gemini-3.8-flash}
       PIPELINE_POLL_SECONDS: ${PIPELINE_POLL_SECONDS:-20}
+      PIPELINE_DASHBOARD_PORT: ${PIPELINE_DASHBOARD_PORT:-8081}
+    ports:
+      - "127.0.0.1:${PIPELINE_DASHBOARD_PORT:-8081}:8081"
     volumes:
       - ./tools/data-pipeline/input:/workspace/tools/data-pipeline/input
       - ./tools/data-pipeline/state:/workspace/tools/data-pipeline/state
-      - ./data:/workspace/data
+      - ./tools/data-pipeline/accounts:/workspace/tools/data-pipeline/accounts:ro
 
   backend:
     build:

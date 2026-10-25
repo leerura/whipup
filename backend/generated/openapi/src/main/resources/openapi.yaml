@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: WhipUp API
-  version: 1.0.0-v2-design
+  version: 1.0.0-v3-design
 servers:
 - url: /
 security:
@@ -309,16 +309,23 @@ components:
         user:
           userId: 0
         hasOwnedIngredients: true
+        onboardingCompleted: true
       properties:
         accessToken:
           type: string
         user:
           $ref: "#/components/schemas/UserSummary"
         hasOwnedIngredients:
+          description: Whether the account currently has any owned ingredient rows.
+          type: boolean
+        onboardingCompleted:
+          description: Whether the account has completed initial ingredient registration.
+            Remains true if all owned ingredients are later deleted.
           type: boolean
       required:
       - accessToken
       - hasOwnedIngredients
+      - onboardingCompleted
       - user
       type: object
     UserSummary:
@@ -612,6 +619,9 @@ components:
     MissingOption:
       properties:
         requiredName:
+          description: Concise missing-item label for recommendation cards. Use the
+            exact selectable item's name when the source ingredient has an exact variant;
+            otherwise use the source requirement display name.
           type: string
         substitutes:
           items:

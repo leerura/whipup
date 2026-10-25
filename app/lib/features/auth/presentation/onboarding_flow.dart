@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:kakao_flutter_sdk_user/kakao_flutter_sdk_user.dart';
 
 import '../../../core/config/app_config.dart';
+import '../../home/presentation/home_screen.dart';
 import '../../ingredient/presentation/initial_ingredient_screen.dart';
 import '../../ingredients/presentation/owned_ingredients_screen.dart';
 import '../../recommendation/presentation/recommendation_screen.dart';
 import '../../recipe/presentation/recipe_detail_screen.dart';
+import 'onboarding_entry.dart';
 import 'kakao_login_screen.dart';
 import 'onboarding_motion_sequence.dart';
 
@@ -107,9 +109,13 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
         _registeredIngredients = Set<String>.unmodifiable(
           registeredIngredients,
         );
-        _stage = registeredIngredients.isEmpty
-            ? _OnboardingStage.ingredients
-            : _OnboardingStage.recommendations;
+        _stage = switch (onboardingEntryFor(
+          onboardingCompleted: loginResponse.onboardingCompleted,
+        )) {
+          OnboardingEntry.initialIngredientRegistration =>
+            _OnboardingStage.ingredients,
+          OnboardingEntry.home => _OnboardingStage.home,
+        };
       });
     } catch (error, stackTrace) {
       debugPrint('[Kakao login] Failed during $loginStep: $error');
@@ -137,6 +143,10 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
 
   void _showRecommendations() {
     setState(() => _stage = _OnboardingStage.recommendations);
+  }
+
+  void _showHome() {
+    setState(() => _stage = _OnboardingStage.home);
   }
 
   void _showOwnedIngredients() {
@@ -184,7 +194,16 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
           apiClient: _apiClient,
           ownedIngredientCount: _registeredIngredients.length,
           onRegisterIngredients: _showOwnedIngredients,
+          onHomeSelected: _showHome,
           onIngredientsSelected: _showOwnedIngredients,
+          onRecipeSelected: _showRecipeDetail,
+        ),
+        _OnboardingStage.home => HomeScreen(
+          key: const ValueKey(_OnboardingStage.home),
+          apiClient: _apiClient,
+          onHomeSelected: _showHome,
+          onIngredientsSelected: _showOwnedIngredients,
+          onRecommendationsSelected: _showRecommendations,
           onRecipeSelected: _showRecipeDetail,
         ),
         _OnboardingStage.ownedIngredients => OwnedIngredientsScreen(
@@ -192,6 +211,7 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
           apiClient: _apiClient,
           onRegisterIngredients: _showOwnedIngredients,
           onOwnedIngredientsChanged: _handleOwnedIngredientsChanged,
+          onHomeSelected: _showHome,
           onRecommendationsSelected: _showRecommendations,
         ),
       },
@@ -203,6 +223,7 @@ enum _OnboardingStage {
   splash,
   login,
   ingredients,
+  home,
   recommendations,
   ownedIngredients,
 }

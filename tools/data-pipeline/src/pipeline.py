@@ -1,35 +1,37 @@
 import argparse
-import json
 import os
+import threading
 import time
+import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 
-from dotenv import load_dotenv
+try:
+    from dotenv import load_dotenv
+except ModuleNotFoundError:  # unit tests do not need local .env parsing
+    def load_dotenv() -> bool:
+        return False
 
 from cache import metadata
-from dataset import ingredient_master_hash, load_ingredient_master
+from dashboard import start_dashboard
 from gemini_client import GeminiClient
 from retry import resolve_retry_at, retry_decision
-from state import STATE_DIR, load_video, save_video
-from validator import validate_draft
+from state import claim_video, heartbeat, load_video, recover_stale_claims, release_claim, save_runtime_status, save_video, update_worker
+from validator import validate_source_extraction
 from youtube import extract_video_id
-
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUT_FILE = ROOT / "input" / "shorts-urls.txt"
-DATA_DIR = ROOT.parents[1] / "data"
-INGREDIENTS_FILE = DATA_DIR / "ingredients.json"
+ACCOUNTS_DIR = ROOT / "accounts"
 POLL_SECONDS = int(os.environ.get("PIPELINE_POLL_SECONDS", "20"))
-STAGE_ONE_VERSION = 3
-STAGE_TWO_VERSION = 4
+LEASE_SECONDS = 15 * 60
+EXTRACTION_VERSION = 1
 
 
 def read_urls(path: Path = INPUT_FILE) -> list[tuple[str, str]]:
     if not path.exists():
         return []
-    results: list[tuple[str, str]] = []
-    seen: set[str] = set()
+    results, seen = [], set()
     for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
         url = line.strip()
         if not url or url.startswith("#"):
@@ -39,302 +41,253 @@ def read_urls(path: Path = INPUT_FILE) -> list[tuple[str, str]]:
         except ValueError as exc:
             print(f"[input:{line_number}] ignored invalid URL: {exc}", flush=True)
             continue
-        if video_id in seen:
-            continue
-        seen.add(video_id)
-        results.append((video_id, url))
+        if video_id not in seen:
+            seen.add(video_id)
+            results.append((video_id, url))
     return results
+
+
+def load_accounts(directory: Path = ACCOUNTS_DIR) -> list[dict[str, str]]:
+    """Load local files; filename is the safe account identifier used in state."""
+    accounts = []
+    if directory.exists():
+        for path in sorted(directory.glob("*.env")):
+            if path.name.endswith(".example.env"):
+                continue
+            values = {}
+            for line in path.read_text(encoding="utf-8").splitlines():
+                key, separator, value = line.partition("=")
+                if separator and not key.strip().startswith("#"):
+                    values[key.strip()] = value.strip()
+            if values.get("GEMINI_API_KEY"):
+                accounts.append({"id": path.stem, "apiKey": values["GEMINI_API_KEY"]})
+    # Existing one-key setups keep working, but new setups use account files.
+    if not accounts and os.environ.get("GEMINI_API_KEY"):
+        accounts.append({"id": "default", "apiKey": os.environ["GEMINI_API_KEY"]})
+    if not accounts:
+        raise RuntimeError(f"No Gemini account files found in {directory}")
+    return accounts
 
 
 def _assign_source_ids(ingredients: list[dict]) -> list[dict]:
     result = []
     for index, ingredient in enumerate(ingredients, start=1):
         if not isinstance(ingredient, dict):
-            raise ValueError(f"Stage 1 ingredients[{index - 1}] must be an object")
-        result.append({"sourceId": f"ingredient-{index}", **ingredient})
+            raise ValueError(f"ingredients[{index - 1}] must be an object")
+        result.append({**ingredient, "sourceId": f"ingredient-{index}"})
     return result
 
 
-def _stage(state: dict, name: str) -> dict:
-    return state.setdefault("stages", {}).setdefault(name, {"status": "PENDING", "retryCount": 0})
-
-
-def _set_pending_retry(state: dict, stage_name: str, error: Exception) -> None:
-    stage = _stage(state, stage_name)
-    decision = retry_decision(error, int(stage.get("retryCount", 0)))
-    stage["error"] = str(error)
-    stage["retryCount"] = decision.get("retryCount", stage.get("retryCount", 0))
-    stage["retryReason"] = decision["reason"]
-    if decision["reason"] == "failed":
-        stage["status"] = "FAILED"
-        stage.pop("retryAt", None)
-        state["status"] = "FAILED"
-        print(f"[{state['videoId']}] {stage_name} failed; restart the service to retry: {error}", flush=True)
-        return
-    stage["status"] = "WAITING_RETRY"
-    stage["retryAt"] = resolve_retry_at(decision)
-    state["status"] = "WAITING_RETRY"
-    print(
-        f"[{state['videoId']}] {stage_name} retry scheduled at {stage['retryAt']} ({decision['reason']})",
-        flush=True,
-    )
-
-
 def _is_due(stage: dict) -> bool:
-    retry_at = stage.get("retryAt")
-    if not retry_at:
+    value = stage.get("retryAt")
+    if not value:
         return True
     try:
-        return datetime.fromisoformat(retry_at).astimezone(timezone.utc) <= datetime.now(timezone.utc)
+        return datetime.fromisoformat(value).astimezone(timezone.utc) <= datetime.now(timezone.utc)
     except (TypeError, ValueError):
         return True
 
 
-def _recover_failed_on_startup(state: dict) -> None:
-    if state.get("status") != "FAILED":
-        return
-    for stage in state.get("stages", {}).values():
-        if stage.get("status") == "FAILED":
-            stage["status"] = "PENDING"
-            stage["retryCount"] = 0
-            stage.pop("retryAt", None)
-            stage.pop("error", None)
-    state["status"] = "PENDING"
-    save_video(state)
-
-
-def _current_catalog() -> tuple[dict, str, list[str]]:
-    errors: list[str] = []
-    if not INGREDIENTS_FILE.exists():
-        catalog = {"ingredients": []}
-        errors.append("data/ingredients.json is missing; Stage 2 waits for a V3 catalog")
-        return catalog, ingredient_master_hash(catalog), errors
-    try:
-        catalog = load_ingredient_master(INGREDIENTS_FILE)
-    except (json.JSONDecodeError, RuntimeError) as exc:
-        catalog = {"ingredients": []}
-        errors.append(f"data/ingredients.json is not a valid catalog: {exc}")
-        return catalog, ingredient_master_hash(catalog), errors
-
-    ingredients = catalog["ingredients"]
-    if not ingredients:
-        errors.append("data/ingredients.json has no Ingredients; Stage 2 waits for a V3 catalog")
-    ingredient_keys: set[str] = set()
-    all_variant_keys: set[str] = set()
-    for index, ingredient in enumerate(ingredients):
-        if not isinstance(ingredient, dict):
-            errors.append(f"ingredients[{index}] must be an object")
+def _account_quota_until(items: list[tuple[str, str]], account_id: str) -> datetime | None:
+    deadlines = []
+    for video_id, _ in items:
+        value = load_video(video_id).get("extraction", {}).get("quotaAccounts", {}).get(account_id)
+        if not isinstance(value, str):
             continue
-        group_key = ingredient.get("key")
-        if not isinstance(group_key, str) or not group_key.strip():
-            errors.append(f"ingredients[{index}].key is required")
-        elif group_key in ingredient_keys:
-            errors.append(f"duplicate Ingredient key: {group_key}")
+        try:
+            deadline = datetime.fromisoformat(value).astimezone(timezone.utc)
+        except ValueError:
+            continue
+        if deadline > datetime.now(timezone.utc):
+            deadlines.append(deadline)
+    return max(deadlines) if deadlines else None
+
+
+def _set_worker(worker_id: str, **values: object) -> None:
+    update_worker(worker_id, {**values, "updatedAt": datetime.now(timezone.utc).isoformat()})
+
+
+def _prepare_for_run(items: list[tuple[str, str]]) -> None:
+    recover_stale_claims([video_id for video_id, _ in items], lease_seconds=LEASE_SECONDS)
+    for video_id, _ in items:
+        state = load_video(video_id)
+        # Old two-stage checkpoints never get to block the one-call V3 queue.
+        # Preserve their saved data but give the new extraction a normal queue
+        # status; legacy retry deadlines are carried forward when present.
+        if state.get("status") == "WAITING_CATALOG":
+            state["status"] = "PENDING"
+            state.setdefault("extraction", {}).setdefault("status", "PENDING")
+            save_video(state)
+            continue
+        if state.get("status") == "WAITING_RETRY" and not state.get("extraction", {}).get("retryAt"):
+            waits = [stage for stage in state.get("stages", {}).values() if isinstance(stage, dict) and stage.get("status") == "WAITING_RETRY"]
+            if waits:
+                legacy = waits[0]
+                state["extraction"] = {"status": "WAITING_RETRY", "retryCount": int(legacy.get("retryCount", 0)), "retryAt": legacy.get("retryAt"), "retryKind": "quota" if legacy.get("retryAt") else "transient"}
+                save_video(state)
+        if state.get("status") != "FAILED_RETRYABLE":
+            continue
+        extraction = state.setdefault("extraction", {})
+        retries = int(extraction.get("retryableRuns", 0)) + 1
+        extraction["retryableRuns"] = retries
+        if retries >= 3:
+            state["status"] = extraction["status"] = "REVIEW_PENDING"
         else:
-            ingredient_keys.add(group_key)
-        if not isinstance(ingredient.get("name"), str) or not ingredient["name"].strip():
-            errors.append(f"ingredients[{index}].name is required")
-        variants = ingredient.get("variants")
-        if not isinstance(variants, list) or not variants:
-            errors.append(f"ingredients[{index}].variants must contain selectable items")
-            variants = []
-        local_variant_keys: set[str] = set()
-        for variant_index, variant in enumerate(variants):
-            if not isinstance(variant, dict):
-                errors.append(f"ingredients[{index}].variants[{variant_index}] must be an object")
-                continue
-            variant_key = variant.get("key")
-            variant_name = variant.get("name")
-            if not isinstance(variant_key, str) or not variant_key.strip():
-                errors.append(f"ingredients[{index}].variants[{variant_index}].key is required")
-                continue
-            if variant_key in all_variant_keys:
-                errors.append(f"duplicate Variant key: {variant_key}")
-            all_variant_keys.add(variant_key)
-            local_variant_keys.add(variant_key)
-            if not isinstance(variant_name, str) or not variant_name.strip():
-                errors.append(f"ingredients[{index}].variants[{variant_index}].name is required")
-            aliases = variant.get("aliases")
-            if not isinstance(aliases, list) or any(not isinstance(alias, str) for alias in aliases):
-                errors.append(f"ingredients[{index}].variants[{variant_index}].aliases must be a string array")
-            if "base" in variant:
-                errors.append(
-                    f"ingredients[{index}].variants[{variant_index}] uses legacy V2 base; rebuild the V3 catalog"
-                )
-        relations = ingredient.get("relations")
-        if not isinstance(relations, list):
-            errors.append(f"ingredients[{index}].relations must be an array")
-            continue
-        for relation_index, relation in enumerate(relations):
-            if not isinstance(relation, dict):
-                errors.append(f"ingredients[{index}].relations[{relation_index}] must be an object")
-                continue
-            source, target = relation.get("source"), relation.get("target")
-            if (
-                not isinstance(source, str)
-                or not isinstance(target, str)
-                or source not in local_variant_keys
-                or target not in local_variant_keys
-                or source == target
-            ):
-                errors.append(f"ingredients[{index}].relations[{relation_index}] has invalid Variant references")
-    return catalog, ingredient_master_hash(catalog), errors
+            extraction.update({"status": "PENDING", "retryCount": 0})
+            extraction.pop("retryAt", None)
+            state["status"] = "PENDING"
+        save_video(state)
 
 
-def process_video(video_id: str, source_url: str, client: GeminiClient, model: str) -> str:
+def _eligible(video_id: str, account_id: str, allow_held: bool) -> bool:
     state = load_video(video_id)
-    state.update({"sourceUrl": source_url, "pipelineVersion": 1})
-    if state.get("status") in {"REVIEW_PENDING", "COMPLETED", "DRAFT"}:
-        return state["status"]
+    if state.get("status", "PENDING") == "PENDING":
+        return True
+    if state.get("status") != "WAITING_RETRY" or not allow_held:
+        return False
+    extraction = state.get("extraction", {})
+    if extraction.get("retryKind") == "quota":
+        return account_id not in extraction.get("quotaAccounts", {})
+    return extraction.get("retryAccountId") in {None, account_id} and _is_due(extraction)
 
-    stage_one = _stage(state, "stage1")
-    stage_two = _stage(state, "stage2")
-    if not _is_due(stage_one):
-        return "WAITING_RETRY"
-    if stage_one.get("status") != "COMPLETED":
-        stage_one.update({"status": "RUNNING", "startedAt": datetime.now(timezone.utc).isoformat()})
-        state["status"] = "STAGE_1_RUNNING"
-        save_video(state)
-        try:
-            ingredients = _assign_source_ids(client.extract_stage_one_ingredients(source_url))
-            state["stages"]["stage1"] = {
-                "status": "COMPLETED",
-                "pipeline": metadata(model, "V3_INGREDIENT_EXTRACTION", STAGE_ONE_VERSION),
-                "completedAt": datetime.now(timezone.utc).isoformat(),
-                "ingredients": ingredients,
-                "retryCount": 0,
-            }
-            state["status"] = "STAGE_1_COMPLETED"
-            save_video(state)
-            print(f"[{video_id}] Stage 1 extracted {len(ingredients)} source items", flush=True)
-        except Exception as exc:
-            _set_pending_retry(state, "stage1", exc)
-            save_video(state)
-            return state["status"]
 
-    stage_one = _stage(state, "stage1")
-    if stage_one.get("status") != "COMPLETED":
-        return state.get("status", "PENDING")
+def claim_next(items: list[tuple[str, str]], worker_id: str, account_id: str) -> tuple[str, str] | None:
+    # New work comes before retry/quota-held work.
+    for allow_held in (False, True):
+        for video_id, source_url in items:
+            if not _eligible(video_id, account_id, allow_held):
+                continue
+            if allow_held:
+                from state import locked_video
+                with locked_video(video_id) as held:
+                    # Recheck while locked: another worker may have claimed it
+                    # after _eligible read the checkpoint.
+                    if held.get("status") == "WAITING_RETRY":
+                        extraction = held.get("extraction", {})
+                        permitted = (extraction.get("retryKind") == "quota" and account_id not in extraction.get("quotaAccounts", {})) or (extraction.get("retryKind") != "quota" and extraction.get("retryAccountId") in {None, account_id} and _is_due(extraction))
+                        if permitted:
+                            held["status"] = "PENDING"
+                            extraction["status"] = "PENDING"
+                            save_video(held)
+            if claim_video(video_id, source_url, worker_id, lease_seconds=LEASE_SECONDS):
+                return video_id, source_url
+    return None
 
-    catalog, catalog_hash, catalog_errors = _current_catalog()
-    if catalog_errors:
-        was_waiting = state.get("status") == "WAITING_CATALOG" and state.get("catalogErrors") == catalog_errors
-        state["status"] = "WAITING_CATALOG"
-        state["catalogErrors"] = catalog_errors
-        save_video(state)
-        if not was_waiting:
-            print(f"[{video_id}] Stage 2 paused: {'; '.join(catalog_errors)}", flush=True)
-        return "WAITING_CATALOG"
-    state.pop("catalogErrors", None)
-    stage_two = _stage(state, "stage2")
-    previous_pipeline = stage_two.get("pipeline", {})
-    if stage_two.get("status") == "COMPLETED" and (
-        previous_pipeline.get("model") != model
-        or previous_pipeline.get("ingredientCatalogHash") != catalog_hash
-        or previous_pipeline.get("version") != STAGE_TWO_VERSION
-    ):
-        stage_two = {"status": "PENDING", "retryCount": 0}
-        state["stages"]["stage2"] = stage_two
 
-    if not _is_due(stage_two):
+def _handle_error(state: dict, error: Exception, account_id: str) -> None:
+    stage = state.setdefault("extraction", {"retryCount": 0})
+    decision = retry_decision(error, int(stage.get("retryCount", 0)))
+    stage.update({"error": str(error), "retryReason": decision["reason"], "retryCount": decision.get("retryCount", 0)})
+    if decision["reason"] == "non_retryable_access":
+        stage["status"] = state["status"] = "FAILED"
+    elif decision["reason"] == "failed_retryable":
+        stage["status"] = state["status"] = "FAILED_RETRYABLE"
+    else:
+        stage.update({"status": "WAITING_RETRY", "retryKind": decision.get("kind", "transient"), "retryAt": resolve_retry_at(decision)})
+        if decision.get("kind") == "quota":
+            stage.setdefault("quotaAccounts", {})[account_id] = stage["retryAt"]
+        else:
+            stage["retryAccountId"] = account_id
         state["status"] = "WAITING_RETRY"
-        save_video(state)
-        return "WAITING_RETRY"
 
-    if stage_two.get("status") != "COMPLETED":
-        stage_two.update({"status": "RUNNING", "startedAt": datetime.now(timezone.utc).isoformat()})
-        state["status"] = "STAGE_2_RUNNING"
-        save_video(state)
-        try:
-            result = client.structure_recipe(
-                source_url=source_url,
-                video_id=video_id,
-                stage_one_ingredients=stage_one["ingredients"],
-                ingredient_catalog=catalog,
-            )
-            recipe = result.get("recipe")
-            if isinstance(recipe, dict):
-                recipe["shortsReference"] = source_url
-            errors = validate_draft(stage_one, result, catalog)
-            state["stages"]["stage2"] = {
-                "status": "COMPLETED",
-                "pipeline": metadata(
-                    model,
-                    "V3_RECIPE_STRUCTURING",
-                    STAGE_TWO_VERSION,
-                    ingredientCatalogHash=catalog_hash,
-                ),
-                "completedAt": datetime.now(timezone.utc).isoformat(),
-                "result": result,
-                "structuralErrors": errors,
-                "retryCount": 0,
-            }
-            # Agent source/video verification is a hard publish gate. This
-            # worker has no supported reviewer integration, so it never writes
-            # a Gemini draft into the published dataset.
-            state["status"] = "REVIEW_PENDING"
-            state["review"] = {
-                "status": "PENDING",
-                "required": "source_video_and_semantic_review",
-                "structuralErrors": errors,
-            }
-            save_video(state)
-            print(f"[{video_id}] Stage 2 saved; awaiting agent verification", flush=True)
-            if errors:
-                print(f"[{video_id}] structural issues: {'; '.join(errors)}", flush=True)
-        except Exception as exc:
-            _set_pending_retry(state, "stage2", exc)
-            save_video(state)
-            return state["status"]
 
-    return state.get("status", "PENDING")
+def process_claimed_video(video_id: str, source_url: str, client: GeminiClient, model: str, worker_id: str, account_id: str) -> str:
+    # claim_video has already set the durable lease. Keep it until result/error
+    # state is saved; no other account can duplicate this Gemini request.
+    from state import locked_video
+    with locked_video(video_id) as persisted:
+        if persisted.get("lease", {}).get("workerId") != worker_id:
+            return "PENDING"
+        persisted.update({"sourceUrl": source_url, "pipelineVersion": 3, "status": "EXTRACTION_RUNNING"})
+        persisted.setdefault("extraction", {}).update({"status": "RUNNING", "startedAt": datetime.now(timezone.utc).isoformat(), "accountId": account_id})
+        save_video(persisted)
+    heartbeat_stop = threading.Event()
+    def keep_lease_alive() -> None:
+        while not heartbeat_stop.wait(60):
+            heartbeat(video_id, worker_id)
+    heartbeat(video_id, worker_id)
+    heartbeat_thread = threading.Thread(target=keep_lease_alive, daemon=True)
+    heartbeat_thread.start()
+    try:
+        result, raw_response = client.extract_recipe_source(source_url, video_id)
+        if not isinstance(result, dict):
+            raise ValueError("Gemini extraction must be a JSON object")
+        result = dict(result)
+        if isinstance(result.get("ingredients"), list):
+            result["ingredients"] = _assign_source_ids(result["ingredients"])
+        errors = validate_source_extraction(result)
+        current = load_video(video_id)
+        current["extraction"] = {"status": "COMPLETED", "pipeline": metadata(model, "V3_RECIPE_SOURCE_EXTRACTION", EXTRACTION_VERSION), "completedAt": datetime.now(timezone.utc).isoformat(), "rawResponse": raw_response, "result": result, "structuralErrors": errors, "retryCount": 0, "accountId": account_id}
+        current["status"] = "EXTRACTION_READY"
+        release_claim(current, worker_id)
+        print(f"[{video_id}] extracted; saved for agent application", flush=True)
+        return "EXTRACTION_READY"
+    except Exception as exc:
+        current = load_video(video_id)
+        _handle_error(current, exc, account_id)
+        release_claim(current, worker_id)
+        print(f"[{video_id}] {current['status']}: {exc}", flush=True)
+        return current["status"]
+    finally:
+        heartbeat_stop.set()
+        heartbeat_thread.join(timeout=1)
+
+
+def worker(account: dict[str, str], model: str, run_id: str, stop: threading.Event) -> None:
+    account_id, worker_id = account["id"], f"{account['id']}-{run_id[:8]}"
+    client = GeminiClient(model=model, api_key=account["apiKey"])
+    _set_worker(worker_id, accountId=account_id, status="IDLE", runId=run_id)
+    while not stop.is_set():
+        items = read_urls()
+        recover_stale_claims([video_id for video_id, _ in items], lease_seconds=LEASE_SECONDS)
+        quota_until = _account_quota_until(items, account_id)
+        if quota_until:
+            _set_worker(worker_id, accountId=account_id, status="WAITING_QUOTA", currentVideoId=None, nextRetryAt=quota_until.isoformat())
+            stop.wait(min(POLL_SECONDS, max(1, (quota_until - datetime.now(timezone.utc)).total_seconds())))
+            continue
+        claimed = claim_next(items, worker_id, account_id)
+        if not claimed:
+            _set_worker(worker_id, accountId=account_id, status="IDLE", currentVideoId=None)
+            stop.wait(POLL_SECONDS)
+            continue
+        video_id, source_url = claimed
+        _set_worker(worker_id, accountId=account_id, status="EXTRACTING", currentVideoId=video_id)
+        status = process_claimed_video(video_id, source_url, client, model, worker_id, account_id)
+        extraction = load_video(video_id).get("extraction", {})
+        _set_worker(worker_id, accountId=account_id, status=status, currentVideoId=None, lastError=extraction.get("error"), nextRetryAt=extraction.get("retryAt"))
 
 
 def run(model: str) -> None:
     load_dotenv()
-    client = GeminiClient(model=model)
-    for video_id, _ in read_urls():
-        _recover_failed_on_startup(load_video(video_id))
-    print(f"Watching {INPUT_FILE}; checkpoints: {STATE_DIR}", flush=True)
-    while True:
-        pending = False
-        poll_again_later = False
-        for video_id, source_url in read_urls():
-            state = load_video(video_id)
-            if state.get("status") in {"REVIEW_PENDING", "COMPLETED", "DRAFT"}:
-                continue
-            if state.get("status") == "FAILED":
-                # Requeue on a fresh worker process only. In this process it
-                # remains failed until the operator restarts the service.
-                continue
-            pending = True
-            result = process_video(video_id, source_url, client, model)
-            if result == "WAITING_CATALOG":
-                poll_again_later = True
-                continue
-            if result == "WAITING_RETRY":
-                # Keep one serial queue. A quota wait should pause the queue,
-                # not spend more calls against the same project limit.
-                retry_times = [
-                    stage.get("retryAt")
-                    for stage in load_video(video_id).get("stages", {}).values()
-                    if stage.get("retryAt")
-                ]
-                if retry_times:
-                    next_retry = min(datetime.fromisoformat(value) for value in retry_times)
-                    seconds = max(1, (next_retry - datetime.now(next_retry.tzinfo)).total_seconds())
-                    print(f"[{video_id}] waiting {int(seconds)} seconds before retry", flush=True)
-                    time.sleep(seconds)
-                else:
-                    poll_again_later = True
-                break
-        if poll_again_later or not pending:
-            time.sleep(max(1, POLL_SECONDS))
+    start_dashboard(host="0.0.0.0", port=int(os.environ.get("PIPELINE_DASHBOARD_PORT", "8081")))
+    accounts = []
+    while not accounts:
+        try:
+            accounts = load_accounts()
+        except RuntimeError as exc:
+            save_runtime_status({"status": "NO_CONFIGURED_ACCOUNTS", "message": str(exc), "updatedAt": datetime.now(timezone.utc).isoformat()})
+            print(f"{exc}; dashboard remains available while waiting for account files", flush=True)
+            time.sleep(POLL_SECONDS)
+    save_runtime_status({"status": "RUNNING", "accountCount": len(accounts), "updatedAt": datetime.now(timezone.utc).isoformat()})
+    run_id = str(uuid.uuid4())
+    _prepare_for_run(read_urls())
+    print(f"Watching {INPUT_FILE}; {len(accounts)} account worker(s); dashboard http://localhost:8081", flush=True)
+    stop = threading.Event()
+    threads = [threading.Thread(target=worker, args=(account, model, run_id, stop), daemon=True) for account in accounts]
+    for thread in threads:
+        thread.start()
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        stop.set()
+        for thread in threads:
+            thread.join(timeout=5)
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run the V3 Gemini recipe extraction queue")
-    parser.add_argument("--model", default=os.environ.get("GEMINI_MODEL", "models/gemini-2.5-flash"))
+    parser.add_argument("--model", default=os.environ.get("GEMINI_MODEL", "gemini-3.8-flash"))
     args = parser.parse_args()
     run(args.model)
 

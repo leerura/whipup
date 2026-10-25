@@ -67,4 +67,4 @@ ALLOW_WHIPUP_LOCAL_DB_RESET=YES ./scripts/reset-v3-local-db.sh
 
 ## 별도 작업 명세
 
-Gemini extraction, agent video verification, quota retry, Compose 실행과 checkpoint 요구사항은 [V3 recipe pipeline 명세](recipe-pipeline.md)를 따른다. 이 문서와 pipeline 명세에 없는 V2 절차를 구현 요구로 가져오지 않는다.
+Gemini 단일 추출, 저장된 결과의 Codex 반영, quota retry, Compose 실행과 checkpoint 요구사항은 [V3 recipe pipeline 명세](recipe-pipeline.md)를 따른다. 이 문서와 pipeline 명세에 없는 V2 절차를 구현 요구로 가져오지 않는다.

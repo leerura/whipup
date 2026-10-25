@@ -39,7 +39,7 @@ public interface AuthApiDelegate {
         getRequest().ifPresent(request -> {
             for (MediaType mediaType: MediaType.parseMediaTypes(request.getHeader("Accept"))) {
                 if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
-                    String exampleString = "{ \"accessToken\" : \"accessToken\", \"user\" : { \"userId\" : 0 }, \"hasOwnedIngredients\" : true }";
+                    String exampleString = "{ \"accessToken\" : \"accessToken\", \"user\" : { \"userId\" : 0 }, \"hasOwnedIngredients\" : true, \"onboardingCompleted\" : true }";
                     ApiUtil.setExampleResponse(request, "application/json", exampleString);
                     break;
                 }

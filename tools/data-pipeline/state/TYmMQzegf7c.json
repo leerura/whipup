@@ -1,0 +1,384 @@
+{
+  "videoId": "TYmMQzegf7c",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/TYmMQzegf7c",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T16:12:44.472791+00:00",
+    "rawResponse": "{\n  \"title\": \"칠리새우덮밥\",\n  \"description\": null,\n  \"servings\": \"2\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"새우\",\n      \"displayName\": \"새우\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"해동한 새우 넣고\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냉동 새우를 물에 담가 해동하고 등에 칼집을 낸다\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 챱\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양파를 잘게 다진다\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"버터\",\n      \"displayName\": \"버터\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"버터 녹여주고\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 녹인 버터와 함께 다진 마늘을 볶는다\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": \"살짝\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 소금 살짝\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": \"살짝\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 소금 살짝\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"케첩 4\",\n      \"displayName\": \"케첩\",\n      \"amount\": \"4\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"케첩 4\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 2\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 2\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 2\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 2\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"레몬주스 2\",\n      \"displayName\": \"레몬주스\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"레몬주스 2\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리고당 2\",\n      \"displayName\": \"올리고당\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"올리고당 2\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 1\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 1\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 2개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2개 풀어서\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥솥에 밥이 애매하게 남을 거 같아서\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 밥을 담는다\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파도 필수!\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"새우를 물에 담가 해동한 뒤 등의 내장 부위에 칼집을 내어 손질하고, 양파를 잘게 다진다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"새우를 해동하고 칼집을 넣으며 양파를 찹한다\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"달군 팬에 버터를 녹이고 다진 마늘과 다진 양파를 넣어 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"버터 녹여주고\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 챱\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볶아줍니다\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"해동한 새우를 넣고 후추와 소금을 살짝 뿌려 함께 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"해동한 새우 넣고\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 소금 살짝\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"케첩 4, 진간장 2, 고춧가루 2, 레몬주스 2, 올리고당 2, 굴소스 1, 맛술 1을 넣고 소스가 자작하게 졸여질 때까지 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"케첩 4 진간장 2 고춧가루 2 레몬주스 2 올리고당 2 굴소스 1 맛술 1\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"졸여주면 끝이에요\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 2개를 풀어 팬에 붓고 스크램블 에그를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2개 풀어서\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스크램블도 만들어줍니다\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 밥을 담고 스크램블 에그를 올린 뒤, 졸여둔 새우와 소스를 얹고 송송 썬 대파를 고명으로 올려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란이불 덮어주고\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"새우랑 남은 소스도 올려줍니다\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파도 필수!\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두 그릇 완성\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "칠리새우덮밥",
+      "description": null,
+      "servings": "2",
+      "ingredients": [
+        {
+          "rawText": "새우",
+          "displayName": "새우",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "해동한 새우 넣고",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냉동 새우를 물에 담가 해동하고 등에 칼집을 낸다",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 챱",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양파를 잘게 다진다",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "버터",
+          "displayName": "버터",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "버터 녹여주고",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "다진 마늘",
+          "displayName": "다진 마늘",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 녹인 버터와 함께 다진 마늘을 볶는다",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": "살짝",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 소금 살짝",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "소금",
+          "displayName": "소금",
+          "amount": null,
+          "unit": "살짝",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 소금 살짝",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "케첩 4",
+          "displayName": "케첩",
+          "amount": "4",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "케첩 4",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "진간장 2",
+          "displayName": "진간장",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 2",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "고춧가루 2",
+          "displayName": "고춧가루",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 2",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "레몬주스 2",
+          "displayName": "레몬주스",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "레몬주스 2",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "올리고당 2",
+          "displayName": "올리고당",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "올리고당 2",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "굴소스 1",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "맛술 1",
+          "displayName": "맛술",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 1",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "계란 2개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2개 풀어서",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥솥에 밥이 애매하게 남을 거 같아서",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 밥을 담는다",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파도 필수!",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        }
+      ],
+      "steps": [
+        {
+          "text": "새우를 물에 담가 해동한 뒤 등의 내장 부위에 칼집을 내어 손질하고, 양파를 잘게 다진다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "새우를 해동하고 칼집을 넣으며 양파를 찹한다",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "달군 팬에 버터를 녹이고 다진 마늘과 다진 양파를 넣어 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "버터 녹여주고",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 챱",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볶아줍니다",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "해동한 새우를 넣고 후추와 소금을 살짝 뿌려 함께 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "해동한 새우 넣고",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 소금 살짝",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "케첩 4, 진간장 2, 고춧가루 2, 레몬주스 2, 올리고당 2, 굴소스 1, 맛술 1을 넣고 소스가 자작하게 졸여질 때까지 끓인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "케첩 4 진간장 2 고춧가루 2 레몬주스 2 올리고당 2 굴소스 1 맛술 1",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "졸여주면 끝이에요",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "계란 2개를 풀어 팬에 붓고 스크램블 에그를 만든다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2개 풀어서",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스크램블도 만들어줍니다",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 밥을 담고 스크램블 에그를 올린 뒤, 졸여둔 새우와 소스를 얹고 송송 썬 대파를 고명으로 올려 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란이불 덮어주고",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "새우랑 남은 소스도 올려줍니다",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파도 필수!",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두 그릇 완성",
+              "timestamp": "00:25"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

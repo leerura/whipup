@@ -1,0 +1,367 @@
+{
+  "videoId": "F8C4DLdNSHE",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/F8C4DLdNSHE",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T14:49:57.436688+00:00",
+    "rawResponse": "{\n  \"title\": \"참치 김치찌개\",\n  \"description\": \"라면 끓일 줄 알면 누구나 가능한 초간단 밥도둑 참치 김치찌개 레시피\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"파\",\n      \"displayName\": \"파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우선 냄비에 파기름 내주고\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"썰어둔 대파를 냄비에 넣는 모습\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우선 냄비에 파기름 내주고\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비 바닥에 기름이 둘러져 있는 모습\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 한 스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 한 스푼\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루 한 스푼\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 한 스푼\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치\",\n      \"displayName\": \"김치\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치 넣고\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김치 넣고\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 350ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"350\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 350ml 붓고\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 350ml 붓고\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치 한 캔\",\n      \"displayName\": \"참치\",\n      \"amount\": \"1\",\n      \"unit\": \"캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치 한 캔\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참치 한 캔\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마늘 1스푼\",\n      \"displayName\": \"마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마늘 한 스푼\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마늘 1스푼\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 한 스푼\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 한 스푼\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"간장 한 스푼\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"사골 코인 하나\",\n      \"displayName\": \"사골 코인\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"사골 코인까지 하나 넣고\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"사골 코인까지 하나 넣고\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 후라이\",\n      \"displayName\": \"계란 후라이\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 후라이 올려서\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 후라이 올려서\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김\",\n      \"displayName\": \"김\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김까지 싸 먹으면\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김까지 싸 먹으면\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 두 공기는 순삭이네요!\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 밥이 담겨 있는 모습\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 대파와 기름을 넣고 볶아 파기름을 낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우선 냄비에 파기름 내주고\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"우선 냄비에 파기름 내주고\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고춧가루 1스푼, 설탕 1스푼, 김치를 넣고 함께 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 한 스푼, 설탕 한 스푼, 김치 넣고 볶아주다가\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루 한 스푼 설탕 1스푼 김치 넣고\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 350ml를 붓고 참치 1캔, 다진 마늘 1스푼, 간장 1스푼, 사골 코인 1개를 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 350ml 붓고 참치 한 캔 마늘 한 스푼 간장 한 스푼 사골 코인까지 하나 넣고\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 350ml 붓고 참치 한 캔 마늘 1스푼 간장 한 스푼 사골 코인까지 하나 넣고\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"재료가 잘 어우러지도록 푹 끓여서 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"푹 끓이면 완성인데\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"푹 끓이면 완성인데\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"기호에 따라 밥 위에 계란 후라이를 올리고 찌개와 함께 비벼 먹거나 김에 싸서 먹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 후라이 올려서 비벼 먹다가 못 참고 김까지 싸 먹으면 밥 두 공기는 순삭이네요!\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 후라이 올려서 비벼 먹다가 못 참고 김까지 싸 먹으면 밥 두 공기는 순삭이네요!\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"파와 기름의 정확한 계량 수치가 영상에서 언급되지 않음\",\n    \"김치의 정확한 분량(그램 또는 컵 단위 등)이 영상에서 언급되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "참치 김치찌개",
+      "description": "라면 끓일 줄 알면 누구나 가능한 초간단 밥도둑 참치 김치찌개 레시피",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "파",
+          "displayName": "파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "우선 냄비에 파기름 내주고",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "썰어둔 대파를 냄비에 넣는 모습",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "우선 냄비에 파기름 내주고",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비 바닥에 기름이 둘러져 있는 모습",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "고춧가루 한 스푼",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 한 스푼",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루 한 스푼",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "설탕 1스푼",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "설탕 한 스푼",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 1스푼",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "김치",
+          "displayName": "김치",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김치 넣고",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "김치 넣고",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "물 350ml",
+          "displayName": "물",
+          "amount": "350",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 350ml 붓고",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 350ml 붓고",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "참치 한 캔",
+          "displayName": "참치",
+          "amount": "1",
+          "unit": "캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "참치 한 캔",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "참치 한 캔",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "마늘 1스푼",
+          "displayName": "마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마늘 한 스푼",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마늘 1스푼",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "간장 한 스푼",
+          "displayName": "간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "간장 한 스푼",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "간장 한 스푼",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "사골 코인 하나",
+          "displayName": "사골 코인",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "사골 코인까지 하나 넣고",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "사골 코인까지 하나 넣고",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "계란 후라이",
+          "displayName": "계란 후라이",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 후라이 올려서",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란 후라이 올려서",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "김",
+          "displayName": "김",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김까지 싸 먹으면",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "김까지 싸 먹으면",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥 두 공기는 순삭이네요!",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 밥이 담겨 있는 모습",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 대파와 기름을 넣고 볶아 파기름을 낸다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "우선 냄비에 파기름 내주고",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "우선 냄비에 파기름 내주고",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "고춧가루 1스푼, 설탕 1스푼, 김치를 넣고 함께 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 한 스푼, 설탕 한 스푼, 김치 넣고 볶아주다가",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루 한 스푼 설탕 1스푼 김치 넣고",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "물 350ml를 붓고 참치 1캔, 다진 마늘 1스푼, 간장 1스푼, 사골 코인 1개를 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 350ml 붓고 참치 한 캔 마늘 한 스푼 간장 한 스푼 사골 코인까지 하나 넣고",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 350ml 붓고 참치 한 캔 마늘 1스푼 간장 한 스푼 사골 코인까지 하나 넣고",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "재료가 잘 어우러지도록 푹 끓여서 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "푹 끓이면 완성인데",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "푹 끓이면 완성인데",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "기호에 따라 밥 위에 계란 후라이를 올리고 찌개와 함께 비벼 먹거나 김에 싸서 먹는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 후라이 올려서 비벼 먹다가 못 참고 김까지 싸 먹으면 밥 두 공기는 순삭이네요!",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란 후라이 올려서 비벼 먹다가 못 참고 김까지 싸 먹으면 밥 두 공기는 순삭이네요!",
+              "timestamp": "00:14"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "파와 기름의 정확한 계량 수치가 영상에서 언급되지 않음",
+        "김치의 정확한 분량(그램 또는 컵 단위 등)이 영상에서 언급되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

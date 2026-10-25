@@ -1,0 +1,364 @@
+{
+  "videoId": "OTO10oLhO7g",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/OTO10oLhO7g",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T15:53:04.180329+00:00",
+    "rawResponse": "{\n  \"title\": \"베이컨 김치볶음밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"베이컨 120g\",\n      \"displayName\": \"베이컨\",\n      \"amount\": \"120\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"베이컨 120g\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 베이컨을 잘게 다져줘\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 2spoons\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"2\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 2spoons\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 팬에 기름을 살짝만 두른 다음\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 50g\",\n      \"displayName\": \"대파\",\n      \"amount\": \"50\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 50g\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파를 넣고 볶아줄 거야\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치 250g\",\n      \"displayName\": \"김치\",\n      \"amount\": \"250\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치 250g\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"잘게 썬 김치\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양조간장 1spoon\",\n      \"displayName\": \"양조간장\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장 1spoon\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양조간장\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 0.3spoon\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"0.3\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 0.3spoon\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 0.2spoon\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.2\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 0.2spoon\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 0.1spoon\",\n      \"displayName\": \"후추\",\n      \"amount\": \"0.1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 0.1spoon\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1spoon\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1spoon\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 2spoons\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"2\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 2spoons\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루를 넣고\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 400g (두 공기)\",\n      \"displayName\": \"밥\",\n      \"amount\": \"400\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 400g\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 밥 두 공기를 넣고\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란후라이\",\n      \"displayName\": \"계란후라이\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란후라이\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볶음밥 위에 계란후라이를 올림\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참깨\",\n      \"displayName\": \"참깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참깨\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볶음밥 위에 참깨를 뿌림\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"베이컨을 잘게 다져준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 베이컨을 잘게 다져줘\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도마 위에서 베이컨을 잘게 다짐\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유 2스푼을 두르고, 잘게 다진 베이컨 120g과 송송 썬 대파 50g을 넣고 노릇노릇해질 때까지 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 팬에 기름을 살짝만 두른 다음 잘게 다진 베이컨과 대파를 넣고 볶아줄 거야 베이컨이 노릇노릇하게 익으면\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 2spoons, 베이컨 120g, 대파 50g\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"잘게 썬 김치 250g, 양조간장 1스푼, 고추장 0.3스푼, 설탕 0.2스푼, 후추 0.1스푼, 참기름 1스푼, 고춧가루 2스푼을 넣고 양념을 잘 풀어가며 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"잘게 썬 김치, 양조간장, 고추장, 설탕, 후추, 참기름, 고춧가루를 넣고 양념을 잘 풀어줘\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치 250g, 양조간장 1spoon, 고추장 0.3spoon, 설탕 0.2spoon, 후추 0.1spoon, 참기름 1spoon, 고춧가루 2spoons\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 400g(두 공기)을 넣고 고슬고슬하게 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 밥 두 공기를 넣고 고슬고슬하게 볶아주면 김치볶음밥 끝\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 400g\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 볶음밥 위에 계란후라이와 참깨를 올려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란후라이, 참깨\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볶음밥 위에 계란후라이 3개를 올리고 참깨를 뿌려 완성\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "베이컨 김치볶음밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "베이컨 120g",
+          "displayName": "베이컨",
+          "amount": "120",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "베이컨 120g",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 베이컨을 잘게 다져줘",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "식용유 2spoons",
+          "displayName": "식용유",
+          "amount": "2",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 2spoons",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 팬에 기름을 살짝만 두른 다음",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "대파 50g",
+          "displayName": "대파",
+          "amount": "50",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 50g",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파를 넣고 볶아줄 거야",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "김치 250g",
+          "displayName": "김치",
+          "amount": "250",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치 250g",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "잘게 썬 김치",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "양조간장 1spoon",
+          "displayName": "양조간장",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장 1spoon",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양조간장",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "고추장 0.3spoon",
+          "displayName": "고추장",
+          "amount": "0.3",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 0.3spoon",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "설탕 0.2spoon",
+          "displayName": "설탕",
+          "amount": "0.2",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 0.2spoon",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "후추 0.1spoon",
+          "displayName": "후추",
+          "amount": "0.1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 0.1spoon",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "참기름 1spoon",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1spoon",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "고춧가루 2spoons",
+          "displayName": "고춧가루",
+          "amount": "2",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 2spoons",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루를 넣고",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "밥 400g (두 공기)",
+          "displayName": "밥",
+          "amount": "400",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 400g",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 밥 두 공기를 넣고",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "계란후라이",
+          "displayName": "계란후라이",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란후라이",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볶음밥 위에 계란후라이를 올림",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "참깨",
+          "displayName": "참깨",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참깨",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볶음밥 위에 참깨를 뿌림",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "베이컨을 잘게 다져준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 베이컨을 잘게 다져줘",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도마 위에서 베이컨을 잘게 다짐",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유 2스푼을 두르고, 잘게 다진 베이컨 120g과 송송 썬 대파 50g을 넣고 노릇노릇해질 때까지 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 팬에 기름을 살짝만 두른 다음 잘게 다진 베이컨과 대파를 넣고 볶아줄 거야 베이컨이 노릇노릇하게 익으면",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 2spoons, 베이컨 120g, 대파 50g",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "잘게 썬 김치 250g, 양조간장 1스푼, 고추장 0.3스푼, 설탕 0.2스푼, 후추 0.1스푼, 참기름 1스푼, 고춧가루 2스푼을 넣고 양념을 잘 풀어가며 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "잘게 썬 김치, 양조간장, 고추장, 설탕, 후추, 참기름, 고춧가루를 넣고 양념을 잘 풀어줘",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치 250g, 양조간장 1spoon, 고추장 0.3spoon, 설탕 0.2spoon, 후추 0.1spoon, 참기름 1spoon, 고춧가루 2spoons",
+              "timestamp": "00:21"
+            }
+          ]
+        },
+        {
+          "text": "밥 400g(두 공기)을 넣고 고슬고슬하게 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 밥 두 공기를 넣고 고슬고슬하게 볶아주면 김치볶음밥 끝",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 400g",
+              "timestamp": "00:31"
+            }
+          ]
+        },
+        {
+          "text": "완성된 볶음밥 위에 계란후라이와 참깨를 올려 마무리한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란후라이, 참깨",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볶음밥 위에 계란후라이 3개를 올리고 참깨를 뿌려 완성",
+              "timestamp": "00:36"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

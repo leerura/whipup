@@ -1,0 +1,265 @@
+{
+  "videoId": "5YoRopbxrno",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/5YoRopbxrno",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T13:09:09.301731+00:00",
+    "rawResponse": "{\n  \"title\": \"먹다 남은 치킨 오야꼬동\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"먹다 남은 치킨\",\n      \"displayName\": \"먹다 남은 치킨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먹다 남은 치킨 하나만 있으면 가능한 오야꼬동 레시피 입니다\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먹다 남은 치킨을 큼직하게 찢어\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 양파를 채썰어주고\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양파 반 개를 칼로 채써는 모습\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"예열된 팬에 기름을 두르는 모습\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 4스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"4\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 4스푼\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 네 스푼\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1스푼\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1스푼\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스 한 스푼\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 한 스푼\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 반컵\",\n      \"displayName\": \"물\",\n      \"amount\": \"0.5\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 반컵 넣어\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 반 컵 넣어\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 두 개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 두 개를 완전히 풀지 말고\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 달걀 두 개를 깨뜨려 넣는 모습\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥 위에 얹어주면\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 담긴 밥 위에 요리를 얹는 모습\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양파를 채썰어 예열된 팬에 기름을 두르고 바로 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 양파를 채썰어주고 예열된 팬에 바로 볶아줍니다\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"먹다 남은 치킨을 큼직하게 찢어 볶고 있던 양파와 함께 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먹다 남은 치킨을 큼직하게 찢어 양파와 같이 볶아주세요\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"진간장 4스푼, 굴소스 1스푼, 설탕 1스푼, 물 반 컵을 넣고 잘 저어 소스를 만듭니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 네 스푼, 굴소스 한 스푼, 설탕 한 스푼, 물 반 컵 넣어 잘 저어줍니다\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"만든 소스를 치킨과 양파가 있는 팬에 붓고 천천히 졸여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만든 소스를 넣고 천천히 졸여주세요\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 2개를 완전히 풀지 않고 적당히 풀어준 후 팬에 넣고 더 졸여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 두 개를 완전히 풀지 말고 적당히 풀어줍니다. 풀어준 계란 넣고 더 졸여주세요\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란이 익었을 때 밥 위에 얹어 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란이 익었을 때 밥 위에 얹어주면 완성\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "먹다 남은 치킨 오야꼬동",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "먹다 남은 치킨",
+          "displayName": "먹다 남은 치킨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먹다 남은 치킨 하나만 있으면 가능한 오야꼬동 레시피 입니다",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먹다 남은 치킨을 큼직하게 찢어",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 양파를 채썰어주고",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양파 반 개를 칼로 채써는 모습",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "예열된 팬에 기름을 두르는 모습",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "진간장 4스푼",
+          "displayName": "진간장",
+          "amount": "4",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 4스푼",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장 네 스푼",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "굴소스 1스푼",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1스푼",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "굴소스 한 스푼",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "설탕 1스푼",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1스푼",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 한 스푼",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "물 반컵",
+          "displayName": "물",
+          "amount": "0.5",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 반컵 넣어",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 반 컵 넣어",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "계란 두 개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 두 개를 완전히 풀지 말고",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 달걀 두 개를 깨뜨려 넣는 모습",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "밥 위에 얹어주면",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 담긴 밥 위에 요리를 얹는 모습",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양파를 채썰어 예열된 팬에 기름을 두르고 바로 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 양파를 채썰어주고 예열된 팬에 바로 볶아줍니다",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "먹다 남은 치킨을 큼직하게 찢어 볶고 있던 양파와 함께 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먹다 남은 치킨을 큼직하게 찢어 양파와 같이 볶아주세요",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "진간장 4스푼, 굴소스 1스푼, 설탕 1스푼, 물 반 컵을 넣고 잘 저어 소스를 만듭니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "진간장 네 스푼, 굴소스 한 스푼, 설탕 한 스푼, 물 반 컵 넣어 잘 저어줍니다",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "만든 소스를 치킨과 양파가 있는 팬에 붓고 천천히 졸여줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "만든 소스를 넣고 천천히 졸여주세요",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "계란 2개를 완전히 풀지 않고 적당히 풀어준 후 팬에 넣고 더 졸여줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 두 개를 완전히 풀지 말고 적당히 풀어줍니다. 풀어준 계란 넣고 더 졸여주세요",
+              "timestamp": "00:28"
+            }
+          ]
+        },
+        {
+          "text": "계란이 익었을 때 밥 위에 얹어 완성합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란이 익었을 때 밥 위에 얹어주면 완성",
+              "timestamp": "00:35"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  },
+  "agentReviewNote": "Added as DRAFT: 필수 source item이 조리된 “먹다 남은 치킨”으로 현재 카탈로그의 생 닭고기 보유 단위와 의미가 달라 새 항목 추가/대체를 임의 결정하지 않음."
+}

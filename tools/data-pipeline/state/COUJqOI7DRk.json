@@ -1,1011 +1,324 @@
 {
   "videoId": "COUJqOI7DRk",
-  "status": "COMPLETED",
-  "stages": {
-    "stage1": {
-      "status": "COMPLETED",
-      "pipeline": {
-        "type": "V3_INGREDIENT_EXTRACTION",
-        "version": 3,
-        "model": "models/gemini-2.5-flash"
-      },
-      "completedAt": "2026-10-18T08:07:11.884486+00:00",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://youtu.be/COUJqOI7DRk?si=jgMIYuImpRfYO4lz",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T09:33:25.187844+00:00",
+    "rawResponse": "{\n  \"title\": \"초간단 5분 김치찜\",\n  \"description\": \"5분만 기다리면 끝나는 초간단 밥도둑 김치찜 레시피\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"삼겹살 300g\",\n      \"displayName\": \"삼겹살\",\n      \"amount\": \"300\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"삼겹살 300g\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 삼겹살 300g만 잘게 썰어서 올려주고\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 반 대\",\n      \"displayName\": \"대파\",\n      \"amount\": \"0.5\",\n      \"unit\": \"대\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 반 대\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파 반 대도 잘게 썰어서 올려 준 뒤에\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"자른 김치 300g 정도\",\n      \"displayName\": \"김치\",\n      \"amount\": \"300\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"삼겹살과 비슷한 양으로 300g 정도 넣고\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"자른 김치도 삼겹살과 비슷한 양으로 300g 정도 넣고\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 한 줌 가득\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1\",\n      \"unit\": \"줌 가득\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"한 줌 가득 넣어 줍니다.\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파도 가로세로 잘게 썰어가 한 줌 가득 넣어 줍니다.\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1스푼\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 한 스푼을 추가해 주고\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 1컵 (약 180ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"1\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 1컵 (약 180ml)\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 한 컵과\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 1스푼\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘 한 스푼\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"치킨스톡 1/2스푼\",\n      \"displayName\": \"치킨스톡\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"치킨스톡 1/2스푼\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"치킨스톡 반 스푼만 넣어 주면\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"뜨끈한 흰밥\",\n      \"displayName\": \"흰밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"뜨끈한 흰밥에\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이건 뜨끈한 흰밥에 먹을 만큼 올려서\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김가루와\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 김가루를 올림\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1스푼\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1스푼\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름 한 스푼을 싹 둘러 준 뒤에\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"삼겹살 300g과 대파 반 대를 잘게 썰어 냄비에 올린 뒤 다 같이 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 삼겹살 300g만 잘게 썰어서 올려 주고 대파 반 대도 잘게 썰어서 올려 준 뒤에 다 같이 한번 볶아 줍니다.\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삼겹살이 어느 정도 익었을 때쯤 자른 김치 300g 정도를 넣습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"어느 정도 삼겹살이 익었을 때쯤에 자른 김치도 삼겹살과 비슷한 양으로 300g 정도 넣고\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파를 가로세로 잘게 썰어 한 줌 가득 넣고, 양파의 숨이 죽을 때까지 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파도 가로세로 잘게 썰어가 한 줌 가득 넣어 줍니다. 이러면 자연스러운 단맛이 나오면서 여러분들이 극도로 혐오하는 설탕을 넣을 필요가 없습니다. 인자 양파가 숨이 죽을 때까지 볶아졌으면\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고춧가루 1스푼을 추가하고 풋내만 살짝 날려주며 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 한 스푼을 추가해 주고 풋내만 살짝 날려 준 뒤에\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 1컵(약 180ml), 다진 마늘 1스푼, 치킨스톡 1/2스푼을 넣고 섞어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 한 컵과 다진 마늘 한 스푼 치킨스톡 반 스푼만 넣어 주면 오늘 양념장은 끝입니다.\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뚜껑을 덮고 5분간 끓여주면 김치찜이 완성됩니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"인자 뚜껑 덮고 딱 5분만 끓여주면 초간단 5분 김치찜이 완성됩니다.\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"초간단 5분 김치찜 완성!!\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뜨끈한 흰밥에 김치찜을 먹을 만큼 올리고, 김가루와 참기름 1스푼을 둘러 비벼 먹습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이건 뜨끈한 흰밥에 먹을 만큼 올려가 김가루와 참기름 한 스푼을 싹 둘러 준 뒤에 비비가 묵으면 진짜 맛있습니다.\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "초간단 5분 김치찜",
+      "description": "5분만 기다리면 끝나는 초간단 밥도둑 김치찜 레시피",
+      "servings": null,
       "ingredients": [
         {
-          "sourceId": "ingredient-1",
           "rawText": "삼겹살 300g",
-          "displayName": "Pork Belly",
+          "displayName": "삼겹살",
           "amount": "300",
           "unit": "g",
+          "optional": false,
           "evidences": [
             {
               "type": "ON_SCREEN_TEXT",
               "text": "삼겹살 300g",
-              "timestamp": "0:03"
+              "timestamp": "00:03"
             },
             {
               "type": "SPEECH",
               "text": "먼저 삼겹살 300g만 잘게 썰어서 올려주고",
-              "timestamp": "0:03"
+              "timestamp": "00:03"
             }
-          ]
+          ],
+          "sourceId": "ingredient-1"
         },
         {
-          "sourceId": "ingredient-2",
           "rawText": "대파 반 대",
-          "displayName": "Large Green Onion",
+          "displayName": "대파",
           "amount": "0.5",
-          "unit": "stalk",
+          "unit": "대",
+          "optional": false,
           "evidences": [
             {
               "type": "ON_SCREEN_TEXT",
               "text": "대파 반 대",
-              "timestamp": "0:05"
+              "timestamp": "00:05"
             },
             {
               "type": "SPEECH",
-              "text": "대파 반 대도 잘게 썰어 올려 준 뒤",
-              "timestamp": "0:05"
+              "text": "대파 반 대도 잘게 썰어서 올려 준 뒤에",
+              "timestamp": "00:05"
             }
-          ]
+          ],
+          "sourceId": "ingredient-2"
         },
         {
-          "sourceId": "ingredient-3",
-          "rawText": "김치 300g 정도",
-          "displayName": "Kimchi",
+          "rawText": "자른 김치 300g 정도",
+          "displayName": "김치",
           "amount": "300",
           "unit": "g",
+          "optional": false,
           "evidences": [
             {
               "type": "ON_SCREEN_TEXT",
-              "text": "300g 정도",
-              "timestamp": "0:11"
+              "text": "삼겹살과 비슷한 양으로 300g 정도 넣고",
+              "timestamp": "00:10"
             },
             {
               "type": "SPEECH",
-              "text": "다른 김치도 삼겹살과 비슷한 양으로 300g 정도 넣고",
-              "timestamp": "0:10"
+              "text": "자른 김치도 삼겹살과 비슷한 양으로 300g 정도 넣고",
+              "timestamp": "00:09"
             }
-          ]
+          ],
+          "sourceId": "ingredient-3"
         },
         {
-          "sourceId": "ingredient-4",
           "rawText": "양파 한 줌 가득",
-          "displayName": "Onion",
+          "displayName": "양파",
           "amount": "1",
-          "unit": "handful",
+          "unit": "줌 가득",
+          "optional": false,
           "evidences": [
             {
               "type": "ON_SCREEN_TEXT",
-              "text": "양파도 가로세로 잘게 썰어 한 줌 가득 넣어 줍니다.",
-              "timestamp": "0:13"
+              "text": "한 줌 가득 넣어 줍니다.",
+              "timestamp": "00:14"
             },
             {
               "type": "SPEECH",
-              "text": "양파도 가로세로 잘게 썰어 한 줌 가득 넣어 줍니다.",
-              "timestamp": "0:13"
+              "text": "양파도 가로세로 잘게 썰어가 한 줌 가득 넣어 줍니다.",
+              "timestamp": "00:13"
             }
-          ]
+          ],
+          "sourceId": "ingredient-4"
         },
         {
-          "sourceId": "ingredient-5",
           "rawText": "고춧가루 1스푼",
-          "displayName": "Gochugaru (Korean Red Pepper Powder)",
+          "displayName": "고춧가루",
           "amount": "1",
-          "unit": "spoon",
+          "unit": "스푼",
+          "optional": false,
           "evidences": [
             {
               "type": "ON_SCREEN_TEXT",
               "text": "고춧가루 1스푼",
-              "timestamp": "0:21"
+              "timestamp": "00:21"
             },
             {
               "type": "SPEECH",
               "text": "고춧가루 한 스푼을 추가해 주고",
-              "timestamp": "0:21"
+              "timestamp": "00:21"
             }
-          ]
+          ],
+          "sourceId": "ingredient-5"
         },
         {
-          "sourceId": "ingredient-6",
           "rawText": "물 1컵 (약 180ml)",
-          "displayName": "Water",
+          "displayName": "물",
           "amount": "1",
-          "unit": "cup",
+          "unit": "컵",
+          "optional": false,
           "evidences": [
             {
               "type": "ON_SCREEN_TEXT",
               "text": "물 1컵 (약 180ml)",
-              "timestamp": "0:24"
+              "timestamp": "00:24"
             },
             {
               "type": "SPEECH",
               "text": "물 한 컵과",
-              "timestamp": "0:24"
+              "timestamp": "00:24"
             }
-          ]
+          ],
+          "sourceId": "ingredient-6"
         },
         {
-          "sourceId": "ingredient-7",
           "rawText": "다진 마늘 1스푼",
-          "displayName": "Minced Garlic",
+          "displayName": "다진 마늘",
           "amount": "1",
-          "unit": "spoon",
+          "unit": "스푼",
+          "optional": false,
           "evidences": [
             {
               "type": "ON_SCREEN_TEXT",
               "text": "다진 마늘 1스푼",
-              "timestamp": "0:25"
+              "timestamp": "00:25"
             },
             {
               "type": "SPEECH",
               "text": "다진 마늘 한 스푼",
-              "timestamp": "0:25"
+              "timestamp": "00:25"
             }
-          ]
+          ],
+          "sourceId": "ingredient-7"
         },
         {
-          "sourceId": "ingredient-8",
           "rawText": "치킨스톡 1/2스푼",
-          "displayName": "Chicken Stock Powder",
+          "displayName": "치킨스톡",
           "amount": "0.5",
-          "unit": "spoon",
+          "unit": "스푼",
+          "optional": false,
           "evidences": [
             {
               "type": "ON_SCREEN_TEXT",
               "text": "치킨스톡 1/2스푼",
-              "timestamp": "0:26"
+              "timestamp": "00:26"
             },
             {
               "type": "SPEECH",
               "text": "치킨스톡 반 스푼만 넣어 주면",
-              "timestamp": "0:26"
+              "timestamp": "00:26"
             }
-          ]
+          ],
+          "sourceId": "ingredient-8"
         },
         {
-          "sourceId": "ingredient-9",
-          "rawText": "흰밥",
-          "displayName": "White Rice",
+          "rawText": "뜨끈한 흰밥",
+          "displayName": "흰밥",
           "amount": null,
           "unit": null,
+          "optional": true,
           "evidences": [
             {
               "type": "ON_SCREEN_TEXT",
-              "text": "뜨끈한 흰밥에 먹을 만큼 올려서",
-              "timestamp": "0:35"
+              "text": "뜨끈한 흰밥에",
+              "timestamp": "00:35"
             },
             {
               "type": "SPEECH",
               "text": "이건 뜨끈한 흰밥에 먹을 만큼 올려서",
-              "timestamp": "0:35"
+              "timestamp": "00:35"
             }
-          ]
+          ],
+          "sourceId": "ingredient-9"
         },
         {
-          "sourceId": "ingredient-10",
           "rawText": "김가루",
-          "displayName": "Seaweed Flakes",
+          "displayName": "김가루",
           "amount": null,
           "unit": null,
+          "optional": true,
           "evidences": [
             {
-              "type": "ON_SCREEN_TEXT",
-              "text": "김가루와 참기름 1스푼",
-              "timestamp": "0:37"
+              "type": "SPEECH",
+              "text": "김가루와",
+              "timestamp": "00:36"
             },
             {
-              "type": "SPEECH",
-              "text": "김가루와 참기름 한 스푼을 싹 둘려 준 뒤에",
-              "timestamp": "0:37"
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 김가루를 올림",
+              "timestamp": "00:36"
             }
-          ]
+          ],
+          "sourceId": "ingredient-10"
         },
         {
-          "sourceId": "ingredient-11",
           "rawText": "참기름 1스푼",
-          "displayName": "Sesame Oil",
+          "displayName": "참기름",
           "amount": "1",
-          "unit": "spoon",
+          "unit": "스푼",
+          "optional": true,
           "evidences": [
             {
               "type": "ON_SCREEN_TEXT",
               "text": "참기름 1스푼",
-              "timestamp": "0:37"
+              "timestamp": "00:37"
             },
             {
               "type": "SPEECH",
-              "text": "김가루와 참기름 한 스푼을 싹 둘려 준 뒤에",
-              "timestamp": "0:37"
+              "text": "참기름 한 스푼을 싹 둘러 준 뒤에",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "삼겹살 300g과 대파 반 대를 잘게 썰어 냄비에 올린 뒤 다 같이 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 삼겹살 300g만 잘게 썰어서 올려 주고 대파 반 대도 잘게 썰어서 올려 준 뒤에 다 같이 한번 볶아 줍니다.",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "삼겹살이 어느 정도 익었을 때쯤 자른 김치 300g 정도를 넣습니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "어느 정도 삼겹살이 익었을 때쯤에 자른 김치도 삼겹살과 비슷한 양으로 300g 정도 넣고",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "양파를 가로세로 잘게 썰어 한 줌 가득 넣고, 양파의 숨이 죽을 때까지 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파도 가로세로 잘게 썰어가 한 줌 가득 넣어 줍니다. 이러면 자연스러운 단맛이 나오면서 여러분들이 극도로 혐오하는 설탕을 넣을 필요가 없습니다. 인자 양파가 숨이 죽을 때까지 볶아졌으면",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "고춧가루 1스푼을 추가하고 풋내만 살짝 날려주며 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 한 스푼을 추가해 주고 풋내만 살짝 날려 준 뒤에",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "물 1컵(약 180ml), 다진 마늘 1스푼, 치킨스톡 1/2스푼을 넣고 섞어줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 한 컵과 다진 마늘 한 스푼 치킨스톡 반 스푼만 넣어 주면 오늘 양념장은 끝입니다.",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "뚜껑을 덮고 5분간 끓여주면 김치찜이 완성됩니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "인자 뚜껑 덮고 딱 5분만 끓여주면 초간단 5분 김치찜이 완성됩니다.",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "초간단 5분 김치찜 완성!!",
+              "timestamp": "00:32"
+            }
+          ]
+        },
+        {
+          "text": "뜨끈한 흰밥에 김치찜을 먹을 만큼 올리고, 김가루와 참기름 1스푼을 둘러 비벼 먹습니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이건 뜨끈한 흰밥에 먹을 만큼 올려가 김가루와 참기름 한 스푼을 싹 둘러 준 뒤에 비비가 묵으면 진짜 맛있습니다.",
+              "timestamp": "00:35"
             }
           ]
         }
       ],
-      "retryCount": 0,
-      "originalGeminiIngredients": [
-        {
-          "sourceId": "ingredient-1",
-          "rawText": "삼겹살 300g",
-          "displayName": "Pork Belly",
-          "amount": "300",
-          "unit": "g",
-          "evidences": [
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "삼겹살 300g",
-              "timestamp": "0:03"
-            },
-            {
-              "type": "SPEECH",
-              "text": "먼저 삼겹살 300g만 잘게 썰어서 올려주고",
-              "timestamp": "0:03"
-            }
-          ]
-        },
-        {
-          "sourceId": "ingredient-2",
-          "rawText": "대파 반 대",
-          "displayName": "Large Green Onion",
-          "amount": "0.5",
-          "unit": "stalk",
-          "evidences": [
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "대파 반 대",
-              "timestamp": "0:05"
-            },
-            {
-              "type": "SPEECH",
-              "text": "대파 반 대도 잘게 썰어 올려 준 뒤",
-              "timestamp": "0:05"
-            }
-          ]
-        },
-        {
-          "sourceId": "ingredient-3",
-          "rawText": "김치 300g 정도",
-          "displayName": "Kimchi",
-          "amount": "300",
-          "unit": "g",
-          "evidences": [
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "300g 정도",
-              "timestamp": "0:11"
-            },
-            {
-              "type": "SPEECH",
-              "text": "다른 김치도 삼겹살과 비슷한 양으로 300g 정도 넣고",
-              "timestamp": "0:10"
-            }
-          ]
-        },
-        {
-          "sourceId": "ingredient-4",
-          "rawText": "양파 한 줌 가득",
-          "displayName": "Onion",
-          "amount": "1",
-          "unit": "handful",
-          "evidences": [
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "양파도 가로세로 잘게 썰어 한 줌 가득 넣어 줍니다.",
-              "timestamp": "0:13"
-            },
-            {
-              "type": "SPEECH",
-              "text": "양파도 가로세로 잘게 썰어 한 줌 가득 넣어 줍니다.",
-              "timestamp": "0:13"
-            }
-          ]
-        },
-        {
-          "sourceId": "ingredient-5",
-          "rawText": "고춧가루 1스푼",
-          "displayName": "Gochugaru (Korean Red Pepper Powder)",
-          "amount": "1",
-          "unit": "spoon",
-          "evidences": [
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "고춧가루 1스푼",
-              "timestamp": "0:21"
-            },
-            {
-              "type": "SPEECH",
-              "text": "고춧가루 한 스푼을 추가해 주고",
-              "timestamp": "0:21"
-            }
-          ]
-        },
-        {
-          "sourceId": "ingredient-6",
-          "rawText": "물 1컵 (약 180ml)",
-          "displayName": "Water",
-          "amount": "1",
-          "unit": "cup",
-          "evidences": [
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "물 1컵 (약 180ml)",
-              "timestamp": "0:24"
-            },
-            {
-              "type": "SPEECH",
-              "text": "물 한 컵과",
-              "timestamp": "0:24"
-            }
-          ]
-        },
-        {
-          "sourceId": "ingredient-7",
-          "rawText": "다진 마늘 1스푼",
-          "displayName": "Minced Garlic",
-          "amount": "1",
-          "unit": "spoon",
-          "evidences": [
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "다진 마늘 1스푼",
-              "timestamp": "0:25"
-            },
-            {
-              "type": "SPEECH",
-              "text": "다진 마늘 한 스푼",
-              "timestamp": "0:25"
-            }
-          ]
-        },
-        {
-          "sourceId": "ingredient-8",
-          "rawText": "치킨스톡 1/2스푼",
-          "displayName": "Chicken Stock Powder",
-          "amount": "0.5",
-          "unit": "spoon",
-          "evidences": [
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "치킨스톡 1/2스푼",
-              "timestamp": "0:26"
-            },
-            {
-              "type": "SPEECH",
-              "text": "치킨스톡 반 스푼만 넣어 주면",
-              "timestamp": "0:26"
-            }
-          ]
-        },
-        {
-          "sourceId": "ingredient-9",
-          "rawText": "흰밥",
-          "displayName": "White Rice",
-          "amount": null,
-          "unit": null,
-          "evidences": [
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "뜨끈한 흰밥에 먹을 만큼 올려서",
-              "timestamp": "0:35"
-            },
-            {
-              "type": "SPEECH",
-              "text": "이건 뜨끈한 흰밥에 먹을 만큼 올려서",
-              "timestamp": "0:35"
-            }
-          ]
-        },
-        {
-          "sourceId": "ingredient-10",
-          "rawText": "김가루",
-          "displayName": "Seaweed Flakes",
-          "amount": null,
-          "unit": null,
-          "evidences": [
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "김가루와 참기름 1스푼",
-              "timestamp": "0:37"
-            },
-            {
-              "type": "SPEECH",
-              "text": "김가루와 참기름 한 스푼을 싹 둘려 준 뒤에",
-              "timestamp": "0:37"
-            }
-          ]
-        },
-        {
-          "sourceId": "ingredient-11",
-          "rawText": "참기름 1스푼",
-          "displayName": "Sesame Oil",
-          "amount": "1",
-          "unit": "spoon",
-          "evidences": [
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "참기름 1스푼",
-              "timestamp": "0:37"
-            },
-            {
-              "type": "SPEECH",
-              "text": "김가루와 참기름 한 스푼을 싹 둘려 준 뒤에",
-              "timestamp": "0:37"
-            }
-          ]
-        }
-      ]
+      "unresolved": []
     },
-    "stage2": {
-      "status": "COMPLETED",
-      "pipeline": {
-        "type": "V3_RECIPE_STRUCTURING",
-        "version": 4,
-        "model": "models/gemini-2.5-flash",
-        "ingredientCatalogHash": "1da18d0b4c61dbbcfc4ca8437beef443b274dfbfc46997ae2ba1124b07080fc9"
-      },
-      "completedAt": "2026-10-18T08:07:35.228293+00:00",
-      "result": {
-        "recipe": {
-          "key": "super-simple-5-minute-kimchi-jjim",
-          "name": "초간단 5분 김치찜",
-          "status": "PUBLISHED",
-          "shortsReference": "https://youtu.be/COUJqOI7DRk?si=jgMIYuImpRfYO4lz",
-          "ingredients": [
-            {
-              "key": "pork-belly",
-              "variant": "pork-belly-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-1",
-              "displayName": "Pork Belly",
-              "rawText": "삼겹살 300g",
-              "amount": "300",
-              "unit": "g",
-              "optional": false
-            },
-            {
-              "key": "green-onion",
-              "variant": "green-onion-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-2",
-              "displayName": "Large Green Onion",
-              "rawText": "대파 반 대",
-              "amount": "0.5",
-              "unit": "stalk",
-              "optional": false
-            },
-            {
-              "key": "kimchi",
-              "variant": "kimchi-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-3",
-              "displayName": "Kimchi",
-              "rawText": "김치 300g 정도",
-              "amount": "300",
-              "unit": "g",
-              "optional": false
-            },
-            {
-              "key": "onion",
-              "variant": "onion-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-4",
-              "displayName": "Onion",
-              "rawText": "양파 한 줌 가득",
-              "amount": "1",
-              "unit": "handful",
-              "optional": false
-            },
-            {
-              "key": "gochugaru",
-              "variant": "red-pepper-powder-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-5",
-              "displayName": "Gochugaru (Korean Red Pepper Powder)",
-              "rawText": "고춧가루 1스푼",
-              "amount": "1",
-              "unit": "spoon",
-              "optional": false
-            },
-            {
-              "key": "water",
-              "variant": "water-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-6",
-              "displayName": "Water",
-              "rawText": "물 1컵 (약 180ml)",
-              "amount": "1",
-              "unit": "cup",
-              "optional": false
-            },
-            {
-              "key": "garlic",
-              "variant": "minced-garlic",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-7",
-              "displayName": "Minced Garlic",
-              "rawText": "다진 마늘 1스푼",
-              "amount": "1",
-              "unit": "spoon",
-              "optional": false
-            },
-            {
-              "key": "chicken-stock-powder",
-              "variant": "chicken-stock-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-8",
-              "displayName": "Chicken Stock Powder",
-              "rawText": "치킨스톡 1/2스푼",
-              "amount": "0.5",
-              "unit": "spoon",
-              "optional": false
-            },
-            {
-              "key": "rice",
-              "variant": "rice-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-9",
-              "displayName": "White Rice",
-              "rawText": "흰밥",
-              "amount": null,
-              "unit": null,
-              "optional": false
-            },
-            {
-              "key": "seaweed-flakes",
-              "variant": "seaweed-flakes-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-10",
-              "displayName": "Seaweed Flakes",
-              "rawText": "김가루",
-              "amount": null,
-              "unit": null,
-              "optional": false
-            },
-            {
-              "key": "sesame-oil",
-              "variant": "sesame-oil-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-11",
-              "displayName": "Sesame Oil",
-              "rawText": "참기름 1스푼",
-              "amount": "1",
-              "unit": "spoon",
-              "optional": false
-            }
-          ],
-          "requirements": [
-            {
-              "options": [
-                {
-                  "ingredient": "pork-belly",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "green-onion",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "kimchi",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "onion",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "gochugaru",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "water",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "garlic",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "chicken-stock-powder",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "rice",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "seaweed-flakes",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "sesame-oil",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            }
-          ],
-          "steps": [
-            "삼겹살 300g을 잘게 썰어 올려줍니다.",
-            "대파 반 대도 잘게 썰어 올린 뒤, 모두 함께 볶아줍니다.",
-            "삼겹살이 어느 정도 익으면 김치 300g과 잘게 썬 양파 한 줌을 넣어줍니다. 양파가 숨이 죽을 때까지 볶아줍니다.",
-            "고춧가루 1스푼을 추가하여 풋내만 살짝 날려줍니다.",
-            "물 1컵 (약 180ml), 다진 마늘 1스푼, 치킨스톡 1/2스푼을 넣고 뚜껑을 덮어 5분간 끓여주면 김치찜이 완성됩니다.",
-            "따뜻한 흰밥에 완성된 김치찜을 먹을 만큼 올리고, 김가루와 참기름 1스푼을 둘러 비벼 먹으면 맛있습니다."
-          ]
-        },
-        "catalogAdditions": {
-          "ingredients": []
-        },
-        "mappingFailures": []
-      },
-      "structuralErrors": [],
-      "retryCount": 0,
-      "originalGeminiResult": {
-        "recipe": {
-          "key": "super-simple-5-minute-kimchi-jjim",
-          "name": "초간단 5분 김치찜",
-          "status": "DRAFT",
-          "shortsReference": "https://youtu.be/COUJqOI7DRk?si=jgMIYuImpRfYO4lz",
-          "ingredients": [
-            {
-              "key": "pork-belly",
-              "variant": "pork-belly-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-1",
-              "displayName": "Pork Belly",
-              "rawText": "삼겹살 300g",
-              "amount": "300",
-              "unit": "g",
-              "optional": false
-            },
-            {
-              "key": "green-onion",
-              "variant": "green-onion-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-2",
-              "displayName": "Large Green Onion",
-              "rawText": "대파 반 대",
-              "amount": "0.5",
-              "unit": "stalk",
-              "optional": false
-            },
-            {
-              "key": "kimchi",
-              "variant": "kimchi-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-3",
-              "displayName": "Kimchi",
-              "rawText": "김치 300g 정도",
-              "amount": "300",
-              "unit": "g",
-              "optional": false
-            },
-            {
-              "key": "onion",
-              "variant": "onion-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-4",
-              "displayName": "Onion",
-              "rawText": "양파 한 줌 가득",
-              "amount": "1",
-              "unit": "handful",
-              "optional": false
-            },
-            {
-              "key": "gochugaru",
-              "variant": "gochugaru-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-5",
-              "displayName": "Gochugaru (Korean Red Pepper Powder)",
-              "rawText": "고춧가루 1스푼",
-              "amount": "1",
-              "unit": "spoon",
-              "optional": false
-            },
-            {
-              "key": "water",
-              "variant": "water-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-6",
-              "displayName": "Water",
-              "rawText": "물 1컵 (약 180ml)",
-              "amount": "1",
-              "unit": "cup",
-              "optional": false
-            },
-            {
-              "key": "garlic",
-              "variant": "minced-garlic",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-7",
-              "displayName": "Minced Garlic",
-              "rawText": "다진 마늘 1스푼",
-              "amount": "1",
-              "unit": "spoon",
-              "optional": false
-            },
-            {
-              "key": "chicken-stock-powder",
-              "variant": "chicken-stock-powder-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-8",
-              "displayName": "Chicken Stock Powder",
-              "rawText": "치킨스톡 1/2스푼",
-              "amount": "0.5",
-              "unit": "spoon",
-              "optional": false
-            },
-            {
-              "key": "rice",
-              "variant": "rice-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-9",
-              "displayName": "White Rice",
-              "rawText": "흰밥",
-              "amount": null,
-              "unit": null,
-              "optional": false
-            },
-            {
-              "key": "seaweed-flakes",
-              "variant": "seaweed-flakes-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-10",
-              "displayName": "Seaweed Flakes",
-              "rawText": "김가루",
-              "amount": null,
-              "unit": null,
-              "optional": false
-            },
-            {
-              "key": "sesame-oil",
-              "variant": "sesame-oil-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-11",
-              "displayName": "Sesame Oil",
-              "rawText": "참기름 1스푼",
-              "amount": "1",
-              "unit": "spoon",
-              "optional": false
-            }
-          ],
-          "requirements": [
-            {
-              "options": [
-                {
-                  "ingredient": "pork-belly",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "green-onion",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "kimchi",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "onion",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "gochugaru",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "water",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "garlic",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "chicken-stock-powder",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "rice",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "seaweed-flakes",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "sesame-oil",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            }
-          ],
-          "steps": [
-            "삼겹살 300g을 잘게 썰어 올려줍니다.",
-            "대파 반 대도 잘게 썰어 올린 뒤, 모두 함께 볶아줍니다.",
-            "삼겹살이 어느 정도 익으면 김치 300g과 잘게 썬 양파 한 줌을 넣어줍니다. 양파가 숨이 죽을 때까지 볶아줍니다.",
-            "고춧가루 1스푼을 추가하여 풋내만 살짝 날려줍니다.",
-            "물 1컵 (약 180ml), 다진 마늘 1스푼, 치킨스톡 1/2스푼을 넣고 뚜껑을 덮어 5분간 끓여주면 김치찜이 완성됩니다.",
-            "따뜻한 흰밥에 완성된 김치찜을 먹을 만큼 올리고, 김가루와 참기름 1스푼을 둘러 비벼 먹으면 맛있습니다."
-          ]
-        },
-        "catalogAdditions": {
-          "ingredients": [
-            {
-              "key": "pork-belly",
-              "name": "삼겹살",
-              "variants": [
-                {
-                  "key": "pork-belly-item",
-                  "name": "삼겹살",
-                  "aliases": []
-                }
-              ],
-              "relations": []
-            },
-            {
-              "key": "kimchi",
-              "name": "김치",
-              "variants": [
-                {
-                  "key": "kimchi-item",
-                  "name": "김치",
-                  "aliases": []
-                }
-              ],
-              "relations": []
-            },
-            {
-              "key": "gochugaru",
-              "name": "고춧가루",
-              "variants": [
-                {
-                  "key": "gochugaru-item",
-                  "name": "고춧가루",
-                  "aliases": []
-                }
-              ],
-              "relations": []
-            },
-            {
-              "key": "chicken-stock-powder",
-              "name": "치킨스톡",
-              "variants": [
-                {
-                  "key": "chicken-stock-powder-item",
-                  "name": "치킨스톡",
-                  "aliases": []
-                }
-              ],
-              "relations": []
-            },
-            {
-              "key": "seaweed-flakes",
-              "name": "김가루",
-              "variants": [
-                {
-                  "key": "seaweed-flakes-item",
-                  "name": "김가루",
-                  "aliases": []
-                }
-              ],
-              "relations": []
-            }
-          ]
-        },
-        "mappingFailures": []
-      }
-    }
-  },
-  "sourceUrl": "https://youtu.be/COUJqOI7DRk?si=jgMIYuImpRfYO4lz",
-  "pipelineVersion": 1,
-  "review": {
-    "status": "COMPLETED",
-    "outcome": "PUBLISHED",
-    "required": "source_video_and_semantic_review",
-    "datasetKey": "super-simple-5-minute-kimchi-jjim",
-    "notes": [
-      "삼겹살 300g, 대파 반 대, 김치 약 300g, 양파 한 줌, 고춧가루, 물, 다진 마늘, 치킨스톡을 끓이고 흰밥·김가루·참기름을 곁들이는 장면을 확인함.",
-      "원본 영상 검증 및 게시 완전성 검사 완료; 사용자 승인 범위에 따라 PUBLISHED dataset에 반영함."
-    ]
+    "structuralErrors": [],
+    "retryCount": 0
   }
 }

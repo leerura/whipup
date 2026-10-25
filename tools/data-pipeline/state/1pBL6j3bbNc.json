@@ -1,0 +1,287 @@
+{
+  "videoId": "1pBL6j3bbNc",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/1pBL6j3bbNc",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T10:07:28.296483+00:00",
+    "rawResponse": "{\n  \"title\": \"에그 인 헬\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"소세지\",\n      \"displayName\": \"소세지\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소세지, 양파, 마늘을 잘게 썰어주세요\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"소세지를 칼로 써는 장면\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소세지, 양파, 마늘을 잘게 썰어주세요\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양파를 잘게 써는 장면\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마늘\",\n      \"displayName\": \"마늘\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소세지, 양파, 마늘을 잘게 썰어주세요\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"마늘을 편 썰기하는 장면\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"토마토소스\",\n      \"displayName\": \"토마토소스\",\n      \"amount\": \"2\",\n      \"unit\": \"비율\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"토마토소스와 우유를 2:1 비율로 섞어줍니다\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우유\",\n      \"displayName\": \"우유\",\n      \"amount\": \"1\",\n      \"unit\": \"비율\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"토마토소스와 우유를 2:1 비율로 섞어줍니다\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"토마토소스 병에 우유를 붓고 흔들어 섞는 장면\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리브유\",\n      \"displayName\": \"올리브유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"달궈진 팬에 올리브유를 뿌려주세요\",\n          \"timestamp\": \"00:57\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 올리브유를 두르는 장면\",\n          \"timestamp\": \"00:58\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란\",\n      \"displayName\": \"계란\",\n      \"amount\": \"3\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소스가 끓기 시작하면 계란을 넣어줍니다\",\n          \"timestamp\": \"01:46\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"끓는 소스 위에 계란 3개를 깨서 넣는 장면\",\n          \"timestamp\": \"01:49\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"피자치즈\",\n      \"displayName\": \"피자치즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"피자치즈도 넣으면 더 맛있어요\",\n          \"timestamp\": \"02:02\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 피자치즈를 뿌리는 장면\",\n          \"timestamp\": \"02:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리가루\",\n      \"displayName\": \"파슬리가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 요리 위에 파슬리가루를 뿌리는 장면\",\n          \"timestamp\": \"02:23\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"소세지, 양파, 마늘을 잘게 썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소세지, 양파, 마늘을 잘게 썰어주세요\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"토마토소스와 우유를 2:1 비율로 섞어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"토마토소스와 우유를 2:1 비율로 섞어줍니다\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"달궈진 팬에 올리브유를 둘러줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"달궈진 팬에 올리브유를 뿌려주세요\",\n          \"timestamp\": \"00:57\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마늘과 양파를 넣고 노릇하게 구워줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마늘과 양파를 넣고 노릇하게 구워줍니다\",\n          \"timestamp\": \"01:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소세지와 토마토소스를 넣어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소세지와 토마토소스를 넣어주세요\",\n          \"timestamp\": \"01:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소스가 끓기 시작하면 계란을 넣어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소스가 끓기 시작하면 계란을 넣어줍니다\",\n          \"timestamp\": \"01:46\"\n        }\n      ]\n    },\n    {\n      \"text\": \"취향에 따라 피자치즈를 뿌려줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"피자치즈도 넣으면 더 맛있어요\",\n          \"timestamp\": \"02:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 흰자가 하얗게 익으면 불에서 내리고 파슬리가루를 뿌려 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 흰자가 하얗게 익으면 완성\",\n          \"timestamp\": \"02:14\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"파슬리가루를 뿌리는 장면\",\n          \"timestamp\": \"02:23\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"소세지, 양파, 마늘, 올리브유, 피자치즈, 파슬리가루의 정확한 중량이나 개수 미기재\",\n    \"함께 곁들여 먹는 바게트(빵)의 준비 과정 미제공\"\n  ]\n}",
+    "result": {
+      "title": "에그 인 헬",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "소세지",
+          "displayName": "소세지",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소세지, 양파, 마늘을 잘게 썰어주세요",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "소세지를 칼로 써는 장면",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소세지, 양파, 마늘을 잘게 썰어주세요",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양파를 잘게 써는 장면",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "마늘",
+          "displayName": "마늘",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소세지, 양파, 마늘을 잘게 썰어주세요",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "마늘을 편 썰기하는 장면",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "토마토소스",
+          "displayName": "토마토소스",
+          "amount": "2",
+          "unit": "비율",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "토마토소스와 우유를 2:1 비율로 섞어줍니다",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "우유",
+          "displayName": "우유",
+          "amount": "1",
+          "unit": "비율",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "토마토소스와 우유를 2:1 비율로 섞어줍니다",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "토마토소스 병에 우유를 붓고 흔들어 섞는 장면",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "올리브유",
+          "displayName": "올리브유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "달궈진 팬에 올리브유를 뿌려주세요",
+              "timestamp": "00:57"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 올리브유를 두르는 장면",
+              "timestamp": "00:58"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "계란",
+          "displayName": "계란",
+          "amount": "3",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소스가 끓기 시작하면 계란을 넣어줍니다",
+              "timestamp": "01:46"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "끓는 소스 위에 계란 3개를 깨서 넣는 장면",
+              "timestamp": "01:49"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "피자치즈",
+          "displayName": "피자치즈",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "피자치즈도 넣으면 더 맛있어요",
+              "timestamp": "02:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 피자치즈를 뿌리는 장면",
+              "timestamp": "02:03"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "파슬리가루",
+          "displayName": "파슬리가루",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 요리 위에 파슬리가루를 뿌리는 장면",
+              "timestamp": "02:23"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "소세지, 양파, 마늘을 잘게 썰어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소세지, 양파, 마늘을 잘게 썰어주세요",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "토마토소스와 우유를 2:1 비율로 섞어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "토마토소스와 우유를 2:1 비율로 섞어줍니다",
+              "timestamp": "00:37"
+            }
+          ]
+        },
+        {
+          "text": "달궈진 팬에 올리브유를 둘러줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "달궈진 팬에 올리브유를 뿌려주세요",
+              "timestamp": "00:57"
+            }
+          ]
+        },
+        {
+          "text": "마늘과 양파를 넣고 노릇하게 구워줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마늘과 양파를 넣고 노릇하게 구워줍니다",
+              "timestamp": "01:07"
+            }
+          ]
+        },
+        {
+          "text": "소세지와 토마토소스를 넣어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소세지와 토마토소스를 넣어주세요",
+              "timestamp": "01:16"
+            }
+          ]
+        },
+        {
+          "text": "소스가 끓기 시작하면 계란을 넣어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소스가 끓기 시작하면 계란을 넣어줍니다",
+              "timestamp": "01:46"
+            }
+          ]
+        },
+        {
+          "text": "취향에 따라 피자치즈를 뿌려줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "피자치즈도 넣으면 더 맛있어요",
+              "timestamp": "02:02"
+            }
+          ]
+        },
+        {
+          "text": "계란 흰자가 하얗게 익으면 불에서 내리고 파슬리가루를 뿌려 완성합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 흰자가 하얗게 익으면 완성",
+              "timestamp": "02:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "파슬리가루를 뿌리는 장면",
+              "timestamp": "02:23"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "소세지, 양파, 마늘, 올리브유, 피자치즈, 파슬리가루의 정확한 중량이나 개수 미기재",
+        "함께 곁들여 먹는 바게트(빵)의 준비 과정 미제공"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

@@ -1,6 +1,6 @@
 {
   "videoId": "mDFphGtynCo",
-  "status": "COMPLETED",
+  "status": "EXTRACTION_READY",
   "stages": {
     "stage1": {
       "status": "COMPLETED",
@@ -9,28 +9,28 @@
         "version": 3,
         "model": "models/gemini-2.5-flash"
       },
-      "completedAt": "2026-10-18T07:24:04.881676+00:00",
+      "completedAt": "2026-10-24T09:14:20.033039+00:00",
       "ingredients": [
         {
           "sourceId": "ingredient-1",
           "rawText": "물 800ml",
-          "displayName": "Water",
+          "displayName": "물",
           "amount": "800",
           "unit": "ml",
           "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 800ml",
+              "timestamp": "0:05"
+            },
             {
               "type": "ON_SCREEN_TEXT",
               "text": "팬에 물 800ml 붓고",
               "timestamp": "0:06"
             },
             {
-              "type": "SPEECH",
-              "text": "팬에 물 800ml 붓고",
-              "timestamp": "0:06"
-            },
-            {
               "type": "VISUAL_ACTION",
-              "text": "Pouring water into a pan",
+              "text": "Pouring water from a measuring cup into a pan",
               "timestamp": "0:05"
             }
           ]
@@ -38,7 +38,7 @@
         {
           "sourceId": "ingredient-2",
           "rawText": "파스타 면",
-          "displayName": "Pasta noodles",
+          "displayName": "파스타 면",
           "amount": null,
           "unit": null,
           "evidences": [
@@ -48,32 +48,42 @@
               "timestamp": "0:07"
             },
             {
-              "type": "VISUAL_ACTION",
-              "text": "Adding pasta noodles to boiling water",
+              "type": "ON_SCREEN_TEXT",
+              "text": "파스타 면을 넣고",
               "timestamp": "0:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding spaghetti noodles to boiling water",
+              "timestamp": "0:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Pasta box displayed",
+              "timestamp": "0:04"
             }
           ]
         },
         {
           "sourceId": "ingredient-3",
           "rawText": "소금 한 티스푼",
-          "displayName": "Salt",
+          "displayName": "소금",
           "amount": "1",
-          "unit": "teaspoon",
+          "unit": "티스푼",
           "evidences": [
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "소금 한 티스푼 넣고",
-              "timestamp": "0:08"
-            },
             {
               "type": "SPEECH",
               "text": "소금 한 티스푼 넣고",
               "timestamp": "0:08"
             },
             {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 한 티스푼 넣고",
+              "timestamp": "0:09"
+            },
+            {
               "type": "VISUAL_ACTION",
-              "text": "Adding white granular substance (salt) to the pan",
+              "text": "Adding white powder (salt) from a measuring spoon",
               "timestamp": "0:08"
             }
           ]
@@ -81,47 +91,57 @@
         {
           "sourceId": "ingredient-4",
           "rawText": "우유 200ml",
-          "displayName": "Milk",
+          "displayName": "우유",
           "amount": "200",
           "unit": "ml",
           "evidences": [
-            {
-              "type": "ON_SCREEN_TEXT",
-              "text": "우유 200ml",
-              "timestamp": "0:11"
-            },
             {
               "type": "SPEECH",
               "text": "우유 200ml",
               "timestamp": "0:11"
             },
             {
-              "type": "VISUAL_ACTION",
-              "text": "Pouring milk into the pan",
+              "type": "ON_SCREEN_TEXT",
+              "text": "우유 200ml",
               "timestamp": "0:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Pouring white liquid (milk) into the pan",
+              "timestamp": "0:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소화가 잘되는 우유 오리지널 UF",
+              "timestamp": "0:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Milk carton displayed",
+              "timestamp": "0:04"
             }
           ]
         },
         {
           "sourceId": "ingredient-5",
           "rawText": "체다 치즈 6장",
-          "displayName": "Cheddar cheese",
+          "displayName": "체다 치즈",
           "amount": "6",
-          "unit": "slices",
+          "unit": "장",
           "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "체다 치즈 6장",
+              "timestamp": "0:12"
+            },
             {
               "type": "ON_SCREEN_TEXT",
               "text": "체다 치즈 6장",
               "timestamp": "0:12"
             },
             {
-              "type": "SPEECH",
-              "text": "체다 치즈 여섯 장",
-              "timestamp": "0:13"
-            },
-            {
               "type": "VISUAL_ACTION",
-              "text": "Adding cheddar cheese slices to the pan",
+              "text": "Adding slices of orange-colored cheese",
               "timestamp": "0:12"
             }
           ]
@@ -129,47 +149,57 @@
         {
           "sourceId": "ingredient-6",
           "rawText": "케찹 3스푼",
-          "displayName": "Ketchup",
+          "displayName": "케찹",
           "amount": "3",
-          "unit": "tablespoons",
+          "unit": "스푼",
           "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "케찹 3스푼",
+              "timestamp": "0:13"
+            },
             {
               "type": "ON_SCREEN_TEXT",
               "text": "케찹 3스푼",
               "timestamp": "0:13"
             },
             {
-              "type": "SPEECH",
-              "text": "케찹 세 스푼",
+              "type": "VISUAL_ACTION",
+              "text": "Squeezing red sauce from a bottle",
               "timestamp": "0:13"
             },
             {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1/2 칼로리 케챺",
+              "timestamp": "0:04"
+            },
+            {
               "type": "VISUAL_ACTION",
-              "text": "Squeezing ketchup into the pan",
-              "timestamp": "0:13"
+              "text": "Ketchup bottle displayed",
+              "timestamp": "0:04"
             }
           ]
         },
         {
           "sourceId": "ingredient-7",
           "rawText": "다진마늘 3스푼",
-          "displayName": "Minced garlic",
+          "displayName": "다진마늘",
           "amount": "3",
-          "unit": "tablespoons",
+          "unit": "스푼",
           "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진마늘 3스푼 넣고",
+              "timestamp": "0:14"
+            },
             {
               "type": "ON_SCREEN_TEXT",
               "text": "다진마늘 3스푼 넣고",
               "timestamp": "0:14"
             },
             {
-              "type": "SPEECH",
-              "text": "다진마늘 세 스푼 넣고",
-              "timestamp": "0:14"
-            },
-            {
               "type": "VISUAL_ACTION",
-              "text": "Adding minced garlic to the pan",
+              "text": "Adding yellowish paste with a spoon",
               "timestamp": "0:14"
             }
           ]
@@ -177,29 +207,24 @@
         {
           "sourceId": "ingredient-8",
           "rawText": "후추",
-          "displayName": "Pepper",
+          "displayName": "후추",
           "amount": null,
           "unit": null,
           "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후추가 많다고 느껴질 정도로",
+              "timestamp": "0:17"
+            },
             {
               "type": "ON_SCREEN_TEXT",
               "text": "후추가 많다고 느껴질 정도로",
               "timestamp": "0:17"
             },
             {
-              "type": "SPEECH",
-              "text": "후추가 많다고 느껴질 정도로 뿌려주면 완성인데",
+              "type": "VISUAL_ACTION",
+              "text": "Shaking a container labeled '후추' (pepper) over the pan",
               "timestamp": "0:17"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "Sprinkling pepper from a container",
-              "timestamp": "0:01"
-            },
-            {
-              "type": "VISUAL_ACTION",
-              "text": "Sprinkling pepper from a container again",
-              "timestamp": "0:16"
             }
           ]
         }
@@ -207,398 +232,284 @@
       "retryCount": 0
     },
     "stage2": {
-      "status": "COMPLETED",
-      "pipeline": {
-        "type": "V3_RECIPE_STRUCTURING",
-        "version": 4,
-        "model": "models/gemini-2.5-flash",
-        "ingredientCatalogHash": "1fc6417fb810b7860921365efdab53097bf3fac1e02f2cc9e3f0530356952a8f"
-      },
-      "completedAt": "2026-10-18T07:35:41.867819+00:00",
-      "result": {
-        "recipe": {
-          "key": "pepper-cheese-one-pan-pasta",
-          "name": "류수영님 후추 치즈 원팬 파스타",
-          "status": "PUBLISHED",
-          "shortsReference": "https://youtu.be/mDFphGtynCo?si=wxswAM4iu_1uO9an",
-          "ingredients": [
-            {
-              "key": "water",
-              "variant": "water-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-1",
-              "displayName": "Water",
-              "rawText": "물 800ml",
-              "amount": "800",
-              "unit": "ml",
-              "optional": false
-            },
-            {
-              "key": "pasta-noodles",
-              "variant": "pasta-noodles-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-2",
-              "displayName": "Pasta noodles",
-              "rawText": "파스타 면",
-              "amount": null,
-              "unit": null,
-              "optional": false
-            },
-            {
-              "key": "salt",
-              "variant": "salt-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-3",
-              "displayName": "Salt",
-              "rawText": "소금 한 티스푼",
-              "amount": "1",
-              "unit": "teaspoon",
-              "optional": false
-            },
-            {
-              "key": "milk",
-              "variant": "milk-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-4",
-              "displayName": "Milk",
-              "rawText": "우유 200ml",
-              "amount": "200",
-              "unit": "ml",
-              "optional": false
-            },
-            {
-              "key": "cheddar-cheese",
-              "variant": "cheddar-cheese-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-5",
-              "displayName": "Cheddar cheese",
-              "rawText": "체다 치즈 6장",
-              "amount": "6",
-              "unit": "slices",
-              "optional": false
-            },
-            {
-              "key": "ketchup",
-              "variant": "ketchup-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-6",
-              "displayName": "Ketchup",
-              "rawText": "케찹 3스푼",
-              "amount": "3",
-              "unit": "tablespoons",
-              "optional": false
-            },
-            {
-              "key": "garlic",
-              "variant": "minced-garlic",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-7",
-              "displayName": "Minced garlic",
-              "rawText": "다진마늘 3스푼",
-              "amount": "3",
-              "unit": "tablespoons",
-              "optional": false
-            },
-            {
-              "key": "black-pepper",
-              "variant": "black-pepper-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-8",
-              "displayName": "Pepper",
-              "rawText": "후추",
-              "amount": null,
-              "unit": null,
-              "optional": false
-            }
-          ],
-          "requirements": [
-            {
-              "options": [
-                {
-                  "ingredient": "pasta-noodles",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "salt",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "milk",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "cheddar-cheese",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "ketchup",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "garlic",
-                  "substitutes": [],
-                  "allowedVariants": [
-                    "minced-garlic"
-                  ]
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "black-pepper",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "water",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            }
-          ],
-          "steps": [
-            "팬에 물 800ml를 붓고 끓입니다.",
-            "물이 끓으면 파스타 면과 소금 1티스푼을 넣고 저어주세요.",
-            "물이 졸아들 때까지 면을 익혀주세요.",
-            "우유 200ml, 체다 치즈 6장, 케찹 3스푼, 다진마늘 3스푼을 넣고 재료가 잘 섞이도록 저어주며 익힙니다.",
-            "후추를 충분히 뿌려주면 완성입니다."
-          ]
-        },
-        "catalogAdditions": {
-          "ingredients": []
-        },
-        "mappingFailures": []
-      },
-      "structuralErrors": [],
+      "status": "RETRY_SUPERSEDED_NEW_API_KEY",
       "retryCount": 0,
-      "originalGeminiResult": {
-        "recipe": {
-          "key": "pepper-cheese-one-pan-pasta",
-          "name": "류수영님 후추 치즈 원팬 파스타",
-          "status": "DRAFT",
-          "shortsReference": "https://youtu.be/mDFphGtynCo?si=wxswAM4iu_1uO9an",
-          "ingredients": [
-            {
-              "key": "water",
-              "variant": null,
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-1",
-              "displayName": "Water",
-              "rawText": "물 800ml",
-              "amount": "800",
-              "unit": "ml",
-              "optional": false
-            },
-            {
-              "key": "pasta-noodles",
-              "variant": "pasta-noodles-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-2",
-              "displayName": "Pasta noodles",
-              "rawText": "파스타 면",
-              "amount": null,
-              "unit": null,
-              "optional": false
-            },
-            {
-              "key": "salt",
-              "variant": "salt-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-3",
-              "displayName": "Salt",
-              "rawText": "소금 한 티스푼",
-              "amount": "1",
-              "unit": "teaspoon",
-              "optional": false
-            },
-            {
-              "key": "milk",
-              "variant": "milk-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-4",
-              "displayName": "Milk",
-              "rawText": "우유 200ml",
-              "amount": "200",
-              "unit": "ml",
-              "optional": false
-            },
-            {
-              "key": "cheddar-cheese",
-              "variant": "cheddar-cheese-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-5",
-              "displayName": "Cheddar cheese",
-              "rawText": "체다 치즈 6장",
-              "amount": "6",
-              "unit": "slices",
-              "optional": false
-            },
-            {
-              "key": "ketchup",
-              "variant": "ketchup-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-6",
-              "displayName": "Ketchup",
-              "rawText": "케찹 3스푼",
-              "amount": "3",
-              "unit": "tablespoons",
-              "optional": false
-            },
-            {
-              "key": "garlic",
-              "variant": "minced-garlic",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-7",
-              "displayName": "Minced garlic",
-              "rawText": "다진마늘 3스푼",
-              "amount": "3",
-              "unit": "tablespoons",
-              "optional": false
-            },
-            {
-              "key": "black-pepper",
-              "variant": "black-pepper-item",
-              "acceptedOwnedVariants": [],
-              "sourceId": "ingredient-8",
-              "displayName": "Pepper",
-              "rawText": "후추",
-              "amount": null,
-              "unit": null,
-              "optional": false
-            }
-          ],
-          "requirements": [
-            {
-              "options": [
-                {
-                  "ingredient": "water",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "pasta-noodles",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "salt",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "milk",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "cheddar-cheese",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "ketchup",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "garlic",
-                  "substitutes": [],
-                  "allowedVariants": [
-                    "minced-garlic"
-                  ]
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "ingredient": "black-pepper",
-                  "substitutes": [],
-                  "allowedVariants": []
-                }
-              ]
-            }
-          ],
-          "steps": [
-            "팬에 물 800ml를 붓고 끓입니다.",
-            "물이 끓으면 파스타 면과 소금 1티스푼을 넣고 저어주세요.",
-            "물이 졸아들 때까지 면을 익혀주세요.",
-            "우유 200ml, 체다 치즈 6장, 케찹 3스푼, 다진마늘 3스푼을 넣고 재료가 잘 섞이도록 저어주며 익힙니다.",
-            "후추를 충분히 뿌려주면 완성입니다."
-          ]
-        },
-        "catalogAdditions": {
-          "ingredients": []
-        },
-        "mappingFailures": []
-      }
+      "startedAt": "2026-10-24T09:14:20.038236+00:00",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 21h45m39.727354483s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '78339s'}]}}",
+      "retryReason": "provider_retry_info",
+      "retryAt": "2026-10-25T06:59:59.284247+00:00",
+      "retrySupersededReason": "operator supplied a new Gemini API key"
     }
   },
   "sourceUrl": "https://youtu.be/mDFphGtynCo?si=wxswAM4iu_1uO9an",
-  "pipelineVersion": 1,
-  "review": {
+  "pipelineVersion": 2,
+  "extraction": {
     "status": "COMPLETED",
-    "outcome": "PUBLISHED",
-    "required": "source_video_and_semantic_review",
-    "datasetKey": "pepper-cheese-one-pan-pasta",
-    "notes": [
-      "물은 보유 가능한 재료 항목으로 카탈로그에 등록하고, 이 레시피의 필수 재료로 매핑함.",
-      "사용자 승인으로 검토 완료된 recipe를 PUBLISHED로 게시함."
-    ]
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T09:24:50.898724+00:00",
+    "rawResponse": "{\n  \"title\": \"류수영 후추치즈 원팬 파스타\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"물 800ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"800\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬에 물 800ml 붓고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 물 800ml 붓고\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파스타 면\",\n      \"displayName\": \"파스타 면\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"파스타 면을 넣고\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"파스타 면을 넣고\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"끓는 물에 파스타 면을 팬에 넣음\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 한 티스푼\",\n      \"displayName\": \"소금\",\n      \"amount\": \"1\",\n      \"unit\": \"티스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소금 한 티스푼 넣고\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금 한 티스푼 넣고\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우유 200ml\",\n      \"displayName\": \"우유\",\n      \"amount\": \"200\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"우유 200ml\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우유 200ml\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"체다 치즈 6장\",\n      \"displayName\": \"체다 치즈\",\n      \"amount\": \"6\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"체다 치즈 6장\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"체다 치즈 여섯 장\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"케찹 3스푼\",\n      \"displayName\": \"케찹\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"케찹 3스푼\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"케찹 세 스푼\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 3스푼\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘 3스푼 넣고\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘 3스푼 넣고\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추가 많다고 느껴질 정도로\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추가 많다고 느껴질 정도로 뿌려주면 완성인데\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"순후추 통을 팬 위에 톡톡 뿌림\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 물 800ml를 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬에 물 800ml 붓고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 물 800ml 붓고\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물이 끓으면 파스타 면을 넣고 소금 한 티스푼을 넣고 저어주다가 물이 졸아들 때까지 면을 익혀준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물이 끓으면 파스타 면을 넣고 소금 한 티스푼 넣고 저어주다가 물이 졸아들 때까지 면을 익혀주고\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물이 끓으면 파스타 면을 넣고 소금 한 티스푼 넣고 저어주다가 물이 졸아들 때까지 면을 익혀주고\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"우유 200ml, 체다 치즈 6장, 케찹 3스푼, 다진마늘 3스푼을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"우유 200ml 체다 치즈 6장 케찹 3스푼 다진마늘 3스푼 넣고\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우유 200ml 체다 치즈 여섯 장 케찹 세 스푼 다진마늘 3스푼 넣고\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"재료가 잘 섞이도록 저어주며 익혀준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"재료가 잘 섞이도록 저어주며 익혀주다가\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"재료가 잘 섞이도록 저어주며 익혀주다가\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"후추가 많다고 느껴질 정도로 넉넉하게 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추가 많다고 느껴질 정도로 뿌려주면 완성인데\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추가 많다고 느껴질 정도로 뿌려주면 완성인데\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"파스타 면의 정확한 중량 또는 인분 수는 영상에서 언급되지 않았습니다.\"\n  ]\n}",
+    "result": {
+      "title": "류수영 후추치즈 원팬 파스타",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "물 800ml",
+          "displayName": "물",
+          "amount": "800",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "팬에 물 800ml 붓고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "팬에 물 800ml 붓고",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "파스타 면",
+          "displayName": "파스타 면",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "파스타 면을 넣고",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "파스타 면을 넣고",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "끓는 물에 파스타 면을 팬에 넣음",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "소금 한 티스푼",
+          "displayName": "소금",
+          "amount": "1",
+          "unit": "티스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "소금 한 티스푼 넣고",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소금 한 티스푼 넣고",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "우유 200ml",
+          "displayName": "우유",
+          "amount": "200",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "우유 200ml",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "우유 200ml",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "체다 치즈 6장",
+          "displayName": "체다 치즈",
+          "amount": "6",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "체다 치즈 6장",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "체다 치즈 여섯 장",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "케찹 3스푼",
+          "displayName": "케찹",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "케찹 3스푼",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "케찹 세 스푼",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "다진마늘 3스푼",
+          "displayName": "다진마늘",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘 3스푼 넣고",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진마늘 3스푼 넣고",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "후추가 많다고 느껴질 정도로",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추가 많다고 느껴질 정도로 뿌려주면 완성인데",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "순후추 통을 팬 위에 톡톡 뿌림",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 물 800ml를 붓는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "팬에 물 800ml 붓고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "팬에 물 800ml 붓고",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "물이 끓으면 파스타 면을 넣고 소금 한 티스푼을 넣고 저어주다가 물이 졸아들 때까지 면을 익혀준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물이 끓으면 파스타 면을 넣고 소금 한 티스푼 넣고 저어주다가 물이 졸아들 때까지 면을 익혀주고",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물이 끓으면 파스타 면을 넣고 소금 한 티스푼 넣고 저어주다가 물이 졸아들 때까지 면을 익혀주고",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "우유 200ml, 체다 치즈 6장, 케찹 3스푼, 다진마늘 3스푼을 넣는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "우유 200ml 체다 치즈 6장 케찹 3스푼 다진마늘 3스푼 넣고",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "우유 200ml 체다 치즈 여섯 장 케찹 세 스푼 다진마늘 3스푼 넣고",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "재료가 잘 섞이도록 저어주며 익혀준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "재료가 잘 섞이도록 저어주며 익혀주다가",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "재료가 잘 섞이도록 저어주며 익혀주다가",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "후추가 많다고 느껴질 정도로 넉넉하게 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "후추가 많다고 느껴질 정도로 뿌려주면 완성인데",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추가 많다고 느껴질 정도로 뿌려주면 완성인데",
+              "timestamp": "00:17"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "파스타 면의 정확한 중량 또는 인분 수는 영상에서 언급되지 않았습니다."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0
   }
 }

@@ -3,7 +3,7 @@ from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 
-RETRY_DELAYS = (60, 300, 900)
+RETRY_DELAYS = (10, 30, 60)
 PACIFIC = ZoneInfo("America/Los_Angeles")
 
 
@@ -55,6 +55,15 @@ def _is_daily_quota(text: str) -> bool:
     )
 
 
+def is_non_retryable_access_error(error: Exception) -> bool:
+    text = _error_text(error).lower()
+    code = str(getattr(error, "code", "")).lower()
+    return (
+        code in {"401", "403", "404", "permission_denied", "not_found"}
+        or any(token in text for token in ("401", "403", "404", "permission denied", "video unavailable", "not found", "private video"))
+    )
+
+
 def next_pacific_midnight(now: datetime | None = None) -> datetime:
     current = now or datetime.now(timezone.utc)
     local = current.astimezone(PACIFIC)
@@ -65,22 +74,33 @@ def next_pacific_midnight(now: datetime | None = None) -> datetime:
 def retry_decision(error: Exception, retry_count: int, now: datetime | None = None) -> dict:
     """Return a persisted retry decision; retry_count counts scheduled retries."""
     text = _error_text(error)
+    if is_non_retryable_access_error(error):
+        return {"reason": "non_retryable_access", "retryCount": retry_count}
     provided = _retry_info_seconds(error)
-    if provided is not None:
-        return {"waitSeconds": provided, "reason": "provider_retry_info", "retryCount": retry_count}
     if _is_429(error, text):
-        if _is_daily_quota(text) or retry_count >= len(RETRY_DELAYS):
+        if _is_daily_quota(text):
+            if provided is not None:
+                return {"waitSeconds": provided, "reason": "quota_retry_info", "retryCount": 0, "kind": "quota"}
             until = next_pacific_midnight(now)
             return {
                 "retryAt": until.isoformat(),
                 "reason": "daily_quota_reset",
                 "retryCount": 0,
+                "kind": "quota",
             }
+        if provided is not None:
+            return {"waitSeconds": provided, "reason": "provider_retry_info", "retryCount": retry_count, "kind": "transient"}
+        if retry_count >= len(RETRY_DELAYS):
+            return {"reason": "failed_retryable", "retryCount": retry_count, "kind": "transient"}
         return {
             "waitSeconds": RETRY_DELAYS[retry_count],
             "reason": "rate_limit_backoff",
             "retryCount": retry_count + 1,
+            "kind": "transient",
         }
+
+    if provided is not None:
+        return {"waitSeconds": provided, "reason": "provider_retry_info", "retryCount": retry_count, "kind": "transient"}
 
     code = getattr(error, "code", None)
     code_text = str(code).upper()
@@ -105,8 +125,9 @@ def retry_decision(error: Exception, retry_count: int, now: datetime | None = No
             "waitSeconds": RETRY_DELAYS[retry_count],
             "reason": "transient_backoff",
             "retryCount": retry_count + 1,
+            "kind": "transient",
         }
-    return {"reason": "failed", "retryCount": retry_count}
+    return {"reason": "failed_retryable", "retryCount": retry_count, "kind": "transient"}
 
 
 def resolve_retry_at(decision: dict, now: datetime | None = None) -> str:

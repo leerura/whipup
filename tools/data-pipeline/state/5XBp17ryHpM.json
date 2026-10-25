@@ -1,0 +1,167 @@
+{
+  "videoId": "5XBp17ryHpM",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/5XBp17ryHpM",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T13:06:14.004752+00:00",
+    "rawResponse": "{\n  \"title\": \"쉽고 맛있는 계란볶음밥 만들기 (Simple Egg Fried Rice)\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"올리브유 (Olive oil)\",\n      \"displayName\": \"올리브유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"올리브유\\nOlive oil\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마늘 (Garlic)\",\n      \"displayName\": \"마늘\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마늘 바삭하게 볶기\\nCrisp up the garlic\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란물을 입힌 밥 (Rice mixed with beaten eggs)\",\n      \"displayName\": \"계란물을 입힌 밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란물을 입힌 밥ㅇ...\\nMix rice with beaten eggs...\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 (Soy sauce)\",\n      \"displayName\": \"간장\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 태우기\\nBurn the soy sauce\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 (Black pepper)\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추\\nBlack pepper\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 올리브유를 두르고 편 썬 마늘을 넣어 바삭하게 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"올리브유\\nOlive oil\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마늘 바삭하게 볶기\\nCrisp up the garlic\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란물을 입힌 밥을 넣고 열심히 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란물을 입힌 밥ㅇ...\\nMix rice with beaten eggs...\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 열심히 볶기\\nFry the rice\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬 한쪽에 간장을 둘러 눌어붙도록 태운 뒤 밥과 함께 다시 열심히 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 태우기\\nBurn the soy sauce\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"또 열심히 볶기\\nFry the rice again\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"후추를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추\\nBlack pepper\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"완성!\\nLet's eat!\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"정확한 재료 분량(올리브유, 마늘, 계란, 밥, 간장, 후추)이 영상에 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "쉽고 맛있는 계란볶음밥 만들기 (Simple Egg Fried Rice)",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "올리브유 (Olive oil)",
+          "displayName": "올리브유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "올리브유\nOlive oil",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "마늘 (Garlic)",
+          "displayName": "마늘",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마늘 바삭하게 볶기\nCrisp up the garlic",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "계란물을 입힌 밥 (Rice mixed with beaten eggs)",
+          "displayName": "계란물을 입힌 밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란물을 입힌 밥ㅇ...\nMix rice with beaten eggs...",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "간장 (Soy sauce)",
+          "displayName": "간장",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 태우기\nBurn the soy sauce",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "후추 (Black pepper)",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추\nBlack pepper",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 올리브유를 두르고 편 썬 마늘을 넣어 바삭하게 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "올리브유\nOlive oil",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마늘 바삭하게 볶기\nCrisp up the garlic",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "계란물을 입힌 밥을 넣고 열심히 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란물을 입힌 밥ㅇ...\nMix rice with beaten eggs...",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 열심히 볶기\nFry the rice",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "팬 한쪽에 간장을 둘러 눌어붙도록 태운 뒤 밥과 함께 다시 열심히 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 태우기\nBurn the soy sauce",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "또 열심히 볶기\nFry the rice again",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "후추를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추\nBlack pepper",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "완성!\nLet's eat!",
+              "timestamp": "00:14"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "정확한 재료 분량(올리브유, 마늘, 계란, 밥, 간장, 후추)이 영상에 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  },
+  "agentReviewNote": "Added as DRAFT: Gemini가 필수 source item을 “계란물을 입힌 밥”으로 묶어 반환했고 계란과 밥을 분리하는 근거가 추출에 없어 보유 단위 매핑을 확정하지 않음."
+}

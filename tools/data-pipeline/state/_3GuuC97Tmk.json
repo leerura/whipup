@@ -1,0 +1,254 @@
+{
+  "videoId": "_3GuuC97Tmk",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/_3GuuC97Tmk",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T23:30:37.012572+00:00",
+    "rawResponse": "{\n  \"title\": \"양배추 요리\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"양배추\",\n      \"displayName\": \"양배추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양배추는 대충 썰어주고\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양배추를 칼로 얇게 채 써는 모습\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"달궈진 팬에 다진마늘 먼저 볶다가\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"기름 둘러 달궈진 팬에 다진 마늘을 볶는 모습\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 오일이 둘러져 있는 모습\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 넣고 달큰하게 볶아주세요\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"채 썬 양파를 팬에 넣고 볶는 모습\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란\",\n      \"displayName\": \"계란\",\n      \"amount\": \"3\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 톡!\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양배추 위에 계란 3개를 깨뜨려 올리는 모습\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"치즈\",\n      \"displayName\": \"모짜렐라 치즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"치즈 솔솔 얹어 주면 끝\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"슈레드 피자치즈를 양배추와 계란 위에 솔솔 뿌리는 모습\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"익은 요리 위에 후춧가루를 톡톡 뿌리는 모습\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 요리의 노른자 위에 통깨를 올려 마무리한 모습\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양배추를 대충 채 썰어 준비합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양배추는 대충 썰어주고\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도마 위에서 양배추를 채 써는 모습\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"달궈진 팬에 기름을 두르고 다진 마늘을 먼저 볶습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"달궈진 팬에 다진마늘 먼저 볶다가\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"채 썬 양파를 넣고 달큰해질 때까지 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 넣고 달큰하게 볶아주세요\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파가 노릇해질 때쯤 썰어둔 양배추를 모두 넣고 함께 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"노릇해질 때쯤 양배추 모두 넣고\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양배추 숨이 살짝 죽으면 자리를 만들어 계란을 깨뜨려 넣습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"숨 살짝 죽으면 계란 톡!\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그 위에 피자치즈를 솔솔 얹어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 오늘의 킥인 치즈 솔솔 얹어 주면 끝\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뚜껑을 덮고 치즈와 계란이 익을 때까지 기다린 후, 후추와 통깨를 뿌려 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"뚜껑 덮고 기다리면\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"뚜껑을 열고 후추와 통깨를 곁들인 모습\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "양배추 요리",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "양배추",
+          "displayName": "양배추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양배추는 대충 썰어주고",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양배추를 칼로 얇게 채 써는 모습",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "다진마늘",
+          "displayName": "다진 마늘",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "달궈진 팬에 다진마늘 먼저 볶다가",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "기름 둘러 달궈진 팬에 다진 마늘을 볶는 모습",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 오일이 둘러져 있는 모습",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파 넣고 달큰하게 볶아주세요",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "채 썬 양파를 팬에 넣고 볶는 모습",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "계란",
+          "displayName": "계란",
+          "amount": "3",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "계란 톡!",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양배추 위에 계란 3개를 깨뜨려 올리는 모습",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "치즈",
+          "displayName": "모짜렐라 치즈",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "치즈 솔솔 얹어 주면 끝",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "슈레드 피자치즈를 양배추와 계란 위에 솔솔 뿌리는 모습",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "익은 요리 위에 후춧가루를 톡톡 뿌리는 모습",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 요리의 노른자 위에 통깨를 올려 마무리한 모습",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양배추를 대충 채 썰어 준비합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양배추는 대충 썰어주고",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도마 위에서 양배추를 채 써는 모습",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "달궈진 팬에 기름을 두르고 다진 마늘을 먼저 볶습니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "달궈진 팬에 다진마늘 먼저 볶다가",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "채 썬 양파를 넣고 달큰해질 때까지 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파 넣고 달큰하게 볶아주세요",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "양파가 노릇해질 때쯤 썰어둔 양배추를 모두 넣고 함께 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "노릇해질 때쯤 양배추 모두 넣고",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "양배추 숨이 살짝 죽으면 자리를 만들어 계란을 깨뜨려 넣습니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "숨 살짝 죽으면 계란 톡!",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "그 위에 피자치즈를 솔솔 얹어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 오늘의 킥인 치즈 솔솔 얹어 주면 끝",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "뚜껑을 덮고 치즈와 계란이 익을 때까지 기다린 후, 후추와 통깨를 뿌려 완성합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "뚜껑 덮고 기다리면",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "뚜껑을 열고 후추와 통깨를 곁들인 모습",
+              "timestamp": "00:21"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

@@ -46,7 +46,7 @@ public class MissingOption {
   }
 
   /**
-   * Get requiredName
+   * Concise missing-item label for recommendation cards. Use the exact selectable item's name when the source ingredient has an exact variant; otherwise use the source requirement display name.
    * @return requiredName
    */
   @NotNull 

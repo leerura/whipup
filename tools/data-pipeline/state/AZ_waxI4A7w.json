@@ -1,0 +1,297 @@
+{
+  "videoId": "AZ_waxI4A7w",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/AZ_waxI4A7w",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T13:43:56.443784+00:00",
+    "rawResponse": "{\n  \"title\": \"토마토계란덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름 두른 팬에 양파 먼저 볶아줘요\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름 두른 팬에 양파 먼저 볶아줘요\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"큰 토마토 2개\",\n      \"displayName\": \"큰 토마토\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"큰 토마토 2개 큼직하게 썰어 넣었어요\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1T\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 1T\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금한꼬집\",\n      \"displayName\": \"소금\",\n      \"amount\": \"1\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금한꼬집으로 풍미 살려줘요\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"되직하면 물 추가해요\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 1T\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마지막으로 간장 1T\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스1T\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스1T\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 0.5T\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.5\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 0.5T로 간해줘요\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 2개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2개 풀어 가장자리에 둘러 익혀주면 완성!\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 담긴 밥 위에 완성된 요리를 올림\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"기름 두른 팬에 양파를 먼저 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름 두른 팬에 양파 먼저 볶아줘요\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"노릇노릇하게 볶은 양파에 큼직하게 썬 큰 토마토 2개를 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"노릇노릇 충분히 볶은 양파에 토마토 투하\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"큰 토마토 2개 큼직하게 썰어 넣었어요\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"다진마늘 1T와 소금 한 꼬집을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 1T 깜빡하고 늦게 넣었어요ㅎ\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금한꼬집으로 풍미 살려줘요\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뚜껑을 덮고 중약불로 5분 정도 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"중약불로 5분정도 끓여요\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"토마토가 푹 무르면 주걱으로 으깨주고, 되직하면 물을 추가한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"토마토가 푹 무르면 주걱으로 으깨주고 되직하면 물 추가해요\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"간장 1T, 굴소스 1T, 설탕 0.5T를 넣어 간을 맞춘다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마지막으로 간장 1T, 굴소스1T\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 0.5T로 간해줘요\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 2개를 풀어 가장자리에 둘러 넣고, 너무 크게 휘젓지 않고 몽글몽글하게 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2개 풀어 가장자리에 둘러 익혀주면 완성!\",\n          \"timestamp\": \"00:45\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"너무 크게 휘젓지 말고 몽글몽글 익혀주세요\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 위에 토마토 계란을 얹어 덮밥으로 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 완성된 토마토 계란 볶음을 부어줌\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"양파와 식용 기름, 밥의 정확한 계량 분량은 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "토마토계란덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름 두른 팬에 양파 먼저 볶아줘요",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름 두른 팬에 양파 먼저 볶아줘요",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "큰 토마토 2개",
+          "displayName": "큰 토마토",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "큰 토마토 2개 큼직하게 썰어 넣었어요",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "다진마늘 1T",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 1T",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "소금한꼬집",
+          "displayName": "소금",
+          "amount": "1",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금한꼬집으로 풍미 살려줘요",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "물",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "되직하면 물 추가해요",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "간장 1T",
+          "displayName": "간장",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마지막으로 간장 1T",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "굴소스1T",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스1T",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "설탕 0.5T",
+          "displayName": "설탕",
+          "amount": "0.5",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 0.5T로 간해줘요",
+              "timestamp": "00:42"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "계란 2개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2개 풀어 가장자리에 둘러 익혀주면 완성!",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 담긴 밥 위에 완성된 요리를 올림",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "기름 두른 팬에 양파를 먼저 볶아준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름 두른 팬에 양파 먼저 볶아줘요",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "노릇노릇하게 볶은 양파에 큼직하게 썬 큰 토마토 2개를 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "노릇노릇 충분히 볶은 양파에 토마토 투하",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "큰 토마토 2개 큼직하게 썰어 넣었어요",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "다진마늘 1T와 소금 한 꼬집을 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 1T 깜빡하고 늦게 넣었어요ㅎ",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금한꼬집으로 풍미 살려줘요",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "뚜껑을 덮고 중약불로 5분 정도 끓인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "중약불로 5분정도 끓여요",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "토마토가 푹 무르면 주걱으로 으깨주고, 되직하면 물을 추가한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "토마토가 푹 무르면 주걱으로 으깨주고 되직하면 물 추가해요",
+              "timestamp": "00:33"
+            }
+          ]
+        },
+        {
+          "text": "간장 1T, 굴소스 1T, 설탕 0.5T를 넣어 간을 맞춘다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마지막으로 간장 1T, 굴소스1T",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 0.5T로 간해줘요",
+              "timestamp": "00:42"
+            }
+          ]
+        },
+        {
+          "text": "계란 2개를 풀어 가장자리에 둘러 넣고, 너무 크게 휘젓지 않고 몽글몽글하게 익힌다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2개 풀어 가장자리에 둘러 익혀주면 완성!",
+              "timestamp": "00:45"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "너무 크게 휘젓지 말고 몽글몽글 익혀주세요",
+              "timestamp": "00:50"
+            }
+          ]
+        },
+        {
+          "text": "밥 위에 토마토 계란을 얹어 덮밥으로 완성한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 완성된 토마토 계란 볶음을 부어줌",
+              "timestamp": "00:54"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "양파와 식용 기름, 밥의 정확한 계량 분량은 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  },
+  "agentReviewNote": "Applied from the saved Gemini extraction; all required ingredients were mapped under V3 recipe-local rules. Deterministic dataset importer validation passed and DB sync completed."
+}

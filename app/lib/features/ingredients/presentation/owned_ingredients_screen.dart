@@ -12,6 +12,7 @@ class OwnedIngredientsScreen extends StatefulWidget {
     required this.apiClient,
     this.onRegisterIngredients,
     this.onOwnedIngredientsChanged,
+    this.onHomeSelected,
     this.onRecommendationsSelected,
     super.key,
   });
@@ -19,6 +20,7 @@ class OwnedIngredientsScreen extends StatefulWidget {
   final ApiClient apiClient;
   final VoidCallback? onRegisterIngredients;
   final ValueChanged<Set<String>>? onOwnedIngredientsChanged;
+  final VoidCallback? onHomeSelected;
   final VoidCallback? onRecommendationsSelected;
 
   @override
@@ -62,7 +64,8 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
       final ownedById = {
         for (final item in ownedData.items) item.variantId: item,
       };
-      final ingredients = ingredientData.groups.expand((group) => group.items)
+      final ingredients = ingredientData.groups
+          .expand((group) => group.items)
           .map(
             (item) => IngredientUiItem(
               ingredientId: item.variantId,
@@ -168,8 +171,10 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
     return IngredientGroupSelector(
       groups: groups,
       query: query,
-      selectedVariantIds: _ingredients.where((item) => item.isOwned)
-          .map((item) => item.ingredientId).toSet(),
+      selectedVariantIds: _ingredients
+          .where((item) => item.isOwned)
+          .map((item) => item.ingredientId)
+          .toSet(),
       pendingVariantIds: _pendingIngredientIds,
       onToggle: (id) => _toggleIngredient(
         _ingredients.firstWhere((item) => item.ingredientId == id),
@@ -193,13 +198,14 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
         backgroundColor: Colors.white,
         bottomNavigationBar: MainBottomNavigation(
           selectedTab: MainTab.ingredients,
+          onHomeSelected: widget.onHomeSelected,
           onRecommendationsSelected: widget.onRecommendationsSelected,
         ),
         body: SafeArea(
           bottom: false,
           child: Column(
             children: [
-              const _ScreenHeader(),
+              _ScreenHeader(onTap: widget.onHomeSelected),
               Expanded(
                 child: ListView(
                   keyboardDismissBehavior:
@@ -243,11 +249,19 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
                     else if (_loadError != null)
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 48),
-                        child: Column(children: [
-                          Text(_loadError!, style: Theme.of(context).textTheme.bodyMedium),
-                          const SizedBox(height: 8),
-                          TextButton(onPressed: _loadIngredients, child: const Text('다시 시도')),
-                        ]),
+                        child: Column(
+                          children: [
+                            Text(
+                              _loadError!,
+                              style: Theme.of(context).textTheme.bodyMedium,
+                            ),
+                            const SizedBox(height: 8),
+                            TextButton(
+                              onPressed: _loadIngredients,
+                              child: const Text('다시 시도'),
+                            ),
+                          ],
+                        ),
                       )
                     else if (normalizedQuery.isNotEmpty)
                       _groupSelector(_groups, query: normalizedQuery)
@@ -256,9 +270,18 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
                     else ...[
                       Text('보유 중 ${owned.length}개'),
                       const SizedBox(height: 14),
-                      _groupSelector(_groups.where((group) => group.items.any(
-                        (variant) => owned.any((item) => item.ingredientId == variant.variantId),
-                      )).toList()),
+                      _groupSelector(
+                        _groups
+                            .where(
+                              (group) => group.items.any(
+                                (variant) => owned.any(
+                                  (item) =>
+                                      item.ingredientId == variant.variantId,
+                                ),
+                              ),
+                            )
+                            .toList(),
+                      ),
                       const Padding(
                         padding: EdgeInsets.symmetric(vertical: 28),
                         child: Divider(
@@ -270,9 +293,18 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
                       if (available.isNotEmpty) ...[
                         const Text('재료 더 담기'),
                         const SizedBox(height: 14),
-                        _groupSelector(_groups.where((group) => group.items.any(
-                          (variant) => available.any((item) => item.ingredientId == variant.variantId),
-                        )).toList()),
+                        _groupSelector(
+                          _groups
+                              .where(
+                                (group) => group.items.any(
+                                  (variant) => available.any(
+                                    (item) =>
+                                        item.ingredientId == variant.variantId,
+                                  ),
+                                ),
+                              )
+                              .toList(),
+                        ),
                       ],
                     ],
                   ],
@@ -287,43 +319,34 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
 }
 
 class _ScreenHeader extends StatelessWidget {
-  const _ScreenHeader();
+  const _ScreenHeader({this.onTap});
+
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 56,
+      height: 52,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
-        child: Row(
-          children: [
-            const Text(
-              'whippy',
-              style: TextStyle(
-                color: AppColors.primary,
-                fontSize: 22,
-                fontWeight: FontWeight.w700,
-                letterSpacing: 0,
+        child: Align(
+          alignment: Alignment.centerLeft,
+          child: InkWell(
+            onTap: onTap,
+            borderRadius: BorderRadius.circular(8),
+            child: const Padding(
+              padding: EdgeInsets.symmetric(vertical: 6),
+              child: Text(
+                'whippy',
+                style: TextStyle(
+                  color: AppColors.primary,
+                  fontSize: 22,
+                  fontWeight: FontWeight.w700,
+                  letterSpacing: 0,
+                ),
               ),
             ),
-            const Spacer(),
-            IconButton(
-              onPressed: () {},
-              tooltip: '알림',
-              icon: const Icon(Icons.notifications_none_rounded),
-              color: AppColors.textPrimary,
-            ),
-            const SizedBox(width: 4),
-            const CircleAvatar(
-              radius: 17,
-              backgroundColor: Color(0xFFFFE9DF),
-              child: Icon(
-                Icons.person_rounded,
-                size: 20,
-                color: AppColors.primary,
-              ),
-            ),
-          ],
+          ),
         ),
       ),
     );

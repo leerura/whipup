@@ -1,0 +1,171 @@
+{
+  "source": "Gemini saved response; no re-call or video revalidation",
+  "processedVideoIds": [
+    "3WdLJTFfwyU",
+    "49N0_FKKsR0",
+    "5XBp17ryHpM",
+    "5YoRopbxrno",
+    "6zJ7dZB4yS8",
+    "7_iCffzc2BA",
+    "7phQGIl5x2w",
+    "89BlDQARh1M",
+    "8WHC15iPOzc",
+    "98NCnhGDM1U",
+    "9XhL1i6gxzw",
+    "9_SFgdyJ9Nk",
+    "AZ_waxI4A7w",
+    "Ahg8ibo2zKE",
+    "AvWjziPWjRE",
+    "BR74P5_fhh4"
+  ],
+  "excluded": {
+    "4UG7r_xX9Ug": "에어프라이어 180도 8분 조리가 필수인 레시피로, 특수 조리기구 없이 만들 수 있는 자취 요리 범위에 맞지 않아 데이터셋에서 제외.",
+    "5qJxbu81gkc": "FAILED after server disconnect; incomplete result.",
+    "BlFh-1-NrQA": "WAITING_RETRY due to quota."
+  },
+  "decisions": {
+    "3WdLJTFfwyU": {
+      "status": "PUBLISHED",
+      "reason": "All required ingredients mapped under V3 rules; quantities left as extracted, including null where absent."
+    },
+    "49N0_FKKsR0": {
+      "status": "PUBLISHED",
+      "reason": "All required ingredients mapped under V3 rules; quantities left as extracted, including null where absent."
+    },
+    "5XBp17ryHpM": {
+      "status": "DRAFT",
+      "reason": "Gemini가 필수 source item을 “계란물을 입힌 밥”으로 묶어 반환했고 계란과 밥을 분리하는 근거가 추출에 없어 보유 단위 매핑을 확정하지 않음."
+    },
+    "5YoRopbxrno": {
+      "status": "DRAFT",
+      "reason": "필수 source item이 조리된 “먹다 남은 치킨”으로 현재 카탈로그의 생 닭고기 보유 단위와 의미가 달라 새 항목 추가/대체를 임의 결정하지 않음."
+    },
+    "6zJ7dZB4yS8": {
+      "status": "PUBLISHED",
+      "reason": "All required ingredients mapped under V3 rules; quantities left as extracted, including null where absent."
+    },
+    "7_iCffzc2BA": {
+      "status": "DRAFT",
+      "reason": "가지 위 흰 가루를 Gemini가 전분가루로 추정했으나 추출 unresolved에 전분가루·부침가루·밀가루 가능성이 명시되어 필수 재료를 미매핑으로 보존함."
+    },
+    "7phQGIl5x2w": {
+      "status": "PUBLISHED",
+      "reason": "All required ingredients mapped under V3 rules; quantities left as extracted, including null where absent."
+    },
+    "89BlDQARh1M": {
+      "status": "PUBLISHED",
+      "reason": "All required ingredients mapped under V3 rules; quantities left as extracted, including null where absent."
+    },
+    "8WHC15iPOzc": {
+      "status": "DRAFT",
+      "reason": "오므라이스 위 소스의 정확한 종류를 Gemini가 unresolved로 남겼고 시각 설명도 케첩으로 보인다고만 하므로 케첩으로 확정하지 않음."
+    },
+    "98NCnhGDM1U": {
+      "status": "PUBLISHED",
+      "reason": "All required ingredients mapped under V3 rules; quantities left as extracted, including null where absent."
+    },
+    "9XhL1i6gxzw": {
+      "status": "PUBLISHED",
+      "reason": "All required ingredients mapped under V3 rules; quantities left as extracted, including null where absent."
+    },
+    "9_SFgdyJ9Nk": {
+      "status": "PUBLISHED",
+      "reason": "All required ingredients mapped under V3 rules; quantities left as extracted, including null where absent."
+    },
+    "AZ_waxI4A7w": {
+      "status": "PUBLISHED",
+      "reason": "All required ingredients mapped under V3 rules; quantities left as extracted, including null where absent."
+    },
+    "Ahg8ibo2zKE": {
+      "status": "PUBLISHED",
+      "reason": "All required ingredients mapped under V3 rules; quantities left as extracted, including null where absent."
+    },
+    "AvWjziPWjRE": {
+      "status": "DRAFT",
+      "reason": "여러 반찬과 밥을 포함한 한상 추출이며, 조리 전 쌀과 흑미가 카탈로그의 완성된 밥 보유 단위와 다르고 Gemini도 쌀 비율/찌개 액체 종류를 unresolved로 남겨 미매핑 유지."
+    },
+    "BR74P5_fhh4": {
+      "status": "PUBLISHED",
+      "reason": "All required ingredients mapped under V3 rules; quantities left as extracted, including null where absent."
+    }
+  },
+  "catalogAdditions": [
+    {
+      "group": "ginger",
+      "item": "minced-ginger-item"
+    },
+    {
+      "group": "starch",
+      "item": "starch-powder-item"
+    },
+    {
+      "group": "steak-sauce",
+      "item": "steak-sauce-item"
+    },
+    {
+      "group": "sausage",
+      "item": "chicken-breast-sausage-item"
+    },
+    {
+      "group": "mayonnaise",
+      "item": "low-calorie-mayonnaise-item"
+    }
+  ],
+  "dbBefore": {
+    "recipes": 16,
+    "ingredientGroups": 89,
+    "variants": 97,
+    "userPantryRows": 30
+  },
+  "validation": {
+    "result": "PASS",
+    "validator": "backend DatasetLoader deterministic prevalidation through make import-data",
+    "recipesAdded": 16,
+    "published": 11,
+    "draft": 5,
+    "draftReasons": "Each DRAFT includes unresolved required mapping; source facts and missing values preserved."
+  },
+  "databaseAfter": {
+    "recipes": 32,
+    "published": 27,
+    "draft": 5,
+    "ingredients": 92,
+    "variants": 102,
+    "userPantryRows": 30,
+    "danglingPantryReferences": 0,
+    "newBatchRecipes": 16
+  },
+  "catalogDelta": {
+    "ingredientGroupsAdded": 3,
+    "variantsAdded": 5,
+    "ingredientGroupsRemoved": 0,
+    "variantsRemoved": 0,
+    "items": [
+      {
+        "key": "ginger",
+        "variant": "minced-ginger-item",
+        "name": "다진 생강"
+      },
+      {
+        "key": "starch",
+        "variant": "starch-powder-item",
+        "name": "전분가루"
+      },
+      {
+        "key": "steak-sauce",
+        "variant": "steak-sauce-item",
+        "name": "스테이크 소스"
+      },
+      {
+        "key": "sausage",
+        "variant": "chicken-breast-sausage-item",
+        "name": "닭가슴살 소시지"
+      },
+      {
+        "key": "mayonnaise",
+        "variant": "low-calorie-mayonnaise-item",
+        "name": "저칼로리 마요네즈"
+      }
+    ]
+  }
+}

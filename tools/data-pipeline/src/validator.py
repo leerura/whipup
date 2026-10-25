@@ -10,6 +10,46 @@ def _is_nonempty_string(value: object) -> bool:
     return isinstance(value, str) and bool(value.strip())
 
 
+def validate_source_extraction(extraction: dict) -> list[str]:
+    """Check only the shape Codex needs to apply Gemini's source facts."""
+    errors: list[str] = []
+    if not _is_nonempty_string(extraction.get("title")):
+        errors.append("title is required")
+    ingredients = extraction.get("ingredients")
+    if not isinstance(ingredients, list):
+        errors.append("ingredients must be an array")
+        ingredients = []
+    for index, ingredient in enumerate(ingredients):
+        path = f"ingredients[{index}]"
+        if not isinstance(ingredient, dict):
+            errors.append(f"{path} must be an object")
+            continue
+        if not _is_nonempty_string(ingredient.get("sourceId")):
+            errors.append(f"{path}.sourceId is required")
+        if not _is_nonempty_string(ingredient.get("rawText")):
+            errors.append(f"{path}.rawText is required")
+        if not _is_nonempty_string(ingredient.get("displayName")):
+            errors.append(f"{path}.displayName is required")
+        if ingredient.get("amount") is not None and not isinstance(ingredient.get("amount"), str):
+            errors.append(f"{path}.amount must be a string or null")
+        if ingredient.get("unit") is not None and not isinstance(ingredient.get("unit"), str):
+            errors.append(f"{path}.unit must be a string or null")
+        if not isinstance(ingredient.get("optional"), bool):
+            errors.append(f"{path}.optional must be a boolean")
+        if not isinstance(ingredient.get("evidences"), list):
+            errors.append(f"{path}.evidences must be an array")
+
+    steps = extraction.get("steps")
+    if not isinstance(steps, list) or not steps or any(
+        not isinstance(step, dict) or not _is_nonempty_string(step.get("text"))
+        for step in steps
+    ):
+        errors.append("steps must be an array of objects with non-empty text")
+    if not isinstance(extraction.get("unresolved", []), list):
+        errors.append("unresolved must be an array")
+    return errors
+
+
 def _catalog_keys(catalog: dict, additions: dict) -> tuple[set[str], set[str]]:
     groups: set[str] = set()
     variants: set[str] = set()

@@ -1,0 +1,647 @@
+{
+  "videoId": "I66zaG4lzfU",
+  "status": "REVIEW_PENDING",
+  "stages": {
+    "stage1": {
+      "status": "COMPLETED",
+      "pipeline": {
+        "type": "V3_INGREDIENT_EXTRACTION",
+        "version": 3,
+        "model": "models/gemini-2.5-flash"
+      },
+      "completedAt": "2026-10-24T09:08:44.364569+00:00",
+      "ingredients": [
+        {
+          "sourceId": "ingredient-1",
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유",
+              "timestamp": "0:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Pouring cooking oil into a pan",
+              "timestamp": "0:07"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-2",
+          "rawText": "소고기",
+          "displayName": "소고기",
+          "amount": "300",
+          "unit": "g",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소고기 300g",
+              "timestamp": "0:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소고기를 너무 좋아하는데",
+              "timestamp": "0:01"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소고기를 구워줘",
+              "timestamp": "0:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Placing beef into the pan",
+              "timestamp": "0:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Beef cooking in pan",
+              "timestamp": "0:00"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-3",
+          "rawText": "소금",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금",
+              "timestamp": "0:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Grinding salt over the beef",
+              "timestamp": "0:10"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-4",
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추",
+              "timestamp": "0:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추는 빼먹으면 안 돼요",
+              "timestamp": "0:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Grinding pepper over the beef",
+              "timestamp": "0:11"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-5",
+          "rawText": "숙주",
+          "displayName": "숙주",
+          "amount": "100",
+          "unit": "g",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "숙주 100g",
+              "timestamp": "0:18"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding bean sprouts to the pan with beef",
+              "timestamp": "0:18"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Bean sprouts on top of beef and rice",
+              "timestamp": "0:01"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-6",
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥 위에 소고기와 숙주를 모두 부어준 다음",
+              "timestamp": "0:22"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Placing rice on a plate",
+              "timestamp": "0:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Cooked rice on the plate",
+              "timestamp": "0:21"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-7",
+          "rawText": "물",
+          "displayName": "물",
+          "amount": "3",
+          "unit": "spoons",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 3spoons",
+              "timestamp": "0:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물",
+              "timestamp": "0:26"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding water to the pan",
+              "timestamp": "0:24"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-8",
+          "rawText": "청주",
+          "displayName": "청주",
+          "amount": "3",
+          "unit": "spoons",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청주 3spoons",
+              "timestamp": "0:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "청주",
+              "timestamp": "0:26"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding a clear liquid from a green bottle to the pan",
+              "timestamp": "0:25"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-9",
+          "rawText": "진간장",
+          "displayName": "진간장",
+          "amount": "3",
+          "unit": "spoons",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 3spoons",
+              "timestamp": "0:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장",
+              "timestamp": "0:27"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding dark liquid to the pan",
+              "timestamp": "0:27"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-10",
+          "rawText": "설탕",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "spoon",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1spoon",
+              "timestamp": "0:28"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕을",
+              "timestamp": "0:28"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding light brown granular substance to the pan",
+              "timestamp": "0:28"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-11",
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파",
+              "timestamp": "0:33"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진대파",
+              "timestamp": "0:34"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Chopping green onions",
+              "timestamp": "0:33"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Green onions on top of beef and rice",
+              "timestamp": "0:06"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-12",
+          "rawText": "노른자",
+          "displayName": "노른자",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "노른자",
+              "timestamp": "0:34"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding egg yolk to the dish",
+              "timestamp": "0:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding egg yolk to the dish",
+              "timestamp": "0:35"
+            }
+          ]
+        }
+      ],
+      "retryCount": 0
+    },
+    "stage2": {
+      "status": "COMPLETED",
+      "pipeline": {
+        "type": "V3_RECIPE_STRUCTURING",
+        "version": 4,
+        "model": "models/gemini-2.5-flash",
+        "ingredientCatalogHash": "1cfffbf82968915c48b0033c79f653588cb37ba31b2269dd61af8f5e18016bce"
+      },
+      "completedAt": "2026-10-24T09:09:22.051989+00:00",
+      "result": {
+        "recipe": {
+          "key": "beef-bean-sprout-rice-bowl",
+          "name": "소고기 숙주 덮밥",
+          "status": "DRAFT",
+          "shortsReference": "https://www.youtube.com/shorts/I66zaG4lzfU",
+          "ingredients": [
+            {
+              "key": "cooking-oil",
+              "variant": "cooking-oil-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-1",
+              "displayName": "식용유",
+              "rawText": "식용유",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "beef",
+              "variant": null,
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-2",
+              "displayName": "소고기",
+              "rawText": "소고기",
+              "amount": "300",
+              "unit": "g",
+              "optional": false
+            },
+            {
+              "key": "salt",
+              "variant": "salt-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-3",
+              "displayName": "소금",
+              "rawText": "소금",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "black-pepper",
+              "variant": "black-pepper-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-4",
+              "displayName": "후추",
+              "rawText": "후추",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "mung-bean-sprouts",
+              "variant": "mung-bean-sprouts-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-5",
+              "displayName": "숙주",
+              "rawText": "숙주",
+              "amount": "100",
+              "unit": "g",
+              "optional": false
+            },
+            {
+              "key": "rice",
+              "variant": "rice-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-6",
+              "displayName": "밥",
+              "rawText": "밥",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "water",
+              "variant": "water-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-7",
+              "displayName": "물",
+              "rawText": "물",
+              "amount": "3",
+              "unit": "spoons",
+              "optional": false
+            },
+            {
+              "key": "cheongju",
+              "variant": "cheongju-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-8",
+              "displayName": "청주",
+              "rawText": "청주",
+              "amount": "3",
+              "unit": "spoons",
+              "optional": false
+            },
+            {
+              "key": "soy-sauce",
+              "variant": "dark-soy-sauce",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-9",
+              "displayName": "진간장",
+              "rawText": "진간장",
+              "amount": "3",
+              "unit": "spoons",
+              "optional": false
+            },
+            {
+              "key": "sugar",
+              "variant": "sugar-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-10",
+              "displayName": "설탕",
+              "rawText": "설탕",
+              "amount": "1",
+              "unit": "spoon",
+              "optional": false
+            },
+            {
+              "key": "green-onion",
+              "variant": "green-onion-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-11",
+              "displayName": "대파",
+              "rawText": "대파",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "egg-yolk",
+              "variant": "egg-yolk-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-12",
+              "displayName": "노른자",
+              "rawText": "노른자",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            }
+          ],
+          "requirements": [
+            {
+              "options": [
+                {
+                  "ingredient": "cooking-oil",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "beef",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "salt",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "black-pepper",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "mung-bean-sprouts",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "rice",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "water",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "cheongju",
+                  "substitutes": [
+                    {
+                      "ingredient": "mirin",
+                      "allowedVariants": [
+                        "mirin-item"
+                      ]
+                    }
+                  ],
+                  "allowedVariants": [
+                    "cheongju-item"
+                  ]
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "soy-sauce",
+                  "substitutes": [],
+                  "allowedVariants": [
+                    "dark-soy-sauce"
+                  ]
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "sugar",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "green-onion",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "egg-yolk",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            }
+          ],
+          "steps": [
+            "팬에 식용유를 두르고 소고기 300g을 구워줍니다.",
+            "고기에 소금, 후추를 뿌려 간을 합니다.",
+            "고기가 노릇하게 익으면 먹기 좋은 크기로 잘라줍니다.",
+            "숙주 100g을 넣고 센 불로 빠르게 볶아서 숨을 죽여줍니다.",
+            "밥 위에 볶은 소고기와 숙주를 모두 부어줍니다.",
+            "고기를 굽던 팬에 물 3스푼, 청주 3스푼, 진간장 3스푼, 설탕 1스푼을 넣고 끓여 소스를 만들어줍니다.",
+            "밥 위에 소스를 붓고 다진 대파와 노른자를 올려주면 완성."
+          ]
+        },
+        "catalogAdditions": {
+          "ingredients": [
+            {
+              "key": "mung-bean-sprouts",
+              "name": "숙주",
+              "variants": [
+                {
+                  "key": "mung-bean-sprouts-item",
+                  "name": "숙주",
+                  "aliases": []
+                }
+              ],
+              "relations": []
+            },
+            {
+              "key": "cheongju",
+              "name": "청주",
+              "variants": [
+                {
+                  "key": "cheongju-item",
+                  "name": "청주",
+                  "aliases": []
+                }
+              ],
+              "relations": []
+            },
+            {
+              "key": "egg-yolk",
+              "name": "노른자",
+              "variants": [
+                {
+                  "key": "egg-yolk-item",
+                  "name": "노른자",
+                  "aliases": []
+                }
+              ],
+              "relations": []
+            }
+          ]
+        },
+        "mappingFailures": []
+      },
+      "structuralErrors": [
+        "recipe.requirements[7].options[0] has unknown substitute"
+      ],
+      "retryCount": 0
+    }
+  },
+  "sourceUrl": "https://www.youtube.com/shorts/I66zaG4lzfU",
+  "pipelineVersion": 1,
+  "review": {
+    "status": "PENDING",
+    "required": "source_video_and_semantic_review",
+    "structuralErrors": [
+      "recipe.requirements[7].options[0] has unknown substitute"
+    ]
+  }
+}

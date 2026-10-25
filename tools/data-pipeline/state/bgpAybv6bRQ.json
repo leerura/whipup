@@ -1,0 +1,302 @@
+{
+  "videoId": "bgpAybv6bRQ",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/bgpAybv6bRQ",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T23:37:44.218293+00:00",
+    "rawResponse": "{\n  \"title\": \"초간단하게 만드는 간장목살덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"진간장 3\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"3\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 3\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 1\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 1\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 1\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리고당 1\",\n      \"displayName\": \"올리고당\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"올리고당 1\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 0.5\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.5\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 0.5\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 톡톡\",\n      \"displayName\": \"후추\",\n      \"amount\": \"톡톡\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 톡톡\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"목살은 300g 깍둑 썰어\",\n      \"displayName\": \"목살\",\n      \"amount\": \"300\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"목살은 300g 깍둑 썰어\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"목살은 300g 깍둑 썰어 겉만 익혀줄 거야.\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 위에 올려먹으니 너무 맛있잖아?\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 위에 올려주면\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란후라이\",\n      \"displayName\": \"계란후라이\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 계란후라이가 토핑으로 얹어져 있음\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 송송 썬 대파가 토핑으로 얹어져 있음\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"목살과 계란 위에 통깨가 뿌려져 있음\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"진간장 3, 굴소스 1, 맛술 1, 다진마늘 1, 올리고당 1, 설탕 0.5, 참기름 1, 후추 톡톡을 넣고 양념을 잘 섞어 잠시 둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 3, 굴소스 1, 맛술 1, 다진마늘 1, 올리고당 1, 설탕 0.5, 참기름 1, 후추 톡톡\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 목살이랑 같이 졸일 양념부터 만들어줄게.\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양념 잘 섞어 잠시 두고\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"목살 300g을 깍둑 썰어 팬에서 겉만 익혀준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"목살은 300g 깍둑 썰어 겉만 익혀줄거야\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"목살은 300g 깍둑 썰어 겉만 익혀줄 거야.\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"목살의 겉이 익으면 만들어둔 양념을 전부 부어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"겉이 익으면 양념 전부 부어줘\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"겉이 익으면 양념 전부 부어줘.\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양념이 반 정도 남을 때까지 졸이고 밥 위에 올려서 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마지막으로 양념이 반 정도 남을 때까지 졸이고 밥 위에 올려주면\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 양념이 반 정도 남을 때까지 졸이고 밥 위에 올려주면\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"양념 재료(진간장, 굴소스, 맛술, 다진마늘, 올리고당, 설탕, 참기름)의 단위가 자막이나 음성에 명시되지 않고 숫자만 표기됨 (밥숟가락 단위로 추정되나 미기재)\",\n    \"토핑(계란후라이, 대파, 통깨)의 수량 및 조리 과정이 영상 후반부 잘림으로 인해 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "초간단하게 만드는 간장목살덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "진간장 3",
+          "displayName": "진간장",
+          "amount": "3",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 3",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "굴소스 1",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "맛술 1",
+          "displayName": "맛술",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 1",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "다진마늘 1",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 1",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "올리고당 1",
+          "displayName": "올리고당",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "올리고당 1",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "설탕 0.5",
+          "displayName": "설탕",
+          "amount": "0.5",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 0.5",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "참기름 1",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "후추 톡톡",
+          "displayName": "후추",
+          "amount": "톡톡",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 톡톡",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "목살은 300g 깍둑 썰어",
+          "displayName": "목살",
+          "amount": "300",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "목살은 300g 깍둑 썰어",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "목살은 300g 깍둑 썰어 겉만 익혀줄 거야.",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥 위에 올려먹으니 너무 맛있잖아?",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 위에 올려주면",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "계란후라이",
+          "displayName": "계란후라이",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 계란후라이가 토핑으로 얹어져 있음",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 송송 썬 대파가 토핑으로 얹어져 있음",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "목살과 계란 위에 통깨가 뿌려져 있음",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "진간장 3, 굴소스 1, 맛술 1, 다진마늘 1, 올리고당 1, 설탕 0.5, 참기름 1, 후추 톡톡을 넣고 양념을 잘 섞어 잠시 둔다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 3, 굴소스 1, 맛술 1, 다진마늘 1, 올리고당 1, 설탕 0.5, 참기름 1, 후추 톡톡",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 목살이랑 같이 졸일 양념부터 만들어줄게.",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양념 잘 섞어 잠시 두고",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "목살 300g을 깍둑 썰어 팬에서 겉만 익혀준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "목살은 300g 깍둑 썰어 겉만 익혀줄거야",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "목살은 300g 깍둑 썰어 겉만 익혀줄 거야.",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "목살의 겉이 익으면 만들어둔 양념을 전부 부어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "겉이 익으면 양념 전부 부어줘",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "겉이 익으면 양념 전부 부어줘.",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "양념이 반 정도 남을 때까지 졸이고 밥 위에 올려서 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마지막으로 양념이 반 정도 남을 때까지 졸이고 밥 위에 올려주면",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 양념이 반 정도 남을 때까지 졸이고 밥 위에 올려주면",
+              "timestamp": "00:15"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "양념 재료(진간장, 굴소스, 맛술, 다진마늘, 올리고당, 설탕, 참기름)의 단위가 자막이나 음성에 명시되지 않고 숫자만 표기됨 (밥숟가락 단위로 추정되나 미기재)",
+        "토핑(계란후라이, 대파, 통깨)의 수량 및 조리 과정이 영상 후반부 잘림으로 인해 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

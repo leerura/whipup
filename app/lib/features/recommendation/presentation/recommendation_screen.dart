@@ -11,6 +11,7 @@ class RecommendationScreen extends StatefulWidget {
     required this.apiClient,
     this.ownedIngredientCount = 8,
     this.onRegisterIngredients,
+    this.onHomeSelected,
     this.onIngredientsSelected,
     this.onRecipeSelected,
   });
@@ -18,6 +19,7 @@ class RecommendationScreen extends StatefulWidget {
   final ApiClient apiClient;
   final int ownedIngredientCount;
   final VoidCallback? onRegisterIngredients;
+  final VoidCallback? onHomeSelected;
   final VoidCallback? onIngredientsSelected;
   final ValueChanged<int>? onRecipeSelected;
 
@@ -46,6 +48,11 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
       _hasLoadError = false;
       _items = const [];
     });
+
+    if (widget.ownedIngredientCount == 0) {
+      setState(() => _isLoading = false);
+      return;
+    }
 
     try {
       final response = await widget.apiClient
@@ -83,13 +90,14 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
         backgroundColor: AppColors.white,
         bottomNavigationBar: MainBottomNavigation(
           selectedTab: MainTab.recommendations,
+          onHomeSelected: widget.onHomeSelected,
           onIngredientsSelected: widget.onIngredientsSelected,
         ),
         body: SafeArea(
           bottom: false,
           child: Column(
             children: [
-              const _ScreenHeader(),
+              _ScreenHeader(onTap: widget.onHomeSelected),
               Expanded(
                 child: ListView(
                   padding: const EdgeInsets.fromLTRB(20, 16, 20, 32),
@@ -126,12 +134,11 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
                         child: Center(child: CircularProgressIndicator()),
                       )
                     else if (_hasLoadError)
-                      _RecommendationLoadError(
-                        onRetry: _loadRecommendations,
-                      )
+                      _RecommendationLoadError(onRetry: _loadRecommendations)
                     else if (_items.isEmpty)
                       _EmptyRecommendations(
                         mode: _selectedMode,
+                        hasNoOwnedIngredients: widget.ownedIngredientCount == 0,
                         onRegisterIngredients: widget.onRegisterIngredients,
                       )
                     else
@@ -151,7 +158,9 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
 }
 
 class _ScreenHeader extends StatelessWidget {
-  const _ScreenHeader();
+  const _ScreenHeader({this.onTap});
+
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -161,12 +170,19 @@ class _ScreenHeader extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Align(
           alignment: Alignment.centerLeft,
-          child: Text(
-            'whippy',
-            style: Theme.of(context).textTheme.titleLarge?.copyWith(
-              color: AppColors.primary,
-              fontSize: 22,
-              fontWeight: FontWeight.w700,
+          child: InkWell(
+            onTap: onTap,
+            borderRadius: BorderRadius.circular(8),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 6),
+              child: Text(
+                'whippy',
+                style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                  color: AppColors.primary,
+                  fontSize: 22,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
             ),
           ),
         ),
@@ -248,26 +264,81 @@ class _RecipeGrid extends StatelessWidget {
       builder: (context, constraints) {
         const spacing = 14.0;
         final cardWidth = (constraints.maxWidth - spacing) / 2;
+        final titleStyle = Theme.of(context).textTheme.bodyMedium
+            ?.copyWith(fontSize: 16, height: 1.25, fontWeight: FontWeight.w700);
+        final summaryStyle = Theme.of(context).textTheme.bodyMedium
+            ?.copyWith(fontSize: 13, height: 1.6, letterSpacing: 0);
+        final columns = <List<RecommendationItem>>[[], []];
+        final heights = [0.0, 0.0];
+        for (final item in items) {
+          final column = heights[0] <= heights[1] ? 0 : 1;
+          columns[column].add(item);
+          final copy = _RecommendationCopy.fromItem(item);
+          heights[column] +=
+              _estimatedCardHeight(
+                item,
+                copy,
+                cardWidth,
+                titleStyle,
+                summaryStyle,
+              ) +
+              16;
+        }
 
-        return Wrap(
-          spacing: spacing,
-          runSpacing: 16,
-          children: items
-              .map(
-                (item) => SizedBox(
-                  width: cardWidth,
-                  child: _RecipeCard(
-                    item: item,
-                    onTap: onRecipeSelected == null
-                        ? null
-                        : () => onRecipeSelected!(item.recipeId),
-                  ),
+        return Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            for (var index = 0; index < columns.length; index++) ...[
+              if (index > 0) const SizedBox(width: spacing),
+              Expanded(
+                child: Column(
+                  children: [
+                    for (final item in columns[index]) ...[
+                      _RecipeCard(
+                        item: item,
+                        onTap: onRecipeSelected == null
+                            ? null
+                            : () => onRecipeSelected!(item.recipeId),
+                      ),
+                      const SizedBox(height: 16),
+                    ],
+                  ],
                 ),
-              )
-              .toList(),
+              ),
+            ],
+          ],
         );
       },
     );
+  }
+
+  double _estimatedCardHeight(
+    RecommendationItem item,
+    _RecommendationCopy copy,
+    double width,
+    TextStyle? titleStyle,
+    TextStyle? summaryStyle,
+  ) {
+    double textHeight(
+      String text,
+      TextStyle? style,
+      double maxWidth,
+      int maxLines,
+    ) {
+      final painter = TextPainter(
+        text: TextSpan(text: text, style: style),
+        textDirection: TextDirection.ltr,
+        maxLines: maxLines,
+      )..layout(maxWidth: maxWidth);
+      return painter.height;
+    }
+
+    return width / 1.28 +
+        12 +
+        textHeight(item.name, titleStyle, width - 24, 1) +
+        4 +
+        textHeight(copy.primary, summaryStyle, width - 24, 1) +
+        12;
   }
 }
 
@@ -300,21 +371,26 @@ class _RecipeCard extends StatelessWidget {
                 child: _RecipeThumbnail(item: item),
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(12, 12, 12, 14),
+                padding: const EdgeInsets.fromLTRB(12, 12, 12, 12),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       item.name,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                         color: AppColors.textPrimary,
                         fontSize: 16,
+                        height: 1.25,
                         fontWeight: FontWeight.w700,
                       ),
                     ),
-                    const SizedBox(height: 5),
+                    const SizedBox(height: 4),
                     Text(
                       copy.primary,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                         color: item.missingCount > 0
                             ? AppColors.primary
@@ -324,18 +400,6 @@ class _RecipeCard extends StatelessWidget {
                         letterSpacing: 0,
                       ),
                     ),
-                    for (final note in copy.secondary) ...[
-                      const SizedBox(height: 4),
-                      Text(
-                        note,
-                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                          color: AppColors.textMuted,
-                          fontSize: 12,
-                          height: 1.6,
-                          letterSpacing: 0,
-                        ),
-                      ),
-                    ],
                   ],
                 ),
               ),
@@ -398,50 +462,40 @@ class _ThumbnailPlaceholder extends StatelessWidget {
 }
 
 class _RecommendationCopy {
-  const _RecommendationCopy({required this.primary, this.secondary = const []});
+  const _RecommendationCopy({required this.primary});
 
   final String primary;
-  final List<String> secondary;
 
   factory _RecommendationCopy.fromItem(RecommendationItem item) {
     final missing = <MissingRequirementResult>[];
-    final matchNotes = <String>{};
     for (final result in item.requirementResults) {
       final value = result.oneOf.value;
       if (value is MissingRequirementResult) {
         missing.add(value);
-      } else if (value is SatisfiedRequirementResult) {
-        for (final match in value.matches) {
-          if (match.type == IngredientMatchTypeEnum.SUBSTITUTE) {
-            matchNotes.add('${_withParticle(match.requiredName, '은', '는')} 가지고 있는 ${_withParticle(match.ownedName, '으로', '로', rieulAsVowel: true)} 대신해도 돼요');
-          }
-        }
       }
     }
 
     if (item.missingCount > 1) {
-      final names = missing.take(2).map((requirement) {
-        final options = requirement.missingOptions.toList(growable: false);
-        if (options.isEmpty) return '재료';
-        final name = _optionNames(options);
-        return options.length > 1 ? '$name 중 하나' : name;
-      }).toList(growable: false);
+      final names = missing
+          .take(2)
+          .map((requirement) {
+            final options = requirement.missingOptions.toList(growable: false);
+            if (options.isEmpty) return '재료';
+            final name = _optionNames(options);
+            return options.length > 1 ? '$name 중 하나' : name;
+          })
+          .toList(growable: false);
       final summary = names.length == 2
           ? '${_withParticle(names.first, '과', '와')} ${names.last}'
           : names.isEmpty
-              ? '재료'
-              : names.single;
+          ? '재료'
+          : names.single;
       return _RecommendationCopy(
         primary: names.length < 2
             ? '재료 ${item.missingCount}개가 더 필요해요'
             : item.missingCount == 2
-                ? '${_withParticle(summary, '이', '가')} 필요해요'
-                : '$summary 외 ${item.missingCount - 2}개가 더 필요해요',
-        secondary: [
-          for (final requirement in missing.take(2))
-            ..._substituteNotes(requirement.missingOptions.toList(growable: false)),
-          ...matchNotes.take(1),
-        ],
+            ? '${_withParticle(summary, '이', '가')} 필요해요'
+            : '$summary 외 ${item.missingCount - 2}개가 더 필요해요',
       );
     }
     if (item.missingCount == 1) {
@@ -453,15 +507,11 @@ class _RecommendationCopy {
         primary: options.isEmpty
             ? '재료 1개가 더 필요해요'
             : options.length > 1
-                ? '$names 중 하나만 있으면 돼요'
-                : '${_withParticle(names, '이', '가')} 필요해요',
-        secondary: [..._substituteNotes(options), ...matchNotes.take(1)],
+            ? '$names 중 하나만 있으면 돼요'
+            : '${_withParticle(names, '이', '가')} 필요해요',
       );
     }
-    return _RecommendationCopy(
-      primary: '지금 바로 만들 수 있어요',
-      secondary: matchNotes.take(1).toList(growable: false),
-    );
+    return const _RecommendationCopy(primary: '지금 바로 만들 수 있어요');
   }
 
   static String _optionNames(List<MissingOption> options) {
@@ -473,23 +523,12 @@ class _RecommendationCopy {
     ].join(' ');
   }
 
-  static List<String> _substituteNotes(List<MissingOption> options) => [
-    for (final option in options)
-      if (option.substitutes.isNotEmpty)
-        '${_withParticle(option.requiredName, '은', '는')} ${_withParticle(option.substitutes.map((substitute) => substitute.name).join(' 또는 '), '으로', '로', rieulAsVowel: true)} 대신해도 돼요',
-  ];
-
-  static String _withParticle(
-    String text,
-    String consonant,
-    String vowel, {
-    bool rieulAsVowel = false,
-  }) {
+  static String _withParticle(String text, String consonant, String vowel) {
     if (text.isEmpty) return text;
     final last = text.runes.last;
     if (last < 0xAC00 || last > 0xD7A3) return '$text($consonant/$vowel)';
     final finalConsonant = (last - 0xAC00) % 28;
-    final useVowel = finalConsonant == 0 || (rieulAsVowel && finalConsonant == 8);
+    final useVowel = finalConsonant == 0;
     return '$text${useVowel ? vowel : consonant}';
   }
 }
@@ -497,10 +536,12 @@ class _RecommendationCopy {
 class _EmptyRecommendations extends StatelessWidget {
   const _EmptyRecommendations({
     required this.mode,
+    required this.hasNoOwnedIngredients,
     required this.onRegisterIngredients,
   });
 
   final RecommendationMode mode;
+  final bool hasNoOwnedIngredients;
   final VoidCallback? onRegisterIngredients;
 
   @override
@@ -512,7 +553,9 @@ class _EmptyRecommendations extends StatelessWidget {
           const _EmptyPlateIllustration(),
           const SizedBox(height: 26),
           Text(
-            mode == RecommendationMode.AVAILABLE
+            hasNoOwnedIngredients
+                ? '재료함이 비어 있어요'
+                : mode == RecommendationMode.AVAILABLE
                 ? '지금 만들 수 있는 메뉴가 없어요'
                 : '재료를 추가해서 만들 메뉴가 없어요',
             textAlign: TextAlign.center,
@@ -524,7 +567,9 @@ class _EmptyRecommendations extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           Text(
-            '다른 메뉴를 확인하거나\n재료를 더 등록해 보세요',
+            hasNoOwnedIngredients
+                ? '재료를 등록하면 만들 수 있는 메뉴를 추천해 드릴게요'
+                : '다른 메뉴를 확인하거나\n재료를 더 등록해 보세요',
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
               color: AppColors.textSecondary,

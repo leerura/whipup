@@ -27,6 +27,8 @@ public class LoginResponse {
 
   private Boolean hasOwnedIngredients;
 
+  private Boolean onboardingCompleted;
+
   public LoginResponse() {
     super();
   }
@@ -34,10 +36,11 @@ public class LoginResponse {
   /**
    * Constructor with only required parameters
    */
-  public LoginResponse(String accessToken, UserSummary user, Boolean hasOwnedIngredients) {
+  public LoginResponse(String accessToken, UserSummary user, Boolean hasOwnedIngredients, Boolean onboardingCompleted) {
     this.accessToken = accessToken;
     this.user = user;
     this.hasOwnedIngredients = hasOwnedIngredients;
+    this.onboardingCompleted = onboardingCompleted;
   }
 
   public LoginResponse accessToken(String accessToken) {
@@ -49,7 +52,7 @@ public class LoginResponse {
    * Get accessToken
    * @return accessToken
    */
-  @NotNull 
+  @NotNull
   @JsonProperty("accessToken")
   public String getAccessToken() {
     return accessToken;
@@ -86,7 +89,7 @@ public class LoginResponse {
   }
 
   /**
-   * Get hasOwnedIngredients
+   * Whether the account currently has any owned ingredient rows.
    * @return hasOwnedIngredients
    */
   @NotNull 
@@ -100,6 +103,26 @@ public class LoginResponse {
     this.hasOwnedIngredients = hasOwnedIngredients;
   }
 
+  public LoginResponse onboardingCompleted(Boolean onboardingCompleted) {
+    this.onboardingCompleted = onboardingCompleted;
+    return this;
+  }
+
+  /**
+   * Whether the account has completed initial ingredient registration. Remains true if all owned ingredients are later deleted.
+   * @return onboardingCompleted
+   */
+  @NotNull
+  @JsonProperty("onboardingCompleted")
+  public Boolean getOnboardingCompleted() {
+    return onboardingCompleted;
+  }
+
+  @JsonProperty("onboardingCompleted")
+  public void setOnboardingCompleted(Boolean onboardingCompleted) {
+    this.onboardingCompleted = onboardingCompleted;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -111,12 +134,13 @@ public class LoginResponse {
     LoginResponse loginResponse = (LoginResponse) o;
     return Objects.equals(this.accessToken, loginResponse.accessToken) &&
         Objects.equals(this.user, loginResponse.user) &&
-        Objects.equals(this.hasOwnedIngredients, loginResponse.hasOwnedIngredients);
+        Objects.equals(this.hasOwnedIngredients, loginResponse.hasOwnedIngredients) &&
+        Objects.equals(this.onboardingCompleted, loginResponse.onboardingCompleted);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(accessToken, user, hasOwnedIngredients);
+    return Objects.hash(accessToken, user, hasOwnedIngredients, onboardingCompleted);
   }
 
   @Override
@@ -126,6 +150,7 @@ public class LoginResponse {
     sb.append("    accessToken: ").append(toIndentedString(accessToken)).append("\n");
     sb.append("    user: ").append(toIndentedString(user)).append("\n");
     sb.append("    hasOwnedIngredients: ").append(toIndentedString(hasOwnedIngredients)).append("\n");
+    sb.append("    onboardingCompleted: ").append(toIndentedString(onboardingCompleted)).append("\n");
     sb.append("}");
     return sb.toString();
   }

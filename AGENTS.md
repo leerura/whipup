@@ -191,74 +191,56 @@ If an approved product decision creates a UX problem, report the problem to the 
 
 ## 7. Recipe Pipeline Agent
 
-The Recipe Pipeline Agent is responsible for operating the repository's existing recipe-data pipeline.
+The Recipe Pipeline Agent is responsible for applying saved Gemini extraction results to the V3 dataset, following `docs/v3/development/recipe-pipeline.md`.
 
-The Recipe Pipeline Agent does not independently extract or interpret recipe data using its own reasoning.
-
-It must use the repository's existing Gemini-based pipeline and validation flow.
+Gemini is the source of truth for facts extracted from the video. The agent must not routinely rewatch the video to re-extract or second-guess those facts. It must use the saved Gemini response and may not invent source facts, quantities, steps, evidence, or timestamps.
 
 Typical workflow:
 
-Recipe source or URL
-→ run existing Gemini pipeline
-→ Stage 1 extraction
-→ Stage 2 structuring
-→ inspect pipeline output
-→ resolve allowed data issues
+Saved Gemini response
+→ inspect extracted source data
+→ reconcile source ingredients with the V3 catalog
+→ add catalog entries when required by V3 product/data rules
+→ create recipe-local mappings and requirements
 → run deterministic validator
-→ apply ingredient master changes if required
-→ apply final recipe data
+→ apply final catalog and recipe data
 → review final diff
 
 The Recipe Pipeline Agent owns:
 
-- accepting a recipe source or URL
-- running the existing pipeline
-- running Stage 1 and Stage 2 according to the repository workflow
-- inspecting pipeline outputs
+- accepting a request to apply a saved Gemini result
+- inspecting pipeline output and reporting extraction errors or explicit uncertainties
 - running deterministic validators
-- resolving pipeline failures according to the active docs
-- applying ingredient master changes when required by the pipeline result
+- resolving data issues according to the active docs
+- applying ingredient master changes when required
 - applying aliases, variants, and relations when allowed by the active docs
-- applying final recipe JSON changes
+- applying final recipe JSON changes and status
 - reviewing the resulting data diff
 
-The Recipe Pipeline Agent may modify:
-
-- ingredient master data
-- aliases
-- variants
-- relations
-- recipe JSON
-
-when required by the pipeline result and allowed by the active domain/data documentation.
+The Recipe Pipeline Agent may modify ingredient master data, aliases, variants, relations, and recipe JSON when required by the extraction result and allowed by the active domain/data documentation.
 
 The Recipe Pipeline Agent must:
 
+- trust Gemini's extracted source facts and preserve their meaning and wording
 - reuse existing master entries when semantically equivalent
 - avoid duplicate Ingredients and Variants
-- follow alias rules defined in the active docs
-- preserve source wording and evidence where required
-- preserve ambiguous source expressions instead of inventing unsupported specificity
+- follow alias and recipe-local mapping rules defined in the active docs
+- preserve ambiguity or missing information explicitly reported by Gemini instead of guessing
 - follow the active Requirement / Variant / Relation rules
 - run the repository validator before completion
+- keep a recipe `DRAFT` when required mappings remain unresolved or validation fails; otherwise it may be `PUBLISHED`
 - confirm that the final dataset is valid
 
 The Recipe Pipeline Agent must not:
 
-- bypass the existing Gemini pipeline with its own extraction logic
-- invent ingredients
-- invent recipe evidence
-- invent timestamps or source facts
+- independently extract recipe data instead of using the saved Gemini result
+- routinely rewatch a video to verify or replace Gemini source facts
+- invent ingredients, evidence, timestamps, quantities, or source facts
 - silently change pipeline semantics
 - create new domain concepts not supported by the active docs
 - force invalid pipeline output into the dataset just to complete the task
 
-If the pipeline produces ambiguity or validation failure that cannot be resolved under the active documentation:
-
-- stop
-- report the blocking issue to the Main Agent
-- do not guess
+If the saved result is missing, malformed, or contains unresolved information that prevents a valid mapping, the agent must stop the affected recipe, preserve the failure reason, and report it to the Main Agent rather than guessing.
 
 At completion, report:
 

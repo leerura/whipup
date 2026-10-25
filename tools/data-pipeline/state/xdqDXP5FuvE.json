@@ -1,0 +1,677 @@
+{
+  "videoId": "xdqDXP5FuvE",
+  "status": "REVIEW_PENDING",
+  "stages": {
+    "stage1": {
+      "status": "COMPLETED",
+      "pipeline": {
+        "type": "V3_INGREDIENT_EXTRACTION",
+        "version": 3,
+        "model": "models/gemini-2.5-flash"
+      },
+      "completedAt": "2026-10-24T09:12:07.092580+00:00",
+      "ingredients": [
+        {
+          "sourceId": "ingredient-1",
+          "rawText": "계란",
+          "displayName": "계란",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 덮밥입니다",
+              "timestamp": "0:01"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란 아시나요?",
+              "timestamp": "0:05"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-2",
+          "rawText": "고기",
+          "displayName": "고기",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고기 없이도",
+              "timestamp": "0:06"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-3",
+          "rawText": "간장 소스",
+          "displayName": "간장 소스",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "간장 소스에",
+              "timestamp": "0:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "미리 만들어둔 간장소스 넣고",
+              "timestamp": "0:23"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Pouring the previously made sauce into the pan",
+              "timestamp": "0:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장소스에 부어주고",
+              "timestamp": "0:29"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-4",
+          "rawText": "계란물",
+          "displayName": "계란물",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란물만 부어주면",
+              "timestamp": "0:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Pouring beaten eggs into the simmering sauce",
+              "timestamp": "0:29"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-5",
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥 한공기 뚝딱 이에요!",
+              "timestamp": "0:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Rice is visible in the bowls as a base",
+              "timestamp": "0:00"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Rice is visible in the bowls as a base",
+              "timestamp": "0:09"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-6",
+          "rawText": "진간장",
+          "displayName": "진간장",
+          "amount": "12",
+          "unit": "숟갈",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 (12숟갈)",
+              "timestamp": "0:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Pouring soy sauce from a measuring cup",
+              "timestamp": "0:11"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-7",
+          "rawText": "굴소스",
+          "displayName": "굴소스",
+          "amount": "6",
+          "unit": "숟갈",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 (6숟갈)",
+              "timestamp": "0:12"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Pouring oyster sauce from a squeeze bottle",
+              "timestamp": "0:12"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-8",
+          "rawText": "설탕",
+          "displayName": "설탕",
+          "amount": "4",
+          "unit": "숟갈",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 (4숟갈)",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding sugar from a cup",
+              "timestamp": "0:13"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-9",
+          "rawText": "물",
+          "displayName": "물",
+          "amount": "500",
+          "unit": "ml",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 500미리 넣어주세요",
+              "timestamp": "0:15"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 500미리 넣어주세요~",
+              "timestamp": "0:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Pouring water from a bottle",
+              "timestamp": "0:15"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-10",
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": "10",
+          "unit": "숟갈",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 10숟갈 넣고",
+              "timestamp": "0:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Pouring and measuring oil into the pan",
+              "timestamp": "0:17"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-11",
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "얇게 썬 대파 넣어서",
+              "timestamp": "0:18"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding chopped green onions to the pan",
+              "timestamp": "0:18"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-12",
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "얇게 썬 양파 넣고",
+              "timestamp": "0:20"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding chopped onions to the pan",
+              "timestamp": "0:20"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-13",
+          "rawText": "계란",
+          "displayName": "계란",
+          "amount": "15",
+          "unit": "개",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란을 하나 둘 셋 넷 열다섯 개 풀어서",
+              "timestamp": "0:27"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "15개 풀어서",
+              "timestamp": "0:28"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Cracking 15 eggs into a bowl",
+              "timestamp": "0:27"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-14",
+          "rawText": "김",
+          "displayName": "김",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Garnishing bowls with shredded seaweed",
+              "timestamp": "0:00"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Garnishing bowls with shredded seaweed",
+              "timestamp": "0:09"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-15",
+          "rawText": "깨",
+          "displayName": "깨",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Garnishing bowls with sesame seeds",
+              "timestamp": "0:09"
+            }
+          ]
+        }
+      ],
+      "retryCount": 0
+    },
+    "stage2": {
+      "status": "COMPLETED",
+      "pipeline": {
+        "type": "V3_RECIPE_STRUCTURING",
+        "version": 4,
+        "model": "models/gemini-2.5-flash",
+        "ingredientCatalogHash": "e7d8b5f501b126f730135c7c5823ac082568ab3ac549643dbd57d9903df754b2"
+      },
+      "completedAt": "2026-10-24T09:12:50.137488+00:00",
+      "result": {
+        "recipe": {
+          "key": "egg-rice-bowl-xdqdxp5fuve",
+          "name": "계란 덮밥",
+          "status": "DRAFT",
+          "shortsReference": "https://www.youtube.com/shorts/xdqDXP5FuvE",
+          "ingredients": [
+            {
+              "key": "egg",
+              "variant": null,
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-1",
+              "displayName": "계란",
+              "rawText": "계란",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "soy-sauce-blend",
+              "variant": "soy-sauce-blend-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-3",
+              "displayName": "간장 소스",
+              "rawText": "간장 소스",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "beaten-egg",
+              "variant": "beaten-egg-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-4",
+              "displayName": "계란물",
+              "rawText": "계란물",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "rice",
+              "variant": "rice-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-5",
+              "displayName": "밥",
+              "rawText": "밥",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "soy-sauce",
+              "variant": "dark-soy-sauce",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-6",
+              "displayName": "진간장",
+              "rawText": "진간장",
+              "amount": "12",
+              "unit": "숟갈",
+              "optional": false
+            },
+            {
+              "key": "oyster-sauce",
+              "variant": "oyster-sauce-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-7",
+              "displayName": "굴소스",
+              "rawText": "굴소스",
+              "amount": "6",
+              "unit": "숟갈",
+              "optional": false
+            },
+            {
+              "key": "sugar",
+              "variant": "sugar-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-8",
+              "displayName": "설탕",
+              "rawText": "설탕",
+              "amount": "4",
+              "unit": "숟갈",
+              "optional": false
+            },
+            {
+              "key": "water",
+              "variant": "water-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-9",
+              "displayName": "물",
+              "rawText": "물",
+              "amount": "500",
+              "unit": "ml",
+              "optional": false
+            },
+            {
+              "key": "cooking-oil",
+              "variant": "cooking-oil-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-10",
+              "displayName": "식용유",
+              "rawText": "식용유",
+              "amount": "10",
+              "unit": "숟갈",
+              "optional": false
+            },
+            {
+              "key": "green-onion",
+              "variant": "green-onion-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-11",
+              "displayName": "대파",
+              "rawText": "대파",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "onion",
+              "variant": "onion-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-12",
+              "displayName": "양파",
+              "rawText": "양파",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "egg",
+              "variant": "egg-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-13",
+              "displayName": "계란",
+              "rawText": "계란",
+              "amount": "15",
+              "unit": "개",
+              "optional": false
+            },
+            {
+              "key": "seaweed-sheet",
+              "variant": "seaweed-sheet-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-14",
+              "displayName": "김",
+              "rawText": "김",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "sesame-seeds",
+              "variant": "sesame-seeds",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-15",
+              "displayName": "깨",
+              "rawText": "깨",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            }
+          ],
+          "requirements": [
+            {
+              "options": [
+                {
+                  "ingredient": "egg",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "soy-sauce-blend",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "beaten-egg",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "rice",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "soy-sauce",
+                  "substitutes": [],
+                  "allowedVariants": [
+                    "dark-soy-sauce"
+                  ]
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "oyster-sauce",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "sugar",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "water",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "cooking-oil",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "green-onion",
+                  "substitutes": [],
+                  "allowedVariants": [
+                    "green-onion-item"
+                  ]
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "onion",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "seaweed-sheet",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "sesame-seeds",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            }
+          ],
+          "steps": [
+            "간장 소스를 만드세요: 볼에 진간장 12숟갈, 굴소스 6숟갈, 설탕 4숟갈을 넣고 잘 섞은 후, 물 500ml를 넣어 다시 잘 섞어줍니다.",
+            "달궈진 팬에 식용유 10숟갈과 얇게 썬 대파를 넣고 파기름을 충분히 냅니다.",
+            "얇게 썬 양파를 넣고 3분 정도 볶아줍니다.",
+            "미리 만들어둔 간장 소스를 넣고 양파가 부드러워질 때까지 3분 정도 끓여줍니다.",
+            "다른 볼에 계란 15개를 풀어 계란물을 만듭니다.",
+            "끓고 있는 간장 소스에 계란물을 부어줍니다. 이때 계란을 건드리지 말고 바로 뚜껑을 덮어 3분 더 익혀줍니다.",
+            "밥 위에 완성된 계란 덮밥을 올리고, 김과 깨를 뿌려 마무리합니다."
+          ]
+        },
+        "catalogAdditions": {
+          "ingredients": [
+            {
+              "key": "soy-sauce-blend",
+              "name": "간장 소스",
+              "variants": [
+                {
+                  "key": "soy-sauce-blend-item",
+                  "name": "간장 소스",
+                  "aliases": []
+                }
+              ],
+              "relations": []
+            },
+            {
+              "key": "beaten-egg",
+              "name": "계란물",
+              "variants": [
+                {
+                  "key": "beaten-egg-item",
+                  "name": "계란물",
+                  "aliases": []
+                }
+              ],
+              "relations": []
+            }
+          ]
+        },
+        "mappingFailures": [
+          {
+            "sourceId": "ingredient-2",
+            "rawText": "고기",
+            "displayName": "고기",
+            "amount": null,
+            "unit": null,
+            "reason": "explicitly stated as not used"
+          }
+        ]
+      },
+      "structuralErrors": [
+        "duplicate recipe ingredient key: egg",
+        "recipe.ingredients must contain each Stage 1 sourceId exactly once"
+      ],
+      "retryCount": 0
+    }
+  },
+  "sourceUrl": "https://www.youtube.com/shorts/xdqDXP5FuvE",
+  "pipelineVersion": 1,
+  "review": {
+    "status": "PENDING",
+    "required": "source_video_and_semantic_review",
+    "structuralErrors": [
+      "duplicate recipe ingredient key: egg",
+      "recipe.ingredients must contain each Stage 1 sourceId exactly once"
+    ]
+  }
+}
