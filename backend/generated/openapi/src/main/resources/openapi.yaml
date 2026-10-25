@@ -643,6 +643,10 @@ components:
         recipeId: 0
         name: name
         shortsReference: https://openapi-generator.tech
+        sourceTitle: Source video title
+        sourceChannelName: Source channel
+        sourceChannelId: UCxxxxxxxxxxxxxxxxxxxxxx
+        sourceMetadataFetchedAt: '2026-10-25T12:00:00Z'
         thumbnailUrl: https://openapi-generator.tech
         missingCount: 0
         requirements:
@@ -739,6 +743,19 @@ components:
         shortsReference:
           format: uri
           type: string
+        sourceTitle:
+          nullable: true
+          type: string
+        sourceChannelName:
+          nullable: true
+          type: string
+        sourceChannelId:
+          nullable: true
+          type: string
+        sourceMetadataFetchedAt:
+          format: date-time
+          nullable: true
+          type: string
         thumbnailUrl:
           format: uri
           type: string
@@ -765,6 +782,10 @@ components:
       - recipeId
       - requirements
       - shortsReference
+      - sourceTitle
+      - sourceChannelName
+      - sourceChannelId
+      - sourceMetadataFetchedAt
       - steps
       - thumbnailUrl
       type: object

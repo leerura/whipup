@@ -403,6 +403,10 @@ components:
         - recipeId
         - name
         - shortsReference
+        - sourceTitle
+        - sourceChannelName
+        - sourceChannelId
+        - sourceMetadataFetchedAt
         - thumbnailUrl
         - missingCount
         - requirements
@@ -417,6 +421,21 @@ components:
         shortsReference:
           type: string
           format: uri
+        sourceTitle:
+          type: string
+          nullable: true
+          description: Title returned by the stored YouTube source metadata snapshot.
+        sourceChannelName:
+          type: string
+          nullable: true
+        sourceChannelId:
+          type: string
+          nullable: true
+        sourceMetadataFetchedAt:
+          type: string
+          format: date-time
+          nullable: true
+          description: UTC time when the stored YouTube metadata snapshot was fetched.
         thumbnailUrl:
           type: string
           format: uri

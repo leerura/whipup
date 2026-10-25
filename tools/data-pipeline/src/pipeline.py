@@ -18,7 +18,7 @@ from gemini_client import GeminiClient
 from retry import resolve_retry_at, retry_decision
 from state import claim_video, heartbeat, load_video, recover_stale_claims, release_claim, save_runtime_status, save_video, update_worker
 from validator import validate_source_extraction
-from youtube import extract_video_id
+from youtube import extract_video_id, fetch_source_metadata
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUT_FILE = ROOT / "input" / "shorts-urls.txt"
@@ -216,7 +216,9 @@ def process_claimed_video(video_id: str, source_url: str, client: GeminiClient, 
         if isinstance(result.get("ingredients"), list):
             result["ingredients"] = _assign_source_ids(result["ingredients"])
         errors = validate_source_extraction(result)
+        source_metadata = fetch_source_metadata(video_id)
         current = load_video(video_id)
+        current["sourceMetadata"] = source_metadata
         current["extraction"] = {"status": "COMPLETED", "pipeline": metadata(model, "V3_RECIPE_SOURCE_EXTRACTION", EXTRACTION_VERSION), "completedAt": datetime.now(timezone.utc).isoformat(), "rawResponse": raw_response, "result": result, "structuralErrors": errors, "retryCount": 0, "accountId": account_id}
         current["status"] = "EXTRACTION_READY"
         release_claim(current, worker_id)

@@ -28,10 +28,19 @@ public record Dataset(List<IngredientData> ingredients, List<RecipeData> recipes
         String name,
         String status,
         String shortsReference,
+        String sourceTitle,
+        String sourceChannelName,
+        String sourceChannelId,
+        java.time.OffsetDateTime sourceMetadataFetchedAt,
         List<RecipeIngredientData> ingredients,
         List<RequirementData> requirements,
         List<String> steps
     ) {
+        public RecipeData(String key, String name, String status, String shortsReference,
+                List<RecipeIngredientData> ingredients, List<RequirementData> requirements, List<String> steps) {
+            this(key, name, status, shortsReference, null, null, null, null, ingredients, requirements, steps);
+        }
+
         public RecipeData {
             ingredients = List.copyOf(ingredients);
             requirements = List.copyOf(requirements);

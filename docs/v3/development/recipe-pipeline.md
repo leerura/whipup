@@ -17,10 +17,11 @@
 
 1. URL 목록에서 주석이 아니며 아직 완료되지 않은 URL을 찾는다. 같은 YouTube video ID는 한 번만 처리한다.
 2. 가용 worker가 공유 큐에서 처리 가능한 URL 하나를 원자적으로 선점한다. 한 video ID와 Gemini 추출 단계는 동시에 하나의 worker만 처리한다.
-3. Gemini에 원본 영상 URL과 하나의 추출 요청을 보내 재료 원문, 수량·단위, 선택 여부, 조리 단계, 제목 등 recipe 원본에 필요한 정보를 한 번에 추출한다. 이 요청은 기존 catalog를 입력으로 요구하지 않는다.
-4. Gemini 응답과 요청 상태를 video ID별 checkpoint에 저장하고 선점을 해제한다. 추출이 완료되면 해당 영상의 자동 작업을 멈춘다. pipeline은 catalog나 최종 recipe dataset을 수정하지 않는다.
-5. 사용자가 Codex 에이전트에게 반영을 요청한다. 에이전트는 Gemini 추출 결과를 원본 사실로 사용하고, 기존 catalog를 재사용하거나 필요한 Ingredient group/owned item을 추가하며, recipe-local mapping과 requirements를 구성한다.
-6. 에이전트는 deterministic validator를 통과시킨 뒤 catalog와 recipe JSON을 최종 dataset에 반영한다. 필수 재료가 합리적으로 매핑되지 않거나 구조 검사가 실패하면 해당 recipe를 `DRAFT`로 유지하고 이유를 기록한다. 모든 필수 요구가 연결되고 구조 검사가 통과하면 `PUBLISHED`할 수 있다.
+3. Gemini에 원본 영상 URL과 하나의 추출 요청을 보내 재료 원문, 수량·단위, 선택 여부, 조리 단계 등 recipe 내용에 필요한 정보를 한 번에 추출한다. 이 요청은 기존 catalog를 입력으로 요구하지 않는다. Gemini가 영상 내용에서 확인할 수 없는 YouTube 업로더 메타데이터를 추측하게 하지 않는다.
+4. 원본 video ID로 YouTube의 source metadata를 별도 조회해 원본 영상 제목, 채널명, 채널 ID, 조회 시각을 가져온다. 이는 Gemini recipe extraction과 별도 단계이며, 원본 영상 페이지/API metadata에 없는 값은 추측하지 않고 `null`로 남긴다.
+5. Gemini 응답, source metadata snapshot, 요청 상태를 video ID별 checkpoint에 저장하고 선점을 해제한다. 추출과 metadata 저장이 끝나면 해당 영상의 자동 작업을 멈춘다. pipeline은 catalog나 최종 recipe dataset을 수정하지 않는다.
+6. 사용자가 Codex 에이전트에게 반영을 요청한다. 에이전트는 Gemini 추출 결과를 recipe 내용의 원본 사실로 사용하고, 저장된 source metadata를 출처 정보로 사용한다. 기존 catalog를 재사용하거나 필요한 Ingredient group/owned item을 추가하며, recipe-local mapping과 requirements를 구성한다.
+7. 에이전트는 deterministic validator를 통과시킨 뒤 catalog와 recipe JSON을 최종 dataset에 반영한다. 필수 재료가 합리적으로 매핑되지 않거나 구조 검사가 실패하면 해당 recipe를 `DRAFT`로 유지하고 이유를 기록한다. 모든 필수 요구가 연결되고 구조 검사가 통과하면 `PUBLISHED`할 수 있다.
 
 ## Gemini 추출 결과와 Codex의 책임
 
@@ -59,6 +60,8 @@ Gemini의 저장 응답은 아래 필드를 포함한다. `rawText`는 영상에
 ```
 
 Codex는 V3 catalog 및 recipe 모델에 맞게 결과를 정리한다. 여기에는 기존 Ingredient/Variant 재사용, 새 catalog 항목 추가, source expression을 보유 단위에 연결, recipe별 `acceptedOwnedVariants` 및 requirements 작성, `DRAFT`/`PUBLISHED` 결정, deterministic validation이 포함된다. Gemini 결과에 명시된 불확실성 또는 필수 정보의 부재는 추측으로 메우지 말고 미해결 이유로 남긴다.
+
+YouTube source metadata는 Gemini 추출과 별도로 URL의 video ID를 이용해 수집한다. 최종 recipe JSON은 `shortsReference`, `sourceTitle`, `sourceChannelName`, `sourceChannelId`, `sourceMetadataFetchedAt`를 보존한다. `sourceTitle`은 앱의 recipe `name`을 대체하지 않는다. Recipe read/API 요청에서는 저장된 metadata snapshot을 반환하며 YouTube에 매번 재조회하지 않는다. metadata가 누락된 경우 extraction 내용을 만들어 보완하지 않고 누락 상태를 유지한다.
 
 ## 검증 범위
 

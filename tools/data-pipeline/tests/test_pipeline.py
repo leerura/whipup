@@ -27,6 +27,14 @@ class PipelineQueueTests(unittest.TestCase):
         self.dashboard_state_dir_patch = patch.object(dashboard, "STATE_DIR", self.root / "state")
         self.dashboard_state_dir_patch.start()
         self.addCleanup(self.dashboard_state_dir_patch.stop)
+        self.source_metadata_patch = patch("pipeline.fetch_source_metadata", return_value={
+            "sourceTitle": None,
+            "sourceChannelName": None,
+            "sourceChannelId": None,
+            "sourceMetadataFetchedAt": None,
+        })
+        self.source_metadata_patch.start()
+        self.addCleanup(self.source_metadata_patch.stop)
 
     def test_duplicate_urls_are_video_id_deduplicated(self):
         urls = self.root / "urls.txt"

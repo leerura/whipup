@@ -6,6 +6,7 @@ services:
     command: ["python", "/workspace/tools/data-pipeline/src/pipeline.py"]
     environment:
       GEMINI_MODEL: ${GEMINI_MODEL:-gemini-3.8-flash}
+      YOUTUBE_DATA_API_KEY: ${YOUTUBE_DATA_API_KEY:-}
       PIPELINE_POLL_SECONDS: ${PIPELINE_POLL_SECONDS:-20}
       PIPELINE_DASHBOARD_PORT: ${PIPELINE_DASHBOARD_PORT:-8081}
     ports:

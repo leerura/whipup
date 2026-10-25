@@ -99,7 +99,7 @@ public class RecipeService {
             extractYoutubeVideoId(shortsReference)
         ));
 
-        return new RecipeDetailResponse(
+        RecipeDetailResponse response = new RecipeDetailResponse(
             recipe.getId(),
             recipe.getName(),
             shortsReference,
@@ -109,6 +109,11 @@ public class RecipeService {
             optionalIngredients,
             steps
         );
+        response.setSourceTitle(recipe.getSourceTitle());
+        response.setSourceChannelName(recipe.getSourceChannelName());
+        response.setSourceChannelId(recipe.getSourceChannelId());
+        response.setSourceMetadataFetchedAt(recipe.getSourceMetadataFetchedAt());
+        return response;
     }
 
     private DetailRequirement toDetailRequirement(

@@ -140,6 +140,17 @@ public class DatasetLoader {
         String name = requiredText(file, "name", recipe.name(), errors);
         String status = requiredText(file, "status", recipe.status(), errors);
         String shortsReference = requiredText(file, "shortsReference", recipe.shortsReference(), errors);
+        java.time.OffsetDateTime sourceMetadataFetchedAt = null;
+        if (recipe.sourceMetadataFetchedAt() != null && !recipe.sourceMetadataFetchedAt().isBlank()) {
+            try {
+                sourceMetadataFetchedAt = java.time.OffsetDateTime.parse(recipe.sourceMetadataFetchedAt());
+                if (sourceMetadataFetchedAt.getOffset().getTotalSeconds() != 0) {
+                    error(errors, "INVALID_SCHEMA", file, "sourceMetadataFetchedAt", "must be a UTC timestamp");
+                }
+            } catch (java.time.format.DateTimeParseException exception) {
+                error(errors, "INVALID_SCHEMA", file, "sourceMetadataFetchedAt", "must be an ISO-8601 timestamp with timezone");
+            }
+        }
         if (status != null && !Set.of("DRAFT", "PUBLISHED").contains(status)) {
             error(errors, "INVALID_SCHEMA", file, "status", "must be DRAFT or PUBLISHED");
         }
@@ -156,7 +167,10 @@ public class DatasetLoader {
         if (errors.size() != initialErrors) {
             return null;
         }
-        return new Dataset.RecipeData(key, name, status, shortsReference, ingredients, requirements, steps);
+        return new Dataset.RecipeData(key, name, status, shortsReference,
+            optionalText(recipe.sourceTitle()), optionalText(recipe.sourceChannelName()),
+            optionalText(recipe.sourceChannelId()), sourceMetadataFetchedAt,
+            ingredients, requirements, steps);
     }
 
     private List<Dataset.RecipeIngredientData> validateRecipeIngredients(
@@ -383,6 +397,7 @@ public class DatasetLoader {
     @JsonIgnoreProperties(ignoreUnknown = false)
     private record RecipeJson(
         String key, String name, String status, String shortsReference,
+        String sourceTitle, String sourceChannelName, String sourceChannelId, String sourceMetadataFetchedAt,
         List<RecipeIngredientJson> ingredients, List<RequirementJson> requirements, List<String> steps
     ) { }
 

@@ -48,6 +48,10 @@ Rules:
   "name": "마늘 삼겹살 볶음",
   "status": "PUBLISHED",
   "shortsReference": "https://youtube.com/shorts/example",
+  "sourceTitle": "영상에 표시된 원본 제목",
+  "sourceChannelName": "영상 업로드 채널명",
+  "sourceChannelId": "UCxxxxxxxxxxxxxxxxxxxxxx",
+  "sourceMetadataFetchedAt": "2026-10-25T12:00:00Z",
   "ingredients": [
     {
       "key": "soy-sauce",
@@ -89,6 +93,9 @@ Rules:
 ### Recipe fields and state
 
 - `status` is `DRAFT` or `PUBLISHED`.
+- `shortsReference` is the canonical URL of the source video. `sourceTitle` and `sourceChannelName` preserve the title and channel name returned by YouTube metadata when the source is ingested; they are distinct from the app's recipe `name`.
+- `sourceChannelId` preserves the YouTube channel identifier when available. `sourceMetadataFetchedAt` is the UTC timestamp when this source metadata snapshot was fetched. These fields are nullable when YouTube does not return the metadata; do not guess or derive a channel name from recipe content.
+- Source metadata is fetched once during ingestion and stored with the recipe. Recipe reads use the stored snapshot and must not make a YouTube request per detail/recommendation read. Any later refresh policy is a separate implementation decision; retain the original `shortsReference` regardless.
 - `ingredients` preserves source facts in display order. `key` is unique within the recipe and is referenced by requirements.
 - `variant` is nullable. If present, it is the exact selectable item corresponding to the source expression.
 - `acceptedOwnedVariants` is an optional array of selectable Variant keys accepted for this exact source ingredient in this recipe context. Omitted and empty both mean no additional candidates. It may cross Ingredient groups. Duplicate keys and a key equal to `variant` are invalid.

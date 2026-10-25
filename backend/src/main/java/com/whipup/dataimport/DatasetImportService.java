@@ -103,9 +103,11 @@ public class DatasetImportService {
         for (Dataset.RecipeData data : dataset.recipes()) {
             Recipe recipe = byKey.get(data.key());
             RecipeStatus status = RecipeStatus.valueOf(data.status());
-            if (recipe == null) recipe = Recipe.create(data.key(), data.name(), status, data.shortsReference());
+            if (recipe == null) recipe = Recipe.create(data.key(), data.name(), status, data.shortsReference(),
+                data.sourceTitle(), data.sourceChannelName(), data.sourceChannelId(), data.sourceMetadataFetchedAt());
             else {
                 recipe.update(data.name(), status, data.shortsReference());
+                recipe.updateSourceMetadata(data.sourceTitle(), data.sourceChannelName(), data.sourceChannelId(), data.sourceMetadataFetchedAt());
                 recipe.replaceRequirements(List.of());
                 recipes.flush();
                 recipe.replaceIngredients(List.of());
