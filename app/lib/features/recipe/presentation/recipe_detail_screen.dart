@@ -521,7 +521,7 @@ class _RequirementRow extends StatelessWidget {
       for (final match in matches) {
         if (match.type == IngredientMatchTypeEnum.PREPARATION) {
           notes.add(
-            '보유한 ${_withParticle(match.ownedName, '을', '를')} ${match.requiredName}로 준비해 사용할 수 있어요',
+            '가지고 있는 ${_withParticle(match.ownedName, '을', '를')} 활용할 수 있어요',
           );
         } else if (match.type == IngredientMatchTypeEnum.SUBSTITUTE) {
           notes.add(
