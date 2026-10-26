@@ -1,0 +1,15 @@
+{
+	email yssw09112@yonsei.ac.kr
+	auto_https disable_redirects
+}
+
+{$WHIPUP_PUBLIC_IP} {
+	encode zstd gzip
+	reverse_proxy backend:8080
+	tls {
+		issuer acme {
+			profile shortlived
+			disable_http_challenge
+		}
+	}
+}

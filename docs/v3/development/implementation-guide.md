@@ -41,18 +41,20 @@ ALLOW_WHIPUP_LOCAL_DB_RESET=YES ./scripts/reset-v3-local-db.sh
 
 ### 외부 API 접근
 
-- Windows 개발 서버의 backend(`localhost:8080`)를 Tailscale Funnel로 공개 HTTPS 주소에 연결한다. 공유기 포트 포워딩이나 공인 IP 직접 접근에 의존하지 않는다.
-- Windows에서는 Tailscale을 unattended mode로 연결하고 Funnel을 background mode로 실행해 재부팅 후에도 설정이 복구되게 한다. 노트북이나 backend가 꺼져 있으면 API도 사용할 수 없다.
+- Windows 개발 서버의 backend(`8080`) 앞에 Compose의 Caddy HTTPS reverse proxy를 둔다. 외부 클라이언트는 공유기의 공인 IPv4 주소를 HTTPS로 사용하고 Caddy가 내부 backend로 전달한다.
+- Caddy는 Let’s Encrypt ACME의 `shortlived` 프로필로 공인 IP 인증서를 발급하고 자동 갱신한다. IP 인증서는 160시간만 유효하므로 Caddy의 `/data` 인증서 저장소를 Compose named volume에 영구 보존하고 Caddy 컨테이너를 상시 실행한다. TLS-ALPN 검증을 사용하고 HTTP challenge 및 HTTP redirect는 사용하지 않는다.
+- 공유기에는 공인 TCP 443을 Windows 서버의 TCP 443으로 전달하고 Windows 방화벽에서도 TCP 443 인바운드를 허용해야 한다. 이 단계는 Whippy API를 인터넷에서 접근 가능하게 한다. Windows backend나 노트북이 꺼져 있으면 API도 사용할 수 없다.
+- 현재 확인된 공인 IPv4는 `121.171.81.225`이며 회선은 유동 IP다. 주소가 바뀌면 `.env`의 `WHIPUP_PUBLIC_IP`, 공유기 전달 대상 설정(Windows 내부 IP가 바뀐 경우), 그리고 앱의 release 빌드 값을 갱신해야 한다. 고정 주소를 보장하지 않는다.
 - iOS 실기기 debug 빌드는 기존 로컬 설정 주소를 사용한다. iOS 실기기 release 빌드는 `WHIPUP_API_BASE_URL` 빌드 값으로 받은 HTTPS 주소만 사용하며, 값이 없거나 HTTP이면 시작 오류로 드러낸다. 시뮬레이터의 로컬 개발 주소는 유지한다.
-- 공개 URL은 앱 빌드에만 전달한다. Tailscale 계정 인증 정보나 서버 비밀값을 저장소에 넣지 않는다.
-- 완료 확인은 Funnel의 HTTPS 인증서와 외부 요청의 backend 응답, release 앱의 API 접속으로 한다.
+- 공개 API 주소는 앱 빌드에 전달한다. 서버 `.env`와 Caddy 인증서 private key는 저장소에 올리지 않는다.
+- 완료 확인은 Caddy가 공인 IP용 신뢰 인증서를 획득했는지, 외부 HTTPS 요청이 backend 응답을 받는지, release 앱이 같은 주소로 API에 연결되는지로 한다.
 
-현재 Windows 서버의 Funnel 주소는 `https://lee.taild32a96.ts.net`이다. iPhone release 실행과 App Store용 빌드에는 같은 빌드 값을 전달한다.
+Windows 서버 `.env`에 `WHIPUP_PUBLIC_IP=121.171.81.225`를 설정한다. iPhone release 실행과 App Store용 빌드에는 현재 공인 IP를 HTTPS URL로 전달한다.
 
 ```sh
 cd app
-flutter run --release -d <device-id> --dart-define=WHIPUP_API_BASE_URL=https://lee.taild32a96.ts.net
-flutter build ipa --dart-define=WHIPUP_API_BASE_URL=https://lee.taild32a96.ts.net
+flutter run --release -d <device-id> --dart-define=WHIPUP_API_BASE_URL=https://121.171.81.225
+flutter build ipa --dart-define=WHIPUP_API_BASE_URL=https://121.171.81.225
 ```
 
 ## 검증 시나리오
