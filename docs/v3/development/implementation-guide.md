@@ -42,7 +42,7 @@ ALLOW_WHIPUP_LOCAL_DB_RESET=YES ./scripts/reset-v3-local-db.sh
 ### 외부 API 접근
 
 - Windows 개발 서버의 backend(`8080`) 앞에 Compose의 Caddy HTTPS reverse proxy를 둔다. 외부 클라이언트는 공유기의 공인 IPv4 주소를 HTTPS로 사용하고 Caddy가 내부 backend로 전달한다.
-- Caddy는 Let’s Encrypt ACME의 `shortlived` 프로필로 공인 IP 인증서를 발급하고 자동 갱신한다. IP 인증서는 160시간만 유효하므로 Caddy의 `/data` 인증서 저장소를 Compose named volume에 영구 보존하고 Caddy 컨테이너를 상시 실행한다. TLS-ALPN 검증을 사용하고 HTTP challenge 및 HTTP redirect는 사용하지 않는다.
+- Caddy는 Let’s Encrypt ACME의 `shortlived` 프로필로 공인 IP 인증서를 발급하고 자동 갱신한다. IP 인증서는 160시간만 유효하므로 Caddy의 `/data` 인증서 저장소를 Compose named volume에 영구 보존하고 Caddy 컨테이너를 상시 실행한다. TLS-ALPN 검증을 사용하고 HTTP challenge 및 HTTP redirect는 사용하지 않는다. IP로 접속하는 일부 TLS 클라이언트가 SNI를 보내지 않으므로 Caddy의 `default_sni`를 현재 공인 IP로 설정한다.
 - 공유기에는 공인 TCP 443을 Windows 서버의 TCP 443으로 전달하고 Windows 방화벽에서도 TCP 443 인바운드를 허용해야 한다. 이 단계는 Whippy API를 인터넷에서 접근 가능하게 한다. Windows backend나 노트북이 꺼져 있으면 API도 사용할 수 없다.
 - 현재 확인된 공인 IPv4는 `121.171.81.225`이며 회선은 유동 IP다. 주소가 바뀌면 `.env`의 `WHIPUP_PUBLIC_IP`, 공유기 전달 대상 설정(Windows 내부 IP가 바뀐 경우), 그리고 앱의 release 빌드 값을 갱신해야 한다. 고정 주소를 보장하지 않는다.
 - iOS 실기기 debug 빌드는 기존 로컬 설정 주소를 사용한다. iOS 실기기 release 빌드는 `WHIPUP_API_BASE_URL` 빌드 값으로 받은 HTTPS 주소만 사용하며, 값이 없거나 HTTP이면 시작 오류로 드러낸다. 시뮬레이터의 로컬 개발 주소는 유지한다.
