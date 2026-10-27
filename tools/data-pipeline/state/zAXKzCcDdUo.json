@@ -1,0 +1,267 @@
+{
+  "videoId": "zAXKzCcDdUo",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/zAXKzCcDdUo",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T08:08:51.633265+00:00",
+    "rawResponse": "{\n  \"title\": \"불닭계란덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 식용유 두른 팬에\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 식용유 두른 팬에\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 세개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"3\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 세개 까고\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 세개 까고\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"불닭소스 두스푼\",\n      \"displayName\": \"불닭소스\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불닭소스 두스푼\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불닭소스 두스푼\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 한스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"진간장 한스푼\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 한스푼\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 두스푼\",\n      \"displayName\": \"물\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 두스푼 넣어서\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 두스푼 넣어서\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 한스푼\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참기름 한스푼\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름 한스푼\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 밥 위에 올려\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 밥 위에 올려\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김\",\n      \"displayName\": \"김\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥과 계란을 김에 싸서 먹는 장면\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"식용유를 두른 팬에 계란 3개를 깐다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 식용유 두른 팬에 계란 세개 까고\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 식용유 두른 팬에 계란 세개 까고\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불닭소스 2스푼, 진간장 1스푼, 물 2스푼을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불닭소스 두스푼 진간장 한스푼 물 두스푼 넣어서\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불닭소스 두스푼 진간장 한스푼 물 두스푼 넣어서\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"흰자 먼저 저어가며 익혀준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"흰자 먼저 익혀줘\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"흰자 먼저 익혀줘\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"어느 정도 익으면 참기름 1스푼을 둘러 노른자도 같이 한 번 더 익혀준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"어느정도 익으면 참기름 한스푼 둘러서 노른자도 같이 한번 더 익혀주면 벌써 끝\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"어느정도 익으면 참기름 한스푼 둘러서 노른자도 같이 한번 더 익혀주면 벌써 끝\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 위에 올려 잘 비벼 먹는다 (기호에 따라 김에 싸 먹는다).\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 밥 위에 올려 잘 비벼 먹으면\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 밥 위에 올려 잘 비벼 먹으면\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"김에 싸서 먹는 모습\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"김은 화면에 보이고 싸 먹는 용도로 사용되나 자막이나 음성으로 구체적인 양이나 사용법이 언급되지는 않음\"\n  ]\n}",
+    "result": {
+      "title": "불닭계란덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 식용유 두른 팬에",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 식용유 두른 팬에",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "계란 세개",
+          "displayName": "계란",
+          "amount": "3",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "계란 세개 까고",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란 세개 까고",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "불닭소스 두스푼",
+          "displayName": "불닭소스",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "불닭소스 두스푼",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "불닭소스 두스푼",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "진간장 한스푼",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "진간장 한스푼",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장 한스푼",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "물 두스푼",
+          "displayName": "물",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 두스푼 넣어서",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 두스푼 넣어서",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "참기름 한스푼",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "참기름 한스푼",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름 한스푼",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 밥 위에 올려",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 밥 위에 올려",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "김",
+          "displayName": "김",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥과 계란을 김에 싸서 먹는 장면",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        }
+      ],
+      "steps": [
+        {
+          "text": "식용유를 두른 팬에 계란 3개를 깐다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 식용유 두른 팬에 계란 세개 까고",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 식용유 두른 팬에 계란 세개 까고",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "불닭소스 2스푼, 진간장 1스푼, 물 2스푼을 넣는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "불닭소스 두스푼 진간장 한스푼 물 두스푼 넣어서",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "불닭소스 두스푼 진간장 한스푼 물 두스푼 넣어서",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "흰자 먼저 저어가며 익혀준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "흰자 먼저 익혀줘",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "흰자 먼저 익혀줘",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "어느 정도 익으면 참기름 1스푼을 둘러 노른자도 같이 한 번 더 익혀준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "어느정도 익으면 참기름 한스푼 둘러서 노른자도 같이 한번 더 익혀주면 벌써 끝",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "어느정도 익으면 참기름 한스푼 둘러서 노른자도 같이 한번 더 익혀주면 벌써 끝",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "밥 위에 올려 잘 비벼 먹는다 (기호에 따라 김에 싸 먹는다).",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 밥 위에 올려 잘 비벼 먹으면",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 밥 위에 올려 잘 비벼 먹으면",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "김에 싸서 먹는 모습",
+              "timestamp": "00:04"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "김은 화면에 보이고 싸 먹는 용도로 사용되나 자막이나 음성으로 구체적인 양이나 사용법이 언급되지는 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

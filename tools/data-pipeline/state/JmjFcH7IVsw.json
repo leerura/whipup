@@ -1,0 +1,295 @@
+{
+  "videoId": "JmjFcH7IVsw",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/JmjFcH7IVsw",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:26:31.849593+00:00",
+    "rawResponse": "{\n  \"title\": \"전자레인지로 만드는 초간단 5분 콩나물밥\",\n  \"description\": null,\n  \"servings\": \"1공기\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"밥 한 공기\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 한 공기 위에 씻은 콩나물 150g\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"씻은 콩나물 150g\",\n      \"displayName\": \"콩나물\",\n      \"amount\": \"150\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 한 공기 위에 씻은 콩나물 150g\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쪽파나 대파\",\n      \"displayName\": \"쪽파 또는 대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쪽파나 대파에 다진 마늘 0.5스푼\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 0.5스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쪽파나 대파에 다진 마늘 0.5스푼\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1스푼\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"국간장 1스푼\",\n      \"displayName\": \"국간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장 1스푼\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 또는 양조간장 3스푼\",\n      \"displayName\": \"진간장 또는 양조간장\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 또는 양조간장 3스푼\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 2스푼\",\n      \"displayName\": \"물\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 2스푼\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 또는 들기름 1스푼\",\n      \"displayName\": \"참기름 또는 들기름\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 또는 들기름 1스푼\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깨\",\n      \"displayName\": \"깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깨 넣고\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란후라이 (선택)\",\n      \"displayName\": \"계란후라이\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란후라이 올리고(선택)\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"그릇에 밥 한 공기를 담고 그 위에 씻은 콩나물 150g을 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 한 공기 위에 씻은 콩나물 150g\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 랩을 씌우고 구멍을 뚫어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"그릇에 랩을 씌우고 구멍을 내줘요\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"전자레인지에 넣고 5분간 조리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"전자레인지에 딱 5분!\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 다진 쪽파나 대파, 다진 마늘 0.5스푼, 고춧가루 1스푼, 국간장 1스푼, 진간장 또는 양조간장 3스푼, 물 2스푼, 참기름 또는 들기름 1스푼, 깨를 넣고 섞어 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쪽파나 대파에 다진 마늘 0.5스푼\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1스푼\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장 1스푼\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 또는 양조간장 3스푼\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 2스푼\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 또는 들기름 1스푼\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깨 넣고\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"섞으면 양념장 완성\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"전자레인지에서 꺼낸 후 뜨거우므로 손을 조심하며 랩을 벗겨낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"뜨거우니까 손 조심하세요!\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"취향에 따라 계란후라이를 올리고 양념장을 얹어서 비벼 먹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란후라이 올리고(선택)\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양념장 올려서 비벼먹어요\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "전자레인지로 만드는 초간단 5분 콩나물밥",
+      "description": null,
+      "servings": "1공기",
+      "ingredients": [
+        {
+          "rawText": "밥 한 공기",
+          "displayName": "밥",
+          "amount": "1",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 한 공기 위에 씻은 콩나물 150g",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "씻은 콩나물 150g",
+          "displayName": "콩나물",
+          "amount": "150",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 한 공기 위에 씻은 콩나물 150g",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "쪽파나 대파",
+          "displayName": "쪽파 또는 대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쪽파나 대파에 다진 마늘 0.5스푼",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "다진 마늘 0.5스푼",
+          "displayName": "다진 마늘",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쪽파나 대파에 다진 마늘 0.5스푼",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고춧가루 1스푼",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1스푼",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "국간장 1스푼",
+          "displayName": "국간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장 1스푼",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "진간장 또는 양조간장 3스푼",
+          "displayName": "진간장 또는 양조간장",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 또는 양조간장 3스푼",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "물 2스푼",
+          "displayName": "물",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 2스푼",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "참기름 또는 들기름 1스푼",
+          "displayName": "참기름 또는 들기름",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 또는 들기름 1스푼",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "깨",
+          "displayName": "깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깨 넣고",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "계란후라이 (선택)",
+          "displayName": "계란후라이",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란후라이 올리고(선택)",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "그릇에 밥 한 공기를 담고 그 위에 씻은 콩나물 150g을 올린다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 한 공기 위에 씻은 콩나물 150g",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 랩을 씌우고 구멍을 뚫어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "그릇에 랩을 씌우고 구멍을 내줘요",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "전자레인지에 넣고 5분간 조리한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "전자레인지에 딱 5분!",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "볼에 다진 쪽파나 대파, 다진 마늘 0.5스푼, 고춧가루 1스푼, 국간장 1스푼, 진간장 또는 양조간장 3스푼, 물 2스푼, 참기름 또는 들기름 1스푼, 깨를 넣고 섞어 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쪽파나 대파에 다진 마늘 0.5스푼",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1스푼",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장 1스푼",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 또는 양조간장 3스푼",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 2스푼",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 또는 들기름 1스푼",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깨 넣고",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "섞으면 양념장 완성",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "전자레인지에서 꺼낸 후 뜨거우므로 손을 조심하며 랩을 벗겨낸다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "뜨거우니까 손 조심하세요!",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "취향에 따라 계란후라이를 올리고 양념장을 얹어서 비벼 먹는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란후라이 올리고(선택)",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양념장 올려서 비벼먹어요",
+              "timestamp": "00:19"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

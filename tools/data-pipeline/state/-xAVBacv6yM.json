@@ -1,0 +1,295 @@
+{
+  "videoId": "-xAVBacv6yM",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/-xAVBacv6yM",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:52:38.429307+00:00",
+    "rawResponse": "{\n  \"title\": \"두부 김치찌개 만들기\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"두부 반모\",\n      \"displayName\": \"두부\",\n      \"amount\": \"0.5\",\n      \"unit\": \"모\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냉장고에 두부 반모가 있길래\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부 자르기\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냄비에 참기름 한 스푼 넣어 주시고\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치 적당히\",\n      \"displayName\": \"김치\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치 적당히\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치 적당히 넣어 주세요\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"냉동 찌개용 채소\",\n      \"displayName\": \"냉동 찌개용 채소\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"냉동 찌개용 채소\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냉동용 찌개용 채소 있으면 넣어 주시고\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 한 스푼 넣어 주신 다음\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 적당히\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 적당히\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 적당히 넣어 주시고\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"멸치육수 1\",\n      \"displayName\": \"멸치육수\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"멸치육수 1\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"멸치육수 한 스푼\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 한 스푼\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"두부를 적당한 크기로 잘라준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부 자르기\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 두부 적당한 크기로 잘라 주신 다음에\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 참기름 1스푼, 김치 적당량, 냉동 찌개용 채소(선택), 고춧가루 1스푼을 넣고 잘 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치 적당히\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"냉동 찌개용 채소\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볶기\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냄비에 참기름 한 스푼 넣어 주시고 김치 적당히 넣어 주세요. 냉동용 찌개용 채소 있으면 넣어 주시고 고춧가루 한 스푼 넣어 주신 다음 잘 볶아 주시면 됩니다.\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"어느 정도 볶아지면 물을 적당히 붓고 멸치육수 1스푼, 설탕 1스푼을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 적당히\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"멸치육수 1\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"어느 정도 볶았다 싶으면 물 적당히 넣어 주시고 멸치육수 한 스푼 설탕 한 스푼\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"잘라둔 두부를 넣고 뚜껑을 덮은 뒤 팔팔 끓여 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"끓이기\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부 김치찌개 완성\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"아까 잘라 둔 두부 넣고 뚜껑 덮고 팔팔 끓여 주시면 두부 김치찌개 완성\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "두부 김치찌개 만들기",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "두부 반모",
+          "displayName": "두부",
+          "amount": "0.5",
+          "unit": "모",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "냉장고에 두부 반모가 있길래",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부 자르기",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "참기름 1",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냄비에 참기름 한 스푼 넣어 주시고",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "김치 적당히",
+          "displayName": "김치",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치 적당히",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "김치 적당히 넣어 주세요",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "냉동 찌개용 채소",
+          "displayName": "냉동 찌개용 채소",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "냉동 찌개용 채소",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냉동용 찌개용 채소 있으면 넣어 주시고",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고춧가루 1",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 한 스푼 넣어 주신 다음",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "물 적당히",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 적당히",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 적당히 넣어 주시고",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "멸치육수 1",
+          "displayName": "멸치육수",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "멸치육수 1",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "멸치육수 한 스푼",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "설탕 1",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 한 스푼",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        }
+      ],
+      "steps": [
+        {
+          "text": "두부를 적당한 크기로 잘라준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부 자르기",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 두부 적당한 크기로 잘라 주신 다음에",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 참기름 1스푼, 김치 적당량, 냉동 찌개용 채소(선택), 고춧가루 1스푼을 넣고 잘 볶아준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치 적당히",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "냉동 찌개용 채소",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볶기",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냄비에 참기름 한 스푼 넣어 주시고 김치 적당히 넣어 주세요. 냉동용 찌개용 채소 있으면 넣어 주시고 고춧가루 한 스푼 넣어 주신 다음 잘 볶아 주시면 됩니다.",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "어느 정도 볶아지면 물을 적당히 붓고 멸치육수 1스푼, 설탕 1스푼을 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 적당히",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "멸치육수 1",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "어느 정도 볶았다 싶으면 물 적당히 넣어 주시고 멸치육수 한 스푼 설탕 한 스푼",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "잘라둔 두부를 넣고 뚜껑을 덮은 뒤 팔팔 끓여 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "끓이기",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부 김치찌개 완성",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SPEECH",
+              "text": "아까 잘라 둔 두부 넣고 뚜껑 덮고 팔팔 끓여 주시면 두부 김치찌개 완성",
+              "timestamp": "00:20"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

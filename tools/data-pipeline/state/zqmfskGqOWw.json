@@ -1,0 +1,298 @@
+{
+  "videoId": "zqmfskGqOWw",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/zqmfskGqOWw",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:53:34.951910+00:00",
+    "rawResponse": "{\n  \"title\": \"참치계란볶음밥 (Tuna Egg Fried Rice)\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"계란 2개 / 2 Eggs\",\n      \"displayName\": \"계란 (Eggs)\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2개 / 2 Eggs\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Cracking two eggs into a bowl and beating them with a fork\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 / Cooking Oil\",\n      \"displayName\": \"식용유 (Cooking Oil)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 / Cooking Oil\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Pouring cooking oil into a heated frying pan\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 / Green Onion\",\n      \"displayName\": \"대파 (Green Onion)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 / Green Onion\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding chopped green onion to the pan\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름 뺀 참치 100g / 100g Tuna\",\n      \"displayName\": \"기름 뺀 참치 (Tuna, drained)\",\n      \"amount\": \"100\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름 뺀 참치 100g / 100g Tuna\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding drained canned tuna to the frying pan\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 2T / Soy Sauce\",\n      \"displayName\": \"간장 (Soy Sauce)\",\n      \"amount\": \"2\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 2T / Soy Sauce\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding 2 spoonfuls of soy sauce to the pan\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 1공기 가득 / 1 Bowl full of rice\",\n      \"displayName\": \"밥 (Rice)\",\n      \"amount\": \"1\",\n      \"unit\": \"공기 가득 (Bowl full)\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 1공기 가득 / 1 Bowl full of rice\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding one full bowl of cooked rice to the pan\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 / Sesame Oil\",\n      \"displayName\": \"참기름 (Sesame Oil)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 / Sesame Oil\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Pouring sesame oil onto a spoon and into the fried rice\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨 (Sesame Seeds)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Sprinkling toasted sesame seeds on top of plated fried rice\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"스리라차 소스(선택) / Sriracha Sauce\",\n      \"displayName\": \"스리라차 소스 (Sriracha Sauce)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스리라차 소스(선택) / Sriracha Sauce\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Squeezing sriracha sauce onto the side of the plate\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"Beat 2 eggs in a bowl.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Beating 2 eggs in a bowl with a fork\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Heat cooking oil in a pan, add sliced green onion, and stir-fry.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Pouring cooking oil and adding sliced green onions to the pan to stir-fry\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Add 100g of drained tuna and stir-fry together with the green onion.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding drained canned tuna to the pan and stir-frying with green onions\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Push the tuna and green onion to one side, pour the beaten eggs into the empty side, scramble, and mix everything together.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Pouring beaten eggs into the pan, scrambling them, and mixing with tuna and scallions\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Add 2 tablespoons of soy sauce and stir-fry well.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding 2 spoons of soy sauce and stirring to combine\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Add 1 full bowl of rice and stir-fry until thoroughly combined.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding 1 bowl of rice and mixing thoroughly with the stir-fried mixture\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Add sesame oil and mix into the fried rice.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Pouring sesame oil into the rice and stirring\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Pack the fried rice into a bowl, invert it onto a serving dish, and sprinkle sesame seeds on top.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Molding fried rice in a bowl, turning onto a plate, and garnishing with sesame seeds\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Optionally serve with sriracha sauce.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Squirting sriracha sauce on the plate next to the rice mound\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"No official title text was explicitly shown on screen, inferred from ingredients as 참치계란볶음밥 (Tuna Egg Fried Rice)\",\n    \"Exact amounts for cooking oil, green onion, and sesame oil are not specified in text (sesame oil shown as 1 spoonful visually)\"\n  ]\n}",
+    "result": {
+      "title": "참치계란볶음밥 (Tuna Egg Fried Rice)",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "계란 2개 / 2 Eggs",
+          "displayName": "계란 (Eggs)",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2개 / 2 Eggs",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Cracking two eggs into a bowl and beating them with a fork",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "식용유 / Cooking Oil",
+          "displayName": "식용유 (Cooking Oil)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 / Cooking Oil",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Pouring cooking oil into a heated frying pan",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "대파 / Green Onion",
+          "displayName": "대파 (Green Onion)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 / Green Onion",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding chopped green onion to the pan",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "기름 뺀 참치 100g / 100g Tuna",
+          "displayName": "기름 뺀 참치 (Tuna, drained)",
+          "amount": "100",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름 뺀 참치 100g / 100g Tuna",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding drained canned tuna to the frying pan",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "간장 2T / Soy Sauce",
+          "displayName": "간장 (Soy Sauce)",
+          "amount": "2",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 2T / Soy Sauce",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding 2 spoonfuls of soy sauce to the pan",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "밥 1공기 가득 / 1 Bowl full of rice",
+          "displayName": "밥 (Rice)",
+          "amount": "1",
+          "unit": "공기 가득 (Bowl full)",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 1공기 가득 / 1 Bowl full of rice",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding one full bowl of cooked rice to the pan",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "참기름 / Sesame Oil",
+          "displayName": "참기름 (Sesame Oil)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 / Sesame Oil",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Pouring sesame oil onto a spoon and into the fried rice",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨 (Sesame Seeds)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Sprinkling toasted sesame seeds on top of plated fried rice",
+              "timestamp": "00:52"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "스리라차 소스(선택) / Sriracha Sauce",
+          "displayName": "스리라차 소스 (Sriracha Sauce)",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스리라차 소스(선택) / Sriracha Sauce",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Squeezing sriracha sauce onto the side of the plate",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Beat 2 eggs in a bowl.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Beating 2 eggs in a bowl with a fork",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "Heat cooking oil in a pan, add sliced green onion, and stir-fry.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Pouring cooking oil and adding sliced green onions to the pan to stir-fry",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "Add 100g of drained tuna and stir-fry together with the green onion.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding drained canned tuna to the pan and stir-frying with green onions",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "Push the tuna and green onion to one side, pour the beaten eggs into the empty side, scramble, and mix everything together.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Pouring beaten eggs into the pan, scrambling them, and mixing with tuna and scallions",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "Add 2 tablespoons of soy sauce and stir-fry well.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding 2 spoons of soy sauce and stirring to combine",
+              "timestamp": "00:29"
+            }
+          ]
+        },
+        {
+          "text": "Add 1 full bowl of rice and stir-fry until thoroughly combined.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding 1 bowl of rice and mixing thoroughly with the stir-fried mixture",
+              "timestamp": "00:35"
+            }
+          ]
+        },
+        {
+          "text": "Add sesame oil and mix into the fried rice.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Pouring sesame oil into the rice and stirring",
+              "timestamp": "00:39"
+            }
+          ]
+        },
+        {
+          "text": "Pack the fried rice into a bowl, invert it onto a serving dish, and sprinkle sesame seeds on top.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Molding fried rice in a bowl, turning onto a plate, and garnishing with sesame seeds",
+              "timestamp": "00:44"
+            }
+          ]
+        },
+        {
+          "text": "Optionally serve with sriracha sauce.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Squirting sriracha sauce on the plate next to the rice mound",
+              "timestamp": "00:54"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "No official title text was explicitly shown on screen, inferred from ingredients as 참치계란볶음밥 (Tuna Egg Fried Rice)",
+        "Exact amounts for cooking oil, green onion, and sesame oil are not specified in text (sesame oil shown as 1 spoonful visually)"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

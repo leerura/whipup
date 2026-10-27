@@ -1,0 +1,378 @@
+{
+  "videoId": "vcVzrf6xlt4",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/vcVzrf6xlt4",
+  "sourceMetadata": {"sourceTitle":"꾸덕하고 꼬소한 '까르보나라파스타' 만들기","sourceChannelName":"자취생으로 살아남기 onehomelife","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:31.095656Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T10:55:16.641000+00:00",
+    "rawResponse": "{\n  \"title\": \"꾸덕하고 고소한 까르보나라\",\n  \"description\": \"집에서도 쉽게 만들 수 있는 고소하고 꾸덕한 크림 까르보나라 레시피입니다.\",\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"양파 1개 반\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1.5\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"우선, 양파 1개 반을 준비해주세요\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"베이컨 (햄으로도 대체 가능)\",\n      \"displayName\": \"베이컨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"베이컨은 겹쳐 일렬로 세우고\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"베이컨말고 햄으로도 대체 가능해요!\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"스파게티 면 1인분 (500원짜리 동전단면)\",\n      \"displayName\": \"스파게티 면\",\n      \"amount\": \"1\",\n      \"unit\": \"인분\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"스파게티 면 투하! 넓게 펼쳐 넣어주세요\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참고로 면 1인분 = 500원짜리 동전단면!\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"스파게티 면을 삶을 물 준비!\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금\",\n      \"displayName\": \"소금\",\n      \"amount\": \"1\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소금을 춥춥 넣어 면에 살짝 간을 해줘요\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소금도 한꼬집 투툽!\",\n          \"timestamp\": \"02:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리브유나 기름\",\n      \"displayName\": \"올리브유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"올리브유나 기름을 똑! 면이 탱탱해져요!\",\n          \"timestamp\": \"00:55\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"올리브유를 한바퀴 둘러줍니다\",\n          \"timestamp\": \"01:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1스푼\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기름에 다진마늘 1스푼을 넣어주세요\",\n          \"timestamp\": \"01:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"생크림 종이컵 1컵 반\",\n      \"displayName\": \"생크림\",\n      \"amount\": \"1.5\",\n      \"unit\": \"종이컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"종이컵 1컵 반을 넣어줍니다!\",\n          \"timestamp\": \"01:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우유 1컵 반\",\n      \"displayName\": \"우유\",\n      \"amount\": \"1.5\",\n      \"unit\": \"종이컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"우유도 1컵 반 넣어줄게요~\",\n          \"timestamp\": \"01:42\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"생크림:우유 = 1:1 기억하세요~\",\n          \"timestamp\": \"01:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"체다치즈 하나\",\n      \"displayName\": \"체다치즈\",\n      \"amount\": \"1\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"체다치즈 하나를 퐁당! 넣어줍니다\",\n          \"timestamp\": \"01:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추를 살짝 톡톡톡!\",\n          \"timestamp\": \"02:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리\",\n      \"displayName\": \"파슬리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"취향에 따라 파슬리를 솔솔솔~\",\n          \"timestamp\": \"02:34\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양파 1개 반을 먹기 좋은 크기로 채 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"우선, 양파 1개 반을 준비해주세요\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먹기좋게 양파를 잘라주세요\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"베이컨을 겹쳐 일렬로 세우고 세로로 잘라 먹기 좋은 크기로 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"베이컨은 겹쳐 일렬로 세우고 세로로 잘라 먹기 좋게 만들어줄게요!\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 끓는 물을 준비하고, 스파게티 면(1인분, 500원 동전 크기)을 펼쳐 넣은 뒤 소금과 올리브유(또는 기름)를 약간 넣고 7분간 삶아 건져둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"스파게티 면을 삶을 물 준비! 뽀글뽀글 물이 끓으면 스파게티 면 투하! 넓게 펼쳐 넣어주세요\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소금을 춥춥 넣어 면에 살짝 간을 해줘요 올리브유나 기름을 똑! 면이 탱탱해져요!\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"면은 7분! 삶아야 적당합니다\",\n          \"timestamp\": \"01:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"후라이팬에 올리브유를 한 바퀴 두르고 다진마늘 1스푼을 넣어 약불에서 볶으며 마늘기름을 낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"올리브유를 한바퀴 둘러줍니다 기름에 다진마늘 1스푼을 넣어주세요\",\n          \"timestamp\": \"01:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"약불에 볶아주며 마늘기름을 내줍니다!\",\n          \"timestamp\": \"01:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 잘라둔 베이컨과 양파를 넣고 중불에서 뭉친 것을 풀어주며 노릇해질 때까지 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"줄줄이 베이컨 투척! 잘라놓은 양파도 투척!\",\n          \"timestamp\": \"01:17\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"중불에 인정사정없이 볶아주세요! 뭉친 건 풀어주며 볶아유~\",\n          \"timestamp\": \"01:25\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"재료들이 어느정도 노릇해지면\",\n          \"timestamp\": \"01:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"종이컵 기준 생크림 1컵 반과 우유 1컵 반을 1:1 비율로 붓고 끓이다가 거품이 올라오면 체다치즈 1장을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마트에서 사온 생크림 준비! 종이컵 1컵 반을 넣어줍니다!\",\n          \"timestamp\": \"01:34\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"우유도 1컵 반 넣어줄게요~ 생크림:우유 = 1:1 기억하세요~\",\n          \"timestamp\": \"01:42\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"거품이 마구 올라와도 당황하지 말고! 체다치즈 하나를 퐁당! 넣어줍니다\",\n          \"timestamp\": \"01:49\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삶아둔 면을 넣고 잘 풀어가며 소스와 함께 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이어서 잘 삶은 면도 투척! 면을 풀어가며 소스와 합체!!\",\n          \"timestamp\": \"01:56\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"면이 잘 풀어져야 소스가 잘 밴다구욧!\",\n          \"timestamp\": \"02:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"후추를 톡톡 뿌리고 소금 한 꼬집을 넣은 뒤, 잘 섞어가며 원하는 농도로 소스를 졸여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추를 살짝 톡톡톡! 소금도 한꼬집 투툽!\",\n          \"timestamp\": \"02:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 잘 섞어가며 소스를 졸여주세요\",\n          \"timestamp\": \"02:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"취향에 따라 파슬리를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"취향에 따라 파슬리를 솔솔솔~\",\n          \"timestamp\": \"02:34\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"베이컨의 정확한 중량이나 매수 미표기 (화면상 1팩 또는 여러 줄 사용)\"\n  ]\n}",
+    "result": {
+      "title": "꾸덕하고 고소한 까르보나라",
+      "description": "집에서도 쉽게 만들 수 있는 고소하고 꾸덕한 크림 까르보나라 레시피입니다.",
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "양파 1개 반",
+          "displayName": "양파",
+          "amount": "1.5",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "우선, 양파 1개 반을 준비해주세요",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "베이컨 (햄으로도 대체 가능)",
+          "displayName": "베이컨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "베이컨은 겹쳐 일렬로 세우고",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "베이컨말고 햄으로도 대체 가능해요!",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "스파게티 면 1인분 (500원짜리 동전단면)",
+          "displayName": "스파게티 면",
+          "amount": "1",
+          "unit": "인분",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "스파게티 면 투하! 넓게 펼쳐 넣어주세요",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "참고로 면 1인분 = 500원짜리 동전단면!",
+              "timestamp": "00:46"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "물",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "스파게티 면을 삶을 물 준비!",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "소금",
+          "displayName": "소금",
+          "amount": "1",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "소금을 춥춥 넣어 면에 살짝 간을 해줘요",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "소금도 한꼬집 투툽!",
+              "timestamp": "02:11"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "올리브유나 기름",
+          "displayName": "올리브유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "올리브유나 기름을 똑! 면이 탱탱해져요!",
+              "timestamp": "00:55"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "올리브유를 한바퀴 둘러줍니다",
+              "timestamp": "01:06"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "다진마늘 1스푼",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "기름에 다진마늘 1스푼을 넣어주세요",
+              "timestamp": "01:10"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "생크림 종이컵 1컵 반",
+          "displayName": "생크림",
+          "amount": "1.5",
+          "unit": "종이컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "종이컵 1컵 반을 넣어줍니다!",
+              "timestamp": "01:36"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "우유 1컵 반",
+          "displayName": "우유",
+          "amount": "1.5",
+          "unit": "종이컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "우유도 1컵 반 넣어줄게요~",
+              "timestamp": "01:42"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "생크림:우유 = 1:1 기억하세요~",
+              "timestamp": "01:46"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "체다치즈 하나",
+          "displayName": "체다치즈",
+          "amount": "1",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "체다치즈 하나를 퐁당! 넣어줍니다",
+              "timestamp": "01:52"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "후추를 살짝 톡톡톡!",
+              "timestamp": "02:08"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "파슬리",
+          "displayName": "파슬리",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "취향에 따라 파슬리를 솔솔솔~",
+              "timestamp": "02:34"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양파 1개 반을 먹기 좋은 크기로 채 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "우선, 양파 1개 반을 준비해주세요",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먹기좋게 양파를 잘라주세요",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "베이컨을 겹쳐 일렬로 세우고 세로로 잘라 먹기 좋은 크기로 썬다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "베이컨은 겹쳐 일렬로 세우고 세로로 잘라 먹기 좋게 만들어줄게요!",
+              "timestamp": "00:28"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 끓는 물을 준비하고, 스파게티 면(1인분, 500원 동전 크기)을 펼쳐 넣은 뒤 소금과 올리브유(또는 기름)를 약간 넣고 7분간 삶아 건져둔다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "스파게티 면을 삶을 물 준비! 뽀글뽀글 물이 끓으면 스파게티 면 투하! 넓게 펼쳐 넣어주세요",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "소금을 춥춥 넣어 면에 살짝 간을 해줘요 올리브유나 기름을 똑! 면이 탱탱해져요!",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "면은 7분! 삶아야 적당합니다",
+              "timestamp": "01:00"
+            }
+          ]
+        },
+        {
+          "text": "후라이팬에 올리브유를 한 바퀴 두르고 다진마늘 1스푼을 넣어 약불에서 볶으며 마늘기름을 낸다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "올리브유를 한바퀴 둘러줍니다 기름에 다진마늘 1스푼을 넣어주세요",
+              "timestamp": "01:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "약불에 볶아주며 마늘기름을 내줍니다!",
+              "timestamp": "01:13"
+            }
+          ]
+        },
+        {
+          "text": "팬에 잘라둔 베이컨과 양파를 넣고 중불에서 뭉친 것을 풀어주며 노릇해질 때까지 볶는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "줄줄이 베이컨 투척! 잘라놓은 양파도 투척!",
+              "timestamp": "01:17"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "중불에 인정사정없이 볶아주세요! 뭉친 건 풀어주며 볶아유~",
+              "timestamp": "01:25"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "재료들이 어느정도 노릇해지면",
+              "timestamp": "01:31"
+            }
+          ]
+        },
+        {
+          "text": "종이컵 기준 생크림 1컵 반과 우유 1컵 반을 1:1 비율로 붓고 끓이다가 거품이 올라오면 체다치즈 1장을 넣는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마트에서 사온 생크림 준비! 종이컵 1컵 반을 넣어줍니다!",
+              "timestamp": "01:34"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "우유도 1컵 반 넣어줄게요~ 생크림:우유 = 1:1 기억하세요~",
+              "timestamp": "01:42"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "거품이 마구 올라와도 당황하지 말고! 체다치즈 하나를 퐁당! 넣어줍니다",
+              "timestamp": "01:49"
+            }
+          ]
+        },
+        {
+          "text": "삶아둔 면을 넣고 잘 풀어가며 소스와 함께 섞어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이어서 잘 삶은 면도 투척! 면을 풀어가며 소스와 합체!!",
+              "timestamp": "01:56"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "면이 잘 풀어져야 소스가 잘 밴다구욧!",
+              "timestamp": "02:04"
+            }
+          ]
+        },
+        {
+          "text": "후추를 톡톡 뿌리고 소금 한 꼬집을 넣은 뒤, 잘 섞어가며 원하는 농도로 소스를 졸여준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "후추를 살짝 톡톡톡! 소금도 한꼬집 투툽!",
+              "timestamp": "02:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 잘 섞어가며 소스를 졸여주세요",
+              "timestamp": "02:21"
+            }
+          ]
+        },
+        {
+          "text": "취향에 따라 파슬리를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "취향에 따라 파슬리를 솔솔솔~",
+              "timestamp": "02:34"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "베이컨의 정확한 중량이나 매수 미표기 (화면상 1팩 또는 여러 줄 사용)"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

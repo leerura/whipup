@@ -1,0 +1,217 @@
+{
+  "videoId": "rSXWJ5KRwUE",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/rSXWJ5KRwUE",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:57:30.453242+00:00",
+    "rawResponse": "{\n  \"title\": \"남은 치킨 볶음밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"파\",\n      \"displayName\": \"파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"파기름내고\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 송송 썬 파를 넣고 볶는 모습\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"파기름내고\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 기름을 두르고 파를 볶는 모습\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 두개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 두개 톡톡\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 달걀을 깨 넣고 스크램블하듯 볶는 모습\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"남은 치킨\",\n      \"displayName\": \"남은 치킨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볶아주다가 남은 치킨 투입\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"치킨껍질은 조금 취향맞춰 넣어요\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"잘게 찢은 남은 치킨을 팬에 넣고 볶는 모습\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥넣고\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 밥을 넣고 함께 볶는 모습\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장\",\n      \"displayName\": \"간장\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 혹은 굴소스 넣고 볶으면 끝\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스\",\n      \"displayName\": \"굴소스\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 혹은 굴소스 넣고 볶으면 끝\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 파와 기름을 넣고 볶아 파기름을 낸 후, 계란 두 개를 깨 넣고 함께 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"파기름내고 계란 두개 톡톡\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"파기름에 계란을 넣어 스크램블하는 모습\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볶아주다가 남은 치킨(치킨 껍질은 취향에 맞춰 조절)을 넣고 함께 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볶아주다가 남은 치킨 투입\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"치킨껍질은 조금 취향맞춰 넣어요\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"찢은 치킨 살을 팬에 넣고 주걱으로 섞어가며 볶는 모습\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥을 넣고 간장 또는 굴소스를 넣어 간을 맞추며 볶아 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥넣고 간장 혹은 굴소스 넣고 볶으면 끝\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥과 양념을 함께 볶아내는 모습\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"파, 기름, 치킨, 밥, 간장/굴소스의 구체적인 계량(양)은 영상에 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "남은 치킨 볶음밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "파",
+          "displayName": "파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "파기름내고",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 송송 썬 파를 넣고 볶는 모습",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "파기름내고",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 기름을 두르고 파를 볶는 모습",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "계란 두개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 두개 톡톡",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 달걀을 깨 넣고 스크램블하듯 볶는 모습",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "남은 치킨",
+          "displayName": "남은 치킨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볶아주다가 남은 치킨 투입",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "치킨껍질은 조금 취향맞춰 넣어요",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "잘게 찢은 남은 치킨을 팬에 넣고 볶는 모습",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥넣고",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 밥을 넣고 함께 볶는 모습",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "간장",
+          "displayName": "간장",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 혹은 굴소스 넣고 볶으면 끝",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "굴소스",
+          "displayName": "굴소스",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 혹은 굴소스 넣고 볶으면 끝",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 파와 기름을 넣고 볶아 파기름을 낸 후, 계란 두 개를 깨 넣고 함께 볶아준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "파기름내고 계란 두개 톡톡",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "파기름에 계란을 넣어 스크램블하는 모습",
+              "timestamp": "00:01"
+            }
+          ]
+        },
+        {
+          "text": "볶아주다가 남은 치킨(치킨 껍질은 취향에 맞춰 조절)을 넣고 함께 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볶아주다가 남은 치킨 투입",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "치킨껍질은 조금 취향맞춰 넣어요",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "찢은 치킨 살을 팬에 넣고 주걱으로 섞어가며 볶는 모습",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "밥을 넣고 간장 또는 굴소스를 넣어 간을 맞추며 볶아 마무리한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥넣고 간장 혹은 굴소스 넣고 볶으면 끝",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥과 양념을 함께 볶아내는 모습",
+              "timestamp": "00:09"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "파, 기름, 치킨, 밥, 간장/굴소스의 구체적인 계량(양)은 영상에 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

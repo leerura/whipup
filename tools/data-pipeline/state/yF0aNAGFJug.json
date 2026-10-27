@@ -1,0 +1,365 @@
+{
+  "videoId": "yF0aNAGFJug",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/yF0aNAGFJug",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:11:15.797841+00:00",
+    "rawResponse": "{\n  \"title\": \"참치 양배추덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"참치\",\n      \"displayName\": \"참치\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양배추랑 참치 있으신가요?\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치와 양념을 넣고\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"캔 참치를 팬에 넣는 모습\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치기름\",\n      \"displayName\": \"참치기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치기름에\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"참치 캔에서 기름을 팬에 따르는 모습\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파와 양배추를 볶아주세요\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"송송 썬 대파를 팬에 넣는 모습\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양배추\",\n      \"displayName\": \"양배추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파와 양배추를 볶아주세요\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"채 썬 양배추를 팬에 넣는 모습\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 1 스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 1 스푼\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1/2 스푼\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1/2 스푼\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"알룰로스 1/2 스푼\",\n      \"displayName\": \"알룰로스\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"알룰로스 1/2 스푼\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1/2 스푼\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 1/2 스푼\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 살짝\",\n      \"displayName\": \"물\",\n      \"amount\": \"살짝\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 물 살짝 넣어 촉촉하게 만들어주고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 물을 약간 붓는 모습\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 두 개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 두 개를 풀어\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"풀어둔 달걀물을 팬에 붓는 모습\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"따끈한 밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"따끈한 밥 위에 듬뿍 올리고\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 담긴 밥 위에 볶은 재료를 얹는 모습\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추와 통깨까지 뿌려주면\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"덮밥 위에 후추를 뿌리는 모습\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추와 통깨까지 뿌려주면\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"덮밥 위에 통깨를 뿌리는 모습\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 참치기름을 두르고 대파와 양배추를 넣어 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치기름에 대파와 양배추를 볶아주세요\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 참치 기름을 붓고 대파와 썬 양배추를 넣어 볶는 모습\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양배추가 노릇해지면 참치와 양념(진간장 1스푼, 굴소스 1/2스푼, 알룰로스 1/2스푼, 다진마늘 1/2스푼)을 넣고 잘 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양배추가 노릇해지면 참치와 양념을 넣고 잘 볶아주세요\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"* 양념 진간장 1 스푼 굴소스 1/2 스푼 알룰로스 1/2 스푼 다진마늘 1/2 스푼\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물을 살짝 넣어 촉촉하게 만들어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 물 살짝 넣어 촉촉하게 만들어주고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 물을 조금 붓고 섞어주는 모습\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 2개를 풀어 넣고 몽글몽글하게 익혀준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 두 개를 풀어 몽글몽글하게 익혀주면 끝!\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"풀어둔 달걀물을 팬에 둘러 붓고 살살 저어가며 익히는 모습\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"따끈한 밥 위에 볶은 참치 양배추 달걀을 듬뿍 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"따끈한 밥 위에 듬뿍 올리고\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥그릇에 볶은 재료를 얹어 담는 모습\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"후추와 통깨를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추와 통깨까지 뿌려주면\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"후추와 통깨를 덮밥 위에 뿌려 마무리하는 모습\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "참치 양배추덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "참치",
+          "displayName": "참치",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양배추랑 참치 있으신가요?",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참치와 양념을 넣고",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "캔 참치를 팬에 넣는 모습",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "참치기름",
+          "displayName": "참치기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "참치기름에",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "참치 캔에서 기름을 팬에 따르는 모습",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파와 양배추를 볶아주세요",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "송송 썬 대파를 팬에 넣는 모습",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양배추",
+          "displayName": "양배추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파와 양배추를 볶아주세요",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "채 썬 양배추를 팬에 넣는 모습",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "진간장 1 스푼",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 1 스푼",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "굴소스 1/2 스푼",
+          "displayName": "굴소스",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1/2 스푼",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "알룰로스 1/2 스푼",
+          "displayName": "알룰로스",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "알룰로스 1/2 스푼",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "다진마늘 1/2 스푼",
+          "displayName": "다진마늘",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 1/2 스푼",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "물 살짝",
+          "displayName": "물",
+          "amount": "살짝",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 물 살짝 넣어 촉촉하게 만들어주고",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 물을 약간 붓는 모습",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "계란 두 개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 두 개를 풀어",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "풀어둔 달걀물을 팬에 붓는 모습",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "따끈한 밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "따끈한 밥 위에 듬뿍 올리고",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 담긴 밥 위에 볶은 재료를 얹는 모습",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후추와 통깨까지 뿌려주면",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "덮밥 위에 후추를 뿌리는 모습",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후추와 통깨까지 뿌려주면",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "덮밥 위에 통깨를 뿌리는 모습",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 참치기름을 두르고 대파와 양배추를 넣어 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "참치기름에 대파와 양배추를 볶아주세요",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 참치 기름을 붓고 대파와 썬 양배추를 넣어 볶는 모습",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "양배추가 노릇해지면 참치와 양념(진간장 1스푼, 굴소스 1/2스푼, 알룰로스 1/2스푼, 다진마늘 1/2스푼)을 넣고 잘 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양배추가 노릇해지면 참치와 양념을 넣고 잘 볶아주세요",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "* 양념 진간장 1 스푼 굴소스 1/2 스푼 알룰로스 1/2 스푼 다진마늘 1/2 스푼",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "물을 살짝 넣어 촉촉하게 만들어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 물 살짝 넣어 촉촉하게 만들어주고",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 물을 조금 붓고 섞어주는 모습",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "계란 2개를 풀어 넣고 몽글몽글하게 익혀준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 두 개를 풀어 몽글몽글하게 익혀주면 끝!",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "풀어둔 달걀물을 팬에 둘러 붓고 살살 저어가며 익히는 모습",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "따끈한 밥 위에 볶은 참치 양배추 달걀을 듬뿍 올린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "따끈한 밥 위에 듬뿍 올리고",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥그릇에 볶은 재료를 얹어 담는 모습",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "후추와 통깨를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후추와 통깨까지 뿌려주면",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "후추와 통깨를 덮밥 위에 뿌려 마무리하는 모습",
+              "timestamp": "00:22"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

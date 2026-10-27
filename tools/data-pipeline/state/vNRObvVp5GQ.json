@@ -1,0 +1,289 @@
+{
+  "videoId": "vNRObvVp5GQ",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/vNRObvVp5GQ",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:25:26.732746+00:00",
+    "rawResponse": "{\n  \"title\": \"콩나물밥\",\n  \"description\": null,\n  \"servings\": \"2공기\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"콩나물 듬뿍\",\n      \"displayName\": \"콩나물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"콩나물 듬뿍\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"찬밥 두 공기\",\n      \"displayName\": \"찬밥\",\n      \"amount\": \"2\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"찬밥 두 공기\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 50ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"50\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 50ml\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"표고 버섯 *생략 가능\",\n      \"displayName\": \"표고 버섯\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"표고 버섯 *생략 가능\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"미림 1숟갈 *생략 가능\",\n      \"displayName\": \"미림\",\n      \"amount\": \"1\",\n      \"unit\": \"숟갈\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"미림 1숟갈 *생략 가능\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"매실액\",\n      \"displayName\": \"매실액\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"매실액\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추\",\n      \"displayName\": \"청양고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 콩나물을 듬뿍 깐다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"콩나물 듬뿍\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬 바닥에 콩나물을 가득 깐다\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"콩나물 위에 찬밥 두 공기를 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"찬밥 두 공기\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"콩나물 위에 밥 두 덩이를 올린다\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 50ml를 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 50ml\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계량컵으로 물을 붓는다\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"슬라이스한 표고버섯을 올린다. (생략 가능)\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"표고 버섯 *생략 가능\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"표고버섯 슬라이스를 골고루 올린다\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"미림 1숟갈을 둘러준다. (생략 가능)\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"미림 1숟갈 *생략 가능\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"숟가락으로 미림을 뿌린다\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뚜껑을 닫고 5분간 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"뚜껑 닫고 5분\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬 뚜껑을 닫는다\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥이 익는 동안 볼에 간장 베이스와 매실액, 고춧가루, 청양고추 등을 넣고 섞어 양념장을 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"그동안 양념 준비\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양념장 휘휘\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"5분이 지나면 뚜껑을 열고 밥과 재료를 잘 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"5분 지나\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"잘 섞어주면\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"뚜껑을 열고 주걱으로 밥과 콩나물을 골고루 섞는다\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 덜어 양념장을 얹어 비벼 먹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 담은 콩나물밥 위에 양념장을 숟가락으로 얹어 비빈다\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"양념장 그릇에 매실액을 넣기 전 이미 담겨 있는 짙은 갈색 액체(간장으로 추정)의 종류와 계량값 미표기\",\n    \"매실액, 고춧가루의 정확한 계량값 미표기 (영상에서 각 1숟가락씩 넣는 모습 확인)\",\n    \"청양고추와 함께 대파/쪽파가 썰려 들어가고 통깨가 섞여 있으나 자막에 별도 표기되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "콩나물밥",
+      "description": null,
+      "servings": "2공기",
+      "ingredients": [
+        {
+          "rawText": "콩나물 듬뿍",
+          "displayName": "콩나물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "콩나물 듬뿍",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "찬밥 두 공기",
+          "displayName": "찬밥",
+          "amount": "2",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "찬밥 두 공기",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "물 50ml",
+          "displayName": "물",
+          "amount": "50",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 50ml",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "표고 버섯 *생략 가능",
+          "displayName": "표고 버섯",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "표고 버섯 *생략 가능",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "미림 1숟갈 *생략 가능",
+          "displayName": "미림",
+          "amount": "1",
+          "unit": "숟갈",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "미림 1숟갈 *생략 가능",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "매실액",
+          "displayName": "매실액",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "매실액",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "고춧가루",
+          "displayName": "고춧가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "청양고추",
+          "displayName": "청양고추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 콩나물을 듬뿍 깐다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "콩나물 듬뿍",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬 바닥에 콩나물을 가득 깐다",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "콩나물 위에 찬밥 두 공기를 올린다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "찬밥 두 공기",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "콩나물 위에 밥 두 덩이를 올린다",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "물 50ml를 붓는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 50ml",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계량컵으로 물을 붓는다",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "슬라이스한 표고버섯을 올린다. (생략 가능)",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "표고 버섯 *생략 가능",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "표고버섯 슬라이스를 골고루 올린다",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "미림 1숟갈을 둘러준다. (생략 가능)",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "미림 1숟갈 *생략 가능",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "숟가락으로 미림을 뿌린다",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "뚜껑을 닫고 5분간 익힌다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "뚜껑 닫고 5분",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬 뚜껑을 닫는다",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "밥이 익는 동안 볼에 간장 베이스와 매실액, 고춧가루, 청양고추 등을 넣고 섞어 양념장을 준비한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "그동안 양념 준비",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양념장 휘휘",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "5분이 지나면 뚜껑을 열고 밥과 재료를 잘 섞어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "5분 지나",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "잘 섞어주면",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "뚜껑을 열고 주걱으로 밥과 콩나물을 골고루 섞는다",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 덜어 양념장을 얹어 비벼 먹는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 담은 콩나물밥 위에 양념장을 숟가락으로 얹어 비빈다",
+              "timestamp": "00:00"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "양념장 그릇에 매실액을 넣기 전 이미 담겨 있는 짙은 갈색 액체(간장으로 추정)의 종류와 계량값 미표기",
+        "매실액, 고춧가루의 정확한 계량값 미표기 (영상에서 각 1숟가락씩 넣는 모습 확인)",
+        "청양고추와 함께 대파/쪽파가 썰려 들어가고 통깨가 섞여 있으나 자막에 별도 표기되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

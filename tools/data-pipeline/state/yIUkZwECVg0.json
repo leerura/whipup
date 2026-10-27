@@ -1,0 +1,268 @@
+{
+  "videoId": "yIUkZwECVg0",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/yIUkZwECVg0",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:12:06.369970+00:00",
+    "rawResponse": "{\n  \"title\": \"굴소스 볶음밥\",\n  \"description\": null,\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름 두른 팬에 대파를 넣고 볶아주세요\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다른 쪽에 기름을 넣고 스크램블을 만들어 주세요\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 식용유를 두름\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파를 넣고 볶아주세요\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"송송 썬 대파를 팬에 넣고 볶음\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"스크램블 (계란물)\",\n      \"displayName\": \"계란\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스크램블을 만들어 주세요\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"풀어둔 계란물을 팬 한쪽에 붓고 스크램블을 만듦\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 2스푼\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 2스푼\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"굴소스 2스푼을 팬에 넣음\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 2스푼\",\n      \"displayName\": \"간장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 2스푼\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"간장 2스푼을 팬에 넣음\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 1인분\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1\",\n      \"unit\": \"인분\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 1인분 넣고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 한 공기를 팬에 넣음\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"버터 0.5 스푼\",\n      \"displayName\": \"버터\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"버터 0.5 스푼\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"버터 한 조각을 팬에 넣음\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 0.5 스푼\",\n      \"displayName\": \"소금\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 0.5 스푼\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"기름을 두른 팬에 대파를 넣고 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름 두른 팬에 대파를 넣고 볶아주세요\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 기름을 두르고 썰어둔 대파를 볶음\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파가 익으면 한쪽으로 옮기고, 다른 쪽에 기름을 둘러 계란 스크램블을 만든 후 대파와 함께 섞어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파가 익으면 한쪽으로 옮기고 다른 쪽에 기름을 넣고 스크램블을 만들어 주세요\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"대파를 한쪽으로 밀고 계란물을 부어 스크램블 에그를 만들어 섞음\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"굴소스 2스푼과 간장 2스푼을 넣고 함께 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 2스푼 간장 2스푼 넣고 볶아주세요\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"굴소스와 간장을 넣고 파, 계란과 함께 볶음\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 1인분을 넣고 골고루 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 1인분 넣고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥을 넣고 주걱으로 풀어가며 볶음\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"버터 0.5스푼과 소금 0.5스푼을 넣고 골고루 볶아 마무리합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"버터 0.5 스푼 소금 0.5 스푼 넣고 볶아주면?\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"버터를 넣고 전체적으로 고르게 볶음\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"대파와 계란의 구체적인 수량/무게는 명시되지 않았습니다.\",\n    \"소금 투하 장면은 자막으로만 언급되고 영상에서 직접 넣는 모습은 명확히 포착되지 않았습니다.\"\n  ]\n}",
+    "result": {
+      "title": "굴소스 볶음밥",
+      "description": null,
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름 두른 팬에 대파를 넣고 볶아주세요",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다른 쪽에 기름을 넣고 스크램블을 만들어 주세요",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 식용유를 두름",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파를 넣고 볶아주세요",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "송송 썬 대파를 팬에 넣고 볶음",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "스크램블 (계란물)",
+          "displayName": "계란",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스크램블을 만들어 주세요",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "풀어둔 계란물을 팬 한쪽에 붓고 스크램블을 만듦",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "굴소스 2스푼",
+          "displayName": "굴소스",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 2스푼",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "굴소스 2스푼을 팬에 넣음",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "간장 2스푼",
+          "displayName": "간장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 2스푼",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "간장 2스푼을 팬에 넣음",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "밥 1인분",
+          "displayName": "밥",
+          "amount": "1",
+          "unit": "인분",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 1인분 넣고",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 한 공기를 팬에 넣음",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "버터 0.5 스푼",
+          "displayName": "버터",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "버터 0.5 스푼",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "버터 한 조각을 팬에 넣음",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "소금 0.5 스푼",
+          "displayName": "소금",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 0.5 스푼",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        }
+      ],
+      "steps": [
+        {
+          "text": "기름을 두른 팬에 대파를 넣고 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름 두른 팬에 대파를 넣고 볶아주세요",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 기름을 두르고 썰어둔 대파를 볶음",
+              "timestamp": "00:01"
+            }
+          ]
+        },
+        {
+          "text": "대파가 익으면 한쪽으로 옮기고, 다른 쪽에 기름을 둘러 계란 스크램블을 만든 후 대파와 함께 섞어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파가 익으면 한쪽으로 옮기고 다른 쪽에 기름을 넣고 스크램블을 만들어 주세요",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "대파를 한쪽으로 밀고 계란물을 부어 스크램블 에그를 만들어 섞음",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "굴소스 2스푼과 간장 2스푼을 넣고 함께 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 2스푼 간장 2스푼 넣고 볶아주세요",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "굴소스와 간장을 넣고 파, 계란과 함께 볶음",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "밥 1인분을 넣고 골고루 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 1인분 넣고",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥을 넣고 주걱으로 풀어가며 볶음",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "버터 0.5스푼과 소금 0.5스푼을 넣고 골고루 볶아 마무리합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "버터 0.5 스푼 소금 0.5 스푼 넣고 볶아주면?",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "버터를 넣고 전체적으로 고르게 볶음",
+              "timestamp": "00:19"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "대파와 계란의 구체적인 수량/무게는 명시되지 않았습니다.",
+        "소금 투하 장면은 자막으로만 언급되고 영상에서 직접 넣는 모습은 명확히 포착되지 않았습니다."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

@@ -1,0 +1,373 @@
+{
+  "videoId": "4Mw4QIzv7tU",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/4Mw4QIzv7tU",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T08:03:27.318745+00:00",
+    "rawResponse": "{\n  \"title\": \"초간단 자취생을 위한 칼국수\",\n  \"description\": \"자취생을 위해 간단하고 빠르게 끓여 먹을 수 있는 뜨끈한 칼국수 레시피입니다.\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파를 송송 썰어 주고\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파를 송송 썰어 주고\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 한 개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 한 개를 풀어서 준비해 주세요\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 한 개를 풀어서\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"종이컵 기준 물 9컵\",\n      \"displayName\": \"물\",\n      \"amount\": \"9\",\n      \"unit\": \"종이컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"종이컵 기준 물 9컵\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"종이컵 기준 물 9컵\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다시마팩 3개\",\n      \"displayName\": \"다시마팩\",\n      \"amount\": \"3\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다시마팩 3개를 넣어주고\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다시마팩 3개를\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"칼국수면 2개\",\n      \"displayName\": \"칼국수면\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"칼국수면 2개를 넣어주고\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"칼국수면 2개를 넣어주고\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"국간장 한 스푼\",\n      \"displayName\": \"국간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국간장 한 스푼\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"국간장 한 스푼\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"멸치 액젓 한 스푼\",\n      \"displayName\": \"멸치 액젓\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"멸치 액젓 한 스푼\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"멸치 액젓 한 스푼\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 반 스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘 반 스푼을 넣어주고\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진 마늘 반 스푼을\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"부족한 간은 소금으로 해주세요\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소금으로 해주세요\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기호에 따라 김가루, 참깨를 넣어서\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김가루, 참깨를 넣어서\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참깨\",\n      \"displayName\": \"참깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기호에 따라 김가루, 참깨를 넣어서\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김가루, 참깨를 넣어서\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"대파를 송송 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 대파를 송송 썰어 주고\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도마 위에서 대파를 송송 써는 모습\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 1개를 풀어서 준비해 둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 한 개를 풀어서 준비해 주세요\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계량컵에 계란 1개를 깨뜨려 넣는 모습\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 종이컵 기준 물 9컵과 다시마팩 3개를 넣고 불을 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 육수를 만들어 줄 건데 종이컵 기준 물 9컵 다시마팩 3개를 넣어주고\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 물과 육수 팩을 넣는 모습\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물이 끓기 시작하면 중불로 줄여 약 10분간 더 끓인 뒤 다시마팩을 건져낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"끓기 시작하면 중불로 줄여 주세요 10분 정도 더 끓여 줄 겁니다\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"불을 중불로 조절하고 육수 팩을 그릇에 건져내는 모습\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"육수에 칼국수면 2개를 넣고 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 진짜 끝이에요 칼국수면 2개를 넣어주고\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"끓는 육수에 칼국수면 2인분 분량을 넣는 모습\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"면이 익기 시작하면 국간장 1스푼, 멸치 액젓 1스푼, 다진 마늘 반 스푼을 넣고 부족한 간은 소금으로 맞춘다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"면이 익기 시작하면 국간장 한 스푼 멸치 액젓 한 스푼 다진 마늘 반 스푼을 넣어주고 부족한 간은 소금으로 해주세요\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"국간장, 멸치 액젓, 다진 마늘, 소금을 차례로 넣는 모습\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"준비해 둔 대파와 계란물을 넣고 끓여 면과 국물을 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 준비해 둔 대파와 계란을 넣어주면 정말 간단한 칼국수는 완성됐어요\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"썰어둔 대파와 푼 계란물을 둘러 넣는 모습\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 칼국수를 담고 기호에 따라 김가루와 참깨를 고명으로 얹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기호에 따라 김가루, 참깨를 넣어서 한입 먹어주면\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 담긴 칼국수 위에 김가루와 참깨를 뿌리는 모습\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"대파의 구체적인 양(개수 또는 무게)은 영상에서 언급되지 않았습니다.\",\n    \"소금의 정확한 양은 취향에 따라 맞추도록 되어 있어 명시되지 않았습니다.\"\n  ]\n}",
+    "result": {
+      "title": "초간단 자취생을 위한 칼국수",
+      "description": "자취생을 위해 간단하고 빠르게 끓여 먹을 수 있는 뜨끈한 칼국수 레시피입니다.",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파를 송송 썰어 주고",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대파를 송송 썰어 주고",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "계란 한 개",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 한 개를 풀어서 준비해 주세요",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란 한 개를 풀어서",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "종이컵 기준 물 9컵",
+          "displayName": "물",
+          "amount": "9",
+          "unit": "종이컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "종이컵 기준 물 9컵",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "종이컵 기준 물 9컵",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "다시마팩 3개",
+          "displayName": "다시마팩",
+          "amount": "3",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다시마팩 3개를 넣어주고",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다시마팩 3개를",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "칼국수면 2개",
+          "displayName": "칼국수면",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "칼국수면 2개를 넣어주고",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "칼국수면 2개를 넣어주고",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "국간장 한 스푼",
+          "displayName": "국간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "국간장 한 스푼",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "국간장 한 스푼",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "멸치 액젓 한 스푼",
+          "displayName": "멸치 액젓",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "멸치 액젓 한 스푼",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "멸치 액젓 한 스푼",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "다진 마늘 반 스푼",
+          "displayName": "다진 마늘",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘 반 스푼을 넣어주고",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다진 마늘 반 스푼을",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "소금",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "부족한 간은 소금으로 해주세요",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "소금으로 해주세요",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "김가루",
+          "displayName": "김가루",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "기호에 따라 김가루, 참깨를 넣어서",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "김가루, 참깨를 넣어서",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "참깨",
+          "displayName": "참깨",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "기호에 따라 김가루, 참깨를 넣어서",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "김가루, 참깨를 넣어서",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "대파를 송송 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 대파를 송송 썰어 주고",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도마 위에서 대파를 송송 써는 모습",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "계란 1개를 풀어서 준비해 둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 한 개를 풀어서 준비해 주세요",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계량컵에 계란 1개를 깨뜨려 넣는 모습",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "팬에 종이컵 기준 물 9컵과 다시마팩 3개를 넣고 불을 올린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 육수를 만들어 줄 건데 종이컵 기준 물 9컵 다시마팩 3개를 넣어주고",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 물과 육수 팩을 넣는 모습",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "물이 끓기 시작하면 중불로 줄여 약 10분간 더 끓인 뒤 다시마팩을 건져낸다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "끓기 시작하면 중불로 줄여 주세요 10분 정도 더 끓여 줄 겁니다",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "불을 중불로 조절하고 육수 팩을 그릇에 건져내는 모습",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "육수에 칼국수면 2개를 넣고 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 진짜 끝이에요 칼국수면 2개를 넣어주고",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "끓는 육수에 칼국수면 2인분 분량을 넣는 모습",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "면이 익기 시작하면 국간장 1스푼, 멸치 액젓 1스푼, 다진 마늘 반 스푼을 넣고 부족한 간은 소금으로 맞춘다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "면이 익기 시작하면 국간장 한 스푼 멸치 액젓 한 스푼 다진 마늘 반 스푼을 넣어주고 부족한 간은 소금으로 해주세요",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "국간장, 멸치 액젓, 다진 마늘, 소금을 차례로 넣는 모습",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "준비해 둔 대파와 계란물을 넣고 끓여 면과 국물을 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 준비해 둔 대파와 계란을 넣어주면 정말 간단한 칼국수는 완성됐어요",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "썰어둔 대파와 푼 계란물을 둘러 넣는 모습",
+              "timestamp": "00:30"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 칼국수를 담고 기호에 따라 김가루와 참깨를 고명으로 얹는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "기호에 따라 김가루, 참깨를 넣어서 한입 먹어주면",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 담긴 칼국수 위에 김가루와 참깨를 뿌리는 모습",
+              "timestamp": "00:35"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "대파의 구체적인 양(개수 또는 무게)은 영상에서 언급되지 않았습니다.",
+        "소금의 정확한 양은 취향에 따라 맞추도록 되어 있어 명시되지 않았습니다."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

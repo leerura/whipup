@@ -1,0 +1,522 @@
+{
+  "videoId": "zeUkJ1jxeFo",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://youtu.be/zeUkJ1jxeFo?si=eYZ7twdtHlmsUD_V",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:21:31.377934+00:00",
+    "rawResponse": "{\n  \"title\": \"정통집 돼지김치구이\",\n  \"description\": \"외식 프랜차이즈 정통집의 돼지김치구이와 상차림, 볶음밥을 집에서 가성비 있게 재현하는 레시피입니다.\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"콘옥수수 340g\",\n      \"displayName\": \"콘옥수수\",\n      \"amount\": \"340\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 콘옥수수 340g ; 1,520원\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"콘옥수수와 쌈무\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쌈무 80g\",\n      \"displayName\": \"쌈무\",\n      \"amount\": \"80\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 쌈무 80g ; 1,190원\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"콘옥수수와 쌈무\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깻잎 15g\",\n      \"displayName\": \"깻잎\",\n      \"amount\": \"15\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 깻잎 15g ; 365원\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"상추 대신 깻잎이 나오더라고요\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 9g\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"9\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 청양고추 9g ; 72원\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마요네즈 30g\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": \"30\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 마요네즈 30g ; 298원\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마요네즈와\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쌈장 20g\",\n      \"displayName\": \"쌈장\",\n      \"amount\": \"20\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 쌈장 20g ; 118원\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"쌈장과 마늘까지 준비하면\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마늘\",\n      \"displayName\": \"마늘\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"쌈장과 마늘까지 준비하면\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"접시에 담긴 통마늘을 내려놓음\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양파를 도마 위에서 채 덞\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대패삼겹살\",\n      \"displayName\": \"대패삼겹살\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그냥 남은 대패삼겹살을 써줬습니다\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 대패삼겹살을 올려 굽기 시작함\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 1g (소금 1꼬집)\",\n      \"displayName\": \"소금\",\n      \"amount\": \"1\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 소금 1g ; 2원\\n(소금 1꼬집)\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 0.1g (후추 취향껏)\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": \"취향껏\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 후추 0.1g ; 8원\\n(후추 취향껏)\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 5g (설탕 반스푼)\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 설탕 5g ; 11원\\n(설탕 반스푼)\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 10g (맛술 1스푼)\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 맛술 10g ; 55원\\n(맛술 1스푼)\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치 100g\",\n      \"displayName\": \"김치\",\n      \"amount\": \"100\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 김치 100g ; 756원\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 13g (고춧가루 1~2스푼)\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1~2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 고춧가루 13g ; 421원\\n(고춧가루 1~2스푼)\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 40g (진간장 1스푼)\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 진간장 40g ; 51원\\n(진간장 1스푼)\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 9g (굴소스 반스푼)\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 굴소스 9g ; 89원\\n(굴소스 반스푼)\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 8g\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"8\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 청양고추 8g : 64원\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"반드시 좀만 남겨서 밥까지 볶아서\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루 5g\",\n      \"displayName\": \"김가루\",\n      \"amount\": \"5\",\n      \"unit\": \"g\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 김가루 5g : 214원\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"콘옥수수, 쌈무, 깻잎, 청양고추, 마요네즈, 쌈장, 마늘을 곁들임 반찬으로 준비합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"일단 정통집 근본 반찬인 콘옥수수와 쌈무, 그리고 여기는 항상 상추 대신 깻잎이 나오더라고요... 여기에 정통집 킥인 마요네즈와 쌈장과 마늘까지 준비하면\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"반찬 접시들에 콘옥수수, 쌈무, 깻잎, 고추, 마요네즈, 쌈장, 마늘을 차려둠\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파를 채 썹니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양파 반 개를 얇게 채 써는 모습\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 대패삼겹살을 올리고 소금 1꼬집(1g)과 취향껏 후추(0.1g)를 뿌려 볶습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 소금 1g ; 2원 (소금 1꼬집)\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 후추 0.1g ; 8원 (후추 취향껏)\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬의 고기 위에 소금과 후추를 뿌려 구움\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"설탕 반 스푼(5g)을 넣어 고기와 함께 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 설탕 5g ; 11원 (설탕 반스푼)\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"설탕을 넣고 고기를 젓가락으로 저어가며 볶음\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"맛술 1스푼(10g), 썰어둔 양파, 김치 100g을 가위로 잘라 넣습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 맛술 10g : 55원 (맛술 1스푼)\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 김치 100g : 756원\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"맛술을 둘러 넣고 채 썬 양파를 넣은 뒤 김치를 가위로 잘라 넣음\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고춧가루 1~2스푼(13g), 진간장 1스푼(40g), 굴소스 반 스푼(9g)을 넣고 잘 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 고춧가루 13g : 421원 (고춧가루 1~2스푼)\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 진간장 40g : 51원 (진간장 1스푼)\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 굴소스 9g : 89원 (굴소스 반스푼)\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양념들을 넣고 주걱으로 고루 볶음\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"송송 썬 청양고추(8g)를 고명으로 얹어 마무리합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 청양고추 8g : 64원\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 돼지김치구이 가운데에 썰어둔 청양고추를 올림\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"깻잎 위에 쌈무, 옥수수, 마요네즈 찍은 고기와 김치, 쌈장 찍은 마늘을 올려 싸 먹습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"깻잎에다가 쌈무랑 옥수수, 마요네즈 찍고 마늘에 쌈장까지 찍어서 한입 싸 먹으면\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"깻잎에 쌈무, 옥수수, 고기, 마요네즈, 쌈장, 마늘을 싸서 먹음\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기와 김치를 조금 남겨 가위로 잘게 자른 뒤, 밥과 김가루 5g을 넣고 볶아 볶음밥으로 즐깁니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 김가루 5g : 214원\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"반드시 좀만 남겨서 밥까지 볶아서 이 특미볶음밥까지 해먹으면\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"남은 재료를 가위로 자르고 밥과 김가루를 넣어 볶는 모습\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"대패삼겹살, 양파, 마늘, 밥의 정확한 중량은 영상 자막 및 대사에 표기되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "정통집 돼지김치구이",
+      "description": "외식 프랜차이즈 정통집의 돼지김치구이와 상차림, 볶음밥을 집에서 가성비 있게 재현하는 레시피입니다.",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "콘옥수수 340g",
+          "displayName": "콘옥수수",
+          "amount": "340",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 콘옥수수 340g ; 1,520원",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "콘옥수수와 쌈무",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "쌈무 80g",
+          "displayName": "쌈무",
+          "amount": "80",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 쌈무 80g ; 1,190원",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "콘옥수수와 쌈무",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "깻잎 15g",
+          "displayName": "깻잎",
+          "amount": "15",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 깻잎 15g ; 365원",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "상추 대신 깻잎이 나오더라고요",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "청양고추 9g",
+          "displayName": "청양고추",
+          "amount": "9",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 청양고추 9g ; 72원",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "마요네즈 30g",
+          "displayName": "마요네즈",
+          "amount": "30",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 마요네즈 30g ; 298원",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마요네즈와",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "쌈장 20g",
+          "displayName": "쌈장",
+          "amount": "20",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 쌈장 20g ; 118원",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "쌈장과 마늘까지 준비하면",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "마늘",
+          "displayName": "마늘",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "쌈장과 마늘까지 준비하면",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "접시에 담긴 통마늘을 내려놓음",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양파를 도마 위에서 채 덞",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "대패삼겹살",
+          "displayName": "대패삼겹살",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그냥 남은 대패삼겹살을 써줬습니다",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 대패삼겹살을 올려 굽기 시작함",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "소금 1g (소금 1꼬집)",
+          "displayName": "소금",
+          "amount": "1",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 소금 1g ; 2원\n(소금 1꼬집)",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "후추 0.1g (후추 취향껏)",
+          "displayName": "후추",
+          "amount": null,
+          "unit": "취향껏",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 후추 0.1g ; 8원\n(후추 취향껏)",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "설탕 5g (설탕 반스푼)",
+          "displayName": "설탕",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 설탕 5g ; 11원\n(설탕 반스푼)",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "맛술 10g (맛술 1스푼)",
+          "displayName": "맛술",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 맛술 10g ; 55원\n(맛술 1스푼)",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "김치 100g",
+          "displayName": "김치",
+          "amount": "100",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 김치 100g ; 756원",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "고춧가루 13g (고춧가루 1~2스푼)",
+          "displayName": "고춧가루",
+          "amount": "1~2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 고춧가루 13g ; 421원\n(고춧가루 1~2스푼)",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "진간장 40g (진간장 1스푼)",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 진간장 40g ; 51원\n(진간장 1스푼)",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "굴소스 9g (굴소스 반스푼)",
+          "displayName": "굴소스",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 굴소스 9g ; 89원\n(굴소스 반스푼)",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        },
+        {
+          "rawText": "청양고추 8g",
+          "displayName": "청양고추",
+          "amount": "8",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 청양고추 8g : 64원",
+              "timestamp": "00:32"
+            }
+          ],
+          "sourceId": "ingredient-18"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "반드시 좀만 남겨서 밥까지 볶아서",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-19"
+        },
+        {
+          "rawText": "김가루 5g",
+          "displayName": "김가루",
+          "amount": "5",
+          "unit": "g",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 김가루 5g : 214원",
+              "timestamp": "00:43"
+            }
+          ],
+          "sourceId": "ingredient-20"
+        }
+      ],
+      "steps": [
+        {
+          "text": "콘옥수수, 쌈무, 깻잎, 청양고추, 마요네즈, 쌈장, 마늘을 곁들임 반찬으로 준비합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "일단 정통집 근본 반찬인 콘옥수수와 쌈무, 그리고 여기는 항상 상추 대신 깻잎이 나오더라고요... 여기에 정통집 킥인 마요네즈와 쌈장과 마늘까지 준비하면",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "반찬 접시들에 콘옥수수, 쌈무, 깻잎, 고추, 마요네즈, 쌈장, 마늘을 차려둠",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "양파를 채 썹니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양파 반 개를 얇게 채 써는 모습",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "팬에 대패삼겹살을 올리고 소금 1꼬집(1g)과 취향껏 후추(0.1g)를 뿌려 볶습니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 소금 1g ; 2원 (소금 1꼬집)",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 후추 0.1g ; 8원 (후추 취향껏)",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬의 고기 위에 소금과 후추를 뿌려 구움",
+              "timestamp": "00:19"
+            }
+          ]
+        },
+        {
+          "text": "설탕 반 스푼(5g)을 넣어 고기와 함께 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 설탕 5g ; 11원 (설탕 반스푼)",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "설탕을 넣고 고기를 젓가락으로 저어가며 볶음",
+              "timestamp": "00:21"
+            }
+          ]
+        },
+        {
+          "text": "맛술 1스푼(10g), 썰어둔 양파, 김치 100g을 가위로 잘라 넣습니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 맛술 10g : 55원 (맛술 1스푼)",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 김치 100g : 756원",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "맛술을 둘러 넣고 채 썬 양파를 넣은 뒤 김치를 가위로 잘라 넣음",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "고춧가루 1~2스푼(13g), 진간장 1스푼(40g), 굴소스 반 스푼(9g)을 넣고 잘 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 고춧가루 13g : 421원 (고춧가루 1~2스푼)",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 진간장 40g : 51원 (진간장 1스푼)",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 굴소스 9g : 89원 (굴소스 반스푼)",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양념들을 넣고 주걱으로 고루 볶음",
+              "timestamp": "00:30"
+            }
+          ]
+        },
+        {
+          "text": "송송 썬 청양고추(8g)를 고명으로 얹어 마무리합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 청양고추 8g : 64원",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 돼지김치구이 가운데에 썰어둔 청양고추를 올림",
+              "timestamp": "00:33"
+            }
+          ]
+        },
+        {
+          "text": "깻잎 위에 쌈무, 옥수수, 마요네즈 찍은 고기와 김치, 쌈장 찍은 마늘을 올려 싸 먹습니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "깻잎에다가 쌈무랑 옥수수, 마요네즈 찍고 마늘에 쌈장까지 찍어서 한입 싸 먹으면",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "깻잎에 쌈무, 옥수수, 고기, 마요네즈, 쌈장, 마늘을 싸서 먹음",
+              "timestamp": "00:35"
+            }
+          ]
+        },
+        {
+          "text": "고기와 김치를 조금 남겨 가위로 잘게 자른 뒤, 밥과 김가루 5g을 넣고 볶아 볶음밥으로 즐깁니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 김가루 5g : 214원",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "SPEECH",
+              "text": "반드시 좀만 남겨서 밥까지 볶아서 이 특미볶음밥까지 해먹으면",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "남은 재료를 가위로 자르고 밥과 김가루를 넣어 볶는 모습",
+              "timestamp": "00:42"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "대패삼겹살, 양파, 마늘, 밥의 정확한 중량은 영상 자막 및 대사에 표기되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

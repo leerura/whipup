@@ -1,0 +1,404 @@
+{
+  "videoId": "kR77WlHRZrs",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/kR77WlHRZrs",
+  "sourceMetadata": {"sourceTitle":"불맛 가득한 달걀볶음밥! 맛없으면 이상한 거죠~ ㅣ 백종원의 쿠킹로그","sourceChannelName":"백종원 PAIK JONG WON","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.873152Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T10:39:16.683384+00:00",
+    "rawResponse": "{\n  \"title\": \"불맛 나는 달걀 볶음밥\",\n  \"description\": \"파기름과 진간장을 눌려 불맛을 내고 국자로 밥을 고슬고슬하게 볶아내는 백종원표 기본 달걀 볶음밥 레시피입니다.\",\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"밥 1공기 (200g)\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 1공기 (200g)\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"일단 밥~\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"공기에 담긴 밥 1공기를 팬에 투하\",\n          \"timestamp\": \"06:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 1/2컵 (40g)\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 1/2컵 (40g)\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"반 뿌리 정도만 쓰신다고 생각하시면 돼요\",\n          \"timestamp\": \"03:53\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 1/2컵 (40g)\",\n          \"timestamp\": \"03:51\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"달걀 2개 (120g)\",\n      \"displayName\": \"달걀\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"달걀 2개 (120g)\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"달걀 전 2개를 넣을게요\",\n          \"timestamp\": \"03:43\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"달걀 2개 (120g)\",\n          \"timestamp\": \"05:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 4큰술 (40g)\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"4\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 4큰술 (40g)\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 볶을 거니까 네 숟갈\",\n          \"timestamp\": \"04:30\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 4큰술 (40g)\",\n          \"timestamp\": \"04:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 1/2큰술 (5g)\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1/2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 1/2큰술 (5g)\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장을 밥숟갈로 반 숟갈\",\n          \"timestamp\": \"05:49\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 1/2큰술 (5g)\",\n          \"timestamp\": \"05:55\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"MSG 1/4큰술 (2g)\",\n      \"displayName\": \"MSG\",\n      \"amount\": \"1/4\",\n      \"unit\": \"큰술\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"MSG 1/4큰술 (2g)\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥숟갈로 한 3분의 1이나 4분의 1만 넣으세요 넣으실 분들은\",\n          \"timestamp\": \"07:16\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"MSG 1/4큰술 (2g)\",\n          \"timestamp\": \"07:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛소금 (1g)\",\n      \"displayName\": \"맛소금\",\n      \"amount\": \"1\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛소금 (1g)\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛소금 (1g)\",\n          \"timestamp\": \"06:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후춧가루\",\n      \"displayName\": \"후춧가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후춧가루는 뭐 넣으면 좀 나으니까\",\n          \"timestamp\": \"01:02\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후춧가루 약간 있어도 되고 없어도 되는데\",\n          \"timestamp\": \"03:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름\",\n      \"displayName\": \"참기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"포인트로 참기름 없어도 되고 있어도 되는데 이거 있으면 약간 중국으로 가요\",\n          \"timestamp\": \"03:34\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"대파를 반으로 가른 뒤 잘게 송송 썰어 대파 1/2컵(약 40g)을 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"반 뿌리 정도만 쓰신다고 생각하시면 돼요\",\n          \"timestamp\": \"03:53\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파를 잘라주세요\",\n          \"timestamp\": \"03:57\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도마 위에서 대파를 세로로 가른 후 송송 썬다\",\n          \"timestamp\": \"03:47\"\n        }\n      ]\n    },\n    {\n      \"text\": \"프라이팬에 식용유 4큰술(40g)을 두른다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기름을 밥숟갈로 하나 둘 셋, 밥 볶을 거니까 네 숟갈\",\n          \"timestamp\": \"04:25\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 4큰술 (40g)\",\n          \"timestamp\": \"04:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"썰어둔 대파를 팬에 넣고 볶아 파기름을 낸 뒤 파를 한쪽으로 몰아둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"파 기름은 내야 된다고 생각해서 딱 이렇게 해놓고 약간 한쪽으로 파를 몰아 놓고~\",\n          \"timestamp\": \"05:20\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 대파를 넣고 볶은 뒤 주걱으로 한쪽 구석으로 민다\",\n          \"timestamp\": \"05:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬의 빈 공간에 달걀 2개를 깨 넣고 스크램블하듯 저어가며 익힌 후, 파와 함께 한쪽으로 몰아둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"달걀을 파 한쪽으로 몰아놓고 약간 방정맞게 이 상태에서 한 쪽으로 다 몰아 파하고 다\",\n          \"timestamp\": \"05:26\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"달걀 2개 (120g)\",\n          \"timestamp\": \"05:28\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"달걀을 깨뜨려 넣고 주걱으로 빠르게 저어 스크램블을 만든다\",\n          \"timestamp\": \"05:40\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬의 가장 뜨겁게 달궈진 빈 공간에 진간장 1/2큰술(5g)을 둘러 눌어붙여 불향을 내고, 달걀과 파로 간장을 닦아내듯 고루 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장을 밥숟갈로 반 숟갈 제일 달궈져 있는 데다가 쑥 아이고 다 쫄아버리네 졸아야 돼요 냄새만 나면 돼\",\n          \"timestamp\": \"05:49\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장이 까맣게 되죠? 거의 없어지고 그걸 다시 달걀로 갖다 닦아 낸다고 생각하세요\",\n          \"timestamp\": \"06:03\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 1/2큰술 (5g)\",\n          \"timestamp\": \"05:55\"\n        }\n      ]\n    },\n    {\n      \"text\": \"맛소금 1g을 솔솔 뿌려 간을 맞춘다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그다음에 여기에 소금 소금으로 먼저 쑥 놓으시고\",\n          \"timestamp\": \"06:15\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛소금 (1g)\",\n          \"timestamp\": \"06:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 1공기(200g)를 넣고 국자로 꾹꾹 눌러가며 밥알이 뭉치지 않게 잘 풀어가며 비벼준다. (서투르면 불을 끄거나 팬을 내려놓고 비벼도 된다)\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그다음에 밥을 자 다시 올리고 국자 있으면 국자가 한번 테스트 삼아서 국자로 밥을 눌러가며 비벼주세요 불에서 내려놓고 하면 돼요\",\n          \"timestamp\": \"06:21\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 1공기 (200g)\",\n          \"timestamp\": \"06:22\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국자로 밥을 눌러가며 비벼주세요\",\n          \"timestamp\": \"06:35\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥이 골고루 섞이면 다시 불 위에 올려 센 불에서 볶고, 취향에 따라 MSG 1/4큰술(2g)을 넣어 잘 볶아 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"잘 섞은 다음에 이제 본격적으로 마치 처음부터 여기서 내가 했던 것처럼 다시 볶아주세요\",\n          \"timestamp\": \"06:45\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진짜 정통의 맛을 즐기고 싶으면 지금 MSG를 지금 넣으시면 돼요 밥숟갈로 한 3분의 1이나 4분의 1만 넣으세요\",\n          \"timestamp\": \"06:58\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"MSG 1/4큰술 (2g)\",\n          \"timestamp\": \"07:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 볶음밥을 접시에 담아 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"접시를 준비해주세요\",\n          \"timestamp\": \"07:37\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"불맛 나는 달걀 볶음밥 완성\",\n          \"timestamp\": \"07:41\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"프라이팬의 볶음밥을 접시에 덜어 담는다\",\n          \"timestamp\": \"07:40\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"후춧가루와 참기름은 조리 과정 영상 중 직접 팬에 투하하는 장면은 생략되었으나 재료 소개 시 선택 사항으로 언급됨\",\n    \"당근과 양파는 테이블에 준비되어 있었으나 다음 편에서 다루기로 하고 본 레시피 조리에는 사용하지 않음\"\n  ]\n}",
+    "result": {
+      "title": "불맛 나는 달걀 볶음밥",
+      "description": "파기름과 진간장을 눌려 불맛을 내고 국자로 밥을 고슬고슬하게 볶아내는 백종원표 기본 달걀 볶음밥 레시피입니다.",
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "밥 1공기 (200g)",
+          "displayName": "밥",
+          "amount": "1",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 1공기 (200g)",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SPEECH",
+              "text": "일단 밥~",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "공기에 담긴 밥 1공기를 팬에 투하",
+              "timestamp": "06:22"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파 1/2컵 (40g)",
+          "displayName": "대파",
+          "amount": "1/2",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 1/2컵 (40g)",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SPEECH",
+              "text": "반 뿌리 정도만 쓰신다고 생각하시면 돼요",
+              "timestamp": "03:53"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 1/2컵 (40g)",
+              "timestamp": "03:51"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "달걀 2개 (120g)",
+          "displayName": "달걀",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "달걀 2개 (120g)",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SPEECH",
+              "text": "달걀 전 2개를 넣을게요",
+              "timestamp": "03:43"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "달걀 2개 (120g)",
+              "timestamp": "05:28"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "식용유 4큰술 (40g)",
+          "displayName": "식용유",
+          "amount": "4",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 4큰술 (40g)",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밥 볶을 거니까 네 숟갈",
+              "timestamp": "04:30"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 4큰술 (40g)",
+              "timestamp": "04:29"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "진간장 1/2큰술 (5g)",
+          "displayName": "진간장",
+          "amount": "1/2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 1/2큰술 (5g)",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장을 밥숟갈로 반 숟갈",
+              "timestamp": "05:49"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 1/2큰술 (5g)",
+              "timestamp": "05:55"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "MSG 1/4큰술 (2g)",
+          "displayName": "MSG",
+          "amount": "1/4",
+          "unit": "큰술",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "MSG 1/4큰술 (2g)",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밥숟갈로 한 3분의 1이나 4분의 1만 넣으세요 넣으실 분들은",
+              "timestamp": "07:16"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "MSG 1/4큰술 (2g)",
+              "timestamp": "07:04"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "맛소금 (1g)",
+          "displayName": "맛소금",
+          "amount": "1",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛소금 (1g)",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛소금 (1g)",
+              "timestamp": "06:19"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "후춧가루",
+          "displayName": "후춧가루",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후춧가루는 뭐 넣으면 좀 나으니까",
+              "timestamp": "01:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후춧가루 약간 있어도 되고 없어도 되는데",
+              "timestamp": "03:17"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "참기름",
+          "displayName": "참기름",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "포인트로 참기름 없어도 되고 있어도 되는데 이거 있으면 약간 중국으로 가요",
+              "timestamp": "03:34"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "대파를 반으로 가른 뒤 잘게 송송 썰어 대파 1/2컵(약 40g)을 준비한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "반 뿌리 정도만 쓰신다고 생각하시면 돼요",
+              "timestamp": "03:53"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파를 잘라주세요",
+              "timestamp": "03:57"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도마 위에서 대파를 세로로 가른 후 송송 썬다",
+              "timestamp": "03:47"
+            }
+          ]
+        },
+        {
+          "text": "프라이팬에 식용유 4큰술(40g)을 두른다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "기름을 밥숟갈로 하나 둘 셋, 밥 볶을 거니까 네 숟갈",
+              "timestamp": "04:25"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 4큰술 (40g)",
+              "timestamp": "04:29"
+            }
+          ]
+        },
+        {
+          "text": "썰어둔 대파를 팬에 넣고 볶아 파기름을 낸 뒤 파를 한쪽으로 몰아둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "파 기름은 내야 된다고 생각해서 딱 이렇게 해놓고 약간 한쪽으로 파를 몰아 놓고~",
+              "timestamp": "05:20"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 대파를 넣고 볶은 뒤 주걱으로 한쪽 구석으로 민다",
+              "timestamp": "05:19"
+            }
+          ]
+        },
+        {
+          "text": "팬의 빈 공간에 달걀 2개를 깨 넣고 스크램블하듯 저어가며 익힌 후, 파와 함께 한쪽으로 몰아둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "달걀을 파 한쪽으로 몰아놓고 약간 방정맞게 이 상태에서 한 쪽으로 다 몰아 파하고 다",
+              "timestamp": "05:26"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "달걀 2개 (120g)",
+              "timestamp": "05:28"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "달걀을 깨뜨려 넣고 주걱으로 빠르게 저어 스크램블을 만든다",
+              "timestamp": "05:40"
+            }
+          ]
+        },
+        {
+          "text": "팬의 가장 뜨겁게 달궈진 빈 공간에 진간장 1/2큰술(5g)을 둘러 눌어붙여 불향을 내고, 달걀과 파로 간장을 닦아내듯 고루 섞어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "간장을 밥숟갈로 반 숟갈 제일 달궈져 있는 데다가 쑥 아이고 다 쫄아버리네 졸아야 돼요 냄새만 나면 돼",
+              "timestamp": "05:49"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장이 까맣게 되죠? 거의 없어지고 그걸 다시 달걀로 갖다 닦아 낸다고 생각하세요",
+              "timestamp": "06:03"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 1/2큰술 (5g)",
+              "timestamp": "05:55"
+            }
+          ]
+        },
+        {
+          "text": "맛소금 1g을 솔솔 뿌려 간을 맞춘다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그다음에 여기에 소금 소금으로 먼저 쑥 놓으시고",
+              "timestamp": "06:15"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛소금 (1g)",
+              "timestamp": "06:19"
+            }
+          ]
+        },
+        {
+          "text": "밥 1공기(200g)를 넣고 국자로 꾹꾹 눌러가며 밥알이 뭉치지 않게 잘 풀어가며 비벼준다. (서투르면 불을 끄거나 팬을 내려놓고 비벼도 된다)",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그다음에 밥을 자 다시 올리고 국자 있으면 국자가 한번 테스트 삼아서 국자로 밥을 눌러가며 비벼주세요 불에서 내려놓고 하면 돼요",
+              "timestamp": "06:21"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 1공기 (200g)",
+              "timestamp": "06:22"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국자로 밥을 눌러가며 비벼주세요",
+              "timestamp": "06:35"
+            }
+          ]
+        },
+        {
+          "text": "밥이 골고루 섞이면 다시 불 위에 올려 센 불에서 볶고, 취향에 따라 MSG 1/4큰술(2g)을 넣어 잘 볶아 마무리한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "잘 섞은 다음에 이제 본격적으로 마치 처음부터 여기서 내가 했던 것처럼 다시 볶아주세요",
+              "timestamp": "06:45"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진짜 정통의 맛을 즐기고 싶으면 지금 MSG를 지금 넣으시면 돼요 밥숟갈로 한 3분의 1이나 4분의 1만 넣으세요",
+              "timestamp": "06:58"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "MSG 1/4큰술 (2g)",
+              "timestamp": "07:04"
+            }
+          ]
+        },
+        {
+          "text": "완성된 볶음밥을 접시에 담아 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "접시를 준비해주세요",
+              "timestamp": "07:37"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "불맛 나는 달걀 볶음밥 완성",
+              "timestamp": "07:41"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "프라이팬의 볶음밥을 접시에 덜어 담는다",
+              "timestamp": "07:40"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "후춧가루와 참기름은 조리 과정 영상 중 직접 팬에 투하하는 장면은 생략되었으나 재료 소개 시 선택 사항으로 언급됨",
+        "당근과 양파는 테이블에 준비되어 있었으나 다음 편에서 다루기로 하고 본 레시피 조리에는 사용하지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

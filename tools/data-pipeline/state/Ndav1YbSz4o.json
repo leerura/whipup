@@ -1,0 +1,195 @@
+{
+  "videoId": "Ndav1YbSz4o",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/Ndav1YbSz4o",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T08:06:49.950544+00:00",
+    "rawResponse": "{\n  \"title\": \"김풍 작가님의 전자레인지 라면\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"계란 노른자\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 노른자를 터트리고\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 노른자 터트리고\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"용기에 계란 1개를 깨뜨려 넣음\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"라면\",\n      \"displayName\": \"스낵면 (라면)\",\n      \"amount\": \"1\",\n      \"unit\": \"봉지\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"라면\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"라면\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"스낵면 라면 면을 용기에 넣음\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"스프\",\n      \"displayName\": \"라면 스프\",\n      \"amount\": \"1\",\n      \"unit\": \"봉지\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"스프\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스프\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"라면 분말스프를 면 위에 털어 넣음\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 450ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"450\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 450ml를 넣어주고\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 450ml 넣어주고\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계량된 물 450ml를 부음\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"전자레인지용 용기에 계란을 깨 넣고 젓가락으로 노른자를 터뜨린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 노른자를 터트리고\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"용기에 계란을 깨 넣고 젓가락으로 노른자를 찔러 터뜨림\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"용기에 라면 면과 스프를 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"라면 스프\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"용기에 면을 얹고 라면 스프를 뿌림\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 450ml를 부어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 450ml를 넣어주고\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 450ml 넣어주고\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뚜껑을 덮고 전자레인지에 5분간 돌려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"전자레인지 5분 돌려주면 끝이에요\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"전자레인지 5분 끝이에요\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"용기 뚜껑을 닫고 전자레인지에 돌림\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "김풍 작가님의 전자레인지 라면",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "계란 노른자",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 노른자를 터트리고",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 노른자 터트리고",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "용기에 계란 1개를 깨뜨려 넣음",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "라면",
+          "displayName": "스낵면 (라면)",
+          "amount": "1",
+          "unit": "봉지",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "라면",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "라면",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "스낵면 라면 면을 용기에 넣음",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "스프",
+          "displayName": "라면 스프",
+          "amount": "1",
+          "unit": "봉지",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "스프",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스프",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "라면 분말스프를 면 위에 털어 넣음",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "물 450ml",
+          "displayName": "물",
+          "amount": "450",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 450ml를 넣어주고",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 450ml 넣어주고",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계량된 물 450ml를 부음",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        }
+      ],
+      "steps": [
+        {
+          "text": "전자레인지용 용기에 계란을 깨 넣고 젓가락으로 노른자를 터뜨린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 노른자를 터트리고",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "용기에 계란을 깨 넣고 젓가락으로 노른자를 찔러 터뜨림",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "용기에 라면 면과 스프를 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "라면 스프",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "용기에 면을 얹고 라면 스프를 뿌림",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "물 450ml를 부어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 450ml를 넣어주고",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 450ml 넣어주고",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "뚜껑을 덮고 전자레인지에 5분간 돌려준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "전자레인지 5분 돌려주면 끝이에요",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "전자레인지 5분 끝이에요",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "용기 뚜껑을 닫고 전자레인지에 돌림",
+              "timestamp": "00:08"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

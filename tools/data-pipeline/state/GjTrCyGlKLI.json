@@ -1,0 +1,150 @@
+{
+  "videoId": "GjTrCyGlKLI",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/GjTrCyGlKLI",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:42:46.209436+00:00",
+    "rawResponse": "{\n  \"title\": \"초간단 신라비빔면\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"신라면 (면)\",\n      \"displayName\": \"신라면 면\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"입 맛 없을때 먹는 초간단 신라비빔면\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"신라면 봉지를 보여준 후 끓는 물에 면을 넣음\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비에 물을 붓고 끓임\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"찬 물에 씻으면 다시 탱글해짐\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"신라면 스프 절반정도\",\n      \"displayName\": \"신라면 스프\",\n      \"amount\": \"0.5\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"신라면 스프만 절반정도 넣어서\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"삶아서 헹군 면 위에 신라면 분말스프를 절반 정도 뿌림\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"끓는 물에 신라면 면을 넣고 꼬들면보다 면을 푹 익혀서(불려서) 끓여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"꼬들면 보단 면을 불려서 끓여주세요\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"끓는 물에 면을 넣고 집게로 저으며 푹 익힘\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삶은 면을 찬물에 헹궈 탱글하게 식힌 뒤 물기를 뺍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"찬 물에 씻으면 다시 탱글해짐\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"면을 찬물에 헹궈 씻어냄\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 담은 면 위에 신라면 분말스프를 절반 정도 넣습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"신라면 스프만 절반정도 넣어서\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"접시에 담긴 면 위에 신라면 스프를 절반 정도 뿌림\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"스프와 면을 골고루 잘 비벼줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"비벼주세요 이거 진짜 맛있어요\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"젓가락으로 면과 스프를 골고루 비빔\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "초간단 신라비빔면",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "신라면 (면)",
+          "displayName": "신라면 면",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "입 맛 없을때 먹는 초간단 신라비빔면",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "신라면 봉지를 보여준 후 끓는 물에 면을 넣음",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "물",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비에 물을 붓고 끓임",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "찬 물에 씻으면 다시 탱글해짐",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "신라면 스프 절반정도",
+          "displayName": "신라면 스프",
+          "amount": "0.5",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "신라면 스프만 절반정도 넣어서",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "삶아서 헹군 면 위에 신라면 분말스프를 절반 정도 뿌림",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        }
+      ],
+      "steps": [
+        {
+          "text": "끓는 물에 신라면 면을 넣고 꼬들면보다 면을 푹 익혀서(불려서) 끓여줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "꼬들면 보단 면을 불려서 끓여주세요",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "끓는 물에 면을 넣고 집게로 저으며 푹 익힘",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "삶은 면을 찬물에 헹궈 탱글하게 식힌 뒤 물기를 뺍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "찬 물에 씻으면 다시 탱글해짐",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "면을 찬물에 헹궈 씻어냄",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 담은 면 위에 신라면 분말스프를 절반 정도 넣습니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "신라면 스프만 절반정도 넣어서",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "접시에 담긴 면 위에 신라면 스프를 절반 정도 뿌림",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "스프와 면을 골고루 잘 비벼줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "비벼주세요 이거 진짜 맛있어요",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "젓가락으로 면과 스프를 골고루 비빔",
+              "timestamp": "00:09"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

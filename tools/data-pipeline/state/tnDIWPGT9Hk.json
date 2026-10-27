@@ -1,0 +1,108 @@
+{
+  "videoId": "tnDIWPGT9Hk",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/tnDIWPGT9Hk",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T09:58:19.844982+00:00",
+    "rawResponse": "{\n  \"title\": \"Giant Spicy Ramyeon Mukbang\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"Spicy ramen noodles\",\n      \"displayName\": \"Spicy ramen noodles\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Large mound of sauced spicy noodles being eaten on a platter\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"Boiled eggs\",\n      \"displayName\": \"Boiled eggs\",\n      \"amount\": \"4\",\n      \"unit\": \"halves\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Four boiled egg halves garnished across the front of the noodles\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"Kimchi\",\n      \"displayName\": \"Kimchi\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Piece of spicy cabbage kimchi picked up and eaten\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"Mini sausages\",\n      \"displayName\": \"Mini sausages\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Cooked mini sausages with slit ends arranged along the rim of the platter\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"Green onion\",\n      \"displayName\": \"Green onion\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Sliced green onions placed next to the boiled eggs\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [],\n  \"unresolved\": [\n    \"The video is an ASMR mukbang (eating show) and does not show, narrate, or describe any cooking preparation steps, measurements, or recipe instructions.\"\n  ]\n}",
+    "result": {
+      "title": "Giant Spicy Ramyeon Mukbang",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "Spicy ramen noodles",
+          "displayName": "Spicy ramen noodles",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Large mound of sauced spicy noodles being eaten on a platter",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "Boiled eggs",
+          "displayName": "Boiled eggs",
+          "amount": "4",
+          "unit": "halves",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Four boiled egg halves garnished across the front of the noodles",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "Kimchi",
+          "displayName": "Kimchi",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Piece of spicy cabbage kimchi picked up and eaten",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "Mini sausages",
+          "displayName": "Mini sausages",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Cooked mini sausages with slit ends arranged along the rim of the platter",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "Green onion",
+          "displayName": "Green onion",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Sliced green onions placed next to the boiled eggs",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        }
+      ],
+      "steps": [],
+      "unresolved": [
+        "The video is an ASMR mukbang (eating show) and does not show, narrate, or describe any cooking preparation steps, measurements, or recipe instructions."
+      ]
+    },
+    "structuralErrors": [
+      "steps must be an array of objects with non-empty text"
+    ],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

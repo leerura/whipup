@@ -1,0 +1,371 @@
+{
+  "videoId": "rhD1mDKFDqE",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/rhD1mDKFDqE",
+  "sourceMetadata": {"sourceTitle":"[스팸 고추장찌개] 밥한공기 추가요~ | 세상쉬운 고추장찌개 Spam Gochujang stew","sourceChannelName":"오픈키친 OpenKitchen","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.925793Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T10:39:52.466010+00:00",
+    "rawResponse": "{\n  \"title\": \"스팸 고추장찌개\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"감자 1개\",\n      \"displayName\": \"감자\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"감자 1개 Potato\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/4개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/4\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/4개 Onion\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"애호박 1/4개\",\n      \"displayName\": \"애호박\",\n      \"amount\": \"1/4\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"애호박 1/4개 Zucchini\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 1토막\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"토막\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 1토막 Green onion\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 1~2개\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"1~2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 1~2개 Chungyang pepper\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"스팸 200g\",\n      \"displayName\": \"스팸\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스팸 200g Spam\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 2T\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"2\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 2T GochuJang (Red pepper paste)\",\n          \"timestamp\": \"01:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 500ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"500\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 500ml Water\",\n          \"timestamp\": \"01:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"액젓 1T\",\n      \"displayName\": \"액젓\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"액젓 1T Fish sauce\",\n          \"timestamp\": \"01:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 2T\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"2\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 2T Red pepper powder\",\n          \"timestamp\": \"01:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1/2T\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1/2\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1/2T Sugar\",\n          \"timestamp\": \"02:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1T\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 1T Chopped garlic\",\n          \"timestamp\": \"02:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후춧가루\",\n      \"displayName\": \"후춧가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후춧가루 Black pepper\",\n          \"timestamp\": \"02:28\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"감자, 양파, 애호박, 대파, 청양고추를 먹기 좋은 크기로 자른다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"채소들은 먹기좋게 잘라주세요\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"감자, 양파, 애호박, 대파, 청양고추를 썬다\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"스팸의 겉도는 기름을 한 번 씻어낸 뒤 깍둑썰기한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"스팸은 겉도는 기름을 한번 씻어줬어요\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"스팸을 깍둑썰기한다\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 썬 스팸을 넣고 스팸에서 기름이 나올 수 있게 노릇하게 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"스팸에서 기름이 나올 수 있게 노릇하게 볶아주세요\",\n          \"timestamp\": \"01:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고추장 2T를 넣고 스팸 기름에 1분 정도 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장은 기름에 볶아주면 더 맛있어요\",\n          \"timestamp\": \"01:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"스팸기름에 1분정도 볶아주세요\",\n          \"timestamp\": \"01:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 500ml를 붓고 섞는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 500ml Water\",\n          \"timestamp\": \"01:34\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비에 물을 붓고 저어준다\",\n          \"timestamp\": \"01:35\"\n        }\n      ]\n    },\n    {\n      \"text\": \"액젓 1T와 고춧가루 2T를 넣고 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"액젓 1T 고춧가루 2T\",\n          \"timestamp\": \"01:40\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"액젓과 고춧가루를 넣고 섞어준다\",\n          \"timestamp\": \"01:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"감자를 먼저 넣고 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"감자를 먼저 넣고 끓여주세요\",\n          \"timestamp\": \"01:49\"\n        }\n      ]\n    },\n    {\n      \"text\": \"감자가 어느 정도 익으면 양파와 애호박을 넣어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"감자가 어느정도 익으면 양파와 호박을 넣어주세요\",\n          \"timestamp\": \"02:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"설탕 1/2T를 간을 보며 기호에 맞게 넣어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1/2T Sugar\",\n          \"timestamp\": \"02:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕은 간을 보며 기호에 맞게 넣어주세요\",\n          \"timestamp\": \"02:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"다진 마늘 1T와 후춧가루를 넣고 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 1T 후춧가루\",\n          \"timestamp\": \"02:28\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"다진 마늘과 후춧가루를 넣고 섞는다\",\n          \"timestamp\": \"02:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마지막으로 대파와 청양고추를 넣고 불을 끈다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 대파와 청양고추를 넣고 불을 끄세요\",\n          \"timestamp\": \"02:35\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "스팸 고추장찌개",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "감자 1개",
+          "displayName": "감자",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "감자 1개 Potato",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파 1/4개",
+          "displayName": "양파",
+          "amount": "1/4",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/4개 Onion",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "애호박 1/4개",
+          "displayName": "애호박",
+          "amount": "1/4",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "애호박 1/4개 Zucchini",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "대파 1토막",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "토막",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 1토막 Green onion",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "청양고추 1~2개",
+          "displayName": "청양고추",
+          "amount": "1~2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 1~2개 Chungyang pepper",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "스팸 200g",
+          "displayName": "스팸",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스팸 200g Spam",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "고추장 2T",
+          "displayName": "고추장",
+          "amount": "2",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 2T GochuJang (Red pepper paste)",
+              "timestamp": "01:20"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "물 500ml",
+          "displayName": "물",
+          "amount": "500",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 500ml Water",
+              "timestamp": "01:34"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "액젓 1T",
+          "displayName": "액젓",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "액젓 1T Fish sauce",
+              "timestamp": "01:40"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "고춧가루 2T",
+          "displayName": "고춧가루",
+          "amount": "2",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 2T Red pepper powder",
+              "timestamp": "01:40"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "설탕 1/2T",
+          "displayName": "설탕",
+          "amount": "1/2",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1/2T Sugar",
+              "timestamp": "02:23"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "다진마늘 1T",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 1T Chopped garlic",
+              "timestamp": "02:28"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "후춧가루",
+          "displayName": "후춧가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후춧가루 Black pepper",
+              "timestamp": "02:28"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "감자, 양파, 애호박, 대파, 청양고추를 먹기 좋은 크기로 자른다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "채소들은 먹기좋게 잘라주세요",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "감자, 양파, 애호박, 대파, 청양고추를 썬다",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "스팸의 겉도는 기름을 한 번 씻어낸 뒤 깍둑썰기한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "스팸은 겉도는 기름을 한번 씻어줬어요",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "스팸을 깍둑썰기한다",
+              "timestamp": "00:48"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 썬 스팸을 넣고 스팸에서 기름이 나올 수 있게 노릇하게 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "스팸에서 기름이 나올 수 있게 노릇하게 볶아주세요",
+              "timestamp": "01:11"
+            }
+          ]
+        },
+        {
+          "text": "고추장 2T를 넣고 스팸 기름에 1분 정도 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고추장은 기름에 볶아주면 더 맛있어요",
+              "timestamp": "01:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "스팸기름에 1분정도 볶아주세요",
+              "timestamp": "01:26"
+            }
+          ]
+        },
+        {
+          "text": "물 500ml를 붓고 섞는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 500ml Water",
+              "timestamp": "01:34"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비에 물을 붓고 저어준다",
+              "timestamp": "01:35"
+            }
+          ]
+        },
+        {
+          "text": "액젓 1T와 고춧가루 2T를 넣고 섞어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "액젓 1T 고춧가루 2T",
+              "timestamp": "01:40"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "액젓과 고춧가루를 넣고 섞어준다",
+              "timestamp": "01:41"
+            }
+          ]
+        },
+        {
+          "text": "감자를 먼저 넣고 끓여준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "감자를 먼저 넣고 끓여주세요",
+              "timestamp": "01:49"
+            }
+          ]
+        },
+        {
+          "text": "감자가 어느 정도 익으면 양파와 애호박을 넣어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "감자가 어느정도 익으면 양파와 호박을 넣어주세요",
+              "timestamp": "02:05"
+            }
+          ]
+        },
+        {
+          "text": "설탕 1/2T를 간을 보며 기호에 맞게 넣어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1/2T Sugar",
+              "timestamp": "02:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕은 간을 보며 기호에 맞게 넣어주세요",
+              "timestamp": "02:23"
+            }
+          ]
+        },
+        {
+          "text": "다진 마늘 1T와 후춧가루를 넣고 끓인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 1T 후춧가루",
+              "timestamp": "02:28"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "다진 마늘과 후춧가루를 넣고 섞는다",
+              "timestamp": "02:29"
+            }
+          ]
+        },
+        {
+          "text": "마지막으로 대파와 청양고추를 넣고 불을 끈다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 대파와 청양고추를 넣고 불을 끄세요",
+              "timestamp": "02:35"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

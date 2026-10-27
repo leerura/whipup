@@ -1,0 +1,320 @@
+{
+  "videoId": "bxctEoHp2uo",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/bxctEoHp2uo",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:50:38.823525+00:00",
+    "rawResponse": "{\n  \"title\": \"김치덮밥\",\n  \"description\": \"집에 먹을 게 김치밖에 없을 때 고소하게 만들어 먹는 김치덮밥 레시피입니다.\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"식용유 두 스푼\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 식용유 두 스푼에\",\n          \"timestamp\": \"0:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 식용유 두 스푼에\",\n          \"timestamp\": \"0:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 한 줌 정도\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"줌 정도\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파 한 줌 정도 썰어 넣어 볶아줘\",\n          \"timestamp\": \"0:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파 한 줌 정도 썰어 넣어 볶아줘\",\n          \"timestamp\": \"0:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치 두 컵\",\n      \"displayName\": \"김치\",\n      \"amount\": \"2\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치 두 컵\",\n          \"timestamp\": \"0:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김치 두 컵\",\n          \"timestamp\": \"0:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 한 스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장, 참치액, 고춧가루, 물엿은 한 스푼씩 넣어\",\n          \"timestamp\": \"0:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"진간장, 참치액,\",\n          \"timestamp\": \"0:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치액 한 스푼\",\n      \"displayName\": \"참치액\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장, 참치액, 고춧가루, 물엿은 한 스푼씩 넣어\",\n          \"timestamp\": \"0:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"진간장, 참치액,\",\n          \"timestamp\": \"0:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 한 스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장, 참치액, 고춧가루, 물엿은 한 스푼씩 넣어\",\n          \"timestamp\": \"0:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루, 물엿은 한 스푼씩 넣어\",\n          \"timestamp\": \"0:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물엿 한 스푼\",\n      \"displayName\": \"물엿\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장, 참치액, 고춧가루, 물엿은 한 스푼씩 넣어\",\n          \"timestamp\": \"0:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루, 물엿은 한 스푼씩 넣어\",\n          \"timestamp\": \"0:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 100ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"100\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 100ml 붓고\",\n          \"timestamp\": \"0:15\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 100ml 붓고\",\n          \"timestamp\": \"0:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 두 바퀴\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"2\",\n      \"unit\": \"바퀴\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름 두 바퀴 둘러주면\",\n          \"timestamp\": \"0:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참기름 두 바퀴 둘러주면\",\n          \"timestamp\": \"0:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 김치볶음을 밥 위에 올려 김치덮밥으로 완성함\",\n          \"timestamp\": \"0:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란후라이\",\n      \"displayName\": \"계란후라이\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥과 김치 위에 계란후라이를 얹음\",\n          \"timestamp\": \"0:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"덮밥 위에 통깨가 뿌려져 있음\",\n          \"timestamp\": \"0:01\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 식용유 2스푼을 두르고 썬 대파 한 줌 정도를 넣어 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 식용유 두 스푼에 대파 한 줌 정도 썰어 넣어 볶아줘\",\n          \"timestamp\": \"0:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 식용유 두 스푼에 대파 한 줌 정도 썰어 넣어 볶아줘\",\n          \"timestamp\": \"0:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파 향이 올라오면 김치 2컵과 진간장 1스푼, 참치액 1스푼, 고춧가루 1스푼, 물엿 1스푼을 넣고 한 번 더 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파 향이 올라오면 김치 두 컵 그리고 진간장, 참치액, 고춧가루, 물엿은 한 스푼씩 넣어 한 번 더 볶아줄 거야\",\n          \"timestamp\": \"0:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파 향이 올라오면 김치 두 컵 그리고 진간장, 참치액, 고춧가루, 물엿은 한 스푼씩 넣어 한 번 더 볶아줄 거야\",\n          \"timestamp\": \"0:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"센 불에서 볶다가 물 100ml를 붓고 뚜껑을 덮어 조금 졸여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"센 불에서 볶다가 물 100ml 붓고 뚜껑 덮어 조금 졸여주면 완성!\",\n          \"timestamp\": \"0:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"센 불에서 볶다가 물 100ml 붓고 뚜껑 덮어 조금 졸여주면 완성!\",\n          \"timestamp\": \"0:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 끄고 참기름을 두 바퀴 둘러 섞어준 뒤, 밥 위에 올리고 취향에 따라 계란후라이와 통깨를 곁들여 김치덮밥을 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불 끄고 참기름 두 바퀴 둘러주면\",\n          \"timestamp\": \"0:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불 끄고 참기름 두 바퀴 둘러주면\",\n          \"timestamp\": \"0:18\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 김치볶음, 계란후라이를 올리고 참기름과 통깨를 뿌려 서빙\",\n          \"timestamp\": \"0:00\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "김치덮밥",
+      "description": "집에 먹을 게 김치밖에 없을 때 고소하게 만들어 먹는 김치덮밥 레시피입니다.",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "식용유 두 스푼",
+          "displayName": "식용유",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 식용유 두 스푼에",
+              "timestamp": "0:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 식용유 두 스푼에",
+              "timestamp": "0:05"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파 한 줌 정도",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "줌 정도",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파 한 줌 정도 썰어 넣어 볶아줘",
+              "timestamp": "0:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대파 한 줌 정도 썰어 넣어 볶아줘",
+              "timestamp": "0:06"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "김치 두 컵",
+          "displayName": "김치",
+          "amount": "2",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김치 두 컵",
+              "timestamp": "0:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "김치 두 컵",
+              "timestamp": "0:08"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "진간장 한 스푼",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "진간장, 참치액, 고춧가루, 물엿은 한 스푼씩 넣어",
+              "timestamp": "0:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "진간장, 참치액,",
+              "timestamp": "0:10"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "참치액 한 스푼",
+          "displayName": "참치액",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "진간장, 참치액, 고춧가루, 물엿은 한 스푼씩 넣어",
+              "timestamp": "0:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "진간장, 참치액,",
+              "timestamp": "0:10"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "고춧가루 한 스푼",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "진간장, 참치액, 고춧가루, 물엿은 한 스푼씩 넣어",
+              "timestamp": "0:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루, 물엿은 한 스푼씩 넣어",
+              "timestamp": "0:11"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "물엿 한 스푼",
+          "displayName": "물엿",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "진간장, 참치액, 고춧가루, 물엿은 한 스푼씩 넣어",
+              "timestamp": "0:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루, 물엿은 한 스푼씩 넣어",
+              "timestamp": "0:11"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "물 100ml",
+          "displayName": "물",
+          "amount": "100",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 100ml 붓고",
+              "timestamp": "0:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 100ml 붓고",
+              "timestamp": "0:15"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "참기름 두 바퀴",
+          "displayName": "참기름",
+          "amount": "2",
+          "unit": "바퀴",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "참기름 두 바퀴 둘러주면",
+              "timestamp": "0:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "참기름 두 바퀴 둘러주면",
+              "timestamp": "0:18"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 김치볶음을 밥 위에 올려 김치덮밥으로 완성함",
+              "timestamp": "0:01"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "계란후라이",
+          "displayName": "계란후라이",
+          "amount": "1",
+          "unit": "개",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥과 김치 위에 계란후라이를 얹음",
+              "timestamp": "0:01"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "덮밥 위에 통깨가 뿌려져 있음",
+              "timestamp": "0:01"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 식용유 2스푼을 두르고 썬 대파 한 줌 정도를 넣어 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 식용유 두 스푼에 대파 한 줌 정도 썰어 넣어 볶아줘",
+              "timestamp": "0:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 식용유 두 스푼에 대파 한 줌 정도 썰어 넣어 볶아줘",
+              "timestamp": "0:05"
+            }
+          ]
+        },
+        {
+          "text": "대파 향이 올라오면 김치 2컵과 진간장 1스푼, 참치액 1스푼, 고춧가루 1스푼, 물엿 1스푼을 넣고 한 번 더 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파 향이 올라오면 김치 두 컵 그리고 진간장, 참치액, 고춧가루, 물엿은 한 스푼씩 넣어 한 번 더 볶아줄 거야",
+              "timestamp": "0:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대파 향이 올라오면 김치 두 컵 그리고 진간장, 참치액, 고춧가루, 물엿은 한 스푼씩 넣어 한 번 더 볶아줄 거야",
+              "timestamp": "0:08"
+            }
+          ]
+        },
+        {
+          "text": "센 불에서 볶다가 물 100ml를 붓고 뚜껑을 덮어 조금 졸여준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "센 불에서 볶다가 물 100ml 붓고 뚜껑 덮어 조금 졸여주면 완성!",
+              "timestamp": "0:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "센 불에서 볶다가 물 100ml 붓고 뚜껑 덮어 조금 졸여주면 완성!",
+              "timestamp": "0:14"
+            }
+          ]
+        },
+        {
+          "text": "불을 끄고 참기름을 두 바퀴 둘러 섞어준 뒤, 밥 위에 올리고 취향에 따라 계란후라이와 통깨를 곁들여 김치덮밥을 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "불 끄고 참기름 두 바퀴 둘러주면",
+              "timestamp": "0:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "불 끄고 참기름 두 바퀴 둘러주면",
+              "timestamp": "0:18"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 김치볶음, 계란후라이를 올리고 참기름과 통깨를 뿌려 서빙",
+              "timestamp": "0:00"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

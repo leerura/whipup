@@ -1,0 +1,382 @@
+{
+  "videoId": "7DVVgbC_uTY",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/7DVVgbC_uTY",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:43:43.185029+00:00",
+    "rawResponse": "{\n  \"title\": \"기사식당 스타일 제육볶음\",\n  \"description\": \"식초로 잡내를 완벽히 잡고 센 불에서 빠르게 볶아내는 수분 없는 기사식당 스타일의 제육볶음 레시피입니다.\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"불고기용 돼지고기(300g)\",\n      \"displayName\": \"불고기용 돼지고기\",\n      \"amount\": \"300\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불고기용 돼지고기(300g)를 먹기 좋은\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불고기용 돼지고기를 먹기 좋은 한 입 크기가 나오도록 썰어주고\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 설탕 1스푼과\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 설탕 1스푼과\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진 마늘을 1스푼 넣고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"잡내 잡기에 그렇게 좋다는 다진 마늘을 1스푼 넣고\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 넉넉하게\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추도 넉넉하게 뿌려줍니다.\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추도 넉넉하게 뿌려줍니다.\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식초 1스푼\",\n      \"displayName\": \"식초\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"식초를 1스푼 넣어줍니다.\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 히든 카드인 식초를 1스푼 넣어줍니다.\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 넉넉하게\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 팬에 식용유를 넉넉하게 둘러주고\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬에 식용유를 넉넉하게 둘러주고\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파와 대파도 넣어주고\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파와 대파도 넣어주고\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파와 대파도 넣어주고\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파와 대파도 넣어주고\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 1/2스푼 같은 1스푼\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장을 1/2스푼 같은 1스푼 넣어주고\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 여기에 고추장을 1/2스푼 같은 1스푼 넣어주고\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1스푼\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마법의 굴소스 1스푼과\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마법의 굴소스 1스푼과\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루도 1스푼 넣어줍니다.\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"시벌건 색감을 위해 고춧가루도 1스푼 넣어줍니다.\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 한바퀴\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"바퀴\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 참기름을 한바퀴 둘러주거나\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 참기름을 한바퀴 둘러주거나\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"통깨도 뿌려주면 마 비주얼도 기가 막힙니다.\",\n          \"timestamp\": \"00:56\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"통깨도 뿌려주면 마 비주얼도 기가 막힙니다.\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"불고기용 돼지고기 300g을 먹기 좋은 한 입 크기로 썰어 볼에 담는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불고기용 돼지고기를 먹기 좋은 한 입 크기가 나오도록 썰어주고\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"돼지고기를 칼로 썰어 볼에 담는 모습\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"돼지고기에 설탕 1스푼, 다진 마늘 1스푼, 후추를 넉넉하게 뿌리고 식초 1스푼을 넣은 후 골고루 잘 버무려 밑간한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 설탕 1스푼과 잡내 잡기에 그렇게 좋다는 다진 마늘을 1스푼 넣고 후추도 넉넉하게 뿌려줍니다. 마지막으로 히든 카드인 식초를 1스푼 넣어줍니다. 그러고 쪼물딱 쪼물딱 해주면서 골고루 잘 섞어줍니다.\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"돼지고기에 양념 재료들을 넣고 장갑 낀 손으로 주물러 섞는 모습\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유를 넉넉하게 두르고 밑간한 돼지고기를 올려 바로 먹어도 될 정도로 앞뒤로 구워준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬에 식용유를 넉넉하게 둘러주고 작업을 해둔 돼지고기를 다 올려줍니다. 그러고 바로 먹어도 될 정도로 고기를 앞뒤로 구워줍니다.\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 기름을 두르고 고기를 올려 집게로 뒤집으며 굽는 모습\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"구워진 고기 위에 썰어둔 양파와 대파를 넣고, 고추장 1/2스푼 같은 1스푼, 굴소스 1스푼, 고춧가루 1스푼을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파와 대파도 넣어주고 이제 여기에 고추장을 1/2스푼 같은 1스푼 넣어주고 마법의 굴소스 1스푼과 시벌건 색감을 위해 고춧가루도 1스푼 넣어줍니다.\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"고기 위에 양파, 대파를 올리고 고추장, 굴소스, 고춧가루를 차례로 넣는 모습\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"센 불에서 양념을 풀어주며 채소에서 수분이 나오지 않도록 빠르게 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 센 불에서 양념을 풀어주면서 다 같이 볶아줍니다. ... 그러고 센 불에서 빠르게 볶아주게 되면 양파와 대파에서도 수분이 나올 시간이 없기 때문에 수분 없는 기사식당 스타일의 제육볶음이 됩니다.\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"주걱으로 센 불에서 재료들을 빠르게 볶아내는 모습\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 제육볶음에 참기름 한 바퀴를 두르고 통깨를 뿌려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 참기름을 한바퀴 둘러주거나 통깨도 뿌려주면 마 비주얼도 기가 막힙니다.\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성 접시에 담긴 제육볶음에 참기름과 통깨가 뿌려져 있는 모습\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"양파와 대파의 구체적인 계량(중량이나 개수)은 영상에서 언급되지 않았습니다.\"\n  ]\n}",
+    "result": {
+      "title": "기사식당 스타일 제육볶음",
+      "description": "식초로 잡내를 완벽히 잡고 센 불에서 빠르게 볶아내는 수분 없는 기사식당 스타일의 제육볶음 레시피입니다.",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "불고기용 돼지고기(300g)",
+          "displayName": "불고기용 돼지고기",
+          "amount": "300",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "불고기용 돼지고기(300g)를 먹기 좋은",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "SPEECH",
+              "text": "불고기용 돼지고기를 먹기 좋은 한 입 크기가 나오도록 썰어주고",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "설탕 1스푼",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 설탕 1스푼과",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 설탕 1스푼과",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "다진 마늘 1스푼",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다진 마늘을 1스푼 넣고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "잡내 잡기에 그렇게 좋다는 다진 마늘을 1스푼 넣고",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "후추 넉넉하게",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "후추도 넉넉하게 뿌려줍니다.",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추도 넉넉하게 뿌려줍니다.",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "식초 1스푼",
+          "displayName": "식초",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "식초를 1스푼 넣어줍니다.",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 히든 카드인 식초를 1스푼 넣어줍니다.",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "식용유 넉넉하게",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 팬에 식용유를 넉넉하게 둘러주고",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 팬에 식용유를 넉넉하게 둘러주고",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파와 대파도 넣어주고",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파와 대파도 넣어주고",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파와 대파도 넣어주고",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파와 대파도 넣어주고",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "고추장 1/2스푼 같은 1스푼",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고추장을 1/2스푼 같은 1스푼 넣어주고",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 여기에 고추장을 1/2스푼 같은 1스푼 넣어주고",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "굴소스 1스푼",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마법의 굴소스 1스푼과",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마법의 굴소스 1스푼과",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "고춧가루 1스푼",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루도 1스푼 넣어줍니다.",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "시벌건 색감을 위해 고춧가루도 1스푼 넣어줍니다.",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "참기름 한바퀴",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "바퀴",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 참기름을 한바퀴 둘러주거나",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 참기름을 한바퀴 둘러주거나",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "통깨도 뿌려주면 마 비주얼도 기가 막힙니다.",
+              "timestamp": "00:56"
+            },
+            {
+              "type": "SPEECH",
+              "text": "통깨도 뿌려주면 마 비주얼도 기가 막힙니다.",
+              "timestamp": "00:56"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "불고기용 돼지고기 300g을 먹기 좋은 한 입 크기로 썰어 볼에 담는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "불고기용 돼지고기를 먹기 좋은 한 입 크기가 나오도록 썰어주고",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "돼지고기를 칼로 썰어 볼에 담는 모습",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "돼지고기에 설탕 1스푼, 다진 마늘 1스푼, 후추를 넉넉하게 뿌리고 식초 1스푼을 넣은 후 골고루 잘 버무려 밑간한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 설탕 1스푼과 잡내 잡기에 그렇게 좋다는 다진 마늘을 1스푼 넣고 후추도 넉넉하게 뿌려줍니다. 마지막으로 히든 카드인 식초를 1스푼 넣어줍니다. 그러고 쪼물딱 쪼물딱 해주면서 골고루 잘 섞어줍니다.",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "돼지고기에 양념 재료들을 넣고 장갑 낀 손으로 주물러 섞는 모습",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유를 넉넉하게 두르고 밑간한 돼지고기를 올려 바로 먹어도 될 정도로 앞뒤로 구워준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 팬에 식용유를 넉넉하게 둘러주고 작업을 해둔 돼지고기를 다 올려줍니다. 그러고 바로 먹어도 될 정도로 고기를 앞뒤로 구워줍니다.",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 기름을 두르고 고기를 올려 집게로 뒤집으며 굽는 모습",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "구워진 고기 위에 썰어둔 양파와 대파를 넣고, 고추장 1/2스푼 같은 1스푼, 굴소스 1스푼, 고춧가루 1스푼을 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파와 대파도 넣어주고 이제 여기에 고추장을 1/2스푼 같은 1스푼 넣어주고 마법의 굴소스 1스푼과 시벌건 색감을 위해 고춧가루도 1스푼 넣어줍니다.",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "고기 위에 양파, 대파를 올리고 고추장, 굴소스, 고춧가루를 차례로 넣는 모습",
+              "timestamp": "00:29"
+            }
+          ]
+        },
+        {
+          "text": "센 불에서 양념을 풀어주며 채소에서 수분이 나오지 않도록 빠르게 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 센 불에서 양념을 풀어주면서 다 같이 볶아줍니다. ... 그러고 센 불에서 빠르게 볶아주게 되면 양파와 대파에서도 수분이 나올 시간이 없기 때문에 수분 없는 기사식당 스타일의 제육볶음이 됩니다.",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "주걱으로 센 불에서 재료들을 빠르게 볶아내는 모습",
+              "timestamp": "00:37"
+            }
+          ]
+        },
+        {
+          "text": "완성된 제육볶음에 참기름 한 바퀴를 두르고 통깨를 뿌려 마무리한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 참기름을 한바퀴 둘러주거나 통깨도 뿌려주면 마 비주얼도 기가 막힙니다.",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성 접시에 담긴 제육볶음에 참기름과 통깨가 뿌려져 있는 모습",
+              "timestamp": "00:54"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "양파와 대파의 구체적인 계량(중량이나 개수)은 영상에서 언급되지 않았습니다."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

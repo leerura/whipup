@@ -1,0 +1,369 @@
+{
+  "videoId": "iZyofxQlJ2k",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/iZyofxQlJ2k",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:53:58.866238+00:00",
+    "rawResponse": "{\n  \"title\": \"돼지고기 김치찌개 레시피\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"고기 한 근\",\n      \"displayName\": \"돼지고기\",\n      \"amount\": \"1\",\n      \"unit\": \"근\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고기 한 근\\nPork\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기 한 근\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding pork slices into the pot\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 550ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"550\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 550ml\\nWater 550ml\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 550ml\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Pouring water into the pot with pork\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"멸치액젓\",\n      \"displayName\": \"멸치액젓\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"멸치액젓 넣고\\nAdd Salted anchovy sauce\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"멸치액젓 넣고\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치\",\n      \"displayName\": \"김치\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치\\nKimchi\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding chopped kimchi into the pot\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장\",\n      \"displayName\": \"간장\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Pouring dark sauce from a bottle into the pot\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루\\nRed pepper powder\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding spoonfuls of red pepper powder into the pot\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘\\nCrushed Garlic\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding a spoonful of minced garlic\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"Msg\",\n      \"displayName\": \"MSG\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Msg 넣고\\nAdd msg\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"MSG 넣고\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파\\nOnion\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding sliced onion to the stew\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding chopped scallions to the stew\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추\",\n      \"displayName\": \"청양고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 넣어주면\\nAdd Red pepper\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"청양고추 넣어주면\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding sliced chili peppers into the pot\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 고기 한 근을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고기 한 근\\nPork\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기 한 근\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Pork is placed into the pot\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 550ml를 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 550ml\\nWater 550ml\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 550ml\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Water is poured into the pot\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"멸치액젓, 김치, 간장, 고춧가루, 다진 마늘, MSG를 차례로 넣고 끓이며 저어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"멸치액젓 넣고 김치 간장 고춧가루 다진마늘 Msg 넣고\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"멸치액젓 넣고 / 김치 / 고춧가루 / 다진마늘 / Msg 넣고\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Kimchi, liquid seasoning, chili powder, minced garlic are added and stirred into the boiling broth\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파, 대파, 청양고추를 넣고 끓여 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 대파 청양고추 넣어주면\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 / 청양고추 넣어주면\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding sliced onion, green onion, and cheongyang peppers into the boiling stew\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"Specific measurements were not provided for 멸치액젓, 김치, 간장, 고춧가루, 다진마늘, MSG, 양파, 대파, and 청양고추.\",\n    \"Tofu (두부) appears in the finished stew in the intro (00:02), but is not mentioned in the audio, subtitles, or demonstrated cooking steps.\",\n    \"On-screen text labels and video actions are slightly desynchronized between 00:06 and 00:08 (kimchi is added while text says '멸치액젓', and a sauce is poured while text says '김치').\"\n  ]\n}",
+    "result": {
+      "title": "돼지고기 김치찌개 레시피",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "고기 한 근",
+          "displayName": "돼지고기",
+          "amount": "1",
+          "unit": "근",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고기 한 근\nPork",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고기 한 근",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding pork slices into the pot",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "물 550ml",
+          "displayName": "물",
+          "amount": "550",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 550ml\nWater 550ml",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 550ml",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Pouring water into the pot with pork",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "멸치액젓",
+          "displayName": "멸치액젓",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "멸치액젓 넣고\nAdd Salted anchovy sauce",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "멸치액젓 넣고",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "김치",
+          "displayName": "김치",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치\nKimchi",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "김치",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding chopped kimchi into the pot",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "간장",
+          "displayName": "간장",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "간장",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Pouring dark sauce from a bottle into the pot",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "고춧가루",
+          "displayName": "고춧가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루\nRed pepper powder",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding spoonfuls of red pepper powder into the pot",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "다진마늘",
+          "displayName": "다진마늘",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘\nCrushed Garlic",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진마늘",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding a spoonful of minced garlic",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "Msg",
+          "displayName": "MSG",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Msg 넣고\nAdd msg",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "MSG 넣고",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파\nOnion",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding sliced onion to the stew",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding chopped scallions to the stew",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "청양고추",
+          "displayName": "청양고추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 넣어주면\nAdd Red pepper",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "청양고추 넣어주면",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding sliced chili peppers into the pot",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 고기 한 근을 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고기 한 근\nPork",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고기 한 근",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Pork is placed into the pot",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "물 550ml를 붓는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 550ml\nWater 550ml",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 550ml",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Water is poured into the pot",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "멸치액젓, 김치, 간장, 고춧가루, 다진 마늘, MSG를 차례로 넣고 끓이며 저어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "멸치액젓 넣고 김치 간장 고춧가루 다진마늘 Msg 넣고",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "멸치액젓 넣고 / 김치 / 고춧가루 / 다진마늘 / Msg 넣고",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Kimchi, liquid seasoning, chili powder, minced garlic are added and stirred into the boiling broth",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "양파, 대파, 청양고추를 넣고 끓여 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 대파 청양고추 넣어주면",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 / 청양고추 넣어주면",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding sliced onion, green onion, and cheongyang peppers into the boiling stew",
+              "timestamp": "00:11"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "Specific measurements were not provided for 멸치액젓, 김치, 간장, 고춧가루, 다진마늘, MSG, 양파, 대파, and 청양고추.",
+        "Tofu (두부) appears in the finished stew in the intro (00:02), but is not mentioned in the audio, subtitles, or demonstrated cooking steps.",
+        "On-screen text labels and video actions are slightly desynchronized between 00:06 and 00:08 (kimchi is added while text says '멸치액젓', and a sauce is poured while text says '김치')."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

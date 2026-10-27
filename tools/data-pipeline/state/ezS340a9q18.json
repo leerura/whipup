@@ -1,0 +1,498 @@
+{
+  "videoId": "ezS340a9q18",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/ezS340a9q18",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:34:23.639589+00:00",
+    "rawResponse": "{\n  \"title\": \"59초 요리 잔치국수 만들기\",\n  \"description\": null,\n  \"servings\": \"5-6인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"호박 2\",\n      \"displayName\": \"호박\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"재료: 호박2\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"애호박을 칼로 썬다\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파1\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양파를 썬다\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"버섯 한봉지\",\n      \"displayName\": \"버섯\",\n      \"amount\": \"1\",\n      \"unit\": \"봉지\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"버섯 한봉지\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"새송이버섯을 편으로 썬다\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파 한묶음\",\n      \"displayName\": \"파\",\n      \"amount\": \"1\",\n      \"unit\": \"묶음\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"파 한묶음\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"대파/쪽파를 송송 썬다\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추 4개\",\n      \"displayName\": \"고추\",\n      \"amount\": \"4\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추 4개\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"고추를 송송 썬다\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양념: 파 4\",\n      \"displayName\": \"파 (양념용)\",\n      \"amount\": \"4\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양념: 파 4\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"썬 파 4숟가락을 볼에 넣는다\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 3\",\n      \"displayName\": \"양조간장\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 3\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"샘표 양조간장 3숟가락을 넣는다\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"국간장 3\",\n      \"displayName\": \"국간장 (양념용)\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장 3\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"샘표 조선간장 3숟가락을 넣는다\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 3\",\n      \"displayName\": \"물 (양념용)\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 3\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"물 3숟가락을 넣는다\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 2\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 2\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"태양초 고춧가루 2숟가락을 넣는다\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 2\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 2\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"황설탕 2숟가락을 넣는다\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"참기름 1숟가락을 넣는다\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추 1\",\n      \"displayName\": \"고추 (양념용)\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추 1\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"썬 고추 1숟가락을 양념장에 넣는다\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"멸치\",\n      \"displayName\": \"멸치\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"요리: 멸치.다시마 육수\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"끓는 냄비 물에 멸치를 넣고 육수를 낸다\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다시마\",\n      \"displayName\": \"다시마\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"요리: 멸치.다시마 육수\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"오뚜기 자른 다시마 포장지를 보여주고 냄비에 넣는다\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"채소 넣기 다진마늘 1\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"육수에 다진마늘 1숟가락을 넣는다\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"국간장 2\",\n      \"displayName\": \"국간장 (육수용)\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"남은 파,고추 국간장 2\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"육수에 국간장 2숟가락을 둘러 넣는다\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소면\",\n      \"displayName\": \"소면\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"끓는 물에 소면을 넣고 삶는다\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"국수 위에 부순 김을 고명으로 얹는다\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"호박, 양파, 버섯을 먹기 좋은 크기로 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"재료: 호박2 양파1 버섯 한봉지\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"호박, 양파, 버섯을 썬다\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"파와 고추를 송송 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"재료 & 양념용 파 한묶음 고추 4개\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"파와 고추를 송송 썬다\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 썬 파 4스푼, 간장 3스푼, 국간장 3스푼, 물 3스푼, 고춧가루 2스푼, 설탕 2스푼, 참기름 1스푼, 썬 고추 1스푼을 넣고 섞어 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양념: 파 4 간장 3 국간장 3 물 3 고춧가루 2 설탕 2 참기름 1 고추 1\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"재료들을 그릇에 넣고 숟가락으로 섞는다\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 물과 멸치, 다시마를 넣고 끓여 육수를 우려낸 뒤 멸치와 다시마를 건져낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"요리: 멸치.다시마 육수\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"끓인 육수에서 멸치와 다시마를 체로 건져낸다\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"text\": \"육수에 썰어둔 호박, 양파, 버섯을 넣고 다진마늘 1스푼, 남은 파와 고추, 국간장 2스푼을 넣고 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"채소 넣기 다진마늘 1 남은 파,고추 국간장 2\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"육수에 채소와 다진마늘, 파, 고추, 국간장을 넣고 끓인다\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"끓는 물에 소면을 삶아 건져낸 후 그릇에 담는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"소면을 끓는 물에 넣어 삶고 삶은 면을 그릇에 담는다\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇의 소면에 끓인 국물과 건더기를 붓고, 양념장과 김가루를 올려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"소면에 육수와 채소를 붓고 양념장과 김가루를 올린 후 섞어 먹는다\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"육수용 물, 멸치, 다시마의 정확한 양이 명시되지 않음\",\n    \"소면과 김가루의 정확한 양이 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "59초 요리 잔치국수 만들기",
+      "description": null,
+      "servings": "5-6인분",
+      "ingredients": [
+        {
+          "rawText": "호박 2",
+          "displayName": "호박",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "재료: 호박2",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "애호박을 칼로 썬다",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파 1",
+          "displayName": "양파",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파1",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양파를 썬다",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "버섯 한봉지",
+          "displayName": "버섯",
+          "amount": "1",
+          "unit": "봉지",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "버섯 한봉지",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "새송이버섯을 편으로 썬다",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "파 한묶음",
+          "displayName": "파",
+          "amount": "1",
+          "unit": "묶음",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "파 한묶음",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "대파/쪽파를 송송 썬다",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고추 4개",
+          "displayName": "고추",
+          "amount": "4",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추 4개",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "고추를 송송 썬다",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "양념: 파 4",
+          "displayName": "파 (양념용)",
+          "amount": "4",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양념: 파 4",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "썬 파 4숟가락을 볼에 넣는다",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "간장 3",
+          "displayName": "양조간장",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 3",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "샘표 양조간장 3숟가락을 넣는다",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "국간장 3",
+          "displayName": "국간장 (양념용)",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장 3",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "샘표 조선간장 3숟가락을 넣는다",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "물 3",
+          "displayName": "물 (양념용)",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 3",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "물 3숟가락을 넣는다",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "고춧가루 2",
+          "displayName": "고춧가루",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 2",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "태양초 고춧가루 2숟가락을 넣는다",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "설탕 2",
+          "displayName": "설탕",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 2",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "황설탕 2숟가락을 넣는다",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "참기름 1",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "참기름 1숟가락을 넣는다",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "고추 1",
+          "displayName": "고추 (양념용)",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추 1",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "썬 고추 1숟가락을 양념장에 넣는다",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "멸치",
+          "displayName": "멸치",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "요리: 멸치.다시마 육수",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "끓는 냄비 물에 멸치를 넣고 육수를 낸다",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "다시마",
+          "displayName": "다시마",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "요리: 멸치.다시마 육수",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "오뚜기 자른 다시마 포장지를 보여주고 냄비에 넣는다",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "다진마늘 1",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "채소 넣기 다진마늘 1",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "육수에 다진마늘 1숟가락을 넣는다",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "국간장 2",
+          "displayName": "국간장 (육수용)",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "남은 파,고추 국간장 2",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "육수에 국간장 2숟가락을 둘러 넣는다",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        },
+        {
+          "rawText": "소면",
+          "displayName": "소면",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "끓는 물에 소면을 넣고 삶는다",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-18"
+        },
+        {
+          "rawText": "김가루",
+          "displayName": "김가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "국수 위에 부순 김을 고명으로 얹는다",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-19"
+        }
+      ],
+      "steps": [
+        {
+          "text": "호박, 양파, 버섯을 먹기 좋은 크기로 썬다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "재료: 호박2 양파1 버섯 한봉지",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "호박, 양파, 버섯을 썬다",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "파와 고추를 송송 썬다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "재료 & 양념용 파 한묶음 고추 4개",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "파와 고추를 송송 썬다",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "볼에 썬 파 4스푼, 간장 3스푼, 국간장 3스푼, 물 3스푼, 고춧가루 2스푼, 설탕 2스푼, 참기름 1스푼, 썬 고추 1스푼을 넣고 섞어 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양념: 파 4 간장 3 국간장 3 물 3 고춧가루 2 설탕 2 참기름 1 고추 1",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "재료들을 그릇에 넣고 숟가락으로 섞는다",
+              "timestamp": "00:32"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 물과 멸치, 다시마를 넣고 끓여 육수를 우려낸 뒤 멸치와 다시마를 건져낸다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "요리: 멸치.다시마 육수",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "끓인 육수에서 멸치와 다시마를 체로 건져낸다",
+              "timestamp": "00:36"
+            }
+          ]
+        },
+        {
+          "text": "육수에 썰어둔 호박, 양파, 버섯을 넣고 다진마늘 1스푼, 남은 파와 고추, 국간장 2스푼을 넣고 끓인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "채소 넣기 다진마늘 1 남은 파,고추 국간장 2",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "육수에 채소와 다진마늘, 파, 고추, 국간장을 넣고 끓인다",
+              "timestamp": "00:37"
+            }
+          ]
+        },
+        {
+          "text": "끓는 물에 소면을 삶아 건져낸 후 그릇에 담는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "소면을 끓는 물에 넣어 삶고 삶은 면을 그릇에 담는다",
+              "timestamp": "00:47"
+            }
+          ]
+        },
+        {
+          "text": "그릇의 소면에 끓인 국물과 건더기를 붓고, 양념장과 김가루를 올려 완성한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "소면에 육수와 채소를 붓고 양념장과 김가루를 올린 후 섞어 먹는다",
+              "timestamp": "00:50"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "육수용 물, 멸치, 다시마의 정확한 양이 명시되지 않음",
+        "소면과 김가루의 정확한 양이 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

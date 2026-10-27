@@ -1,0 +1,168 @@
+{
+  "videoId": "euzSvW-Nw6E",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/euzSvW-Nw6E",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:59:32.692119+00:00",
+    "rawResponse": "{\n  \"title\": \"초간단 계란볶음밥\",\n  \"description\": \"밥차리기 귀찮을 때 간단하게 만드는 초간단 계란볶음밥 레시피\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"찬밥\",\n      \"displayName\": \"찬밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불을 켜기 전 찬밥에 계란을 부어\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불을 켜기 전 찬밥에 계란을 부어\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬 위에 찬밥이 덩어리째 놓여 있음\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 3개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"3\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"찬밥에 계란을 부어\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"찬밥에 계란을 부어\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"날계란 3알을 밥 위에 부음\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파\",\n      \"displayName\": \"파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그 때 파를 넣어\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그 때 파를 넣어\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"잘게 썬 파가 밥과 함께 볶아지는 모습\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"불을 켜기 전 찬밥 위에 계란을 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불을 켜기 전 찬밥에 계란을 부어\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불을 켜기 전 찬밥에 계란을 부어\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"불을 켜지 않은 팬 속 찬밥 위에 계란물을 붓는 모습\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥에 계란을 골고루 비비며 불을 켠다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥에 계란을 골고루 비비며 불을 켜세요\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥에 계란을 골고루 비비며 불을 켜세요\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"주걱으로 계란과 밥을 섞으며 가열하는 모습\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"죽 같은 질감이 사라질 때까지 볶다가, 파를 넣고 한 번 더 볶아 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"죽같은 질감이 금방 사라지는데 그 때 파를 넣어 한번 더 볶으면 완성입니다\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"죽같은 질감이 금방 사라지는데 그 때 파를 넣어 한번 더 볶으면 완성입니다\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"고슬고슬해진 볶음밥에 파를 넣고 섞어가며 볶는 모습\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"소금이나 간장 등 별도 간 맞춤용 조미료의 사용 여부는 영상에 언급되거나 명시적으로 표시되지 않음\",\n    \"찬밥과 파의 구체적인 계량(양)은 언급되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "초간단 계란볶음밥",
+      "description": "밥차리기 귀찮을 때 간단하게 만드는 초간단 계란볶음밥 레시피",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "찬밥",
+          "displayName": "찬밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "불을 켜기 전 찬밥에 계란을 부어",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "불을 켜기 전 찬밥에 계란을 부어",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬 위에 찬밥이 덩어리째 놓여 있음",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "계란 3개",
+          "displayName": "계란",
+          "amount": "3",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "찬밥에 계란을 부어",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "찬밥에 계란을 부어",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "날계란 3알을 밥 위에 부음",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "파",
+          "displayName": "파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그 때 파를 넣어",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그 때 파를 넣어",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "잘게 썬 파가 밥과 함께 볶아지는 모습",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        }
+      ],
+      "steps": [
+        {
+          "text": "불을 켜기 전 찬밥 위에 계란을 붓는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "불을 켜기 전 찬밥에 계란을 부어",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "불을 켜기 전 찬밥에 계란을 부어",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "불을 켜지 않은 팬 속 찬밥 위에 계란물을 붓는 모습",
+              "timestamp": "00:01"
+            }
+          ]
+        },
+        {
+          "text": "밥에 계란을 골고루 비비며 불을 켠다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥에 계란을 골고루 비비며 불을 켜세요",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "밥에 계란을 골고루 비비며 불을 켜세요",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "주걱으로 계란과 밥을 섞으며 가열하는 모습",
+              "timestamp": "00:02"
+            }
+          ]
+        },
+        {
+          "text": "죽 같은 질감이 사라질 때까지 볶다가, 파를 넣고 한 번 더 볶아 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "죽같은 질감이 금방 사라지는데 그 때 파를 넣어 한번 더 볶으면 완성입니다",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "죽같은 질감이 금방 사라지는데 그 때 파를 넣어 한번 더 볶으면 완성입니다",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "고슬고슬해진 볶음밥에 파를 넣고 섞어가며 볶는 모습",
+              "timestamp": "00:05"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "소금이나 간장 등 별도 간 맞춤용 조미료의 사용 여부는 영상에 언급되거나 명시적으로 표시되지 않음",
+        "찬밥과 파의 구체적인 계량(양)은 언급되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

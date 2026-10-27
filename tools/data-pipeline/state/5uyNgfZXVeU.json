@@ -1,0 +1,415 @@
+{
+  "videoId": "5uyNgfZXVeU",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/5uyNgfZXVeU",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:42:08.575164+00:00",
+    "rawResponse": "{\n  \"title\": \"돈까스 김치우동 (Pork Cutlet Kimchi Udon)\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"식용유 2\",\n      \"displayName\": \"식용유 (Cooking oil)\",\n      \"amount\": \"2\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 2 Cooking oil\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식용유 두 숟가락을 넣고\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치 180g\",\n      \"displayName\": \"김치 (Kimchi)\",\n      \"amount\": \"180\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치 180g Kimchi\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"한 입 크기로 자른 김치 한 컵을 넣어줘\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1\",\n      \"displayName\": \"고춧가루 (Chili powder)\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1 Chili powder\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 한 숟가락과\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 1\",\n      \"displayName\": \"진간장 (Soy sauce)\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 1 Soy sauce\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 한 숟가락을 넣고\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕\",\n      \"displayName\": \"설탕 (Sugar)\",\n      \"amount\": \"살짝\",\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"신김치를 사용할 거면 설탕을 살짝 넣어서 신맛을 잡아줘\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 540ml\",\n      \"displayName\": \"물 (Water)\",\n      \"amount\": \"540\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 540ml Water\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 세 컵을 넣고\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"어묵\",\n      \"displayName\": \"어묵 (Fish cake)\",\n      \"amount\": \"3\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"어묵 Fish cake\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"어묵 세 장을 잘라서 넣어줘\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"국간장 1\",\n      \"displayName\": \"국간장 (Korean style soy sauce)\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장 1 Korean style soy sauce\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국간장 한 숟가락과\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소고기 다시다 0.5\",\n      \"displayName\": \"소고기 다시다 (Beef seasoning)\",\n      \"amount\": \"0.5\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소고기 다시다 0.5 Beef seasoning\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소고기 다시다 반 숟가락을 넣고\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우동\",\n      \"displayName\": \"우동사리 (Udon noodles)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"우동 Udon noodles\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우동사리를 넣어주면 김치우동은 끝이야\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돈까스\",\n      \"displayName\": \"냉동 돈까스 (Frozen pork cutlet)\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"돈까스 Pork cutlet\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냉동 돈까스 하나를 튀겨서 한 입 크기로 잘라서 넣어줘\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란\",\n      \"displayName\": \"계란 (Egg)\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 Egg\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 계란 하나를 풀어 위에 부어줘\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"팽이버섯\",\n      \"displayName\": \"팽이버섯 (Enoki mushroom)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팽이버섯 Enoki mushroom\",\n          \"timestamp\": \"00:42\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 팽이버섯을 넣고\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파 (Green onion)\",\n      \"amount\": \"조금\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 Green onion\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파를 조금 다져서 올려주면\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추\",\n      \"displayName\": \"청양고추 (Cheongyang red pepper)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 Cheongyang red pepper\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"청양고추를 가위로 잘라 넣는다\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 식용유 2숟가락과 한 입 크기로 자른 김치 180g(한 컵)을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식용유 두 숟가락을 넣고 한 입 크기로 자른 김치 한 컵을 넣어줘\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고춧가루 1숟가락과 진간장 1숟가락을 넣고 김치 숨이 다 죽을 때까지 볶는다. (신김치를 사용할 경우 설탕을 살짝 넣어 신맛을 잡고, 볶는 과정이 귀찮으면 생략해도 된다.)\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 한 숟가락과 진간장 한 숟가락을 넣고 김치 숨이 다 죽을 때까지 볶아줘 신김치를 사용할 거면 설탕을 살짝 넣어서 신맛을 잡아줘 그리고 볶는 과정이 귀찮으면 생략해도 돼\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 540ml(3컵)를 붓고 어묵 3장을 잘라서 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 세 컵을 넣고 어묵 세 장을 잘라서 넣어줘\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 540ml Water\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국간장 1숟가락, 소고기 다시다 0.5숟가락을 넣고 우동사리를 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국간장 한 숟가락과 소고기 다시다 반 숟가락을 넣고 우동사리를 넣어주면 김치우동은 끝이야\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냉동 돈까스 1개를 튀겨서 한 입 크기로 잘라 우동 위에 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냉동 돈까스 하나를 튀겨서 한 입 크기로 잘라서 넣어줘\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 1개를 풀어서 돈까스 위에 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 계란 하나를 풀어 위에 부어줘\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팽이버섯과 잘게 다진 대파를 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 팽이버섯을 넣고 대파를 조금 다져서 올려주면 돈까스 김치우동 끝\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"text\": \"취향에 따라 청양고추를 잘라 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 Cheongyang red pepper\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"가위로 청양고추를 잘라 넣음\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "돈까스 김치우동 (Pork Cutlet Kimchi Udon)",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "식용유 2",
+          "displayName": "식용유 (Cooking oil)",
+          "amount": "2",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 2 Cooking oil",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "식용유 두 숟가락을 넣고",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "김치 180g",
+          "displayName": "김치 (Kimchi)",
+          "amount": "180",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치 180g Kimchi",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "한 입 크기로 자른 김치 한 컵을 넣어줘",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "고춧가루 1",
+          "displayName": "고춧가루 (Chili powder)",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1 Chili powder",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 한 숟가락과",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "진간장 1",
+          "displayName": "진간장 (Soy sauce)",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 1 Soy sauce",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장 한 숟가락을 넣고",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "설탕",
+          "displayName": "설탕 (Sugar)",
+          "amount": "살짝",
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "신김치를 사용할 거면 설탕을 살짝 넣어서 신맛을 잡아줘",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "물 540ml",
+          "displayName": "물 (Water)",
+          "amount": "540",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 540ml Water",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 세 컵을 넣고",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "어묵",
+          "displayName": "어묵 (Fish cake)",
+          "amount": "3",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "어묵 Fish cake",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "어묵 세 장을 잘라서 넣어줘",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "국간장 1",
+          "displayName": "국간장 (Korean style soy sauce)",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장 1 Korean style soy sauce",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SPEECH",
+              "text": "국간장 한 숟가락과",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "소고기 다시다 0.5",
+          "displayName": "소고기 다시다 (Beef seasoning)",
+          "amount": "0.5",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소고기 다시다 0.5 Beef seasoning",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소고기 다시다 반 숟가락을 넣고",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "우동",
+          "displayName": "우동사리 (Udon noodles)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "우동 Udon noodles",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "우동사리를 넣어주면 김치우동은 끝이야",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "돈까스",
+          "displayName": "냉동 돈까스 (Frozen pork cutlet)",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "돈까스 Pork cutlet",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냉동 돈까스 하나를 튀겨서 한 입 크기로 잘라서 넣어줘",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "계란",
+          "displayName": "계란 (Egg)",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 Egg",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 계란 하나를 풀어 위에 부어줘",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "팽이버섯",
+          "displayName": "팽이버섯 (Enoki mushroom)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팽이버섯 Enoki mushroom",
+              "timestamp": "00:42"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 팽이버섯을 넣고",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파 (Green onion)",
+          "amount": "조금",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 Green onion",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파를 조금 다져서 올려주면",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "청양고추",
+          "displayName": "청양고추 (Cheongyang red pepper)",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 Cheongyang red pepper",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "청양고추를 가위로 잘라 넣는다",
+              "timestamp": "00:52"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 식용유 2숟가락과 한 입 크기로 자른 김치 180g(한 컵)을 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "식용유 두 숟가락을 넣고 한 입 크기로 자른 김치 한 컵을 넣어줘",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "고춧가루 1숟가락과 진간장 1숟가락을 넣고 김치 숨이 다 죽을 때까지 볶는다. (신김치를 사용할 경우 설탕을 살짝 넣어 신맛을 잡고, 볶는 과정이 귀찮으면 생략해도 된다.)",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 한 숟가락과 진간장 한 숟가락을 넣고 김치 숨이 다 죽을 때까지 볶아줘 신김치를 사용할 거면 설탕을 살짝 넣어서 신맛을 잡아줘 그리고 볶는 과정이 귀찮으면 생략해도 돼",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "물 540ml(3컵)를 붓고 어묵 3장을 잘라서 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 세 컵을 넣고 어묵 세 장을 잘라서 넣어줘",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 540ml Water",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "국간장 1숟가락, 소고기 다시다 0.5숟가락을 넣고 우동사리를 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "국간장 한 숟가락과 소고기 다시다 반 숟가락을 넣고 우동사리를 넣어주면 김치우동은 끝이야",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "냉동 돈까스 1개를 튀겨서 한 입 크기로 잘라 우동 위에 올린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "냉동 돈까스 하나를 튀겨서 한 입 크기로 잘라서 넣어줘",
+              "timestamp": "00:34"
+            }
+          ]
+        },
+        {
+          "text": "계란 1개를 풀어서 돈까스 위에 붓는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 계란 하나를 풀어 위에 부어줘",
+              "timestamp": "00:38"
+            }
+          ]
+        },
+        {
+          "text": "팽이버섯과 잘게 다진 대파를 올린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 팽이버섯을 넣고 대파를 조금 다져서 올려주면 돈까스 김치우동 끝",
+              "timestamp": "00:44"
+            }
+          ]
+        },
+        {
+          "text": "취향에 따라 청양고추를 잘라 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 Cheongyang red pepper",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "가위로 청양고추를 잘라 넣음",
+              "timestamp": "00:52"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

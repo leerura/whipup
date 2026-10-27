@@ -1,0 +1,296 @@
+{
+  "videoId": "psfHHBzZlto",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/psfHHBzZlto",
+  "sourceMetadata": {"sourceTitle":"믿고 먹는 할머니표 간장국수","sourceChannelName":"도다이","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.917995Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T08:11:56.195607+00:00",
+    "rawResponse": "{\n  \"title\": \"들기름 간장 비빔국수\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"국수\",\n      \"displayName\": \"국수\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우선 국수부터 삶아\",\n          \"timestamp\": \"0:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"국수부터\",\n          \"timestamp\": \"0:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"끓는 물에 소면을 넣고 삶는 모습\",\n          \"timestamp\": \"0:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1.5스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1.5스푼\",\n          \"timestamp\": \"0:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"삶은 국수 위에 설탕을 뿌리는 모습\",\n          \"timestamp\": \"0:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 4스푼\",\n      \"displayName\": \"간장\",\n      \"amount\": \"4\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 4스푼\",\n          \"timestamp\": \"0:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"국수 위에 간장을 붓는 모습\",\n          \"timestamp\": \"0:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"들기름 3스푼\",\n      \"displayName\": \"들기름\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"들기름 3스푼\",\n          \"timestamp\": \"0:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"들기름은 꼭 넣어주세요\",\n          \"timestamp\": \"0:13\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"국수 위에 들기름을 붓는 모습\",\n          \"timestamp\": \"0:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김가루랑\",\n          \"timestamp\": \"0:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김가루랑\",\n          \"timestamp\": \"0:14\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"국수 위에 김가루를 얹는 모습\",\n          \"timestamp\": \"0:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추\",\n      \"displayName\": \"청양고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추\",\n          \"timestamp\": \"0:15\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"청양고추\",\n          \"timestamp\": \"0:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"송송 썬 청양고추를 올리는 모습\",\n          \"timestamp\": \"0:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깨\",\n      \"displayName\": \"깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 깨도 가득가득 넣어주고\",\n          \"timestamp\": \"0:16\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"깨 가득가득\",\n          \"timestamp\": \"0:16\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"통깨를 뿌리는 모습\",\n          \"timestamp\": \"0:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"노른자\",\n      \"displayName\": \"노른자\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"노른자 올려\",\n          \"timestamp\": \"0:17\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"노른자 올려\",\n          \"timestamp\": \"0:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"국수 중앙에 계란 노른자를 올리는 모습\",\n          \"timestamp\": \"0:17\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"국수를 삶아 찬물에 헹군 뒤 볼에 담는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우선 국수부터 삶아 찬물에 헹궈주고\",\n          \"timestamp\": \"0:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"찬물에\",\n          \"timestamp\": \"0:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"국수를 삶고 찬물에 헹군 뒤 볼에 담아 물기를 터는 모습\",\n          \"timestamp\": \"0:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국수에 설탕 1.5스푼, 간장 4스푼, 들기름 3스푼을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1.5스푼 간장 4스푼\",\n          \"timestamp\": \"0:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"들기름 3스푼\",\n          \"timestamp\": \"0:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양념장부터 만들어 줄 건데 들기름은 꼭 넣어주세요\",\n          \"timestamp\": \"0:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김가루, 썬 청양고추, 깨를 가득 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김가루랑 고추 그리고 깨도 가득가득 넣어주고\",\n          \"timestamp\": \"0:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김가루랑 청양고추 깨 가득가득\",\n          \"timestamp\": \"0:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"노른자를 올리고 살살 비벼 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"노른자 올려 살살 비벼주면 끝이에요\",\n          \"timestamp\": \"0:17\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"노른자 올려 살살 끝\",\n          \"timestamp\": \"0:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"노른자를 올리고 손으로 골고루 비비는 모습\",\n          \"timestamp\": \"0:17\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "들기름 간장 비빔국수",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "국수",
+          "displayName": "국수",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "우선 국수부터 삶아",
+              "timestamp": "0:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "국수부터",
+              "timestamp": "0:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "끓는 물에 소면을 넣고 삶는 모습",
+              "timestamp": "0:09"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "설탕 1.5스푼",
+          "displayName": "설탕",
+          "amount": "1.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1.5스푼",
+              "timestamp": "0:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "삶은 국수 위에 설탕을 뿌리는 모습",
+              "timestamp": "0:11"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "간장 4스푼",
+          "displayName": "간장",
+          "amount": "4",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 4스푼",
+              "timestamp": "0:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "국수 위에 간장을 붓는 모습",
+              "timestamp": "0:12"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "들기름 3스푼",
+          "displayName": "들기름",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "들기름 3스푼",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "들기름은 꼭 넣어주세요",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "국수 위에 들기름을 붓는 모습",
+              "timestamp": "0:13"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "김가루",
+          "displayName": "김가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김가루랑",
+              "timestamp": "0:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "김가루랑",
+              "timestamp": "0:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "국수 위에 김가루를 얹는 모습",
+              "timestamp": "0:14"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "청양고추",
+          "displayName": "청양고추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고추",
+              "timestamp": "0:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "청양고추",
+              "timestamp": "0:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "송송 썬 청양고추를 올리는 모습",
+              "timestamp": "0:15"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "깨",
+          "displayName": "깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 깨도 가득가득 넣어주고",
+              "timestamp": "0:16"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "깨 가득가득",
+              "timestamp": "0:16"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "통깨를 뿌리는 모습",
+              "timestamp": "0:16"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "노른자",
+          "displayName": "노른자",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "노른자 올려",
+              "timestamp": "0:17"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "노른자 올려",
+              "timestamp": "0:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "국수 중앙에 계란 노른자를 올리는 모습",
+              "timestamp": "0:17"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        }
+      ],
+      "steps": [
+        {
+          "text": "국수를 삶아 찬물에 헹군 뒤 볼에 담는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "우선 국수부터 삶아 찬물에 헹궈주고",
+              "timestamp": "0:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "찬물에",
+              "timestamp": "0:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "국수를 삶고 찬물에 헹군 뒤 볼에 담아 물기를 터는 모습",
+              "timestamp": "0:09"
+            }
+          ]
+        },
+        {
+          "text": "국수에 설탕 1.5스푼, 간장 4스푼, 들기름 3스푼을 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1.5스푼 간장 4스푼",
+              "timestamp": "0:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "들기름 3스푼",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양념장부터 만들어 줄 건데 들기름은 꼭 넣어주세요",
+              "timestamp": "0:11"
+            }
+          ]
+        },
+        {
+          "text": "김가루, 썬 청양고추, 깨를 가득 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김가루랑 고추 그리고 깨도 가득가득 넣어주고",
+              "timestamp": "0:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "김가루랑 청양고추 깨 가득가득",
+              "timestamp": "0:14"
+            }
+          ]
+        },
+        {
+          "text": "노른자를 올리고 살살 비벼 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "노른자 올려 살살 비벼주면 끝이에요",
+              "timestamp": "0:17"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "노른자 올려 살살 끝",
+              "timestamp": "0:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "노른자를 올리고 손으로 골고루 비비는 모습",
+              "timestamp": "0:17"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

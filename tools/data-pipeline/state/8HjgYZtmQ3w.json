@@ -1,0 +1,335 @@
+{
+  "videoId": "8HjgYZtmQ3w",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://youtu.be/8HjgYZtmQ3w?si=nleVXe8-Bczo2RBi",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:16:01.705313+00:00",
+    "rawResponse": "{\n  \"title\": \"나폴리탄 스파게티\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"올리브오일\",\n      \"displayName\": \"올리브오일\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 올리브오일 두른 거에\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 올리브오일\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소시지\",\n      \"displayName\": \"소시지\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소시지 노릇하게 볶아주시고요\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"노릇하게 볶아주시고요\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마늘\",\n      \"displayName\": \"마늘\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마늘과 양파 넣어서 볶아줍니다\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마늘과 양파 넣어서 볶아줍니다\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마늘과 양파 넣어서 볶아줍니다\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마늘과 양파 넣어서 볶아줍니다\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 한 500ml 정도\",\n      \"displayName\": \"물\",\n      \"amount\": \"500\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"자 이제 물 부어줍니다 한 500ml 정도?\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"한 500ml 정도?\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"스파게티\",\n      \"displayName\": \"스파게티 면\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"스파게티 넣어주고\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"스파게티 넣어주고\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 하나\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스 하나\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"굴소스 하나\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"케찹 두 개 + 하나\",\n      \"displayName\": \"케찹\",\n      \"amount\": \"3\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"케찹 두 개 넣고 비벼줄게요\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"케찹 하나 더 갈게요\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"케찹 두 개\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"케찹 하나 더 갈게요\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"빠다 하나\",\n      \"displayName\": \"버터\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 불 끄고 빠다 하나 들어가면 돼 빠다\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"빠다 하나 들어가면 돼 빠다\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"치즈\",\n      \"displayName\": \"치즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"혹시 집에 뭐 이런 치즈가 있다? 갈아주시고 우리 집에 없네? 하시면 뭐 안 넣어도 돼요\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이런 치즈가 있다? 갈아주시고\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"안 넣어도 돼요\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 취향껏\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추는 취향껏\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추는 취향껏\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 올리브오일을 두르고 칼집 낸 소시지를 노릇하게 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 올리브오일 두른 거에 소시지 노릇하게 볶아주시고요\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"편 썬 마늘과 양파를 넣고 마늘이 노릇해질 때까지 함께 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마늘과 양파 넣어서 볶아줍니다 노릇하게 마늘이 요정도 될 때까지 볶아주시면 되고요\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 물 약 500ml를 붓고 스파게티 면을 넣어 끓입니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"자 이제 물 부어줍니다 한 500ml 정도? 스파게티 넣어주고 잘 집어넣어 주시고 익으면 올게요\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물이 거의 없어질 때까지 바짝 졸이듯이 끓여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"어느 정도 익었는데 물 거의 없게 바짝 끓여줘야 돼요\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"굴소스 1큰술과 케찹 2큰술을 넣고 비벼준 뒤, 간을 보고 케찹 1큰술을 추가해 섞어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스 하나 케찹 두 개 넣고 비벼줄게요 간 한번 보면 케찹 하나 더 갈게요\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 끄고 버터 한 조각을 넣은 뒤 잔열로 섞어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"자 이제 됐고 마지막으로 불 끄고 빠다 하나 들어가면 돼 빠다 잔열로 섞어주시면 된다\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"취향에 따라 치즈를 갈아 올리고 후추를 뿌려 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"혹시 집에 뭐 이런 치즈가 있다? 갈아주시고 우리 집에 없네? 하시면 뭐 안 넣어도 돼요 후추는 취향껏\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "나폴리탄 스파게티",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "올리브오일",
+          "displayName": "올리브오일",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 올리브오일 두른 거에",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 올리브오일",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "소시지",
+          "displayName": "소시지",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소시지 노릇하게 볶아주시고요",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "노릇하게 볶아주시고요",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "마늘",
+          "displayName": "마늘",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마늘과 양파 넣어서 볶아줍니다",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마늘과 양파 넣어서 볶아줍니다",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마늘과 양파 넣어서 볶아줍니다",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마늘과 양파 넣어서 볶아줍니다",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "물 한 500ml 정도",
+          "displayName": "물",
+          "amount": "500",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "자 이제 물 부어줍니다 한 500ml 정도?",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "한 500ml 정도?",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "스파게티",
+          "displayName": "스파게티 면",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "스파게티 넣어주고",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "스파게티 넣어주고",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "굴소스 하나",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "굴소스 하나",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "굴소스 하나",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "케찹 두 개 + 하나",
+          "displayName": "케찹",
+          "amount": "3",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "케찹 두 개 넣고 비벼줄게요",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "케찹 하나 더 갈게요",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "케찹 두 개",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "케찹 하나 더 갈게요",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "빠다 하나",
+          "displayName": "버터",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 불 끄고 빠다 하나 들어가면 돼 빠다",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "빠다 하나 들어가면 돼 빠다",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "치즈",
+          "displayName": "치즈",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "혹시 집에 뭐 이런 치즈가 있다? 갈아주시고 우리 집에 없네? 하시면 뭐 안 넣어도 돼요",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이런 치즈가 있다? 갈아주시고",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "안 넣어도 돼요",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "후추 취향껏",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후추는 취향껏",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "후추는 취향껏",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 올리브오일을 두르고 칼집 낸 소시지를 노릇하게 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 올리브오일 두른 거에 소시지 노릇하게 볶아주시고요",
+              "timestamp": "00:02"
+            }
+          ]
+        },
+        {
+          "text": "편 썬 마늘과 양파를 넣고 마늘이 노릇해질 때까지 함께 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마늘과 양파 넣어서 볶아줍니다 노릇하게 마늘이 요정도 될 때까지 볶아주시면 되고요",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "팬에 물 약 500ml를 붓고 스파게티 면을 넣어 끓입니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "자 이제 물 부어줍니다 한 500ml 정도? 스파게티 넣어주고 잘 집어넣어 주시고 익으면 올게요",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "물이 거의 없어질 때까지 바짝 졸이듯이 끓여줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "어느 정도 익었는데 물 거의 없게 바짝 끓여줘야 돼요",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "굴소스 1큰술과 케찹 2큰술을 넣고 비벼준 뒤, 간을 보고 케찹 1큰술을 추가해 섞어줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "굴소스 하나 케찹 두 개 넣고 비벼줄게요 간 한번 보면 케찹 하나 더 갈게요",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "불을 끄고 버터 한 조각을 넣은 뒤 잔열로 섞어줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "자 이제 됐고 마지막으로 불 끄고 빠다 하나 들어가면 돼 빠다 잔열로 섞어주시면 된다",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "취향에 따라 치즈를 갈아 올리고 후추를 뿌려 완성합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "혹시 집에 뭐 이런 치즈가 있다? 갈아주시고 우리 집에 없네? 하시면 뭐 안 넣어도 돼요 후추는 취향껏",
+              "timestamp": "00:29"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

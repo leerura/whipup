@@ -1,0 +1,595 @@
+{
+  "videoId": "gHrayv9DmMQ",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/gHrayv9DmMQ",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T10:41:09.027352+00:00",
+    "rawResponse": "{\n  \"title\": \"순두부찌개\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"순두부 400g (1봉지)\",\n      \"displayName\": \"순두부\",\n      \"amount\": \"400\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"순두부 400g\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"순두부는 400g짜리 한 봉지입니다\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"애호박 1/3\",\n      \"displayName\": \"애호박\",\n      \"amount\": \"1/3\",\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"애호박 1/3\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"호박이 재료가 없으시다면 호박 빼주셔도 됩니다\",\n          \"timestamp\": \"02:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/4\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/4\",\n      \"unit\": \"쪽\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/4\",\n          \"timestamp\": \"00:57\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파도 4분의 1쪽만 넣어주세요\",\n          \"timestamp\": \"00:57\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파도 빼주셔도 돼요\",\n          \"timestamp\": \"02:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"표고버섯 1개\",\n      \"displayName\": \"표고버섯\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"표고버섯 1개\",\n          \"timestamp\": \"01:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기서 표고버섯이 없어요? 이것도 빼주셔도 됩니다\",\n          \"timestamp\": \"02:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 1/3\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1/3\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 1/3\",\n          \"timestamp\": \"01:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파도 3분의 1입니다\",\n          \"timestamp\": \"01:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"파하고 마늘은 기본적으로 있어야 됩니다\",\n          \"timestamp\": \"02:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 2개\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 2개\",\n          \"timestamp\": \"01:44\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이게 홍고추가 청양고추 익은 거예요. 이게 2개 들어갑니다\",\n          \"timestamp\": \"01:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1큰술\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1큰술\",\n          \"timestamp\": \"02:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름을 한 스푼 둘러주세요\",\n          \"timestamp\": \"02:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1큰술\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 1큰술\",\n          \"timestamp\": \"02:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘 한 스푼\",\n          \"timestamp\": \"02:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돼지다짐육 120g\",\n      \"displayName\": \"돼지다짐육\",\n      \"amount\": \"120\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"돼지다짐육 120g\",\n          \"timestamp\": \"02:55\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"갈아 놓은 거 120g 정도입니다\",\n          \"timestamp\": \"02:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"생강술 2큰술\",\n      \"displayName\": \"생강술\",\n      \"amount\": \"2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"생강술 2큰술\",\n          \"timestamp\": \"03:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"생강술 집에 있어서 두 스푼을 넣겠습니다\",\n          \"timestamp\": \"03:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 2큰술\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 2큰술\",\n          \"timestamp\": \"03:45\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 얇게 두 스푼이 들어갑니다\",\n          \"timestamp\": \"03:43\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 400ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"400\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 400ml\",\n          \"timestamp\": \"04:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 200ml 컵으로 한 컵, 두 컵을 넣습니다\",\n          \"timestamp\": \"04:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"새우젓 1큰술\",\n      \"displayName\": \"새우젓\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"새우젓 1큰술\",\n          \"timestamp\": \"04:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"새우젓이 한 스푼 들어갑니다\",\n          \"timestamp\": \"04:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치액젓 2큰술\",\n      \"displayName\": \"참치액젓\",\n      \"amount\": \"2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치액젓 2큰술\",\n          \"timestamp\": \"04:49\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치 액젓이에요. 이게 두 스푼만 넣어주세요\",\n          \"timestamp\": \"04:48\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 약간\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": \"약간\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 약간\",\n          \"timestamp\": \"05:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추 좀 넣어주세요. 약간만 넣어주시고\",\n          \"timestamp\": \"05:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 1개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 1개\",\n          \"timestamp\": \"05:56\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란을 하나 이렇게 분리해 놨습니다. 흰자, 노른자\",\n          \"timestamp\": \"05:56\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"순두부의 가운데 부분을 칼로 잘라 부서지지 않게 용기에 살짝 빼내어 준비합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"가운데를 잘라주세요\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"살짝 빼주세요\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"순두부 팩의 가운데를 칼로 자른 뒤 그릇에 조심스럽게 담는다\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"애호박을 반으로 갈라 너무 얇지 않게 썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"너무 얇지않게\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"호박 반 자르셔서 너무 얇지 않게 이렇게 썰어주세요\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파를 애호박과 비슷한 크기와 모양으로 썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"호박하고 같은 모양으로\",\n          \"timestamp\": \"01:02\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"호박하고 같은 모양으로 옆으로 이렇게 썰어주세요\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"씻어서 물기를 짠 표고버섯의 밑동 끝 뿌리 부분만 버리고, 나머지 밑동과 버섯 갓을 호박 크기에 맞춰 썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깨끗히 씻어서 먼지를 제거 하시고 물기를 쪽 짜서 준비해주세요\",\n          \"timestamp\": \"01:12\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밑부분은 버려주세요\",\n          \"timestamp\": \"01:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이것도 호박 모양으로 적당히 이렇게 썰어줄 거예요\",\n          \"timestamp\": \"01:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파를 세로로 반 가른 후 송송 썰고, 청양고추도 반으로 갈라 잘게 썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"반을 가르셔서 송송 썰어줍니다\",\n          \"timestamp\": \"01:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"반으로 가르셔서\",\n          \"timestamp\": \"01:49\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"청양고추를 반으로 갈라 잘게 썬다\",\n          \"timestamp\": \"01:48\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 참기름 1큰술을 두르고 다진 마늘 1큰술과 썬 대파를 넣고 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름을 한 스푼 둘러주세요\",\n          \"timestamp\": \"02:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘 한 스푼, 대파 넣고 좀 볶아주세요\",\n          \"timestamp\": \"02:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"파와 마늘이 어느 정도 볶아지면 돼지 다짐육 120g을 넣고 함께 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"파하고 마늘이 어느정도 볶아지면\",\n          \"timestamp\": \"02:49\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"갈아 놓은 거 120g 정도입니다. 이렇게 넣고 볶아주세요\",\n          \"timestamp\": \"02:54\"\n        }\n      ]\n    },\n    {\n      \"text\": \"생강술 2큰술을 넣고 고기 기름이 배어 나올 때까지 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"생강술 집에 있어서 두 스푼을 넣겠습니다\",\n          \"timestamp\": \"03:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"돼지고기가 이렇게 어느 정도 볶아지고 돼지고기에 이렇게 기름이 좀 나오기 시작했어요\",\n          \"timestamp\": \"03:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고춧가루 2큰술을 넣고 고루 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 고춧가루 얇게 두 스푼이 들어갑니다\",\n          \"timestamp\": \"03:42\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"고춧가루를 넣고 고기와 함께 볶아준다\",\n          \"timestamp\": \"03:47\"\n        }\n      ]\n    },\n    {\n      \"text\": \"썰어둔 청양고추를 넣고 함께 볶아 매콤한 풍미를 냅니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"청양고추, 홍고추로 썰었죠. 이거를 같이 넣고 볶아주세요\",\n          \"timestamp\": \"03:55\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 400ml(200ml 기준 2컵)를 붓고 새우젓 1큰술과 참치액젓 2큰술을 넣어 간을 맞춥니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 200ml 컵으로 한 컵, 두 컵을 넣습니다\",\n          \"timestamp\": \"04:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"새우젓이 한 스푼 들어갑니다\",\n          \"timestamp\": \"04:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치 액젓이에요. 이게 두 스푼만 넣어주세요\",\n          \"timestamp\": \"04:48\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국물이 끓어오르면 후추 약간을 넣고, 표고버섯, 애호박, 양파를 넣어 끓입니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이렇게 끓고 있을 때 후추 좀 넣어주세요\",\n          \"timestamp\": \"05:02\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"표고버섯 들어갑니다. 호박도 넣어주세요. 양파도 같이 넣어줍니다\",\n          \"timestamp\": \"05:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"호박과 채소들이 어느 정도 익으면 순두부를 한 숟가락씩 큼직하게 떠 넣고 살살 밀어 국물에 잠기게 합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마지막에 가서 순두부를\",\n          \"timestamp\": \"05:30\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"한스푼씩\",\n          \"timestamp\": \"05:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막에 가서 이렇게 순두부를 한 스푼씩 떠서 넣어주세요\",\n          \"timestamp\": \"05:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"젓지 마시고 살살 이런 식으로\",\n          \"timestamp\": \"05:51\"\n        }\n      ]\n    },\n    {\n      \"text\": \"분리해둔 계란 흰자를 국물 위에 두르고, 마지막으로 노른자를 중앙에 올려 마무리합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"흰자는 이렇게 쭉 부어주세요, 위에\",\n          \"timestamp\": \"06:00\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"끝 마무리에 가서 노른자를 살짝 올려줍니다\",\n          \"timestamp\": \"06:07\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "순두부찌개",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "순두부 400g (1봉지)",
+          "displayName": "순두부",
+          "amount": "400",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "순두부 400g",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "순두부는 400g짜리 한 봉지입니다",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "애호박 1/3",
+          "displayName": "애호박",
+          "amount": "1/3",
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "애호박 1/3",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "SPEECH",
+              "text": "호박이 재료가 없으시다면 호박 빼주셔도 됩니다",
+              "timestamp": "02:01"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "양파 1/4",
+          "displayName": "양파",
+          "amount": "1/4",
+          "unit": "쪽",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/4",
+              "timestamp": "00:57"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파도 4분의 1쪽만 넣어주세요",
+              "timestamp": "00:57"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파도 빼주셔도 돼요",
+              "timestamp": "02:09"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "표고버섯 1개",
+          "displayName": "표고버섯",
+          "amount": "1",
+          "unit": "개",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "표고버섯 1개",
+              "timestamp": "01:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기서 표고버섯이 없어요? 이것도 빼주셔도 됩니다",
+              "timestamp": "02:05"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "대파 1/3",
+          "displayName": "대파",
+          "amount": "1/3",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 1/3",
+              "timestamp": "01:34"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파도 3분의 1입니다",
+              "timestamp": "01:34"
+            },
+            {
+              "type": "SPEECH",
+              "text": "파하고 마늘은 기본적으로 있어야 됩니다",
+              "timestamp": "02:18"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "청양고추 2개",
+          "displayName": "청양고추",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 2개",
+              "timestamp": "01:44"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이게 홍고추가 청양고추 익은 거예요. 이게 2개 들어갑니다",
+              "timestamp": "01:44"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "참기름 1큰술",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1큰술",
+              "timestamp": "02:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름을 한 스푼 둘러주세요",
+              "timestamp": "02:27"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "다진마늘 1큰술",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 1큰술",
+              "timestamp": "02:34"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘 한 스푼",
+              "timestamp": "02:34"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "돼지다짐육 120g",
+          "displayName": "돼지다짐육",
+          "amount": "120",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "돼지다짐육 120g",
+              "timestamp": "02:55"
+            },
+            {
+              "type": "SPEECH",
+              "text": "갈아 놓은 거 120g 정도입니다",
+              "timestamp": "02:54"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "생강술 2큰술",
+          "displayName": "생강술",
+          "amount": "2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "생강술 2큰술",
+              "timestamp": "03:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "생강술 집에 있어서 두 스푼을 넣겠습니다",
+              "timestamp": "03:05"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "고춧가루 2큰술",
+          "displayName": "고춧가루",
+          "amount": "2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 2큰술",
+              "timestamp": "03:45"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 얇게 두 스푼이 들어갑니다",
+              "timestamp": "03:43"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "물 400ml",
+          "displayName": "물",
+          "amount": "400",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 400ml",
+              "timestamp": "04:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 200ml 컵으로 한 컵, 두 컵을 넣습니다",
+              "timestamp": "04:17"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "새우젓 1큰술",
+          "displayName": "새우젓",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "새우젓 1큰술",
+              "timestamp": "04:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "새우젓이 한 스푼 들어갑니다",
+              "timestamp": "04:25"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "참치액젓 2큰술",
+          "displayName": "참치액젓",
+          "amount": "2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치액젓 2큰술",
+              "timestamp": "04:49"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참치 액젓이에요. 이게 두 스푼만 넣어주세요",
+              "timestamp": "04:48"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "후추 약간",
+          "displayName": "후추",
+          "amount": null,
+          "unit": "약간",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 약간",
+              "timestamp": "05:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추 좀 넣어주세요. 약간만 넣어주시고",
+              "timestamp": "05:03"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "계란 1개",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 1개",
+              "timestamp": "05:56"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란을 하나 이렇게 분리해 놨습니다. 흰자, 노른자",
+              "timestamp": "05:56"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        }
+      ],
+      "steps": [
+        {
+          "text": "순두부의 가운데 부분을 칼로 잘라 부서지지 않게 용기에 살짝 빼내어 준비합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "가운데를 잘라주세요",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "살짝 빼주세요",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "순두부 팩의 가운데를 칼로 자른 뒤 그릇에 조심스럽게 담는다",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "애호박을 반으로 갈라 너무 얇지 않게 썰어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "너무 얇지않게",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "SPEECH",
+              "text": "호박 반 자르셔서 너무 얇지 않게 이렇게 썰어주세요",
+              "timestamp": "00:48"
+            }
+          ]
+        },
+        {
+          "text": "양파를 애호박과 비슷한 크기와 모양으로 썰어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "호박하고 같은 모양으로",
+              "timestamp": "01:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "호박하고 같은 모양으로 옆으로 이렇게 썰어주세요",
+              "timestamp": "01:02"
+            }
+          ]
+        },
+        {
+          "text": "씻어서 물기를 짠 표고버섯의 밑동 끝 뿌리 부분만 버리고, 나머지 밑동과 버섯 갓을 호박 크기에 맞춰 썰어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깨끗히 씻어서 먼지를 제거 하시고 물기를 쪽 짜서 준비해주세요",
+              "timestamp": "01:12"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밑부분은 버려주세요",
+              "timestamp": "01:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이것도 호박 모양으로 적당히 이렇게 썰어줄 거예요",
+              "timestamp": "01:29"
+            }
+          ]
+        },
+        {
+          "text": "대파를 세로로 반 가른 후 송송 썰고, 청양고추도 반으로 갈라 잘게 썰어줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "반을 가르셔서 송송 썰어줍니다",
+              "timestamp": "01:36"
+            },
+            {
+              "type": "SPEECH",
+              "text": "반으로 가르셔서",
+              "timestamp": "01:49"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "청양고추를 반으로 갈라 잘게 썬다",
+              "timestamp": "01:48"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 참기름 1큰술을 두르고 다진 마늘 1큰술과 썬 대파를 넣고 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "참기름을 한 스푼 둘러주세요",
+              "timestamp": "02:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘 한 스푼, 대파 넣고 좀 볶아주세요",
+              "timestamp": "02:34"
+            }
+          ]
+        },
+        {
+          "text": "파와 마늘이 어느 정도 볶아지면 돼지 다짐육 120g을 넣고 함께 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "파하고 마늘이 어느정도 볶아지면",
+              "timestamp": "02:49"
+            },
+            {
+              "type": "SPEECH",
+              "text": "갈아 놓은 거 120g 정도입니다. 이렇게 넣고 볶아주세요",
+              "timestamp": "02:54"
+            }
+          ]
+        },
+        {
+          "text": "생강술 2큰술을 넣고 고기 기름이 배어 나올 때까지 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "생강술 집에 있어서 두 스푼을 넣겠습니다",
+              "timestamp": "03:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "돼지고기가 이렇게 어느 정도 볶아지고 돼지고기에 이렇게 기름이 좀 나오기 시작했어요",
+              "timestamp": "03:23"
+            }
+          ]
+        },
+        {
+          "text": "고춧가루 2큰술을 넣고 고루 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 고춧가루 얇게 두 스푼이 들어갑니다",
+              "timestamp": "03:42"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "고춧가루를 넣고 고기와 함께 볶아준다",
+              "timestamp": "03:47"
+            }
+          ]
+        },
+        {
+          "text": "썰어둔 청양고추를 넣고 함께 볶아 매콤한 풍미를 냅니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "청양고추, 홍고추로 썰었죠. 이거를 같이 넣고 볶아주세요",
+              "timestamp": "03:55"
+            }
+          ]
+        },
+        {
+          "text": "물 400ml(200ml 기준 2컵)를 붓고 새우젓 1큰술과 참치액젓 2큰술을 넣어 간을 맞춥니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 200ml 컵으로 한 컵, 두 컵을 넣습니다",
+              "timestamp": "04:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "새우젓이 한 스푼 들어갑니다",
+              "timestamp": "04:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참치 액젓이에요. 이게 두 스푼만 넣어주세요",
+              "timestamp": "04:48"
+            }
+          ]
+        },
+        {
+          "text": "국물이 끓어오르면 후추 약간을 넣고, 표고버섯, 애호박, 양파를 넣어 끓입니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이렇게 끓고 있을 때 후추 좀 넣어주세요",
+              "timestamp": "05:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "표고버섯 들어갑니다. 호박도 넣어주세요. 양파도 같이 넣어줍니다",
+              "timestamp": "05:08"
+            }
+          ]
+        },
+        {
+          "text": "호박과 채소들이 어느 정도 익으면 순두부를 한 숟가락씩 큼직하게 떠 넣고 살살 밀어 국물에 잠기게 합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마지막에 가서 순두부를",
+              "timestamp": "05:30"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "한스푼씩",
+              "timestamp": "05:34"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막에 가서 이렇게 순두부를 한 스푼씩 떠서 넣어주세요",
+              "timestamp": "05:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "젓지 마시고 살살 이런 식으로",
+              "timestamp": "05:51"
+            }
+          ]
+        },
+        {
+          "text": "분리해둔 계란 흰자를 국물 위에 두르고, 마지막으로 노른자를 중앙에 올려 마무리합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "흰자는 이렇게 쭉 부어주세요, 위에",
+              "timestamp": "06:00"
+            },
+            {
+              "type": "SPEECH",
+              "text": "끝 마무리에 가서 노른자를 살짝 올려줍니다",
+              "timestamp": "06:07"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

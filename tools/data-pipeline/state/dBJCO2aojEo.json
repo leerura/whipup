@@ -1,0 +1,263 @@
+{
+  "videoId": "dBJCO2aojEo",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/dBJCO2aojEo",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:48:32.596132+00:00",
+    "rawResponse": "{\n  \"title\": \"자취생의 저녁 초간단 돈까스덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"돈까스\",\n      \"displayName\": \"돈까스\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"초간단 돈까스덮밥\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"에어프라이어에 돈까스 1장을 넣고 조리함\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양파를 칼로 채 쒬\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 계란 1개를 깨서 젓가락으로 풂\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕\",\n      \"displayName\": \"설탕\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 설탕이 담겨 있음\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장\",\n      \"displayName\": \"간장\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"주황색 뚜껑 병에서 간장을 숟가락으로 떠 팬에 넣음\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"액상 소스/조미료\",\n      \"displayName\": \"액상 소스/조미료\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"갈색 병에서 액상 소스(맛술/쯔유/참치액 추정)를 숟가락에 따라 팬에 넣음\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에서 물을 팬에 부어 섞음\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"송송 썬 대파를 팬 위에 뿌림\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 따뜻한 밥을 담음\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"에어프라이어에 종이 호일을 깔고 돈까스를 넣어 구워준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"에어프라이어에 돈까스를 넣고 다이얼을 돌려 조리함\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파를 얇게 채 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도마 위에서 양파를 채 쒬\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 계란 1개를 깨 넣고 젓가락으로 가볍게 풀어 계란물을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란을 깨서 젓가락으로 섞음\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"에어프라이어에서 바삭하게 익은 돈까스를 꺼내 먹기 좋은 크기로 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"구워진 돈까스를 꺼내 도마에서 칼로 자름\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 설탕, 간장, 액상 소스, 물을 넣고 숟가락으로 잘 섞어 양념을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 설탕, 간장, 소스, 물을 차례로 넣고 섞음\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 불을 올리고 양념이 끓으면 채 썬 양파를 넣고 졸이듯 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 양파를 넣고 젓가락으로 저으며 끓임\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파가 익으면 그 위에 썰어둔 돈까스를 가지런히 얹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"익어가는 양파 위에 썰어둔 돈까스를 통째로 올림\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"돈까스 주위로 풀어둔 계란물을 둘러 붓고, 썬 대파를 뿌려 계란이 살짝 익을 때까지 조리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란물을 붓고 대파를 고명으로 뿌림\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 밥을 담고 그 위에 조리된 돈까스와 계란, 양파 소스를 올려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 밥을 담고 팬의 내용물을 주걱으로 얹음\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"설탕, 간장, 액상 소스, 물의 정확한 계량 수치가 자막이나 음성으로 제공되지 않음\",\n    \"00:18에 추가된 갈색 병의 소스가 쯔유, 맛술, 참치액 중 구체적으로 어떤 조미료인지 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "자취생의 저녁 초간단 돈까스덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "돈까스",
+          "displayName": "돈까스",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "초간단 돈까스덮밥",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "에어프라이어에 돈까스 1장을 넣고 조리함",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양파를 칼로 채 쒬",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "계란",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 계란 1개를 깨서 젓가락으로 풂",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "설탕",
+          "displayName": "설탕",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 설탕이 담겨 있음",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "간장",
+          "displayName": "간장",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "주황색 뚜껑 병에서 간장을 숟가락으로 떠 팬에 넣음",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "액상 소스/조미료",
+          "displayName": "액상 소스/조미료",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "갈색 병에서 액상 소스(맛술/쯔유/참치액 추정)를 숟가락에 따라 팬에 넣음",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "물",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에서 물을 팬에 부어 섞음",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "송송 썬 대파를 팬 위에 뿌림",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 따뜻한 밥을 담음",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "에어프라이어에 종이 호일을 깔고 돈까스를 넣어 구워준다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "에어프라이어에 돈까스를 넣고 다이얼을 돌려 조리함",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "양파를 얇게 채 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도마 위에서 양파를 채 쒬",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 계란 1개를 깨 넣고 젓가락으로 가볍게 풀어 계란물을 만든다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란을 깨서 젓가락으로 섞음",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "에어프라이어에서 바삭하게 익은 돈까스를 꺼내 먹기 좋은 크기로 썬다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "구워진 돈까스를 꺼내 도마에서 칼로 자름",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "팬에 설탕, 간장, 액상 소스, 물을 넣고 숟가락으로 잘 섞어 양념을 만든다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 설탕, 간장, 소스, 물을 차례로 넣고 섞음",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "팬에 불을 올리고 양념이 끓으면 채 썬 양파를 넣고 졸이듯 익힌다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 양파를 넣고 젓가락으로 저으며 끓임",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "양파가 익으면 그 위에 썰어둔 돈까스를 가지런히 얹는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "익어가는 양파 위에 썰어둔 돈까스를 통째로 올림",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "돈까스 주위로 풀어둔 계란물을 둘러 붓고, 썬 대파를 뿌려 계란이 살짝 익을 때까지 조리한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란물을 붓고 대파를 고명으로 뿌림",
+              "timestamp": "00:28"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 밥을 담고 그 위에 조리된 돈까스와 계란, 양파 소스를 올려 완성한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 밥을 담고 팬의 내용물을 주걱으로 얹음",
+              "timestamp": "00:31"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "설탕, 간장, 액상 소스, 물의 정확한 계량 수치가 자막이나 음성으로 제공되지 않음",
+        "00:18에 추가된 갈색 병의 소스가 쯔유, 맛술, 참치액 중 구체적으로 어떤 조미료인지 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

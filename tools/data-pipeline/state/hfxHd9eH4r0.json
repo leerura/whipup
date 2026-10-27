@@ -1,0 +1,266 @@
+{
+  "videoId": "hfxHd9eH4r0",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/hfxHd9eH4r0",
+  "sourceMetadata": {"sourceTitle":"라면 제발 이렇게 한번만 드셔보세요 (feat.백선생님)","sourceChannelName":"쿡신쿡왕","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.742964Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T08:02:47.053580+00:00",
+    "rawResponse": "{\n  \"title\": \"라면 레시피\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"신라면 1봉지 (면, 건더기 스프, 분말 스프)\",\n      \"displayName\": \"신라면\",\n      \"amount\": \"1\",\n      \"unit\": \"봉지\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"신라면 봉지를 보여줌\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"라면 뜯고 소스 치우고 면만 넣고 부스러기 넣고\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양동이 가져와 물 끓이고\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 끓이고\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"뚜껑 따고 기름 붓고\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기름 붓고\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 2개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 툭 치고 까주고 툭 치고 까주고\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 툭 치고 까주고 x 2\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"건더기 스프 전부\",\n      \"displayName\": \"건더기 스프\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"건더기 스프 전부 넣고\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"건더기 스프 전부 넣고\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"분말 스프 절반\",\n      \"displayName\": \"분말 스프\",\n      \"amount\": \"0.5\",\n      \"unit\": \"봉지\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"분말 스프는 절반만 넣고\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"분말 스프는 절반만 넣고\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파\",\n      \"displayName\": \"파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"파는 있으면 넣고 없으면 빼고\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"파는 있으면 넣고 없으면 빼고\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깨\",\n      \"displayName\": \"깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"깨 뿌리면 완성\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"깨뿌리면 완성\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 물을 끓이고 라면 면과 부스러기를 넣어 삶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 끓이고 라면 뜯고 소스 치우고 면만 넣고 부스러기 넣고\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"끓는 물에 라면 사리와 부스러기를 넣음\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 기름을 두르고 계란 2개를 까 넣은 뒤, 노른자를 터뜨려 대충 부숴준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬 가져와 뚜껑 따고 기름 붓고 계란 툭 치고 까주고 툭 치고 까주고 노른자 터치고 그냥 대충 부셔준다\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"달궈진 팬에 기름을 붓고 계란 2개를 넣어 노른자를 터뜨려 저어줌\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 위에 라면 건더기 스프 전부와 분말 스프 절반을 넣고, 기호에 따라 파를 넣어 함께 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"건더기 스프 전부 넣고 분말 스프는 절반만 넣고 파는 있으면 넣고 없으면 빼고 잘게 조사주고\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 건더기 스프, 분말 스프, 썬 대파를 넣고 볶아줌\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삶은 라면 면을 건져 팬에 넣고 스프 및 계란과 골고루 섞어가며 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"옆에서 면 가져와 때려 붓고 섞어주고 후라이팬 들고 폼 한번 잡고\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"삶은 면을 프라이팬에 붓고 볶아줌\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"깨를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"깨 뿌리면 완성\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 볶음면에 깨를 솔솔 뿌림\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "라면 레시피",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "신라면 1봉지 (면, 건더기 스프, 분말 스프)",
+          "displayName": "신라면",
+          "amount": "1",
+          "unit": "봉지",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "신라면 봉지를 보여줌",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "라면 뜯고 소스 치우고 면만 넣고 부스러기 넣고",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "물",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양동이 가져와 물 끓이고",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 끓이고",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "뚜껑 따고 기름 붓고",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "기름 붓고",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "계란 2개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 툭 치고 까주고 툭 치고 까주고",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란 툭 치고 까주고 x 2",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "건더기 스프 전부",
+          "displayName": "건더기 스프",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "건더기 스프 전부 넣고",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "건더기 스프 전부 넣고",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "분말 스프 절반",
+          "displayName": "분말 스프",
+          "amount": "0.5",
+          "unit": "봉지",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "분말 스프는 절반만 넣고",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "분말 스프는 절반만 넣고",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "파",
+          "displayName": "파",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "파는 있으면 넣고 없으면 빼고",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "파는 있으면 넣고 없으면 빼고",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "깨",
+          "displayName": "깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "깨 뿌리면 완성",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "깨뿌리면 완성",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 물을 끓이고 라면 면과 부스러기를 넣어 삶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 끓이고 라면 뜯고 소스 치우고 면만 넣고 부스러기 넣고",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "끓는 물에 라면 사리와 부스러기를 넣음",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "팬에 기름을 두르고 계란 2개를 까 넣은 뒤, 노른자를 터뜨려 대충 부숴준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬 가져와 뚜껑 따고 기름 붓고 계란 툭 치고 까주고 툭 치고 까주고 노른자 터치고 그냥 대충 부셔준다",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "달궈진 팬에 기름을 붓고 계란 2개를 넣어 노른자를 터뜨려 저어줌",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "계란 위에 라면 건더기 스프 전부와 분말 스프 절반을 넣고, 기호에 따라 파를 넣어 함께 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "건더기 스프 전부 넣고 분말 스프는 절반만 넣고 파는 있으면 넣고 없으면 빼고 잘게 조사주고",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 건더기 스프, 분말 스프, 썬 대파를 넣고 볶아줌",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "삶은 라면 면을 건져 팬에 넣고 스프 및 계란과 골고루 섞어가며 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "옆에서 면 가져와 때려 붓고 섞어주고 후라이팬 들고 폼 한번 잡고",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "삶은 면을 프라이팬에 붓고 볶아줌",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "깨를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "깨 뿌리면 완성",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 볶음면에 깨를 솔솔 뿌림",
+              "timestamp": "00:19"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

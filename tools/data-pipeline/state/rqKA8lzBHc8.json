@@ -1,0 +1,416 @@
+{
+  "videoId": "rqKA8lzBHc8",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/rqKA8lzBHc8",
+  "sourceMetadata": {"sourceTitle":"원팬 파스타 알리오올리오! 생마늘 필요 없음! 초간단 레시피!","sourceChannelName":"삼플식당(Sam Simple Restaurant)","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.933132Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T10:38:29.827164+00:00",
+    "rawResponse": "{\n  \"title\": \"원팬 알리오올리오 파스타\",\n  \"description\": null,\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"올리브유 네 스푼(4T)\",\n      \"displayName\": \"올리브유\",\n      \"amount\": \"4\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 팬에 올리브유 네 스푼(4T)을 넣어줍니다.\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 올리브유 네 스푼을 넣어줍니다.\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 한 스푼 반(1.5T)\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1.5\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘 한 스푼 반(1.5T)을 넣어 줍니다.\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘 한 스푼 반을 넣어 줍니다.\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"크러쉬드 레드페퍼홀 한 스푼(1T)\",\n      \"displayName\": \"크러쉬드 레드페퍼홀\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"크러쉬드 레드페퍼홀을 한 스푼(1T) 넣어줍니다.\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"크러쉬드 레드페퍼홀을 한 스푼 넣어줍니다.\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"페페론치노 2개\",\n      \"displayName\": \"페페론치노\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"레드페퍼홀 대신 페페론치노 2개를 부셔서 넣어주시거나\",\n          \"timestamp\": \"00:50\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"레드페퍼홀 대신 페페론치노 2개를 부셔서 넣어주시거나\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 1개\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"청양고추 한 개를 잘게 다져서 넣어주셔도 됩니다.\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"청양고추 한 개를 잘게 다져서 넣어주셔도 됩니다.\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 550mL (종이컵 3컵)\",\n      \"displayName\": \"물\",\n      \"amount\": \"550\",\n      \"unit\": \"mL\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"\\\"불을 끄고\\\", 물 550mL를 넣어주는데요.\",\n          \"timestamp\": \"01:02\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"종이컵으로는 3컵 넣어주시면 됩니다.\",\n          \"timestamp\": \"01:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불을 끄고, 물 550ml를 넣어주는데요. 종이컵으로는 세 컵 넣어주시면 됩니다.\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파스타면 1인분(120g)\",\n      \"displayName\": \"파스타면\",\n      \"amount\": \"120\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 파스타면 1인분(120g)을 넣어줍니다.\",\n          \"timestamp\": \"01:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 파스타면 1인분을 넣어줍니다.\",\n          \"timestamp\": \"01:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치액젓 한 스푼(1T)\",\n      \"displayName\": \"참치액젓\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다음으로 참치액젓 한 스푼(1T)을 넣어줍니다.\",\n          \"timestamp\": \"01:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다음으로 참치액젓 한 스푼을 넣어줍니다.\",\n          \"timestamp\": \"01:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"치킨스톡\",\n      \"displayName\": \"치킨스톡\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참치액젓이 없다면 치킨스톡이나 멸치액젓을 대신 사용하셔도 됩니다.\",\n          \"timestamp\": \"01:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치액젓이 없다면 치킨스톡이나 멸치액젓을 대신 사용하셔도 됩니다.\",\n          \"timestamp\": \"01:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"멸치액젓\",\n      \"displayName\": \"멸치액젓\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참치액젓이 없다면 치킨스톡이나 멸치액젓을 대신 사용하셔도 됩니다.\",\n          \"timestamp\": \"01:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치액젓이 없다면 치킨스톡이나 멸치액젓을 대신 사용하셔도 됩니다.\",\n          \"timestamp\": \"01:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛소금 조금\",\n      \"displayName\": \"맛소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"혹시나 간이 좀 싱겁다면 맛소금으로 조금 더 간을 해주셔도 됩니다.\",\n          \"timestamp\": \"02:02\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"혹시나 간이 좀 싱겁다면 맛소금으로 조금 더 간을 해주셔도 됩니다.\",\n          \"timestamp\": \"02:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 반 스푼(0.5T)\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"0.5\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘 반 스푼(0.5T)\",\n          \"timestamp\": \"02:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘 반 스푼\",\n          \"timestamp\": \"02:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리브유 한 스푼(1T)\",\n      \"displayName\": \"올리브유\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"올리브유 한 스푼(1T)을 넣고\",\n          \"timestamp\": \"02:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"올리브유 한 스푼을 넣고\",\n          \"timestamp\": \"02:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파마산치즈가루 한 스푼(4g)\",\n      \"displayName\": \"파마산치즈가루\",\n      \"amount\": \"4\",\n      \"unit\": \"g\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 추가로 있다면 맛이 한 단계 더 업그레이드 되는 파마산치즈가루를 한 스푼(4g) 넣어서 마무리해 주면\",\n          \"timestamp\": \"02:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 추가로 있다면 맛이 한 단계 더 업그레이드 되는 파마산 치즈가루를 한 스푼 넣어서 마무리해 주면\",\n          \"timestamp\": \"02:34\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 올리브유 4T를 넣고 약불로 켠 후 다진마늘 1.5T를 넣고, 팬 두께에 따라 중약불 또는 약불로 조절하며 색이 변할 때까지 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 팬에 올리브유 네 스푼(4T)을 넣어줍니다. 그리고 불을 약불로 켜주고 다진마늘 한 스푼 반(1.5T)을 넣어 줍니다.\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그렇기 때문에 불의 세기는 팬의 두께에 따라서 중약불 또는 약불로 조정하시기 바랍니다.\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"text\": \"다진마늘의 색이 변하기 시작하면 크러쉬드 레드페퍼홀 1T를 넣고 향이 올라오고 갈색이 될 때까지 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘의 색이 변하기 시작하면 크러쉬드 레드페퍼홀을 한 스푼(1T) 넣어줍니다.\",\n          \"timestamp\": \"00:45\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 마늘과 레드페퍼홀의 향이 잘 올라오고 색도 갈색으로 예쁘게 나왔다면\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 끄고 물 550mL(종이컵 3컵), 파스타면 120g, 참치액젓 1T를 넣어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"\\\"불을 끄고\\\", 물 550mL를 넣어주는데요. 종이컵으로는 3컵 넣어주시면 됩니다.\",\n          \"timestamp\": \"01:02\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 파스타면 1인분(120g)을 넣어줍니다.\",\n          \"timestamp\": \"01:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다음으로 참치액젓 한 스푼(1T)을 넣어줍니다.\",\n          \"timestamp\": \"01:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 켜고 물을 끓이면서 졸여줍니다. 면 끝부분이 물에 잠기도록 틈틈이 적셔주고 저어주며 익힙니다. (면이 덜 익었다면 물을 추가하고, 싱거우면 맛소금으로 간을 합니다.)\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 이대로 끓여주면서 졸여주면 끝인데요.\",\n          \"timestamp\": \"01:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"틈틈이 끝부분을 물에 적셔 주시면 좋습니다.\",\n          \"timestamp\": \"01:35\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"면이 덜 익었다면 추가로 물을 넣고 더 졸여주시면 됩니다. 혹시나 간이 좀 싱겁다면 맛소금으로 조금 더 간을 해주셔도 됩니다.\",\n          \"timestamp\": \"01:58\"\n        }\n      ]\n    },\n    {\n      \"text\": \"면이 잘 익고 국물이 졸아들면 반드시 불을 끄고 다진마늘 0.5T와 올리브유 1T를 넣은 뒤, 소스화(유화)가 되도록 열심히 치대며 섞어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"잘 익었으면 이제 불을 끄고 다진마늘 반 스푼(0.5T) 올리브유 한 스푼(1T)을 넣고 잘 섞어줍니다.\",\n          \"timestamp\": \"02:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"꼭 \\\"불을 끄고\\\" 섞어주시기 바랍니다. 면의 전분과 물, 올리브유가 섞이면서 소스처럼 변할 수 있게 열심히 치대줍니다.\",\n          \"timestamp\": \"02:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 옮겨 담은 후, 선택 사항으로 파마산 치즈가루 1스푼(4g)을 뿌려 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그릇에 이쁘게 옮겨 담아주겠습니다.\",\n          \"timestamp\": \"02:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 추가로 있다면 맛이 한 단계 더 업그레이드 되는 파마산치즈가루를 한 스푼(4g) 넣어서 마무리해 주면\",\n          \"timestamp\": \"02:34\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "원팬 알리오올리오 파스타",
+      "description": null,
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "올리브유 네 스푼(4T)",
+          "displayName": "올리브유",
+          "amount": "4",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 팬에 올리브유 네 스푼(4T)을 넣어줍니다.",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 올리브유 네 스푼을 넣어줍니다.",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "다진마늘 한 스푼 반(1.5T)",
+          "displayName": "다진마늘",
+          "amount": "1.5",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘 한 스푼 반(1.5T)을 넣어 줍니다.",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진마늘 한 스푼 반을 넣어 줍니다.",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "크러쉬드 레드페퍼홀 한 스푼(1T)",
+          "displayName": "크러쉬드 레드페퍼홀",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "크러쉬드 레드페퍼홀을 한 스푼(1T) 넣어줍니다.",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "SPEECH",
+              "text": "크러쉬드 레드페퍼홀을 한 스푼 넣어줍니다.",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "페페론치노 2개",
+          "displayName": "페페론치노",
+          "amount": "2",
+          "unit": "개",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "레드페퍼홀 대신 페페론치노 2개를 부셔서 넣어주시거나",
+              "timestamp": "00:50"
+            },
+            {
+              "type": "SPEECH",
+              "text": "레드페퍼홀 대신 페페론치노 2개를 부셔서 넣어주시거나",
+              "timestamp": "00:50"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "청양고추 1개",
+          "displayName": "청양고추",
+          "amount": "1",
+          "unit": "개",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "청양고추 한 개를 잘게 다져서 넣어주셔도 됩니다.",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "SPEECH",
+              "text": "청양고추 한 개를 잘게 다져서 넣어주셔도 됩니다.",
+              "timestamp": "00:53"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "물 550mL (종이컵 3컵)",
+          "displayName": "물",
+          "amount": "550",
+          "unit": "mL",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "\"불을 끄고\", 물 550mL를 넣어주는데요.",
+              "timestamp": "01:02"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "종이컵으로는 3컵 넣어주시면 됩니다.",
+              "timestamp": "01:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "불을 끄고, 물 550ml를 넣어주는데요. 종이컵으로는 세 컵 넣어주시면 됩니다.",
+              "timestamp": "01:02"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "파스타면 1인분(120g)",
+          "displayName": "파스타면",
+          "amount": "120",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 파스타면 1인분(120g)을 넣어줍니다.",
+              "timestamp": "01:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 파스타면 1인분을 넣어줍니다.",
+              "timestamp": "01:09"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "참치액젓 한 스푼(1T)",
+          "displayName": "참치액젓",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다음으로 참치액젓 한 스푼(1T)을 넣어줍니다.",
+              "timestamp": "01:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다음으로 참치액젓 한 스푼을 넣어줍니다.",
+              "timestamp": "01:17"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "치킨스톡",
+          "displayName": "치킨스톡",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "참치액젓이 없다면 치킨스톡이나 멸치액젓을 대신 사용하셔도 됩니다.",
+              "timestamp": "01:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참치액젓이 없다면 치킨스톡이나 멸치액젓을 대신 사용하셔도 됩니다.",
+              "timestamp": "01:23"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "멸치액젓",
+          "displayName": "멸치액젓",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "참치액젓이 없다면 치킨스톡이나 멸치액젓을 대신 사용하셔도 됩니다.",
+              "timestamp": "01:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참치액젓이 없다면 치킨스톡이나 멸치액젓을 대신 사용하셔도 됩니다.",
+              "timestamp": "01:23"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "맛소금 조금",
+          "displayName": "맛소금",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "혹시나 간이 좀 싱겁다면 맛소금으로 조금 더 간을 해주셔도 됩니다.",
+              "timestamp": "02:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "혹시나 간이 좀 싱겁다면 맛소금으로 조금 더 간을 해주셔도 됩니다.",
+              "timestamp": "02:02"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "다진마늘 반 스푼(0.5T)",
+          "displayName": "다진마늘",
+          "amount": "0.5",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘 반 스푼(0.5T)",
+              "timestamp": "02:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진마늘 반 스푼",
+              "timestamp": "02:10"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "올리브유 한 스푼(1T)",
+          "displayName": "올리브유",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "올리브유 한 스푼(1T)을 넣고",
+              "timestamp": "02:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "올리브유 한 스푼을 넣고",
+              "timestamp": "02:11"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "파마산치즈가루 한 스푼(4g)",
+          "displayName": "파마산치즈가루",
+          "amount": "4",
+          "unit": "g",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 추가로 있다면 맛이 한 단계 더 업그레이드 되는 파마산치즈가루를 한 스푼(4g) 넣어서 마무리해 주면",
+              "timestamp": "02:34"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 추가로 있다면 맛이 한 단계 더 업그레이드 되는 파마산 치즈가루를 한 스푼 넣어서 마무리해 주면",
+              "timestamp": "02:34"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 올리브유 4T를 넣고 약불로 켠 후 다진마늘 1.5T를 넣고, 팬 두께에 따라 중약불 또는 약불로 조절하며 색이 변할 때까지 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 팬에 올리브유 네 스푼(4T)을 넣어줍니다. 그리고 불을 약불로 켜주고 다진마늘 한 스푼 반(1.5T)을 넣어 줍니다.",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그렇기 때문에 불의 세기는 팬의 두께에 따라서 중약불 또는 약불로 조정하시기 바랍니다.",
+              "timestamp": "00:40"
+            }
+          ]
+        },
+        {
+          "text": "다진마늘의 색이 변하기 시작하면 크러쉬드 레드페퍼홀 1T를 넣고 향이 올라오고 갈색이 될 때까지 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘의 색이 변하기 시작하면 크러쉬드 레드페퍼홀을 한 스푼(1T) 넣어줍니다.",
+              "timestamp": "00:45"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 마늘과 레드페퍼홀의 향이 잘 올라오고 색도 갈색으로 예쁘게 나왔다면",
+              "timestamp": "00:56"
+            }
+          ]
+        },
+        {
+          "text": "불을 끄고 물 550mL(종이컵 3컵), 파스타면 120g, 참치액젓 1T를 넣어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "\"불을 끄고\", 물 550mL를 넣어주는데요. 종이컵으로는 3컵 넣어주시면 됩니다.",
+              "timestamp": "01:02"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 파스타면 1인분(120g)을 넣어줍니다.",
+              "timestamp": "01:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다음으로 참치액젓 한 스푼(1T)을 넣어줍니다.",
+              "timestamp": "01:17"
+            }
+          ]
+        },
+        {
+          "text": "불을 켜고 물을 끓이면서 졸여줍니다. 면 끝부분이 물에 잠기도록 틈틈이 적셔주고 저어주며 익힙니다. (면이 덜 익었다면 물을 추가하고, 싱거우면 맛소금으로 간을 합니다.)",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 이대로 끓여주면서 졸여주면 끝인데요.",
+              "timestamp": "01:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "틈틈이 끝부분을 물에 적셔 주시면 좋습니다.",
+              "timestamp": "01:35"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "면이 덜 익었다면 추가로 물을 넣고 더 졸여주시면 됩니다. 혹시나 간이 좀 싱겁다면 맛소금으로 조금 더 간을 해주셔도 됩니다.",
+              "timestamp": "01:58"
+            }
+          ]
+        },
+        {
+          "text": "면이 잘 익고 국물이 졸아들면 반드시 불을 끄고 다진마늘 0.5T와 올리브유 1T를 넣은 뒤, 소스화(유화)가 되도록 열심히 치대며 섞어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "잘 익었으면 이제 불을 끄고 다진마늘 반 스푼(0.5T) 올리브유 한 스푼(1T)을 넣고 잘 섞어줍니다.",
+              "timestamp": "02:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "꼭 \"불을 끄고\" 섞어주시기 바랍니다. 면의 전분과 물, 올리브유가 섞이면서 소스처럼 변할 수 있게 열심히 치대줍니다.",
+              "timestamp": "02:14"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 옮겨 담은 후, 선택 사항으로 파마산 치즈가루 1스푼(4g)을 뿌려 완성합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "그릇에 이쁘게 옮겨 담아주겠습니다.",
+              "timestamp": "02:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 추가로 있다면 맛이 한 단계 더 업그레이드 되는 파마산치즈가루를 한 스푼(4g) 넣어서 마무리해 주면",
+              "timestamp": "02:34"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

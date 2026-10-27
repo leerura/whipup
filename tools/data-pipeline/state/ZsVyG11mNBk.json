@@ -1,0 +1,300 @@
+{
+  "videoId": "ZsVyG11mNBk",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/ZsVyG11mNBk",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T08:07:53.902178+00:00",
+    "rawResponse": "{\n  \"title\": \"치킨카레\",\n  \"description\": null,\n  \"servings\": \"2인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"닭다리살 정육 400g\",\n      \"displayName\": \"닭다리살 정육\",\n      \"amount\": \"400\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"닭다리살 정육을 400g 올려주고\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"닭다리살 정육 400g을 올려주고\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 반개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 반개를\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 반개를\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고형카레 2칸\",\n      \"displayName\": \"고형카레\",\n      \"amount\": \"2\",\n      \"unit\": \"칸\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고형카레를 1.5칸 넣으면 정말 좋지만 자르기 애매하니 2칸 넣어주고\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고형카레를 1.5칸 넣으면 좋지만 자르기 애매하니 2칸 넣어주고\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"치킨스톡 1/4스푼\",\n      \"displayName\": \"치킨스톡\",\n      \"amount\": \"1/4\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"치킨스톡 1/4스푼 살짝만 넣고\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"치킨스톡 1/4스푼 살짝 넣고\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"케찹 두스푼\",\n      \"displayName\": \"케찹\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"케찹 두스푼과\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"케찹 2스푼과\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1/2스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 반스푼\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1/2스푼\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"노란 체다치즈 1장\",\n      \"displayName\": \"노란 체다치즈\",\n      \"amount\": \"1\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"노란 체다치즈 한 장까지 올려주고\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"노란 체다치즈 1장까지 올려주고\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우유 2컵 (약 360ml)\",\n      \"displayName\": \"우유\",\n      \"amount\": \"2\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밀크를 두 컵 부어줍니다\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"우유 2컵 (약 360ml)을\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 카레 위에 밥 한 공기를 올림\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"짜다면 밥 한 숟갈 더 드이소\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리가루\",\n      \"displayName\": \"파슬리가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 파슬리가루를 뿌림\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 닭다리살 정육 400g을 올리고 앞뒤로 뒤집어가며 노릇하게 구워준 뒤, 먹기 좋은 작은 크기로 자른다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"닭다리살 정육을 400g 올려주고 앞뒤로 뒤집어주면서 노릇노릇하게 구워줍니다. 인자 평소 먹는 크기보다 더 작은 크기로 잘라주고\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"닭다리살 정육 400g을 올려주고 앞뒤로 뒤집어주면서 노릇하게 구워줍니다. 이제 평소 먹는 크기보다 더 작은 크기로 잘라주고\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 반 개를 입체감 있게 썰어 팬에 넣고, 진한 갈색빛이 돌 때까지 닭기름에 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 반개를 기형이 대가리 맹키로 또삐 타고 입체감 있게 썰어서 다 올려줍니다. 그라고 양파도 진한 갈색빛이 띌 때까지 닭기름에 볶아주다가\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 반개를 입체감 있게 썰어서 다 올려줍니다. 그리고 양파도 진한 갈색빛이 띌 때까지 닭기름에 볶아주다가\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 고형카레 2칸, 치킨스톡 1/4스푼, 케찹 2스푼, 고춧가루 1/2스푼, 노란 체다치즈 1장, 우유 2컵(약 360ml)을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이런 향이 좋은 고형카레를 1.5칸 넣으면 정말 좋지만 자르기 애매하니 2칸 넣어주고 치킨스톡 1/4스푼 살짝만 넣고 케찹 두스푼과 고춧가루 반스푼 노란 체다치즈 한 장까지 올려주고 밀크를 두 컵 부어줍니다.\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"향이 좋은 고형카레를 1.5칸 넣으면 좋지만 자르기 애매하니 2칸 넣어주고 치킨스톡 1/4스푼 살짝 넣고 케찹 2스푼과 고춧가루 1/2스푼 노란 체다치즈 1장까지 올려주고 우유 2컵 (약 360ml)을\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"은은한 약불에서 카레가 다 풀릴 때까지 저어주며 끓인다. (너무 꾸덕해졌다면 우유를 추가한다.)\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"인자 은은한 약불에서 카레가 다 풀릴 때까지만 저어주면 끝입니다. 마 오랫동안 끓여가 너무 꾸덕한 카레가 되었다면 우유를 쫌에 더 부어주면 바로 해결됩니다.\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"이제 은은한 약불에서 카레가 다 풀릴 때까지 저어주면 끝입니다. 오랫동안 끓여서 너무 꾸덕한 카레가 됐다면 우유를 더 부어주면 바로 해결됩니다.\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 카레 위에 밥을 올리고 파슬리가루를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"카레 가운데에 밥을 얹고 파슬리가루를 뿌림\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참고로 이거 2인분 양이니 여자친구랑 같이 나눠 먹으면 좋겠죠잉? 이러면 늘 먹던 카레보다 100배 더 맛있는 치킨카레가 완성됩니다.\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "치킨카레",
+      "description": null,
+      "servings": "2인분",
+      "ingredients": [
+        {
+          "rawText": "닭다리살 정육 400g",
+          "displayName": "닭다리살 정육",
+          "amount": "400",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "닭다리살 정육을 400g 올려주고",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "닭다리살 정육 400g을 올려주고",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파 반개",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 반개를",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 반개를",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "고형카레 2칸",
+          "displayName": "고형카레",
+          "amount": "2",
+          "unit": "칸",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고형카레를 1.5칸 넣으면 정말 좋지만 자르기 애매하니 2칸 넣어주고",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고형카레를 1.5칸 넣으면 좋지만 자르기 애매하니 2칸 넣어주고",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "치킨스톡 1/4스푼",
+          "displayName": "치킨스톡",
+          "amount": "1/4",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "치킨스톡 1/4스푼 살짝만 넣고",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "치킨스톡 1/4스푼 살짝 넣고",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "케찹 두스푼",
+          "displayName": "케찹",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "케찹 두스푼과",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "케찹 2스푼과",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "고춧가루 1/2스푼",
+          "displayName": "고춧가루",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 반스푼",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1/2스푼",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "노란 체다치즈 1장",
+          "displayName": "노란 체다치즈",
+          "amount": "1",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "노란 체다치즈 한 장까지 올려주고",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "노란 체다치즈 1장까지 올려주고",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "우유 2컵 (약 360ml)",
+          "displayName": "우유",
+          "amount": "2",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밀크를 두 컵 부어줍니다",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "우유 2컵 (약 360ml)을",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 카레 위에 밥 한 공기를 올림",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "짜다면 밥 한 숟갈 더 드이소",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "파슬리가루",
+          "displayName": "파슬리가루",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 파슬리가루를 뿌림",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 닭다리살 정육 400g을 올리고 앞뒤로 뒤집어가며 노릇하게 구워준 뒤, 먹기 좋은 작은 크기로 자른다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "닭다리살 정육을 400g 올려주고 앞뒤로 뒤집어주면서 노릇노릇하게 구워줍니다. 인자 평소 먹는 크기보다 더 작은 크기로 잘라주고",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "닭다리살 정육 400g을 올려주고 앞뒤로 뒤집어주면서 노릇하게 구워줍니다. 이제 평소 먹는 크기보다 더 작은 크기로 잘라주고",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "양파 반 개를 입체감 있게 썰어 팬에 넣고, 진한 갈색빛이 돌 때까지 닭기름에 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 반개를 기형이 대가리 맹키로 또삐 타고 입체감 있게 썰어서 다 올려줍니다. 그라고 양파도 진한 갈색빛이 띌 때까지 닭기름에 볶아주다가",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 반개를 입체감 있게 썰어서 다 올려줍니다. 그리고 양파도 진한 갈색빛이 띌 때까지 닭기름에 볶아주다가",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "팬에 고형카레 2칸, 치킨스톡 1/4스푼, 케찹 2스푼, 고춧가루 1/2스푼, 노란 체다치즈 1장, 우유 2컵(약 360ml)을 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이런 향이 좋은 고형카레를 1.5칸 넣으면 정말 좋지만 자르기 애매하니 2칸 넣어주고 치킨스톡 1/4스푼 살짝만 넣고 케찹 두스푼과 고춧가루 반스푼 노란 체다치즈 한 장까지 올려주고 밀크를 두 컵 부어줍니다.",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "향이 좋은 고형카레를 1.5칸 넣으면 좋지만 자르기 애매하니 2칸 넣어주고 치킨스톡 1/4스푼 살짝 넣고 케찹 2스푼과 고춧가루 1/2스푼 노란 체다치즈 1장까지 올려주고 우유 2컵 (약 360ml)을",
+              "timestamp": "00:19"
+            }
+          ]
+        },
+        {
+          "text": "은은한 약불에서 카레가 다 풀릴 때까지 저어주며 끓인다. (너무 꾸덕해졌다면 우유를 추가한다.)",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "인자 은은한 약불에서 카레가 다 풀릴 때까지만 저어주면 끝입니다. 마 오랫동안 끓여가 너무 꾸덕한 카레가 되었다면 우유를 쫌에 더 부어주면 바로 해결됩니다.",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "이제 은은한 약불에서 카레가 다 풀릴 때까지 저어주면 끝입니다. 오랫동안 끓여서 너무 꾸덕한 카레가 됐다면 우유를 더 부어주면 바로 해결됩니다.",
+              "timestamp": "00:30"
+            }
+          ]
+        },
+        {
+          "text": "완성된 카레 위에 밥을 올리고 파슬리가루를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "카레 가운데에 밥을 얹고 파슬리가루를 뿌림",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참고로 이거 2인분 양이니 여자친구랑 같이 나눠 먹으면 좋겠죠잉? 이러면 늘 먹던 카레보다 100배 더 맛있는 치킨카레가 완성됩니다.",
+              "timestamp": "00:38"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

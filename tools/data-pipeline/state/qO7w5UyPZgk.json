@@ -1,0 +1,395 @@
+{
+  "videoId": "qO7w5UyPZgk",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/qO7w5UyPZgk",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:57:20.262645+00:00",
+    "rawResponse": "{\n  \"title\": \"고추참치 순두부찌개\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"물 2컵(약 360ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"2\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"뚝배기에 물 2컵(약 360ml)을 부어주고\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"뚝배기에 물 2컵을 부어주고\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추참치 한캔\",\n      \"displayName\": \"고추참치\",\n      \"amount\": \"1\",\n      \"unit\": \"캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 고추참치를 한캔 다 넣어줍니다.\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 고추참치를 한캔 다 넣어줍니다.\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 한스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 시뻘건 색감을 위해 고춧가루 한스푼을 더해주고\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 시뻘건 색감을 위해 고춧가루 한스푼을 더해주고\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"오늘도 역시 지고 온 다진 마늘을 1스푼 넣어주고\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"오늘도 역시 지고 온 다진 마늘을 1스푼 넣어주고\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"국간장 3스푼 (액젓 사용 시 2스푼)\",\n      \"displayName\": \"국간장\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"국간장 3스푼을 넣어 짭짤하게 간을 해줍니다.\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국간장 3스푼을 넣어 짭짤하게 간을 해줍니다.\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"국간장 2스푼으로 줄이고 액젓 1스푼을 넣어주시면\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"액젓 1스푼\",\n      \"displayName\": \"액젓\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"집에 만약 액젓이 있다면 국간장 2스푼으로 줄이고 액젓 1스푼을 넣어주시면 더 맛이 좋습니다.\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"집에 만약 액젓이 있다면 국간장 2스푼으로 줄이고 액젓 1스푼을 넣어주시면 더 맛이 좋습니다.\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"순두부 한봉지\",\n      \"displayName\": \"순두부\",\n      \"amount\": \"1\",\n      \"unit\": \"봉지\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 순두부 한봉지를 다 넣어주고\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 순두부 한봉지를 다 넣어주고\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"팽이버섯\",\n      \"displayName\": \"팽이버섯\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 팽이버섯과 청양고추도 넣어주고\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 팽이버섯과 청양고추도 넣어주고\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추\",\n      \"displayName\": \"청양고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 팽이버섯과 청양고추도 넣어주고\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 팽이버섯과 청양고추도 넣어주고\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소고기다시다나 치킨스톡 1/3스푼\",\n      \"displayName\": \"소고기다시다 또는 치킨스톡\",\n      \"amount\": \"1/3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소고기다시다나 치킨스톡을 1/3스푼 넣어줍니다.\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소고기다시다나 치킨스톡을 3분의 1스푼 넣어줍니다.\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 하나\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 계란 하나를 까서 넣어주고\",\n          \"timestamp\": \"00:42\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 계란 하나를 까서 넣어주고\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추도 톡톡톡 뿌려 마무리해 줍니다.\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추도 톡톡톡 뿌려 마무리해 줍니다.\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"뚝배기에 물 2컵(약 360ml)을 부어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"뚝배기에 물 2컵(약 360ml)을 부어주고\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"뚝배기에 물 2컵을 부어주고\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고추참치 한 캔을 전부 넣어 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 고추참치를 한캔 다 넣어줍니다.\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 고추참치를 한캔 다 넣어줍니다. 이러면 힘들게 기름에 고춧가루를 볶으면서 고추기름을 낼 필요 없이 벌써부터 고추기름이 물 위로 뜨는 걸 한눈에 볼 수 있습니다.\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고춧가루 1스푼, 다진 마늘 1스푼을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 시뻘건 색감을 위해 고춧가루 한스푼을 더해주고 오늘도 역시 지고 온 다진 마늘을 1스푼 넣어주고\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 시뻘건 색감을 위해 고춧가루 한스푼을 더해주고 오늘도 역시 지고 온 다진 마늘을 1스푼 넣어주고\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국간장 3스푼을 넣어 간을 맞춘다. (집에 액젓이 있다면 국간장을 2스푼으로 줄이고 액젓 1스푼을 넣는다.)\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"국간장 3스푼을 넣어 짭짤하게 간을 해줍니다. 집에 만약 액젓이 있다면 국간장 2스푼으로 줄이고 액젓 1스푼을 넣어주시면 더 맛이 좋습니다.\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국간장 3스푼을 넣어 짭짤하게 간을 해줍니다. 집에 만약 액젓이 있다면 국간장 2스푼으로 줄이고 액젓 1스푼을 넣어주시면 더 맛이 좋습니다.\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"순두부 한 봉지를 다 넣고 먹기 좋은 크기로 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 순두부 한봉지를 다 넣어주고 순두부를 넥슬라이스하면서 먹기 좋은 크기로 숭덩숭덩 썰어줍니다.\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 순두부 한봉지를 다 넣어주고 순두부를 넥슬라이스하면서 먹기 좋은 크기로 숭덩숭덩 썰어줍니다.\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팽이버섯과 청양고추를 넣어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 팽이버섯과 청양고추도 넣어주고\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 팽이버섯과 청양고추도 넣어주고\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소고기 다시다 또는 치킨스톡 1/3스푼을 넣어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"완벽한 30년 전통의 손맛을 느끼기 위해 소고기다시다나 치킨스톡을 1/3스푼 넣어줍니다.\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"완벽한 30년 전통의 손맛을 느끼기 위해 소고기다시다나 치킨스톡을 3분의 1스푼 넣어줍니다.\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 1개를 까서 넣고 후추를 톡톡 뿌려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 계란 하나를 까서 넣어주고 후추도 톡톡톡 뿌려 마무리해 줍니다.\",\n          \"timestamp\": \"00:42\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 계란 하나를 까서 넣어주고 후추도 톡톡톡 뿌려 마무리해 줍니다.\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "고추참치 순두부찌개",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "물 2컵(약 360ml)",
+          "displayName": "물",
+          "amount": "2",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "뚝배기에 물 2컵(약 360ml)을 부어주고",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "SPEECH",
+              "text": "뚝배기에 물 2컵을 부어주고",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "고추참치 한캔",
+          "displayName": "고추참치",
+          "amount": "1",
+          "unit": "캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 고추참치를 한캔 다 넣어줍니다.",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 고추참치를 한캔 다 넣어줍니다.",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "고춧가루 한스푼",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 시뻘건 색감을 위해 고춧가루 한스푼을 더해주고",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 시뻘건 색감을 위해 고춧가루 한스푼을 더해주고",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "다진 마늘 1스푼",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "오늘도 역시 지고 온 다진 마늘을 1스푼 넣어주고",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "오늘도 역시 지고 온 다진 마늘을 1스푼 넣어주고",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "국간장 3스푼 (액젓 사용 시 2스푼)",
+          "displayName": "국간장",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "국간장 3스푼을 넣어 짭짤하게 간을 해줍니다.",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "국간장 3스푼을 넣어 짭짤하게 간을 해줍니다.",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "국간장 2스푼으로 줄이고 액젓 1스푼을 넣어주시면",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "액젓 1스푼",
+          "displayName": "액젓",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "집에 만약 액젓이 있다면 국간장 2스푼으로 줄이고 액젓 1스푼을 넣어주시면 더 맛이 좋습니다.",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "집에 만약 액젓이 있다면 국간장 2스푼으로 줄이고 액젓 1스푼을 넣어주시면 더 맛이 좋습니다.",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "순두부 한봉지",
+          "displayName": "순두부",
+          "amount": "1",
+          "unit": "봉지",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 순두부 한봉지를 다 넣어주고",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 순두부 한봉지를 다 넣어주고",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "팽이버섯",
+          "displayName": "팽이버섯",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 팽이버섯과 청양고추도 넣어주고",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 팽이버섯과 청양고추도 넣어주고",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "청양고추",
+          "displayName": "청양고추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 팽이버섯과 청양고추도 넣어주고",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 팽이버섯과 청양고추도 넣어주고",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "소고기다시다나 치킨스톡 1/3스푼",
+          "displayName": "소고기다시다 또는 치킨스톡",
+          "amount": "1/3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "소고기다시다나 치킨스톡을 1/3스푼 넣어줍니다.",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소고기다시다나 치킨스톡을 3분의 1스푼 넣어줍니다.",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "계란 하나",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 계란 하나를 까서 넣어주고",
+              "timestamp": "00:42"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 계란 하나를 까서 넣어주고",
+              "timestamp": "00:42"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "후추도 톡톡톡 뿌려 마무리해 줍니다.",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추도 톡톡톡 뿌려 마무리해 줍니다.",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "뚝배기에 물 2컵(약 360ml)을 부어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "뚝배기에 물 2컵(약 360ml)을 부어주고",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "SPEECH",
+              "text": "뚝배기에 물 2컵을 부어주고",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "고추참치 한 캔을 전부 넣어 끓인다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 고추참치를 한캔 다 넣어줍니다.",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 고추참치를 한캔 다 넣어줍니다. 이러면 힘들게 기름에 고춧가루를 볶으면서 고추기름을 낼 필요 없이 벌써부터 고추기름이 물 위로 뜨는 걸 한눈에 볼 수 있습니다.",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "고춧가루 1스푼, 다진 마늘 1스푼을 넣는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 시뻘건 색감을 위해 고춧가루 한스푼을 더해주고 오늘도 역시 지고 온 다진 마늘을 1스푼 넣어주고",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 시뻘건 색감을 위해 고춧가루 한스푼을 더해주고 오늘도 역시 지고 온 다진 마늘을 1스푼 넣어주고",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "국간장 3스푼을 넣어 간을 맞춘다. (집에 액젓이 있다면 국간장을 2스푼으로 줄이고 액젓 1스푼을 넣는다.)",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "국간장 3스푼을 넣어 짭짤하게 간을 해줍니다. 집에 만약 액젓이 있다면 국간장 2스푼으로 줄이고 액젓 1스푼을 넣어주시면 더 맛이 좋습니다.",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "국간장 3스푼을 넣어 짭짤하게 간을 해줍니다. 집에 만약 액젓이 있다면 국간장 2스푼으로 줄이고 액젓 1스푼을 넣어주시면 더 맛이 좋습니다.",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "순두부 한 봉지를 다 넣고 먹기 좋은 크기로 썰어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 순두부 한봉지를 다 넣어주고 순두부를 넥슬라이스하면서 먹기 좋은 크기로 숭덩숭덩 썰어줍니다.",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 순두부 한봉지를 다 넣어주고 순두부를 넥슬라이스하면서 먹기 좋은 크기로 숭덩숭덩 썰어줍니다.",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "팽이버섯과 청양고추를 넣어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 팽이버섯과 청양고추도 넣어주고",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 팽이버섯과 청양고추도 넣어주고",
+              "timestamp": "00:34"
+            }
+          ]
+        },
+        {
+          "text": "소고기 다시다 또는 치킨스톡 1/3스푼을 넣어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "완벽한 30년 전통의 손맛을 느끼기 위해 소고기다시다나 치킨스톡을 1/3스푼 넣어줍니다.",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SPEECH",
+              "text": "완벽한 30년 전통의 손맛을 느끼기 위해 소고기다시다나 치킨스톡을 3분의 1스푼 넣어줍니다.",
+              "timestamp": "00:36"
+            }
+          ]
+        },
+        {
+          "text": "계란 1개를 까서 넣고 후추를 톡톡 뿌려 마무리한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 계란 하나를 까서 넣어주고 후추도 톡톡톡 뿌려 마무리해 줍니다.",
+              "timestamp": "00:42"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 계란 하나를 까서 넣어주고 후추도 톡톡톡 뿌려 마무리해 줍니다.",
+              "timestamp": "00:42"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

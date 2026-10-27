@@ -1,0 +1,298 @@
+{
+  "videoId": "xsckTg7TSJQ",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/xsckTg7TSJQ",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:09:16.979337+00:00",
+    "rawResponse": "{\n  \"title\": \"남은 치킨의 변신! 간단 치킨마요덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"계란 4개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"4\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 4개 + 소금 한 꼬집\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 한 꼬집\",\n      \"displayName\": \"소금\",\n      \"amount\": \"1\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 4개 + 소금 한 꼬집\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"남은 치킨\",\n      \"displayName\": \"남은 치킨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"남은 치킨, 뼈 제거 후 살만 발라주세요\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/2개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/2개 볶다가\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 1스푼\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 1스푼\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 1스푼\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 1스푼\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"따끈한 밥\",\n      \"displayName\": \"따끈한 밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"따끈한 밥 위에 양파조림 올리고\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마요네즈\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마요네즈 듬뿍\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김가루 솔솔\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"계란 4개에 소금 한 꼬집을 넣고 섞어 달걀물을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 4개 + 소금 한 꼬집\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란에 소금을 넣고 젓가락으로 푼다\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 기름을 두르고 약불에서 저어가며 촉촉한 스크램블을 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"약불에서 저어 촉촉한 스크램블 완성!\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"남은 치킨은 뼈를 제거한 후 살만 발라내고, 팬에 살짝 데워 고소함을 살려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"남은 치킨, 뼈 제거 후 살만 발라주세요\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 살짝 데워 고소함 살려주세요\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 양파 1/2개를 볶다가 간장 1스푼, 맛술 1스푼, 설탕 1스푼을 넣고 중불에서 졸여 달콤짭짤한 양파조림 소스를 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/2개 볶다가\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 1스푼\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 1스푼\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"중불에서 졸여주면\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"달콤짭짤 소스 완성\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 따끈한 밥을 담고 그 위에 양파조림을 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"따끈한 밥 위에 양파조림 올리고\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"스크램블과 치킨을 듬뿍 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스크램블 듬뿍\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"치킨 듬뿍💛\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마요네즈를 듬뿍 뿌리고 김가루(조미김)를 가위로 잘라 솔솔 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마요네즈 듬뿍\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김가루 솔솔\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"스크램블 에그 및 양파 볶을 때 사용된 식용유의 정확한 종류 및 사용량 미표기\",\n    \"치킨, 밥, 마요네즈, 김가루의 정확한 중량/계량 미표기\"\n  ]\n}",
+    "result": {
+      "title": "남은 치킨의 변신! 간단 치킨마요덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "계란 4개",
+          "displayName": "계란",
+          "amount": "4",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 4개 + 소금 한 꼬집",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "소금 한 꼬집",
+          "displayName": "소금",
+          "amount": "1",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 4개 + 소금 한 꼬집",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "남은 치킨",
+          "displayName": "남은 치킨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "남은 치킨, 뼈 제거 후 살만 발라주세요",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양파 1/2개",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/2개 볶다가",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "간장 1스푼",
+          "displayName": "간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 1스푼",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "맛술 1스푼",
+          "displayName": "맛술",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 1스푼",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "설탕 1스푼",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1스푼",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "따끈한 밥",
+          "displayName": "따끈한 밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "따끈한 밥 위에 양파조림 올리고",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "마요네즈",
+          "displayName": "마요네즈",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마요네즈 듬뿍",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "김가루",
+          "displayName": "김가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김가루 솔솔",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "계란 4개에 소금 한 꼬집을 넣고 섞어 달걀물을 만든다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 4개 + 소금 한 꼬집",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란에 소금을 넣고 젓가락으로 푼다",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "팬에 기름을 두르고 약불에서 저어가며 촉촉한 스크램블을 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "약불에서 저어 촉촉한 스크램블 완성!",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "남은 치킨은 뼈를 제거한 후 살만 발라내고, 팬에 살짝 데워 고소함을 살려준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "남은 치킨, 뼈 제거 후 살만 발라주세요",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 살짝 데워 고소함 살려주세요",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "팬에 양파 1/2개를 볶다가 간장 1스푼, 맛술 1스푼, 설탕 1스푼을 넣고 중불에서 졸여 달콤짭짤한 양파조림 소스를 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/2개 볶다가",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 1스푼",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 1스푼",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1스푼",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "중불에서 졸여주면",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "달콤짭짤 소스 완성",
+              "timestamp": "00:25"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 따끈한 밥을 담고 그 위에 양파조림을 올린다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "따끈한 밥 위에 양파조림 올리고",
+              "timestamp": "00:28"
+            }
+          ]
+        },
+        {
+          "text": "스크램블과 치킨을 듬뿍 올린다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스크램블 듬뿍",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "치킨 듬뿍💛",
+              "timestamp": "00:33"
+            }
+          ]
+        },
+        {
+          "text": "마요네즈를 듬뿍 뿌리고 김가루(조미김)를 가위로 잘라 솔솔 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마요네즈 듬뿍",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김가루 솔솔",
+              "timestamp": "00:38"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "스크램블 에그 및 양파 볶을 때 사용된 식용유의 정확한 종류 및 사용량 미표기",
+        "치킨, 밥, 마요네즈, 김가루의 정확한 중량/계량 미표기"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

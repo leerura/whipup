@@ -1,0 +1,54 @@
+{
+  "batch": "2026-10-27-utc-from-10",
+  "timezone": "UTC",
+  "scope": "2026-10-27T10:00:00Z through 2026-10-27T11:19:25Z",
+  "recipeFiles": 24,
+  "published": 21,
+  "draft": 3,
+  "excluded": 3,
+  "publishedVideoIds": [
+    "2ebjEWk4E4I",
+    "3-rX2Pwvsh8",
+    "4-T3G_b4QKo",
+    "7k_dQU-xyHY",
+    "9fmd1LOTa-E",
+    "As8bN8Yr8oQ",
+    "EbqcyeCSGZs",
+    "HRMk3aROXPA",
+    "MTy_WrzB1Mw",
+    "MZrksU3hR0M",
+    "WTccnwa6s_Q",
+    "cwDHoWTlcD0",
+    "du9q1BldDHU",
+    "kR77WlHRZrs",
+    "kWh3YtInGos",
+    "p7HGmwiuuvE",
+    "rhD1mDKFDqE",
+    "rqKA8lzBHc8",
+    "tDlw8yMg9NY",
+    "vcVzrf6xlt4",
+    "xKIIKELDjiU"
+  ],
+  "publishDecision": "These 21 saved Gemini results contain usable cooking steps. Their required source ingredients have recipe-local owned-item mappings, and the full V3 dataset passes the backend DatasetLoader validator. Unspecified quantities remain null rather than being invented.",
+  "draftReasons": {
+    "W12Fpy5iEo0": "Lime and stevia are required in the saved source recipe. Mapping them away to common pantry items would change the recipe, while adding both as owned requirements needs a user-centered catalog decision. Keep the source and steps, with these required mappings unresolved.",
+    "aV7zcAPmuPA": "The saved recipe requires both udon noodles and the liquid soup base from a packaged udon product. Udon soup base has no resolved owned item, and this special packaged requirement needs review under the solo-cooking catalog policy.",
+    "rMpXv_38KRM": "The saved source requires 깻가루, which does not establish whether this means ground sesame or perilla seed powder. Do not guess an owned item from the ambiguous expression."
+  },
+  "excludedReasons": {
+    "gHrayv9DmMQ": "Requires 돼지다짐육, which the user previously removed together with recipes depending on minced pork.",
+    "WfCFYyQYj5U": "Only oil, kimchi, and rice are required; tuna or spam and seaweed flakes are optional. This repeats the previously rejected kimchi-and-rice-only recipe pattern.",
+    "jypVMrPn50I": "The saved ingredient quantities and cooking steps are effectively the same as existing PUBLISHED recipe ze4eeuPaVfQ (새마을식당 7분 김치찌개), so another copy would clutter the catalog."
+  },
+  "sourceMetadata": "YouTube metadata was queried separately without calling Gemini. Across today's 49 new recipes, title and channel snapshots were saved for 43; six public oEmbed lookups returned no metadata and remain null.",
+  "sourceMetadataMissingVideoIds": [
+    "2ebjEWk4E4I",
+    "MZrksU3hR0M",
+    "aV7zcAPmuPA",
+    "rMpXv_38KRM",
+    "uuISUPNwwNA",
+    "xKIIKELDjiU"
+  ],
+  "titlePolicy": "Recipe names use short Korean dish names without English or promotional qualifiers. Saved Gemini ingredient expressions and steps remain source-faithful; a separately fetched YouTube sourceTitle is preserved when available.",
+  "validator": "Backend DatasetLoader passed for the full V3 dataset after this batch and metadata backfill; DatasetLoaderV3Test and git diff --check passed."
+}

@@ -1,0 +1,346 @@
+{
+  "videoId": "MZrksU3hR0M",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/MZrksU3hR0M",
+  "sourceMetadata": {"sourceTitle":null,"sourceChannelName":null,"sourceChannelId":null,"sourceMetadataFetchedAt":null},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T10:45:01.212947+00:00",
+    "rawResponse": "{\n  \"title\": \"김치볶음밥\",\n  \"description\": null,\n  \"servings\": \"2인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"김치 400g\",\n      \"displayName\": \"김치\",\n      \"amount\": \"400\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"2인분 기준 : 김치 400g / 밥 2공기 (420g)\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"주 재료로 잘 익은 김치와 이런 즉석밥 또는 찬밥을 준비해 주세요.\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 2공기(420g)\",\n      \"displayName\": \"밥\",\n      \"amount\": \"420\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"2인분 기준 : 김치 400g / 밥 2공기 (420g)\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"즉석밥 또는 찬밥을 준비해 주세요.\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 3스푼\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 식용유를 3스푼 둘러주세요.\",\n          \"timestamp\": \"01:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 1스푼(25g)\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"25\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 1스푼(25g) 넣고(불세기 : 중 불) 볶아주세요.\",\n          \"timestamp\": \"01:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양조간장(또는 진간장) 1스푼(10g)\",\n      \"displayName\": \"양조간장 (또는 진간장)\",\n      \"amount\": \"10\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장(또는 진간장) 1스푼(10g) 넣어주세요.\",\n          \"timestamp\": \"01:58\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼(14g)\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"14\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1스푼(14g) 넣어주세요.\",\n          \"timestamp\": \"02:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1스푼\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"불을 끄고 참기름 1스푼 넣어주세요.\",\n          \"timestamp\": \"03:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨 2스푼\",\n      \"displayName\": \"통깨\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"통깨 2스푼 넣어주세요.\",\n          \"timestamp\": \"03:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"햄\",\n      \"displayName\": \"햄\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"햄이나 참치, 치즈 등을 넣고 만들면 무조건 맛이 좋습니다.\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치\",\n      \"displayName\": \"참치\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"햄이나 참치, 치즈 등을 넣고 만들면 무조건 맛이 좋습니다.\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"치즈\",\n      \"displayName\": \"치즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"햄이나 참치, 치즈 등을 넣고 만들면 무조건 맛이 좋습니다.\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"알맞게 잘 익은 김치에서 고춧가루 양념과 김칫국물을 제거하고, 밥과 1:1 무게 비율(400g)로 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"묵은지 또는 너무 신김치보다는 적당히 맛이 들은 김치를 준비해 주는 게 좋습니다. 김칫속 고춧가루 양념과 김칫국물은 텁텁하니까 제거해 주시고요. 김치의 양은 준비한 밥 양과 동일한 중량으로 준비해 주세요.\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고슬고슬한 볶음밥을 위해 즉석밥은 데우지 않고 그대로 사용하거나, 밥솥의 밥은 넓게 펼쳐 한 김 식혀 수증기를 날려 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"즉석밥을 렌지에 돌리지 않고 바로 사용하거나, 밥솥에 있는 밥은 넓게 펼쳐서 한 김 식혀 수증기를 날려주면 고슬고슬해서 더욱 맛있는 볶음밥을 만들 수가 있습니다.\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김치를 새끼손가락 한 마디 정도 크기로 작게 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치를 작게(새끼손가락 한 마디 정도 크기) 썰어주세요.\",\n          \"timestamp\": \"01:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유 3스푼을 두르고 고추장 1스푼(25g)을 넣은 후 중불에서 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 식용유를 3스푼 둘러주세요.\",\n          \"timestamp\": \"01:36\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 1스푼(25g) 넣고(불세기 : 중 불) 볶아주세요.\",\n          \"timestamp\": \"01:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양조간장(또는 진간장) 1스푼(10g)과 설탕 1스푼(14g)을 넣고 거품이 생길 때까지 중불에서 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장(또는 진간장) 1스푼(10g) 넣어주세요.\",\n          \"timestamp\": \"01:58\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1스푼(14g) 넣어주세요.\",\n          \"timestamp\": \"02:03\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"거품이 생길때까지 볶아주세요.\",\n          \"timestamp\": \"02:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"썰어놓은 김치를 넣고 중불에서 타지 않도록 잘 저어가며 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"썰어놓은 김치를 넣어주세요.\",\n          \"timestamp\": \"02:16\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"불세기 중 불에서 타지않도록 잘 저어가며 볶아주세요.\",\n          \"timestamp\": \"02:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김치가 볶아지면 불세기를 약불로 줄이거나 불을 끄고, 준비한 밥을 넣어 김치와 골고루 비벼서 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치가 볶아졌으면 밥을 넣어주세요.\",\n          \"timestamp\": \"02:33\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"불세기를 약 불로 조절하고(또는 불을 끄고) 김치와 밥을 비벼서 섞어주세요.\",\n          \"timestamp\": \"02:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불세기를 중불로 조절하고, 팬에 밥을 고르게 펴서 20초간 눌려주고 10초간 볶아주는 과정을 3~4번 반복한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"불세기를 중 불로 조절하고 볶아주세요.\",\n          \"timestamp\": \"02:48\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 김치볶음밥을 고르게 펴서 20초간 눌려주세요.\",\n          \"timestamp\": \"02:58\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"10초간 잘 섞으면서 볶아주세요.\",\n          \"timestamp\": \"03:03\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"20초간 눌려주고 10초간 볶는 과정을 3~4번 반복해 주세요.\",\n          \"timestamp\": \"03:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 끄고 참기름 1스푼과 통깨 2스푼을 넣은 후 잘 섞어서 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"불을 끄고 참기름 1스푼 넣어주세요.\",\n          \"timestamp\": \"03:23\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"통깨 2스푼 넣어주세요.\",\n          \"timestamp\": \"03:28\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"잘 섞어주세요.\",\n          \"timestamp\": \"03:35\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "김치볶음밥",
+      "description": null,
+      "servings": "2인분",
+      "ingredients": [
+        {
+          "rawText": "김치 400g",
+          "displayName": "김치",
+          "amount": "400",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "2인분 기준 : 김치 400g / 밥 2공기 (420g)",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "주 재료로 잘 익은 김치와 이런 즉석밥 또는 찬밥을 준비해 주세요.",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "밥 2공기(420g)",
+          "displayName": "밥",
+          "amount": "420",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "2인분 기준 : 김치 400g / 밥 2공기 (420g)",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "즉석밥 또는 찬밥을 준비해 주세요.",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "식용유 3스푼",
+          "displayName": "식용유",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 식용유를 3스푼 둘러주세요.",
+              "timestamp": "01:36"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "고추장 1스푼(25g)",
+          "displayName": "고추장",
+          "amount": "25",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 1스푼(25g) 넣고(불세기 : 중 불) 볶아주세요.",
+              "timestamp": "01:45"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "양조간장(또는 진간장) 1스푼(10g)",
+          "displayName": "양조간장 (또는 진간장)",
+          "amount": "10",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장(또는 진간장) 1스푼(10g) 넣어주세요.",
+              "timestamp": "01:58"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "설탕 1스푼(14g)",
+          "displayName": "설탕",
+          "amount": "14",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1스푼(14g) 넣어주세요.",
+              "timestamp": "02:03"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "참기름 1스푼",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "불을 끄고 참기름 1스푼 넣어주세요.",
+              "timestamp": "03:23"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "통깨 2스푼",
+          "displayName": "통깨",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "통깨 2스푼 넣어주세요.",
+              "timestamp": "03:28"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "햄",
+          "displayName": "햄",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "햄이나 참치, 치즈 등을 넣고 만들면 무조건 맛이 좋습니다.",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "참치",
+          "displayName": "참치",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "햄이나 참치, 치즈 등을 넣고 만들면 무조건 맛이 좋습니다.",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "치즈",
+          "displayName": "치즈",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "햄이나 참치, 치즈 등을 넣고 만들면 무조건 맛이 좋습니다.",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "알맞게 잘 익은 김치에서 고춧가루 양념과 김칫국물을 제거하고, 밥과 1:1 무게 비율(400g)로 준비한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "묵은지 또는 너무 신김치보다는 적당히 맛이 들은 김치를 준비해 주는 게 좋습니다. 김칫속 고춧가루 양념과 김칫국물은 텁텁하니까 제거해 주시고요. 김치의 양은 준비한 밥 양과 동일한 중량으로 준비해 주세요.",
+              "timestamp": "00:34"
+            }
+          ]
+        },
+        {
+          "text": "고슬고슬한 볶음밥을 위해 즉석밥은 데우지 않고 그대로 사용하거나, 밥솥의 밥은 넓게 펼쳐 한 김 식혀 수증기를 날려 준비한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "즉석밥을 렌지에 돌리지 않고 바로 사용하거나, 밥솥에 있는 밥은 넓게 펼쳐서 한 김 식혀 수증기를 날려주면 고슬고슬해서 더욱 맛있는 볶음밥을 만들 수가 있습니다.",
+              "timestamp": "00:54"
+            }
+          ]
+        },
+        {
+          "text": "김치를 새끼손가락 한 마디 정도 크기로 작게 썰어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치를 작게(새끼손가락 한 마디 정도 크기) 썰어주세요.",
+              "timestamp": "01:13"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유 3스푼을 두르고 고추장 1스푼(25g)을 넣은 후 중불에서 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 식용유를 3스푼 둘러주세요.",
+              "timestamp": "01:36"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 1스푼(25g) 넣고(불세기 : 중 불) 볶아주세요.",
+              "timestamp": "01:45"
+            }
+          ]
+        },
+        {
+          "text": "양조간장(또는 진간장) 1스푼(10g)과 설탕 1스푼(14g)을 넣고 거품이 생길 때까지 중불에서 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장(또는 진간장) 1스푼(10g) 넣어주세요.",
+              "timestamp": "01:58"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1스푼(14g) 넣어주세요.",
+              "timestamp": "02:03"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "거품이 생길때까지 볶아주세요.",
+              "timestamp": "02:08"
+            }
+          ]
+        },
+        {
+          "text": "썰어놓은 김치를 넣고 중불에서 타지 않도록 잘 저어가며 볶아준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "썰어놓은 김치를 넣어주세요.",
+              "timestamp": "02:16"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "불세기 중 불에서 타지않도록 잘 저어가며 볶아주세요.",
+              "timestamp": "02:20"
+            }
+          ]
+        },
+        {
+          "text": "김치가 볶아지면 불세기를 약불로 줄이거나 불을 끄고, 준비한 밥을 넣어 김치와 골고루 비벼서 섞어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치가 볶아졌으면 밥을 넣어주세요.",
+              "timestamp": "02:33"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "불세기를 약 불로 조절하고(또는 불을 끄고) 김치와 밥을 비벼서 섞어주세요.",
+              "timestamp": "02:37"
+            }
+          ]
+        },
+        {
+          "text": "불세기를 중불로 조절하고, 팬에 밥을 고르게 펴서 20초간 눌려주고 10초간 볶아주는 과정을 3~4번 반복한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "불세기를 중 불로 조절하고 볶아주세요.",
+              "timestamp": "02:48"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 김치볶음밥을 고르게 펴서 20초간 눌려주세요.",
+              "timestamp": "02:58"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "10초간 잘 섞으면서 볶아주세요.",
+              "timestamp": "03:03"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "20초간 눌려주고 10초간 볶는 과정을 3~4번 반복해 주세요.",
+              "timestamp": "03:08"
+            }
+          ]
+        },
+        {
+          "text": "불을 끄고 참기름 1스푼과 통깨 2스푼을 넣은 후 잘 섞어서 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "불을 끄고 참기름 1스푼 넣어주세요.",
+              "timestamp": "03:23"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "통깨 2스푼 넣어주세요.",
+              "timestamp": "03:28"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "잘 섞어주세요.",
+              "timestamp": "03:35"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

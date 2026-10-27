@@ -1,0 +1,385 @@
+{
+  "videoId": "oXiXirIwkrs",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/oXiXirIwkrs",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T08:13:53.561536+00:00",
+    "rawResponse": "{\n  \"title\": \"고깃집 된장찌개\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"식용유1\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유1\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냄비에 식용유 한 숟가락을 넣고\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"된장3\",\n      \"displayName\": \"된장\",\n      \"amount\": \"3\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"된장3\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"된장과 쌈장을 세 숟가락씩 넣고\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쌈장3\",\n      \"displayName\": \"쌈장\",\n      \"amount\": \"3\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쌈장3\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"된장과 쌈장을 세 숟가락씩 넣고\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장1\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장1\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"중간에 고추장 한 숟가락도\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물2컵\",\n      \"displayName\": \"물\",\n      \"amount\": \"2\",\n      \"unit\": \"종이컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물2컵\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 종이컵으로 물 두 컵을 넣을 거야\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"애호박1/4\",\n      \"displayName\": \"애호박\",\n      \"amount\": \"1/4\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"애호박1/4\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물이 끓으면 애호박을 조금 썰어서 넣어줄 거야\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파1/4\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/4\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파1/4\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파도 반의 반 개 썰어서 넣어줘\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"두부1/2\",\n      \"displayName\": \"두부\",\n      \"amount\": \"1/2\",\n      \"unit\": \"모\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부1/2\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"두부도 반 모 넣어줄 거야\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"팽이버섯\",\n      \"displayName\": \"팽이버섯\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팽이버섯\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냉장고에 버섯이 있으면 넣어줘\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 대파를 썰어서 넣어줘\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다시다0.5\",\n      \"displayName\": \"멸치 다시다\",\n      \"amount\": \"0.5\",\n      \"unit\": \"숟가락\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다시다0.5\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기서 음식점 맛을 내고 싶으면 멸치 다시다 반 숟가락을 넣으면 돼\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"차돌박이\",\n      \"displayName\": \"차돌박이\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"차돌박이\",\n          \"timestamp\": \"00:49\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기서 더 맛있게 먹고 싶으면 차돌박이나 대패삼겹살을 넣어줘\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대패삼겹살\",\n      \"displayName\": \"대패삼겹살\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"차돌박이나 대패삼겹살을 넣어줘\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 식용유 1숟가락, 된장 3숟가락, 쌈장 3숟가락을 넣고 약한 불에서 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냄비에 식용유 한 숟가락을 넣고 된장과 쌈장을 세 숟가락씩 넣고 약한 불에서 기름에 볶아줘\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볶는 중간에 고추장 1숟가락을 넣어 같이 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"중간에 고추장 한 숟가락도 같이 넣어서 볶아줘\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"종이컵으로 물 2컵을 붓고 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 종이컵으로 물 두 컵을 넣을 거야\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물이 끓으면 애호박 1/4개를 썰어 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물이 끓으면 애호박을 조금 썰어서 넣어줄 거야\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 1/4개를 썰어서 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파도 반의 반 개 썰어서 넣어줘\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"text\": \"두부 1/2모를 한입 크기로 잘라서 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"두부도 반 모 넣어줄 거야 한입 크기로 잘라서 넣어주면 돼\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"text\": \"기호에 따라 팽이버섯을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냉장고에 버섯이 있으면 넣어줘\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파를 썰어서 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 대파를 썰어서 넣어줘\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"멸치 다시다 0.5숟가락을 넣어 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기서 음식점 맛을 내고 싶으면 멸치 다시다 반 숟가락을 넣으면 돼\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"text\": \"취향에 따라 차돌박이나 대패삼겹살을 넣고 한소끔 더 끓여 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기서 더 맛있게 먹고 싶으면 차돌박이나 대패삼겹살을 넣어줘\",\n          \"timestamp\": \"00:49\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "고깃집 된장찌개",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "식용유1",
+          "displayName": "식용유",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유1",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냄비에 식용유 한 숟가락을 넣고",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "된장3",
+          "displayName": "된장",
+          "amount": "3",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "된장3",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "된장과 쌈장을 세 숟가락씩 넣고",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "쌈장3",
+          "displayName": "쌈장",
+          "amount": "3",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쌈장3",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "된장과 쌈장을 세 숟가락씩 넣고",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "고추장1",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장1",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "중간에 고추장 한 숟가락도",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "물2컵",
+          "displayName": "물",
+          "amount": "2",
+          "unit": "종이컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물2컵",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 종이컵으로 물 두 컵을 넣을 거야",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "애호박1/4",
+          "displayName": "애호박",
+          "amount": "1/4",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "애호박1/4",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물이 끓으면 애호박을 조금 썰어서 넣어줄 거야",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "양파1/4",
+          "displayName": "양파",
+          "amount": "1/4",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파1/4",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파도 반의 반 개 썰어서 넣어줘",
+              "timestamp": "00:32"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "두부1/2",
+          "displayName": "두부",
+          "amount": "1/2",
+          "unit": "모",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부1/2",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "두부도 반 모 넣어줄 거야",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "팽이버섯",
+          "displayName": "팽이버섯",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팽이버섯",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냉장고에 버섯이 있으면 넣어줘",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 대파를 썰어서 넣어줘",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "다시다0.5",
+          "displayName": "멸치 다시다",
+          "amount": "0.5",
+          "unit": "숟가락",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다시다0.5",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기서 음식점 맛을 내고 싶으면 멸치 다시다 반 숟가락을 넣으면 돼",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "차돌박이",
+          "displayName": "차돌박이",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "차돌박이",
+              "timestamp": "00:49"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기서 더 맛있게 먹고 싶으면 차돌박이나 대패삼겹살을 넣어줘",
+              "timestamp": "00:50"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "대패삼겹살",
+          "displayName": "대패삼겹살",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "차돌박이나 대패삼겹살을 넣어줘",
+              "timestamp": "00:51"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 식용유 1숟가락, 된장 3숟가락, 쌈장 3숟가락을 넣고 약한 불에서 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "냄비에 식용유 한 숟가락을 넣고 된장과 쌈장을 세 숟가락씩 넣고 약한 불에서 기름에 볶아줘",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "볶는 중간에 고추장 1숟가락을 넣어 같이 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "중간에 고추장 한 숟가락도 같이 넣어서 볶아줘",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "종이컵으로 물 2컵을 붓고 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 종이컵으로 물 두 컵을 넣을 거야",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "물이 끓으면 애호박 1/4개를 썰어 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물이 끓으면 애호박을 조금 썰어서 넣어줄 거야",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "양파 1/4개를 썰어서 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파도 반의 반 개 썰어서 넣어줘",
+              "timestamp": "00:32"
+            }
+          ]
+        },
+        {
+          "text": "두부 1/2모를 한입 크기로 잘라서 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "두부도 반 모 넣어줄 거야 한입 크기로 잘라서 넣어주면 돼",
+              "timestamp": "00:35"
+            }
+          ]
+        },
+        {
+          "text": "기호에 따라 팽이버섯을 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "냉장고에 버섯이 있으면 넣어줘",
+              "timestamp": "00:39"
+            }
+          ]
+        },
+        {
+          "text": "대파를 썰어서 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 대파를 썰어서 넣어줘",
+              "timestamp": "00:41"
+            }
+          ]
+        },
+        {
+          "text": "멸치 다시다 0.5숟가락을 넣어 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기서 음식점 맛을 내고 싶으면 멸치 다시다 반 숟가락을 넣으면 돼",
+              "timestamp": "00:44"
+            }
+          ]
+        },
+        {
+          "text": "취향에 따라 차돌박이나 대패삼겹살을 넣고 한소끔 더 끓여 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기서 더 맛있게 먹고 싶으면 차돌박이나 대패삼겹살을 넣어줘",
+              "timestamp": "00:49"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

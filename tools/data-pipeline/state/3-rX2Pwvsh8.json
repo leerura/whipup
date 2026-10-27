@@ -1,0 +1,329 @@
+{
+  "videoId": "3-rX2Pwvsh8",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/3-rX2Pwvsh8",
+  "sourceMetadata": {"sourceTitle":"밥도둑 김치찌개","sourceChannelName":"하루한끼 one meal a day","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.162857Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T10:50:57.947440+00:00",
+    "rawResponse": "{\n  \"title\": \"돼지고기 김치찌개\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"김치 한공기\",\n      \"displayName\": \"김치\",\n      \"amount\": \"1\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치 한공기\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김치 한공기 넣고\",\n          \"timestamp\": \"00:49\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돼지고기 200g\",\n      \"displayName\": \"돼지고기\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"돼지고기 200g\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"돼지고기 넣고\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"두부 (반 모)\",\n      \"displayName\": \"두부\",\n      \"amount\": \"0.5\",\n      \"unit\": \"모\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"저는 반 모만 사용했어요\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파 / 대파\",\n      \"displayName\": \"파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"파\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"찌개에 빠지면 섭섭한 대파\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 (반만 사용)\",\n      \"displayName\": \"양파\",\n      \"amount\": \"0.5\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"역시나 반만 사용\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1스푼\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘 1스푼\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 살짝\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"살짝\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"식용유를 살짝 둘러줍니다\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물\",\n      \"displayName\": \"물\",\n      \"amount\": \"재료가 살짝 잠길만큼\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 재료가 살짝 잠길만큼 물을 부어요\",\n          \"timestamp\": \"01:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김칫국물 한국자\",\n      \"displayName\": \"김칫국물\",\n      \"amount\": \"1\",\n      \"unit\": \"국자\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김칫국물도 한국자\",\n          \"timestamp\": \"01:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 살짝\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"살짝\",\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김치가 시면 설탕을 살짝 넣어줍니다\",\n          \"timestamp\": \"01:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루\",\n          \"timestamp\": \"01:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"숟가락에 고춧가루 1스푼을 떠서 넣음\",\n          \"timestamp\": \"01:17\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"두부 반 모를 먹기 좋은 크기로 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"두부 먼저 썰어볼까요 / 저는 반 모만 사용했어요\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 반 개를 채 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"달큰한 양파도 / 역시나 반만 사용\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파를 어슷썰기 해준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"찌개에 빠지면 섭섭한 대파 / 어슷어슷 썰어줍니다\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비나 뚝배기에 식용유를 살짝 두르고 돼지고기와 다진마늘 1스푼을 넣은 후, 겉면이 익을 정도로 중불에서 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"냄비나 뚝배기를 올려주고 / 식용유를 살짝 둘러줍니다 / 돼지고기 넣고 / 다진마늘 1스푼 / 겉면이 익을 정도로 중불에서 볶아줍니다\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기가 어느 정도 볶아지면 김치 한 공기를 넣고 김치가 노곤노곤해질 때까지 고기와 함께 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고기가 어느정도 볶아지면 / 김치 한공기 넣고 / 고기와 함께 볶아줍니다 / 김치가 노곤해질때까지 볶아볼게요 / 어느새 노곤노곤해진 김치\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"text\": \"재료가 살짝 잠길 만큼 물을 붓고 김칫국물 한 국자를 넣어 보글보글 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 재료가 살짝 잠길만큼 물을 부어요 / 김칫국물도 한국자 / 보글보글 끓여주다가\",\n          \"timestamp\": \"01:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파를 넣고, 김치가 시면 설탕을 살짝 넣어준 뒤 고춧가루를 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파도 쏙 / 김치가 시면 설탕을 살짝 넣어줍니다 / 고춧가루\",\n          \"timestamp\": \"01:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"썰어둔 두부를 넣고 중불에서 5분 정도 더 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"썰어둔 두부도 살포시 / 중불에서 5분정도 더 끓여주다가\",\n          \"timestamp\": \"01:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"파를 넣고 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"파를 넣고 마무리 !\",\n          \"timestamp\": \"01:24\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"파의 정확한 중량이나 개수는 표기되지 않음 (영상 초반에 한 대의 일부분이 준비되어 있음)\",\n    \"물의 정확한 용량(mL)은 언급되지 않고 '재료가 살짝 잠길만큼'으로 안내됨\"\n  ]\n}",
+    "result": {
+      "title": "돼지고기 김치찌개",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "김치 한공기",
+          "displayName": "김치",
+          "amount": "1",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치 한공기",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "김치 한공기 넣고",
+              "timestamp": "00:49"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "돼지고기 200g",
+          "displayName": "돼지고기",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "돼지고기 200g",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "돼지고기 넣고",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "두부 (반 모)",
+          "displayName": "두부",
+          "amount": "0.5",
+          "unit": "모",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "저는 반 모만 사용했어요",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "파 / 대파",
+          "displayName": "파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "파",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "찌개에 빠지면 섭섭한 대파",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "양파 (반만 사용)",
+          "displayName": "양파",
+          "amount": "0.5",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "역시나 반만 사용",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "다진마늘 1스푼",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘 1스푼",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "식용유 살짝",
+          "displayName": "식용유",
+          "amount": "살짝",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "식용유를 살짝 둘러줍니다",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "물",
+          "displayName": "물",
+          "amount": "재료가 살짝 잠길만큼",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 재료가 살짝 잠길만큼 물을 부어요",
+              "timestamp": "01:03"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "김칫국물 한국자",
+          "displayName": "김칫국물",
+          "amount": "1",
+          "unit": "국자",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "김칫국물도 한국자",
+              "timestamp": "01:08"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "설탕 살짝",
+          "displayName": "설탕",
+          "amount": "살짝",
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "김치가 시면 설탕을 살짝 넣어줍니다",
+              "timestamp": "01:14"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "고춧가루 1스푼",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루",
+              "timestamp": "01:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "숟가락에 고춧가루 1스푼을 떠서 넣음",
+              "timestamp": "01:17"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "두부 반 모를 먹기 좋은 크기로 썰어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "두부 먼저 썰어볼까요 / 저는 반 모만 사용했어요",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "양파 반 개를 채 썰어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "달큰한 양파도 / 역시나 반만 사용",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "대파를 어슷썰기 해준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "찌개에 빠지면 섭섭한 대파 / 어슷어슷 썰어줍니다",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "냄비나 뚝배기에 식용유를 살짝 두르고 돼지고기와 다진마늘 1스푼을 넣은 후, 겉면이 익을 정도로 중불에서 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "냄비나 뚝배기를 올려주고 / 식용유를 살짝 둘러줍니다 / 돼지고기 넣고 / 다진마늘 1스푼 / 겉면이 익을 정도로 중불에서 볶아줍니다",
+              "timestamp": "00:34"
+            }
+          ]
+        },
+        {
+          "text": "고기가 어느 정도 볶아지면 김치 한 공기를 넣고 김치가 노곤노곤해질 때까지 고기와 함께 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고기가 어느정도 볶아지면 / 김치 한공기 넣고 / 고기와 함께 볶아줍니다 / 김치가 노곤해질때까지 볶아볼게요 / 어느새 노곤노곤해진 김치",
+              "timestamp": "00:47"
+            }
+          ]
+        },
+        {
+          "text": "재료가 살짝 잠길 만큼 물을 붓고 김칫국물 한 국자를 넣어 보글보글 끓여준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 재료가 살짝 잠길만큼 물을 부어요 / 김칫국물도 한국자 / 보글보글 끓여주다가",
+              "timestamp": "01:03"
+            }
+          ]
+        },
+        {
+          "text": "양파를 넣고, 김치가 시면 설탕을 살짝 넣어준 뒤 고춧가루를 넣는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파도 쏙 / 김치가 시면 설탕을 살짝 넣어줍니다 / 고춧가루",
+              "timestamp": "01:13"
+            }
+          ]
+        },
+        {
+          "text": "썰어둔 두부를 넣고 중불에서 5분 정도 더 끓여준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "썰어둔 두부도 살포시 / 중불에서 5분정도 더 끓여주다가",
+              "timestamp": "01:19"
+            }
+          ]
+        },
+        {
+          "text": "파를 넣고 마무리한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "파를 넣고 마무리 !",
+              "timestamp": "01:24"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "파의 정확한 중량이나 개수는 표기되지 않음 (영상 초반에 한 대의 일부분이 준비되어 있음)",
+        "물의 정확한 용량(mL)은 언급되지 않고 '재료가 살짝 잠길만큼'으로 안내됨"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

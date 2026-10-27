@@ -1,0 +1,515 @@
+{
+  "videoId": "2B-IJtm71_c",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/2B-IJtm71_c",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T08:28:11.130161+00:00",
+    "rawResponse": "{\n  \"title\": \"춘천식 닭갈비\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"식용유 2\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"2\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 2 / Cooking oil\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 식용유 두 숟가락 넣고\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 / Green onion\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파 하나를 길게 잘라서 넣어 줄 거야\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쫄면사리\",\n      \"displayName\": \"쫄면사리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"형 쫄면사리 넣어주세요 / 그럼 미리 쫄면은 물에 담가놔\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쫄면 / Jjolmyeon\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양배추 반의 반 개\",\n      \"displayName\": \"양배추\",\n      \"amount\": \"1/4\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양배추 / Cabbage\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양배추 반의 반 개와\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밤고구마 두 개\",\n      \"displayName\": \"밤고구마\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고구마 / Sweet potato\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밤고구마 두 개도 한 입 크기로 잘라서 넣어줄게 고구마 대신 감자를 넣어도 맛있어\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 큰 거 하나\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 / Onion\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 큰 거 하나를 갈아서 넣고\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"닭다리살 600g\",\n      \"displayName\": \"닭다리살\",\n      \"amount\": \"600\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"닭다리살 600g / Chicken leg meat\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"닭다리살을 한 입 크기로 큼직하게 썰어줘\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"떡\",\n      \"displayName\": \"떡\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"떡 / Rice cake\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"떡도 양념이 좀 배어야 맛있어서 같이 넣어줘\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 3\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"3\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 3 / Chili powder\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 셋\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 2\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"2\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 2 / Sugar\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 둘\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 5\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"5\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장은 다섯 / 무슨 간장인가요? / 진간장\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 2\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"2\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 2 / Red pepper paste\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 두 개와\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1 / Oyster sauce\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스 하나\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 크게 하나\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"큰숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘 크게 하나 넣고\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쌈장 1\",\n      \"displayName\": \"쌈장\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쌈장 1 / Ssamjang\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"쌈장 하나와\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"카레가루 0.5\",\n      \"displayName\": \"카레가루\",\n      \"amount\": \"0.5\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"카레가루 0.5 / Curry powder\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"카레가루 반을 넣어줘\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 / Pepper\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추 톡톡톡 해주면\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추\",\n      \"displayName\": \"청양고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 / Cheongyang red pepper\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"청양고추와 깻잎을 먹고 싶은 만큼 썰어서 넣어주고\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깻잎\",\n      \"displayName\": \"깻잎\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깻잎 / Perilla leaf\",\n          \"timestamp\": \"00:49\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"청양고추와 깻잎을 먹고 싶은 만큼 썰어서 넣어주고\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참깨\",\n      \"displayName\": \"참깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참깨 / Sesame\",\n          \"timestamp\": \"00:57\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마무리로 깨를 뿌려주면\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 식용유 2숟가락을 두르고, 길게 자른 대파 1대를 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 식용유 두 숟가락 넣고 대파 하나를 길게 잘라서 넣어 줄 거야\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"쫄면사리를 미리 물에 담가 불려둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그럼 미리 쫄면은 물에 담가놔\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파를 담아둔 팬에 양배추 1/4통과 한 입 크기로 자른 밤고구마 2개를 썰어 넣는다. (고구마 대신 감자를 넣어도 됨)\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양배추 반의 반 개와 밤고구마 두 개도 한 입 크기로 잘라서 넣어줄게 고구마 대신 감자를 넣어도 맛있어\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"큰 양파 1개를 강판에 곱게 갈아 볼에 담는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 양념장을 준비할 거야 양파 큰 거 하나를 갈아서 넣고\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"닭다리살 600g을 한 입 크기로 큼직하게 썰어 양파를 간 볼에 담고, 떡도 함께 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"닭다리살을 한 입 크기로 큼직하게 썰어줘 떡도 양념이 좀 배어야 맛있어서 같이 넣어줘\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고춧가루 3숟가락, 설탕 2숟가락, 진간장 5숟가락, 고추장 2숟가락, 굴소스 1숟가락, 다진 마늘 크게 1숟가락, 쌈장 1숟가락, 카레가루 0.5숟가락, 후추를 넣고 고기와 떡을 양념에 골고루 버무린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 셋 설탕 둘 간장은 다섯 / 진간장 고추장 두 개와 굴소스 하나 다진 마늘 크게 하나 넣고 쌈장 하나와 카레가루 반을 넣어줘 후추 톡톡톡 해주면 닭갈비 양념은 모두 끝났어\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"채소가 담긴 프라이팬 위에 양념한 닭갈비를 올리고, 중불에서 타지 않게 저어가며 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후라이팬에 닭갈비를 올려주고 불크기는 중불로 해서 타지 않게 계속 볶아줘 / 약불로 하면 물이 많이 생겨서 닭갈비탕이 되어버려\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"청양고추와 깻잎을 원하는 만큼 썰어 넣고, 물에 불려둔 쫄면사리도 함께 넣어 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"청양고추와 깻잎을 먹고 싶은 만큼 썰어서 넣어주고 / 쫄면사리\",\n          \"timestamp\": \"00:48\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"불린 쫄면사리를 넣고 팬에서 닭갈비와 함께 볶음\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"text\": \"참깨를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마무리로 깨를 뿌려주면 닭갈비 끝\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "춘천식 닭갈비",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "식용유 2",
+          "displayName": "식용유",
+          "amount": "2",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 2 / Cooking oil",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "팬에 식용유 두 숟가락 넣고",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 / Green onion",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파 하나를 길게 잘라서 넣어 줄 거야",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "쫄면사리",
+          "displayName": "쫄면사리",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "형 쫄면사리 넣어주세요 / 그럼 미리 쫄면은 물에 담가놔",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쫄면 / Jjolmyeon",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양배추 반의 반 개",
+          "displayName": "양배추",
+          "amount": "1/4",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양배추 / Cabbage",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양배추 반의 반 개와",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "밤고구마 두 개",
+          "displayName": "밤고구마",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고구마 / Sweet potato",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밤고구마 두 개도 한 입 크기로 잘라서 넣어줄게 고구마 대신 감자를 넣어도 맛있어",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "양파 큰 거 하나",
+          "displayName": "양파",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 / Onion",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파 큰 거 하나를 갈아서 넣고",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "닭다리살 600g",
+          "displayName": "닭다리살",
+          "amount": "600",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "닭다리살 600g / Chicken leg meat",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "닭다리살을 한 입 크기로 큼직하게 썰어줘",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "떡",
+          "displayName": "떡",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "떡 / Rice cake",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "떡도 양념이 좀 배어야 맛있어서 같이 넣어줘",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "고춧가루 3",
+          "displayName": "고춧가루",
+          "amount": "3",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 3 / Chili powder",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 셋",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "설탕 2",
+          "displayName": "설탕",
+          "amount": "2",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 2 / Sugar",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 둘",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "진간장 5",
+          "displayName": "진간장",
+          "amount": "5",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "간장은 다섯 / 무슨 간장인가요? / 진간장",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "고추장 2",
+          "displayName": "고추장",
+          "amount": "2",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 2 / Red pepper paste",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장 두 개와",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "굴소스 1",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1 / Oyster sauce",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SPEECH",
+              "text": "굴소스 하나",
+              "timestamp": "00:32"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "다진 마늘 크게 하나",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "큰숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘 크게 하나 넣고",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "쌈장 1",
+          "displayName": "쌈장",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쌈장 1 / Ssamjang",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "SPEECH",
+              "text": "쌈장 하나와",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "카레가루 0.5",
+          "displayName": "카레가루",
+          "amount": "0.5",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "카레가루 0.5 / Curry powder",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "카레가루 반을 넣어줘",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 / Pepper",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추 톡톡톡 해주면",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        },
+        {
+          "rawText": "청양고추",
+          "displayName": "청양고추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 / Cheongyang red pepper",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "SPEECH",
+              "text": "청양고추와 깻잎을 먹고 싶은 만큼 썰어서 넣어주고",
+              "timestamp": "00:48"
+            }
+          ],
+          "sourceId": "ingredient-18"
+        },
+        {
+          "rawText": "깻잎",
+          "displayName": "깻잎",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깻잎 / Perilla leaf",
+              "timestamp": "00:49"
+            },
+            {
+              "type": "SPEECH",
+              "text": "청양고추와 깻잎을 먹고 싶은 만큼 썰어서 넣어주고",
+              "timestamp": "00:48"
+            }
+          ],
+          "sourceId": "ingredient-19"
+        },
+        {
+          "rawText": "참깨",
+          "displayName": "참깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참깨 / Sesame",
+              "timestamp": "00:57"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마무리로 깨를 뿌려주면",
+              "timestamp": "00:56"
+            }
+          ],
+          "sourceId": "ingredient-20"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 식용유 2숟가락을 두르고, 길게 자른 대파 1대를 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 식용유 두 숟가락 넣고 대파 하나를 길게 잘라서 넣어 줄 거야",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "쫄면사리를 미리 물에 담가 불려둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그럼 미리 쫄면은 물에 담가놔",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "대파를 담아둔 팬에 양배추 1/4통과 한 입 크기로 자른 밤고구마 2개를 썰어 넣는다. (고구마 대신 감자를 넣어도 됨)",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양배추 반의 반 개와 밤고구마 두 개도 한 입 크기로 잘라서 넣어줄게 고구마 대신 감자를 넣어도 맛있어",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "큰 양파 1개를 강판에 곱게 갈아 볼에 담는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 양념장을 준비할 거야 양파 큰 거 하나를 갈아서 넣고",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "닭다리살 600g을 한 입 크기로 큼직하게 썰어 양파를 간 볼에 담고, 떡도 함께 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "닭다리살을 한 입 크기로 큼직하게 썰어줘 떡도 양념이 좀 배어야 맛있어서 같이 넣어줘",
+              "timestamp": "00:21"
+            }
+          ]
+        },
+        {
+          "text": "고춧가루 3숟가락, 설탕 2숟가락, 진간장 5숟가락, 고추장 2숟가락, 굴소스 1숟가락, 다진 마늘 크게 1숟가락, 쌈장 1숟가락, 카레가루 0.5숟가락, 후추를 넣고 고기와 떡을 양념에 골고루 버무린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 셋 설탕 둘 간장은 다섯 / 진간장 고추장 두 개와 굴소스 하나 다진 마늘 크게 하나 넣고 쌈장 하나와 카레가루 반을 넣어줘 후추 톡톡톡 해주면 닭갈비 양념은 모두 끝났어",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "채소가 담긴 프라이팬 위에 양념한 닭갈비를 올리고, 중불에서 타지 않게 저어가며 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후라이팬에 닭갈비를 올려주고 불크기는 중불로 해서 타지 않게 계속 볶아줘 / 약불로 하면 물이 많이 생겨서 닭갈비탕이 되어버려",
+              "timestamp": "00:39"
+            }
+          ]
+        },
+        {
+          "text": "청양고추와 깻잎을 원하는 만큼 썰어 넣고, 물에 불려둔 쫄면사리도 함께 넣어 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "청양고추와 깻잎을 먹고 싶은 만큼 썰어서 넣어주고 / 쫄면사리",
+              "timestamp": "00:48"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "불린 쫄면사리를 넣고 팬에서 닭갈비와 함께 볶음",
+              "timestamp": "00:54"
+            }
+          ]
+        },
+        {
+          "text": "참깨를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마무리로 깨를 뿌려주면 닭갈비 끝",
+              "timestamp": "00:56"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

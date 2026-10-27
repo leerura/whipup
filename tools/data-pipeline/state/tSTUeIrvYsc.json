@@ -1,13 +1,187 @@
 {
   "videoId": "tSTUeIrvYsc",
-  "status": "PENDING",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/tSTUeIrvYsc",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "PENDING",
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:06:26.317269+00:00",
+    "rawResponse": "{\n  \"title\": \"아보카도 명란 비빔밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 잡곡밥을 담는다.\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"아보카도\",\n      \"displayName\": \"아보카도\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"슬라이스한 아보카도를 밥 위에 올린다.\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 후라이\",\n      \"displayName\": \"계란 후라이\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"반숙 계란 후라이를 가운데에 올린다.\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"명란젓\",\n      \"displayName\": \"명란젓\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"명란젓을 한쪽에 짜서 올린다.\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루 (조미김)\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"부순 조미김을 한쪽에 올린다.\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름\",\n      \"displayName\": \"참기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란 노른자와 재료 위에 참기름을 두른다.\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"크러쉬드 레드페퍼 (또는 고춧가루)\",\n      \"displayName\": \"크러쉬드 레드페퍼\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란 후라이 위에 레드페퍼/고춧가루가 뿌려져 있다.\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"그릇에 밥을 담는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 밥을 엎어서 담는 장면\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"슬라이스한 아보카도를 밥 위에 둘러 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"슬라이스된 아보카도를 양쪽에 배치하여 올리는 장면\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 후라이를 가운데에 얹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥과 아보카도 중앙에 계란 후라이를 얹는 장면\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"명란젓과 김가루를 곁들여 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"명란젓을 짜 넣고 김가루를 한쪽에 올리는 장면\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"참기름을 둘러준 뒤 비벼서 먹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"참기름을 두르고 계란 노른자를 터뜨리는 장면\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"영상에 내레이션 및 텍스트 레시피/재료 정량이 명시되지 않아 시각적 동작만으로 재료와 조리 순서를 추출함\"\n  ]\n}",
+    "result": {
+      "title": "아보카도 명란 비빔밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 잡곡밥을 담는다.",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "아보카도",
+          "displayName": "아보카도",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "슬라이스한 아보카도를 밥 위에 올린다.",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "계란 후라이",
+          "displayName": "계란 후라이",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "반숙 계란 후라이를 가운데에 올린다.",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "명란젓",
+          "displayName": "명란젓",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "명란젓을 한쪽에 짜서 올린다.",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "김가루 (조미김)",
+          "displayName": "김가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "부순 조미김을 한쪽에 올린다.",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "참기름",
+          "displayName": "참기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란 노른자와 재료 위에 참기름을 두른다.",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "크러쉬드 레드페퍼 (또는 고춧가루)",
+          "displayName": "크러쉬드 레드페퍼",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란 후라이 위에 레드페퍼/고춧가루가 뿌려져 있다.",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "그릇에 밥을 담는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 밥을 엎어서 담는 장면",
+              "timestamp": "00:02"
+            }
+          ]
+        },
+        {
+          "text": "슬라이스한 아보카도를 밥 위에 둘러 올린다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "슬라이스된 아보카도를 양쪽에 배치하여 올리는 장면",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "계란 후라이를 가운데에 얹는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥과 아보카도 중앙에 계란 후라이를 얹는 장면",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "명란젓과 김가루를 곁들여 올린다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "명란젓을 짜 넣고 김가루를 한쪽에 올리는 장면",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "참기름을 둘러준 뒤 비벼서 먹는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "참기름을 두르고 계란 노른자를 터뜨리는 장면",
+              "timestamp": "00:01"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "영상에 내레이션 및 텍스트 레시피/재료 정량이 명시되지 않아 시각적 동작만으로 재료와 조리 순서를 추출함"
+      ]
+    },
+    "structuralErrors": [],
     "retryCount": 0,
-    "startedAt": "2026-10-25T01:19:44.193261+00:00",
     "accountId": "account-d"
   }
 }

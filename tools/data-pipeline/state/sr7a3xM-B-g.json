@@ -1,0 +1,255 @@
+{
+  "videoId": "sr7a3xM-B-g",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/sr7a3xM-B-g",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:38:42.408474+00:00",
+    "rawResponse": "{\n  \"title\": \"어묵 국수\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"물 1L\",\n      \"displayName\": \"물\",\n      \"amount\": \"1\",\n      \"unit\": \"L\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 1L 넣고\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 1L 넣고\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 한대\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"대\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"끓으면 대파 한대\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"끓으면 대파 한대\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치액 3숟갈\",\n      \"displayName\": \"참치액\",\n      \"amount\": \"3\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"숨 죽으면 참치액 3숟갈\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참치액 3숟갈\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"어묵 4장\",\n      \"displayName\": \"어묵\",\n      \"amount\": \"4\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"어묵 네 장 면처럼 썰어넣고\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"어묵 4장 면처럼 썰어넣고\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소면\",\n      \"displayName\": \"소면\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소면 2분 30초 끓여서\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소면 2분 30초 끓여서\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추 많이 뿌려\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추 많이 뿌려\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 물 1L를 넣고 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 1L 넣고\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 1L 넣고\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물이 끓으면 송송 썬 대파 한 대를 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"끓으면 대파 한대\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"끓으면 대파 한대\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파의 숨이 죽으면 참치액 3숟갈을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"숨 죽으면 참치액 3숟갈\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"숨 죽으면 참치액 3숟갈\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"어묵 4장을 면처럼 길게 썰어 냄비에 넣고 팔팔 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"어묵 네 장 면처럼 썰어넣고 팔팔 끓이는 동안\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"어묵 4장 면처럼 썰어넣고 팔팔 끓이는 동안\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"다른 냄비에 소면을 2분 30초 동안 삶은 후, 찬물에 헹궈 그릇에 담아둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소면 2분 30초 끓여서 찬물에 씻어 그릇에 빼두고\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소면 2분 30초 끓여서 찬물에 씻어 그릇에 빼두고\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"어묵이 통통해지면 후추를 듬뿍 뿌린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"어묵 통통해지면 후추 많이 뿌려\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"어묵 통통해지면 후추 많이 뿌려\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소면에 국물을 부어 토렴한 후 국물과 어묵 건더기를 담아낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"토렴 후 국물에 담아\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"토렴 후 국물에 담아\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "어묵 국수",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "물 1L",
+          "displayName": "물",
+          "amount": "1",
+          "unit": "L",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 1L 넣고",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 1L 넣고",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파 한대",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "대",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "끓으면 대파 한대",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "끓으면 대파 한대",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "참치액 3숟갈",
+          "displayName": "참치액",
+          "amount": "3",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "숨 죽으면 참치액 3숟갈",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "참치액 3숟갈",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "어묵 4장",
+          "displayName": "어묵",
+          "amount": "4",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "어묵 네 장 면처럼 썰어넣고",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "어묵 4장 면처럼 썰어넣고",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "소면",
+          "displayName": "소면",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소면 2분 30초 끓여서",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "소면 2분 30초 끓여서",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후추 많이 뿌려",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "후추 많이 뿌려",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 물 1L를 넣고 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 1L 넣고",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 1L 넣고",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "물이 끓으면 송송 썬 대파 한 대를 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "끓으면 대파 한대",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "끓으면 대파 한대",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "대파의 숨이 죽으면 참치액 3숟갈을 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "숨 죽으면 참치액 3숟갈",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "숨 죽으면 참치액 3숟갈",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "어묵 4장을 면처럼 길게 썰어 냄비에 넣고 팔팔 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "어묵 네 장 면처럼 썰어넣고 팔팔 끓이는 동안",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "어묵 4장 면처럼 썰어넣고 팔팔 끓이는 동안",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "다른 냄비에 소면을 2분 30초 동안 삶은 후, 찬물에 헹궈 그릇에 담아둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소면 2분 30초 끓여서 찬물에 씻어 그릇에 빼두고",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "소면 2분 30초 끓여서 찬물에 씻어 그릇에 빼두고",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "어묵이 통통해지면 후추를 듬뿍 뿌린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "어묵 통통해지면 후추 많이 뿌려",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "어묵 통통해지면 후추 많이 뿌려",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "소면에 국물을 부어 토렴한 후 국물과 어묵 건더기를 담아낸다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "토렴 후 국물에 담아",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "토렴 후 국물에 담아",
+              "timestamp": "00:15"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

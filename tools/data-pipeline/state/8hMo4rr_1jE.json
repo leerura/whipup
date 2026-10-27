@@ -1,0 +1,257 @@
+{
+  "videoId": "8hMo4rr_1jE",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/8hMo4rr_1jE",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T08:01:24.963962+00:00",
+    "rawResponse": "{\n  \"title\": \"김치볶음밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"햄\",\n      \"displayName\": \"햄\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 햄 네모나게 잘라주고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 햄 네모나게 잘라주고\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치 한 컵 정도\",\n      \"displayName\": \"김치\",\n      \"amount\": \"1\",\n      \"unit\": \"컵 정도\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치 한 컵 정도 가위로 잘라준 다음\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김치 한 컵 정도 가위로 잘라준 다음\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 기름을 두르는 모습\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그다음 설탕\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루 1스푼\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 1스푼\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"간장 1스푼\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 넣고 볶다가\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 넣어 볶아주면 완성이거든요?\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥 넣어 볶아주면\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"햄을 네모나게 깍둑썰기한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 햄 네모나게 잘라주고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 햄 네모나게 잘라주고\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김치 한 컵 정도를 가위로 잘라준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치 한 컵 정도 가위로 잘라준 다음\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"가위로 잘라준 다음\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 기름을 두르고 햄을 넣어 노릇해질 때까지 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 햄 넣고 노릇해지면\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬에 햄 넣고 노릇해지면\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김치를 넣고 함께 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치 넣고 볶아줄게요\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김치 넣고 볶아줄게요\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"설탕 1스푼, 고춧가루 1스푼, 간장 1스푼을 넣고 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그다음 설탕, 고춧가루, 간장 넣고 볶다가\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 1스푼 고춧가루 1스푼 간장 1스푼\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥을 넣고 골고루 볶아 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 넣어 볶아주면 완성이거든요?\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥 넣어 볶아주면 완성이거든요?\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"완성된 요리에 계란 후라이, 구운 햄, 김가루, 통깨가 고명으로 올라가 있으나 조리 과정이나 재료 언급은 생략됨\"\n  ]\n}",
+    "result": {
+      "title": "김치볶음밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "햄",
+          "displayName": "햄",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 햄 네모나게 잘라주고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 햄 네모나게 잘라주고",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "김치 한 컵 정도",
+          "displayName": "김치",
+          "amount": "1",
+          "unit": "컵 정도",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김치 한 컵 정도 가위로 잘라준 다음",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "김치 한 컵 정도 가위로 잘라준 다음",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 기름을 두르는 모습",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "설탕 1스푼",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 1스푼",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그다음 설탕",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고춧가루 1스푼",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루 1스푼",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "간장 1스푼",
+          "displayName": "간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "간장 1스푼",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장 넣고 볶다가",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥 넣어 볶아주면 완성이거든요?",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "밥 넣어 볶아주면",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "햄을 네모나게 깍둑썰기한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 햄 네모나게 잘라주고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 햄 네모나게 잘라주고",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "김치 한 컵 정도를 가위로 잘라준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김치 한 컵 정도 가위로 잘라준 다음",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "가위로 잘라준 다음",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "팬에 기름을 두르고 햄을 넣어 노릇해질 때까지 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 햄 넣고 노릇해지면",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "팬에 햄 넣고 노릇해지면",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "김치를 넣고 함께 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김치 넣고 볶아줄게요",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "김치 넣고 볶아줄게요",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "설탕 1스푼, 고춧가루 1스푼, 간장 1스푼을 넣고 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그다음 설탕, 고춧가루, 간장 넣고 볶다가",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 1스푼 고춧가루 1스푼 간장 1스푼",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "밥을 넣고 골고루 볶아 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥 넣어 볶아주면 완성이거든요?",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "밥 넣어 볶아주면 완성이거든요?",
+              "timestamp": "00:14"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "완성된 요리에 계란 후라이, 구운 햄, 김가루, 통깨가 고명으로 올라가 있으나 조리 과정이나 재료 언급은 생략됨"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

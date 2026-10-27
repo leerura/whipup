@@ -1,0 +1,442 @@
+{
+  "videoId": "6EHE0S3StFc",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/6EHE0S3StFc",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:57:14.793494+00:00",
+    "rawResponse": "{\n  \"title\": \"초간단 순두부찌개\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"대파 하나\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 대파 하나를 잘라줄 거야\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 / Green onion\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 2숟가락\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"2\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냄비에 식용유 두 숟가락 넣고\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유2 / Cooking oil\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추참치 한 캔\",\n      \"displayName\": \"고추참치\",\n      \"amount\": \"1\",\n      \"unit\": \"캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추참치 한 캔과\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추참치 / Red pepper tuna\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 한 숟가락\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 한 숟가락을 같이 볶아줘\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루1 / Chili powder\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 반 개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 양파 반 개를 깍둑썰기해서 넣어줘\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파1/2 / Onion\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"순두부 하나\",\n      \"displayName\": \"순두부\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 순두부 하나를 넣고\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"순두부 / Soft tofu\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 참치캔으로 한 캔 가득\",\n      \"displayName\": \"물\",\n      \"amount\": \"1\",\n      \"unit\": \"참치캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물은 참치캔으로 한 캔 가득 넣으면 돼\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 / Water\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"애호박 조금\",\n      \"displayName\": \"애호박\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 애호박을 조금 잘라서 넣어줄 거야\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"애호박 / Zucchini\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"멸치액젓 한 숟가락\",\n      \"displayName\": \"멸치액젓\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 멸치액젓 한 숟가락\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"멸치액젓1 / Anchovy sauce\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"국간장 한 숟가락\",\n      \"displayName\": \"국간장\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국간장 한 숟가락\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장1 / Soy sauce\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"없으면 소금으로 간을 해도 돼\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"팽이버섯\",\n      \"displayName\": \"팽이버섯\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"집에 남는 버섯이 있으면 조금 올려줘\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팽이버섯 / Enoki mushroom\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 하나\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 계란 하나 넣고\",\n          \"timestamp\": \"00:50\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 / Egg\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 톡톡톡\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추 톡톡톡\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 / Pepper\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"대파 1개를 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 대파 하나를 잘라줄 거야\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"대파를 도마 위에서 송송 썬다\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 식용유 2숟가락을 두르고 썰어둔 대파를 넣어 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냄비에 식용유 두 숟가락 넣고 대파를 볶아줘\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"뚝배기에 식용유를 넣고 대파를 넣어 볶는다\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고추참치 1캔과 고춧가루 1숟가락을 넣고 함께 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추참치 한 캔과 고춧가루 한 숟가락을 같이 볶아줘\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"고추참치와 고춧가루를 넣고 볶는다\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 1/2개를 깍둑썰기하여 넣고, 양파가 투명해질 때까지 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 양파 반 개를 깍둑썰기해서 넣어줘 양파가 투명한 색이 될 때까지 볶아줘\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"깍둑썬 양파를 넣고 볶는다\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"순두부 1개를 넣고, 참치캔으로 물 1캔 분량을 가득 채워 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 순두부 하나를 넣고 물은 참치캔으로 한 캔 가득 넣으면 돼\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"순두부 1팩을 자르고 비운 참치캔에 물을 담아 붓는다\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"애호박을 조금 썰어서 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 애호박을 조금 잘라서 넣어줄 거야\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"애호박을 썰어 냄비에 넣는다\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"text\": \"멸치액젓 1숟가락과 국간장 1숟가락을 넣어 간을 맞춘다 (국간장이 없으면 소금으로 간을 대체 가능).\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 멸치액젓 한 숟가락 국간장 한 숟가락 없으면 소금으로 간을 해도 돼\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"멸치액젓과 국간장을 1숟가락씩 넣고 섞는다\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팽이버섯(또는 남는 버섯)을 조금 올리고, 계란 1개를 깨 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"집에 남는 버섯이 있으면 조금 올려줘 그리고 계란 하나 넣고\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팽이버섯을 얹고 계란을 넣는다\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    },\n    {\n      \"text\": \"후추를 톡톡 뿌리고 마지막으로 대파를 살짝 올려 끓여 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추 톡톡톡 마지막으로 대파 살짝 올려주면 끝\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"후춧가루를 톡톡 뿌리고 썰어둔 대파를 고명으로 올린다\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"마지막 고명용 대파는 처음에 썬 대파 1개 중 일부를 남겨서 사용했는지 별도의 대파인지 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "초간단 순두부찌개",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "대파 하나",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 대파 하나를 잘라줄 거야",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 / Green onion",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "식용유 2숟가락",
+          "displayName": "식용유",
+          "amount": "2",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "냄비에 식용유 두 숟가락 넣고",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유2 / Cooking oil",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "고추참치 한 캔",
+          "displayName": "고추참치",
+          "amount": "1",
+          "unit": "캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고추참치 한 캔과",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추참치 / Red pepper tuna",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "고춧가루 한 숟가락",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 한 숟가락을 같이 볶아줘",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루1 / Chili powder",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "양파 반 개",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 양파 반 개를 깍둑썰기해서 넣어줘",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파1/2 / Onion",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "순두부 하나",
+          "displayName": "순두부",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 순두부 하나를 넣고",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "순두부 / Soft tofu",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "물 참치캔으로 한 캔 가득",
+          "displayName": "물",
+          "amount": "1",
+          "unit": "참치캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물은 참치캔으로 한 캔 가득 넣으면 돼",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 / Water",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "애호박 조금",
+          "displayName": "애호박",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 애호박을 조금 잘라서 넣어줄 거야",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "애호박 / Zucchini",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "멸치액젓 한 숟가락",
+          "displayName": "멸치액젓",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 멸치액젓 한 숟가락",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "멸치액젓1 / Anchovy sauce",
+              "timestamp": "00:43"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "국간장 한 숟가락",
+          "displayName": "국간장",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "국간장 한 숟가락",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장1 / Soy sauce",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "소금",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "없으면 소금으로 간을 해도 돼",
+              "timestamp": "00:46"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "팽이버섯",
+          "displayName": "팽이버섯",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "집에 남는 버섯이 있으면 조금 올려줘",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팽이버섯 / Enoki mushroom",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "계란 하나",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 계란 하나 넣고",
+              "timestamp": "00:50"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 / Egg",
+              "timestamp": "00:50"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "후추 톡톡톡",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후추 톡톡톡",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 / Pepper",
+              "timestamp": "00:53"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        }
+      ],
+      "steps": [
+        {
+          "text": "대파 1개를 썰어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 대파 하나를 잘라줄 거야",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "대파를 도마 위에서 송송 썬다",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 식용유 2숟가락을 두르고 썰어둔 대파를 넣어 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "냄비에 식용유 두 숟가락 넣고 대파를 볶아줘",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "뚝배기에 식용유를 넣고 대파를 넣어 볶는다",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "고추참치 1캔과 고춧가루 1숟가락을 넣고 함께 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고추참치 한 캔과 고춧가루 한 숟가락을 같이 볶아줘",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "고추참치와 고춧가루를 넣고 볶는다",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "양파 1/2개를 깍둑썰기하여 넣고, 양파가 투명해질 때까지 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 양파 반 개를 깍둑썰기해서 넣어줘 양파가 투명한 색이 될 때까지 볶아줘",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "깍둑썬 양파를 넣고 볶는다",
+              "timestamp": "00:25"
+            }
+          ]
+        },
+        {
+          "text": "순두부 1개를 넣고, 참치캔으로 물 1캔 분량을 가득 채워 붓는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 순두부 하나를 넣고 물은 참치캔으로 한 캔 가득 넣으면 돼",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "순두부 1팩을 자르고 비운 참치캔에 물을 담아 붓는다",
+              "timestamp": "00:31"
+            }
+          ]
+        },
+        {
+          "text": "애호박을 조금 썰어서 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 애호박을 조금 잘라서 넣어줄 거야",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "애호박을 썰어 냄비에 넣는다",
+              "timestamp": "00:40"
+            }
+          ]
+        },
+        {
+          "text": "멸치액젓 1숟가락과 국간장 1숟가락을 넣어 간을 맞춘다 (국간장이 없으면 소금으로 간을 대체 가능).",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 멸치액젓 한 숟가락 국간장 한 숟가락 없으면 소금으로 간을 해도 돼",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "멸치액젓과 국간장을 1숟가락씩 넣고 섞는다",
+              "timestamp": "00:43"
+            }
+          ]
+        },
+        {
+          "text": "팽이버섯(또는 남는 버섯)을 조금 올리고, 계란 1개를 깨 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "집에 남는 버섯이 있으면 조금 올려줘 그리고 계란 하나 넣고",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팽이버섯을 얹고 계란을 넣는다",
+              "timestamp": "00:48"
+            }
+          ]
+        },
+        {
+          "text": "후추를 톡톡 뿌리고 마지막으로 대파를 살짝 올려 끓여 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후추 톡톡톡 마지막으로 대파 살짝 올려주면 끝",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "후춧가루를 톡톡 뿌리고 썰어둔 대파를 고명으로 올린다",
+              "timestamp": "00:53"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "마지막 고명용 대파는 처음에 썬 대파 1개 중 일부를 남겨서 사용했는지 별도의 대파인지 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

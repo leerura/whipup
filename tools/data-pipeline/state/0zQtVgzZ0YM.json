@@ -1,0 +1,250 @@
+{
+  "videoId": "0zQtVgzZ0YM",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/0zQtVgzZ0YM",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:45:38.261005+00:00",
+    "rawResponse": "{\n  \"title\": \"성시경님의 참치비빔우동\",\n  \"description\": \"맛있어서 한 개로는 부족한 성시경 님의 참치비빔우동 레시피\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"우동면\",\n      \"displayName\": \"우동면\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우동면부터 익혀\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"우동면부터 익혀 / Cook udon noodles first\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마요네즈 2스푼\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그 위에 마요네즈 2스푼\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마요네즈 2스푼 / 2 tablespoons of mayonnaise\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쯔유 1스푼\",\n      \"displayName\": \"쯔유\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"쯔유 1스푼\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쯔유 1스푼 / 1 tablespoon of Tzuyu\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름 뺀 작은 참치 한 캔\",\n      \"displayName\": \"참치\",\n      \"amount\": \"1\",\n      \"unit\": \"작은 캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기름 뺀 작은 참치 한 캔도\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름 뺀 작은 참치 한 캔도 / a can of oiled tuna\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"통깨는 곱게 갈아서 듬뿍 뿌려주기\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"통깨는 곱게 갈아서 / Grate the sesame seeds finely\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마무리로 대파와\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마무리로 대파와 / To finish off, green onions\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김가루까지 얹어주면\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김가루까지 얹어주면 / and seaweed flakes\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"우동면을 끓는 물에 익힌 후 찬물에 헹궈 그릇에 담는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우동면부터 익혀 찬물에 헹궈주기\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"우동면부터 익혀 / Cook udon noodles first\\n찬물에 헹궈주기 / Rinse the udon noodles in cold water\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"우동면 위에 마요네즈 2스푼과 쯔유 1스푼을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그 위에 마요네즈 2스푼 쯔유 1스푼\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마요네즈 2스푼 / 2 tablespoons of mayonnaise\\n쯔유 1스푼 / 1 tablespoon of Tzuyu\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"기름을 뺀 작은 참치 한 캔을 한쪽에 모두 올려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기름 뺀 작은 참치 한 캔도 한쪽에 모두 올려주고\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름 뺀 작은 참치 한 캔도 / a can of oiled tuna\\n한쪽에 모두 올려주고 / put the tuna on one side, too\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"통깨를 곱게 갈아서 듬뿍 뿌려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"통깨는 곱게 갈아서 듬뿍 뿌려주기\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"통깨는 곱게 갈아서 / Grate the sesame seeds finely\\n듬뿍 뿌려주기 / and add a lot\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파와 김가루를 얹어 비벼 먹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마무리로 대파와 김가루까지 얹어주면\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마무리로 대파와 / To finish off, green onions\\n김가루까지 얹어주면 / and seaweed flakes\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"비벼서 완성된 참치비빔우동을 젓가락으로 들어올림\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "성시경님의 참치비빔우동",
+      "description": "맛있어서 한 개로는 부족한 성시경 님의 참치비빔우동 레시피",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "우동면",
+          "displayName": "우동면",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "우동면부터 익혀",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "우동면부터 익혀 / Cook udon noodles first",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "마요네즈 2스푼",
+          "displayName": "마요네즈",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그 위에 마요네즈 2스푼",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마요네즈 2스푼 / 2 tablespoons of mayonnaise",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "쯔유 1스푼",
+          "displayName": "쯔유",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "쯔유 1스푼",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쯔유 1스푼 / 1 tablespoon of Tzuyu",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "기름 뺀 작은 참치 한 캔",
+          "displayName": "참치",
+          "amount": "1",
+          "unit": "작은 캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "기름 뺀 작은 참치 한 캔도",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름 뺀 작은 참치 한 캔도 / a can of oiled tuna",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "통깨는 곱게 갈아서 듬뿍 뿌려주기",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "통깨는 곱게 갈아서 / Grate the sesame seeds finely",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마무리로 대파와",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마무리로 대파와 / To finish off, green onions",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "김가루",
+          "displayName": "김가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김가루까지 얹어주면",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김가루까지 얹어주면 / and seaweed flakes",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "우동면을 끓는 물에 익힌 후 찬물에 헹궈 그릇에 담는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "우동면부터 익혀 찬물에 헹궈주기",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "우동면부터 익혀 / Cook udon noodles first\n찬물에 헹궈주기 / Rinse the udon noodles in cold water",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "우동면 위에 마요네즈 2스푼과 쯔유 1스푼을 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그 위에 마요네즈 2스푼 쯔유 1스푼",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마요네즈 2스푼 / 2 tablespoons of mayonnaise\n쯔유 1스푼 / 1 tablespoon of Tzuyu",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "기름을 뺀 작은 참치 한 캔을 한쪽에 모두 올려준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "기름 뺀 작은 참치 한 캔도 한쪽에 모두 올려주고",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름 뺀 작은 참치 한 캔도 / a can of oiled tuna\n한쪽에 모두 올려주고 / put the tuna on one side, too",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "통깨를 곱게 갈아서 듬뿍 뿌려준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "통깨는 곱게 갈아서 듬뿍 뿌려주기",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "통깨는 곱게 갈아서 / Grate the sesame seeds finely\n듬뿍 뿌려주기 / and add a lot",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "대파와 김가루를 얹어 비벼 먹는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마무리로 대파와 김가루까지 얹어주면",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마무리로 대파와 / To finish off, green onions\n김가루까지 얹어주면 / and seaweed flakes",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "비벼서 완성된 참치비빔우동을 젓가락으로 들어올림",
+              "timestamp": "00:02"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

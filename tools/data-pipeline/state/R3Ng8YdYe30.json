@@ -1,0 +1,319 @@
+{
+  "videoId": "R3Ng8YdYe30",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/R3Ng8YdYe30",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T08:25:07.969497+00:00",
+    "rawResponse": "{\n  \"title\": \"집에서도 간단하고 맛있게 닭갈비 레시피\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"설탕 1.5스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1.5스푼\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 4스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"4\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 4스푼\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 3스푼\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 3스푼\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"조청 쌀엿 1스푼\",\n      \"displayName\": \"조청 쌀엿\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"조청 쌀엿 1스푼\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 3스푼\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 3스푼\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 넣고 양념장 만들고\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"먹기 좋게 자른 닭다리살\",\n      \"displayName\": \"닭다리살\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"먹기 좋게 자른 닭다리살에\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 기름 두르고 채소, 닭고기\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"채소\",\n      \"displayName\": \"채소\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 기름 두르고 채소, 닭고기\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"취향에 따라 사리\",\n      \"displayName\": \"사리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"취향에 따라 사리 추가하고\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깻잎 (생략 가능)\",\n      \"displayName\": \"깻잎\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마지막에 깻잎 올리면 (생략 가능)\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"설탕 1.5스푼, 고춧가루 4스푼, 맛술 3스푼, 조청 쌀엿 1스푼, 고추장 3스푼, 후추, 다진 마늘을 넣고 양념장을 만듭니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1.5스푼\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 4스푼\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 3스푼\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"조청 쌀엿 1스푼\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 3스푼\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 넣고 양념장 만들고\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"먹기 좋게 자른 닭다리살에 양념장의 반만 넣고 버무린 후 30분 이상 재워둡니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"먹기 좋게 자른 닭다리살에\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양념장의 반만 넣고\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"버무린 후 30분 이상 재워둡니다\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 기름을 두르고 채소와 재워둔 닭고기, 남겨둔 양념장을 넣고 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 기름 두르고 채소, 닭고기\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"남겨둔 양념장 넣고\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볶아주세요\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"취향에 따라 사리를 추가합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"취향에 따라 사리 추가하고\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마지막에 깻잎을 올리면 완성입니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마지막에 깻잎 올리면 (생략 가능)\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"완성입니다\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"A dark liquid (likely soy sauce) is present in the sauce bowl around 00:07, and a yellow powder (likely curry powder) is visible in the bowl around 00:08–00:10, but neither is labeled with text or mentioned in the video.\",\n    \"The specific vegetable types and quantities in '채소' are not labeled (visually contains cabbage and green onion).\",\n    \"Specific measurements for minced garlic, black pepper, chicken thighs, oil, and toppings/사리 are not stated.\"\n  ]\n}",
+    "result": {
+      "title": "집에서도 간단하고 맛있게 닭갈비 레시피",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "설탕 1.5스푼",
+          "displayName": "설탕",
+          "amount": "1.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1.5스푼",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "고춧가루 4스푼",
+          "displayName": "고춧가루",
+          "amount": "4",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 4스푼",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "맛술 3스푼",
+          "displayName": "맛술",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 3스푼",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "조청 쌀엿 1스푼",
+          "displayName": "조청 쌀엿",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "조청 쌀엿 1스푼",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고추장 3스푼",
+          "displayName": "고추장",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 3스푼",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "다진 마늘",
+          "displayName": "다진 마늘",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 넣고 양념장 만들고",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "먹기 좋게 자른 닭다리살",
+          "displayName": "닭다리살",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "먹기 좋게 자른 닭다리살에",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 기름 두르고 채소, 닭고기",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "채소",
+          "displayName": "채소",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 기름 두르고 채소, 닭고기",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "취향에 따라 사리",
+          "displayName": "사리",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "취향에 따라 사리 추가하고",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "깻잎 (생략 가능)",
+          "displayName": "깻잎",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마지막에 깻잎 올리면 (생략 가능)",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "설탕 1.5스푼, 고춧가루 4스푼, 맛술 3스푼, 조청 쌀엿 1스푼, 고추장 3스푼, 후추, 다진 마늘을 넣고 양념장을 만듭니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1.5스푼",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 4스푼",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 3스푼",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "조청 쌀엿 1스푼",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 3스푼",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 넣고 양념장 만들고",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "먹기 좋게 자른 닭다리살에 양념장의 반만 넣고 버무린 후 30분 이상 재워둡니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "먹기 좋게 자른 닭다리살에",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양념장의 반만 넣고",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "버무린 후 30분 이상 재워둡니다",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "팬에 기름을 두르고 채소와 재워둔 닭고기, 남겨둔 양념장을 넣고 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 기름 두르고 채소, 닭고기",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "남겨둔 양념장 넣고",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볶아주세요",
+              "timestamp": "00:19"
+            }
+          ]
+        },
+        {
+          "text": "취향에 따라 사리를 추가합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "취향에 따라 사리 추가하고",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "마지막에 깻잎을 올리면 완성입니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마지막에 깻잎 올리면 (생략 가능)",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "완성입니다",
+              "timestamp": "00:25"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "A dark liquid (likely soy sauce) is present in the sauce bowl around 00:07, and a yellow powder (likely curry powder) is visible in the bowl around 00:08–00:10, but neither is labeled with text or mentioned in the video.",
+        "The specific vegetable types and quantities in '채소' are not labeled (visually contains cabbage and green onion).",
+        "Specific measurements for minced garlic, black pepper, chicken thighs, oil, and toppings/사리 are not stated."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

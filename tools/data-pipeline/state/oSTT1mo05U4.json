@@ -1,20 +1,303 @@
 {
   "videoId": "oSTT1mo05U4",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/oSTT1mo05U4",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:18:22.753666+00:00",
+    "rawResponse": "{\n  \"title\": \"고깃집 된장찌개\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"양파 반 개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"0.5\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 반 개\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"감자 한 개\",\n      \"displayName\": \"감자\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"감자 한 개\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파 1/2대\",\n      \"displayName\": \"파\",\n      \"amount\": \"0.5\",\n      \"unit\": \"대\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"파 1/2대\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청꼬 2개\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청꼬 2개\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"두부\",\n      \"displayName\": \"두부\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"저는 이렇게 고깃집처럼 자그마한 두부가 좋아서 깍두기 모양으로\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"두부를 깍두기 모양으로 썬다\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"이제부터 포인트! 기름 쏴악\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"뚝배기에 식용유를 두른다\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"된장 2\",\n      \"displayName\": \"된장\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"된장2 쌈장1.5 넣고 볶다가\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쌈장 1.5\",\n      \"displayName\": \"쌈장\",\n      \"amount\": \"1.5\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"된장2 쌈장1.5 넣고 볶다가\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추가루 1\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추가루 1, 다시다 1\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다시다 1\",\n      \"displayName\": \"다시다\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추가루 1, 다시다 1 (고기집은 다시다 필수)\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 500ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"500\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 500ml 넣고\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"차돌박이\",\n      \"displayName\": \"차돌박이\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"차돌박이 넣어주면 더 맛있음!\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양파 반 개, 감자 한 개, 대파 1/2대, 청양고추 2개를 먹기 좋게 썰고, 두부를 깍두기 모양으로 작게 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 반 개\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"감자 한 개\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"파 1/2대\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청꼬 2개\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"저는 이렇게 고깃집처럼 자그마한 두부가 좋아서 깍두기 모양으로\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뚝배기에 기름을 두르고 된장 2스푼, 쌈장 1.5스푼을 넣어 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"이제부터 포인트! 기름 쏴악\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"된장2 쌈장1.5 넣고 볶다가\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고춧가루 1스푼, 다시다 1스푼을 넣고 함께 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추가루 1, 다시다 1 (고기집은 다시다 필수)\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 500ml를 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 500ml 넣고\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"손질해 둔 채소와 두부를 모두 넣고 푹 끓인다 (취향에 따라 차돌박이를 추가해도 좋다).\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"푹 끓이면 끝!\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"차돌박이 넣어주면 더 맛있음!\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"양념류(된장, 쌈장, 고추가루, 다시다)의 계량 단위가 명시되지 않음(영상 내 숟가락으로 추정)\",\n    \"두부와 기름의 정확한 계량 수치가 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "고깃집 된장찌개",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "양파 반 개",
+          "displayName": "양파",
+          "amount": "0.5",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 반 개",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "감자 한 개",
+          "displayName": "감자",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "감자 한 개",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "파 1/2대",
+          "displayName": "파",
+          "amount": "0.5",
+          "unit": "대",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "파 1/2대",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "청꼬 2개",
+          "displayName": "청양고추",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청꼬 2개",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "두부",
+          "displayName": "두부",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "저는 이렇게 고깃집처럼 자그마한 두부가 좋아서 깍두기 모양으로",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "두부를 깍두기 모양으로 썬다",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "이제부터 포인트! 기름 쏴악",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "뚝배기에 식용유를 두른다",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "된장 2",
+          "displayName": "된장",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "된장2 쌈장1.5 넣고 볶다가",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "쌈장 1.5",
+          "displayName": "쌈장",
+          "amount": "1.5",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "된장2 쌈장1.5 넣고 볶다가",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "고추가루 1",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추가루 1, 다시다 1",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "다시다 1",
+          "displayName": "다시다",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추가루 1, 다시다 1 (고기집은 다시다 필수)",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "물 500ml",
+          "displayName": "물",
+          "amount": "500",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 500ml 넣고",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "차돌박이",
+          "displayName": "차돌박이",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "차돌박이 넣어주면 더 맛있음!",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양파 반 개, 감자 한 개, 대파 1/2대, 청양고추 2개를 먹기 좋게 썰고, 두부를 깍두기 모양으로 작게 썬다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 반 개",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "감자 한 개",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "파 1/2대",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청꼬 2개",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "저는 이렇게 고깃집처럼 자그마한 두부가 좋아서 깍두기 모양으로",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "뚝배기에 기름을 두르고 된장 2스푼, 쌈장 1.5스푼을 넣어 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "이제부터 포인트! 기름 쏴악",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "된장2 쌈장1.5 넣고 볶다가",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "고춧가루 1스푼, 다시다 1스푼을 넣고 함께 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추가루 1, 다시다 1 (고기집은 다시다 필수)",
+              "timestamp": "00:25"
+            }
+          ]
+        },
+        {
+          "text": "물 500ml를 붓는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 500ml 넣고",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "손질해 둔 채소와 두부를 모두 넣고 푹 끓인다 (취향에 따라 차돌박이를 추가해도 좋다).",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "푹 끓이면 끝!",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "차돌박이 넣어주면 더 맛있음!",
+              "timestamp": "00:29"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "양념류(된장, 쌈장, 고추가루, 다시다)의 계량 단위가 명시되지 않음(영상 내 숟가락으로 추정)",
+        "두부와 기름의 정확한 계량 수치가 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
     "retryCount": 0,
-    "startedAt": "2026-10-25T01:19:44.170714+00:00",
-    "accountId": "account-c",
-    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 5h40m15.390917444s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '20415s'}]}}",
-    "retryReason": "quota_retry_info",
-    "retryKind": "quota",
-    "retryAt": "2026-10-25T06:59:59.676537+00:00",
-    "quotaAccounts": {
-      "account-c": "2026-10-25T06:59:59.676537+00:00"
-    }
+    "accountId": "account-b"
   }
 }

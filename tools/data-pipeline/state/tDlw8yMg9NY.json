@@ -1,0 +1,351 @@
+{
+  "videoId": "tDlw8yMg9NY",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/tDlw8yMg9NY",
+  "sourceMetadata": {"sourceTitle":"절대 실패할 수 없는 김치찌개 레시피","sourceChannelName":"자취요리신 simple cooking","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:31.042221Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T10:52:47.240198+00:00",
+    "rawResponse": "{\n  \"title\": \"김치찌개\",\n  \"description\": \"할머니 대대로 내려온 방법으로 끓이는 실패 없는 30년 전통 깊은 맛의 김치찌개 레시피\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"찌개용 돼지고기 300~400g (앞다리살)\",\n      \"displayName\": \"찌개용 돼지고기\",\n      \"amount\": \"300~400\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 부위 상관없이 찌개용 돼지고기를 300~400g 준비해줍니다. 저는 앞다리살을 가지고 왔습니다.\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"찌개용 돼지고기(약 400g)\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"자른 김치 5~6스푼\",\n      \"displayName\": \"자른 김치\",\n      \"amount\": \"5~6\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치는 많으면 많을수록 좋으니 넉넉하게 5~6스푼 준비하시면 됩니다.\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식초 1/3스푼\",\n      \"displayName\": \"식초\",\n      \"amount\": \"1/3\",\n      \"unit\": \"스푼\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"조금 덜 익은 김치라면 식초를 1/3스푼 넣어주면 신김치와 비슷한 맛을 낼 수 있습니다.\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 두세스푼\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"2~3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 널찍한 팬이나 냄비에 식용유를 두세스푼 둘러주고\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치 국물 한국자\",\n      \"displayName\": \"김치 국물\",\n      \"amount\": \"1\",\n      \"unit\": \"국자\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이때 김치 국물이 있다면 한국자 넣어주면 좋지만 그런 거 충분하지 않아도 맛을 내는 방법을 보여드리겠습니다.\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"된장 1스푼\",\n      \"displayName\": \"된장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"된장 1스푼\",\n          \"timestamp\": \"00:51\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"된장 1스푼\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 1스푼\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 1스푼\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 1스푼\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 2스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 2스푼을 넣고\",\n          \"timestamp\": \"00:56\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 2스푼\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘을 1스푼 넣고\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘을 1스푼 넣고\",\n          \"timestamp\": \"01:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 반 개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 반 개도 대충 굵직하게 썰어서 넣어주고\",\n          \"timestamp\": \"01:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 양파와 비슷한 양\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파도 반 가르고 숭덩숭덩 썰어서 양파와 비슷한 양으로 넣어줍니다.\",\n          \"timestamp\": \"01:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 3컵 (약 560ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"3\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다른 사골 육수 그딴 거 필요 없이 물 3컵(약 560ml)을 부어줍니다.\",\n          \"timestamp\": \"01:37\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 3컵 (약 560ml)\",\n          \"timestamp\": \"01:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"두부 반모 (또는 한 모)\",\n      \"displayName\": \"두부\",\n      \"amount\": \"1/2\",\n      \"unit\": \"모\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"추가로 두부를 넣고 싶으면 물이 보글보글 끓을 때 두부 반모를 대충 썰어서 넣어줍니다. 만약 남은 두부 반모를 어떻게 처리할지 고민이시라면 남은 두부도 다 넣어줍니다.\",\n          \"timestamp\": \"01:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 살짝\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": \"약간\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다른 다시다 다 필요 없이 소금만 살짝 넣어 간을 맞춰주시면 됩니다.\",\n          \"timestamp\": \"02:10\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"비계가 넉넉하게 붙은 찌개용 돼지고기(앞다리살 등) 300~400g과 썰어놓은 김치 5~6스푼을 준비합니다. 김치가 덜 익었다면 식초 1/3스푼을 김치에 섞어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"부위 상관없이 찌개용 돼지고기를 300~400g 준비해줍니다. 저는 앞다리살을 가지고 왔습니다... 비계가 넉넉하게 붙어있는 걸 준비하시면 좋습니다. 그라고 자른 김치도 준비해줍니다... 넉넉하게 5~6스푼 준비하시면 됩니다. 조금 덜 익은 김치라면 식초를 1/3스푼 넣어주면 신김치와 비슷한 맛을 낼 수 있습니다.\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"넓은 팬이나 냄비에 식용유를 2~3스푼 두르고, 돼지고기와 김치를 모두 넣습니다. (김치 국물이 있으면 1국자 넣어도 좋습니다.)\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 널찍한 팬이나 냄비에 식용유를 두세스푼 둘러주고 찌개용 돼지고기를 다 넣어주고 그라고 썰어 놓은 김치도 넣어줍니다.\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"된장 1스푼, 고추장 1스푼, 진간장 2스푼을 넣고 재료들과 함께 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"된장 1스푼, 고추장 1스푼, 진간장 2스푼을 넣고 다 같이 한번 볶아줍니다.\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물을 넣지 않은 상태에서 중불로 5분 이상 충분히 바짝 볶아 돼지고기를 익혀줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"중불에서 5분 이상 넉넉하게 볶아주셔야 합니다. 바짝 볶아주다가 어느 정도 돼지고기가 익었다 싶으면\",\n          \"timestamp\": \"01:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"다진 마늘 1스푼, 굵직하게 썬 양파 반 개, 반 갈라 큼직하게 썬 대파(양파와 비슷한 양)를 넣고 2~3분간 더 볶아 채소의 숨을 살짝 죽입니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘을 1스푼 넣고 양파 반 개도 대충 굵직하게 썰어서 넣어주고 대파도 반 가르고 숭덩숭덩 썰어서 양파와 비슷한 양으로 넣어줍니다. 아직까지 물을 넣지 말고 또 볶아줍니다. 2~3분 정도 더 볶아주면 넣은 양파와 대파가 살짝 숨이 죽을 듯 싶으면\",\n          \"timestamp\": \"01:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 3컵(약 560ml)을 붓고 푹 끓여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 3컵(약 560ml)을 부어줍니다. 그라고 푹~~~~ 끓여줍니다.\",\n          \"timestamp\": \"01:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국물이 보글보글 끓으면 대충 썬 두부 반 모(또는 한 모)를 넣고 속까지 뜨거워질 때까지 함께 끓입니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물이 보글보글 끓을 때 두부 반모를 대충 썰어서 넣어줍니다. 만약 남은 두부 반모를 어떻게 처리할지 고민이시라면 남은 두부도 다 넣어줍니다... 두부도 뜨뜻해지게 뜨거운 물에서 찜질 시켜줍니다.\",\n          \"timestamp\": \"01:44\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국물 맛을 본 뒤, 소금을 살짝 넣어 간을 맞춰 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 국물 맛을 살짝 보고 다른 다시다 다 필요 없이 소금만 살짝 넣어 간을 맞춰주시면 됩니다.\",\n          \"timestamp\": \"02:07\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "김치찌개",
+      "description": "할머니 대대로 내려온 방법으로 끓이는 실패 없는 30년 전통 깊은 맛의 김치찌개 레시피",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "찌개용 돼지고기 300~400g (앞다리살)",
+          "displayName": "찌개용 돼지고기",
+          "amount": "300~400",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 부위 상관없이 찌개용 돼지고기를 300~400g 준비해줍니다. 저는 앞다리살을 가지고 왔습니다.",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "찌개용 돼지고기(약 400g)",
+              "timestamp": "00:42"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "자른 김치 5~6스푼",
+          "displayName": "자른 김치",
+          "amount": "5~6",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김치는 많으면 많을수록 좋으니 넉넉하게 5~6스푼 준비하시면 됩니다.",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "식초 1/3스푼",
+          "displayName": "식초",
+          "amount": "1/3",
+          "unit": "스푼",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "조금 덜 익은 김치라면 식초를 1/3스푼 넣어주면 신김치와 비슷한 맛을 낼 수 있습니다.",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "식용유 두세스푼",
+          "displayName": "식용유",
+          "amount": "2~3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 널찍한 팬이나 냄비에 식용유를 두세스푼 둘러주고",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "김치 국물 한국자",
+          "displayName": "김치 국물",
+          "amount": "1",
+          "unit": "국자",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이때 김치 국물이 있다면 한국자 넣어주면 좋지만 그런 거 충분하지 않아도 맛을 내는 방법을 보여드리겠습니다.",
+              "timestamp": "00:46"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "된장 1스푼",
+          "displayName": "된장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "된장 1스푼",
+              "timestamp": "00:51"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "된장 1스푼",
+              "timestamp": "00:51"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "고추장 1스푼",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고추장 1스푼",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 1스푼",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "진간장 2스푼",
+          "displayName": "진간장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "진간장 2스푼을 넣고",
+              "timestamp": "00:56"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 2스푼",
+              "timestamp": "00:56"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "다진 마늘 1스푼",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘을 1스푼 넣고",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘을 1스푼 넣고",
+              "timestamp": "01:21"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "양파 반 개",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 반 개도 대충 굵직하게 썰어서 넣어주고",
+              "timestamp": "01:23"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "대파 양파와 비슷한 양",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파도 반 가르고 숭덩숭덩 썰어서 양파와 비슷한 양으로 넣어줍니다.",
+              "timestamp": "01:26"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "물 3컵 (약 560ml)",
+          "displayName": "물",
+          "amount": "3",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다른 사골 육수 그딴 거 필요 없이 물 3컵(약 560ml)을 부어줍니다.",
+              "timestamp": "01:37"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 3컵 (약 560ml)",
+              "timestamp": "01:38"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "두부 반모 (또는 한 모)",
+          "displayName": "두부",
+          "amount": "1/2",
+          "unit": "모",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "추가로 두부를 넣고 싶으면 물이 보글보글 끓을 때 두부 반모를 대충 썰어서 넣어줍니다. 만약 남은 두부 반모를 어떻게 처리할지 고민이시라면 남은 두부도 다 넣어줍니다.",
+              "timestamp": "01:44"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "소금 살짝",
+          "displayName": "소금",
+          "amount": null,
+          "unit": "약간",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다른 다시다 다 필요 없이 소금만 살짝 넣어 간을 맞춰주시면 됩니다.",
+              "timestamp": "02:10"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        }
+      ],
+      "steps": [
+        {
+          "text": "비계가 넉넉하게 붙은 찌개용 돼지고기(앞다리살 등) 300~400g과 썰어놓은 김치 5~6스푼을 준비합니다. 김치가 덜 익었다면 식초 1/3스푼을 김치에 섞어줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "부위 상관없이 찌개용 돼지고기를 300~400g 준비해줍니다. 저는 앞다리살을 가지고 왔습니다... 비계가 넉넉하게 붙어있는 걸 준비하시면 좋습니다. 그라고 자른 김치도 준비해줍니다... 넉넉하게 5~6스푼 준비하시면 됩니다. 조금 덜 익은 김치라면 식초를 1/3스푼 넣어주면 신김치와 비슷한 맛을 낼 수 있습니다.",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "넓은 팬이나 냄비에 식용유를 2~3스푼 두르고, 돼지고기와 김치를 모두 넣습니다. (김치 국물이 있으면 1국자 넣어도 좋습니다.)",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 널찍한 팬이나 냄비에 식용유를 두세스푼 둘러주고 찌개용 돼지고기를 다 넣어주고 그라고 썰어 놓은 김치도 넣어줍니다.",
+              "timestamp": "00:39"
+            }
+          ]
+        },
+        {
+          "text": "된장 1스푼, 고추장 1스푼, 진간장 2스푼을 넣고 재료들과 함께 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "된장 1스푼, 고추장 1스푼, 진간장 2스푼을 넣고 다 같이 한번 볶아줍니다.",
+              "timestamp": "00:51"
+            }
+          ]
+        },
+        {
+          "text": "물을 넣지 않은 상태에서 중불로 5분 이상 충분히 바짝 볶아 돼지고기를 익혀줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "중불에서 5분 이상 넉넉하게 볶아주셔야 합니다. 바짝 볶아주다가 어느 정도 돼지고기가 익었다 싶으면",
+              "timestamp": "01:13"
+            }
+          ]
+        },
+        {
+          "text": "다진 마늘 1스푼, 굵직하게 썬 양파 반 개, 반 갈라 큼직하게 썬 대파(양파와 비슷한 양)를 넣고 2~3분간 더 볶아 채소의 숨을 살짝 죽입니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘을 1스푼 넣고 양파 반 개도 대충 굵직하게 썰어서 넣어주고 대파도 반 가르고 숭덩숭덩 썰어서 양파와 비슷한 양으로 넣어줍니다. 아직까지 물을 넣지 말고 또 볶아줍니다. 2~3분 정도 더 볶아주면 넣은 양파와 대파가 살짝 숨이 죽을 듯 싶으면",
+              "timestamp": "01:21"
+            }
+          ]
+        },
+        {
+          "text": "물 3컵(약 560ml)을 붓고 푹 끓여줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 3컵(약 560ml)을 부어줍니다. 그라고 푹~~~~ 끓여줍니다.",
+              "timestamp": "01:37"
+            }
+          ]
+        },
+        {
+          "text": "국물이 보글보글 끓으면 대충 썬 두부 반 모(또는 한 모)를 넣고 속까지 뜨거워질 때까지 함께 끓입니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물이 보글보글 끓을 때 두부 반모를 대충 썰어서 넣어줍니다. 만약 남은 두부 반모를 어떻게 처리할지 고민이시라면 남은 두부도 다 넣어줍니다... 두부도 뜨뜻해지게 뜨거운 물에서 찜질 시켜줍니다.",
+              "timestamp": "01:44"
+            }
+          ]
+        },
+        {
+          "text": "국물 맛을 본 뒤, 소금을 살짝 넣어 간을 맞춰 완성합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 국물 맛을 살짝 보고 다른 다시다 다 필요 없이 소금만 살짝 넣어 간을 맞춰주시면 됩니다.",
+              "timestamp": "02:07"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

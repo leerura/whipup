@@ -1,0 +1,446 @@
+{
+  "videoId": "p7HGmwiuuvE",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/p7HGmwiuuvE",
+  "sourceMetadata": {"sourceTitle":"○○만 넣으면 밖에서 사 먹는 김치찌개 맛 납니다! 궁금하쥬?","sourceChannelName":"백종원 PAIK JONG WON","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.907622Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T10:51:33.500863+00:00",
+    "rawResponse": "{\n  \"title\": \"햄김치찌개\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"신김치 약 3컵\",\n      \"displayName\": \"신김치\",\n      \"amount\": \"3\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치는 대략 요 컵으로 한.. 3컵 준비하시면 되고\",\n          \"timestamp\": \"01:19\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"신김치 약 3컵\",\n          \"timestamp\": \"03:43\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통조림 햄 1통 (1/2통 으깨기용, 1/2통 건더기용)\",\n      \"displayName\": \"통조림 햄\",\n      \"amount\": \"1\",\n      \"unit\": \"통\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"반은 그냥 썰어서 건더기처럼 쓰실 거고 반은 으깰 거예요\",\n          \"timestamp\": \"01:32\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"통조림 햄 1/2통\",\n          \"timestamp\": \"02:54\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"통조림 햄 1/2통\",\n          \"timestamp\": \"04:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 약 1/4개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/4\",\n      \"unit\": \"개\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 없으면 안 넣으셔도 돼요 근데 있으면 4분의 1개 정도\",\n          \"timestamp\": \"01:48\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 약 1/4개\",\n          \"timestamp\": \"04:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 약 2/3대\",\n      \"displayName\": \"대파\",\n      \"amount\": \"2/3\",\n      \"unit\": \"대\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파도 하나\",\n          \"timestamp\": \"01:56\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파, 대파 없으면 안 쓰셔도 돼요\",\n          \"timestamp\": \"02:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 약 2/3대\",\n          \"timestamp\": \"06:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간 마늘 1큰술\",\n      \"displayName\": \"간 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대신 마늘은 조금 있어야겠죠 이것도 없으면 안 써도 돼요\",\n          \"timestamp\": \"02:07\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간 마늘 1큰술\",\n          \"timestamp\": \"05:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"국간장 1큰술\",\n      \"displayName\": \"국간장\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국간장 쬐끔\",\n          \"timestamp\": \"02:17\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장 1큰술\",\n          \"timestamp\": \"05:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굵은 고춧가루 1큰술\",\n      \"displayName\": \"굵은 고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굵은 고춧가루 1큰술\",\n          \"timestamp\": \"05:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고운 고춧가루 1큰술\",\n      \"displayName\": \"고운 고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고운 고춧가루 1큰술\",\n          \"timestamp\": \"05:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"새우젓 1큰술\",\n      \"displayName\": \"새우젓\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"새우젓 있으면 새우젓 쓰시고 없으면 집에 액젓 있죠 까나리 액젓, 참치 액젓 그다음에 멸치 액젓\",\n          \"timestamp\": \"05:40\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"새우젓 1큰술\",\n          \"timestamp\": \"05:49\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"정수물 약 3과 1/3컵\",\n      \"displayName\": \"정수물\",\n      \"amount\": \"3 1/3\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"정수물 약 3과 1/3컵\",\n          \"timestamp\": \"04:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"두부 1/2팩\",\n      \"displayName\": \"두부\",\n      \"amount\": \"1/2\",\n      \"unit\": \"팩\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"두부도 한 모를 다 쓸 필요 없이 반 모만\",\n          \"timestamp\": \"02:40\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부 1/2팩\",\n          \"timestamp\": \"06:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식초 3큰술\",\n      \"displayName\": \"식초\",\n      \"amount\": \"3\",\n      \"unit\": \"큰술\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"신김치가 없을 땐 이걸 쓰시면 됩니다\",\n          \"timestamp\": \"02:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"하나... 둘... 셋\",\n          \"timestamp\": \"06:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕\",\n      \"displayName\": \"설탕\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕을 넣는 이유는 너무 신김치일 경우는 너무 신맛을 잡아 주기도 하거든요 그래서 저거는 안 쓰셔도 되고 쓰셔도 되고\",\n          \"timestamp\": \"02:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"신김치가 너무 셔서 쿰쿰한 맛이 날 때 그거를 해결하는 방법은 설탕을 조금 넣어 주면 된다는 거\",\n          \"timestamp\": \"07:19\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"통조림 햄의 절반은 편으로 썰어 두고, 나머지 절반은 비닐팩에 넣어 손으로 곱게 으깹니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"반은 그냥 썰어서 건더기처럼 쓰실 거고 반은 으깰 거예요 안 보이게\",\n          \"timestamp\": \"01:32\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"햄을 절반으로 잘라 한쪽은 썰고, 한쪽은 비닐에 넣어 손바닥으로 으깸\",\n          \"timestamp\": \"01:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파는 채 썰고, 대파는 송송 썰며, 두부는 먹기 좋은 크기로 썰어 준비합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파는 채 썰어 준비해 주세요\",\n          \"timestamp\": \"01:52\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파는 송송 썰어 준비해 주세요\",\n          \"timestamp\": \"01:59\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부는 적당한 크기로 썰어 주세요\",\n          \"timestamp\": \"02:44\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 기름을 두르지 않고 으깬 통조림 햄 1/2통을 넣은 뒤 약불에서 기름이 나오고 살짝 노릇노릇해질 때까지 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"통조림 햄 1/2통\",\n          \"timestamp\": \"02:54\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름이 나올 수 있도록 약불에 볶아 주세요\",\n          \"timestamp\": \"03:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"햄이 살짝 눌어붙으며 노릇해지면 신김치 약 3컵을 넣고 중불로 올려 김치가 익을 때까지 함께 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"신김치 약 3컵\",\n          \"timestamp\": \"03:43\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"햄과 김치를 중불에 볶아 주세요\",\n          \"timestamp\": \"03:58\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김치가 어느 정도 익으면 정수물 약 3과 1/3컵을 붓고 채 썬 양파와 썰어둔 햄을 넣습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"정수물 약 3과 1/3컵\",\n          \"timestamp\": \"04:34\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 약 1/4개\",\n          \"timestamp\": \"04:42\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"통조림 햄 1/2통\",\n          \"timestamp\": \"04:54\"\n        }\n      ]\n    },\n    {\n      \"text\": \"간 마늘 1큰술, 국간장 1큰술, 굵은 고춧가루 1큰술, 고운 고춧가루 1큰술, 새우젓(또는 액젓) 1큰술을 넣고 잘 섞어 끓입니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간 마늘 1큰술\",\n          \"timestamp\": \"05:07\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장 1큰술\",\n          \"timestamp\": \"05:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굵은 고춧가루 1큰술\",\n          \"timestamp\": \"05:24\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고운 고춧가루 1큰술\",\n          \"timestamp\": \"05:27\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"새우젓 1큰술\",\n          \"timestamp\": \"05:49\"\n        }\n      ]\n    },\n    {\n      \"text\": \"찌개가 끓어오르면 중불로 줄여 약 3분간 더 끓여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"끓어오르면 중불로 줄여 약 3분 정도 끓여 주세요\",\n          \"timestamp\": \"05:56\"\n        }\n      ]\n    },\n    {\n      \"text\": \"썰어둔 두부 1/2팩과 송송 썬 대파를 올리고, 고춧가루를 살짝 뿌려 마무리합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부 1/2팩\",\n          \"timestamp\": \"06:09\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 약 2/3대\",\n          \"timestamp\": \"06:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"적당히 끓어올랐을 때 마무리로 이렇게 고춧가루 뿌려서 딱 테이블에 올려 주시면\",\n          \"timestamp\": \"06:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"신김치 맛을 더 살리고 감칠맛을 내기 위해 식초를 기호에 따라 1~3큰술 넣어 끓여 완성합니다. 김치가 너무 시고 쿰쿰할 경우에는 설탕을 약간 넣어 맛을 맞춥니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그냥 김치찌개에도 여러분들 식초 한번 넣어서 드셔 보세요 맛있어요\",\n          \"timestamp\": \"06:40\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"신김치가 너무 셔서 쿰쿰한 맛이 날 때 그거를 해결하는 방법은 설탕을 조금 넣어 주면 된다는 거\",\n          \"timestamp\": \"07:19\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "햄김치찌개",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "신김치 약 3컵",
+          "displayName": "신김치",
+          "amount": "3",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김치는 대략 요 컵으로 한.. 3컵 준비하시면 되고",
+              "timestamp": "01:19"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "신김치 약 3컵",
+              "timestamp": "03:43"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "통조림 햄 1통 (1/2통 으깨기용, 1/2통 건더기용)",
+          "displayName": "통조림 햄",
+          "amount": "1",
+          "unit": "통",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "반은 그냥 썰어서 건더기처럼 쓰실 거고 반은 으깰 거예요",
+              "timestamp": "01:32"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "통조림 햄 1/2통",
+              "timestamp": "02:54"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "통조림 햄 1/2통",
+              "timestamp": "04:54"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "양파 약 1/4개",
+          "displayName": "양파",
+          "amount": "1/4",
+          "unit": "개",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 없으면 안 넣으셔도 돼요 근데 있으면 4분의 1개 정도",
+              "timestamp": "01:48"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 약 1/4개",
+              "timestamp": "04:42"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "대파 약 2/3대",
+          "displayName": "대파",
+          "amount": "2/3",
+          "unit": "대",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파도 하나",
+              "timestamp": "01:56"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파, 대파 없으면 안 쓰셔도 돼요",
+              "timestamp": "02:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 약 2/3대",
+              "timestamp": "06:18"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "간 마늘 1큰술",
+          "displayName": "간 마늘",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대신 마늘은 조금 있어야겠죠 이것도 없으면 안 써도 돼요",
+              "timestamp": "02:07"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간 마늘 1큰술",
+              "timestamp": "05:07"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "국간장 1큰술",
+          "displayName": "국간장",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "국간장 쬐끔",
+              "timestamp": "02:17"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장 1큰술",
+              "timestamp": "05:11"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "굵은 고춧가루 1큰술",
+          "displayName": "굵은 고춧가루",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굵은 고춧가루 1큰술",
+              "timestamp": "05:24"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "고운 고춧가루 1큰술",
+          "displayName": "고운 고춧가루",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고운 고춧가루 1큰술",
+              "timestamp": "05:27"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "새우젓 1큰술",
+          "displayName": "새우젓",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "새우젓 있으면 새우젓 쓰시고 없으면 집에 액젓 있죠 까나리 액젓, 참치 액젓 그다음에 멸치 액젓",
+              "timestamp": "05:40"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "새우젓 1큰술",
+              "timestamp": "05:49"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "정수물 약 3과 1/3컵",
+          "displayName": "정수물",
+          "amount": "3 1/3",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "정수물 약 3과 1/3컵",
+              "timestamp": "04:34"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "두부 1/2팩",
+          "displayName": "두부",
+          "amount": "1/2",
+          "unit": "팩",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "두부도 한 모를 다 쓸 필요 없이 반 모만",
+              "timestamp": "02:40"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부 1/2팩",
+              "timestamp": "06:09"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "식초 3큰술",
+          "displayName": "식초",
+          "amount": "3",
+          "unit": "큰술",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "신김치가 없을 땐 이걸 쓰시면 됩니다",
+              "timestamp": "02:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "하나... 둘... 셋",
+              "timestamp": "06:47"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "설탕",
+          "displayName": "설탕",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "설탕을 넣는 이유는 너무 신김치일 경우는 너무 신맛을 잡아 주기도 하거든요 그래서 저거는 안 쓰셔도 되고 쓰셔도 되고",
+              "timestamp": "02:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "신김치가 너무 셔서 쿰쿰한 맛이 날 때 그거를 해결하는 방법은 설탕을 조금 넣어 주면 된다는 거",
+              "timestamp": "07:19"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "통조림 햄의 절반은 편으로 썰어 두고, 나머지 절반은 비닐팩에 넣어 손으로 곱게 으깹니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "반은 그냥 썰어서 건더기처럼 쓰실 거고 반은 으깰 거예요 안 보이게",
+              "timestamp": "01:32"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "햄을 절반으로 잘라 한쪽은 썰고, 한쪽은 비닐에 넣어 손바닥으로 으깸",
+              "timestamp": "01:34"
+            }
+          ]
+        },
+        {
+          "text": "양파는 채 썰고, 대파는 송송 썰며, 두부는 먹기 좋은 크기로 썰어 준비합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파는 채 썰어 준비해 주세요",
+              "timestamp": "01:52"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파는 송송 썰어 준비해 주세요",
+              "timestamp": "01:59"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부는 적당한 크기로 썰어 주세요",
+              "timestamp": "02:44"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 기름을 두르지 않고 으깬 통조림 햄 1/2통을 넣은 뒤 약불에서 기름이 나오고 살짝 노릇노릇해질 때까지 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "통조림 햄 1/2통",
+              "timestamp": "02:54"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름이 나올 수 있도록 약불에 볶아 주세요",
+              "timestamp": "03:18"
+            }
+          ]
+        },
+        {
+          "text": "햄이 살짝 눌어붙으며 노릇해지면 신김치 약 3컵을 넣고 중불로 올려 김치가 익을 때까지 함께 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "신김치 약 3컵",
+              "timestamp": "03:43"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "햄과 김치를 중불에 볶아 주세요",
+              "timestamp": "03:58"
+            }
+          ]
+        },
+        {
+          "text": "김치가 어느 정도 익으면 정수물 약 3과 1/3컵을 붓고 채 썬 양파와 썰어둔 햄을 넣습니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "정수물 약 3과 1/3컵",
+              "timestamp": "04:34"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 약 1/4개",
+              "timestamp": "04:42"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "통조림 햄 1/2통",
+              "timestamp": "04:54"
+            }
+          ]
+        },
+        {
+          "text": "간 마늘 1큰술, 국간장 1큰술, 굵은 고춧가루 1큰술, 고운 고춧가루 1큰술, 새우젓(또는 액젓) 1큰술을 넣고 잘 섞어 끓입니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간 마늘 1큰술",
+              "timestamp": "05:07"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장 1큰술",
+              "timestamp": "05:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굵은 고춧가루 1큰술",
+              "timestamp": "05:24"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고운 고춧가루 1큰술",
+              "timestamp": "05:27"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "새우젓 1큰술",
+              "timestamp": "05:49"
+            }
+          ]
+        },
+        {
+          "text": "찌개가 끓어오르면 중불로 줄여 약 3분간 더 끓여줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "끓어오르면 중불로 줄여 약 3분 정도 끓여 주세요",
+              "timestamp": "05:56"
+            }
+          ]
+        },
+        {
+          "text": "썰어둔 두부 1/2팩과 송송 썬 대파를 올리고, 고춧가루를 살짝 뿌려 마무리합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부 1/2팩",
+              "timestamp": "06:09"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 약 2/3대",
+              "timestamp": "06:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "적당히 끓어올랐을 때 마무리로 이렇게 고춧가루 뿌려서 딱 테이블에 올려 주시면",
+              "timestamp": "06:23"
+            }
+          ]
+        },
+        {
+          "text": "신김치 맛을 더 살리고 감칠맛을 내기 위해 식초를 기호에 따라 1~3큰술 넣어 끓여 완성합니다. 김치가 너무 시고 쿰쿰할 경우에는 설탕을 약간 넣어 맛을 맞춥니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그냥 김치찌개에도 여러분들 식초 한번 넣어서 드셔 보세요 맛있어요",
+              "timestamp": "06:40"
+            },
+            {
+              "type": "SPEECH",
+              "text": "신김치가 너무 셔서 쿰쿰한 맛이 날 때 그거를 해결하는 방법은 설탕을 조금 넣어 주면 된다는 거",
+              "timestamp": "07:19"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

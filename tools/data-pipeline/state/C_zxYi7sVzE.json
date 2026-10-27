@@ -1,0 +1,407 @@
+{
+  "videoId": "C_zxYi7sVzE",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/C_zxYi7sVzE",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T08:04:25.702561+00:00",
+    "rawResponse": "{\n  \"title\": \"진짜 맛있는 오므라이스\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"양파 작은거 1개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 양파 작은거 1개\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 양파 작은 거 한 개\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"스팸 1캔\",\n      \"displayName\": \"스팸\",\n      \"amount\": \"1\",\n      \"unit\": \"캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"스팸 1캔 잘게 썰어\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"스팸 한 캔 잘게 썰어\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기름 두른 팬에 볶아주다가\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기름 두른 팬에 볶아주다가\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 두 공기\",\n      \"displayName\": \"밥\",\n      \"amount\": \"2\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥 두 공기\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 두 공기\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"케찹 2스푼\",\n      \"displayName\": \"케찹\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"케찹, 굴소스 2스푼씩\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"케찹, 굴소스 두 스푼씩\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 2스푼\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"케찹, 굴소스 2스푼씩\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"케찹, 굴소스 두 스푼씩\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 톡톡\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추 톡톡 넣어\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추 톡톡 넣어\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 3개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"3\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 3개에 소금 한 꼬집 풀어\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 세 개에\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 한 꼬집\",\n      \"displayName\": \"소금\",\n      \"amount\": \"1\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 3개에 소금 한 꼬집 풀어\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금 한 꼬집 풀어\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"버터 1스푼\",\n      \"displayName\": \"버터\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"버터 1스푼에\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"버터 한 스푼에\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돈까스 소스 3스푼\",\n      \"displayName\": \"돈까스 소스\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"돈까스 소스 3스푼\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"돈까스 소스 세 스푼\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"케찹 2스푼\",\n      \"displayName\": \"케찹\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"케찹 2스푼\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"케찹\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 3스푼\",\n      \"displayName\": \"물\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 3스푼 넣어\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 넣어\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"작은 양파 1개와 스팸 1캔을 잘게 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 양파 작은거 1개\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"스팸 1캔 잘게 썰어\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"기름 두른 팬에 썬 양파와 스팸을 넣고 햄이 노르스름해질 때까지 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기름 두른 팬에 볶아주다가\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"햄이 노르스름해지면\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 2공기, 케찹 2스푼, 굴소스 2스푼, 후추를 톡톡 넣어 약불에서 잘 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥 두 공기\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"케찹, 굴소스 2스푼씩\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추 톡톡 넣어\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"약불에 잘 볶아주세요\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 볶음밥을 동그랗게 담아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그릇에 밥을 동그랗게 담아주고\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 3개에 소금 한 꼬집을 풀어 넣고, 예열한 팬에서 80% 정도만 촉촉하게 익혀 밥 위에 얹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 3개에 소금 한 꼬집 풀어\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"80%만 촉촉하게 익혀 올려주고\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 버터 1스푼, 돈까스 소스 3스푼, 케찹 2스푼, 물 3스푼을 넣고 약불에서 바글바글 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"버터 1스푼에\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"돈까스 소스 3스푼\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"케찹 2스푼\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 3스푼 넣어\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"끓인 소스를 오므라이스 위에 부어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"바글바글 끓인 소스도 올려주면\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"파슬리 가루(또는 허브 가루)가 완성된 요리 위에 뿌려져 있으나 재료나 조리 과정에서 명시적으로 언급되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "진짜 맛있는 오므라이스",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "양파 작은거 1개",
+          "displayName": "양파",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 양파 작은거 1개",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 양파 작은 거 한 개",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "스팸 1캔",
+          "displayName": "스팸",
+          "amount": "1",
+          "unit": "캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "스팸 1캔 잘게 썰어",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "스팸 한 캔 잘게 썰어",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "기름 두른 팬에 볶아주다가",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "기름 두른 팬에 볶아주다가",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "밥 두 공기",
+          "displayName": "밥",
+          "amount": "2",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "밥 두 공기",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밥 두 공기",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "케찹 2스푼",
+          "displayName": "케찹",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "케찹, 굴소스 2스푼씩",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "케찹, 굴소스 두 스푼씩",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "굴소스 2스푼",
+          "displayName": "굴소스",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "케찹, 굴소스 2스푼씩",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "케찹, 굴소스 두 스푼씩",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "후추 톡톡",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "후추 톡톡 넣어",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추 톡톡 넣어",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "계란 3개",
+          "displayName": "계란",
+          "amount": "3",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "계란 3개에 소금 한 꼬집 풀어",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란 세 개에",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "소금 한 꼬집",
+          "displayName": "소금",
+          "amount": "1",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "계란 3개에 소금 한 꼬집 풀어",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소금 한 꼬집 풀어",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "버터 1스푼",
+          "displayName": "버터",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "버터 1스푼에",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "버터 한 스푼에",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "돈까스 소스 3스푼",
+          "displayName": "돈까스 소스",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "돈까스 소스 3스푼",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "돈까스 소스 세 스푼",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "케찹 2스푼",
+          "displayName": "케찹",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "케찹 2스푼",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "케찹",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "물 3스푼",
+          "displayName": "물",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 3스푼 넣어",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 넣어",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "작은 양파 1개와 스팸 1캔을 잘게 썬다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 양파 작은거 1개",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "스팸 1캔 잘게 썰어",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "기름 두른 팬에 썬 양파와 스팸을 넣고 햄이 노르스름해질 때까지 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "기름 두른 팬에 볶아주다가",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "햄이 노르스름해지면",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "밥 2공기, 케찹 2스푼, 굴소스 2스푼, 후추를 톡톡 넣어 약불에서 잘 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "밥 두 공기",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "케찹, 굴소스 2스푼씩",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "후추 톡톡 넣어",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "약불에 잘 볶아주세요",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 볶음밥을 동그랗게 담아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "그릇에 밥을 동그랗게 담아주고",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "계란 3개에 소금 한 꼬집을 풀어 넣고, 예열한 팬에서 80% 정도만 촉촉하게 익혀 밥 위에 얹는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "계란 3개에 소금 한 꼬집 풀어",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "80%만 촉촉하게 익혀 올려주고",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "팬에 버터 1스푼, 돈까스 소스 3스푼, 케찹 2스푼, 물 3스푼을 넣고 약불에서 바글바글 끓인다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "버터 1스푼에",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "돈까스 소스 3스푼",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "케찹 2스푼",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 3스푼 넣어",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "끓인 소스를 오므라이스 위에 부어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "바글바글 끓인 소스도 올려주면",
+              "timestamp": "00:23"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "파슬리 가루(또는 허브 가루)가 완성된 요리 위에 뿌려져 있으나 재료나 조리 과정에서 명시적으로 언급되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

@@ -1,0 +1,380 @@
+{
+  "videoId": "QB2tcuq_dZU",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://youtu.be/QB2tcuq_dZU?si=Oino8DxQm0K3zn0N",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:15:49.715200+00:00",
+    "rawResponse": "{\n  \"title\": \"대패삼겹찜\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"알배추 33g (배추 33g)\",\n      \"displayName\": \"알배추\",\n      \"amount\": \"33\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 배추 33g : 148원\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"알배추를 먼저 밑에 깔아줄 건데\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 1꼬집 (배추 간용 소금 2g)\",\n      \"displayName\": \"소금\",\n      \"amount\": \"1\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금 1꼬집을 뿌려서 간을 해주셔야 됩니다\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 소금 2g : 4원\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"숙주 1줌 (숙주 250g)\",\n      \"displayName\": \"숙주\",\n      \"amount\": \"1\",\n      \"unit\": \"줌\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 숙주도 한 줌\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 숙주 250g : 795원\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대패삼겹살 (대패삼겹살 200g)\",\n      \"displayName\": \"대패삼겹살\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 대패삼겹도 그냥 바로 얹은 채로 먹고 싶은 만큼 넣어주고\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 대패삼겹살 200g : 2,125원\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 1꼬집 (고기 간용 소금 1g)\",\n      \"displayName\": \"소금\",\n      \"amount\": \"1\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"역시나 소금 1꼬집으로 간 빼먹지 마시고\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 소금 1g : 2원\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 2스푼 (미림 30g)\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술 2스푼과\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 미림 30g : 164원\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 (후추 0.1g)\",\n      \"displayName\": \"후추\",\n      \"amount\": \"0.1\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추 살짝 뿌려서\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 후추 0.1g : 8원\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 1스푼\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 1스푼\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 1스푼 (미림 8g)\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술 1스푼\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 미림 8g : 47원\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 1스푼 (맛술 대체)\",\n      \"displayName\": \"물\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"없으면 물 1스푼\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식초나 레몬즙 1스푼 (식초 8g)\",\n      \"displayName\": \"식초\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식초나 레몬즙 1스푼\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 식초 8g : 20원\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"알룰로스나 올리고당 1스푼 (올리고당 8g)\",\n      \"displayName\": \"올리고당\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"알룰로스나 올리고당 1스푼\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 올리고당 8g : 30원\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 반 스푼 (알룰로스/올리고당 대체)\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"없으면 설탕 반 스푼\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 청양고추 1개\",\n      \"displayName\": \"다진 청양고추\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 청양고추 1개 넣고\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참소스\",\n      \"displayName\": \"참소스\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만약 집에 참소스가 있다면? 당신은 럭키가이 럭키걸입니다. 더 맛있게 먹을 수 있어요.\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"전자레인지 찜기에 알배추를 두께 손가락 두 마디 정도, 길이는 찜기에 맞춰 썰어 바닥에 깐다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그냥 이런 전자레인지 찜기에다가 알배추를 먼저 밑에 깔아줄 건데 두께는 손가락 두 마디 정도 길이는 찜기에 맞춰 잘라 잘 깔아주고\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"깐 배추 위에 소금 1꼬집을 뿌려 간을 해준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 꼭 소금 1꼬집을 뿌려서 간을 해주셔야 됩니다\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"배추 위에 숙주 한 줌을 얹고 대패삼겹살을 원하는 만큼 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 숙주도 한 줌 그리고 대패삼겹도 그냥 바로 얹은 채로 먹고 싶은 만큼 넣어주고\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기 위에 소금 1꼬집, 맛술 2스푼, 후추를 살짝 뿌린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"역시나 소금 1꼬집으로 간 빼먹지 마시고 맛술 2스푼과 후추 살짝 뿌려서\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"찜기 뚜껑을 덮고 전자레인지에서 10분간 돌린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"뚜껑 닫고 전자레인지에 10분 돌려주는 동안\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 간장 1스푼, 맛술 1스푼(없으면 물 1스푼), 식초나 레몬즙 1스푼, 알룰로스나 올리고당 1스푼(없으면 설탕 반 스푼), 다진 청양고추 1개를 넣고 잘 섞어 소스를 만든다. (참소스가 있다면 대체 가능)\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 1스푼, 맛술 1스푼 없으면 물 1스푼 식초나 레몬즙 1스푼 알룰로스나 올리고당 1스푼 없으면 설탕 반 스푼 다진 청양고추 1개 넣고 잘 섞어주면 소스도 뚝딱인데\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"전자레인지 조리가 끝난 대패삼겹찜을 소스에 찍어 먹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"자 여기까지 따라했다면 땀 한 방울 안 흘리고 대패삼겹찜을 뚝딱 만들 수 있고\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"대패삼겹살과 채소를 집어 소스에 찍어 먹는 모습\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "대패삼겹찜",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "알배추 33g (배추 33g)",
+          "displayName": "알배추",
+          "amount": "33",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 배추 33g : 148원",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "알배추를 먼저 밑에 깔아줄 건데",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "소금 1꼬집 (배추 간용 소금 2g)",
+          "displayName": "소금",
+          "amount": "1",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소금 1꼬집을 뿌려서 간을 해주셔야 됩니다",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 소금 2g : 4원",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "숙주 1줌 (숙주 250g)",
+          "displayName": "숙주",
+          "amount": "1",
+          "unit": "줌",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 숙주도 한 줌",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 숙주 250g : 795원",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "대패삼겹살 (대패삼겹살 200g)",
+          "displayName": "대패삼겹살",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 대패삼겹도 그냥 바로 얹은 채로 먹고 싶은 만큼 넣어주고",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 대패삼겹살 200g : 2,125원",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "소금 1꼬집 (고기 간용 소금 1g)",
+          "displayName": "소금",
+          "amount": "1",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "역시나 소금 1꼬집으로 간 빼먹지 마시고",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 소금 1g : 2원",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "맛술 2스푼 (미림 30g)",
+          "displayName": "맛술",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "맛술 2스푼과",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 미림 30g : 164원",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "후추 (후추 0.1g)",
+          "displayName": "후추",
+          "amount": "0.1",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후추 살짝 뿌려서",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 후추 0.1g : 8원",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "간장 1스푼",
+          "displayName": "간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "간장 1스푼",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "맛술 1스푼 (미림 8g)",
+          "displayName": "맛술",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "맛술 1스푼",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 미림 8g : 47원",
+              "timestamp": "00:32"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "물 1스푼 (맛술 대체)",
+          "displayName": "물",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "없으면 물 1스푼",
+              "timestamp": "00:32"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "식초나 레몬즙 1스푼 (식초 8g)",
+          "displayName": "식초",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "식초나 레몬즙 1스푼",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 식초 8g : 20원",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "알룰로스나 올리고당 1스푼 (올리고당 8g)",
+          "displayName": "올리고당",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "알룰로스나 올리고당 1스푼",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 올리고당 8g : 30원",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "설탕 반 스푼 (알룰로스/올리고당 대체)",
+          "displayName": "설탕",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "없으면 설탕 반 스푼",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "다진 청양고추 1개",
+          "displayName": "다진 청양고추",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진 청양고추 1개 넣고",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "참소스",
+          "displayName": "참소스",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "만약 집에 참소스가 있다면? 당신은 럭키가이 럭키걸입니다. 더 맛있게 먹을 수 있어요.",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        }
+      ],
+      "steps": [
+        {
+          "text": "전자레인지 찜기에 알배추를 두께 손가락 두 마디 정도, 길이는 찜기에 맞춰 썰어 바닥에 깐다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그냥 이런 전자레인지 찜기에다가 알배추를 먼저 밑에 깔아줄 건데 두께는 손가락 두 마디 정도 길이는 찜기에 맞춰 잘라 잘 깔아주고",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "깐 배추 위에 소금 1꼬집을 뿌려 간을 해준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 꼭 소금 1꼬집을 뿌려서 간을 해주셔야 됩니다",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "배추 위에 숙주 한 줌을 얹고 대패삼겹살을 원하는 만큼 올린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 숙주도 한 줌 그리고 대패삼겹도 그냥 바로 얹은 채로 먹고 싶은 만큼 넣어주고",
+              "timestamp": "00:21"
+            }
+          ]
+        },
+        {
+          "text": "고기 위에 소금 1꼬집, 맛술 2스푼, 후추를 살짝 뿌린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "역시나 소금 1꼬집으로 간 빼먹지 마시고 맛술 2스푼과 후추 살짝 뿌려서",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "찜기 뚜껑을 덮고 전자레인지에서 10분간 돌린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "뚜껑 닫고 전자레인지에 10분 돌려주는 동안",
+              "timestamp": "00:28"
+            }
+          ]
+        },
+        {
+          "text": "볼에 간장 1스푼, 맛술 1스푼(없으면 물 1스푼), 식초나 레몬즙 1스푼, 알룰로스나 올리고당 1스푼(없으면 설탕 반 스푼), 다진 청양고추 1개를 넣고 잘 섞어 소스를 만든다. (참소스가 있다면 대체 가능)",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "간장 1스푼, 맛술 1스푼 없으면 물 1스푼 식초나 레몬즙 1스푼 알룰로스나 올리고당 1스푼 없으면 설탕 반 스푼 다진 청양고추 1개 넣고 잘 섞어주면 소스도 뚝딱인데",
+              "timestamp": "00:30"
+            }
+          ]
+        },
+        {
+          "text": "전자레인지 조리가 끝난 대패삼겹찜을 소스에 찍어 먹는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "자 여기까지 따라했다면 땀 한 방울 안 흘리고 대패삼겹찜을 뚝딱 만들 수 있고",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "대패삼겹살과 채소를 집어 소스에 찍어 먹는 모습",
+              "timestamp": "00:44"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

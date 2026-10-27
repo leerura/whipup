@@ -1,0 +1,349 @@
+{
+  "videoId": "kOtfesUa-Kc",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/kOtfesUa-Kc",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T08:08:54.358175+00:00",
+    "rawResponse": "{\n  \"title\": \"스팸김치 볶음밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"스팸\",\n      \"displayName\": \"스팸\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스팸김치 볶음밥\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스팸, 김치\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"스팸 김치\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"스팸을 깍둑썰기하여 팬에 넣는다\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치\",\n      \"displayName\": \"김치\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스팸, 김치\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"스팸 김치\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"썰어둔 김치를 팬에 넣는다\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 기름이 둘러져 있음\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 다진 마늘 1스푼가량을 넣는다\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 한공기 반\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1.5\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥은 한공기 반 넣어요\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥은 한 공기 반 넣어요\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 반스푼\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 반스푼\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"후추를 톡톡 뿌린다\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 볶음밥 위에 통깨가 뿌려져 있음\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"스팸을 작은 크기로 깍둑썰기한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도마 위에서 스팸을 깍둑썰기함\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"기름을 두른 팬에 썰어둔 스팸과 김치를 넣고 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스팸, 김치 볶다가\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"스팸 김치 볶다가\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"다진 마늘을 넣고 함께 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 한 공기 반을 넣고 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥은 한공기 반 넣어요\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥은 한 공기 반 넣어요\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"굴소스 1큰술, 고추장 반 스푼, 참기름 1큰술, 후추를 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 반스푼\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양념과 밥이 잘 섞이도록 볶아준 뒤, 접시에 담고 깨를 뿌려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볶아주면 10분만에 만드는\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"볶아주면 10분만에 만드는 초간단\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 볶음밥에 통깨를 뿌려 완성함\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"스팸과 김치의 정확한 중량/계량은 영상에서 언급되지 않음\",\n    \"다진마늘의 수치 단위는 텍스트에 표기되지 않음\",\n    \"굴소스와 참기름의 단위는 영상 자막에 '1'로만 표기됨(스푼 단위 추정)\"\n  ]\n}",
+    "result": {
+      "title": "스팸김치 볶음밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "스팸",
+          "displayName": "스팸",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스팸김치 볶음밥",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스팸, 김치",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "스팸 김치",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "스팸을 깍둑썰기하여 팬에 넣는다",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "김치",
+          "displayName": "김치",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스팸, 김치",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "스팸 김치",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "썰어둔 김치를 팬에 넣는다",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 기름이 둘러져 있음",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "다진마늘",
+          "displayName": "다진마늘",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진마늘",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 다진 마늘 1스푼가량을 넣는다",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "밥 한공기 반",
+          "displayName": "밥",
+          "amount": "1.5",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥은 한공기 반 넣어요",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밥은 한 공기 반 넣어요",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "굴소스 1",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "굴소스",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "고추장 반스푼",
+          "displayName": "고추장",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 반스푼",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "참기름 1",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "후추를 톡톡 뿌린다",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 볶음밥 위에 통깨가 뿌려져 있음",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "스팸을 작은 크기로 깍둑썰기한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도마 위에서 스팸을 깍둑썰기함",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "기름을 두른 팬에 썰어둔 스팸과 김치를 넣고 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스팸, 김치 볶다가",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "스팸 김치 볶다가",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "다진 마늘을 넣고 함께 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진마늘",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "밥 한 공기 반을 넣고 섞어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥은 한공기 반 넣어요",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밥은 한 공기 반 넣어요",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "굴소스 1큰술, 고추장 반 스푼, 참기름 1큰술, 후추를 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 반스푼",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "양념과 밥이 잘 섞이도록 볶아준 뒤, 접시에 담고 깨를 뿌려 마무리한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볶아주면 10분만에 만드는",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "볶아주면 10분만에 만드는 초간단",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 볶음밥에 통깨를 뿌려 완성함",
+              "timestamp": "00:19"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "스팸과 김치의 정확한 중량/계량은 영상에서 언급되지 않음",
+        "다진마늘의 수치 단위는 텍스트에 표기되지 않음",
+        "굴소스와 참기름의 단위는 영상 자막에 '1'로만 표기됨(스푼 단위 추정)"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

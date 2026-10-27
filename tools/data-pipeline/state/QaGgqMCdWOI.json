@@ -1,0 +1,375 @@
+{
+  "videoId": "QaGgqMCdWOI",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/QaGgqMCdWOI",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:12:41.439806+00:00",
+    "rawResponse": "{\n  \"title\": \"자취생이 알려주는 콩나물제육 밀프렙\",\n  \"description\": null,\n  \"servings\": \"6\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"콩나물 300g\",\n      \"displayName\": \"콩나물\",\n      \"amount\": \"300\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"콩나물 300g이 300원?\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"콩나물 300g이 300원?\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돼지고기 앞다리살 한 근\",\n      \"displayName\": \"돼지고기 앞다리살\",\n      \"amount\": \"1\",\n      \"unit\": \"근\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"돼지고기 앞다리살을 세일할 때 사 주세요\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"돼지고기 한 근 투하\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"돼지고기 한 근 투하\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파 정도는 다 집에 있잖아요?\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파도 이렇게 뽀득뽀득 씻어주고\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 (대파 대체)\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파 안 드시는 분은 양파 쓰셔도 돼요\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"안 드시는 분은 양파 쓰셔도 돼요\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 2큰 술\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"2\",\n      \"unit\": \"큰 술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 두 큰 술\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장 2큰 술\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리고당 2큰 술\",\n      \"displayName\": \"올리고당\",\n      \"amount\": \"2\",\n      \"unit\": \"큰 술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"올리고당 두 큰 술\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"올리고당 2큰 술\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쌈장 한 큰 술\",\n      \"displayName\": \"쌈장\",\n      \"amount\": \"1\",\n      \"unit\": \"큰 술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"요 쌈장을 넣어 줄 건데 이거 한 큰 술 넣으니까 잡내도 사라지고 감칠맛도 대박입니다\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"한 큰 술\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 한 큰 술\",\n      \"displayName\": \"후추\",\n      \"amount\": \"1\",\n      \"unit\": \"큰 술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 후추 설탕 한 큰 술씩 솔솔 뿌려주고\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추 설탕 솔솔 뿌려주고\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 한 큰 술\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"큰 술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 후추 설탕 한 큰 술씩 솔솔 뿌려주고\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추 설탕 솔솔 뿌려주고\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기름 둘러주고\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기름 둘러주고\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 230g\",\n      \"displayName\": \"밥\",\n      \"amount\": \"230\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 230g\",\n          \"timestamp\": \"00:51\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥 230g\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"콩나물을 물에 씻어 손질한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"야채를 먼저 손질해 줄 건데\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"콩나물을 볼에 담아 흐르는 물에 세척하는 모습\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파를 물에 씻은 뒤 꼬다리와 줄기를 모두 어슷 썰어 준비한다. (대파 대신 양파 사용 가능)\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파도 이렇게 뽀득뽀득 씻어주고 꼬다리랑 줄기 모두 어슷 썰어서 준비해 주세요! 대파 안 드시는 분은 양파 쓰셔도 돼요\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도마 위에서 대파를 어슷 썰어 손질하는 모습\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"넓은 볼에 돼지고기 한 근, 고추장 2큰 술, 올리고당 2큰 술, 쌈장 1큰 술, 후추 1큰 술, 설탕 1큰 술을 넣고 버무려 양념한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"적당히 넓은 볼을 준비해 주시고 돼지고기 한 근 투하, 그리고 고추장 두 큰 술, 올리고당 두 큰 술, 그리고 하이라이트 요 쌈장을 넣어 줄 건데 이거 한 큰 술 넣으니까 잡내도 사라지고 감칠맛도 대박입니다. 마지막으로 후추 설탕 한 큰 술씩 솔솔 뿌려주고 사정없이 마구마구 버무려 주세요!\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볼에 고기와 양념 재료들을 넣고 손으로 버무리는 모습\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"넓은 팬에 기름을 두르고 양념한 고기를 먼저 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"적당히 볼이 넓은 팬 꺼내서 기름 둘러주고 고기를 먼저 볶아줍니다!\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 기름을 두르고 양념된 제육을 넣어 볶는 모습\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기가 반쯤 익었을 때 손질한 대파를 넣고 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"반쯤 익었을 때 손질한 대파 입장!\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 어슷 썬 대파를 넣는 모습\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파 숨이 죽으면 콩나물을 넣고 콩나물 숨이 죽을 때까지 다 익혀 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파 숨이 죽을 때 콩나물 입장! 엄청 쉽죠? 콩나물 숨이 죽을 때쯤 다 익는데 어때요 때깔 좋죠?\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 콩나물을 넣고 섞어가며 익히는 모습\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"전자레인지용 냉동 보관 용기를 준비하고 용기마다 밥 230g을 담은 뒤, 콩나물제육을 골고루 담는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 전자레인지용 냉동 보관 용기를 준비해 주시고 밥 230g 그리고 콩나물 제육을 남김없이 고르게 담아 주세요!\",\n          \"timestamp\": \"00:49\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"용기 6개에 밥을 담고 볶은 콩나물제육을 나눠 담는 모습\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    },\n    {\n      \"text\": \"식힌 후 뚜껑을 덮어 냉동실에 보관하고, 먹을 때 전자레인지에 5분간 돌려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"적당히 식힌 후 뚜껑 덮고 냉동실에 이렇게 보관해 주면 끝! 자 이제 전자레인지 5분이면 이렇게 맛있고 간단한 콩나물 제육 완성~\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밀프렙 용기를 냉동실에 넣고, 전자레인지로 데워 먹는 모습\",\n          \"timestamp\": \"00:55\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "자취생이 알려주는 콩나물제육 밀프렙",
+      "description": null,
+      "servings": "6",
+      "ingredients": [
+        {
+          "rawText": "콩나물 300g",
+          "displayName": "콩나물",
+          "amount": "300",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "콩나물 300g이 300원?",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "콩나물 300g이 300원?",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "돼지고기 앞다리살 한 근",
+          "displayName": "돼지고기 앞다리살",
+          "amount": "1",
+          "unit": "근",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "돼지고기 앞다리살을 세일할 때 사 주세요",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "돼지고기 한 근 투하",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "돼지고기 한 근 투하",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파 정도는 다 집에 있잖아요?",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대파도 이렇게 뽀득뽀득 씻어주고",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양파 (대파 대체)",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파 안 드시는 분은 양파 쓰셔도 돼요",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "안 드시는 분은 양파 쓰셔도 돼요",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고추장 2큰 술",
+          "displayName": "고추장",
+          "amount": "2",
+          "unit": "큰 술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고추장 두 큰 술",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고추장 2큰 술",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "올리고당 2큰 술",
+          "displayName": "올리고당",
+          "amount": "2",
+          "unit": "큰 술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "올리고당 두 큰 술",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "올리고당 2큰 술",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "쌈장 한 큰 술",
+          "displayName": "쌈장",
+          "amount": "1",
+          "unit": "큰 술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "요 쌈장을 넣어 줄 건데 이거 한 큰 술 넣으니까 잡내도 사라지고 감칠맛도 대박입니다",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "한 큰 술",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "후추 한 큰 술",
+          "displayName": "후추",
+          "amount": "1",
+          "unit": "큰 술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 후추 설탕 한 큰 술씩 솔솔 뿌려주고",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "후추 설탕 솔솔 뿌려주고",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "설탕 한 큰 술",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "큰 술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 후추 설탕 한 큰 술씩 솔솔 뿌려주고",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "후추 설탕 솔솔 뿌려주고",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "기름 둘러주고",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "기름 둘러주고",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "밥 230g",
+          "displayName": "밥",
+          "amount": "230",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥 230g",
+              "timestamp": "00:51"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "밥 230g",
+              "timestamp": "00:51"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "콩나물을 물에 씻어 손질한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "야채를 먼저 손질해 줄 건데",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "콩나물을 볼에 담아 흐르는 물에 세척하는 모습",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "대파를 물에 씻은 뒤 꼬다리와 줄기를 모두 어슷 썰어 준비한다. (대파 대신 양파 사용 가능)",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파도 이렇게 뽀득뽀득 씻어주고 꼬다리랑 줄기 모두 어슷 썰어서 준비해 주세요! 대파 안 드시는 분은 양파 쓰셔도 돼요",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도마 위에서 대파를 어슷 썰어 손질하는 모습",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "넓은 볼에 돼지고기 한 근, 고추장 2큰 술, 올리고당 2큰 술, 쌈장 1큰 술, 후추 1큰 술, 설탕 1큰 술을 넣고 버무려 양념한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "적당히 넓은 볼을 준비해 주시고 돼지고기 한 근 투하, 그리고 고추장 두 큰 술, 올리고당 두 큰 술, 그리고 하이라이트 요 쌈장을 넣어 줄 건데 이거 한 큰 술 넣으니까 잡내도 사라지고 감칠맛도 대박입니다. 마지막으로 후추 설탕 한 큰 술씩 솔솔 뿌려주고 사정없이 마구마구 버무려 주세요!",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볼에 고기와 양념 재료들을 넣고 손으로 버무리는 모습",
+              "timestamp": "00:30"
+            }
+          ]
+        },
+        {
+          "text": "넓은 팬에 기름을 두르고 양념한 고기를 먼저 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "적당히 볼이 넓은 팬 꺼내서 기름 둘러주고 고기를 먼저 볶아줍니다!",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 기름을 두르고 양념된 제육을 넣어 볶는 모습",
+              "timestamp": "00:41"
+            }
+          ]
+        },
+        {
+          "text": "고기가 반쯤 익었을 때 손질한 대파를 넣고 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "반쯤 익었을 때 손질한 대파 입장!",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 어슷 썬 대파를 넣는 모습",
+              "timestamp": "00:43"
+            }
+          ]
+        },
+        {
+          "text": "대파 숨이 죽으면 콩나물을 넣고 콩나물 숨이 죽을 때까지 다 익혀 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파 숨이 죽을 때 콩나물 입장! 엄청 쉽죠? 콩나물 숨이 죽을 때쯤 다 익는데 어때요 때깔 좋죠?",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 콩나물을 넣고 섞어가며 익히는 모습",
+              "timestamp": "00:45"
+            }
+          ]
+        },
+        {
+          "text": "전자레인지용 냉동 보관 용기를 준비하고 용기마다 밥 230g을 담은 뒤, 콩나물제육을 골고루 담는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 전자레인지용 냉동 보관 용기를 준비해 주시고 밥 230g 그리고 콩나물 제육을 남김없이 고르게 담아 주세요!",
+              "timestamp": "00:49"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "용기 6개에 밥을 담고 볶은 콩나물제육을 나눠 담는 모습",
+              "timestamp": "00:51"
+            }
+          ]
+        },
+        {
+          "text": "식힌 후 뚜껑을 덮어 냉동실에 보관하고, 먹을 때 전자레인지에 5분간 돌려준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "적당히 식힌 후 뚜껑 덮고 냉동실에 이렇게 보관해 주면 끝! 자 이제 전자레인지 5분이면 이렇게 맛있고 간단한 콩나물 제육 완성~",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밀프렙 용기를 냉동실에 넣고, 전자레인지로 데워 먹는 모습",
+              "timestamp": "00:55"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

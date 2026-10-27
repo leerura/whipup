@@ -1,13 +1,282 @@
 {
   "videoId": "mtoI2eyQjxA",
-  "status": "PENDING",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/mtoI2eyQjxA",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "PENDING",
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:06:28.036847+00:00",
+    "rawResponse": "{\n  \"title\": \"삼겹살 볶음밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"대파 반개 송송\",\n      \"displayName\": \"대파\",\n      \"amount\": \"반\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 반개 송송\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"중불을 타다닥~ 식용유\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 식용유를 두름\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 반스푼\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 반스푼 다이빙\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"삼겹살은 욕망만큼\",\n      \"displayName\": \"삼겹살\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"삼겹살은 욕망만큼\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 1스푼\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"구석탱이에 간장 1스푼 지글지글\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 1그릇\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1\",\n      \"unit\": \"그릇\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 1그릇 솨솨\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"전에 만든 마법의 고추기름 1스푼\",\n      \"displayName\": \"마법의 고추기름\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"전에 만든 마법의 고추기름 1스푼\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1스푼\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1스푼, 후추 뿜뿜 볶아요\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 뿜뿜\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1스푼, 후추 뿜뿜 볶아요\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리 가루\",\n      \"displayName\": \"파슬리 가루\",\n      \"amount\": null,\n      \"unit\": true,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 볶음밥 위에 초록색 파슬리 가루를 뿌려 마무리함\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"대파 반 개를 송송 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 반개 송송\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"중불로 팬을 켜고 식용유를 두른다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"중불을 타다닥~ 식용유\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"다진마늘 반 스푼을 넣고 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 반스푼 다이빙\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삼겹살을 원하는 만큼 넣고 노릇노릇하게 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"삼겹살은 욕망만큼\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"노릇노릇 뽀꿔요\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"송송 썬 대파를 넣고 한쪽으로 몰아 놓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 투입! 한쪽으로 몰아놓고~\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬의 빈 공간에 간장 1스푼을 넣어 지글지글 끓인 후 재료와 함께 섞는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"구석탱이에 간장 1스푼 지글지글\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 1그릇, 고추기름 1스푼, 굴소스 1스푼, 후추를 넣고 골고루 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 1그릇 솨솨\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"전에 만든 마법의 고추기름 1스푼\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1스푼, 후추 뿜뿜 볶아요\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 담아낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥공기에 담아 모양을 잡은 뒤 접시에 뒤집어 올리고 파슬리를 뿌림\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "삼겹살 볶음밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "대파 반개 송송",
+          "displayName": "대파",
+          "amount": "반",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 반개 송송",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "중불을 타다닥~ 식용유",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 식용유를 두름",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "다진마늘 반스푼",
+          "displayName": "다진마늘",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 반스푼 다이빙",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "삼겹살은 욕망만큼",
+          "displayName": "삼겹살",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "삼겹살은 욕망만큼",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "간장 1스푼",
+          "displayName": "간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "구석탱이에 간장 1스푼 지글지글",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "밥 1그릇",
+          "displayName": "밥",
+          "amount": "1",
+          "unit": "그릇",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 1그릇 솨솨",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "전에 만든 마법의 고추기름 1스푼",
+          "displayName": "마법의 고추기름",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "전에 만든 마법의 고추기름 1스푼",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "굴소스 1스푼",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1스푼, 후추 뿜뿜 볶아요",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "후추 뿜뿜",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1스푼, 후추 뿜뿜 볶아요",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "파슬리 가루",
+          "displayName": "파슬리 가루",
+          "amount": null,
+          "unit": true,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 볶음밥 위에 초록색 파슬리 가루를 뿌려 마무리함",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "대파 반 개를 송송 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 반개 송송",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "중불로 팬을 켜고 식용유를 두른다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "중불을 타다닥~ 식용유",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "다진마늘 반 스푼을 넣고 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 반스푼 다이빙",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "삼겹살을 원하는 만큼 넣고 노릇노릇하게 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "삼겹살은 욕망만큼",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "노릇노릇 뽀꿔요",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "송송 썬 대파를 넣고 한쪽으로 몰아 놓는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 투입! 한쪽으로 몰아놓고~",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "팬의 빈 공간에 간장 1스푼을 넣어 지글지글 끓인 후 재료와 함께 섞는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "구석탱이에 간장 1스푼 지글지글",
+              "timestamp": "00:30"
+            }
+          ]
+        },
+        {
+          "text": "밥 1그릇, 고추기름 1스푼, 굴소스 1스푼, 후추를 넣고 골고루 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 1그릇 솨솨",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "전에 만든 마법의 고추기름 1스푼",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1스푼, 후추 뿜뿜 볶아요",
+              "timestamp": "00:44"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 담아낸다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥공기에 담아 모양을 잡은 뒤 접시에 뒤집어 올리고 파슬리를 뿌림",
+              "timestamp": "00:53"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [
+      "ingredients[9].unit must be a string or null"
+    ],
     "retryCount": 0,
-    "startedAt": "2026-10-25T01:19:19.340383+00:00",
     "accountId": "account-b"
   }
 }

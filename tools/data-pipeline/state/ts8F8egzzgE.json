@@ -1,0 +1,318 @@
+{
+  "videoId": "ts8F8egzzgE",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/ts8F8egzzgE",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:59:15.610637+00:00",
+    "rawResponse": "{\n  \"title\": \"치즈 듬뿍 닭갈비볶음밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 식용유 두른 팬에\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 식용유 두른 팬에\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 두 줌\",\n      \"displayName\": \"대파\",\n      \"amount\": \"2\",\n      \"unit\": \"줌\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파 두 줌\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파랑\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양배추 50g\",\n      \"displayName\": \"양배추\",\n      \"amount\": \"50\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양배추 50g\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양배추\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"닭가슴살 200g\",\n      \"displayName\": \"닭가슴살\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"닭가슴살 200g\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"닭가슴살 넣어\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 1\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 1\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"치킨스톡 1\",\n      \"displayName\": \"치킨스톡\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"치킨스톡 1\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물엿 2\",\n      \"displayName\": \"물엿\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물엿 2\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 1\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 두 공기\",\n      \"displayName\": \"밥\",\n      \"amount\": \"2\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 밥 두 공기 넣어\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 밥 두 공기 넣어\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"치즈\",\n      \"displayName\": \"치즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"치즈 듬~뿍 닭갈비볶음밥!\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볶음밥 위에 모짜렐라 치즈를 듬뿍 뿌림\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깻잎\",\n      \"displayName\": \"깻잎\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볶음밥을 깻잎에 쌈 싸서 먹는 장면\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 식용유를 두르고 대파 두 줌, 양배추 50g, 닭가슴살 200g을 넣어 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 식용유 두른 팬에 대파랑 양배추 닭가슴살 넣어 볶아줄게\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 식용유 두른 팬에 대파 두 줌, 양배추 50g, 닭가슴살 200g 넣어 볶아줄게\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기 핏기가 사라지면 잠시 불을 끄고 고추장 1, 고춧가루 1, 치킨스톡 1, 물엿 2, 다진마늘 1, 참기름 1, 후추를 넣고 한 번 더 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기 핏기가 사라지면 잠시 불을 끄고 양념 전부 넣어 한번 더 볶아줄 거야\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 1, 고춧가루 1, 치킨스톡 1, 물엿 2, 다진마늘 1, 참기름 1, 후추\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 두 공기를 넣고 마지막으로 골고루 볶아준 뒤 치즈를 올려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 밥 두 공기 넣어 마지막으로 볶아주면\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥을 볶은 후 치즈를 얹음\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"양념류(고추장, 고춧가루, 치킨스톡, 물엿, 다진마늘, 참기름)의 숫자 표기 단위(스푼/T 등)가 영상에 명시되지 않음\",\n    \"치즈의 구체적인 계량 정보가 영상에 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "치즈 듬뿍 닭갈비볶음밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 식용유 두른 팬에",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 식용유 두른 팬에",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파 두 줌",
+          "displayName": "대파",
+          "amount": "2",
+          "unit": "줌",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대파 두 줌",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파랑",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "양배추 50g",
+          "displayName": "양배추",
+          "amount": "50",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양배추 50g",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양배추",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "닭가슴살 200g",
+          "displayName": "닭가슴살",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "닭가슴살 200g",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "닭가슴살 넣어",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고추장 1",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 1",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "고춧가루 1",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "치킨스톡 1",
+          "displayName": "치킨스톡",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "치킨스톡 1",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "물엿 2",
+          "displayName": "물엿",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물엿 2",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "다진마늘 1",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 1",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "참기름 1",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "밥 두 공기",
+          "displayName": "밥",
+          "amount": "2",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 밥 두 공기 넣어",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 밥 두 공기 넣어",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "치즈",
+          "displayName": "치즈",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "치즈 듬~뿍 닭갈비볶음밥!",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볶음밥 위에 모짜렐라 치즈를 듬뿍 뿌림",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "깻잎",
+          "displayName": "깻잎",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볶음밥을 깻잎에 쌈 싸서 먹는 장면",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 식용유를 두르고 대파 두 줌, 양배추 50g, 닭가슴살 200g을 넣어 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 식용유 두른 팬에 대파랑 양배추 닭가슴살 넣어 볶아줄게",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 식용유 두른 팬에 대파 두 줌, 양배추 50g, 닭가슴살 200g 넣어 볶아줄게",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "고기 핏기가 사라지면 잠시 불을 끄고 고추장 1, 고춧가루 1, 치킨스톡 1, 물엿 2, 다진마늘 1, 참기름 1, 후추를 넣고 한 번 더 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고기 핏기가 사라지면 잠시 불을 끄고 양념 전부 넣어 한번 더 볶아줄 거야",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 1, 고춧가루 1, 치킨스톡 1, 물엿 2, 다진마늘 1, 참기름 1, 후추",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "밥 두 공기를 넣고 마지막으로 골고루 볶아준 뒤 치즈를 올려 마무리한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 밥 두 공기 넣어 마지막으로 볶아주면",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥을 볶은 후 치즈를 얹음",
+              "timestamp": "00:02"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "양념류(고추장, 고춧가루, 치킨스톡, 물엿, 다진마늘, 참기름)의 숫자 표기 단위(스푼/T 등)가 영상에 명시되지 않음",
+        "치즈의 구체적인 계량 정보가 영상에 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

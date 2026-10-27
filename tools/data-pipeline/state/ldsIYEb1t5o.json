@@ -1,0 +1,305 @@
+{
+  "videoId": "ldsIYEb1t5o",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/ldsIYEb1t5o",
+  "sourceMetadata": {"sourceTitle":"절대 실패없는 김치볶음밥 황금레시피","sourceChannelName":"혜야 Hyeya","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.902044Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T07:58:58.332036+00:00",
+    "rawResponse": "{\n  \"title\": \"김치볶음밥 황금레시피\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"김치 한 컵\",\n      \"displayName\": \"김치\",\n      \"amount\": \"1\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치 한 컵\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"가위로 대파를 잘라 넣는 모습\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1T\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1T\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1T\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1T\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마요네즈 한스푼 듬뿍!\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼 듬뿍\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마요네즈 한스푼 듬뿍!\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"특히 이 마요네즈가 킥이니까\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기름 두른 팬에\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양념한 김치 볶아준다음\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그때 밥 넣고 섞어주면 끝이에요\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볶은 김치에 밥을 넣고 섞는 모습\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후라이\",\n      \"displayName\": \"계란 후라이\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김볶에 빠질 수 없는 후라이 올려주고\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"달걀 후라이 2개를 김치볶음밥 위에 얹는 모습\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깨\",\n      \"displayName\": \"깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"깨 솔솔 뿌려주면\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깨 솔솔 뿌려주면\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"김치 1컵을 잘게 썰어 용기에 담고, 햄(또는 스팸), 송송 썬 대파, 설탕 1T, 참기름 1T, 마요네즈 1스푼을 듬뿍 넣어 골고루 섞어 양념한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치 한 컵\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1T\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1T\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마요네즈 한스푼 듬뿍!\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"모든 재료를 숟가락으로 비벼서 양념하는 모습\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"기름 두른 팬에 양념한 김치를 넣고 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양념한 김치 볶아준다음\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 기름 두른 팬에 양념한 김치 볶아준 다음\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김치전처럼 꾹꾹 눌러서 팬에 펼쳐주고, 다시 볶아주고 눌러주기를 2~3번 반복하여 삼겹살 기름에 구운 김치처럼 노릇해질 때까지 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치전처럼 꾹꾹 눌러서 펼쳐줄게요\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다시 볶아주고 눌러주고 두세번 반복하면\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"두 번째 킥 김치전처럼 꾹꾹 눌러서 펼쳐줄게요. 다시 볶아주고 눌러주고 두세 번 반복하면 삼겹살 기름에 구운 김치처럼 노릇해지는데\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"노릇해진 김치에 밥을 넣고 골고루 섞어 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"섞어주면 끝이에요\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그때 밥 넣고 섞어주면 끝이에요\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김치볶음밥 위에 계란 후라이와 통깨를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김볶에 빠질 수 없는 후라이 올려주고 깨 솔솔 뿌려주면 초간단 김치볶음밥 완성\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깨 솔솔 뿌려주면\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"초간단 김치볶음밥 완성\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"김치 양념 과정에서 00:07에 다진 햄/스팸으로 보이는 재료와 고춧가루, 진간장으로 보이는 액체가 함께 들어가 있으나 자막 및 음성으로 명칭과 수량이 구체적으로 언급되지 않음\",\n    \"완성 요리에 김가루가 올려져 있으나 음성 및 자막에서 언급되지 않음\",\n    \"대파, 식용유, 밥의 정확한 계량 단위 미표기\"\n  ]\n}",
+    "result": {
+      "title": "김치볶음밥 황금레시피",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "김치 한 컵",
+          "displayName": "김치",
+          "amount": "1",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치 한 컵",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "가위로 대파를 잘라 넣는 모습",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "설탕 1T",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1T",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "참기름 1T",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1T",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "마요네즈 한스푼 듬뿍!",
+          "displayName": "마요네즈",
+          "amount": "1",
+          "unit": "스푼 듬뿍",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마요네즈 한스푼 듬뿍!",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "특히 이 마요네즈가 킥이니까",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "기름 두른 팬에",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양념한 김치 볶아준다음",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그때 밥 넣고 섞어주면 끝이에요",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볶은 김치에 밥을 넣고 섞는 모습",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "후라이",
+          "displayName": "계란 후라이",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김볶에 빠질 수 없는 후라이 올려주고",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "달걀 후라이 2개를 김치볶음밥 위에 얹는 모습",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "깨",
+          "displayName": "깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "깨 솔솔 뿌려주면",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깨 솔솔 뿌려주면",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "김치 1컵을 잘게 썰어 용기에 담고, 햄(또는 스팸), 송송 썬 대파, 설탕 1T, 참기름 1T, 마요네즈 1스푼을 듬뿍 넣어 골고루 섞어 양념한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치 한 컵",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1T",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1T",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마요네즈 한스푼 듬뿍!",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "모든 재료를 숟가락으로 비벼서 양념하는 모습",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "기름 두른 팬에 양념한 김치를 넣고 볶아준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양념한 김치 볶아준다음",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 기름 두른 팬에 양념한 김치 볶아준 다음",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "김치전처럼 꾹꾹 눌러서 팬에 펼쳐주고, 다시 볶아주고 눌러주기를 2~3번 반복하여 삼겹살 기름에 구운 김치처럼 노릇해질 때까지 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치전처럼 꾹꾹 눌러서 펼쳐줄게요",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다시 볶아주고 눌러주고 두세번 반복하면",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "두 번째 킥 김치전처럼 꾹꾹 눌러서 펼쳐줄게요. 다시 볶아주고 눌러주고 두세 번 반복하면 삼겹살 기름에 구운 김치처럼 노릇해지는데",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "노릇해진 김치에 밥을 넣고 골고루 섞어 볶아준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "섞어주면 끝이에요",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그때 밥 넣고 섞어주면 끝이에요",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "김치볶음밥 위에 계란 후라이와 통깨를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김볶에 빠질 수 없는 후라이 올려주고 깨 솔솔 뿌려주면 초간단 김치볶음밥 완성",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깨 솔솔 뿌려주면",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "초간단 김치볶음밥 완성",
+              "timestamp": "00:27"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "김치 양념 과정에서 00:07에 다진 햄/스팸으로 보이는 재료와 고춧가루, 진간장으로 보이는 액체가 함께 들어가 있으나 자막 및 음성으로 명칭과 수량이 구체적으로 언급되지 않음",
+        "완성 요리에 김가루가 올려져 있으나 음성 및 자막에서 언급되지 않음",
+        "대파, 식용유, 밥의 정확한 계량 단위 미표기"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

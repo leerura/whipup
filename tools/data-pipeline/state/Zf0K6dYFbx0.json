@@ -1,0 +1,383 @@
+{
+  "videoId": "Zf0K6dYFbx0",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/Zf0K6dYFbx0",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:52:44.157493+00:00",
+    "rawResponse": "{\n  \"title\": \"시장 떡볶이\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"물은 우선 한컵만\",\n      \"displayName\": \"물\",\n      \"amount\": \"1\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물은 우선 한컵만 넣으시고 최대한 적게 잡으세요.\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물은 우선 한컵만 넣으시고 최대한 적게 잡으세요.\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"원하는 종류의 떡\",\n      \"displayName\": \"떡\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다음은 제일 중요한 떡인데, 떡은 원하는 종류의 떡을 개인취향에 맞게 골라주시고\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다음은 제일 중요한 떡인데, 떡은 원하는 종류의 떡을 개인취향에 맞게 골라주시고\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕\",\n      \"displayName\": \"설탕\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Tip 1. 설탕을 먼저 넣자!\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕을 먼저 넣으세요. 설탕을 먼저 넣어야 떡에 간이 잘 배고\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"설탕을 팬에 붓는 모습\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장은 그냥 밥숟갈로 한스푼 크게\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"밥숟갈 크게\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다음은 고추장. 고추장은 그냥 밥숟갈로 한스푼 크게 넣어주세요.\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다음은 고추장. 고추장은 그냥 밥숟갈로 한스푼 크게 넣어주세요.\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고운 고춧가루 (주황색 떡볶이는 반스푼, 빨간색 떡볶이는 한스푼)\",\n      \"displayName\": \"고운 고춧가루\",\n      \"amount\": \"0.5~1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Tip 2. 고춧가루는 고운걸로!\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만약 학교 앞에서 먹던 주황색 떡볶이를 먹고 싶다면 반스푼 정도만 가볍게 넣어주시고 시장에서 파는 빨간색 떡볶이를 먹고 싶다면 한스푼 정도 넣어주세요!\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"어묵은 가볍게 한장에서 두장 정도만\",\n      \"displayName\": \"어묵\",\n      \"amount\": \"1~2\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"어묵은 가볍게 한장에서 두장 정도만 가위로 삼각형 모양으로 잘라주고요.\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"어묵은 가볍게 한장에서 두장 정도만 가위로 삼각형 모양으로 잘라주고요.\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"미원 & 다시다\",\n      \"displayName\": \"미원 & 다시다 (MSG)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Tip 3. MSG 미원 & 다시다\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"바로 MSG, 미원과 다시다입니다. 이거 없이는 절대 시장 떡볶이 맛이 나지 않습니다.\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"조미료를 숟가락으로 넣는 모습\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파 초록색 부분과 하얀색 부분 반반\",\n      \"displayName\": \"파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 파를 초록색 부분과 하얀색 부분 반반 섞어서 자르기 편하신 대로 넣어주세요!\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 파를 초록색 부분과 하얀색 부분 반반 섞어서 자르기 편하신대로 넣어주세요!\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리고당 한 스푼 정도\",\n      \"displayName\": \"올리고당\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼 정도\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Tip 4. 떡볶이의 윤기\",\n          \"timestamp\": \"00:50\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"윤기는 많이 나게 해주는 올리고당을 추천드려요! 한 스푼 정도 넣으시면 적절한 단맛과 끓였을 때 떡볶이에서 윤기가 날 거예요.\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 떡볶이 위에 통깨가 뿌려져 있음\",\n          \"timestamp\": \"00:57\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 물을 우선 1컵만 붓고 최대한 적게 잡는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물은 우선 한컵만 넣으시고 최대한 적게 잡으세요.\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 물 1컵을 붓는 모습\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"text\": \"취향에 맞는 종류의 떡을 팬에 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다음은 제일 중요한 떡인데, 떡은 원하는 종류의 떡을 개인취향에 맞게 골라주시고\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"봉지에 든 떡을 물이 든 팬에 넣는 모습\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양념 전에 설탕을 먼저 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Tip 1. 설탕을 먼저 넣자!\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕을 먼저 넣으세요. 설탕을 먼저 넣어야 떡에 간이 잘 배고 양념을 했을 때 양념이 따로 놀지 않고 떡에 잘 묻습니다.\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고추장을 밥숟가락으로 크게 한 스푼 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다음은 고추장. 고추장은 그냥 밥숟갈로 한스푼 크게 넣어주세요.\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"고추장 한 큰술을 떠서 국물에 푸는 모습\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고운 고춧가루를 원하는 스타일(주황색 떡볶이는 반 스푼, 빨간색 떡볶이는 한 스푼)에 맞게 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Tip 2. 고춧가루는 고운걸로!\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만약 학교 앞에서 먹던 주황색 떡볶이를 먹고 싶다면 반스푼 정도만 가볍게 넣어주시고 시장에서 파는 빨간색 떡볶이를 먹고 싶다면 한스푼 정도 넣어주세요!\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"어묵 1~2장을 가위로 삼각형 모양으로 잘라 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"어묵은 가볍게 한장에서 두장 정도만 가위로 삼각형 모양으로 잘라주고요.\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"어묵을 가위로 삼각형 모양으로 잘라 넣는 모습\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"MSG(미원과 다시다)를 넣고 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Tip 3. MSG 미원 & 다시다\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"바로 MSG, 미원과 다시다입니다. 이거 없이는 절대 시장 떡볶이 맛이 나지 않습니다.\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"text\": \"파의 초록색 부분과 흰색 부분을 반반 섞어서 썰어 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 파를 초록색 부분과 하얀색 부분 반반 섞어서 자르기 편하신 대로 넣어주세요!\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"자른 파를 넣고 저어주는 모습\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"text\": \"올리고당을 한 스푼 정도 넣고 졸이듯 끓여 윤기를 낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Tip 4. 떡볶이의 윤기\",\n          \"timestamp\": \"00:50\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"윤기는 많이 나게 해주는 올리고당을 추천드려요! 한 스푼 정도 넣으시면 적절한 단맛과 끓였을 때 떡볶이에서 윤기가 날 거예요.\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 담고 통깨를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"접시에 담긴 떡볶이 위에 깨가 뿌려져 있는 모습\",\n          \"timestamp\": \"00:57\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"00:50 시점에 비엔나 소시지가 팬에 들어가 있는 모습이 보이나, 음성/자막/설명에서 추가된 시점이나 분량이 언급되지 않음\",\n    \"설탕과 MSG(미원, 다시다)의 구체적인 계량 수치가 언급되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "시장 떡볶이",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "물은 우선 한컵만",
+          "displayName": "물",
+          "amount": "1",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물은 우선 한컵만 넣으시고 최대한 적게 잡으세요.",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물은 우선 한컵만 넣으시고 최대한 적게 잡으세요.",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "원하는 종류의 떡",
+          "displayName": "떡",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다음은 제일 중요한 떡인데, 떡은 원하는 종류의 떡을 개인취향에 맞게 골라주시고",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다음은 제일 중요한 떡인데, 떡은 원하는 종류의 떡을 개인취향에 맞게 골라주시고",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "설탕",
+          "displayName": "설탕",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Tip 1. 설탕을 먼저 넣자!",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕을 먼저 넣으세요. 설탕을 먼저 넣어야 떡에 간이 잘 배고",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "설탕을 팬에 붓는 모습",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "고추장은 그냥 밥숟갈로 한스푼 크게",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "밥숟갈 크게",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다음은 고추장. 고추장은 그냥 밥숟갈로 한스푼 크게 넣어주세요.",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다음은 고추장. 고추장은 그냥 밥숟갈로 한스푼 크게 넣어주세요.",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고운 고춧가루 (주황색 떡볶이는 반스푼, 빨간색 떡볶이는 한스푼)",
+          "displayName": "고운 고춧가루",
+          "amount": "0.5~1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Tip 2. 고춧가루는 고운걸로!",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "만약 학교 앞에서 먹던 주황색 떡볶이를 먹고 싶다면 반스푼 정도만 가볍게 넣어주시고 시장에서 파는 빨간색 떡볶이를 먹고 싶다면 한스푼 정도 넣어주세요!",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "어묵은 가볍게 한장에서 두장 정도만",
+          "displayName": "어묵",
+          "amount": "1~2",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "어묵은 가볍게 한장에서 두장 정도만 가위로 삼각형 모양으로 잘라주고요.",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "어묵은 가볍게 한장에서 두장 정도만 가위로 삼각형 모양으로 잘라주고요.",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "미원 & 다시다",
+          "displayName": "미원 & 다시다 (MSG)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Tip 3. MSG 미원 & 다시다",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SPEECH",
+              "text": "바로 MSG, 미원과 다시다입니다. 이거 없이는 절대 시장 떡볶이 맛이 나지 않습니다.",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "조미료를 숟가락으로 넣는 모습",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "파 초록색 부분과 하얀색 부분 반반",
+          "displayName": "파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 파를 초록색 부분과 하얀색 부분 반반 섞어서 자르기 편하신 대로 넣어주세요!",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 파를 초록색 부분과 하얀색 부분 반반 섞어서 자르기 편하신대로 넣어주세요!",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "올리고당 한 스푼 정도",
+          "displayName": "올리고당",
+          "amount": "1",
+          "unit": "스푼 정도",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Tip 4. 떡볶이의 윤기",
+              "timestamp": "00:50"
+            },
+            {
+              "type": "SPEECH",
+              "text": "윤기는 많이 나게 해주는 올리고당을 추천드려요! 한 스푼 정도 넣으시면 적절한 단맛과 끓였을 때 떡볶이에서 윤기가 날 거예요.",
+              "timestamp": "00:51"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 떡볶이 위에 통깨가 뿌려져 있음",
+              "timestamp": "00:57"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 물을 우선 1컵만 붓고 최대한 적게 잡는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물은 우선 한컵만 넣으시고 최대한 적게 잡으세요.",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 물 1컵을 붓는 모습",
+              "timestamp": "00:01"
+            }
+          ]
+        },
+        {
+          "text": "취향에 맞는 종류의 떡을 팬에 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다음은 제일 중요한 떡인데, 떡은 원하는 종류의 떡을 개인취향에 맞게 골라주시고",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "봉지에 든 떡을 물이 든 팬에 넣는 모습",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "양념 전에 설탕을 먼저 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Tip 1. 설탕을 먼저 넣자!",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕을 먼저 넣으세요. 설탕을 먼저 넣어야 떡에 간이 잘 배고 양념을 했을 때 양념이 따로 놀지 않고 떡에 잘 묻습니다.",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "고추장을 밥숟가락으로 크게 한 스푼 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다음은 고추장. 고추장은 그냥 밥숟갈로 한스푼 크게 넣어주세요.",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "고추장 한 큰술을 떠서 국물에 푸는 모습",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "고운 고춧가루를 원하는 스타일(주황색 떡볶이는 반 스푼, 빨간색 떡볶이는 한 스푼)에 맞게 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Tip 2. 고춧가루는 고운걸로!",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "만약 학교 앞에서 먹던 주황색 떡볶이를 먹고 싶다면 반스푼 정도만 가볍게 넣어주시고 시장에서 파는 빨간색 떡볶이를 먹고 싶다면 한스푼 정도 넣어주세요!",
+              "timestamp": "00:28"
+            }
+          ]
+        },
+        {
+          "text": "어묵 1~2장을 가위로 삼각형 모양으로 잘라 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "어묵은 가볍게 한장에서 두장 정도만 가위로 삼각형 모양으로 잘라주고요.",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "어묵을 가위로 삼각형 모양으로 잘라 넣는 모습",
+              "timestamp": "00:37"
+            }
+          ]
+        },
+        {
+          "text": "MSG(미원과 다시다)를 넣고 섞어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Tip 3. MSG 미원 & 다시다",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SPEECH",
+              "text": "바로 MSG, 미원과 다시다입니다. 이거 없이는 절대 시장 떡볶이 맛이 나지 않습니다.",
+              "timestamp": "00:40"
+            }
+          ]
+        },
+        {
+          "text": "파의 초록색 부분과 흰색 부분을 반반 섞어서 썰어 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 파를 초록색 부분과 하얀색 부분 반반 섞어서 자르기 편하신 대로 넣어주세요!",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "자른 파를 넣고 저어주는 모습",
+              "timestamp": "00:46"
+            }
+          ]
+        },
+        {
+          "text": "올리고당을 한 스푼 정도 넣고 졸이듯 끓여 윤기를 낸다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Tip 4. 떡볶이의 윤기",
+              "timestamp": "00:50"
+            },
+            {
+              "type": "SPEECH",
+              "text": "윤기는 많이 나게 해주는 올리고당을 추천드려요! 한 스푼 정도 넣으시면 적절한 단맛과 끓였을 때 떡볶이에서 윤기가 날 거예요.",
+              "timestamp": "00:51"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 담고 통깨를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "접시에 담긴 떡볶이 위에 깨가 뿌려져 있는 모습",
+              "timestamp": "00:57"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "00:50 시점에 비엔나 소시지가 팬에 들어가 있는 모습이 보이나, 음성/자막/설명에서 추가된 시점이나 분량이 언급되지 않음",
+        "설탕과 MSG(미원, 다시다)의 구체적인 계량 수치가 언급되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

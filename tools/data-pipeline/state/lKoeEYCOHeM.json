@@ -1,0 +1,347 @@
+{
+  "videoId": "lKoeEYCOHeM",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/lKoeEYCOHeM",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:50:58.125015+00:00",
+    "rawResponse": "{\n  \"title\": \"양송이파스타\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"양파 하나\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 양파 하나를\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 하나를\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양송이버섯을 한 줌 가득\",\n      \"displayName\": \"양송이버섯\",\n      \"amount\": \"1\",\n      \"unit\": \"줌 가득\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 양송이버섯을 한 줌 가득 준비해 준 뒤\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양송이버섯을 한 줌 가득\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유를 넉넉하게 둘러주고\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬에 식용유를 넉넉하게 둘러주고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬에 식용유를 넉넉하게 둘러주고\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"버터를 소량만\",\n      \"displayName\": \"버터\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"추가로 버터를 소량만 넣어줍니다.\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"추가로 버터를 소량만 넣어줍니다.\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1/2스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘 1/2스푼과\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진 마늘 1/2스푼과\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금도 한 꼬집\",\n      \"displayName\": \"소금\",\n      \"amount\": \"1\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금도 한 꼬집 넣고\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소금도 한 꼬집 넣고\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추도 살짝\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추도 살짝 뿌려준 뒤\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추도 살짝 뿌려준 뒤\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 후추와 파슬리를\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우유 종이컵 2컵 (약 360ml)\",\n      \"displayName\": \"우유\",\n      \"amount\": \"2\",\n      \"unit\": \"종이컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 여기에 밀크를 종이컵 두 컵과\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"우유 종이컵 2컵 (약 360ml)\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 종이컵 1컵 (약 180ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"1\",\n      \"unit\": \"종이컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"워터를 종이컵 한 컵을 부어주고\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 종이컵 1컵 (약 180ml)\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"치킨스톡 1/2스푼\",\n      \"displayName\": \"치킨스톡\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"치킨스톡 반 스푼으로 간을 맞춰줍니다.\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"치킨스톡 1/2스푼으로\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"준비해둔 파스타면\",\n      \"displayName\": \"파스타면\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그러고 준비해 둔 파스타면도 넣고\",\n          \"timestamp\": \"00:42\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"준비해둔 파스타면도 넣고\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리\",\n      \"displayName\": \"파슬리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 후추와 파슬리를 골고루 흩뿌려주면\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 후추와 파슬리를\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양파 1개를 가능한 얇은 두께로 채 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 양파 하나를 가능한 본인이 썰 수 있는 최대한 얇은 두께가 나오도록 잘게 채 썰어 줍니다.\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양송이버섯 한 줌 중 큼지막한 크기는 4등분하고, 나머지는 잘게 다져준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 양송이버섯을 한 줌 가득 준비해 준 뒤에 큼지막한 크기의 양송이 버섯은 4등분 내주고 나머지 남은 버섯은 대충 잘게 다져주시면 됩니다.\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유를 넉넉하게 두르고 버터 소량을 넣은 뒤, 썰어둔 양파를 넣고 겉면에 진한 갈색빛이 돌 때까지 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 식용유를 넉넉하게 둘러주고 추가로 버터를 소량만 넣어줍니다. 여기에 썰어 놓은 양파까지 다 넣어준 뒤에 양파를 탔다고 생각이 들 때까지 한번 볶아줍니다. 양파 겉면에 진한 갈색빛이 띌 때까지 바짝 볶아주다가\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"손질해 둔 양송이버섯, 다진 마늘 1/2스푼, 소금 한 꼬집, 후추를 살짝 넣고 버섯이 갈색빛이 될 때까지 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"손질해 둔 양송이버섯을 다 넣어줍니다. 다진 마늘 1/2스푼과 소금도 한 꼬집 넣고 후추도 살짝 뿌려준 뒤에 양송이버섯도 갈색빛이 띌 때까지 한번 볶아주시면 됩니다.\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"우유 종이컵 2컵(약 360ml), 물 종이컵 1컵(약 180ml), 치킨스톡 1/2스푼을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 여기에 밀크를 종이컵 두 컵과 워터를 종이컵 한 컵을 부어주고 치킨스톡 반 스푼으로 간을 맞춰줍니다.\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"파스타면을 넣고 면이 익고 소스가 꾸덕해질 때까지 푹 끓여 졸여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그러고 준비해 둔 파스타면도 넣고 면이 익을 때까지 한번 푹 끓여주면 됩니다. 이러면 자연스럽게 수분이 다 날아가면서 꾸덕한 크림소스 느낌이 나게 양념이 졸아들 겁니다.\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"text\": \"접시에 담고 후추와 파슬리를 골고루 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 후추와 파슬리를 골고루 흩뿌려주면 꾸덕하고 진득한 맛이 좋은 양송이파스타가 완성됩니다.\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"파스타면의 정확한 중량이나 수량은 영상에서 언급되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "양송이파스타",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "양파 하나",
+          "displayName": "양파",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 양파 하나를",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파 하나를",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양송이버섯을 한 줌 가득",
+          "displayName": "양송이버섯",
+          "amount": "1",
+          "unit": "줌 가득",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 양송이버섯을 한 줌 가득 준비해 준 뒤",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양송이버섯을 한 줌 가득",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "식용유를 넉넉하게 둘러주고",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 팬에 식용유를 넉넉하게 둘러주고",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "팬에 식용유를 넉넉하게 둘러주고",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "버터를 소량만",
+          "displayName": "버터",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "추가로 버터를 소량만 넣어줍니다.",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "추가로 버터를 소량만 넣어줍니다.",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "다진 마늘 1/2스푼",
+          "displayName": "다진 마늘",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘 1/2스푼과",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다진 마늘 1/2스푼과",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "소금도 한 꼬집",
+          "displayName": "소금",
+          "amount": "1",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소금도 한 꼬집 넣고",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "소금도 한 꼬집 넣고",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "후추도 살짝",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후추도 살짝 뿌려준 뒤",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "후추도 살짝 뿌려준 뒤",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 후추와 파슬리를",
+              "timestamp": "00:52"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "우유 종이컵 2컵 (약 360ml)",
+          "displayName": "우유",
+          "amount": "2",
+          "unit": "종이컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 여기에 밀크를 종이컵 두 컵과",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "우유 종이컵 2컵 (약 360ml)",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "물 종이컵 1컵 (약 180ml)",
+          "displayName": "물",
+          "amount": "1",
+          "unit": "종이컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "워터를 종이컵 한 컵을 부어주고",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 종이컵 1컵 (약 180ml)",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "치킨스톡 1/2스푼",
+          "displayName": "치킨스톡",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "치킨스톡 반 스푼으로 간을 맞춰줍니다.",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "치킨스톡 1/2스푼으로",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "준비해둔 파스타면",
+          "displayName": "파스타면",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그러고 준비해 둔 파스타면도 넣고",
+              "timestamp": "00:42"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "준비해둔 파스타면도 넣고",
+              "timestamp": "00:42"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "파슬리",
+          "displayName": "파슬리",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 후추와 파슬리를 골고루 흩뿌려주면",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 후추와 파슬리를",
+              "timestamp": "00:52"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양파 1개를 가능한 얇은 두께로 채 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 양파 하나를 가능한 본인이 썰 수 있는 최대한 얇은 두께가 나오도록 잘게 채 썰어 줍니다.",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "양송이버섯 한 줌 중 큼지막한 크기는 4등분하고, 나머지는 잘게 다져준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 양송이버섯을 한 줌 가득 준비해 준 뒤에 큼지막한 크기의 양송이 버섯은 4등분 내주고 나머지 남은 버섯은 대충 잘게 다져주시면 됩니다.",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유를 넉넉하게 두르고 버터 소량을 넣은 뒤, 썰어둔 양파를 넣고 겉면에 진한 갈색빛이 돌 때까지 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 식용유를 넉넉하게 둘러주고 추가로 버터를 소량만 넣어줍니다. 여기에 썰어 놓은 양파까지 다 넣어준 뒤에 양파를 탔다고 생각이 들 때까지 한번 볶아줍니다. 양파 겉면에 진한 갈색빛이 띌 때까지 바짝 볶아주다가",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "손질해 둔 양송이버섯, 다진 마늘 1/2스푼, 소금 한 꼬집, 후추를 살짝 넣고 버섯이 갈색빛이 될 때까지 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "손질해 둔 양송이버섯을 다 넣어줍니다. 다진 마늘 1/2스푼과 소금도 한 꼬집 넣고 후추도 살짝 뿌려준 뒤에 양송이버섯도 갈색빛이 띌 때까지 한번 볶아주시면 됩니다.",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "우유 종이컵 2컵(약 360ml), 물 종이컵 1컵(약 180ml), 치킨스톡 1/2스푼을 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 여기에 밀크를 종이컵 두 컵과 워터를 종이컵 한 컵을 부어주고 치킨스톡 반 스푼으로 간을 맞춰줍니다.",
+              "timestamp": "00:37"
+            }
+          ]
+        },
+        {
+          "text": "파스타면을 넣고 면이 익고 소스가 꾸덕해질 때까지 푹 끓여 졸여준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그러고 준비해 둔 파스타면도 넣고 면이 익을 때까지 한번 푹 끓여주면 됩니다. 이러면 자연스럽게 수분이 다 날아가면서 꾸덕한 크림소스 느낌이 나게 양념이 졸아들 겁니다.",
+              "timestamp": "00:42"
+            }
+          ]
+        },
+        {
+          "text": "접시에 담고 후추와 파슬리를 골고루 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 후추와 파슬리를 골고루 흩뿌려주면 꾸덕하고 진득한 맛이 좋은 양송이파스타가 완성됩니다.",
+              "timestamp": "00:52"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "파스타면의 정확한 중량이나 수량은 영상에서 언급되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

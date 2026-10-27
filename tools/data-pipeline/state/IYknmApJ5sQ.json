@@ -1,0 +1,304 @@
+{
+  "videoId": "IYknmApJ5sQ",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/IYknmApJ5sQ",
+  "sourceMetadata": {"sourceTitle":"간단하고 맛있는 참치김치덮밥","sourceChannelName":"오메추 : 오늘의 메뉴를 추천합니다.","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.345776Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T08:10:04.620478+00:00",
+    "rawResponse": "{\n  \"title\": \"참치김치덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"김치\",\n      \"displayName\": \"김치\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치는 가위로 잘게 자르고\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"채 썬 양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"채 썬 양파\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕\",\n      \"displayName\": \"설탕\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장\",\n      \"displayName\": \"진간장\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김칫국물 약간 (생략 가능)\",\n      \"displayName\": \"김칫국물\",\n      \"amount\": \"약간\",\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김칫국물 약간 넣고 (생략 가능)\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름 뺀 참치캔 하나\",\n      \"displayName\": \"참치캔\",\n      \"amount\": \"1\",\n      \"unit\": \"캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름 뺀 참치캔 하나 넣고\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름\",\n      \"displayName\": \"참기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"불 끄고 참기름\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깨\",\n      \"displayName\": \"깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깨 뿌려서\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 위에 올려드세요\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란후라이\",\n      \"displayName\": \"계란후라이\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥과 볶은 재료 위에 계란후라이를 올림\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"김치는 가위로 잘게 자른다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치는 가위로 잘게 자르고\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 기름을 두르고 자른 김치를 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볶다가\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"채 썬 양파, 설탕, 진간장을 넣고 타지 않게 살짝 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"채 썬 양파\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"타지 않게 살짝만 볶아주세요\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물과 김칫국물 약간을 넣고 익혀준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김칫국물 약간 넣고 (생략 가능)\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"익혀준 뒤\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"기름 뺀 참치캔 1개를 넣고 살짝 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름 뺀 참치캔 하나 넣고\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"살짝만 볶아주면 완성입니다\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 끄고 참기름을 두르고 깨를 뿌린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"불 끄고 참기름\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깨 뿌려서\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 위에 올려 계란후라이를 곁들여 먹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 위에 올려드세요\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"김치, 양파, 설탕, 진간장, 물, 참기름, 깨, 밥의 정확한 계량 수치 미표기\",\n    \"팬에 두르는 식용유의 양 미표기\"\n  ]\n}",
+    "result": {
+      "title": "참치김치덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "김치",
+          "displayName": "김치",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치는 가위로 잘게 자르고",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "채 썬 양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "채 썬 양파",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "설탕",
+          "displayName": "설탕",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "진간장",
+          "displayName": "진간장",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "물",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "김칫국물 약간 (생략 가능)",
+          "displayName": "김칫국물",
+          "amount": "약간",
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김칫국물 약간 넣고 (생략 가능)",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "기름 뺀 참치캔 하나",
+          "displayName": "참치캔",
+          "amount": "1",
+          "unit": "캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름 뺀 참치캔 하나 넣고",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "참기름",
+          "displayName": "참기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "불 끄고 참기름",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "깨",
+          "displayName": "깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깨 뿌려서",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 위에 올려드세요",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "계란후라이",
+          "displayName": "계란후라이",
+          "amount": "1",
+          "unit": "개",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥과 볶은 재료 위에 계란후라이를 올림",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "김치는 가위로 잘게 자른다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치는 가위로 잘게 자르고",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "팬에 기름을 두르고 자른 김치를 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볶다가",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "채 썬 양파, 설탕, 진간장을 넣고 타지 않게 살짝 볶아준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "채 썬 양파",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "타지 않게 살짝만 볶아주세요",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "물과 김칫국물 약간을 넣고 익혀준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김칫국물 약간 넣고 (생략 가능)",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "익혀준 뒤",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "기름 뺀 참치캔 1개를 넣고 살짝 볶아준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름 뺀 참치캔 하나 넣고",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "살짝만 볶아주면 완성입니다",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "불을 끄고 참기름을 두르고 깨를 뿌린다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "불 끄고 참기름",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깨 뿌려서",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "밥 위에 올려 계란후라이를 곁들여 먹는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 위에 올려드세요",
+              "timestamp": "00:25"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "김치, 양파, 설탕, 진간장, 물, 참기름, 깨, 밥의 정확한 계량 수치 미표기",
+        "팬에 두르는 식용유의 양 미표기"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

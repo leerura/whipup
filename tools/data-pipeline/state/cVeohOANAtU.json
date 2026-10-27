@@ -1,0 +1,212 @@
+{
+  "videoId": "cVeohOANAtU",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/cVeohOANAtU",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T08:06:47.124945+00:00",
+    "rawResponse": "{\n  \"title\": \"초간단 5분 카레\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마트에서 양파\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란(1개)\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 한 개를 준비해서\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란(1개)\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"카레가루\",\n      \"displayName\": \"카레가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"카레가루를 샀습니다\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"카레가루를 풀어주세요\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"강불에 기름을 두르고\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름을 두르고 (강불)\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물을 부어\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물을 부어\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 위에 카레를 부어주면\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"접시에 담긴 밥 위에 카레를 붓는 모습\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 강불로 기름을 두르고 채 썬 양파가 갈색이 될 때까지 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"강불에 기름을 두르고 양파가 갈색이 될 때까지 볶아줍니다\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름을 두르고 (강불) 양파 갈색 될 때까지 볶아줍니다\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파가 다 볶아지면 물을 붓고 카레가루를 풀어 끓여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다 볶아졌다면 물을 부어 카레가루를 풀어주세요\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다 볶아졌다면 물을 부어 카레가루를 풀어주세요\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 1개를 풀어 섞은 뒤 카레에 천천히 부어 저어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 한 개를 준비해서 섞은 카레에 천천히 부어 저어줍니다\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란(1개) 준비해서 섞은 후 카레에 천천히 부어 저어줍니다\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 위에 완성된 카레를 부어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 위에 카레를 부어주면\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 위에 카레를 부어주면~\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"양파, 카레가루, 기름, 물, 밥의 정확한 계량 수치가 언급되지 않았습니다.\"\n  ]\n}",
+    "result": {
+      "title": "초간단 5분 카레",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마트에서 양파",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "계란(1개)",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 한 개를 준비해서",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란(1개)",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "카레가루",
+          "displayName": "카레가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "카레가루를 샀습니다",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "카레가루를 풀어주세요",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "강불에 기름을 두르고",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름을 두르고 (강불)",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "물",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물을 부어",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물을 부어",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥 위에 카레를 부어주면",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "접시에 담긴 밥 위에 카레를 붓는 모습",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 강불로 기름을 두르고 채 썬 양파가 갈색이 될 때까지 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "강불에 기름을 두르고 양파가 갈색이 될 때까지 볶아줍니다",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름을 두르고 (강불) 양파 갈색 될 때까지 볶아줍니다",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "양파가 다 볶아지면 물을 붓고 카레가루를 풀어 끓여줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다 볶아졌다면 물을 부어 카레가루를 풀어주세요",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다 볶아졌다면 물을 부어 카레가루를 풀어주세요",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "계란 1개를 풀어 섞은 뒤 카레에 천천히 부어 저어줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 한 개를 준비해서 섞은 카레에 천천히 부어 저어줍니다",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란(1개) 준비해서 섞은 후 카레에 천천히 부어 저어줍니다",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "밥 위에 완성된 카레를 부어줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥 위에 카레를 부어주면",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 위에 카레를 부어주면~",
+              "timestamp": "00:17"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "양파, 카레가루, 기름, 물, 밥의 정확한 계량 수치가 언급되지 않았습니다."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

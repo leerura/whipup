@@ -1,0 +1,175 @@
+{
+  "videoId": "2I0lGmr_928",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/2I0lGmr_928",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:48:25.755030+00:00",
+    "rawResponse": "{\n  \"title\": \"빈곤 파스타\",\n  \"description\": \"일본에서 유행했던 간단하고 가성비 좋은 와사비 버터 쯔유 김가루 파스타 레시피입니다.\",\n  \"servings\": \"3인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"파스타면 3인분\",\n      \"displayName\": \"파스타면\",\n      \"amount\": \"3\",\n      \"unit\": \"인분\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"파스타면 3인분 삶아주고\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"파스타면 3인분\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"가염버터 2숟갈\",\n      \"displayName\": \"가염버터\",\n      \"amount\": \"2\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"가염버터 2숟갈\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"가염버터 2숟갈\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"와사비 1스푼\",\n      \"displayName\": \"와사비\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"와사비 1스푼\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"와사비 1스푼\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쯔유 4스푼\",\n      \"displayName\": \"쯔유\",\n      \"amount\": \"4\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"쯔유 4스푼\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"쯔유 4스푼\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루는 넉넉하게\",\n      \"displayName\": \"김가루\",\n      \"amount\": \"넉넉하게\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 김가루는 넉넉하게 뿌려주면\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김가루는 넉넉하게\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"파스타면 3인분을 끓는 물에 삶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"파스타면 3인분 삶아주고\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비에 파스타면을 넣어 삶는 모습\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삶은 면을 접시에 옮겨 담고, 가염버터 2숟갈, 와사비 1스푼, 쯔유 4스푼을 넣고 버터가 녹을 때까지 잘 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"접시에 옮겨서 가염버터 2숟갈 와사비 1스푼 쯔유 4스푼 녹을 때까지 잘 섞어주세요\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"접시에 담긴 면 위에 가염버터, 와사비, 쯔유를 넣고 집게로 섞는 모습\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마지막으로 김가루를 넉넉하게 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 김가루는 넉넉하게 뿌려주면\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"파스타 위에 김가루를 듬뿍 뿌리고 섞는 모습\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "빈곤 파스타",
+      "description": "일본에서 유행했던 간단하고 가성비 좋은 와사비 버터 쯔유 김가루 파스타 레시피입니다.",
+      "servings": "3인분",
+      "ingredients": [
+        {
+          "rawText": "파스타면 3인분",
+          "displayName": "파스타면",
+          "amount": "3",
+          "unit": "인분",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "파스타면 3인분 삶아주고",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "파스타면 3인분",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "가염버터 2숟갈",
+          "displayName": "가염버터",
+          "amount": "2",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "가염버터 2숟갈",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "가염버터 2숟갈",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "와사비 1스푼",
+          "displayName": "와사비",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "와사비 1스푼",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "와사비 1스푼",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "쯔유 4스푼",
+          "displayName": "쯔유",
+          "amount": "4",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "쯔유 4스푼",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "쯔유 4스푼",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "김가루는 넉넉하게",
+          "displayName": "김가루",
+          "amount": "넉넉하게",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 김가루는 넉넉하게 뿌려주면",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "김가루는 넉넉하게",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        }
+      ],
+      "steps": [
+        {
+          "text": "파스타면 3인분을 끓는 물에 삶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "파스타면 3인분 삶아주고",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비에 파스타면을 넣어 삶는 모습",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "삶은 면을 접시에 옮겨 담고, 가염버터 2숟갈, 와사비 1스푼, 쯔유 4스푼을 넣고 버터가 녹을 때까지 잘 섞어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "접시에 옮겨서 가염버터 2숟갈 와사비 1스푼 쯔유 4스푼 녹을 때까지 잘 섞어주세요",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "접시에 담긴 면 위에 가염버터, 와사비, 쯔유를 넣고 집게로 섞는 모습",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "마지막으로 김가루를 넉넉하게 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 김가루는 넉넉하게 뿌려주면",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "파스타 위에 김가루를 듬뿍 뿌리고 섞는 모습",
+              "timestamp": "00:14"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

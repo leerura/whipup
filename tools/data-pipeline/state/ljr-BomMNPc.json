@@ -1,13 +1,289 @@
 {
   "videoId": "ljr-BomMNPc",
-  "status": "PENDING",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/ljr-BomMNPc",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "PENDING",
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:05:59.790184+00:00",
+    "rawResponse": "{\n  \"title\": \"김치찌개와 계란말이 (Kimchi Jjigae & Gyeran-mari)\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"김치\",\n      \"displayName\": \"김치\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도마 위에서 김치를 칼로 썬 후 냄비에 넣음\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치찌개를\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돼지고기\",\n      \"displayName\": \"돼지고기\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"찌개용 돼지고기를 냄비에 넣음\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비 속 돼지고기 위에 후추를 톡톡 뿌림\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"고춧가루를 숟가락으로 떠서 냄비에 넣음\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 또는 가루 양념\",\n      \"displayName\": \"설탕 또는 가루 양념\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양념통에서 작은 스푼으로 백색/아이보리색 가루 양념을 떠서 넣음\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 또는 육수\",\n      \"displayName\": \"물 또는 육수\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계량컵에 담긴 액체(물 또는 육수)를 냄비에 부음\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"채 썬 양파를 끓는 찌개에 넣음\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"어슷 썬 대파를 끓는 찌개에 넣음\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"두부\",\n      \"displayName\": \"두부\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도톰하게 썬 두부를 끓고 있는 찌개에 얹음\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 채소가 들어간 달걀물\",\n      \"displayName\": \"달걀물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"당근, 대파 등이 다져서 섞인 달걀물을 팬에 부어 부침\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란말이도\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"사각 계란말이 팬에 기름이 둘러져 있음\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"김치를 칼로 먹기 좋은 크기로 썰어 둡니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도마 위에서 김치를 칼로 썰어 준비함\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 돼지고기를 넣고 후춧가루를 뿌려줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비에 돼지고기를 넣고 후추를 톡톡 뿌림\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"썰어둔 김치와 고춧가루, 양념 가루를 넣습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비에 김치를 붓고 고춧가루 1스푼, 양념 스푼 1스푼을 넣음\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물(또는 육수)을 붓고 찌개를 끓입니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계량컵으로 물 또는 육수를 부어 끓임\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"찌개가 끓어오르면 채 썬 양파와 어슷 썬 대파를 넣고 섞은 후 뚜껑을 덮어 끓입니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"끓는 찌개에 대파와 양파를 넣고 주걱으로 섞은 뒤 뚜껑을 덮음\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"기름을 두른 사각 팬에 다진 채소를 넣은 달걀물을 부어 계란말이를 말고 먹기 좋은 크기로 썹니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"달걀물을 부어 계란말이를 만 뒤 도마에서 칼로 썰어냄\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김치찌개 뚜껑을 열고 두부를 넣은 뒤 국물을 끼얹어가며 한소끔 더 끓여냅니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"뚜껑을 열고 두부를 넣은 뒤 주걱으로 국물을 적셔 끓임\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 김치찌개를 그릇에 담고 밥, 계란말이 등과 함께 곁들여 냅니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"김치찌개를 대접에 담아 계란말이, 밥과 함께 한 상 차림\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"재료의 정확한 중량이나 계량 단위(g, ml, 스푼 수 등)는 영상에서 구체적으로 언급되지 않았습니다.\",\n    \"00:08에 첨가된 가루 조미료의 정확한 성분(설탕, 조미료/다시다 등)은 명시되지 않았습니다.\",\n    \"계란말이에 사용된 달걀 개수 및 속에 들어간 부재료(당근, 파 등)의 세부 비율은 명시되지 않았습니다.\"\n  ]\n}",
+    "result": {
+      "title": "김치찌개와 계란말이 (Kimchi Jjigae & Gyeran-mari)",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "김치",
+          "displayName": "김치",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도마 위에서 김치를 칼로 썬 후 냄비에 넣음",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "김치찌개를",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "돼지고기",
+          "displayName": "돼지고기",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "찌개용 돼지고기를 냄비에 넣음",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비 속 돼지고기 위에 후추를 톡톡 뿌림",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "고춧가루",
+          "displayName": "고춧가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "고춧가루를 숟가락으로 떠서 냄비에 넣음",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "설탕 또는 가루 양념",
+          "displayName": "설탕 또는 가루 양념",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양념통에서 작은 스푼으로 백색/아이보리색 가루 양념을 떠서 넣음",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "물 또는 육수",
+          "displayName": "물 또는 육수",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계량컵에 담긴 액체(물 또는 육수)를 냄비에 부음",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "채 썬 양파를 끓는 찌개에 넣음",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "어슷 썬 대파를 끓는 찌개에 넣음",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "두부",
+          "displayName": "두부",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도톰하게 썬 두부를 끓고 있는 찌개에 얹음",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "다진 채소가 들어간 달걀물",
+          "displayName": "달걀물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "당근, 대파 등이 다져서 섞인 달걀물을 팬에 부어 부침",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란말이도",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "사각 계란말이 팬에 기름이 둘러져 있음",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "김치를 칼로 먹기 좋은 크기로 썰어 둡니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도마 위에서 김치를 칼로 썰어 준비함",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 돼지고기를 넣고 후춧가루를 뿌려줍니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비에 돼지고기를 넣고 후추를 톡톡 뿌림",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "썰어둔 김치와 고춧가루, 양념 가루를 넣습니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비에 김치를 붓고 고춧가루 1스푼, 양념 스푼 1스푼을 넣음",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "물(또는 육수)을 붓고 찌개를 끓입니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계량컵으로 물 또는 육수를 부어 끓임",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "찌개가 끓어오르면 채 썬 양파와 어슷 썬 대파를 넣고 섞은 후 뚜껑을 덮어 끓입니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "끓는 찌개에 대파와 양파를 넣고 주걱으로 섞은 뒤 뚜껑을 덮음",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "기름을 두른 사각 팬에 다진 채소를 넣은 달걀물을 부어 계란말이를 말고 먹기 좋은 크기로 썹니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "달걀물을 부어 계란말이를 만 뒤 도마에서 칼로 썰어냄",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "김치찌개 뚜껑을 열고 두부를 넣은 뒤 국물을 끼얹어가며 한소끔 더 끓여냅니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "뚜껑을 열고 두부를 넣은 뒤 주걱으로 국물을 적셔 끓임",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "완성된 김치찌개를 그릇에 담고 밥, 계란말이 등과 함께 곁들여 냅니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "김치찌개를 대접에 담아 계란말이, 밥과 함께 한 상 차림",
+              "timestamp": "00:26"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "재료의 정확한 중량이나 계량 단위(g, ml, 스푼 수 등)는 영상에서 구체적으로 언급되지 않았습니다.",
+        "00:08에 첨가된 가루 조미료의 정확한 성분(설탕, 조미료/다시다 등)은 명시되지 않았습니다.",
+        "계란말이에 사용된 달걀 개수 및 속에 들어간 부재료(당근, 파 등)의 세부 비율은 명시되지 않았습니다."
+      ]
+    },
+    "structuralErrors": [],
     "retryCount": 0,
-    "startedAt": "2026-10-25T01:19:19.338344+00:00",
     "accountId": "account-c"
   }
 }

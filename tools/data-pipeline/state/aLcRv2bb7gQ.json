@@ -1,0 +1,193 @@
+{
+  "videoId": "aLcRv2bb7gQ",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/aLcRv2bb7gQ",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:49:47.006121+00:00",
+    "rawResponse": "{\n  \"title\": \"살 안 찌는 제육볶음\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"앞다리살 or 뒷다리살 (전지살이나 후지살)\",\n      \"displayName\": \"앞다리살 or 뒷다리살\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"지방이 적은 전지살이나 후지살 쓰고\",\n          \"timestamp\": \"0:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"앞다리살 or 뒷다리살\",\n          \"timestamp\": \"0:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 대신 스테비아\",\n      \"displayName\": \"스테비아\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양념에 설탕 대신 스테비아를 쓰고\",\n          \"timestamp\": \"0:13\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 대신 스테비아\",\n          \"timestamp\": \"0:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 조금만\",\n      \"displayName\": \"고추장\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장은 적게 넣으시면은\",\n          \"timestamp\": \"0:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장은 조금만\",\n          \"timestamp\": \"0:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에서 고기와 함께 볶아지는 썰어둔 양파 확인\",\n          \"timestamp\": \"0:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에서 고기와 함께 볶아지는 큼직하게 썬 대파 확인\",\n          \"timestamp\": \"0:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"접시에 담겨 있는 흰 밥 위로 제육볶음을 올림\",\n          \"timestamp\": \"0:00\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"지방이 적은 돼지고기 앞다리살(전지살) 또는 뒷다리살(후지살)을 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"지방이 적은 전지살이나 후지살 쓰고\",\n          \"timestamp\": \"0:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"앞다리살 or 뒷다리살\",\n          \"timestamp\": \"0:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"설탕 대신 스테비아를 넣고, 고추장을 소량 넣어 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양념에 설탕 대신 스테비아를 쓰고 고추장은 적게 넣으시면은\",\n          \"timestamp\": \"0:13\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 대신 스테비아 / 고추장은 조금만\",\n          \"timestamp\": \"0:13\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양념 볼에 스테비아와 고추장을 섞는 장면\",\n          \"timestamp\": \"0:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 고기와 양파, 대파를 넣고 준비한 양념장을 부어 함께 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"고기와 채소가 든 팬에 양념장을 붓고 주걱으로 볶는 장면\",\n          \"timestamp\": \"0:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 위에 완성된 제육볶음을 얹어 덮밥 형태로 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥이 담긴 접시 위에 볶은 제육볶음을 담는 장면\",\n          \"timestamp\": \"0:00\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"상세 계량 수치는 영상 본문에서 공개되지 않고 고정 댓글('(레시피는 고정댓글)')로 안내되어 영상 내에서 확인할 수 없음\",\n    \"양념장에 간장 및 고춧가루 등으로 추정되는 재료가 보이나 명칭과 분량이 영상 내에서 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "살 안 찌는 제육볶음",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "앞다리살 or 뒷다리살 (전지살이나 후지살)",
+          "displayName": "앞다리살 or 뒷다리살",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "지방이 적은 전지살이나 후지살 쓰고",
+              "timestamp": "0:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "앞다리살 or 뒷다리살",
+              "timestamp": "0:12"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "설탕 대신 스테비아",
+          "displayName": "스테비아",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양념에 설탕 대신 스테비아를 쓰고",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 대신 스테비아",
+              "timestamp": "0:13"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "고추장 조금만",
+          "displayName": "고추장",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고추장은 적게 넣으시면은",
+              "timestamp": "0:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장은 조금만",
+              "timestamp": "0:14"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에서 고기와 함께 볶아지는 썰어둔 양파 확인",
+              "timestamp": "0:16"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에서 고기와 함께 볶아지는 큼직하게 썬 대파 확인",
+              "timestamp": "0:16"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "접시에 담겨 있는 흰 밥 위로 제육볶음을 올림",
+              "timestamp": "0:00"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        }
+      ],
+      "steps": [
+        {
+          "text": "지방이 적은 돼지고기 앞다리살(전지살) 또는 뒷다리살(후지살)을 준비한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "지방이 적은 전지살이나 후지살 쓰고",
+              "timestamp": "0:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "앞다리살 or 뒷다리살",
+              "timestamp": "0:12"
+            }
+          ]
+        },
+        {
+          "text": "설탕 대신 스테비아를 넣고, 고추장을 소량 넣어 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양념에 설탕 대신 스테비아를 쓰고 고추장은 적게 넣으시면은",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 대신 스테비아 / 고추장은 조금만",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양념 볼에 스테비아와 고추장을 섞는 장면",
+              "timestamp": "0:14"
+            }
+          ]
+        },
+        {
+          "text": "팬에 고기와 양파, 대파를 넣고 준비한 양념장을 부어 함께 볶는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "고기와 채소가 든 팬에 양념장을 붓고 주걱으로 볶는 장면",
+              "timestamp": "0:16"
+            }
+          ]
+        },
+        {
+          "text": "밥 위에 완성된 제육볶음을 얹어 덮밥 형태로 완성한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥이 담긴 접시 위에 볶은 제육볶음을 담는 장면",
+              "timestamp": "0:00"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "상세 계량 수치는 영상 본문에서 공개되지 않고 고정 댓글('(레시피는 고정댓글)')로 안내되어 영상 내에서 확인할 수 없음",
+        "양념장에 간장 및 고춧가루 등으로 추정되는 재료가 보이나 명칭과 분량이 영상 내에서 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

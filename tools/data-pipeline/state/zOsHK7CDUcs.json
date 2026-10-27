@@ -1,0 +1,190 @@
+{
+  "videoId": "zOsHK7CDUcs",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/zOsHK7CDUcs",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T08:03:46.134996+00:00",
+    "rawResponse": "{\n  \"title\": \"사골칼국수\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"물 900ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"900\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"냄비에 물 900ml\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냄비에 물 부어주고\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"1분링(사골) 3개\",\n      \"displayName\": \"1분링 (사골)\",\n      \"amount\": \"3\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1분링(사골) 3개 (300~350ml에 1알)\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"1분링 세 개 넣어주세요\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"칼국수면\",\n      \"displayName\": \"칼국수면\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"칼국수면 넣고\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"칼국수면 넣고\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파\",\n      \"displayName\": \"파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"칼국수 위에 채 썬 파를 고명으로 올림\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"당근\",\n      \"displayName\": \"당근\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"칼국수 위에 채 썬 당근을 고명으로 올림\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"칼국수 위에 후추를 톡톡 뿌림\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 물 900ml를 붓고 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"냄비에 물 900ml\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냄비에 물 부어주고\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물이 끓기 시작하면 1분링(사골) 3개를 넣어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1분링(사골) 3개\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"끓기 시작하면 1분링 세 개 넣어주세요\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"육수가 우러나면 칼국수면을 넣고 4분간 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"칼국수면 넣고 4분만 끓여주면\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"칼국수면 넣고 4분만 끓여주면 벌써 완성이에요\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 담고 파, 당근, 후추를 고명으로 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 칼국수와 국물을 옮겨 담은 후 채 썬 파, 채 썬 당근, 후추를 올림\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "사골칼국수",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "물 900ml",
+          "displayName": "물",
+          "amount": "900",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "냄비에 물 900ml",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냄비에 물 부어주고",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "1분링(사골) 3개",
+          "displayName": "1분링 (사골)",
+          "amount": "3",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1분링(사골) 3개 (300~350ml에 1알)",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "1분링 세 개 넣어주세요",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "칼국수면",
+          "displayName": "칼국수면",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "칼국수면 넣고",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "칼국수면 넣고",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "파",
+          "displayName": "파",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "칼국수 위에 채 썬 파를 고명으로 올림",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "당근",
+          "displayName": "당근",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "칼국수 위에 채 썬 당근을 고명으로 올림",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "칼국수 위에 후추를 톡톡 뿌림",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 물 900ml를 붓고 끓인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "냄비에 물 900ml",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냄비에 물 부어주고",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "물이 끓기 시작하면 1분링(사골) 3개를 넣어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1분링(사골) 3개",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "끓기 시작하면 1분링 세 개 넣어주세요",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "육수가 우러나면 칼국수면을 넣고 4분간 끓여준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "칼국수면 넣고 4분만 끓여주면",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "칼국수면 넣고 4분만 끓여주면 벌써 완성이에요",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 담고 파, 당근, 후추를 고명으로 올린다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 칼국수와 국물을 옮겨 담은 후 채 썬 파, 채 썬 당근, 후추를 올림",
+              "timestamp": "00:22"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

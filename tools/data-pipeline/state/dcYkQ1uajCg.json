@@ -1,0 +1,167 @@
+{
+  "videoId": "dcYkQ1uajCg",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/dcYkQ1uajCg",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T08:22:58.360351+00:00",
+    "rawResponse": "{\n  \"title\": \"가위로 만드는 정승제 김치볶음밥\",\n  \"description\": null,\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"삼겹살 3줄\",\n      \"displayName\": \"삼겹살\",\n      \"amount\": \"3\",\n      \"unit\": \"줄\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(=1인분에 삼겹살 3줄)\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"나는 요거를 3개 정도를 해놓고 먹어\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"묵은지 (국물까지 넉넉히)\",\n      \"displayName\": \"묵은지\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(국물까지 넉넉히 붓기)\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"두번째 작업이 묵은지를 넣어야 되는데\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"햇반 2개\",\n      \"displayName\": \"햇반\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"한 끼 기준 : 햇반 2개\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이 상태에서 이제 밥이 들어갑니다\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 삼겹살을 올리고 바싹 익히지 않은 상태에서 가위로 삼겹살집에서 먹는 것만큼 적당한 크기로 자른다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(삼겹살은) 바싹 익힐 필요가 없어요\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"삼겹살집에서 먹는 것 만큼만 적당한 크기로 그냥 자르면 돼\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 삼겹살 기름과 섞이도록 묵은지를 국물까지 넉넉하게 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(국물까지 넉넉히 붓기)\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이 기름이랑 묵은지랑 섞이면서 본질의 맛을 내는 거 같아\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불기가 올라오고 끓기 시작하면 칼을 쓰지 않고 가위를 이용해 김치를 밑에서부터 잘게 자른다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"어느 정도 인제 불기가 이제 올라오고 약간 끓기 시작하잖아요? 이때부터 이제 가위질이 시작되는데 밑에서부터 이렇게 자르면 돼\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"절대 칼을 사용하지 마. 가위로만 끝까지 가시면 돼요\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기와 김치 색이 같아지고 윤기가 날 때까지 가위질을 반복하고, 아주 약한 불로 줄여 마무리 가위질을 해준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(고기와 김치 색이 같아질 때까지 네버엔딩가위질)\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"아주 약한불로 마무리 가위질 해주심 돼요\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"text\": \"미리 전자레인지에 데워 둔 햇반을 넣고 팬에서 볶지 않고 비벼서 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"볶아야 될 거 같죠? 비비는 거야\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(비벼야 하니 밥은 미리 전자레인지 돌리기)\",\n          \"timestamp\": \"00:49\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"묵은지의 정확한 중량이나 부피는 명시되지 않고 '국물까지 넉넉히'로만 표현됨\"\n  ]\n}",
+    "result": {
+      "title": "가위로 만드는 정승제 김치볶음밥",
+      "description": null,
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "삼겹살 3줄",
+          "displayName": "삼겹살",
+          "amount": "3",
+          "unit": "줄",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(=1인분에 삼겹살 3줄)",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "나는 요거를 3개 정도를 해놓고 먹어",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "묵은지 (국물까지 넉넉히)",
+          "displayName": "묵은지",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(국물까지 넉넉히 붓기)",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "두번째 작업이 묵은지를 넣어야 되는데",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "햇반 2개",
+          "displayName": "햇반",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "한 끼 기준 : 햇반 2개",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이 상태에서 이제 밥이 들어갑니다",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 삼겹살을 올리고 바싹 익히지 않은 상태에서 가위로 삼겹살집에서 먹는 것만큼 적당한 크기로 자른다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(삼겹살은) 바싹 익힐 필요가 없어요",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "삼겹살집에서 먹는 것 만큼만 적당한 크기로 그냥 자르면 돼",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "팬에 삼겹살 기름과 섞이도록 묵은지를 국물까지 넉넉하게 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(국물까지 넉넉히 붓기)",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이 기름이랑 묵은지랑 섞이면서 본질의 맛을 내는 거 같아",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "불기가 올라오고 끓기 시작하면 칼을 쓰지 않고 가위를 이용해 김치를 밑에서부터 잘게 자른다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "어느 정도 인제 불기가 이제 올라오고 약간 끓기 시작하잖아요? 이때부터 이제 가위질이 시작되는데 밑에서부터 이렇게 자르면 돼",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "절대 칼을 사용하지 마. 가위로만 끝까지 가시면 돼요",
+              "timestamp": "00:32"
+            }
+          ]
+        },
+        {
+          "text": "고기와 김치 색이 같아지고 윤기가 날 때까지 가위질을 반복하고, 아주 약한 불로 줄여 마무리 가위질을 해준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(고기와 김치 색이 같아질 때까지 네버엔딩가위질)",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SPEECH",
+              "text": "아주 약한불로 마무리 가위질 해주심 돼요",
+              "timestamp": "00:40"
+            }
+          ]
+        },
+        {
+          "text": "미리 전자레인지에 데워 둔 햇반을 넣고 팬에서 볶지 않고 비벼서 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "볶아야 될 거 같죠? 비비는 거야",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(비벼야 하니 밥은 미리 전자레인지 돌리기)",
+              "timestamp": "00:49"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "묵은지의 정확한 중량이나 부피는 명시되지 않고 '국물까지 넉넉히'로만 표현됨"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

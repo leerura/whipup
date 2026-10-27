@@ -1,0 +1,340 @@
+{
+  "videoId": "W12Fpy5iEo0",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/W12Fpy5iEo0",
+  "sourceMetadata": {"sourceTitle":"맛있는데 살빠지는 고등어덮밥💯(코스트코 비비고 고등어활용)","sourceChannelName":"카트남","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.509605Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T10:00:45.951055+00:00",
+    "rawResponse": "{\n  \"title\": \"무조건 살빠지는 고등어 덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"간장\",\n      \"displayName\": \"간장\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 베이스 소스를 만들어줄게요\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"간장이 담긴 볼에 재료를 추가하는 모습\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"미림 1스푼\",\n      \"displayName\": \"미림\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(미림 1스푼)\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"미림 1스푼을 볼에 넣는 모습\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"스테비아 1스푼\",\n      \"displayName\": \"스테비아\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(스테비아 1스푼)\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"스테비아 1스푼을 볼에 넣는 모습\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 반개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"0.5\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파를 반개 썰어주시고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파를 반개 썰어주시고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(양파)\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고등어\",\n      \"displayName\": \"고등어\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고등어를 넣고 익혀줄게요\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고등어를 넣고 익혀줄게요\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 고등어 필렛을 올리는 모습\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇 바닥에 밥이 담겨 있는 모습\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쪽파\",\n      \"displayName\": \"쪽파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(쪽파)\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥과 양파 위에 송송 썬 쪽파를 얹은 모습\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"라임\",\n      \"displayName\": \"라임\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"라임을 올려주시고\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"라임을 올려주시고\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"슬라이스한 라임을 고등어 위에 얹는 모습\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"와사비\",\n      \"displayName\": \"와사비\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇 한쪽에 와사비가 곁들여져 있는 모습\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"볼에 간장, 미림 1스푼, 스테비아 1스푼을 넣고 빠르게 섞어 간장 베이스 소스를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 베이스 소스를 만들어줄게요 빠르게 섞어 주시면 되고요\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(미림 1스푼)\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(스테비아 1스푼)\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 반 개를 채 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파를 반개 썰어주시고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파를 반개 썰어주시고\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"달궈진 팬에 썬 양파를 넣고 만들어둔 소스를 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"달궈진 팬에 넣고 소스를 넣어 줍니다\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"달궈진 팬에 넣고 소스를 넣어 줍니다\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파가 익으면 고등어를 넣고 함께 익혀준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파가 익으면 고등어를 넣고 익혀줄게요\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파가 익으면 고등어를 넣고 익혀줄게요\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 밥을 담고 볶은 양파, 썬 쪽파, 익힌 고등어를 차례로 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(양파)\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(쪽파)\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 양파와 쪽파를 올리고 구운 고등어를 올리는 모습\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 남은 소스를 고등어 위에 끼얹어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"남은 소스를 올려주시면 되고요\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"남은 소스를 올려주시면 되고요\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"라임 슬라이스와 와사비를 곁들이고, 라임즙을 짜서 함께 비벼 먹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"라임을 올려주시고 잘 비벼서 드시면\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"라임을 올려주시고 잘 비벼서 드시면?\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"라임을 얹고 즙을 짠 후 비벼 먹는 모습\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"간장 정량 미언급\",\n    \"고등어 중량 및 마리 수 미언급 (영상 상 1토막)\",\n    \"밥, 쪽파, 와사비 정량 미언급\"\n  ]\n}",
+    "result": {
+      "title": "무조건 살빠지는 고등어 덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "간장",
+          "displayName": "간장",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "간장 베이스 소스를 만들어줄게요",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "간장이 담긴 볼에 재료를 추가하는 모습",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "미림 1스푼",
+          "displayName": "미림",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(미림 1스푼)",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "미림 1스푼을 볼에 넣는 모습",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "스테비아 1스푼",
+          "displayName": "스테비아",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(스테비아 1스푼)",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "스테비아 1스푼을 볼에 넣는 모습",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양파 반개",
+          "displayName": "양파",
+          "amount": "0.5",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파를 반개 썰어주시고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파를 반개 썰어주시고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(양파)",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고등어",
+          "displayName": "고등어",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고등어를 넣고 익혀줄게요",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고등어를 넣고 익혀줄게요",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 고등어 필렛을 올리는 모습",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇 바닥에 밥이 담겨 있는 모습",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "쪽파",
+          "displayName": "쪽파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(쪽파)",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥과 양파 위에 송송 썬 쪽파를 얹은 모습",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "라임",
+          "displayName": "라임",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "라임을 올려주시고",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "라임을 올려주시고",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "슬라이스한 라임을 고등어 위에 얹는 모습",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "와사비",
+          "displayName": "와사비",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇 한쪽에 와사비가 곁들여져 있는 모습",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "볼에 간장, 미림 1스푼, 스테비아 1스푼을 넣고 빠르게 섞어 간장 베이스 소스를 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "간장 베이스 소스를 만들어줄게요 빠르게 섞어 주시면 되고요",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(미림 1스푼)",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(스테비아 1스푼)",
+              "timestamp": "00:02"
+            }
+          ]
+        },
+        {
+          "text": "양파 반 개를 채 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파를 반개 썰어주시고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파를 반개 썰어주시고",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "달궈진 팬에 썬 양파를 넣고 만들어둔 소스를 붓는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "달궈진 팬에 넣고 소스를 넣어 줍니다",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "달궈진 팬에 넣고 소스를 넣어 줍니다",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "양파가 익으면 고등어를 넣고 함께 익혀준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파가 익으면 고등어를 넣고 익혀줄게요",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파가 익으면 고등어를 넣고 익혀줄게요",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 밥을 담고 볶은 양파, 썬 쪽파, 익힌 고등어를 차례로 올린다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(양파)",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(쪽파)",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 양파와 쪽파를 올리고 구운 고등어를 올리는 모습",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "팬에 남은 소스를 고등어 위에 끼얹어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "남은 소스를 올려주시면 되고요",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "남은 소스를 올려주시면 되고요",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "라임 슬라이스와 와사비를 곁들이고, 라임즙을 짜서 함께 비벼 먹는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "라임을 올려주시고 잘 비벼서 드시면",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "라임을 올려주시고 잘 비벼서 드시면?",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "라임을 얹고 즙을 짠 후 비벼 먹는 모습",
+              "timestamp": "00:15"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "간장 정량 미언급",
+        "고등어 중량 및 마리 수 미언급 (영상 상 1토막)",
+        "밥, 쪽파, 와사비 정량 미언급"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "videoId": "fJWlPnBBZYw",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/fJWlPnBBZYw",
+  "sourceMetadata": {"sourceTitle":"라면보다 쉬운 마라탕","sourceChannelName":"다솔쿠 DASOL COO","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.698176Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T08:15:19.485003+00:00",
+    "rawResponse": "{\n  \"title\": \"초간단 마라탕\",\n  \"description\": \"라면보다 쉬운 초간단 마라탕 레시피\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"사골 육수 500ML\",\n      \"displayName\": \"사골 육수\",\n      \"amount\": \"500\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"냄비에 사골 육수 500ML\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냄비에 사골 육수 500ml\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마라탕 소스\",\n      \"displayName\": \"마라탕 소스\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마라탕 소스 넣고\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마라탕 소스 넣고\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"내가 좋아하는 사리들\",\n      \"displayName\": \"사리 (기호에 따른 토핑)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"그 다음 내가 좋아하는 사리들로 가득 넣어준 다음에\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그 다음 내가 좋아하는 사리들로 가득 넣어준 다음에\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"백목이버섯\",\n      \"displayName\": \"백목이버섯\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"사리로 백목이버섯을 냄비에 넣음\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청경채\",\n      \"displayName\": \"청경채\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"청경채를 냄비에 넣음\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"배추\",\n      \"displayName\": \"배추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"알배기배추를 냄비에 넣음\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"완자 (피시볼)\",\n      \"displayName\": \"완자 (피시볼)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완자(피시볼)를 냄비에 넣음\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"중국당면 / 분모자\",\n      \"displayName\": \"중국당면 / 분모자\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"넓적당면 및 분모자를 냄비에 올림\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"포두부\",\n      \"displayName\": \"포두부\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"빠질 수 없는 포두부랑 숙주나물 넣고\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"빠질 수 없는 포두부랑 숙주나물 넣고\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"숙주나물\",\n      \"displayName\": \"숙주나물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"빠질 수 없는 포두부랑 숙주나물 넣고\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"빠질 수 없는 포두부랑 숙주나물 넣고\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 사골 육수 500ml를 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"냄비에 사골 육수 500ML\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냄비에 사골 육수 500ml\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비에 사골육수를 붓는 장면\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마라탕 소스를 넣고 잘 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마라탕 소스 넣고\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"섞어 섞어\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마라탕 소스 넣고\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"마라탕 소스를 붓고 국자로 저어 섞는 장면\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"좋아하는 사리들(백목이버섯, 청경채, 배추, 완자, 당면 등)을 가득 넣어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"그 다음 내가 좋아하는 사리들로 가득 넣어준 다음에\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그 다음 내가 좋아하는 사리들로 가득 넣어준 다음에\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"각종 사리 재료를 냄비에 차례대로 넣는 장면\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"포두부와 숙주나물을 넣고 끓여 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"빠질 수 없는 포두부랑 숙주나물 넣고\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"끓여주면 완성\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"빠질 수 없는 포두부랑 숙주나물 넣고 끓여주면 완성\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"포두부와 숙주나물을 넣고 보글보글 끓이는 장면\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"마라탕 소스의 정확한 용량 미표기\",\n    \"각종 사리 재료들의 개별 정량 미표기\"\n  ]\n}",
+    "result": {
+      "title": "초간단 마라탕",
+      "description": "라면보다 쉬운 초간단 마라탕 레시피",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "사골 육수 500ML",
+          "displayName": "사골 육수",
+          "amount": "500",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "냄비에 사골 육수 500ML",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냄비에 사골 육수 500ml",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "마라탕 소스",
+          "displayName": "마라탕 소스",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마라탕 소스 넣고",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마라탕 소스 넣고",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "내가 좋아하는 사리들",
+          "displayName": "사리 (기호에 따른 토핑)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "그 다음 내가 좋아하는 사리들로 가득 넣어준 다음에",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그 다음 내가 좋아하는 사리들로 가득 넣어준 다음에",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "백목이버섯",
+          "displayName": "백목이버섯",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "사리로 백목이버섯을 냄비에 넣음",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "청경채",
+          "displayName": "청경채",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "청경채를 냄비에 넣음",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "배추",
+          "displayName": "배추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "알배기배추를 냄비에 넣음",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "완자 (피시볼)",
+          "displayName": "완자 (피시볼)",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완자(피시볼)를 냄비에 넣음",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "중국당면 / 분모자",
+          "displayName": "중국당면 / 분모자",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "넓적당면 및 분모자를 냄비에 올림",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "포두부",
+          "displayName": "포두부",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "빠질 수 없는 포두부랑 숙주나물 넣고",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "빠질 수 없는 포두부랑 숙주나물 넣고",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "숙주나물",
+          "displayName": "숙주나물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "빠질 수 없는 포두부랑 숙주나물 넣고",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "빠질 수 없는 포두부랑 숙주나물 넣고",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 사골 육수 500ml를 붓는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "냄비에 사골 육수 500ML",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냄비에 사골 육수 500ml",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비에 사골육수를 붓는 장면",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "마라탕 소스를 넣고 잘 섞어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마라탕 소스 넣고",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "섞어 섞어",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마라탕 소스 넣고",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "마라탕 소스를 붓고 국자로 저어 섞는 장면",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "좋아하는 사리들(백목이버섯, 청경채, 배추, 완자, 당면 등)을 가득 넣어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "그 다음 내가 좋아하는 사리들로 가득 넣어준 다음에",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그 다음 내가 좋아하는 사리들로 가득 넣어준 다음에",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "각종 사리 재료를 냄비에 차례대로 넣는 장면",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "포두부와 숙주나물을 넣고 끓여 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "빠질 수 없는 포두부랑 숙주나물 넣고",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "끓여주면 완성",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "빠질 수 없는 포두부랑 숙주나물 넣고 끓여주면 완성",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "포두부와 숙주나물을 넣고 보글보글 끓이는 장면",
+              "timestamp": "00:14"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "마라탕 소스의 정확한 용량 미표기",
+        "각종 사리 재료들의 개별 정량 미표기"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

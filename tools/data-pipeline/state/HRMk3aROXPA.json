@@ -1,0 +1,356 @@
+{
+  "videoId": "HRMk3aROXPA",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/HRMk3aROXPA",
+  "sourceMetadata": {"sourceTitle":"#오야코동 #닭고기 #덮밥 : 무심한 #일상요리","sourceChannelName":"무심한 일상","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.342655Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T11:19:25.674477+00:00",
+    "rawResponse": "{\n  \"title\": \"오야코동 (일본식 닭고기덮밥)\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"양파 반개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"0.5\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 반개를 채썰어. 원한다면 더 썰어도 좋아.\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고명으로 올릴 대파를 쫑쫑 썰어. 쪽파나 고수, 깻잎도 좋을 것 같아.\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쪽파\",\n      \"displayName\": \"쪽파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"쪽파나 고수, 깻잎도 좋을 것 같아.\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고수\",\n      \"displayName\": \"고수\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"쪽파나 고수, 깻잎도 좋을 것 같아.\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깻잎\",\n      \"displayName\": \"깻잎\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"쪽파나 고수, 깻잎도 좋을 것 같아.\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"달걀 2개\",\n      \"displayName\": \"달걀\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"달걀을 2개 깨주고, 휘휘 풀어줘. 흰자, 노른자 비율 좋게 살짝만 풀기.\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"닭다리살 200g\",\n      \"displayName\": \"닭다리살\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"닭다리살 200g을 잘라줘. 집밥이니까 고기 듬뿍.\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 2tbs\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"2\",\n      \"unit\": \"tbs\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"중약불에서 식용유 2tbs를 둘러줘.\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청주 2tbs\",\n      \"displayName\": \"청주\",\n      \"amount\": \"2\",\n      \"unit\": \"tbs\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"청주 2tbs, 맛술 2tbs, 혼다시 1ts 설탕 1tbs, 간장 2tbs를 넣어줘.\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 2tbs\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"2\",\n      \"unit\": \"tbs\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"청주 2tbs, 맛술 2tbs, 혼다시 1ts 설탕 1tbs, 간장 2tbs를 넣어줘.\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"혼다시 1ts\",\n      \"displayName\": \"혼다시\",\n      \"amount\": \"1\",\n      \"unit\": \"ts\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"청주 2tbs, 맛술 2tbs, 혼다시 1ts 설탕 1tbs, 간장 2tbs를 넣어줘.\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1tbs\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"tbs\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"청주 2tbs, 맛술 2tbs, 혼다시 1ts 설탕 1tbs, 간장 2tbs를 넣어줘.\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 2tbs\",\n      \"displayName\": \"간장\",\n      \"amount\": \"2\",\n      \"unit\": \"tbs\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"청주 2tbs, 맛술 2tbs, 혼다시 1ts 설탕 1tbs, 간장 2tbs를 넣어줘.\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"덮밥그릇에 밥을 담고 오야코동을 그대로 얹어줘.\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양파 반 개를 채 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 반개를 채썰어. 원한다면 더 썰어도 좋아.\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고명으로 사용할 대파를 쫑쫑 썰어둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고명으로 올릴 대파를 쫑쫑 썰어. 쪽파나 고수, 깻잎도 좋을 것 같아.\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 달걀 2개를 깨 넣고 흰자와 노른자가 살짝 섞일 정도로 가볍게 풀어둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"달걀을 2개 깨주고, 휘휘 풀어줘. 흰자, 노른자 비율 좋게 살짝만 풀기.\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"닭다리살 200g을 먹기 좋은 크기로 자른 뒤 칼로 살짝 다져 부드럽게 해준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"닭다리살 200g을 잘라줘. 집밥이니까 고기 듬뿍.\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"잘라준 고기를 칼로 살짝 다져줘. 고기가 한층 부드러워질거야.\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유 2tbs를 둘러 중약불로 올리고 닭고기를 넣어 먼저 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"중약불에서 식용유 2tbs를 둘러줘. 닭고기를 넣고 먼저 익혀주자.\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"닭고기가 70% 정도 익으면 채 썬 양파를 넣고 함께 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"닭고기가 70% 정도 익으면 양파를 넣고 같이 볶아줘.\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파가 투명해지면 청주 2tbs, 맛술 2tbs, 혼다시 1ts, 설탕 1tbs, 간장 2tbs를 넣고 알코올을 날리며 고기가 다 익을 때까지 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파가 투명해지면 청주 2tbs, 맛술 2tbs, 혼다시 1ts 설탕 1tbs, 간장 2tbs를 넣어줘.\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고기가 익을 때까지 끓여줘. 알콜을 다 날린다고 생각하자.\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"풀어둔 달걀물의 2/3 정도를 붓고 젓지 않은 상태에서 뚜껑을 덮고 30초간 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"풀어둔 달걀을 2/3정도 부어줘. 휘휘 젓지말고 그대로 익혀. 뚜껑 덮고 30초.\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"나머지 달걀물을 부어주고 달걀이 약 80% 정도만 익도록 부드럽게 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"나머지 달걀물을 부어주고 부드럽게 먹을 수 있도록 달걀은 80%정도만 익혀주자.\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"덮밥 그릇에 밥을 담고 팬의 오야코동을 그대로 얹은 후 썰어둔 대파 고명을 올려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"덮밥그릇에 밥을 담고 오야코동을 그대로 얹어줘.\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파 고명 올려 마무리.\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "오야코동 (일본식 닭고기덮밥)",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "양파 반개",
+          "displayName": "양파",
+          "amount": "0.5",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파 반개를 채썰어. 원한다면 더 썰어도 좋아.",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고명으로 올릴 대파를 쫑쫑 썰어. 쪽파나 고수, 깻잎도 좋을 것 같아.",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "쪽파",
+          "displayName": "쪽파",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "쪽파나 고수, 깻잎도 좋을 것 같아.",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "고수",
+          "displayName": "고수",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "쪽파나 고수, 깻잎도 좋을 것 같아.",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "깻잎",
+          "displayName": "깻잎",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "쪽파나 고수, 깻잎도 좋을 것 같아.",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "달걀 2개",
+          "displayName": "달걀",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "달걀을 2개 깨주고, 휘휘 풀어줘. 흰자, 노른자 비율 좋게 살짝만 풀기.",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "닭다리살 200g",
+          "displayName": "닭다리살",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "닭다리살 200g을 잘라줘. 집밥이니까 고기 듬뿍.",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "식용유 2tbs",
+          "displayName": "식용유",
+          "amount": "2",
+          "unit": "tbs",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "중약불에서 식용유 2tbs를 둘러줘.",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "청주 2tbs",
+          "displayName": "청주",
+          "amount": "2",
+          "unit": "tbs",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "청주 2tbs, 맛술 2tbs, 혼다시 1ts 설탕 1tbs, 간장 2tbs를 넣어줘.",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "맛술 2tbs",
+          "displayName": "맛술",
+          "amount": "2",
+          "unit": "tbs",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "청주 2tbs, 맛술 2tbs, 혼다시 1ts 설탕 1tbs, 간장 2tbs를 넣어줘.",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "혼다시 1ts",
+          "displayName": "혼다시",
+          "amount": "1",
+          "unit": "ts",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "청주 2tbs, 맛술 2tbs, 혼다시 1ts 설탕 1tbs, 간장 2tbs를 넣어줘.",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "설탕 1tbs",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "tbs",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "청주 2tbs, 맛술 2tbs, 혼다시 1ts 설탕 1tbs, 간장 2tbs를 넣어줘.",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "간장 2tbs",
+          "displayName": "간장",
+          "amount": "2",
+          "unit": "tbs",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "청주 2tbs, 맛술 2tbs, 혼다시 1ts 설탕 1tbs, 간장 2tbs를 넣어줘.",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "덮밥그릇에 밥을 담고 오야코동을 그대로 얹어줘.",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양파 반 개를 채 썬다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파 반개를 채썰어. 원한다면 더 썰어도 좋아.",
+              "timestamp": "00:01"
+            }
+          ]
+        },
+        {
+          "text": "고명으로 사용할 대파를 쫑쫑 썰어둔다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고명으로 올릴 대파를 쫑쫑 썰어. 쪽파나 고수, 깻잎도 좋을 것 같아.",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 달걀 2개를 깨 넣고 흰자와 노른자가 살짝 섞일 정도로 가볍게 풀어둔다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "달걀을 2개 깨주고, 휘휘 풀어줘. 흰자, 노른자 비율 좋게 살짝만 풀기.",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "닭다리살 200g을 먹기 좋은 크기로 자른 뒤 칼로 살짝 다져 부드럽게 해준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "닭다리살 200g을 잘라줘. 집밥이니까 고기 듬뿍.",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "잘라준 고기를 칼로 살짝 다져줘. 고기가 한층 부드러워질거야.",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유 2tbs를 둘러 중약불로 올리고 닭고기를 넣어 먼저 익힌다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "중약불에서 식용유 2tbs를 둘러줘. 닭고기를 넣고 먼저 익혀주자.",
+              "timestamp": "00:19"
+            }
+          ]
+        },
+        {
+          "text": "닭고기가 70% 정도 익으면 채 썬 양파를 넣고 함께 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "닭고기가 70% 정도 익으면 양파를 넣고 같이 볶아줘.",
+              "timestamp": "00:21"
+            }
+          ]
+        },
+        {
+          "text": "양파가 투명해지면 청주 2tbs, 맛술 2tbs, 혼다시 1ts, 설탕 1tbs, 간장 2tbs를 넣고 알코올을 날리며 고기가 다 익을 때까지 끓여준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파가 투명해지면 청주 2tbs, 맛술 2tbs, 혼다시 1ts 설탕 1tbs, 간장 2tbs를 넣어줘.",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고기가 익을 때까지 끓여줘. 알콜을 다 날린다고 생각하자.",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "풀어둔 달걀물의 2/3 정도를 붓고 젓지 않은 상태에서 뚜껑을 덮고 30초간 익힌다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "풀어둔 달걀을 2/3정도 부어줘. 휘휘 젓지말고 그대로 익혀. 뚜껑 덮고 30초.",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "나머지 달걀물을 부어주고 달걀이 약 80% 정도만 익도록 부드럽게 익힌다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "나머지 달걀물을 부어주고 부드럽게 먹을 수 있도록 달걀은 80%정도만 익혀주자.",
+              "timestamp": "00:29"
+            }
+          ]
+        },
+        {
+          "text": "덮밥 그릇에 밥을 담고 팬의 오야코동을 그대로 얹은 후 썰어둔 대파 고명을 올려 마무리한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "덮밥그릇에 밥을 담고 오야코동을 그대로 얹어줘.",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대파 고명 올려 마무리.",
+              "timestamp": "00:37"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

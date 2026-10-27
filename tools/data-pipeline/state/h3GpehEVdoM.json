@@ -1,0 +1,290 @@
+{
+  "videoId": "h3GpehEVdoM",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/h3GpehEVdoM",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T08:08:35.419773+00:00",
+    "rawResponse": "{\n  \"title\": \"김치볶음밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"김치 3스푼\",\n      \"displayName\": \"김치\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치 3스푼\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"한국인의 김치를 잘게 썰어서 크게 세 스푼 넣어 줍니다.\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 양파 1스푼\",\n      \"displayName\": \"다진 양파\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 양파 1스푼\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"인자 양파 반 개를... 입체감 있게 다져서 한 스푼 가득 넣어 줍니다.\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"썰은 대파 1스푼\",\n      \"displayName\": \"썰은 대파\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"썰은 대파 1스푼\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그라고 잘게 썰은 대파도 한 스푼 가득 넣어 줍니다.\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 1스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 1스푼\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"인자 진간장 한 스푼으로 짭짤하게 간을 해주고\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"달달하게 설탕 한 스푼 넣어 줍니다.\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1스푼\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 한 스푼도 넣어 줍니다.\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마요네즈 1스푼\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마요네즈 1스푼\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그라고 마요네즈 한 스푼을 넣어 줍니다.\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 두 스푼\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 식용유를 두 스푼 둘러주고\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 한 공기 반\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1.5\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥을 한 공기 반을 넣어 줍니다.\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"모짜렐라 치즈\",\n      \"displayName\": \"모짜렐라 치즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"모짜렐라 치즈가 있다면 볶음밥 위로 싹 뿌려주고\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리\",\n      \"displayName\": \"파슬리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 있어 보이게 파슬리를 뿌려 마무리해 줍니다.\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"볼에 잘게 썬 김치 3스푼, 다진 양파 1스푼, 썬 대파 1스푼을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 냉장고에 있는 한국인의 김치를 잘게 썰어서 크게 세 스푼 넣어 줍니다. 인자 양파 반 개를... 입체감 있게 다져서 한 스푼 가득 넣어 줍니다. 그라고 잘게 썰은 대파도 한 스푼 가득 넣어 줍니다.\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"진간장 1스푼, 설탕 1스푼, 고춧가루 1스푼, 마요네즈 1스푼을 넣고 잘 섞어 양념 김치를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"인자 진간장 한 스푼으로 짭짤하게 간을 해주고 달달하게 설탕 한 스푼 넣어 줍니다. 고춧가루 한 스푼도 넣어 줍니다. 그라고 마요네즈 한 스푼을 넣어 줍니다. 인자 넣은 양념을 한번 잘 쓱까줍니다.\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유 2스푼을 두르고 바로 양념된 김치를 넣은 후, 중약불에서 김치 양념이 약간 탈 것 같은 조짐이 보일 때까지 은은하게 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"인자 팬에 식용유를 두 스푼 둘러주고 바로 양념이 된 김치를 넣어 줍니다... 그라고 중약불에서 은은하게 김치를 볶아줍니다. 촉촉한 김치 양념이 약간 탈 거 같은 조짐이 보일 때까지 볶아주시면 됩니다.\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 1.5공기를 넣고 팬 바닥에 눌러주면서 볶은 뒤, 밥을 팬 바닥에 납작하게 펼쳐준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"어느 정도 볶아졌으면 밥을 한 공기 반을 넣어 줍니다. 그라고 인자 밥을 팬 바닥에 눌러주면서 볶아 줍니다. 이러고 팬 바닥에 납작하게 펼쳐줍니다.\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"text\": \"모짜렐라 치즈가 있다면 볶음밥 위에 뿌린 뒤 뚜껑을 덮고 내부 열기로 치즈를 은은하게 녹여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"모짜렐라 치즈가 있다면 볶음밥 위로 싹 뿌려주고 뚜껑을 덮고 내부의 열기로 은은하게 치즈를 녹여줍니다.\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"text\": \"파슬리를 뿌려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 있어 보이게 파슬리를 뿌려 마무리해 줍니다.\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "김치볶음밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "김치 3스푼",
+          "displayName": "김치",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치 3스푼",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "SPEECH",
+              "text": "한국인의 김치를 잘게 썰어서 크게 세 스푼 넣어 줍니다.",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "다진 양파 1스푼",
+          "displayName": "다진 양파",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 양파 1스푼",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "인자 양파 반 개를... 입체감 있게 다져서 한 스푼 가득 넣어 줍니다.",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "썰은 대파 1스푼",
+          "displayName": "썰은 대파",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "썰은 대파 1스푼",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그라고 잘게 썰은 대파도 한 스푼 가득 넣어 줍니다.",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "진간장 1스푼",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 1스푼",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "인자 진간장 한 스푼으로 짭짤하게 간을 해주고",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "설탕 1스푼",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1스푼",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "달달하게 설탕 한 스푼 넣어 줍니다.",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "고춧가루 1스푼",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1스푼",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 한 스푼도 넣어 줍니다.",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "마요네즈 1스푼",
+          "displayName": "마요네즈",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마요네즈 1스푼",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그라고 마요네즈 한 스푼을 넣어 줍니다.",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "식용유 두 스푼",
+          "displayName": "식용유",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 식용유를 두 스푼 둘러주고",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "밥 한 공기 반",
+          "displayName": "밥",
+          "amount": "1.5",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥을 한 공기 반을 넣어 줍니다.",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "모짜렐라 치즈",
+          "displayName": "모짜렐라 치즈",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "모짜렐라 치즈가 있다면 볶음밥 위로 싹 뿌려주고",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "파슬리",
+          "displayName": "파슬리",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 있어 보이게 파슬리를 뿌려 마무리해 줍니다.",
+              "timestamp": "00:50"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "볼에 잘게 썬 김치 3스푼, 다진 양파 1스푼, 썬 대파 1스푼을 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 냉장고에 있는 한국인의 김치를 잘게 썰어서 크게 세 스푼 넣어 줍니다. 인자 양파 반 개를... 입체감 있게 다져서 한 스푼 가득 넣어 줍니다. 그라고 잘게 썰은 대파도 한 스푼 가득 넣어 줍니다.",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "진간장 1스푼, 설탕 1스푼, 고춧가루 1스푼, 마요네즈 1스푼을 넣고 잘 섞어 양념 김치를 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "인자 진간장 한 스푼으로 짭짤하게 간을 해주고 달달하게 설탕 한 스푼 넣어 줍니다. 고춧가루 한 스푼도 넣어 줍니다. 그라고 마요네즈 한 스푼을 넣어 줍니다. 인자 넣은 양념을 한번 잘 쓱까줍니다.",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유 2스푼을 두르고 바로 양념된 김치를 넣은 후, 중약불에서 김치 양념이 약간 탈 것 같은 조짐이 보일 때까지 은은하게 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "인자 팬에 식용유를 두 스푼 둘러주고 바로 양념이 된 김치를 넣어 줍니다... 그라고 중약불에서 은은하게 김치를 볶아줍니다. 촉촉한 김치 양념이 약간 탈 거 같은 조짐이 보일 때까지 볶아주시면 됩니다.",
+              "timestamp": "00:21"
+            }
+          ]
+        },
+        {
+          "text": "밥 1.5공기를 넣고 팬 바닥에 눌러주면서 볶은 뒤, 밥을 팬 바닥에 납작하게 펼쳐준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "어느 정도 볶아졌으면 밥을 한 공기 반을 넣어 줍니다. 그라고 인자 밥을 팬 바닥에 눌러주면서 볶아 줍니다. 이러고 팬 바닥에 납작하게 펼쳐줍니다.",
+              "timestamp": "00:38"
+            }
+          ]
+        },
+        {
+          "text": "모짜렐라 치즈가 있다면 볶음밥 위에 뿌린 뒤 뚜껑을 덮고 내부 열기로 치즈를 은은하게 녹여준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "모짜렐라 치즈가 있다면 볶음밥 위로 싹 뿌려주고 뚜껑을 덮고 내부의 열기로 은은하게 치즈를 녹여줍니다.",
+              "timestamp": "00:44"
+            }
+          ]
+        },
+        {
+          "text": "파슬리를 뿌려 마무리한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 있어 보이게 파슬리를 뿌려 마무리해 줍니다.",
+              "timestamp": "00:50"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

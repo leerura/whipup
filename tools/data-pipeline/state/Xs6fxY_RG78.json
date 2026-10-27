@@ -1,0 +1,375 @@
+{
+  "videoId": "Xs6fxY_RG78",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/Xs6fxY_RG78",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:37:21.780570+00:00",
+    "rawResponse": "{\n  \"title\": \"물비빔국수\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"소면 한 줌\",\n      \"displayName\": \"소면\",\n      \"amount\": \"1\",\n      \"unit\": \"줌\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소면을 한 줌 준비해 줍니다.\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소면을 한 줌 준비해줍니다.\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팔팔 끓는 물에 소면을 넣어주고\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팔팔 끓는 물에 소면을 넣어주고\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 1스푼\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 한 스푼과\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장 1스푼과\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 1스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 한 스푼을 넣고\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"진간장 1스푼을 넣고\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1/2스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕은 반 스푼만 넣어준 뒤에\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕은 1/2스푼만 넣어준 뒤에\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 한 스푼\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루 1스푼\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식초 2스푼\",\n      \"displayName\": \"식초\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"새콤한 식초 두 스푼\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"새콤한 식초 2스푼\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"갈아만든 배 종이컵 1컵 (약 180ml)\",\n      \"displayName\": \"갈아만든 배\",\n      \"amount\": \"1\",\n      \"unit\": \"종이컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"갈아만든 배를 준비해가 종이컵으로 한 컵 부어줍니다.\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"갈아만든 배를 준비해서 종이컵으로 1컵 (약 180ml) 부어줍니다.\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/4개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/4\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 4분의 1개를 얇게 썰어주고\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 1/4개를 얇게 썰어주고\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"풀때기 한 장\",\n      \"displayName\": \"풀때기\",\n      \"amount\": \"1\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"풀때기 한 장을 반 접어서 올려주고\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"풀때기 한 장을 반 접어서 올려주고\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"상추 1장을 반 접어 국수 위에 올림\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"삶은 계란\",\n      \"displayName\": \"삶은 계란\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"삶은 계란과 참기름 통깨까지\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"삶은 계란과 참기름, 통깨까지\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"삶은 계란 반 개를 올림\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름\",\n      \"displayName\": \"참기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"삶은 계란과 참기름 통깨까지 넉넉하게 뿌려주면\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"삶은 계란과 참기름, 통깨까지 넉넉하게 뿌려주면\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"통깨까지 넉넉하게 뿌려주면\",\n          \"timestamp\": \"00:48\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"통깨까지 넉넉하게 뿌려주면\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팔팔 끓는 물에 소면 한 줌을 넣고 익을 때까지 3~4분간 푹 익혀준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팔팔 끓는 물에 소면을 넣어주고 소면이 익을 때까지 3~4분간 푹 익혀줍니다.\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팔팔 끓는 물에 소면을 넣어주고 소면이 익을 때까지 3~4분간 푹 익혀줍니다.\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"잘 익은 소면은 물을 버리고 차가운 물로 헹궈주면서 전분기를 깔끔하게 씻어낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 잘 익은 소면은 더 이상 불지 않게 물을 다 버려주고 차가운 물로 한번 헹궈주면서 소면 겉에 묻어있는 전분기도 깔끔하게 씻어내 줍니다.\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 잘 익은 소면은 더 이상 불지 않게 물을 다 버려주고 차가운 물로 한번 헹궈주면서 소면 겉에 묻어있는 전분기도 깔끔하게 씻어내줍니다.\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양념장을 만든다. 볼에 고추장 1스푼, 진간장 1스푼, 설탕 1/2스푼, 고춧가루 1스푼, 식초 2스푼, 갈아만든 배 1종이컵(약 180ml)을 넣고 고추장이 잘 풀리도록 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 양념장을 만들어 줍시다. 빨간 양념의 기본 베이스인 고추장 한 스푼과 짭짤하게 진간장 한 스푼을 넣고 설탕은 반 스푼만 넣어준 뒤에 시뻘건 색감을 만들어 줄 고춧가루 한 스푼, 새콤한 식초 두 스푼... 갈아만든 배를 준비해가 종이컵으로 한 컵 부어줍니다. 이제 고추장이 잘 풀리도록 열심히 저어준 뒤에\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 양념장을 만들어 줍니다. 빨간 양념의 기본 베이스인 고추장 1스푼과 짭짤하게 진간장 1스푼을 넣고 설탕은 1/2스푼만 넣어준 뒤에 시뻘건 색감을 만들어 줄 고춧가루 1스푼 새콤한 식초 2스푼... 갈아만든 배를 준비해서 종이컵으로 1컵 (약 180ml) 부어줍니다. 이제 고추장이 잘 풀리도록 열심히 저어준 뒤\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 1/4개를 얇게 썰어 넣고, 씻어둔 소면을 넣어 양념에 골고루 잘 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 4분의 1개를 얇게 썰어주고 다 넣어줍니다. 그러고 전분기를 씻어낸 소면도 넣어주고 양념에 골고루 잘 섞어줍니다.\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 1/4개를 얇게 썰어주고 다 넣어줍니다. 그러고 전분기를 씻어낸 소면도 넣어주고 양념에 골고루 잘 섞어줍니다.\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 담고 풀때기(상추) 1장을 반 접어 올린 후, 삶은 계란과 참기름, 통깨를 넉넉하게 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이대로 바로 묵어도 좋지만 이런 집 근처 화단에서 볼 법한 풀때기 한 장을 반 접어서 올려주고 삶은 계란과 참기름 통깨까지 넉넉하게 뿌려주면 달콤짭짜리한 맛이 좋은 물비빔국수가 간단하게 완성됩니다.\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이대로 바로 먹어도 좋지만 집 근처 화단에서 볼법한 풀때기 한 장을 반 접어서 올려주고 삶은 계란과 참기름, 통깨까지 넉넉하게 뿌려주면 달콤짭짜리한 맛이 좋은 물비빔국수가 간단하게 완성됩니다.\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "물비빔국수",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "소면 한 줌",
+          "displayName": "소면",
+          "amount": "1",
+          "unit": "줌",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소면을 한 줌 준비해 줍니다.",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "소면을 한 줌 준비해줍니다.",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "물",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팔팔 끓는 물에 소면을 넣어주고",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "팔팔 끓는 물에 소면을 넣어주고",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "고추장 1스푼",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고추장 한 스푼과",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고추장 1스푼과",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "진간장 1스푼",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "진간장 한 스푼을 넣고",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "진간장 1스푼을 넣고",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "설탕 1/2스푼",
+          "displayName": "설탕",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "설탕은 반 스푼만 넣어준 뒤에",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕은 1/2스푼만 넣어준 뒤에",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "고춧가루 1스푼",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 한 스푼",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루 1스푼",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "식초 2스푼",
+          "displayName": "식초",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "새콤한 식초 두 스푼",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "새콤한 식초 2스푼",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "갈아만든 배 종이컵 1컵 (약 180ml)",
+          "displayName": "갈아만든 배",
+          "amount": "1",
+          "unit": "종이컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "갈아만든 배를 준비해가 종이컵으로 한 컵 부어줍니다.",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "갈아만든 배를 준비해서 종이컵으로 1컵 (약 180ml) 부어줍니다.",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "양파 1/4개",
+          "displayName": "양파",
+          "amount": "1/4",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 4분의 1개를 얇게 썰어주고",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파 1/4개를 얇게 썰어주고",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "풀때기 한 장",
+          "displayName": "풀때기",
+          "amount": "1",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "풀때기 한 장을 반 접어서 올려주고",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "풀때기 한 장을 반 접어서 올려주고",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "상추 1장을 반 접어 국수 위에 올림",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "삶은 계란",
+          "displayName": "삶은 계란",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "삶은 계란과 참기름 통깨까지",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "삶은 계란과 참기름, 통깨까지",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "삶은 계란 반 개를 올림",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "참기름",
+          "displayName": "참기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "삶은 계란과 참기름 통깨까지 넉넉하게 뿌려주면",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "삶은 계란과 참기름, 통깨까지 넉넉하게 뿌려주면",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "통깨까지 넉넉하게 뿌려주면",
+              "timestamp": "00:48"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "통깨까지 넉넉하게 뿌려주면",
+              "timestamp": "00:48"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팔팔 끓는 물에 소면 한 줌을 넣고 익을 때까지 3~4분간 푹 익혀준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팔팔 끓는 물에 소면을 넣어주고 소면이 익을 때까지 3~4분간 푹 익혀줍니다.",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "팔팔 끓는 물에 소면을 넣어주고 소면이 익을 때까지 3~4분간 푹 익혀줍니다.",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "잘 익은 소면은 물을 버리고 차가운 물로 헹궈주면서 전분기를 깔끔하게 씻어낸다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 잘 익은 소면은 더 이상 불지 않게 물을 다 버려주고 차가운 물로 한번 헹궈주면서 소면 겉에 묻어있는 전분기도 깔끔하게 씻어내 줍니다.",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 잘 익은 소면은 더 이상 불지 않게 물을 다 버려주고 차가운 물로 한번 헹궈주면서 소면 겉에 묻어있는 전분기도 깔끔하게 씻어내줍니다.",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "양념장을 만든다. 볼에 고추장 1스푼, 진간장 1스푼, 설탕 1/2스푼, 고춧가루 1스푼, 식초 2스푼, 갈아만든 배 1종이컵(약 180ml)을 넣고 고추장이 잘 풀리도록 섞어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 양념장을 만들어 줍시다. 빨간 양념의 기본 베이스인 고추장 한 스푼과 짭짤하게 진간장 한 스푼을 넣고 설탕은 반 스푼만 넣어준 뒤에 시뻘건 색감을 만들어 줄 고춧가루 한 스푼, 새콤한 식초 두 스푼... 갈아만든 배를 준비해가 종이컵으로 한 컵 부어줍니다. 이제 고추장이 잘 풀리도록 열심히 저어준 뒤에",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 양념장을 만들어 줍니다. 빨간 양념의 기본 베이스인 고추장 1스푼과 짭짤하게 진간장 1스푼을 넣고 설탕은 1/2스푼만 넣어준 뒤에 시뻘건 색감을 만들어 줄 고춧가루 1스푼 새콤한 식초 2스푼... 갈아만든 배를 준비해서 종이컵으로 1컵 (약 180ml) 부어줍니다. 이제 고추장이 잘 풀리도록 열심히 저어준 뒤",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "양파 1/4개를 얇게 썰어 넣고, 씻어둔 소면을 넣어 양념에 골고루 잘 섞어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 4분의 1개를 얇게 썰어주고 다 넣어줍니다. 그러고 전분기를 씻어낸 소면도 넣어주고 양념에 골고루 잘 섞어줍니다.",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파 1/4개를 얇게 썰어주고 다 넣어줍니다. 그러고 전분기를 씻어낸 소면도 넣어주고 양념에 골고루 잘 섞어줍니다.",
+              "timestamp": "00:34"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 담고 풀때기(상추) 1장을 반 접어 올린 후, 삶은 계란과 참기름, 통깨를 넉넉하게 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이대로 바로 묵어도 좋지만 이런 집 근처 화단에서 볼 법한 풀때기 한 장을 반 접어서 올려주고 삶은 계란과 참기름 통깨까지 넉넉하게 뿌려주면 달콤짭짜리한 맛이 좋은 물비빔국수가 간단하게 완성됩니다.",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이대로 바로 먹어도 좋지만 집 근처 화단에서 볼법한 풀때기 한 장을 반 접어서 올려주고 삶은 계란과 참기름, 통깨까지 넉넉하게 뿌려주면 달콤짭짜리한 맛이 좋은 물비빔국수가 간단하게 완성됩니다.",
+              "timestamp": "00:41"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}
