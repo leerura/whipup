@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../app/theme.dart';
 
@@ -9,7 +10,7 @@ class WhippyHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => SizedBox(
-    height: 52,
+    height: 48,
     child: Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Row(
@@ -22,24 +23,32 @@ class WhippyHeader extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 6),
-                  child: Text(
-                    'whippy',
-                    style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                      color: AppColors.primary,
-                      fontSize: 22,
-                      fontWeight: FontWeight.w700,
+                  child: SizedBox(
+                    width: 70,
+                    height: 21,
+                    child: SvgPicture.asset(
+                      'assets/onboarding/intro_wordmark.svg',
+                      width: 70,
+                      height: 21,
                     ),
                   ),
                 ),
               ),
             ),
           ),
-          IconButton(
-            onPressed: onSettingsTap,
-            tooltip: '설정',
-            icon: const Icon(
-              Icons.settings_outlined,
-              color: AppColors.textPrimary,
+          SizedBox(
+            width: 40,
+            height: 40,
+            child: IconButton(
+              onPressed: onSettingsTap,
+              tooltip: '설정',
+              padding: EdgeInsets.zero,
+              constraints: const BoxConstraints(),
+              icon: const Icon(
+                Icons.settings_outlined,
+                color: AppColors.textPrimary,
+                size: 24,
+              ),
             ),
           ),
         ],

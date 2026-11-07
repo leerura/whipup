@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../app/theme.dart';
 import '../../../core/config/app_config.dart';
@@ -40,6 +41,15 @@ class SettingsScreen extends StatelessWidget {
     );
   }
 
+  Future<void> _openSupport(BuildContext context) async {
+    final uri = Uri(scheme: 'mailto', path: AppConfig.supportEmail);
+    if (!await launchUrl(uri, mode: LaunchMode.externalApplication) &&
+        context.mounted) {
+      ScaffoldMessenger.of(context)
+          .showSnackBar(const SnackBar(content: Text('문의 메일을 열 수 없어요.')));
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return PopScope<void>(
@@ -71,6 +81,11 @@ class SettingsScreen extends StatelessWidget {
               title: '서비스 이용약관',
               trailing: const Icon(Icons.open_in_new_rounded, size: 18),
               onTap: () => _openPolicy(context, '서비스 이용약관', termsUrl),
+            ),
+            _SettingsRow(
+              title: '지원 및 문의',
+              trailing: const Icon(Icons.open_in_new_rounded, size: 18),
+              onTap: () => _openSupport(context),
             ),
             const SizedBox(height: 40),
             const _SettingsSectionLabel('계정'),
@@ -187,4 +202,3 @@ class _SettingsRow extends StatelessWidget {
     ),
   );
 }
-
