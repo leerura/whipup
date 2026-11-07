@@ -1,0 +1,710 @@
+{
+  "purpose": "Batch A/B/C catalog proposal reconciliation against the V3 product and domain rules and the current ingredient catalog.",
+  "sourceReports": [
+    "tools/data-pipeline/agent-review/batch-a.json",
+    "tools/data-pipeline/agent-review/batch-b.json",
+    "tools/data-pipeline/agent-review/batch-c.json"
+  ],
+  "catalogCompared": "data/ingredients.json",
+  "decisionRules": [
+    "Recommend an addition only when the source identifies a real, user-recognizable owned item and the catalog proposal has no semantically equivalent existing item.",
+    "Keep group and selectable owned item distinct in the proposed shape; an identical group/item label is suggested only when the label itself names a concrete owned unit.",
+    "Do not infer hierarchy or equivalence from similar ingredient names. Recipe-local source-to-owned matching remains outside this catalog reconciliation.",
+    "Do not change the shared ingredient catalog or recipe data in this file."
+  ],
+  "recommendedAdditions": [
+    {
+      "key": "tofu",
+      "name": "두부",
+      "selectableItem": {
+        "key": "tofu-item",
+        "name": "두부"
+      },
+      "sourceReports": [
+        "A",
+        "C"
+      ],
+      "basis": "두부는 영상에서 재료명과 사용이 확인된 식품이며 보유 재료로 식별하기 쉽다."
+    },
+    {
+      "key": "seaweed",
+      "name": "미역",
+      "selectableItem": {
+        "key": "seaweed-item",
+        "name": "미역"
+      },
+      "sourceReports": [
+        "A"
+      ],
+      "basis": "미역은 원문에 명시된 별도 식재료다. 기존 김가루와는 다른 재료다."
+    },
+    {
+      "key": "radish",
+      "name": "무",
+      "selectableItem": {
+        "key": "radish-item",
+        "name": "무"
+      },
+      "sourceReports": [
+        "A"
+      ],
+      "basis": "원문이 무를 특정하고 실제 사용을 보여준다."
+    },
+    {
+      "key": "bean-sprouts",
+      "name": "콩나물",
+      "selectableItem": {
+        "key": "bean-sprouts-item",
+        "name": "콩나물"
+      },
+      "sourceReports": [
+        "A"
+      ],
+      "basis": "재료명과 실제 투입이 확인되는 구체적인 채소다."
+    },
+    {
+      "key": "salted-shrimp",
+      "name": "새우젓",
+      "selectableItem": {
+        "key": "salted-shrimp-item",
+        "name": "새우젓"
+      },
+      "sourceReports": [
+        "A"
+      ],
+      "basis": "원문 계량 정보로 재료가 특정되며 기존 새우와 의미가 다르다."
+    },
+    {
+      "key": "mayonnaise",
+      "name": "마요네즈",
+      "selectableItem": {
+        "key": "mayonnaise-item",
+        "name": "마요네즈"
+      },
+      "sourceReports": [
+        "A",
+        "C"
+      ],
+      "basis": "영상 자막/사용에서 특정된 포장 조미료다."
+    },
+    {
+      "key": "shrimp",
+      "name": "새우",
+      "selectableItem": {
+        "key": "shrimp-item",
+        "name": "새우"
+      },
+      "sourceReports": [
+        "A",
+        "B"
+      ],
+      "basis": "재료가 식별되어 실제 사용이 확인된다. 냉동/생물 등 미확인 보유 형태는 덧붙이지 않는다."
+    },
+    {
+      "key": "dumpling",
+      "name": "만두",
+      "selectableItem": {
+        "key": "dumpling-item",
+        "name": "만두"
+      },
+      "sourceReports": [
+        "A"
+      ],
+      "basis": "완제품 식품으로 영상에서 실물이 확인되며 사용자 보유 단위로 알아보기 쉽다."
+    },
+    {
+      "key": "smoked-duck",
+      "name": "훈제오리",
+      "selectableItem": {
+        "key": "smoked-duck-item",
+        "name": "훈제오리"
+      },
+      "sourceReports": [
+        "A",
+        "C"
+      ],
+      "basis": "훈제오리 제품이 명시되거나 직접 확인된다."
+    },
+    {
+      "key": "chili-oil",
+      "name": "고추기름",
+      "selectableItem": {
+        "key": "chili-oil-item",
+        "name": "고추기름"
+      },
+      "sourceReports": [
+        "A"
+      ],
+      "basis": "원문에서 종류가 특정된 조리용 조미료다."
+    },
+    {
+      "key": "butter",
+      "name": "버터",
+      "selectableItem": {
+        "key": "butter-item",
+        "name": "버터"
+      },
+      "sourceReports": [
+        "A",
+        "B"
+      ],
+      "basis": "버터 사용이 직접 확인되고 기존 우유/치즈와는 별도 보유 항목이다."
+    },
+    {
+      "key": "chives",
+      "name": "부추",
+      "selectableItem": {
+        "key": "chives-item",
+        "name": "부추"
+      },
+      "sourceReports": [
+        "A"
+      ],
+      "basis": "원문에서 부추가 특정되어 고명으로 사용된다."
+    },
+    {
+      "key": "sausage",
+      "name": "소시지",
+      "selectableItem": {
+        "key": "sausage-item",
+        "name": "소시지"
+      },
+      "sourceReports": [
+        "A"
+      ],
+      "basis": "영상에 포장 식품인 소시지가 식별되어 사용된다."
+    },
+    {
+      "key": "tsuyu",
+      "name": "쯔유",
+      "selectableItem": {
+        "key": "tsuyu-item",
+        "name": "쯔유"
+      },
+      "sourceReports": [
+        "A"
+      ],
+      "basis": "원문에서 쯔유라는 조미료가 명시된다. 다른 간장/소스와의 레시피 충족 판단은 별도다."
+    },
+    {
+      "key": "tomato",
+      "name": "토마토",
+      "selectableItem": {
+        "key": "tomato-item",
+        "name": "토마토"
+      },
+      "sourceReports": [
+        "A",
+        "B"
+      ],
+      "basis": "일반 토마토가 직접 식별된다. 방울토마토 제안과는 이름 및 실제 보유 형태가 구분된다."
+    },
+    {
+      "key": "potato",
+      "name": "감자",
+      "selectableItem": {
+        "key": "potato-item",
+        "name": "감자"
+      },
+      "sourceReports": [
+        "A",
+        "B",
+        "C"
+      ],
+      "basis": "감자가 명시되고 실제 조리에 사용된다."
+    },
+    {
+      "key": "eggplant",
+      "name": "가지",
+      "selectableItem": {
+        "key": "eggplant-item",
+        "name": "가지"
+      },
+      "sourceReports": [
+        "A",
+        "B",
+        "C"
+      ],
+      "basis": "가지가 식별되고 주재료로 조리된다."
+    },
+    {
+      "key": "crab-stick",
+      "name": "게맛살",
+      "selectableItem": {
+        "key": "crab-stick-item",
+        "name": "게맛살"
+      },
+      "sourceReports": [
+        "A",
+        "B"
+      ],
+      "basis": "게맛살이라는 구체적인 가공식품이 영상에서 확인된다."
+    },
+    {
+      "key": "oligosaccharide-syrup",
+      "name": "올리고당",
+      "selectableItem": {
+        "key": "oligosaccharide-syrup-item",
+        "name": "올리고당"
+      },
+      "sourceReports": [
+        "A"
+      ],
+      "basis": "원문 자막에 올리고당이 명시된다. 기존 알룰로스와 동등 취급하지 않는다."
+    },
+    {
+      "key": "avocado",
+      "name": "아보카도",
+      "selectableItem": {
+        "key": "avocado-item",
+        "name": "아보카도"
+      },
+      "sourceReports": [
+        "A",
+        "B"
+      ],
+      "basis": "아보카도가 슬라이스 형태로 직접 확인된다."
+    },
+    {
+      "key": "fish-cake",
+      "name": "어묵",
+      "selectableItem": {
+        "key": "fish-cake-item",
+        "name": "어묵"
+      },
+      "sourceReports": [
+        "B"
+      ],
+      "basis": "어묵이 재료로 식별된다."
+    },
+    {
+      "key": "zucchini",
+      "name": "애호박",
+      "selectableItem": {
+        "key": "zucchini-item",
+        "name": "애호박"
+      },
+      "sourceReports": [
+        "B",
+        "C"
+      ],
+      "basis": "애호박이 직접 확인된다. batch B의 영문 제안명은 영상과 batch C의 한국어 이름에 맞춰 정규화했다."
+    },
+    {
+      "key": "mackerel",
+      "name": "고등어",
+      "selectableItem": {
+        "key": "mackerel-item",
+        "name": "고등어"
+      },
+      "sourceReports": [
+        "C"
+      ],
+      "basis": "영상에서 생선 종류가 고등어로 특정된다."
+    },
+    {
+      "key": "flour",
+      "name": "밀가루",
+      "selectableItem": {
+        "key": "flour-item",
+        "name": "밀가루"
+      },
+      "sourceReports": [
+        "C"
+      ],
+      "basis": "원문이 밀가루 사용을 특정한다. 전분가루 제안과 합치지 않는다."
+    },
+    {
+      "key": "mozzarella-cheese",
+      "name": "모차렐라 치즈",
+      "selectableItem": {
+        "key": "mozzarella-cheese-item",
+        "name": "모차렐라 치즈"
+      },
+      "sourceReports": [
+        "C"
+      ],
+      "basis": "모차렐라 치즈가 명시되어 기존 체다 치즈와 구별된다."
+    },
+    {
+      "key": "pork-jowl",
+      "name": "항정살",
+      "selectableItem": {
+        "key": "pork-jowl-item",
+        "name": "항정살"
+      },
+      "sourceReports": [
+        "C"
+      ],
+      "basis": "항정살이 주재료로 특정된다. 기존 우삼겹/삼겹살로 합치지 않는다."
+    },
+    {
+      "key": "corn-syrup",
+      "name": "물엿",
+      "selectableItem": {
+        "key": "corn-syrup-item",
+        "name": "물엿"
+      },
+      "sourceReports": [
+        "C"
+      ],
+      "basis": "영상에서 물엿 사용이 확인된다. 기존 알룰로스와 합치지 않는다."
+    },
+    {
+      "key": "cherry-tomato",
+      "name": "방울토마토",
+      "selectableItem": {
+        "key": "cherry-tomato-item",
+        "name": "방울토마토"
+      },
+      "sourceReports": [
+        "C"
+      ],
+      "basis": "방울토마토의 실제 형태가 확인되어 일반 토마토와 구별된다."
+    },
+    {
+      "key": "soft-tofu",
+      "name": "순두부",
+      "selectableItem": {
+        "key": "soft-tofu-item",
+        "name": "순두부"
+      },
+      "sourceReports": [
+        "C"
+      ],
+      "basis": "순두부가 직접 확인된다. 두부와 조리/보유 형태가 다르므로 같은 selectable item으로 합치지 않는다."
+    },
+    {
+      "key": "dashima-stock-cube",
+      "name": "코인 육수",
+      "selectableItem": {
+        "key": "dashima-stock-cube-item",
+        "name": "코인 육수"
+      },
+      "sourceReports": [
+        "C"
+      ],
+      "basis": "영상에서 코인 형태의 육수 제품이 식별된다."
+    },
+    {
+      "key": "cooking-wine",
+      "name": "맛술",
+      "selectableItem": {
+        "key": "cooking-wine-item",
+        "name": "맛술"
+      },
+      "sourceReports": [
+        "C"
+      ],
+      "basis": "영상 자막에서 맛술이 특정된다. 기존 미림을 자동 동의어/대체 항목으로 사용하지 않는다."
+    },
+    {
+      "key": "bread",
+      "name": "식빵",
+      "selectableItem": {
+        "key": "bread-item",
+        "name": "식빵"
+      },
+      "sourceReports": [
+        "C"
+      ],
+      "basis": "샌드위치 영상에서 식빵의 사용이 명시/확인되어 일상적인 보유 단위로 식별된다."
+    },
+    {
+      "key": "seaweed-sheet",
+      "name": "김",
+      "selectableItem": {
+        "key": "seaweed-sheet-item",
+        "name": "김"
+      },
+      "sourceReports": [
+        "B",
+        "C"
+      ],
+      "basis": "김 시트/김 조각은 기존 김가루와 다른 구체적 보유 형태다. A의 미역 제안과는 별도 키를 사용한다."
+    },
+    {
+      "key": "beef-brisket",
+      "name": "차돌박이",
+      "selectableItem": {
+        "key": "beef-brisket-item",
+        "name": "차돌박이"
+      },
+      "sourceReports": [
+        "C"
+      ],
+      "basis": "영상에서 차돌박이와 양이 확인되며 기존 우삼겹과 같은 재료라고 가정하지 않는다."
+    },
+    {
+      "key": "spam",
+      "name": "스팸",
+      "selectableItem": {
+        "key": "spam-item",
+        "name": "스팸"
+      },
+      "sourceReports": [
+        "A",
+        "B",
+        "C"
+      ],
+      "basis": "영상에서 캔 제품을 스팸으로 직접 식별한다. 일반 햄과 자동 합치지 않는다."
+    }
+  ],
+  "alreadyRepresented": [
+    {
+      "proposal": "참치액 / tuna-extract",
+      "existingKey": "tuna-sauce",
+      "existingItem": "참치액",
+      "sourceReports": [
+        "A"
+      ],
+      "decision": "추가하지 않음. 동일한 보유 항목이 이미 있다."
+    },
+    {
+      "proposal": "굴소스 / oyster-sauce",
+      "existingKey": "oyster-sauce",
+      "existingItem": "굴소스",
+      "sourceReports": [
+        "A"
+      ],
+      "decision": "추가하지 않음. 동일한 보유 항목이 이미 있다."
+    },
+    {
+      "proposal": "올리브유",
+      "existingKey": "olive-oil",
+      "existingItem": "올리브유",
+      "sourceReports": [
+        "A",
+        "B",
+        "C"
+      ],
+      "decision": "추가하지 않음. 동일한 보유 항목이 이미 있다."
+    },
+    {
+      "proposal": "밥",
+      "existingKey": "rice",
+      "existingItem": "밥",
+      "sourceReports": [
+        "A",
+        "B",
+        "C"
+      ],
+      "decision": "조리된 밥 항목이 이미 있다. 생쌀 제안은 별도 미해결로 분류한다."
+    },
+    {
+      "proposal": "식용유",
+      "existingKey": "cooking-oil",
+      "existingItem": "식용유",
+      "sourceReports": [
+        "A",
+        "B",
+        "C"
+      ],
+      "decision": "추가하지 않음. 동일한 보유 항목이 이미 있다."
+    },
+    {
+      "proposal": "체다 치즈",
+      "existingKey": "cheddar-cheese",
+      "existingItem": "체다 치즈",
+      "sourceReports": [
+        "B",
+        "C"
+      ],
+      "decision": "기존 항목 그대로 유지. 일반 치즈 제안 및 모차렐라 제안과 동일시하지 않는다."
+    }
+  ],
+  "unresolvedProposals": [
+    {
+      "topic": "tuna group duplication and granularity",
+      "proposals": [
+        "A tuna/참치 with canned tuna item",
+        "B tuna/참치",
+        "C tuna/참치캔",
+        "C canned-tuna/참치캔",
+        "C spicy-canned-tuna/고추참치",
+        "existing tuna-sauce/참치액"
+      ],
+      "decision": "UNRESOLVED",
+      "reason": "Reports create overlapping tuna group keys and mix canned tuna, spicy canned tuna, generic tuna, and tuna extract. Keep tuna-sauce as its existing separate ingredient. Decide a single group/item structure before catalog insertion; do not add duplicate tuna groups."
+    },
+    {
+      "topic": "chicken-nugget group duplication",
+      "proposals": [
+        "A chicken-nugget/치킨너겟",
+        "C chicken-nuggets/냉동 치킨너겟"
+      ],
+      "decision": "UNRESOLVED",
+      "reason": "These are one apparent product class with conflicting keys and names. Consolidate to one group/item after confirming the user's intended inventory label."
+    },
+    {
+      "topic": "generic poultry and chicken cuts",
+      "proposals": [
+        "C chicken/닭고기",
+        "C chicken-breast/닭가슴살 with source cut uncertain",
+        "C chicken-leftover/남은 치킨",
+        "A chicken-breast/닭가슴살",
+        "existing chicken-thigh-boneless/닭다리살"
+      ],
+      "decision": "UNRESOLVED",
+      "reason": "Generic 닭고기, exact breast, thigh, processed nuggets, and cooked leftovers do not form an approved hierarchy. The source for one breast proposal itself says the cut is unclear. Do not infer a generic chicken group or map any source to 닭다리살."
+    },
+    {
+      "topic": "raw rice versus cooked rice",
+      "proposals": [
+        "C rice-grain/쌀",
+        "existing rice/밥"
+      ],
+      "decision": "UNRESOLVED",
+      "reason": "V3 already has a selectable cooked 밥 item; the rice-cooker source uses raw grains. Decide whether raw rice should be a separate owned item/group before using it in requirements."
+    },
+    {
+      "topic": "powder identity",
+      "proposals": [
+        "A starch/전분가루",
+        "C starch/전분",
+        "C flour/밀가루",
+        "C ginger-powder/생강가루"
+      ],
+      "decision": "UNRESOLVED",
+      "reason": "The A/C starch evidence differs, and one C source explicitly says the visible white powder is unidentified. Do not resolve visual powder to flour or starch without exact source evidence; ginger powder is distinct only where its subtitle explicitly identifies it."
+    },
+    {
+      "topic": "sauce subtype and generic sauces",
+      "proposals": [
+        "A tomato-pasta-sauce/파스타 소스",
+        "C seasoning-liquid/unknown brown liquid",
+        "A broth/육수",
+        "A tsuyu/쯔유",
+        "C cooking-wine/맛술"
+      ],
+      "decision": "PARTIAL",
+      "reason": "The exact source term 쯔유 and 맛술 can be considered independently (맛술 is recommended above). Generic 파스타 소스, unidentified brown liquid, and unspecified 육수 do not establish a precise user-owned subtype or package. Do not infer tomato sauce, soy sauce, or a stock product from color/context."
+    },
+    {
+      "topic": "mushroom scope and duplicate taxonomy",
+      "proposals": [
+        "A mushroom/버섯",
+        "B mushroom/새송이버섯",
+        "existing enoki-mushroom/팽이버섯"
+      ],
+      "decision": "UNRESOLVED",
+      "reason": "The proposals mix a broad mushroom group, a specific king oyster mushroom, and an existing separate enoki group. Decide whether to use one mushroom group with distinct owned items or independent concrete groups; do not create duplicate key mushroom."
+    },
+    {
+      "topic": "ambiguous generic or image-only foods",
+      "proposals": [
+        "A beef/소고기",
+        "A broth/육수",
+        "A ham/햄",
+        "B bell-pepper/unspecified pepper",
+        "B cheese/치즈",
+        "B curry/curry",
+        "B pumpkin/pumpkin",
+        "B rice-cake/떡"
+      ],
+      "decision": "UNRESOLVED",
+      "reason": "The reports do not establish a sufficiently concrete owned item or subtype (including exact pepper/pumpkin, cheese type, curry form, rice-cake form, or meat cut). Keep these proposals pending a source-specific or product-level decision."
+    },
+    {
+      "topic": "pollock roe display identity",
+      "proposals": [
+        "A pollock-roe/명란",
+        "B pollock-roe/명란젓"
+      ],
+      "decision": "UNRESOLVED",
+      "reason": "The proposals are likely related but use different owned-item names. Confirm whether user-facing selectable name should be 명란 or 명란젓 before consolidating under one key."
+    },
+    {
+      "topic": "seaweed item key collision",
+      "proposals": [
+        "A seaweed/미역",
+        "C seaweed/김",
+        "existing seaweed-flakes/김가루",
+        "B seaweed-sheet/김"
+      ],
+      "decision": "PARTIAL",
+      "reason": "미역 and 김 are distinct foods, and 김 sheets differ from 김가루. Recommended additions retain 미역 under key seaweed and should use a distinct key for 김 sheets (seaweed-sheet), never reuse the key seaweed for 김."
+    },
+    {
+      "topic": "prepared leftover chicken",
+      "proposals": [
+        "C chicken-leftover/남은 치킨"
+      ],
+      "decision": "UNRESOLVED",
+      "reason": "This is a temporary cooked meal state rather than a stable ingredient category; decide whether leftovers belong in the user's ingredient inventory before adding a selectable item."
+    },
+    {
+      "topic": "Natto proposal without a Korean source label",
+      "proposals": [
+        "B natto/natto"
+      ],
+      "decision": "UNRESOLVED",
+      "reason": "The report provides only an English placeholder and no Korean source expression or selectable item wording; confirm the exact user-facing food label before adding it."
+    },
+    {
+      "topic": "Spicy canned tuna placement",
+      "proposals": [
+        "C spicy-canned-tuna/고추참치"
+      ],
+      "decision": "UNRESOLVED",
+      "reason": "The exact product 고추참치 is source-supported, but its placement under one consolidated tuna group is part of the unresolved tuna taxonomy decision. Do not add a separate tuna group before that decision."
+    }
+  ],
+  "notIncludedAsCatalogAdditions": [
+    {
+      "proposal": "generic recipe expressions such as 간장, 파, 기름, or 물",
+      "reason": "These are recipe source requirements, not automatically owned-item groups; existing catalog already has the concrete relevant owned items, and recipe-specific accepted mappings belong on individual recipes."
+    },
+    {
+      "proposal": "unverified English-only B names without a matching Korean source label",
+      "reason": "The B report's generic English placeholders (for example tomato, curry, natto, potato) are not sufficient by themselves to define a user-facing selectable item; include them only where another report or source gives a specific Korean item, otherwise leave unresolved."
+    }
+  ],
+  "validation": {
+    "sharedIngredientCatalogModified": false,
+    "recipeDataModified": false,
+    "proposalReportsRead": [
+      "A",
+      "B",
+      "C"
+    ],
+    "activeDocsRead": [
+      "docs/v3/product/product.md",
+      "docs/v3/domain/domain.md"
+    ]
+  },
+  "userRejectedAfterReview": [
+    {
+      "key": "chicken-breast-ham",
+      "reason": "Removed at user request; not part of the target solo-cook dataset."
+    },
+    {
+      "key": "ginger-powder",
+      "reason": "Removed at user request; not part of the target solo-cook dataset."
+    },
+    {
+      "key": "ginger-preserve",
+      "reason": "Removed at user request; not part of the target solo-cook dataset."
+    },
+    {
+      "key": "ground-pork",
+      "reason": "Removed at user request; not part of the target solo-cook dataset."
+    },
+    {
+      "key": "pork-cutlet",
+      "reason": "Removed at user request; not part of the target solo-cook dataset."
+    },
+    {
+      "key": "ramen-noodles",
+      "reason": "Removed at user request; not part of the target solo-cook dataset."
+    },
+    {
+      "key": "red-onion",
+      "reason": "Removed at user request; not part of the target solo-cook dataset."
+    },
+    {
+      "key": "seafood-mix",
+      "reason": "Removed at user request; not part of the target solo-cook dataset."
+    }
+  ]
+}

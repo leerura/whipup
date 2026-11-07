@@ -1,0 +1,243 @@
+{
+  "videoId": "28fYZEKsN7w",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/28fYZEKsN7w",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:58:15.026409+00:00",
+    "rawResponse": "{\n  \"title\": \"해외에서 난리난 밥도둑 고추참치\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"따뜻한 밥 한 공기\",\n      \"displayName\": \"따뜻한 밥\",\n      \"amount\": \"1\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"따뜻한 밥 한 공기에\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"따뜻한 밥 한 공기에\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추참치 한 캔\",\n      \"displayName\": \"고추참치\",\n      \"amount\": \"1\",\n      \"unit\": \"캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추참치 한 캔을 쫙 부어주고\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추참치 한 캔을 쫙 부어주고\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마요네즈 쭉\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마요네즈 쭉 넣고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마요네즈 쭉 넣고\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 한 스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"칠리 크리스피 뭐시기 대신에 고춧가루 한 스푼\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"칠리 크리스피 뭐시기 대신에 고춧가루 한 스푼\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 한 스푼\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참기름 한 스푼 추가해서\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름 한 스푼 추가해서\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김\",\n      \"displayName\": \"김\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"국민 밥도둑 김 위에\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국민 밥도둑 김 위에\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"따뜻한 밥 한 공기에 고추참치 한 캔을 부어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"따뜻한 밥 한 공기에 고추참치 한 캔을 쫙 부어주고\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 캔 고추참치를 쏟아붓는 장면\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마요네즈를 쭉 짜서 넣습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마요네즈 쭉 넣고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"고추참치 위에 마요네즈를 짜 넣는 장면\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"칠리 크리스피 대신 고춧가루 한 스푼을 넣습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"칠리 크리스피 뭐시기 대신에 고춧가루 한 스푼\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"숟가락으로 고춧가루 한 스푼을 넣는 장면\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"참기름 한 스푼을 추가합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참기름 한 스푼 추가해서\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"숟가락에 참기름을 따라 넣는 장면\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"재료들을 골고루 비벼줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"샤샤샥 비벼준 뒤에\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"숟가락으로 밥과 재료를 골고루 비비는 장면\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김 위에 비빈 밥을 얹어서 먹습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"국민 밥도둑 김 위에 쏙 얹어서 한 입 가득 먹어주면\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"조미김 위에 비빔밥을 얹어 싸 먹는 장면\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"칠리 크리스피(Chili Crisp)는 화면과 나레이션에서 언급되었으나 고춧가루로 대체되어 실제 레시피 재료에는 포함되지 않았습니다.\",\n    \"마요네즈와 김의 정확한 계량 수치나 규격은 언급되지 않았습니다.\"\n  ]\n}",
+    "result": {
+      "title": "해외에서 난리난 밥도둑 고추참치",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "따뜻한 밥 한 공기",
+          "displayName": "따뜻한 밥",
+          "amount": "1",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "따뜻한 밥 한 공기에",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "따뜻한 밥 한 공기에",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "고추참치 한 캔",
+          "displayName": "고추참치",
+          "amount": "1",
+          "unit": "캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고추참치 한 캔을 쫙 부어주고",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추참치 한 캔을 쫙 부어주고",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "마요네즈 쭉",
+          "displayName": "마요네즈",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마요네즈 쭉 넣고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마요네즈 쭉 넣고",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "고춧가루 한 스푼",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "칠리 크리스피 뭐시기 대신에 고춧가루 한 스푼",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "칠리 크리스피 뭐시기 대신에 고춧가루 한 스푼",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "참기름 한 스푼",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "참기름 한 스푼 추가해서",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름 한 스푼 추가해서",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "김",
+          "displayName": "김",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "국민 밥도둑 김 위에",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "국민 밥도둑 김 위에",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        }
+      ],
+      "steps": [
+        {
+          "text": "따뜻한 밥 한 공기에 고추참치 한 캔을 부어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "따뜻한 밥 한 공기에 고추참치 한 캔을 쫙 부어주고",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 캔 고추참치를 쏟아붓는 장면",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "마요네즈를 쭉 짜서 넣습니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마요네즈 쭉 넣고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "고추참치 위에 마요네즈를 짜 넣는 장면",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "칠리 크리스피 대신 고춧가루 한 스푼을 넣습니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "칠리 크리스피 뭐시기 대신에 고춧가루 한 스푼",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "숟가락으로 고춧가루 한 스푼을 넣는 장면",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "참기름 한 스푼을 추가합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "참기름 한 스푼 추가해서",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "숟가락에 참기름을 따라 넣는 장면",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "재료들을 골고루 비벼줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "샤샤샥 비벼준 뒤에",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "숟가락으로 밥과 재료를 골고루 비비는 장면",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "김 위에 비빈 밥을 얹어서 먹습니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "국민 밥도둑 김 위에 쏙 얹어서 한 입 가득 먹어주면",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "조미김 위에 비빔밥을 얹어 싸 먹는 장면",
+              "timestamp": "00:11"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "칠리 크리스피(Chili Crisp)는 화면과 나레이션에서 언급되었으나 고춧가루로 대체되어 실제 레시피 재료에는 포함되지 않았습니다.",
+        "마요네즈와 김의 정확한 계량 수치나 규격은 언급되지 않았습니다."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

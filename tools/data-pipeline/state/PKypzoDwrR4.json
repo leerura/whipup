@@ -1,0 +1,227 @@
+{
+  "videoId": "PKypzoDwrR4",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/PKypzoDwrR4",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T15:55:54.438994+00:00",
+    "rawResponse": "{\n  \"title\": \"파계란밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름을 둘러줍니다\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 식용유를 둘러줌\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파를 볶아줍니다\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"송송 썬 대파를 팬에 넣고 볶음\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 2개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란2개를 원안에 넣어줍니다\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"대파 원 안에 계란 2개를 깨뜨려 넣음\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥에 버터를 올리고 파계란을 올려줍니다\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"버터\",\n      \"displayName\": \"버터\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥에 버터를 올리고 파계란을 올려줍니다\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 (Bragg Liquid Aminos)\",\n      \"displayName\": \"간장\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Bragg Liquid Aminos(간장 대체 소스)를 숟가락으로 계란 위에 둘러줌\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깨\",\n      \"displayName\": \"깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 계란 위에 통깨가 뿌려져 있음\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 기름을 둘러줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름을 둘러줍니다\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파를 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파를 볶아줍니다\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파를 원모양으로 만들어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파를 원모양으로 만들어줍니다\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 2개를 원안에 넣어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란2개를 원안에 넣어줍니다\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"약불로 하시고 뚜껑을 닫아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"약불로하시고 뚜껑을 닫아줍니다\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥에 버터를 올리고 파계란을 올려줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥에 버터를 올리고 파계란을 올려줍니다\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"text\": \"간장을 둘러주고 통깨를 곁들여 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Bragg Liquid Aminos 간장 소스를 뿌려줌\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"완성\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"공식 요리 제목이 화면에 명시되지 않아 자막 표현(파계란, 밥)을 토대로 '파계란밥'으로 기술함\",\n    \"기름, 대파, 밥, 버터, 간장, 깨의 구체적인 계량 정보는 영상에 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "파계란밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름을 둘러줍니다",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 식용유를 둘러줌",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파를 볶아줍니다",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "송송 썬 대파를 팬에 넣고 볶음",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "계란 2개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란2개를 원안에 넣어줍니다",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "대파 원 안에 계란 2개를 깨뜨려 넣음",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥에 버터를 올리고 파계란을 올려줍니다",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "버터",
+          "displayName": "버터",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥에 버터를 올리고 파계란을 올려줍니다",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "간장 (Bragg Liquid Aminos)",
+          "displayName": "간장",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Bragg Liquid Aminos(간장 대체 소스)를 숟가락으로 계란 위에 둘러줌",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "깨",
+          "displayName": "깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 계란 위에 통깨가 뿌려져 있음",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 기름을 둘러줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름을 둘러줍니다",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "대파를 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파를 볶아줍니다",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "대파를 원모양으로 만들어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파를 원모양으로 만들어줍니다",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "계란 2개를 원안에 넣어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란2개를 원안에 넣어줍니다",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "약불로 하시고 뚜껑을 닫아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "약불로하시고 뚜껑을 닫아줍니다",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "밥에 버터를 올리고 파계란을 올려줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥에 버터를 올리고 파계란을 올려줍니다",
+              "timestamp": "00:35"
+            }
+          ]
+        },
+        {
+          "text": "간장을 둘러주고 통깨를 곁들여 완성합니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Bragg Liquid Aminos 간장 소스를 뿌려줌",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "완성",
+              "timestamp": "00:38"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "공식 요리 제목이 화면에 명시되지 않아 자막 표현(파계란, 밥)을 토대로 '파계란밥'으로 기술함",
+        "기름, 대파, 밥, 버터, 간장, 깨의 구체적인 계량 정보는 영상에 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

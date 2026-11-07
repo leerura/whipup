@@ -1,0 +1,372 @@
+{
+  "videoId": "m_Zwr6XQFfY",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/m_Zwr6XQFfY",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:12:43.200203+00:00",
+    "rawResponse": "{\n  \"title\": \"초간단 단짠 차슈 덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"적당히 도톰한 삼겹살 2줄\",\n      \"displayName\": \"삼겹살\",\n      \"amount\": \"2\",\n      \"unit\": \"줄\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"적당히 도톰한 삼겹살 2줄 잘라 준비해요\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 반개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"0.5\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 반개를 채 썰어 두어요\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 1컵\",\n      \"displayName\": \"물\",\n      \"amount\": \"1\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볼에 물 1컵 / 설탕 2 / 맛술 2 / 간장 6 / 다진 마늘 2 / 올리고당 1\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 2\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볼에 물 1컵 / 설탕 2 / 맛술 2 / 간장 6 / 다진 마늘 2 / 올리고당 1\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 2\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볼에 물 1컵 / 설탕 2 / 맛술 2 / 간장 6 / 다진 마늘 2 / 올리고당 1\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 6\",\n      \"displayName\": \"간장\",\n      \"amount\": \"6\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볼에 물 1컵 / 설탕 2 / 맛술 2 / 간장 6 / 다진 마늘 2 / 올리고당 1\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 2\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볼에 물 1컵 / 설탕 2 / 맛술 2 / 간장 6 / 다진 마늘 2 / 올리고당 1\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리고당 1\",\n      \"displayName\": \"올리고당\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볼에 물 1컵 / 설탕 2 / 맛술 2 / 간장 6 / 다진 마늘 2 / 올리고당 1\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"잡내 제거를 위해 후추와 맛술 1큰술 넣어주고\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 1큰술\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"잡내 제거를 위해 후추와 맛술 1큰술 넣어주고\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"꽈리 고추 한 줌\",\n      \"displayName\": \"꽈리고추\",\n      \"amount\": \"1\",\n      \"unit\": \"줌\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"적당히 졸아 들었을 때 꽈리 고추 한 줌 넣고,\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볼에 밥 담아 내고,\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 노른자\",\n      \"displayName\": \"계란 노른자\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 노른자 얹고 깨 뿌리면 완성 :)\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깨\",\n      \"displayName\": \"깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 노른자 얹고 깨 뿌리면 완성 :)\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"적당히 도톰한 삼겹살 2줄을 먹기 좋은 크기로 잘라 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"적당히 도톰한 삼겹살 2줄 잘라 준비해요\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 반 개를 채 썰어 둔다. (매운맛이 싫으면 물에 담가둔다.)\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 반개를 채 썰어 두어요 (양파 매운맛 안 좋아시면 물에 담아 두어요)\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 물 1컵, 설탕 2, 맛술 2, 간장 6, 다진 마늘 2, 올리고당 1을 넣고 골고루 잘 섞어 소스를 미리 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소스 먼저 미리 만들어 둘게요 :)\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볼에 물 1컵 / 설탕 2 / 맛술 2 / 간장 6 / 다진 마늘 2 / 올리고당 1\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"모든 양념을 골고루 잘 섞어 주어요\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"달군 팬에 썰어둔 삼겹살을 올리고, 잡내 제거를 위해 후추와 맛술 1큰술을 넣고 뒤집어가며 노릇하게 굽는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"달군 팬에 썰어 둔 삼겹살을 구워 주어요\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"잡내 제거를 위해 후추와 맛술 1큰술 넣어주고\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"뒤집어서 마저 잘 구워 주어요\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기가 다 익으면 만들어 둔 소스를 붓고 센 불에서 소스가 고기에 잘 배도록 졸여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고기가 다 익으면 만들어 둔 소스 투하!\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"센불에 소스가 고기에 잘 베이도록 졸여 주어요\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소스가 적당히 졸아들었을 때 꽈리고추 한 줌을 넣고 마저 잘 졸여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"적당히 졸아 들었을 때 꽈리 고추 한 줌 넣고,\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마저 잘 졸여 주어요\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 밥을 담고 채 썬 양파를 듬뿍 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볼에 밥 담아 내고,\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"그 위에 채 썬 양파 듬뿍 올려 주고,\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 위에 잘 졸여진 삼겹살을 가지런히 올리고 꽈리고추도 함께 얹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"그 위에 잘 졸여진 삼겹살을 가지런히 올려요\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"꽈리 고추도 올려주고,\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"가운데에 계란 노른자를 얹고 깨를 뿌려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 노른자 얹고 깨 뿌리면 완성 :)\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"소스 양념 표기(설탕 2, 맛술 2, 간장 6, 다진 마늘 2, 올리고당 1)의 단위(큰술/스푼 등)가 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "초간단 단짠 차슈 덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "적당히 도톰한 삼겹살 2줄",
+          "displayName": "삼겹살",
+          "amount": "2",
+          "unit": "줄",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "적당히 도톰한 삼겹살 2줄 잘라 준비해요",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파 반개",
+          "displayName": "양파",
+          "amount": "0.5",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 반개를 채 썰어 두어요",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "물 1컵",
+          "displayName": "물",
+          "amount": "1",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볼에 물 1컵 / 설탕 2 / 맛술 2 / 간장 6 / 다진 마늘 2 / 올리고당 1",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "설탕 2",
+          "displayName": "설탕",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볼에 물 1컵 / 설탕 2 / 맛술 2 / 간장 6 / 다진 마늘 2 / 올리고당 1",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "맛술 2",
+          "displayName": "맛술",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볼에 물 1컵 / 설탕 2 / 맛술 2 / 간장 6 / 다진 마늘 2 / 올리고당 1",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "간장 6",
+          "displayName": "간장",
+          "amount": "6",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볼에 물 1컵 / 설탕 2 / 맛술 2 / 간장 6 / 다진 마늘 2 / 올리고당 1",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "다진 마늘 2",
+          "displayName": "다진 마늘",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볼에 물 1컵 / 설탕 2 / 맛술 2 / 간장 6 / 다진 마늘 2 / 올리고당 1",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "올리고당 1",
+          "displayName": "올리고당",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볼에 물 1컵 / 설탕 2 / 맛술 2 / 간장 6 / 다진 마늘 2 / 올리고당 1",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "잡내 제거를 위해 후추와 맛술 1큰술 넣어주고",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "맛술 1큰술",
+          "displayName": "맛술",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "잡내 제거를 위해 후추와 맛술 1큰술 넣어주고",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "꽈리 고추 한 줌",
+          "displayName": "꽈리고추",
+          "amount": "1",
+          "unit": "줌",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "적당히 졸아 들었을 때 꽈리 고추 한 줌 넣고,",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볼에 밥 담아 내고,",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "계란 노른자",
+          "displayName": "계란 노른자",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 노른자 얹고 깨 뿌리면 완성 :)",
+              "timestamp": "00:32"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "깨",
+          "displayName": "깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 노른자 얹고 깨 뿌리면 완성 :)",
+              "timestamp": "00:32"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        }
+      ],
+      "steps": [
+        {
+          "text": "적당히 도톰한 삼겹살 2줄을 먹기 좋은 크기로 잘라 준비한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "적당히 도톰한 삼겹살 2줄 잘라 준비해요",
+              "timestamp": "00:01"
+            }
+          ]
+        },
+        {
+          "text": "양파 반 개를 채 썰어 둔다. (매운맛이 싫으면 물에 담가둔다.)",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 반개를 채 썰어 두어요 (양파 매운맛 안 좋아시면 물에 담아 두어요)",
+              "timestamp": "00:02"
+            }
+          ]
+        },
+        {
+          "text": "볼에 물 1컵, 설탕 2, 맛술 2, 간장 6, 다진 마늘 2, 올리고당 1을 넣고 골고루 잘 섞어 소스를 미리 만든다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소스 먼저 미리 만들어 둘게요 :)",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볼에 물 1컵 / 설탕 2 / 맛술 2 / 간장 6 / 다진 마늘 2 / 올리고당 1",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "모든 양념을 골고루 잘 섞어 주어요",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "달군 팬에 썰어둔 삼겹살을 올리고, 잡내 제거를 위해 후추와 맛술 1큰술을 넣고 뒤집어가며 노릇하게 굽는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "달군 팬에 썰어 둔 삼겹살을 구워 주어요",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "잡내 제거를 위해 후추와 맛술 1큰술 넣어주고",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "뒤집어서 마저 잘 구워 주어요",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "고기가 다 익으면 만들어 둔 소스를 붓고 센 불에서 소스가 고기에 잘 배도록 졸여준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고기가 다 익으면 만들어 둔 소스 투하!",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "센불에 소스가 고기에 잘 베이도록 졸여 주어요",
+              "timestamp": "00:19"
+            }
+          ]
+        },
+        {
+          "text": "소스가 적당히 졸아들었을 때 꽈리고추 한 줌을 넣고 마저 잘 졸여준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "적당히 졸아 들었을 때 꽈리 고추 한 줌 넣고,",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마저 잘 졸여 주어요",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 밥을 담고 채 썬 양파를 듬뿍 올린다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볼에 밥 담아 내고,",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "그 위에 채 썬 양파 듬뿍 올려 주고,",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "양파 위에 잘 졸여진 삼겹살을 가지런히 올리고 꽈리고추도 함께 얹는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "그 위에 잘 졸여진 삼겹살을 가지런히 올려요",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "꽈리 고추도 올려주고,",
+              "timestamp": "00:30"
+            }
+          ]
+        },
+        {
+          "text": "가운데에 계란 노른자를 얹고 깨를 뿌려 마무리한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 노른자 얹고 깨 뿌리면 완성 :)",
+              "timestamp": "00:32"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "소스 양념 표기(설탕 2, 맛술 2, 간장 6, 다진 마늘 2, 올리고당 1)의 단위(큰술/스푼 등)가 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

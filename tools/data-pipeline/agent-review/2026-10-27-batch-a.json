@@ -1,0 +1,24 @@
+{
+  "batch": "2026-10-27-utc-before-10",
+  "timezone": "UTC",
+  "scope": "2026-10-27T07:57:00Z through 2026-10-27T09:59:59Z",
+  "recipeFiles": 25,
+  "published": 19,
+  "draft": 6,
+  "excluded": 3,
+  "draftReasons": {
+    "Iya3XxIH4PM": "Gemini reports all sauce ingredient amounts unspecified; preserve the recipe but require review before publication.",
+    "V88S-vTBM18": "The source uses ready-to-eat branded boneless mackerel. Mapping it to raw mackerel would misrepresent preparation.",
+    "fJWlPnBBZYw": "Required assorted toppings are not identified as a single ownable item; catalog mapping remains unresolved.",
+    "fibMyx8oN9c": "Gemini says critical sauce ratios are only in the video's description and not present in the saved extraction.",
+    "ldsIYEb1t5o": "Gemini reports visible but unnamed ham/spam and other seasonings in the kimchi seasoning step.",
+    "zVHDJPoOuRQ": "The required sauce ingredient list and quantities are not in the saved extraction."
+  },
+  "excludedReasons": {
+    "Z0dbNk0951Y": "Requires minced pork, previously excluded for the solo-cooking catalog and related recipes.",
+    "ZtAgGqKzQmc": "Requires generic beef, which V3 product docs explicitly exclude.",
+    "tnDIWPGT9Hk": "Gemini identifies this as a mukbang with no cooking instructions."
+  },
+  "sourceMetadata": "YouTube metadata was queried separately after extraction. Source title and channel snapshots were saved where available; unavailable fields remain null.",
+  "titlePolicy": "Short Korean dish names are used for recipe.name. Gemini rawText and steps are retained; original YouTube title is not inferred from Gemini title."
+}

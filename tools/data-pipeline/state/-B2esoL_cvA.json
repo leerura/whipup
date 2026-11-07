@@ -1,0 +1,482 @@
+{
+  "videoId": "-B2esoL_cvA",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/-B2esoL_cvA",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T08:29:00.634679+00:00",
+    "rawResponse": "{\n  \"title\": \"닭갈비\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"고춧가루\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 고춧가루\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕\",\n      \"displayName\": \"설탕\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"생강가루\",\n      \"displayName\": \"생강가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"생강가루\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"생강가루\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"카레가루\",\n      \"displayName\": \"카레가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"카레가루\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"카레가루\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding minced garlic to the sauce bowl\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장\",\n      \"displayName\": \"고추장\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술\",\n      \"displayName\": \"맛술\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장\",\n      \"displayName\": \"간장\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리고당\",\n      \"displayName\": \"올리고당\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"올리고당\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Pouring oligosaccharide into the sauce mixture\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추를 넣어서 섞어주고\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Sprinkling black pepper from a container into the sauce\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파랑 대파\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파랑 대파\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파랑 대파\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파랑 대파\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"당근\",\n      \"displayName\": \"당근\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"당근\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"당근\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양배추\",\n      \"displayName\": \"양배추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양배추\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양배추\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고구마\",\n      \"displayName\": \"고구마\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고구마\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고구마\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깻잎\",\n      \"displayName\": \"깻잎\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깻잎도 썰어주세요\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"깻잎도 썰어주세요\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"닭다리살\",\n      \"displayName\": \"닭다리살\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"닭다리살 껍질부분부터\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후라이팬에 닭다리살 껍질부분부터 구워주고\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"떡사리\",\n      \"displayName\": \"떡사리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"떡사리 넣고 볶다가\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그다음 야채랑 떡사리 넣고 볶다가\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 조금 부어서\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 조금 부어서\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"볼에 고춧가루, 설탕, 생강가루, 카레가루, 다진마늘, 고추장, 맛술, 간장, 올리고당, 후추를 넣고 잘 섞어 양념장을 만듭니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 고춧가루 설탕 생강가루 카레가루 다진마늘 고추장 맛술 간장 올리고당 후추를 넣어서 섞어주고\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파, 대파, 당근, 양배추, 고구마, 깻잎을 썰어 준비합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파랑 대파 당근 양배추 고구마 깻잎도 썰어주세요\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"후라이팬에 닭다리살을 껍질 부분부터 구워주고, 먹기 좋은 크기로 잘라줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후라이팬에 닭다리살 껍질부분부터 구워주고 먹기좋게 잘라주세요\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"손질한 야채(양파, 대파, 당근, 양배추, 고구마)와 떡사리를 넣고 함께 볶습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그다음 야채랑 떡사리 넣고 볶다가\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"만들어 둔 양념장을 넣고 잘 섞어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양념장 넣고 잘 섞어주세요\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물을 조금 붓고 뚜껑을 덮어 5분간 끓여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 조금 부어서 뚜껑 덮고 5분 끓여주고\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마지막으로 깻잎을 넣어 섞어주면 완성됩니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 깻잎 넣어주면 완성\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"Exact amounts and measurements for sauce ingredients, vegetables, chicken thighs, rice cakes, and water were not stated in speech or on-screen text.\"\n  ]\n}",
+    "result": {
+      "title": "닭갈비",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "고춧가루",
+          "displayName": "고춧가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 고춧가루",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "설탕",
+          "displayName": "설탕",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "생강가루",
+          "displayName": "생강가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "생강가루",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "생강가루",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "카레가루",
+          "displayName": "카레가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "카레가루",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "카레가루",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "다진마늘",
+          "displayName": "다진마늘",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진마늘",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding minced garlic to the sauce bowl",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "고추장",
+          "displayName": "고추장",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "맛술",
+          "displayName": "맛술",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "맛술",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "간장",
+          "displayName": "간장",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "올리고당",
+          "displayName": "올리고당",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "올리고당",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Pouring oligosaccharide into the sauce mixture",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후추를 넣어서 섞어주고",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Sprinkling black pepper from a container into the sauce",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파랑 대파",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파랑 대파",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파랑 대파",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파랑 대파",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "당근",
+          "displayName": "당근",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "당근",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "당근",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "양배추",
+          "displayName": "양배추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양배추",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양배추",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "고구마",
+          "displayName": "고구마",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고구마",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고구마",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "깻잎",
+          "displayName": "깻잎",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깻잎도 썰어주세요",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "깻잎도 썰어주세요",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "닭다리살",
+          "displayName": "닭다리살",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "닭다리살 껍질부분부터",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후라이팬에 닭다리살 껍질부분부터 구워주고",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        },
+        {
+          "rawText": "떡사리",
+          "displayName": "떡사리",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "떡사리 넣고 볶다가",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그다음 야채랑 떡사리 넣고 볶다가",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-18"
+        },
+        {
+          "rawText": "물",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 조금 부어서",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 조금 부어서",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-19"
+        }
+      ],
+      "steps": [
+        {
+          "text": "볼에 고춧가루, 설탕, 생강가루, 카레가루, 다진마늘, 고추장, 맛술, 간장, 올리고당, 후추를 넣고 잘 섞어 양념장을 만듭니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 고춧가루 설탕 생강가루 카레가루 다진마늘 고추장 맛술 간장 올리고당 후추를 넣어서 섞어주고",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "양파, 대파, 당근, 양배추, 고구마, 깻잎을 썰어 준비합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파랑 대파 당근 양배추 고구마 깻잎도 썰어주세요",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "후라이팬에 닭다리살을 껍질 부분부터 구워주고, 먹기 좋은 크기로 잘라줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후라이팬에 닭다리살 껍질부분부터 구워주고 먹기좋게 잘라주세요",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "손질한 야채(양파, 대파, 당근, 양배추, 고구마)와 떡사리를 넣고 함께 볶습니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그다음 야채랑 떡사리 넣고 볶다가",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "만들어 둔 양념장을 넣고 잘 섞어줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양념장 넣고 잘 섞어주세요",
+              "timestamp": "00:25"
+            }
+          ]
+        },
+        {
+          "text": "물을 조금 붓고 뚜껑을 덮어 5분간 끓여줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 조금 부어서 뚜껑 덮고 5분 끓여주고",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "마지막으로 깻잎을 넣어 섞어주면 완성됩니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 깻잎 넣어주면 완성",
+              "timestamp": "00:30"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "Exact amounts and measurements for sauce ingredients, vegetables, chicken thighs, rice cakes, and water were not stated in speech or on-screen text."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

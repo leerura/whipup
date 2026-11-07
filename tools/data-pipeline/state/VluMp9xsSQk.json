@@ -1,0 +1,349 @@
+{
+  "videoId": "VluMp9xsSQk",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/VluMp9xsSQk",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T23:23:54.726222+00:00",
+    "rawResponse": "{\n  \"title\": \"케첩 계란 요리 (케첩 계란덮밥)\",\n  \"description\": \"간장계란밥 대신 만들어 먹는 매콤달콤한 케첩 소스의 계란 덮밥 레시피입니다.\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"케첩 3스푼\",\n      \"displayName\": \"케첩\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"케첩 3\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"케첩 3스푼에\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 1스푼\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 1\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장이랑 다진마늘 한 스푼씩\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1스푼\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 1\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장이랑 다진마늘 한 스푼씩\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 1/2종이컵\",\n      \"displayName\": \"물\",\n      \"amount\": \"1/2\",\n      \"unit\": \"종이컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 1/2종이컵\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 종이컵으로 반 컵 넣어줘\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리브오일 1스푼\",\n      \"displayName\": \"올리브오일\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"올리브오일 1\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 오일 둘러서\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/4개 (또는 자투리 채소)\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/4\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/4\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"집에 있는 자투리 채소도 작게 다져 넣고\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 3개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"3\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 3\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"오늘의 주인공 계란도 하나 둘 셋\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추 1개\",\n      \"displayName\": \"고추\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추 1\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"난 매콤한 게 좋아서 고추 하나도 추가했어\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추추하고\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"뜨끈한 밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"뜨끈한 밥 위에 올려먹으면\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 요리된 계란을 얹음\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 요리 위에 뿌려져 있는 통깨\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"볼에 케첩 3스푼, 간장 1스푼, 다진마늘 1스푼, 물 1/2종이컵을 넣고 잘 섞어 소스를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"케첩 3스푼에 간장이랑 다진마늘 한 스푼씩 물 종이컵으로 반 컵 넣어줘\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볼에 양념 재료들을 섞는 모습\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 올리브오일 1스푼을 두르고, 양파 1/4개를 작게 다져 넣은 뒤 약 1분 정도 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 오일 둘러서 집에 있는 자투리 채소도 작게 다져 넣고 한 1분정도 볶다가\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"오일에 다진 양파를 볶는 모습\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볶은 양파 위에 계란 3개를 깨뜨려 넣고 중약불에서 노릇해질 때까지 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"오늘의 주인공 계란도 하나 둘 셋 중약불에 계란이 살짝 노릇해지면\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 계란 3개를 깨 넣고 익히는 모습\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란이 노릇해지면 만들어 둔 소스를 모두 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소스 몽땅 붓고\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 소스를 붓는 모습\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고추 1개를 가위로 썰어 넣고 후추를 뿌린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"난 매콤한 게 좋아서 고추 하나도 추가했어 후추추하고\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"가위로 고추를 자르고 후추를 톡톡 뿌리는 모습\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소스를 계란 위에 끼얹어가며 노른자를 취향껏 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소스 끼얹으면서 노른자 취향껏 익혀주고\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"숟가락으로 소스를 계란에 끼얹는 모습\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뜨끈한 밥 위에 올려서 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"뜨끈한 밥 위에 올려먹으면 완전 밥도둑이야\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥이 담긴 그릇 위에 조리된 계란과 소스를 얹고 통깨를 뿌린 완성 모습\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "케첩 계란 요리 (케첩 계란덮밥)",
+      "description": "간장계란밥 대신 만들어 먹는 매콤달콤한 케첩 소스의 계란 덮밥 레시피입니다.",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "케첩 3스푼",
+          "displayName": "케첩",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "케첩 3",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "케첩 3스푼에",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "간장 1스푼",
+          "displayName": "간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 1",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장이랑 다진마늘 한 스푼씩",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "다진마늘 1스푼",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 1",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장이랑 다진마늘 한 스푼씩",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "물 1/2종이컵",
+          "displayName": "물",
+          "amount": "1/2",
+          "unit": "종이컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 1/2종이컵",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 종이컵으로 반 컵 넣어줘",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "올리브오일 1스푼",
+          "displayName": "올리브오일",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "올리브오일 1",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "팬에 오일 둘러서",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "양파 1/4개 (또는 자투리 채소)",
+          "displayName": "양파",
+          "amount": "1/4",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/4",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "집에 있는 자투리 채소도 작게 다져 넣고",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "계란 3개",
+          "displayName": "계란",
+          "amount": "3",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 3",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "오늘의 주인공 계란도 하나 둘 셋",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "고추 1개",
+          "displayName": "고추",
+          "amount": "1",
+          "unit": "개",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추 1",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "난 매콤한 게 좋아서 고추 하나도 추가했어",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추추하고",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "뜨끈한 밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "뜨끈한 밥 위에 올려먹으면",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 요리된 계란을 얹음",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 요리 위에 뿌려져 있는 통깨",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "볼에 케첩 3스푼, 간장 1스푼, 다진마늘 1스푼, 물 1/2종이컵을 넣고 잘 섞어 소스를 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "케첩 3스푼에 간장이랑 다진마늘 한 스푼씩 물 종이컵으로 반 컵 넣어줘",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볼에 양념 재료들을 섞는 모습",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "팬에 올리브오일 1스푼을 두르고, 양파 1/4개를 작게 다져 넣은 뒤 약 1분 정도 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 오일 둘러서 집에 있는 자투리 채소도 작게 다져 넣고 한 1분정도 볶다가",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "오일에 다진 양파를 볶는 모습",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "볶은 양파 위에 계란 3개를 깨뜨려 넣고 중약불에서 노릇해질 때까지 익힌다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "오늘의 주인공 계란도 하나 둘 셋 중약불에 계란이 살짝 노릇해지면",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 계란 3개를 깨 넣고 익히는 모습",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "계란이 노릇해지면 만들어 둔 소스를 모두 붓는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소스 몽땅 붓고",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 소스를 붓는 모습",
+              "timestamp": "00:21"
+            }
+          ]
+        },
+        {
+          "text": "고추 1개를 가위로 썰어 넣고 후추를 뿌린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "난 매콤한 게 좋아서 고추 하나도 추가했어 후추추하고",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "가위로 고추를 자르고 후추를 톡톡 뿌리는 모습",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "소스를 계란 위에 끼얹어가며 노른자를 취향껏 익힌다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소스 끼얹으면서 노른자 취향껏 익혀주고",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "숟가락으로 소스를 계란에 끼얹는 모습",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "뜨끈한 밥 위에 올려서 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "뜨끈한 밥 위에 올려먹으면 완전 밥도둑이야",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥이 담긴 그릇 위에 조리된 계란과 소스를 얹고 통깨를 뿌린 완성 모습",
+              "timestamp": "00:28"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

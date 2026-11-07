@@ -1,0 +1,371 @@
+{
+  "videoId": "EbqcyeCSGZs",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/EbqcyeCSGZs",
+  "sourceMetadata": {"sourceTitle":"시장에서 먹었던 감자칼국수 레시피!칼국수 맛있게 먹는 방법#shorts","sourceChannelName":"맛연사","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.163187Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T10:02:34.697563+00:00",
+    "rawResponse": "{\n  \"title\": \"감자칼국수\",\n  \"description\": null,\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"감자 150g(1개)\",\n      \"displayName\": \"감자\",\n      \"amount\": \"150\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"감자 150g(1개)\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 70g(1/5개)\",\n      \"displayName\": \"양파\",\n      \"amount\": \"70\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 70g(1/5개)\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"애호박 70g(1/4개)\",\n      \"displayName\": \"애호박\",\n      \"amount\": \"70\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"애호박 70g(1/4개)\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"당근 16g(3쪽)\",\n      \"displayName\": \"당근\",\n      \"amount\": \"16\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"당근 16g(3쪽)\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 30g(적당히)\",\n      \"displayName\": \"대파\",\n      \"amount\": \"30\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 30g(적당히)\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 8g(1개)\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"8\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 8g(1개)\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"칼국수면 150g(1인기준)\",\n      \"displayName\": \"칼국수면\",\n      \"amount\": \"150\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"칼국수면 150g(1인기준)\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 800g(800ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"800\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 800g(800ml)\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간마늘 15g(1스푼)\",\n      \"displayName\": \"간마늘\",\n      \"amount\": \"15\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간마늘 15g(1스푼)\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"국간장 8g(1스푼)\",\n      \"displayName\": \"국간장\",\n      \"amount\": \"8\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장 8g(1스푼)\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치액 11g(1스푼)\",\n      \"displayName\": \"참치액\",\n      \"amount\": \"11\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치액 11g(1스푼)\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"멸치액젓 7g(1스푼)\",\n      \"displayName\": \"멸치액젓\",\n      \"amount\": \"7\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"멸치액젓 7g(1스푼)\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다시다 2g(2/5스푼)\",\n      \"displayName\": \"다시다\",\n      \"amount\": \"2\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다시다 2g(2/5스푼)\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"조미김\",\n      \"displayName\": \"조미김\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"조미김, 갈은깨 올려주고~\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"갈은깨\",\n      \"displayName\": \"갈은깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"조미김, 갈은깨 올려주고~\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"감자, 양파, 애호박, 당근, 대파, 청양고추를 알맞은 크기로 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"감자, 양파, 애호박, 당근, 대파, 청양고추를 써는 장면\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"칼국수면의 덧가루를 털어 풀어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"칼국수면을 털어내며 푸는 장면\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 물 800g(800ml)을 넣고 강불로 켠 뒤 썰어둔 야채(감자, 양파, 애호박, 당근, 청양고추)를 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 800g(800ml) 강불조리~~\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"야채투입~\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물이 끓기 시작하면 간마늘 15g(1스푼), 국간장 8g(1스푼), 참치액 11g(1스푼), 멸치액젓 7g(1스푼)을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"끓기 시작하면~\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간마늘 15g(1스푼)\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장 8g(1스푼)\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치액 11g(1스푼)\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"멸치액젓 7g(1스푼)\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"다시 끓기 시작하면 칼국수면을 투입하고, 10초 후 잘 저어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"끓기시작 면투입~\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"10초 후 잘 저어주기~\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"다시다 2g(2/5스푼)을 넣고 면을 4~5분간 삶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다시다 2g(2/5스푼)\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"면 4~5분 삶은 후~\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"썰어둔 대파를 투입해 한소끔 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 투입~\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 담고 조미김과 갈은깨를 올려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"조미김, 갈은깨 올려주고~\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "감자칼국수",
+      "description": null,
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "감자 150g(1개)",
+          "displayName": "감자",
+          "amount": "150",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "감자 150g(1개)",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파 70g(1/5개)",
+          "displayName": "양파",
+          "amount": "70",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 70g(1/5개)",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "애호박 70g(1/4개)",
+          "displayName": "애호박",
+          "amount": "70",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "애호박 70g(1/4개)",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "당근 16g(3쪽)",
+          "displayName": "당근",
+          "amount": "16",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "당근 16g(3쪽)",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "대파 30g(적당히)",
+          "displayName": "대파",
+          "amount": "30",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 30g(적당히)",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "청양고추 8g(1개)",
+          "displayName": "청양고추",
+          "amount": "8",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 8g(1개)",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "칼국수면 150g(1인기준)",
+          "displayName": "칼국수면",
+          "amount": "150",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "칼국수면 150g(1인기준)",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "물 800g(800ml)",
+          "displayName": "물",
+          "amount": "800",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 800g(800ml)",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "간마늘 15g(1스푼)",
+          "displayName": "간마늘",
+          "amount": "15",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간마늘 15g(1스푼)",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "국간장 8g(1스푼)",
+          "displayName": "국간장",
+          "amount": "8",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장 8g(1스푼)",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "참치액 11g(1스푼)",
+          "displayName": "참치액",
+          "amount": "11",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치액 11g(1스푼)",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "멸치액젓 7g(1스푼)",
+          "displayName": "멸치액젓",
+          "amount": "7",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "멸치액젓 7g(1스푼)",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "다시다 2g(2/5스푼)",
+          "displayName": "다시다",
+          "amount": "2",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다시다 2g(2/5스푼)",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "조미김",
+          "displayName": "조미김",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "조미김, 갈은깨 올려주고~",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "갈은깨",
+          "displayName": "갈은깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "조미김, 갈은깨 올려주고~",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        }
+      ],
+      "steps": [
+        {
+          "text": "감자, 양파, 애호박, 당근, 대파, 청양고추를 알맞은 크기로 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "감자, 양파, 애호박, 당근, 대파, 청양고추를 써는 장면",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "칼국수면의 덧가루를 털어 풀어준다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "칼국수면을 털어내며 푸는 장면",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "팬에 물 800g(800ml)을 넣고 강불로 켠 뒤 썰어둔 야채(감자, 양파, 애호박, 당근, 청양고추)를 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 800g(800ml) 강불조리~~",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "야채투입~",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "물이 끓기 시작하면 간마늘 15g(1스푼), 국간장 8g(1스푼), 참치액 11g(1스푼), 멸치액젓 7g(1스푼)을 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "끓기 시작하면~",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간마늘 15g(1스푼)",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장 8g(1스푼)",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치액 11g(1스푼)",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "멸치액젓 7g(1스푼)",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "다시 끓기 시작하면 칼국수면을 투입하고, 10초 후 잘 저어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "끓기시작 면투입~",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "10초 후 잘 저어주기~",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "다시다 2g(2/5스푼)을 넣고 면을 4~5분간 삶아준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다시다 2g(2/5스푼)",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "면 4~5분 삶은 후~",
+              "timestamp": "00:29"
+            }
+          ]
+        },
+        {
+          "text": "썰어둔 대파를 투입해 한소끔 끓인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 투입~",
+              "timestamp": "00:30"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 담고 조미김과 갈은깨를 올려 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "조미김, 갈은깨 올려주고~",
+              "timestamp": "00:31"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

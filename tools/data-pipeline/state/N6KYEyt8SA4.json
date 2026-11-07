@@ -1,0 +1,342 @@
+{
+  "videoId": "N6KYEyt8SA4",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/N6KYEyt8SA4",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T08:09:21.683124+00:00",
+    "rawResponse": "{\n  \"title\": \"깻잎 참치 비빔밥\",\n  \"description\": \"바쁜 아침 5분 만에 간단하게 만들어 먹을 수 있는 깻잎 참치 비빔밥 레시피입니다.\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"참치캔 작은 걸로 하나 (100g)\",\n      \"displayName\": \"참치캔\",\n      \"amount\": \"1\",\n      \"unit\": \"캔(100g)\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치캔 작은 걸로 하나 100g 준비해줍니다.\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참치캔 작은 걸로 하나 (100g) 준비해줍니다.\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 크게 1스푼 듬뿍\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼 (크게 듬뿍)\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 고추장을 크게 1스푼 듬뿍 퍼서 넣어주고\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장을 크게 1스푼 듬뿍 퍼서 넣어주고\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1/2스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"달달한 설탕 반 스푼과\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"달달한 설탕 1/2스푼과\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식초 1스푼\",\n      \"displayName\": \"식초\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"새콤한 식초 1스푼\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"새콤한 식초 1스푼\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1/2스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘도 반 스푼 넣어주고\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진 마늘도 1/2스푼 넣어주고\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1스푼\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름과 통깨를 1스푼씩 넣어준 뒤에\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참기름과 통깨를 1스푼씩 넣어준 뒤\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨 1스푼\",\n      \"displayName\": \"통깨\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름과 통깨를 1스푼씩 넣어준 뒤에\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참기름과 통깨를 1스푼씩 넣어준 뒤\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"뜨끈한 흰밥\",\n      \"displayName\": \"흰밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 뜨끈한 흰밥 위로\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 뜨끈한 흰밥 위로\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깻잎 6~7장\",\n      \"displayName\": \"깻잎\",\n      \"amount\": \"6~7\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"향이 좋은 깻잎을 6~7장 준비해서\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"향이 좋은 깻잎을 6~7장 준비해서\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 하나\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"청양고추 하나도 잘게 썰어준 뒤 올려주면\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"청양고추 하나도 잘게 썰어준 뒤 올려주면\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 후라이 하나\",\n      \"displayName\": \"계란 후라이\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 후라이까지 하나 올려주면\",\n          \"timestamp\": \"00:49\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 후라이까지 하나 올려주면\",\n          \"timestamp\": \"00:49\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"참치캔(100g)의 기름과 살코기를 그릇에 함께 담아준다. (기름이 부담스러우면 걸러내고 살코기만 사용해도 무방)\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치캔에 들어있는 기름과 살코기를 같이 다 빼줍니다. 만약 기름이 부담스럽다 하시는 분은 기름을 한번 걸러주고 참치 살코기만 사용하셔도 좋습니다.\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 참치캔에 들어있는 기름과 살코기를 같이 다 빼줍니다.\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"참치에 고추장 크게 1스푼, 설탕 1/2스푼, 식초 1스푼, 다진 마늘 1/2스푼, 참기름 1스푼, 통깨 1스푼을 넣고 골고루 섞어 참치 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 고추장을 크게 1스푼 듬뿍 퍼서 넣어주고 달달한 설탕 반 스푼과 새콤한 식초 1스푼 다진 마늘도 반 스푼 넣어주고 고소한 맛과 향을 위해 참기름과 통깨를 1스푼씩 넣어준 뒤에 고추장이 풀리도록 골고루 잘 섞어주면 시뻘건 참치 양념장은 준비 끝입니다.\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장이 풀리도록 골고루 잘 섞어주면 시뻘건 참치 양념장은 준비 끝입니다.\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"깻잎 6~7장의 꼭지를 잘라내고 잘게 썬 뒤, 그릇에 담긴 뜨끈한 흰밥 위에 흩뿌려 올려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 뜨끈한 흰밥 위로 향이 좋은 깻잎을 6~7장 준비해서 꼭지 자르고 잘게 썰어주고 흩뿌려 줍니다.\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"꼭지 자르고 잘게 썰어주고 흩뿌려줍니다.\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"청양고추 1개를 잘게 썰어 깻잎 위에 올려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"추가로 매싹한 맛을 더해줄 청양고추 하나도 잘게 썰어준 뒤 올려주면\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"청양고추 하나도 잘게 썰어준 뒤 올려주면\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"만들어 둔 참치 양념장을 듬뿍 올려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만들어 둔 참치 양념장도 다 올려줍니다.\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"만들어둔 참치 양념장도 다 올려줍니다.\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 후라이를 하나 올려 비벼 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 계란 후라이까지 하나 올려주면 만드는데 5분도 안 걸리는 깻잎 참치 비빔밥이 완성됩니다.\",\n          \"timestamp\": \"00:49\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 후라이까지 하나 올려주면 만드는데 5분도 안 걸리는 깻잎 참치 비빔밥이 완성됩니다.\",\n          \"timestamp\": \"00:49\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"깻잎 대신 상추나 부추(정구지) 같은 다른 채소로 대체 가능하다고 언급됨\"\n  ]\n}",
+    "result": {
+      "title": "깻잎 참치 비빔밥",
+      "description": "바쁜 아침 5분 만에 간단하게 만들어 먹을 수 있는 깻잎 참치 비빔밥 레시피입니다.",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "참치캔 작은 걸로 하나 (100g)",
+          "displayName": "참치캔",
+          "amount": "1",
+          "unit": "캔(100g)",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "참치캔 작은 걸로 하나 100g 준비해줍니다.",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "참치캔 작은 걸로 하나 (100g) 준비해줍니다.",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "고추장 크게 1스푼 듬뿍",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "스푼 (크게 듬뿍)",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 고추장을 크게 1스푼 듬뿍 퍼서 넣어주고",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고추장을 크게 1스푼 듬뿍 퍼서 넣어주고",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "설탕 1/2스푼",
+          "displayName": "설탕",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "달달한 설탕 반 스푼과",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "달달한 설탕 1/2스푼과",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "식초 1스푼",
+          "displayName": "식초",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "새콤한 식초 1스푼",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "새콤한 식초 1스푼",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "다진 마늘 1/2스푼",
+          "displayName": "다진 마늘",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘도 반 스푼 넣어주고",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다진 마늘도 1/2스푼 넣어주고",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "참기름 1스푼",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "참기름과 통깨를 1스푼씩 넣어준 뒤에",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "참기름과 통깨를 1스푼씩 넣어준 뒤",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "통깨 1스푼",
+          "displayName": "통깨",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "참기름과 통깨를 1스푼씩 넣어준 뒤에",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "참기름과 통깨를 1스푼씩 넣어준 뒤",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "뜨끈한 흰밥",
+          "displayName": "흰밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 뜨끈한 흰밥 위로",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 뜨끈한 흰밥 위로",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "깻잎 6~7장",
+          "displayName": "깻잎",
+          "amount": "6~7",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "향이 좋은 깻잎을 6~7장 준비해서",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "향이 좋은 깻잎을 6~7장 준비해서",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "청양고추 하나",
+          "displayName": "청양고추",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "청양고추 하나도 잘게 썰어준 뒤 올려주면",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "청양고추 하나도 잘게 썰어준 뒤 올려주면",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "계란 후라이 하나",
+          "displayName": "계란 후라이",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 후라이까지 하나 올려주면",
+              "timestamp": "00:49"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란 후라이까지 하나 올려주면",
+              "timestamp": "00:49"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "참치캔(100g)의 기름과 살코기를 그릇에 함께 담아준다. (기름이 부담스러우면 걸러내고 살코기만 사용해도 무방)",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "참치캔에 들어있는 기름과 살코기를 같이 다 빼줍니다. 만약 기름이 부담스럽다 하시는 분은 기름을 한번 걸러주고 참치 살코기만 사용하셔도 좋습니다.",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 참치캔에 들어있는 기름과 살코기를 같이 다 빼줍니다.",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "참치에 고추장 크게 1스푼, 설탕 1/2스푼, 식초 1스푼, 다진 마늘 1/2스푼, 참기름 1스푼, 통깨 1스푼을 넣고 골고루 섞어 참치 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 고추장을 크게 1스푼 듬뿍 퍼서 넣어주고 달달한 설탕 반 스푼과 새콤한 식초 1스푼 다진 마늘도 반 스푼 넣어주고 고소한 맛과 향을 위해 참기름과 통깨를 1스푼씩 넣어준 뒤에 고추장이 풀리도록 골고루 잘 섞어주면 시뻘건 참치 양념장은 준비 끝입니다.",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고추장이 풀리도록 골고루 잘 섞어주면 시뻘건 참치 양념장은 준비 끝입니다.",
+              "timestamp": "00:21"
+            }
+          ]
+        },
+        {
+          "text": "깻잎 6~7장의 꼭지를 잘라내고 잘게 썬 뒤, 그릇에 담긴 뜨끈한 흰밥 위에 흩뿌려 올려준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 뜨끈한 흰밥 위로 향이 좋은 깻잎을 6~7장 준비해서 꼭지 자르고 잘게 썰어주고 흩뿌려 줍니다.",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "꼭지 자르고 잘게 썰어주고 흩뿌려줍니다.",
+              "timestamp": "00:28"
+            }
+          ]
+        },
+        {
+          "text": "청양고추 1개를 잘게 썰어 깻잎 위에 올려준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "추가로 매싹한 맛을 더해줄 청양고추 하나도 잘게 썰어준 뒤 올려주면",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "청양고추 하나도 잘게 썰어준 뒤 올려주면",
+              "timestamp": "00:39"
+            }
+          ]
+        },
+        {
+          "text": "만들어 둔 참치 양념장을 듬뿍 올려준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "만들어 둔 참치 양념장도 다 올려줍니다.",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "만들어둔 참치 양념장도 다 올려줍니다.",
+              "timestamp": "00:46"
+            }
+          ]
+        },
+        {
+          "text": "계란 후라이를 하나 올려 비벼 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 계란 후라이까지 하나 올려주면 만드는데 5분도 안 걸리는 깻잎 참치 비빔밥이 완성됩니다.",
+              "timestamp": "00:49"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란 후라이까지 하나 올려주면 만드는데 5분도 안 걸리는 깻잎 참치 비빔밥이 완성됩니다.",
+              "timestamp": "00:49"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "깻잎 대신 상추나 부추(정구지) 같은 다른 채소로 대체 가능하다고 언급됨"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

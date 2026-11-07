@@ -1,0 +1,439 @@
+{
+  "videoId": "vEUyrOb5cUs",
+  "status": "REVIEW_PENDING",
+  "stages": {
+    "stage1": {
+      "status": "COMPLETED",
+      "pipeline": {
+        "type": "V3_INGREDIENT_EXTRACTION",
+        "version": 3,
+        "model": "models/gemini-2.5-flash"
+      },
+      "completedAt": "2026-10-24T09:10:36.155615+00:00",
+      "ingredients": [
+        {
+          "sourceId": "ingredient-1",
+          "rawText": "올리브유",
+          "displayName": "Olive oil",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "올리브유",
+              "timestamp": "0:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "올리브유 두르고",
+              "timestamp": "0:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Olive oil being poured from a bottle into a pan.",
+              "timestamp": "0:04"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-2",
+          "rawText": "마늘",
+          "displayName": "Garlic",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마늘",
+              "timestamp": "0:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마늘",
+              "timestamp": "0:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Sliced garlic cloves are added to the pan.",
+              "timestamp": "0:06"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-3",
+          "rawText": "소세지",
+          "displayName": "Sausage",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소세지",
+              "timestamp": "0:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "소세지",
+              "timestamp": "0:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Sliced sausages are added to the pan.",
+              "timestamp": "0:06"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-4",
+          "rawText": "양파",
+          "displayName": "Onion",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파",
+              "timestamp": "0:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파 넣고",
+              "timestamp": "0:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Sliced onions are added to the pan.",
+              "timestamp": "0:07"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-5",
+          "rawText": "파스타",
+          "displayName": "Pasta",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "파스타",
+              "timestamp": "0:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "파스타와 물 넣고",
+              "timestamp": "0:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Dry spaghetti noodles are placed in the pan.",
+              "timestamp": "0:09"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-6",
+          "rawText": "물",
+          "displayName": "Water",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물",
+              "timestamp": "0:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "파스타와 물 넣고",
+              "timestamp": "0:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Water is poured into the pan.",
+              "timestamp": "0:10"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-7",
+          "rawText": "케첩",
+          "displayName": "Ketchup",
+          "amount": null,
+          "unit": null,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "케첩",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "케첩",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Ketchup is squeezed into the pan from a bottle.",
+              "timestamp": "0:13"
+            }
+          ]
+        },
+        {
+          "sourceId": "ingredient-8",
+          "rawText": "이금기 굴소스",
+          "displayName": "Lee Kum Kee Oyster Sauce",
+          "amount": "1",
+          "unit": "큰술",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이금기 굴소스 한 큰술",
+              "timestamp": "0:16"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이금기 굴소스",
+              "timestamp": "0:15"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "갈릭굴소스",
+              "timestamp": "0:00"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "LEE KUM KEE GARLIC OYSTER SAUCE",
+              "timestamp": "0:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "A tablespoon of oyster sauce is added to the pan.",
+              "timestamp": "0:16"
+            }
+          ]
+        }
+      ],
+      "retryCount": 0
+    },
+    "stage2": {
+      "status": "COMPLETED",
+      "pipeline": {
+        "type": "V3_RECIPE_STRUCTURING",
+        "version": 4,
+        "model": "models/gemini-2.5-flash",
+        "ingredientCatalogHash": "1cfffbf82968915c48b0033c79f653588cb37ba31b2269dd61af8f5e18016bce"
+      },
+      "completedAt": "2026-10-24T09:11:11.213068+00:00",
+      "result": {
+        "recipe": {
+          "key": "one-pan-neapolitan-pasta",
+          "name": "원팬 나폴리탄 파스타",
+          "status": "DRAFT",
+          "shortsReference": "https://www.youtube.com/shorts/vEUyrOb5cUs",
+          "ingredients": [
+            {
+              "key": "olive-oil",
+              "variant": "olive-oil-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-1",
+              "displayName": "Olive oil",
+              "rawText": "올리브유",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "garlic",
+              "variant": null,
+              "acceptedOwnedVariants": [
+                "whole-garlic"
+              ],
+              "sourceId": "ingredient-2",
+              "displayName": "Garlic",
+              "rawText": "마늘",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "sausage",
+              "variant": "sausage-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-3",
+              "displayName": "Sausage",
+              "rawText": "소세지",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "onion",
+              "variant": "onion-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-4",
+              "displayName": "Onion",
+              "rawText": "양파",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "pasta-noodles",
+              "variant": "pasta-noodles-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-5",
+              "displayName": "Pasta",
+              "rawText": "파스타",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "water",
+              "variant": "water-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-6",
+              "displayName": "Water",
+              "rawText": "물",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "ketchup",
+              "variant": "ketchup-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-7",
+              "displayName": "Ketchup",
+              "rawText": "케첩",
+              "amount": null,
+              "unit": null,
+              "optional": false
+            },
+            {
+              "key": "garlic-oyster-sauce",
+              "variant": "garlic-oyster-sauce-item",
+              "acceptedOwnedVariants": [],
+              "sourceId": "ingredient-8",
+              "displayName": "Lee Kum Kee Oyster Sauce",
+              "rawText": "이금기 굴소스",
+              "amount": "1",
+              "unit": "큰술",
+              "optional": false
+            }
+          ],
+          "requirements": [
+            {
+              "options": [
+                {
+                  "ingredient": "olive-oil",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "garlic",
+                  "substitutes": [],
+                  "allowedVariants": [
+                    "whole-garlic"
+                  ]
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "sausage",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "onion",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "pasta-noodles",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "water",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "ketchup",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "ingredient": "garlic-oyster-sauce",
+                  "substitutes": [],
+                  "allowedVariants": []
+                }
+              ]
+            }
+          ],
+          "steps": [
+            "팬에 올리브유를 두르고 마늘, 소시지, 양파를 넣고 양파가 투명해질 때까지 볶아주세요.",
+            "파스타 면과 물을 넣고 8~10분간 삶아주세요.",
+            "이제 케첩과 이금기 갈릭 굴소스 한 큰술을 넣고 소스가 잘 어우러지고 면이 익을 때까지 약 10분 정도 더 끓여주세요."
+          ]
+        },
+        "catalogAdditions": {
+          "ingredients": [
+            {
+              "key": "garlic-oyster-sauce",
+              "name": "갈릭 굴소스",
+              "variants": [
+                {
+                  "key": "garlic-oyster-sauce-item",
+                  "name": "갈릭 굴소스",
+                  "aliases": [
+                    "이금기 굴소스"
+                  ]
+                }
+              ],
+              "relations": []
+            }
+          ]
+        },
+        "mappingFailures": []
+      },
+      "structuralErrors": [],
+      "retryCount": 0
+    }
+  },
+  "sourceUrl": "https://www.youtube.com/shorts/vEUyrOb5cUs",
+  "pipelineVersion": 1,
+  "review": {
+    "status": "PENDING",
+    "required": "source_video_and_semantic_review",
+    "structuralErrors": []
+  }
+}

@@ -1,0 +1,396 @@
+{
+  "videoId": "7k_dQU-xyHY",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/7k_dQU-xyHY",
+  "sourceMetadata": {"sourceTitle":"김치볶음밥에 '이것'만 넣으면, 맛이 배가 된답니다 / 김치볶음밥 황금레시피 만들기 김치볶음밥 레시피","sourceChannelName":"최주부 Choi JuBu","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.162997Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T10:35:51.411290+00:00",
+    "rawResponse": "{\n  \"title\": \"김치볶음밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"양파(소) 1/4개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/4\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파(소) 1/4개\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 1/2뿌리\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"뿌리\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 1/2뿌리\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"송송썬 김치 (밥 한공기 정도)\",\n      \"displayName\": \"김치\",\n      \"amount\": \"1\",\n      \"unit\": \"공기 정도\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"송송썬 김치 (밥 한공기 정도)\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"약간 두꺼운 후라이팬에 식용유를 넉넉히 둘러 주세요\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 조금\",\n      \"displayName\": \"설탕\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕을 조금 넣어 주세요\",\n          \"timestamp\": \"01:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 1T\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 1T를 넣고\",\n          \"timestamp\": \"01:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥을 넣고 '중강불 ~ 강불'로 볶으세요\",\n          \"timestamp\": \"01:56\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기호에 따라서 고춧가루, 김치국물을 넣어도 좋답니다\",\n          \"timestamp\": \"02:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치국물\",\n      \"displayName\": \"김치국물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기호에 따라서 고춧가루, 김치국물을 넣어도 좋답니다\",\n          \"timestamp\": \"02:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1T\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마무리로 참기름 1T, 깨 1T를 넣고 섞으세요\",\n          \"timestamp\": \"02:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깨 1T\",\n      \"displayName\": \"깨\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마무리로 참기름 1T, 깨 1T를 넣고 섞으세요\",\n          \"timestamp\": \"02:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란\",\n      \"displayName\": \"계란\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란을 얹어 먹거나 김에 싸서 먹으면 더욱 맛있어요!\",\n          \"timestamp\": \"02:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김\",\n      \"displayName\": \"김\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란을 얹어 먹거나 김에 싸서 먹으면 더욱 맛있어요!\",\n          \"timestamp\": \"02:28\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양파(소) 1/4개를 송송 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파(소) 1/4개\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"송송 썰어 준비하세요\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파 1/2뿌리를 양파와 마찬가지로 송송 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 1/2뿌리\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파와 마찬가지로 송송 썰어 주세요\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김치(밥 한공기 정도)를 작은 크기로 송송 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"송송썬 김치 (밥 한공기 정도)\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"작은 크기로 썰어 주세요\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"약간 두꺼운 후라이팬에 식용유를 넉넉히 두르고 '중강불'로 예열한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"약간 두꺼운 후라이팬에 식용유를 넉넉히 둘러 주세요\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"'중강불'\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파를 넣고 볶아 파기름을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파를 넣고, 파기름을 만들어 주세요\",\n          \"timestamp\": \"00:56\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"파기름을 먼저 내면, 맛과 향이 더욱 좋아진답니다 :)\",\n          \"timestamp\": \"01:01\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김치를 넣고 설탕을 조금 넣어준 뒤 1분 정도 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치를 넣고\",\n          \"timestamp\": \"01:09\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕을 조금 넣어 주세요\",\n          \"timestamp\": \"01:13\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕이 신맛을 살짝 잡아 줍니다\",\n          \"timestamp\": \"01:18\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1분 정도 볶은 후\",\n          \"timestamp\": \"01:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파를 넣고 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파를 넣고 볶아 주세요\",\n          \"timestamp\": \"01:25\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마지막에 양파를 넣어야 더욱 아삭하게 즐길 수 있어 좋아요\",\n          \"timestamp\": \"01:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"재료가 볶아지면 '중불'에서 재료를 한쪽으로 밀고, 간장 1T를 팬 빈 곳에 넣어 끓여준 뒤 바로 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"재료가 볶아지면, '중불'에서 재료를 한쪽으로 밀고\",\n          \"timestamp\": \"01:37\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 1T를 넣고 끓여준 뒤 바로 섞어 주세요\",\n          \"timestamp\": \"01:42\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장의 풍미가 김치에 함께 섞여 더욱 맛있는 김치볶음밥이 된답니다\",\n          \"timestamp\": \"01:48\"\n        }\n      ]\n    },\n    {\n      \"text\": \"모두 섞였을 때 밥을 넣고 '중강불 ~ 강불'로 볶는다. (기호에 따라서 고춧가루, 김치국물을 넣어도 좋다.)\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"모두 섞였을 때 밥을 넣고 '중강불 ~ 강불'로 볶으세요\",\n          \"timestamp\": \"01:55\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기호에 따라서 고춧가루, 김치국물을 넣어도 좋답니다\",\n          \"timestamp\": \"02:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥과 김치볶음이 골고루 섞였을 때 불을 끈다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥과 김치볶음이 골고루 섞였을 때, 불을 꺼주세요\",\n          \"timestamp\": \"02:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마무리로 참기름 1T, 깨 1T를 넣고 섞어 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마무리로 참기름 1T, 깨 1T를 넣고 섞으세요\",\n          \"timestamp\": \"02:16\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "김치볶음밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "양파(소) 1/4개",
+          "displayName": "양파",
+          "amount": "1/4",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파(소) 1/4개",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파 1/2뿌리",
+          "displayName": "대파",
+          "amount": "1/2",
+          "unit": "뿌리",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 1/2뿌리",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "송송썬 김치 (밥 한공기 정도)",
+          "displayName": "김치",
+          "amount": "1",
+          "unit": "공기 정도",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "송송썬 김치 (밥 한공기 정도)",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "약간 두꺼운 후라이팬에 식용유를 넉넉히 둘러 주세요",
+              "timestamp": "00:46"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "설탕 조금",
+          "displayName": "설탕",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕을 조금 넣어 주세요",
+              "timestamp": "01:13"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "간장 1T",
+          "displayName": "간장",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 1T를 넣고",
+              "timestamp": "01:42"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥을 넣고 '중강불 ~ 강불'로 볶으세요",
+              "timestamp": "01:56"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "고춧가루",
+          "displayName": "고춧가루",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기호에 따라서 고춧가루, 김치국물을 넣어도 좋답니다",
+              "timestamp": "02:03"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "김치국물",
+          "displayName": "김치국물",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기호에 따라서 고춧가루, 김치국물을 넣어도 좋답니다",
+              "timestamp": "02:03"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "참기름 1T",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마무리로 참기름 1T, 깨 1T를 넣고 섞으세요",
+              "timestamp": "02:16"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "깨 1T",
+          "displayName": "깨",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마무리로 참기름 1T, 깨 1T를 넣고 섞으세요",
+              "timestamp": "02:16"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "계란",
+          "displayName": "계란",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란을 얹어 먹거나 김에 싸서 먹으면 더욱 맛있어요!",
+              "timestamp": "02:28"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "김",
+          "displayName": "김",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란을 얹어 먹거나 김에 싸서 먹으면 더욱 맛있어요!",
+              "timestamp": "02:28"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양파(소) 1/4개를 송송 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파(소) 1/4개",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "송송 썰어 준비하세요",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "대파 1/2뿌리를 양파와 마찬가지로 송송 썰어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 1/2뿌리",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파와 마찬가지로 송송 썰어 주세요",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "김치(밥 한공기 정도)를 작은 크기로 송송 썰어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "송송썬 김치 (밥 한공기 정도)",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "작은 크기로 썰어 주세요",
+              "timestamp": "00:39"
+            }
+          ]
+        },
+        {
+          "text": "약간 두꺼운 후라이팬에 식용유를 넉넉히 두르고 '중강불'로 예열한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "약간 두꺼운 후라이팬에 식용유를 넉넉히 둘러 주세요",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "'중강불'",
+              "timestamp": "00:50"
+            }
+          ]
+        },
+        {
+          "text": "대파를 넣고 볶아 파기름을 만든다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파를 넣고, 파기름을 만들어 주세요",
+              "timestamp": "00:56"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "파기름을 먼저 내면, 맛과 향이 더욱 좋아진답니다 :)",
+              "timestamp": "01:01"
+            }
+          ]
+        },
+        {
+          "text": "김치를 넣고 설탕을 조금 넣어준 뒤 1분 정도 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치를 넣고",
+              "timestamp": "01:09"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕을 조금 넣어 주세요",
+              "timestamp": "01:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕이 신맛을 살짝 잡아 줍니다",
+              "timestamp": "01:18"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1분 정도 볶은 후",
+              "timestamp": "01:24"
+            }
+          ]
+        },
+        {
+          "text": "양파를 넣고 볶아준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파를 넣고 볶아 주세요",
+              "timestamp": "01:25"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마지막에 양파를 넣어야 더욱 아삭하게 즐길 수 있어 좋아요",
+              "timestamp": "01:30"
+            }
+          ]
+        },
+        {
+          "text": "재료가 볶아지면 '중불'에서 재료를 한쪽으로 밀고, 간장 1T를 팬 빈 곳에 넣어 끓여준 뒤 바로 섞어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "재료가 볶아지면, '중불'에서 재료를 한쪽으로 밀고",
+              "timestamp": "01:37"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 1T를 넣고 끓여준 뒤 바로 섞어 주세요",
+              "timestamp": "01:42"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장의 풍미가 김치에 함께 섞여 더욱 맛있는 김치볶음밥이 된답니다",
+              "timestamp": "01:48"
+            }
+          ]
+        },
+        {
+          "text": "모두 섞였을 때 밥을 넣고 '중강불 ~ 강불'로 볶는다. (기호에 따라서 고춧가루, 김치국물을 넣어도 좋다.)",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "모두 섞였을 때 밥을 넣고 '중강불 ~ 강불'로 볶으세요",
+              "timestamp": "01:55"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기호에 따라서 고춧가루, 김치국물을 넣어도 좋답니다",
+              "timestamp": "02:03"
+            }
+          ]
+        },
+        {
+          "text": "밥과 김치볶음이 골고루 섞였을 때 불을 끈다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥과 김치볶음이 골고루 섞였을 때, 불을 꺼주세요",
+              "timestamp": "02:10"
+            }
+          ]
+        },
+        {
+          "text": "마무리로 참기름 1T, 깨 1T를 넣고 섞어 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마무리로 참기름 1T, 깨 1T를 넣고 섞으세요",
+              "timestamp": "02:16"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

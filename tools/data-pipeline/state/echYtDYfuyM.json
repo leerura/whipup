@@ -1,0 +1,361 @@
+{
+  "videoId": "echYtDYfuyM",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/echYtDYfuyM",
+  "sourceMetadata": {"sourceTitle":"자취요리 어렵지 않아요! 고추장찌개 간단하게 만들어 보세요","sourceChannelName":"남레공","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.691839Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T08:14:29.807500+00:00",
+    "rawResponse": "{\n  \"title\": \"간단 고추장찌개\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파 넣고\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파 넣고\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기름 두르고\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기름 두르고\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대패삼겹 150g\",\n      \"displayName\": \"대패삼겹\",\n      \"amount\": \"150\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대패삼겹 150g 넣고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대패삼겹 150g 넣고\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 한 스푼\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 1스푼\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장 1스푼\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 한 스푼\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 1스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"진간장 1스푼 넣고\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 한 스푼 넣고\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 400ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"400\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 400ml\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 400ml\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루 1스푼\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 한 스푼\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다시다 반스푼\",\n      \"displayName\": \"다시다\",\n      \"amount\": \"반\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다시다 반스푼 넣고\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다시다 반 스푼 넣고\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"애호박\",\n      \"displayName\": \"애호박\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"애호박 넣고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"애호박 넣고\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 2스푼\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘 2스푼 넣고\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘 두 스푼 넣고\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추로 마무리~\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추로 마무리~\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 대파를 넣고 기름을 둘러 파기름을 만들어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파 넣고 기름 두르고 파기름 만들어준 다음에\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파 넣고 기름 두르고 파기름 만들어준 다음에\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대패삼겹 150g을 넣고 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대패삼겹 150g 넣고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대패삼겹 150g 넣고\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기가 80% 익으면 설탕 1스푼, 고추장 1스푼, 진간장 1스푼을 넣고 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고기 80%익으면 설탕 1스푼 고추장 1스푼 진간장 1스푼 넣고 볶아주세요 :)\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기 80% 익으면 설탕 한 스푼 고추장 한 스푼 진간장 한 스푼 넣고 볶아주세요\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 400ml를 붓고 고춧가루 1스푼, 다시다 반스푼을 넣습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 400ml 고춧가루 1스푼 다시다 반스푼 넣고\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 400ml 고춧가루 한 스푼 다시다 반 스푼 넣고\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"애호박과 다진마늘 2스푼을 넣고 끓여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"애호박 넣고 다진마늘 2스푼 넣고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"애호박 넣고 다진마늘 두 스푼 넣고\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"후추를 뿌려 간단 고추장찌개를 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추로 마무리~ 간단 고추장찌개 완성입니다\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추로 마무리~ 간단 고추장찌개 완성입니다\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "간단 고추장찌개",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대파 넣고",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파 넣고",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "기름 두르고",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "기름 두르고",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "대패삼겹 150g",
+          "displayName": "대패삼겹",
+          "amount": "150",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대패삼겹 150g 넣고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대패삼겹 150g 넣고",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "설탕 1스푼",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 1스푼",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 한 스푼",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고추장 1스푼",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고추장 1스푼",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장 한 스푼",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "진간장 1스푼",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "진간장 1스푼 넣고",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장 한 스푼 넣고",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "물 400ml",
+          "displayName": "물",
+          "amount": "400",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 400ml",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 400ml",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "고춧가루 1스푼",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루 1스푼",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 한 스푼",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "다시다 반스푼",
+          "displayName": "다시다",
+          "amount": "반",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다시다 반스푼 넣고",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다시다 반 스푼 넣고",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "애호박",
+          "displayName": "애호박",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "애호박 넣고",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "애호박 넣고",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "다진마늘 2스푼",
+          "displayName": "다진마늘",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘 2스푼 넣고",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진마늘 두 스푼 넣고",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "후추로 마무리~",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추로 마무리~",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 대파를 넣고 기름을 둘러 파기름을 만들어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대파 넣고 기름 두르고 파기름 만들어준 다음에",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파 넣고 기름 두르고 파기름 만들어준 다음에",
+              "timestamp": "00:02"
+            }
+          ]
+        },
+        {
+          "text": "대패삼겹 150g을 넣고 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대패삼겹 150g 넣고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대패삼겹 150g 넣고",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "고기가 80% 익으면 설탕 1스푼, 고추장 1스푼, 진간장 1스푼을 넣고 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고기 80%익으면 설탕 1스푼 고추장 1스푼 진간장 1스푼 넣고 볶아주세요 :)",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고기 80% 익으면 설탕 한 스푼 고추장 한 스푼 진간장 한 스푼 넣고 볶아주세요",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "물 400ml를 붓고 고춧가루 1스푼, 다시다 반스푼을 넣습니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 400ml 고춧가루 1스푼 다시다 반스푼 넣고",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 400ml 고춧가루 한 스푼 다시다 반 스푼 넣고",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "애호박과 다진마늘 2스푼을 넣고 끓여줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "애호박 넣고 다진마늘 2스푼 넣고",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "애호박 넣고 다진마늘 두 스푼 넣고",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "후추를 뿌려 간단 고추장찌개를 완성합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "후추로 마무리~ 간단 고추장찌개 완성입니다",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추로 마무리~ 간단 고추장찌개 완성입니다",
+              "timestamp": "00:17"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

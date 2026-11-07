@@ -1,0 +1,269 @@
+{
+  "videoId": "RCIjmvnBOck",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/RCIjmvnBOck",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T08:04:00.558674+00:00",
+    "rawResponse": "{\n  \"title\": \"다이어트 계란카레밥\",\n  \"description\": \"입에서 살살 녹아내리는 초간단 다이어트 계란카레밥 레시피\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름 두르고\",\n          \"timestamp\": \"0:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기름 두르고\",\n          \"timestamp\": \"0:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/2개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/2개\",\n          \"timestamp\": \"0:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파\",\n          \"timestamp\": \"0:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우유\",\n      \"displayName\": \"우유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우유\",\n          \"timestamp\": \"0:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볶은 양파가 담긴 냄비에 우유를 붓는 모습\",\n          \"timestamp\": \"0:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 100ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"100\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 100ml\",\n          \"timestamp\": \"0:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물\",\n          \"timestamp\": \"0:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"카레가루 3스푼\",\n      \"displayName\": \"카레가루\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"카레가루 3스푼 넣어주세요\",\n          \"timestamp\": \"0:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"카레가루 3스푼 넣어주세요\",\n          \"timestamp\": \"0:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 1~2개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1~2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 1~2개 넣고\",\n          \"timestamp\": \"0:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 넣고\",\n          \"timestamp\": \"0:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다이어트 계란카레밥\",\n          \"timestamp\": \"0:00\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 담긴 밥 위에 완성된 계란카레를 붓는 모습\",\n          \"timestamp\": \"0:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리가루\",\n      \"displayName\": \"파슬리가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 카레밥 위에 파슬리가루가 뿌려져 있는 모습\",\n          \"timestamp\": \"0:00\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 기름을 두르고 채 썬 양파 1/2개를 노릇해질 때까지 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름 두르고 / 양파 1/2개 / 노릇해질때까지 볶아준 뒤\",\n          \"timestamp\": \"0:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기름 두르고 양파 노릇해질 때까지 볶아준 뒤\",\n          \"timestamp\": \"0:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"우유와 물 100ml를 부어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 100ml\",\n          \"timestamp\": \"0:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우유, 물\",\n          \"timestamp\": \"0:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"카레가루 3스푼을 넣고 잘 섞어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"카레가루 3스푼 넣어주세요 / 잘 섞어주다 (쉐킷쉐킷)\",\n          \"timestamp\": \"0:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"카레가루 3스푼 넣어주세요. 잘 섞어주다\",\n          \"timestamp\": \"0:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"카레가 살짝 걸쭉해지면 계란 1~2개를 넣고 휘저어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"카레가 살짝 걸쭉해지면 / 계란 1~2개 넣고 / 휘저어주세요\",\n          \"timestamp\": \"0:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"살짝 걸쭉해지면 계란 넣고 휘저어주세요\",\n          \"timestamp\": \"0:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란이 익으면 밥 위에 얹어 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란이 익으면 끝!\",\n          \"timestamp\": \"0:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 익으면 끝!\",\n          \"timestamp\": \"0:12\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 카레를 붓는 모습\",\n          \"timestamp\": \"0:01\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"우유의 정확한 투입량은 음성이나 자막에 명시되지 않았음\",\n    \"밥의 종류 및 분량은 명시되지 않았음\",\n    \"완성 요리 위에 뿌려진 파슬리가루의 사용 여부와 분량은 음성/자막에 언급되지 않고 시각적으로만 확인됨\"\n  ]\n}",
+    "result": {
+      "title": "다이어트 계란카레밥",
+      "description": "입에서 살살 녹아내리는 초간단 다이어트 계란카레밥 레시피",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름 두르고",
+              "timestamp": "0:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "기름 두르고",
+              "timestamp": "0:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파 1/2개",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/2개",
+              "timestamp": "0:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파",
+              "timestamp": "0:05"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "우유",
+          "displayName": "우유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "우유",
+              "timestamp": "0:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볶은 양파가 담긴 냄비에 우유를 붓는 모습",
+              "timestamp": "0:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "물 100ml",
+          "displayName": "물",
+          "amount": "100",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 100ml",
+              "timestamp": "0:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물",
+              "timestamp": "0:07"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "카레가루 3스푼",
+          "displayName": "카레가루",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "카레가루 3스푼 넣어주세요",
+              "timestamp": "0:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "카레가루 3스푼 넣어주세요",
+              "timestamp": "0:08"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "계란 1~2개",
+          "displayName": "계란",
+          "amount": "1~2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 1~2개 넣고",
+              "timestamp": "0:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란 넣고",
+              "timestamp": "0:10"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다이어트 계란카레밥",
+              "timestamp": "0:00"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 담긴 밥 위에 완성된 계란카레를 붓는 모습",
+              "timestamp": "0:01"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "파슬리가루",
+          "displayName": "파슬리가루",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 카레밥 위에 파슬리가루가 뿌려져 있는 모습",
+              "timestamp": "0:00"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 기름을 두르고 채 썬 양파 1/2개를 노릇해질 때까지 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름 두르고 / 양파 1/2개 / 노릇해질때까지 볶아준 뒤",
+              "timestamp": "0:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "기름 두르고 양파 노릇해질 때까지 볶아준 뒤",
+              "timestamp": "0:04"
+            }
+          ]
+        },
+        {
+          "text": "우유와 물 100ml를 부어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 100ml",
+              "timestamp": "0:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "우유, 물",
+              "timestamp": "0:06"
+            }
+          ]
+        },
+        {
+          "text": "카레가루 3스푼을 넣고 잘 섞어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "카레가루 3스푼 넣어주세요 / 잘 섞어주다 (쉐킷쉐킷)",
+              "timestamp": "0:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "카레가루 3스푼 넣어주세요. 잘 섞어주다",
+              "timestamp": "0:08"
+            }
+          ]
+        },
+        {
+          "text": "카레가 살짝 걸쭉해지면 계란 1~2개를 넣고 휘저어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "카레가 살짝 걸쭉해지면 / 계란 1~2개 넣고 / 휘저어주세요",
+              "timestamp": "0:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "살짝 걸쭉해지면 계란 넣고 휘저어주세요",
+              "timestamp": "0:10"
+            }
+          ]
+        },
+        {
+          "text": "계란이 익으면 밥 위에 얹어 완성합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란이 익으면 끝!",
+              "timestamp": "0:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란 익으면 끝!",
+              "timestamp": "0:12"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 카레를 붓는 모습",
+              "timestamp": "0:01"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "우유의 정확한 투입량은 음성이나 자막에 명시되지 않았음",
+        "밥의 종류 및 분량은 명시되지 않았음",
+        "완성 요리 위에 뿌려진 파슬리가루의 사용 여부와 분량은 음성/자막에 언급되지 않고 시각적으로만 확인됨"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

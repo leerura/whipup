@@ -1,0 +1,365 @@
+{
+  "videoId": "y6cucsWMeZs",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/y6cucsWMeZs",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:08:47.565430+00:00",
+    "rawResponse": "{\n  \"title\": \"닭다리살 간장덮밥\",\n  \"description\": \"퇴근 후 15분 만에 만드는 밥도둑 닭다리살 간장덮밥 레시피\",\n  \"servings\": \"2\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"닭다리살\",\n      \"displayName\": \"닭다리살\",\n      \"amount\": \"6\",\n      \"unit\": \"조각\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"닭다리살 간장덮밥 만들어요\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"정육 닭다리살 6조각을 팬에 올림\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"껍질부터 구워주고 후추 갈갈\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"닭고기 위에 그라인더로 후추를 갈아 뿌림\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파 양파도 썰고\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"대파를 큼직하게 썰고, 일부는 송송 썰어 고명으로 준비\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파 양파도 썰고\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양파를 채 썰어 준비함\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 4\",\n      \"displayName\": \"간장\",\n      \"amount\": \"4\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 4\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 3\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 3\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리고당 2\",\n      \"displayName\": \"올리고당\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"올리고당 2\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 30ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"30\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 30ml\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"덮밥으로 먹는 게 진짜 맛있어요\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 밥을 담음\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깨\",\n      \"displayName\": \"깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"깨 톡톡\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"덮밥 위에 통깨를 뿌림\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 닭다리살을 껍질 부분부터 올리고 후추를 갈아 뿌려 앞뒤로 노릇하게 구워준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"껍질부터 구워주고 후추 갈갈\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"노릇하게 앞뒤로 구워줍니다\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"키친타월로 팬에 배어 나온 닭 기름을 닦아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기름은 닦아주고\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파와 양파를 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파 양파도 썰고\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"간장 4스푼, 맛술 3스푼, 굴소스 1스푼, 설탕 1스푼, 올리고당 2스푼, 물 30ml를 섞어 소스를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"맛도리 소스 만들어 줍니다\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 4\\n맛술 3\\n굴소스 1\\n설탕 1\\n올리고당 2\\n물 30ml\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"노릇하게 익은 닭다리살 팬에 큼직하게 썬 대파를 넣고 굽다가 양파도 함께 넣어 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"노릇하게 익은 닭에 대파넣고\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"구워줍니다\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"볶아주고\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"닭다리살을 먹기 좋은 크기로 가위로 잘라준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"닭은 먹기좋게 잘라주고\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"만들어 둔 소스를 전부 붓고 뒤집어가며 졸여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"단짠소스 몽땅 넣고\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"뒤집어주면서 졸여주면 완성!\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 밥을 담고 졸인 닭고기와 소스를 올린 뒤, 썰어둔 대파 고명과 깨를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"닭고기 올리고\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소스도 밥위에 뿌려주고\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"깨 톡톡\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"두 그릇 뚝딱 완성이에요\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "닭다리살 간장덮밥",
+      "description": "퇴근 후 15분 만에 만드는 밥도둑 닭다리살 간장덮밥 레시피",
+      "servings": "2",
+      "ingredients": [
+        {
+          "rawText": "닭다리살",
+          "displayName": "닭다리살",
+          "amount": "6",
+          "unit": "조각",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "닭다리살 간장덮밥 만들어요",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "정육 닭다리살 6조각을 팬에 올림",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "껍질부터 구워주고 후추 갈갈",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "닭고기 위에 그라인더로 후추를 갈아 뿌림",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대파 양파도 썰고",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "대파를 큼직하게 썰고, 일부는 송송 썰어 고명으로 준비",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대파 양파도 썰고",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양파를 채 썰어 준비함",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "간장 4",
+          "displayName": "간장",
+          "amount": "4",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 4",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "맛술 3",
+          "displayName": "맛술",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 3",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "굴소스 1",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "설탕 1",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "올리고당 2",
+          "displayName": "올리고당",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "올리고당 2",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "물 30ml",
+          "displayName": "물",
+          "amount": "30",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 30ml",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "덮밥으로 먹는 게 진짜 맛있어요",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 밥을 담음",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "깨",
+          "displayName": "깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "깨 톡톡",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "덮밥 위에 통깨를 뿌림",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 닭다리살을 껍질 부분부터 올리고 후추를 갈아 뿌려 앞뒤로 노릇하게 구워준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "껍질부터 구워주고 후추 갈갈",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "노릇하게 앞뒤로 구워줍니다",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "키친타월로 팬에 배어 나온 닭 기름을 닦아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "기름은 닦아주고",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "대파와 양파를 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대파 양파도 썰고",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "간장 4스푼, 맛술 3스푼, 굴소스 1스푼, 설탕 1스푼, 올리고당 2스푼, 물 30ml를 섞어 소스를 만든다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "맛도리 소스 만들어 줍니다",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 4\n맛술 3\n굴소스 1\n설탕 1\n올리고당 2\n물 30ml",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "노릇하게 익은 닭다리살 팬에 큼직하게 썬 대파를 넣고 굽다가 양파도 함께 넣어 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "노릇하게 익은 닭에 대파넣고",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "구워줍니다",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "볶아주고",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "닭다리살을 먹기 좋은 크기로 가위로 잘라준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "닭은 먹기좋게 잘라주고",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "만들어 둔 소스를 전부 붓고 뒤집어가며 졸여준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "단짠소스 몽땅 넣고",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "뒤집어주면서 졸여주면 완성!",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 밥을 담고 졸인 닭고기와 소스를 올린 뒤, 썰어둔 대파 고명과 깨를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "닭고기 올리고",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "소스도 밥위에 뿌려주고",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대파",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "깨 톡톡",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "두 그릇 뚝딱 완성이에요",
+              "timestamp": "00:25"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

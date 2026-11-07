@@ -1,0 +1,283 @@
+{
+  "videoId": "qUDEyONQaCA",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/qUDEyONQaCA",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T10:04:38.363656+00:00",
+    "rawResponse": "{\n  \"title\": \"계란 볶음밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"밥 1공기\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 1공기\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥 한공기를 쏙\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파\",\n      \"displayName\": \"파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"파\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"제일 먼저 파를 손질 합니다\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 2개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2개\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란을 톡톡\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"하나 더 톡톡\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"식용유를 넉넉히 두릅니다\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"버터 한 조각\",\n      \"displayName\": \"버터\",\n      \"amount\": \"1\",\n      \"unit\": \"조각\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"버터도 한 조각 넣어주면 풍미가 환상적이죠\",\n          \"timestamp\": \"01:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 한스푼\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 비장의 굴소스를 넣겠습니다\",\n          \"timestamp\": \"01:45\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"한스푼 넣어줄게요\",\n          \"timestamp\": \"01:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"왠지 허전한 마음이 들면 후추를 넣으세요\",\n          \"timestamp\": \"02:00\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"솔솔 살짝만 뿌려줍니다\",\n          \"timestamp\": \"02:03\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"대파를 반으로 가른 뒤 잘게 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"제일 먼저 파를 손질 합니다\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"반으로 가른 후 썰어볼게요\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"파 썰기 끝!\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"깊은 그릇에 밥 한 공기와 계란 2개를 넣고 골고루 섞어 계란밥을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"깊은 그릇에 밥 한공기를 쏙\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란을 톡톡 하나 더 톡톡\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥과 계란을 잘 섞어줍니다\",\n          \"timestamp\": \"00:49\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥 준비 끝!\",\n          \"timestamp\": \"00:59\"\n        }\n      ]\n    },\n    {\n      \"text\": \"달궈진 팬에 식용유를 넉넉히 두르고 썰어둔 파를 넣어 볶아 파기름을 낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"달궈진 팬에 식용유를 넉넉히 두릅니다\",\n          \"timestamp\": \"01:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"썰어놓은 파를 넣습니다\",\n          \"timestamp\": \"01:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"파가 적당히 볶아지면 비벼둔 계란밥을 넣고 중불에서 강불 사이에서 슬렁슬렁 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"파가 적당히 볶아지면 아까 비벼둔 계란밥을 넣어줍니다\",\n          \"timestamp\": \"01:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"중불-강불 사이에서 슬렁슬렁 볶아줍니다.\",\n          \"timestamp\": \"01:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"버터 한 조각을 넣고 함께 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"버터도 한 조각 넣어주면 풍미가 환상적이죠\",\n          \"timestamp\": \"01:32\"\n        }\n      ]\n    },\n    {\n      \"text\": \"굴소스 한 스푼을 넣고 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 비장의 굴소스를 넣겠습니다\",\n          \"timestamp\": \"01:45\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"한스푼 넣어줄게요\",\n          \"timestamp\": \"01:52\"\n        }\n      ]\n    },\n    {\n      \"text\": \"후추를 살짝 뿌려준 뒤 계속해서 볶아 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"솔솔 살짝만 뿌려줍니다\",\n          \"timestamp\": \"02:03\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계속해서 들들 볶다보면 계란볶음밥 완성~\",\n          \"timestamp\": \"02:05\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"파의 정확한 중량 또는 개수 미표기\",\n    \"식용유와 후추의 정확한 용량 미표기\"\n  ]\n}",
+    "result": {
+      "title": "계란 볶음밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "밥 1공기",
+          "displayName": "밥",
+          "amount": "1",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 1공기",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "밥 한공기를 쏙",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "파",
+          "displayName": "파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "파",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "제일 먼저 파를 손질 합니다",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "계란 2개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2개",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란을 톡톡",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "하나 더 톡톡",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "식용유를 넉넉히 두릅니다",
+              "timestamp": "01:02"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "버터 한 조각",
+          "displayName": "버터",
+          "amount": "1",
+          "unit": "조각",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "버터도 한 조각 넣어주면 풍미가 환상적이죠",
+              "timestamp": "01:32"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "굴소스 한스푼",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 비장의 굴소스를 넣겠습니다",
+              "timestamp": "01:45"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "한스푼 넣어줄게요",
+              "timestamp": "01:52"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "왠지 허전한 마음이 들면 후추를 넣으세요",
+              "timestamp": "02:00"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "솔솔 살짝만 뿌려줍니다",
+              "timestamp": "02:03"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "대파를 반으로 가른 뒤 잘게 썰어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "제일 먼저 파를 손질 합니다",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "반으로 가른 후 썰어볼게요",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "파 썰기 끝!",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "깊은 그릇에 밥 한 공기와 계란 2개를 넣고 골고루 섞어 계란밥을 만든다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "깊은 그릇에 밥 한공기를 쏙",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란을 톡톡 하나 더 톡톡",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "밥과 계란을 잘 섞어줍니다",
+              "timestamp": "00:49"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "밥 준비 끝!",
+              "timestamp": "00:59"
+            }
+          ]
+        },
+        {
+          "text": "달궈진 팬에 식용유를 넉넉히 두르고 썰어둔 파를 넣어 볶아 파기름을 낸다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "달궈진 팬에 식용유를 넉넉히 두릅니다",
+              "timestamp": "01:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "썰어놓은 파를 넣습니다",
+              "timestamp": "01:07"
+            }
+          ]
+        },
+        {
+          "text": "파가 적당히 볶아지면 비벼둔 계란밥을 넣고 중불에서 강불 사이에서 슬렁슬렁 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "파가 적당히 볶아지면 아까 비벼둔 계란밥을 넣어줍니다",
+              "timestamp": "01:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "중불-강불 사이에서 슬렁슬렁 볶아줍니다.",
+              "timestamp": "01:28"
+            }
+          ]
+        },
+        {
+          "text": "버터 한 조각을 넣고 함께 볶는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "버터도 한 조각 넣어주면 풍미가 환상적이죠",
+              "timestamp": "01:32"
+            }
+          ]
+        },
+        {
+          "text": "굴소스 한 스푼을 넣고 볶는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 비장의 굴소스를 넣겠습니다",
+              "timestamp": "01:45"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "한스푼 넣어줄게요",
+              "timestamp": "01:52"
+            }
+          ]
+        },
+        {
+          "text": "후추를 살짝 뿌려준 뒤 계속해서 볶아 마무리한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "솔솔 살짝만 뿌려줍니다",
+              "timestamp": "02:03"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계속해서 들들 볶다보면 계란볶음밥 완성~",
+              "timestamp": "02:05"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "파의 정확한 중량 또는 개수 미표기",
+        "식용유와 후추의 정확한 용량 미표기"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

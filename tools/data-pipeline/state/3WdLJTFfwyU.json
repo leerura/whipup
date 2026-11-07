@@ -1,0 +1,350 @@
+{
+  "videoId": "3WdLJTFfwyU",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/3WdLJTFfwyU",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T13:02:21.556796+00:00",
+    "rawResponse": "{\n  \"title\": \"10분만에 완성되는 감자채 덮밥!\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"감자\",\n      \"displayName\": \"감자\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"감자를 채썰어 주세요.\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"감자를 채썰어 주세요.\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파를 송송 썰어 주세요.\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파를 송송 썰어 주세요.\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"슬라이스 햄\",\n      \"displayName\": \"슬라이스 햄\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"슬라이스 햄을 채썰어 주세요.\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"슬라이스 햄을 채썰어 주세요.\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 식용유를 두르고\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬에 식용유를 두르고\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘을 넣고\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진 마늘을 넣고\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 2개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 2개를 재료 위에 올려 주세요.\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 2개를 재료 위에 올려 주세요.\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 2T\",\n      \"displayName\": \"간장\",\n      \"amount\": \"2\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 2T을 넣어 주세요.\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"간장 2T을 넣어 주세요.\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그릇에 밥을 담아 주세요.\",\n          \"timestamp\": \"00:45\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그릇에 밥을 담아 주세요.\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"버터 한 조각\",\n      \"displayName\": \"버터\",\n      \"amount\": \"1\",\n      \"unit\": \"조각\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"버터 한 조각을 올리면 완성입니다.\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"버터 한 조각을 올리면 완성입니다.\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"감자를 채썰어 준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"감자를 채썰어 주세요.\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"감자를 채썰어 주세요.\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파를 송송 썰어 준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파를 송송 썰어 주세요.\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파를 송송 썰어 주세요.\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"슬라이스 햄을 채썰어 준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"슬라이스 햄을 채썰어 주세요.\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"슬라이스 햄을 채썰어 주세요.\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유를 두르고 다진 마늘과 대파를 넣어 준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 식용유를 두르고 다진 마늘을 넣고 대파도 넣어 주세요.\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬에 식용유를 두르고 다진 마늘을 넣고 대파도 넣어 주세요.\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"재료를 볶다가 감자채와 슬라이스 햄을 넣고 잘 섞어가며 볶아 준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"재료를 볶다가 감자채도 넣어 주세요. 슬라이스 햄도 넣어 주세요. 이제, 재료를 잘 섞어가며 볶아 주세요.\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"재료를 볶다가 감자채도 넣어 주세요. 슬라이스 햄도 넣어 주세요. 이제, 재료를 잘 섞어가며 볶아 주세요.\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 2개를 재료 위에 올리고 간장 2T을 넣어 준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 2개를 재료 위에 올려 주세요. 간장 2T을 넣어 주세요.\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 2개를 재료 위에 올려 주세요. 간장 2T을 넣어 주세요.\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뚜껑을 덮고 익혀 준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"뚜껑을 덮고 익혀 주세요.\",\n          \"timestamp\": \"00:42\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"뚜껑을 덮고 익혀 주세요.\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 밥을 담고 밥 위에 재료를 올려 덮밥을 만들어 준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그릇에 밥을 담아 주세요. 밥 위에 재료를 올려 덮밥을 만들어 주세요.\",\n          \"timestamp\": \"00:45\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그릇에 밥을 담아 주세요. 밥 위에 재료를 올려 덮밥을 만들어 주세요.\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"버터 한 조각을 올려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"버터 한 조각을 올리면 완성입니다.\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"버터 한 조각을 올리면 완성입니다.\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "10분만에 완성되는 감자채 덮밥!",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "감자",
+          "displayName": "감자",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "감자를 채썰어 주세요.",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "감자를 채썰어 주세요.",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파를 송송 썰어 주세요.",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대파를 송송 썰어 주세요.",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "슬라이스 햄",
+          "displayName": "슬라이스 햄",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "슬라이스 햄을 채썰어 주세요.",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "슬라이스 햄을 채썰어 주세요.",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 식용유를 두르고",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "팬에 식용유를 두르고",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "다진 마늘",
+          "displayName": "다진 마늘",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘을 넣고",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다진 마늘을 넣고",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "계란 2개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 2개를 재료 위에 올려 주세요.",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란 2개를 재료 위에 올려 주세요.",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "간장 2T",
+          "displayName": "간장",
+          "amount": "2",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "간장 2T을 넣어 주세요.",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "간장 2T을 넣어 주세요.",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그릇에 밥을 담아 주세요.",
+              "timestamp": "00:45"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그릇에 밥을 담아 주세요.",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "버터 한 조각",
+          "displayName": "버터",
+          "amount": "1",
+          "unit": "조각",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "버터 한 조각을 올리면 완성입니다.",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "버터 한 조각을 올리면 완성입니다.",
+              "timestamp": "00:52"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "감자를 채썰어 준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "감자를 채썰어 주세요.",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "감자를 채썰어 주세요.",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "대파를 송송 썰어 준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파를 송송 썰어 주세요.",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대파를 송송 썰어 주세요.",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "슬라이스 햄을 채썰어 준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "슬라이스 햄을 채썰어 주세요.",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "슬라이스 햄을 채썰어 주세요.",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유를 두르고 다진 마늘과 대파를 넣어 준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 식용유를 두르고 다진 마늘을 넣고 대파도 넣어 주세요.",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "팬에 식용유를 두르고 다진 마늘을 넣고 대파도 넣어 주세요.",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "재료를 볶다가 감자채와 슬라이스 햄을 넣고 잘 섞어가며 볶아 준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "재료를 볶다가 감자채도 넣어 주세요. 슬라이스 햄도 넣어 주세요. 이제, 재료를 잘 섞어가며 볶아 주세요.",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "재료를 볶다가 감자채도 넣어 주세요. 슬라이스 햄도 넣어 주세요. 이제, 재료를 잘 섞어가며 볶아 주세요.",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "계란 2개를 재료 위에 올리고 간장 2T을 넣어 준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 2개를 재료 위에 올려 주세요. 간장 2T을 넣어 주세요.",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란 2개를 재료 위에 올려 주세요. 간장 2T을 넣어 주세요.",
+              "timestamp": "00:35"
+            }
+          ]
+        },
+        {
+          "text": "뚜껑을 덮고 익혀 준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "뚜껑을 덮고 익혀 주세요.",
+              "timestamp": "00:42"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "뚜껑을 덮고 익혀 주세요.",
+              "timestamp": "00:42"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 밥을 담고 밥 위에 재료를 올려 덮밥을 만들어 준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그릇에 밥을 담아 주세요. 밥 위에 재료를 올려 덮밥을 만들어 주세요.",
+              "timestamp": "00:45"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그릇에 밥을 담아 주세요. 밥 위에 재료를 올려 덮밥을 만들어 주세요.",
+              "timestamp": "00:45"
+            }
+          ]
+        },
+        {
+          "text": "버터 한 조각을 올려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "버터 한 조각을 올리면 완성입니다.",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "버터 한 조각을 올리면 완성입니다.",
+              "timestamp": "00:52"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  },
+  "previousQuotaRetry": {
+    "retryAt": "2026-10-25T06:59:57.681172+00:00",
+    "supersededAt": "2026-10-24T12:56:47.071336+00:00",
+    "reason": "new API key supplied by user"
+  },
+  "agentReviewNote": "Applied from the saved Gemini extraction; all required ingredients were mapped under V3 recipe-local rules. Deterministic dataset importer validation passed and DB sync completed."
+}

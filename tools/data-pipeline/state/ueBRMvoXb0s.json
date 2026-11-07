@@ -1,0 +1,380 @@
+{
+  "videoId": "ueBRMvoXb0s",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/ueBRMvoXb0s",
+  "sourceMetadata": {"sourceTitle":"식당 사장님이 알려주는부타동 (일본식 돼지고기 덮밥)(상세 레시피 설명란 참조) #집밥 #한식 #레시피 #koreanfood","sourceChannelName":"카페동이, 오늘의 밥상","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:31.069995Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T08:14:28.086787+00:00",
+    "rawResponse": "{\n  \"title\": \"부타동 (일본식 돼지고기 덮밥)\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"양파 1/2개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/2개\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 1개\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 1개 얇게 썰어요\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 1큰술 (15g)\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 1큰술 (15g)\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1큰술 (15g)\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1큰술 (15g)\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물엿 1큰술 (15g)\",\n      \"displayName\": \"물엿\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물엿 1큰술 (15g)\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1/2큰술 (8g)\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1/2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1/2큰술 (8g)\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 생강 1작은술 (5g)\",\n      \"displayName\": \"다진 생강\",\n      \"amount\": \"1\",\n      \"unit\": \"작은술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 생강 1작은술 (5g)\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 1큰술\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 1큰술\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대패삼겹\",\n      \"displayName\": \"대패삼겹\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대패삼겹 넣고 볶아요\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마무리로 후추 톡톡\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"따뜻한 밥\",\n      \"displayName\": \"따뜻한 밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"따뜻한 밥 위에 올려주고\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 노른자\",\n      \"displayName\": \"계란 노른자\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"취향에 따라 계란 노른자\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쪽파\",\n      \"displayName\": \"쪽파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 다진 쪽파를 고명으로 올림\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 살짝 뿌려주면\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양파 1/2개를 채 썰고, 청양고추 1개를 얇게 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/2개\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 1개 얇게 썰어요\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 진간장 1큰술(15g), 굴소스 1큰술(15g), 물엿 1큰술(15g), 설탕 1/2큰술(8g), 다진 생강 1작은술(5g)을 넣고 골고루 섞어 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양념장을 만들어요 진간장 1큰술 (15g)\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1큰술 (15g)\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물엿 1큰술 (15g)\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1/2큰술 (8g)\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 생강 1작은술 (5g)\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"골고루 섞어요\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"프라이팬을 중불로 예열하고 식용유 1큰술을 두른 뒤 대패삼겹을 넣고 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"프라이팬 중불로 예열 식용유 1큰술\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대패삼겹 넣고 볶아요\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대패삼겹에서 기름이 충분히 나오면 키친타올로 기름을 닦아낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대패삼겹에서 기름이 충분히 나오면 키친타올로 닦아두세요\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파를 넣고 1분 정도 같이 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 넣고 1분 정도 같이 볶아요\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파가 익으면 양념장과 썰어둔 청양고추를 넣고 1분 정도 더 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파가 익으면 양념장 넣고\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추도 같이 넣고 1분 정도 더 볶아요\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마무리로 후추를 톡톡 뿌려 섞는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마무리로 후추 톡톡\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"따뜻한 밥 위에 볶은 고기를 올리고, 취향에 따라 계란 노른자, 썰어둔 쪽파, 고춧가루를 살짝 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"따뜻한 밥 위에 올려주고\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"취향에 따라 계란 노른자\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 살짝 뿌려주면\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛있는 부타동 완성 :)\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"대패삼겹의 정확한 중량/수량이 영상 자막 및 설명에 명시되지 않음\",\n    \"따뜻한 밥의 양이 명시되지 않음\",\n    \"고명으로 올라간 쪽파/파는 화면상으로 확인되나 자막에는 텍스트로 표기되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "부타동 (일본식 돼지고기 덮밥)",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "양파 1/2개",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/2개",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "청양고추 1개",
+          "displayName": "청양고추",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 1개 얇게 썰어요",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "진간장 1큰술 (15g)",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 1큰술 (15g)",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "굴소스 1큰술 (15g)",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1큰술 (15g)",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "물엿 1큰술 (15g)",
+          "displayName": "물엿",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물엿 1큰술 (15g)",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "설탕 1/2큰술 (8g)",
+          "displayName": "설탕",
+          "amount": "1/2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1/2큰술 (8g)",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "다진 생강 1작은술 (5g)",
+          "displayName": "다진 생강",
+          "amount": "1",
+          "unit": "작은술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 생강 1작은술 (5g)",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "식용유 1큰술",
+          "displayName": "식용유",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 1큰술",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "대패삼겹",
+          "displayName": "대패삼겹",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대패삼겹 넣고 볶아요",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마무리로 후추 톡톡",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "따뜻한 밥",
+          "displayName": "따뜻한 밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "따뜻한 밥 위에 올려주고",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "계란 노른자",
+          "displayName": "계란 노른자",
+          "amount": "1",
+          "unit": "개",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "취향에 따라 계란 노른자",
+              "timestamp": "00:32"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "쪽파",
+          "displayName": "쪽파",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 다진 쪽파를 고명으로 올림",
+              "timestamp": "00:32"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "고춧가루",
+          "displayName": "고춧가루",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 살짝 뿌려주면",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양파 1/2개를 채 썰고, 청양고추 1개를 얇게 썬다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/2개",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 1개 얇게 썰어요",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "볼에 진간장 1큰술(15g), 굴소스 1큰술(15g), 물엿 1큰술(15g), 설탕 1/2큰술(8g), 다진 생강 1작은술(5g)을 넣고 골고루 섞어 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양념장을 만들어요 진간장 1큰술 (15g)",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1큰술 (15g)",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물엿 1큰술 (15g)",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1/2큰술 (8g)",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 생강 1작은술 (5g)",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "골고루 섞어요",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "프라이팬을 중불로 예열하고 식용유 1큰술을 두른 뒤 대패삼겹을 넣고 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "프라이팬 중불로 예열 식용유 1큰술",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대패삼겹 넣고 볶아요",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "대패삼겹에서 기름이 충분히 나오면 키친타올로 기름을 닦아낸다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대패삼겹에서 기름이 충분히 나오면 키친타올로 닦아두세요",
+              "timestamp": "00:19"
+            }
+          ]
+        },
+        {
+          "text": "양파를 넣고 1분 정도 같이 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 넣고 1분 정도 같이 볶아요",
+              "timestamp": "00:21"
+            }
+          ]
+        },
+        {
+          "text": "양파가 익으면 양념장과 썰어둔 청양고추를 넣고 1분 정도 더 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파가 익으면 양념장 넣고",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추도 같이 넣고 1분 정도 더 볶아요",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "마무리로 후추를 톡톡 뿌려 섞는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마무리로 후추 톡톡",
+              "timestamp": "00:28"
+            }
+          ]
+        },
+        {
+          "text": "따뜻한 밥 위에 볶은 고기를 올리고, 취향에 따라 계란 노른자, 썰어둔 쪽파, 고춧가루를 살짝 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "따뜻한 밥 위에 올려주고",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "취향에 따라 계란 노른자",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 살짝 뿌려주면",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛있는 부타동 완성 :)",
+              "timestamp": "00:34"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "대패삼겹의 정확한 중량/수량이 영상 자막 및 설명에 명시되지 않음",
+        "따뜻한 밥의 양이 명시되지 않음",
+        "고명으로 올라간 쪽파/파는 화면상으로 확인되나 자막에는 텍스트로 표기되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

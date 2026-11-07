@@ -1,0 +1,360 @@
+{
+  "videoId": "IHwUEavvFy4",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/IHwUEavvFy4",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:52:33.341777+00:00",
+    "rawResponse": "{\n  \"title\": \"돼지고기 짜글이\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"진간장 4스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"4\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"진간장 4스푼\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 네 스푼\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1스푼\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘 1스푼\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘 한 스푼\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 한 스푼\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 1스푼\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장 1스푼을 넣고\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 한 스푼을 넣고\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 3스푼\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"냄비에 식용유 3스푼을 넣어주시고요\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다음으로 냄비에 식용유 세 스푼을 넣어주시고요\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"찌개용 앞다리살(전지살) 300g\",\n      \"displayName\": \"돼지고기 찌개용 앞다리살\",\n      \"amount\": \"300\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"돼지고기는 찌개용 앞다리살(전지살) 300g 정도를 넣어주세요\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"돼지고기는 찌개용 앞다리살 300g 정도를 넣어주세요 조금 비싸지만 더 맛있게 먹으려면 삼겹살이나 목살을 넣어주시면 되고요\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"삼겹살이나 목살\",\n      \"displayName\": \"삼겹살 또는 목살\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"삼겹살이나 목살을 넣어주시면 되고요\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"조금 비싸지만 더 맛있게 먹으려면 삼겹살이나 목살을 넣어주시면 되고요\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깍둑썰기한 감자 1개\",\n      \"displayName\": \"감자\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"깍둑썰기한 감자 한 개\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"깍둑썰기한 감자 한 개\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"채 썬 양파 반 개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"0.5\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"채 썬 양파 반 개\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"채 썬 양파 반 개\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 적당량\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파와 고추는 적당량 채썰어 넣어주시고\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파와 고추는 적당량 채썰어 넣어주시고\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추 적당량\",\n      \"displayName\": \"고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파와 고추는 적당량 채썰어 넣어주시고\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파와 고추는 적당량 채썰어 넣어주시고\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 종이컵 2컵\",\n      \"displayName\": \"물\",\n      \"amount\": \"2\",\n      \"unit\": \"종이컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 종이컵 2컵\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 종이컵 두 컵\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 반 스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 반 스푼만 넣어주시고\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 반 스푼만 넣어주시고\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"그릇에 진간장 4스푼, 다진마늘 1스푼, 고춧가루 1스푼, 고추장 1스푼을 넣고 잘 섞어 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양념장 먼저 만들어주세요 진간장 네 스푼 다진마늘 한 스푼 고춧가루 한 스푼 고추장 한 스푼을 넣고 잘 섞어주면 준비 끝\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"잘 섞어주면 준비 끝\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 식용유 3스푼을 넣고 돼지고기 찌개용 앞다리살 약 300g(또는 삼겹살/목살)을 넣어 약불에서 잘 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다음으로 냄비에 식용유 세 스푼을 넣어주시고요 돼지고기는 찌개용 앞다리살 300g 정도를 넣어주세요 조금 비싸지만 더 맛있게 먹으려면 삼겹살이나 목살을 넣어주시면 되고요 약불에서 한번 잘 볶아준 뒤\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"약불에서 한 번 잘 볶아준 뒤\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"깍둑썰기한 감자 1개, 채 썬 양파 반 개, 채 썬 대파와 고추를 적당량 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"깍둑썰기한 감자 한 개 채 썬 양파 반 개 대파와 고추는 적당량 채썰어 넣어주시고\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"깍둑썰기한 감자 한 개 채 썬 양파 반 개 대파와 고추는 적당량 채썰어 넣어주시고\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 종이컵 2컵을 붓고 만들어 둔 양념장을 올린 뒤 자글자글해질 때까지 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 종이컵 두 컵 양념장을 올려서 자글자글 해질 때까지 끓여주세요\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"자글자글 해질 때까지 끓여주세요\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"설탕 반 스푼을 넣고 마저 졸여서 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 설탕 반 스푼만 넣어주시고 마저 졸여주시면 완성이에요\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마저 졸여주시면 완성이에요\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "돼지고기 짜글이",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "진간장 4스푼",
+          "displayName": "진간장",
+          "amount": "4",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "진간장 4스푼",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장 네 스푼",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "다진마늘 1스푼",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘 1스푼",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진마늘 한 스푼",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "고춧가루 1스푼",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 한 스푼",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "고추장 1스푼",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고추장 1스푼을 넣고",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장 한 스푼을 넣고",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "식용유 3스푼",
+          "displayName": "식용유",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "냄비에 식용유 3스푼을 넣어주시고요",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다음으로 냄비에 식용유 세 스푼을 넣어주시고요",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "찌개용 앞다리살(전지살) 300g",
+          "displayName": "돼지고기 찌개용 앞다리살",
+          "amount": "300",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "돼지고기는 찌개용 앞다리살(전지살) 300g 정도를 넣어주세요",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "돼지고기는 찌개용 앞다리살 300g 정도를 넣어주세요 조금 비싸지만 더 맛있게 먹으려면 삼겹살이나 목살을 넣어주시면 되고요",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "삼겹살이나 목살",
+          "displayName": "삼겹살 또는 목살",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "삼겹살이나 목살을 넣어주시면 되고요",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "조금 비싸지만 더 맛있게 먹으려면 삼겹살이나 목살을 넣어주시면 되고요",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "깍둑썰기한 감자 1개",
+          "displayName": "감자",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "깍둑썰기한 감자 한 개",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "깍둑썰기한 감자 한 개",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "채 썬 양파 반 개",
+          "displayName": "양파",
+          "amount": "0.5",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "채 썬 양파 반 개",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "채 썬 양파 반 개",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "대파 적당량",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대파와 고추는 적당량 채썰어 넣어주시고",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파와 고추는 적당량 채썰어 넣어주시고",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "고추 적당량",
+          "displayName": "고추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대파와 고추는 적당량 채썰어 넣어주시고",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파와 고추는 적당량 채썰어 넣어주시고",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "물 종이컵 2컵",
+          "displayName": "물",
+          "amount": "2",
+          "unit": "종이컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 종이컵 2컵",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 종이컵 두 컵",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "설탕 반 스푼",
+          "displayName": "설탕",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 반 스푼만 넣어주시고",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 반 스푼만 넣어주시고",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "그릇에 진간장 4스푼, 다진마늘 1스푼, 고춧가루 1스푼, 고추장 1스푼을 넣고 잘 섞어 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양념장 먼저 만들어주세요 진간장 네 스푼 다진마늘 한 스푼 고춧가루 한 스푼 고추장 한 스푼을 넣고 잘 섞어주면 준비 끝",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "잘 섞어주면 준비 끝",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 식용유 3스푼을 넣고 돼지고기 찌개용 앞다리살 약 300g(또는 삼겹살/목살)을 넣어 약불에서 잘 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다음으로 냄비에 식용유 세 스푼을 넣어주시고요 돼지고기는 찌개용 앞다리살 300g 정도를 넣어주세요 조금 비싸지만 더 맛있게 먹으려면 삼겹살이나 목살을 넣어주시면 되고요 약불에서 한번 잘 볶아준 뒤",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "약불에서 한 번 잘 볶아준 뒤",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "깍둑썰기한 감자 1개, 채 썬 양파 반 개, 채 썬 대파와 고추를 적당량 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "깍둑썰기한 감자 한 개 채 썬 양파 반 개 대파와 고추는 적당량 채썰어 넣어주시고",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "깍둑썰기한 감자 한 개 채 썬 양파 반 개 대파와 고추는 적당량 채썰어 넣어주시고",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "물 종이컵 2컵을 붓고 만들어 둔 양념장을 올린 뒤 자글자글해질 때까지 끓여준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 종이컵 두 컵 양념장을 올려서 자글자글 해질 때까지 끓여주세요",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "자글자글 해질 때까지 끓여주세요",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "설탕 반 스푼을 넣고 마저 졸여서 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 설탕 반 스푼만 넣어주시고 마저 졸여주시면 완성이에요",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마저 졸여주시면 완성이에요",
+              "timestamp": "00:27"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

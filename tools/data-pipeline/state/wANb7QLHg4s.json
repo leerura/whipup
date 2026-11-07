@@ -1,0 +1,473 @@
+{
+  "videoId": "wANb7QLHg4s",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/wANb7QLHg4s",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:12:13.736895+00:00",
+    "rawResponse": "{\n  \"title\": \"제육덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 양파를 최대한 얇게 썰어서\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"최대한 얇게 썰어서\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1숟갈 (양파 매운기 제거용)\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 설탕 한 숟갈 추가하면\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 '설탕' 1숟갈 추가하면\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"찬물 (양파 침지용)\",\n      \"displayName\": \"찬물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"찬물에 담가주세요\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"찬물에 담가주세요!\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 (10숟갈)\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"10\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 열 숟갈\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 (10숟갈)\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 (10숟갈)\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"10\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술 열 숟갈\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 (10숟갈)\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물엿 (10숟갈)\",\n      \"displayName\": \"물엿\",\n      \"amount\": \"10\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물엿 열 숟갈\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물엿 (10숟갈)\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 (10숟갈)\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"10\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 열 숟갈\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 (10숟갈)\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 (3숟갈)\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"3\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 세 숟갈\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 (3숟갈)\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 (3숟갈)\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"3\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘 세 숟갈\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 (3숟갈)\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 (2숟갈)\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"2\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스 두 숟갈\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 (2숟갈)\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 (2숟갈)\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"2\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 두 숟갈\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 (2숟갈)\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 10숟갈\",\n      \"displayName\": \"물\",\n      \"amount\": \"10\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 물 열 숟갈 넣고\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 물 10숟갈 넣고\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대패삼겹\",\n      \"displayName\": \"대패삼겹살\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대패삼겹 넣고\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대패삼겹 넣고\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"잡내 잡기 위해 후추 뿌려주고\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 톡톡 뿌려주고\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"흰 쌀밥\",\n      \"displayName\": \"흰 쌀밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"흰 쌀밥 위에\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"흰 쌀밥 위에...\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"취향에 따라 대파랑\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"취향에 따라 대파랑\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추\",\n      \"displayName\": \"청양고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"청양고추 올려주고\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"청양고추 올려주고\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 노른자\",\n      \"displayName\": \"계란 노른자\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 노른자까지 올려주면\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 노른자까지 올려주면\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 그릇 위에 통깨가 뿌려져 있음\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양파를 최대한 얇게 썰어서 찬물에 담그고 설탕 1숟갈을 넣어 매운기를 뺀다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 양파를 최대한 얇게 썰어서 찬물에 담가주세요. 여기에 '설탕' 1숟갈 추가하면 매운기를 금방 뺄 수 있어요!\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 진간장 10숟갈, 맛술 10숟갈, 물엿 10숟갈, 고춧가루 10숟갈, 고추장 3숟갈, 다진마늘 3숟갈, 굴소스 2숟갈, 설탕 2숟갈, 물 10숟갈을 넣고 섞어 양념 소스를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소스는... 숫자 10을 기억하면 쉬워요. 진간장 열 숟갈, 맛술 열 숟갈, 물엿 열 숟갈, 고춧가루 열 숟갈 넣고 여기에 추가로 고추장 세 숟갈, 다진마늘 세 숟갈, 굴소스 두 숟갈, 설탕 두 숟갈 넣어주세요. 마지막으로 물 10숟갈 넣고 섞어주면 끝이에요!\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"달궈진 팬에 대패삼겹살을 넣고 노릇하게 굽다가 잡내를 잡기 위해 후추를 뿌린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 달궈진 팬에 대패삼겹 넣고 노릇하게 구워주세요! 잡내 잡기 위해 후추 뿌려주고\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기가 80% 정도 익었을 때 만들어둔 소스를 넣고 3분 정도 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기가 80% 정도 익었을 때... 소스 넣고 3분 정도 볶아주면 완성이에요.\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 흰 쌀밥을 담고 얇게 썬 양파를 올린 후 볶아낸 제육볶음을 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"흰 쌀밥 위에... 얇게 썬 양파 올려주고 제육볶음 올려주고\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"취향에 따라 썰어둔 대파와 청양고추를 올리고 계란 노른자와 통깨를 얹어 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"취향에 따라 대파랑 청양고추 올려주고 계란 노른자까지 올려주면 제육볶음보다 맛있는 제육덮밥 완성이에요.\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"대파, 청양고추, 계란 노른자, 통깨가 얹어진 제육덮밥\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"대패삼겹의 정확한 중량(g)은 영상에 명시되지 않음\",\n    \"양파, 후추, 밥, 통깨의 계량 수치는 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "제육덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 양파를 최대한 얇게 썰어서",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "최대한 얇게 썰어서",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "설탕 1숟갈 (양파 매운기 제거용)",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 설탕 한 숟갈 추가하면",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 '설탕' 1숟갈 추가하면",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "찬물 (양파 침지용)",
+          "displayName": "찬물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "찬물에 담가주세요",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "찬물에 담가주세요!",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "진간장 (10숟갈)",
+          "displayName": "진간장",
+          "amount": "10",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "진간장 열 숟갈",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 (10숟갈)",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "맛술 (10숟갈)",
+          "displayName": "맛술",
+          "amount": "10",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "맛술 열 숟갈",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 (10숟갈)",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "물엿 (10숟갈)",
+          "displayName": "물엿",
+          "amount": "10",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물엿 열 숟갈",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물엿 (10숟갈)",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "고춧가루 (10숟갈)",
+          "displayName": "고춧가루",
+          "amount": "10",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 열 숟갈",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 (10숟갈)",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "고추장 (3숟갈)",
+          "displayName": "고추장",
+          "amount": "3",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고추장 세 숟갈",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 (3숟갈)",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "다진마늘 (3숟갈)",
+          "displayName": "다진마늘",
+          "amount": "3",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진마늘 세 숟갈",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 (3숟갈)",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "굴소스 (2숟갈)",
+          "displayName": "굴소스",
+          "amount": "2",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "굴소스 두 숟갈",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 (2숟갈)",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "설탕 (2숟갈)",
+          "displayName": "설탕",
+          "amount": "2",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "설탕 두 숟갈",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 (2숟갈)",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "물 10숟갈",
+          "displayName": "물",
+          "amount": "10",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 물 열 숟갈 넣고",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 물 10숟갈 넣고",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "대패삼겹",
+          "displayName": "대패삼겹살",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대패삼겹 넣고",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대패삼겹 넣고",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "잡내 잡기 위해 후추 뿌려주고",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 톡톡 뿌려주고",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "흰 쌀밥",
+          "displayName": "흰 쌀밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "흰 쌀밥 위에",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "흰 쌀밥 위에...",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "취향에 따라 대파랑",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "취향에 따라 대파랑",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "청양고추",
+          "displayName": "청양고추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "청양고추 올려주고",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "청양고추 올려주고",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        },
+        {
+          "rawText": "계란 노른자",
+          "displayName": "계란 노른자",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 노른자까지 올려주면",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란 노른자까지 올려주면",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-18"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 그릇 위에 통깨가 뿌려져 있음",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-19"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양파를 최대한 얇게 썰어서 찬물에 담그고 설탕 1숟갈을 넣어 매운기를 뺀다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 양파를 최대한 얇게 썰어서 찬물에 담가주세요. 여기에 '설탕' 1숟갈 추가하면 매운기를 금방 뺄 수 있어요!",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "볼에 진간장 10숟갈, 맛술 10숟갈, 물엿 10숟갈, 고춧가루 10숟갈, 고추장 3숟갈, 다진마늘 3숟갈, 굴소스 2숟갈, 설탕 2숟갈, 물 10숟갈을 넣고 섞어 양념 소스를 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소스는... 숫자 10을 기억하면 쉬워요. 진간장 열 숟갈, 맛술 열 숟갈, 물엿 열 숟갈, 고춧가루 열 숟갈 넣고 여기에 추가로 고추장 세 숟갈, 다진마늘 세 숟갈, 굴소스 두 숟갈, 설탕 두 숟갈 넣어주세요. 마지막으로 물 10숟갈 넣고 섞어주면 끝이에요!",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "달궈진 팬에 대패삼겹살을 넣고 노릇하게 굽다가 잡내를 잡기 위해 후추를 뿌린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 달궈진 팬에 대패삼겹 넣고 노릇하게 구워주세요! 잡내 잡기 위해 후추 뿌려주고",
+              "timestamp": "00:25"
+            }
+          ]
+        },
+        {
+          "text": "고기가 80% 정도 익었을 때 만들어둔 소스를 넣고 3분 정도 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고기가 80% 정도 익었을 때... 소스 넣고 3분 정도 볶아주면 완성이에요.",
+              "timestamp": "00:30"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 흰 쌀밥을 담고 얇게 썬 양파를 올린 후 볶아낸 제육볶음을 올린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "흰 쌀밥 위에... 얇게 썬 양파 올려주고 제육볶음 올려주고",
+              "timestamp": "00:34"
+            }
+          ]
+        },
+        {
+          "text": "취향에 따라 썰어둔 대파와 청양고추를 올리고 계란 노른자와 통깨를 얹어 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "취향에 따라 대파랑 청양고추 올려주고 계란 노른자까지 올려주면 제육볶음보다 맛있는 제육덮밥 완성이에요.",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "대파, 청양고추, 계란 노른자, 통깨가 얹어진 제육덮밥",
+              "timestamp": "00:41"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "대패삼겹의 정확한 중량(g)은 영상에 명시되지 않음",
+        "양파, 후추, 밥, 통깨의 계량 수치는 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

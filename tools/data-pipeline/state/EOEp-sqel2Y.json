@@ -1,0 +1,323 @@
+{
+  "videoId": "EOEp-sqel2Y",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/EOEp-sqel2Y",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:28:49.068732+00:00",
+    "rawResponse": "{\n  \"title\": \"비빔국수\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"고춧가루 1\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"먼저 고춧가루 1\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 고춧가루\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 2\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 2\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 2\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 2\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 1\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 1\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식초 2\",\n      \"displayName\": \"식초\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식초 2\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식초\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리고당 1\",\n      \"displayName\": \"올리고당\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"올리고당 1\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"올리고당\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 0.5\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"0.5\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 0.5\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소면\",\n      \"displayName\": \"소면\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소면도 삶아서\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김가루랑 삶은계란까지\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김가루랑 삶은계란까지\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"삶은계란\",\n      \"displayName\": \"삶은 계란\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김가루랑 삶은계란까지\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김가루랑 삶은계란까지\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"고춧가루, 설탕, 고추장, 진간장, 식초, 올리고당, 다진마늘, 참기름을 섞어서 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 고춧가루 설탕 고추장 진간장 식초 올리고당 다진마늘 참기름 섞어서 양념장 만들고\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"재료들을 작은 냄비에 차례로 넣고 숟가락으로 섞어 양념장을 완성함\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소면을 삶아서 찬물에 헹궈준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소면도 삶아서 찬물에 헹궈주세요\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"찬물에 헹궈주세요\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"삶은 소면을 흐르는 찬물에 손으로 헹굼\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소면에 양념장을 넣어서 골고루 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양념장 넣어서 골고루 섞어주고\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양념장 넣어서 골고루 섞어주고\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볼에 담긴 소면에 양념장을 붓고 비닐장갑을 낀 손으로 골고루 버무림\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"비벼진 국수 위에 김가루와 삶은 계란을 올려서 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김가루랑 삶은계란까지 올려주면 완성\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"올려주면 완성\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 담긴 국수 위에 김가루와 반으로 자른 삶은 계란을 올림\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"소면, 김가루, 삶은 계란의 정확한 계량 단위 및 수량이 언급되지 않음\",\n    \"양념장 계량 숫자(1, 2, 0.5 등)의 기준 단위(숟가락/스푼 등)가 텍스트/음성으로 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "비빔국수",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "고춧가루 1",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "먼저 고춧가루 1",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 고춧가루",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "설탕 2",
+          "displayName": "설탕",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 2",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "고추장 2",
+          "displayName": "고추장",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 2",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "진간장 1",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 1",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "식초 2",
+          "displayName": "식초",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식초 2",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "식초",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "올리고당 1",
+          "displayName": "올리고당",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "올리고당 1",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "올리고당",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "다진마늘 0.5",
+          "displayName": "다진마늘",
+          "amount": "0.5",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 0.5",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진마늘",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "참기름 1",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "소면",
+          "displayName": "소면",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소면도 삶아서",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "김가루",
+          "displayName": "김가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김가루랑 삶은계란까지",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "김가루랑 삶은계란까지",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "삶은계란",
+          "displayName": "삶은 계란",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김가루랑 삶은계란까지",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "김가루랑 삶은계란까지",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "고춧가루, 설탕, 고추장, 진간장, 식초, 올리고당, 다진마늘, 참기름을 섞어서 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 고춧가루 설탕 고추장 진간장 식초 올리고당 다진마늘 참기름 섞어서 양념장 만들고",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "재료들을 작은 냄비에 차례로 넣고 숟가락으로 섞어 양념장을 완성함",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "소면을 삶아서 찬물에 헹궈준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소면도 삶아서 찬물에 헹궈주세요",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "찬물에 헹궈주세요",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "삶은 소면을 흐르는 찬물에 손으로 헹굼",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "소면에 양념장을 넣어서 골고루 섞어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양념장 넣어서 골고루 섞어주고",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양념장 넣어서 골고루 섞어주고",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볼에 담긴 소면에 양념장을 붓고 비닐장갑을 낀 손으로 골고루 버무림",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "비벼진 국수 위에 김가루와 삶은 계란을 올려서 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김가루랑 삶은계란까지 올려주면 완성",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "올려주면 완성",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 담긴 국수 위에 김가루와 반으로 자른 삶은 계란을 올림",
+              "timestamp": "00:15"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "소면, 김가루, 삶은 계란의 정확한 계량 단위 및 수량이 언급되지 않음",
+        "양념장 계량 숫자(1, 2, 0.5 등)의 기준 단위(숟가락/스푼 등)가 텍스트/음성으로 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

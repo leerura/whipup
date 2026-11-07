@@ -1,0 +1,309 @@
+{
+  "videoId": "viAll-4A-6w",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://youtu.be/viAll-4A-6w?si=H3j6knYeAHnPVrvD",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T09:27:54.397387+00:00",
+    "rawResponse": "{\n  \"title\": \"육회비빔밥\",\n  \"description\": null,\n  \"servings\": \"1인분 (양념장은 3~4인분 분량)\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"고추장 크게 1스푼\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"큰스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 크게 1스푼\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 크게 한 스푼\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양조간장 2스푼\",\n      \"displayName\": \"양조간장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장 2스푼\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 두 스푼\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"매실액 2스푼\",\n      \"displayName\": \"매실액\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"매실액 2스푼\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"매실액 두 스푼\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마늘 1스푼\",\n      \"displayName\": \"마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마늘 1스푼\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마늘 한 스푼\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1스푼\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1스푼\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름 한 스푼\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"통깨\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"통깨 뿌려서 버무리면 양념장 완성입니다\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 밥이 담겨 있음\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"상추\",\n      \"displayName\": \"상추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"상추랑 파채도 곁들이구요\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 썬 상추를 얹음\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파채\",\n      \"displayName\": \"파채\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"상추랑 파채도 곁들이구요\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 파채를 얹음\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"육회 (1인분 기준으로 100g)\",\n      \"displayName\": \"육회\",\n      \"amount\": \"100\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"육회 200g인데 1인분 기준으로 100g만 쓰면 돼요\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1인분 기준으로 100g만 쓰면 돼요\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 노른자\",\n      \"displayName\": \"계란 노른자\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"육회 위에 계란 노른자를 올림\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"종지에 고추장 크게 1스푼, 양조간장 2스푼, 매실액 2스푼, 마늘 1스푼, 참기름 1스푼, 통깨를 넣고 섞어 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 크게 1스푼, 양조간장 2스푼, 매실액 2스푼, 마늘 1스푼, 참기름 1스푼, 통깨\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 크게 한 스푼, 간장 두 스푼, 매실액 두 스푼, 마늘 한 스푼, 참기름 한 스푼, 통깨 뿌려서 버무리면 양념장 완성입니다\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 밥을 담고 썰어둔 상추와 파채를 곁들여 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"상추랑 파채도 곁들이구요\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 상추와 파채를 올리는 모습\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"1인분 기준 육회 100g을 밥 위에 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"육회 200g인데 1인분 기준으로 100g만 쓰면 돼요\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"육회를 집어 밥 위에 올리는 모습\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"육회 위에 계란 노른자를 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"육회 중앙에 계란 노른자를 얹는 모습\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"준비한 양념장을 2~3스푼 정도 간을 보면서 넣고 비벼준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양념장은 2~3스푼정도 간 보면서 맞춰주면 됩니다\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양념장을 얹고 비비는 모습\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "육회비빔밥",
+      "description": null,
+      "servings": "1인분 (양념장은 3~4인분 분량)",
+      "ingredients": [
+        {
+          "rawText": "고추장 크게 1스푼",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "큰스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 크게 1스푼",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장 크게 한 스푼",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양조간장 2스푼",
+          "displayName": "양조간장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장 2스푼",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장 두 스푼",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "매실액 2스푼",
+          "displayName": "매실액",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "매실액 2스푼",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "매실액 두 스푼",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "마늘 1스푼",
+          "displayName": "마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마늘 1스푼",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마늘 한 스푼",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "참기름 1스푼",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1스푼",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름 한 스푼",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "통깨",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "통깨 뿌려서 버무리면 양념장 완성입니다",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 밥이 담겨 있음",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "상추",
+          "displayName": "상추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "상추랑 파채도 곁들이구요",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 썬 상추를 얹음",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "파채",
+          "displayName": "파채",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "상추랑 파채도 곁들이구요",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 파채를 얹음",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "육회 (1인분 기준으로 100g)",
+          "displayName": "육회",
+          "amount": "100",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "육회 200g인데 1인분 기준으로 100g만 쓰면 돼요",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1인분 기준으로 100g만 쓰면 돼요",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "계란 노른자",
+          "displayName": "계란 노른자",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "육회 위에 계란 노른자를 올림",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "종지에 고추장 크게 1스푼, 양조간장 2스푼, 매실액 2스푼, 마늘 1스푼, 참기름 1스푼, 통깨를 넣고 섞어 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 크게 1스푼, 양조간장 2스푼, 매실액 2스푼, 마늘 1스푼, 참기름 1스푼, 통깨",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장 크게 한 스푼, 간장 두 스푼, 매실액 두 스푼, 마늘 한 스푼, 참기름 한 스푼, 통깨 뿌려서 버무리면 양념장 완성입니다",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 밥을 담고 썰어둔 상추와 파채를 곁들여 올린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "상추랑 파채도 곁들이구요",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 상추와 파채를 올리는 모습",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "1인분 기준 육회 100g을 밥 위에 올린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "육회 200g인데 1인분 기준으로 100g만 쓰면 돼요",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "육회를 집어 밥 위에 올리는 모습",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "육회 위에 계란 노른자를 올린다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "육회 중앙에 계란 노른자를 얹는 모습",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "준비한 양념장을 2~3스푼 정도 간을 보면서 넣고 비벼준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양념장은 2~3스푼정도 간 보면서 맞춰주면 됩니다",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양념장을 얹고 비비는 모습",
+              "timestamp": "00:17"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

@@ -1,0 +1,454 @@
+{
+  "videoId": "VZoh4uwCi_4",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/VZoh4uwCi_4",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T23:22:37.553665+00:00",
+    "rawResponse": "{\n  \"title\": \"규동\",\n  \"description\": \"5분도 안 걸리고 비주얼과 맛 모두 잡은 초간단 일본식 소고기 덮밥 규동\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"불고기용으로 얇게 썰린 소고기\",\n      \"displayName\": \"불고기용 소고기\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 불고기용으로 얇게 썰린 소고기를 준비해 줍니다.\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 불고기용으로 얇게 썰린 소고기를 준비해줍니다.\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"불고기용 돼지고기 (비싼 소고기 대신 사용 가능)\",\n      \"displayName\": \"불고기용 돼지고기\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"비싼 소고기 대신 불고기용 돼지고기를 사용하셔도 좋습니다.\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"비싼 소고기 대신 불고기용 돼지고기를 사용하셔도 좋습니다.\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 반개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"추가로 양파 반개를 대충 채 썰어 줍니다.\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"추가로 양파 반개를 대충 채 썰어줍니다.\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 한두스푼\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"1~2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"인제 팬에 식용유를 한두 스푼 살짝만 둘러 주고\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 팬에 식용유를 한두스푼 살짝만 둘러주고\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 종이컵 2/3컵 (120ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"120\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물을 종이컵 3분의 2컵 부어 주고\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물을 종이컵 2/3컵 (120ml) 부어주고\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1스푼\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 마법의 굴소스 한 스푼과\",\n          \"timestamp\": \"00:45\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 마법의 굴소스 1스푼과\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돈까스소스 1스푼\",\n      \"displayName\": \"돈까스소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국민 소스인 돈까스 소스를 한 스푼 넣어 줍니다.\",\n          \"timestamp\": \"00:48\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"국민 소스인 돈까스소스를 1스푼 넣어줍니다.\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 설탕 한 스푼과\",\n          \"timestamp\": \"00:51\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 설탕 1스푼과\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식초 1스푼 (사과식초 권장)\",\n      \"displayName\": \"식초\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식초를 한 스푼 넣어 줍니다. 식초는 일반 식초를 사용해도 되지만 사과 식초를 사용하는 게 맛이 좋습니다.\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"식초를 1스푼 넣어줍니다. 식초는 일반 식초를 사용해도 되지만 사과식초를 사용하는 게 맛이 좋습니다.\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다시다나 치킨스톡 1/4스푼 (혹은 혼다시)\",\n      \"displayName\": \"다시다 또는 치킨스톡\",\n      \"amount\": \"1/4\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"추가로 다시다나 치킨스톡을 4분의 1스푼 살짝만 넣어 줍니다. 이때 치킨스톡 대신 혼다시를 사용하면 더욱 규동에 가까운 맛을 낼 수 있습니다.\",\n          \"timestamp\": \"00:58\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"추가로 다시다나 치킨스톡을 1/4스푼 살짝만 넣어줍니다. 이때 치킨스톡 대신 혼다시를 사용하면 더욱 규동에 가까운 맛을 낼 수 있습니다.\",\n          \"timestamp\": \"00:58\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"뜨끈한 흰밥\",\n      \"displayName\": \"흰밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"뜨끈한 흰밥 위에 다 올려주고\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"뜨끈한 흰밥 위에 다 올려주고\",\n          \"timestamp\": \"01:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이 위로 후추를 골고루 흩뿌려 주고\",\n          \"timestamp\": \"01:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이 위로 후추를 골고루 뿌려주고\",\n          \"timestamp\": \"01:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루도 스리슬쩍 흩뿌려 주면 더욱 먹음직스러워집니다.\",\n          \"timestamp\": \"01:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루도 스리슬쩍 흩뿌려주면 더욱 먹음직스러워집니다.\",\n          \"timestamp\": \"01:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 노른자\",\n      \"displayName\": \"계란 노른자\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 계란 노른자와\",\n          \"timestamp\": \"01:26\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 계란 노른자와\",\n          \"timestamp\": \"01:26\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 계란 노른자 1개를 올린다\",\n          \"timestamp\": \"01:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쪽파 혹은 대파의 초록초록한 부분\",\n      \"displayName\": \"쪽파 혹은 대파 초록 부분\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"쪽파 혹은 대파의 초록초록한 부분을 올려주면\",\n          \"timestamp\": \"01:28\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"쪽파 혹은 대파의 초록초록한 부분을 올려주면\",\n          \"timestamp\": \"01:28\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"준비한 불고기용 소고기를 먹기 좋은 한 입 크기로 잘라준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"준비해 둔 고기는 먹기 좋은 한 입 크기로 잘라주고\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"준비해둔 고기는 먹기 좋은 한입 크기로 잘라주고\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 반 개를 채 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"추가로 양파 반 개를 대충 채 썰어줍니다.\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"추가로 양파 반개를 대충 채 썰어줍니다.\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유를 1~2스푼 살짝 두르고, 썰어둔 양파와 소고기를 모두 넣고 은은하게 볶아준다. 고기가 뭉쳐있다면 하나씩 떼어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬에 식용유를 한두 스푼 살짝만 둘러 주고 손질해 둔 양파와 소고기를 다 넣어주고 다 같이 한 번 은은하게 볶아 줍니다. 만약 이렇게 고기가 뭉쳐 있다면 하나하나씩 맞닿지 뜯어 주시면 됩니다.\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 팬에 식용유를 한두스푼 살짝만 둘러주고 손질해둔 양파와 소고기를 다 넣어주고 다같이 한번 은은하게 볶아줍니다. 만약 이렇게 고기가 뭉쳐있다면 하나하나씩 마다치 뜯어주시면 됩니다.\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파가 서서히 갈색빛을 띠고 소고기 겉면의 핏기가 사라지면 물 2/3컵(120ml)을 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파도 서서히 갈색빛이 띄면서 소고기 겉면에 핏기가 사라졌다면 물을 종이컵 3분의 2컵 부어 주고\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파도 서서히 갈색빛이 띄면서 소고기 겉면에 핏기가 사라졌다면 물을 종이컵 2/3컵 (120ml) 부어주고\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"굴소스 1스푼, 돈까스소스 1스푼, 설탕 1스푼, 식초(사과식초 권장) 1스푼, 다시다 또는 치킨스톡(또는 혼다시) 1/4스푼을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 마법의 굴소스 한 스푼과 집에 하나씩은 무조건 있다는 국민 소스인 돈까스 소스를 한 스푼 넣어 줍니다. 그러고 설탕 한 스푼과 식초를 한 스푼 넣어 줍니다. 식초는 일반 식초를 사용해도 되지만 사과 식초를 사용하는 게 맛이 좋습니다. 추가로 다시다나 치킨스톡을 4분의 1스푼 살짝만 넣어 줍니다. 이때 치킨스톡 대신 혼다시를 사용하면 더욱 규동에 가까운 맛을 낼 수 있습니다.\",\n          \"timestamp\": \"00:45\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 마법의 굴소스 1스푼과 집에 하나씩은 무조건 있다는 국민 소스인 돈까스소스를 1스푼 넣어줍니다. 그리고 설탕 1스푼과 식초를 1스푼 넣어줍니다. 식초는 일반 식초를 사용해도 되지만 사과식초를 사용하는 게 맛이 좋습니다. 추가로 다시다나 치킨스톡을 1/4스푼 살짝만 넣어줍니다. 이때 치킨스톡 대신 혼다시를 사용하면 더욱 규동에 가까운 맛을 낼 수 있습니다.\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양념장을 잘 섞어주고, 촉촉한 정도로만 수분이 남아있도록 센 불에서 졸여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"인제 넣은 양념장을 잘 섞어 주고 촉촉한 정도로만 수분이 남아 있도록 센 불에서 마 시원하게 졸여 주시면 됩니다.\",\n          \"timestamp\": \"01:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 넣은 양념장을 잘 섞어주고 촉촉한 정도로만 수분이 남아있도록 센불에서 졸여주시면 됩니다.\",\n          \"timestamp\": \"01:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뜨끈한 흰밥 위에 볶은 고기와 양파를 국물과 함께 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"촉촉할 정도로만 수분이 남았으면 뜨끈한 흰밥 위에 다 올려주고\",\n          \"timestamp\": \"01:16\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"촉촉할 정도로만 수분이 남았으면 뜨끈한 흰밥 위에 다 올려주고\",\n          \"timestamp\": \"01:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 위에 후추를 골고루 뿌리고, 고춧가루를 슬쩍 뿌린 뒤 계란 노른자와 썰어둔 쪽파(또는 대파 초록 부분)를 올려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이 위로 후추를 골고루 흩뿌려 주고 고춧가루도 스리슬쩍 흩뿌려 주면 더욱 먹음직스러워집니다. 그러고 계란 노른자와 쪽파 혹은 대파의 초록초록한 부분을 올려주면 실제로 만드는데 5분도 안 걸리는 초간단 규동이 완성됩니다.\",\n          \"timestamp\": \"01:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이 위로 후추를 골고루 뿌려주고 고춧가루도 스리슬쩍 흩뿌려주면 더욱 먹음직스러워집니다. 그리고 계란 노른자와 쪽파 혹은 대파의 초록초록한 부분을 올려주면 실제로 만드는데 5분도 안걸리는 초간단 규동이 완성됩니다.\",\n          \"timestamp\": \"01:20\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "규동",
+      "description": "5분도 안 걸리고 비주얼과 맛 모두 잡은 초간단 일본식 소고기 덮밥 규동",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "불고기용으로 얇게 썰린 소고기",
+          "displayName": "불고기용 소고기",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 불고기용으로 얇게 썰린 소고기를 준비해 줍니다.",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 불고기용으로 얇게 썰린 소고기를 준비해줍니다.",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "불고기용 돼지고기 (비싼 소고기 대신 사용 가능)",
+          "displayName": "불고기용 돼지고기",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "비싼 소고기 대신 불고기용 돼지고기를 사용하셔도 좋습니다.",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "비싼 소고기 대신 불고기용 돼지고기를 사용하셔도 좋습니다.",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "양파 반개",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "추가로 양파 반개를 대충 채 썰어 줍니다.",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "추가로 양파 반개를 대충 채 썰어줍니다.",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "식용유 한두스푼",
+          "displayName": "식용유",
+          "amount": "1~2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "인제 팬에 식용유를 한두 스푼 살짝만 둘러 주고",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 팬에 식용유를 한두스푼 살짝만 둘러주고",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "물 종이컵 2/3컵 (120ml)",
+          "displayName": "물",
+          "amount": "120",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물을 종이컵 3분의 2컵 부어 주고",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물을 종이컵 2/3컵 (120ml) 부어주고",
+              "timestamp": "00:43"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "굴소스 1스푼",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 마법의 굴소스 한 스푼과",
+              "timestamp": "00:45"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 마법의 굴소스 1스푼과",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "돈까스소스 1스푼",
+          "displayName": "돈까스소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "국민 소스인 돈까스 소스를 한 스푼 넣어 줍니다.",
+              "timestamp": "00:48"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "국민 소스인 돈까스소스를 1스푼 넣어줍니다.",
+              "timestamp": "00:48"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "설탕 1스푼",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 설탕 한 스푼과",
+              "timestamp": "00:51"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 설탕 1스푼과",
+              "timestamp": "00:51"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "식초 1스푼 (사과식초 권장)",
+          "displayName": "식초",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "식초를 한 스푼 넣어 줍니다. 식초는 일반 식초를 사용해도 되지만 사과 식초를 사용하는 게 맛이 좋습니다.",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "식초를 1스푼 넣어줍니다. 식초는 일반 식초를 사용해도 되지만 사과식초를 사용하는 게 맛이 좋습니다.",
+              "timestamp": "00:53"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "다시다나 치킨스톡 1/4스푼 (혹은 혼다시)",
+          "displayName": "다시다 또는 치킨스톡",
+          "amount": "1/4",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "추가로 다시다나 치킨스톡을 4분의 1스푼 살짝만 넣어 줍니다. 이때 치킨스톡 대신 혼다시를 사용하면 더욱 규동에 가까운 맛을 낼 수 있습니다.",
+              "timestamp": "00:58"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "추가로 다시다나 치킨스톡을 1/4스푼 살짝만 넣어줍니다. 이때 치킨스톡 대신 혼다시를 사용하면 더욱 규동에 가까운 맛을 낼 수 있습니다.",
+              "timestamp": "00:58"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "뜨끈한 흰밥",
+          "displayName": "흰밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "뜨끈한 흰밥 위에 다 올려주고",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "뜨끈한 흰밥 위에 다 올려주고",
+              "timestamp": "01:18"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이 위로 후추를 골고루 흩뿌려 주고",
+              "timestamp": "01:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이 위로 후추를 골고루 뿌려주고",
+              "timestamp": "01:20"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "고춧가루",
+          "displayName": "고춧가루",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루도 스리슬쩍 흩뿌려 주면 더욱 먹음직스러워집니다.",
+              "timestamp": "01:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루도 스리슬쩍 흩뿌려주면 더욱 먹음직스러워집니다.",
+              "timestamp": "01:23"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "계란 노른자",
+          "displayName": "계란 노른자",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 계란 노른자와",
+              "timestamp": "01:26"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 계란 노른자와",
+              "timestamp": "01:26"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 계란 노른자 1개를 올린다",
+              "timestamp": "01:26"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "쪽파 혹은 대파의 초록초록한 부분",
+          "displayName": "쪽파 혹은 대파 초록 부분",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "쪽파 혹은 대파의 초록초록한 부분을 올려주면",
+              "timestamp": "01:28"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "쪽파 혹은 대파의 초록초록한 부분을 올려주면",
+              "timestamp": "01:28"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        }
+      ],
+      "steps": [
+        {
+          "text": "준비한 불고기용 소고기를 먹기 좋은 한 입 크기로 잘라준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "준비해 둔 고기는 먹기 좋은 한 입 크기로 잘라주고",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "준비해둔 고기는 먹기 좋은 한입 크기로 잘라주고",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "양파 반 개를 채 썰어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "추가로 양파 반 개를 대충 채 썰어줍니다.",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "추가로 양파 반개를 대충 채 썰어줍니다.",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유를 1~2스푼 살짝 두르고, 썰어둔 양파와 소고기를 모두 넣고 은은하게 볶아준다. 고기가 뭉쳐있다면 하나씩 떼어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 팬에 식용유를 한두 스푼 살짝만 둘러 주고 손질해 둔 양파와 소고기를 다 넣어주고 다 같이 한 번 은은하게 볶아 줍니다. 만약 이렇게 고기가 뭉쳐 있다면 하나하나씩 맞닿지 뜯어 주시면 됩니다.",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 팬에 식용유를 한두스푼 살짝만 둘러주고 손질해둔 양파와 소고기를 다 넣어주고 다같이 한번 은은하게 볶아줍니다. 만약 이렇게 고기가 뭉쳐있다면 하나하나씩 마다치 뜯어주시면 됩니다.",
+              "timestamp": "00:28"
+            }
+          ]
+        },
+        {
+          "text": "양파가 서서히 갈색빛을 띠고 소고기 겉면의 핏기가 사라지면 물 2/3컵(120ml)을 붓는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파도 서서히 갈색빛이 띄면서 소고기 겉면에 핏기가 사라졌다면 물을 종이컵 3분의 2컵 부어 주고",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파도 서서히 갈색빛이 띄면서 소고기 겉면에 핏기가 사라졌다면 물을 종이컵 2/3컵 (120ml) 부어주고",
+              "timestamp": "00:39"
+            }
+          ]
+        },
+        {
+          "text": "굴소스 1스푼, 돈까스소스 1스푼, 설탕 1스푼, 식초(사과식초 권장) 1스푼, 다시다 또는 치킨스톡(또는 혼다시) 1/4스푼을 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 마법의 굴소스 한 스푼과 집에 하나씩은 무조건 있다는 국민 소스인 돈까스 소스를 한 스푼 넣어 줍니다. 그러고 설탕 한 스푼과 식초를 한 스푼 넣어 줍니다. 식초는 일반 식초를 사용해도 되지만 사과 식초를 사용하는 게 맛이 좋습니다. 추가로 다시다나 치킨스톡을 4분의 1스푼 살짝만 넣어 줍니다. 이때 치킨스톡 대신 혼다시를 사용하면 더욱 규동에 가까운 맛을 낼 수 있습니다.",
+              "timestamp": "00:45"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 마법의 굴소스 1스푼과 집에 하나씩은 무조건 있다는 국민 소스인 돈까스소스를 1스푼 넣어줍니다. 그리고 설탕 1스푼과 식초를 1스푼 넣어줍니다. 식초는 일반 식초를 사용해도 되지만 사과식초를 사용하는 게 맛이 좋습니다. 추가로 다시다나 치킨스톡을 1/4스푼 살짝만 넣어줍니다. 이때 치킨스톡 대신 혼다시를 사용하면 더욱 규동에 가까운 맛을 낼 수 있습니다.",
+              "timestamp": "00:45"
+            }
+          ]
+        },
+        {
+          "text": "양념장을 잘 섞어주고, 촉촉한 정도로만 수분이 남아있도록 센 불에서 졸여준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "인제 넣은 양념장을 잘 섞어 주고 촉촉한 정도로만 수분이 남아 있도록 센 불에서 마 시원하게 졸여 주시면 됩니다.",
+              "timestamp": "01:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 넣은 양념장을 잘 섞어주고 촉촉한 정도로만 수분이 남아있도록 센불에서 졸여주시면 됩니다.",
+              "timestamp": "01:06"
+            }
+          ]
+        },
+        {
+          "text": "뜨끈한 흰밥 위에 볶은 고기와 양파를 국물과 함께 올린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "촉촉할 정도로만 수분이 남았으면 뜨끈한 흰밥 위에 다 올려주고",
+              "timestamp": "01:16"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "촉촉할 정도로만 수분이 남았으면 뜨끈한 흰밥 위에 다 올려주고",
+              "timestamp": "01:16"
+            }
+          ]
+        },
+        {
+          "text": "밥 위에 후추를 골고루 뿌리고, 고춧가루를 슬쩍 뿌린 뒤 계란 노른자와 썰어둔 쪽파(또는 대파 초록 부분)를 올려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이 위로 후추를 골고루 흩뿌려 주고 고춧가루도 스리슬쩍 흩뿌려 주면 더욱 먹음직스러워집니다. 그러고 계란 노른자와 쪽파 혹은 대파의 초록초록한 부분을 올려주면 실제로 만드는데 5분도 안 걸리는 초간단 규동이 완성됩니다.",
+              "timestamp": "01:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이 위로 후추를 골고루 뿌려주고 고춧가루도 스리슬쩍 흩뿌려주면 더욱 먹음직스러워집니다. 그리고 계란 노른자와 쪽파 혹은 대파의 초록초록한 부분을 올려주면 실제로 만드는데 5분도 안걸리는 초간단 규동이 완성됩니다.",
+              "timestamp": "01:20"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

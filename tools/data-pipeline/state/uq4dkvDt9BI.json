@@ -1,0 +1,227 @@
+{
+  "videoId": "uq4dkvDt9BI",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/uq4dkvDt9BI",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T08:13:45.115976+00:00",
+    "rawResponse": "{\n  \"title\": \"원팬파스타\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"올리브오일 4스푼 정도\",\n      \"displayName\": \"올리브오일\",\n      \"amount\": \"4\",\n      \"unit\": \"스푼 정도\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"올리브오일 4스푼 정도\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 2스푼\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 2스푼\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"베트남고추 3개\",\n      \"displayName\": \"베트남고추\",\n      \"amount\": \"3\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"베트남고추 3개\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파스타면\",\n      \"displayName\": \"파스타면\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 파스타면 1인분 분량을 넣음\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 3컵정도(650ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"650\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 3컵정도(650ml)\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치액 1\",\n      \"displayName\": \"참치액\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치액 1\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"숟가락에 참치액을 1스푼 계량해 넣음\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"숟가락에 굴소스를 1스푼 계량해 넣음\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 올리브오일 4스푼 정도를 두르고 다진마늘 2스푼을 넣어 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"올리브오일 4스푼 정도\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 2스푼\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"베트남고추 3개를 손으로 으깨어 넣고 함께 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"베트남고추 3개\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"베트남고추를 손으로 비벼 부수며 팬에 넣음\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"파스타면을 넣고 물 3컵 정도(650ml)를 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 파스타면을 넣음\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 3컵정도(650ml)\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"참치액 1스푼과 굴소스 1스푼을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치액 1 굴소스 1\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"젓가락으로 저어가며 끓이면서 국물이 자작해질 때까지 졸인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"끓이면서 졸이면\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"끝....\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 파스타를 그릇에 담아낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬의 파스타와 소스를 접시에 덜어 담음\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"파스타면의 정확한 무게나 개수 등 계량 수치 미표기\"\n  ]\n}",
+    "result": {
+      "title": "원팬파스타",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "올리브오일 4스푼 정도",
+          "displayName": "올리브오일",
+          "amount": "4",
+          "unit": "스푼 정도",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "올리브오일 4스푼 정도",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "다진마늘 2스푼",
+          "displayName": "다진마늘",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 2스푼",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "베트남고추 3개",
+          "displayName": "베트남고추",
+          "amount": "3",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "베트남고추 3개",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "파스타면",
+          "displayName": "파스타면",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 파스타면 1인분 분량을 넣음",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "물 3컵정도(650ml)",
+          "displayName": "물",
+          "amount": "650",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 3컵정도(650ml)",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "참치액 1",
+          "displayName": "참치액",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치액 1",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "숟가락에 참치액을 1스푼 계량해 넣음",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "굴소스 1",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "숟가락에 굴소스를 1스푼 계량해 넣음",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 올리브오일 4스푼 정도를 두르고 다진마늘 2스푼을 넣어 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "올리브오일 4스푼 정도",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 2스푼",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "베트남고추 3개를 손으로 으깨어 넣고 함께 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "베트남고추 3개",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "베트남고추를 손으로 비벼 부수며 팬에 넣음",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "파스타면을 넣고 물 3컵 정도(650ml)를 붓는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 파스타면을 넣음",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 3컵정도(650ml)",
+              "timestamp": "00:21"
+            }
+          ]
+        },
+        {
+          "text": "참치액 1스푼과 굴소스 1스푼을 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치액 1 굴소스 1",
+              "timestamp": "00:25"
+            }
+          ]
+        },
+        {
+          "text": "젓가락으로 저어가며 끓이면서 국물이 자작해질 때까지 졸인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "끓이면서 졸이면",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "끝....",
+              "timestamp": "00:32"
+            }
+          ]
+        },
+        {
+          "text": "완성된 파스타를 그릇에 담아낸다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬의 파스타와 소스를 접시에 덜어 담음",
+              "timestamp": "00:35"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "파스타면의 정확한 무게나 개수 등 계량 수치 미표기"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

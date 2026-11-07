@@ -1,0 +1,363 @@
+{
+  "videoId": "BR74P5_fhh4",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/BR74P5_fhh4",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T13:50:52.707995+00:00",
+    "rawResponse": "{\n  \"title\": \"게맛살 스크램블에그\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"쪽파\",\n      \"displayName\": \"쪽파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쪽파를 썰어준다\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"게맛살\",\n      \"displayName\": \"게맛살\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"게맛살을 찢어준다\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 1큰술\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장, 굴소스 1큰술씩\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1큰술\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장, 굴소스 1큰술씩\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1큰술\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕, 맛술 1큰술\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 1큰술\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕, 맛술 1큰술\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식초 0.5큰술\",\n      \"displayName\": \"식초\",\n      \"amount\": \"0.5\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식초 0.5큰술\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"녹말가루 1큰술\",\n      \"displayName\": \"녹말가루\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"녹말가루 1큰술, 물 1큰술\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 1큰술\",\n      \"displayName\": \"물\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"녹말가루 1큰술, 물 1큰술\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"달걀\",\n      \"displayName\": \"달걀\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"찢어 놓은 게맛살에 달걀, 소금 넣는다\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"게맛살 위에 달걀 4개를 깨 넣음\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"찢어 놓은 게맛살에 달걀, 소금 넣는다\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"오일\",\n      \"displayName\": \"오일\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 오일을 두르고\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 요리 위에 통깨를 뿌림\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"쪽파를 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쪽파를 썰어준다\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"게맛살을 잘게 찢어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"게맛살을 찢어준다\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 간장 1큰술, 굴소스 1큰술, 설탕 1큰술, 맛술 1큰술, 식초 0.5큰술을 넣고 잘 섞어 양념을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장, 굴소스 1큰술씩\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕, 맛술 1큰술\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식초 0.5큰술\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"녹말가루 1큰술과 물 1큰술을 섞어 전분물을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"녹말가루 1큰술, 물 1큰술\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"찢어 놓은 게맛살에 달걀과 소금을 넣고 골고루 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"찢어 놓은 게맛살에 달걀, 소금 넣는다\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 섞어 놓은 양념을 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 섞어 놓은 양념을 끓여준다\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"text\": \"전분물로 농도를 맞춘다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"전분물로 농도를 맞춘다\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 오일을 두르고 게맛살 달걀물을 부어 스크램블에그를 만들어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 오일을 두르고\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스크램블에그를 만들어준다\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"text\": \"몽글몽글하게 70~80% 익혀준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"몽글몽글하게 70~80% 익혀준다\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 예쁘게 담고 소스를 뿌린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"그릇에 예쁘게 담고 소스 뿌리고\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    },\n    {\n      \"text\": \"쪽파와 통깨를 뿌려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쪽파를 뿌려준다\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"통깨를 추가로 뿌려 마무리함\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"영상 내 별도의 공식 요리 제목 텍스트나 음성이 없어 영상 내용(게맛살, 스크램블에그)을 바탕으로 '게맛살 스크램블에그'로 표기함\",\n    \"쪽파, 게맛살, 달걀, 소금, 오일, 통깨의 정량 수치는 자막이나 음성으로 명시되지 않음(달걀은 시각적으로 4개가 투입됨)\"\n  ]\n}",
+    "result": {
+      "title": "게맛살 스크램블에그",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "쪽파",
+          "displayName": "쪽파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쪽파를 썰어준다",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "게맛살",
+          "displayName": "게맛살",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "게맛살을 찢어준다",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "간장 1큰술",
+          "displayName": "간장",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장, 굴소스 1큰술씩",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "굴소스 1큰술",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장, 굴소스 1큰술씩",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "설탕 1큰술",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕, 맛술 1큰술",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "맛술 1큰술",
+          "displayName": "맛술",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕, 맛술 1큰술",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "식초 0.5큰술",
+          "displayName": "식초",
+          "amount": "0.5",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식초 0.5큰술",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "녹말가루 1큰술",
+          "displayName": "녹말가루",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "녹말가루 1큰술, 물 1큰술",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "물 1큰술",
+          "displayName": "물",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "녹말가루 1큰술, 물 1큰술",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "달걀",
+          "displayName": "달걀",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "찢어 놓은 게맛살에 달걀, 소금 넣는다",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "게맛살 위에 달걀 4개를 깨 넣음",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "소금",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "찢어 놓은 게맛살에 달걀, 소금 넣는다",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "오일",
+          "displayName": "오일",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 오일을 두르고",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 요리 위에 통깨를 뿌림",
+              "timestamp": "00:53"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "쪽파를 썰어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쪽파를 썰어준다",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "게맛살을 잘게 찢어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "게맛살을 찢어준다",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "볼에 간장 1큰술, 굴소스 1큰술, 설탕 1큰술, 맛술 1큰술, 식초 0.5큰술을 넣고 잘 섞어 양념을 만든다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장, 굴소스 1큰술씩",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕, 맛술 1큰술",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식초 0.5큰술",
+              "timestamp": "00:21"
+            }
+          ]
+        },
+        {
+          "text": "녹말가루 1큰술과 물 1큰술을 섞어 전분물을 만든다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "녹말가루 1큰술, 물 1큰술",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "찢어 놓은 게맛살에 달걀과 소금을 넣고 골고루 섞어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "찢어 놓은 게맛살에 달걀, 소금 넣는다",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "팬에 섞어 놓은 양념을 끓여준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 섞어 놓은 양념을 끓여준다",
+              "timestamp": "00:32"
+            }
+          ]
+        },
+        {
+          "text": "전분물로 농도를 맞춘다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "전분물로 농도를 맞춘다",
+              "timestamp": "00:39"
+            }
+          ]
+        },
+        {
+          "text": "팬에 오일을 두르고 게맛살 달걀물을 부어 스크램블에그를 만들어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 오일을 두르고",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스크램블에그를 만들어준다",
+              "timestamp": "00:43"
+            }
+          ]
+        },
+        {
+          "text": "몽글몽글하게 70~80% 익혀준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "몽글몽글하게 70~80% 익혀준다",
+              "timestamp": "00:45"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 예쁘게 담고 소스를 뿌린다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "그릇에 예쁘게 담고 소스 뿌리고",
+              "timestamp": "00:48"
+            }
+          ]
+        },
+        {
+          "text": "쪽파와 통깨를 뿌려준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쪽파를 뿌려준다",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "통깨를 추가로 뿌려 마무리함",
+              "timestamp": "00:53"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "영상 내 별도의 공식 요리 제목 텍스트나 음성이 없어 영상 내용(게맛살, 스크램블에그)을 바탕으로 '게맛살 스크램블에그'로 표기함",
+        "쪽파, 게맛살, 달걀, 소금, 오일, 통깨의 정량 수치는 자막이나 음성으로 명시되지 않음(달걀은 시각적으로 4개가 투입됨)"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  },
+  "agentReviewNote": "Applied from the saved Gemini extraction; all required ingredients were mapped under V3 recipe-local rules. Deterministic dataset importer validation passed and DB sync completed."
+}

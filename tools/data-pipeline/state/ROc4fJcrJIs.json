@@ -1,0 +1,460 @@
+{
+  "videoId": "ROc4fJcrJIs",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/ROc4fJcrJIs",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:55:21.778689+00:00",
+    "rawResponse": "{\n  \"title\": \"업소용 마파두부\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"라오간마 유라죠우 4spoons\",\n      \"displayName\": \"라오간마 유라죠우\",\n      \"amount\": \"4\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"라오간마 유라죠우 4spoons\",\n          \"timestamp\": \"0:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 라오간마 유라죠우\",\n          \"timestamp\": \"0:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"두반장 4spoons\",\n      \"displayName\": \"두반장\",\n      \"amount\": \"4\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두반장 4spoons\",\n          \"timestamp\": \"0:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"두반장\",\n          \"timestamp\": \"0:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"차돌박이 300g\",\n      \"displayName\": \"차돌박이\",\n      \"amount\": \"300\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"차돌박이 300g\",\n          \"timestamp\": \"0:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"작게 썬 소고기\",\n          \"timestamp\": \"0:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 100g\",\n      \"displayName\": \"대파\",\n      \"amount\": \"100\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 100g\",\n          \"timestamp\": \"0:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파\",\n          \"timestamp\": \"0:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 생강 0.5spoon\",\n      \"displayName\": \"다진 생강\",\n      \"amount\": \"0.5\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 생강 0.5spoon\",\n          \"timestamp\": \"0:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 생강\",\n          \"timestamp\": \"0:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 3spoons\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"3\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 3spoons\",\n          \"timestamp\": \"0:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘\",\n          \"timestamp\": \"0:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 2spoons\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"2\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 2spoons\",\n          \"timestamp\": \"0:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루를 넣고 볶아줘\",\n          \"timestamp\": \"0:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 400ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"400\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 400ml\",\n          \"timestamp\": \"0:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기가 노릇노릇하게 익으면 물을 부어준 다음\",\n          \"timestamp\": \"0:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 1spoon\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 1spoon\",\n          \"timestamp\": \"0:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장\",\n          \"timestamp\": \"0:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1spoon\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1spoon\",\n          \"timestamp\": \"0:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스\",\n          \"timestamp\": \"0:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 2spoons\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"2\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 2spoons\",\n          \"timestamp\": \"0:28\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술\",\n          \"timestamp\": \"0:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 0.5spoon\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.5\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 0.5spoon\",\n          \"timestamp\": \"0:29\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕\",\n          \"timestamp\": \"0:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"치킨스톡 0.5spoon\",\n      \"displayName\": \"치킨스톡\",\n      \"amount\": \"0.5\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"치킨스톡 0.5spoon\",\n          \"timestamp\": \"0:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"치킨스톡으로 양념을 해줄 거야\",\n          \"timestamp\": \"0:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"연두부 1kg\",\n      \"displayName\": \"연두부\",\n      \"amount\": \"1\",\n      \"unit\": \"kg\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"연두부 1kg\",\n          \"timestamp\": \"0:40\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 두부를 썰어서 넣을 건데 그냥 두부 말고 연두부로 하면 훨씬 더 맛있단다\",\n          \"timestamp\": \"0:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 50ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"50\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 50ml\",\n          \"timestamp\": \"0:45\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 물에\",\n          \"timestamp\": \"0:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"전분 1spoon\",\n      \"displayName\": \"전분\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"전분 1spoon\",\n          \"timestamp\": \"0:46\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"감자전분을 타서 전분물을 만들어준 다음\",\n          \"timestamp\": \"0:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쪽파 30g\",\n      \"displayName\": \"쪽파\",\n      \"amount\": \"30\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쪽파 30g\",\n          \"timestamp\": \"0:53\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 쪽파 넉넉하게 뿌려주면\",\n          \"timestamp\": \"0:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"화자오 0.2spoon\",\n      \"displayName\": \"화자오\",\n      \"amount\": \"0.2\",\n      \"unit\": \"spoon\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"화자오 0.2spoon\",\n          \"timestamp\": \"1:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물론 이렇게만 먹어도 맛있지만 진짜 현지 스타일은 여기서 하나가 더 추가되거든 팬에 바짝 구운 화자오를 가루로 만들어서 뿌려주면 훨씬 더 맛있게 먹을 수 있단다\",\n          \"timestamp\": \"0:56\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 라오간마 유라죠우 4스푼, 두반장 4스푼, 차돌박이 300g, 대파 100g, 다진 생강 0.5스푼, 다진 마늘 3스푼, 고춧가루 2스푼을 넣고 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 라오간마 유라죠우 두반장 작게 썬 소고기 대파 다진 생강 다진 마늘 고춧가루를 넣고 볶아줘\",\n          \"timestamp\": \"0:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기가 노릇노릇하게 익으면 물 400ml를 붓고 진간장 1스푼, 굴소스 1스푼, 맛술 2스푼, 설탕 0.5스푼, 치킨스톡 0.5스푼을 넣어 양념한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기가 노릇노릇하게 익으면 물을 부어준 다음 진간장 굴소스 맛술 설탕 치킨스톡으로 양념을 해줄 거야\",\n          \"timestamp\": \"0:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"연두부 1kg을 썰어 넣고 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 두부를 썰어서 넣을 건데 그냥 두부 말고 연두부로 하면 훨씬 더 맛있단다\",\n          \"timestamp\": \"0:31\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"연두부 1kg\",\n          \"timestamp\": \"0:40\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 50ml에 전분 1스푼을 섞어 만든 전분물을 조금씩 나누어 부으면서 바닥에 눌어붙지 않도록 팬을 흔들어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 물에 감자전분을 타서 전분물을 만들어준 다음 조금씩 나눠서 부어줘 이때 팬을 한 번씩 흔들어줘야 밑에 눌러붙지 않는단다\",\n          \"timestamp\": \"0:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"쪽파 30g을 썰어 넉넉하게 뿌려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 쪽파 넉넉하게 뿌려주면 마파두부 끝\",\n          \"timestamp\": \"0:53\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 바짝 구운 화자오를 곱게 빻아 0.2스푼을 마파두부 위에 뿌려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 바짝 구운 화자오를 가루로 만들어서 뿌려주면 훨씬 더 맛있게 먹을 수 있단다\",\n          \"timestamp\": \"1:01\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"화자오 0.2spoon\",\n          \"timestamp\": \"1:06\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "업소용 마파두부",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "라오간마 유라죠우 4spoons",
+          "displayName": "라오간마 유라죠우",
+          "amount": "4",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "라오간마 유라죠우 4spoons",
+              "timestamp": "0:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 라오간마 유라죠우",
+              "timestamp": "0:08"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "두반장 4spoons",
+          "displayName": "두반장",
+          "amount": "4",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두반장 4spoons",
+              "timestamp": "0:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "두반장",
+              "timestamp": "0:11"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "차돌박이 300g",
+          "displayName": "차돌박이",
+          "amount": "300",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "차돌박이 300g",
+              "timestamp": "0:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "작게 썬 소고기",
+              "timestamp": "0:12"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "대파 100g",
+          "displayName": "대파",
+          "amount": "100",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 100g",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파",
+              "timestamp": "0:13"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "다진 생강 0.5spoon",
+          "displayName": "다진 생강",
+          "amount": "0.5",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 생강 0.5spoon",
+              "timestamp": "0:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 생강",
+              "timestamp": "0:14"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "다진 마늘 3spoons",
+          "displayName": "다진 마늘",
+          "amount": "3",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 3spoons",
+              "timestamp": "0:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘",
+              "timestamp": "0:15"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "고춧가루 2spoons",
+          "displayName": "고춧가루",
+          "amount": "2",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 2spoons",
+              "timestamp": "0:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루를 넣고 볶아줘",
+              "timestamp": "0:16"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "물 400ml",
+          "displayName": "물",
+          "amount": "400",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 400ml",
+              "timestamp": "0:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고기가 노릇노릇하게 익으면 물을 부어준 다음",
+              "timestamp": "0:24"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "진간장 1spoon",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 1spoon",
+              "timestamp": "0:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장",
+              "timestamp": "0:26"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "굴소스 1spoon",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1spoon",
+              "timestamp": "0:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "굴소스",
+              "timestamp": "0:27"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "맛술 2spoons",
+          "displayName": "맛술",
+          "amount": "2",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 2spoons",
+              "timestamp": "0:28"
+            },
+            {
+              "type": "SPEECH",
+              "text": "맛술",
+              "timestamp": "0:28"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "설탕 0.5spoon",
+          "displayName": "설탕",
+          "amount": "0.5",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 0.5spoon",
+              "timestamp": "0:29"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕",
+              "timestamp": "0:29"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "치킨스톡 0.5spoon",
+          "displayName": "치킨스톡",
+          "amount": "0.5",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "치킨스톡 0.5spoon",
+              "timestamp": "0:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "치킨스톡으로 양념을 해줄 거야",
+              "timestamp": "0:30"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "연두부 1kg",
+          "displayName": "연두부",
+          "amount": "1",
+          "unit": "kg",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "연두부 1kg",
+              "timestamp": "0:40"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 두부를 썰어서 넣을 건데 그냥 두부 말고 연두부로 하면 훨씬 더 맛있단다",
+              "timestamp": "0:31"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "물 50ml",
+          "displayName": "물",
+          "amount": "50",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 50ml",
+              "timestamp": "0:45"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 물에",
+              "timestamp": "0:45"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "전분 1spoon",
+          "displayName": "전분",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "전분 1spoon",
+              "timestamp": "0:46"
+            },
+            {
+              "type": "SPEECH",
+              "text": "감자전분을 타서 전분물을 만들어준 다음",
+              "timestamp": "0:46"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "쪽파 30g",
+          "displayName": "쪽파",
+          "amount": "30",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쪽파 30g",
+              "timestamp": "0:53"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 쪽파 넉넉하게 뿌려주면",
+              "timestamp": "0:53"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        },
+        {
+          "rawText": "화자오 0.2spoon",
+          "displayName": "화자오",
+          "amount": "0.2",
+          "unit": "spoon",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "화자오 0.2spoon",
+              "timestamp": "1:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물론 이렇게만 먹어도 맛있지만 진짜 현지 스타일은 여기서 하나가 더 추가되거든 팬에 바짝 구운 화자오를 가루로 만들어서 뿌려주면 훨씬 더 맛있게 먹을 수 있단다",
+              "timestamp": "0:56"
+            }
+          ],
+          "sourceId": "ingredient-18"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 라오간마 유라죠우 4스푼, 두반장 4스푼, 차돌박이 300g, 대파 100g, 다진 생강 0.5스푼, 다진 마늘 3스푼, 고춧가루 2스푼을 넣고 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 라오간마 유라죠우 두반장 작게 썬 소고기 대파 다진 생강 다진 마늘 고춧가루를 넣고 볶아줘",
+              "timestamp": "0:08"
+            }
+          ]
+        },
+        {
+          "text": "고기가 노릇노릇하게 익으면 물 400ml를 붓고 진간장 1스푼, 굴소스 1스푼, 맛술 2스푼, 설탕 0.5스푼, 치킨스톡 0.5스푼을 넣어 양념한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고기가 노릇노릇하게 익으면 물을 부어준 다음 진간장 굴소스 맛술 설탕 치킨스톡으로 양념을 해줄 거야",
+              "timestamp": "0:24"
+            }
+          ]
+        },
+        {
+          "text": "연두부 1kg을 썰어 넣고 끓여준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 두부를 썰어서 넣을 건데 그냥 두부 말고 연두부로 하면 훨씬 더 맛있단다",
+              "timestamp": "0:31"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "연두부 1kg",
+              "timestamp": "0:40"
+            }
+          ]
+        },
+        {
+          "text": "물 50ml에 전분 1스푼을 섞어 만든 전분물을 조금씩 나누어 부으면서 바닥에 눌어붙지 않도록 팬을 흔들어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 물에 감자전분을 타서 전분물을 만들어준 다음 조금씩 나눠서 부어줘 이때 팬을 한 번씩 흔들어줘야 밑에 눌러붙지 않는단다",
+              "timestamp": "0:45"
+            }
+          ]
+        },
+        {
+          "text": "쪽파 30g을 썰어 넉넉하게 뿌려준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 쪽파 넉넉하게 뿌려주면 마파두부 끝",
+              "timestamp": "0:53"
+            }
+          ]
+        },
+        {
+          "text": "팬에 바짝 구운 화자오를 곱게 빻아 0.2스푼을 마파두부 위에 뿌려 마무리한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 바짝 구운 화자오를 가루로 만들어서 뿌려주면 훨씬 더 맛있게 먹을 수 있단다",
+              "timestamp": "1:01"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "화자오 0.2spoon",
+              "timestamp": "1:06"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

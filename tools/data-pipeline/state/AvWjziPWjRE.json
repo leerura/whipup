@@ -1,0 +1,349 @@
+{
+  "videoId": "AvWjziPWjRE",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/AvWjziPWjRE",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T13:47:35.393386+00:00",
+    "rawResponse": "{\n  \"title\": \"초간단 한식 한상\",\n  \"description\": null,\n  \"servings\": \"2\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"스팸\",\n      \"displayName\": \"스팸\",\n      \"amount\": \"1\",\n      \"unit\": \"캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스팸 노릇노릇 구워주고\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"스팸 캔을 따서 도마 위에서 두툼하게 썬 뒤 팬에 노릇하게 굽는 모습\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쌀\",\n      \"displayName\": \"쌀\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"'97년생 농부'님께서 보내주신 귀한 쌀로 솥밥해요\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비에 담긴 백미에 흑미를 추가하는 모습\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"흑미\",\n      \"displayName\": \"흑미\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"흑미\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"봉지에서 계량컵으로 흑미를 떠서 솥에 붓는 모습\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치\",\n      \"displayName\": \"김치\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥하는 동안 김치찌개 끓여줍니다\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"뚝배기에 썰린 김치가 담겨 있는 모습\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"김치가 담긴 뚝배기에 물을 붓는 모습\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추\",\n      \"displayName\": \"고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"초록색 고추를 송송 썰어 찌개에 넣는 모습\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양파 반 개를 깍둑썰기하여 찌개에 넣는 모습\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치\",\n      \"displayName\": \"참치캔\",\n      \"amount\": \"1\",\n      \"unit\": \"캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"오늘은 제 최애 참치김치찌개예요\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"동원참치 캔을 따서 찌개에 숟가락으로 듬뿍 넣는 모습\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"두부\",\n      \"displayName\": \"두부\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"네모나게 썬 두부를 찌개 중앙에 얹는 모습\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"어슷 썬 대파를 찌개에 두부 옆에 올리는 모습\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그라인더로 통후추를 찌개 위에 갈아 넣는 모습\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란\",\n      \"displayName\": \"계란\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란말이도 빠질 수 없죠!\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"풀어둔 달걀물을 사각팬에 부어 계란말이를 만드는 모습\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"스팸을 캔에서 꺼내 일정한 두께로 썬 뒤 팬에 올려 앞뒤로 노릇노릇하게 굽는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스팸 노릇노릇 구워주고\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"스팸을 썰고 팬에서 뒤집어가며 굽는 장면\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"솥에 쌀과 흑미를 넣고 물을 맞춰 솥밥을 안친다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"'97년생 농부'님께서 보내주신 귀한 쌀로 솥밥해요\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"솥에 흑미를 붓고 뚜껑을 덮어 불에 올리는 장면\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고추는 송송 썰고, 양파는 깍둑썰기하여 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"고추와 양파를 도마 위에서 써는 장면\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뚝배기에 썰어둔 김치를 넣고 물을 부은 뒤, 썰어둔 양파와 고추를 넣고 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥하는 동안 김치찌개 끓여줍니다\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"김치에 물을 붓고 썰어둔 양파와 고추를 넣는 장면\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"찌개가 끓어오르면 참치를 넣고, 썰어둔 두부와 파를 올린 뒤 후춧가루를 갈아 넣어 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"오늘은 제 최애 참치김치찌개예요\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"참치캔의 참치, 두부, 대파를 올리고 통후추를 갈아 넣는 장면\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"풀어둔 달걀물을 팬에 나누어 부어가며 말아 계란말이를 완성한 뒤 먹기 좋은 크기로 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란말이도 빠질 수 없죠!\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"사각팬에 달걀물을 부어 말고 도마에서 써는 장면\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"지어진 흑미 솥밥을 밥공기에 퍼 담고, 구운 스팸, 참치김치찌개, 계란말이 등과 함께 한 상을 차린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"윤기 좔좔\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"오늘도 맛있게 먹었습니다\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"솥에서 흑미밥을 밥그릇에 퍼 담아 완성된 상차림을 보여주는 장면\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"김치찌개에 부은 액체가 생수인지 육수인지 명시되지 않음\",\n    \"계란말이에 들어간 달걀 개수 및 추가 부재료(파/간 등)의 정확한 계량값 미제시\",\n    \"쌀과 물의 정확한 비율 미제시\"\n  ]\n}",
+    "result": {
+      "title": "초간단 한식 한상",
+      "description": null,
+      "servings": "2",
+      "ingredients": [
+        {
+          "rawText": "스팸",
+          "displayName": "스팸",
+          "amount": "1",
+          "unit": "캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스팸 노릇노릇 구워주고",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "스팸 캔을 따서 도마 위에서 두툼하게 썬 뒤 팬에 노릇하게 굽는 모습",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "쌀",
+          "displayName": "쌀",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "'97년생 농부'님께서 보내주신 귀한 쌀로 솥밥해요",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비에 담긴 백미에 흑미를 추가하는 모습",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "흑미",
+          "displayName": "흑미",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "흑미",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "봉지에서 계량컵으로 흑미를 떠서 솥에 붓는 모습",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "김치",
+          "displayName": "김치",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥하는 동안 김치찌개 끓여줍니다",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "뚝배기에 썰린 김치가 담겨 있는 모습",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "물",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "김치가 담긴 뚝배기에 물을 붓는 모습",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "고추",
+          "displayName": "고추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "초록색 고추를 송송 썰어 찌개에 넣는 모습",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양파 반 개를 깍둑썰기하여 찌개에 넣는 모습",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "참치",
+          "displayName": "참치캔",
+          "amount": "1",
+          "unit": "캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "오늘은 제 최애 참치김치찌개예요",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "동원참치 캔을 따서 찌개에 숟가락으로 듬뿍 넣는 모습",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "두부",
+          "displayName": "두부",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "네모나게 썬 두부를 찌개 중앙에 얹는 모습",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "어슷 썬 대파를 찌개에 두부 옆에 올리는 모습",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그라인더로 통후추를 찌개 위에 갈아 넣는 모습",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "계란",
+          "displayName": "계란",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란말이도 빠질 수 없죠!",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "풀어둔 달걀물을 사각팬에 부어 계란말이를 만드는 모습",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "스팸을 캔에서 꺼내 일정한 두께로 썬 뒤 팬에 올려 앞뒤로 노릇노릇하게 굽는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스팸 노릇노릇 구워주고",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "스팸을 썰고 팬에서 뒤집어가며 굽는 장면",
+              "timestamp": "00:02"
+            }
+          ]
+        },
+        {
+          "text": "솥에 쌀과 흑미를 넣고 물을 맞춰 솥밥을 안친다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "'97년생 농부'님께서 보내주신 귀한 쌀로 솥밥해요",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "솥에 흑미를 붓고 뚜껑을 덮어 불에 올리는 장면",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "고추는 송송 썰고, 양파는 깍둑썰기하여 준비한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "고추와 양파를 도마 위에서 써는 장면",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "뚝배기에 썰어둔 김치를 넣고 물을 부은 뒤, 썰어둔 양파와 고추를 넣고 끓인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥하는 동안 김치찌개 끓여줍니다",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "김치에 물을 붓고 썰어둔 양파와 고추를 넣는 장면",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "찌개가 끓어오르면 참치를 넣고, 썰어둔 두부와 파를 올린 뒤 후춧가루를 갈아 넣어 끓인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "오늘은 제 최애 참치김치찌개예요",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "참치캔의 참치, 두부, 대파를 올리고 통후추를 갈아 넣는 장면",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "풀어둔 달걀물을 팬에 나누어 부어가며 말아 계란말이를 완성한 뒤 먹기 좋은 크기로 썬다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란말이도 빠질 수 없죠!",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "사각팬에 달걀물을 부어 말고 도마에서 써는 장면",
+              "timestamp": "00:19"
+            }
+          ]
+        },
+        {
+          "text": "지어진 흑미 솥밥을 밥공기에 퍼 담고, 구운 스팸, 참치김치찌개, 계란말이 등과 함께 한 상을 차린다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "윤기 좔좔",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "오늘도 맛있게 먹었습니다",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "솥에서 흑미밥을 밥그릇에 퍼 담아 완성된 상차림을 보여주는 장면",
+              "timestamp": "00:23"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "김치찌개에 부은 액체가 생수인지 육수인지 명시되지 않음",
+        "계란말이에 들어간 달걀 개수 및 추가 부재료(파/간 등)의 정확한 계량값 미제시",
+        "쌀과 물의 정확한 비율 미제시"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  },
+  "agentReviewNote": "Added as DRAFT: 여러 반찬과 밥을 포함한 한상 추출이며, 조리 전 쌀과 흑미가 카탈로그의 완성된 밥 보유 단위와 다르고 Gemini도 쌀 비율/찌개 액체 종류를 unresolved로 남겨 미매핑 유지."
+}

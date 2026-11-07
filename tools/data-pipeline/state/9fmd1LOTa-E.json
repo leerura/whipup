@@ -1,0 +1,575 @@
+{
+  "videoId": "9fmd1LOTa-E",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/9fmd1LOTa-E",
+  "sourceMetadata": {"sourceTitle":"두부조림 이렇게 하는게 가장 맛있습니다. 안보면 후회하는 뒤집어지게 맛있는 방법! 들기름으로 먼저 구우면 맛이 20배","sourceChannelName":"소소황 Cook & Eat","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.163049Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T10:46:52.489214+00:00",
+    "rawResponse": "{\n  \"title\": \"두부조림\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"부침두부 600g\",\n      \"displayName\": \"부침두부\",\n      \"amount\": \"600\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"부침두부 600g\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 두부 600g을 길고 도톰하게 썰어줍니다\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 2대\",\n      \"displayName\": \"대파\",\n      \"amount\": \"2\",\n      \"unit\": \"대\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 2대\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파 2대를 도톰하게 어슷썰어줍니다\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 2/3개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"2/3\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 2/3개\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 2/3개를 채썰어줍니다\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 3개\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"3\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 3개\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"청양고추 3개를 어슷썰어줍니다\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"홍고추 1개\",\n      \"displayName\": \"홍고추\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"홍고추 1개\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"홍고추 1개를 어슷썰어줍니다\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"멸치다시마 육수 200ml\",\n      \"displayName\": \"멸치다시마 육수\",\n      \"amount\": \"200\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"멸치다시마 육수 200ml\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"멸치다시마 육수 200ml를 부어줍니다\",\n          \"timestamp\": \"02:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 3.5큰술\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"3.5\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 3.5큰술\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"진간장 3.5큰술\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 2큰술\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 2큰술\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"맛술 2큰술\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"멸치액젓 1큰술\",\n      \"displayName\": \"멸치액젓\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"멸치액젓, 물엿 1큰술\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"멸치액젓 1큰술\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1.5큰술\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1.5\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루, 다진마늘 1.5큰술\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘 1.5큰술\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물엿 1큰술\",\n      \"displayName\": \"물엿\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"멸치액젓, 물엿 1큰술\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물엿 1큰술\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루, 다진마늘 1.5큰술\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루 1.5큰술\",\n          \"timestamp\": \"00:49\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파가 투명해지면 고춧가루 1큰술을 넣고 볶아줍니다(중불)\",\n          \"timestamp\": \"01:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 2큰술, 후추\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추를 넣고 섞어줍니다\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"들기름 1큰술\",\n      \"displayName\": \"들기름\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"들기름 1큰술\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"예열된 팬에 식용유 1큰술과 들기름 1큰술을 두르고\",\n          \"timestamp\": \"00:57\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 1큰술\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"예열된 팬에 식용유 1큰술과 들기름 1큰술을 두르고\",\n          \"timestamp\": \"00:57\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"냄비에 식용유 1큰술을 두르고 양파와 대파 약간을 넣고 볶아줍니다\",\n          \"timestamp\": \"01:33\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"두부 600g을 길고 도톰하게 썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 두부 600g을 길고 도톰하게 썰어줍니다\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"키친타월로 두부의 물기를 제거해줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"키친타월로 두부의 물기를 제거해줍니다\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 2/3개를 채썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 2/3개를 채썰어줍니다\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파 2대를 도톰하게 어슷썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파 2대를 도톰하게 어슷썰어줍니다\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"청양고추 3개를 어슷썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"청양고추 3개를 어슷썰어줍니다\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"홍고추 1개를 어슷썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"홍고추 1개를 어슷썰어줍니다\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"진간장 3.5큰술, 맛술 2큰술, 멸치액젓 1큰술, 다진마늘 1.5큰술, 물엿 1큰술, 고춧가루 1.5큰술, 후추를 넣고 섞어 양념장을 만듭니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"진간장 3.5큰술\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"맛술 2큰술\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"멸치액젓 1큰술\",\n          \"timestamp\": \"00:42\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘 1.5큰술\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물엿 1큰술\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루 1.5큰술\",\n          \"timestamp\": \"00:49\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추를 넣고 섞어줍니다\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    },\n    {\n      \"text\": \"예열된 팬에 식용유 1큰술과 들기름 1큰술을 두르고 두부를 튀기듯이 노릇하게 구워줍니다(중불).\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"예열된 팬에 식용유 1큰술과 들기름 1큰술을 두르고\",\n          \"timestamp\": \"00:57\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"두부를 튀기듯이 노릇하게 구워줍니다(중불)\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뒤집어서 앞뒤로 노릇하게 구워줍니다(중불).\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"뒤집어서 앞뒤로 노릇하게 구워줍니다(중불)\",\n          \"timestamp\": \"01:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"노릇하게 구운 두부를 채반에 들어내줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"노릇하게 구운 두부를 채반에 들어내줍니다\",\n          \"timestamp\": \"01:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 식용유 1큰술을 두르고 양파와 대파 약간을 넣고 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"냄비에 식용유 1큰술을 두르고 양파와\",\n          \"timestamp\": \"01:33\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파 약간을 넣고 볶아줍니다\",\n          \"timestamp\": \"01:35\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파가 투명해지면 고춧가루 1큰술을 넣고 볶아줍니다(중불).\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파가 투명해지면 고춧가루 1큰술을 넣고 볶아줍니다(중불)\",\n          \"timestamp\": \"01:42\"\n        }\n      ]\n    },\n    {\n      \"text\": \"어느정도 볶아지면 양파 위에 구운 두부를 돌려 얹어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"어느정도 볶아지면 양파 위에 구운 두부를 돌려 얹어줍니다\",\n          \"timestamp\": \"01:53\"\n        }\n      ]\n    },\n    {\n      \"text\": \"청·홍고추와 대파를 듬뿍 넣어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"청·홍고추\",\n          \"timestamp\": \"02:00\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파를 듬뿍 넣어주고\",\n          \"timestamp\": \"02:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양념장을 넣어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양념장을 넣어줍니다\",\n          \"timestamp\": \"02:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"멸치다시마 육수 200ml를 부어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"멸치다시마 육수 200ml를 부어줍니다\",\n          \"timestamp\": \"02:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뚜껑을 닫고 1~2분간 끓여줍니다(중·강불).\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"뚜껑을 닫고 1~2분간 끓여줍니다(중·강불)\",\n          \"timestamp\": \"02:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"1~2분 후 국물을 끼얹어주며 5분 더 자작해질 때까지 조려줍니다(중·약불).\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"1~2분 후\",\n          \"timestamp\": \"02:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"국물을 끼얹어주며 5분 더 자작해질 때까지 조려줍니다(중·약불)\",\n          \"timestamp\": \"02:20\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"Opening summary card lists 식용유 1큰술, but in video steps 식용유 1큰술 is used for frying tofu and an additional 1큰술 is used for sauteing onion and scallion (totaling 2큰술).\",\n    \"Opening summary card lists 고춧가루, 다진마늘 1.5큰술, but in video steps 고춧가루 1.5큰술 is added to the sauce and an additional 고춧가루 1큰술 is added while sauteing onions (totaling 2.5큰술).\",\n    \"Amount of 후추 (black pepper) is not specified with an exact quantity.\"\n  ]\n}",
+    "result": {
+      "title": "두부조림",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "부침두부 600g",
+          "displayName": "부침두부",
+          "amount": "600",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "부침두부 600g",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 두부 600g을 길고 도톰하게 썰어줍니다",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파 2대",
+          "displayName": "대파",
+          "amount": "2",
+          "unit": "대",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 2대",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대파 2대를 도톰하게 어슷썰어줍니다",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "양파 2/3개",
+          "displayName": "양파",
+          "amount": "2/3",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 2/3개",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파 2/3개를 채썰어줍니다",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "청양고추 3개",
+          "displayName": "청양고추",
+          "amount": "3",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 3개",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "청양고추 3개를 어슷썰어줍니다",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "홍고추 1개",
+          "displayName": "홍고추",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "홍고추 1개",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "홍고추 1개를 어슷썰어줍니다",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "멸치다시마 육수 200ml",
+          "displayName": "멸치다시마 육수",
+          "amount": "200",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "멸치다시마 육수 200ml",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "멸치다시마 육수 200ml를 부어줍니다",
+              "timestamp": "02:09"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "진간장 3.5큰술",
+          "displayName": "진간장",
+          "amount": "3.5",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 3.5큰술",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "진간장 3.5큰술",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "맛술 2큰술",
+          "displayName": "맛술",
+          "amount": "2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 2큰술",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "맛술 2큰술",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "멸치액젓 1큰술",
+          "displayName": "멸치액젓",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "멸치액젓, 물엿 1큰술",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "멸치액젓 1큰술",
+              "timestamp": "00:42"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "다진마늘 1.5큰술",
+          "displayName": "다진마늘",
+          "amount": "1.5",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루, 다진마늘 1.5큰술",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘 1.5큰술",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "물엿 1큰술",
+          "displayName": "물엿",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "멸치액젓, 물엿 1큰술",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물엿 1큰술",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "고춧가루",
+          "displayName": "고춧가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루, 다진마늘 1.5큰술",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루 1.5큰술",
+              "timestamp": "00:49"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파가 투명해지면 고춧가루 1큰술을 넣고 볶아줍니다(중불)",
+              "timestamp": "01:42"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 2큰술, 후추",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "후추를 넣고 섞어줍니다",
+              "timestamp": "00:51"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "들기름 1큰술",
+          "displayName": "들기름",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "들기름 1큰술",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "예열된 팬에 식용유 1큰술과 들기름 1큰술을 두르고",
+              "timestamp": "00:57"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 1큰술",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "예열된 팬에 식용유 1큰술과 들기름 1큰술을 두르고",
+              "timestamp": "00:57"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "냄비에 식용유 1큰술을 두르고 양파와 대파 약간을 넣고 볶아줍니다",
+              "timestamp": "01:33"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        }
+      ],
+      "steps": [
+        {
+          "text": "두부 600g을 길고 도톰하게 썰어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 두부 600g을 길고 도톰하게 썰어줍니다",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "키친타월로 두부의 물기를 제거해줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "키친타월로 두부의 물기를 제거해줍니다",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "양파 2/3개를 채썰어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파 2/3개를 채썰어줍니다",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "대파 2대를 도톰하게 어슷썰어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대파 2대를 도톰하게 어슷썰어줍니다",
+              "timestamp": "00:21"
+            }
+          ]
+        },
+        {
+          "text": "청양고추 3개를 어슷썰어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "청양고추 3개를 어슷썰어줍니다",
+              "timestamp": "00:28"
+            }
+          ]
+        },
+        {
+          "text": "홍고추 1개를 어슷썰어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "홍고추 1개를 어슷썰어줍니다",
+              "timestamp": "00:33"
+            }
+          ]
+        },
+        {
+          "text": "진간장 3.5큰술, 맛술 2큰술, 멸치액젓 1큰술, 다진마늘 1.5큰술, 물엿 1큰술, 고춧가루 1.5큰술, 후추를 넣고 섞어 양념장을 만듭니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "진간장 3.5큰술",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "맛술 2큰술",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "멸치액젓 1큰술",
+              "timestamp": "00:42"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘 1.5큰술",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물엿 1큰술",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루 1.5큰술",
+              "timestamp": "00:49"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "후추를 넣고 섞어줍니다",
+              "timestamp": "00:51"
+            }
+          ]
+        },
+        {
+          "text": "예열된 팬에 식용유 1큰술과 들기름 1큰술을 두르고 두부를 튀기듯이 노릇하게 구워줍니다(중불).",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "예열된 팬에 식용유 1큰술과 들기름 1큰술을 두르고",
+              "timestamp": "00:57"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "두부를 튀기듯이 노릇하게 구워줍니다(중불)",
+              "timestamp": "01:02"
+            }
+          ]
+        },
+        {
+          "text": "뒤집어서 앞뒤로 노릇하게 구워줍니다(중불).",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "뒤집어서 앞뒤로 노릇하게 구워줍니다(중불)",
+              "timestamp": "01:15"
+            }
+          ]
+        },
+        {
+          "text": "노릇하게 구운 두부를 채반에 들어내줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "노릇하게 구운 두부를 채반에 들어내줍니다",
+              "timestamp": "01:27"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 식용유 1큰술을 두르고 양파와 대파 약간을 넣고 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "냄비에 식용유 1큰술을 두르고 양파와",
+              "timestamp": "01:33"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대파 약간을 넣고 볶아줍니다",
+              "timestamp": "01:35"
+            }
+          ]
+        },
+        {
+          "text": "양파가 투명해지면 고춧가루 1큰술을 넣고 볶아줍니다(중불).",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파가 투명해지면 고춧가루 1큰술을 넣고 볶아줍니다(중불)",
+              "timestamp": "01:42"
+            }
+          ]
+        },
+        {
+          "text": "어느정도 볶아지면 양파 위에 구운 두부를 돌려 얹어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "어느정도 볶아지면 양파 위에 구운 두부를 돌려 얹어줍니다",
+              "timestamp": "01:53"
+            }
+          ]
+        },
+        {
+          "text": "청·홍고추와 대파를 듬뿍 넣어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "청·홍고추",
+              "timestamp": "02:00"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대파를 듬뿍 넣어주고",
+              "timestamp": "02:03"
+            }
+          ]
+        },
+        {
+          "text": "양념장을 넣어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양념장을 넣어줍니다",
+              "timestamp": "02:06"
+            }
+          ]
+        },
+        {
+          "text": "멸치다시마 육수 200ml를 부어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "멸치다시마 육수 200ml를 부어줍니다",
+              "timestamp": "02:09"
+            }
+          ]
+        },
+        {
+          "text": "뚜껑을 닫고 1~2분간 끓여줍니다(중·강불).",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "뚜껑을 닫고 1~2분간 끓여줍니다(중·강불)",
+              "timestamp": "02:14"
+            }
+          ]
+        },
+        {
+          "text": "1~2분 후 국물을 끼얹어주며 5분 더 자작해질 때까지 조려줍니다(중·약불).",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "1~2분 후",
+              "timestamp": "02:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "국물을 끼얹어주며 5분 더 자작해질 때까지 조려줍니다(중·약불)",
+              "timestamp": "02:20"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "Opening summary card lists 식용유 1큰술, but in video steps 식용유 1큰술 is used for frying tofu and an additional 1큰술 is used for sauteing onion and scallion (totaling 2큰술).",
+        "Opening summary card lists 고춧가루, 다진마늘 1.5큰술, but in video steps 고춧가루 1.5큰술 is added to the sauce and an additional 고춧가루 1큰술 is added while sauteing onions (totaling 2.5큰술).",
+        "Amount of 후추 (black pepper) is not specified with an exact quantity."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

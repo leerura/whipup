@@ -1,0 +1,410 @@
+{
+  "videoId": "icGWDFlVnDU",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/icGWDFlVnDU",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:59:28.428005+00:00",
+    "rawResponse": "{\n  \"title\": null,\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"양파 반개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"0.5\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 반개\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 반개\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"스팸 작은 통 1/3\",\n      \"displayName\": \"스팸\",\n      \"amount\": \"1/3\",\n      \"unit\": \"작은 통\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스팸 작은 통 1/3\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"스팸 작은 통 삼분의 일\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 한바퀴\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"1\",\n      \"unit\": \"바퀴\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 한바퀴\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식용유 한바퀴\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"햇반 한개\",\n      \"displayName\": \"햇반\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"햇반 한개\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 햇반 1개를 넣음\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스 하나\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"케찹 1\",\n      \"displayName\": \"케찹\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"케찹 1\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"케찹 하나\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 2알\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"알\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2알\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 두알\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 한 꼬집\",\n      \"displayName\": \"소금\",\n      \"amount\": \"1\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 한 꼬집\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금 한 꼬집\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름 한바퀴\",\n      \"displayName\": \"기름\",\n      \"amount\": \"1\",\n      \"unit\": \"바퀴\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름 한바퀴\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기름 한바퀴 돌려주시고\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돈까스 소스 3\",\n      \"displayName\": \"돈까스 소스\",\n      \"amount\": \"3\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"돈까스 소스 3\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"돈까스 소스 셋\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"케찹 2\",\n      \"displayName\": \"케찹\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"케찹 2\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"케찹 둘\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 살짝\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 살짝 넣고\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 살짝 넣고\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리 가루\",\n      \"displayName\": \"파슬리 가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 계란 위에 파슬리 가루를 뿌림\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양파 반 개와 스팸 작은 통 1/3을 큐브 모양으로 잘게 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 반개 스팸 작은 통 삼분의 일 큐브 모양으로 썰어주세요 양파는 잘게 썰어야 튀겨지듯 구워져서 훨씬 맛있습니다\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"큐브 모양으로 썰어주세요\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유 한 바퀴를 두르고 스팸과 양파를 넣어 갈색빛이 돌 때까지 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식용유 한바퀴 스팸, 양파 넣어서 양파가 갈색빛 돌때까지 볶아주세요\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파가 갈색빛 돌때까지 볶아주세요\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"햇반 1개, 굴소스 1스푼, 케찹 1스푼을 넣고 밥알이 고슬고슬해질 때까지 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"햇반 한개 굴소스 하나 케찹 하나 넣으면 밥알이 축축해지지 않고 고슬고슬 볶아져요\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1, 케찹 1 넣으면 밥알이 축축해지지 않고 고슬고슬 볶아져요\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볶은 밥을 밥공기에 담아 모양을 잡은 뒤 큰 접시에 엎어서 예쁘게 담아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥을 큰 접시에 예쁘게 담아주시고\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"공기에 담은 밥을 큰 접시에 뒤집어 담음\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 2알에 소금 한 꼬집을 넣고 풀어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 두알 소금 한 꼬집 넣고 풀어주세요\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2알, 소금 한 꼬집 넣고 풀어주세요\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 기름 한 바퀴를 둘러 달군 후 계란물을 붓고, 너무 익기 전에 젓가락을 가운데로 모아 돌려 회오리 모양을 만든 뒤 밥 위에 얹어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기름 한바퀴 돌려주시고 계란이 너무 익기 전에 젓가락을 가운데로 모으다가 한바퀴 돌려주세요\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬의 계란 지단을 젓가락으로 회오리 모양으로 만들어 밥 위에 올림\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 돈까스 소스 3스푼, 케찹 2스푼, 물을 살짝 넣고 걸쭉하게 끓여 소스를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"돈까스 소스 셋 케찹 둘 물 살짝 넣고 걸쭉하게 끓여주세요\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"돈까스 소스 3 케찹 2 물 살짝 넣고 걸쭉하게 끓여주세요\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"오므라이스 주변에 소스를 붓고 파슬리 가루를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소스를 예쁘게 담아주면\",\n          \"timestamp\": \"00:42\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"소스를 둘러 담고 파슬리 가루를 뿌려 마무리함\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"요리 제목이 영상 내 텍스트나 음성으로 명시되지 않았으나 오므라이스 조리법임\",\n    \"소스 및 양념류의 숫자 표기(굴소스 1, 케찹 1, 돈까스 소스 3, 케찹 2) 단위가 명시되지 않음(영상에서는 숟가락으로 계량)\"\n  ]\n}",
+    "result": {
+      "title": null,
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "양파 반개",
+          "displayName": "양파",
+          "amount": "0.5",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 반개",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파 반개",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "스팸 작은 통 1/3",
+          "displayName": "스팸",
+          "amount": "1/3",
+          "unit": "작은 통",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스팸 작은 통 1/3",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "스팸 작은 통 삼분의 일",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "식용유 한바퀴",
+          "displayName": "식용유",
+          "amount": "1",
+          "unit": "바퀴",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 한바퀴",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "식용유 한바퀴",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "햇반 한개",
+          "displayName": "햇반",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "햇반 한개",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 햇반 1개를 넣음",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "굴소스 1",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "굴소스 하나",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "케찹 1",
+          "displayName": "케찹",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "케찹 1",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "케찹 하나",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "계란 2알",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "알",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2알",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란 두알",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "소금 한 꼬집",
+          "displayName": "소금",
+          "amount": "1",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 한 꼬집",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소금 한 꼬집",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "기름 한바퀴",
+          "displayName": "기름",
+          "amount": "1",
+          "unit": "바퀴",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름 한바퀴",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "기름 한바퀴 돌려주시고",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "돈까스 소스 3",
+          "displayName": "돈까스 소스",
+          "amount": "3",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "돈까스 소스 3",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "SPEECH",
+              "text": "돈까스 소스 셋",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "케찹 2",
+          "displayName": "케찹",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "케찹 2",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "케찹 둘",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "물 살짝",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 살짝 넣고",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 살짝 넣고",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "파슬리 가루",
+          "displayName": "파슬리 가루",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 계란 위에 파슬리 가루를 뿌림",
+              "timestamp": "00:43"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양파 반 개와 스팸 작은 통 1/3을 큐브 모양으로 잘게 썰어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 반개 스팸 작은 통 삼분의 일 큐브 모양으로 썰어주세요 양파는 잘게 썰어야 튀겨지듯 구워져서 훨씬 맛있습니다",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "큐브 모양으로 썰어주세요",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유 한 바퀴를 두르고 스팸과 양파를 넣어 갈색빛이 돌 때까지 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "식용유 한바퀴 스팸, 양파 넣어서 양파가 갈색빛 돌때까지 볶아주세요",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파가 갈색빛 돌때까지 볶아주세요",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "햇반 1개, 굴소스 1스푼, 케찹 1스푼을 넣고 밥알이 고슬고슬해질 때까지 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "햇반 한개 굴소스 하나 케찹 하나 넣으면 밥알이 축축해지지 않고 고슬고슬 볶아져요",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1, 케찹 1 넣으면 밥알이 축축해지지 않고 고슬고슬 볶아져요",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "볶은 밥을 밥공기에 담아 모양을 잡은 뒤 큰 접시에 엎어서 예쁘게 담아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥을 큰 접시에 예쁘게 담아주시고",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "공기에 담은 밥을 큰 접시에 뒤집어 담음",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "계란 2알에 소금 한 꼬집을 넣고 풀어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 두알 소금 한 꼬집 넣고 풀어주세요",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2알, 소금 한 꼬집 넣고 풀어주세요",
+              "timestamp": "00:28"
+            }
+          ]
+        },
+        {
+          "text": "팬에 기름 한 바퀴를 둘러 달군 후 계란물을 붓고, 너무 익기 전에 젓가락을 가운데로 모아 돌려 회오리 모양을 만든 뒤 밥 위에 얹어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "기름 한바퀴 돌려주시고 계란이 너무 익기 전에 젓가락을 가운데로 모으다가 한바퀴 돌려주세요",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬의 계란 지단을 젓가락으로 회오리 모양으로 만들어 밥 위에 올림",
+              "timestamp": "00:33"
+            }
+          ]
+        },
+        {
+          "text": "팬에 돈까스 소스 3스푼, 케찹 2스푼, 물을 살짝 넣고 걸쭉하게 끓여 소스를 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "돈까스 소스 셋 케찹 둘 물 살짝 넣고 걸쭉하게 끓여주세요",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "돈까스 소스 3 케찹 2 물 살짝 넣고 걸쭉하게 끓여주세요",
+              "timestamp": "00:37"
+            }
+          ]
+        },
+        {
+          "text": "오므라이스 주변에 소스를 붓고 파슬리 가루를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소스를 예쁘게 담아주면",
+              "timestamp": "00:42"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "소스를 둘러 담고 파슬리 가루를 뿌려 마무리함",
+              "timestamp": "00:42"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "요리 제목이 영상 내 텍스트나 음성으로 명시되지 않았으나 오므라이스 조리법임",
+        "소스 및 양념류의 숫자 표기(굴소스 1, 케찹 1, 돈까스 소스 3, 케찹 2) 단위가 명시되지 않음(영상에서는 숟가락으로 계량)"
+      ]
+    },
+    "structuralErrors": [
+      "title is required"
+    ],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

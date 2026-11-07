@@ -1,0 +1,310 @@
+{
+  "videoId": "A_jcg4TAD_E",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/A_jcg4TAD_E",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:27:38.150891+00:00",
+    "rawResponse": "{\n  \"title\": \"5분이면 충분한 콩나물 밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"즉석밥\",\n      \"displayName\": \"즉석밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"즉석밥\",\n          \"timestamp\": \"0:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"즉석밥을 그릇에 담음\",\n          \"timestamp\": \"0:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"콩나물 100g\",\n      \"displayName\": \"콩나물\",\n      \"amount\": \"100\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"콩나물 100g\",\n          \"timestamp\": \"0:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 한토막\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"토막\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 한토막\",\n          \"timestamp\": \"0:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1/4스푼\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1/4\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 1/4스푼\",\n          \"timestamp\": \"0:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1/2스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1/2스푼\",\n          \"timestamp\": \"0:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 2스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 2스푼\",\n          \"timestamp\": \"0:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"들기름 1스푼\",\n      \"displayName\": \"들기름\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"들기름 1스푼\",\n          \"timestamp\": \"0:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"치킨스톡 몇방울\",\n      \"displayName\": \"치킨스톡\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양념장에 치킨스톡 몇방울만 넣어줘도 감칠맛 상승\",\n          \"timestamp\": \"0:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"달걀\",\n      \"displayName\": \"달걀\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"달걀후라이를 만들어요\",\n          \"timestamp\": \"0:32\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 달걀 1개를 깨뜨려 프라이를 만듦\",\n          \"timestamp\": \"0:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"달걀후라이를 부치기 위해 팬에 두른 기름\",\n          \"timestamp\": \"0:32\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"그릇에 즉석밥을 넣고 펼쳐줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"즉석밥\",\n          \"timestamp\": \"0:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"즉석밥을 그릇에 붓고 숟가락으로 펴줌\",\n          \"timestamp\": \"0:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 위에 콩나물 100g을 올려줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥위에 콩나물을 올려주세요\",\n          \"timestamp\": \"0:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"콩나물 100g\",\n          \"timestamp\": \"0:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 랩을 씌우고 포크로 숨구멍을 콕콕 뚫어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"랩을 씌워줍니다\",\n          \"timestamp\": \"0:12\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"포크로 숨구멍 콕! 콕! 콕!\",\n          \"timestamp\": \"0:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"랩을 씌운 콩나물밥을 전자레인지에 5분간 돌립니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"전자레인지에 5분 돌린 콩나물밥\",\n          \"timestamp\": \"0:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파 한 토막을 잘게 썰어 종지에 담고, 다진마늘 1/4스푼, 고춧가루 1/2스푼, 진간장 2스푼, 들기름 1스푼, 선택 사항으로 치킨스톡 몇 방울을 넣어 양념장을 섞어 만듭니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양념장 만들기\",\n          \"timestamp\": \"0:17\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 한토막\",\n          \"timestamp\": \"0:19\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 1/4스푼\\n고춧가루 1/2스푼\",\n          \"timestamp\": \"0:24\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 2스푼\",\n          \"timestamp\": \"0:25\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"들기름 1스푼\",\n          \"timestamp\": \"0:27\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양념장에 치킨스톡 몇방울만 넣어줘도 감칠맛 상승\",\n          \"timestamp\": \"0:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 기름을 두르고 달걀후라이를 만듭니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"달걀후라이를 만들어요\",\n          \"timestamp\": \"0:32\"\n        }\n      ]\n    },\n    {\n      \"text\": \"전자레인지에서 꺼낸 콩나물밥의 랩을 벗기고 양념장과 달걀후라이를 올린 뒤 골고루 비벼줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양념장 올리고\",\n          \"timestamp\": \"0:42\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후라이 올리고\",\n          \"timestamp\": \"0:44\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛있게 쓱쓱\",\n          \"timestamp\": \"0:47\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "5분이면 충분한 콩나물 밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "즉석밥",
+          "displayName": "즉석밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "즉석밥",
+              "timestamp": "0:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "즉석밥을 그릇에 담음",
+              "timestamp": "0:03"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "콩나물 100g",
+          "displayName": "콩나물",
+          "amount": "100",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "콩나물 100g",
+              "timestamp": "0:09"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "대파 한토막",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "토막",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 한토막",
+              "timestamp": "0:19"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "다진마늘 1/4스푼",
+          "displayName": "다진마늘",
+          "amount": "1/4",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 1/4스푼",
+              "timestamp": "0:24"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고춧가루 1/2스푼",
+          "displayName": "고춧가루",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1/2스푼",
+              "timestamp": "0:24"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "진간장 2스푼",
+          "displayName": "진간장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 2스푼",
+              "timestamp": "0:25"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "들기름 1스푼",
+          "displayName": "들기름",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "들기름 1스푼",
+              "timestamp": "0:27"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "치킨스톡 몇방울",
+          "displayName": "치킨스톡",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양념장에 치킨스톡 몇방울만 넣어줘도 감칠맛 상승",
+              "timestamp": "0:31"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "달걀",
+          "displayName": "달걀",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "달걀후라이를 만들어요",
+              "timestamp": "0:32"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 달걀 1개를 깨뜨려 프라이를 만듦",
+              "timestamp": "0:32"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "달걀후라이를 부치기 위해 팬에 두른 기름",
+              "timestamp": "0:32"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "그릇에 즉석밥을 넣고 펼쳐줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "즉석밥",
+              "timestamp": "0:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "즉석밥을 그릇에 붓고 숟가락으로 펴줌",
+              "timestamp": "0:04"
+            }
+          ]
+        },
+        {
+          "text": "밥 위에 콩나물 100g을 올려줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥위에 콩나물을 올려주세요",
+              "timestamp": "0:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "콩나물 100g",
+              "timestamp": "0:09"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 랩을 씌우고 포크로 숨구멍을 콕콕 뚫어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "랩을 씌워줍니다",
+              "timestamp": "0:12"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "포크로 숨구멍 콕! 콕! 콕!",
+              "timestamp": "0:15"
+            }
+          ]
+        },
+        {
+          "text": "랩을 씌운 콩나물밥을 전자레인지에 5분간 돌립니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "전자레인지에 5분 돌린 콩나물밥",
+              "timestamp": "0:39"
+            }
+          ]
+        },
+        {
+          "text": "대파 한 토막을 잘게 썰어 종지에 담고, 다진마늘 1/4스푼, 고춧가루 1/2스푼, 진간장 2스푼, 들기름 1스푼, 선택 사항으로 치킨스톡 몇 방울을 넣어 양념장을 섞어 만듭니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양념장 만들기",
+              "timestamp": "0:17"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 한토막",
+              "timestamp": "0:19"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 1/4스푼\n고춧가루 1/2스푼",
+              "timestamp": "0:24"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 2스푼",
+              "timestamp": "0:25"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "들기름 1스푼",
+              "timestamp": "0:27"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양념장에 치킨스톡 몇방울만 넣어줘도 감칠맛 상승",
+              "timestamp": "0:31"
+            }
+          ]
+        },
+        {
+          "text": "팬에 기름을 두르고 달걀후라이를 만듭니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "달걀후라이를 만들어요",
+              "timestamp": "0:32"
+            }
+          ]
+        },
+        {
+          "text": "전자레인지에서 꺼낸 콩나물밥의 랩을 벗기고 양념장과 달걀후라이를 올린 뒤 골고루 비벼줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양념장 올리고",
+              "timestamp": "0:42"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후라이 올리고",
+              "timestamp": "0:44"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛있게 쓱쓱",
+              "timestamp": "0:47"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

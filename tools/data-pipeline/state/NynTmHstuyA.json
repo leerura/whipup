@@ -1,0 +1,320 @@
+{
+  "videoId": "NynTmHstuyA",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/NynTmHstuyA",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T08:18:33.259713+00:00",
+    "rawResponse": "{\n  \"title\": \"양배추 목살 덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"돼지 목살 300g\",\n      \"displayName\": \"돼지 목살\",\n      \"amount\": \"300\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"돼지 목살 300g\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"돼지고기의 목살을 한 300g 넉넉하게 준비해가\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬에 식용유를 살짝만 둘러주고\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금, 후추\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 소금과 후추를 뿌려\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금, 후추\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 후추를 살짝 뿌려주면\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양배추\",\n      \"displayName\": \"양배추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양배추를 먹기 좋은 크기로 숭덩숭덩 썰어서 다 올려줍니다.\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 1/3컵 (약 60ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"1/3\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 1/3컵 (약 60ml)\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"촉촉하게 물 1/3컵 살짝만 부어주고\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1스푼\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1스푼\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"짭짤하게 굴소스 한 스푼과\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"동개스 소스 1스푼\",\n      \"displayName\": \"돈가스 소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"동개스 소스 1스푼\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만능 국민 소스인 돈가스 소스 한 스푼\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 한 스푼까지 넣고\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"흰밥\",\n      \"displayName\": \"흰밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 뜨끈한 흰밥 위로\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 노른자\",\n      \"displayName\": \"계란 노른자\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 노른자\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 노른자와\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"와사비\",\n      \"displayName\": \"와사비\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"와사비\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"생와사비 조금 얹어주고\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"돼지 목살을 먹기 좋은 크기로 숭덩숭덩 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먹기 좋은 크기로 숭덩숭덩 썰어줍니다.\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유를 살짝 두르고 목살을 올린 뒤, 소금과 후추를 뿌려 밑간을 해주고 바싹 구워 익힌 후 건져낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬에 식용유를 살짝만 둘러주고 썰어 놓은 목살을 다 올려줍니다. 여기에 소금과 후추를 뿌려 살짝 밑간을 해준 뒤에 바로 집어서 묵어도 될 정도로 바싹 구워줍니다. 이제 진한 갈색빛이 띄면서 목살이 맛있게 잘 익었으면 옆으로 다 빼주고\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"목살을 굽고 남은 돼지기름 팬에 숭덩숭덩 썬 양배추를 올리고 노릿노릿해지도록 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"돼지기름의 온기가 남아 있는 곳에 양배추를 먹기 좋은 크기로 숭덩숭덩 썰어서 다 올려줍니다. 그러고 양배추도 노릿노릿해지도록 돼지기름에 볶아주다가\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볶은 양배추에 물 1/3컵(약 60ml), 굴소스 1스푼, 돈가스 소스 1스푼, 설탕 1스푼을 넣고 골고루 저어가며 살짝 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"촉촉하게 물 1/3컵 살짝만 부어주고 짭짤하게 굴소스 한 스푼과 만능 국민 소스인 돈가스 소스 한 스푼, 설탕 한 스푼까지 넣고 양념을 골고루 저어주면서 살짝만 끓여주시면 됩니다.\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뜨끈한 흰밥 위에 볶은 양배추를 올리고, 그 위에 구워둔 목살을 얹은 뒤 팬에 남은 소스를 끼얹어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 뜨끈한 흰밥 위로 양배추를 먼저 올려주고 그 위로 처음에 빼둔 목살도 올려주고 팬에 남은 짭짤한 소스까지 한 번 끼얹어준 뒤에\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 노른자와 와사비를 얹고 마지막으로 후추를 살짝 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 노른자와 생와사비 조금 얹어주고 마지막으로 후추를 살짝 뿌려주면 저렴하게 만들 수 있는 양배추 목살 덮밥이 완성됩니다.\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "양배추 목살 덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "돼지 목살 300g",
+          "displayName": "돼지 목살",
+          "amount": "300",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "돼지 목살 300g",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "돼지고기의 목살을 한 300g 넉넉하게 준비해가",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 팬에 식용유를 살짝만 둘러주고",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "소금",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금, 후추",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 소금과 후추를 뿌려",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금, 후추",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 후추를 살짝 뿌려주면",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "양배추",
+          "displayName": "양배추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양배추를 먹기 좋은 크기로 숭덩숭덩 썰어서 다 올려줍니다.",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "물 1/3컵 (약 60ml)",
+          "displayName": "물",
+          "amount": "1/3",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 1/3컵 (약 60ml)",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "SPEECH",
+              "text": "촉촉하게 물 1/3컵 살짝만 부어주고",
+              "timestamp": "00:32"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "굴소스 1스푼",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1스푼",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "SPEECH",
+              "text": "짭짤하게 굴소스 한 스푼과",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "동개스 소스 1스푼",
+          "displayName": "돈가스 소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "동개스 소스 1스푼",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SPEECH",
+              "text": "만능 국민 소스인 돈가스 소스 한 스푼",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "설탕 1스푼",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1스푼",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 한 스푼까지 넣고",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "흰밥",
+          "displayName": "흰밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 뜨끈한 흰밥 위로",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "계란 노른자",
+          "displayName": "계란 노른자",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 노른자",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란 노른자와",
+              "timestamp": "00:52"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "와사비",
+          "displayName": "와사비",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "와사비",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "SPEECH",
+              "text": "생와사비 조금 얹어주고",
+              "timestamp": "00:53"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "돼지 목살을 먹기 좋은 크기로 숭덩숭덩 썰어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먹기 좋은 크기로 숭덩숭덩 썰어줍니다.",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유를 살짝 두르고 목살을 올린 뒤, 소금과 후추를 뿌려 밑간을 해주고 바싹 구워 익힌 후 건져낸다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 팬에 식용유를 살짝만 둘러주고 썰어 놓은 목살을 다 올려줍니다. 여기에 소금과 후추를 뿌려 살짝 밑간을 해준 뒤에 바로 집어서 묵어도 될 정도로 바싹 구워줍니다. 이제 진한 갈색빛이 띄면서 목살이 맛있게 잘 익었으면 옆으로 다 빼주고",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "목살을 굽고 남은 돼지기름 팬에 숭덩숭덩 썬 양배추를 올리고 노릿노릿해지도록 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "돼지기름의 온기가 남아 있는 곳에 양배추를 먹기 좋은 크기로 숭덩숭덩 썰어서 다 올려줍니다. 그러고 양배추도 노릿노릿해지도록 돼지기름에 볶아주다가",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "볶은 양배추에 물 1/3컵(약 60ml), 굴소스 1스푼, 돈가스 소스 1스푼, 설탕 1스푼을 넣고 골고루 저어가며 살짝 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "촉촉하게 물 1/3컵 살짝만 부어주고 짭짤하게 굴소스 한 스푼과 만능 국민 소스인 돈가스 소스 한 스푼, 설탕 한 스푼까지 넣고 양념을 골고루 저어주면서 살짝만 끓여주시면 됩니다.",
+              "timestamp": "00:32"
+            }
+          ]
+        },
+        {
+          "text": "뜨끈한 흰밥 위에 볶은 양배추를 올리고, 그 위에 구워둔 목살을 얹은 뒤 팬에 남은 소스를 끼얹어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 뜨끈한 흰밥 위로 양배추를 먼저 올려주고 그 위로 처음에 빼둔 목살도 올려주고 팬에 남은 짭짤한 소스까지 한 번 끼얹어준 뒤에",
+              "timestamp": "00:45"
+            }
+          ]
+        },
+        {
+          "text": "계란 노른자와 와사비를 얹고 마지막으로 후추를 살짝 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 노른자와 생와사비 조금 얹어주고 마지막으로 후추를 살짝 뿌려주면 저렴하게 만들 수 있는 양배추 목살 덮밥이 완성됩니다.",
+              "timestamp": "00:52"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

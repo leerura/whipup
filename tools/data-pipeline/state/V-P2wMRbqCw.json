@@ -1,0 +1,306 @@
+{
+  "videoId": "V-P2wMRbqCw",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/V-P2wMRbqCw",
+  "sourceMetadata": {"sourceTitle":"진짜 최고의 떡볶이... 양념 이게 전분데 이맛 실화임?","sourceChannelName":"쿡잇파파 C.E.P.P","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.363355Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T08:11:02.952641+00:00",
+    "rawResponse": "{\n  \"title\": \"심플 떡볶이\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"대파 1대 100g\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"대\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 1대 100g 을 대충 썰어주시고\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 대파 한 대 100g을 고마 대충 썰어주시고\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"말랑하게 불린 떡 400g\",\n      \"displayName\": \"불린 떡\",\n      \"amount\": \"400\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"말랑하게 불린 떡 400g\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"말랑하이 불린 떡 400g을 준비합니다\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"사각어묵 3장 120g\",\n      \"displayName\": \"사각어묵\",\n      \"amount\": \"3\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"사각어묵 3장 120g 을 준비하면 좋지만\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"사각어묵 3장 120g을 준비하면 좋지만 저처럼 모자라게 준비되면 모자란 만큼 떡을 더 넣으시고\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 3스푼 15g\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 3스푼 15g 을 부어주고\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식용유 세 스푼 15g을 부어가\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맹물 3컵 600cc\",\n      \"displayName\": \"맹물\",\n      \"amount\": \"3\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맹물 3컵 600cc를 부어주시고\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그냥 맹물 세 컵 600cc를 부어주시고\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"최대한 고운고춧가루 3스푼 21g\",\n      \"displayName\": \"고운고춧가루\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"최대한 고운고춧가루 3스푼 21g\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"최대한 고운 고춧가루 세 스푼 21g\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 3스푼 30g\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 3스푼 30g\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 세 스푼 30g\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고향의 맛! 다시다 반스푼 5g\",\n      \"displayName\": \"다시다\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고향의 맛! 다시다 반스푼 5g\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고향의 맛 다시다 반 스푼 5g을 넣어줍니다\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깊은 맛 올려줄 진간장 2스푼 16g\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깊은 맛 올려줄 진간장 2스푼 16g\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"깊은 맛을 쪼매 올려줄 진간장 두 스푼 16g\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 2스푼 60g\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 2스푼 60g\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 두 스푼 60g\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"대파 1대(100g)를 썰어주고, 말랑하게 불린 떡(400g)과 먹기 좋은 크기로 썬 사각어묵 3장(120g)을 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 대파 한 대 100g을 고마 대충 썰어주시고 말랑하이 불린 떡 400g을 준비합니다 사각어묵 3장 120g을 준비하면 좋지만 저처럼 모자라게 준비되면 모자란 만큼 떡을 더 넣으시고\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"대파와 사각어묵을 썰어 준비하는 모습\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 대파를 넣고 식용유 3스푼(15g)을 부은 뒤, 중불에서 2~3분간 볶아 파 향을 낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 대파를 던져넣고 식용유 3스푼 15g 을 부어주고 중불에 2~3분을 볶아줍니다\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에다가 대파를 던져넣고 식용유 세 스푼 15g을 부어가 중불에 2~3분을 볶아줍니다\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"파 익는 향이 올라오면 물 3컵(600cc)을 붓고 불린 떡을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"파익는 향이 솔솔 올라오면 맹물 3컵 600cc를 부어주시고 불린떡을 부어주시고\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"파 익는 향이 솔솔 올라오면 그냥 맹물 세 컵 600cc를 부어주시고 불라놓은 떡을 넣은 다음에\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고운 고춧가루 3스푼(21g), 설탕 3스푼(30g), 다시다 반 스푼(5g), 진간장 2스푼(16g), 시판 고추장 2스푼(60g)을 넣고 잘 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장은 시판 고추장을 사용하세요\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"최대한 고운 고춧가루 세 스푼 21g 설탕 세 스푼 30g 고향의 맛 다시다 반 스푼 5g을 넣어줍니다 그러고 깊은 맛을 쪼매 올려줄 진간장 두 스푼 16g 고추장 두 스푼 60g 고추장은 가능한 한 시판 고추장을 사용하이소\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"6~7분 정도 끓여 소스가 걸쭉하게 졸아들면 어묵을 넣고 2~3분 더 끓여 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"6~7분 끓여서 소스가 이정도로 줄어들면 어묵넣고 2~3분을 더 끓여주면\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대략 6~7분을 낋이가 소스가 대략 이정도까지 쫄아들었으면 어묵을 던져넣고 2~3분 정도를 더 낋여주면\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "심플 떡볶이",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "대파 1대 100g",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "대",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 1대 100g 을 대충 썰어주시고",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 대파 한 대 100g을 고마 대충 썰어주시고",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "말랑하게 불린 떡 400g",
+          "displayName": "불린 떡",
+          "amount": "400",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "말랑하게 불린 떡 400g",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "말랑하이 불린 떡 400g을 준비합니다",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "사각어묵 3장 120g",
+          "displayName": "사각어묵",
+          "amount": "3",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "사각어묵 3장 120g 을 준비하면 좋지만",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "사각어묵 3장 120g을 준비하면 좋지만 저처럼 모자라게 준비되면 모자란 만큼 떡을 더 넣으시고",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "식용유 3스푼 15g",
+          "displayName": "식용유",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 3스푼 15g 을 부어주고",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "식용유 세 스푼 15g을 부어가",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "맹물 3컵 600cc",
+          "displayName": "맹물",
+          "amount": "3",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맹물 3컵 600cc를 부어주시고",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그냥 맹물 세 컵 600cc를 부어주시고",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "최대한 고운고춧가루 3스푼 21g",
+          "displayName": "고운고춧가루",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "최대한 고운고춧가루 3스푼 21g",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "최대한 고운 고춧가루 세 스푼 21g",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "설탕 3스푼 30g",
+          "displayName": "설탕",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 3스푼 30g",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 세 스푼 30g",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "고향의 맛! 다시다 반스푼 5g",
+          "displayName": "다시다",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고향의 맛! 다시다 반스푼 5g",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고향의 맛 다시다 반 스푼 5g을 넣어줍니다",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "깊은 맛 올려줄 진간장 2스푼 16g",
+          "displayName": "진간장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깊은 맛 올려줄 진간장 2스푼 16g",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SPEECH",
+              "text": "깊은 맛을 쪼매 올려줄 진간장 두 스푼 16g",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "고추장 2스푼 60g",
+          "displayName": "고추장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 2스푼 60g",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장 두 스푼 60g",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "대파 1대(100g)를 썰어주고, 말랑하게 불린 떡(400g)과 먹기 좋은 크기로 썬 사각어묵 3장(120g)을 준비한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 대파 한 대 100g을 고마 대충 썰어주시고 말랑하이 불린 떡 400g을 준비합니다 사각어묵 3장 120g을 준비하면 좋지만 저처럼 모자라게 준비되면 모자란 만큼 떡을 더 넣으시고",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "대파와 사각어묵을 썰어 준비하는 모습",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "팬에 대파를 넣고 식용유 3스푼(15g)을 부은 뒤, 중불에서 2~3분간 볶아 파 향을 낸다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 대파를 던져넣고 식용유 3스푼 15g 을 부어주고 중불에 2~3분을 볶아줍니다",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "팬에다가 대파를 던져넣고 식용유 세 스푼 15g을 부어가 중불에 2~3분을 볶아줍니다",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "파 익는 향이 올라오면 물 3컵(600cc)을 붓고 불린 떡을 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "파익는 향이 솔솔 올라오면 맹물 3컵 600cc를 부어주시고 불린떡을 부어주시고",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "파 익는 향이 솔솔 올라오면 그냥 맹물 세 컵 600cc를 부어주시고 불라놓은 떡을 넣은 다음에",
+              "timestamp": "00:21"
+            }
+          ]
+        },
+        {
+          "text": "고운 고춧가루 3스푼(21g), 설탕 3스푼(30g), 다시다 반 스푼(5g), 진간장 2스푼(16g), 시판 고추장 2스푼(60g)을 넣고 잘 섞어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장은 시판 고추장을 사용하세요",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "SPEECH",
+              "text": "최대한 고운 고춧가루 세 스푼 21g 설탕 세 스푼 30g 고향의 맛 다시다 반 스푼 5g을 넣어줍니다 그러고 깊은 맛을 쪼매 올려줄 진간장 두 스푼 16g 고추장 두 스푼 60g 고추장은 가능한 한 시판 고추장을 사용하이소",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "6~7분 정도 끓여 소스가 걸쭉하게 졸아들면 어묵을 넣고 2~3분 더 끓여 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "6~7분 끓여서 소스가 이정도로 줄어들면 어묵넣고 2~3분을 더 끓여주면",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대략 6~7분을 낋이가 소스가 대략 이정도까지 쫄아들었으면 어묵을 던져넣고 2~3분 정도를 더 낋여주면",
+              "timestamp": "00:46"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

@@ -10,6 +10,16 @@ All URIs are relative to *http://localhost*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**loginWithKakao**](AuthApi.md#loginwithkakao) | **POST** /api/v1/auth/kakao | 
+[**deleteCurrentAccount**](AuthApi.md#deletecurrentaccount) | **DELETE** /api/v1/me | Permanently delete the authenticated account
+
+# **deleteCurrentAccount**
+> deleteCurrentAccount()
+
+Permanently deletes the current account and user-owned data. Shared catalog and recipe data are preserved.
+
+### Authorization
+
+Bearer authentication required.
 
 
 # **loginWithKakao**

@@ -1,0 +1,236 @@
+{
+  "videoId": "Jykzyr860uM",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/Jykzyr860uM",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T15:14:16.528582+00:00",
+    "rawResponse": "{\n  \"title\": \"간단 된장찌개\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"물\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 냄비에 물 준비해 주시고\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"된장 1.5\",\n      \"displayName\": \"된장\",\n      \"amount\": \"1.5\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"된장 1.5\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"된장 한 숟갈 반\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 0.5\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"0.5\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 0.5\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 반 숟갈\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"멸치육수 1\",\n      \"displayName\": \"멸치육수\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"멸치육수 1\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"멸치육수 한 스푼\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"애호박, 버섯 (재료는 취향껏)\",\n      \"displayName\": \"애호박\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"애호박, 버섯 (재료는 취향껏)\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냉장고에 있는 재료 아무거나 잘 넣어주시고\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"썰어둔 애호박을 냄비에 넣는다\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"애호박, 버섯 (재료는 취향껏)\",\n      \"displayName\": \"버섯\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"애호박, 버섯 (재료는 취향껏)\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냉장고에 있는 재료 아무거나 잘 넣어주시고\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팽이버섯을 냄비에 넣는다\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 물을 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 냄비에 물 준비해 주시고\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"된장 한 숟갈 반과 고추장 반 숟갈을 넣고 잘 풀어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"된장 한 숟갈 반 고추장 반 숟갈 잘 풀어주세요.\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"된장 1.5 고추장 0.5\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"멸치육수 한 스푼을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"멸치육수 한 스푼 넣은 다음에\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"멸치육수 1\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"애호박, 버섯 등 냉장고에 있는 재료를 취향껏 넣어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냉장고에 있는 재료 아무거나 잘 넣어주시고\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"애호박, 버섯 (재료는 취향껏)\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뚜껑을 덮고 팔팔 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"뚜껑 덮고 팔팔 끓여주시면 된장찌개 완성\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"뚜껑덮고 끓여주기\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"물, 애호박, 버섯의 정확한 계량 수치 미표시\"\n  ]\n}",
+    "result": {
+      "title": "간단 된장찌개",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "물",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 냄비에 물 준비해 주시고",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "된장 1.5",
+          "displayName": "된장",
+          "amount": "1.5",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "된장 1.5",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "된장 한 숟갈 반",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "고추장 0.5",
+          "displayName": "고추장",
+          "amount": "0.5",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 0.5",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장 반 숟갈",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "멸치육수 1",
+          "displayName": "멸치육수",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "멸치육수 1",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "멸치육수 한 스푼",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "애호박, 버섯 (재료는 취향껏)",
+          "displayName": "애호박",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "애호박, 버섯 (재료는 취향껏)",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냉장고에 있는 재료 아무거나 잘 넣어주시고",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "썰어둔 애호박을 냄비에 넣는다",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "애호박, 버섯 (재료는 취향껏)",
+          "displayName": "버섯",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "애호박, 버섯 (재료는 취향껏)",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냉장고에 있는 재료 아무거나 잘 넣어주시고",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팽이버섯을 냄비에 넣는다",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 물을 준비한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 냄비에 물 준비해 주시고",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물",
+              "timestamp": "00:02"
+            }
+          ]
+        },
+        {
+          "text": "된장 한 숟갈 반과 고추장 반 숟갈을 넣고 잘 풀어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "된장 한 숟갈 반 고추장 반 숟갈 잘 풀어주세요.",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "된장 1.5 고추장 0.5",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "멸치육수 한 스푼을 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "멸치육수 한 스푼 넣은 다음에",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "멸치육수 1",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "애호박, 버섯 등 냉장고에 있는 재료를 취향껏 넣어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "냉장고에 있는 재료 아무거나 잘 넣어주시고",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "애호박, 버섯 (재료는 취향껏)",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "뚜껑을 덮고 팔팔 끓여준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "뚜껑 덮고 팔팔 끓여주시면 된장찌개 완성",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "뚜껑덮고 끓여주기",
+              "timestamp": "00:11"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "물, 애호박, 버섯의 정확한 계량 수치 미표시"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

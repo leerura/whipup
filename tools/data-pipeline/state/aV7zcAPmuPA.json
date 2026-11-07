@@ -1,0 +1,491 @@
+{
+  "videoId": "aV7zcAPmuPA",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/aV7zcAPmuPA",
+  "sourceMetadata": {"sourceTitle":null,"sourceChannelName":null,"sourceChannelId":null,"sourceMetadataFetchedAt":null},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T10:47:47.971696+00:00",
+    "rawResponse": "{\n  \"title\": \"국물떡볶이\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"떡볶이떡 250g\",\n      \"displayName\": \"떡볶이떡\",\n      \"amount\": \"250\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"떡볶이떡 250g을 준비해 주세요.\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"떡볶이떡 250g을 준비해 주세요.\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 1대\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"대\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파 1대를 큼직하게 어슷 썰어서 준비해 주세요.\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"크기가 큰 대파 한 대를 큼직하게 어슷 썰어서 준비해 주세요.\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"사각어묵 2장\",\n      \"displayName\": \"사각어묵\",\n      \"amount\": \"2\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"사각어묵 2장을 떡볶이떡 크기로 잘라서 준비해 주세요.\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"사각어묵 2장을 떡볶이떡 크기로 잘라서 준비해 주세요.\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깻잎 5장\",\n      \"displayName\": \"깻잎\",\n      \"amount\": \"5\",\n      \"unit\": \"장\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"깻잎 5장을 가늘게 채썰어주세요.\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"깻잎은 없어도 크게 문제가 안 되니까 생략하셔도 좋습니다.\",\n          \"timestamp\": \"00:59\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우동면 반개\",\n      \"displayName\": \"우동면\",\n      \"amount\": \"반\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"우동면을 반만 준비해 주세요. (면 1개를 다 넣으셔도 좋습니다)\",\n          \"timestamp\": \"01:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"반만 잘라서 넣어주세요.\",\n          \"timestamp\": \"01:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우동스프\",\n      \"displayName\": \"우동스프\",\n      \"amount\": \"1\",\n      \"unit\": \"봉\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"우동스프와 면을 준비해 주세요.\",\n          \"timestamp\": \"01:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국물을 만드는 스프만 준비해 주세요.\",\n          \"timestamp\": \"01:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"우동스프를 넣어주세요.\",\n          \"timestamp\": \"02:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 2스푼\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬(또는 웍)에 식용유 2스푼을 둘러주세요.\",\n          \"timestamp\": \"01:53\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 식용유 2스푼을 둘러주시고요.\",\n          \"timestamp\": \"01:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 2스푼(50g)\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 x 2\",\n          \"timestamp\": \"01:56\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장 2스푼(50g) 넣어주세요.\",\n          \"timestamp\": \"01:56\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장을 2스푼만 넣어주세요.\",\n          \"timestamp\": \"01:56\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양조간장(또는 진간장) 2스푼(20g)\",\n      \"displayName\": \"양조간장(또는 진간장)\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장 x 2\",\n          \"timestamp\": \"02:22\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양조간장(또는 진간장) 2스푼(20g) 넣어주세요.\",\n          \"timestamp\": \"02:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양조간장 2스푼을 넣어주세요.\",\n          \"timestamp\": \"02:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 2스푼(28g)\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 x 2\",\n          \"timestamp\": \"02:25\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 2스푼(28g) 넣어주세요.\",\n          \"timestamp\": \"02:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 역시 2스푼을 넣어주신 후에\",\n          \"timestamp\": \"02:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 4컵(800ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"4\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"바글바글 끓어오르면 물 4컵(800ml)을 부어주세요.\",\n          \"timestamp\": \"02:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 4컵, 800ml를 부어주세요.\",\n          \"timestamp\": \"02:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1스푼(7g)\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 x 1\",\n          \"timestamp\": \"02:48\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루 1스푼(7g) 넣어주세요.\",\n          \"timestamp\": \"02:49\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 1스푼을 넣어주시고요.\",\n          \"timestamp\": \"02:50\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추가루 4꼬집\",\n      \"displayName\": \"후추가루\",\n      \"amount\": \"4\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추가루 4꼬집을 넣어주세요.\",\n          \"timestamp\": \"02:24\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 후춧가루 4꼬집 정도를 넣어주시고요.\",\n          \"timestamp\": \"02:24\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"떡볶이떡 250g을 2~3번 가볍게 헹궈 물기를 제거해 준비합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"떡볶이떡을 2~3번 헹궈서 물기를 제거해 주세요.\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파 1대를 큼직하게 어슷 썰어 준비합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파 1대를 큼직하게 어슷 썰어서 준비해 주세요.\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"사각어묵 2장을 떡볶이떡 크기로 잘라 준비합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"사각어묵 2장을 떡볶이떡 크기로 잘라서 준비해 주세요.\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"text\": \"깻잎 5장을 가늘게 채 썰어 준비합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"깻잎 5장을 가늘게 채썰어주세요.\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"text\": \"우동 1개에서 액상 우동스프와 우동면 반 개를 준비합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"우동스프와 면을 준비해 주세요.\",\n          \"timestamp\": \"01:17\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"우동면을 반만 준비해 주세요. (면 1개를 다 넣으셔도 좋습니다)\",\n          \"timestamp\": \"01:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬(또는 웍)에 식용유 2스푼을 두르고 고추장 2스푼(50g)을 넣은 후 중불에서 약 1분 정도 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬(또는 웍)에 식용유 2스푼을 둘러주세요.\",\n          \"timestamp\": \"01:53\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장 2스푼(50g) 넣어주세요.\",\n          \"timestamp\": \"01:56\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불세기를 중 불로 조절하고 고추장을 볶아주세요.\",\n          \"timestamp\": \"02:00\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"약 1분 정도 볶아주세요.\",\n          \"timestamp\": \"02:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양조간장(또는 진간장) 2스푼(20g)과 설탕 2스푼(28g)을 넣고 중불에서 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양조간장(또는 진간장) 2스푼(20g) 넣어주세요.\",\n          \"timestamp\": \"02:22\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 2스푼(28g) 넣어주세요.\",\n          \"timestamp\": \"02:26\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"중불에서 볶아주세요.\",\n          \"timestamp\": \"02:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"바글바글 끓어오르면 물 4컵(800ml)을 부어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"바글바글 끓어오르면 물 4컵(800ml)을 부어주세요.\",\n          \"timestamp\": \"02:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"썰어놓은 어묵과 대파, 고춧가루 1스푼(7g), 우동스프를 넣고 불세기를 강불로 올려 국물이 끓어오르면 5분간 끓여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"썰어놓은 어묵과 대파를 넣어주세요.\",\n          \"timestamp\": \"02:42\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루 1스푼(7g) 넣어주세요.\",\n          \"timestamp\": \"02:49\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"우동스프를 넣어주세요.\",\n          \"timestamp\": \"02:53\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불세기는 강 불로 조절하고 국물이 끓어오르면 5분간 끓여주세요.\",\n          \"timestamp\": \"03:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"5분 후 떡볶이떡을 먼저 넣고 끓입니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"떡볶이떡을 넣고 끓여주세요.\",\n          \"timestamp\": \"03:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"떡볶이떡이 반 정도 익으면 우동면과 후춧가루 4꼬집을 넣고, 떡이 떠오르고 우동면이 잘 풀어질 때까지 끓여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"떡볶이떡이 반정도 익으면 우동면을 넣어주세요.\",\n          \"timestamp\": \"03:19\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추가루 4꼬집을 넣어주세요.\",\n          \"timestamp\": \"03:24\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"떡볶이떡이 떠오르고 우동면이 잘 풀어질때까지 끓여주세요.\",\n          \"timestamp\": \"03:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"채 썬 깻잎을 고명으로 올리고 불을 끕니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"깻잎을 넣고 불을 꺼주세요.\",\n          \"timestamp\": \"03:37\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "국물떡볶이",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "떡볶이떡 250g",
+          "displayName": "떡볶이떡",
+          "amount": "250",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "떡볶이떡 250g을 준비해 주세요.",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "떡볶이떡 250g을 준비해 주세요.",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파 1대",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "대",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대파 1대를 큼직하게 어슷 썰어서 준비해 주세요.",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SPEECH",
+              "text": "크기가 큰 대파 한 대를 큼직하게 어슷 썰어서 준비해 주세요.",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "사각어묵 2장",
+          "displayName": "사각어묵",
+          "amount": "2",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "사각어묵 2장을 떡볶이떡 크기로 잘라서 준비해 주세요.",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "사각어묵 2장을 떡볶이떡 크기로 잘라서 준비해 주세요.",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "깻잎 5장",
+          "displayName": "깻잎",
+          "amount": "5",
+          "unit": "장",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "깻잎 5장을 가늘게 채썰어주세요.",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "SPEECH",
+              "text": "깻잎은 없어도 크게 문제가 안 되니까 생략하셔도 좋습니다.",
+              "timestamp": "00:59"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "우동면 반개",
+          "displayName": "우동면",
+          "amount": "반",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "우동면을 반만 준비해 주세요. (면 1개를 다 넣으셔도 좋습니다)",
+              "timestamp": "01:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "반만 잘라서 넣어주세요.",
+              "timestamp": "01:33"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "우동스프",
+          "displayName": "우동스프",
+          "amount": "1",
+          "unit": "봉",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "우동스프와 면을 준비해 주세요.",
+              "timestamp": "01:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "국물을 만드는 스프만 준비해 주세요.",
+              "timestamp": "01:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "우동스프를 넣어주세요.",
+              "timestamp": "02:53"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "식용유 2스푼",
+          "displayName": "식용유",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "팬(또는 웍)에 식용유 2스푼을 둘러주세요.",
+              "timestamp": "01:53"
+            },
+            {
+              "type": "SPEECH",
+              "text": "팬에 식용유 2스푼을 둘러주시고요.",
+              "timestamp": "01:53"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "고추장 2스푼(50g)",
+          "displayName": "고추장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 x 2",
+              "timestamp": "01:56"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고추장 2스푼(50g) 넣어주세요.",
+              "timestamp": "01:56"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장을 2스푼만 넣어주세요.",
+              "timestamp": "01:56"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "양조간장(또는 진간장) 2스푼(20g)",
+          "displayName": "양조간장(또는 진간장)",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장 x 2",
+              "timestamp": "02:22"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양조간장(또는 진간장) 2스푼(20g) 넣어주세요.",
+              "timestamp": "02:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양조간장 2스푼을 넣어주세요.",
+              "timestamp": "02:22"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "설탕 2스푼(28g)",
+          "displayName": "설탕",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 x 2",
+              "timestamp": "02:25"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 2스푼(28g) 넣어주세요.",
+              "timestamp": "02:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 역시 2스푼을 넣어주신 후에",
+              "timestamp": "02:25"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "물 4컵(800ml)",
+          "displayName": "물",
+          "amount": "4",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "바글바글 끓어오르면 물 4컵(800ml)을 부어주세요.",
+              "timestamp": "02:37"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 4컵, 800ml를 부어주세요.",
+              "timestamp": "02:38"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "고춧가루 1스푼(7g)",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 x 1",
+              "timestamp": "02:48"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루 1스푼(7g) 넣어주세요.",
+              "timestamp": "02:49"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 1스푼을 넣어주시고요.",
+              "timestamp": "02:50"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "후추가루 4꼬집",
+          "displayName": "후추가루",
+          "amount": "4",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "후추가루 4꼬집을 넣어주세요.",
+              "timestamp": "02:24"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 후춧가루 4꼬집 정도를 넣어주시고요.",
+              "timestamp": "02:24"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "떡볶이떡 250g을 2~3번 가볍게 헹궈 물기를 제거해 준비합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "떡볶이떡을 2~3번 헹궈서 물기를 제거해 주세요.",
+              "timestamp": "00:19"
+            }
+          ]
+        },
+        {
+          "text": "대파 1대를 큼직하게 어슷 썰어 준비합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대파 1대를 큼직하게 어슷 썰어서 준비해 주세요.",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "사각어묵 2장을 떡볶이떡 크기로 잘라 준비합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "사각어묵 2장을 떡볶이떡 크기로 잘라서 준비해 주세요.",
+              "timestamp": "00:38"
+            }
+          ]
+        },
+        {
+          "text": "깻잎 5장을 가늘게 채 썰어 준비합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "깻잎 5장을 가늘게 채썰어주세요.",
+              "timestamp": "00:52"
+            }
+          ]
+        },
+        {
+          "text": "우동 1개에서 액상 우동스프와 우동면 반 개를 준비합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "우동스프와 면을 준비해 주세요.",
+              "timestamp": "01:17"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "우동면을 반만 준비해 주세요. (면 1개를 다 넣으셔도 좋습니다)",
+              "timestamp": "01:27"
+            }
+          ]
+        },
+        {
+          "text": "팬(또는 웍)에 식용유 2스푼을 두르고 고추장 2스푼(50g)을 넣은 후 중불에서 약 1분 정도 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "팬(또는 웍)에 식용유 2스푼을 둘러주세요.",
+              "timestamp": "01:53"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고추장 2스푼(50g) 넣어주세요.",
+              "timestamp": "01:56"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "불세기를 중 불로 조절하고 고추장을 볶아주세요.",
+              "timestamp": "02:00"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "약 1분 정도 볶아주세요.",
+              "timestamp": "02:17"
+            }
+          ]
+        },
+        {
+          "text": "양조간장(또는 진간장) 2스푼(20g)과 설탕 2스푼(28g)을 넣고 중불에서 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양조간장(또는 진간장) 2스푼(20g) 넣어주세요.",
+              "timestamp": "02:22"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 2스푼(28g) 넣어주세요.",
+              "timestamp": "02:26"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "중불에서 볶아주세요.",
+              "timestamp": "02:28"
+            }
+          ]
+        },
+        {
+          "text": "바글바글 끓어오르면 물 4컵(800ml)을 부어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "바글바글 끓어오르면 물 4컵(800ml)을 부어주세요.",
+              "timestamp": "02:37"
+            }
+          ]
+        },
+        {
+          "text": "썰어놓은 어묵과 대파, 고춧가루 1스푼(7g), 우동스프를 넣고 불세기를 강불로 올려 국물이 끓어오르면 5분간 끓여줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "썰어놓은 어묵과 대파를 넣어주세요.",
+              "timestamp": "02:42"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루 1스푼(7g) 넣어주세요.",
+              "timestamp": "02:49"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "우동스프를 넣어주세요.",
+              "timestamp": "02:53"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "불세기는 강 불로 조절하고 국물이 끓어오르면 5분간 끓여주세요.",
+              "timestamp": "03:00"
+            }
+          ]
+        },
+        {
+          "text": "5분 후 떡볶이떡을 먼저 넣고 끓입니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "떡볶이떡을 넣고 끓여주세요.",
+              "timestamp": "03:10"
+            }
+          ]
+        },
+        {
+          "text": "떡볶이떡이 반 정도 익으면 우동면과 후춧가루 4꼬집을 넣고, 떡이 떠오르고 우동면이 잘 풀어질 때까지 끓여줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "떡볶이떡이 반정도 익으면 우동면을 넣어주세요.",
+              "timestamp": "03:19"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "후추가루 4꼬집을 넣어주세요.",
+              "timestamp": "03:24"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "떡볶이떡이 떠오르고 우동면이 잘 풀어질때까지 끓여주세요.",
+              "timestamp": "03:31"
+            }
+          ]
+        },
+        {
+          "text": "채 썬 깻잎을 고명으로 올리고 불을 끕니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "깻잎을 넣고 불을 꺼주세요.",
+              "timestamp": "03:37"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

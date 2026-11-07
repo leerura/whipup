@@ -1,0 +1,236 @@
+{
+  "videoId": "YizEg8DjbmA",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/YizEg8DjbmA",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:49:56.126897+00:00",
+    "rawResponse": "{\n  \"title\": \"맛있고 간단한 계란 참치 볶음밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 기름을 두르고 중불에 파기름을 내준다.\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 기름을 두름\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파\",\n      \"displayName\": \"파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"중불에 파기름을 내준다.\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"송송 썬 파를 팬에 넣음\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 두 개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 두 개를 팬에 넣고 스크램블에그 만들기\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란 2개를 팬에 깨 넣음\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥을 넣고 섞어준다. (약불 유지)\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥을 팬에 넣음\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름 뺀 참치\",\n      \"displayName\": \"기름 뺀 참치\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름 뺀 참치를 넣어주고 잘 섞어가며 볶는다.\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"기름을 뺀 참치를 팬에 넣음\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 한 숟가락\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 한 숟가락 넣고 섞은 다음 불을 끈다.\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"숟가락에 담은 굴소스를 팬에 넣음\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"통깨 솔~솔~ 뿌려주면 계란 참치 볶음밥 완성\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 볶음밥 위에 통깨를 뿌림\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 기름을 두르고 중불에 파기름을 내준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 기름을 두르고 중불에 파기름을 내준다.\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"약불로 줄이고 계란 두 개를 팬에 넣고 스크램블에그 만들기\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"약불로 줄이고 계란 두 개를 팬에 넣고 스크램블에그 만들기\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥을 넣고 섞어준다. (약불 유지)\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥을 넣고 섞어준다. (약불 유지)\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"기름 뺀 참치를 넣어주고 잘 섞어가며 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름 뺀 참치를 넣어주고 잘 섞어가며 볶는다.\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"굴소스 한 숟가락 넣고 섞은 다음 불을 끈다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 한 숟가락 넣고 섞은 다음 불을 끈다.\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"통깨 솔~솔~ 뿌려주면 계란 참치 볶음밥 완성\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"통깨 솔~솔~ 뿌려주면 계란 참치 볶음밥 완성\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"기름의 구체적인 양 미명시\",\n    \"파의 구체적인 양 미명시\",\n    \"밥의 구체적인 양 미명시\",\n    \"참치의 구체적인 양(캔 크기/무게 등) 미명시\",\n    \"통깨의 구체적인 양 미명시\"\n  ]\n}",
+    "result": {
+      "title": "맛있고 간단한 계란 참치 볶음밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 기름을 두르고 중불에 파기름을 내준다.",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 기름을 두름",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "파",
+          "displayName": "파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "중불에 파기름을 내준다.",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "송송 썬 파를 팬에 넣음",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "계란 두 개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 두 개를 팬에 넣고 스크램블에그 만들기",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란 2개를 팬에 깨 넣음",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥을 넣고 섞어준다. (약불 유지)",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥을 팬에 넣음",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "기름 뺀 참치",
+          "displayName": "기름 뺀 참치",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름 뺀 참치를 넣어주고 잘 섞어가며 볶는다.",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "기름을 뺀 참치를 팬에 넣음",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "굴소스 한 숟가락",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 한 숟가락 넣고 섞은 다음 불을 끈다.",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "숟가락에 담은 굴소스를 팬에 넣음",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "통깨 솔~솔~ 뿌려주면 계란 참치 볶음밥 완성",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 볶음밥 위에 통깨를 뿌림",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 기름을 두르고 중불에 파기름을 내준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 기름을 두르고 중불에 파기름을 내준다.",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "약불로 줄이고 계란 두 개를 팬에 넣고 스크램블에그 만들기",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "약불로 줄이고 계란 두 개를 팬에 넣고 스크램블에그 만들기",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "밥을 넣고 섞어준다. (약불 유지)",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥을 넣고 섞어준다. (약불 유지)",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "기름 뺀 참치를 넣어주고 잘 섞어가며 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름 뺀 참치를 넣어주고 잘 섞어가며 볶는다.",
+              "timestamp": "00:28"
+            }
+          ]
+        },
+        {
+          "text": "굴소스 한 숟가락 넣고 섞은 다음 불을 끈다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 한 숟가락 넣고 섞은 다음 불을 끈다.",
+              "timestamp": "00:33"
+            }
+          ]
+        },
+        {
+          "text": "통깨 솔~솔~ 뿌려주면 계란 참치 볶음밥 완성",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "통깨 솔~솔~ 뿌려주면 계란 참치 볶음밥 완성",
+              "timestamp": "00:38"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "기름의 구체적인 양 미명시",
+        "파의 구체적인 양 미명시",
+        "밥의 구체적인 양 미명시",
+        "참치의 구체적인 양(캔 크기/무게 등) 미명시",
+        "통깨의 구체적인 양 미명시"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "videoId": "sfPYotqyD18",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/sfPYotqyD18",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:49:29.775651+00:00",
+    "rawResponse": "{\n  \"title\": \"라면보다 쉬운 초간단 파스타 레시피 (Super Simple Pasta Recipe That's Easier Than Ramen)\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"파스타 면\",\n      \"displayName\": \"파스타 면 (pasta noodles)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"파스타 면 부시고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"파스타 면 부시고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Breaking a bundle of pasta noodles in half into a glass bowl\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 250ml\",\n      \"displayName\": \"물 (water)\",\n      \"amount\": \"250\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 250ml\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 250ml\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Pouring 250ml of water over the pasta noodles in the bowl\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"스파게티 소스\",\n      \"displayName\": \"스파게티 소스 (spaghetti sauce)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스파게티 소스\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"스파게티 소스\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding spoonfuls of red spaghetti sauce to the cooked pasta and mixing\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"치즈 왕창\",\n      \"displayName\": \"치즈 (shredded cheese)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"치즈 왕창 넣고\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"치즈 왕창 넣고\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding a generous handful of shredded cheese over the pasta\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리 가루\",\n      \"displayName\": \"파슬리 가루 (parsley flakes)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Sprinkling dried parsley flakes over the melted cheese as garnish\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"파스타 면을 반으로 부러뜨려 그릇에 담는다. (Break the pasta noodles in half into a bowl.)\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"파스타 면 부시고 / Break the pasta noodles\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"파스타 면 부시고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Breaking pasta noodles in half into a microwave-safe glass bowl\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 250ml를 붓고 전자레인지에 7분간 돌린다. (Add 250ml of water and microwave for 7 minutes.)\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 250ml add water 250ml / 전자레인지 7분 돌려 주세요. Microwave it for seven minutes\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 250ml 전자레인지 7분 돌려 줘요.\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Pouring 250ml of water into the bowl over the noodles\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"스파게티 소스를 넣고 비벼준 뒤, 치즈를 듬뿍 올린다. (Add spaghetti sauce, mix well, and add plenty of cheese on top.)\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스파게티 소스, 치즈 왕창 넣고 / Spaghetti sauce and cheese\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"스파게티 소스 치즈 왕창 넣고\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding tomato sauce, mixing into the noodles, and topping with shredded cheese\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"전자레인지에 3분 더 돌려 치즈를 녹여 완성한다. (Microwave for 3 more minutes to melt the cheese and finish.)\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"전자레인지 3분 더 돌려주면 완성 / Microwave it for 3 more minutes\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"전자레인지 한 번 더 돌려주면 완성\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Presenting the completed pasta with melted cheese and sprinkled parsley\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"Exact quantity of pasta noodles\",\n    \"Exact quantity of spaghetti sauce\",\n    \"Exact quantity of shredded cheese\"\n  ]\n}",
+    "result": {
+      "title": "라면보다 쉬운 초간단 파스타 레시피 (Super Simple Pasta Recipe That's Easier Than Ramen)",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "파스타 면",
+          "displayName": "파스타 면 (pasta noodles)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "파스타 면 부시고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "파스타 면 부시고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Breaking a bundle of pasta noodles in half into a glass bowl",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "물 250ml",
+          "displayName": "물 (water)",
+          "amount": "250",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 250ml",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 250ml",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Pouring 250ml of water over the pasta noodles in the bowl",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "스파게티 소스",
+          "displayName": "스파게티 소스 (spaghetti sauce)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스파게티 소스",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "스파게티 소스",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding spoonfuls of red spaghetti sauce to the cooked pasta and mixing",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "치즈 왕창",
+          "displayName": "치즈 (shredded cheese)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "치즈 왕창 넣고",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "치즈 왕창 넣고",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding a generous handful of shredded cheese over the pasta",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "파슬리 가루",
+          "displayName": "파슬리 가루 (parsley flakes)",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Sprinkling dried parsley flakes over the melted cheese as garnish",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        }
+      ],
+      "steps": [
+        {
+          "text": "파스타 면을 반으로 부러뜨려 그릇에 담는다. (Break the pasta noodles in half into a bowl.)",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "파스타 면 부시고 / Break the pasta noodles",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "파스타 면 부시고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Breaking pasta noodles in half into a microwave-safe glass bowl",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "물 250ml를 붓고 전자레인지에 7분간 돌린다. (Add 250ml of water and microwave for 7 minutes.)",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 250ml add water 250ml / 전자레인지 7분 돌려 주세요. Microwave it for seven minutes",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 250ml 전자레인지 7분 돌려 줘요.",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Pouring 250ml of water into the bowl over the noodles",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "스파게티 소스를 넣고 비벼준 뒤, 치즈를 듬뿍 올린다. (Add spaghetti sauce, mix well, and add plenty of cheese on top.)",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스파게티 소스, 치즈 왕창 넣고 / Spaghetti sauce and cheese",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "스파게티 소스 치즈 왕창 넣고",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding tomato sauce, mixing into the noodles, and topping with shredded cheese",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "전자레인지에 3분 더 돌려 치즈를 녹여 완성한다. (Microwave for 3 more minutes to melt the cheese and finish.)",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "전자레인지 3분 더 돌려주면 완성 / Microwave it for 3 more minutes",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "전자레인지 한 번 더 돌려주면 완성",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Presenting the completed pasta with melted cheese and sprinkled parsley",
+              "timestamp": "00:12"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "Exact quantity of pasta noodles",
+        "Exact quantity of spaghetti sauce",
+        "Exact quantity of shredded cheese"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

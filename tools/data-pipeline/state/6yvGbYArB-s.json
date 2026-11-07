@@ -1,0 +1,212 @@
+{
+  "videoId": "6yvGbYArB-s",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/6yvGbYArB-s",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T08:19:44.363719+00:00",
+    "rawResponse": "{\n  \"title\": \"회오리 오므라이스\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"계란 세 개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"3\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 세 개를 톡톡톡 까서 넣어주고\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 아주 살짝\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금은 아주 살짝만 넣고\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 살짝\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 식용유를 살짝 둘러주고\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"볶음밥\",\n      \"displayName\": \"볶음밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"볶음밥 위로 살포시 올려주고\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"토메이토 스파게티 소스 두 스푼\",\n      \"displayName\": \"토마토 스파게티 소스\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"토메이토 스파게티 소스를 두 스푼 넣어줍니다\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돈까스 소스 두 스푼\",\n      \"displayName\": \"돈까스 소스\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"돈까스 소스를 두 스푼 넣어줍니다\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 1/3컵\",\n      \"displayName\": \"물\",\n      \"amount\": \"1/3\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 물을 1/3컵 부어줍니다\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리\",\n      \"displayName\": \"파슬리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"파슬리까지 뿌려주면\",\n          \"timestamp\": \"00:49\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"그릇에 계란 3개를 깨 넣고 소금을 살짝 넣은 뒤 잘 풀어 계란물을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"아무 그릇에 계란 세 개를 톡톡톡 까서 넣어주고 소금은 아주 살짝만 넣고 계란을 잘 풀어줍니다\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유를 살짝 두르고 팬 바닥 전체에 골고루 기름칠을 한 뒤, 중약불에서 약 30초간 달군다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 식용유를 살짝 둘러주고 팬을 돌려가면서 팬 바닥에 빈틈없이 꼼꼼하게 기름칠을 해줍니다. 그라고 중약불에서 30초 정도만 뜨뜻하게 팬을 달궈줍니다\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"30초 후 달궈진 팬에 계란물을 붓고, 가장자리가 살짝 익으면 젓가락으로 양쪽 가장자리를 가운데로 천천히 끌어당긴 다음 회오리 모양으로 살살 돌려가며 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"정확히 30초 뒤에 잘 풀어둔 계란물을 싹 부어줍니다. 살짝 익은 가장자리 부분을 가운데로 싹 끌어당겨 옵니다. 이때 너무 빠르게 당기면 계란이 찢어질 수도 있으니 천천히 끌고 오는 것이 중요합니다. 그라고 살살살 회오리 모양으로 돌려주면 됩니다.\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"촉촉하게 익은 회오리 계란을 준비된 볶음밥 위에 살포시 얹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"촉촉하게 익은 회오리 모양 계란도 볶음밥 위로 살포시 올려주고\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 토마토 스파게티 소스 2스푼, 돈까스 소스 2스푼, 물 1/3컵을 넣고 불을 켜서 잘 섞어가며 한 번 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"토메이토 스파게티 소스를 두 스푼 넣어줍니다. 그라고 돈까스 소스를 두 스푼 넣어줍니다. 여기에 물을 1/3컵 부어줍니다. 인자 불을 켜고 양념을 섞어주면서 한번 끓여줍니다\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 소스를 계란 위에 부어주고 파슬리를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다 만들어진 소스도 계란 위로 스르륵 뿌려줍니다. 있어 보이게 파슬리까지 뿌려주면 간단하게 회오리 오므라이스가 완성되었습니다\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"계란 아래에 받치는 볶음밥의 재료와 조리 과정은 영상에 등장하지 않고 미리 조리된 상태로 사용되었습니다.\"\n  ]\n}",
+    "result": {
+      "title": "회오리 오므라이스",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "계란 세 개",
+          "displayName": "계란",
+          "amount": "3",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 세 개를 톡톡톡 까서 넣어주고",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "소금 아주 살짝",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소금은 아주 살짝만 넣고",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "식용유 살짝",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 식용유를 살짝 둘러주고",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "볶음밥",
+          "displayName": "볶음밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "볶음밥 위로 살포시 올려주고",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "토메이토 스파게티 소스 두 스푼",
+          "displayName": "토마토 스파게티 소스",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "토메이토 스파게티 소스를 두 스푼 넣어줍니다",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "돈까스 소스 두 스푼",
+          "displayName": "돈까스 소스",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "돈까스 소스를 두 스푼 넣어줍니다",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "물 1/3컵",
+          "displayName": "물",
+          "amount": "1/3",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 물을 1/3컵 부어줍니다",
+              "timestamp": "00:42"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "파슬리",
+          "displayName": "파슬리",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "파슬리까지 뿌려주면",
+              "timestamp": "00:49"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        }
+      ],
+      "steps": [
+        {
+          "text": "그릇에 계란 3개를 깨 넣고 소금을 살짝 넣은 뒤 잘 풀어 계란물을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "아무 그릇에 계란 세 개를 톡톡톡 까서 넣어주고 소금은 아주 살짝만 넣고 계란을 잘 풀어줍니다",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유를 살짝 두르고 팬 바닥 전체에 골고루 기름칠을 한 뒤, 중약불에서 약 30초간 달군다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 식용유를 살짝 둘러주고 팬을 돌려가면서 팬 바닥에 빈틈없이 꼼꼼하게 기름칠을 해줍니다. 그라고 중약불에서 30초 정도만 뜨뜻하게 팬을 달궈줍니다",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "30초 후 달궈진 팬에 계란물을 붓고, 가장자리가 살짝 익으면 젓가락으로 양쪽 가장자리를 가운데로 천천히 끌어당긴 다음 회오리 모양으로 살살 돌려가며 익힌다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "정확히 30초 뒤에 잘 풀어둔 계란물을 싹 부어줍니다. 살짝 익은 가장자리 부분을 가운데로 싹 끌어당겨 옵니다. 이때 너무 빠르게 당기면 계란이 찢어질 수도 있으니 천천히 끌고 오는 것이 중요합니다. 그라고 살살살 회오리 모양으로 돌려주면 됩니다.",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "촉촉하게 익은 회오리 계란을 준비된 볶음밥 위에 살포시 얹는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "촉촉하게 익은 회오리 모양 계란도 볶음밥 위로 살포시 올려주고",
+              "timestamp": "00:34"
+            }
+          ]
+        },
+        {
+          "text": "팬에 토마토 스파게티 소스 2스푼, 돈까스 소스 2스푼, 물 1/3컵을 넣고 불을 켜서 잘 섞어가며 한 번 끓여준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "토메이토 스파게티 소스를 두 스푼 넣어줍니다. 그라고 돈까스 소스를 두 스푼 넣어줍니다. 여기에 물을 1/3컵 부어줍니다. 인자 불을 켜고 양념을 섞어주면서 한번 끓여줍니다",
+              "timestamp": "00:37"
+            }
+          ]
+        },
+        {
+          "text": "완성된 소스를 계란 위에 부어주고 파슬리를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다 만들어진 소스도 계란 위로 스르륵 뿌려줍니다. 있어 보이게 파슬리까지 뿌려주면 간단하게 회오리 오므라이스가 완성되었습니다",
+              "timestamp": "00:46"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "계란 아래에 받치는 볶음밥의 재료와 조리 과정은 영상에 등장하지 않고 미리 조리된 상태로 사용되었습니다."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

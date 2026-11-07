@@ -1,4 +1,21 @@
 services:
+  recipe-pipeline:
+    build:
+      context: .
+      dockerfile: tools/data-pipeline/Dockerfile
+    command: ["python", "/workspace/tools/data-pipeline/src/pipeline.py"]
+    environment:
+      GEMINI_MODEL: ${GEMINI_MODEL:-gemini-3.8-flash}
+      YOUTUBE_DATA_API_KEY: ${YOUTUBE_DATA_API_KEY:-}
+      PIPELINE_POLL_SECONDS: ${PIPELINE_POLL_SECONDS:-20}
+      PIPELINE_DASHBOARD_PORT: ${PIPELINE_DASHBOARD_PORT:-8081}
+    ports:
+      - "127.0.0.1:${PIPELINE_DASHBOARD_PORT:-8081}:8081"
+    volumes:
+      - ./tools/data-pipeline/input:/workspace/tools/data-pipeline/input
+      - ./tools/data-pipeline/state:/workspace/tools/data-pipeline/state
+      - ./tools/data-pipeline/accounts:/workspace/tools/data-pipeline/accounts:ro
+
   backend:
     build:
       context: ./backend
@@ -15,6 +32,20 @@ services:
       DB_USERNAME: ${DB_USERNAME}
       DB_PASSWORD: ${DB_PASSWORD}
       JWT_SECRET: ${JWT_SECRET}
+
+  https-proxy:
+    image: caddy:2.11.7-alpine
+    restart: unless-stopped
+    ports:
+      - "443:443"
+    environment:
+      WHIPUP_PUBLIC_IP: ${WHIPUP_PUBLIC_IP:?Set WHIPUP_PUBLIC_IP in .env}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - backend
 
   postgres:
     image: postgres:17.6-alpine
@@ -37,3 +68,5 @@ services:
 
 volumes:
   postgres_data:
+  caddy_data:
+  caddy_config:

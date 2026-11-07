@@ -1,0 +1,335 @@
+{
+  "videoId": "YiUd1b0Be1k",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/YiUd1b0Be1k",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T08:09:43.721311+00:00",
+    "rawResponse": "{\n  \"title\": \"10분 달걀덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"달걀 2개\",\n      \"displayName\": \"달걀\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란이 두개?\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"달걀 2개\",\n          \"timestamp\": \"01:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 하나\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1개\",\n          \"timestamp\": \"01:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 4바퀴\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"4\",\n      \"unit\": \"바퀴\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 4바퀴\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"네 바퀴\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 4바퀴\",\n          \"timestamp\": \"01:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 2꼬집\",\n      \"displayName\": \"소금\",\n      \"amount\": \"2\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금만 두 꼬집 넣어주세요\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 두 꼬집\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 2꼬집\",\n          \"timestamp\": \"01:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"작은 종이컵 물 1컵\",\n      \"displayName\": \"물\",\n      \"amount\": \"1\",\n      \"unit\": \"작은 종이컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 한 컵 작은 거 종이컵으로\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물은 작은 종이컵으로 한 컵\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"작은 종이컵 물 1컵\",\n          \"timestamp\": \"01:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 1T\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 하나\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 1T\",\n          \"timestamp\": \"01:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치액 1T\",\n      \"displayName\": \"참치액\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치액 하나\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치액 꼭 들어가야 돼요. 액젓으로 바꾸면 다른 요리가 돼요\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치액 1T\",\n          \"timestamp\": \"01:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 0.5T\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.5\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 반 숟가락\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 0.5T\",\n          \"timestamp\": \"01:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 위에 얹어주면\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥\",\n          \"timestamp\": \"01:10\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양파 1개를 얇게 채 썰고, 달걀 2개는 흰자와 노른자가 완전히 섞이지 않도록 대충 가볍게 풀어둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 많이는 안 들고 얇게만 썰으시면 되고 채칼 쓰시면 돼요\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란을 대충 풀어야 돼요. 대충 풀어놓은 계란 흰자 노른자 완전히 안 섞이게\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1. 양파 1개 얇게 채썰기 (달걀은 흰자-노른자 남게 가볍게 풀기)\",\n          \"timestamp\": \"01:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"약불에 팬을 올리고 식용유 4바퀴를 두른 뒤 양파를 부드럽게 볶다가 노릇해지면 소금 2꼬집을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 4바퀴\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1개 넣기\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"약불에서 양파를 부드럽게 익히기\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금만 두 꼬집 넣어주세요\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"2. 약불에 기름 4바퀴, 양파 볶기 (노릇해지면 소금 2꼬집 넣기)\",\n          \"timestamp\": \"01:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볶은 양파 위에 작은 종이컵 1컵 분량의 물, 간장 1T, 참치액 1T, 설탕 0.5T를 넣고 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 한 컵 작은 거 종이컵으로\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 하나 참치액 하나 설탕 반 숟가락\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"3. 물-간장-참치액-설탕 넣고 끓이기 (참치액은 다른 액젓으로 바꾸지 않기)\",\n          \"timestamp\": \"01:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"가볍게 푼 달걀을 붓고 살짝 익힌 후, 불을 끄고 뚜껑을 덮어 잔열로 1분간 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"푼 달걀물을 팬에 둘러 붓는다\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"불 끄고 뚜껑 덮어 잔열로 1분\",\n          \"timestamp\": \"00:48\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"4. 달걀 붓고 살짝 익히기 (뚜껑 덮고 불 꺼 잔열 1분)\",\n          \"timestamp\": \"01:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 달걀과 양파를 밥 위에 얹어 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 위에 얹어주면\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥에 얹기\",\n          \"timestamp\": \"01:10\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "10분 달걀덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "달걀 2개",
+          "displayName": "달걀",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란이 두개?",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "달걀 2개",
+              "timestamp": "01:10"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파 1개",
+          "displayName": "양파",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 하나",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1개",
+              "timestamp": "01:10"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "식용유 4바퀴",
+          "displayName": "식용유",
+          "amount": "4",
+          "unit": "바퀴",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 4바퀴",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "네 바퀴",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 4바퀴",
+              "timestamp": "01:10"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "소금 2꼬집",
+          "displayName": "소금",
+          "amount": "2",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소금만 두 꼬집 넣어주세요",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 두 꼬집",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 2꼬집",
+              "timestamp": "01:10"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "작은 종이컵 물 1컵",
+          "displayName": "물",
+          "amount": "1",
+          "unit": "작은 종이컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 한 컵 작은 거 종이컵으로",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물은 작은 종이컵으로 한 컵",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "작은 종이컵 물 1컵",
+              "timestamp": "01:10"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "간장 1T",
+          "displayName": "간장",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "간장 하나",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 1T",
+              "timestamp": "01:10"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "참치액 1T",
+          "displayName": "참치액",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "참치액 하나",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참치액 꼭 들어가야 돼요. 액젓으로 바꾸면 다른 요리가 돼요",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치액 1T",
+              "timestamp": "01:10"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "설탕 0.5T",
+          "displayName": "설탕",
+          "amount": "0.5",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "설탕 반 숟가락",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 0.5T",
+              "timestamp": "01:10"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 위에 얹어주면",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥",
+              "timestamp": "01:10"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양파 1개를 얇게 채 썰고, 달걀 2개는 흰자와 노른자가 완전히 섞이지 않도록 대충 가볍게 풀어둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 많이는 안 들고 얇게만 썰으시면 되고 채칼 쓰시면 돼요",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란을 대충 풀어야 돼요. 대충 풀어놓은 계란 흰자 노른자 완전히 안 섞이게",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1. 양파 1개 얇게 채썰기 (달걀은 흰자-노른자 남게 가볍게 풀기)",
+              "timestamp": "01:10"
+            }
+          ]
+        },
+        {
+          "text": "약불에 팬을 올리고 식용유 4바퀴를 두른 뒤 양파를 부드럽게 볶다가 노릇해지면 소금 2꼬집을 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 4바퀴",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1개 넣기",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "약불에서 양파를 부드럽게 익히기",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소금만 두 꼬집 넣어주세요",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "2. 약불에 기름 4바퀴, 양파 볶기 (노릇해지면 소금 2꼬집 넣기)",
+              "timestamp": "01:10"
+            }
+          ]
+        },
+        {
+          "text": "볶은 양파 위에 작은 종이컵 1컵 분량의 물, 간장 1T, 참치액 1T, 설탕 0.5T를 넣고 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 한 컵 작은 거 종이컵으로",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장 하나 참치액 하나 설탕 반 숟가락",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "3. 물-간장-참치액-설탕 넣고 끓이기 (참치액은 다른 액젓으로 바꾸지 않기)",
+              "timestamp": "01:10"
+            }
+          ]
+        },
+        {
+          "text": "가볍게 푼 달걀을 붓고 살짝 익힌 후, 불을 끄고 뚜껑을 덮어 잔열로 1분간 익힌다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "푼 달걀물을 팬에 둘러 붓는다",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "불 끄고 뚜껑 덮어 잔열로 1분",
+              "timestamp": "00:48"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "4. 달걀 붓고 살짝 익히기 (뚜껑 덮고 불 꺼 잔열 1분)",
+              "timestamp": "01:10"
+            }
+          ]
+        },
+        {
+          "text": "완성된 달걀과 양파를 밥 위에 얹어 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 위에 얹어주면",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥에 얹기",
+              "timestamp": "01:10"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

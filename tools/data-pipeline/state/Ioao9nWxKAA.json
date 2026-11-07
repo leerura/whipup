@@ -1,0 +1,317 @@
+{
+  "videoId": "Ioao9nWxKAA",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/Ioao9nWxKAA",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T08:14:31.292460+00:00",
+    "rawResponse": "{\n  \"title\": \"목살 인생 레시피 (목살 덮밥)\",\n  \"description\": \"진짜 부드럽고 맛집 돼지갈비 맛이 나는 목살 덮밥 레시피\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"목살 150g\",\n      \"displayName\": \"목살\",\n      \"amount\": \"150\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"목살 150g\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"오늘의 단백질은 목살!\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 1.5\",\n      \"displayName\": \"물\",\n      \"amount\": \"1.5\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 1.5\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 3\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"3\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 3\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"알룰로스 2\",\n      \"displayName\": \"알룰로스\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"알룰로스 2\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 1\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 1\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 0.5\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"0.5\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 0.5\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"연겨자 0.5\",\n      \"displayName\": \"연겨자\",\n      \"amount\": \"0.5\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"연겨자 0.5\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"편마늘 15개\",\n      \"displayName\": \"편마늘\",\n      \"amount\": \"15\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"편마늘 15개\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 마늘과\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"꽈리고추 3개\",\n      \"displayName\": \"꽈리고추\",\n      \"amount\": \"3\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"꽈리고추 3개\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"꽈리고추 넣고\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 밥 위에 올려주면!\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 덮밥 위에 통깨가 뿌려져 있음\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"더 부드러운 식감을 위해 목살 앞뒤로 칼집을 낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"더 부드러운 식감을 위해 앞뒤로 칼집 내주세요\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"목살 앞뒤에 대각선으로 격자 칼집을 냄\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 1.5, 진간장 3, 알룰로스 2, 맛술 1, 다진마늘 0.5, 연겨자 0.5, 후추를 섞어 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 1.5, 진간장 3, 알룰로스 2, 맛술 1, 다진마늘 0.5, 연겨자 0.5, 후추\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 양념 재료들을 넣고 숟가락으로 섞음\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"목살에 양념을 골고루 묻힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양념 골고루 묻혀\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"고기 앞뒤에 양념장을 골고루 적심\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 고기를 올리고 앞뒤로 1분씩 뚜껑을 덮고 구운 뒤 먹기 좋게 가위로 자른다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"앞뒤로 1분씩 뚜껑 덮고 구운 뒤 먹기 좋게 가위로 잘라요\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"뚜껑을 덮어 굽고 가위로 한 입 크기로 자름\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"편마늘과 꽈리고추를 넣고 뒤적이며 양념이 졸아들 때까지 굽는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 마늘과 꽈리고추 넣고 뒤적이며 양념이 졸아들 때까지 구워주세요\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"편마늘과 꽈리고추를 팬에 넣고 볶으며 양념을 졸임\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 위에 구운 고기와 채소를 올리고 통깨를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 밥 위에 올려주면!\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 올려 통깨를 뿌려 완성한 모습\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"양념장 계량 단위(스푼/큰술 등)가 자막과 음성에 명시되어 있지 않음 (숫자만 표기됨)\"\n  ]\n}",
+    "result": {
+      "title": "목살 인생 레시피 (목살 덮밥)",
+      "description": "진짜 부드럽고 맛집 돼지갈비 맛이 나는 목살 덮밥 레시피",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "목살 150g",
+          "displayName": "목살",
+          "amount": "150",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "목살 150g",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "오늘의 단백질은 목살!",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "물 1.5",
+          "displayName": "물",
+          "amount": "1.5",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 1.5",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "진간장 3",
+          "displayName": "진간장",
+          "amount": "3",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 3",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "알룰로스 2",
+          "displayName": "알룰로스",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "알룰로스 2",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "맛술 1",
+          "displayName": "맛술",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 1",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "다진마늘 0.5",
+          "displayName": "다진마늘",
+          "amount": "0.5",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 0.5",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "연겨자 0.5",
+          "displayName": "연겨자",
+          "amount": "0.5",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "연겨자 0.5",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "편마늘 15개",
+          "displayName": "편마늘",
+          "amount": "15",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "편마늘 15개",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 마늘과",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "꽈리고추 3개",
+          "displayName": "꽈리고추",
+          "amount": "3",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "꽈리고추 3개",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "꽈리고추 넣고",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 밥 위에 올려주면!",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 덮밥 위에 통깨가 뿌려져 있음",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "더 부드러운 식감을 위해 목살 앞뒤로 칼집을 낸다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "더 부드러운 식감을 위해 앞뒤로 칼집 내주세요",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "목살 앞뒤에 대각선으로 격자 칼집을 냄",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "물 1.5, 진간장 3, 알룰로스 2, 맛술 1, 다진마늘 0.5, 연겨자 0.5, 후추를 섞어 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 1.5, 진간장 3, 알룰로스 2, 맛술 1, 다진마늘 0.5, 연겨자 0.5, 후추",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 양념 재료들을 넣고 숟가락으로 섞음",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "목살에 양념을 골고루 묻힌다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양념 골고루 묻혀",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "고기 앞뒤에 양념장을 골고루 적심",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "팬에 고기를 올리고 앞뒤로 1분씩 뚜껑을 덮고 구운 뒤 먹기 좋게 가위로 자른다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "앞뒤로 1분씩 뚜껑 덮고 구운 뒤 먹기 좋게 가위로 잘라요",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "뚜껑을 덮어 굽고 가위로 한 입 크기로 자름",
+              "timestamp": "00:19"
+            }
+          ]
+        },
+        {
+          "text": "편마늘과 꽈리고추를 넣고 뒤적이며 양념이 졸아들 때까지 굽는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 마늘과 꽈리고추 넣고 뒤적이며 양념이 졸아들 때까지 구워주세요",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "편마늘과 꽈리고추를 팬에 넣고 볶으며 양념을 졸임",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "밥 위에 구운 고기와 채소를 올리고 통깨를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 밥 위에 올려주면!",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 올려 통깨를 뿌려 완성한 모습",
+              "timestamp": "00:25"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "양념장 계량 단위(스푼/큰술 등)가 자막과 음성에 명시되어 있지 않음 (숫자만 표기됨)"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

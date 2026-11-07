@@ -1,0 +1,341 @@
+{
+  "videoId": "4-T3G_b4QKo",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/4-T3G_b4QKo",
+  "sourceMetadata": {"sourceTitle":"밥도둑 매콤두부조림 #90","sourceChannelName":"하루한끼 one meal a day","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.162944Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T10:45:36.623886+00:00",
+    "rawResponse": "{\n  \"title\": \"매콤 두부조림\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"두부 300g\",\n      \"displayName\": \"두부\",\n      \"amount\": \"300\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부 300g\",\n          \"timestamp\": \"0:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파\",\n          \"timestamp\": \"0:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"두부 조림에 빠지면 섭섭한 대파\",\n          \"timestamp\": \"0:48\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 반개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"반\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파\",\n          \"timestamp\": \"0:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 반개\",\n          \"timestamp\": \"0:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 6스푼\",\n      \"displayName\": \"물\",\n      \"amount\": \"6\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 6스푼\",\n          \"timestamp\": \"0:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 2스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"진간장 2스푼\",\n          \"timestamp\": \"0:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 반스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"반\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 반스푼\",\n          \"timestamp\": \"0:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 한스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"한\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루 한스푼\",\n          \"timestamp\": \"0:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 반스푼\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"반\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘 반스푼\",\n          \"timestamp\": \"0:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 한스푼\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"한\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참기름 한스푼\",\n          \"timestamp\": \"0:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 조금\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"조금\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"식용유 조금 넣고\",\n          \"timestamp\": \"1:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 두부조림 위에 깨를 뿌린다\",\n          \"timestamp\": \"2:00\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"볼에 물 6스푼, 진간장 2스푼, 설탕 반스푼, 고춧가루 한스푼, 다진마늘 반스푼, 참기름 한스푼을 넣고 잘 섞어 양념장을 만듭니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 6스푼\",\n          \"timestamp\": \"0:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"진간장 2스푼\",\n          \"timestamp\": \"0:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 반스푼\",\n          \"timestamp\": \"0:16\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루 한스푼\",\n          \"timestamp\": \"0:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘 반스푼\",\n          \"timestamp\": \"0:19\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참기름 한스푼\",\n          \"timestamp\": \"0:21\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 다 된거나 다름 없습니다\",\n          \"timestamp\": \"0:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"두부를 도톰하게 썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"도톰하게 썰어줍니다\",\n          \"timestamp\": \"0:32\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 반 개와 대파를 썰어 준비합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 반개\",\n          \"timestamp\": \"0:41\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"두부 조림에 빠지면 섭섭한 대파\",\n          \"timestamp\": \"0:48\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유를 조금 두르고 썰어둔 두부를 올려 중불에서 앞뒤로 노릇하게 구워줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"식용유 조금 넣고\",\n          \"timestamp\": \"1:03\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"썰어둔 두부\",\n          \"timestamp\": \"1:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"중불에서 노릇하게 구워줍니다\",\n          \"timestamp\": \"1:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"앞뒤 모두 노릇하게 구워줍니다\",\n          \"timestamp\": \"1:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"구워진 두부 위에 썰어둔 양파와 파를 올리고 만들어둔 양념을 끼얹습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 썰어둔 양파를 사악 올려주고\",\n          \"timestamp\": \"1:29\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"파도 올리고\",\n          \"timestamp\": \"1:32\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양념도 끼얹습니다\",\n          \"timestamp\": \"1:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"약불에서 양념이 거의 졸아들 때까지 조려준 후 불을 끕니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 약불에서 졸이기만 하면 끝이에요\",\n          \"timestamp\": \"1:39\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양념이 거의 졸아들면 불을 꺼줍니다\",\n          \"timestamp\": \"1:49\"\n        }\n      ]\n    },\n    {\n      \"text\": \"통깨와 남은 대파를 고명으로 뿌려 마무리합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 두부조림 위에 통깨와 썰어둔 대파를 고명으로 올린다\",\n          \"timestamp\": \"2:00\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "매콤 두부조림",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "두부 300g",
+          "displayName": "두부",
+          "amount": "300",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부 300g",
+              "timestamp": "0:05"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파",
+              "timestamp": "0:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "두부 조림에 빠지면 섭섭한 대파",
+              "timestamp": "0:48"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "양파 반개",
+          "displayName": "양파",
+          "amount": "반",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파",
+              "timestamp": "0:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파 반개",
+              "timestamp": "0:41"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "물 6스푼",
+          "displayName": "물",
+          "amount": "6",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 6스푼",
+              "timestamp": "0:09"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "진간장 2스푼",
+          "displayName": "진간장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "진간장 2스푼",
+              "timestamp": "0:13"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "설탕 반스푼",
+          "displayName": "설탕",
+          "amount": "반",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 반스푼",
+              "timestamp": "0:16"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "고춧가루 한스푼",
+          "displayName": "고춧가루",
+          "amount": "한",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루 한스푼",
+              "timestamp": "0:18"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "다진마늘 반스푼",
+          "displayName": "다진마늘",
+          "amount": "반",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘 반스푼",
+              "timestamp": "0:19"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "참기름 한스푼",
+          "displayName": "참기름",
+          "amount": "한",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "참기름 한스푼",
+              "timestamp": "0:21"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "식용유 조금",
+          "displayName": "식용유",
+          "amount": "조금",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "식용유 조금 넣고",
+              "timestamp": "1:03"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 두부조림 위에 깨를 뿌린다",
+              "timestamp": "2:00"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "볼에 물 6스푼, 진간장 2스푼, 설탕 반스푼, 고춧가루 한스푼, 다진마늘 반스푼, 참기름 한스푼을 넣고 잘 섞어 양념장을 만듭니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 6스푼",
+              "timestamp": "0:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "진간장 2스푼",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 반스푼",
+              "timestamp": "0:16"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루 한스푼",
+              "timestamp": "0:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘 반스푼",
+              "timestamp": "0:19"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "참기름 한스푼",
+              "timestamp": "0:21"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 다 된거나 다름 없습니다",
+              "timestamp": "0:24"
+            }
+          ]
+        },
+        {
+          "text": "두부를 도톰하게 썰어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "도톰하게 썰어줍니다",
+              "timestamp": "0:32"
+            }
+          ]
+        },
+        {
+          "text": "양파 반 개와 대파를 썰어 준비합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파 반개",
+              "timestamp": "0:41"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "두부 조림에 빠지면 섭섭한 대파",
+              "timestamp": "0:48"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유를 조금 두르고 썰어둔 두부를 올려 중불에서 앞뒤로 노릇하게 구워줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "식용유 조금 넣고",
+              "timestamp": "1:03"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "썰어둔 두부",
+              "timestamp": "1:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "중불에서 노릇하게 구워줍니다",
+              "timestamp": "1:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "앞뒤 모두 노릇하게 구워줍니다",
+              "timestamp": "1:19"
+            }
+          ]
+        },
+        {
+          "text": "구워진 두부 위에 썰어둔 양파와 파를 올리고 만들어둔 양념을 끼얹습니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 썰어둔 양파를 사악 올려주고",
+              "timestamp": "1:29"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "파도 올리고",
+              "timestamp": "1:32"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양념도 끼얹습니다",
+              "timestamp": "1:34"
+            }
+          ]
+        },
+        {
+          "text": "약불에서 양념이 거의 졸아들 때까지 조려준 후 불을 끕니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 약불에서 졸이기만 하면 끝이에요",
+              "timestamp": "1:39"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양념이 거의 졸아들면 불을 꺼줍니다",
+              "timestamp": "1:49"
+            }
+          ]
+        },
+        {
+          "text": "통깨와 남은 대파를 고명으로 뿌려 마무리합니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 두부조림 위에 통깨와 썰어둔 대파를 고명으로 올린다",
+              "timestamp": "2:00"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

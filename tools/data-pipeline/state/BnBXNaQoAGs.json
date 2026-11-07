@@ -1,0 +1,273 @@
+{
+  "videoId": "BnBXNaQoAGs",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/BnBXNaQoAGs",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:47:22.690386+00:00",
+    "rawResponse": "{\n  \"title\": \"대패삼겹살 제육볶음\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"양념장\",\n      \"displayName\": \"양념장\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 양념장부터 만들어서 잘 섞어주세요\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양념장부터 잘 섞어주세요\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 한 개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 한 개 채 썰어주시고\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 한 개 채 썰어주시고\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파는 큼직하게 썰어주세요\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파는 큼직하게 썰어주세요\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대패삼겹살\",\n      \"displayName\": \"대패삼겹살\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대패삼겹살로 제육볶음 만들어 봤는데\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대패삼겹살로 만들어 봤는데\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬에 대패삼겹살 넣고\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 팬에 대패삼겹살 넣고\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘이랑\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘이랑\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕\",\n      \"displayName\": \"설탕\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕을 넣어서\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕을\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"통깨 뿌려주면 끝입니다\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"통깨 뿌려주면 끝입니다\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양념장을 만들어 잘 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 양념장부터 만들어서 잘 섞어주세요\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양념장부터 잘 섞어주세요\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 1개는 채 썰고, 대파는 큼직하게 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 한 개 채 썰어주시고 대파는 큼직하게 썰어주세요\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 한 개 채 썰어주시고 대파는 큼직하게 썰어주세요\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 대패삼겹살, 다진 마늘, 설탕을 넣고 고기가 80% 정도 익을 때까지 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬에 대패삼겹살 넣고 다진마늘이랑 설탕을 넣어서 80% 정도 익을 때까지 볶아주세요\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 팬에 대패삼겹살 넣고 다진마늘이랑 설탕을 80% 정도 익을 때까지 볶아주세요\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양념장을 넣고 1분 정도 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 양념장을 넣고 1분 정도 볶아주고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 양념장을 넣고 1분 정도 볶아주고\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파와 대파를 넣고 3분 정도 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 대파 넣고 3분 정도 볶아서\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 대파 넣고 3분 정도 볶아서\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 끄고 통깨를 뿌려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불끄고 통깨 뿌려주면 끝입니다\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불끄고 통깨 뿌려주면 끝입니다\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"양념장의 구체적인 재료 구성 및 계량 수치가 영상 내 음성 또는 자막으로 명시되지 않음\",\n    \"대패삼겹살, 대파, 다진마늘, 설탕, 통깨의 정확한 중량/계량이 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "대패삼겹살 제육볶음",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "양념장",
+          "displayName": "양념장",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 양념장부터 만들어서 잘 섞어주세요",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양념장부터 잘 섞어주세요",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파 한 개",
+          "displayName": "양파",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 한 개 채 썰어주시고",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파 한 개 채 썰어주시고",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파는 큼직하게 썰어주세요",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대파는 큼직하게 썰어주세요",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "대패삼겹살",
+          "displayName": "대패삼겹살",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대패삼겹살로 제육볶음 만들어 봤는데",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대패삼겹살로 만들어 봤는데",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 팬에 대패삼겹살 넣고",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 팬에 대패삼겹살 넣고",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "다진마늘",
+          "displayName": "다진마늘",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진마늘이랑",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘이랑",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "설탕",
+          "displayName": "설탕",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "설탕을 넣어서",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕을",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "통깨 뿌려주면 끝입니다",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "통깨 뿌려주면 끝입니다",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양념장을 만들어 잘 섞어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 양념장부터 만들어서 잘 섞어주세요",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양념장부터 잘 섞어주세요",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "양파 1개는 채 썰고, 대파는 큼직하게 썬다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 한 개 채 썰어주시고 대파는 큼직하게 썰어주세요",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파 한 개 채 썰어주시고 대파는 큼직하게 썰어주세요",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "팬에 대패삼겹살, 다진 마늘, 설탕을 넣고 고기가 80% 정도 익을 때까지 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 팬에 대패삼겹살 넣고 다진마늘이랑 설탕을 넣어서 80% 정도 익을 때까지 볶아주세요",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 팬에 대패삼겹살 넣고 다진마늘이랑 설탕을 80% 정도 익을 때까지 볶아주세요",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "양념장을 넣고 1분 정도 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 양념장을 넣고 1분 정도 볶아주고",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 양념장을 넣고 1분 정도 볶아주고",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "양파와 대파를 넣고 3분 정도 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 대파 넣고 3분 정도 볶아서",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파 대파 넣고 3분 정도 볶아서",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "불을 끄고 통깨를 뿌려 마무리한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "불끄고 통깨 뿌려주면 끝입니다",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "불끄고 통깨 뿌려주면 끝입니다",
+              "timestamp": "00:20"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "양념장의 구체적인 재료 구성 및 계량 수치가 영상 내 음성 또는 자막으로 명시되지 않음",
+        "대패삼겹살, 대파, 다진마늘, 설탕, 통깨의 정확한 중량/계량이 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

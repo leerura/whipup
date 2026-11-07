@@ -1,0 +1,303 @@
+{
+  "videoId": "WRERJtUcGWc",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/WRERJtUcGWc",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T08:07:51.735308+00:00",
+    "rawResponse": "{\n  \"title\": \"삼겹살 카레\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"삼겹살 한 줄\",\n      \"displayName\": \"삼겹살\",\n      \"amount\": \"1\",\n      \"unit\": \"줄\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 삼겹살 한 줄을 올려줍니다.\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"채 썬 양파 반 개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"0.5\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 남은 기름 위로 채 썬 양파 반 개를 넣어줍니다.\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 반 스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘 반 스푼도 넣고 마늘도 살짝 볶아줍니다.\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 두 컵\",\n      \"displayName\": \"물\",\n      \"amount\": \"2\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 여기에 물 두 컵을 부어줍니다.\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우유\",\n      \"displayName\": \"우유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이때 집에 우유가 있다면 물 대신 우유를 부어주면 더욱 고소한 맛이 납니다.\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"카레가루 3스푼\",\n      \"displayName\": \"카레가루\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"카레가루 3스푼\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 사 온 카레가루도 세 스푼 넣어줍니다.\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"토마토소스 2스푼\",\n      \"displayName\": \"토마토소스\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"토마토소스 2스푼\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그러고 토메이토 스파게티 소스를 두 스푼 넣어줍니다.\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"스리라차 1스푼\",\n      \"displayName\": \"스리라차 소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스리라차 1스푼\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 쓰리라차 소스도 한 스푼 넣어줍니다.\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"쓰리라차 소스가 없다면 생략하셔도 됩니다.\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 한 공기\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"카레 가운데 밥을 밥그릇 모양 그대로 한 공기 올려주고\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 스크램블 하나\",\n      \"displayName\": \"계란 스크램블\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그러고 촉촉한 계란 스크램블도 하나 올려줍니다.\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리\",\n      \"displayName\": \"파슬리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 마지막으로 있어 보이게 파슬리를 넉넉하게 뿌려줍니다.\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 삼겹살 한 줄을 올리고 먹기 좋은 크기로 잘라 앞뒤로 노릇하게 구운 뒤 건져둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 삼겹살 한 줄을 올려줍니다. 앞뒤로 잘 구워줍니다.\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"돼지고기가 노릇하게 잘 익었으면 다 빼주고\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 남은 돼지고기 기름 위로 채 썬 양파 반 개를 넣고 흐물흐물해질 때까지 캐러멜라이징해준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 남은 기름 위로 채 썬 양파 반 개를 넣어줍니다. 그러고 양파를 흐물흐물해질 때까지 캐러멜라이징 시켜줍니다.\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"다진 마늘 반 스푼을 넣고 살짝 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘 반 스푼도 넣고 마늘도 살짝 볶아줍니다.\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 2컵(취향에 따라 물 대신 우유)을 부어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 여기에 물 두 컵을 부어줍니다. 이때 집에 우유가 있다면 물 대신 우유를 부어주면 더욱 고소한 맛이 납니다.\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"카레가루 3스푼, 토마토소스 2스푼, 스리라차 소스 1스푼을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 사 온 카레가루도 세 스푼 넣어줍니다. 그러고 토메이토 스파게티 소스를 두 스푼 넣어줍니다. 마지막으로 쓰리라차 소스도 한 스푼 넣어줍니다.\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"약불에서 카레가루가 잘 풀리도록 은은하게 저어가며 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 넣은 카레가루가 잘 풀리도록 약불에서 은은하게 저어줍니다.\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"text\": \"카레 가운데에 밥 한 공기를 밥그릇 모양 그대로 올리고, 주변에 구워둔 삼겹살 토핑을 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"카레 가운데 밥을 밥그릇 모양 그대로 한 공기 올려주고 처음에 빼두었던 삼겹살 토핑도 있어 보이게 올려줍니다.\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 위에 계란 스크램블을 얹고 파슬리를 넉넉하게 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그러고 촉촉한 계란 스크램블도 하나 올려줍니다. 여기에 마지막으로 있어 보이게 파슬리를 넉넉하게 뿌려줍니다.\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"정확한 영상 고유 레시피 제목이 별도로 명시되지 않아 조리 내용에 따라 '삼겹살 카레'로 표기함\",\n    \"계란 스크램블의 세부 조리법(달걀 개수, 조리 시 사용된 재료)은 영상에 나오지 않음\"\n  ]\n}",
+    "result": {
+      "title": "삼겹살 카레",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "삼겹살 한 줄",
+          "displayName": "삼겹살",
+          "amount": "1",
+          "unit": "줄",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 삼겹살 한 줄을 올려줍니다.",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "채 썬 양파 반 개",
+          "displayName": "양파",
+          "amount": "0.5",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 남은 기름 위로 채 썬 양파 반 개를 넣어줍니다.",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "다진 마늘 반 스푼",
+          "displayName": "다진 마늘",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘 반 스푼도 넣고 마늘도 살짝 볶아줍니다.",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "물 두 컵",
+          "displayName": "물",
+          "amount": "2",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 여기에 물 두 컵을 부어줍니다.",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "우유",
+          "displayName": "우유",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이때 집에 우유가 있다면 물 대신 우유를 부어주면 더욱 고소한 맛이 납니다.",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "카레가루 3스푼",
+          "displayName": "카레가루",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "카레가루 3스푼",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 사 온 카레가루도 세 스푼 넣어줍니다.",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "토마토소스 2스푼",
+          "displayName": "토마토소스",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "토마토소스 2스푼",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그러고 토메이토 스파게티 소스를 두 스푼 넣어줍니다.",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "스리라차 1스푼",
+          "displayName": "스리라차 소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스리라차 1스푼",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 쓰리라차 소스도 한 스푼 넣어줍니다.",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "쓰리라차 소스가 없다면 생략하셔도 됩니다.",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "밥 한 공기",
+          "displayName": "밥",
+          "amount": "1",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "카레 가운데 밥을 밥그릇 모양 그대로 한 공기 올려주고",
+              "timestamp": "00:42"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "계란 스크램블 하나",
+          "displayName": "계란 스크램블",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그러고 촉촉한 계란 스크램블도 하나 올려줍니다.",
+              "timestamp": "00:48"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "파슬리",
+          "displayName": "파슬리",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 마지막으로 있어 보이게 파슬리를 넉넉하게 뿌려줍니다.",
+              "timestamp": "00:51"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 삼겹살 한 줄을 올리고 먹기 좋은 크기로 잘라 앞뒤로 노릇하게 구운 뒤 건져둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 삼겹살 한 줄을 올려줍니다. 앞뒤로 잘 구워줍니다.",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "SPEECH",
+              "text": "돼지고기가 노릇하게 잘 익었으면 다 빼주고",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "팬에 남은 돼지고기 기름 위로 채 썬 양파 반 개를 넣고 흐물흐물해질 때까지 캐러멜라이징해준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 남은 기름 위로 채 썬 양파 반 개를 넣어줍니다. 그러고 양파를 흐물흐물해질 때까지 캐러멜라이징 시켜줍니다.",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "다진 마늘 반 스푼을 넣고 살짝 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘 반 스푼도 넣고 마늘도 살짝 볶아줍니다.",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "물 2컵(취향에 따라 물 대신 우유)을 부어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 여기에 물 두 컵을 부어줍니다. 이때 집에 우유가 있다면 물 대신 우유를 부어주면 더욱 고소한 맛이 납니다.",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "카레가루 3스푼, 토마토소스 2스푼, 스리라차 소스 1스푼을 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 사 온 카레가루도 세 스푼 넣어줍니다. 그러고 토메이토 스파게티 소스를 두 스푼 넣어줍니다. 마지막으로 쓰리라차 소스도 한 스푼 넣어줍니다.",
+              "timestamp": "00:25"
+            }
+          ]
+        },
+        {
+          "text": "약불에서 카레가루가 잘 풀리도록 은은하게 저어가며 끓여준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 넣은 카레가루가 잘 풀리도록 약불에서 은은하게 저어줍니다.",
+              "timestamp": "00:38"
+            }
+          ]
+        },
+        {
+          "text": "카레 가운데에 밥 한 공기를 밥그릇 모양 그대로 올리고, 주변에 구워둔 삼겹살 토핑을 올린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "카레 가운데 밥을 밥그릇 모양 그대로 한 공기 올려주고 처음에 빼두었던 삼겹살 토핑도 있어 보이게 올려줍니다.",
+              "timestamp": "00:42"
+            }
+          ]
+        },
+        {
+          "text": "밥 위에 계란 스크램블을 얹고 파슬리를 넉넉하게 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그러고 촉촉한 계란 스크램블도 하나 올려줍니다. 여기에 마지막으로 있어 보이게 파슬리를 넉넉하게 뿌려줍니다.",
+              "timestamp": "00:48"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "정확한 영상 고유 레시피 제목이 별도로 명시되지 않아 조리 내용에 따라 '삼겹살 카레'로 표기함",
+        "계란 스크램블의 세부 조리법(달걀 개수, 조리 시 사용된 재료)은 영상에 나오지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

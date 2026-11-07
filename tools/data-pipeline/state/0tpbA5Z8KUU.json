@@ -1,0 +1,369 @@
+{
+  "videoId": "0tpbA5Z8KUU",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/0tpbA5Z8KUU",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T09:51:11.014326+00:00",
+    "rawResponse": "{\n  \"title\": \"김치찌개\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"식용유를 두세스푼\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"2~3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"식용유를 두세스푼 둘러주고\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식용유를 두세스푼 둘러주고\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"찌개용 돼지고기(약 400g)\",\n      \"displayName\": \"찌개용 돼지고기\",\n      \"amount\": \"400\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"찌개용 돼지고기(약 400g)를 다 넣어주고\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"찌개용 돼지고기를 다 넣어주고\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"썰어 놓은 김치\",\n      \"displayName\": \"김치\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 썰어 놓은 김치도 넣어줍니다.\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그라고 썰어 놓은 김치도 넣어줍니다.\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"된장 1스푼\",\n      \"displayName\": \"된장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"된장 1스푼\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"된장 1스푼\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 1스푼\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장 1스푼\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 1스푼\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 2스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"진간장 2스푼을 넣고\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 2스푼을 넣고\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진 마늘 1스푼\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그라고 다진마늘 1스푼과\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파, 대파,\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파와 대파도 넣고\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파, 대파,\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파와 대파도 넣고\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 3컵 (약 560ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"3\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 3컵 (약 560ml)을 부어줍니다.\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 세 컵을 부어줍니다.\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"두부\",\n      \"displayName\": \"두부\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"두부\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"인자 두부도 넣고\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다른 다시다 다 필요 없이 소금만 살짝 넣어\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다른 다시다 그딴 거 다 필요 없이 소금만 살짝 넣어 간을 맞춰주시면 됩니다.\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬이나 냄비에 식용유 2~3스푼을 둘러줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"식용유를 두세스푼 둘러주고\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"식용유를 팬에 붓는 모습\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"찌개용 돼지고기 약 400g과 썰어놓은 김치를 넣습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"찌개용 돼지고기(약 400g)를 다 넣어주고\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 썰어 놓은 김치도 넣어줍니다.\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"된장 1스푼, 고추장 1스푼, 진간장 2스푼을 넣고 중불에서 5분 이상 넉넉하게 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 우리나라 한식의 3대장인 된장 1스푼 고추장 1스푼 진간장 2스푼을 넣고 다 같이 한번 볶아줍니다.\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"중불에서 5분 이상 넉넉하게 볶아주셔야 합니다.\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"다진 마늘 1스푼과 양파, 대파를 넣고 물을 붓지 않은 채로 2~3분 정도 더 볶아 채소의 숨을 살짝 죽입니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진 마늘 1스푼 양파, 대파, 아직까지 물을 넣지 말고 또 볶아줍니다.\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"2~3분 정도 더 볶아주고 넣은 양파와 대파가 살짝 숨이 죽을듯 싶으면\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 3컵(약 560ml)을 붓고 푹 끓여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다른 사골 육수 그딴 거 필요 없이 물 3컵 (약 560ml)을 부어줍니다.\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 푹~~~~ 끓여줍니다.\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"두부를 넣고 따뜻해지도록 끓여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"두부\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"인자 두부도 넣고 두부도 뜨뜻해지게 뜨거운 물에서 찜질시켜 줍니다.\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국물 맛을 보고 부족한 간은 소금을 살짝 넣어 맞춰 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 국물 맛을 살짝 보고 다른 다시다 다 필요 없이 소금만 살짝 넣어 간을 맞춰주시면 됩니다.\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "김치찌개",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "식용유를 두세스푼",
+          "displayName": "식용유",
+          "amount": "2~3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "식용유를 두세스푼 둘러주고",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "SPEECH",
+              "text": "식용유를 두세스푼 둘러주고",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "찌개용 돼지고기(약 400g)",
+          "displayName": "찌개용 돼지고기",
+          "amount": "400",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "찌개용 돼지고기(약 400g)를 다 넣어주고",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "찌개용 돼지고기를 다 넣어주고",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "썰어 놓은 김치",
+          "displayName": "김치",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 썰어 놓은 김치도 넣어줍니다.",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그라고 썰어 놓은 김치도 넣어줍니다.",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "된장 1스푼",
+          "displayName": "된장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "된장 1스푼",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "된장 1스푼",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고추장 1스푼",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고추장 1스푼",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장 1스푼",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "진간장 2스푼",
+          "displayName": "진간장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "진간장 2스푼을 넣고",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장 2스푼을 넣고",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "다진 마늘 1스푼",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다진 마늘 1스푼",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그라고 다진마늘 1스푼과",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파, 대파,",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파와 대파도 넣고",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파, 대파,",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파와 대파도 넣고",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "물 3컵 (약 560ml)",
+          "displayName": "물",
+          "amount": "3",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 3컵 (약 560ml)을 부어줍니다.",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 세 컵을 부어줍니다.",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "두부",
+          "displayName": "두부",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "두부",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SPEECH",
+              "text": "인자 두부도 넣고",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "소금",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다른 다시다 다 필요 없이 소금만 살짝 넣어",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다른 다시다 그딴 거 다 필요 없이 소금만 살짝 넣어 간을 맞춰주시면 됩니다.",
+              "timestamp": "00:43"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬이나 냄비에 식용유 2~3스푼을 둘러줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "식용유를 두세스푼 둘러주고",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "식용유를 팬에 붓는 모습",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "찌개용 돼지고기 약 400g과 썰어놓은 김치를 넣습니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "찌개용 돼지고기(약 400g)를 다 넣어주고",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 썰어 놓은 김치도 넣어줍니다.",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "된장 1스푼, 고추장 1스푼, 진간장 2스푼을 넣고 중불에서 5분 이상 넉넉하게 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 우리나라 한식의 3대장인 된장 1스푼 고추장 1스푼 진간장 2스푼을 넣고 다 같이 한번 볶아줍니다.",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "중불에서 5분 이상 넉넉하게 볶아주셔야 합니다.",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "다진 마늘 1스푼과 양파, 대파를 넣고 물을 붓지 않은 채로 2~3분 정도 더 볶아 채소의 숨을 살짝 죽입니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다진 마늘 1스푼 양파, 대파, 아직까지 물을 넣지 말고 또 볶아줍니다.",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "2~3분 정도 더 볶아주고 넣은 양파와 대파가 살짝 숨이 죽을듯 싶으면",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "물 3컵(약 560ml)을 붓고 푹 끓여줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다른 사골 육수 그딴 거 필요 없이 물 3컵 (약 560ml)을 부어줍니다.",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 푹~~~~ 끓여줍니다.",
+              "timestamp": "00:33"
+            }
+          ]
+        },
+        {
+          "text": "두부를 넣고 따뜻해지도록 끓여줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "두부",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SPEECH",
+              "text": "인자 두부도 넣고 두부도 뜨뜻해지게 뜨거운 물에서 찜질시켜 줍니다.",
+              "timestamp": "00:36"
+            }
+          ]
+        },
+        {
+          "text": "국물 맛을 보고 부족한 간은 소금을 살짝 넣어 맞춰 완성합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 국물 맛을 살짝 보고 다른 다시다 다 필요 없이 소금만 살짝 넣어 간을 맞춰주시면 됩니다.",
+              "timestamp": "00:40"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

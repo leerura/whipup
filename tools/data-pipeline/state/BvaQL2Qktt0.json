@@ -1,0 +1,224 @@
+{
+  "videoId": "BvaQL2Qktt0",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/BvaQL2Qktt0",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T14:36:25.749619+00:00",
+    "rawResponse": "{\n  \"title\": \"고추참치 양참덮 (양배추 고추참치 덮밥)\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"현미밥\",\n      \"displayName\": \"현미밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"현미밥 대충 담고\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"현미밥을 그릇에 담는다.\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추참치\",\n      \"displayName\": \"고추참치\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추참치 기름 빼서 올려주기\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"기름을 뺀 고추참치를 밥 위에 올린다.\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양배추\",\n      \"displayName\": \"양배추\",\n      \"amount\": \"듬뿍\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양배추 듬뿍\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"채 썬 양배추를 접시에 듬뿍 올린다.\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"모짜렐라 치즈\",\n      \"displayName\": \"모짜렐라 치즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"모짜렐라 치즈 뿌리고\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"모짜렐라 치즈를 양배추 위에 뿌린다.\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": \"톡톡\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 매슬리 톡톡\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"후추를 톡톡 뿌린다.\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리\",\n      \"displayName\": \"파슬리\",\n      \"amount\": \"톡톡\",\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"파슬리는 생략가능\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 매슬리 톡톡\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"저는 괜찮았지만 싱거우면 고춧가루 뿌려주기\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"접시에 현미밥을 담고 기름을 뺀 고추참치를 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Step 1 / 현미밥 대충 담고 / 고추참치 기름 빼서 올려주기\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥과 고추참치를 접시에 담는 동작\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양배추를 듬뿍 올리고 모짜렐라 치즈를 뿌린 뒤, 후추와 파슬리를 뿌린다. (파슬리는 생략 가능)\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Step 2 / 양배추 듬뿍 / 모짜렐라 치즈 뿌리고 / 파슬리는 생략가능 후추 매슬리 톡톡\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양배추, 치즈, 후추와 파슬리를 차례로 올리는 동작\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"랩을 씌워 전자레인지에서 3분간 돌려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Step 3 / 랩 씌워서 전자레인지 3분 돌려주면\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"랩을 씌워 구멍을 뚫고 전자레인지에 돌린다.\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 덮밥을 섞어 먹고, 싱거우면 취향에 따라 고춧가루를 뿌려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Step 4 / 팬활용할필요도없는 고참덮 완성 / 저는 괜찮았지만 싱거우면 고춧가루 뿌려주기\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"랩을 벗겨내고 숟가락으로 비비는 모습\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "고추참치 양참덮 (양배추 고추참치 덮밥)",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "현미밥",
+          "displayName": "현미밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "현미밥 대충 담고",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "현미밥을 그릇에 담는다.",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "고추참치",
+          "displayName": "고추참치",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추참치 기름 빼서 올려주기",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "기름을 뺀 고추참치를 밥 위에 올린다.",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "양배추",
+          "displayName": "양배추",
+          "amount": "듬뿍",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양배추 듬뿍",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "채 썬 양배추를 접시에 듬뿍 올린다.",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "모짜렐라 치즈",
+          "displayName": "모짜렐라 치즈",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "모짜렐라 치즈 뿌리고",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "모짜렐라 치즈를 양배추 위에 뿌린다.",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": "톡톡",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 매슬리 톡톡",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "후추를 톡톡 뿌린다.",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "파슬리",
+          "displayName": "파슬리",
+          "amount": "톡톡",
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "파슬리는 생략가능",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 매슬리 톡톡",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "고춧가루",
+          "displayName": "고춧가루",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "저는 괜찮았지만 싱거우면 고춧가루 뿌려주기",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "접시에 현미밥을 담고 기름을 뺀 고추참치를 올린다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Step 1 / 현미밥 대충 담고 / 고추참치 기름 빼서 올려주기",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥과 고추참치를 접시에 담는 동작",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "양배추를 듬뿍 올리고 모짜렐라 치즈를 뿌린 뒤, 후추와 파슬리를 뿌린다. (파슬리는 생략 가능)",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Step 2 / 양배추 듬뿍 / 모짜렐라 치즈 뿌리고 / 파슬리는 생략가능 후추 매슬리 톡톡",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양배추, 치즈, 후추와 파슬리를 차례로 올리는 동작",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "랩을 씌워 전자레인지에서 3분간 돌려준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Step 3 / 랩 씌워서 전자레인지 3분 돌려주면",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "랩을 씌워 구멍을 뚫고 전자레인지에 돌린다.",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "완성된 덮밥을 섞어 먹고, 싱거우면 취향에 따라 고춧가루를 뿌려준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Step 4 / 팬활용할필요도없는 고참덮 완성 / 저는 괜찮았지만 싱거우면 고춧가루 뿌려주기",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "랩을 벗겨내고 숟가락으로 비비는 모습",
+              "timestamp": "00:15"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

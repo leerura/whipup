@@ -1,0 +1,320 @@
+{
+  "videoId": "JPrKrjwq55c",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/JPrKrjwq55c",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:55:59.331804+00:00",
+    "rawResponse": "{\n  \"title\": \"카레 만들기\",\n  \"description\": null,\n  \"servings\": \"4인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"카레용고기 200g\",\n      \"displayName\": \"카레용고기\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"카레용고기 200g\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고형카레 4덩이\",\n      \"displayName\": \"고형카레\",\n      \"amount\": \"4\",\n      \"unit\": \"덩이\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고형카레 4덩이\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고형카레 4덩이를 넣고\",\n          \"timestamp\": \"01:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"식용유를 넉넉히 둘러주고\",\n          \"timestamp\": \"00:49\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1개\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 한개를 먹기좋은 크기로 썰어주세요.\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"당근 1/2개\",\n      \"displayName\": \"당근\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"당근 1/2개\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"당근 반개를 먹기좋은 크기로 썰어주세요.\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"감자 2개\",\n      \"displayName\": \"감자\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"감자 2개\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"감자 두개를 먹기좋은 크기로 썰어주세요.\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 600ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"600\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 600ml\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 600ml\",\n          \"timestamp\": \"01:32\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양파 1개를 먹기 좋은 크기로 썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 한개를 먹기좋은 크기로 썰어주세요.\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"당근 반 개를 양파와 비슷한 먹기 좋은 크기로 썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"당근 반개를 먹기좋은 크기로 썰어주세요.\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파와 비슷한 크기로 썰어주세요.\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"감자 2개를 먹기 좋은 크기로 썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"감자 두개를 먹기좋은 크기로 썰어주세요.\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 불을 켜고 식용유를 넉넉히 둘러줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"가스불 on\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"식용유를 넉넉히 둘러주고\",\n          \"timestamp\": \"00:49\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파를 넣고 노릇노릇해질 때까지 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파\",\n          \"timestamp\": \"00:51\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"볶아주세요.\",\n          \"timestamp\": \"00:55\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파가 노릇노릇 해질때까지 볶아줍니다.\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기를 넣고 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고기를 넣고\",\n          \"timestamp\": \"01:12\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"볶아주세요.\",\n          \"timestamp\": \"01:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"감자와 당근을 넣고 적당히 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"감자와 당근\",\n          \"timestamp\": \"01:25\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"적당히 볶아주다가\",\n          \"timestamp\": \"01:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 600ml를 넣고 뚜껑을 덮고 중불로 10분간 끓여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 600ml\",\n          \"timestamp\": \"01:32\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"뚜껑을 덮고 중불로 10분간 끓여주세요.\",\n          \"timestamp\": \"01:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"10분 후 고형카레 4덩이를 넣고 카레가 잘 풀리도록 저어가며 풀어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"10분후⏳\",\n          \"timestamp\": \"01:38\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고형카레 4덩이를 넣고\",\n          \"timestamp\": \"01:41\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"카레가 잘 풀리도록 저어가며 풀어주세요.\",\n          \"timestamp\": \"01:43\"\n        }\n      ]\n    },\n    {\n      \"text\": \"중약불로 5분 정도 끓여서 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"중약불로 5분정도 끓여주세요.\",\n          \"timestamp\": \"01:50\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"맛있는 카레가 완성됐어요.\",\n          \"timestamp\": \"01:55\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"카레 완성 !!\",\n          \"timestamp\": \"02:01\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "카레 만들기",
+      "description": null,
+      "servings": "4인분",
+      "ingredients": [
+        {
+          "rawText": "카레용고기 200g",
+          "displayName": "카레용고기",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "카레용고기 200g",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "고형카레 4덩이",
+          "displayName": "고형카레",
+          "amount": "4",
+          "unit": "덩이",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고형카레 4덩이",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고형카레 4덩이를 넣고",
+              "timestamp": "01:41"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "식용유를 넉넉히 둘러주고",
+              "timestamp": "00:49"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양파 1개",
+          "displayName": "양파",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1개",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파 한개를 먹기좋은 크기로 썰어주세요.",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "당근 1/2개",
+          "displayName": "당근",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "당근 1/2개",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "당근 반개를 먹기좋은 크기로 썰어주세요.",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "감자 2개",
+          "displayName": "감자",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "감자 2개",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "감자 두개를 먹기좋은 크기로 썰어주세요.",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "물 600ml",
+          "displayName": "물",
+          "amount": "600",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 600ml",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 600ml",
+              "timestamp": "01:32"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양파 1개를 먹기 좋은 크기로 썰어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파 한개를 먹기좋은 크기로 썰어주세요.",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "당근 반 개를 양파와 비슷한 먹기 좋은 크기로 썰어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "당근 반개를 먹기좋은 크기로 썰어주세요.",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파와 비슷한 크기로 썰어주세요.",
+              "timestamp": "00:28"
+            }
+          ]
+        },
+        {
+          "text": "감자 2개를 먹기 좋은 크기로 썰어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "감자 두개를 먹기좋은 크기로 썰어주세요.",
+              "timestamp": "00:33"
+            }
+          ]
+        },
+        {
+          "text": "팬에 불을 켜고 식용유를 넉넉히 둘러줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "가스불 on",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "식용유를 넉넉히 둘러주고",
+              "timestamp": "00:49"
+            }
+          ]
+        },
+        {
+          "text": "양파를 넣고 노릇노릇해질 때까지 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파",
+              "timestamp": "00:51"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "볶아주세요.",
+              "timestamp": "00:55"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파가 노릇노릇 해질때까지 볶아줍니다.",
+              "timestamp": "01:05"
+            }
+          ]
+        },
+        {
+          "text": "고기를 넣고 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고기를 넣고",
+              "timestamp": "01:12"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "볶아주세요.",
+              "timestamp": "01:15"
+            }
+          ]
+        },
+        {
+          "text": "감자와 당근을 넣고 적당히 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "감자와 당근",
+              "timestamp": "01:25"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "적당히 볶아주다가",
+              "timestamp": "01:28"
+            }
+          ]
+        },
+        {
+          "text": "물 600ml를 넣고 뚜껑을 덮고 중불로 10분간 끓여줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 600ml",
+              "timestamp": "01:32"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "뚜껑을 덮고 중불로 10분간 끓여주세요.",
+              "timestamp": "01:34"
+            }
+          ]
+        },
+        {
+          "text": "10분 후 고형카레 4덩이를 넣고 카레가 잘 풀리도록 저어가며 풀어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "10분후⏳",
+              "timestamp": "01:38"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고형카레 4덩이를 넣고",
+              "timestamp": "01:41"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "카레가 잘 풀리도록 저어가며 풀어주세요.",
+              "timestamp": "01:43"
+            }
+          ]
+        },
+        {
+          "text": "중약불로 5분 정도 끓여서 완성합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "중약불로 5분정도 끓여주세요.",
+              "timestamp": "01:50"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "맛있는 카레가 완성됐어요.",
+              "timestamp": "01:55"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "카레 완성 !!",
+              "timestamp": "02:01"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "videoId": "SJ_dUzwWjGM",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/SJ_dUzwWjGM",
+  "sourceMetadata": {"sourceTitle":"초초간단 라볶이 #shorts","sourceChannelName":"1분요리 매일한끼 One Minute","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.363023Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T07:58:36.481645+00:00",
+    "rawResponse": "{\n  \"title\": \"고추장 라면 (Gochujang Ramen)\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"물 450ml(종이컵2.5컵) / 450ml water(2.5cups)\",\n      \"displayName\": \"물 (water)\",\n      \"amount\": \"450\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 450ml(종이컵2.5컵)\\n450ml water(2.5cups)\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 크게 1스푼 / 1Ts chilli pepper paste\",\n      \"displayName\": \"고추장 (chilli pepper paste)\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 크게 1스푼\\n1Ts chilli pepper paste\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼 / 1Ts sugar\",\n      \"displayName\": \"설탕 (sugar)\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1스푼\\n1Ts sugar\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"라면 스프 1/2 / 1/2 ramen soup base\",\n      \"displayName\": \"라면 스프 (ramen soup base)\",\n      \"amount\": \"1/2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"라면 스프 1/2\\n1/2 ramen soup base\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"라면 후레이크 / ramen flakes\",\n      \"displayName\": \"라면 후레이크 (ramen flakes)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"라면 후레이크\\nramen flakes\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"면 / ramen\",\n      \"displayName\": \"라면 면 (ramen noodles)\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"면을 넣은 후\\nput ramen\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"라면 사리 1개를 끓는 국물에 넣음\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨 (sesame seeds)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 라면 위에 통깨를 손으로 집어 뿌림\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 물 450ml(종이컵 2.5컵)를 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 450ml(종이컵2.5컵)\\n450ml water(2.5cups)\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 계량한 물을 붓는다.\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고추장 크게 1스푼, 설탕 1스푼, 라면 스프 1/2, 라면 후레이크를 넣고 잘 저어 풀어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 크게 1스푼\\n1Ts chilli pepper paste\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1스푼\\n1Ts sugar\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"라면 스프 1/2\\n1/2 ramen soup base\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"라면 후레이크\\nramen flakes\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"숟가락으로 양념과 스프를 저어 국물에 섞는다.\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국물이 끓기 시작하면 라면 면을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국물이 끓기 시작하면\\nwhen sauce boils\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"면을 넣은 후\\nput ramen\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"면을 조금씩 풀어주면서 원하는 만큼 국물을 졸여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"조금씩 풀어주면서\\nloose ramen and\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"원하는 만큼\\nboil down\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국물을 졸여줍니다\\nwith your taste\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 담고 통깨를 뿌려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 라면을 그릇에 담고 통깨를 고명으로 뿌린다.\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "고추장 라면 (Gochujang Ramen)",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "물 450ml(종이컵2.5컵) / 450ml water(2.5cups)",
+          "displayName": "물 (water)",
+          "amount": "450",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 450ml(종이컵2.5컵)\n450ml water(2.5cups)",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "고추장 크게 1스푼 / 1Ts chilli pepper paste",
+          "displayName": "고추장 (chilli pepper paste)",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 크게 1스푼\n1Ts chilli pepper paste",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "설탕 1스푼 / 1Ts sugar",
+          "displayName": "설탕 (sugar)",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1스푼\n1Ts sugar",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "라면 스프 1/2 / 1/2 ramen soup base",
+          "displayName": "라면 스프 (ramen soup base)",
+          "amount": "1/2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "라면 스프 1/2\n1/2 ramen soup base",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "라면 후레이크 / ramen flakes",
+          "displayName": "라면 후레이크 (ramen flakes)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "라면 후레이크\nramen flakes",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "면 / ramen",
+          "displayName": "라면 면 (ramen noodles)",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "면을 넣은 후\nput ramen",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "라면 사리 1개를 끓는 국물에 넣음",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨 (sesame seeds)",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 라면 위에 통깨를 손으로 집어 뿌림",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 물 450ml(종이컵 2.5컵)를 붓는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 450ml(종이컵2.5컵)\n450ml water(2.5cups)",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 계량한 물을 붓는다.",
+              "timestamp": "00:01"
+            }
+          ]
+        },
+        {
+          "text": "고추장 크게 1스푼, 설탕 1스푼, 라면 스프 1/2, 라면 후레이크를 넣고 잘 저어 풀어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 크게 1스푼\n1Ts chilli pepper paste",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1스푼\n1Ts sugar",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "라면 스프 1/2\n1/2 ramen soup base",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "라면 후레이크\nramen flakes",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "숟가락으로 양념과 스프를 저어 국물에 섞는다.",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "국물이 끓기 시작하면 라면 면을 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국물이 끓기 시작하면\nwhen sauce boils",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "면을 넣은 후\nput ramen",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "면을 조금씩 풀어주면서 원하는 만큼 국물을 졸여준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "조금씩 풀어주면서\nloose ramen and",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "원하는 만큼\nboil down",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국물을 졸여줍니다\nwith your taste",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 담고 통깨를 뿌려 마무리한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 라면을 그릇에 담고 통깨를 고명으로 뿌린다.",
+              "timestamp": "00:16"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

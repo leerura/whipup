@@ -1,0 +1,446 @@
+{
+  "videoId": "du9q1BldDHU",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/du9q1BldDHU",
+  "sourceMetadata": {"sourceTitle":"식당에서 파는 그 닭고기 덮밥 Chicken Deopbap that is served at Restaurants!","sourceChannelName":"백종원 PAIK JONG WON","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.565271Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T10:48:57.845642+00:00",
+    "rawResponse": "{\n  \"title\": \"닭고기 덮밥\",\n  \"description\": null,\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"닭다리살 100g\",\n      \"displayName\": \"닭다리살\",\n      \"amount\": \"100\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"닭다리살 100g\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"닭고기 다릿살 정육이라고 흔히 얘기하는 닭고기 다릿살인데 만약에 다릿살 못 구하시면 가슴살로 하셔도 돼요\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"달걀 1개\",\n      \"displayName\": \"달걀\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"달걀 1개\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 약 1/3개 (80g)\",\n      \"displayName\": \"양파\",\n      \"amount\": \"약 1/3\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 약 1/3개 (80g)\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 1/3컵 (20g)\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1/3\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 1/3컵 (20g)\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 1/3컵 (60g)\",\n      \"displayName\": \"물\",\n      \"amount\": \"1/3\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 1/3컵 (60g)\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 3큰술 (30g)\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"3\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 3큰술 (30g)\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"황설탕 1과 1/4큰술 (15g)\",\n      \"displayName\": \"황설탕\",\n      \"amount\": \"1과 1/4\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"황설탕 1과 1/4큰술 (15g)\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 1큰술 (10g)\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 1큰술 (10g)\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 1공기 (200g)\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 1공기 (200g)\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"훈연멸치가루 적당량\",\n      \"displayName\": \"훈연멸치가루\",\n      \"amount\": null,\n      \"unit\": \"적당량\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"훈연멸치가루 적당량\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"훈연멸치가루 조금 필요하신데 이거 이렇게 많이 필요 없어요... 없으시면 훈연멸치 쓰셔도 되고 굳이 훈연멸치 없으셔도 충분히 맛있습니다\",\n          \"timestamp\": \"01:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 적당량\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": \"적당량\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 적당량\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"닭고기 정육인데도 기름이 좀 덜 나올 것 같으면 식용유 조금 둘러주셔도 돼요\",\n          \"timestamp\": \"02:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간 생강\",\n      \"displayName\": \"간 생강\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만약에 집에 생강 다져놓은 거 있으면 생강 간 생강이나 다져놓은 생강 쬐~끔 아주 쬐~끔 요기다 섞어주시면 좋아요\",\n          \"timestamp\": \"03:19\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"생강을 살짝 섞어주셔도 좋습니다\",\n          \"timestamp\": \"03:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다시마\",\n      \"displayName\": \"다시마\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만약에 집에 다시마 있으면 다시마 요때 조~금 썰어서 넣어주시고\",\n          \"timestamp\": \"04:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"가쓰오부시\",\n      \"displayName\": \"가쓰오부시\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만약에 집에 그전에 쓰시던 가쓰오부시 있으면 가쓰오부시 쓰시면 되고\",\n          \"timestamp\": \"01:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"가다랑어포 있으면 가다랑어포 지금 넣어주시고요\",\n          \"timestamp\": \"05:04\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"닭다리살을 껍질 쪽이 도마를 향하도록 두고 한 입 크기로 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"닭 다리 살을 조각 조각 썰어주세요\",\n          \"timestamp\": \"01:48\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"닭고기 껍데기를 밑으로 가게 해서 이렇게 조각을 먼저 내주세요\",\n          \"timestamp\": \"01:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파는 약 1/3개(80g)를 채 썰어 둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파를 채 썰어주세요\",\n          \"timestamp\": \"01:57\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파는 고명용으로 어슷썰기나 송송 썰기로 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파를 송송 썰어주세요\",\n          \"timestamp\": \"02:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이 파는 약간 고명처럼 쓸 거니까 어슷 쓰셔도 되고 송송 쓰셔도 되고\",\n          \"timestamp\": \"02:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"프라이팬에 닭고기 껍질이 팬 바닥을 향하도록 가지런히 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"프라이팬에 닭껍질이 밑으로 향하게 올려주세요\",\n          \"timestamp\": \"02:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 켜고 중약불에서 닭고기 자체의 기름이 서서히 빠져나오며 익도록 굽는다. (기름이 적거나 닭가슴살을 사용할 경우 식용유를 둘러준다.)\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불을 켜주세요... 두께가 있으니까 기름이 빠져나오면서 서서히 익게 약하게 적당히 놓으시고\",\n          \"timestamp\": \"02:40\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 적당량\",\n          \"timestamp\": \"02:48\"\n        }\n      ]\n    },\n    {\n      \"text\": \"컵에 진간장 3큰술, 황설탕 1과 1/4큰술, 맛술 1큰술을 넣고 잘 섞어 양념 소스를 만든다. (취향에 따라 다진 생강이나 간 생강을 약간 넣는다.)\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕하고 간장하고 거의 대부분 1:1, 그다음 맛술은 반이나 대략 조금 넣고 이렇게 섞어놓으세요\",\n          \"timestamp\": \"03:05\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양념소스를 잘 섞어주세요\",\n          \"timestamp\": \"03:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"달걀 1개를 그릇에 깨 넣고 젓가락으로 잘 풀어둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"달걀을 잘 풀어주세요\",\n          \"timestamp\": \"03:40\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에서 닭기름이 나오기 시작하면 채 썬 양파를 닭고기 위에 얹고, 기름에 눌리듯 타지 않게 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"살짝 기름이 나오기 시작해서 어느 정도 될 때 요 기름에다가 양파를 올려주시는 거예요\",\n          \"timestamp\": \"03:48\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파를 기름에 눌리듯 익혀주세요\",\n          \"timestamp\": \"04:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"닭다리살의 껍질 쪽이 노릇노릇해지면 양파와 닭고기를 함께 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"닭 다리 살이 노릇해지면 양파와 함께 볶아주세요\",\n          \"timestamp\": \"04:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"만들어둔 양념 소스를 붓고, 물 1/3컵을 소스 용기에 헹구듯 넣어 함께 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 1큰술 (10g) 진간장 3큰술 (30g) 황설탕 1과 1/4큰술 (15g)\",\n          \"timestamp\": \"04:39\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 1/3컵 (60g)\",\n          \"timestamp\": \"04:47\"\n        }\n      ]\n    },\n    {\n      \"text\": \"기호에 따라 훈연멸치가루(또는 다시마, 가쓰오부시)를 약간 뿌린 뒤, 뚜껑을 덮고 끓이듯 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"훈연멸치가루 적당량\",\n          \"timestamp\": \"05:03\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"뚜껑을 덮고 끓이듯 익혀주세요\",\n          \"timestamp\": \"05:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국물이 끓어오르면 뚜껑을 열고 풀어둔 달걀을 둘러 붓고, 썬 대파를 위에 얹은 다음 다시 뚜껑을 덮어 취향에 맞게 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"달걀 1개\",\n          \"timestamp\": \"05:29\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 1/3컵 (20g)\",\n          \"timestamp\": \"05:39\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"달걀을 넣고 뚜껑을 덮어주세요\",\n          \"timestamp\": \"05:47\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 밥 1공기(200g)를 담고 완성된 닭고기 달걀 덮밥 토핑과 국물을 밥 위에 살포시 얹어 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 1공기 (200g)\",\n          \"timestamp\": \"06:21\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"닭고기 덮밥 완성\",\n          \"timestamp\": \"06:31\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "닭고기 덮밥",
+      "description": null,
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "닭다리살 100g",
+          "displayName": "닭다리살",
+          "amount": "100",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "닭다리살 100g",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SPEECH",
+              "text": "닭고기 다릿살 정육이라고 흔히 얘기하는 닭고기 다릿살인데 만약에 다릿살 못 구하시면 가슴살로 하셔도 돼요",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "달걀 1개",
+          "displayName": "달걀",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "달걀 1개",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "양파 약 1/3개 (80g)",
+          "displayName": "양파",
+          "amount": "약 1/3",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 약 1/3개 (80g)",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "대파 1/3컵 (20g)",
+          "displayName": "대파",
+          "amount": "1/3",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 1/3컵 (20g)",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "물 1/3컵 (60g)",
+          "displayName": "물",
+          "amount": "1/3",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 1/3컵 (60g)",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "진간장 3큰술 (30g)",
+          "displayName": "진간장",
+          "amount": "3",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 3큰술 (30g)",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "황설탕 1과 1/4큰술 (15g)",
+          "displayName": "황설탕",
+          "amount": "1과 1/4",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "황설탕 1과 1/4큰술 (15g)",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "맛술 1큰술 (10g)",
+          "displayName": "맛술",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 1큰술 (10g)",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "밥 1공기 (200g)",
+          "displayName": "밥",
+          "amount": "1",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 1공기 (200g)",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "훈연멸치가루 적당량",
+          "displayName": "훈연멸치가루",
+          "amount": null,
+          "unit": "적당량",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "훈연멸치가루 적당량",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SPEECH",
+              "text": "훈연멸치가루 조금 필요하신데 이거 이렇게 많이 필요 없어요... 없으시면 훈연멸치 쓰셔도 되고 굳이 훈연멸치 없으셔도 충분히 맛있습니다",
+              "timestamp": "01:06"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "식용유 적당량",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": "적당량",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 적당량",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SPEECH",
+              "text": "닭고기 정육인데도 기름이 좀 덜 나올 것 같으면 식용유 조금 둘러주셔도 돼요",
+              "timestamp": "02:44"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "간 생강",
+          "displayName": "간 생강",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "만약에 집에 생강 다져놓은 거 있으면 생강 간 생강이나 다져놓은 생강 쬐~끔 아주 쬐~끔 요기다 섞어주시면 좋아요",
+              "timestamp": "03:19"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "생강을 살짝 섞어주셔도 좋습니다",
+              "timestamp": "03:26"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "다시마",
+          "displayName": "다시마",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "만약에 집에 다시마 있으면 다시마 요때 조~금 썰어서 넣어주시고",
+              "timestamp": "04:54"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "가쓰오부시",
+          "displayName": "가쓰오부시",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "만약에 집에 그전에 쓰시던 가쓰오부시 있으면 가쓰오부시 쓰시면 되고",
+              "timestamp": "01:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "가다랑어포 있으면 가다랑어포 지금 넣어주시고요",
+              "timestamp": "05:04"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        }
+      ],
+      "steps": [
+        {
+          "text": "닭다리살을 껍질 쪽이 도마를 향하도록 두고 한 입 크기로 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "닭 다리 살을 조각 조각 썰어주세요",
+              "timestamp": "01:48"
+            },
+            {
+              "type": "SPEECH",
+              "text": "닭고기 껍데기를 밑으로 가게 해서 이렇게 조각을 먼저 내주세요",
+              "timestamp": "01:45"
+            }
+          ]
+        },
+        {
+          "text": "양파는 약 1/3개(80g)를 채 썰어 둔다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파를 채 썰어주세요",
+              "timestamp": "01:57"
+            }
+          ]
+        },
+        {
+          "text": "대파는 고명용으로 어슷썰기나 송송 썰기로 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파를 송송 썰어주세요",
+              "timestamp": "02:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이 파는 약간 고명처럼 쓸 거니까 어슷 쓰셔도 되고 송송 쓰셔도 되고",
+              "timestamp": "02:04"
+            }
+          ]
+        },
+        {
+          "text": "프라이팬에 닭고기 껍질이 팬 바닥을 향하도록 가지런히 올린다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "프라이팬에 닭껍질이 밑으로 향하게 올려주세요",
+              "timestamp": "02:25"
+            }
+          ]
+        },
+        {
+          "text": "불을 켜고 중약불에서 닭고기 자체의 기름이 서서히 빠져나오며 익도록 굽는다. (기름이 적거나 닭가슴살을 사용할 경우 식용유를 둘러준다.)",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "불을 켜주세요... 두께가 있으니까 기름이 빠져나오면서 서서히 익게 약하게 적당히 놓으시고",
+              "timestamp": "02:40"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 적당량",
+              "timestamp": "02:48"
+            }
+          ]
+        },
+        {
+          "text": "컵에 진간장 3큰술, 황설탕 1과 1/4큰술, 맛술 1큰술을 넣고 잘 섞어 양념 소스를 만든다. (취향에 따라 다진 생강이나 간 생강을 약간 넣는다.)",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "설탕하고 간장하고 거의 대부분 1:1, 그다음 맛술은 반이나 대략 조금 넣고 이렇게 섞어놓으세요",
+              "timestamp": "03:05"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양념소스를 잘 섞어주세요",
+              "timestamp": "03:17"
+            }
+          ]
+        },
+        {
+          "text": "달걀 1개를 그릇에 깨 넣고 젓가락으로 잘 풀어둔다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "달걀을 잘 풀어주세요",
+              "timestamp": "03:40"
+            }
+          ]
+        },
+        {
+          "text": "팬에서 닭기름이 나오기 시작하면 채 썬 양파를 닭고기 위에 얹고, 기름에 눌리듯 타지 않게 익힌다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "살짝 기름이 나오기 시작해서 어느 정도 될 때 요 기름에다가 양파를 올려주시는 거예요",
+              "timestamp": "03:48"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파를 기름에 눌리듯 익혀주세요",
+              "timestamp": "04:12"
+            }
+          ]
+        },
+        {
+          "text": "닭다리살의 껍질 쪽이 노릇노릇해지면 양파와 닭고기를 함께 볶아준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "닭 다리 살이 노릇해지면 양파와 함께 볶아주세요",
+              "timestamp": "04:30"
+            }
+          ]
+        },
+        {
+          "text": "만들어둔 양념 소스를 붓고, 물 1/3컵을 소스 용기에 헹구듯 넣어 함께 붓는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 1큰술 (10g) 진간장 3큰술 (30g) 황설탕 1과 1/4큰술 (15g)",
+              "timestamp": "04:39"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 1/3컵 (60g)",
+              "timestamp": "04:47"
+            }
+          ]
+        },
+        {
+          "text": "기호에 따라 훈연멸치가루(또는 다시마, 가쓰오부시)를 약간 뿌린 뒤, 뚜껑을 덮고 끓이듯 익힌다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "훈연멸치가루 적당량",
+              "timestamp": "05:03"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "뚜껑을 덮고 끓이듯 익혀주세요",
+              "timestamp": "05:11"
+            }
+          ]
+        },
+        {
+          "text": "국물이 끓어오르면 뚜껑을 열고 풀어둔 달걀을 둘러 붓고, 썬 대파를 위에 얹은 다음 다시 뚜껑을 덮어 취향에 맞게 익힌다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "달걀 1개",
+              "timestamp": "05:29"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 1/3컵 (20g)",
+              "timestamp": "05:39"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "달걀을 넣고 뚜껑을 덮어주세요",
+              "timestamp": "05:47"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 밥 1공기(200g)를 담고 완성된 닭고기 달걀 덮밥 토핑과 국물을 밥 위에 살포시 얹어 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 1공기 (200g)",
+              "timestamp": "06:21"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "닭고기 덮밥 완성",
+              "timestamp": "06:31"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

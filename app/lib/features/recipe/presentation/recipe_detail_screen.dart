@@ -1,5 +1,7 @@
 import 'package:api_client/api_client.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../app/theme.dart';
 
@@ -27,9 +29,9 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen> {
   }
 
   Future<RecipeDetailResponse> _fetchRecipe() async {
-    final response = await widget.apiClient
-        .getRecipeApi()
-        .getRecipeDetail(recipeId: widget.recipeId);
+    final response = await widget.apiClient.getRecipeApi().getRecipeDetail(
+      recipeId: widget.recipeId,
+    );
     final recipe = response.data;
     if (recipe == null) {
       throw StateError('The recipe detail response body is empty.');
@@ -79,17 +81,58 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen> {
   }
 }
 
-class _RecipeDetailContent extends StatelessWidget {
+class _RecipeDetailContent extends StatefulWidget {
   const _RecipeDetailContent({required this.recipe});
 
   final RecipeDetailResponse recipe;
+
+  @override
+  State<_RecipeDetailContent> createState() => _RecipeDetailContentState();
+}
+
+class _RecipeDetailContentState extends State<_RecipeDetailContent> {
+  RecipeDetailResponse get recipe => widget.recipe;
+
+  Future<void> _openSource() async {
+    final uri = Uri.tryParse(recipe.shortsReference);
+    if (uri == null ||
+        !uri.hasScheme ||
+        uri.host.isEmpty ||
+        (uri.scheme != 'https' && uri.scheme != 'http')) {
+      ScaffoldMessenger.of(context)
+          .showSnackBar(const SnackBar(content: Text('원본 영상 링크를 확인할 수 없어요.')));
+      return;
+    }
+    var opened = false;
+    try {
+      opened = await launchUrl(uri, mode: LaunchMode.externalApplication);
+      if (!opened) {
+        opened = await launchUrl(uri, mode: LaunchMode.platformDefault);
+      }
+    } on PlatformException catch (error, stackTrace) {
+      debugPrint('Failed to open source URL: $error\n$stackTrace');
+      try {
+        opened = await launchUrl(uri, mode: LaunchMode.platformDefault);
+      } on Object catch (fallbackError, fallbackStackTrace) {
+        debugPrint(
+          'Failed to open source URL with platform default: '
+          '$fallbackError\n$fallbackStackTrace',
+        );
+      }
+    } on Object catch (error, stackTrace) {
+      debugPrint('Failed to open source URL: $error\n$stackTrace');
+    }
+    if (!opened && mounted) {
+      ScaffoldMessenger.of(context)
+          .showSnackBar(const SnackBar(content: Text('원본 영상을 열 수 없어요.')));
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     final availabilityMessage = recipe.missingCount == 0
         ? '지금 바로 만들 수 있어요'
         : '재료 ${recipe.missingCount}개가 부족해요';
-
     return ListView(
       padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
       children: [
@@ -97,7 +140,12 @@ class _RecipeDetailContent extends StatelessWidget {
           borderRadius: BorderRadius.circular(8),
           child: AspectRatio(
             aspectRatio: 16 / 9,
-            child: _RecipeImage(thumbnailUrl: recipe.thumbnailUrl),
+            child: _VideoThumbnail(
+              thumbnailUrl: recipe.thumbnailUrl,
+              hasVideo: true,
+              onPlay: _openSource,
+              unavailable: false,
+            ),
           ),
         ),
         const SizedBox(height: 22),
@@ -110,6 +158,8 @@ class _RecipeDetailContent extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 8),
+        _VideoCredit(channelName: recipe.sourceChannelName, onTap: _openSource),
+        const SizedBox(height: 10),
         Row(
           children: [
             Icon(
@@ -145,7 +195,10 @@ class _RecipeDetailContent extends StatelessWidget {
         ),
         if (recipe.optionalIngredients.isNotEmpty) ...[
           const SizedBox(height: 28),
-          _SectionTitle(title: '선택 재료', count: recipe.optionalIngredients.length),
+          _SectionTitle(
+            title: '선택 재료',
+            count: recipe.optionalIngredients.length,
+          ),
           const SizedBox(height: 14),
           ...recipe.optionalIngredients.map(
             (ingredient) => _OptionalIngredientRow(ingredient: ingredient),
@@ -158,6 +211,149 @@ class _RecipeDetailContent extends StatelessWidget {
         const SizedBox(height: 18),
         ...recipe.steps.map((step) => _RecipeStepRow(step: step)),
       ],
+    );
+  }
+}
+
+class _VideoThumbnail extends StatelessWidget {
+  const _VideoThumbnail({
+    required this.thumbnailUrl,
+    required this.hasVideo,
+    required this.onPlay,
+    required this.unavailable,
+  });
+
+  final String thumbnailUrl;
+  final bool hasVideo;
+  final VoidCallback onPlay;
+  final bool unavailable;
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        _RecipeImage(thumbnailUrl: thumbnailUrl),
+        if (unavailable)
+          Center(
+            child: Container(
+              margin: const EdgeInsets.symmetric(horizontal: 20),
+              padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 15),
+              decoration: BoxDecoration(
+                color: AppColors.white,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: const Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    '영상을 재생할 수 없어요',
+                    style: TextStyle(fontWeight: FontWeight.w600),
+                  ),
+                  SizedBox(height: 4),
+                  Text(
+                    '원본 영상은 아래 링크에서 바로 볼 수 있어요',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: AppColors.textSecondary,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          )
+        else if (hasVideo)
+          Center(
+            child: IconButton.filled(
+              tooltip: '유튜브 영상 재생',
+              onPressed: onPlay,
+              style: IconButton.styleFrom(
+                backgroundColor: Colors.black.withValues(alpha: 0.72),
+                foregroundColor: Colors.white,
+                minimumSize: const Size(64, 64),
+              ),
+              icon: const Icon(Icons.play_arrow_rounded, size: 42),
+            ),
+          ),
+      ],
+    );
+  }
+}
+
+class _VideoCredit extends StatelessWidget {
+  const _VideoCredit({required this.channelName, required this.onTap});
+
+  final String? channelName;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final label = channelName?.trim().isNotEmpty == true
+        ? channelName!.trim()
+        : '원본 채널';
+    final initial = String.fromCharCode(label.runes.first);
+    return SizedBox(
+      height: 20,
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(10),
+          child: Row(
+            children: [
+              Container(
+                width: 20,
+                height: 20,
+                alignment: Alignment.center,
+                decoration: const BoxDecoration(
+                  color: Color(0xFFE5E5EA),
+                  shape: BoxShape.circle,
+                ),
+                child: Text(
+                  initial,
+                  style: const TextStyle(
+                    color: Color(0xFF636366),
+                    fontSize: 12,
+                    fontWeight: FontWeight.w600,
+                    height: 1.4,
+                  ),
+                ),
+              ),
+              const SizedBox(width: 6),
+              Expanded(
+                child: Text(
+                  '$label · YouTube Shorts',
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
+                    color: Color(0xFF636366),
+                    fontSize: 12,
+                    fontWeight: FontWeight.w500,
+                    height: 1.4,
+                  ),
+                ),
+              ),
+              const SizedBox(width: 6),
+              const Text(
+                '원본 보기',
+                style: TextStyle(
+                  color: AppColors.primary,
+                  fontSize: 12,
+                  fontWeight: FontWeight.w600,
+                  height: 1.4,
+                ),
+              ),
+              const SizedBox(width: 4),
+              const Icon(
+                Icons.open_in_new_rounded,
+                size: 12,
+                color: AppColors.primary,
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
@@ -274,38 +470,56 @@ class _RequirementRow extends StatelessWidget {
       matches = const [];
       satisfied = false;
     } else {
-      throw StateError('Unsupported detail requirement type: ${value.runtimeType}');
+      throw StateError(
+        'Unsupported detail requirement type: ${value.runtimeType}',
+      );
     }
 
-    final quantities = options.map((option) => _quantity(option.amount, option.unit)).toSet();
+    final quantities = options
+        .map((option) => _quantity(option.amount, option.unit))
+        .toSet();
     final sharedQuantity = quantities.length == 1 ? quantities.single : '';
-    final name = options.map((option) {
-      final quantity = _quantity(option.amount, option.unit);
-      return quantities.length > 1 && quantity.isNotEmpty
-          ? '${option.displayName} $quantity'
-          : option.displayName;
-    }).join(' 또는 ');
+    final name = options
+        .map((option) {
+          final quantity = _quantity(option.amount, option.unit);
+          return quantities.length > 1 && quantity.isNotEmpty
+              ? '${option.displayName} $quantity'
+              : option.displayName;
+        })
+        .join(' 또는 ');
     final notes = <String>{};
     if (satisfied) {
       for (final match in matches) {
         if (match.type == IngredientMatchTypeEnum.PREPARATION) {
-          notes.add('가지고 있는 ${_withParticle(match.ownedName, '을', '를')} 활용할 수 있어요');
+          notes.add(
+            '가지고 있는 ${_withParticle(match.ownedName, '을', '를')} 활용할 수 있어요',
+          );
         } else if (match.type == IngredientMatchTypeEnum.SUBSTITUTE) {
-          notes.add('${_withParticle(match.requiredName, '은', '는')} 가지고 있는 ${_withParticle(match.ownedName, '으로', '로', rieulAsVowel: true)} 대신할 수 있어요');
+          notes.add(
+            '${_withParticle(match.requiredName, '은', '는')} 가지고 있는 ${_withParticle(match.ownedName, '으로', '로', rieulAsVowel: true)} 대신할 수 있어요',
+          );
+        } else if (match.requiredName != match.ownedName) {
+          notes.add(
+            '보유한 ${_withParticle(match.ownedName, '으로', '로', rieulAsVowel: true)} 만들 수 있어요',
+          );
         } else if (options.length > 1) {
-          notes.add('가지고 있는 ${_withParticle(match.ownedName, '을', '를')} 사용할 수 있어요');
+          notes.add(
+            '가지고 있는 ${_withParticle(match.ownedName, '을', '를')} 사용할 수 있어요',
+          );
         }
       }
     } else {
       notes.add(options.length > 1 ? '이 중 하나가 더 필요해요' : '이 재료가 더 필요해요');
       for (final option in options) {
         if (option.substitutes.isEmpty) continue;
-        final substitutes = option.substitutes.map((substitute) {
-          final quantity = _quantity(substitute.amount, substitute.unit);
-          return quantity.isEmpty
-              ? substitute.displayName
-              : '${substitute.displayName} ($quantity)';
-        }).join(' 또는 ');
+        final substitutes = option.substitutes
+            .map((substitute) {
+              final quantity = _quantity(substitute.amount, substitute.unit);
+              return quantity.isEmpty
+                  ? substitute.displayName
+                  : '${substitute.displayName} ($quantity)';
+            })
+            .join(' 또는 ');
         notes.add('${option.displayName}: $substitutes 대체 가능');
       }
     }
@@ -324,7 +538,9 @@ class _RequirementRow extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Icon(
-                  satisfied ? Icons.check_rounded : Icons.radio_button_unchecked_rounded,
+                  satisfied
+                      ? Icons.check_rounded
+                      : Icons.radio_button_unchecked_rounded,
                   size: 18,
                   color: satisfied ? AppColors.primary : AppColors.textMuted,
                 ),
@@ -348,7 +564,9 @@ class _RequirementRow extends StatelessWidget {
                       sharedQuantity,
                       textAlign: TextAlign.end,
                       style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                        color: satisfied ? AppColors.textMuted : AppColors.primary,
+                        color: satisfied
+                            ? AppColors.textMuted
+                            : AppColors.primary,
                         letterSpacing: 0,
                       ),
                     ),
@@ -390,15 +608,20 @@ class _OptionalIngredientRow extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Icon(Icons.radio_button_unchecked_rounded,
-            size: 18, color: AppColors.textMuted),
+          const Icon(
+            Icons.radio_button_unchecked_rounded,
+            size: 18,
+            color: AppColors.textMuted,
+          ),
           const SizedBox(width: 8),
           Expanded(
             flex: 3,
             child: Text(
               ingredient.displayName,
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                fontSize: 14, color: AppColors.textPrimary, letterSpacing: 0,
+                fontSize: 14,
+                color: AppColors.textPrimary,
+                letterSpacing: 0,
               ),
             ),
           ),
@@ -408,9 +631,8 @@ class _OptionalIngredientRow extends StatelessWidget {
               child: Text(
                 quantity,
                 textAlign: TextAlign.end,
-                style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                  color: AppColors.textMuted, letterSpacing: 0,
-                ),
+                style: Theme.of(context).textTheme.bodySmall
+                    ?.copyWith(color: AppColors.textMuted, letterSpacing: 0),
               ),
             ),
           ],

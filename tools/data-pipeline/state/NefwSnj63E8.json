@@ -1,0 +1,298 @@
+{
+  "videoId": "NefwSnj63E8",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/NefwSnj63E8",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:34:54.248551+00:00",
+    "rawResponse": "{\n  \"title\": \"스팸 마요 덮밥\",\n  \"description\": null,\n  \"servings\": \"4인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"스팸\",\n      \"displayName\": \"스팸\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"스팸\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도마 위에 스팸 2캔을 꺼내 깍둑썰기함\",\n          \"timestamp\": \"01:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란\",\n      \"displayName\": \"계란\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 기름을 두르고 계란을 깨 넣음\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 준비되어 있고요!\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇들에 밥을 퍼 담아 준비함\",\n          \"timestamp\": \"03:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간할 설탕\",\n      \"displayName\": \"설탕\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간할 설탕!\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 볶던 양파에 설탕을 넣음\",\n          \"timestamp\": \"02:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장\",\n      \"displayName\": \"진간장\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 뭐 요 정도만 있으면 될 겁니다\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 양파를 넣고 진간장을 둘러 부음\",\n          \"timestamp\": \"02:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 식용유를 두름\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"아 이게 양파가 얇아야 되는데...\",\n          \"timestamp\": \"02:22\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양파를 채 썰어 팬에 넣고 볶음\",\n          \"timestamp\": \"02:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마요네즈\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(마요네즈로 마무리!)\",\n          \"timestamp\": \"03:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"덮밥 위에 마요네즈를 지그재그로 뿌림\",\n          \"timestamp\": \"03:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김\",\n      \"displayName\": \"조미김\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김이랑...\",\n          \"timestamp\": \"03:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김은 알아서 그러면... 각자 부셔\",\n          \"timestamp\": \"03:27\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양반김 봉지를 식탁에 올림\",\n          \"timestamp\": \"03:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"타마고 계란 간장\",\n      \"displayName\": \"계란 간장\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"일본 타마고... 계란 간장인데\",\n          \"timestamp\": \"04:24\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"덮밥 소스가 부족하여 식탁에서 계란 간장을 추가로 뿌림\",\n          \"timestamp\": \"04:34\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 식용유를 두르고 계란을 깨 넣어 저어가며 스크램블 에그를 만든 뒤 그릇에 덜어둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 스크램블을 할 거에요\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 계란을 풀고 볶아 스크램블을 만듦\",\n          \"timestamp\": \"01:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"스팸을 깍둑썰기한 후 팬에 넣고 노릇하게 볶아 그릇에 덜어둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"스팸을 깍둑썰기하여 팬에서 볶음\",\n          \"timestamp\": \"01:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파를 채 썬 뒤 팬에 넣고 진간장과 설탕을 넣어 함께 볶아 조려낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그래서 이거를 좀 태워야 돼\",\n          \"timestamp\": \"02:47\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"채 썬 양파에 진간장과 설탕을 넣고 볶음\",\n          \"timestamp\": \"02:46\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 밥을 담고 그 위에 스크램블 에그, 볶은 스팸, 볶은 간장 양파를 차례로 얹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 스크램블 에그, 스팸, 볶은 양파를 올림\",\n          \"timestamp\": \"03:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마요네즈를 지그재그 모양으로 뿌려주고, 기호에 따라 김을 부수어 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(마요네즈로 마무리!)\",\n          \"timestamp\": \"03:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김은 알아서 그러면... 각자 부셔\",\n          \"timestamp\": \"03:27\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"모든 재료(스팸, 계란, 밥, 설탕, 진간장, 식용유, 양파, 마요네즈)의 정확한 계량 수치가 영상에서 언급되지 않음\",\n    \"타마고 계란 간장은 조리 과정이 아닌 식사 도중 간이 부족하여 추가된 재료임\"\n  ]\n}",
+    "result": {
+      "title": "스팸 마요 덮밥",
+      "description": null,
+      "servings": "4인분",
+      "ingredients": [
+        {
+          "rawText": "스팸",
+          "displayName": "스팸",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "스팸",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도마 위에 스팸 2캔을 꺼내 깍둑썰기함",
+              "timestamp": "01:37"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "계란",
+          "displayName": "계란",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 기름을 두르고 계란을 깨 넣음",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥 준비되어 있고요!",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇들에 밥을 퍼 담아 준비함",
+              "timestamp": "03:02"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "간할 설탕",
+          "displayName": "설탕",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "간할 설탕!",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 볶던 양파에 설탕을 넣음",
+              "timestamp": "02:52"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "진간장",
+          "displayName": "진간장",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "진간장 뭐 요 정도만 있으면 될 겁니다",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 양파를 넣고 진간장을 둘러 부음",
+              "timestamp": "02:46"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 식용유를 두름",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "아 이게 양파가 얇아야 되는데...",
+              "timestamp": "02:22"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양파를 채 썰어 팬에 넣고 볶음",
+              "timestamp": "02:31"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "마요네즈",
+          "displayName": "마요네즈",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(마요네즈로 마무리!)",
+              "timestamp": "03:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "덮밥 위에 마요네즈를 지그재그로 뿌림",
+              "timestamp": "03:18"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "김",
+          "displayName": "조미김",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김이랑...",
+              "timestamp": "03:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "김은 알아서 그러면... 각자 부셔",
+              "timestamp": "03:27"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양반김 봉지를 식탁에 올림",
+              "timestamp": "03:28"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "타마고 계란 간장",
+          "displayName": "계란 간장",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "일본 타마고... 계란 간장인데",
+              "timestamp": "04:24"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "덮밥 소스가 부족하여 식탁에서 계란 간장을 추가로 뿌림",
+              "timestamp": "04:34"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 식용유를 두르고 계란을 깨 넣어 저어가며 스크램블 에그를 만든 뒤 그릇에 덜어둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 스크램블을 할 거에요",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 계란을 풀고 볶아 스크램블을 만듦",
+              "timestamp": "01:08"
+            }
+          ]
+        },
+        {
+          "text": "스팸을 깍둑썰기한 후 팬에 넣고 노릇하게 볶아 그릇에 덜어둔다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "스팸을 깍둑썰기하여 팬에서 볶음",
+              "timestamp": "01:37"
+            }
+          ]
+        },
+        {
+          "text": "양파를 채 썬 뒤 팬에 넣고 진간장과 설탕을 넣어 함께 볶아 조려낸다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그래서 이거를 좀 태워야 돼",
+              "timestamp": "02:47"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "채 썬 양파에 진간장과 설탕을 넣고 볶음",
+              "timestamp": "02:46"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 밥을 담고 그 위에 스크램블 에그, 볶은 스팸, 볶은 간장 양파를 차례로 얹는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 스크램블 에그, 스팸, 볶은 양파를 올림",
+              "timestamp": "03:02"
+            }
+          ]
+        },
+        {
+          "text": "마요네즈를 지그재그 모양으로 뿌려주고, 기호에 따라 김을 부수어 올린다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(마요네즈로 마무리!)",
+              "timestamp": "03:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "김은 알아서 그러면... 각자 부셔",
+              "timestamp": "03:27"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "모든 재료(스팸, 계란, 밥, 설탕, 진간장, 식용유, 양파, 마요네즈)의 정확한 계량 수치가 영상에서 언급되지 않음",
+        "타마고 계란 간장은 조리 과정이 아닌 식사 도중 간이 부족하여 추가된 재료임"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

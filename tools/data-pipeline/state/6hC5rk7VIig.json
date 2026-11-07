@@ -1,0 +1,735 @@
+{
+  "videoId": "6hC5rk7VIig",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/6hC5rk7VIig",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:54:19.549917+00:00",
+    "rawResponse": "{\n  \"title\": \"초간단 삼겹살 요리\",\n  \"description\": \"자취생 냉장고 털이 겸 저렴한 냉동 못난이 삼겹살을 활용하여 기름 튀김 걱정 없이 냄비에 굽는 방법과 크림리조또, 땅콩버터 삼겹살구이, 쌈장 삼겹살볶음, 우유 카레우동을 만드는 레시피 모음입니다.\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"못난이 한입 삼겹살\",\n      \"displayName\": \"삼겹살\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"오늘 제가 추천드리는 건 바로 이 못난이 삼겹살인데요\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"오늘 제가 추천드리는 건 바로 이 못난이 삼겹살 인데요\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치\",\n      \"displayName\": \"김치\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이 기름에 김치까지 부어서 구워주세요\",\n          \"timestamp\": \"02:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이 기름에 김치 까지 부어서 구워주세요\",\n          \"timestamp\": \"02:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"삼겹살 150g 정도 (크림리조또용)\",\n      \"displayName\": \"삼겹살\",\n      \"amount\": \"150\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 삼겹살 150g 정도를 구워줍니다\",\n          \"timestamp\": \"03:02\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 삼겹살 150g 정도를 구워줍니다\",\n          \"timestamp\": \"03:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"저는 양파랑 버섯 넣어줬는데 야채 없으면 고기만 구우셔도 됩니다\",\n          \"timestamp\": \"03:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"저는 양파랑 버섯 넣어줬는데 야채 없으면 고기만 구우셔도 됩니다\",\n          \"timestamp\": \"03:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"버섯\",\n      \"displayName\": \"버섯\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"저는 양파랑 버섯 넣어줬는데 야채 없으면 고기만 구우셔도 됩니다\",\n          \"timestamp\": \"03:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"저는 양파랑 버섯 넣어줬는데 야채 없으면 고기만 구우셔도 됩니다\",\n          \"timestamp\": \"03:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우유 150ml (크림리조또용)\",\n      \"displayName\": \"우유\",\n      \"amount\": \"150\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우유 150ml를 넣어주세요\",\n          \"timestamp\": \"03:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"우유 150ml를 넣어주세요\",\n          \"timestamp\": \"03:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 한 공기 (크림리조또용)\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 한 공기 넣어 줍니다\",\n          \"timestamp\": \"03:22\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥 한 공기 넣어 줍니다\",\n          \"timestamp\": \"03:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"치즈 한 장 (체다 슬라이스 치즈 또는 모짜렐라 치즈)\",\n      \"displayName\": \"슬라이스 치즈\",\n      \"amount\": \"1\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"치즈 한 장 넣습니다 슬라이스 치즈 대신 모짜렐라 치즈 넣어도 괜찮습니다\",\n          \"timestamp\": \"03:33\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"치즈 한 장 넣습니다 슬라이스 치즈 대신 모짜렐라 치즈 넣어도 괜찮습니다\",\n          \"timestamp\": \"03:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛소금\",\n      \"displayName\": \"맛소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"싱거우면 맛소금 살짝만 뿌려줍니다\",\n          \"timestamp\": \"03:39\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"싱거우면 맛소금 살짝만 뿌려줍니다\",\n          \"timestamp\": \"03:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 후추 뿌려주시고 섞어주면 끝입니다\",\n          \"timestamp\": \"03:41\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 후추 뿌려주시고 섞어주면 끝입니다\",\n          \"timestamp\": \"03:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"삼겹살 한 200g 정도 (땅콩버터 삼겹살용)\",\n      \"displayName\": \"삼겹살\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 삼겹살 한 200g 정도 노릇하게 구워주시고요\",\n          \"timestamp\": \"04:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 삼겹살 한 200g정도 노릇하게 구워주시고요\",\n          \"timestamp\": \"04:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"땅콩버터 한 큰술\",\n      \"displayName\": \"땅콩버터\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"땅콩버터 한 큰술\",\n          \"timestamp\": \"04:24\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"땅콩버터 한 큰술\",\n          \"timestamp\": \"04:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 한 큰술\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 한 큰술\",\n          \"timestamp\": \"04:25\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장 한 큰술\",\n          \"timestamp\": \"04:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 한 스푼\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 한 스푼\",\n          \"timestamp\": \"04:26\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"간장 한 스푼\",\n          \"timestamp\": \"04:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 3-4 큰 술\",\n      \"displayName\": \"물\",\n      \"amount\": \"3~4\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 3-4 큰 술 넣고 섞어주세요\",\n          \"timestamp\": \"04:27\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 3-4 큰 술 넣고 섞어주세요\",\n          \"timestamp\": \"04:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"삼겹살 150~200g 정도 (쌈장 삼겹살볶음용)\",\n      \"displayName\": \"삼겹살\",\n      \"amount\": \"150~200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"삼겹살 150~200g 정도 구워줍니다\",\n          \"timestamp\": \"05:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"삼겹살 150~200g정도 구워줍니다\",\n          \"timestamp\": \"05:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추\",\n      \"displayName\": \"청양고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"근데 청양고추는 솔직히 있는 게 맛있습니다\",\n          \"timestamp\": \"05:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"근데 청양고추는 솔직히 있는 게 맛있습니다\",\n          \"timestamp\": \"05:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쌈장 한 큰술\",\n      \"displayName\": \"쌈장\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"쌈장 한 큰술 터프하게 넣어주시고\",\n          \"timestamp\": \"05:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"쌈장 한 큰술 터프하게 넣어주시고\",\n          \"timestamp\": \"05:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 2 큰술\",\n      \"displayName\": \"물\",\n      \"amount\": \"2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 2 큰술 넣어주세요\",\n          \"timestamp\": \"05:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 2 큰술 넣어주세요\",\n          \"timestamp\": \"05:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"상추 한 두 세개 정도\",\n      \"displayName\": \"상추\",\n      \"amount\": \"2~3\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"상추 불 끄고 찢어서 한 두 세개 정도 넣어주면\",\n          \"timestamp\": \"05:31\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"상추 불 끄고 찢어서 한 두 세개 정도 넣어주면\",\n          \"timestamp\": \"05:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"삼겹살 200g 정도 (우유 카레우동용)\",\n      \"displayName\": \"삼겹살\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 삼겹살 200g 정도를 노릇하게 구워주세요\",\n          \"timestamp\": \"06:12\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 삼겹살 200g 정도를 노릇하게 구워주세요\",\n          \"timestamp\": \"06:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우유 200ml (작은 우유 한 팩 분량)\",\n      \"displayName\": \"우유\",\n      \"amount\": \"200\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 불을 줄이고 우유 200ml 부어주세요 작은 우유 한 팩 분량입니다\",\n          \"timestamp\": \"06:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 불을 줄이고 우유 200ml 부어주세요 작은 우유 한 팩 분량입니다\",\n          \"timestamp\": \"06:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"S&B 고형 카레 한 조각 (약 25g)\",\n      \"displayName\": \"고형 카레\",\n      \"amount\": \"1\",\n      \"unit\": \"조각\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"S&B 고형 카레 쓸 겁니다... 고형 카레를 한 조각 넣어줄 건데 이거 한 조각에 한 25g 정도 되거든요\",\n          \"timestamp\": \"06:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"S&B 고형 카레 쓸겁니다... 고형 카레를 한 조각 넣어줄건데 이거 한 조각에 한 25g 정도 되거든요\",\n          \"timestamp\": \"06:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"사리우동 한 봉지\",\n      \"displayName\": \"우동사리\",\n      \"amount\": \"1\",\n      \"unit\": \"봉지\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"미리 삶아 놓은 사리우동 한 봉지 넣고 중약불로 끓이면서 같이 섞어줍니다\",\n          \"timestamp\": \"06:41\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"미리 삶아 놓은 사리우동 한 봉지 넣고 중약불로 끓이면서 같이 섞어줍니다\",\n          \"timestamp\": \"06:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 볶음 요리 위에 통깨를 뿌림\",\n          \"timestamp\": \"04:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"송송 썬 대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 크림리조또 및 카레우동 위에 썬 대파 고명을 올림\",\n          \"timestamp\": \"03:45\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"[기름 안 튀는 냄비 삼겹살구이] 냄비를 충분히 달군 뒤 해동하지 않은 냉동 삼겹살을 넣고, 뚜껑을 비스듬히 닫아 속까지 노릇하게 익힙니다. 취향에 따라 후추를 뿌립니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬을 충분히 달궈준 후에 구워주시는 게 좋습니다 그리고 뚜껑은 비스듬히 닫아주세요\",\n          \"timestamp\": \"01:53\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬을 충분히 달궈준 후에 구워주시는게 좋습니다 그리고 뚜껑은 비스듬히 닫아주세요\",\n          \"timestamp\": \"01:53\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기를 다 굽고 난 뒤 나온 삼겹살 기름에 김치를 넣고 볶아 고기와 곁들여 먹습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"무엇보다 이렇게 다 굽고 나면은 이 기름에 김치까지 부어서 구워주세요\",\n          \"timestamp\": \"02:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"무엇보다 이렇게 다 굽고 나면은 이 기름에 김치 까지 부어서 구워주세요\",\n          \"timestamp\": \"02:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[삼겹살 크림리조또] 팬에 삼겹살 150g과 남은 야채(양파, 버섯 등)를 넣고 거의 다 익을 때까지 볶은 후, 키친타월로 흘러나온 기름을 닦아냅니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 삼겹살 150g 정도를 구워줍니다 그리고 냉장고에 남은 야채 있으면 아무거나 넣어주세요... 삼겹살에서 나온 기름은 키친타월로 깨끗하게 닦아주세요\",\n          \"timestamp\": \"03:02\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 삼겹살 150g 정도를 구워줍니다 그리고 냉장고에 남은 야채있으면 아무거나 넣어주세요... 삼겹살에서 나온 기름은 키친타올로 깨끗하게 닦아주세요\",\n          \"timestamp\": \"03:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 중약불로 줄이고 우유 150ml와 밥 한 공기를 넣고, 바닥에 눌어붙지 않게 저어가며 3~4분간 끓입니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불을 중약불로 줄이고 우유 150ml를 넣어주세요 밥 한 공기 넣어 줍니다 이제 밥 풀어가면서 3-4분 정도 저어줍니다\",\n          \"timestamp\": \"03:19\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불을 중약불로 줄이고 우유 150ml를 넣어주세요 밥 한 공기 넣어 줍니다 이제 밥 풀어가면서 3-4분 정도 저어줍니다\",\n          \"timestamp\": \"03:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국물이 걸쭉해지면 치즈 한 장을 넣고 녹인 뒤 간을 보고 싱거우면 맛소금을 살짝 뿌리고, 후추를 뿌려 섞어 마무리합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우유가 줄어들면서 밥이 이렇게 걸쭉해지면은 치즈 한 장 넣습니다... 싱거우면 맛소금 살짝만 뿌려줍니다 마지막으로 후추 뿌려주시고 섞어주면 끝입니다\",\n          \"timestamp\": \"03:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"우유가 줄어들면서 밥이 이렇게 걸쭉해지면은 치즈 한 장 넣습니다... 싱거우면 맛소금 살짝만 뿌려줍니다 마지막으로 후추 뿌려주시고 섞어주면 끝입니다\",\n          \"timestamp\": \"03:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[땅콩버터 삼겹살] 팬에 삼겹살 약 200g을 노릇하게 구운 뒤 키친타월로 기름을 닦아냅니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 삼겹살 한 200g 정도 노릇하게 구워주시고요 그리고 마찬가지로 나온 기름은 키친타월로 깨끗하게 닦아줍니다\",\n          \"timestamp\": \"04:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 삼겹살 한 200g정도 노릇하게 구워주시고요 그리고 마찬가지로 나온 기름은 키친타올로 깨끗하게 닦아줍니다\",\n          \"timestamp\": \"04:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 약하게 줄이고 땅콩버터 1큰술, 고추장 1큰술, 간장 1스푼, 물 3~4큰술을 넣고 땅콩버터가 풀릴 때까지 약 1분 정도 윤기 나게 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 불을 약하게 줄이고 땅콩버터 한 큰술 고추장 한 큰술 간장 한 스푼 물 3-4 큰 술 넣고 섞어주세요 그리고 땅콩버터가 풀릴 때까지 이렇게 섞어주면 됩니다 한 1분 정도만 볶아줘도 이렇게 윤기 자르르 해질 겁니다\",\n          \"timestamp\": \"04:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 불을 약하게 줄이고 땅콩버터 한 큰술 고추장 한 큰술 간장 한 스푼 물 3-4 큰 술 넣고 섞어주세요 그리고 땅콩버터가 풀릴때까지 이렇게 섞어주면 됩니다 한 1분 정도만 볶아줘도 이렇게 윤기 자르르 해질겁니다\",\n          \"timestamp\": \"04:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[쌈장 상추 삼겹살볶음] 팬에 삼겹살 150~200g과 남은 야채, 썬 청양고추를 넣고 노릇하게 구운 뒤 나온 기름을 닦아냅니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"삼겹살 150~200g 정도 구워줍니다 그리고 냉장고에 남은 야채 아무거나 넣어주시고요... 근데 청양고추는 솔직히 있는 게 맛있습니다 거진 다 익으면 이번에도 고인 기름은 닦아주시고\",\n          \"timestamp\": \"05:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"삼겹살 150~200g정도 구워줍니다 그리고 냉장고에 남은야채 아무거나 넣어주시고요... 근데 청양고추는 솔직히 있는게 맛있습니다 거진 다 익으면 이번에도 고인 기름은 닦아주시고\",\n          \"timestamp\": \"05:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"쌈장 1큰술과 물 2큰술을 넣고 약불에서 약 1분간 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"쌈장 한 큰술 터프하게 넣어주시고 물 2 큰술 넣어주세요 약불에서 한 1분만 섞어주면 끝입니다\",\n          \"timestamp\": \"05:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"쌈장 한 큰술 터프하게 넣어주시고 물 2 큰술 넣어주세요 약불에서 한 1분만 섞어주면 끝입니다\",\n          \"timestamp\": \"05:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 끄고 상추 2~3장을 찢어 넣은 뒤 남은 잔열로 살짝 숨을 죽여 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"삼겹살 싸 먹고 남은 상추 불 끄고 찢어서 한 두 세개 정도 넣어주면 남은 열로 살짝 숨만 죽이면 됩니다\",\n          \"timestamp\": \"05:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"삼겹살 싸 먹고 남은 상추 불 끄고 찢어서 한 두 세개 정도 넣어주면 남은 열로 살짝 숨만 죽이면 됩니다\",\n          \"timestamp\": \"05:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[삼겹살 우유 카레우동] 삼겹살 200g과 남은 야채를 노릇하게 구운 뒤 고인 기름을 키친타월로 닦아냅니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 삼겹살 200g 정도를 노릇하게 구워주세요 마찬가지로 남은 야채 있으면 넣고... 고기가 다 익었으면 고인 기름을 키친타월로 닦고\",\n          \"timestamp\": \"06:12\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 삼겹살 200g 정도를 노릇하게 구워주세요 마찬가지로 남은 야채있으면 넣고... 고기가 다 익었으면 고인 기름을 키친타올로 닦고\",\n          \"timestamp\": \"06:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 줄이고 우유 200ml를 붓고, 우유가 따뜻해지면 불을 아주 약하게 줄이거나 끈 뒤 S&B 고형 카레 1조각(약 25g)을 넣어 덩어리가 없도록 완전히 풀어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 불을 줄이고 우유 200ml 부어주세요... 우유가 따뜻해지면 잠깐 불을 끄고 제일 약한 불로 줄여주고 고형 카레를 한 조각 넣어줄 건데... 덩어리 남아있으면... 귀찮아도 꼭 풀어주시는 게 좋습니다\",\n          \"timestamp\": \"06:21\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 불을 줄이고 우유 200ml 부어주세요... 우유가 따뜻해지면 잠깐 불을 끄고 제일 약한 불로 줄여주고 고형 카레를 한 조각 넣어줄건데... 덩어리 남아있으면... 귀찮아도 꼭 풀어주시는 게 좋습니다\",\n          \"timestamp\": \"06:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"카레가 다 풀리면 미리 삶아 놓은 사리우동 1봉지를 넣고 중약불로 바닥에 눌어붙지 않게 저어가며 함께 끓여 마무리합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다 풀렸으면 미리 삶아 놓은 사리우동 한 봉지 넣고 중약불로 끓이면서 같이 섞어줍니다 중간중간 바닥에 붙지 않게 저어주시고요\",\n          \"timestamp\": \"06:41\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다 풀렸으면 미리 삶아 놓은 사리우동 한 봉지 넣고 중약불로 끓이면서 같이 섞어줍니다 중간중간 바닥에 붙지 않게 저어주시고요\",\n          \"timestamp\": \"06:41\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "초간단 삼겹살 요리",
+      "description": "자취생 냉장고 털이 겸 저렴한 냉동 못난이 삼겹살을 활용하여 기름 튀김 걱정 없이 냄비에 굽는 방법과 크림리조또, 땅콩버터 삼겹살구이, 쌈장 삼겹살볶음, 우유 카레우동을 만드는 레시피 모음입니다.",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "못난이 한입 삼겹살",
+          "displayName": "삼겹살",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "오늘 제가 추천드리는 건 바로 이 못난이 삼겹살인데요",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "오늘 제가 추천드리는 건 바로 이 못난이 삼겹살 인데요",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "김치",
+          "displayName": "김치",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이 기름에 김치까지 부어서 구워주세요",
+              "timestamp": "02:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이 기름에 김치 까지 부어서 구워주세요",
+              "timestamp": "02:11"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "삼겹살 150g 정도 (크림리조또용)",
+          "displayName": "삼겹살",
+          "amount": "150",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 삼겹살 150g 정도를 구워줍니다",
+              "timestamp": "03:02"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 삼겹살 150g 정도를 구워줍니다",
+              "timestamp": "03:02"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "저는 양파랑 버섯 넣어줬는데 야채 없으면 고기만 구우셔도 됩니다",
+              "timestamp": "03:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "저는 양파랑 버섯 넣어줬는데 야채 없으면 고기만 구우셔도 됩니다",
+              "timestamp": "03:07"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "버섯",
+          "displayName": "버섯",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "저는 양파랑 버섯 넣어줬는데 야채 없으면 고기만 구우셔도 됩니다",
+              "timestamp": "03:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "저는 양파랑 버섯 넣어줬는데 야채 없으면 고기만 구우셔도 됩니다",
+              "timestamp": "03:07"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "우유 150ml (크림리조또용)",
+          "displayName": "우유",
+          "amount": "150",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "우유 150ml를 넣어주세요",
+              "timestamp": "03:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "우유 150ml를 넣어주세요",
+              "timestamp": "03:20"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "밥 한 공기 (크림리조또용)",
+          "displayName": "밥",
+          "amount": "1",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥 한 공기 넣어 줍니다",
+              "timestamp": "03:22"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "밥 한 공기 넣어 줍니다",
+              "timestamp": "03:22"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "치즈 한 장 (체다 슬라이스 치즈 또는 모짜렐라 치즈)",
+          "displayName": "슬라이스 치즈",
+          "amount": "1",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "치즈 한 장 넣습니다 슬라이스 치즈 대신 모짜렐라 치즈 넣어도 괜찮습니다",
+              "timestamp": "03:33"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "치즈 한 장 넣습니다 슬라이스 치즈 대신 모짜렐라 치즈 넣어도 괜찮습니다",
+              "timestamp": "03:33"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "맛소금",
+          "displayName": "맛소금",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "싱거우면 맛소금 살짝만 뿌려줍니다",
+              "timestamp": "03:39"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "싱거우면 맛소금 살짝만 뿌려줍니다",
+              "timestamp": "03:39"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 후추 뿌려주시고 섞어주면 끝입니다",
+              "timestamp": "03:41"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 후추 뿌려주시고 섞어주면 끝입니다",
+              "timestamp": "03:41"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "삼겹살 한 200g 정도 (땅콩버터 삼겹살용)",
+          "displayName": "삼겹살",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 삼겹살 한 200g 정도 노릇하게 구워주시고요",
+              "timestamp": "04:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 삼겹살 한 200g정도 노릇하게 구워주시고요",
+              "timestamp": "04:14"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "땅콩버터 한 큰술",
+          "displayName": "땅콩버터",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "땅콩버터 한 큰술",
+              "timestamp": "04:24"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "땅콩버터 한 큰술",
+              "timestamp": "04:24"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "고추장 한 큰술",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고추장 한 큰술",
+              "timestamp": "04:25"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고추장 한 큰술",
+              "timestamp": "04:25"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "간장 한 스푼",
+          "displayName": "간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "간장 한 스푼",
+              "timestamp": "04:26"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "간장 한 스푼",
+              "timestamp": "04:26"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "물 3-4 큰 술",
+          "displayName": "물",
+          "amount": "3~4",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 3-4 큰 술 넣고 섞어주세요",
+              "timestamp": "04:27"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 3-4 큰 술 넣고 섞어주세요",
+              "timestamp": "04:27"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "삼겹살 150~200g 정도 (쌈장 삼겹살볶음용)",
+          "displayName": "삼겹살",
+          "amount": "150~200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "삼겹살 150~200g 정도 구워줍니다",
+              "timestamp": "05:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "삼겹살 150~200g정도 구워줍니다",
+              "timestamp": "05:07"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "청양고추",
+          "displayName": "청양고추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "근데 청양고추는 솔직히 있는 게 맛있습니다",
+              "timestamp": "05:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "근데 청양고추는 솔직히 있는 게 맛있습니다",
+              "timestamp": "05:13"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        },
+        {
+          "rawText": "쌈장 한 큰술",
+          "displayName": "쌈장",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "쌈장 한 큰술 터프하게 넣어주시고",
+              "timestamp": "05:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "쌈장 한 큰술 터프하게 넣어주시고",
+              "timestamp": "05:18"
+            }
+          ],
+          "sourceId": "ingredient-18"
+        },
+        {
+          "rawText": "물 2 큰술",
+          "displayName": "물",
+          "amount": "2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 2 큰술 넣어주세요",
+              "timestamp": "05:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 2 큰술 넣어주세요",
+              "timestamp": "05:20"
+            }
+          ],
+          "sourceId": "ingredient-19"
+        },
+        {
+          "rawText": "상추 한 두 세개 정도",
+          "displayName": "상추",
+          "amount": "2~3",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "상추 불 끄고 찢어서 한 두 세개 정도 넣어주면",
+              "timestamp": "05:31"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "상추 불 끄고 찢어서 한 두 세개 정도 넣어주면",
+              "timestamp": "05:31"
+            }
+          ],
+          "sourceId": "ingredient-20"
+        },
+        {
+          "rawText": "삼겹살 200g 정도 (우유 카레우동용)",
+          "displayName": "삼겹살",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 삼겹살 200g 정도를 노릇하게 구워주세요",
+              "timestamp": "06:12"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 삼겹살 200g 정도를 노릇하게 구워주세요",
+              "timestamp": "06:12"
+            }
+          ],
+          "sourceId": "ingredient-21"
+        },
+        {
+          "rawText": "우유 200ml (작은 우유 한 팩 분량)",
+          "displayName": "우유",
+          "amount": "200",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 불을 줄이고 우유 200ml 부어주세요 작은 우유 한 팩 분량입니다",
+              "timestamp": "06:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 불을 줄이고 우유 200ml 부어주세요 작은 우유 한 팩 분량입니다",
+              "timestamp": "06:20"
+            }
+          ],
+          "sourceId": "ingredient-22"
+        },
+        {
+          "rawText": "S&B 고형 카레 한 조각 (약 25g)",
+          "displayName": "고형 카레",
+          "amount": "1",
+          "unit": "조각",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "S&B 고형 카레 쓸 겁니다... 고형 카레를 한 조각 넣어줄 건데 이거 한 조각에 한 25g 정도 되거든요",
+              "timestamp": "06:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "S&B 고형 카레 쓸겁니다... 고형 카레를 한 조각 넣어줄건데 이거 한 조각에 한 25g 정도 되거든요",
+              "timestamp": "06:06"
+            }
+          ],
+          "sourceId": "ingredient-23"
+        },
+        {
+          "rawText": "사리우동 한 봉지",
+          "displayName": "우동사리",
+          "amount": "1",
+          "unit": "봉지",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "미리 삶아 놓은 사리우동 한 봉지 넣고 중약불로 끓이면서 같이 섞어줍니다",
+              "timestamp": "06:41"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "미리 삶아 놓은 사리우동 한 봉지 넣고 중약불로 끓이면서 같이 섞어줍니다",
+              "timestamp": "06:41"
+            }
+          ],
+          "sourceId": "ingredient-24"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 볶음 요리 위에 통깨를 뿌림",
+              "timestamp": "04:11"
+            }
+          ],
+          "sourceId": "ingredient-25"
+        },
+        {
+          "rawText": "송송 썬 대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 크림리조또 및 카레우동 위에 썬 대파 고명을 올림",
+              "timestamp": "03:45"
+            }
+          ],
+          "sourceId": "ingredient-26"
+        }
+      ],
+      "steps": [
+        {
+          "text": "[기름 안 튀는 냄비 삼겹살구이] 냄비를 충분히 달군 뒤 해동하지 않은 냉동 삼겹살을 넣고, 뚜껑을 비스듬히 닫아 속까지 노릇하게 익힙니다. 취향에 따라 후추를 뿌립니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬을 충분히 달궈준 후에 구워주시는 게 좋습니다 그리고 뚜껑은 비스듬히 닫아주세요",
+              "timestamp": "01:53"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "팬을 충분히 달궈준 후에 구워주시는게 좋습니다 그리고 뚜껑은 비스듬히 닫아주세요",
+              "timestamp": "01:53"
+            }
+          ]
+        },
+        {
+          "text": "고기를 다 굽고 난 뒤 나온 삼겹살 기름에 김치를 넣고 볶아 고기와 곁들여 먹습니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "무엇보다 이렇게 다 굽고 나면은 이 기름에 김치까지 부어서 구워주세요",
+              "timestamp": "02:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "무엇보다 이렇게 다 굽고 나면은 이 기름에 김치 까지 부어서 구워주세요",
+              "timestamp": "02:09"
+            }
+          ]
+        },
+        {
+          "text": "[삼겹살 크림리조또] 팬에 삼겹살 150g과 남은 야채(양파, 버섯 등)를 넣고 거의 다 익을 때까지 볶은 후, 키친타월로 흘러나온 기름을 닦아냅니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 삼겹살 150g 정도를 구워줍니다 그리고 냉장고에 남은 야채 있으면 아무거나 넣어주세요... 삼겹살에서 나온 기름은 키친타월로 깨끗하게 닦아주세요",
+              "timestamp": "03:02"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 삼겹살 150g 정도를 구워줍니다 그리고 냉장고에 남은 야채있으면 아무거나 넣어주세요... 삼겹살에서 나온 기름은 키친타올로 깨끗하게 닦아주세요",
+              "timestamp": "03:02"
+            }
+          ]
+        },
+        {
+          "text": "불을 중약불로 줄이고 우유 150ml와 밥 한 공기를 넣고, 바닥에 눌어붙지 않게 저어가며 3~4분간 끓입니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "불을 중약불로 줄이고 우유 150ml를 넣어주세요 밥 한 공기 넣어 줍니다 이제 밥 풀어가면서 3-4분 정도 저어줍니다",
+              "timestamp": "03:19"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "불을 중약불로 줄이고 우유 150ml를 넣어주세요 밥 한 공기 넣어 줍니다 이제 밥 풀어가면서 3-4분 정도 저어줍니다",
+              "timestamp": "03:19"
+            }
+          ]
+        },
+        {
+          "text": "국물이 걸쭉해지면 치즈 한 장을 넣고 녹인 뒤 간을 보고 싱거우면 맛소금을 살짝 뿌리고, 후추를 뿌려 섞어 마무리합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "우유가 줄어들면서 밥이 이렇게 걸쭉해지면은 치즈 한 장 넣습니다... 싱거우면 맛소금 살짝만 뿌려줍니다 마지막으로 후추 뿌려주시고 섞어주면 끝입니다",
+              "timestamp": "03:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "우유가 줄어들면서 밥이 이렇게 걸쭉해지면은 치즈 한 장 넣습니다... 싱거우면 맛소금 살짝만 뿌려줍니다 마지막으로 후추 뿌려주시고 섞어주면 끝입니다",
+              "timestamp": "03:30"
+            }
+          ]
+        },
+        {
+          "text": "[땅콩버터 삼겹살] 팬에 삼겹살 약 200g을 노릇하게 구운 뒤 키친타월로 기름을 닦아냅니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 삼겹살 한 200g 정도 노릇하게 구워주시고요 그리고 마찬가지로 나온 기름은 키친타월로 깨끗하게 닦아줍니다",
+              "timestamp": "04:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 삼겹살 한 200g정도 노릇하게 구워주시고요 그리고 마찬가지로 나온 기름은 키친타올로 깨끗하게 닦아줍니다",
+              "timestamp": "04:14"
+            }
+          ]
+        },
+        {
+          "text": "불을 약하게 줄이고 땅콩버터 1큰술, 고추장 1큰술, 간장 1스푼, 물 3~4큰술을 넣고 땅콩버터가 풀릴 때까지 약 1분 정도 윤기 나게 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 불을 약하게 줄이고 땅콩버터 한 큰술 고추장 한 큰술 간장 한 스푼 물 3-4 큰 술 넣고 섞어주세요 그리고 땅콩버터가 풀릴 때까지 이렇게 섞어주면 됩니다 한 1분 정도만 볶아줘도 이렇게 윤기 자르르 해질 겁니다",
+              "timestamp": "04:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 불을 약하게 줄이고 땅콩버터 한 큰술 고추장 한 큰술 간장 한 스푼 물 3-4 큰 술 넣고 섞어주세요 그리고 땅콩버터가 풀릴때까지 이렇게 섞어주면 됩니다 한 1분 정도만 볶아줘도 이렇게 윤기 자르르 해질겁니다",
+              "timestamp": "04:23"
+            }
+          ]
+        },
+        {
+          "text": "[쌈장 상추 삼겹살볶음] 팬에 삼겹살 150~200g과 남은 야채, 썬 청양고추를 넣고 노릇하게 구운 뒤 나온 기름을 닦아냅니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "삼겹살 150~200g 정도 구워줍니다 그리고 냉장고에 남은 야채 아무거나 넣어주시고요... 근데 청양고추는 솔직히 있는 게 맛있습니다 거진 다 익으면 이번에도 고인 기름은 닦아주시고",
+              "timestamp": "05:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "삼겹살 150~200g정도 구워줍니다 그리고 냉장고에 남은야채 아무거나 넣어주시고요... 근데 청양고추는 솔직히 있는게 맛있습니다 거진 다 익으면 이번에도 고인 기름은 닦아주시고",
+              "timestamp": "05:07"
+            }
+          ]
+        },
+        {
+          "text": "쌈장 1큰술과 물 2큰술을 넣고 약불에서 약 1분간 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "쌈장 한 큰술 터프하게 넣어주시고 물 2 큰술 넣어주세요 약불에서 한 1분만 섞어주면 끝입니다",
+              "timestamp": "05:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "쌈장 한 큰술 터프하게 넣어주시고 물 2 큰술 넣어주세요 약불에서 한 1분만 섞어주면 끝입니다",
+              "timestamp": "05:18"
+            }
+          ]
+        },
+        {
+          "text": "불을 끄고 상추 2~3장을 찢어 넣은 뒤 남은 잔열로 살짝 숨을 죽여 완성합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "삼겹살 싸 먹고 남은 상추 불 끄고 찢어서 한 두 세개 정도 넣어주면 남은 열로 살짝 숨만 죽이면 됩니다",
+              "timestamp": "05:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "삼겹살 싸 먹고 남은 상추 불 끄고 찢어서 한 두 세개 정도 넣어주면 남은 열로 살짝 숨만 죽이면 됩니다",
+              "timestamp": "05:30"
+            }
+          ]
+        },
+        {
+          "text": "[삼겹살 우유 카레우동] 삼겹살 200g과 남은 야채를 노릇하게 구운 뒤 고인 기름을 키친타월로 닦아냅니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 삼겹살 200g 정도를 노릇하게 구워주세요 마찬가지로 남은 야채 있으면 넣고... 고기가 다 익었으면 고인 기름을 키친타월로 닦고",
+              "timestamp": "06:12"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 삼겹살 200g 정도를 노릇하게 구워주세요 마찬가지로 남은 야채있으면 넣고... 고기가 다 익었으면 고인 기름을 키친타올로 닦고",
+              "timestamp": "06:12"
+            }
+          ]
+        },
+        {
+          "text": "불을 줄이고 우유 200ml를 붓고, 우유가 따뜻해지면 불을 아주 약하게 줄이거나 끈 뒤 S&B 고형 카레 1조각(약 25g)을 넣어 덩어리가 없도록 완전히 풀어줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 불을 줄이고 우유 200ml 부어주세요... 우유가 따뜻해지면 잠깐 불을 끄고 제일 약한 불로 줄여주고 고형 카레를 한 조각 넣어줄 건데... 덩어리 남아있으면... 귀찮아도 꼭 풀어주시는 게 좋습니다",
+              "timestamp": "06:21"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 불을 줄이고 우유 200ml 부어주세요... 우유가 따뜻해지면 잠깐 불을 끄고 제일 약한 불로 줄여주고 고형 카레를 한 조각 넣어줄건데... 덩어리 남아있으면... 귀찮아도 꼭 풀어주시는 게 좋습니다",
+              "timestamp": "06:21"
+            }
+          ]
+        },
+        {
+          "text": "카레가 다 풀리면 미리 삶아 놓은 사리우동 1봉지를 넣고 중약불로 바닥에 눌어붙지 않게 저어가며 함께 끓여 마무리합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다 풀렸으면 미리 삶아 놓은 사리우동 한 봉지 넣고 중약불로 끓이면서 같이 섞어줍니다 중간중간 바닥에 붙지 않게 저어주시고요",
+              "timestamp": "06:41"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다 풀렸으면 미리 삶아 놓은 사리우동 한 봉지 넣고 중약불로 끓이면서 같이 섞어줍니다 중간중간 바닥에 붙지 않게 저어주시고요",
+              "timestamp": "06:41"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

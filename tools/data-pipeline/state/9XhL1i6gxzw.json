@@ -1,0 +1,110 @@
+{
+  "videoId": "9XhL1i6gxzw",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/9XhL1i6gxzw",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T13:35:22.455017+00:00",
+    "rawResponse": "{\n  \"title\": \"훈제오리 덮밥\",\n  \"description\": \"5분 완성\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"훈제오리 100g\",\n      \"displayName\": \"훈제오리\",\n      \"amount\": \"100\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"훈제오리 100g\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 1공기\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 1공기\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쌈장 1스푼\",\n      \"displayName\": \"쌈장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쌈장 1스푼\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 약간\",\n      \"displayName\": \"대파\",\n      \"amount\": \"약간\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 약간\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬 달궈서 훈제오리 노릇하게 구워요.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1 팬 달궈서 훈제오리 노릇하게 구워요.\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"쌈장 1스푼 + 대파 송송~ 얹으면 끝!\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"2 쌈장 1스푼 + 대파 송송~ 얹으면 끝!\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "훈제오리 덮밥",
+      "description": "5분 완성",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "훈제오리 100g",
+          "displayName": "훈제오리",
+          "amount": "100",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "훈제오리 100g",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "밥 1공기",
+          "displayName": "밥",
+          "amount": "1",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 1공기",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "쌈장 1스푼",
+          "displayName": "쌈장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쌈장 1스푼",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "대파 약간",
+          "displayName": "대파",
+          "amount": "약간",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 약간",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬 달궈서 훈제오리 노릇하게 구워요.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1 팬 달궈서 훈제오리 노릇하게 구워요.",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "쌈장 1스푼 + 대파 송송~ 얹으면 끝!",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "2 쌈장 1스푼 + 대파 송송~ 얹으면 끝!",
+              "timestamp": "00:00"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  },
+  "agentReviewNote": "Applied from the saved Gemini extraction; all required ingredients were mapped under V3 recipe-local rules. Deterministic dataset importer validation passed and DB sync completed."
+}

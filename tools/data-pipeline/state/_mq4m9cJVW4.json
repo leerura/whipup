@@ -1,0 +1,540 @@
+{
+  "videoId": "_mq4m9cJVW4",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/_mq4m9cJVW4",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T10:00:13.310509+00:00",
+    "rawResponse": "{\n  \"title\": \"마파두부\",\n  \"description\": null,\n  \"servings\": \"4인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"두부 1모(큰사이즈 550g)\",\n      \"displayName\": \"두부\",\n      \"amount\": \"1\",\n      \"unit\": \"모\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"재료(4인분):두부 1모(큰사이즈 550g)\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"제가 구입한 두부는 한 모가 큰 사이즈로 550g입니다\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돼지고기 갈은거 200g\",\n      \"displayName\": \"돼지고기 갈은거\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"돼지고기 갈은거 200g\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"돼지고기 갈은 것으로 200g 준비하시고요\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/2개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/2개\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진파 5T\",\n      \"displayName\": \"다진파\",\n      \"amount\": \"5\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진파 5T\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 4개(생략가능)\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"4\",\n      \"unit\": \"개\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 4개(생략가능)\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"매운 거 싫어하시는 분들 청양고추 생략 가능합니다\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 2T\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"2\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 2T\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그릇에 다진 마늘 두 숟가락\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 2T\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"2\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 2T\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 두 숟가락을 넣고\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1T반\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1.5\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1T반\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 한 숟가락 반\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"된장 2/3T\",\n      \"displayName\": \"된장\",\n      \"amount\": \"2/3\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"된장 2/3T\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"된장은 3분의 2숟가락\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 3T\",\n      \"displayName\": \"간장\",\n      \"amount\": \"3\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 3T\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 세 숟가락\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"미림 2T\",\n      \"displayName\": \"미림\",\n      \"amount\": \"2\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"미림 2T\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"미림 두 숟가락\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1T+1/3T\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1+1/3\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1T+1/3T\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕은 한 숟가락 하고 3분의 1숟가락\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돼지고기 밑간: 후춧가루 소량\",\n      \"displayName\": \"후춧가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"*돼지고기 밑간: 후춧가루 소량\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후춧가루 소량 넣으시고요\",\n          \"timestamp\": \"01:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돼지고기 밑간: 미림 1T\",\n      \"displayName\": \"미림\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"미림 1T\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"미림 한 숟가락\",\n          \"timestamp\": \"01:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돼지고기 밑간: 참기름 1T\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1T\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름 한 숟가락\",\n          \"timestamp\": \"01:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돼지고기 밑간: 고운소금 소량\",\n      \"displayName\": \"고운소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고운소금 소량\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고운 소금 소량 완두콩알만큼 넣고요\",\n          \"timestamp\": \"01:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"전분물: 물 4T\",\n      \"displayName\": \"물\",\n      \"amount\": \"4\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"*전분물: 물 4T\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그릇에 물 네 숟가락 넣고요\",\n          \"timestamp\": \"01:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"전분물: 감자전분가루 2T\",\n      \"displayName\": \"감자전분가루\",\n      \"amount\": \"2\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"감자전분가루 2T\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"전분 가루 두 숟가락을 넣고 골고루 섞어 줍니다 저는 감자 전분을 사용했습니다\",\n          \"timestamp\": \"01:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 3T\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"3\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 3T\",\n          \"timestamp\": \"01:49\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식용유 세 숟가락을 넣어 줍니다\",\n          \"timestamp\": \"01:55\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 300ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"300\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 300ml\",\n          \"timestamp\": \"02:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 300ml를 넣어 준 후\",\n          \"timestamp\": \"02:11\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"그릇에 다진마늘 2T, 미림 2T, 간장 3T, 고춧가루 1T반, 설탕 1T+1/3T, 된장 2/3T, 고추장 2T를 섞어 소스를 만들어 둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"그릇에 다진마늘2T. 미림2T. 간장3T. 고춧가루1T반. 설탕1T+1/3T. 된장2/3T. 고추장2T를 섞어 소스만들기\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"제일 먼저 소스를 만들어 숙성시켜 줍니다. 그릇에 다진 마늘 두 숟가락, 미림 두 숟가락, 간장 세 숟가락, 고춧가루 한 숟가락 반, 설탕은 한 숟가락 하고 3분의 1숟가락, 된장은 3분의 2숟가락, 고추장 두 숟가락을 넣고 골고루 섞어 소스를 만들어 줍니다.\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 1/2개는 굵게 다지고, 청양고추 4개는 총총 다지며, 두부는 1.5cm 두께로 깍두기 모양으로 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파1/2개 굵게 다지고~ 청양고추4개 총총 다지고~ 두부는 1.5cm 두께로 깍두기 모양으로 썰기\",\n          \"timestamp\": \"01:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 반 개는 조금 두껍게 다져 줍니다. 청양고추 네 개는 총총 다져 줍니다. 두부는 깍두기 모양으로 썰어 주는데요 사방 1.5cm 정도의 길이로 썰어 주시면 됩니다.\",\n          \"timestamp\": \"01:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 물 4T와 감자전분가루 2T를 섞어 전분물을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"그릇에 물4T와 감자전분가루2T를 섞어 전분물을 만들어줍니다~\",\n          \"timestamp\": \"01:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"전분 가루를 물에 섞어 전분물을 만들어 줍니다. 그릇에 물 네 숟가락 넣고요 전분 가루 두 숟가락을 넣고 골고루 섞어 줍니다.\",\n          \"timestamp\": \"01:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"키친타올로 핏기를 뺀 간 돼지고기를 볶음팬에 넣고 후춧가루 소량, 미림 1T, 참기름 1T, 고운소금 소량(완두콩알만큼)을 넣고 버무려 밑간한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"핏기뺀 돼지고기를 볶음팬에 넣고 후춧가루소량. 미림1T. 참기름1T. 고운소금소량(완두콩만큼) 넣고 밑간하기\",\n          \"timestamp\": \"01:32\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"돼지고기 갈은 것은 키친타월 위에 올려 핏기를 제거하시고요 볶음팬에 넣어 줍니다. 여기에 후춧가루 소량 넣으시고요 미림 한 숟가락 참기름 한 숟가락 고운 소금 소량 완두콩알만큼 넣고요 버무려 밑간을 해 줍니다.\",\n          \"timestamp\": \"01:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밑간한 돼지고기에 다진 양파, 다진 파 5T, 식용유 3T를 넣고 센 불로 켠 후 팬이 달아오르면 중불로 줄여 돼지고기가 익을 때까지 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밑간한 돼지고기에 다진양파. 다진파5T. 식용유3T넣고 센불로 켠후~ 달아오르면 중불로 줄여 볶아줍니다~\",\n          \"timestamp\": \"01:49\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밑간한 돼지고기에 다진 양파 다진 파 다섯 숟가락 넣고요 식용유 세 숟가락을 넣어 줍니다. 센 불로 켜시고요 달아오르면 중불로 줄여 달달 볶아줍니다. 돼지고기가 익을 때까지 달달 볶아줍니다.\",\n          \"timestamp\": \"01:50\"\n        }\n      ]\n    },\n    {\n      \"text\": \"돼지고기가 익으면 다져놓은 청양고추, 물 300ml, 준비한 소스를 넣고 센 불로 켠다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"돼지고기가 익으면 다져놓은 청양고추 넣고 물300ml와 준비한 소스를 넣고 센불로 켜줍니다~\",\n          \"timestamp\": \"02:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"돼지고기가 익으면 다져 놓은 청양고추를 넣으시고요 물 300ml를 넣어 준 후 준비한 소스를 넣어 줍니다. 소스를 넣고 센 불로 켜시고요\",\n          \"timestamp\": \"02:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소스가 바글바글 끓어오르면 두부를 넣고 으깨지지 않게 살살 저어준 뒤 양념이 잘 배이도록 1~2분 정도 조린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소스가 바글바글 끓어오르면 두부를 넣고 살살 두부가 으깨지지 않게 저어준후 두부에 양념이 잘 베이게 1~2분정도 조림을 하다가\",\n          \"timestamp\": \"02:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소스가 바글바글 끓어오르면 두부를 넣어 줍니다. 두부를 넣어 준 후에는 살살 두부가 으깨지지 않게 저어준 후 두부에 양념이 잘 밸 정도로 1분에서 2분 정도 조림을 하다가\",\n          \"timestamp\": \"02:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"준비한 전분물을 골고루 섞어 부어준 후, 주걱으로 살살 저어주면서 국물이 걸쭉해지면 불을 끄고 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"준비한 전분물을 골고루 섞어 부어준후~ 주걱으로 저어주면서 국물이 걸죽해지면 완성입니다~\",\n          \"timestamp\": \"02:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"준비한 전분물을 골고루 섞어 부어줍니다. 전분물을 부어준 후 주걱으로 살살 저어 주시고요 국물이 걸쭉해지면 완성인데요 마지막에 간을 보셔서 부족한 양념 추가하시면 됩니다.\",\n          \"timestamp\": \"02:30\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "마파두부",
+      "description": null,
+      "servings": "4인분",
+      "ingredients": [
+        {
+          "rawText": "두부 1모(큰사이즈 550g)",
+          "displayName": "두부",
+          "amount": "1",
+          "unit": "모",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "재료(4인분):두부 1모(큰사이즈 550g)",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "제가 구입한 두부는 한 모가 큰 사이즈로 550g입니다",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "돼지고기 갈은거 200g",
+          "displayName": "돼지고기 갈은거",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "돼지고기 갈은거 200g",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "돼지고기 갈은 것으로 200g 준비하시고요",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "양파 1/2개",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/2개",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "다진파 5T",
+          "displayName": "다진파",
+          "amount": "5",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진파 5T",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "청양고추 4개(생략가능)",
+          "displayName": "청양고추",
+          "amount": "4",
+          "unit": "개",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 4개(생략가능)",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "매운 거 싫어하시는 분들 청양고추 생략 가능합니다",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "다진마늘 2T",
+          "displayName": "다진마늘",
+          "amount": "2",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 2T",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그릇에 다진 마늘 두 숟가락",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "고추장 2T",
+          "displayName": "고추장",
+          "amount": "2",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 2T",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장 두 숟가락을 넣고",
+              "timestamp": "00:53"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "고춧가루 1T반",
+          "displayName": "고춧가루",
+          "amount": "1.5",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1T반",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 한 숟가락 반",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "된장 2/3T",
+          "displayName": "된장",
+          "amount": "2/3",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "된장 2/3T",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "된장은 3분의 2숟가락",
+              "timestamp": "00:50"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "간장 3T",
+          "displayName": "간장",
+          "amount": "3",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 3T",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장 세 숟가락",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "미림 2T",
+          "displayName": "미림",
+          "amount": "2",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "미림 2T",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "미림 두 숟가락",
+              "timestamp": "00:43"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "설탕 1T+1/3T",
+          "displayName": "설탕",
+          "amount": "1+1/3",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1T+1/3T",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕은 한 숟가락 하고 3분의 1숟가락",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "돼지고기 밑간: 후춧가루 소량",
+          "displayName": "후춧가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "*돼지고기 밑간: 후춧가루 소량",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후춧가루 소량 넣으시고요",
+              "timestamp": "01:37"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "돼지고기 밑간: 미림 1T",
+          "displayName": "미림",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "미림 1T",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "미림 한 숟가락",
+              "timestamp": "01:39"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "돼지고기 밑간: 참기름 1T",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1T",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름 한 숟가락",
+              "timestamp": "01:40"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "돼지고기 밑간: 고운소금 소량",
+          "displayName": "고운소금",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고운소금 소량",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고운 소금 소량 완두콩알만큼 넣고요",
+              "timestamp": "01:41"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "전분물: 물 4T",
+          "displayName": "물",
+          "amount": "4",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "*전분물: 물 4T",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그릇에 물 네 숟가락 넣고요",
+              "timestamp": "01:23"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        },
+        {
+          "rawText": "전분물: 감자전분가루 2T",
+          "displayName": "감자전분가루",
+          "amount": "2",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "감자전분가루 2T",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "전분 가루 두 숟가락을 넣고 골고루 섞어 줍니다 저는 감자 전분을 사용했습니다",
+              "timestamp": "01:25"
+            }
+          ],
+          "sourceId": "ingredient-18"
+        },
+        {
+          "rawText": "식용유 3T",
+          "displayName": "식용유",
+          "amount": "3",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 3T",
+              "timestamp": "01:49"
+            },
+            {
+              "type": "SPEECH",
+              "text": "식용유 세 숟가락을 넣어 줍니다",
+              "timestamp": "01:55"
+            }
+          ],
+          "sourceId": "ingredient-19"
+        },
+        {
+          "rawText": "물 300ml",
+          "displayName": "물",
+          "amount": "300",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 300ml",
+              "timestamp": "02:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 300ml를 넣어 준 후",
+              "timestamp": "02:11"
+            }
+          ],
+          "sourceId": "ingredient-20"
+        }
+      ],
+      "steps": [
+        {
+          "text": "그릇에 다진마늘 2T, 미림 2T, 간장 3T, 고춧가루 1T반, 설탕 1T+1/3T, 된장 2/3T, 고추장 2T를 섞어 소스를 만들어 둔다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "그릇에 다진마늘2T. 미림2T. 간장3T. 고춧가루1T반. 설탕1T+1/3T. 된장2/3T. 고추장2T를 섞어 소스만들기",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SPEECH",
+              "text": "제일 먼저 소스를 만들어 숙성시켜 줍니다. 그릇에 다진 마늘 두 숟가락, 미림 두 숟가락, 간장 세 숟가락, 고춧가루 한 숟가락 반, 설탕은 한 숟가락 하고 3분의 1숟가락, 된장은 3분의 2숟가락, 고추장 두 숟가락을 넣고 골고루 섞어 소스를 만들어 줍니다.",
+              "timestamp": "00:38"
+            }
+          ]
+        },
+        {
+          "text": "양파 1/2개는 굵게 다지고, 청양고추 4개는 총총 다지며, 두부는 1.5cm 두께로 깍두기 모양으로 썬다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파1/2개 굵게 다지고~ 청양고추4개 총총 다지고~ 두부는 1.5cm 두께로 깍두기 모양으로 썰기",
+              "timestamp": "01:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파 반 개는 조금 두껍게 다져 줍니다. 청양고추 네 개는 총총 다져 줍니다. 두부는 깍두기 모양으로 썰어 주는데요 사방 1.5cm 정도의 길이로 썰어 주시면 됩니다.",
+              "timestamp": "01:03"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 물 4T와 감자전분가루 2T를 섞어 전분물을 만든다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "그릇에 물4T와 감자전분가루2T를 섞어 전분물을 만들어줍니다~",
+              "timestamp": "01:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "전분 가루를 물에 섞어 전분물을 만들어 줍니다. 그릇에 물 네 숟가락 넣고요 전분 가루 두 숟가락을 넣고 골고루 섞어 줍니다.",
+              "timestamp": "01:19"
+            }
+          ]
+        },
+        {
+          "text": "키친타올로 핏기를 뺀 간 돼지고기를 볶음팬에 넣고 후춧가루 소량, 미림 1T, 참기름 1T, 고운소금 소량(완두콩알만큼)을 넣고 버무려 밑간한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "핏기뺀 돼지고기를 볶음팬에 넣고 후춧가루소량. 미림1T. 참기름1T. 고운소금소량(완두콩만큼) 넣고 밑간하기",
+              "timestamp": "01:32"
+            },
+            {
+              "type": "SPEECH",
+              "text": "돼지고기 갈은 것은 키친타월 위에 올려 핏기를 제거하시고요 볶음팬에 넣어 줍니다. 여기에 후춧가루 소량 넣으시고요 미림 한 숟가락 참기름 한 숟가락 고운 소금 소량 완두콩알만큼 넣고요 버무려 밑간을 해 줍니다.",
+              "timestamp": "01:31"
+            }
+          ]
+        },
+        {
+          "text": "밑간한 돼지고기에 다진 양파, 다진 파 5T, 식용유 3T를 넣고 센 불로 켠 후 팬이 달아오르면 중불로 줄여 돼지고기가 익을 때까지 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밑간한 돼지고기에 다진양파. 다진파5T. 식용유3T넣고 센불로 켠후~ 달아오르면 중불로 줄여 볶아줍니다~",
+              "timestamp": "01:49"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밑간한 돼지고기에 다진 양파 다진 파 다섯 숟가락 넣고요 식용유 세 숟가락을 넣어 줍니다. 센 불로 켜시고요 달아오르면 중불로 줄여 달달 볶아줍니다. 돼지고기가 익을 때까지 달달 볶아줍니다.",
+              "timestamp": "01:50"
+            }
+          ]
+        },
+        {
+          "text": "돼지고기가 익으면 다져놓은 청양고추, 물 300ml, 준비한 소스를 넣고 센 불로 켠다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "돼지고기가 익으면 다져놓은 청양고추 넣고 물300ml와 준비한 소스를 넣고 센불로 켜줍니다~",
+              "timestamp": "02:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "돼지고기가 익으면 다져 놓은 청양고추를 넣으시고요 물 300ml를 넣어 준 후 준비한 소스를 넣어 줍니다. 소스를 넣고 센 불로 켜시고요",
+              "timestamp": "02:07"
+            }
+          ]
+        },
+        {
+          "text": "소스가 바글바글 끓어오르면 두부를 넣고 으깨지지 않게 살살 저어준 뒤 양념이 잘 배이도록 1~2분 정도 조린다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소스가 바글바글 끓어오르면 두부를 넣고 살살 두부가 으깨지지 않게 저어준후 두부에 양념이 잘 베이게 1~2분정도 조림을 하다가",
+              "timestamp": "02:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소스가 바글바글 끓어오르면 두부를 넣어 줍니다. 두부를 넣어 준 후에는 살살 두부가 으깨지지 않게 저어준 후 두부에 양념이 잘 밸 정도로 1분에서 2분 정도 조림을 하다가",
+              "timestamp": "02:17"
+            }
+          ]
+        },
+        {
+          "text": "준비한 전분물을 골고루 섞어 부어준 후, 주걱으로 살살 저어주면서 국물이 걸쭉해지면 불을 끄고 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "준비한 전분물을 골고루 섞어 부어준후~ 주걱으로 저어주면서 국물이 걸죽해지면 완성입니다~",
+              "timestamp": "02:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "준비한 전분물을 골고루 섞어 부어줍니다. 전분물을 부어준 후 주걱으로 살살 저어 주시고요 국물이 걸쭉해지면 완성인데요 마지막에 간을 보셔서 부족한 양념 추가하시면 됩니다.",
+              "timestamp": "02:30"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

@@ -1,0 +1,403 @@
+{
+  "videoId": "YvLO1jdMfis",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/YvLO1jdMfis",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:16:54.680532+00:00",
+    "rawResponse": "{\n  \"title\": \"두반장 없이도 파는 맛 나는 마파두부\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"두부\",\n      \"displayName\": \"두부\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"두부는 먹기 좋게 잘라주고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Cutting a block of tofu into bite-sized cubes\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 2스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 2스푼\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"된장 1스푼\",\n      \"displayName\": \"된장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"된장 1스푼\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 2스푼\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 2스푼\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 2스푼\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 2스푼\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1스푼\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1스푼\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 2스푼\",\n      \"displayName\": \"간장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 2스푼\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"알룰로스 2스푼\",\n      \"displayName\": \"알룰로스\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"알룰로스 2스푼\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름 충분히\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬에 기름 충분히 둘러\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진대파 반개\",\n      \"displayName\": \"다진 대파\",\n      \"amount\": \"0.5\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진대파 반개\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 반스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘 반스푼\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돼지고기 다짐육 200g\",\n      \"displayName\": \"돼지고기 다짐육\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"돼지고기 다짐육 200g\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진양파 반개\",\n      \"displayName\": \"다진 양파\",\n      \"amount\": \"0.5\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진양파 반개\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 300ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"300\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 물 300ml 넣고\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 취향껏\",\n      \"displayName\": \"청양고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"청양고추 취향껏 넣어줍니다\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"전분물\",\n      \"displayName\": \"전분물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"전분물 잘 섞어서 부어주고\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고소한 참기름\",\n      \"displayName\": \"참기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고소한 참기름과 통깨 뿌려 마무리해줍니다\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고소한 참기름과 통깨 뿌려 마무리해줍니다\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"두부는 먹기 좋은 크기로 깍둑썰기해 줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"두부는 먹기 좋게 잘라주고\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고춧가루 2스푼, 된장 1스푼, 고추장 2스푼, 맛술 2스푼, 굴소스 1스푼, 간장 2스푼, 알룰로스 2스푼을 섞어 양념 소스를 만들어 줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 2스푼 된장 1스푼 고추장 2스푼 맛술 2스푼 굴소스 1스푼 간장 2스푼 알룰로스 2스푼\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"두반장 없이도 맛있는 소스는 이렇게만 만들어보세요\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 기름을 충분히 두르고 다진 대파 1/2개, 다진 마늘 1/2스푼을 넣어 파기름을 내줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬에 기름 충분히 둘러 다진대파 반개, 다진마늘 반스푼 넣어 파기름 내줍니다\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"돼지고기 다짐육 200g과 다진 양파 1/2개를 넣고 함께 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"돼지고기 다짐육 200g, 다진양파 반개 넣어서 볶아주다가\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"만들어둔 양념을 함께 넣고 볶아 장의 텁텁함을 줄여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"아까 만들어둔 양념도 같이 넣어서 볶아주면 장의 텁텁함이 줄어듭니다\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 300ml를 붓고 끓여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 물 300ml 넣고\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물이 끓기 시작하면 썰어둔 두부와 취향에 따라 청양고추를 넣어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"끓기 시작하면 두부와 청양고추 취향껏 넣어줍니다\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"전분물을 잘 섞어서 부어 농도를 맞춰줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"전분물 잘 섞어서 부어주고\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마파두부가 걸쭉해지면 참기름을 두르고 통깨를 뿌려 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마파두부가 걸쭉해지면 고소한 참기름과 통깨 뿌려 마무리해줍니다\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"Specific quantity or weight of tofu was not stated (visually one standard block).\",\n    \"Specific ratio of starch and water in the cornstarch slurry (전분물) was not stated.\"\n  ]\n}",
+    "result": {
+      "title": "두반장 없이도 파는 맛 나는 마파두부",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "두부",
+          "displayName": "두부",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "두부는 먹기 좋게 잘라주고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Cutting a block of tofu into bite-sized cubes",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "고춧가루 2스푼",
+          "displayName": "고춧가루",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 2스푼",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "된장 1스푼",
+          "displayName": "된장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "된장 1스푼",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "고추장 2스푼",
+          "displayName": "고추장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 2스푼",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "맛술 2스푼",
+          "displayName": "맛술",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 2스푼",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "굴소스 1스푼",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1스푼",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "간장 2스푼",
+          "displayName": "간장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 2스푼",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "알룰로스 2스푼",
+          "displayName": "알룰로스",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "알룰로스 2스푼",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "기름 충분히",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "팬에 기름 충분히 둘러",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "다진대파 반개",
+          "displayName": "다진 대파",
+          "amount": "0.5",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다진대파 반개",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "다진마늘 반스푼",
+          "displayName": "다진 마늘",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘 반스푼",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "돼지고기 다짐육 200g",
+          "displayName": "돼지고기 다짐육",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "돼지고기 다짐육 200g",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "다진양파 반개",
+          "displayName": "다진 양파",
+          "amount": "0.5",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다진양파 반개",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "물 300ml",
+          "displayName": "물",
+          "amount": "300",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 물 300ml 넣고",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "청양고추 취향껏",
+          "displayName": "청양고추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "청양고추 취향껏 넣어줍니다",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "전분물",
+          "displayName": "전분물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "전분물 잘 섞어서 부어주고",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "고소한 참기름",
+          "displayName": "참기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고소한 참기름과 통깨 뿌려 마무리해줍니다",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고소한 참기름과 통깨 뿌려 마무리해줍니다",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-18"
+        }
+      ],
+      "steps": [
+        {
+          "text": "두부는 먹기 좋은 크기로 깍둑썰기해 줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "두부는 먹기 좋게 잘라주고",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "고춧가루 2스푼, 된장 1스푼, 고추장 2스푼, 맛술 2스푼, 굴소스 1스푼, 간장 2스푼, 알룰로스 2스푼을 섞어 양념 소스를 만들어 줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 2스푼 된장 1스푼 고추장 2스푼 맛술 2스푼 굴소스 1스푼 간장 2스푼 알룰로스 2스푼",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "두반장 없이도 맛있는 소스는 이렇게만 만들어보세요",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "팬에 기름을 충분히 두르고 다진 대파 1/2개, 다진 마늘 1/2스푼을 넣어 파기름을 내줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "팬에 기름 충분히 둘러 다진대파 반개, 다진마늘 반스푼 넣어 파기름 내줍니다",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "돼지고기 다짐육 200g과 다진 양파 1/2개를 넣고 함께 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "돼지고기 다짐육 200g, 다진양파 반개 넣어서 볶아주다가",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "만들어둔 양념을 함께 넣고 볶아 장의 텁텁함을 줄여줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "아까 만들어둔 양념도 같이 넣어서 볶아주면 장의 텁텁함이 줄어듭니다",
+              "timestamp": "00:19"
+            }
+          ]
+        },
+        {
+          "text": "물 300ml를 붓고 끓여줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 물 300ml 넣고",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "물이 끓기 시작하면 썰어둔 두부와 취향에 따라 청양고추를 넣어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "끓기 시작하면 두부와 청양고추 취향껏 넣어줍니다",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "전분물을 잘 섞어서 부어 농도를 맞춰줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "전분물 잘 섞어서 부어주고",
+              "timestamp": "00:29"
+            }
+          ]
+        },
+        {
+          "text": "마파두부가 걸쭉해지면 참기름을 두르고 통깨를 뿌려 완성합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마파두부가 걸쭉해지면 고소한 참기름과 통깨 뿌려 마무리해줍니다",
+              "timestamp": "00:31"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "Specific quantity or weight of tofu was not stated (visually one standard block).",
+        "Specific ratio of starch and water in the cornstarch slurry (전분물) was not stated."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

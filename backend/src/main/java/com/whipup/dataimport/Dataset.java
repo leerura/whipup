@@ -15,7 +15,7 @@ public record Dataset(List<IngredientData> ingredients, List<RecipeData> recipes
         }
     }
 
-    public record VariantData(String key, String name, boolean base, List<String> aliases) {
+    public record VariantData(String key, String name, List<String> aliases) {
         public VariantData {
             aliases = List.copyOf(aliases);
         }
@@ -28,10 +28,19 @@ public record Dataset(List<IngredientData> ingredients, List<RecipeData> recipes
         String name,
         String status,
         String shortsReference,
+        String sourceTitle,
+        String sourceChannelName,
+        String sourceChannelId,
+        java.time.OffsetDateTime sourceMetadataFetchedAt,
         List<RecipeIngredientData> ingredients,
         List<RequirementData> requirements,
         List<String> steps
     ) {
+        public RecipeData(String key, String name, String status, String shortsReference,
+                List<RecipeIngredientData> ingredients, List<RequirementData> requirements, List<String> steps) {
+            this(key, name, status, shortsReference, null, null, null, null, ingredients, requirements, steps);
+        }
+
         public RecipeData {
             ingredients = List.copyOf(ingredients);
             requirements = List.copyOf(requirements);
@@ -40,8 +49,13 @@ public record Dataset(List<IngredientData> ingredients, List<RecipeData> recipes
     }
 
     public record RecipeIngredientData(
-        String key, String variant, String displayName, String rawText, String amount, String unit, boolean optional
-    ) { }
+        String key, String variant, List<String> acceptedOwnedVariants,
+        String displayName, String rawText, String amount, String unit, boolean optional
+    ) {
+        public RecipeIngredientData {
+            acceptedOwnedVariants = List.copyOf(acceptedOwnedVariants);
+        }
+    }
 
     public record RequirementData(List<RequirementOptionData> options) {
         public RequirementData {

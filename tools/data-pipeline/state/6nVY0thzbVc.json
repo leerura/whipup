@@ -1,0 +1,297 @@
+{
+  "videoId": "6nVY0thzbVc",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/6nVY0thzbVc",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:30:42.710692+00:00",
+    "rawResponse": "{\n  \"title\": \"계란 김국수\",\n  \"description\": null,\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"소면 1인분\",\n      \"displayName\": \"소면\",\n      \"amount\": \"1\",\n      \"unit\": \"인분\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소면 1인분은\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소면 일인분은 삼사분간 삶아 준비해 주시고\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 500ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"500\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 500ml에\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 오백미리에\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"코인육수 한 알\",\n      \"displayName\": \"코인육수\",\n      \"amount\": \"1\",\n      \"unit\": \"알\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"코인육수 한 알\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"코인육수 한 알\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 한 스푼\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 한 스푼\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘 한 스푼\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"국간장 한 스푼\",\n      \"displayName\": \"국간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장 한 스푼\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국간장 한 스푼\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"조미김 한 봉지\",\n      \"displayName\": \"조미김\",\n      \"amount\": \"1\",\n      \"unit\": \"봉지\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"조미김 한 봉지 부숴 넣어주세요\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"조미김 한 봉지 부숴 넣어주세요\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 한 알\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"알\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 한 알은 휘휘 풀어넣어\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 한 알은 휘휘 풀어 넣어\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 톡톡\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 톡톡\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금 톡톡\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"송송 썬 대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"송송 썬 대파까지 넣어\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"송송 썬 대파까지 넣어\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"소면 1인분을 끓는 물에 3~4분간 삶아 건져둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소면 1인분은 3-4분간 삶아 준비해 주시고,\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소면 일인분은 삼사분간 삶아 준비해 주시고\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 물 500ml를 붓고 코인육수 한 알, 다진마늘 한 스푼, 국간장 한 스푼을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 500ml에 코인육수 한 알 다진마늘 한 스푼 국간장 한 스푼\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 오백미리에 코인육수 한 알, 다진마늘 한 스푼, 국간장 한 스푼\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"조미김 한 봉지를 부숴 넣고 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"조미김 한 봉지 부숴 넣어주세요\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"조미김 한 봉지 부숴 넣어주세요\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 한 알을 풀어서 국물에 두르고 젓지 않은 채로 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 한 알은 휘휘 풀어넣어 젓지 않고 익혀주세요\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 한 알은 휘휘 풀어 넣어 젓지 않고 익혀주세요\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소금을 톡톡 뿌리고 송송 썬 대파를 넣어 함께 익혀 육수를 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 톡톡 송송 썬 대파까지 넣어 익혀주면 완성입니다 !\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금 톡톡 송송 썬 대파까지 넣어 익혀주면 완성입니다\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"준비해 둔 삶은 소면 위에 끓인 국물과 건더기를 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 담긴 소면 위로 완성된 국물과 계란, 김, 대파 건더기를 붓는 장면\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"완성된 요리 위에 통깨가 뿌려져 있고 김치와 함께 먹는 장면이 나오나, 음성이나 자막으로 재료 언급은 없음\"\n  ]\n}",
+    "result": {
+      "title": "계란 김국수",
+      "description": null,
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "소면 1인분",
+          "displayName": "소면",
+          "amount": "1",
+          "unit": "인분",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소면 1인분은",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소면 일인분은 삼사분간 삶아 준비해 주시고",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "물 500ml",
+          "displayName": "물",
+          "amount": "500",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 500ml에",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 오백미리에",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "코인육수 한 알",
+          "displayName": "코인육수",
+          "amount": "1",
+          "unit": "알",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "코인육수 한 알",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "코인육수 한 알",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "다진마늘 한 스푼",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 한 스푼",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진마늘 한 스푼",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "국간장 한 스푼",
+          "displayName": "국간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장 한 스푼",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "국간장 한 스푼",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "조미김 한 봉지",
+          "displayName": "조미김",
+          "amount": "1",
+          "unit": "봉지",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "조미김 한 봉지 부숴 넣어주세요",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "조미김 한 봉지 부숴 넣어주세요",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "계란 한 알",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "알",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 한 알은 휘휘 풀어넣어",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란 한 알은 휘휘 풀어 넣어",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "소금 톡톡",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 톡톡",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소금 톡톡",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "송송 썬 대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "송송 썬 대파까지 넣어",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SPEECH",
+              "text": "송송 썬 대파까지 넣어",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "소면 1인분을 끓는 물에 3~4분간 삶아 건져둔다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소면 1인분은 3-4분간 삶아 준비해 주시고,",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소면 일인분은 삼사분간 삶아 준비해 주시고",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 물 500ml를 붓고 코인육수 한 알, 다진마늘 한 스푼, 국간장 한 스푼을 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 500ml에 코인육수 한 알 다진마늘 한 스푼 국간장 한 스푼",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 오백미리에 코인육수 한 알, 다진마늘 한 스푼, 국간장 한 스푼",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "조미김 한 봉지를 부숴 넣고 끓인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "조미김 한 봉지 부숴 넣어주세요",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "조미김 한 봉지 부숴 넣어주세요",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "계란 한 알을 풀어서 국물에 두르고 젓지 않은 채로 익힌다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 한 알은 휘휘 풀어넣어 젓지 않고 익혀주세요",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란 한 알은 휘휘 풀어 넣어 젓지 않고 익혀주세요",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "소금을 톡톡 뿌리고 송송 썬 대파를 넣어 함께 익혀 육수를 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 톡톡 송송 썬 대파까지 넣어 익혀주면 완성입니다 !",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소금 톡톡 송송 썬 대파까지 넣어 익혀주면 완성입니다",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "준비해 둔 삶은 소면 위에 끓인 국물과 건더기를 붓는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 담긴 소면 위로 완성된 국물과 계란, 김, 대파 건더기를 붓는 장면",
+              "timestamp": "00:00"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "완성된 요리 위에 통깨가 뿌려져 있고 김치와 함께 먹는 장면이 나오나, 음성이나 자막으로 재료 언급은 없음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

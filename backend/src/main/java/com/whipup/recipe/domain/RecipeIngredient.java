@@ -10,6 +10,10 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.ManyToMany;
+import jakarta.persistence.JoinTable;
+import java.util.ArrayList;
+import java.util.List;
 import jakarta.persistence.Table;
 
 @Entity
@@ -28,6 +32,14 @@ public class RecipeIngredient {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "ingredient_variant_id")
     private IngredientVariant ingredientVariant;
+
+    @ManyToMany
+    @JoinTable(
+        name = "recipe_ingredient_accepted_variant",
+        joinColumns = @JoinColumn(name = "recipe_ingredient_id"),
+        inverseJoinColumns = @JoinColumn(name = "ingredient_variant_id")
+    )
+    private List<IngredientVariant> acceptedOwnedVariants = new ArrayList<>();
 
     @Column(name = "display_name", nullable = false)
     private String displayName;
@@ -50,6 +62,7 @@ public class RecipeIngredient {
 
     public static RecipeIngredient create(
         IngredientVariant ingredientVariant,
+        List<IngredientVariant> acceptedOwnedVariants,
         String displayName,
         String rawText,
         String amount,
@@ -59,6 +72,7 @@ public class RecipeIngredient {
     ) {
         RecipeIngredient recipeIngredient = new RecipeIngredient();
         recipeIngredient.ingredientVariant = ingredientVariant;
+        recipeIngredient.acceptedOwnedVariants.addAll(acceptedOwnedVariants);
         recipeIngredient.displayName = displayName;
         recipeIngredient.rawText = rawText;
         recipeIngredient.amount = amount;
@@ -76,7 +90,7 @@ public class RecipeIngredient {
         String unit,
         int displayOrder
     ) {
-        return create(null, displayName, rawText, amount, unit, displayOrder, false);
+        return create(null, List.of(), displayName, rawText, amount, unit, displayOrder, false);
     }
 
     void assignRecipe(Recipe recipe) {
@@ -93,6 +107,10 @@ public class RecipeIngredient {
 
     public IngredientVariant getIngredientVariant() {
         return ingredientVariant;
+    }
+
+    public List<IngredientVariant> getAcceptedOwnedVariants() {
+        return acceptedOwnedVariants;
     }
 
     public String getDisplayName() {

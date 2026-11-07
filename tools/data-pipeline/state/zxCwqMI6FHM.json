@@ -1,0 +1,470 @@
+{
+  "videoId": "zxCwqMI6FHM",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/zxCwqMI6FHM",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:43:20.740037+00:00",
+    "rawResponse": "{\n  \"title\": \"김치볶음밥\",\n  \"description\": null,\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"신김치 200g\",\n      \"displayName\": \"신김치\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"1인분 기준 김치의 신 신김치를 200g 준비해 주세요\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"(1인분 기준)신김치 200g을 준비해 주세요.\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통조림햄(스팸) 50g\",\n      \"displayName\": \"통조림햄(스팸)\",\n      \"amount\": \"50\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"스팸 같은 통조림햄 50g을 준비해서\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"통조림햄(스팸) 50g을 준비해 주세요.\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마가린 1스푼(20g)\",\n      \"displayName\": \"마가린\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마가린 × 1\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마가린 1스푼을 팬에 넣고\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마가린 1스푼(20g)을 팬에 넣어주세요.\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1/2스푼(7g)\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 × 0.5\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 1/2스푼 넣어 주시고요\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 1/2스푼(7g) 넣어주세요.\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"(고운)고춧가루 1/2스푼(4g)\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 × 0.5\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 1/2스푼 넣어 주세요. 고운 고춧가루를 사용해서\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"(고운)고춧가루 1/2스푼(4g) 넣어주세요.\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쇠고기 다시다 1작은스푼\",\n      \"displayName\": \"쇠고기 다시다\",\n      \"amount\": \"1\",\n      \"unit\": \"작은스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다시다 × 1\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소고기 다시다 1작은스푼을 넣어 주세요\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다시다 1작은스푼 넣어주세요.\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"즉석밥 1개 (또는 찬밥 1공기)\",\n      \"displayName\": \"즉석밥\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"전자레인지에 돌리지 않은 즉석밥 1개 또는 찬밥 1공기를 넣어 주세요\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"즉석밥 1개(또는 찬밥 1공기) 넣어주세요.\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1작은스푼\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"작은스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 × 1\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름 1작은스푼만 떨어뜨려 주세요\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불을 끄고 참기름 1작은스푼 넣어주세요.\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란후라이\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란후라이를 반숙으로 만들어 주세요. 이제 계란후라이도 한 개 올려주고\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란후라이를 만들어주세요.\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"달걀 1개를 프라이팬에 깨뜨려 반숙 계란후라이를 만든다\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"통깨까지 솔솔 뿌려주면\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 김치볶음밥과 계란후라이 위에 통깨를 솔솔 뿌린다\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"신김치 200g을 김치 양념이나 국물 없이 줄기 위주로 준비하여 가위로 잘게 잘라준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"가위로 치렁치렁 긴 머리 짧고 단정하게 좀 잘라주시고요. 김치 양념이나 김치 국물은 텁텁한 맛을 낼 수 있으니까 제외하고 아작이는 식감이 좋은 줄기 위주로 준비해 주세요.\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"신김치를 작게 잘라주세요.\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"통조림햄(스팸) 50g을 새끼손가락 손톱 정도 크기로 잘게 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"새끼손가락 손톱 정도의 크기로 작게 썰어주세요.\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"통조림햄(스팸)을 작게 썰어주세요.\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 마가린 1스푼(20g)을 넣고 중불에서 녹여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마가린 1스푼을 팬에 넣고 녹여주세요. 지금부터 불세기는 중불로 조절 유지해 주세요.\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불세기를 중 불로 조정하고 마가린을 녹여주세요.\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마가린이 다 녹으면 썰어둔 신김치를 넣고 중불에서 약 2분간 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마가린이 다 녹았으면 썰어놓았던 김치를 넣고 볶아주세요.\",\n          \"timestamp\": \"00:48\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"신김치를 넣고 볶아주세요.\",\n          \"timestamp\": \"00:50\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"약 2분간 볶아주세요.\",\n          \"timestamp\": \"01:01\"\n        }\n      ]\n    },\n    {\n      \"text\": \"썰어둔 통조림햄, 설탕 1/2스푼(7g), 고운 고춧가루 1/2스푼(4g), 소고기 다시다 1작은스푼을 넣고 잘 섞어가며 중불에서 약 1분간 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"썰어놓았던 통조림 햄을 넣어주세요. 설탕 1/2스푼 넣어 주시고요. 고춧가루 1/2스푼 넣어 주세요. 소고기 다시다 1작은스푼을 넣어 주세요. 이제 잘 섞어서 볶아주세요. 1분 동안만 들들 볶아주세요.\",\n          \"timestamp\": \"01:04\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"통조림햄(스팸)을 넣어주세요.\",\n          \"timestamp\": \"01:04\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"약 1분정도 볶아주세요.\",\n          \"timestamp\": \"01:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"전자레인지에 돌리지 않은 즉석밥 1개(또는 찬밥 1공기)를 넣고, 잠시 불을 끈 뒤 밥과 김치를 골고루 비벼서 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"즉석밥 1개 또는 찬밥 1공기를 넣어 주세요. 타지 않게 잠시 불을 끄고 밥과 김치를 비벼서 잘 섞어주세요.\",\n          \"timestamp\": \"01:39\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불을 잠시 끄고 비벼주세요.\",\n          \"timestamp\": \"01:44\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥을 팬에 평평하게 펴고 불을 켠 뒤 중불에서 1분간 눌려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 고르게 펴주세요. 다시 불을 켜고 중불로 조절해서 1분간 눌러주세요.\",\n          \"timestamp\": \"01:56\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥을 팬에 평평하게 펴주세요.\",\n          \"timestamp\": \"01:54\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불을 켜고 불세기를 중 불로 조절한 후, 1분간 눌려주세요.\",\n          \"timestamp\": \"01:59\"\n        }\n      ]\n    },\n    {\n      \"text\": \"1분 후 전체적으로 섞으면서 약 10초간 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"1분이 지나면 전체적으로 섞으면서 약 10초 정도를 볶아주세요.\",\n          \"timestamp\": \"02:02\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"1분 후, 섞으면서 볶아주세요.\",\n          \"timestamp\": \"02:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"다시 밥을 평평하게 펴서 1분간 한 번 더 눌려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 다시 고르게 펴서 1분 동안 한 번 더 눌러주세요.\",\n          \"timestamp\": \"02:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"한번 더 평평하게 펴서 1분간 눌려주세요.\",\n          \"timestamp\": \"02:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"1분 후 바닥에 눌어붙은 부분까지 잘 섞으면서 약 20초간 볶은 뒤 불을 끈다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"1분이 지난 후에는 팬 바닥에 눌어붙은 볶음밥까지 잘 섞어서 약 20초 정도를 볶은 후에 불을 꺼주세요.\",\n          \"timestamp\": \"02:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"1분 후, 잘 섞으면서 20초간 볶아주세요.\",\n          \"timestamp\": \"02:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 끈 상태에서 참기름 1작은스푼을 둘러 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름 1작은스푼만 떨어뜨려 주세요.\",\n          \"timestamp\": \"02:25\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불을 끄고 참기름 1작은스푼 넣어주세요.\",\n          \"timestamp\": \"02:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 1개로 반숙 계란후라이를 부친다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란후라이를 반숙으로 만들어 주세요.\",\n          \"timestamp\": \"02:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란후라이를 만들어주세요.\",\n          \"timestamp\": \"02:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볶음밥을 접시에 담고 반숙 계란후라이를 올린 뒤 통깨를 솔솔 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치볶음밥을 접시에 옮겨 담은 후에 계란후라이도 한 개 올려주고 통깨까지 솔솔 뿌려주면 완성됩니다.\",\n          \"timestamp\": \"02:20\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"접시에 담긴 볶음밥 위에 계란후라이를 올리고 통깨를 뿌려 완성\",\n          \"timestamp\": \"02:34\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "김치볶음밥",
+      "description": null,
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "신김치 200g",
+          "displayName": "신김치",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "1인분 기준 김치의 신 신김치를 200g 준비해 주세요",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "(1인분 기준)신김치 200g을 준비해 주세요.",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "통조림햄(스팸) 50g",
+          "displayName": "통조림햄(스팸)",
+          "amount": "50",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "스팸 같은 통조림햄 50g을 준비해서",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "통조림햄(스팸) 50g을 준비해 주세요.",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "마가린 1스푼(20g)",
+          "displayName": "마가린",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마가린 × 1",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마가린 1스푼을 팬에 넣고",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마가린 1스푼(20g)을 팬에 넣어주세요.",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "설탕 1/2스푼(7g)",
+          "displayName": "설탕",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 × 0.5",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 1/2스푼 넣어 주시고요",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 1/2스푼(7g) 넣어주세요.",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "(고운)고춧가루 1/2스푼(4g)",
+          "displayName": "고춧가루",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 × 0.5",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 1/2스푼 넣어 주세요. 고운 고춧가루를 사용해서",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "(고운)고춧가루 1/2스푼(4g) 넣어주세요.",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "쇠고기 다시다 1작은스푼",
+          "displayName": "쇠고기 다시다",
+          "amount": "1",
+          "unit": "작은스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다시다 × 1",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소고기 다시다 1작은스푼을 넣어 주세요",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다시다 1작은스푼 넣어주세요.",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "즉석밥 1개 (또는 찬밥 1공기)",
+          "displayName": "즉석밥",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "전자레인지에 돌리지 않은 즉석밥 1개 또는 찬밥 1공기를 넣어 주세요",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "즉석밥 1개(또는 찬밥 1공기) 넣어주세요.",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "참기름 1작은스푼",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "작은스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 × 1",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름 1작은스푼만 떨어뜨려 주세요",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "불을 끄고 참기름 1작은스푼 넣어주세요.",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "계란후라이",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란후라이를 반숙으로 만들어 주세요. 이제 계란후라이도 한 개 올려주고",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란후라이를 만들어주세요.",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "달걀 1개를 프라이팬에 깨뜨려 반숙 계란후라이를 만든다",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "통깨까지 솔솔 뿌려주면",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 김치볶음밥과 계란후라이 위에 통깨를 솔솔 뿌린다",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "신김치 200g을 김치 양념이나 국물 없이 줄기 위주로 준비하여 가위로 잘게 잘라준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "가위로 치렁치렁 긴 머리 짧고 단정하게 좀 잘라주시고요. 김치 양념이나 김치 국물은 텁텁한 맛을 낼 수 있으니까 제외하고 아작이는 식감이 좋은 줄기 위주로 준비해 주세요.",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "신김치를 작게 잘라주세요.",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "통조림햄(스팸) 50g을 새끼손가락 손톱 정도 크기로 잘게 썰어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "새끼손가락 손톱 정도의 크기로 작게 썰어주세요.",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "통조림햄(스팸)을 작게 썰어주세요.",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "팬에 마가린 1스푼(20g)을 넣고 중불에서 녹여준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마가린 1스푼을 팬에 넣고 녹여주세요. 지금부터 불세기는 중불로 조절 유지해 주세요.",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "불세기를 중 불로 조정하고 마가린을 녹여주세요.",
+              "timestamp": "00:45"
+            }
+          ]
+        },
+        {
+          "text": "마가린이 다 녹으면 썰어둔 신김치를 넣고 중불에서 약 2분간 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마가린이 다 녹았으면 썰어놓았던 김치를 넣고 볶아주세요.",
+              "timestamp": "00:48"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "신김치를 넣고 볶아주세요.",
+              "timestamp": "00:50"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "약 2분간 볶아주세요.",
+              "timestamp": "01:01"
+            }
+          ]
+        },
+        {
+          "text": "썰어둔 통조림햄, 설탕 1/2스푼(7g), 고운 고춧가루 1/2스푼(4g), 소고기 다시다 1작은스푼을 넣고 잘 섞어가며 중불에서 약 1분간 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "썰어놓았던 통조림 햄을 넣어주세요. 설탕 1/2스푼 넣어 주시고요. 고춧가루 1/2스푼 넣어 주세요. 소고기 다시다 1작은스푼을 넣어 주세요. 이제 잘 섞어서 볶아주세요. 1분 동안만 들들 볶아주세요.",
+              "timestamp": "01:04"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "통조림햄(스팸)을 넣어주세요.",
+              "timestamp": "01:04"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "약 1분정도 볶아주세요.",
+              "timestamp": "01:33"
+            }
+          ]
+        },
+        {
+          "text": "전자레인지에 돌리지 않은 즉석밥 1개(또는 찬밥 1공기)를 넣고, 잠시 불을 끈 뒤 밥과 김치를 골고루 비벼서 섞어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "즉석밥 1개 또는 찬밥 1공기를 넣어 주세요. 타지 않게 잠시 불을 끄고 밥과 김치를 비벼서 잘 섞어주세요.",
+              "timestamp": "01:39"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "불을 잠시 끄고 비벼주세요.",
+              "timestamp": "01:44"
+            }
+          ]
+        },
+        {
+          "text": "밥을 팬에 평평하게 펴고 불을 켠 뒤 중불에서 1분간 눌려준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 고르게 펴주세요. 다시 불을 켜고 중불로 조절해서 1분간 눌러주세요.",
+              "timestamp": "01:56"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "밥을 팬에 평평하게 펴주세요.",
+              "timestamp": "01:54"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "불을 켜고 불세기를 중 불로 조절한 후, 1분간 눌려주세요.",
+              "timestamp": "01:59"
+            }
+          ]
+        },
+        {
+          "text": "1분 후 전체적으로 섞으면서 약 10초간 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "1분이 지나면 전체적으로 섞으면서 약 10초 정도를 볶아주세요.",
+              "timestamp": "02:02"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "1분 후, 섞으면서 볶아주세요.",
+              "timestamp": "02:03"
+            }
+          ]
+        },
+        {
+          "text": "다시 밥을 평평하게 펴서 1분간 한 번 더 눌려준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 다시 고르게 펴서 1분 동안 한 번 더 눌러주세요.",
+              "timestamp": "02:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "한번 더 평평하게 펴서 1분간 눌려주세요.",
+              "timestamp": "02:07"
+            }
+          ]
+        },
+        {
+          "text": "1분 후 바닥에 눌어붙은 부분까지 잘 섞으면서 약 20초간 볶은 뒤 불을 끈다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "1분이 지난 후에는 팬 바닥에 눌어붙은 볶음밥까지 잘 섞어서 약 20초 정도를 볶은 후에 불을 꺼주세요.",
+              "timestamp": "02:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "1분 후, 잘 섞으면서 20초간 볶아주세요.",
+              "timestamp": "02:13"
+            }
+          ]
+        },
+        {
+          "text": "불을 끈 상태에서 참기름 1작은스푼을 둘러 섞어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "참기름 1작은스푼만 떨어뜨려 주세요.",
+              "timestamp": "02:25"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "불을 끄고 참기름 1작은스푼 넣어주세요.",
+              "timestamp": "02:23"
+            }
+          ]
+        },
+        {
+          "text": "계란 1개로 반숙 계란후라이를 부친다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란후라이를 반숙으로 만들어 주세요.",
+              "timestamp": "02:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란후라이를 만들어주세요.",
+              "timestamp": "02:29"
+            }
+          ]
+        },
+        {
+          "text": "볶음밥을 접시에 담고 반숙 계란후라이를 올린 뒤 통깨를 솔솔 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김치볶음밥을 접시에 옮겨 담은 후에 계란후라이도 한 개 올려주고 통깨까지 솔솔 뿌려주면 완성됩니다.",
+              "timestamp": "02:20"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "접시에 담긴 볶음밥 위에 계란후라이를 올리고 통깨를 뿌려 완성",
+              "timestamp": "02:34"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

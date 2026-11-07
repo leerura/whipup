@@ -1,0 +1,329 @@
+{
+  "videoId": "Me494QT-U1c",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/Me494QT-U1c",
+  "sourceMetadata": {"sourceTitle":"성시경이 일본가고싶을때 해먹는 돼지고기덮밥 부타동 레시피","sourceChannelName":"먹스타선장 맛고양","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.362701Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T08:00:45.122689+00:00",
+    "rawResponse": "{\n  \"title\": \"초간단 부타동\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"뜨거운 물\",\n      \"displayName\": \"뜨거운 물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"보온병에 뜨거운 물을 넣고 온천계란을 준비해주세요\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"뜨거운 물을 넣고\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"온천계란\",\n      \"displayName\": \"온천계란\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"온천계란을 준비해주세요\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"온천계란하고\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"혼쯔유 소주잔 반컵\",\n      \"displayName\": \"혼쯔유\",\n      \"amount\": \"0.5\",\n      \"unit\": \"소주잔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"혼쯔유 소주잔 반컵\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"혼쯔유 소주잔 반 컵\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 소주잔 한 컵\",\n      \"displayName\": \"물\",\n      \"amount\": \"1\",\n      \"unit\": \"소주잔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 소주잔 한 컵\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 소주잔 한 컵\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"국간장 1스푼\",\n      \"displayName\": \"국간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장 1스푼\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국간장 한 스푼\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 1스푼\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 1스푼\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술 한 스푼\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1스푼\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 1스푼으로\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘 한 스푼으로\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대패삼겹살\",\n      \"displayName\": \"대패삼겹살\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대패삼겹살을\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대패삼겹살을 팬에 노릇노릇 구워주다가\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"준비해둔 양파와\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"준비해둔 양파와 소스를 넣고 볶고\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 2개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2개를 풀어줍니다\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 2개를 풀어줍니다\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 담긴 밥 위에 고기와 소스를 얹음\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름\",\n      \"displayName\": \"참기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름을 뿌리면\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름을 뿌리면\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"시작하기 전 보온병에 뜨거운 물을 넣고 온천계란을 만들어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"시작하기 전에 보온병에 뜨거운 물을 넣고 온천계란을 준비해주세요\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 혼쯔유 소주잔 반 컵, 물 소주잔 한 컵, 국간장 1스푼, 맛술 1스푼, 다진마늘 1스푼을 섞어 소스를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"혼쯔유 소주잔 반 컵, 물 소주잔 한 컵, 국간장 한 스푼, 맛술 한 스푼, 다진마늘 한 스푼으로 소스를 만들어주세요\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 대패삼겹살을 올려 노릇노릇 구워준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대패삼겹살을 팬에 노릇노릇 구워주다가\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"구워진 대패삼겹살에 채 썬 양파와 만들어 둔 소스를 넣고 함께 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"준비해둔 양파와 소스를 넣고 볶고\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 2개를 풀어 팬에 둘러 넣어 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 2개를 풀어줍니다\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 위에 볶은 고기를 얹고, 미리 만들어둔 온천계란을 올린 후 참기름을 뿌려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"미리 만들어둔 온천계란하고 참기름을 뿌리면 초간단 부타동 완성입니다!\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"대패삼겹살, 양파, 참기름, 밥의 구체적인 계량 정보는 영상에 명시되지 않음\",\n    \"온천계란 제조 시 보온병에 넣는 계란 수 및 우리는 시간은 영상에 언급되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "초간단 부타동",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "뜨거운 물",
+          "displayName": "뜨거운 물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "보온병에 뜨거운 물을 넣고 온천계란을 준비해주세요",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "뜨거운 물을 넣고",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "온천계란",
+          "displayName": "온천계란",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "온천계란을 준비해주세요",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "온천계란하고",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "혼쯔유 소주잔 반컵",
+          "displayName": "혼쯔유",
+          "amount": "0.5",
+          "unit": "소주잔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "혼쯔유 소주잔 반컵",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "혼쯔유 소주잔 반 컵",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "물 소주잔 한 컵",
+          "displayName": "물",
+          "amount": "1",
+          "unit": "소주잔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 소주잔 한 컵",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 소주잔 한 컵",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "국간장 1스푼",
+          "displayName": "국간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장 1스푼",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "국간장 한 스푼",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "맛술 1스푼",
+          "displayName": "맛술",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 1스푼",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "맛술 한 스푼",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "다진마늘 1스푼",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 1스푼으로",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진마늘 한 스푼으로",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "대패삼겹살",
+          "displayName": "대패삼겹살",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대패삼겹살을",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대패삼겹살을 팬에 노릇노릇 구워주다가",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "준비해둔 양파와",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "준비해둔 양파와 소스를 넣고 볶고",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "계란 2개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2개를 풀어줍니다",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란 2개를 풀어줍니다",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 담긴 밥 위에 고기와 소스를 얹음",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "참기름",
+          "displayName": "참기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름을 뿌리면",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름을 뿌리면",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "시작하기 전 보온병에 뜨거운 물을 넣고 온천계란을 만들어 준비한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "시작하기 전에 보온병에 뜨거운 물을 넣고 온천계란을 준비해주세요",
+              "timestamp": "00:02"
+            }
+          ]
+        },
+        {
+          "text": "볼에 혼쯔유 소주잔 반 컵, 물 소주잔 한 컵, 국간장 1스푼, 맛술 1스푼, 다진마늘 1스푼을 섞어 소스를 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "혼쯔유 소주잔 반 컵, 물 소주잔 한 컵, 국간장 한 스푼, 맛술 한 스푼, 다진마늘 한 스푼으로 소스를 만들어주세요",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "팬에 대패삼겹살을 올려 노릇노릇 구워준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대패삼겹살을 팬에 노릇노릇 구워주다가",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "구워진 대패삼겹살에 채 썬 양파와 만들어 둔 소스를 넣고 함께 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "준비해둔 양파와 소스를 넣고 볶고",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "계란 2개를 풀어 팬에 둘러 넣어 익힌다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 2개를 풀어줍니다",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "밥 위에 볶은 고기를 얹고, 미리 만들어둔 온천계란을 올린 후 참기름을 뿌려 마무리한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "미리 만들어둔 온천계란하고 참기름을 뿌리면 초간단 부타동 완성입니다!",
+              "timestamp": "00:18"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "대패삼겹살, 양파, 참기름, 밥의 구체적인 계량 정보는 영상에 명시되지 않음",
+        "온천계란 제조 시 보온병에 넣는 계란 수 및 우리는 시간은 영상에 언급되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

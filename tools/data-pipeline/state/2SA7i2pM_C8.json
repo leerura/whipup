@@ -1,0 +1,202 @@
+{
+  "videoId": "2SA7i2pM_C8",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/2SA7i2pM_C8",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T08:11:17.234438+00:00",
+    "rawResponse": "{\n  \"title\": \"SNS 난리난 김치볶음밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기름 두른 팬에\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기름 두른 팬에\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"잘 익은 김치 1컵\",\n      \"displayName\": \"잘 익은 김치\",\n      \"amount\": \"1\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"잘 익은 김치 1컵\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"잘 익은 김치\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 1\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루 1\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마요네즈 1\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마요네즈 1\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마요네즈\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"된장 1/3\",\n      \"displayName\": \"된장\",\n      \"amount\": \"1/3\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"된장 1/3 넣고\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"된장 1/3 넣고\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 2공기\",\n      \"displayName\": \"밥\",\n      \"amount\": \"2\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥 2공기 넣어\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 2공기 넣어\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"기름 두른 팬에 잘 익은 김치 1컵, 설탕 1, 고춧가루 1, 마요네즈 1, 된장 1/3을 넣고 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기름 두른 팬에 잘 익은 김치 1컵 설탕 1 고춧가루 1 마요네즈 1 된장 1/3 넣고 볶아준 뒤\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기름 두른 팬에 잘 익은 김치, 설탕, 고춧가루, 마요네즈, 된장 넣고 볶아준 뒤\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 2공기를 넣어 잘 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥 2공기 넣어 잘 볶아주면 완성인데\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 2공기 넣어 잘 볶아주면 완성인데\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"Specific measurement units for 설탕 (sugar), 고춧가루 (red pepper powder), 마요네즈 (mayonnaise), and 된장 (doenjang) are not explicitly stated, although spoons are visually shown.\"\n  ]\n}",
+    "result": {
+      "title": "SNS 난리난 김치볶음밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "기름 두른 팬에",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "기름 두른 팬에",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "잘 익은 김치 1컵",
+          "displayName": "잘 익은 김치",
+          "amount": "1",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "잘 익은 김치 1컵",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "잘 익은 김치",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "설탕 1",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 1",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "고춧가루 1",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루 1",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "마요네즈 1",
+          "displayName": "마요네즈",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마요네즈 1",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마요네즈",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "된장 1/3",
+          "displayName": "된장",
+          "amount": "1/3",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "된장 1/3 넣고",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "된장 1/3 넣고",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "밥 2공기",
+          "displayName": "밥",
+          "amount": "2",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "밥 2공기 넣어",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밥 2공기 넣어",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "기름 두른 팬에 잘 익은 김치 1컵, 설탕 1, 고춧가루 1, 마요네즈 1, 된장 1/3을 넣고 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "기름 두른 팬에 잘 익은 김치 1컵 설탕 1 고춧가루 1 마요네즈 1 된장 1/3 넣고 볶아준 뒤",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "기름 두른 팬에 잘 익은 김치, 설탕, 고춧가루, 마요네즈, 된장 넣고 볶아준 뒤",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "밥 2공기를 넣어 잘 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "밥 2공기 넣어 잘 볶아주면 완성인데",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밥 2공기 넣어 잘 볶아주면 완성인데",
+              "timestamp": "00:08"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "Specific measurement units for 설탕 (sugar), 고춧가루 (red pepper powder), 마요네즈 (mayonnaise), and 된장 (doenjang) are not explicitly stated, although spoons are visually shown."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

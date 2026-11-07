@@ -1,0 +1,112 @@
+{
+  "videoId": "c4Ak-G2DCPA",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/c4Ak-G2DCPA",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T08:11:31.090674+00:00",
+    "rawResponse": "{\n  \"title\": \"김치볶음밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"김치\",\n      \"displayName\": \"김치\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치랑 밥은 꼭 넣어요\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"kimchi and rice\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 김치를 부어 넣음\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치랑 밥은 꼭 넣어요\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"kimchi and rice\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볶던 김치 위에 밥을 넣음\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 김치를 넣고 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 김치를 붓고 주걱으로 저어가며 볶음\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볶은 김치에 밥을 넣고 골고루 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 밥을 추가하고 김치와 함께 볶음\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 볶음밥을 그릇에 담아낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볶음밥을 접시에 덜어 담음\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"식용유 등 기름의 사용 여부 및 재료들의 정확한 용량이 언급되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "김치볶음밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "김치",
+          "displayName": "김치",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김치랑 밥은 꼭 넣어요",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "kimchi and rice",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 김치를 부어 넣음",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김치랑 밥은 꼭 넣어요",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "kimchi and rice",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볶던 김치 위에 밥을 넣음",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 김치를 넣고 볶는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 김치를 붓고 주걱으로 저어가며 볶음",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "볶은 김치에 밥을 넣고 골고루 볶아준다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 밥을 추가하고 김치와 함께 볶음",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "완성된 볶음밥을 그릇에 담아낸다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볶음밥을 접시에 덜어 담음",
+              "timestamp": "00:08"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "식용유 등 기름의 사용 여부 및 재료들의 정확한 용량이 언급되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "videoId": "MdLdvRMSLbo",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/MdLdvRMSLbo",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T15:49:48.487036+00:00",
+    "rawResponse": "{\n  \"title\": \"콩나물국, 딱 이것만 바꾸면 맛이 달라집니다! 식당처럼 시원한 맛! 5가지 꿀팁\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"새우젓 국물 반 티스푼\",\n      \"displayName\": \"새우젓 국물\",\n      \"amount\": \"0.5\",\n      \"unit\": \"티스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1 새우젓 국물 반 티스푼\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"무\",\n      \"displayName\": \"무\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"2 무를 얇게 썰어 먼저 끓이기\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"육수\",\n      \"displayName\": \"육수\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"콩나물은 끓는 육수에 넣기\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"콩나물\",\n      \"displayName\": \"콩나물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"4 콩나물은 끓는 육수에 넣기\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"3 국간장보다 소금으로 마무리\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"국간장\",\n      \"displayName\": \"국간장\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장은 소량만 사용하세요.\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"5 마지막에 다진 마늘과 대파 넣기\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"5 마지막에 다진 마늘과 대파 넣기\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추\",\n      \"displayName\": \"청양고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"취향에 따라 청양고추를 추가하면 더욱 맛있어요.\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"무를 얇게 썰어 먼저 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"2 무를 얇게 썰어 먼저 끓이기 (무에서 나오는 시원한 단맛이 국물 맛을 한층 더 깊게 만들어줍니다.)\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"끓는 육수에 콩나물을 넣고 너무 오래 끓이지 않고 5~7분만 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"4 콩나물은 끓는 육수에 넣기 (너무 오래 끓이지 않고 5~7분만 끓여야 아삭한 식감과 시원한 맛이 살아납니다.)\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"새우젓 국물 반 티스푼을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1 새우젓 국물 반 티스푼 (소금만 넣는 것보다 감칠맛이 더해져 국물이 훨씬 시원하고 깊어집니다.)\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국간장 대신 소금으로 간을 마무리한다 (국간장은 소량만 사용).\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"3 국간장보다 소금으로 마무리 (맑은 콩나물국의 색과 깔끔한 맛을 살려줍니다. 국간장은 소량만 사용하세요.)\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마지막에 다진 마늘과 대파를 넣고, 취향에 따라 청양고추를 추가한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"5 마지막에 다진 마늘과 대파 넣기 (마늘과 대파 향이 살아나 국물이 더 개운하고 깔끔해집니다. 취향에 따라 청양고추를 추가하면 더욱 맛있어요.)\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "콩나물국, 딱 이것만 바꾸면 맛이 달라집니다! 식당처럼 시원한 맛! 5가지 꿀팁",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "새우젓 국물 반 티스푼",
+          "displayName": "새우젓 국물",
+          "amount": "0.5",
+          "unit": "티스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1 새우젓 국물 반 티스푼",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "무",
+          "displayName": "무",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "2 무를 얇게 썰어 먼저 끓이기",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "육수",
+          "displayName": "육수",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "콩나물은 끓는 육수에 넣기",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "콩나물",
+          "displayName": "콩나물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "4 콩나물은 끓는 육수에 넣기",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "소금",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "3 국간장보다 소금으로 마무리",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "국간장",
+          "displayName": "국간장",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장은 소량만 사용하세요.",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "다진 마늘",
+          "displayName": "다진 마늘",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "5 마지막에 다진 마늘과 대파 넣기",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "5 마지막에 다진 마늘과 대파 넣기",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "청양고추",
+          "displayName": "청양고추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "취향에 따라 청양고추를 추가하면 더욱 맛있어요.",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "무를 얇게 썰어 먼저 끓인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "2 무를 얇게 썰어 먼저 끓이기 (무에서 나오는 시원한 단맛이 국물 맛을 한층 더 깊게 만들어줍니다.)",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "끓는 육수에 콩나물을 넣고 너무 오래 끓이지 않고 5~7분만 끓인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "4 콩나물은 끓는 육수에 넣기 (너무 오래 끓이지 않고 5~7분만 끓여야 아삭한 식감과 시원한 맛이 살아납니다.)",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "새우젓 국물 반 티스푼을 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1 새우젓 국물 반 티스푼 (소금만 넣는 것보다 감칠맛이 더해져 국물이 훨씬 시원하고 깊어집니다.)",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "국간장 대신 소금으로 간을 마무리한다 (국간장은 소량만 사용).",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "3 국간장보다 소금으로 마무리 (맑은 콩나물국의 색과 깔끔한 맛을 살려줍니다. 국간장은 소량만 사용하세요.)",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "마지막에 다진 마늘과 대파를 넣고, 취향에 따라 청양고추를 추가한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "5 마지막에 다진 마늘과 대파 넣기 (마늘과 대파 향이 살아나 국물이 더 개운하고 깔끔해집니다. 취향에 따라 청양고추를 추가하면 더욱 맛있어요.)",
+              "timestamp": "00:00"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

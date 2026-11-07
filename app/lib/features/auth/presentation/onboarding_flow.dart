@@ -1,12 +1,16 @@
 import 'package:api_client/api_client.dart';
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:kakao_flutter_sdk_user/kakao_flutter_sdk_user.dart';
 
 import '../../../core/config/app_config.dart';
+import '../../home/presentation/home_screen.dart';
 import '../../ingredient/presentation/initial_ingredient_screen.dart';
 import '../../ingredients/presentation/owned_ingredients_screen.dart';
 import '../../recommendation/presentation/recommendation_screen.dart';
 import '../../recipe/presentation/recipe_detail_screen.dart';
+import '../../settings/presentation/settings_screen.dart';
+import 'onboarding_entry.dart';
 import 'kakao_login_screen.dart';
 import 'onboarding_motion_sequence.dart';
 
@@ -107,9 +111,13 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
         _registeredIngredients = Set<String>.unmodifiable(
           registeredIngredients,
         );
-        _stage = registeredIngredients.isEmpty
-            ? _OnboardingStage.ingredients
-            : _OnboardingStage.recommendations;
+        _stage = switch (onboardingEntryFor(
+          onboardingCompleted: loginResponse.onboardingCompleted,
+        )) {
+          OnboardingEntry.initialIngredientRegistration =>
+            _OnboardingStage.ingredients,
+          OnboardingEntry.home => _OnboardingStage.home,
+        };
       });
     } catch (error, stackTrace) {
       debugPrint('[Kakao login] Failed during $loginStep: $error');
@@ -139,6 +147,10 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
     setState(() => _stage = _OnboardingStage.recommendations);
   }
 
+  void _showHome() {
+    setState(() => _stage = _OnboardingStage.home);
+  }
+
   void _showOwnedIngredients() {
     setState(() => _stage = _OnboardingStage.ownedIngredients);
   }
@@ -150,6 +162,51 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
             RecipeDetailScreen(apiClient: _apiClient, recipeId: recipeId),
       ),
     );
+  }
+
+  void _showSettings() => setState(() => _stage = _OnboardingStage.settings);
+
+  Future<void> _logout() async {
+    try {
+      await UserApi.instance.logout();
+    } catch (_) {
+      // A local session reset is still safe when the provider session has
+      // already expired.
+    }
+    if (mounted) setState(() => _stage = _OnboardingStage.login);
+  }
+
+  Future<void> _deleteAccount() async {
+    try {
+      final response = await _apiClient.getAuthApi().deleteCurrentAccount();
+      debugPrint(
+        '[Account deletion] DELETE ${response.requestOptions.uri} '
+        'status=${response.statusCode}',
+      );
+      _apiClient.removeBearerAuth('bearerAuth');
+      try {
+        await UserApi.instance.logout();
+      } catch (_) {
+        // The backend deletion already succeeded; an expired provider session
+        // should not prevent the local account from being cleared.
+      }
+    } on DioException catch (error, stackTrace) {
+      debugPrint(
+        '[Account deletion] failed '
+        'status=${error.response?.statusCode} '
+        'uri=${error.requestOptions.uri} '
+        'body=${error.response?.data}',
+      );
+      debugPrintStack(
+        label: '[Account deletion] stack',
+        stackTrace: stackTrace,
+      );
+      rethrow;
+    }
+  }
+
+  void _accountDeleted() {
+    if (mounted) setState(() => _stage = _OnboardingStage.login);
   }
 
   @override
@@ -184,7 +241,18 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
           apiClient: _apiClient,
           ownedIngredientCount: _registeredIngredients.length,
           onRegisterIngredients: _showOwnedIngredients,
+          onHomeSelected: _showHome,
           onIngredientsSelected: _showOwnedIngredients,
+          onSettingsSelected: _showSettings,
+          onRecipeSelected: _showRecipeDetail,
+        ),
+        _OnboardingStage.home => HomeScreen(
+          key: const ValueKey(_OnboardingStage.home),
+          apiClient: _apiClient,
+          onHomeSelected: _showHome,
+          onIngredientsSelected: _showOwnedIngredients,
+          onRecommendationsSelected: _showRecommendations,
+          onSettingsSelected: _showSettings,
           onRecipeSelected: _showRecipeDetail,
         ),
         _OnboardingStage.ownedIngredients => OwnedIngredientsScreen(
@@ -192,7 +260,16 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
           apiClient: _apiClient,
           onRegisterIngredients: _showOwnedIngredients,
           onOwnedIngredientsChanged: _handleOwnedIngredientsChanged,
+          onHomeSelected: _showHome,
           onRecommendationsSelected: _showRecommendations,
+          onSettingsSelected: _showSettings,
+        ),
+        _OnboardingStage.settings => SettingsScreen(
+          key: const ValueKey(_OnboardingStage.settings),
+          onBack: _showHome,
+          onLogout: _logout,
+          onDeleteAccount: _deleteAccount,
+          onAccountDeleted: _accountDeleted,
         ),
       },
     );
@@ -203,6 +280,8 @@ enum _OnboardingStage {
   splash,
   login,
   ingredients,
+  home,
   recommendations,
   ownedIngredients,
+  settings,
 }

@@ -33,6 +33,14 @@ public class RecipeDetailResponse {
 
   private URI shortsReference;
 
+  private String sourceTitle;
+
+  private String sourceChannelName;
+
+  private String sourceChannelId;
+
+  private OffsetDateTime sourceMetadataFetchedAt;
+
   private URI thumbnailUrl;
 
   private Integer missingCount;
@@ -120,6 +128,30 @@ public class RecipeDetailResponse {
   public void setShortsReference(URI shortsReference) {
     this.shortsReference = shortsReference;
   }
+
+  public RecipeDetailResponse sourceTitle(String sourceTitle) { this.sourceTitle = sourceTitle; return this; }
+  @JsonProperty("sourceTitle")
+  public String getSourceTitle() { return sourceTitle; }
+  @JsonProperty("sourceTitle")
+  public void setSourceTitle(String sourceTitle) { this.sourceTitle = sourceTitle; }
+
+  public RecipeDetailResponse sourceChannelName(String sourceChannelName) { this.sourceChannelName = sourceChannelName; return this; }
+  @JsonProperty("sourceChannelName")
+  public String getSourceChannelName() { return sourceChannelName; }
+  @JsonProperty("sourceChannelName")
+  public void setSourceChannelName(String sourceChannelName) { this.sourceChannelName = sourceChannelName; }
+
+  public RecipeDetailResponse sourceChannelId(String sourceChannelId) { this.sourceChannelId = sourceChannelId; return this; }
+  @JsonProperty("sourceChannelId")
+  public String getSourceChannelId() { return sourceChannelId; }
+  @JsonProperty("sourceChannelId")
+  public void setSourceChannelId(String sourceChannelId) { this.sourceChannelId = sourceChannelId; }
+
+  public RecipeDetailResponse sourceMetadataFetchedAt(OffsetDateTime sourceMetadataFetchedAt) { this.sourceMetadataFetchedAt = sourceMetadataFetchedAt; return this; }
+  @JsonProperty("sourceMetadataFetchedAt")
+  public OffsetDateTime getSourceMetadataFetchedAt() { return sourceMetadataFetchedAt; }
+  @JsonProperty("sourceMetadataFetchedAt")
+  public void setSourceMetadataFetchedAt(OffsetDateTime sourceMetadataFetchedAt) { this.sourceMetadataFetchedAt = sourceMetadataFetchedAt; }
 
   public RecipeDetailResponse thumbnailUrl(URI thumbnailUrl) {
     this.thumbnailUrl = thumbnailUrl;
@@ -258,6 +290,10 @@ public class RecipeDetailResponse {
     return Objects.equals(this.recipeId, recipeDetailResponse.recipeId) &&
         Objects.equals(this.name, recipeDetailResponse.name) &&
         Objects.equals(this.shortsReference, recipeDetailResponse.shortsReference) &&
+        Objects.equals(this.sourceTitle, recipeDetailResponse.sourceTitle) &&
+        Objects.equals(this.sourceChannelName, recipeDetailResponse.sourceChannelName) &&
+        Objects.equals(this.sourceChannelId, recipeDetailResponse.sourceChannelId) &&
+        Objects.equals(this.sourceMetadataFetchedAt, recipeDetailResponse.sourceMetadataFetchedAt) &&
         Objects.equals(this.thumbnailUrl, recipeDetailResponse.thumbnailUrl) &&
         Objects.equals(this.missingCount, recipeDetailResponse.missingCount) &&
         Objects.equals(this.requirements, recipeDetailResponse.requirements) &&
@@ -267,7 +303,7 @@ public class RecipeDetailResponse {
 
   @Override
   public int hashCode() {
-    return Objects.hash(recipeId, name, shortsReference, thumbnailUrl, missingCount, requirements, optionalIngredients, steps);
+    return Objects.hash(recipeId, name, shortsReference, sourceTitle, sourceChannelName, sourceChannelId, sourceMetadataFetchedAt, thumbnailUrl, missingCount, requirements, optionalIngredients, steps);
   }
 
   @Override
@@ -277,6 +313,10 @@ public class RecipeDetailResponse {
     sb.append("    recipeId: ").append(toIndentedString(recipeId)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    shortsReference: ").append(toIndentedString(shortsReference)).append("\n");
+    sb.append("    sourceTitle: ").append(toIndentedString(sourceTitle)).append("\n");
+    sb.append("    sourceChannelName: ").append(toIndentedString(sourceChannelName)).append("\n");
+    sb.append("    sourceChannelId: ").append(toIndentedString(sourceChannelId)).append("\n");
+    sb.append("    sourceMetadataFetchedAt: ").append(toIndentedString(sourceMetadataFetchedAt)).append("\n");
     sb.append("    thumbnailUrl: ").append(toIndentedString(thumbnailUrl)).append("\n");
     sb.append("    missingCount: ").append(toIndentedString(missingCount)).append("\n");
     sb.append("    requirements: ").append(toIndentedString(requirements)).append("\n");

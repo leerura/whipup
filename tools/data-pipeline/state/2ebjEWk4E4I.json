@@ -1,0 +1,428 @@
+{
+  "videoId": "2ebjEWk4E4I",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/2ebjEWk4E4I",
+  "sourceMetadata": {"sourceTitle":null,"sourceChannelName":null,"sourceChannelId":null,"sourceMetadataFetchedAt":null},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T10:43:09.685547+00:00",
+    "rawResponse": "{\n  \"title\": \"참치김치찌개\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"신김치 400g(약 1/8포기)\",\n      \"displayName\": \"신김치\",\n      \"amount\": \"400\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"신김치 400g(약 1/8포기)를 냄비에 넣어주세요.\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 신김치 400g을 찌개를 끓일 냄비에 넣어주세요.\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 1스푼(25g)\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 1스푼(25g) 넣어주세요.\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"작게 잘라놓은 김치에 진한 국물 맛을 위해 고추장 한 스푼을 넣어주세요.\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양조간장(또는 진간장) 1스푼(10g)\",\n      \"displayName\": \"양조간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장(또는 진간장) 1스푼(10g) 넣어주세요.\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양조간장도 한 스푼 넣어서 간도 맞추고 감칠맛도 올려주세요.\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치캔 1캔(200g)\",\n      \"displayName\": \"참치캔\",\n      \"amount\": \"1\",\n      \"unit\": \"캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치캔 1캔(200g) 준비해주세요.\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"볶기 전에 준비한 참치캔에 참치 기름만 넣어주세요.\",\n          \"timestamp\": \"00:42\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"오랫동안 기다린 참치도 지금 넣어주세요.\",\n          \"timestamp\": \"02:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 3컵(600ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"3\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 3컵(600ml) 넣어주세요.\",\n          \"timestamp\": \"01:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 물 세 컵, 600ml를 부어주세요.\",\n          \"timestamp\": \"01:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1스푼(7g)\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1스푼(7g) 넣어주세요.\",\n          \"timestamp\": \"01:29\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"찌개의 얼큰함과 색감을 내기 위해서 고춧가루 한 스푼을 넣어주세요.\",\n          \"timestamp\": \"01:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다시다 1작은스푼(4g)\",\n      \"displayName\": \"다시다\",\n      \"amount\": \"1\",\n      \"unit\": \"작은스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다시다 1작은스푼(4g) 넣어주세요.\",\n          \"timestamp\": \"01:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 다시다를 1작은스푼 넣어주세요.\",\n          \"timestamp\": \"01:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 한 줌\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"줌\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파를 송송 썰어서 한 줌 준비해주세요.\",\n          \"timestamp\": \"01:47\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파를 송송 썰어서 한 줌 정도 준비해 주시고요.\",\n          \"timestamp\": \"01:48\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 1개\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 1개를 송송 썰어서 준비해주세요.\",\n          \"timestamp\": \"01:53\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"청양고추 1개를 역시 송송 썰어서 준비해 주세요.\",\n          \"timestamp\": \"01:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"두부 반모\",\n      \"displayName\": \"두부\",\n      \"amount\": \"0.5\",\n      \"unit\": \"모\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부 반모를 썰어서 준비해주세요. (생략 가능)\",\n          \"timestamp\": \"01:58\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"때마침 뜻하지 않게 두부가 냉장고에 있을 경우에 반 모 정도만 썰어서 준비해 주세요.\",\n          \"timestamp\": \"01:57\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추가루 4꼬집\",\n      \"displayName\": \"후추가루\",\n      \"amount\": \"4\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추가루 4꼬집을 넣어주세요.\",\n          \"timestamp\": \"02:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후춧가루도 네 꼬집 정도만 넣어주세요.\",\n          \"timestamp\": \"02:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 살짝\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치에 고춧가루를 살짝 뿌리고 1분간 더 끓여주세요.\",\n          \"timestamp\": \"02:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치 위에 고춧가루를 살짝 뿌려서 먹음직스러운 색감을 내주세요.\",\n          \"timestamp\": \"02:35\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 신김치 400g(약 1/8포기)을 넣고 가위를 이용해 손가락 한 마디 크기로 작게 잘라준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 신김치 400g을 찌개를 끓일 냄비에 넣어주세요. 준비한 신김치는 가위를 이용해서 작게 잘라주세요.\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"손가락 한 마디 크기로 작게 잘라주세요.\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"작게 자른 김치에 고추장 1스푼(25g), 양조간장 1스푼(10g), 참치캔의 기름만 넣어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 1스푼(25g) 넣어주세요.\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장(또는 진간장) 1스푼(10g) 넣어주세요.\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치캔 기름을 넣어주세요.\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"text\": \"가스 불을 켜고 조리가 끝날 때까지 강불을 유지하면서, 바닥에 눌어붙지 않게 저어가며 수분이 증발할 때까지 약 4분 정도 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"불을 켜고 볶아주세요.\",\n          \"timestamp\": \"00:55\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불 세기는 지금부터 마지막 조리가 끝날 때까지 가장 센 불로 유지해 주세요.\",\n          \"timestamp\": \"00:56\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"수분이 다 증발할 때까지 약 4분 정도 볶아주세요.\",\n          \"timestamp\": \"01:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"수분이 증발하면 물 3컵(600ml), 고춧가루 1스푼(7g), 다시다 1작은스푼(4g)을 넣고 강불을 유지한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 3컵 (600ml) 넣어주세요.\",\n          \"timestamp\": \"01:22\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1스푼(7g) 넣어주세요.\",\n          \"timestamp\": \"01:29\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다시다 1작은스푼(4g) 넣어주세요.\",\n          \"timestamp\": \"01:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"찌개가 끓는 동안 대파를 송송 썰어 한 줌 준비하고, 청양고추 1개를 송송 썰고, 두부 반 모를 썰어둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파를 송송 썰어서 한 줌 준비해주세요.\",\n          \"timestamp\": \"01:47\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 1개를 송송 썰어서 준비해주세요.\",\n          \"timestamp\": \"01:53\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부 반모를 썰어서 준비해주세요. (생략 가능)\",\n          \"timestamp\": \"01:58\"\n        }\n      ]\n    },\n    {\n      \"text\": \"찌개가 바글바글 끓어오르면 송송 썬 청양고추와 후추가루 4꼬집을 넣고 약 1분 정도 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"찌개가 끓어오르면 청양고추를 넣어주세요.\",\n          \"timestamp\": \"02:05\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추가루 4꼬집을 넣어주세요.\",\n          \"timestamp\": \"02:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1분 정도 끓여주세요.\",\n          \"timestamp\": \"02:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"두부를 넣고, 가운데에 참치를 올린 후 송송 썬 대파를 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부를 넣어주세요.\",\n          \"timestamp\": \"02:22\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치를 넣어주세요.\",\n          \"timestamp\": \"02:25\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파를 넣어주세요.\",\n          \"timestamp\": \"02:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"참치 위에 고춧가루를 살짝 뿌린 후 1분간 더 끓이고 불을 끈다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치에 고춧가루를 살짝 뿌리고 1분간 더 끓여주세요.\",\n          \"timestamp\": \"02:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"1분 정도 더 끓인 후에 불을 꺼주세요.\",\n          \"timestamp\": \"02:38\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"다시다 대신 참치액(젓) 또는 양조간장 1스푼 대체 가능 여부가 안내됨\"\n  ]\n}",
+    "result": {
+      "title": "참치김치찌개",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "신김치 400g(약 1/8포기)",
+          "displayName": "신김치",
+          "amount": "400",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "신김치 400g(약 1/8포기)를 냄비에 넣어주세요.",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 신김치 400g을 찌개를 끓일 냄비에 넣어주세요.",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "고추장 1스푼(25g)",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 1스푼(25g) 넣어주세요.",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "SPEECH",
+              "text": "작게 잘라놓은 김치에 진한 국물 맛을 위해 고추장 한 스푼을 넣어주세요.",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "양조간장(또는 진간장) 1스푼(10g)",
+          "displayName": "양조간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장(또는 진간장) 1스푼(10g) 넣어주세요.",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양조간장도 한 스푼 넣어서 간도 맞추고 감칠맛도 올려주세요.",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "참치캔 1캔(200g)",
+          "displayName": "참치캔",
+          "amount": "1",
+          "unit": "캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치캔 1캔(200g) 준비해주세요.",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SPEECH",
+              "text": "볶기 전에 준비한 참치캔에 참치 기름만 넣어주세요.",
+              "timestamp": "00:42"
+            },
+            {
+              "type": "SPEECH",
+              "text": "오랫동안 기다린 참치도 지금 넣어주세요.",
+              "timestamp": "02:25"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "물 3컵(600ml)",
+          "displayName": "물",
+          "amount": "3",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 3컵(600ml) 넣어주세요.",
+              "timestamp": "01:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 물 세 컵, 600ml를 부어주세요.",
+              "timestamp": "01:22"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "고춧가루 1스푼(7g)",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1스푼(7g) 넣어주세요.",
+              "timestamp": "01:29"
+            },
+            {
+              "type": "SPEECH",
+              "text": "찌개의 얼큰함과 색감을 내기 위해서 고춧가루 한 스푼을 넣어주세요.",
+              "timestamp": "01:29"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "다시다 1작은스푼(4g)",
+          "displayName": "다시다",
+          "amount": "1",
+          "unit": "작은스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다시다 1작은스푼(4g) 넣어주세요.",
+              "timestamp": "01:34"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 다시다를 1작은스푼 넣어주세요.",
+              "timestamp": "01:34"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "대파 한 줌",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "줌",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파를 송송 썰어서 한 줌 준비해주세요.",
+              "timestamp": "01:47"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파를 송송 썰어서 한 줌 정도 준비해 주시고요.",
+              "timestamp": "01:48"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "청양고추 1개",
+          "displayName": "청양고추",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 1개를 송송 썰어서 준비해주세요.",
+              "timestamp": "01:53"
+            },
+            {
+              "type": "SPEECH",
+              "text": "청양고추 1개를 역시 송송 썰어서 준비해 주세요.",
+              "timestamp": "01:52"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "두부 반모",
+          "displayName": "두부",
+          "amount": "0.5",
+          "unit": "모",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부 반모를 썰어서 준비해주세요. (생략 가능)",
+              "timestamp": "01:58"
+            },
+            {
+              "type": "SPEECH",
+              "text": "때마침 뜻하지 않게 두부가 냉장고에 있을 경우에 반 모 정도만 썰어서 준비해 주세요.",
+              "timestamp": "01:57"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "후추가루 4꼬집",
+          "displayName": "후추가루",
+          "amount": "4",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추가루 4꼬집을 넣어주세요.",
+              "timestamp": "02:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후춧가루도 네 꼬집 정도만 넣어주세요.",
+              "timestamp": "02:10"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "고춧가루 살짝",
+          "displayName": "고춧가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치에 고춧가루를 살짝 뿌리고 1분간 더 끓여주세요.",
+              "timestamp": "02:36"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참치 위에 고춧가루를 살짝 뿌려서 먹음직스러운 색감을 내주세요.",
+              "timestamp": "02:35"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 신김치 400g(약 1/8포기)을 넣고 가위를 이용해 손가락 한 마디 크기로 작게 잘라준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 신김치 400g을 찌개를 끓일 냄비에 넣어주세요. 준비한 신김치는 가위를 이용해서 작게 잘라주세요.",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "손가락 한 마디 크기로 작게 잘라주세요.",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "작게 자른 김치에 고추장 1스푼(25g), 양조간장 1스푼(10g), 참치캔의 기름만 넣어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 1스푼(25g) 넣어주세요.",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장(또는 진간장) 1스푼(10g) 넣어주세요.",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치캔 기름을 넣어주세요.",
+              "timestamp": "00:44"
+            }
+          ]
+        },
+        {
+          "text": "가스 불을 켜고 조리가 끝날 때까지 강불을 유지하면서, 바닥에 눌어붙지 않게 저어가며 수분이 증발할 때까지 약 4분 정도 볶아준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "불을 켜고 볶아주세요.",
+              "timestamp": "00:55"
+            },
+            {
+              "type": "SPEECH",
+              "text": "불 세기는 지금부터 마지막 조리가 끝날 때까지 가장 센 불로 유지해 주세요.",
+              "timestamp": "00:56"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "수분이 다 증발할 때까지 약 4분 정도 볶아주세요.",
+              "timestamp": "01:08"
+            }
+          ]
+        },
+        {
+          "text": "수분이 증발하면 물 3컵(600ml), 고춧가루 1스푼(7g), 다시다 1작은스푼(4g)을 넣고 강불을 유지한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 3컵 (600ml) 넣어주세요.",
+              "timestamp": "01:22"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1스푼(7g) 넣어주세요.",
+              "timestamp": "01:29"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다시다 1작은스푼(4g) 넣어주세요.",
+              "timestamp": "01:34"
+            }
+          ]
+        },
+        {
+          "text": "찌개가 끓는 동안 대파를 송송 썰어 한 줌 준비하고, 청양고추 1개를 송송 썰고, 두부 반 모를 썰어둔다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파를 송송 썰어서 한 줌 준비해주세요.",
+              "timestamp": "01:47"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 1개를 송송 썰어서 준비해주세요.",
+              "timestamp": "01:53"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부 반모를 썰어서 준비해주세요. (생략 가능)",
+              "timestamp": "01:58"
+            }
+          ]
+        },
+        {
+          "text": "찌개가 바글바글 끓어오르면 송송 썬 청양고추와 후추가루 4꼬집을 넣고 약 1분 정도 끓여준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "찌개가 끓어오르면 청양고추를 넣어주세요.",
+              "timestamp": "02:05"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추가루 4꼬집을 넣어주세요.",
+              "timestamp": "02:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1분 정도 끓여주세요.",
+              "timestamp": "02:15"
+            }
+          ]
+        },
+        {
+          "text": "두부를 넣고, 가운데에 참치를 올린 후 송송 썬 대파를 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부를 넣어주세요.",
+              "timestamp": "02:22"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치를 넣어주세요.",
+              "timestamp": "02:25"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파를 넣어주세요.",
+              "timestamp": "02:31"
+            }
+          ]
+        },
+        {
+          "text": "참치 위에 고춧가루를 살짝 뿌린 후 1분간 더 끓이고 불을 끈다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치에 고춧가루를 살짝 뿌리고 1분간 더 끓여주세요.",
+              "timestamp": "02:36"
+            },
+            {
+              "type": "SPEECH",
+              "text": "1분 정도 더 끓인 후에 불을 꺼주세요.",
+              "timestamp": "02:38"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "다시다 대신 참치액(젓) 또는 양조간장 1스푼 대체 가능 여부가 안내됨"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

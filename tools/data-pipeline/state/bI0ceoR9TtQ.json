@@ -1,0 +1,301 @@
+{
+  "videoId": "bI0ceoR9TtQ",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/bI0ceoR9TtQ",
+  "sourceMetadata": {"sourceTitle":"인생간장국수","sourceChannelName":"살림팝","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.540617Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T08:16:09.618408+00:00",
+    "rawResponse": "{\n  \"title\": \"간장국수\",\n  \"description\": null,\n  \"servings\": \"2인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"소면 2인분\",\n      \"displayName\": \"소면\",\n      \"amount\": \"2\",\n      \"unit\": \"인분\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소면 2인분 끓는 물에 2분 30초간 삶아줄게요.\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소면 2인분\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 1알 노른자\",\n      \"displayName\": \"계란 노른자\",\n      \"amount\": \"1\",\n      \"unit\": \"알\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 한 알 노른자 분리해주고\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 한 알 노른자\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 2개\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"청양고추 2개도 어슷 썰어주세요.\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 2개도\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양조간장 4스푼\",\n      \"displayName\": \"양조간장\",\n      \"amount\": \"4\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양조간장 4스푼\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장 4스푼\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 2스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 2스푼\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 2스푼\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 2스푼\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름 2스푼\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 2스푼\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"매실액 1스푼\",\n      \"displayName\": \"매실액\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"매실액 1스푼\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"매실액 1스푼\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1스푼\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘 1스푼\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 1스푼\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨를 갈아만든 깨소금 2스푼\",\n      \"displayName\": \"깨소금\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"통깨를 갈아만든 깨소금 2스푼 넣어서\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깨소금 2스푼 넣어서\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"끓는 물에 소면 2인분을 넣고 2분 30초간 삶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소면 2인분 끓는 물에 2분 30초간 삶아줄게요.\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"끓는 냄비에 소면을 넣고 삶기 시작함\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소면을 삶는 동안 계란 1알의 노른자를 분리하고, 청양고추 2개를 어슷 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소면을 삶는 동안 계란 한 알 노른자 분리해주고 청양고추 2개도 어슷 썰어주세요.\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란 노른자를 분리하고 도마에서 청양고추를 어슷 썲\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삶은 소면은 찬물에 헹궈 면발을 탱탱하게 만들어 물기를 뺀다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"삶은 소면은 찬물에 헹궈 면발 탱탱하게 만들어주면 돼요.\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"흐르는 찬물에 소면을 비벼 헹굼\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 양조간장 4스푼, 설탕 2스푼, 참기름 2스푼, 매실액 1스푼, 다진마늘 1스푼, 통깨를 갈아 만든 깨소금 2스푼을 넣고 설탕이 녹을 때까지 잘 섞어 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양념 만들어볼게요. 양조간장 4스푼 설탕 2스푼 참기름 2스푼 매실액 1스푼 다진마늘 1스푼 통깨를 갈아만든 깨소금 2스푼 넣어서 설탕이 녹을 때까지 잘 섞어주세요.\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볼에 소스 재료들을 차례로 넣고 숟가락으로 섞음\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"만들어둔 소스에 삶은 소면을 넣고 잘 버무려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소면은 소스에 넣고 잘 섞어준 뒤\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"장갑을 끼고 소면과 양념 소스를 손으로 버무림\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"버무린 소면을 접시에 담고 가운데에 계란 노른자를 올린 후 어슷 썬 청양고추를 둘러 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"접시에 담아 노른자 가운데 하나 올려주고 청양고추 넣어주면 완성이예요.\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"접시에 담긴 국수 위에 노른자와 고추를 올림\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "간장국수",
+      "description": null,
+      "servings": "2인분",
+      "ingredients": [
+        {
+          "rawText": "소면 2인분",
+          "displayName": "소면",
+          "amount": "2",
+          "unit": "인분",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소면 2인분 끓는 물에 2분 30초간 삶아줄게요.",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소면 2인분",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "계란 1알 노른자",
+          "displayName": "계란 노른자",
+          "amount": "1",
+          "unit": "알",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 한 알 노른자 분리해주고",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 한 알 노른자",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "청양고추 2개",
+          "displayName": "청양고추",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "청양고추 2개도 어슷 썰어주세요.",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 2개도",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양조간장 4스푼",
+          "displayName": "양조간장",
+          "amount": "4",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양조간장 4스푼",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장 4스푼",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "설탕 2스푼",
+          "displayName": "설탕",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "설탕 2스푼",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 2스푼",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "참기름 2스푼",
+          "displayName": "참기름",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "참기름 2스푼",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 2스푼",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "매실액 1스푼",
+          "displayName": "매실액",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "매실액 1스푼",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "매실액 1스푼",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "다진마늘 1스푼",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진마늘 1스푼",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 1스푼",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "통깨를 갈아만든 깨소금 2스푼",
+          "displayName": "깨소금",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "통깨를 갈아만든 깨소금 2스푼 넣어서",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깨소금 2스푼 넣어서",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "끓는 물에 소면 2인분을 넣고 2분 30초간 삶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소면 2인분 끓는 물에 2분 30초간 삶아줄게요.",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "끓는 냄비에 소면을 넣고 삶기 시작함",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "소면을 삶는 동안 계란 1알의 노른자를 분리하고, 청양고추 2개를 어슷 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소면을 삶는 동안 계란 한 알 노른자 분리해주고 청양고추 2개도 어슷 썰어주세요.",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란 노른자를 분리하고 도마에서 청양고추를 어슷 썲",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "삶은 소면은 찬물에 헹궈 면발을 탱탱하게 만들어 물기를 뺀다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "삶은 소면은 찬물에 헹궈 면발 탱탱하게 만들어주면 돼요.",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "흐르는 찬물에 소면을 비벼 헹굼",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "볼에 양조간장 4스푼, 설탕 2스푼, 참기름 2스푼, 매실액 1스푼, 다진마늘 1스푼, 통깨를 갈아 만든 깨소금 2스푼을 넣고 설탕이 녹을 때까지 잘 섞어 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양념 만들어볼게요. 양조간장 4스푼 설탕 2스푼 참기름 2스푼 매실액 1스푼 다진마늘 1스푼 통깨를 갈아만든 깨소금 2스푼 넣어서 설탕이 녹을 때까지 잘 섞어주세요.",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볼에 소스 재료들을 차례로 넣고 숟가락으로 섞음",
+              "timestamp": "00:21"
+            }
+          ]
+        },
+        {
+          "text": "만들어둔 소스에 삶은 소면을 넣고 잘 버무려준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소면은 소스에 넣고 잘 섞어준 뒤",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "장갑을 끼고 소면과 양념 소스를 손으로 버무림",
+              "timestamp": "00:34"
+            }
+          ]
+        },
+        {
+          "text": "버무린 소면을 접시에 담고 가운데에 계란 노른자를 올린 후 어슷 썬 청양고추를 둘러 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "접시에 담아 노른자 가운데 하나 올려주고 청양고추 넣어주면 완성이예요.",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "접시에 담긴 국수 위에 노른자와 고추를 올림",
+              "timestamp": "00:36"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

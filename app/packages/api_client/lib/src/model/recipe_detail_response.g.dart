@@ -14,6 +14,14 @@ class _$RecipeDetailResponse extends RecipeDetailResponse {
   @override
   final String shortsReference;
   @override
+  final String? sourceTitle;
+  @override
+  final String? sourceChannelName;
+  @override
+  final String? sourceChannelId;
+  @override
+  final DateTime? sourceMetadataFetchedAt;
+  @override
   final String thumbnailUrl;
   @override
   final int missingCount;
@@ -32,6 +40,10 @@ class _$RecipeDetailResponse extends RecipeDetailResponse {
       {required this.recipeId,
       required this.name,
       required this.shortsReference,
+      this.sourceTitle,
+      this.sourceChannelName,
+      this.sourceChannelId,
+      this.sourceMetadataFetchedAt,
       required this.thumbnailUrl,
       required this.missingCount,
       required this.requirements,
@@ -54,6 +66,10 @@ class _$RecipeDetailResponse extends RecipeDetailResponse {
         recipeId == other.recipeId &&
         name == other.name &&
         shortsReference == other.shortsReference &&
+        sourceTitle == other.sourceTitle &&
+        sourceChannelName == other.sourceChannelName &&
+        sourceChannelId == other.sourceChannelId &&
+        sourceMetadataFetchedAt == other.sourceMetadataFetchedAt &&
         thumbnailUrl == other.thumbnailUrl &&
         missingCount == other.missingCount &&
         requirements == other.requirements &&
@@ -67,6 +83,10 @@ class _$RecipeDetailResponse extends RecipeDetailResponse {
     _$hash = $jc(_$hash, recipeId.hashCode);
     _$hash = $jc(_$hash, name.hashCode);
     _$hash = $jc(_$hash, shortsReference.hashCode);
+    _$hash = $jc(_$hash, sourceTitle.hashCode);
+    _$hash = $jc(_$hash, sourceChannelName.hashCode);
+    _$hash = $jc(_$hash, sourceChannelId.hashCode);
+    _$hash = $jc(_$hash, sourceMetadataFetchedAt.hashCode);
     _$hash = $jc(_$hash, thumbnailUrl.hashCode);
     _$hash = $jc(_$hash, missingCount.hashCode);
     _$hash = $jc(_$hash, requirements.hashCode);
@@ -82,6 +102,10 @@ class _$RecipeDetailResponse extends RecipeDetailResponse {
           ..add('recipeId', recipeId)
           ..add('name', name)
           ..add('shortsReference', shortsReference)
+          ..add('sourceTitle', sourceTitle)
+          ..add('sourceChannelName', sourceChannelName)
+          ..add('sourceChannelId', sourceChannelId)
+          ..add('sourceMetadataFetchedAt', sourceMetadataFetchedAt)
           ..add('thumbnailUrl', thumbnailUrl)
           ..add('missingCount', missingCount)
           ..add('requirements', requirements)
@@ -107,6 +131,25 @@ class RecipeDetailResponseBuilder
   String? get shortsReference => _$this._shortsReference;
   set shortsReference(String? shortsReference) =>
       _$this._shortsReference = shortsReference;
+
+  String? _sourceTitle;
+  String? get sourceTitle => _$this._sourceTitle;
+  set sourceTitle(String? sourceTitle) => _$this._sourceTitle = sourceTitle;
+
+  String? _sourceChannelName;
+  String? get sourceChannelName => _$this._sourceChannelName;
+  set sourceChannelName(String? sourceChannelName) =>
+      _$this._sourceChannelName = sourceChannelName;
+
+  String? _sourceChannelId;
+  String? get sourceChannelId => _$this._sourceChannelId;
+  set sourceChannelId(String? sourceChannelId) =>
+      _$this._sourceChannelId = sourceChannelId;
+
+  DateTime? _sourceMetadataFetchedAt;
+  DateTime? get sourceMetadataFetchedAt => _$this._sourceMetadataFetchedAt;
+  set sourceMetadataFetchedAt(DateTime? sourceMetadataFetchedAt) =>
+      _$this._sourceMetadataFetchedAt = sourceMetadataFetchedAt;
 
   String? _thumbnailUrl;
   String? get thumbnailUrl => _$this._thumbnailUrl;
@@ -144,6 +187,10 @@ class RecipeDetailResponseBuilder
       _recipeId = $v.recipeId;
       _name = $v.name;
       _shortsReference = $v.shortsReference;
+      _sourceTitle = $v.sourceTitle;
+      _sourceChannelName = $v.sourceChannelName;
+      _sourceChannelId = $v.sourceChannelId;
+      _sourceMetadataFetchedAt = $v.sourceMetadataFetchedAt;
       _thumbnailUrl = $v.thumbnailUrl;
       _missingCount = $v.missingCount;
       _requirements = $v.requirements.toBuilder();
@@ -178,6 +225,10 @@ class RecipeDetailResponseBuilder
                 name, r'RecipeDetailResponse', 'name'),
             shortsReference: BuiltValueNullFieldError.checkNotNull(
                 shortsReference, r'RecipeDetailResponse', 'shortsReference'),
+            sourceTitle: sourceTitle,
+            sourceChannelName: sourceChannelName,
+            sourceChannelId: sourceChannelId,
+            sourceMetadataFetchedAt: sourceMetadataFetchedAt,
             thumbnailUrl: BuiltValueNullFieldError.checkNotNull(
                 thumbnailUrl, r'RecipeDetailResponse', 'thumbnailUrl'),
             missingCount: BuiltValueNullFieldError.checkNotNull(

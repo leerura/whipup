@@ -1,0 +1,308 @@
+{
+  "videoId": "j1H-H3v_9_Q",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/j1H-H3v_9_Q",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:47:21.640629+00:00",
+    "rawResponse": "{\n  \"title\": \"제육볶음\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"불고기용 앞다리살 500g\",\n      \"displayName\": \"불고기용 앞다리살\",\n      \"amount\": \"500\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 불고기용 앞다리살 500g을 준비해 줍니다.\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 양파를 올려주고\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볼에 담긴 고기 위에 채 썬 양파를 넣음\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파도 올려줍니다.\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"송송 썬 대파를 넣음\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 1스푼\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 1스푼\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장을 반스푼 같은 한스푼을 파서 넣어줍니다.\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"동깨스 소스 2스푼\",\n      \"displayName\": \"돈까스 소스\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"동깨스 소스 2스푼\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우리의 영혼인 스테이크나 돈까스 소스를 2스푼 넣어줍니다.\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 2스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 2스푼\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"달짝지근하게 설탕 2스푼도 넣어주고\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 2스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 2스푼\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"제육의 시뻘건 색감을 위해 고춧가루도 2스푼 넣어주고\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 1스푼\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"한국인 사람 만들어졌다는 다진 마늘 1스푼 넣고\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1스푼\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1스푼\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 참기름 1스푼도 둘러주고\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 조금\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 조금\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추도 넉넉하게 뿌려줍니다.\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 2스푼\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 식용유 2스푼 넉넉하게 둘러주고\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 이빨에 꼈을 때 고소한 향이 터지는 통깨를 뿌려 마무리해 줍니다.\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"볼에 불고기용 앞다리살 500g을 넣고 채 썬 양파와 썬 대파를 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 불고기용 앞다리살 500g을 준비해 줍니다. 여기에 양파를 올려주고 대파도 올려줍니다.\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고추장 1스푼, 돈까스 소스(또는 스테이크 소스) 2스푼, 설탕 2스푼, 고춧가루 2스푼, 다진 마늘 1스푼, 참기름 1스푼, 후추를 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장을 반스푼 같은 한스푼을 파서 넣어줍니다. 그러고 우리의 영혼인 스테이크나 돈까스 소스를 2스푼 넣어줍니다. 달짝지근하게 설탕 2스푼도 넣어주고 제육의 시뻘건 색감을 위해 고춧가루도 2스푼 넣어주고 한국인 사람 만들어졌다는 다진 마늘 1스푼 넣고 여기에 참기름 1스푼도 둘러주고 후추도 넉넉하게 뿌려줍니다.\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기와 양념을 조물거리며 돼지고기 겉면에 잘 묻도록 버무려 재워둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그러고 인자 양념을 쪼물딱거리면서 돼지고기 겉면에 잘 묻을 수 있도록 해 줍니다.\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유 2스푼을 넉넉히 두르고 재워둔 돼지고기를 모두 넣어 뒤집어가며 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬에 식용유 2스푼 넉넉하게 둘러주고 여기에 양념에 재어놨던 돼지고기를 다 넣어주고 뒤집어가면서 뜨끈하게 볶아 주시면 됩니다.\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마지막으로 통깨를 뿌려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 이빨에 꼈을 때 고소한 향이 터지는 통깨를 뿌려 마무리해 줍니다.\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"양파와 대파의 구체적인 계량(수량/무게)이 언급되지 않음\",\n    \"돈까스 소스 대신 스테이크 소스를 사용할 수 있는지 여부는 내레이션으로 '스테이크나 돈까스 소스'로 함께 언급됨\"\n  ]\n}",
+    "result": {
+      "title": "제육볶음",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "불고기용 앞다리살 500g",
+          "displayName": "불고기용 앞다리살",
+          "amount": "500",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 불고기용 앞다리살 500g을 준비해 줍니다.",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 양파를 올려주고",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볼에 담긴 고기 위에 채 썬 양파를 넣음",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파도 올려줍니다.",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "송송 썬 대파를 넣음",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "고추장 1스푼",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 1스푼",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장을 반스푼 같은 한스푼을 파서 넣어줍니다.",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "동깨스 소스 2스푼",
+          "displayName": "돈까스 소스",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "동깨스 소스 2스푼",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "우리의 영혼인 스테이크나 돈까스 소스를 2스푼 넣어줍니다.",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "설탕 2스푼",
+          "displayName": "설탕",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 2스푼",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "달짝지근하게 설탕 2스푼도 넣어주고",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "고춧가루 2스푼",
+          "displayName": "고춧가루",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 2스푼",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "제육의 시뻘건 색감을 위해 고춧가루도 2스푼 넣어주고",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "다진 마늘 1스푼",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 1스푼",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "한국인 사람 만들어졌다는 다진 마늘 1스푼 넣고",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "참기름 1스푼",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1스푼",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 참기름 1스푼도 둘러주고",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "후추 조금",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 조금",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추도 넉넉하게 뿌려줍니다.",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "식용유 2스푼",
+          "displayName": "식용유",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 식용유 2스푼 넉넉하게 둘러주고",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 이빨에 꼈을 때 고소한 향이 터지는 통깨를 뿌려 마무리해 줍니다.",
+              "timestamp": "00:42"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "볼에 불고기용 앞다리살 500g을 넣고 채 썬 양파와 썬 대파를 올린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 불고기용 앞다리살 500g을 준비해 줍니다. 여기에 양파를 올려주고 대파도 올려줍니다.",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "고추장 1스푼, 돈까스 소스(또는 스테이크 소스) 2스푼, 설탕 2스푼, 고춧가루 2스푼, 다진 마늘 1스푼, 참기름 1스푼, 후추를 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고추장을 반스푼 같은 한스푼을 파서 넣어줍니다. 그러고 우리의 영혼인 스테이크나 돈까스 소스를 2스푼 넣어줍니다. 달짝지근하게 설탕 2스푼도 넣어주고 제육의 시뻘건 색감을 위해 고춧가루도 2스푼 넣어주고 한국인 사람 만들어졌다는 다진 마늘 1스푼 넣고 여기에 참기름 1스푼도 둘러주고 후추도 넉넉하게 뿌려줍니다.",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "고기와 양념을 조물거리며 돼지고기 겉면에 잘 묻도록 버무려 재워둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그러고 인자 양념을 쪼물딱거리면서 돼지고기 겉면에 잘 묻을 수 있도록 해 줍니다.",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유 2스푼을 넉넉히 두르고 재워둔 돼지고기를 모두 넣어 뒤집어가며 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 팬에 식용유 2스푼 넉넉하게 둘러주고 여기에 양념에 재어놨던 돼지고기를 다 넣어주고 뒤집어가면서 뜨끈하게 볶아 주시면 됩니다.",
+              "timestamp": "00:31"
+            }
+          ]
+        },
+        {
+          "text": "마지막으로 통깨를 뿌려 마무리한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 이빨에 꼈을 때 고소한 향이 터지는 통깨를 뿌려 마무리해 줍니다.",
+              "timestamp": "00:42"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "양파와 대파의 구체적인 계량(수량/무게)이 언급되지 않음",
+        "돈까스 소스 대신 스테이크 소스를 사용할 수 있는지 여부는 내레이션으로 '스테이크나 돈까스 소스'로 함께 언급됨"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

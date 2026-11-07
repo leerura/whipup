@@ -1,0 +1,303 @@
+{
+  "videoId": "eNm-fdSHD6w",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/eNm-fdSHD6w",
+  "sourceMetadata": {"sourceTitle":"백종원 초간단 비빔국수 레시피  #초간단레시피 #초간단요리 #야식 #백종원레시피 #비빔국수","sourceChannelName":"87아빠","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.565612Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T08:26:20.155090+00:00",
+    "rawResponse": "{\n  \"title\": \"백종원 초간단 비빔국수 레시피\",\n  \"description\": null,\n  \"servings\": \"1.5인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"김치\",\n      \"displayName\": \"김치\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치 자르고\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"집에 김치는 있을 거 아니에요\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"가위로 볼에 김치를 잘라 넣음\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"국수 1.5인분\",\n      \"displayName\": \"국수\",\n      \"amount\": \"1.5\",\n      \"unit\": \"인분\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국수1.5인분\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이 상태에서 국수 삶은 거\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"삶은 소면/국수를 김치가 담긴 볼에 넣음\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕\",\n      \"displayName\": \"설탕\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"국수 위에 설탕이 뿌려져 있음\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 1T\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장1T\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그 다음에 간장은\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"간장 1스푼을 국수 위에 넣음\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 1T\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장1T\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장만 찍어서 다 먹겠다 정도\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"고추장 1스푼을 볼에 넣음\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1T\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름1T\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름을 넣어야\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"비빈 국수 위에 참기름 1스푼을 두름\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김가루\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김가루만 올려주면 끝나요\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"조미김을 가위로 잘라 비빔국수 위에 얹음\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"볼에 김치를 가위로 잘라 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치 자르고\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"가위로 김치를 잘게 자름\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삶은 국수 1.5인분을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국수1.5인분\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이 상태에서 국수 삶은 거\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"설탕, 간장 1T, 고추장 1T를 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕. 그 다음에 간장은...\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장1T\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장1T\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"재료들을 손으로 골고루 비벼준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"비비고\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"장갑을 끼고 양념과 국수를 비빔\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"참기름 1T를 넣고 버무린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름1T\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름을 넣어야\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 담고 김가루를 올려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김가루\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"완성!\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김가루만 올려주면 끝나요\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"설탕의 정확한 계량 수치가 영상 자막이나 음성으로 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "백종원 초간단 비빔국수 레시피",
+      "description": null,
+      "servings": "1.5인분",
+      "ingredients": [
+        {
+          "rawText": "김치",
+          "displayName": "김치",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치 자르고",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "SPEECH",
+              "text": "집에 김치는 있을 거 아니에요",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "가위로 볼에 김치를 잘라 넣음",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "국수 1.5인분",
+          "displayName": "국수",
+          "amount": "1.5",
+          "unit": "인분",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국수1.5인분",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이 상태에서 국수 삶은 거",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "삶은 소면/국수를 김치가 담긴 볼에 넣음",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "설탕",
+          "displayName": "설탕",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "설탕",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "국수 위에 설탕이 뿌려져 있음",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "간장 1T",
+          "displayName": "간장",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장1T",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그 다음에 간장은",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "간장 1스푼을 국수 위에 넣음",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고추장 1T",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장1T",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장만 찍어서 다 먹겠다 정도",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "고추장 1스푼을 볼에 넣음",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "참기름 1T",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름1T",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름을 넣어야",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "비빈 국수 위에 참기름 1스푼을 두름",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "김가루",
+          "displayName": "김가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김가루",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "김가루만 올려주면 끝나요",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "조미김을 가위로 잘라 비빔국수 위에 얹음",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "볼에 김치를 가위로 잘라 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치 자르고",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "가위로 김치를 잘게 자름",
+              "timestamp": "00:01"
+            }
+          ]
+        },
+        {
+          "text": "삶은 국수 1.5인분을 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국수1.5인분",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이 상태에서 국수 삶은 거",
+              "timestamp": "00:02"
+            }
+          ]
+        },
+        {
+          "text": "설탕, 간장 1T, 고추장 1T를 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "설탕. 그 다음에 간장은...",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장1T",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장1T",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "재료들을 손으로 골고루 비벼준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "비비고",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "장갑을 끼고 양념과 국수를 비빔",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "참기름 1T를 넣고 버무린다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름1T",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름을 넣어야",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 담고 김가루를 올려 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김가루",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "완성!",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "김가루만 올려주면 끝나요",
+              "timestamp": "00:08"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "설탕의 정확한 계량 수치가 영상 자막이나 음성으로 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

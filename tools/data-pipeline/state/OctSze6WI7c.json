@@ -1,0 +1,417 @@
+{
+  "videoId": "OctSze6WI7c",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/OctSze6WI7c",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:56:35.615946+00:00",
+    "rawResponse": "{\n  \"title\": \"닭가슴살 볶음밥 잡채맛\",\n  \"description\": null,\n  \"servings\": \"6일치\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"계란후라이\",\n      \"displayName\": \"계란후라이\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"가끔 계란후라이도 얹고\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"가끔 계란후라이도 얹고\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 한 개 송송\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 1개 송송\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"당근 작은거 반개\",\n      \"displayName\": \"당근\",\n      \"amount\": \"0.5\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"당근 작은 거 반 개도\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"당근 작은거 반개도\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"표고버섯\",\n      \"displayName\": \"표고버섯\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"표고버섯도 잘게 조사주고\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"표고버섯도 잘게 조사주고\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"표고버섯 1개를 썰어 준비하는 모습\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양배추 1/4통\",\n      \"displayName\": \"양배추\",\n      \"amount\": \"1/4\",\n      \"unit\": \"통\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양배추는 1/4통\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양배추는 1/4통\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"닭가슴살 500g\",\n      \"displayName\": \"닭가슴살\",\n      \"amount\": \"500\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"닭가슴살은 500g 다 넣으면\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"닭가슴살은 500g 다 넣으면\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름 5스푼\",\n      \"displayName\": \"기름\",\n      \"amount\": \"5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"센불에 기름 5스푼 두르고\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"센불에 기름 5스푼 두르고\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"단백질이랑 대파\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"단백질이랑 대파\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마늘 1스푼\",\n      \"displayName\": \"마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마늘 1스푼 넣어서\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마늘 1스푼 넣어서\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 3공기\",\n      \"displayName\": \"밥\",\n      \"amount\": \"3\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"6일치니깐 밥 반공기씩 들어가게 3공기 넣을게요\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"6일치니깐 밥 반공기씩 들어가게 3공기 넣을게요\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 3\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 3\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 2\",\n      \"displayName\": \"간장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 2\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕은 시판 볶음밥에도 들어가고 저 한 스푼을 6일 동안 나눠 먹는 거니까\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"알룰로스 1.5\",\n      \"displayName\": \"알룰로스\",\n      \"amount\": \"1.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"알룰로스 1.5\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"절반만 알룰로스로 대체했어요\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 넉넉\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 넉넉\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양파 1개, 작은 당근 반 개, 표고버섯, 양배추 1/4통, 닭가슴살 500g을 잘게 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 한 개 송송 당근 작은 거 반 개도 표고버섯도 잘게 조사주고 양배추는 1/4통 닭가슴살은 500g 다 넣으면\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양파, 당근, 표고버섯, 양배추, 닭가슴살을 깍둑썰기하여 손질하는 모습\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"센 불에 기름 5스푼을 두르고 손질한 닭가슴살과 대파, 마늘 1스푼을 넣어 노릇하게 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"센불에 기름 5스푼 두르고 단백질이랑 대파 마늘 1스푼 넣어서 노릿하게 볶아지면\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"센불에 기름 5스푼 두르고 단백질이랑 대파 마늘 1스푼 넣어서 노릿하게 볶아지면\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"손질해 둔 당근, 양파, 표고버섯을 넣고 숨이 약간 죽을 때까지 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"당근 양파 버섯 다 때려넣고 숨 좀만 죽으면\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"당근, 양파, 버섯 다 때려넣고 숨 좀만 죽으면\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양배추를 넣고 숨이 죽을 때까지 함께 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"바로 양배추 이 친구도 숨 좀 죽여놓고\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"바로 양배추 이 친구도 숨좀 죽여놓고\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 3공기를 팬에 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"6일치니깐 밥 반공기씩 들어가게 3공기 넣을게요\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"6일치니깐 밥 반공기씩 들어가게 3공기 넣을게요\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"굴소스 3스푼, 간장 2스푼, 설탕 1스푼, 알룰로스 1.5스푼, 후추 넉넉히 양념을 넣고 골고루 볶아 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 3 간장 2 설탕 1 알룰로스 1.5 후추 넉넉\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양념은 이렇게 넣어주는데 설탕은 시판 볶음밥에도 들어가고 저 한스푼을 6일동안 나눠먹는거니깐 절반만 알룰로스로 대체했어요\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥과 양념, 재료를 주걱으로 골고루 섞으며 볶아내는 모습\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"대파의 정확한 투입량은 영상에서 언급되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "닭가슴살 볶음밥 잡채맛",
+      "description": null,
+      "servings": "6일치",
+      "ingredients": [
+        {
+          "rawText": "계란후라이",
+          "displayName": "계란후라이",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "가끔 계란후라이도 얹고",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "가끔 계란후라이도 얹고",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파 1개",
+          "displayName": "양파",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 한 개 송송",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파 1개 송송",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "당근 작은거 반개",
+          "displayName": "당근",
+          "amount": "0.5",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "당근 작은 거 반 개도",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "당근 작은거 반개도",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "표고버섯",
+          "displayName": "표고버섯",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "표고버섯도 잘게 조사주고",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "표고버섯도 잘게 조사주고",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "표고버섯 1개를 썰어 준비하는 모습",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "양배추 1/4통",
+          "displayName": "양배추",
+          "amount": "1/4",
+          "unit": "통",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양배추는 1/4통",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양배추는 1/4통",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "닭가슴살 500g",
+          "displayName": "닭가슴살",
+          "amount": "500",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "닭가슴살은 500g 다 넣으면",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "닭가슴살은 500g 다 넣으면",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "기름 5스푼",
+          "displayName": "기름",
+          "amount": "5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "센불에 기름 5스푼 두르고",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "센불에 기름 5스푼 두르고",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "단백질이랑 대파",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "단백질이랑 대파",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "마늘 1스푼",
+          "displayName": "마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마늘 1스푼 넣어서",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마늘 1스푼 넣어서",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "밥 3공기",
+          "displayName": "밥",
+          "amount": "3",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "6일치니깐 밥 반공기씩 들어가게 3공기 넣을게요",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "6일치니깐 밥 반공기씩 들어가게 3공기 넣을게요",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "굴소스 3",
+          "displayName": "굴소스",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 3",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "간장 2",
+          "displayName": "간장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 2",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "설탕 1",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕은 시판 볶음밥에도 들어가고 저 한 스푼을 6일 동안 나눠 먹는 거니까",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "알룰로스 1.5",
+          "displayName": "알룰로스",
+          "amount": "1.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "알룰로스 1.5",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SPEECH",
+              "text": "절반만 알룰로스로 대체했어요",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "후추 넉넉",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 넉넉",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양파 1개, 작은 당근 반 개, 표고버섯, 양배추 1/4통, 닭가슴살 500g을 잘게 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 한 개 송송 당근 작은 거 반 개도 표고버섯도 잘게 조사주고 양배추는 1/4통 닭가슴살은 500g 다 넣으면",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양파, 당근, 표고버섯, 양배추, 닭가슴살을 깍둑썰기하여 손질하는 모습",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "센 불에 기름 5스푼을 두르고 손질한 닭가슴살과 대파, 마늘 1스푼을 넣어 노릇하게 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "센불에 기름 5스푼 두르고 단백질이랑 대파 마늘 1스푼 넣어서 노릿하게 볶아지면",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "센불에 기름 5스푼 두르고 단백질이랑 대파 마늘 1스푼 넣어서 노릿하게 볶아지면",
+              "timestamp": "00:21"
+            }
+          ]
+        },
+        {
+          "text": "손질해 둔 당근, 양파, 표고버섯을 넣고 숨이 약간 죽을 때까지 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "당근 양파 버섯 다 때려넣고 숨 좀만 죽으면",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "당근, 양파, 버섯 다 때려넣고 숨 좀만 죽으면",
+              "timestamp": "00:25"
+            }
+          ]
+        },
+        {
+          "text": "양배추를 넣고 숨이 죽을 때까지 함께 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "바로 양배추 이 친구도 숨 좀 죽여놓고",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "바로 양배추 이 친구도 숨좀 죽여놓고",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "밥 3공기를 팬에 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "6일치니깐 밥 반공기씩 들어가게 3공기 넣을게요",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "6일치니깐 밥 반공기씩 들어가게 3공기 넣을게요",
+              "timestamp": "00:30"
+            }
+          ]
+        },
+        {
+          "text": "굴소스 3스푼, 간장 2스푼, 설탕 1스푼, 알룰로스 1.5스푼, 후추 넉넉히 양념을 넣고 골고루 볶아 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 3 간장 2 설탕 1 알룰로스 1.5 후추 넉넉",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양념은 이렇게 넣어주는데 설탕은 시판 볶음밥에도 들어가고 저 한스푼을 6일동안 나눠먹는거니깐 절반만 알룰로스로 대체했어요",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥과 양념, 재료를 주걱으로 골고루 섞으며 볶아내는 모습",
+              "timestamp": "00:39"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "대파의 정확한 투입량은 영상에서 언급되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

@@ -13,18 +13,57 @@ import 'package:api_client/src/model/kakao_login_request.dart';
 import 'package:api_client/src/model/login_response.dart';
 
 class AuthApi {
-
   final Dio _dio;
 
   final Serializers _serializers;
 
   const AuthApi(this._dio, this._serializers);
 
+  /// Permanently deletes the authenticated account and its user-owned data.
+  Future<Response<void>> deleteCurrentAccount({
+    CancelToken? cancelToken,
+    Map<String, dynamic>? headers,
+    Map<String, dynamic>? extra,
+    ValidateStatus? validateStatus,
+  }) async {
+    final path = r'/api/v1/me';
+    final options = Options(
+      method: r'DELETE',
+      headers: <String, dynamic>{...?headers},
+      extra: <String, dynamic>{
+        'secure': <Map<String, String>>[
+          {
+            'type': 'http',
+            'scheme': 'bearer',
+            'name': 'bearerAuth',
+          },
+        ],
+        ...?extra,
+      },
+      validateStatus: validateStatus,
+    );
+    final response = await _dio.request<Object>(
+      path,
+      options: options,
+      cancelToken: cancelToken,
+    );
+    return Response<void>(
+      data: null,
+      headers: response.headers,
+      isRedirect: response.isRedirect,
+      requestOptions: response.requestOptions,
+      redirects: response.redirects,
+      statusCode: response.statusCode,
+      statusMessage: response.statusMessage,
+      extra: response.extra,
+    );
+  }
+
   /// loginWithKakao
-  /// 
+  ///
   ///
   /// Parameters:
-  /// * [kakaoLoginRequest] 
+  /// * [kakaoLoginRequest]
   /// * [cancelToken] - A [CancelToken] that can be used to cancel the operation
   /// * [headers] - Can be used to add additional headers to the request
   /// * [extras] - Can be used to add flags to the request
@@ -34,7 +73,7 @@ class AuthApi {
   ///
   /// Returns a [Future] containing a [Response] with a [LoginResponse] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<LoginResponse>> loginWithKakao({ 
+  Future<Response<LoginResponse>> loginWithKakao({
     required KakaoLoginRequest kakaoLoginRequest,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -61,11 +100,11 @@ class AuthApi {
 
     try {
       const _type = FullType(KakaoLoginRequest);
-      _bodyData = _serializers.serialize(kakaoLoginRequest, specifiedType: _type);
-
-    } catch(error, stackTrace) {
+      _bodyData =
+          _serializers.serialize(kakaoLoginRequest, specifiedType: _type);
+    } catch (error, stackTrace) {
       throw DioException(
-         requestOptions: _options.compose(
+        requestOptions: _options.compose(
           _dio.options,
           _path,
         ),
@@ -88,11 +127,12 @@ class AuthApi {
 
     try {
       final rawResponse = _response.data;
-      _responseData = rawResponse == null ? null : _serializers.deserialize(
-        rawResponse,
-        specifiedType: const FullType(LoginResponse),
-      ) as LoginResponse;
-
+      _responseData = rawResponse == null
+          ? null
+          : _serializers.deserialize(
+              rawResponse,
+              specifiedType: const FullType(LoginResponse),
+            ) as LoginResponse;
     } catch (error, stackTrace) {
       throw DioException(
         requestOptions: _response.requestOptions,
@@ -114,5 +154,4 @@ class AuthApi {
       extra: _response.extra,
     );
   }
-
 }

@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: WhipUp API
-  version: 1.0.0-v2-design
+  version: 1.0.0-v3-design
 servers:
 - url: /
 security:
@@ -52,6 +52,22 @@ paths:
       x-content-type: application/json
       x-accepts:
       - application/json
+      x-tags:
+      - tag: Auth
+  /api/v1/me:
+    delete:
+      operationId: deleteCurrentAccount
+      responses:
+        "204":
+          description: Account deleted
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Authentication failed or missing
+      tags:
+      - Auth
       x-tags:
       - tag: Auth
   /api/v1/ingredients:
@@ -309,16 +325,23 @@ components:
         user:
           userId: 0
         hasOwnedIngredients: true
+        onboardingCompleted: true
       properties:
         accessToken:
           type: string
         user:
           $ref: "#/components/schemas/UserSummary"
         hasOwnedIngredients:
+          description: Whether the account currently has any owned ingredient rows.
+          type: boolean
+        onboardingCompleted:
+          description: Whether the account has completed initial ingredient registration.
+            Remains true if all owned ingredients are later deleted.
           type: boolean
       required:
       - accessToken
       - hasOwnedIngredients
+      - onboardingCompleted
       - user
       type: object
     UserSummary:
@@ -612,6 +635,9 @@ components:
     MissingOption:
       properties:
         requiredName:
+          description: Concise missing-item label for recommendation cards. Use the
+            exact selectable item's name when the source ingredient has an exact variant;
+            otherwise use the source requirement display name.
           type: string
         substitutes:
           items:
@@ -633,6 +659,10 @@ components:
         recipeId: 0
         name: name
         shortsReference: https://openapi-generator.tech
+        sourceTitle: Source video title
+        sourceChannelName: Source channel
+        sourceChannelId: UCxxxxxxxxxxxxxxxxxxxxxx
+        sourceMetadataFetchedAt: '2026-10-25T12:00:00Z'
         thumbnailUrl: https://openapi-generator.tech
         missingCount: 0
         requirements:
@@ -729,6 +759,19 @@ components:
         shortsReference:
           format: uri
           type: string
+        sourceTitle:
+          nullable: true
+          type: string
+        sourceChannelName:
+          nullable: true
+          type: string
+        sourceChannelId:
+          nullable: true
+          type: string
+        sourceMetadataFetchedAt:
+          format: date-time
+          nullable: true
+          type: string
         thumbnailUrl:
           format: uri
           type: string
@@ -755,6 +798,10 @@ components:
       - recipeId
       - requirements
       - shortsReference
+      - sourceTitle
+      - sourceChannelName
+      - sourceChannelId
+      - sourceMetadataFetchedAt
       - steps
       - thumbnailUrl
       type: object

@@ -1,0 +1,384 @@
+{
+  "videoId": "XPmywm8Dnx4",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/XPmywm8Dnx4",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:56:14.536928+00:00",
+    "rawResponse": "{\n  \"title\": \"순두부찌개\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 대파랑\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 대파랑\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"애호박\",\n      \"displayName\": \"애호박\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"애호박\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"애호박\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추\",\n      \"displayName\": \"청양고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"청양고추 썰어주고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"청양고추 썰어주고\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"냄비에 식용유 둘러서\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냄비에 식용유 둘러서\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 2스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 고춧가루 2스푼 넣고\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 고춧가루 두 스푼 넣고\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 250ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"250\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 250ml에\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 250미리에\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"코인육수 1알\",\n      \"displayName\": \"코인육수\",\n      \"amount\": \"1\",\n      \"unit\": \"알\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"코인육수 1알 넣고\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"코인육수 한 알 넣고\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장\",\n      \"displayName\": \"진간장\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"진간장\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"멸치액젓\",\n      \"displayName\": \"멸치액젓\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"멸치액젓\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"멸치액젓\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘 넣은 다음\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘 넣은 다음\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"순두부\",\n      \"displayName\": \"순두부\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"순두부도 넣어서\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"순두부도 넣어서\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 하나\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 계란 하나랑\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 계란 하나랑\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"대파, 양파, 애호박, 청양고추를 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 대파랑 양파 애호박 청양고추 썰어주고\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 대파랑 양파 애호박 청양고추 썰어주고\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 식용유를 둘러 파기름을 낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"냄비에 식용유 둘러서 파기름 내주세요\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냄비에 식용유 둘러서 파기름 내주세요\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고춧가루 2스푼을 넣고 살짝 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 고춧가루 2스푼 넣고 살짝 볶다가\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 고춧가루 두 스푼 넣고 살짝 볶다가\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 250ml와 코인육수 1알, 진간장, 멸치액젓, 다진마늘을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 250ml에 코인육수 1알 넣고 진간장 멸치액젓 다진마늘 넣은 다음\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 250미리에 코인육수 한 알 넣고 진간장 멸치액젓 다진마늘 넣은 다음\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파와 애호박, 순두부를 넣고 5분간 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파랑 애호박 넣고 순두부도 넣어서 5분 끓여주세요\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파랑 애호박 넣고 순두부도 넣어서 오 분 끓여주세요\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마지막으로 계란 하나와 대파, 청양고추를 넣어 1분 더 끓여 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 계란 하나랑 대파랑 청양고추 넣어서 1분 더 끓이면 완성\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 계란 하나랑 대파랑 청양고추 넣어서 일 분 더 끓이면 완성\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"대파, 양파, 애호박, 청양고추의 계량 수치가 명시되지 않음\",\n    \"식용유, 진간장, 멸치액젓, 다진마늘의 구체적인 계량 수치(스푼 수)가 음성이나 자막으로 명시되지 않음\",\n    \"순두부의 중량 또는 포장 단위 수량이 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "순두부찌개",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 대파랑",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 대파랑",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "애호박",
+          "displayName": "애호박",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "애호박",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "애호박",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "청양고추",
+          "displayName": "청양고추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "청양고추 썰어주고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "청양고추 썰어주고",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "냄비에 식용유 둘러서",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냄비에 식용유 둘러서",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "고춧가루 2스푼",
+          "displayName": "고춧가루",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 고춧가루 2스푼 넣고",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 고춧가루 두 스푼 넣고",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "물 250ml",
+          "displayName": "물",
+          "amount": "250",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 250ml에",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 250미리에",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "코인육수 1알",
+          "displayName": "코인육수",
+          "amount": "1",
+          "unit": "알",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "코인육수 1알 넣고",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "코인육수 한 알 넣고",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "진간장",
+          "displayName": "진간장",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "진간장",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "멸치액젓",
+          "displayName": "멸치액젓",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "멸치액젓",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "멸치액젓",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "다진마늘",
+          "displayName": "다진마늘",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘 넣은 다음",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진마늘 넣은 다음",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "순두부",
+          "displayName": "순두부",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "순두부도 넣어서",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "순두부도 넣어서",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "계란 하나",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 계란 하나랑",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 계란 하나랑",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "대파, 양파, 애호박, 청양고추를 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 대파랑 양파 애호박 청양고추 썰어주고",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 대파랑 양파 애호박 청양고추 썰어주고",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 식용유를 둘러 파기름을 낸다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "냄비에 식용유 둘러서 파기름 내주세요",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냄비에 식용유 둘러서 파기름 내주세요",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "고춧가루 2스푼을 넣고 살짝 볶는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 고춧가루 2스푼 넣고 살짝 볶다가",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 고춧가루 두 스푼 넣고 살짝 볶다가",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "물 250ml와 코인육수 1알, 진간장, 멸치액젓, 다진마늘을 넣는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 250ml에 코인육수 1알 넣고 진간장 멸치액젓 다진마늘 넣은 다음",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 250미리에 코인육수 한 알 넣고 진간장 멸치액젓 다진마늘 넣은 다음",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "양파와 애호박, 순두부를 넣고 5분간 끓인다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파랑 애호박 넣고 순두부도 넣어서 5분 끓여주세요",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파랑 애호박 넣고 순두부도 넣어서 오 분 끓여주세요",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "마지막으로 계란 하나와 대파, 청양고추를 넣어 1분 더 끓여 완성한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 계란 하나랑 대파랑 청양고추 넣어서 1분 더 끓이면 완성",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 계란 하나랑 대파랑 청양고추 넣어서 일 분 더 끓이면 완성",
+              "timestamp": "00:21"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "대파, 양파, 애호박, 청양고추의 계량 수치가 명시되지 않음",
+        "식용유, 진간장, 멸치액젓, 다진마늘의 구체적인 계량 수치(스푼 수)가 음성이나 자막으로 명시되지 않음",
+        "순두부의 중량 또는 포장 단위 수량이 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

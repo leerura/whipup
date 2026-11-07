@@ -1,0 +1,257 @@
+{
+  "videoId": "WfCFYyQYj5U",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/WfCFYyQYj5U",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T10:39:05.797264+00:00",
+    "rawResponse": "{\n  \"title\": \"고시원표 김치볶음밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"카놀라유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름 두르고~\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비에 카놀라유를 두름\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치\",\n      \"displayName\": \"김치\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"조건 : (무료제공)김치랑 밥이 있어야함\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치 잘게 잘라줌\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비에 김치를 가위로 잘라 넣음\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치 or 스팸 조금\",\n      \"displayName\": \"참치\",\n      \"amount\": \"조금\",\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"필요시 참치 or 스팸 조금 넣어줌\",\n          \"timestamp\": \"01:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"참치캔에서 참치를 숟가락으로 떠서 넣음\",\n          \"timestamp\": \"01:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"찬밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"조건 : (무료제공)김치랑 밥이 있어야함\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"찬밥 투척\",\n          \"timestamp\": \"01:22\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"용기에 담긴 밥을 냄비에 넣음\",\n          \"timestamp\": \"01:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"알바하는 곳에서 얻어온 김가루\",\n          \"timestamp\": \"01:54\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"넣어주면 더 맛있음\",\n          \"timestamp\": \"02:01\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 김가루를 뿌려줌\",\n          \"timestamp\": \"02:02\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 기름을 두른다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름 두르고~\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비에 기름을 두르는 모습\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김치를 가위로 잘게 잘라 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치 잘게 잘라줌\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"집게와 가위로 김치를 냄비에 잘라 넣는 모습\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김치를 일정 시간 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"일정시간 볶음\",\n          \"timestamp\": \"00:49\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"숟가락으로 김치를 볶는 모습\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    },\n    {\n      \"text\": \"필요시 참치나 스팸을 조금 넣고 함께 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"필요시 참치 or 스팸 조금 넣어줌\",\n          \"timestamp\": \"01:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"참치를 넣고 김치와 함께 볶는 모습\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"찬밥을 넣고 김치와 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"찬밥 투척\",\n          \"timestamp\": \"01:22\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"찬밥을 넣고 숟가락으로 부수며 섞는 모습\",\n          \"timestamp\": \"01:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"바닥에 눌어붙지 않도록 계속해서 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"이제부터가 중요\",\n          \"timestamp\": \"01:36\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"아래가 눌러 붙지 않게 계속 볶아야함\",\n          \"timestamp\": \"01:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"기호에 따라 김가루를 넣고 골고루 볶아 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"넣어주면 더 맛있음\",\n          \"timestamp\": \"02:01\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"완성\",\n          \"timestamp\": \"02:27\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"김가루를 넣고 볶은 뒤 불을 끄고 완성하는 모습\",\n          \"timestamp\": \"02:06\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"영상 02:48 이후 후식(견과류를 빻아 플레인 요거트에 넣어 섞어 먹는 과정)이 나오나, 메인 레시피인 고시원표 김치볶음밥의 조리 단계에는 포함되지 않아 제외함\"\n  ]\n}",
+    "result": {
+      "title": "고시원표 김치볶음밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "기름",
+          "displayName": "카놀라유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름 두르고~",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비에 카놀라유를 두름",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "김치",
+          "displayName": "김치",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "조건 : (무료제공)김치랑 밥이 있어야함",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치 잘게 잘라줌",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비에 김치를 가위로 잘라 넣음",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "참치 or 스팸 조금",
+          "displayName": "참치",
+          "amount": "조금",
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "필요시 참치 or 스팸 조금 넣어줌",
+              "timestamp": "01:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "참치캔에서 참치를 숟가락으로 떠서 넣음",
+              "timestamp": "01:04"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "찬밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "조건 : (무료제공)김치랑 밥이 있어야함",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "찬밥 투척",
+              "timestamp": "01:22"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "용기에 담긴 밥을 냄비에 넣음",
+              "timestamp": "01:23"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "김가루",
+          "displayName": "김가루",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "알바하는 곳에서 얻어온 김가루",
+              "timestamp": "01:54"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "넣어주면 더 맛있음",
+              "timestamp": "02:01"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 김가루를 뿌려줌",
+              "timestamp": "02:02"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 기름을 두른다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름 두르고~",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비에 기름을 두르는 모습",
+              "timestamp": "00:32"
+            }
+          ]
+        },
+        {
+          "text": "김치를 가위로 잘게 잘라 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치 잘게 잘라줌",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "집게와 가위로 김치를 냄비에 잘라 넣는 모습",
+              "timestamp": "00:36"
+            }
+          ]
+        },
+        {
+          "text": "김치를 일정 시간 볶아준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "일정시간 볶음",
+              "timestamp": "00:49"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "숟가락으로 김치를 볶는 모습",
+              "timestamp": "00:51"
+            }
+          ]
+        },
+        {
+          "text": "필요시 참치나 스팸을 조금 넣고 함께 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "필요시 참치 or 스팸 조금 넣어줌",
+              "timestamp": "01:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "참치를 넣고 김치와 함께 볶는 모습",
+              "timestamp": "01:05"
+            }
+          ]
+        },
+        {
+          "text": "찬밥을 넣고 김치와 섞어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "찬밥 투척",
+              "timestamp": "01:22"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "찬밥을 넣고 숟가락으로 부수며 섞는 모습",
+              "timestamp": "01:24"
+            }
+          ]
+        },
+        {
+          "text": "바닥에 눌어붙지 않도록 계속해서 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "이제부터가 중요",
+              "timestamp": "01:36"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "아래가 눌러 붙지 않게 계속 볶아야함",
+              "timestamp": "01:37"
+            }
+          ]
+        },
+        {
+          "text": "기호에 따라 김가루를 넣고 골고루 볶아 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "넣어주면 더 맛있음",
+              "timestamp": "02:01"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "완성",
+              "timestamp": "02:27"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "김가루를 넣고 볶은 뒤 불을 끄고 완성하는 모습",
+              "timestamp": "02:06"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "영상 02:48 이후 후식(견과류를 빻아 플레인 요거트에 넣어 섞어 먹는 과정)이 나오나, 메인 레시피인 고시원표 김치볶음밥의 조리 단계에는 포함되지 않아 제외함"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

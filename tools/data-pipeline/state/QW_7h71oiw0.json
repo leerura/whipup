@@ -1,0 +1,365 @@
+{
+  "videoId": "QW_7h71oiw0",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/QW_7h71oiw0",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:44:57.664445+00:00",
+    "rawResponse": "{\n  \"title\": \"나폴리탄 스파게티\",\n  \"description\": null,\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"파스타 면 1인분\",\n      \"displayName\": \"파스타 면\",\n      \"amount\": \"1\",\n      \"unit\": \"인분\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 파스타 면을 1인분 양으로 준비해 줍니다.\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 파스타 면을 1인분 양으로 준비해 줍니다.\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소시지 넉넉하게 (3개)\",\n      \"displayName\": \"소시지\",\n      \"amount\": \"3\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소시지는 마 많으면 많을수록 맛이 좋으니 넉넉하게 준비해 줍니다.\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도마 위에 소시지 3개를 놓고 사선으로 써는 모습\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 반개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"0.5\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"추가로 양파 반개도 식감을 살리기 위해 5mm 정도의 두께감이 있도록 썰어주시면 됩니다.\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"추가로 양파 반개도 식감을 살리기 위해 5mm 정도의 두께감이 있도록 썰어주시면 됩니다.\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"피망\",\n      \"displayName\": \"피망\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"인자 있으면 좋고 없으면 생략해도 상관없는 피망도 역시 5mm 정도의 두께감이 나오도록 썰어서 준비하시면 됩니다.\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 있으면 좋고 없으면 생략해도 상관없는 피망도 역시 5mm 정도의 두께감이 있도록 썰어서 준비하시면 됩니다.\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팔팔 끓는 물에 파스타 면을 퍼뜨려서 넣어준 뒤\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 살짝\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": \"약간\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금 살짝 넣고\",\n          \"timestamp\": \"00:50\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소금 살짝 넣고\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"면수 조금\",\n      \"displayName\": \"면수\",\n      \"amount\": null,\n      \"unit\": \"약간\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"면 삶은 물은 다 버리지 말고 조금 남겨둡니다.\",\n          \"timestamp\": \"00:58\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"면이 잘 풀리도록 면수를 살짝 넣고\",\n          \"timestamp\": \"01:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 넉넉하게\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식용유를 넉넉하게 둘러주고\",\n          \"timestamp\": \"01:02\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"식용유를 넉넉하게 둘러주고\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 하나\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 하나를 톡 까서 올려준 다음 맛있는 계란후라이로 만들어 줍니다.\",\n          \"timestamp\": \"01:04\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 하나를 톡 까서 올려준 다음 맛있는 계란후라이로 만들어 줍니다.\",\n          \"timestamp\": \"01:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"토마토 케찹 5스푼\",\n      \"displayName\": \"토마토 케찹\",\n      \"amount\": \"5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"토메이토 케찹 다섯 스푼과\",\n          \"timestamp\": \"01:29\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"톰헤이토 케찹 5스푼과\",\n          \"timestamp\": \"01:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돈까스소스 2스푼\",\n      \"displayName\": \"돈까스소스\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국민 소스인 돈까스소스를 2스푼 넣고\",\n          \"timestamp\": \"01:34\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"국민 소스인 돈까스소스 2스푼을 넣고\",\n          \"timestamp\": \"01:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파마산 치즈 가루\",\n      \"displayName\": \"파마산 치즈 가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이런 파마산 치즈 가루가 있다면 골고루 흩뿌려주고 마 없다면 당연히 생략 가능합니다.\",\n          \"timestamp\": \"02:04\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이런 파마산 치즈 가루가 있다면 골고루 흩뿌려주고 당연히 없다면 생략 가능합니다.\",\n          \"timestamp\": \"02:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추나 파슬리\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 후추나 파슬리를 굉장히 지저분하게 흩뿌려주고\",\n          \"timestamp\": \"02:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 후추나 파슬리를 굉장히 지저분하게 흩뿌려주고\",\n          \"timestamp\": \"02:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추나 파슬리\",\n      \"displayName\": \"파슬리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 후추나 파슬리를 굉장히 지저분하게 흩뿌려주고\",\n          \"timestamp\": \"02:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 후추나 파슬리를 굉장히 지저분하게 흩뿌려주고\",\n          \"timestamp\": \"02:09\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"소시지를 사선으로 썰어주고, 양파 1/2개와 피망을 각각 5mm 정도 두께로 썰어 준비합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먹음직스러운 모양이 나오게 사선으로 썰어주고 추가로 양파 반개도 식감을 살리기 위해 5mm 정도의 두께감이 있도록 썰어주시면 됩니다. 이제 있으면 좋고 없으면 생략해도 상관없는 피망도 역시 5mm 정도의 두께감이 나오도록 썰어서 준비하시면 됩니다.\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"끓는 물에 파스타 면 1인분을 넣고 소금을 살짝 넣어 취향에 맞는 식감으로 삶아준 뒤 물과 분리하고 면수는 조금 남겨둡니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"끓는 물에 파스타 면을 퍼뜨려서 넣어준 뒤 소금 살짝 넣고 본인이 좋아하는 파스타 식감이 되도록 삶아주시면 됩니다. 잘 삶아진 파스타 면은 물과 분리시켜주고 면 삶은 물은 다 버리지 말고 조금 남겨둡니다.\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유를 넉넉하게 두르고 계란 하나를 까서 계란후라이를 만든 뒤 잠시 옆으로 빼둡니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식용유를 넉넉하게 둘러주고 계란 하나를 톡 까서 올려준 다음 맛있는 계란후라이로 만들어 줍니다. 그리고 잠시 옆으로 빼주고\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 남은 식용유 위로 손질해둔 소시지, 양파, 피망을 넣고 소시지 겉면이 갈색빛이 돌 때까지 1~2분간 살짝 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"남은 식용유 위로 손질해둔 소시지, 양파, 피망 다 올려줍니다. 소시지 겉면에 갈색빛이 띌 때까지 살짝만 볶아줍니다. 1~2분만 볶아주셔도 충분할 겁니다.\",\n          \"timestamp\": \"01:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삶아둔 파스타 면과 면수를 살짝 넣고, 토마토 케찹 5스푼, 돈까스소스 2스푼을 넣은 뒤 양념이 골고루 섞이도록 1분간 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 미리 삶아 놓은 파스타 면과 면이 잘 풀리도록 면수를 살짝 넣고 토메이토 케찹 다섯 스푼과 국민 소스인 돈까스소스를 2스푼 넣고 양념이 골고루 섞이도록 1분간 볶아주시면 됩니다.\",\n          \"timestamp\": \"01:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"스파게티를 그릇에 담고, 미리 구워둔 계란후라이를 올린 뒤 파마산 치즈 가루와 후추, 파슬리를 뿌려 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"있는 그대로 그릇에 다 부어주고... 처음에 빼둔 계란후라이와 피자 시켜 먹고 하나씩 따라오는 이런 파마산 치즈 가루가 있다면 골고루 흩뿌려주고 마지막으로 후추나 파슬리를 굉장히 지저분하게 흩뿌려주고 그릇 주변을 깨끗이 정리만 해주면\",\n          \"timestamp\": \"01:48\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "나폴리탄 스파게티",
+      "description": null,
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "파스타 면 1인분",
+          "displayName": "파스타 면",
+          "amount": "1",
+          "unit": "인분",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 파스타 면을 1인분 양으로 준비해 줍니다.",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 파스타 면을 1인분 양으로 준비해 줍니다.",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "소시지 넉넉하게 (3개)",
+          "displayName": "소시지",
+          "amount": "3",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소시지는 마 많으면 많을수록 맛이 좋으니 넉넉하게 준비해 줍니다.",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도마 위에 소시지 3개를 놓고 사선으로 써는 모습",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "양파 반개",
+          "displayName": "양파",
+          "amount": "0.5",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "추가로 양파 반개도 식감을 살리기 위해 5mm 정도의 두께감이 있도록 썰어주시면 됩니다.",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "추가로 양파 반개도 식감을 살리기 위해 5mm 정도의 두께감이 있도록 썰어주시면 됩니다.",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "피망",
+          "displayName": "피망",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "인자 있으면 좋고 없으면 생략해도 상관없는 피망도 역시 5mm 정도의 두께감이 나오도록 썰어서 준비하시면 됩니다.",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 있으면 좋고 없으면 생략해도 상관없는 피망도 역시 5mm 정도의 두께감이 있도록 썰어서 준비하시면 됩니다.",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "물",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팔팔 끓는 물에 파스타 면을 퍼뜨려서 넣어준 뒤",
+              "timestamp": "00:46"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "소금 살짝",
+          "displayName": "소금",
+          "amount": null,
+          "unit": "약간",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소금 살짝 넣고",
+              "timestamp": "00:50"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "소금 살짝 넣고",
+              "timestamp": "00:50"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "면수 조금",
+          "displayName": "면수",
+          "amount": null,
+          "unit": "약간",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "면 삶은 물은 다 버리지 말고 조금 남겨둡니다.",
+              "timestamp": "00:58"
+            },
+            {
+              "type": "SPEECH",
+              "text": "면이 잘 풀리도록 면수를 살짝 넣고",
+              "timestamp": "01:27"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "식용유 넉넉하게",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "식용유를 넉넉하게 둘러주고",
+              "timestamp": "01:02"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "식용유를 넉넉하게 둘러주고",
+              "timestamp": "01:02"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "계란 하나",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 하나를 톡 까서 올려준 다음 맛있는 계란후라이로 만들어 줍니다.",
+              "timestamp": "01:04"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란 하나를 톡 까서 올려준 다음 맛있는 계란후라이로 만들어 줍니다.",
+              "timestamp": "01:04"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "토마토 케찹 5스푼",
+          "displayName": "토마토 케찹",
+          "amount": "5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "토메이토 케찹 다섯 스푼과",
+              "timestamp": "01:29"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "톰헤이토 케찹 5스푼과",
+              "timestamp": "01:29"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "돈까스소스 2스푼",
+          "displayName": "돈까스소스",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "국민 소스인 돈까스소스를 2스푼 넣고",
+              "timestamp": "01:34"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "국민 소스인 돈까스소스 2스푼을 넣고",
+              "timestamp": "01:34"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "파마산 치즈 가루",
+          "displayName": "파마산 치즈 가루",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이런 파마산 치즈 가루가 있다면 골고루 흩뿌려주고 마 없다면 당연히 생략 가능합니다.",
+              "timestamp": "02:04"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이런 파마산 치즈 가루가 있다면 골고루 흩뿌려주고 당연히 없다면 생략 가능합니다.",
+              "timestamp": "02:04"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "후추나 파슬리",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 후추나 파슬리를 굉장히 지저분하게 흩뿌려주고",
+              "timestamp": "02:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 후추나 파슬리를 굉장히 지저분하게 흩뿌려주고",
+              "timestamp": "02:09"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "후추나 파슬리",
+          "displayName": "파슬리",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 후추나 파슬리를 굉장히 지저분하게 흩뿌려주고",
+              "timestamp": "02:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 후추나 파슬리를 굉장히 지저분하게 흩뿌려주고",
+              "timestamp": "02:09"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        }
+      ],
+      "steps": [
+        {
+          "text": "소시지를 사선으로 썰어주고, 양파 1/2개와 피망을 각각 5mm 정도 두께로 썰어 준비합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먹음직스러운 모양이 나오게 사선으로 썰어주고 추가로 양파 반개도 식감을 살리기 위해 5mm 정도의 두께감이 있도록 썰어주시면 됩니다. 이제 있으면 좋고 없으면 생략해도 상관없는 피망도 역시 5mm 정도의 두께감이 나오도록 썰어서 준비하시면 됩니다.",
+              "timestamp": "00:31"
+            }
+          ]
+        },
+        {
+          "text": "끓는 물에 파스타 면 1인분을 넣고 소금을 살짝 넣어 취향에 맞는 식감으로 삶아준 뒤 물과 분리하고 면수는 조금 남겨둡니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "끓는 물에 파스타 면을 퍼뜨려서 넣어준 뒤 소금 살짝 넣고 본인이 좋아하는 파스타 식감이 되도록 삶아주시면 됩니다. 잘 삶아진 파스타 면은 물과 분리시켜주고 면 삶은 물은 다 버리지 말고 조금 남겨둡니다.",
+              "timestamp": "00:47"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유를 넉넉하게 두르고 계란 하나를 까서 계란후라이를 만든 뒤 잠시 옆으로 빼둡니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "식용유를 넉넉하게 둘러주고 계란 하나를 톡 까서 올려준 다음 맛있는 계란후라이로 만들어 줍니다. 그리고 잠시 옆으로 빼주고",
+              "timestamp": "01:02"
+            }
+          ]
+        },
+        {
+          "text": "팬에 남은 식용유 위로 손질해둔 소시지, 양파, 피망을 넣고 소시지 겉면이 갈색빛이 돌 때까지 1~2분간 살짝 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "남은 식용유 위로 손질해둔 소시지, 양파, 피망 다 올려줍니다. 소시지 겉면에 갈색빛이 띌 때까지 살짝만 볶아줍니다. 1~2분만 볶아주셔도 충분할 겁니다.",
+              "timestamp": "01:09"
+            }
+          ]
+        },
+        {
+          "text": "삶아둔 파스타 면과 면수를 살짝 넣고, 토마토 케찹 5스푼, 돈까스소스 2스푼을 넣은 뒤 양념이 골고루 섞이도록 1분간 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 미리 삶아 놓은 파스타 면과 면이 잘 풀리도록 면수를 살짝 넣고 토메이토 케찹 다섯 스푼과 국민 소스인 돈까스소스를 2스푼 넣고 양념이 골고루 섞이도록 1분간 볶아주시면 됩니다.",
+              "timestamp": "01:25"
+            }
+          ]
+        },
+        {
+          "text": "스파게티를 그릇에 담고, 미리 구워둔 계란후라이를 올린 뒤 파마산 치즈 가루와 후추, 파슬리를 뿌려 완성합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "있는 그대로 그릇에 다 부어주고... 처음에 빼둔 계란후라이와 피자 시켜 먹고 하나씩 따라오는 이런 파마산 치즈 가루가 있다면 골고루 흩뿌려주고 마지막으로 후추나 파슬리를 굉장히 지저분하게 흩뿌려주고 그릇 주변을 깨끗이 정리만 해주면",
+              "timestamp": "01:48"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

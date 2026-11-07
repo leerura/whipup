@@ -1,0 +1,226 @@
+{
+  "videoId": "e2Pp-bi4zeE",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/e2Pp-bi4zeE",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T23:43:04.023326+00:00",
+    "rawResponse": "{\n  \"title\": \"쯔유로 만드는 초간단 계란덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"물 100ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"100\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 100ml\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쯔유 3T\",\n      \"displayName\": \"쯔유\",\n      \"amount\": \"3\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쯔유 3T\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 1/2T\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1/2\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 1/2T\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1t\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"t\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1t\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"채썬 양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"채썬 양파 넣고\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 두개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"두\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 두개 풀어넣고\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 위에 올리고\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파나 쪽파\",\n      \"displayName\": \"대파 또는 쪽파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파나 쪽파 올리면\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 물 100ml, 쯔유 3T, 진간장 1/2T, 설탕 1t을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 100ml\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쯔유 3T / 진간장 1/2T / 설탕 1t\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"채썬 양파를 넣고 1~2분 정도 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"채썬 양파 넣고\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1~2분 정도 끓이다가\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 두 개를 풀어 넣고 살짝 저어가며 몽글몽글하게 익혀준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 두개 풀어넣고\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"살짝 저어가며\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"몽글몽글하게 익혀주세요\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 위에 익힌 계란과 양파를 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 위에 올리고\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파나 쪽파를 올리면 완성된다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파나 쪽파 올리면\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"완성입니다\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"A red powder (such as shichimi togarashi or chili powder) is sprinkled on top of the finished dish at 00:01 and 00:19, but its identity, quantity, and name are not specified in the text or voiceover.\"\n  ]\n}",
+    "result": {
+      "title": "쯔유로 만드는 초간단 계란덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "물 100ml",
+          "displayName": "물",
+          "amount": "100",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 100ml",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "쯔유 3T",
+          "displayName": "쯔유",
+          "amount": "3",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쯔유 3T",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "진간장 1/2T",
+          "displayName": "진간장",
+          "amount": "1/2",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 1/2T",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "설탕 1t",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "t",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1t",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "채썬 양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "채썬 양파 넣고",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "계란 두개",
+          "displayName": "계란",
+          "amount": "두",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 두개 풀어넣고",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 위에 올리고",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "대파나 쪽파",
+          "displayName": "대파 또는 쪽파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파나 쪽파 올리면",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 물 100ml, 쯔유 3T, 진간장 1/2T, 설탕 1t을 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 100ml",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쯔유 3T / 진간장 1/2T / 설탕 1t",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "채썬 양파를 넣고 1~2분 정도 끓인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "채썬 양파 넣고",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1~2분 정도 끓이다가",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "계란 두 개를 풀어 넣고 살짝 저어가며 몽글몽글하게 익혀준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 두개 풀어넣고",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "살짝 저어가며",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "몽글몽글하게 익혀주세요",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "밥 위에 익힌 계란과 양파를 올린다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 위에 올리고",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "대파나 쪽파를 올리면 완성된다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파나 쪽파 올리면",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "완성입니다",
+              "timestamp": "00:18"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "A red powder (such as shichimi togarashi or chili powder) is sprinkled on top of the finished dish at 00:01 and 00:19, but its identity, quantity, and name are not specified in the text or voiceover."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

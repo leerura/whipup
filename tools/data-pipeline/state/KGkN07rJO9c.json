@@ -1,0 +1,293 @@
+{
+  "videoId": "KGkN07rJO9c",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/KGkN07rJO9c",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T15:19:04.506264+00:00",
+    "rawResponse": "{\n  \"title\": \"케첩계란밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"케첩 3큰술\",\n      \"displayName\": \"케첩\",\n      \"amount\": \"3\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"케첩 3큰술\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"케첩 넣고\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 1큰술\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 1큰술\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 넣고\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"알룰로스 1큰술\",\n      \"displayName\": \"알룰로스\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"알룰로스 넣고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"간장 넣은 용기에 숟가락으로 알룰로스를 1큰술 넣음\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 3큰술\",\n      \"displayName\": \"물\",\n      \"amount\": \"3\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 3큰술\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 넣어\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"자투리채소\",\n      \"displayName\": \"자투리채소\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"자투리채소 넣어\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"자투리채소 넣어\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"잘게 썬 양파 등의 자투리 채소를 팬에 넣음\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 기름을 두르고 채소를 볶음\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 3개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"3\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"3개\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 자리 만들어 넣어주고\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 계란 3개를 깨뜨려 넣음\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추톡톡\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"조려진 계란 위에 후추를 톡톡 뿌림\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"케첩계란밥\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 담긴 밥 위에 완성된 케첩계란을 올려 비벼 먹음\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"케첩 3큰술, 간장 1큰술, 알룰로스 1큰술, 물 3큰술을 섞어 소스를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"케첩 넣고 간장 넣고 알룰로스 넣고 물 넣어 소스 만들어주고\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"케첩 3큰술 / 간장 1큰술 / 물 3큰술\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"기름 두른 팬에 잘게 썬 자투리 채소를 넣고 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"자투리채소 넣어 볶아주다가\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"자투리채소 넣어 냉털메뉴\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 계란이 들어갈 자리를 만들고 계란 3개를 깨뜨려 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 자리 만들어 넣어주고\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 자리 누울자리 / 넣어주고 3개\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"만들어 둔 소스를 붓고 약불에서 졸이듯이 반숙으로 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소스 부어 약불에서 조리듯이 익혀주면\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"약불에서 / 줄이듯이 반숙으로 / 익혀주면\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"후추를 톡톡 뿌려 마무리한 뒤 밥 위에 얹어 비벼 먹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추톡톡\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"익힌 계란 위에 후추를 뿌리고 밥 위에 얹음\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"자투리채소의 구체적인 채소 종류와 계량 미기재 (영상에서는 다진 양파 사용)\",\n    \"팬에 두르는 식용유의 양 미기재\",\n    \"곁들이는 밥의 분량 미기재\"\n  ]\n}",
+    "result": {
+      "title": "케첩계란밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "케첩 3큰술",
+          "displayName": "케첩",
+          "amount": "3",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "케첩 3큰술",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "케첩 넣고",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "간장 1큰술",
+          "displayName": "간장",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 1큰술",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장 넣고",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "알룰로스 1큰술",
+          "displayName": "알룰로스",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "알룰로스 넣고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "간장 넣은 용기에 숟가락으로 알룰로스를 1큰술 넣음",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "물 3큰술",
+          "displayName": "물",
+          "amount": "3",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 3큰술",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 넣어",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "자투리채소",
+          "displayName": "자투리채소",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "자투리채소 넣어",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "자투리채소 넣어",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "잘게 썬 양파 등의 자투리 채소를 팬에 넣음",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 기름을 두르고 채소를 볶음",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "계란 3개",
+          "displayName": "계란",
+          "amount": "3",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "3개",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란 자리 만들어 넣어주고",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 계란 3개를 깨뜨려 넣음",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추톡톡",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "조려진 계란 위에 후추를 톡톡 뿌림",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "케첩계란밥",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 담긴 밥 위에 완성된 케첩계란을 올려 비벼 먹음",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "케첩 3큰술, 간장 1큰술, 알룰로스 1큰술, 물 3큰술을 섞어 소스를 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "케첩 넣고 간장 넣고 알룰로스 넣고 물 넣어 소스 만들어주고",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "케첩 3큰술 / 간장 1큰술 / 물 3큰술",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "기름 두른 팬에 잘게 썬 자투리 채소를 넣고 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "자투리채소 넣어 볶아주다가",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "자투리채소 넣어 냉털메뉴",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "팬에 계란이 들어갈 자리를 만들고 계란 3개를 깨뜨려 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 자리 만들어 넣어주고",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 자리 누울자리 / 넣어주고 3개",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "만들어 둔 소스를 붓고 약불에서 졸이듯이 반숙으로 익힌다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소스 부어 약불에서 조리듯이 익혀주면",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "약불에서 / 줄이듯이 반숙으로 / 익혀주면",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "후추를 톡톡 뿌려 마무리한 뒤 밥 위에 얹어 비벼 먹는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추톡톡",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "익힌 계란 위에 후추를 뿌리고 밥 위에 얹음",
+              "timestamp": "00:00"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "자투리채소의 구체적인 채소 종류와 계량 미기재 (영상에서는 다진 양파 사용)",
+        "팬에 두르는 식용유의 양 미기재",
+        "곁들이는 밥의 분량 미기재"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

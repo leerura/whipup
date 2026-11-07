@@ -1,0 +1,208 @@
+{
+  "videoId": "bxtwdOSWkK4",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/bxtwdOSWkK4",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T08:36:44.036532+00:00",
+    "rawResponse": "{\n  \"title\": \"계란 볶음밥\",\n  \"description\": null,\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"햇반\",\n      \"displayName\": \"햇반\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"햇반에 계란 하나를 넣고\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볼에 즉석밥(햇반) 1개를 넣는 모습\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 2개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"햇반에 계란 하나를 넣고\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"또 다른 계란 하나는 풀어서\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스\",\n      \"displayName\": \"굴소스\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간은 굴소스와\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"숟가락으로 굴소스를 팬에 넣는 모습\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금으로 해주시고\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"작은 스푼으로 소금을 팬에 넣는 모습\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막에 대파를 넣고\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"송송 썬 대파를 칼로 쓸어 팬에 넣는 모습\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"햇반에 계란 하나를 넣고 밥알을 골고루 코팅해 준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"햇반에 계란 하나를 넣고 밥알을 코팅해 주세요\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볼에 햇반과 계란을 넣고 주걱으로 섞어 밥알을 코팅하는 모습\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"또 다른 계란 하나를 풀어 달궈진 팬에 넣고 스크램블을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"또 다른 계란 하나는 풀어서 달궈진 팬에 먼저 스크램블을 만들어 주세요\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"푼 달걀물을 달궈진 프라이팬에 붓고 저어 스크램블을 만드는 모습\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"만들어진 스크램블에 계란 코팅해 둔 밥을 넣고 2분간 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 코팅해둔 밥을 넣고 2분간 볶아줍니다\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"스크램블에 계란 코팅된 밥을 붓고 주걱으로 볶는 모습\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"굴소스와 소금을 넣어 간을 맞춘 뒤 1분간 더 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간은 굴소스와 소금으로 해주시고 1분간 더 볶다가\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"굴소스와 소금을 밥 위에 넣고 골고루 볶는 모습\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마지막에 송송 썬 대파를 넣고 30초만 더 볶아 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막에 대파를 넣고 30초만 더 볶아주세요\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"썬 대파를 팬에 넣고 밥과 함께 볶는 모습\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"굴소스, 소금, 대파의 정확한 계량 수치 및 단위 미언급\",\n    \"스크램블 조리 시 팬에 두른 식용유 사용 여부 및 양 미언급\"\n  ]\n}",
+    "result": {
+      "title": "계란 볶음밥",
+      "description": null,
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "햇반",
+          "displayName": "햇반",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "햇반에 계란 하나를 넣고",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볼에 즉석밥(햇반) 1개를 넣는 모습",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "계란 2개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "햇반에 계란 하나를 넣고",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "또 다른 계란 하나는 풀어서",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "굴소스",
+          "displayName": "굴소스",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "간은 굴소스와",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "숟가락으로 굴소스를 팬에 넣는 모습",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "소금",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소금으로 해주시고",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "작은 스푼으로 소금을 팬에 넣는 모습",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막에 대파를 넣고",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "송송 썬 대파를 칼로 쓸어 팬에 넣는 모습",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        }
+      ],
+      "steps": [
+        {
+          "text": "햇반에 계란 하나를 넣고 밥알을 골고루 코팅해 준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "햇반에 계란 하나를 넣고 밥알을 코팅해 주세요",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볼에 햇반과 계란을 넣고 주걱으로 섞어 밥알을 코팅하는 모습",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "또 다른 계란 하나를 풀어 달궈진 팬에 넣고 스크램블을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "또 다른 계란 하나는 풀어서 달궈진 팬에 먼저 스크램블을 만들어 주세요",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "푼 달걀물을 달궈진 프라이팬에 붓고 저어 스크램블을 만드는 모습",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "만들어진 스크램블에 계란 코팅해 둔 밥을 넣고 2분간 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 코팅해둔 밥을 넣고 2분간 볶아줍니다",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "스크램블에 계란 코팅된 밥을 붓고 주걱으로 볶는 모습",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "굴소스와 소금을 넣어 간을 맞춘 뒤 1분간 더 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "간은 굴소스와 소금으로 해주시고 1분간 더 볶다가",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "굴소스와 소금을 밥 위에 넣고 골고루 볶는 모습",
+              "timestamp": "00:21"
+            }
+          ]
+        },
+        {
+          "text": "마지막에 송송 썬 대파를 넣고 30초만 더 볶아 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막에 대파를 넣고 30초만 더 볶아주세요",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "썬 대파를 팬에 넣고 밥과 함께 볶는 모습",
+              "timestamp": "00:25"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "굴소스, 소금, 대파의 정확한 계량 수치 및 단위 미언급",
+        "스크램블 조리 시 팬에 두른 식용유 사용 여부 및 양 미언급"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

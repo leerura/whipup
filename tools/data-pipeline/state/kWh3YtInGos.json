@@ -1,0 +1,331 @@
+{
+  "videoId": "kWh3YtInGos",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/kWh3YtInGos",
+  "sourceMetadata": {"sourceTitle":"나만 알고싶은 김치볶음밥","sourceChannelName":"하루한끼 one meal a day","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.890983Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T10:37:22.711123+00:00",
+    "rawResponse": "{\n  \"title\": \"김치볶음밥\",\n  \"description\": null,\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"밥 1공기\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 1공기\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치 반공기\",\n      \"displayName\": \"김치\",\n      \"amount\": \"0.5\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치 반공기\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"햄\",\n      \"displayName\": \"햄\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"햄\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"스팸도 있어서 조금 넣어보려구요\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파\",\n      \"displayName\": \"파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"파\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"집에 계란이 있어서 후라이도 하나 만들게요\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다시 식용유를 넉넉히 둘러요\",\n          \"timestamp\": \"00:58\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 반스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루 반스푼\",\n          \"timestamp\": \"01:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"01:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 1스푼\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"간장도 1스푼\",\n          \"timestamp\": \"01:54\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"대파를 반으로 가른 뒤 썰어 준비합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"제일 먼저 파를 손봐줄게요\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"반으로 갈라서 썰어줍니다\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"햄을 깍둑썰기합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"깍둑깍둑 썰어봅니다\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유를 두르고 계란후라이를 하나 만든 뒤 접시에 덜어둡니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"집에 계란이 있어서 후라이도 하나 만들게요\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란후라이는 접시에 옮겨놓고\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유를 넉넉히 두르고 썰어둔 파를 넣어 중불에서 볶아 파 향을 냅니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다시 식용유를 넉넉히 둘러요\",\n          \"timestamp\": \"00:58\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 썰어놓은 파를 넣어줍니다\",\n          \"timestamp\": \"01:00\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"중불에서 볶아주다가\",\n          \"timestamp\": \"01:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"파 향이 올라오면 썰어둔 햄을 넣고 노릇해질 때까지 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"맛있는 파 향기가 올라오면 햄을 넣어요\",\n          \"timestamp\": \"01:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"햄도 적당히 노릇해지면\",\n          \"timestamp\": \"01:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"잘게 자른 김치와 고춧가루 반 스푼, 설탕 1스푼을 넣고 중불에서 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 잘게 자른 김치를 넣어줍니다\",\n          \"timestamp\": \"01:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루 반스푼\",\n          \"timestamp\": \"01:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"01:33\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"중불에서 계속 볶아줘요\",\n          \"timestamp\": \"01:35\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김치가 어느 정도 볶아지면 불을 약불로 줄이고 밥 1공기를 넣어 골고루 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김치도 어느정도 볶아지면\",\n          \"timestamp\": \"01:41\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"약불로 줄이고 밥을 넣어줍니다\",\n          \"timestamp\": \"01:43\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 밥만 볶으면 끝이에요\",\n          \"timestamp\": \"01:48\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬 귀퉁이에 간장 1스푼을 넣고 끓어오르면 밥과 함께 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"간장도 1스푼\",\n          \"timestamp\": \"01:54\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬 귀퉁이에 넣고 끓어오르면\",\n          \"timestamp\": \"01:57\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"같이 볶아줍니다\",\n          \"timestamp\": \"02:01\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 김치볶음밥을 그릇에 담고 위에 계란후라이를 올려 마무리합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김치볶음밥 완성~\",\n          \"timestamp\": \"02:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그릇에 바로 담아볼게요\",\n          \"timestamp\": \"02:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 모자도 이쁘게 씌워줬어요\",\n          \"timestamp\": \"02:15\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "김치볶음밥",
+      "description": null,
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "밥 1공기",
+          "displayName": "밥",
+          "amount": "1",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 1공기",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "김치 반공기",
+          "displayName": "김치",
+          "amount": "0.5",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치 반공기",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "햄",
+          "displayName": "햄",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "햄",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "스팸도 있어서 조금 넣어보려구요",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "파",
+          "displayName": "파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "파",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "계란",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "개",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "집에 계란이 있어서 후라이도 하나 만들게요",
+              "timestamp": "00:46"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다시 식용유를 넉넉히 둘러요",
+              "timestamp": "00:58"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "고춧가루 반스푼",
+          "displayName": "고춧가루",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루 반스푼",
+              "timestamp": "01:30"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "설탕 1스푼",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 1스푼",
+              "timestamp": "01:33"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "간장 1스푼",
+          "displayName": "간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "간장도 1스푼",
+              "timestamp": "01:54"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "대파를 반으로 가른 뒤 썰어 준비합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "제일 먼저 파를 손봐줄게요",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "반으로 갈라서 썰어줍니다",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "햄을 깍둑썰기합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "깍둑깍둑 썰어봅니다",
+              "timestamp": "00:37"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유를 두르고 계란후라이를 하나 만든 뒤 접시에 덜어둡니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "집에 계란이 있어서 후라이도 하나 만들게요",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란후라이는 접시에 옮겨놓고",
+              "timestamp": "00:54"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유를 넉넉히 두르고 썰어둔 파를 넣어 중불에서 볶아 파 향을 냅니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다시 식용유를 넉넉히 둘러요",
+              "timestamp": "00:58"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 썰어놓은 파를 넣어줍니다",
+              "timestamp": "01:00"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "중불에서 볶아주다가",
+              "timestamp": "01:08"
+            }
+          ]
+        },
+        {
+          "text": "파 향이 올라오면 썰어둔 햄을 넣고 노릇해질 때까지 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "맛있는 파 향기가 올라오면 햄을 넣어요",
+              "timestamp": "01:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "햄도 적당히 노릇해지면",
+              "timestamp": "01:19"
+            }
+          ]
+        },
+        {
+          "text": "잘게 자른 김치와 고춧가루 반 스푼, 설탕 1스푼을 넣고 중불에서 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 잘게 자른 김치를 넣어줍니다",
+              "timestamp": "01:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루 반스푼",
+              "timestamp": "01:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 1스푼",
+              "timestamp": "01:33"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "중불에서 계속 볶아줘요",
+              "timestamp": "01:35"
+            }
+          ]
+        },
+        {
+          "text": "김치가 어느 정도 볶아지면 불을 약불로 줄이고 밥 1공기를 넣어 골고루 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "김치도 어느정도 볶아지면",
+              "timestamp": "01:41"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "약불로 줄이고 밥을 넣어줍니다",
+              "timestamp": "01:43"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 밥만 볶으면 끝이에요",
+              "timestamp": "01:48"
+            }
+          ]
+        },
+        {
+          "text": "팬 귀퉁이에 간장 1스푼을 넣고 끓어오르면 밥과 함께 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "간장도 1스푼",
+              "timestamp": "01:54"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "팬 귀퉁이에 넣고 끓어오르면",
+              "timestamp": "01:57"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "같이 볶아줍니다",
+              "timestamp": "02:01"
+            }
+          ]
+        },
+        {
+          "text": "완성된 김치볶음밥을 그릇에 담고 위에 계란후라이를 올려 마무리합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "김치볶음밥 완성~",
+              "timestamp": "02:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그릇에 바로 담아볼게요",
+              "timestamp": "02:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란 모자도 이쁘게 씌워줬어요",
+              "timestamp": "02:15"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

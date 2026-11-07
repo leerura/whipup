@@ -1,0 +1,338 @@
+{
+  "videoId": "FrFxfZFerOg",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/FrFxfZFerOg",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:32:17.728587+00:00",
+    "rawResponse": "{\n  \"title\": \"잔치국수\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"물\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물을 넣고 끓여줍시다\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소면\",\n      \"displayName\": \"소면\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"끓으면 소면 투하\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"찬물\",\n      \"displayName\": \"찬물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"끓을때마다 찬물 한번씩!\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두번정도 넣어줍시다.\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"새로운 물\",\n      \"displayName\": \"새로운 물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"새로운 물을 넣어줍시다\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"오뚜기 멸치장국 반컵\",\n      \"displayName\": \"오뚜기 멸치장국\",\n      \"amount\": \"0.5\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"오뚜기 멸치장국 반컵\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 한숟가락\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 한숟가락 넣어줍시다\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 한개\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 한개\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"어묵 한개\",\n      \"displayName\": \"어묵\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"어묵 한개\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"냉동 파 한줌\",\n      \"displayName\": \"냉동 파\",\n      \"amount\": \"1\",\n      \"unit\": \"줌\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"냉동 파 한줌\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란\",\n      \"displayName\": \"계란\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마지막으로 끓을때 계란 휘리릭~\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 담긴 국수 위에 후춧가루를 톡톡 뿌린다\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"국수 위에 부순 김을 고명으로 올린다\",\n          \"timestamp\": \"00:55\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 물을 넣고 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물을 넣고 끓여줍시다\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물이 끓어오르면 소면을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"끓으면 소면 투하\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물이 끓어넘치려 할 때마다 찬물을 한 번씩 부어주며 두 번 정도 반복해 면을 삶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"끓을때마다 찬물 한번씩!\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두번정도 넣어줍시다.\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삶아진 소면을 찬물에 헹궈 물기를 뺀다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"찬물에 씻어주시고~\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 새로운 물을 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"새로운 물을 넣어줍시다\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"오뚜기 멸치장국 반 컵과 진간장 한 숟가락을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"오뚜기 멸치장국 반컵\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 한숟가락 넣어줍시다\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"청양고추 1개와 어묵 1개를 가위로 썰어 넣고, 냉동 파 한 줌을 넣고 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 한개\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"어묵 한개\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"냉동 파 한줌\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국물이 끓어오를 때 푼 계란을 둘러 넣어 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마지막으로 끓을때 계란 휘리릭~\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 삶아둔 소면을 담고 끓인 육수와 건더기를 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 소면을 넣고 국물과 건더기를 붓는다\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"text\": \"후춧가루를 뿌리고 김가루를 얹어 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"후추를 뿌리고 김가루를 고명으로 올린다\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"영상 내에 요리 제목이 명시적으로 표시되지 않아 일반적인 요리명인 '잔치국수'로 명명함\",\n    \"소면, 물(육수용/면 삶기용), 계란의 정확한 용량/개수는 영상에 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "잔치국수",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "물",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물을 넣고 끓여줍시다",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "소면",
+          "displayName": "소면",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "끓으면 소면 투하",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "찬물",
+          "displayName": "찬물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "끓을때마다 찬물 한번씩!",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두번정도 넣어줍시다.",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "새로운 물",
+          "displayName": "새로운 물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "새로운 물을 넣어줍시다",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "오뚜기 멸치장국 반컵",
+          "displayName": "오뚜기 멸치장국",
+          "amount": "0.5",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "오뚜기 멸치장국 반컵",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "진간장 한숟가락",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 한숟가락 넣어줍시다",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "청양고추 한개",
+          "displayName": "청양고추",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 한개",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "어묵 한개",
+          "displayName": "어묵",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "어묵 한개",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "냉동 파 한줌",
+          "displayName": "냉동 파",
+          "amount": "1",
+          "unit": "줌",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "냉동 파 한줌",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "계란",
+          "displayName": "계란",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마지막으로 끓을때 계란 휘리릭~",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 담긴 국수 위에 후춧가루를 톡톡 뿌린다",
+              "timestamp": "00:53"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "김가루",
+          "displayName": "김가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "국수 위에 부순 김을 고명으로 올린다",
+              "timestamp": "00:55"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 물을 넣고 끓인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물을 넣고 끓여줍시다",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "물이 끓어오르면 소면을 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "끓으면 소면 투하",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "물이 끓어넘치려 할 때마다 찬물을 한 번씩 부어주며 두 번 정도 반복해 면을 삶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "끓을때마다 찬물 한번씩!",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두번정도 넣어줍시다.",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "삶아진 소면을 찬물에 헹궈 물기를 뺀다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "찬물에 씻어주시고~",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 새로운 물을 붓는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "새로운 물을 넣어줍시다",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "오뚜기 멸치장국 반 컵과 진간장 한 숟가락을 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "오뚜기 멸치장국 반컵",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 한숟가락 넣어줍시다",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "청양고추 1개와 어묵 1개를 가위로 썰어 넣고, 냉동 파 한 줌을 넣고 끓인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 한개",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "어묵 한개",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "냉동 파 한줌",
+              "timestamp": "00:37"
+            }
+          ]
+        },
+        {
+          "text": "국물이 끓어오를 때 푼 계란을 둘러 넣어 익힌다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마지막으로 끓을때 계란 휘리릭~",
+              "timestamp": "00:39"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 삶아둔 소면을 담고 끓인 육수와 건더기를 붓는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 소면을 넣고 국물과 건더기를 붓는다",
+              "timestamp": "00:46"
+            }
+          ]
+        },
+        {
+          "text": "후춧가루를 뿌리고 김가루를 얹어 완성한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "후추를 뿌리고 김가루를 고명으로 올린다",
+              "timestamp": "00:53"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "영상 내에 요리 제목이 명시적으로 표시되지 않아 일반적인 요리명인 '잔치국수'로 명명함",
+        "소면, 물(육수용/면 삶기용), 계란의 정확한 용량/개수는 영상에 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

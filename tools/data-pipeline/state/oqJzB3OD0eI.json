@@ -1,0 +1,677 @@
+{
+  "videoId": "oqJzB3OD0eI",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/oqJzB3OD0eI",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:45:35.040459+00:00",
+    "rawResponse": "{\n  \"title\": \"고기 듬뿍 카레\",\n  \"description\": \"휴가를 떠나기 전 가족들을 위해 대용량 솥에 고기와 채소를 듬뿍 넣고 끓여 다음 날까지 진하게 즐기는 레이먼 킴 표 카레 레시피\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"돼지고기 목심 300g\",\n      \"displayName\": \"돼지고기 목심\",\n      \"amount\": \"300\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"오늘의 고기 돼지 목심 300g, 등심 300g\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"<오늘의 재료> 돼지고기 목심 300g, 등심 300g\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"등심 300g\",\n      \"displayName\": \"돼지고기 등심\",\n      \"amount\": \"300\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"오늘의 고기 돼지 목심 300g, 등심 300g\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"<오늘의 재료> 돼지고기 목심 300g, 등심 300g\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"약간 매운맛 카레 2봉지\",\n      \"displayName\": \"약간 매운맛 카레 가루\",\n      \"amount\": \"2\",\n      \"unit\": \"봉지\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"<오늘의 재료> 약간 매운맛 카레 2봉지\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"오뚜기 백세카레 약간매운맛 2봉지 준비\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"당근 1개\",\n      \"displayName\": \"당근\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"<오늘의 재료> 당근 1개\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"당근 하나 넣겠습니다\",\n          \"timestamp\": \"01:03\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"당근 1개 껍질 슥슥속속\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"감자 2알\",\n      \"displayName\": \"감자\",\n      \"amount\": \"2\",\n      \"unit\": \"알\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"<오늘의 재료> 감자 2알\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"감자 2알 껍질 휘리릭\",\n          \"timestamp\": \"01:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"토마토 1알\",\n      \"displayName\": \"토마토\",\n      \"amount\": \"1\",\n      \"unit\": \"알\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"<오늘의 재료> 토마토 1알\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 토마토. 토마토를 왜 넣느냐면 토마토가 엄청난 감칠맛\",\n          \"timestamp\": \"01:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돼지호박 1개\",\n      \"displayName\": \"돼지호박\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"<오늘의 재료> 돼지호박 1개\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 돼지호박\",\n          \"timestamp\": \"01:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 3알\",\n      \"displayName\": \"양파\",\n      \"amount\": \"3\",\n      \"unit\": \"알\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"<오늘의 재료> 양파 3알\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 3알 주사위 썰기\",\n          \"timestamp\": \"02:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 5컵\",\n      \"displayName\": \"물\",\n      \"amount\": \"5\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"<오늘의 재료> 물 5컵\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"베트남 고추 3개\",\n      \"displayName\": \"베트남 고추\",\n      \"amount\": \"3\",\n      \"unit\": \"개\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"<오늘의 재료> 베트남 고추 3개\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"매운 거 좋아하시는 분들은 고추를 일단 3개\",\n          \"timestamp\": \"05:29\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"베트남 고추 3개 뿌셔넣기\",\n          \"timestamp\": \"05:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"버터 2T\",\n      \"displayName\": \"버터\",\n      \"amount\": \"2\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"<오늘의 재료> 버터 2T\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 버터를 넣습니다\",\n          \"timestamp\": \"06:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"버터 퐁당\",\n          \"timestamp\": \"06:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유 또는 올리브유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"<오늘의 재료> 식용유\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"올리브유 충분히\",\n          \"timestamp\": \"02:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"올리브오일도 좋고 그냥 식용유도 좋고\",\n          \"timestamp\": \"02:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"<오늘의 재료> 소금\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"<오늘의 재료> 후추\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 여기에 후추를 많이 넣는 게\",\n          \"timestamp\": \"06:26\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 마니\",\n          \"timestamp\": \"06:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"접시에 담긴 밥 위에 완성된 카레를 붓는 모습\",\n          \"timestamp\": \"06:43\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"당근 1개의 껍질을 벗긴 후 주사위 모양으로 깍둑썰기합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"당근 1개 껍질 슥슥속속\",\n          \"timestamp\": \"01:05\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"당근 1개 주사위 썰기\",\n          \"timestamp\": \"01:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"감자 2알의 껍질을 벗긴 후 당근과 비슷한 크기의 주사위 모양으로 깍둑썰기합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"감자 2알 껍질 휘리릭\",\n          \"timestamp\": \"01:26\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"감자도 당근처럼\",\n          \"timestamp\": \"01:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"토마토 1알의 꼭지를 제거합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"토마토 꼭지 제거\",\n          \"timestamp\": \"01:36\"\n        }\n      ]\n    },\n    {\n      \"text\": \"돼지호박을 반으로 갈라 쓴맛을 내는 가운데 씨 부분을 숟가락 등으로 파내고, 오래 끓여도 무르지 않도록 두껍게 썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"돼지호박 두 동강\",\n          \"timestamp\": \"01:46\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"가운데 파서 씨 빼기\",\n          \"timestamp\": \"01:49\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Raymon's Tip. 돼지호박은 쓴맛을 없애기 위해 씨를 다 빼줘야 함\",\n          \"timestamp\": \"01:55\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"돼지호박 두껍게 썰기\",\n          \"timestamp\": \"02:01\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 3알을 주사위 모양으로 썰어 손질을 마칩니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 3알 주사위 썰기\",\n          \"timestamp\": \"02:05\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"채소 준비 완!\",\n          \"timestamp\": \"02:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 올리브유(또는 식용유)를 충분히 두르고 썰어둔 양파를 넣어 중간 불에서 오래 볶아 캐러멜라이징합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"올리브유 충분히\",\n          \"timestamp\": \"02:25\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 중간불에서 오래 볶볶\",\n          \"timestamp\": \"02:30\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파를 카라멜라이징 해주세요\",\n          \"timestamp\": \"02:38\"\n        }\n      ]\n    },\n    {\n      \"text\": \"돼지고기 목심을 큼직하게 숭덩숭덩 썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"목심 숭덩숭덩 썰기\",\n          \"timestamp\": \"02:42\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 썬 목심과 등심을 함께 담고, 카레 가루 일부를 솔솔 뿌려 고기에 고루 묻혀 버무려 둡니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"목심 + 등심 합체\",\n          \"timestamp\": \"02:47\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"카레 가루 솔솔솔\",\n          \"timestamp\": \"02:51\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고기와 카레 가루를 잘 섞어주세요\",\n          \"timestamp\": \"02:57\"\n        }\n      ]\n    },\n    {\n      \"text\": \"캐러멜라이징된 양파에 손질한 당근, 감자, 돼지호박을 모두 넣고 잘 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"모든 채소 다 넣기\",\n          \"timestamp\": \"03:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"잘 볶아주세요\",\n          \"timestamp\": \"03:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"더 큰 냄비에 기름을 두르고 카레 가루를 묻혀둔 고기를 넣어 잘 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"카레 가루를 묻힌 고기 볶기\",\n          \"timestamp\": \"03:44\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"잘 볶아주세요\",\n          \"timestamp\": \"03:49\"\n        }\n      ]\n    },\n    {\n      \"text\": \"꼭지를 딴 토마토를 대충 썰어 고기를 볶던 냄비에 넣고 함께 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"토마토 대충 썰\",\n          \"timestamp\": \"03:54\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"썬 토마토를 고기 냄비에 투하하고 볶는 모습\",\n          \"timestamp\": \"04:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기 냄비 밑바닥이 타지 않도록 물을 조금씩 부어가며 바닥을 긁어주며 볶습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물을 조금씩 넣으면서 볶아주세요\",\n          \"timestamp\": \"04:07\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밑바닥 타지 않게 긁긁\",\n          \"timestamp\": \"04:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"다른 냄비에서 볶던 채소를 고기 솥에 붓고, 채소 냄비에 남은 맛 성분까지 물을 조금 부어 헹궈 고기 솥에 모두 부어준 뒤 함께 볶습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볶던 채소 고기 솥에 IN\",\n          \"timestamp\": \"04:18\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볶던 채소 솥에 물 쪼끔\",\n          \"timestamp\": \"04:21\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛있는 거 탈탈탈\",\n          \"timestamp\": \"04:33\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"잘 볶아주기\",\n          \"timestamp\": \"04:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"온도가 떨어지지 않도록 따뜻한 물을 농도를 봐가며 조금씩 추가합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물은 농도 맞춰가며 조금씩 넣기\",\n          \"timestamp\": \"04:41\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Raymon's Tip. 온도가 떨어지지 않게 뜨거운 물 넣어주기\",\n          \"timestamp\": \"04:47\"\n        }\n      ]\n    },\n    {\n      \"text\": \"빈 냄비에 물을 붓고 남은 카레 가루를 풀어 카레 가루물을 만듭니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"그래도 물에 풀어서 넣어줍시다\",\n          \"timestamp\": \"05:01\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"카레 가루 물에 잘 풀기\",\n          \"timestamp\": \"05:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"카레 재료가 든 주 냄비의 불을 낮추고 뚜껑을 덮어 채수와 고기 육수가 우러나오도록 약 15분간 끓입니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"불 낮추고 15분 정도 끓여줍니다\",\n          \"timestamp\": \"05:12\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"~ 15분 후 ~\",\n          \"timestamp\": \"05:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 잠시 끄고 매운맛을 위해 베트남 고추 3개를 손으로 부수어 넣습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"이 솥 불을 잠시 끄시고\",\n          \"timestamp\": \"05:27\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"베트남 고추 3개 뿌셔넣기\",\n          \"timestamp\": \"05:32\"\n        }\n      ]\n    },\n    {\n      \"text\": \"미리 풀어둔 카레 가루물을 주 냄비에 붓고 잘 저어 걸쭉하게 농도를 잡아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"카레 가루물 합치기\",\n          \"timestamp\": \"05:36\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"걸죽하게 농도를 잡아주세요\",\n          \"timestamp\": \"05:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"버터 2T를 넣어 풍미를 더해줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"버터 퐁당\",\n          \"timestamp\": \"06:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 버터를 넣습니다... 이러면 맛이 훨씬 더 풍부해져요\",\n          \"timestamp\": \"06:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"후추를 넉넉하게 갈아 넣고, 당근과 호박이 반투명해질 때까지 몇 분간 더 끓여 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 마니\",\n          \"timestamp\": \"06:27\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Raymon's Tip. 카레가 맛있어지는 기준은 당근과 호박이 반투명해졌을 때\",\n          \"timestamp\": \"06:23\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"몇 분간 더 끓여줍니다\",\n          \"timestamp\": \"06:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 고기 듬뿍 카레를 밥 위에 얹어 냅니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥이 담긴 접시에 한국자씩 카레를 얹어 담아내는 장면\",\n          \"timestamp\": \"06:43\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"소금의 구체적인 투입 시점 및 투입량은 영상 화면 재료 목록에만 명시되어 있고 실제 조리 과정에서는 직접 투입하는 장면이 등장하지 않음\"\n  ]\n}",
+    "result": {
+      "title": "고기 듬뿍 카레",
+      "description": "휴가를 떠나기 전 가족들을 위해 대용량 솥에 고기와 채소를 듬뿍 넣고 끓여 다음 날까지 진하게 즐기는 레이먼 킴 표 카레 레시피",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "돼지고기 목심 300g",
+          "displayName": "돼지고기 목심",
+          "amount": "300",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "오늘의 고기 돼지 목심 300g, 등심 300g",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "<오늘의 재료> 돼지고기 목심 300g, 등심 300g",
+              "timestamp": "00:53"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "등심 300g",
+          "displayName": "돼지고기 등심",
+          "amount": "300",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "오늘의 고기 돼지 목심 300g, 등심 300g",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "<오늘의 재료> 돼지고기 목심 300g, 등심 300g",
+              "timestamp": "00:53"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "약간 매운맛 카레 2봉지",
+          "displayName": "약간 매운맛 카레 가루",
+          "amount": "2",
+          "unit": "봉지",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "<오늘의 재료> 약간 매운맛 카레 2봉지",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "오뚜기 백세카레 약간매운맛 2봉지 준비",
+              "timestamp": "00:43"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "당근 1개",
+          "displayName": "당근",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "<오늘의 재료> 당근 1개",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "SPEECH",
+              "text": "당근 하나 넣겠습니다",
+              "timestamp": "01:03"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "당근 1개 껍질 슥슥속속",
+              "timestamp": "01:05"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "감자 2알",
+          "displayName": "감자",
+          "amount": "2",
+          "unit": "알",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "<오늘의 재료> 감자 2알",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "감자 2알 껍질 휘리릭",
+              "timestamp": "01:26"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "토마토 1알",
+          "displayName": "토마토",
+          "amount": "1",
+          "unit": "알",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "<오늘의 재료> 토마토 1알",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 토마토. 토마토를 왜 넣느냐면 토마토가 엄청난 감칠맛",
+              "timestamp": "01:36"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "돼지호박 1개",
+          "displayName": "돼지호박",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "<오늘의 재료> 돼지호박 1개",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 돼지호박",
+              "timestamp": "01:46"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "양파 3알",
+          "displayName": "양파",
+          "amount": "3",
+          "unit": "알",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "<오늘의 재료> 양파 3알",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 3알 주사위 썰기",
+              "timestamp": "02:05"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "물 5컵",
+          "displayName": "물",
+          "amount": "5",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "<오늘의 재료> 물 5컵",
+              "timestamp": "00:53"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "베트남 고추 3개",
+          "displayName": "베트남 고추",
+          "amount": "3",
+          "unit": "개",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "<오늘의 재료> 베트남 고추 3개",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "SPEECH",
+              "text": "매운 거 좋아하시는 분들은 고추를 일단 3개",
+              "timestamp": "05:29"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "베트남 고추 3개 뿌셔넣기",
+              "timestamp": "05:32"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "버터 2T",
+          "displayName": "버터",
+          "amount": "2",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "<오늘의 재료> 버터 2T",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 버터를 넣습니다",
+              "timestamp": "06:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "버터 퐁당",
+              "timestamp": "06:08"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유 또는 올리브유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "<오늘의 재료> 식용유",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "올리브유 충분히",
+              "timestamp": "02:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "올리브오일도 좋고 그냥 식용유도 좋고",
+              "timestamp": "02:27"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "소금",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "<오늘의 재료> 소금",
+              "timestamp": "00:53"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "<오늘의 재료> 후추",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 여기에 후추를 많이 넣는 게",
+              "timestamp": "06:26"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 마니",
+              "timestamp": "06:27"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "접시에 담긴 밥 위에 완성된 카레를 붓는 모습",
+              "timestamp": "06:43"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        }
+      ],
+      "steps": [
+        {
+          "text": "당근 1개의 껍질을 벗긴 후 주사위 모양으로 깍둑썰기합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "당근 1개 껍질 슥슥속속",
+              "timestamp": "01:05"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "당근 1개 주사위 썰기",
+              "timestamp": "01:09"
+            }
+          ]
+        },
+        {
+          "text": "감자 2알의 껍질을 벗긴 후 당근과 비슷한 크기의 주사위 모양으로 깍둑썰기합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "감자 2알 껍질 휘리릭",
+              "timestamp": "01:26"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "감자도 당근처럼",
+              "timestamp": "01:30"
+            }
+          ]
+        },
+        {
+          "text": "토마토 1알의 꼭지를 제거합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "토마토 꼭지 제거",
+              "timestamp": "01:36"
+            }
+          ]
+        },
+        {
+          "text": "돼지호박을 반으로 갈라 쓴맛을 내는 가운데 씨 부분을 숟가락 등으로 파내고, 오래 끓여도 무르지 않도록 두껍게 썰어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "돼지호박 두 동강",
+              "timestamp": "01:46"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "가운데 파서 씨 빼기",
+              "timestamp": "01:49"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Raymon's Tip. 돼지호박은 쓴맛을 없애기 위해 씨를 다 빼줘야 함",
+              "timestamp": "01:55"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "돼지호박 두껍게 썰기",
+              "timestamp": "02:01"
+            }
+          ]
+        },
+        {
+          "text": "양파 3알을 주사위 모양으로 썰어 손질을 마칩니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 3알 주사위 썰기",
+              "timestamp": "02:05"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "채소 준비 완!",
+              "timestamp": "02:16"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 올리브유(또는 식용유)를 충분히 두르고 썰어둔 양파를 넣어 중간 불에서 오래 볶아 캐러멜라이징합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "올리브유 충분히",
+              "timestamp": "02:25"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 중간불에서 오래 볶볶",
+              "timestamp": "02:30"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파를 카라멜라이징 해주세요",
+              "timestamp": "02:38"
+            }
+          ]
+        },
+        {
+          "text": "돼지고기 목심을 큼직하게 숭덩숭덩 썰어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "목심 숭덩숭덩 썰기",
+              "timestamp": "02:42"
+            }
+          ]
+        },
+        {
+          "text": "볼에 썬 목심과 등심을 함께 담고, 카레 가루 일부를 솔솔 뿌려 고기에 고루 묻혀 버무려 둡니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "목심 + 등심 합체",
+              "timestamp": "02:47"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "카레 가루 솔솔솔",
+              "timestamp": "02:51"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고기와 카레 가루를 잘 섞어주세요",
+              "timestamp": "02:57"
+            }
+          ]
+        },
+        {
+          "text": "캐러멜라이징된 양파에 손질한 당근, 감자, 돼지호박을 모두 넣고 잘 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "모든 채소 다 넣기",
+              "timestamp": "03:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "잘 볶아주세요",
+              "timestamp": "03:16"
+            }
+          ]
+        },
+        {
+          "text": "더 큰 냄비에 기름을 두르고 카레 가루를 묻혀둔 고기를 넣어 잘 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "카레 가루를 묻힌 고기 볶기",
+              "timestamp": "03:44"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "잘 볶아주세요",
+              "timestamp": "03:49"
+            }
+          ]
+        },
+        {
+          "text": "꼭지를 딴 토마토를 대충 썰어 고기를 볶던 냄비에 넣고 함께 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "토마토 대충 썰",
+              "timestamp": "03:54"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "썬 토마토를 고기 냄비에 투하하고 볶는 모습",
+              "timestamp": "04:00"
+            }
+          ]
+        },
+        {
+          "text": "고기 냄비 밑바닥이 타지 않도록 물을 조금씩 부어가며 바닥을 긁어주며 볶습니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물을 조금씩 넣으면서 볶아주세요",
+              "timestamp": "04:07"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밑바닥 타지 않게 긁긁",
+              "timestamp": "04:12"
+            }
+          ]
+        },
+        {
+          "text": "다른 냄비에서 볶던 채소를 고기 솥에 붓고, 채소 냄비에 남은 맛 성분까지 물을 조금 부어 헹궈 고기 솥에 모두 부어준 뒤 함께 볶습니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볶던 채소 고기 솥에 IN",
+              "timestamp": "04:18"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볶던 채소 솥에 물 쪼끔",
+              "timestamp": "04:21"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛있는 거 탈탈탈",
+              "timestamp": "04:33"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "잘 볶아주기",
+              "timestamp": "04:37"
+            }
+          ]
+        },
+        {
+          "text": "온도가 떨어지지 않도록 따뜻한 물을 농도를 봐가며 조금씩 추가합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물은 농도 맞춰가며 조금씩 넣기",
+              "timestamp": "04:41"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Raymon's Tip. 온도가 떨어지지 않게 뜨거운 물 넣어주기",
+              "timestamp": "04:47"
+            }
+          ]
+        },
+        {
+          "text": "빈 냄비에 물을 붓고 남은 카레 가루를 풀어 카레 가루물을 만듭니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "그래도 물에 풀어서 넣어줍시다",
+              "timestamp": "05:01"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "카레 가루 물에 잘 풀기",
+              "timestamp": "05:05"
+            }
+          ]
+        },
+        {
+          "text": "카레 재료가 든 주 냄비의 불을 낮추고 뚜껑을 덮어 채수와 고기 육수가 우러나오도록 약 15분간 끓입니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "불 낮추고 15분 정도 끓여줍니다",
+              "timestamp": "05:12"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "~ 15분 후 ~",
+              "timestamp": "05:18"
+            }
+          ]
+        },
+        {
+          "text": "불을 잠시 끄고 매운맛을 위해 베트남 고추 3개를 손으로 부수어 넣습니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "이 솥 불을 잠시 끄시고",
+              "timestamp": "05:27"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "베트남 고추 3개 뿌셔넣기",
+              "timestamp": "05:32"
+            }
+          ]
+        },
+        {
+          "text": "미리 풀어둔 카레 가루물을 주 냄비에 붓고 잘 저어 걸쭉하게 농도를 잡아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "카레 가루물 합치기",
+              "timestamp": "05:36"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "걸죽하게 농도를 잡아주세요",
+              "timestamp": "05:41"
+            }
+          ]
+        },
+        {
+          "text": "버터 2T를 넣어 풍미를 더해줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "버터 퐁당",
+              "timestamp": "06:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 버터를 넣습니다... 이러면 맛이 훨씬 더 풍부해져요",
+              "timestamp": "06:06"
+            }
+          ]
+        },
+        {
+          "text": "후추를 넉넉하게 갈아 넣고, 당근과 호박이 반투명해질 때까지 몇 분간 더 끓여 완성합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 마니",
+              "timestamp": "06:27"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Raymon's Tip. 카레가 맛있어지는 기준은 당근과 호박이 반투명해졌을 때",
+              "timestamp": "06:23"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "몇 분간 더 끓여줍니다",
+              "timestamp": "06:31"
+            }
+          ]
+        },
+        {
+          "text": "완성된 고기 듬뿍 카레를 밥 위에 얹어 냅니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥이 담긴 접시에 한국자씩 카레를 얹어 담아내는 장면",
+              "timestamp": "06:43"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "소금의 구체적인 투입 시점 및 투입량은 영상 화면 재료 목록에만 명시되어 있고 실제 조리 과정에서는 직접 투입하는 장면이 등장하지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

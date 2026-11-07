@@ -1,0 +1,393 @@
+{
+  "videoId": "uuISUPNwwNA",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/uuISUPNwwNA",
+  "sourceMetadata": {"sourceTitle":null,"sourceChannelName":null,"sourceChannelId":null,"sourceMetadataFetchedAt":null},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T08:07:40.106285+00:00",
+    "rawResponse": "{\n  \"title\": \"치즈 떡볶이\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"프라이 팬에 기름 두르고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 기름 두르고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Frying pan drizzled with cooking oil\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 숨 죽을때까지 볶아 주세요\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파 숨 죽을때까지 볶아줘요\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Chopped green onions added to the pan\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 300ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"300\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"그 뒤로 물 300ml\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그 뒤로 물 300ml\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Pouring 300ml of water into the pan\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1 고추장 2스푼 넣고\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding red pepper powder into the pan\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 2스푼\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1 고추장 2스푼 넣고\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 2스푼 넣고\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding 2 spoonfuls of gochujang\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 1\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장1, 설탕2\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding soy sauce\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 2\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장1, 설탕2\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding sugar\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밀떡\",\n      \"displayName\": \"밀떡\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밀떡,어묵 넣고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밀떡\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding wheat rice cakes into the pan\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"어묵\",\n      \"displayName\": \"어묵\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밀떡,어묵 넣고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"어묵 넣고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding cut fish cakes into the pan\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"치즈 원하는 만큼\",\n      \"displayName\": \"치즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"치즈 원하는 만큼 넣고\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"치즈 원하는 만큼 넣고\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Sprinkling shredded cheese over the tteokbokki\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리가루\",\n      \"displayName\": \"파슬리가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Sprinkling parsley flakes on top of melted cheese garnish\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"프라이팬에 기름을 두르고 대파를 숨이 죽을 때까지 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"프라이 팬에 기름 두르고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 숨 죽을때까지 볶아 주세요\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 기름 두르고 대파 숨 죽을때까지 볶아줘요\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 300ml를 붓고 고춧가루 1스푼, 고추장 2스푼을 넣고 잘 풀어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"그 뒤로 물 300ml\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1 고추장 2스푼 넣고\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"잘 풀어준 다음\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그 뒤로 물 300ml 고춧가루 고추장 2스푼 넣고 잘 풀어준 다음\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"간장 1스푼, 설탕 2스푼을 넣습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장1, 설탕2\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 설탕\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밀떡과 어묵을 넣고 끓여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밀떡,어묵 넣고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밀떡 어묵 넣고\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"치즈를 원하는 만큼 올린 뒤 뚜껑을 덮어 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"치즈 원하는 만큼 넣고\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"뚜껑 덮어주면 완성;;\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"치즈 원하는 만큼 넣고 뚜껑 덮어주면 완성\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"Specific volume units for 고춧가루 1, 간장 1, 설탕 2 are not explicitly specified with a unit name, though spoon is implied by 고추장 2스푼.\"\n  ]\n}",
+    "result": {
+      "title": "치즈 떡볶이",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "프라이 팬에 기름 두르고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "팬에 기름 두르고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Frying pan drizzled with cooking oil",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 숨 죽을때까지 볶아 주세요",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파 숨 죽을때까지 볶아줘요",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Chopped green onions added to the pan",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "물 300ml",
+          "displayName": "물",
+          "amount": "300",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "그 뒤로 물 300ml",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그 뒤로 물 300ml",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Pouring 300ml of water into the pan",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "고춧가루 1",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1 고추장 2스푼 넣고",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding red pepper powder into the pan",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고추장 2스푼",
+          "displayName": "고추장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1 고추장 2스푼 넣고",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장 2스푼 넣고",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding 2 spoonfuls of gochujang",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "간장 1",
+          "displayName": "간장",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장1, 설탕2",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding soy sauce",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "설탕 2",
+          "displayName": "설탕",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장1, 설탕2",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding sugar",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "밀떡",
+          "displayName": "밀떡",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밀떡,어묵 넣고",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밀떡",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding wheat rice cakes into the pan",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "어묵",
+          "displayName": "어묵",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밀떡,어묵 넣고",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "어묵 넣고",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding cut fish cakes into the pan",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "치즈 원하는 만큼",
+          "displayName": "치즈",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "치즈 원하는 만큼 넣고",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "치즈 원하는 만큼 넣고",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Sprinkling shredded cheese over the tteokbokki",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "파슬리가루",
+          "displayName": "파슬리가루",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Sprinkling parsley flakes on top of melted cheese garnish",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "프라이팬에 기름을 두르고 대파를 숨이 죽을 때까지 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "프라이 팬에 기름 두르고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 숨 죽을때까지 볶아 주세요",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "팬에 기름 두르고 대파 숨 죽을때까지 볶아줘요",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "물 300ml를 붓고 고춧가루 1스푼, 고추장 2스푼을 넣고 잘 풀어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "그 뒤로 물 300ml",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1 고추장 2스푼 넣고",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "잘 풀어준 다음",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그 뒤로 물 300ml 고춧가루 고추장 2스푼 넣고 잘 풀어준 다음",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "간장 1스푼, 설탕 2스푼을 넣습니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장1, 설탕2",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장 설탕",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "밀떡과 어묵을 넣고 끓여줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밀떡,어묵 넣고",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밀떡 어묵 넣고",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "치즈를 원하는 만큼 올린 뒤 뚜껑을 덮어 완성합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "치즈 원하는 만큼 넣고",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "뚜껑 덮어주면 완성;;",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "치즈 원하는 만큼 넣고 뚜껑 덮어주면 완성",
+              "timestamp": "00:17"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "Specific volume units for 고춧가루 1, 간장 1, 설탕 2 are not explicitly specified with a unit name, though spoon is implied by 고추장 2스푼."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

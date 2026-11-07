@@ -1,0 +1,222 @@
+{
+  "videoId": "ta-kslfPzJY",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/ta-kslfPzJY",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:40:17.227859+00:00",
+    "rawResponse": "{\n  \"title\": \"백종원님의 90초볶음라면 (Jongwon Baek Stir-Fried Ramen)\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"팬에 기름 크게 3스푼 (3 tablespoons of oil in a pan)\",\n      \"displayName\": \"기름 (cooking oil)\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼 (tablespoons)\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 기름 크게 3스푼 / 3 tablespoons of oil in a pan\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 기름 크게 세 스푼\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 (green onions)\",\n      \"displayName\": \"대파 (green onion)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"저는 대파 넣고 / stir-fry green onions\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"저는 대파 넣고 볶아주다\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 (eggs)\",\n      \"displayName\": \"계란 (egg)\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 넣고 / Add eggs\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"One whole egg is cracked into the pan\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"건더기스프\",\n      \"displayName\": \"라면 건더기스프 (ramen dried vegetable flakes)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"건더기스프와\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"건더기스프와\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"분말스프 2/3 (2/3 Powder Soup)\",\n      \"displayName\": \"라면 분말스프 (ramen soup powder)\",\n      \"amount\": \"2/3\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"분말스프 2/3 넣고 / 2/3 Powder Soup\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"분말스프 3분의 2 넣고\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"옆에서 익혀둔 면 (cooked ramen)\",\n      \"displayName\": \"라면 면 (cooked ramen noodles)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"옆에서 익혀둔 면 넣어 / Put the cooked ramen in\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"옆에서 익혀둔 면 넣어\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깨 (sesame seeds)\",\n      \"displayName\": \"통깨 (sesame seeds)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Toasted sesame seeds are sprinkled on top of the finished dish\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 기름을 3스푼 넉넉히 두르고 썬 대파를 넣어 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 기름 크게 3스푼\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"저는 대파 넣고 / stir-fry green onions\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란을 넣고 대충 저어가며 스크램블한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 넣고 대충 스크램블 / Make a scramble\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"건더기스프와 분말스프 2/3을 넣고 계란과 함께 잘 섞어 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"건더기스프와 분말스프 2/3 넣고 / 2/3 Powder Soup\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란에 잘 섞어주다 / Mix the egg well with the powder\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"옆 냄비에서 미리 삶아 익혀둔 라면 면을 넣고 골고루 섞어 볶아 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"옆에서 익혀둔 면 넣어 / Put the cooked ramen in\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"휘뚜루마뚜루 섞어주기만 하면 진짜 간단하게 완성! / Mix it roughly\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"English subtitle at 00:08 mistranslates 건더기스프 (dried vegetable flakes) as 'Dried eggplant soup'.\"\n  ]\n}",
+    "result": {
+      "title": "백종원님의 90초볶음라면 (Jongwon Baek Stir-Fried Ramen)",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "팬에 기름 크게 3스푼 (3 tablespoons of oil in a pan)",
+          "displayName": "기름 (cooking oil)",
+          "amount": "3",
+          "unit": "스푼 (tablespoons)",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 기름 크게 3스푼 / 3 tablespoons of oil in a pan",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "팬에 기름 크게 세 스푼",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파 (green onions)",
+          "displayName": "대파 (green onion)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "저는 대파 넣고 / stir-fry green onions",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "저는 대파 넣고 볶아주다",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "계란 (eggs)",
+          "displayName": "계란 (egg)",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 넣고 / Add eggs",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "One whole egg is cracked into the pan",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "건더기스프",
+          "displayName": "라면 건더기스프 (ramen dried vegetable flakes)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "건더기스프와",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "건더기스프와",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "분말스프 2/3 (2/3 Powder Soup)",
+          "displayName": "라면 분말스프 (ramen soup powder)",
+          "amount": "2/3",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "분말스프 2/3 넣고 / 2/3 Powder Soup",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "분말스프 3분의 2 넣고",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "옆에서 익혀둔 면 (cooked ramen)",
+          "displayName": "라면 면 (cooked ramen noodles)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "옆에서 익혀둔 면 넣어 / Put the cooked ramen in",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "옆에서 익혀둔 면 넣어",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "깨 (sesame seeds)",
+          "displayName": "통깨 (sesame seeds)",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Toasted sesame seeds are sprinkled on top of the finished dish",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 기름을 3스푼 넉넉히 두르고 썬 대파를 넣어 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 기름 크게 3스푼",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "저는 대파 넣고 / stir-fry green onions",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "계란을 넣고 대충 저어가며 스크램블한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 넣고 대충 스크램블 / Make a scramble",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "건더기스프와 분말스프 2/3을 넣고 계란과 함께 잘 섞어 볶아준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "건더기스프와 분말스프 2/3 넣고 / 2/3 Powder Soup",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란에 잘 섞어주다 / Mix the egg well with the powder",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "옆 냄비에서 미리 삶아 익혀둔 라면 면을 넣고 골고루 섞어 볶아 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "옆에서 익혀둔 면 넣어 / Put the cooked ramen in",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "휘뚜루마뚜루 섞어주기만 하면 진짜 간단하게 완성! / Mix it roughly",
+              "timestamp": "00:12"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "English subtitle at 00:08 mistranslates 건더기스프 (dried vegetable flakes) as 'Dried eggplant soup'."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

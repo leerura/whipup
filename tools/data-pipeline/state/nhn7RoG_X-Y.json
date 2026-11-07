@@ -1,0 +1,32 @@
+{
+  "videoId": "nhn7RoG_X-Y",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/nhn7RoG_X-Y",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T08:04:28.523437+00:00",
+    "rawResponse": "{\n  \"title\": \"자취생이 자주 먹는 음식 TOP 5\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [],\n  \"steps\": [],\n  \"unresolved\": [\n    \"This video is a ranking list of foods frequently eaten by people living alone ('자취생이 자주 먹는 음식 TOP 5') and does not present a recipe, ingredient quantities, or cooking steps.\"\n  ]\n}",
+    "result": {
+      "title": "자취생이 자주 먹는 음식 TOP 5",
+      "description": null,
+      "servings": null,
+      "ingredients": [],
+      "steps": [],
+      "unresolved": [
+        "This video is a ranking list of foods frequently eaten by people living alone ('자취생이 자주 먹는 음식 TOP 5') and does not present a recipe, ingredient quantities, or cooking steps."
+      ]
+    },
+    "structuralErrors": [
+      "steps must be an array of objects with non-empty text"
+    ],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

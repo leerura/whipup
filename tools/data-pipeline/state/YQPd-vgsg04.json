@@ -1,0 +1,288 @@
+{
+  "videoId": "YQPd-vgsg04",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/YQPd-vgsg04",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:45:10.837672+00:00",
+    "rawResponse": "{\n  \"title\": \"5분컷 제육볶음\",\n  \"description\": \"한 번 저장해두면 평생 써먹는 초간단 5분 컷 대패삼겹살 제육볶음 레시피\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"고추장1\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장1, 진간장2\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장2\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장1, 진간장2\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루2\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루2, 물엿1\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물엿1\",\n      \"displayName\": \"물엿\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루2, 물엿1\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕1\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕1, 굴소스1\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스1\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕1, 굴소스1\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘1\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘1, 후추 톡톡톡\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 톡톡톡\",\n      \"displayName\": \"후추\",\n      \"amount\": \"톡톡톡\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘1, 후추 톡톡톡\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"해동시킨 대패삼겹살 500g\",\n      \"displayName\": \"대패삼겹살\",\n      \"amount\": \"500\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 해동시킨 대패삼겹살 500g 넣어줘\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 해동시킨 대패삼겹살 500g 넣어줘\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"얇게 채썬 양파 반 개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"반\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"얇게 채썬 양파 반 개,\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"얇게 채썬 양파 반 개,\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 한 바퀴\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"한\",\n      \"unit\": \"바퀴\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마지막에 불 끄고 참기름 한 바퀴 둘러 잘 섞어주면\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막에 불 끄고 참기름 한 바퀴 둘러 잘 섞어주면\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 제육볶음 위에 통깨가 솔솔 뿌려져 있음\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"볼에 고추장 1, 진간장 2, 고춧가루 2, 물엿 1, 설탕 1, 굴소스 1, 다진마늘 1, 후추 톡톡톡을 순서대로 넣고 잘 섞어 제육볶음 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 제육볶음 양념부터 순서대로 넣어 만들어줄게. 양념 잘 섞어두고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양념 잘 섞어두고\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 해동시킨 대패삼겹살 500g과 얇게 채 썬 양파 반 개, 준비한 양념을 전부 넣고 가스불을 켠다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 해동시킨 대패삼겹살 500g 넣어줘. 얇게 채썬 양파 반 개, 양념 전부 넣어서 가스불 켜줄 거야.\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 해동시킨 대패삼겹살 500g 넣어줘 얇게 채썬 양파 반 개, 양념 전부 넣어서 가스불 켜줄 거야\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기 기름이 나올 때 센 불에서 빠르게 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기기름이 나올 때 센 불에서 빠르게 볶아주면 벌써 완성!\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"센 불에서 빠르게 볶아주면 벌써 완성!\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마지막에 불을 끄고 참기름 한 바퀴를 둘러 잘 섞어 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막에 불 끄고 참기름 한 바퀴 둘러 잘 섞어주면\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마지막에 불 끄고 참기름 한 바퀴 둘러 잘 섞어주면\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"양념 재료(고추장, 진간장, 고춧가루, 물엿, 설탕, 굴소스, 다진마늘)의 단위(큰술/숟가락 여부)가 영상 자막 및 음성에 명시되지 않고 숫자만 기재되어 있음\",\n    \"상추 쌈 및 통깨는 서빙 시 시각적으로 확인되나 구체적인 재료 투입 멘트나 자막은 제공되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "5분컷 제육볶음",
+      "description": "한 번 저장해두면 평생 써먹는 초간단 5분 컷 대패삼겹살 제육볶음 레시피",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "고추장1",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장1, 진간장2",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "진간장2",
+          "displayName": "진간장",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장1, 진간장2",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "고춧가루2",
+          "displayName": "고춧가루",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루2, 물엿1",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "물엿1",
+          "displayName": "물엿",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루2, 물엿1",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "설탕1",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕1, 굴소스1",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "굴소스1",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕1, 굴소스1",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "다진마늘1",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘1, 후추 톡톡톡",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "후추 톡톡톡",
+          "displayName": "후추",
+          "amount": "톡톡톡",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘1, 후추 톡톡톡",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "해동시킨 대패삼겹살 500g",
+          "displayName": "대패삼겹살",
+          "amount": "500",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 해동시킨 대패삼겹살 500g 넣어줘",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "팬에 해동시킨 대패삼겹살 500g 넣어줘",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "얇게 채썬 양파 반 개",
+          "displayName": "양파",
+          "amount": "반",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "얇게 채썬 양파 반 개,",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "얇게 채썬 양파 반 개,",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "참기름 한 바퀴",
+          "displayName": "참기름",
+          "amount": "한",
+          "unit": "바퀴",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마지막에 불 끄고 참기름 한 바퀴 둘러 잘 섞어주면",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막에 불 끄고 참기름 한 바퀴 둘러 잘 섞어주면",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 제육볶음 위에 통깨가 솔솔 뿌려져 있음",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "볼에 고추장 1, 진간장 2, 고춧가루 2, 물엿 1, 설탕 1, 굴소스 1, 다진마늘 1, 후추 톡톡톡을 순서대로 넣고 잘 섞어 제육볶음 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 제육볶음 양념부터 순서대로 넣어 만들어줄게. 양념 잘 섞어두고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양념 잘 섞어두고",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "팬에 해동시킨 대패삼겹살 500g과 얇게 채 썬 양파 반 개, 준비한 양념을 전부 넣고 가스불을 켠다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 해동시킨 대패삼겹살 500g 넣어줘. 얇게 채썬 양파 반 개, 양념 전부 넣어서 가스불 켜줄 거야.",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 해동시킨 대패삼겹살 500g 넣어줘 얇게 채썬 양파 반 개, 양념 전부 넣어서 가스불 켜줄 거야",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "고기 기름이 나올 때 센 불에서 빠르게 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고기기름이 나올 때 센 불에서 빠르게 볶아주면 벌써 완성!",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "센 불에서 빠르게 볶아주면 벌써 완성!",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "마지막에 불을 끄고 참기름 한 바퀴를 둘러 잘 섞어 마무리한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막에 불 끄고 참기름 한 바퀴 둘러 잘 섞어주면",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마지막에 불 끄고 참기름 한 바퀴 둘러 잘 섞어주면",
+              "timestamp": "00:19"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "양념 재료(고추장, 진간장, 고춧가루, 물엿, 설탕, 굴소스, 다진마늘)의 단위(큰술/숟가락 여부)가 영상 자막 및 음성에 명시되지 않고 숫자만 기재되어 있음",
+        "상추 쌈 및 통깨는 서빙 시 시각적으로 확인되나 구체적인 재료 투입 멘트나 자막은 제공되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

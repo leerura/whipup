@@ -1,0 +1,300 @@
+{
+  "videoId": "6zJ7dZB4yS8",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/6zJ7dZB4yS8",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T13:22:05.371660+00:00",
+    "rawResponse": "{\n  \"title\": \"초간단 소세지 계란덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"소세지 100g\",\n      \"displayName\": \"소세지\",\n      \"amount\": \"100\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소세지 100g\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 소세지를 한입 크기로 잘라줘\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 1spoon\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 1spoon\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 식용유를 두른 다음\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 두 개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 두 개\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그 위에 계란 두 개를 까서 넣어준 다음\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 밥 위에 계란과 소세지를 빼놔준 다음\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"접시에 담긴 밥 위에 구운 계란과 소세지를 얹음\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"버터 15g\",\n      \"displayName\": \"버터\",\n      \"amount\": \"15\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"버터 15g\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소세지를 굽던 팬에 빠다\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 80g\",\n      \"displayName\": \"양파\",\n      \"amount\": \"80\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 80g\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 2spoons\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"2\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 2spoons\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 0.5spoon\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.5\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 0.5spoon\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕을 넣고 졸여줄 거야\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"소세지를 한입 크기로 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 소세지를 한입 크기로 잘라줘\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도마 위에서 소세지를 칼로 얇게 송송 썲\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유 1스푼을 두르고, 썬 소세지 100g을 넣어 노릇노릇하게 굽는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 1spoon\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소세지 100g\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 식용유를 두른 다음 소세지를 구워줄 거야 소세지가 노릇노릇하게 익으면\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소세지 위에 계란 2개를 깨 넣고 반 정도만 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 두 개\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그 위에 계란 두 개를 까서 넣어준 다음 계란을 반 정도만 익혀줘\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 위에 구운 계란과 소세지를 얹어둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 밥 위에 계란과 소세지를 빼놔준 다음\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥이 담긴 그릇 위에 계란과 소세지를 미끄러뜨려 올림\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소세지를 굽던 팬에 버터 15g을 녹이고 채 썬 양파 80g, 진간장 2스푼, 설탕 0.5스푼을 넣고 졸인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"버터 15g\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 80g\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 2spoons\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 0.5spoon\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 진간장 설탕을 넣고 졸여줄 거야\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"졸인 양파를 밥 위에 올려 소세지 계란덮밥을 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 조린 양파를 밥 위에 부어주면 초간단 소세지 계란덮밥 끝\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소세지 계란덮밥\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "초간단 소세지 계란덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "소세지 100g",
+          "displayName": "소세지",
+          "amount": "100",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소세지 100g",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 소세지를 한입 크기로 잘라줘",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "식용유 1spoon",
+          "displayName": "식용유",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 1spoon",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "팬에 식용유를 두른 다음",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "계란 두 개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 두 개",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그 위에 계란 두 개를 까서 넣어준 다음",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 밥 위에 계란과 소세지를 빼놔준 다음",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "접시에 담긴 밥 위에 구운 계란과 소세지를 얹음",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "버터 15g",
+          "displayName": "버터",
+          "amount": "15",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "버터 15g",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소세지를 굽던 팬에 빠다",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "양파 80g",
+          "displayName": "양파",
+          "amount": "80",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 80g",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "진간장 2spoons",
+          "displayName": "진간장",
+          "amount": "2",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 2spoons",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "설탕 0.5spoon",
+          "displayName": "설탕",
+          "amount": "0.5",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 0.5spoon",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕을 넣고 졸여줄 거야",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        }
+      ],
+      "steps": [
+        {
+          "text": "소세지를 한입 크기로 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 소세지를 한입 크기로 잘라줘",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도마 위에서 소세지를 칼로 얇게 송송 썲",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유 1스푼을 두르고, 썬 소세지 100g을 넣어 노릇노릇하게 굽는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 1spoon",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소세지 100g",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "팬에 식용유를 두른 다음 소세지를 구워줄 거야 소세지가 노릇노릇하게 익으면",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "소세지 위에 계란 2개를 깨 넣고 반 정도만 익힌다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 두 개",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그 위에 계란 두 개를 까서 넣어준 다음 계란을 반 정도만 익혀줘",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "밥 위에 구운 계란과 소세지를 얹어둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 밥 위에 계란과 소세지를 빼놔준 다음",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥이 담긴 그릇 위에 계란과 소세지를 미끄러뜨려 올림",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "소세지를 굽던 팬에 버터 15g을 녹이고 채 썬 양파 80g, 진간장 2스푼, 설탕 0.5스푼을 넣고 졸인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "버터 15g",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 80g",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 2spoons",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 0.5spoon",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파 진간장 설탕을 넣고 졸여줄 거야",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "졸인 양파를 밥 위에 올려 소세지 계란덮밥을 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 조린 양파를 밥 위에 부어주면 초간단 소세지 계란덮밥 끝",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소세지 계란덮밥",
+              "timestamp": "00:33"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  },
+  "agentReviewNote": "Applied from the saved Gemini extraction; all required ingredients were mapped under V3 recipe-local rules. Deterministic dataset importer validation passed and DB sync completed."
+}

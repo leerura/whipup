@@ -1,0 +1,217 @@
+{
+  "videoId": "rvC978YfrzA",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://youtu.be/rvC978YfrzA?si=GdiqEPlPX3kygcI7",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:19:58.460107+00:00",
+    "rawResponse": "{\n  \"title\": \"소세지볶음밥\",\n  \"description\": \"아이들부터 어른들까지 전부 좋아할 소세지볶음밥\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 식용유 두른 팬에\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 식용유 두른 팬에\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"먹기 좋게 썬 대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먹기 좋게 썬 대파랑\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먹기 좋게 썬 대파랑\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"비엔나\",\n      \"displayName\": \"비엔나 소세지\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"비엔나 넣어 볶아줄게\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"비엔나 넣어 볶아줄게\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 두 알\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"알\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 두 알 풀어 넣어\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 두 알 풀어 넣어\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 한 공기\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 밥 한 공기,\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 밥 한 공기,\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 한 스푼\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"굴소스랑 케찹 한 스푼씩 넣어서\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스랑 케찹 한 스푼씩 넣어서\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"케찹 한 스푼\",\n      \"displayName\": \"케찹\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"굴소스랑 케찹 한 스푼씩 넣어서\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스랑 케찹 한 스푼씩 넣어서\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"식용유를 두른 팬에 먹기 좋게 썬 대파와 비엔나소시지를 넣고 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 식용유 두른 팬에 먹기 좋게 썬 대파랑 비엔나 넣어 볶아줄게\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 기름을 두르고 썬 대파와 비엔나소시지를 볶음\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소시지가 노릇해지면 한쪽으로 밀어두고 푼 계란 두 알을 넣어 스크램블을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소세지가 노릇해지면 한 쪽으로 밀어두고 계란 두 알 풀어 넣어 스크램블 만들어줄 거야\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"한쪽에 계란물을 붓고 젓가락으로 저어 스크램블을 만듦\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 한 공기, 굴소스 한 스푼, 케찹 한 스푼을 넣고 양념이 잘 베이도록 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 밥 한 공기, 굴소스랑 케찹 한 스푼씩 넣어서 양념이 잘 베이도록 볶아주면\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥, 굴소스, 케찹을 넣고 주걱으로 섞어가며 볶음\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"영상 도입부(00:00~00:03) 완성 요리에 옥수수 콘, 김가루, 통깨가 보이나, 제공된 영상이 00:17에서 조리 도중 종료되어 해당 재료들의 투입 시점 및 분량은 확인할 수 없습니다.\"\n  ]\n}",
+    "result": {
+      "title": "소세지볶음밥",
+      "description": "아이들부터 어른들까지 전부 좋아할 소세지볶음밥",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 식용유 두른 팬에",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 식용유 두른 팬에",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "먹기 좋게 썬 대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먹기 좋게 썬 대파랑",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먹기 좋게 썬 대파랑",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "비엔나",
+          "displayName": "비엔나 소세지",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "비엔나 넣어 볶아줄게",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "비엔나 넣어 볶아줄게",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "계란 두 알",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "알",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "계란 두 알 풀어 넣어",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란 두 알 풀어 넣어",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "밥 한 공기",
+          "displayName": "밥",
+          "amount": "1",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 밥 한 공기,",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 밥 한 공기,",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "굴소스 한 스푼",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "굴소스랑 케찹 한 스푼씩 넣어서",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "굴소스랑 케찹 한 스푼씩 넣어서",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "케찹 한 스푼",
+          "displayName": "케찹",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "굴소스랑 케찹 한 스푼씩 넣어서",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "굴소스랑 케찹 한 스푼씩 넣어서",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "식용유를 두른 팬에 먹기 좋게 썬 대파와 비엔나소시지를 넣고 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 식용유 두른 팬에 먹기 좋게 썬 대파랑 비엔나 넣어 볶아줄게",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 기름을 두르고 썬 대파와 비엔나소시지를 볶음",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "소시지가 노릇해지면 한쪽으로 밀어두고 푼 계란 두 알을 넣어 스크램블을 만든다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "소세지가 노릇해지면 한 쪽으로 밀어두고 계란 두 알 풀어 넣어 스크램블 만들어줄 거야",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "한쪽에 계란물을 붓고 젓가락으로 저어 스크램블을 만듦",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "밥 한 공기, 굴소스 한 스푼, 케찹 한 스푼을 넣고 양념이 잘 베이도록 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 밥 한 공기, 굴소스랑 케찹 한 스푼씩 넣어서 양념이 잘 베이도록 볶아주면",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥, 굴소스, 케찹을 넣고 주걱으로 섞어가며 볶음",
+              "timestamp": "00:14"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "영상 도입부(00:00~00:03) 완성 요리에 옥수수 콘, 김가루, 통깨가 보이나, 제공된 영상이 00:17에서 조리 도중 종료되어 해당 재료들의 투입 시점 및 분량은 확인할 수 없습니다."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

@@ -1,0 +1,354 @@
+{
+  "videoId": "6fL2E8zCnvM",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/6fL2E8zCnvM",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:46:50.946522+00:00",
+    "rawResponse": "{\n  \"title\": \"삼겹살 제육 레시피\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"고추장\",\n      \"displayName\": \"고추장 (Gochujang)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 / Gochujang\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding gochujang with a wooden spoon into a mixing bowl\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘\",\n      \"displayName\": \"다진마늘 (Minced garlic)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding minced garlic with a wooden spoon into the mixing bowl\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 3\",\n      \"displayName\": \"간장 (Soy sauce)\",\n      \"amount\": \"3\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 3 / Soy sauce 3\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 2\",\n      \"displayName\": \"맛술 (Cooking wine)\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 2 / Cooking wane 2\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 2\",\n      \"displayName\": \"설탕 (Sugar)\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 2 / Sugar 2\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루\",\n      \"displayName\": \"고춧가루 (Red pepper powder)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 / Red pepper powder\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1\",\n      \"displayName\": \"참기름 (Sesame oil)\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1 / Sesame oil 1\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추 (Pepper)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 넣고 / Add pepper\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추 넣고\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"삼겹살\",\n      \"displayName\": \"삼겹살 (Pork belly)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"삼겹살 넣은 다음 / add pork belly\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"삼겹살 넣은 다음\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파 (Onion)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 / Onion\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파 (Green onion)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 / Green onion\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추\",\n      \"displayName\": \"청양고추 (Cheongyang chili pepper)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 넣고 / Add red pepper\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"청양고추 넣고\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"고추장, 다진 마늘, 간장 3, 맛술 2, 설탕 2, 고춧가루, 참기름 1, 후추를 넣고 섞어 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장, 다진마늘, 간장, 맛술, 설탕, 고춧가루, 참기름, 후추 넣고\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding seasoning ingredients to a stainless steel bowl and mixing them together\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양념장에 삼겹살을 넣고 버무린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"삼겹살 넣은 다음 / add pork belly\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"삼겹살 넣은 다음\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Mixing the pork belly strips with the sauce by hand\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 양념한 삼겹살을 올려 굽는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 구워줘요 / Bake\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 구워줘요\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Placing marinated pork belly into a heated frying pan and cooking it\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파, 대파, 청양고추를 넣고 함께 볶아 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 / Onion, 대파 / Green onion, 청양고추 넣고 / Add red pepper, 볶아주면 완성 / stir fry\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 대파 청양고추 넣고 볶아주면 완성\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Stir-frying sliced onions, green onions, and chili peppers together with the meat in the pan\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"Units for 간장, 맛술, 설탕, 참기름 are stated only as numbers without explicit units (spoons implied visually).\",\n    \"Quantities for 고추장, 다진마늘, 고춧가루, 후추, 삼겹살, 양파, 대파, 청양고추 are not stated in text or speech.\",\n    \"Sesame seeds (통깨) and additional ground black pepper are shown sprinkled on top of the finished dish at 00:00, but not explicitly named or listed in the preparation sequence.\"\n  ]\n}",
+    "result": {
+      "title": "삼겹살 제육 레시피",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "고추장",
+          "displayName": "고추장 (Gochujang)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 / Gochujang",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding gochujang with a wooden spoon into a mixing bowl",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "다진마늘",
+          "displayName": "다진마늘 (Minced garlic)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진마늘",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding minced garlic with a wooden spoon into the mixing bowl",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "간장 3",
+          "displayName": "간장 (Soy sauce)",
+          "amount": "3",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 3 / Soy sauce 3",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "맛술 2",
+          "displayName": "맛술 (Cooking wine)",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 2 / Cooking wane 2",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "맛술",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "설탕 2",
+          "displayName": "설탕 (Sugar)",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 2 / Sugar 2",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "고춧가루",
+          "displayName": "고춧가루 (Red pepper powder)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 / Red pepper powder",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "참기름 1",
+          "displayName": "참기름 (Sesame oil)",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1 / Sesame oil 1",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추 (Pepper)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 넣고 / Add pepper",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추 넣고",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "삼겹살",
+          "displayName": "삼겹살 (Pork belly)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "삼겹살 넣은 다음 / add pork belly",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "삼겹살 넣은 다음",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파 (Onion)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 / Onion",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파 (Green onion)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 / Green onion",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "청양고추",
+          "displayName": "청양고추 (Cheongyang chili pepper)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 넣고 / Add red pepper",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "청양고추 넣고",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "고추장, 다진 마늘, 간장 3, 맛술 2, 설탕 2, 고춧가루, 참기름 1, 후추를 넣고 섞어 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고추장, 다진마늘, 간장, 맛술, 설탕, 고춧가루, 참기름, 후추 넣고",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding seasoning ingredients to a stainless steel bowl and mixing them together",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "양념장에 삼겹살을 넣고 버무린다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "삼겹살 넣은 다음 / add pork belly",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "삼겹살 넣은 다음",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Mixing the pork belly strips with the sauce by hand",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "팬에 양념한 삼겹살을 올려 굽는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 구워줘요 / Bake",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "팬에 구워줘요",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Placing marinated pork belly into a heated frying pan and cooking it",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "양파, 대파, 청양고추를 넣고 함께 볶아 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 / Onion, 대파 / Green onion, 청양고추 넣고 / Add red pepper, 볶아주면 완성 / stir fry",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파 대파 청양고추 넣고 볶아주면 완성",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Stir-frying sliced onions, green onions, and chili peppers together with the meat in the pan",
+              "timestamp": "00:12"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "Units for 간장, 맛술, 설탕, 참기름 are stated only as numbers without explicit units (spoons implied visually).",
+        "Quantities for 고추장, 다진마늘, 고춧가루, 후추, 삼겹살, 양파, 대파, 청양고추 are not stated in text or speech.",
+        "Sesame seeds (통깨) and additional ground black pepper are shown sprinkled on top of the finished dish at 00:00, but not explicitly named or listed in the preparation sequence."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

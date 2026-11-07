@@ -1,0 +1,205 @@
+{
+  "videoId": "wKJcJOBA0XA",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/wKJcJOBA0XA",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:08:42.859014+00:00",
+    "rawResponse": "{\n  \"title\": \"집에 계란이 있다면 무조건 만들어 먹는 초간단 전자레인지 계란밥\",\n  \"description\": null,\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"밥 100g\",\n      \"displayName\": \"밥\",\n      \"amount\": \"100\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 100g에\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 100g에\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 ⅔~1스푼\",\n      \"displayName\": \"간장\",\n      \"amount\": \"2/3~1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 ⅔~1스푼\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 3분의 2에서 한 스푼\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 0.5스푼\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 0.5스푼\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 반 스푼\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 2개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2개 까준 뒤\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 두 개 까준 뒤\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름/들기름 취향껏 (생략 가능)\",\n      \"displayName\": \"참기름 또는 들기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름/들기름 취향껏 (생략 가능)\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"취향껏 참기름이나 들기름 둘러주면 끝이에요\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"그릇에 밥 100g, 간장 ⅔~1스푼, 고추장 0.5스푼을 넣고 골고루 비벼준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 100g에\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 ⅔~1스푼\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 0.5스푼\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"골고루 비벼주고\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"비빈 밥 위에 계란 2개를 까서 올리고 포크나 숟가락으로 노른자를 콕콕 찔러 터뜨려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2개 까준 뒤\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"노른자 콕콕!\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"숟가락 끝으로 계란 노른자 2개를 찔러준다\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"전자레인지에 넣고 2분 30초간 돌려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"전자레인지 2분 30초\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"전자레인지 2분 30초 돌리고\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"취향에 따라 참기름이나 들기름을 둘러 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름/들기름 취향껏 (생략 가능)\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"취향껏 참기름이나 들기름 둘러주면 끝이에요\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "집에 계란이 있다면 무조건 만들어 먹는 초간단 전자레인지 계란밥",
+      "description": null,
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "밥 100g",
+          "displayName": "밥",
+          "amount": "100",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 100g에",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밥 100g에",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "간장 ⅔~1스푼",
+          "displayName": "간장",
+          "amount": "2/3~1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 ⅔~1스푼",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장 3분의 2에서 한 스푼",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "고추장 0.5스푼",
+          "displayName": "고추장",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 0.5스푼",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장 반 스푼",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "계란 2개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2개 까준 뒤",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란 두 개 까준 뒤",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "참기름/들기름 취향껏 (생략 가능)",
+          "displayName": "참기름 또는 들기름",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름/들기름 취향껏 (생략 가능)",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "취향껏 참기름이나 들기름 둘러주면 끝이에요",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        }
+      ],
+      "steps": [
+        {
+          "text": "그릇에 밥 100g, 간장 ⅔~1스푼, 고추장 0.5스푼을 넣고 골고루 비벼준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 100g에",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 ⅔~1스푼",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 0.5스푼",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "골고루 비벼주고",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "비빈 밥 위에 계란 2개를 까서 올리고 포크나 숟가락으로 노른자를 콕콕 찔러 터뜨려준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2개 까준 뒤",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "노른자 콕콕!",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "숟가락 끝으로 계란 노른자 2개를 찔러준다",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "전자레인지에 넣고 2분 30초간 돌려준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "전자레인지 2분 30초",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "전자레인지 2분 30초 돌리고",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "취향에 따라 참기름이나 들기름을 둘러 마무리한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름/들기름 취향껏 (생략 가능)",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "취향껏 참기름이나 들기름 둘러주면 끝이에요",
+              "timestamp": "00:11"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

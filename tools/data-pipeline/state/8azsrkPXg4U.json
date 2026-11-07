@@ -1,0 +1,365 @@
+{
+  "videoId": "8azsrkPXg4U",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/8azsrkPXg4U",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:13:45.728936+00:00",
+    "rawResponse": "{\n  \"title\": \"초간단 마파두부 만들기\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"팩두부\",\n      \"displayName\": \"두부 (팩두부)\",\n      \"amount\": \"1\",\n      \"unit\": \"팩\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"한 달(?) 전 충동구매한 팩두부\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"실켄두부 1팩을 개봉하여 칼로 깍둑썰기함\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"대파를 잘게 다지듯이 썰어줌\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"생강, 파, 고기 볶고 후추 톡톡\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"생강\",\n      \"displayName\": \"생강\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도마 위에 놓인 생강 조각\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"생강, 파, 고기 볶고 후추 톡톡\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 오일을 둘러줌\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고기\",\n      \"displayName\": \"다진 돼지고기\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 다진 고기를 넣음\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"생강, 파, 고기 볶고 후추 톡톡\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 톡톡\",\n      \"displayName\": \"후추\",\n      \"amount\": \"약간\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"생강, 파, 고기 볶고 후추 톡톡\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"후추 그라인더로 고기 위에 후추를 뿌림\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"치트키 1 : 라오깐마 한 스푼\",\n      \"displayName\": \"라오깐마\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"치트키 1 : 라오깐마 / 한 스푼으로 감칠맛을 잡고\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"라오깐마 소스 1스푼을 팬에 넣음\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"두반장 한 숟가락\",\n      \"displayName\": \"두반장\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"두반장 한 숟가락 넣고\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"이금기 두반장 1숟가락을 팬에 넣음\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 한 컵 (180ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"180\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 한 컵 (180ml)\",\n          \"timestamp\": \"00:49\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 물 1컵을 붓고 끓임\",\n          \"timestamp\": \"00:49\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"전분\",\n      \"displayName\": \"전분물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"전분을 투하하고 마무리😁\",\n          \"timestamp\": \"00:56\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 푼 전분물을 둘러 넣어 농도를 맞춤\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쪽파\",\n      \"displayName\": \"쪽파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"쪽파까지 올리니까 향이,, 🤤\",\n          \"timestamp\": \"01:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 마파두부 위에 송송 썬 쪽파를 고명으로 올림\",\n          \"timestamp\": \"01:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"흰쌀밥\",\n      \"displayName\": \"흰쌀밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"흰쌀밥 아니면 잡아갑니다 진짜로.\",\n          \"timestamp\": \"01:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 담긴 밥 위에 마파두부를 얹어 먹음\",\n          \"timestamp\": \"01:08\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"파와 생강을 잘게 다져 손질한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도마에서 대파와 생강을 칼로 다짐\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 기름을 두르고 다진 파와 생강, 다진 고기를 넣고 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 오일을 붓고 다진 파와 다진 고기를 넣어 볶음\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"두부를 깍둑썰기하여 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팩두부를 개봉하여 한 입 크기로 깍둑썰기함\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볶던 고기와 파, 생강에 후추를 톡톡 뿌려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"생강, 파, 고기 볶고 후추 톡톡\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"text\": \"라오깐마 1스푼을 넣고 함께 섞어가며 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"치트키 1 : 라오깐마 / 한 스푼으로 감칠맛을 잡고 / 섞어주다가\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"text\": \"두반장 1숟가락을 넣고 골고루 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"두반장 한 숟가락 넣고 / 볶볶볶\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 한 컵(180ml)을 붓고 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 한 컵 (180ml)\",\n          \"timestamp\": \"00:49\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물이 끓어오르면 썰어둔 두부를 넣고 조린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"끓는 소스에 깍둑썬 두부를 넣고 부드럽게 섞어줌\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"text\": \"전분물을 풀어 넣고 저어가며 윤기와 농도를 맞추어 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"전분을 투하하고 마무리😁 / 윤기가 차원이 다르죠?\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 담고 송송 썬 쪽파를 올려 밥과 함께 곁들여 먹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"쪽파까지 올리니까 향이,, 🤤 / 흰쌀밥 아니면 잡아갑니다 진짜로.\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "초간단 마파두부 만들기",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "팩두부",
+          "displayName": "두부 (팩두부)",
+          "amount": "1",
+          "unit": "팩",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "한 달(?) 전 충동구매한 팩두부",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "실켄두부 1팩을 개봉하여 칼로 깍둑썰기함",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "대파를 잘게 다지듯이 썰어줌",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "생강, 파, 고기 볶고 후추 톡톡",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "생강",
+          "displayName": "생강",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도마 위에 놓인 생강 조각",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "생강, 파, 고기 볶고 후추 톡톡",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "기름",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 오일을 둘러줌",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고기",
+          "displayName": "다진 돼지고기",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 다진 고기를 넣음",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "생강, 파, 고기 볶고 후추 톡톡",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "후추 톡톡",
+          "displayName": "후추",
+          "amount": "약간",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "생강, 파, 고기 볶고 후추 톡톡",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "후추 그라인더로 고기 위에 후추를 뿌림",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "치트키 1 : 라오깐마 한 스푼",
+          "displayName": "라오깐마",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "치트키 1 : 라오깐마 / 한 스푼으로 감칠맛을 잡고",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "라오깐마 소스 1스푼을 팬에 넣음",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "두반장 한 숟가락",
+          "displayName": "두반장",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "두반장 한 숟가락 넣고",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "이금기 두반장 1숟가락을 팬에 넣음",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "물 한 컵 (180ml)",
+          "displayName": "물",
+          "amount": "180",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 한 컵 (180ml)",
+              "timestamp": "00:49"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 물 1컵을 붓고 끓임",
+              "timestamp": "00:49"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "전분",
+          "displayName": "전분물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "전분을 투하하고 마무리😁",
+              "timestamp": "00:56"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 푼 전분물을 둘러 넣어 농도를 맞춤",
+              "timestamp": "00:56"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "쪽파",
+          "displayName": "쪽파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "쪽파까지 올리니까 향이,, 🤤",
+              "timestamp": "01:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 마파두부 위에 송송 썬 쪽파를 고명으로 올림",
+              "timestamp": "01:03"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "흰쌀밥",
+          "displayName": "흰쌀밥",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "흰쌀밥 아니면 잡아갑니다 진짜로.",
+              "timestamp": "01:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 담긴 밥 위에 마파두부를 얹어 먹음",
+              "timestamp": "01:08"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "파와 생강을 잘게 다져 손질한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도마에서 대파와 생강을 칼로 다짐",
+              "timestamp": "00:19"
+            }
+          ]
+        },
+        {
+          "text": "팬에 기름을 두르고 다진 파와 생강, 다진 고기를 넣고 볶는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 오일을 붓고 다진 파와 다진 고기를 넣어 볶음",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "두부를 깍둑썰기하여 준비한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팩두부를 개봉하여 한 입 크기로 깍둑썰기함",
+              "timestamp": "00:28"
+            }
+          ]
+        },
+        {
+          "text": "볶던 고기와 파, 생강에 후추를 톡톡 뿌려준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "생강, 파, 고기 볶고 후추 톡톡",
+              "timestamp": "00:35"
+            }
+          ]
+        },
+        {
+          "text": "라오깐마 1스푼을 넣고 함께 섞어가며 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "치트키 1 : 라오깐마 / 한 스푼으로 감칠맛을 잡고 / 섞어주다가",
+              "timestamp": "00:38"
+            }
+          ]
+        },
+        {
+          "text": "두반장 1숟가락을 넣고 골고루 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "두반장 한 숟가락 넣고 / 볶볶볶",
+              "timestamp": "00:44"
+            }
+          ]
+        },
+        {
+          "text": "물 한 컵(180ml)을 붓고 끓여준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 한 컵 (180ml)",
+              "timestamp": "00:49"
+            }
+          ]
+        },
+        {
+          "text": "물이 끓어오르면 썰어둔 두부를 넣고 조린다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "끓는 소스에 깍둑썬 두부를 넣고 부드럽게 섞어줌",
+              "timestamp": "00:52"
+            }
+          ]
+        },
+        {
+          "text": "전분물을 풀어 넣고 저어가며 윤기와 농도를 맞추어 마무리한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "전분을 투하하고 마무리😁 / 윤기가 차원이 다르죠?",
+              "timestamp": "00:56"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 담고 송송 썬 쪽파를 올려 밥과 함께 곁들여 먹는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "쪽파까지 올리니까 향이,, 🤤 / 흰쌀밥 아니면 잡아갑니다 진짜로.",
+              "timestamp": "01:05"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

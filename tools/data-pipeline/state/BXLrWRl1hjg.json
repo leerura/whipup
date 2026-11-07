@@ -1,0 +1,290 @@
+{
+  "videoId": "BXLrWRl1hjg",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/BXLrWRl1hjg",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:46:01.649433+00:00",
+    "rawResponse": "{\n  \"title\": \"지도리 우동 (닭다리살 대파 우동)\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"지도리 우동 (닭다리살 대파 우동)을 만들어볼게요\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"대파를 큼직한 길이로 썰어 준비한다\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"오일 (올리브유)\",\n      \"displayName\": \"오일 (올리브유)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"뚝배기에 오일을 두른다\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"닭고기 (닭다리살)\",\n      \"displayName\": \"닭고기 (닭다리살)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"지도리 우동 (닭다리살 대파 우동)을 만들어볼게요\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"냄비 그대로 닭고기를 구워줄게요\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"껍질을 바닥으로 가게 하고 소금 후추 챱챱!\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"껍질을 바닥으로 가게 하고 소금 후추 챱챱!\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 380ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"380\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 380ml 넣고\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쯔유 3-4 숟가락\",\n      \"displayName\": \"쯔유\",\n      \"amount\": \"3-4\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쯔유 3-4 숟가락\",\n          \"timestamp\": \"00:55\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 크게 한 숟가락\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"크게 1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 크게 한 숟가락\",\n          \"timestamp\": \"00:57\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우동면 (냉동 사누끼 우동면)\",\n      \"displayName\": \"우동면\",\n      \"amount\": \"1\",\n      \"unit\": \"봉지\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"우동면은 냉동이 맛있습니다!!!!!!\",\n          \"timestamp\": \"01:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"사누끼 우동면(230g) 1개를 넣는다\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"대파를 큼직한 길이로 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도마 위에서 대파를 일정 크기로 썬다\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 오일을 두르고 대파를 볶아주며, 토치를 사용하여 겉면을 노릇노릇하게 구워준 뒤 접시에 잠시 빼둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비에 오일을 두르고 대파를 넣는다\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"화력이 약한 하이라이트라 토치는 제 영원한 친구입니다\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"노릇노릇하게 구운 대파는 잠시 빼두고\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파를 구운 냄비에 닭다리살을 껍질이 바닥으로 향하게 올리고 소금과 후추를 뿌려 구워준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"냄비 그대로 닭고기를 구워줄게요\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"껍질을 바닥으로 가게 하고 소금 후추 챱챱!\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"text\": \"구워진 닭다리살을 뒤집어 익히며 먹기 좋은 크기로 자른다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"닭고기를 뒤집고 가위로 잘라준다\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 물 380ml, 쯔유 3-4 숟가락, 진간장 크게 1 숟가락을 넣고 섞어준다 (나중에 간을 보고 부족하면 추가한다).\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 380ml 넣고\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쯔유 3-4 숟가락\",\n          \"timestamp\": \"00:55\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 크게 한 숟가락\",\n          \"timestamp\": \"00:57\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"나중에 간 보고 부족하면 추가해주세요\",\n          \"timestamp\": \"00:59\"\n        }\n      ]\n    },\n    {\n      \"text\": \"구워두었던 대파와 우동면을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"노릇한 파 투하!!\",\n          \"timestamp\": \"01:01\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"우동면은 냉동이 맛있습니다!!!!!!\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비 뚜껑을 덮고 보글보글 끓여 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"보글보글 끓여오겠습니다\",\n          \"timestamp\": \"01:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"뚜껑을 열어 완성된 우동을 확인한다\",\n          \"timestamp\": \"01:10\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "지도리 우동 (닭다리살 대파 우동)",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "지도리 우동 (닭다리살 대파 우동)을 만들어볼게요",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "대파를 큼직한 길이로 썰어 준비한다",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "오일 (올리브유)",
+          "displayName": "오일 (올리브유)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "뚝배기에 오일을 두른다",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "닭고기 (닭다리살)",
+          "displayName": "닭고기 (닭다리살)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "지도리 우동 (닭다리살 대파 우동)을 만들어볼게요",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "냄비 그대로 닭고기를 구워줄게요",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "소금",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "껍질을 바닥으로 가게 하고 소금 후추 챱챱!",
+              "timestamp": "00:46"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "껍질을 바닥으로 가게 하고 소금 후추 챱챱!",
+              "timestamp": "00:46"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "물 380ml",
+          "displayName": "물",
+          "amount": "380",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 380ml 넣고",
+              "timestamp": "00:53"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "쯔유 3-4 숟가락",
+          "displayName": "쯔유",
+          "amount": "3-4",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쯔유 3-4 숟가락",
+              "timestamp": "00:55"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "진간장 크게 한 숟가락",
+          "displayName": "진간장",
+          "amount": "크게 1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 크게 한 숟가락",
+              "timestamp": "00:57"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "우동면 (냉동 사누끼 우동면)",
+          "displayName": "우동면",
+          "amount": "1",
+          "unit": "봉지",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "우동면은 냉동이 맛있습니다!!!!!!",
+              "timestamp": "01:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "사누끼 우동면(230g) 1개를 넣는다",
+              "timestamp": "01:05"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "대파를 큼직한 길이로 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도마 위에서 대파를 일정 크기로 썬다",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 오일을 두르고 대파를 볶아주며, 토치를 사용하여 겉면을 노릇노릇하게 구워준 뒤 접시에 잠시 빼둔다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비에 오일을 두르고 대파를 넣는다",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "화력이 약한 하이라이트라 토치는 제 영원한 친구입니다",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "노릇노릇하게 구운 대파는 잠시 빼두고",
+              "timestamp": "00:41"
+            }
+          ]
+        },
+        {
+          "text": "대파를 구운 냄비에 닭다리살을 껍질이 바닥으로 향하게 올리고 소금과 후추를 뿌려 구워준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "냄비 그대로 닭고기를 구워줄게요",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "껍질을 바닥으로 가게 하고 소금 후추 챱챱!",
+              "timestamp": "00:46"
+            }
+          ]
+        },
+        {
+          "text": "구워진 닭다리살을 뒤집어 익히며 먹기 좋은 크기로 자른다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "닭고기를 뒤집고 가위로 잘라준다",
+              "timestamp": "00:48"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 물 380ml, 쯔유 3-4 숟가락, 진간장 크게 1 숟가락을 넣고 섞어준다 (나중에 간을 보고 부족하면 추가한다).",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 380ml 넣고",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쯔유 3-4 숟가락",
+              "timestamp": "00:55"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 크게 한 숟가락",
+              "timestamp": "00:57"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "나중에 간 보고 부족하면 추가해주세요",
+              "timestamp": "00:59"
+            }
+          ]
+        },
+        {
+          "text": "구워두었던 대파와 우동면을 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "노릇한 파 투하!!",
+              "timestamp": "01:01"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "우동면은 냉동이 맛있습니다!!!!!!",
+              "timestamp": "01:05"
+            }
+          ]
+        },
+        {
+          "text": "냄비 뚜껑을 덮고 보글보글 끓여 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "보글보글 끓여오겠습니다",
+              "timestamp": "01:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "뚜껑을 열어 완성된 우동을 확인한다",
+              "timestamp": "01:10"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

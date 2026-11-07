@@ -1,0 +1,322 @@
+{
+  "videoId": "_2IT14puWKE",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/_2IT14puWKE",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T23:28:26.518249+00:00",
+    "rawResponse": "{\n  \"title\": \"카레 지겨울때 감자목살덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"목살 (고기)\",\n      \"displayName\": \"목살\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"카레 지겨울때 감자목살덮밥\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고기 볶볶\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기랑\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"감자\",\n      \"displayName\": \"감자\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"감자 깍둑썰고\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"감자 투하\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"감자 볶아주고\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금 후추\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금 후추\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"전분 2T\",\n      \"displayName\": \"전분\",\n      \"amount\": \"2\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"전분 2T\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"전분이랑\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기름 넣고\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양념\",\n      \"displayName\": \"양념\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양념은 본문 😉\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양념 넣어서 바짝 볶아주면\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 볶은 감자와 목살을 올림\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 덮밥 위에 통깨를 뿌려 장식\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추\",\n      \"displayName\": \"고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 덮밥 위에 송송 썬 고추를 고명으로 올림\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"감자를 깍둑썰기한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"감자 깍둑썰고\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도마 위에서 감자를 깍둑썰기함\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 고기를 넣고 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고기 볶볶\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기랑 감자 볶아주고\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 깍둑썬 감자를 투하하여 고기와 함께 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"감자 투하\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소금과 후추를 뿌려 함께 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금 후추\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"전분 2T와 기름을 넣고 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"전분 2T\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"전분이랑 기름 넣고 볶아주다\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양념을 넣어서 바짝 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양념은 본문 😉\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"바짝 볶아주면\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양념 넣어서 바짝 볶아주면\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 위에 볶은 감자목살 볶음을 얹고 취향에 따라 통깨와 고추를 올려 덮밥을 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥도둑인데?!\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 볶음을 올리고 통깨와 고추 고명을 곁들임\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"양념의 구체적인 구성 재료와 계량 정보는 영상 자막에 '양념은 본문'으로만 안내되어 영상 화면/음성에서 확인할 수 없음\",\n    \"목살, 감자, 소금, 후추, 식용유, 밥의 구체적인 계량/용량이 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "카레 지겨울때 감자목살덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "목살 (고기)",
+          "displayName": "목살",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "카레 지겨울때 감자목살덮밥",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고기 볶볶",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고기랑",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "감자",
+          "displayName": "감자",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "감자 깍둑썰고",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "감자 투하",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "감자 볶아주고",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "소금",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소금 후추",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "후추",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소금 후추",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "전분 2T",
+          "displayName": "전분",
+          "amount": "2",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "전분 2T",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "전분이랑",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "기름 넣고",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "양념",
+          "displayName": "양념",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양념은 본문 😉",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양념 넣어서 바짝 볶아주면",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 볶은 감자와 목살을 올림",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 덮밥 위에 통깨를 뿌려 장식",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "고추",
+          "displayName": "고추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 덮밥 위에 송송 썬 고추를 고명으로 올림",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "감자를 깍둑썰기한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "감자 깍둑썰고",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도마 위에서 감자를 깍둑썰기함",
+              "timestamp": "00:02"
+            }
+          ]
+        },
+        {
+          "text": "팬에 고기를 넣고 볶는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고기 볶볶",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고기랑 감자 볶아주고",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "팬에 깍둑썬 감자를 투하하여 고기와 함께 볶는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "감자 투하",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "소금과 후추를 뿌려 함께 볶는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "후추",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소금 후추",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "전분 2T와 기름을 넣고 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "전분 2T",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "전분이랑 기름 넣고 볶아주다",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "양념을 넣어서 바짝 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양념은 본문 😉",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "바짝 볶아주면",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양념 넣어서 바짝 볶아주면",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "밥 위에 볶은 감자목살 볶음을 얹고 취향에 따라 통깨와 고추를 올려 덮밥을 완성한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "밥도둑인데?!",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 볶음을 올리고 통깨와 고추 고명을 곁들임",
+              "timestamp": "00:10"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "양념의 구체적인 구성 재료와 계량 정보는 영상 자막에 '양념은 본문'으로만 안내되어 영상 화면/음성에서 확인할 수 없음",
+        "목살, 감자, 소금, 후추, 식용유, 밥의 구체적인 계량/용량이 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

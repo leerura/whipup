@@ -1,0 +1,163 @@
+{
+  "videoId": "q--bSD9t-to",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/q--bSD9t-to",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T08:00:55.750394+00:00",
+    "rawResponse": "{\n  \"title\": \"참치마요\",\n  \"description\": null,\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"밥 1인분\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1\",\n      \"unit\": \"인분\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 1인분\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 밥이 담겨 있는 모습\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치 1캔\",\n      \"displayName\": \"참치\",\n      \"amount\": \"1\",\n      \"unit\": \"캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치캔 기름을 빼줍니다.\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치 1캔\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"참치캔에서 숟가락으로 기름을 짜낸 후 밥 위에 참치를 붓는 모습\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루 한줌\",\n      \"displayName\": \"김가루\",\n      \"amount\": \"1\",\n      \"unit\": \"줌\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김가루 한줌\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"봉지에서 김가루를 밥과 참치 위에 붓는 모습\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마요네즈\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마요네즈\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"마요네즈를 김가루 위에 원을 그리며 짜 올리는 모습\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"참치캔의 기름을 빼줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치캔 기름을 빼줍니다.\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"숟가락으로 참치캔 뚜껑 및 내용물을 눌러 기름을 따라 버림\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 위에 기름을 뺀 참치를 붓습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 담긴 밥 위에 참치캔의 참치를 숟가락으로 긁어 올림\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"참치 위에 김가루를 한 줌 뿌려줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"김가루 봉지에서 밥과 참치 위에 김가루를 부음\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마지막으로 마요네즈를 뿌려 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"김가루 위에 소스통으로 마요네즈를 짜서 얹음\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"요리 제목이 영상 내 텍스트나 음성으로 명시되지 않아 재료와 조리 형태를 바탕으로 '참치마요'로 명명함\",\n    \"마요네즈의 구체적인 계량 수치가 표기되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "참치마요",
+      "description": null,
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "밥 1인분",
+          "displayName": "밥",
+          "amount": "1",
+          "unit": "인분",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 1인분",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 밥이 담겨 있는 모습",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "참치 1캔",
+          "displayName": "참치",
+          "amount": "1",
+          "unit": "캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치캔 기름을 빼줍니다.",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치 1캔",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "참치캔에서 숟가락으로 기름을 짜낸 후 밥 위에 참치를 붓는 모습",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "김가루 한줌",
+          "displayName": "김가루",
+          "amount": "1",
+          "unit": "줌",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김가루 한줌",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "봉지에서 김가루를 밥과 참치 위에 붓는 모습",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "마요네즈",
+          "displayName": "마요네즈",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마요네즈",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "마요네즈를 김가루 위에 원을 그리며 짜 올리는 모습",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        }
+      ],
+      "steps": [
+        {
+          "text": "참치캔의 기름을 빼줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치캔 기름을 빼줍니다.",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "숟가락으로 참치캔 뚜껑 및 내용물을 눌러 기름을 따라 버림",
+              "timestamp": "00:01"
+            }
+          ]
+        },
+        {
+          "text": "밥 위에 기름을 뺀 참치를 붓습니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 담긴 밥 위에 참치캔의 참치를 숟가락으로 긁어 올림",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "참치 위에 김가루를 한 줌 뿌려줍니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "김가루 봉지에서 밥과 참치 위에 김가루를 부음",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "마지막으로 마요네즈를 뿌려 완성합니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "김가루 위에 소스통으로 마요네즈를 짜서 얹음",
+              "timestamp": "00:15"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "요리 제목이 영상 내 텍스트나 음성으로 명시되지 않아 재료와 조리 형태를 바탕으로 '참치마요'로 명명함",
+        "마요네즈의 구체적인 계량 수치가 표기되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

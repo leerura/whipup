@@ -1,0 +1,445 @@
+{
+  "videoId": "DUnu5FyFfNE",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/DUnu5FyFfNE",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T10:01:34.238055+00:00",
+    "rawResponse": "{\n  \"title\": \"깐풍 만두\",\n  \"description\": \"냉동 만두를 깐풍 소스에 졸이듯이 볶아서 만드는 매콤하고 바삭한 깐풍 만두 레시피\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"오뚜기 XO 교자 고기만두 324g\",\n      \"displayName\": \"교자 고기만두\",\n      \"amount\": \"324\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"오뚜기 XO 교자 고기만두 324g\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냉동 만두를 깐풍 소스에 졸이듯이 볶아서 만드는 '깐풍 만두'입니다.\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 반 개 100g\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/2개\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 반 개 100g과\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 3개\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"3\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 3개\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"청양고추 3개\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"홍고추 2개\",\n      \"displayName\": \"홍고추\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"홍고추 2개\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"홍고추 2개를 다져 놓고\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 34g\",\n      \"displayName\": \"대파\",\n      \"amount\": \"34\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 34g\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파는 파기름을 내기 위해 흰대 부분 34g을 반으로 갈라 송송 썰어 줍니다.\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깐마늘 3쪽 16g\",\n      \"displayName\": \"깐마늘\",\n      \"amount\": \"16\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깐마늘 16g\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"깐마늘 3쪽 16g을 다지고\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깻잎 6장\",\n      \"displayName\": \"깻잎\",\n      \"amount\": \"6\",\n      \"unit\": \"장\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깻잎 6장\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"곁들여 먹으면 어울리는 깻잎도 6장을 채썰어 두었습니다. 깻잎은 없으면 생략해 주세요.\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"달군 팬에 식용유를 충분히 두르고\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 3스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 3스푼\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 3스푼\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양조 식초 3스푼\",\n      \"displayName\": \"양조 식초\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조 식초 3스푼\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양조 식초 3스푼\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼 반\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1스푼 반\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 1스푼 반\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1스푼\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1스푼\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스 1스푼\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후춧가루 1/2작은 스푼\",\n      \"displayName\": \"후춧가루\",\n      \"amount\": \"0.5\",\n      \"unit\": \"작은 스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후춧가루 1/2작은 스푼\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후춧가루는 작은 스푼으로 반 스푼을 넣고\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추기름 5스푼\",\n      \"displayName\": \"고추기름\",\n      \"amount\": \"5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추기름 5스푼\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추기름 5스푼을 두르고\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물엿 1스푼\",\n      \"displayName\": \"물엿\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물엿 1스푼\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불을 끄기 직전에 물엿 1스푼으로 코팅을 해 주시고\",\n          \"timestamp\": \"01:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1/2스푼\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1/2스푼\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불을 끈 후에 참기름 반 스푼으로 마무리해 주시면\",\n          \"timestamp\": \"01:21\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양파 반 개(100g), 청양고추 3개, 홍고추 2개를 잘게 다져 둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 반 개 100g과 청양고추 3개, 홍고추 2개를 다져 놓고\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파 흰대 부분 34g을 반으로 가른 뒤 송송 썰어 준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파는 파기름을 내기 위해 흰대 부분 34g을 반으로 갈라 송송 썰어 줍니다.\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"깐마늘 3쪽(16g)을 다지고, 깻잎 6장을 채 썰어 둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"깐마늘 3쪽 16g을 다지고, 곁들여 먹으면 어울리는 깻잎도 6장을 채썰어 두었습니다. 깻잎은 없으면 생략해 주세요.\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"달군 팬에 식용유를 충분히 두르고 냉동 상태의 만두를 올려 중약불에서 타지 않게 앞뒤로 바삭하고 노릇하게 구워 건져둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"재료 손질 후에는 달군 팬에 식용유를 충분히 두르고 냉동된 상태의 만두를 가지런히 올려 중약불에서 타지 않게 구워 주세요. 프라이팬 대신에 에어프라이어를 사용하셔도 좋으며 만두를 구울 때는 앞뒤로 바삭하고 노릇하게 구워 주셔야 소스를 넣고 볶아도 눅눅해지지가 않습니다.\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 진간장 3스푼, 양조 식초 3스푼, 설탕 1스푼 반, 굴소스 1스푼, 후춧가루 작은 스푼으로 반 스푼을 넣고 설탕이 녹을 때까지 잘 섞어 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다음은 양념장입니다. 진간장 3스푼, 양조 식초 3스푼, 설탕 1스푼 반, 굴소스 1스푼, 후춧가루는 작은 스푼으로 반 스푼을 넣고 설탕이 녹을 때까지 잘 섞어 주세요.\",\n          \"timestamp\": \"00:49\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬을 정리한 후 고추기름 5스푼을 두르고 중불에서 다진 마늘과 대파를 볶다가 대파 향이 올라오면 다진 양파와 고추를 넣고 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬을 정리하신 후에 고추기름 5스푼을 두르고 중불에서 다진 마늘과 대파를 볶다가 대파 향이 올라오기 시작하면 다진 양파와 고추를 볶아줍니다.\",\n          \"timestamp\": \"01:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"채소의 숨이 죽기 시작할 때 만들어 둔 양념장을 끼얹어 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"채소의 숨이 죽기 시작할 때 만들어 둔 양념장을 끼얹어 끓이다가\",\n          \"timestamp\": \"01:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양념장이 끈적하게 졸아들면 구워둔 만두를 넣고 센 불로 올려 빠른 시간에 양념을 골고루 입혀준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"끈적하게 졸아들면 만두를 넣고 센 불로 화력을 높여서 빠른 시간에 양념을 입혀주세요.\",\n          \"timestamp\": \"01:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 끄기 직전에 물엿 1스푼을 넣어 코팅하고 불을 끈 뒤, 참기름 반 스푼을 둘러 섞어 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불을 끄기 직전에 물엿 1스푼으로 코팅을 해 주시고 불을 끈 후에 참기름 반 스푼으로 마무리해 주시면 오늘의 요리 '깐풍 만두' 완성입니다.\",\n          \"timestamp\": \"01:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 깐풍 만두를 접시에 담고, 채 썬 깻잎을 고명으로 올려 곁들인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"접시에 만두와 볶은 채소를 담고 채 썬 깻잎을 고명으로 올림\",\n          \"timestamp\": \"01:26\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "깐풍 만두",
+      "description": "냉동 만두를 깐풍 소스에 졸이듯이 볶아서 만드는 매콤하고 바삭한 깐풍 만두 레시피",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "오뚜기 XO 교자 고기만두 324g",
+          "displayName": "교자 고기만두",
+          "amount": "324",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "오뚜기 XO 교자 고기만두 324g",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냉동 만두를 깐풍 소스에 졸이듯이 볶아서 만드는 '깐풍 만두'입니다.",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파 반 개 100g",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/2개",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파 반 개 100g과",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "청양고추 3개",
+          "displayName": "청양고추",
+          "amount": "3",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 3개",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "청양고추 3개",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "홍고추 2개",
+          "displayName": "홍고추",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "홍고추 2개",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "홍고추 2개를 다져 놓고",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "대파 34g",
+          "displayName": "대파",
+          "amount": "34",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 34g",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파는 파기름을 내기 위해 흰대 부분 34g을 반으로 갈라 송송 썰어 줍니다.",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "깐마늘 3쪽 16g",
+          "displayName": "깐마늘",
+          "amount": "16",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깐마늘 16g",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "깐마늘 3쪽 16g을 다지고",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "깻잎 6장",
+          "displayName": "깻잎",
+          "amount": "6",
+          "unit": "장",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깻잎 6장",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "곁들여 먹으면 어울리는 깻잎도 6장을 채썰어 두었습니다. 깻잎은 없으면 생략해 주세요.",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "달군 팬에 식용유를 충분히 두르고",
+              "timestamp": "00:32"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "진간장 3스푼",
+          "displayName": "진간장",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 3스푼",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장 3스푼",
+              "timestamp": "00:50"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "양조 식초 3스푼",
+          "displayName": "양조 식초",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조 식초 3스푼",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양조 식초 3스푼",
+              "timestamp": "00:52"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "설탕 1스푼 반",
+          "displayName": "설탕",
+          "amount": "1.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1스푼 반",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 1스푼 반",
+              "timestamp": "00:53"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "굴소스 1스푼",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1스푼",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "굴소스 1스푼",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "후춧가루 1/2작은 스푼",
+          "displayName": "후춧가루",
+          "amount": "0.5",
+          "unit": "작은 스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후춧가루 1/2작은 스푼",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후춧가루는 작은 스푼으로 반 스푼을 넣고",
+              "timestamp": "00:56"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "고추기름 5스푼",
+          "displayName": "고추기름",
+          "amount": "5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추기름 5스푼",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추기름 5스푼을 두르고",
+              "timestamp": "01:02"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "물엿 1스푼",
+          "displayName": "물엿",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물엿 1스푼",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "불을 끄기 직전에 물엿 1스푼으로 코팅을 해 주시고",
+              "timestamp": "01:18"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "참기름 1/2스푼",
+          "displayName": "참기름",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1/2스푼",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "불을 끈 후에 참기름 반 스푼으로 마무리해 주시면",
+              "timestamp": "01:21"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양파 반 개(100g), 청양고추 3개, 홍고추 2개를 잘게 다져 둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 반 개 100g과 청양고추 3개, 홍고추 2개를 다져 놓고",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "대파 흰대 부분 34g을 반으로 가른 뒤 송송 썰어 준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파는 파기름을 내기 위해 흰대 부분 34g을 반으로 갈라 송송 썰어 줍니다.",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "깐마늘 3쪽(16g)을 다지고, 깻잎 6장을 채 썰어 둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "깐마늘 3쪽 16g을 다지고, 곁들여 먹으면 어울리는 깻잎도 6장을 채썰어 두었습니다. 깻잎은 없으면 생략해 주세요.",
+              "timestamp": "00:25"
+            }
+          ]
+        },
+        {
+          "text": "달군 팬에 식용유를 충분히 두르고 냉동 상태의 만두를 올려 중약불에서 타지 않게 앞뒤로 바삭하고 노릇하게 구워 건져둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "재료 손질 후에는 달군 팬에 식용유를 충분히 두르고 냉동된 상태의 만두를 가지런히 올려 중약불에서 타지 않게 구워 주세요. 프라이팬 대신에 에어프라이어를 사용하셔도 좋으며 만두를 구울 때는 앞뒤로 바삭하고 노릇하게 구워 주셔야 소스를 넣고 볶아도 눅눅해지지가 않습니다.",
+              "timestamp": "00:32"
+            }
+          ]
+        },
+        {
+          "text": "볼에 진간장 3스푼, 양조 식초 3스푼, 설탕 1스푼 반, 굴소스 1스푼, 후춧가루 작은 스푼으로 반 스푼을 넣고 설탕이 녹을 때까지 잘 섞어 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다음은 양념장입니다. 진간장 3스푼, 양조 식초 3스푼, 설탕 1스푼 반, 굴소스 1스푼, 후춧가루는 작은 스푼으로 반 스푼을 넣고 설탕이 녹을 때까지 잘 섞어 주세요.",
+              "timestamp": "00:49"
+            }
+          ]
+        },
+        {
+          "text": "팬을 정리한 후 고추기름 5스푼을 두르고 중불에서 다진 마늘과 대파를 볶다가 대파 향이 올라오면 다진 양파와 고추를 넣고 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬을 정리하신 후에 고추기름 5스푼을 두르고 중불에서 다진 마늘과 대파를 볶다가 대파 향이 올라오기 시작하면 다진 양파와 고추를 볶아줍니다.",
+              "timestamp": "01:00"
+            }
+          ]
+        },
+        {
+          "text": "채소의 숨이 죽기 시작할 때 만들어 둔 양념장을 끼얹어 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "채소의 숨이 죽기 시작할 때 만들어 둔 양념장을 끼얹어 끓이다가",
+              "timestamp": "01:09"
+            }
+          ]
+        },
+        {
+          "text": "양념장이 끈적하게 졸아들면 구워둔 만두를 넣고 센 불로 올려 빠른 시간에 양념을 골고루 입혀준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "끈적하게 졸아들면 만두를 넣고 센 불로 화력을 높여서 빠른 시간에 양념을 입혀주세요.",
+              "timestamp": "01:13"
+            }
+          ]
+        },
+        {
+          "text": "불을 끄기 직전에 물엿 1스푼을 넣어 코팅하고 불을 끈 뒤, 참기름 반 스푼을 둘러 섞어 마무리한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "불을 끄기 직전에 물엿 1스푼으로 코팅을 해 주시고 불을 끈 후에 참기름 반 스푼으로 마무리해 주시면 오늘의 요리 '깐풍 만두' 완성입니다.",
+              "timestamp": "01:17"
+            }
+          ]
+        },
+        {
+          "text": "완성된 깐풍 만두를 접시에 담고, 채 썬 깻잎을 고명으로 올려 곁들인다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "접시에 만두와 볶은 채소를 담고 채 썬 깻잎을 고명으로 올림",
+              "timestamp": "01:26"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

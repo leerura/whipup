@@ -1,0 +1,280 @@
+{
+  "videoId": "6Sd8bytvFPA",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://youtu.be/6Sd8bytvFPA?si=jHJ45qCVQpUQB4ne",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:32:06.638635+00:00",
+    "rawResponse": "{\n  \"title\": \"삼겹살 덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"삼겹살 300g\",\n      \"displayName\": \"삼겹살\",\n      \"amount\": \"300\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"삼겹살 300g\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 삼겹살을 300g 올려주고\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금과 후추를 뿌려 살짝 밑간을 해준 뒤\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소금과 후추를 뿌려 살짝 밑간을 해준 뒤\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금과 후추를 뿌려 살짝 밑간을 해준 뒤\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소금과 후추를 뿌려 살짝 밑간을 해준 뒤\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통마늘 한줌\",\n      \"displayName\": \"통마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"줌\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"통마늘 한줌을 꼭지 떼고 올려주고\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"통마늘 한줌을 꼭지 떼고 올려주고\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/4개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/4\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 1/4개도 얇게 썰어 올려준 뒤\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 1/4개도 얇게 썰어 올려준 뒤\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 3스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 3스푼\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"짭짤하게 진간장 세 스푼\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 한 스푼\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1스푼\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"시뻘건 고춧가루도 한 스푼 넣고\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"뜨끈한 흰밥\",\n      \"displayName\": \"흰밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다 됐으면 뜨끈한 흰밥 위로\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다 됐으면 뜨끈한 흰밥 위로\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 삼겹살 300g을 올리고 소금과 후추를 뿌려 살짝 밑간을 해준 뒤 앞뒤로 노릇하게 구워줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 삼겹살을 300g 올려주고 소금과 후추를 뿌려 살짝 밑간을 해준 뒤 앞뒤로 노릿하게 구워줍니다.\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"구워진 삼겹살은 옆으로 빼두고, 팬에 남아있는 기름에 꼭지를 뗀 통마늘 한 줌을 올려 노릇하게 구워줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"잘 구워진 삼겹살은 옆으로 빼주고 팬에 남아 있는 기름 위로 통마늘 한줌을 꼭지 떼고 올려주고 마늘도 노릿하게 한번 구워주다가\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"얇게 썬 양파 1/4개를 팬에 넣고 함께 노릇하게 구워줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 1/4개도 얇게 썰어 올려준 뒤 노릿하게 한번 구워주다가\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"진간장 3스푼, 설탕 1스푼, 고춧가루 1스푼을 넣고 양념을 태우듯이 살짝 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"짭짤하게 진간장 세 스푼, 설탕 한 스푼, 시뻘건 고춧가루도 한 스푼 넣고 양념도 태우듯이 살짝만 볶아주다가\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"미리 구워둔 삼겹살을 다시 팬에 넣고 양념과 함께 다 같이 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"미리 구워서 빼둔 삼겹살도 넣고 다 같이 한번 볶아주면 끝입니다!\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 담긴 뜨끈한 흰밥 위로 볶은 양파, 마늘, 삼겹살을 차례대로 올려줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다 됐으면 뜨끈한 흰밥 위로 양파와 마늘 삼겹살까지 차례대로 올려주고\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"text\": \"토치로 살짝 그을려 불향을 입혀 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"부족한 불향은 토치로 살짝만 더해주면 간장향을 제대로 입힌 삼겹살 덮밥이 완성됩니다.\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "삼겹살 덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "삼겹살 300g",
+          "displayName": "삼겹살",
+          "amount": "300",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "삼겹살 300g",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 삼겹살을 300g 올려주고",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "소금",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소금과 후추를 뿌려 살짝 밑간을 해준 뒤",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "소금과 후추를 뿌려 살짝 밑간을 해준 뒤",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소금과 후추를 뿌려 살짝 밑간을 해준 뒤",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "소금과 후추를 뿌려 살짝 밑간을 해준 뒤",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "통마늘 한줌",
+          "displayName": "통마늘",
+          "amount": "1",
+          "unit": "줌",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "통마늘 한줌을 꼭지 떼고 올려주고",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "통마늘 한줌을 꼭지 떼고 올려주고",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "양파 1/4개",
+          "displayName": "양파",
+          "amount": "1/4",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 1/4개도 얇게 썰어 올려준 뒤",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파 1/4개도 얇게 썰어 올려준 뒤",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "진간장 3스푼",
+          "displayName": "진간장",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 3스푼",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "짭짤하게 진간장 세 스푼",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "설탕 1스푼",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1스푼",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 한 스푼",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "고춧가루 1스푼",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1스푼",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "시뻘건 고춧가루도 한 스푼 넣고",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "뜨끈한 흰밥",
+          "displayName": "흰밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다 됐으면 뜨끈한 흰밥 위로",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다 됐으면 뜨끈한 흰밥 위로",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 삼겹살 300g을 올리고 소금과 후추를 뿌려 살짝 밑간을 해준 뒤 앞뒤로 노릇하게 구워줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 삼겹살을 300g 올려주고 소금과 후추를 뿌려 살짝 밑간을 해준 뒤 앞뒤로 노릿하게 구워줍니다.",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "구워진 삼겹살은 옆으로 빼두고, 팬에 남아있는 기름에 꼭지를 뗀 통마늘 한 줌을 올려 노릇하게 구워줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "잘 구워진 삼겹살은 옆으로 빼주고 팬에 남아 있는 기름 위로 통마늘 한줌을 꼭지 떼고 올려주고 마늘도 노릿하게 한번 구워주다가",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "얇게 썬 양파 1/4개를 팬에 넣고 함께 노릇하게 구워줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 1/4개도 얇게 썰어 올려준 뒤 노릿하게 한번 구워주다가",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "진간장 3스푼, 설탕 1스푼, 고춧가루 1스푼을 넣고 양념을 태우듯이 살짝 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "짭짤하게 진간장 세 스푼, 설탕 한 스푼, 시뻘건 고춧가루도 한 스푼 넣고 양념도 태우듯이 살짝만 볶아주다가",
+              "timestamp": "00:25"
+            }
+          ]
+        },
+        {
+          "text": "미리 구워둔 삼겹살을 다시 팬에 넣고 양념과 함께 다 같이 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "미리 구워서 빼둔 삼겹살도 넣고 다 같이 한번 볶아주면 끝입니다!",
+              "timestamp": "00:31"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 담긴 뜨끈한 흰밥 위로 볶은 양파, 마늘, 삼겹살을 차례대로 올려줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다 됐으면 뜨끈한 흰밥 위로 양파와 마늘 삼겹살까지 차례대로 올려주고",
+              "timestamp": "00:35"
+            }
+          ]
+        },
+        {
+          "text": "토치로 살짝 그을려 불향을 입혀 완성합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "부족한 불향은 토치로 살짝만 더해주면 간장향을 제대로 입힌 삼겹살 덮밥이 완성됩니다.",
+              "timestamp": "00:39"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

@@ -1,0 +1,385 @@
+{
+  "videoId": "ze4eeuPaVfQ",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/ze4eeuPaVfQ",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:53:34.102985+00:00",
+    "rawResponse": "{\n  \"title\": \"새마을식당 7분 김치찌개\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"식용유 1숟가락\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유1 Cooking oil\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냄비에 식용유 한 숟가락 두르고\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 1컵\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파1컵 Green onion\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파 한 컵과\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돼지고기 200g\",\n      \"displayName\": \"돼지고기\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"돼지고기200g Pork\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"돼지고기 200g을 볶아줘\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1숟가락\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루1 Chili powder\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 고춧가루 한 숟가락\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 0.5숟가락\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.5\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕0.5 Sugar\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 반 숟가락\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"국간장 2숟가락\",\n      \"displayName\": \"국간장\",\n      \"amount\": \"2\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장2 Soy sauce\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국간장 두 숟가락을 넣어줘\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치 200g 및 김치국물\",\n      \"displayName\": \"김치\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치200g Kimchi\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 고기와 똑같은 양의 김치와 김치국물을 같이 넣어줘\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/4개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/4\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파1/4 Onion\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 양파 반의 반 개를 잘라서 넣어줄 거야\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"종이컵 물 1컵\",\n      \"displayName\": \"물\",\n      \"amount\": \"1\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 1컵 A glass of water\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"종이컵으로 물 한 컵 가득 넣고\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1숟가락\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘1 Crushed garlic\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘 한 숟가락 넣고 잘 섞어줘\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 Green onion\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 대파 살짝 잘라서 위에 올려주고\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 1개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 계란후라이를 하나 하고\",\n          \"timestamp\": \"00:50\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란을 깨뜨려 프라이팬에 굽는다\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥에\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"접시에 담긴 밥\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김가루를 올려서\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 김가루를 올린다\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 식용유 1숟가락을 두르고 송송 썬 대파 1컵과 돼지고기 200g을 넣고 살짝 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냄비에 식용유 한 숟가락 두르고 대파 한 컵과 돼지고기 200g을 볶아줘 살짝만 볶다가\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고춧가루 1숟가락, 설탕 0.5숟가락, 국간장 2숟가락을 넣고 타지 않게 약불에서 고기가 완전히 익을 때까지 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 고춧가루 한 숟가락 설탕 반 숟가락 국간장 두 숟가락을 넣어줘 타지 않게 약불에서 고기가 완전히 익을 때까지 볶아줘\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김치 200g과 김치국물, 깍둑썰기한 양파 1/4개를 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 고기와 똑같은 양의 김치와 김치국물을 같이 넣어줘 그리고 양파 반의 반 개를 잘라서 넣어줄 거야\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"종이컵으로 물 1컵과 다진 마늘 1숟가락을 넣고 잘 섞는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"종이컵으로 물 한 컵 가득 넣고 다진 마늘 한 숟가락 넣고 잘 섞어줘\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뚜껑을 덮고 센불에서 7분간 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"7분간 끓이기 Boil for 7 minutes\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 뚜껑 덮고 센불로 딱 7분간 끓일 거야\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파를 썰어서 위에 올리고 가스불을 끈다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 대파 살짝 잘라서 위에 올려주고 가스불을 끄면 새마을식당 7분 김치찌개 끝\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란후라이를 부쳐서 밥 위에 김가루, 계란후라이를 얹고 찌개와 함께 비벼 먹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 계란후라이를 하나 하고 밥에 김가루를 올려서 찌개와 같이 비벼 먹으면 이건 못 참지\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "새마을식당 7분 김치찌개",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "식용유 1숟가락",
+          "displayName": "식용유",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유1 Cooking oil",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냄비에 식용유 한 숟가락 두르고",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파 1컵",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파1컵 Green onion",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파 한 컵과",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "돼지고기 200g",
+          "displayName": "돼지고기",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "돼지고기200g Pork",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "돼지고기 200g을 볶아줘",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "고춧가루 1숟가락",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루1 Chili powder",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 고춧가루 한 숟가락",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "설탕 0.5숟가락",
+          "displayName": "설탕",
+          "amount": "0.5",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕0.5 Sugar",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 반 숟가락",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "국간장 2숟가락",
+          "displayName": "국간장",
+          "amount": "2",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장2 Soy sauce",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "국간장 두 숟가락을 넣어줘",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "김치 200g 및 김치국물",
+          "displayName": "김치",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치200g Kimchi",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 고기와 똑같은 양의 김치와 김치국물을 같이 넣어줘",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "양파 1/4개",
+          "displayName": "양파",
+          "amount": "1/4",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파1/4 Onion",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 양파 반의 반 개를 잘라서 넣어줄 거야",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "종이컵 물 1컵",
+          "displayName": "물",
+          "amount": "1",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 1컵 A glass of water",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "SPEECH",
+              "text": "종이컵으로 물 한 컵 가득 넣고",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "다진마늘 1숟가락",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘1 Crushed garlic",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘 한 숟가락 넣고 잘 섞어줘",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 Green onion",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 대파 살짝 잘라서 위에 올려주고",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "계란 1개",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "개",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 계란후라이를 하나 하고",
+              "timestamp": "00:50"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란을 깨뜨려 프라이팬에 굽는다",
+              "timestamp": "00:50"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥에",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "접시에 담긴 밥",
+              "timestamp": "00:53"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "김가루",
+          "displayName": "김가루",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김가루를 올려서",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 김가루를 올린다",
+              "timestamp": "00:53"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 식용유 1숟가락을 두르고 송송 썬 대파 1컵과 돼지고기 200g을 넣고 살짝 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "냄비에 식용유 한 숟가락 두르고 대파 한 컵과 돼지고기 200g을 볶아줘 살짝만 볶다가",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "고춧가루 1숟가락, 설탕 0.5숟가락, 국간장 2숟가락을 넣고 타지 않게 약불에서 고기가 완전히 익을 때까지 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 고춧가루 한 숟가락 설탕 반 숟가락 국간장 두 숟가락을 넣어줘 타지 않게 약불에서 고기가 완전히 익을 때까지 볶아줘",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "김치 200g과 김치국물, 깍둑썰기한 양파 1/4개를 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 고기와 똑같은 양의 김치와 김치국물을 같이 넣어줘 그리고 양파 반의 반 개를 잘라서 넣어줄 거야",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "종이컵으로 물 1컵과 다진 마늘 1숟가락을 넣고 잘 섞는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "종이컵으로 물 한 컵 가득 넣고 다진 마늘 한 숟가락 넣고 잘 섞어줘",
+              "timestamp": "00:31"
+            }
+          ]
+        },
+        {
+          "text": "뚜껑을 덮고 센불에서 7분간 끓인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "7분간 끓이기 Boil for 7 minutes",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 뚜껑 덮고 센불로 딱 7분간 끓일 거야",
+              "timestamp": "00:35"
+            }
+          ]
+        },
+        {
+          "text": "대파를 썰어서 위에 올리고 가스불을 끈다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 대파 살짝 잘라서 위에 올려주고 가스불을 끄면 새마을식당 7분 김치찌개 끝",
+              "timestamp": "00:40"
+            }
+          ]
+        },
+        {
+          "text": "계란후라이를 부쳐서 밥 위에 김가루, 계란후라이를 얹고 찌개와 함께 비벼 먹는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 계란후라이를 하나 하고 밥에 김가루를 올려서 찌개와 같이 비벼 먹으면 이건 못 참지",
+              "timestamp": "00:50"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

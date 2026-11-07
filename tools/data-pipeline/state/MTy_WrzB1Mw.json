@@ -1,0 +1,456 @@
+{
+  "videoId": "MTy_WrzB1Mw",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/MTy_WrzB1Mw",
+  "sourceMetadata": {"sourceTitle":"신림동에서 유명한 기사식당 두부조림 레시피","sourceChannelName":"1분요리 뚝딱이형","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.348532Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T10:56:53.410815+00:00",
+    "rawResponse": "{\n  \"title\": \"신림동 기사식당 두부조림\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"두부 두 모\",\n      \"displayName\": \"두부\",\n      \"amount\": \"2\",\n      \"unit\": \"모\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 두부 두 모를 1cm 간격으로 잘라줘\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"두부\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물기를 닦고 소금을 뿌려놔줘\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소금\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 한 숟가락\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 식용유 한 숟가락 두르고\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"식용유\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 큰 거 하나\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파 큰 거 하나를 잘라서 넣어줘\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돼지고기 두 컵\",\n      \"displayName\": \"돼지고기\",\n      \"amount\": \"2\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 돼지고기 두 컵과\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"돼지고기\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추를 뿌리고\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 세 숟가락\",\n      \"displayName\": \"간장\",\n      \"amount\": \"3\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기가 익으면 간장 세 숟가락 넣고\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"간장\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 두 숟가락\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"2\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 고춧가루 두 숟가락\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 두 숟가락\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"2\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 두 숟가락\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 두 숟가락\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"2\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 두 숟가락과\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"된장 한 숟가락\",\n      \"displayName\": \"된장\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"된장 한 숟가락을 넣어줘\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"된장\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 세 숟가락\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"3\",\n      \"unit\": \"숟가락\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 맛술 세 숟가락 넣어줘 없으면 안 넣어도 돼\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"맛술\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 한 컵\",\n      \"displayName\": \"물\",\n      \"amount\": \"1\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 한 컵을 넣어줘\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파를 채 썰어서 그 위에 올려줘\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파\",\n          \"timestamp\": \"00:45\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양파 1개를 채 써는 모습\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파와\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깨\",\n      \"displayName\": \"참깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"깨를 뿌려주면 끝\",\n          \"timestamp\": \"00:55\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참깨\",\n          \"timestamp\": \"00:55\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"두부 2모를 1cm 간격으로 자르고 물기를 닦은 후 소금을 뿌려둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 두부 두 모를 1cm 간격으로 잘라줘 물기를 닦고 소금을 뿌려놔줘\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유 1숟가락을 두르고 크게 썬 대파 1개를 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 식용유 한 숟가락 두르고 대파 큰 거 하나를 잘라서 넣어줘\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"돼지고기 2컵과 후추를 넣고 고기가 익을 때까지 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 돼지고기 두 컵과 후추를 뿌리고 고기가 익을 때까지 볶아줄 거야\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기가 익으면 간장 3숟가락을 넣고 살짝 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기가 익으면 간장 세 숟가락 넣고 살짝 볶아줘\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고춧가루 2숟가락, 설탕 2숟가락, 고추장 2숟가락, 된장 1숟가락, 맛술 3숟가락(선택)을 넣고 타기 직전까지 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 고춧가루 두 숟가락 설탕 두 숟가락 고추장 두 숟가락과 된장 한 숟가락을 넣어줘 그리고 맛술 세 숟가락 넣어줘 없으면 안 넣어도 돼 타기 직전까지 볶다가\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 1컵을 넣고 섞는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 한 컵을 넣어줘\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"두부를 넣고 양념이 잘 배이도록 섞는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"두부를 넣고 양념이 잘 배이게끔 섞어줘\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"채 썬 양파를 두부 위에 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파를 채 썰어서 그 위에 올려줘\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뚜껑을 덮고 약불에서 20분 동안 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"뚜껑 덮고 약불로 20분 끓여줘\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뚜껑을 열고 잘 섞어준 뒤, 대파와 참깨를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 뚜껑을 열고 잘 섞어준 다음에 대파와 깨를 뿌려주면 끝\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "신림동 기사식당 두부조림",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "두부 두 모",
+          "displayName": "두부",
+          "amount": "2",
+          "unit": "모",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 두부 두 모를 1cm 간격으로 잘라줘",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "두부",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "소금",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물기를 닦고 소금을 뿌려놔줘",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "소금",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "식용유 한 숟가락",
+          "displayName": "식용유",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 식용유 한 숟가락 두르고",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "식용유",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "대파 큰 거 하나",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파 큰 거 하나를 잘라서 넣어줘",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대파",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "돼지고기 두 컵",
+          "displayName": "돼지고기",
+          "amount": "2",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 돼지고기 두 컵과",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "돼지고기",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후추를 뿌리고",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "후추",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "간장 세 숟가락",
+          "displayName": "간장",
+          "amount": "3",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고기가 익으면 간장 세 숟가락 넣고",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "간장",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "고춧가루 두 숟가락",
+          "displayName": "고춧가루",
+          "amount": "2",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 고춧가루 두 숟가락",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "설탕 두 숟가락",
+          "displayName": "설탕",
+          "amount": "2",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "설탕 두 숟가락",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "고추장 두 숟가락",
+          "displayName": "고추장",
+          "amount": "2",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고추장 두 숟가락과",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고추장",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "된장 한 숟가락",
+          "displayName": "된장",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "된장 한 숟가락을 넣어줘",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "된장",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "맛술 세 숟가락",
+          "displayName": "맛술",
+          "amount": "3",
+          "unit": "숟가락",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 맛술 세 숟가락 넣어줘 없으면 안 넣어도 돼",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "맛술",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "물 한 컵",
+          "displayName": "물",
+          "amount": "1",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 한 컵을 넣어줘",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파를 채 썰어서 그 위에 올려줘",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파",
+              "timestamp": "00:45"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양파 1개를 채 써는 모습",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파와",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대파",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "깨",
+          "displayName": "참깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "깨를 뿌려주면 끝",
+              "timestamp": "00:55"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "참깨",
+              "timestamp": "00:55"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        }
+      ],
+      "steps": [
+        {
+          "text": "두부 2모를 1cm 간격으로 자르고 물기를 닦은 후 소금을 뿌려둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 두부 두 모를 1cm 간격으로 잘라줘 물기를 닦고 소금을 뿌려놔줘",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유 1숟가락을 두르고 크게 썬 대파 1개를 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 식용유 한 숟가락 두르고 대파 큰 거 하나를 잘라서 넣어줘",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "돼지고기 2컵과 후추를 넣고 고기가 익을 때까지 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 돼지고기 두 컵과 후추를 뿌리고 고기가 익을 때까지 볶아줄 거야",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "고기가 익으면 간장 3숟가락을 넣고 살짝 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고기가 익으면 간장 세 숟가락 넣고 살짝 볶아줘",
+              "timestamp": "00:21"
+            }
+          ]
+        },
+        {
+          "text": "고춧가루 2숟가락, 설탕 2숟가락, 고추장 2숟가락, 된장 1숟가락, 맛술 3숟가락(선택)을 넣고 타기 직전까지 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 고춧가루 두 숟가락 설탕 두 숟가락 고추장 두 숟가락과 된장 한 숟가락을 넣어줘 그리고 맛술 세 숟가락 넣어줘 없으면 안 넣어도 돼 타기 직전까지 볶다가",
+              "timestamp": "00:25"
+            }
+          ]
+        },
+        {
+          "text": "물 1컵을 넣고 섞는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 한 컵을 넣어줘",
+              "timestamp": "00:37"
+            }
+          ]
+        },
+        {
+          "text": "두부를 넣고 양념이 잘 배이도록 섞는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "두부를 넣고 양념이 잘 배이게끔 섞어줘",
+              "timestamp": "00:39"
+            }
+          ]
+        },
+        {
+          "text": "채 썬 양파를 두부 위에 올린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파를 채 썰어서 그 위에 올려줘",
+              "timestamp": "00:46"
+            }
+          ]
+        },
+        {
+          "text": "뚜껑을 덮고 약불에서 20분 동안 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "뚜껑 덮고 약불로 20분 끓여줘",
+              "timestamp": "00:48"
+            }
+          ]
+        },
+        {
+          "text": "뚜껑을 열고 잘 섞어준 뒤, 대파와 참깨를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 뚜껑을 열고 잘 섞어준 다음에 대파와 깨를 뿌려주면 끝",
+              "timestamp": "00:51"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

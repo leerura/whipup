@@ -1,0 +1,310 @@
+{
+  "videoId": "f5ZV-xgMxP4",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/f5ZV-xgMxP4",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:16:59.641924+00:00",
+    "rawResponse": "{\n  \"title\": \"콩나물밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"콩나물 1~2줌\",\n      \"displayName\": \"콩나물\",\n      \"amount\": \"1~2\",\n      \"unit\": \"줌\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"콩나물 1~2줌 깔고\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냄비에 콩나물 1~2줌 깔고\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 50ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"50\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 50ml\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 50미리\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 1스푼\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 1스푼 두르고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술 1 두르고\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 한공기\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 한공기 올려\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 한공기 올려\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 3스푼\",\n      \"displayName\": \"간장\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 3스푼\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 3\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 반스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 반스푼\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 반\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 조금\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": null,\n      \"unit\": \"조금\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 조금\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘 조금\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진파 조금\",\n      \"displayName\": \"다진파\",\n      \"amount\": null,\n      \"unit\": \"조금\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진파 조금\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진파\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1스푼\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1스푼\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름 1\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨 조금\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": \"조금\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"통깨 조금\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"통깨 섞어\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 콩나물 1~2줌을 깐다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"냄비에 콩나물 1~2줌 깔고\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냄비에 콩나물 1~2줌 깔고\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 50ml와 맛술 1스푼을 두른다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 50ml\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 1스푼 두르고\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 한 공기를 올리고 뚜껑을 덮어 중간에 열지 않고 5분 동안 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 한공기 올려\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"5분 끓이는 동안 ⭐중간에 열지 않기\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"뚜껑 덮어 5분 끓이는 동안\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"간장 3스푼, 고춧가루 반스푼, 다진마늘 조금, 다진파 조금, 참기름 1스푼, 통깨를 섞어 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 3스푼 고춧가루 반스푼 다진마늘 조금 다진파 조금 참기름 1스푼 통깨 조금\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 3 고춧가루 반 다진마늘 조금 다진파 참기름 1 통깨 섞어\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"익은 콩나물과 밥을 비빈 후 양념장을 올려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"슥슥 비빈 콩나물 밥에 슥 올리면 완성\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"슥슥 비빈 콩나물 밥에 슥 올리면 완성\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "콩나물밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "콩나물 1~2줌",
+          "displayName": "콩나물",
+          "amount": "1~2",
+          "unit": "줌",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "콩나물 1~2줌 깔고",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냄비에 콩나물 1~2줌 깔고",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "물 50ml",
+          "displayName": "물",
+          "amount": "50",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 50ml",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 50미리",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "맛술 1스푼",
+          "displayName": "맛술",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 1스푼 두르고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "맛술 1 두르고",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "밥 한공기",
+          "displayName": "밥",
+          "amount": "1",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 한공기 올려",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밥 한공기 올려",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "간장 3스푼",
+          "displayName": "간장",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 3스푼",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장 3",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "고춧가루 반스푼",
+          "displayName": "고춧가루",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 반스푼",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 반",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "다진마늘 조금",
+          "displayName": "다진마늘",
+          "amount": null,
+          "unit": "조금",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 조금",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진마늘 조금",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "다진파 조금",
+          "displayName": "다진파",
+          "amount": null,
+          "unit": "조금",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진파 조금",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진파",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "참기름 1스푼",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1스푼",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름 1",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "통깨 조금",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": "조금",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "통깨 조금",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "통깨 섞어",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 콩나물 1~2줌을 깐다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "냄비에 콩나물 1~2줌 깔고",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냄비에 콩나물 1~2줌 깔고",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "물 50ml와 맛술 1스푼을 두른다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 50ml",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 1스푼 두르고",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "밥 한 공기를 올리고 뚜껑을 덮어 중간에 열지 않고 5분 동안 끓인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 한공기 올려",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "5분 끓이는 동안 ⭐중간에 열지 않기",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "뚜껑 덮어 5분 끓이는 동안",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "간장 3스푼, 고춧가루 반스푼, 다진마늘 조금, 다진파 조금, 참기름 1스푼, 통깨를 섞어 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 3스푼 고춧가루 반스푼 다진마늘 조금 다진파 조금 참기름 1스푼 통깨 조금",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장 3 고춧가루 반 다진마늘 조금 다진파 참기름 1 통깨 섞어",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "익은 콩나물과 밥을 비빈 후 양념장을 올려 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "슥슥 비빈 콩나물 밥에 슥 올리면 완성",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "슥슥 비빈 콩나물 밥에 슥 올리면 완성",
+              "timestamp": "00:11"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "videoId": "-fJiUp2q9gc",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/-fJiUp2q9gc",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:47:31.732891+00:00",
+    "rawResponse": "{\n  \"title\": \"간장돼지고기덮밥 부타동\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"간장 3숟갈\",\n      \"displayName\": \"간장\",\n      \"amount\": \"3\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"간장 3숟갈, 맛술 1숟갈 넣고\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 1숟갈\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"1\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"간장 3숟갈, 맛술 1숟갈 넣고\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리고당 1숟갈\",\n      \"displayName\": \"올리고당\",\n      \"amount\": \"1\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"올리고당 1숟갈,\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 2숟갈\",\n      \"displayName\": \"물\",\n      \"amount\": \"2\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 2숟갈, 설탕 1숟갈,\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1숟갈\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 2숟갈, 설탕 1숟갈,\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 적당히\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추 적당히\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1/2숟갈\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1/2\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘 1/2숟갈 까지 넣어요\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돼지고기 (제육볶음용) 100g정도\",\n      \"displayName\": \"돼지고기 (제육볶음용)\",\n      \"amount\": \"100\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"돼지고기 (제육볶음용) 100g정도 준비\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"작은 크기의 양파 1/2개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"작은 크기의 양파 1/2개 채썰어요\",\n          \"timestamp\": \"01:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 담긴 밥 위에 고기와 양념을 올림\",\n          \"timestamp\": \"02:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쪽파\",\n      \"displayName\": \"쪽파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"덮밥 위에 썰어둔 쪽파를 고명으로 뿌림\",\n          \"timestamp\": \"02:54\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"볼에 간장 3숟갈, 맛술 1숟갈, 올리고당 1숟갈, 물 2숟갈, 설탕 1숟갈, 후추 적당히, 다진마늘 1/2숟갈을 넣고 설탕이 녹도록 잘 저어 양념장을 만듭니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"간장 3숟갈, 맛술 1숟갈 넣고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"올리고당 1숟갈,\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 2숟갈, 설탕 1숟갈,\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추 적당히\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘 1/2숟갈 까지 넣어요\",\n          \"timestamp\": \"00:42\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕이 녹도록 잘 저어주세요\",\n          \"timestamp\": \"00:49\"\n        }\n      ]\n    },\n    {\n      \"text\": \"작은 크기의 양파 1/2개를 채 썰어 준비합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"작은 크기의 양파 1/2개 채썰어요\",\n          \"timestamp\": \"01:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬을 달구고 센불과 중간불 사이에서 돼지고기를 먼저 굽습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"제일먼저 돼지고기를 구워요 (센불+중간불사이)\",\n          \"timestamp\": \"01:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"돼지고기가 살짝 구워지면 채 썬 양파를 넣고 대충 볶습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"돼지고기가 살짝 구워지면 양파를 넣고 대충 볶아요\",\n          \"timestamp\": \"01:43\"\n        }\n      ]\n    },\n    {\n      \"text\": \"만들어둔 양념장을 모두 부어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"아까 만들어둔 양념들을 모두 부어줍니다\",\n          \"timestamp\": \"01:54\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 센불과 중불 사이로 유지하며 돼지고기를 뒤집어가면서 살살 졸여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"돼지고기를 뒤집어가면서 살살 졸여주세요\",\n          \"timestamp\": \"02:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"(여전히 불은 센불+중불 사이 상태)\",\n          \"timestamp\": \"02:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 위에 구운 돼지고기와 양파를 얹고, 남은 양념장을 부어준 뒤 쪽파를 고명으로 뿌려 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 고기와 양파를 올림\",\n          \"timestamp\": \"02:25\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"남은 양념장도 많이 짜지 않아서 탈탈 부었어요\",\n          \"timestamp\": \"02:43\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"고명으로 썰어둔 쪽파를 뿌림\",\n          \"timestamp\": \"02:54\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "간장돼지고기덮밥 부타동",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "간장 3숟갈",
+          "displayName": "간장",
+          "amount": "3",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "간장 3숟갈, 맛술 1숟갈 넣고",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "맛술 1숟갈",
+          "displayName": "맛술",
+          "amount": "1",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "간장 3숟갈, 맛술 1숟갈 넣고",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "올리고당 1숟갈",
+          "displayName": "올리고당",
+          "amount": "1",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "올리고당 1숟갈,",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "물 2숟갈",
+          "displayName": "물",
+          "amount": "2",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 2숟갈, 설탕 1숟갈,",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "설탕 1숟갈",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 2숟갈, 설탕 1숟갈,",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "후추 적당히",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "후추 적당히",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "다진마늘 1/2숟갈",
+          "displayName": "다진마늘",
+          "amount": "1/2",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘 1/2숟갈 까지 넣어요",
+              "timestamp": "00:42"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "돼지고기 (제육볶음용) 100g정도",
+          "displayName": "돼지고기 (제육볶음용)",
+          "amount": "100",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "돼지고기 (제육볶음용) 100g정도 준비",
+              "timestamp": "00:56"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "작은 크기의 양파 1/2개",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "작은 크기의 양파 1/2개 채썰어요",
+              "timestamp": "01:00"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 담긴 밥 위에 고기와 양념을 올림",
+              "timestamp": "02:25"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "쪽파",
+          "displayName": "쪽파",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "덮밥 위에 썰어둔 쪽파를 고명으로 뿌림",
+              "timestamp": "02:54"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "볼에 간장 3숟갈, 맛술 1숟갈, 올리고당 1숟갈, 물 2숟갈, 설탕 1숟갈, 후추 적당히, 다진마늘 1/2숟갈을 넣고 설탕이 녹도록 잘 저어 양념장을 만듭니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "간장 3숟갈, 맛술 1숟갈 넣고",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "올리고당 1숟갈,",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 2숟갈, 설탕 1숟갈,",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "후추 적당히",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘 1/2숟갈 까지 넣어요",
+              "timestamp": "00:42"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕이 녹도록 잘 저어주세요",
+              "timestamp": "00:49"
+            }
+          ]
+        },
+        {
+          "text": "작은 크기의 양파 1/2개를 채 썰어 준비합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "작은 크기의 양파 1/2개 채썰어요",
+              "timestamp": "01:00"
+            }
+          ]
+        },
+        {
+          "text": "팬을 달구고 센불과 중간불 사이에서 돼지고기를 먼저 굽습니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "제일먼저 돼지고기를 구워요 (센불+중간불사이)",
+              "timestamp": "01:09"
+            }
+          ]
+        },
+        {
+          "text": "돼지고기가 살짝 구워지면 채 썬 양파를 넣고 대충 볶습니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "돼지고기가 살짝 구워지면 양파를 넣고 대충 볶아요",
+              "timestamp": "01:43"
+            }
+          ]
+        },
+        {
+          "text": "만들어둔 양념장을 모두 부어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "아까 만들어둔 양념들을 모두 부어줍니다",
+              "timestamp": "01:54"
+            }
+          ]
+        },
+        {
+          "text": "불을 센불과 중불 사이로 유지하며 돼지고기를 뒤집어가면서 살살 졸여줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "돼지고기를 뒤집어가면서 살살 졸여주세요",
+              "timestamp": "02:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "(여전히 불은 센불+중불 사이 상태)",
+              "timestamp": "02:15"
+            }
+          ]
+        },
+        {
+          "text": "밥 위에 구운 돼지고기와 양파를 얹고, 남은 양념장을 부어준 뒤 쪽파를 고명으로 뿌려 완성합니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 고기와 양파를 올림",
+              "timestamp": "02:25"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "남은 양념장도 많이 짜지 않아서 탈탈 부었어요",
+              "timestamp": "02:43"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "고명으로 썰어둔 쪽파를 뿌림",
+              "timestamp": "02:54"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

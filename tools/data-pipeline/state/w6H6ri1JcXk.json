@@ -1,0 +1,248 @@
+{
+  "videoId": "w6H6ri1JcXk",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/w6H6ri1JcXk",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:34:12.717789+00:00",
+    "rawResponse": "{\n  \"title\": \"멸치국수\",\n  \"description\": \"외할머니 손맛 느낌을 라면만큼 간단하게 끓여내는 멸치국수 레시피\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"물 1L\",\n      \"displayName\": \"물\",\n      \"amount\": \"1\",\n      \"unit\": \"L\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 1L\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 1리터에\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다시다\",\n      \"displayName\": \"다시다\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다시다\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비 물에 조미료 분말(다시다)을 넣음\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"국간장 1스푼\",\n      \"displayName\": \"국간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장 1스푼\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국간장\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"멸치액젓 0.5스푼\",\n      \"displayName\": \"멸치액젓\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"멸치액젓 0.5스푼\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"액젓 넣고\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"당근\",\n      \"displayName\": \"당근\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"당근이랑\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"당근이랑\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"채 썬 당근을 끓는 육수에 넣음\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"애호박\",\n      \"displayName\": \"애호박\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"애호박 넣고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"애호박 넣고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"채 썬 애호박을 끓는 육수에 넣음\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"삶아둔 면\",\n      \"displayName\": \"면\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"이제 삶아둔 면에\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 삶아둔 면에\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 삶아둔 소면이 담겨 있음\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 물 1L, 다시다, 국간장 1스푼, 멸치액젓 0.5스푼을 넣고 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 1L\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장 1스푼\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"멸치액젓 0.5스푼\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 1리터에 다시다 국간장 액젓 넣고\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"육수가 끓어오르면 채 썬 당근과 애호박을 넣고 3분간 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"당근이랑 애호박 넣고 끓여주세요\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"끓어오르면 당근이랑 애호박 넣고 3분만 끓여주세요\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삶아둔 면 위에 끓인 육수와 채소를 부어 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"이제 삶아둔 면에 부어주기만 하면?\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 삶아둔 면에 부어주기만 하면?\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"삶은 면이 담긴 그릇에 육수와 당근, 애호박을 붓는 모습\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"다시다의 종류(멸치다시다 여부 등)와 구체적인 계량 용량이 명시되지 않았습니다.\",\n    \"00:06 장면에 소면 위에 올려진 양념장 및 통깨 고명이 보이나, 조리 과정이나 재료 목록에서는 언급되지 않았습니다.\"\n  ]\n}",
+    "result": {
+      "title": "멸치국수",
+      "description": "외할머니 손맛 느낌을 라면만큼 간단하게 끓여내는 멸치국수 레시피",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "물 1L",
+          "displayName": "물",
+          "amount": "1",
+          "unit": "L",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 1L",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 1리터에",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "다시다",
+          "displayName": "다시다",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다시다",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비 물에 조미료 분말(다시다)을 넣음",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "국간장 1스푼",
+          "displayName": "국간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장 1스푼",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "국간장",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "멸치액젓 0.5스푼",
+          "displayName": "멸치액젓",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "멸치액젓 0.5스푼",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "액젓 넣고",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "당근",
+          "displayName": "당근",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "당근이랑",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "당근이랑",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "채 썬 당근을 끓는 육수에 넣음",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "애호박",
+          "displayName": "애호박",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "애호박 넣고",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "애호박 넣고",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "채 썬 애호박을 끓는 육수에 넣음",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "삶아둔 면",
+          "displayName": "면",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "이제 삶아둔 면에",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 삶아둔 면에",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 삶아둔 소면이 담겨 있음",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 물 1L, 다시다, 국간장 1스푼, 멸치액젓 0.5스푼을 넣고 끓인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 1L",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장 1스푼",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "멸치액젓 0.5스푼",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 1리터에 다시다 국간장 액젓 넣고",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "육수가 끓어오르면 채 썬 당근과 애호박을 넣고 3분간 끓여준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "당근이랑 애호박 넣고 끓여주세요",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "끓어오르면 당근이랑 애호박 넣고 3분만 끓여주세요",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "삶아둔 면 위에 끓인 육수와 채소를 부어 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "이제 삶아둔 면에 부어주기만 하면?",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 삶아둔 면에 부어주기만 하면?",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "삶은 면이 담긴 그릇에 육수와 당근, 애호박을 붓는 모습",
+              "timestamp": "00:17"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "다시다의 종류(멸치다시다 여부 등)와 구체적인 계량 용량이 명시되지 않았습니다.",
+        "00:06 장면에 소면 위에 올려진 양념장 및 통깨 고명이 보이나, 조리 과정이나 재료 목록에서는 언급되지 않았습니다."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

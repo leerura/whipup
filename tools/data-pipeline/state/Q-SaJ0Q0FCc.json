@@ -1,0 +1,243 @@
+{
+  "videoId": "Q-SaJ0Q0FCc",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/Q-SaJ0Q0FCc",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T16:04:20.779272+00:00",
+    "rawResponse": "{\n  \"title\": \"대파 덮밥\",\n  \"description\": null,\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"대파 하나\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 하나만 있으면 돼요~\",\n          \"timestamp\": \"0:02\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"대파를 칼로 썬다\",\n          \"timestamp\": \"0:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"들기름 듬뿍~\",\n      \"displayName\": \"들기름\",\n      \"amount\": \"듬뿍\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"들기름 듬뿍~\",\n          \"timestamp\": \"0:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"달군 팬에 들기름을 붓는다\",\n          \"timestamp\": \"0:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"새우소금 톡톡 (맛소금 대체가능)\",\n      \"displayName\": \"새우소금\",\n      \"amount\": \"톡톡\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"새우소금 톡톡 (맛소금 대체가능)\",\n          \"timestamp\": \"0:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볶고 있는 대파 위에 소금을 톡톡 뿌린다\",\n          \"timestamp\": \"0:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"꿀 살짝~\",\n      \"displayName\": \"꿀\",\n      \"amount\": \"살짝\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"꿀 살짝~\",\n          \"timestamp\": \"0:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볶은 대파에 꿀을 두른다\",\n          \"timestamp\": \"0:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥담고\",\n          \"timestamp\": \"0:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 밥을 담는다\",\n          \"timestamp\": \"0:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 노른자\",\n      \"displayName\": \"계란 노른자\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 노른자까지 올려주면\",\n          \"timestamp\": \"0:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볶은 대파 위에 계란 노른자를 올린다\",\n          \"timestamp\": \"0:07\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"대파를 송송 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 하나만 있으면 돼요~\",\n          \"timestamp\": \"0:02\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도마 위에서 대파를 썬다\",\n          \"timestamp\": \"0:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 들기름을 듬뿍 두른다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"들기름 듬뿍~\",\n          \"timestamp\": \"0:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 들기름을 넉넉히 붓는다\",\n          \"timestamp\": \"0:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"썬 대파를 넣고 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 볶볶!\",\n          \"timestamp\": \"0:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 썬 대파를 넣고 주걱으로 볶는다\",\n          \"timestamp\": \"0:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"새우소금(또는 맛소금)을 톡톡 뿌려 간을 맞춘다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"새우소금 톡톡 (맛소금 대체가능)\",\n          \"timestamp\": \"0:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"소금을 톡톡 뿌려 간을 한다\",\n          \"timestamp\": \"0:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"꿀을 살짝 넣고 섞어 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"꿀 살짝~\",\n          \"timestamp\": \"0:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 꿀을 둘러 볶는다\",\n          \"timestamp\": \"0:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 밥을 담고 볶은 대파와 계란 노른자를 올려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥담고 볶은 대파 계란 노른자까지 올려주면 완성~\",\n          \"timestamp\": \"0:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 볶은 대파를 얹고 계란 노른자를 올려 완성한다\",\n          \"timestamp\": \"0:07\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"새우소금 및 꿀의 정확한 계량 단위 미표기 (톡톡, 살짝으로만 표기됨)\",\n    \"들기름의 정확한 계량 단위 미표기 (듬뿍으로만 표기됨)\",\n    \"영상 말미에 짜장라면이나 국물라면 고명으로 올려 먹는 대체 섭취법이 소개됨\"\n  ]\n}",
+    "result": {
+      "title": "대파 덮밥",
+      "description": null,
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "대파 하나",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 하나만 있으면 돼요~",
+              "timestamp": "0:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "대파를 칼로 썬다",
+              "timestamp": "0:02"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "들기름 듬뿍~",
+          "displayName": "들기름",
+          "amount": "듬뿍",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "들기름 듬뿍~",
+              "timestamp": "0:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "달군 팬에 들기름을 붓는다",
+              "timestamp": "0:03"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "새우소금 톡톡 (맛소금 대체가능)",
+          "displayName": "새우소금",
+          "amount": "톡톡",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "새우소금 톡톡 (맛소금 대체가능)",
+              "timestamp": "0:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볶고 있는 대파 위에 소금을 톡톡 뿌린다",
+              "timestamp": "0:05"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "꿀 살짝~",
+          "displayName": "꿀",
+          "amount": "살짝",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "꿀 살짝~",
+              "timestamp": "0:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볶은 대파에 꿀을 두른다",
+              "timestamp": "0:06"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥담고",
+              "timestamp": "0:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 밥을 담는다",
+              "timestamp": "0:07"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "계란 노른자",
+          "displayName": "계란 노른자",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 노른자까지 올려주면",
+              "timestamp": "0:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볶은 대파 위에 계란 노른자를 올린다",
+              "timestamp": "0:07"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        }
+      ],
+      "steps": [
+        {
+          "text": "대파를 송송 썬다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 하나만 있으면 돼요~",
+              "timestamp": "0:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도마 위에서 대파를 썬다",
+              "timestamp": "0:02"
+            }
+          ]
+        },
+        {
+          "text": "팬에 들기름을 듬뿍 두른다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "들기름 듬뿍~",
+              "timestamp": "0:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 들기름을 넉넉히 붓는다",
+              "timestamp": "0:03"
+            }
+          ]
+        },
+        {
+          "text": "썬 대파를 넣고 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 볶볶!",
+              "timestamp": "0:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 썬 대파를 넣고 주걱으로 볶는다",
+              "timestamp": "0:04"
+            }
+          ]
+        },
+        {
+          "text": "새우소금(또는 맛소금)을 톡톡 뿌려 간을 맞춘다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "새우소금 톡톡 (맛소금 대체가능)",
+              "timestamp": "0:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "소금을 톡톡 뿌려 간을 한다",
+              "timestamp": "0:05"
+            }
+          ]
+        },
+        {
+          "text": "꿀을 살짝 넣고 섞어 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "꿀 살짝~",
+              "timestamp": "0:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 꿀을 둘러 볶는다",
+              "timestamp": "0:06"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 밥을 담고 볶은 대파와 계란 노른자를 올려 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥담고 볶은 대파 계란 노른자까지 올려주면 완성~",
+              "timestamp": "0:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 볶은 대파를 얹고 계란 노른자를 올려 완성한다",
+              "timestamp": "0:07"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "새우소금 및 꿀의 정확한 계량 단위 미표기 (톡톡, 살짝으로만 표기됨)",
+        "들기름의 정확한 계량 단위 미표기 (듬뿍으로만 표기됨)",
+        "영상 말미에 짜장라면이나 국물라면 고명으로 올려 먹는 대체 섭취법이 소개됨"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

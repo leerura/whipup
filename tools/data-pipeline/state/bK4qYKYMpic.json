@@ -1,0 +1,301 @@
+{
+  "videoId": "bK4qYKYMpic",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/bK4qYKYMpic",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T23:36:14.936917+00:00",
+    "rawResponse": "{\n  \"title\": \"고단백 양.참.계. 덮밥\",\n  \"description\": \"9kg 감량할 때 먹었던 조리시간 5분 고단백 다이어트 양배추 참치 계란 덮밥 레시피\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"올리브오일\",\n      \"displayName\": \"올리브오일\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"올리브오일 두르고\",\n          \"timestamp\": \"0:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 오일을 두르는 모습\",\n          \"timestamp\": \"0:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양배추 두 주먹\",\n      \"displayName\": \"양배추\",\n      \"amount\": \"2\",\n      \"unit\": \"주먹\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양배추 두 주먹\",\n          \"timestamp\": \"0:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양배추 두 주먹\",\n          \"timestamp\": \"0:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 반스푼\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스랑 맛술 반스푼씩만 넣어요\",\n          \"timestamp\": \"0:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스랑 맛술 반스푼씩만 넣어요\",\n          \"timestamp\": \"0:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 반스푼\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스랑 맛술 반스푼씩만 넣어요\",\n          \"timestamp\": \"0:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스랑 맛술 반스푼씩만 넣어요\",\n          \"timestamp\": \"0:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치 반통\",\n      \"displayName\": \"참치\",\n      \"amount\": \"0.5\",\n      \"unit\": \"통\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치 반통 투하\",\n          \"timestamp\": \"0:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치 반통 투하\",\n          \"timestamp\": \"0:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 한 알\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"알\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"안에다가 계란 한 알 톡\",\n          \"timestamp\": \"0:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"안에다가 계란 한 알 톡\",\n          \"timestamp\": \"0:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 익는 동안 밥 준비\",\n          \"timestamp\": \"0:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 준비\",\n          \"timestamp\": \"0:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깨\",\n      \"displayName\": \"깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"여기다가 깨솔솔\",\n          \"timestamp\": \"0:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기다가 깨솔솔\",\n          \"timestamp\": \"0:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름\",\n      \"displayName\": \"참기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름까지 해주면\",\n          \"timestamp\": \"0:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름까지 해주면\",\n          \"timestamp\": \"0:23\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 올리브오일을 두르고 양배추 두 주먹을 넣어 숨이 죽을 때까지 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양배추 두 주먹 / 숨죽을 때까지 볶다가\",\n          \"timestamp\": \"0:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"올리브오일 두르고 양배추 두 주먹 숨죽을 때까지 볶다가\",\n          \"timestamp\": \"0:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"굴소스 반 스푼과 맛술 반 스푼을 넣고 양배추에 양념이 잘 배일 수 있도록 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스랑 맛술 반스푼씩만 넣어요 / 양배추에 잘 배일 수 있도록 볶아 주다가\",\n          \"timestamp\": \"0:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우린 다이어터니까 굴소스랑 맛술 반스푼씩만 넣어요 양배추에 잘 배일 수 있도록 볶아 주다가\",\n          \"timestamp\": \"0:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"참치 반 통을 넣고 재료들이 잘 섞이도록 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치 반통 투하 / 친구들끼리 잘 섞일 수 있도록 볶아 주세요\",\n          \"timestamp\": \"0:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치 반통 투하 친구들끼리 잘 섞일 수 있도록 볶아 주세요\",\n          \"timestamp\": \"0:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볶은 재료를 도너츠 모양으로 둥글게 만들어 준 뒤, 가운데에 계란 한 알을 깨서 넣고 익혀줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"도너츠 모양으로 예쁘게 만들어 주고 / 안에다가 계란 한 알 톡\",\n          \"timestamp\": \"0:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"도너츠 모양으로 예쁘게 만들어 주고 안에다가 계란 한 알 톡\",\n          \"timestamp\": \"0:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 밥을 준비하고, 계란과 볶은 재료를 밥 위에 조심히 얹어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 익는 동안 밥 준비 / 밥 위로 조심히 얹어 주는데\",\n          \"timestamp\": \"0:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 익는 동안 밥 준비 밥 위로 조심히 얹어 주는데\",\n          \"timestamp\": \"0:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"깨를 솔솔 뿌리고 참기름을 둘러 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"여기다가 깨솔솔 참기름까지 해주면 / 포만감 미친 다이어트 덮밥 완성!\",\n          \"timestamp\": \"0:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기다가 깨솔솔 참기름까지 해주면 포만감 미친 다이어트 덮밥 완성!\",\n          \"timestamp\": \"0:22\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"영상 0:20에서 조리 중 계란 노른자가 터져 후라이 하나를 추가로 얹었다는 언급이 있으나(저는 계란이 터져서 후라이 하나 더 했어요), 기본 레시피 재료인지 여부는 불명확합니다.\"\n  ]\n}",
+    "result": {
+      "title": "고단백 양.참.계. 덮밥",
+      "description": "9kg 감량할 때 먹었던 조리시간 5분 고단백 다이어트 양배추 참치 계란 덮밥 레시피",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "올리브오일",
+          "displayName": "올리브오일",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "올리브오일 두르고",
+              "timestamp": "0:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 오일을 두르는 모습",
+              "timestamp": "0:03"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양배추 두 주먹",
+          "displayName": "양배추",
+          "amount": "2",
+          "unit": "주먹",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양배추 두 주먹",
+              "timestamp": "0:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양배추 두 주먹",
+              "timestamp": "0:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "굴소스 반스푼",
+          "displayName": "굴소스",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스랑 맛술 반스푼씩만 넣어요",
+              "timestamp": "0:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "굴소스랑 맛술 반스푼씩만 넣어요",
+              "timestamp": "0:07"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "맛술 반스푼",
+          "displayName": "맛술",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스랑 맛술 반스푼씩만 넣어요",
+              "timestamp": "0:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "굴소스랑 맛술 반스푼씩만 넣어요",
+              "timestamp": "0:08"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "참치 반통",
+          "displayName": "참치",
+          "amount": "0.5",
+          "unit": "통",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치 반통 투하",
+              "timestamp": "0:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참치 반통 투하",
+              "timestamp": "0:12"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "계란 한 알",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "알",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "안에다가 계란 한 알 톡",
+              "timestamp": "0:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "안에다가 계란 한 알 톡",
+              "timestamp": "0:17"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 익는 동안 밥 준비",
+              "timestamp": "0:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밥 준비",
+              "timestamp": "0:18"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "깨",
+          "displayName": "깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "여기다가 깨솔솔",
+              "timestamp": "0:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기다가 깨솔솔",
+              "timestamp": "0:22"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "참기름",
+          "displayName": "참기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름까지 해주면",
+              "timestamp": "0:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름까지 해주면",
+              "timestamp": "0:23"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 올리브오일을 두르고 양배추 두 주먹을 넣어 숨이 죽을 때까지 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양배추 두 주먹 / 숨죽을 때까지 볶다가",
+              "timestamp": "0:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "올리브오일 두르고 양배추 두 주먹 숨죽을 때까지 볶다가",
+              "timestamp": "0:03"
+            }
+          ]
+        },
+        {
+          "text": "굴소스 반 스푼과 맛술 반 스푼을 넣고 양배추에 양념이 잘 배일 수 있도록 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스랑 맛술 반스푼씩만 넣어요 / 양배추에 잘 배일 수 있도록 볶아 주다가",
+              "timestamp": "0:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "우린 다이어터니까 굴소스랑 맛술 반스푼씩만 넣어요 양배추에 잘 배일 수 있도록 볶아 주다가",
+              "timestamp": "0:06"
+            }
+          ]
+        },
+        {
+          "text": "참치 반 통을 넣고 재료들이 잘 섞이도록 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치 반통 투하 / 친구들끼리 잘 섞일 수 있도록 볶아 주세요",
+              "timestamp": "0:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참치 반통 투하 친구들끼리 잘 섞일 수 있도록 볶아 주세요",
+              "timestamp": "0:12"
+            }
+          ]
+        },
+        {
+          "text": "볶은 재료를 도너츠 모양으로 둥글게 만들어 준 뒤, 가운데에 계란 한 알을 깨서 넣고 익혀줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "도너츠 모양으로 예쁘게 만들어 주고 / 안에다가 계란 한 알 톡",
+              "timestamp": "0:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "도너츠 모양으로 예쁘게 만들어 주고 안에다가 계란 한 알 톡",
+              "timestamp": "0:15"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 밥을 준비하고, 계란과 볶은 재료를 밥 위에 조심히 얹어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 익는 동안 밥 준비 / 밥 위로 조심히 얹어 주는데",
+              "timestamp": "0:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란 익는 동안 밥 준비 밥 위로 조심히 얹어 주는데",
+              "timestamp": "0:18"
+            }
+          ]
+        },
+        {
+          "text": "깨를 솔솔 뿌리고 참기름을 둘러 완성합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "여기다가 깨솔솔 참기름까지 해주면 / 포만감 미친 다이어트 덮밥 완성!",
+              "timestamp": "0:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기다가 깨솔솔 참기름까지 해주면 포만감 미친 다이어트 덮밥 완성!",
+              "timestamp": "0:22"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "영상 0:20에서 조리 중 계란 노른자가 터져 후라이 하나를 추가로 얹었다는 언급이 있으나(저는 계란이 터져서 후라이 하나 더 했어요), 기본 레시피 재료인지 여부는 불명확합니다."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

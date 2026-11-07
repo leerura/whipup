@@ -1,0 +1,327 @@
+{
+  "videoId": "vbIykhO8Tbo",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://youtu.be/vbIykhO8Tbo?si=c_0elnmn8aADFNES",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T09:37:45.480228+00:00",
+    "rawResponse": "{\n  \"title\": \"대패 목살 양배추 덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"양배추 2줌\",\n      \"displayName\": \"양배추\",\n      \"amount\": \"2\",\n      \"unit\": \"줌\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양배추 2줌\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 양배추 얇게 채 썰어서 두 손 가득 준비하고\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대패 목살 100g\",\n      \"displayName\": \"대패 목살\",\n      \"amount\": \"100\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대패 목살 100g\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"지방이 적은 대패 목살은 먹기 좋게 잘라서 구워줘\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 1\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기가 익으면 다진 마늘 한 스푼이랑\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 1\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 1\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양배추 숨이 죽으면 간장 한 스푼\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 0.5\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 0.5\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스 반 스푼\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"알룰로스 0.5\",\n      \"displayName\": \"알룰로스\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"알룰로스 0.5\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"알룰로스 반 스푼 넣어줘\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 1\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 1\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 하나 까서 흰자는 넣고 노른자는 따로 빼주고\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 위에 올려준 다음\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"접시에 밥을 담아둠\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파\",\n      \"displayName\": \"파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"파랑 깨까지 뿌려주면\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"송송 썬 쪽파/대파를 고명으로 뿌림\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깨\",\n      \"displayName\": \"깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"파랑 깨까지 뿌려주면\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"통깨를 위에 뿌림\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양배추를 얇게 채 썰어 2줌(두 손 가득) 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 양배추 얇게 채 썰어서 두 손 가득 준비하고\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양배추 2줌\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대패 목살 100g을 먹기 좋은 크기로 잘라 팬에 굽는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"지방이 적은 대패 목살은 먹기 좋게 잘라서 구워줘\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대패 목살 100g\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기가 익으면 다진 마늘 1스푼과 썰어둔 양배추를 넣고 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기가 익으면 다진 마늘 한 스푼이랑 양배추 넣고\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 1\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양배추의 숨이 죽으면 간장 1스푼, 굴소스 0.5스푼, 알룰로스 0.5스푼을 넣고 섞는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양배추 숨이 죽으면 간장 한 스푼 굴소스 반 스푼 알룰로스 반 스푼 넣어줘\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 1 / 굴소스 0.5 / 알룰로스 0.5\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 1개를 깨서 노른자는 따로 빼두고, 흰자만 팬에 넣어 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 하나 까서 흰자는 넣고 노른자는 따로 빼주고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 1\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"흰자가 익으면 밥 위에 볶은 재료를 얹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"흰자가 익으면 밥 위에 올려준 다음\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그 위에 따로 빼둔 계란 노른자를 올리고, 썬 파와 깨를 뿌려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"노른자 올리고 파랑 깨까지 뿌려주면 decoration 해주면\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"밥, 파, 깨의 정확한 정량 미기재\",\n    \"서빙 수(인분) 미기재\"\n  ]\n}",
+    "result": {
+      "title": "대패 목살 양배추 덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "양배추 2줌",
+          "displayName": "양배추",
+          "amount": "2",
+          "unit": "줌",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양배추 2줌",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 양배추 얇게 채 썰어서 두 손 가득 준비하고",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대패 목살 100g",
+          "displayName": "대패 목살",
+          "amount": "100",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대패 목살 100g",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "지방이 적은 대패 목살은 먹기 좋게 잘라서 구워줘",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "다진마늘 1",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 1",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고기가 익으면 다진 마늘 한 스푼이랑",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "간장 1",
+          "displayName": "간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 1",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양배추 숨이 죽으면 간장 한 스푼",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "굴소스 0.5",
+          "displayName": "굴소스",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 0.5",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "굴소스 반 스푼",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "알룰로스 0.5",
+          "displayName": "알룰로스",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "알룰로스 0.5",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "알룰로스 반 스푼 넣어줘",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "계란 1",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 1",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란 하나 까서 흰자는 넣고 노른자는 따로 빼주고",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥 위에 올려준 다음",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "접시에 밥을 담아둠",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "파",
+          "displayName": "파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "파랑 깨까지 뿌려주면",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "송송 썬 쪽파/대파를 고명으로 뿌림",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "깨",
+          "displayName": "깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "파랑 깨까지 뿌려주면",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "통깨를 위에 뿌림",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양배추를 얇게 채 썰어 2줌(두 손 가득) 준비한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 양배추 얇게 채 썰어서 두 손 가득 준비하고",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양배추 2줌",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "대패 목살 100g을 먹기 좋은 크기로 잘라 팬에 굽는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "지방이 적은 대패 목살은 먹기 좋게 잘라서 구워줘",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대패 목살 100g",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "고기가 익으면 다진 마늘 1스푼과 썰어둔 양배추를 넣고 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고기가 익으면 다진 마늘 한 스푼이랑 양배추 넣고",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 1",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "양배추의 숨이 죽으면 간장 1스푼, 굴소스 0.5스푼, 알룰로스 0.5스푼을 넣고 섞는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양배추 숨이 죽으면 간장 한 스푼 굴소스 반 스푼 알룰로스 반 스푼 넣어줘",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 1 / 굴소스 0.5 / 알룰로스 0.5",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "계란 1개를 깨서 노른자는 따로 빼두고, 흰자만 팬에 넣어 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 하나 까서 흰자는 넣고 노른자는 따로 빼주고",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 1",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "흰자가 익으면 밥 위에 볶은 재료를 얹는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "흰자가 익으면 밥 위에 올려준 다음",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "그 위에 따로 빼둔 계란 노른자를 올리고, 썬 파와 깨를 뿌려 마무리한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "노른자 올리고 파랑 깨까지 뿌려주면 decoration 해주면",
+              "timestamp": "00:20"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "밥, 파, 깨의 정확한 정량 미기재",
+        "서빙 수(인분) 미기재"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

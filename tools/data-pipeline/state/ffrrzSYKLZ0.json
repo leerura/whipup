@@ -1,0 +1,314 @@
+{
+  "videoId": "ffrrzSYKLZ0",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/ffrrzSYKLZ0",
+  "sourceMetadata": {"sourceTitle":"새콤달콤 초간단 비빔국수 #koreanrecipe #비빔국수양념장 #비빔국수 #김치비빔국수 #쉬운요리 #간단요리 #입맛없을때 #shorts","sourceChannelName":"목리집 박주부","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.725192Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T08:14:15.415244+00:00",
+    "rawResponse": "{\n  \"title\": \"비빔국수 (Spicy Mixed Noodles)\",\n  \"description\": null,\n  \"servings\": \"1\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"고추장 1스푼 (1 spoon of red pepper paste)\",\n      \"displayName\": \"고추장 (red pepper paste)\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼 (spoon)\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볼에 고추장 1스푼 / 1 spoon of red pepper paste\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장(금F3) 2스푼 (2 spoons of soy sauce)\",\n      \"displayName\": \"진간장 (soy sauce)\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼 (spoons)\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장(금F3) 2스푼 / 2 spoons of soy sauce\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 (red pepper powder)\",\n      \"displayName\": \"고춧가루 (red pepper powder)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Red pepper powder is seen added in the bowl before vinegar\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식초 2스푼 (2 spoons of vinegar)\",\n      \"displayName\": \"식초 (vinegar)\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼 (spoons)\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식초 2스푼 / 2 spoons of vinegar\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 2스푼 (2 spoons of sugar)\",\n      \"displayName\": \"설탕 (sugar)\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼 (spoons)\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 2스푼 / 2 spoons of sugar\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1스푼 (1 spoon of sesame oil)\",\n      \"displayName\": \"참기름 (sesame oil)\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼 (spoon)\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1스푼 / 1 spoon of sesame oil\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨 (Sesame)\",\n      \"displayName\": \"통깨 (sesame seeds)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"통깨 챱챱 / Sesame\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Sesame seeds shaken into sauce and later sprinkled on top of the noodles\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치 (kimchi)\",\n      \"displayName\": \"김치 (kimchi)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Chopped kimchi is visible mixed in the sauce bowl\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"국수 1인분 (1 serving of noodles)\",\n      \"displayName\": \"국수 (noodles)\",\n      \"amount\": \"1\",\n      \"unit\": \"인분 (serving)\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"끓는 물에 국수 1인분 / 1 serving of noodles in boiling water\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"삶은 계란 (boiled egg)\",\n      \"displayName\": \"삶은 계란 (boiled egg)\",\n      \"amount\": \"0.5\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"삶은 계란 / boiled egg\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Half of a hard-boiled egg placed on top of noodles\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루 조금 (A little bit of seaweed flakes)\",\n      \"displayName\": \"김가루 (seaweed flakes)\",\n      \"amount\": null,\n      \"unit\": \"조금 (a little bit)\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김가루 조금 / A little bit of seaweed flakes\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"In a bowl, combine 1 spoon of red pepper paste, 2 spoons of soy sauce, red pepper powder, 2 spoons of vinegar, 2 spoons of sugar, 1 spoon of sesame oil, and sesame seeds, then mix thoroughly to make the sauce.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볼에 고추장 1스푼 / 1 spoon of red pepper paste\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장(금F3) 2스푼 / 2 spoons of soy sauce\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식초 2스푼 / 2 spoons of vinegar\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 2스푼 / 2 spoons of sugar\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1스푼 / 1 spoon of sesame oil\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"통깨 챱챱 / Sesame\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"섞어주면 양념장 끝 / If you mix it, it's over\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Add 1 serving of noodles to boiling water and cook for 5 minutes.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"끓는 물에 국수 1인분 / 1 serving of noodles in boiling water\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"5분 끓여주고 / Boil for 5 minutes\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Rinse the cooked noodles in cold water and drain well.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"찬물 샤워 / Rinse it in cold water\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물기 뺀 국수 넣고 / drained noodles\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Add the drained noodles to the bowl with the sauce (which contains chopped kimchi) and mix thoroughly by hand.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물기 뺀 국수 넣고 / drained noodles\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"무챠무챠 / Mix it\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Transfer the mixed noodles to a serving bowl and garnish with boiled egg, seaweed flakes, and sesame seeds.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"삶은 계란 / boiled egg\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김가루 조금 / A little bit of seaweed flakes\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Sesame seeds sprinkled over the egg and noodles\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"Red pepper powder (고춧가루) is visibly present in the bowl at 00:04 but is omitted from on-screen text and speech, so its exact amount is unstated.\",\n    \"Chopped kimchi is visibly present in the sauce bowl at 00:12–00:13 but the addition step and quantity are not shown or captioned.\"\n  ]\n}",
+    "result": {
+      "title": "비빔국수 (Spicy Mixed Noodles)",
+      "description": null,
+      "servings": "1",
+      "ingredients": [
+        {
+          "rawText": "고추장 1스푼 (1 spoon of red pepper paste)",
+          "displayName": "고추장 (red pepper paste)",
+          "amount": "1",
+          "unit": "스푼 (spoon)",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볼에 고추장 1스푼 / 1 spoon of red pepper paste",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "진간장(금F3) 2스푼 (2 spoons of soy sauce)",
+          "displayName": "진간장 (soy sauce)",
+          "amount": "2",
+          "unit": "스푼 (spoons)",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장(금F3) 2스푼 / 2 spoons of soy sauce",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "고춧가루 (red pepper powder)",
+          "displayName": "고춧가루 (red pepper powder)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Red pepper powder is seen added in the bowl before vinegar",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "식초 2스푼 (2 spoons of vinegar)",
+          "displayName": "식초 (vinegar)",
+          "amount": "2",
+          "unit": "스푼 (spoons)",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식초 2스푼 / 2 spoons of vinegar",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "설탕 2스푼 (2 spoons of sugar)",
+          "displayName": "설탕 (sugar)",
+          "amount": "2",
+          "unit": "스푼 (spoons)",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 2스푼 / 2 spoons of sugar",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "참기름 1스푼 (1 spoon of sesame oil)",
+          "displayName": "참기름 (sesame oil)",
+          "amount": "1",
+          "unit": "스푼 (spoon)",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1스푼 / 1 spoon of sesame oil",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "통깨 (Sesame)",
+          "displayName": "통깨 (sesame seeds)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "통깨 챱챱 / Sesame",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Sesame seeds shaken into sauce and later sprinkled on top of the noodles",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "김치 (kimchi)",
+          "displayName": "김치 (kimchi)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Chopped kimchi is visible mixed in the sauce bowl",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "국수 1인분 (1 serving of noodles)",
+          "displayName": "국수 (noodles)",
+          "amount": "1",
+          "unit": "인분 (serving)",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "끓는 물에 국수 1인분 / 1 serving of noodles in boiling water",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "삶은 계란 (boiled egg)",
+          "displayName": "삶은 계란 (boiled egg)",
+          "amount": "0.5",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "삶은 계란 / boiled egg",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Half of a hard-boiled egg placed on top of noodles",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "김가루 조금 (A little bit of seaweed flakes)",
+          "displayName": "김가루 (seaweed flakes)",
+          "amount": null,
+          "unit": "조금 (a little bit)",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김가루 조금 / A little bit of seaweed flakes",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "In a bowl, combine 1 spoon of red pepper paste, 2 spoons of soy sauce, red pepper powder, 2 spoons of vinegar, 2 spoons of sugar, 1 spoon of sesame oil, and sesame seeds, then mix thoroughly to make the sauce.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볼에 고추장 1스푼 / 1 spoon of red pepper paste",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장(금F3) 2스푼 / 2 spoons of soy sauce",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식초 2스푼 / 2 spoons of vinegar",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 2스푼 / 2 spoons of sugar",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1스푼 / 1 spoon of sesame oil",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "통깨 챱챱 / Sesame",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "섞어주면 양념장 끝 / If you mix it, it's over",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "Add 1 serving of noodles to boiling water and cook for 5 minutes.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "끓는 물에 국수 1인분 / 1 serving of noodles in boiling water",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "5분 끓여주고 / Boil for 5 minutes",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "Rinse the cooked noodles in cold water and drain well.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "찬물 샤워 / Rinse it in cold water",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물기 뺀 국수 넣고 / drained noodles",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "Add the drained noodles to the bowl with the sauce (which contains chopped kimchi) and mix thoroughly by hand.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물기 뺀 국수 넣고 / drained noodles",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "무챠무챠 / Mix it",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "Transfer the mixed noodles to a serving bowl and garnish with boiled egg, seaweed flakes, and sesame seeds.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "삶은 계란 / boiled egg",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김가루 조금 / A little bit of seaweed flakes",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Sesame seeds sprinkled over the egg and noodles",
+              "timestamp": "00:16"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "Red pepper powder (고춧가루) is visibly present in the bowl at 00:04 but is omitted from on-screen text and speech, so its exact amount is unstated.",
+        "Chopped kimchi is visibly present in the sauce bowl at 00:12–00:13 but the addition step and quantity are not shown or captioned."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

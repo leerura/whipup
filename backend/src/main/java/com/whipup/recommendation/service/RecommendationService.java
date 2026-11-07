@@ -192,7 +192,9 @@ public class RecommendationService {
             .toList();
 
         return new MissingOption(
-            option.getIngredient().getDisplayName(),
+            option.getIngredient().getIngredientVariant() == null
+                ? option.getIngredient().getDisplayName()
+                : option.getIngredient().getIngredientVariant().getName(),
             substitutes
         );
     }

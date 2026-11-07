@@ -1,0 +1,263 @@
+{
+  "videoId": "wBOE1cFWrEk",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/wBOE1cFWrEk",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-26T07:33:09.119792+00:00",
+    "rawResponse": "{\n  \"title\": \"초간단 3분 잔치국수\",\n  \"description\": \"기본 재료만으로 초간단하게 끓여내는 진한 멸치 국물 잔치국수 레시피\",\n  \"servings\": \"2인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"애호박\",\n      \"displayName\": \"애호박\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"애호박과 당근을 채쳐주세요\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"당근보다 애호박을 더 많이 넣어주세요\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"당근\",\n      \"displayName\": \"당근\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"애호박과 당근을 채쳐주세요\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"당근보다 애호박을 더 많이 넣어주세요\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"스틱형 육수 2포\",\n      \"displayName\": \"스틱형 멸치 육수\",\n      \"amount\": \"2\",\n      \"unit\": \"포\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"코인 육수보다 이런 스틱형이\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"스틱형 멸치 육수 2포를 냄비에 붓는 모습\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치액 1큰술\",\n      \"displayName\": \"참치액\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치액 1큰술\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치액 한 큰술\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 4컵 (800ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"800\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 4컵 (800ml)\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 네 컵\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기본 소면 (건면200g)\",\n      \"displayName\": \"소면\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기본 소면 2인분에 (건면200g)\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치\",\n      \"displayName\": \"김치\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"국물 김치 후추 톡톡 하면\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"국수 위에 잘게 썬 김치를 고명으로 올리는 모습\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"국물 김치 후추 톡톡 하면\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"국수 위에 후추를 톡톡 뿌리는 모습\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"애호박과 당근을 채 썬다. 이때 당근보다 애호박을 더 많이 넣고, 남은 채소는 보관한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"애호박과 당근을 채쳐주세요\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"절대 많이 넣을 필요는 없어요 당근보다 애호박을 더 많이 넣어주세요\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"남은 재료는 보관해 주세요\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 스틱형 육수 분말 2포와 참치액 1큰술을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"코인 육수보다 이런 스틱형이 빠르게 요리를 끝낼 수 있었어요\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치액 1큰술\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"채 썬 애호박과 당근, 그리고 물 4컵(800ml)을 팬에 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"채썬 채소를 넣어주세요\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 4컵 (800ml)\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"찬물부터 끓여 국물이 팔팔 끓어 채소가 다 익을 때까지 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"찬물부터 끓인 거라서 물이 끓으면 채소도 다 익었어요\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삶은 소면(2인분, 건면 200g)에 끓인 국물과 채소를 붓고, 김치와 후추를 톡톡 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기본 소면 2인분에 (건면200g)\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"국물 김치 후추 톡톡 하면\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"소면을 삶는 구체적인 시간 및 과정은 영상에 생략되어 있음\",\n    \"애호박, 당근, 김치, 후추의 정확한 계량 수치는 언급되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "초간단 3분 잔치국수",
+      "description": "기본 재료만으로 초간단하게 끓여내는 진한 멸치 국물 잔치국수 레시피",
+      "servings": "2인분",
+      "ingredients": [
+        {
+          "rawText": "애호박",
+          "displayName": "애호박",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "애호박과 당근을 채쳐주세요",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "당근보다 애호박을 더 많이 넣어주세요",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "당근",
+          "displayName": "당근",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "애호박과 당근을 채쳐주세요",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "당근보다 애호박을 더 많이 넣어주세요",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "스틱형 육수 2포",
+          "displayName": "스틱형 멸치 육수",
+          "amount": "2",
+          "unit": "포",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "코인 육수보다 이런 스틱형이",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "스틱형 멸치 육수 2포를 냄비에 붓는 모습",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "참치액 1큰술",
+          "displayName": "참치액",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치액 1큰술",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참치액 한 큰술",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "물 4컵 (800ml)",
+          "displayName": "물",
+          "amount": "800",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 4컵 (800ml)",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 네 컵",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "기본 소면 (건면200g)",
+          "displayName": "소면",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기본 소면 2인분에 (건면200g)",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "김치",
+          "displayName": "김치",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "국물 김치 후추 톡톡 하면",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "국수 위에 잘게 썬 김치를 고명으로 올리는 모습",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "국물 김치 후추 톡톡 하면",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "국수 위에 후추를 톡톡 뿌리는 모습",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        }
+      ],
+      "steps": [
+        {
+          "text": "애호박과 당근을 채 썬다. 이때 당근보다 애호박을 더 많이 넣고, 남은 채소는 보관한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "애호박과 당근을 채쳐주세요",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "절대 많이 넣을 필요는 없어요 당근보다 애호박을 더 많이 넣어주세요",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "남은 재료는 보관해 주세요",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "팬에 스틱형 육수 분말 2포와 참치액 1큰술을 넣는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "코인 육수보다 이런 스틱형이 빠르게 요리를 끝낼 수 있었어요",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치액 1큰술",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "채 썬 애호박과 당근, 그리고 물 4컵(800ml)을 팬에 붓는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "채썬 채소를 넣어주세요",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 4컵 (800ml)",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "찬물부터 끓여 국물이 팔팔 끓어 채소가 다 익을 때까지 끓인다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "찬물부터 끓인 거라서 물이 끓으면 채소도 다 익었어요",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "삶은 소면(2인분, 건면 200g)에 끓인 국물과 채소를 붓고, 김치와 후추를 톡톡 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기본 소면 2인분에 (건면200g)",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "국물 김치 후추 톡톡 하면",
+              "timestamp": "00:31"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "소면을 삶는 구체적인 시간 및 과정은 영상에 생략되어 있음",
+        "애호박, 당근, 김치, 후추의 정확한 계량 수치는 언급되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

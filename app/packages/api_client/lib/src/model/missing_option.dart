@@ -13,10 +13,11 @@ part 'missing_option.g.dart';
 /// MissingOption
 ///
 /// Properties:
-/// * [requiredName] 
+/// * [requiredName] - Concise missing-item label for recommendation cards. Use the exact selectable item's name when the source ingredient has an exact variant; otherwise use the source requirement display name.
 /// * [substitutes] 
 @BuiltValue()
 abstract class MissingOption implements Built<MissingOption, MissingOptionBuilder> {
+  /// Concise missing-item label for recommendation cards. Use the exact selectable item's name when the source ingredient has an exact variant; otherwise use the source requirement display name.
   @BuiltValueField(wireName: r'requiredName')
   String get requiredName;
 

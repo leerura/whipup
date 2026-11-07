@@ -1,0 +1,389 @@
+{
+  "videoId": "YF8JkbPzjBg",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/YF8JkbPzjBg",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:51:39.077368+00:00",
+    "rawResponse": "{\n  \"title\": \"양배추 덮밥 (Cabbage Deopbab)\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"양배추 3장 (3 cabbage leaves)\",\n      \"displayName\": \"양배추 (cabbage)\",\n      \"amount\": \"3\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양배추 3장 3 cabbage leaves\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/4개 (1/4 of onion)\",\n      \"displayName\": \"양파 (onion)\",\n      \"amount\": \"1/4\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/4개 a 1/4 of onion\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쪽파 2줄기 (2 stalks of small green onion)\",\n      \"displayName\": \"쪽파 (small green onion)\",\n      \"amount\": \"2\",\n      \"unit\": \"줄기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쪽파 2줄기 2 stalks of small green onion\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"팽이버섯 한 줌(120g) (a handful of enoki mushrooms (120g))\",\n      \"displayName\": \"팽이버섯 (enoki mushrooms)\",\n      \"amount\": \"120\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팽이버섯 한 줌(120g) a handful of enoki mushrooms (120g)\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"된장 1+1/2큰술 (1.5 tbsp of doenjang)\",\n      \"displayName\": \"된장 (doenjang)\",\n      \"amount\": \"1.5\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"된장 1+1/2큰술 1.5 tbsp of doenjang\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리고당 1큰술 (1 tbsp of oligo syrup)\",\n      \"displayName\": \"올리고당 (oligo syrup)\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"올리고당 1큰술 1 tbsp of oligo syrup\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 1/2큰술 (a half tbsp of cooking wine)\",\n      \"displayName\": \"맛술 (cooking wine)\",\n      \"amount\": \"0.5\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 1/2큰술 a half tbsp of cooking wine\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1큰술 (1 tbsp of sesame oil)\",\n      \"displayName\": \"참기름 (sesame oil)\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1큰술 1 tbsp of sesame oil\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진대파 1큰술 (1 tbsp of finely chopped green onion)\",\n      \"displayName\": \"다진대파 (finely chopped green onion)\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진대파 1큰술 1 tbsp of finely chopped green onion\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1작은술 (1 tsp of chopped garlic)\",\n      \"displayName\": \"다진마늘 (chopped garlic)\",\n      \"amount\": \"1\",\n      \"unit\": \"작은술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 1작은술 1 tsp of chopped garlic\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깨소금 1작은술 (1 tsp of crushed sesame seeds)\",\n      \"displayName\": \"깨소금 (crushed sesame seeds)\",\n      \"amount\": \"1\",\n      \"unit\": \"작은술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깨소금 1작은술 1 tsp of crushed sesame seeds\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마늘 3쪽 (3 garlic cloves)\",\n      \"displayName\": \"마늘 (garlic cloves)\",\n      \"amount\": \"3\",\n      \"unit\": \"쪽\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마늘 3쪽 3 garlic cloves\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유 (cooking oil)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Oil heated in a frying pan before adding sliced garlic\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 약간 (salt to taste)\",\n      \"displayName\": \"소금 (salt)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 약간 salt to taste\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금, 후춧가루 약간 salt, pepper to taste\",\n          \"timestamp\": \"01:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후춧가루 약간 (pepper to taste)\",\n      \"displayName\": \"후춧가루 (pepper)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후춧가루 약간 pepper to taste\",\n          \"timestamp\": \"00:58\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금, 후춧가루 약간 salt, pepper to taste\",\n          \"timestamp\": \"01:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥 (cooked rice)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Cooked rice placed in a serving bowl\",\n          \"timestamp\": \"01:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨 (sesame seeds)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"된장소스를 얹은 후 실파와 통깨를 뿌려 맛있게 즐겨주세요.\",\n          \"timestamp\": \"01:37\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양배추를 먹기 좋은 크기로 썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Slicing cabbage leaves into bite-sized strips\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파를 채 썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Slicing onion into thin strips\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"쪽파를 송송 썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Chopping green onion stalks\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팽이버섯 밑동을 제거하고 가닥가닥 찢어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Tearing enoki mushrooms apart into small bundles\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 된장소스 재료(된장, 올리고당, 맛술, 참기름, 다진 대파, 다진 마늘, 깨소금)를 넣고 섞어주세요.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"볼에 된장소스 재료를 넣고 섞어주세요.\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 기름을 두르고 편 썬 마늘을 넣어 볶다가 향이 나면 양파를 넣고 소금과 후추를 뿌려 볶아주세요.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마늘을 넣어 볶다가 향이 나면 양파를 넣고 소금과 후추를 뿌려 볶아주세요.\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파가 반쯤 익으면 양배추를 넣고 볶아주세요.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파가 반쯤 익으면 양배추를 넣고 볶아주세요.\",\n          \"timestamp\": \"01:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마지막에 팽이버섯을 넣고 소금과 후춧가루를 뿌려 볶아주세요.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막에 팽이버섯을 넣고 소금과 후춧가루를 뿌려 볶아주세요.\",\n          \"timestamp\": \"01:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 위에 볶은 채소를 올리고 된장소스를 얹은 후 실파와 통깨를 뿌려 맛있게 즐겨주세요.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"된장소스를 얹은 후 실파와 통깨를 뿌려 맛있게 즐겨주세요.\",\n          \"timestamp\": \"01:36\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"Exact amount of cooking oil is not specified.\",\n    \"Exact amount of rice is not specified.\",\n    \"Exact amount of sesame seeds for garnish is not specified.\"\n  ]\n}",
+    "result": {
+      "title": "양배추 덮밥 (Cabbage Deopbab)",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "양배추 3장 (3 cabbage leaves)",
+          "displayName": "양배추 (cabbage)",
+          "amount": "3",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양배추 3장 3 cabbage leaves",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파 1/4개 (1/4 of onion)",
+          "displayName": "양파 (onion)",
+          "amount": "1/4",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/4개 a 1/4 of onion",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "쪽파 2줄기 (2 stalks of small green onion)",
+          "displayName": "쪽파 (small green onion)",
+          "amount": "2",
+          "unit": "줄기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쪽파 2줄기 2 stalks of small green onion",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "팽이버섯 한 줌(120g) (a handful of enoki mushrooms (120g))",
+          "displayName": "팽이버섯 (enoki mushrooms)",
+          "amount": "120",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팽이버섯 한 줌(120g) a handful of enoki mushrooms (120g)",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "된장 1+1/2큰술 (1.5 tbsp of doenjang)",
+          "displayName": "된장 (doenjang)",
+          "amount": "1.5",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "된장 1+1/2큰술 1.5 tbsp of doenjang",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "올리고당 1큰술 (1 tbsp of oligo syrup)",
+          "displayName": "올리고당 (oligo syrup)",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "올리고당 1큰술 1 tbsp of oligo syrup",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "맛술 1/2큰술 (a half tbsp of cooking wine)",
+          "displayName": "맛술 (cooking wine)",
+          "amount": "0.5",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 1/2큰술 a half tbsp of cooking wine",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "참기름 1큰술 (1 tbsp of sesame oil)",
+          "displayName": "참기름 (sesame oil)",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1큰술 1 tbsp of sesame oil",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "다진대파 1큰술 (1 tbsp of finely chopped green onion)",
+          "displayName": "다진대파 (finely chopped green onion)",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진대파 1큰술 1 tbsp of finely chopped green onion",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "다진마늘 1작은술 (1 tsp of chopped garlic)",
+          "displayName": "다진마늘 (chopped garlic)",
+          "amount": "1",
+          "unit": "작은술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 1작은술 1 tsp of chopped garlic",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "깨소금 1작은술 (1 tsp of crushed sesame seeds)",
+          "displayName": "깨소금 (crushed sesame seeds)",
+          "amount": "1",
+          "unit": "작은술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깨소금 1작은술 1 tsp of crushed sesame seeds",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "마늘 3쪽 (3 garlic cloves)",
+          "displayName": "마늘 (garlic cloves)",
+          "amount": "3",
+          "unit": "쪽",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마늘 3쪽 3 garlic cloves",
+              "timestamp": "00:43"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유 (cooking oil)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Oil heated in a frying pan before adding sliced garlic",
+              "timestamp": "00:43"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "소금 약간 (salt to taste)",
+          "displayName": "소금 (salt)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 약간 salt to taste",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금, 후춧가루 약간 salt, pepper to taste",
+              "timestamp": "01:20"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "후춧가루 약간 (pepper to taste)",
+          "displayName": "후춧가루 (pepper)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후춧가루 약간 pepper to taste",
+              "timestamp": "00:58"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금, 후춧가루 약간 salt, pepper to taste",
+              "timestamp": "01:20"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥 (cooked rice)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Cooked rice placed in a serving bowl",
+              "timestamp": "01:31"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨 (sesame seeds)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "된장소스를 얹은 후 실파와 통깨를 뿌려 맛있게 즐겨주세요.",
+              "timestamp": "01:37"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양배추를 먹기 좋은 크기로 썰어줍니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Slicing cabbage leaves into bite-sized strips",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "양파를 채 썰어줍니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Slicing onion into thin strips",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "쪽파를 송송 썰어줍니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Chopping green onion stalks",
+              "timestamp": "00:21"
+            }
+          ]
+        },
+        {
+          "text": "팽이버섯 밑동을 제거하고 가닥가닥 찢어줍니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Tearing enoki mushrooms apart into small bundles",
+              "timestamp": "00:25"
+            }
+          ]
+        },
+        {
+          "text": "볼에 된장소스 재료(된장, 올리고당, 맛술, 참기름, 다진 대파, 다진 마늘, 깨소금)를 넣고 섞어주세요.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "볼에 된장소스 재료를 넣고 섞어주세요.",
+              "timestamp": "00:37"
+            }
+          ]
+        },
+        {
+          "text": "팬에 기름을 두르고 편 썬 마늘을 넣어 볶다가 향이 나면 양파를 넣고 소금과 후추를 뿌려 볶아주세요.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마늘을 넣어 볶다가 향이 나면 양파를 넣고 소금과 후추를 뿌려 볶아주세요.",
+              "timestamp": "00:48"
+            }
+          ]
+        },
+        {
+          "text": "양파가 반쯤 익으면 양배추를 넣고 볶아주세요.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파가 반쯤 익으면 양배추를 넣고 볶아주세요.",
+              "timestamp": "01:04"
+            }
+          ]
+        },
+        {
+          "text": "마지막에 팽이버섯을 넣고 소금과 후춧가루를 뿌려 볶아주세요.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마지막에 팽이버섯을 넣고 소금과 후춧가루를 뿌려 볶아주세요.",
+              "timestamp": "01:14"
+            }
+          ]
+        },
+        {
+          "text": "밥 위에 볶은 채소를 올리고 된장소스를 얹은 후 실파와 통깨를 뿌려 맛있게 즐겨주세요.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "된장소스를 얹은 후 실파와 통깨를 뿌려 맛있게 즐겨주세요.",
+              "timestamp": "01:36"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "Exact amount of cooking oil is not specified.",
+        "Exact amount of rice is not specified.",
+        "Exact amount of sesame seeds for garnish is not specified."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "videoId": "Dz0pQ81fs4I",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/Dz0pQ81fs4I",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:34:12.966034+00:00",
+    "rawResponse": "{\n  \"title\": \"스팸 김치찌개\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"양파 ½개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Onion 양파 ½개\",\n          \"timestamp\": \"0:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 10cm\",\n      \"displayName\": \"대파\",\n      \"amount\": \"10\",\n      \"unit\": \"cm\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Green onion 대파 10cm\",\n          \"timestamp\": \"0:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"가공 햄 1캔\",\n      \"displayName\": \"가공 햄\",\n      \"amount\": \"1\",\n      \"unit\": \"캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Processed ham 가공 햄 1캔\",\n          \"timestamp\": \"0:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"두부 ½개\",\n      \"displayName\": \"두부\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"To-fu 두부 ½개\",\n          \"timestamp\": \"0:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 1큰술\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Cooking oil 식용유 1큰술\",\n          \"timestamp\": \"0:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치 200g\",\n      \"displayName\": \"김치\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Kim-chi 김치 200g\",\n          \"timestamp\": \"0:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1큰술\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Sugar 설탕 1큰술\",\n          \"timestamp\": \"0:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 600ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"600\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Water 물 600ml\",\n          \"timestamp\": \"0:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 2큰술\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Red pepper powder 고춧가루 2큰술\",\n          \"timestamp\": \"0:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"멸치액젓 2큰술\",\n      \"displayName\": \"멸치액젓\",\n      \"amount\": \"2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"Anchovy sauce 멸치액젓 2큰술\",\n          \"timestamp\": \"1:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"라면 사리\",\n      \"displayName\": \"라면 사리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"라면 사리를 넣어 깔끔하게 마무리.\",\n          \"timestamp\": \"1:29\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양파 1/2개는 한입 크기로 깍둑썰기하고, 대파 10cm는 송송 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양파와 대파를 칼로 썬다.\",\n          \"timestamp\": \"0:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"가공 햄 1캔과 두부 1/2개를 먹기 좋은 일정한 두께로 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"캔에서 뺀 햄과 두부를 일정한 크기로 썬다.\",\n          \"timestamp\": \"0:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 식용유 1큰술을 두르고 김치 200g을 넣어 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비에 식용유를 두르고 김치를 넣어 볶는다.\",\n          \"timestamp\": \"0:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"설탕 1큰술을 넣고 김치와 함께 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볶던 김치에 설탕을 넣고 저어가며 볶는다.\",\n          \"timestamp\": \"0:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 600ml를 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비에 물 600ml를 붓는다.\",\n          \"timestamp\": \"0:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"썰어둔 양파와 대파를 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양파와 대파를 냄비에 넣는다.\",\n          \"timestamp\": \"0:42\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고춧가루 2큰술을 넣고 잘 섞어 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"고춧가루 2큰술을 넣고 국물에 푼다.\",\n          \"timestamp\": \"0:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국물이 끓어오르면 썰어둔 가공 햄과 두부를 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"끓는 찌개에 가공 햄과 두부를 차례대로 넣는다.\",\n          \"timestamp\": \"0:55\"\n        }\n      ]\n    },\n    {\n      \"text\": \"멸치액젓 2큰술을 넣어 간을 맞추고 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"멸치액젓을 국물에 넣고 저어준다.\",\n          \"timestamp\": \"1:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"기호에 따라 라면 사리를 넣어 끓여 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"끓는 찌개에 라면 사리를 넣어 익힌다.\",\n          \"timestamp\": \"1:29\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "스팸 김치찌개",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "양파 ½개",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Onion 양파 ½개",
+              "timestamp": "0:10"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파 10cm",
+          "displayName": "대파",
+          "amount": "10",
+          "unit": "cm",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Green onion 대파 10cm",
+              "timestamp": "0:10"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "가공 햄 1캔",
+          "displayName": "가공 햄",
+          "amount": "1",
+          "unit": "캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Processed ham 가공 햄 1캔",
+              "timestamp": "0:15"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "두부 ½개",
+          "displayName": "두부",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "To-fu 두부 ½개",
+              "timestamp": "0:20"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "식용유 1큰술",
+          "displayName": "식용유",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Cooking oil 식용유 1큰술",
+              "timestamp": "0:25"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "김치 200g",
+          "displayName": "김치",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Kim-chi 김치 200g",
+              "timestamp": "0:27"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "설탕 1큰술",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Sugar 설탕 1큰술",
+              "timestamp": "0:31"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "물 600ml",
+          "displayName": "물",
+          "amount": "600",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Water 물 600ml",
+              "timestamp": "0:37"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "고춧가루 2큰술",
+          "displayName": "고춧가루",
+          "amount": "2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Red pepper powder 고춧가루 2큰술",
+              "timestamp": "0:45"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "멸치액젓 2큰술",
+          "displayName": "멸치액젓",
+          "amount": "2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "Anchovy sauce 멸치액젓 2큰술",
+              "timestamp": "1:05"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "라면 사리",
+          "displayName": "라면 사리",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "라면 사리를 넣어 깔끔하게 마무리.",
+              "timestamp": "1:29"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양파 1/2개는 한입 크기로 깍둑썰기하고, 대파 10cm는 송송 썬다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양파와 대파를 칼로 썬다.",
+              "timestamp": "0:10"
+            }
+          ]
+        },
+        {
+          "text": "가공 햄 1캔과 두부 1/2개를 먹기 좋은 일정한 두께로 썬다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "캔에서 뺀 햄과 두부를 일정한 크기로 썬다.",
+              "timestamp": "0:20"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 식용유 1큰술을 두르고 김치 200g을 넣어 볶는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비에 식용유를 두르고 김치를 넣어 볶는다.",
+              "timestamp": "0:25"
+            }
+          ]
+        },
+        {
+          "text": "설탕 1큰술을 넣고 김치와 함께 볶아준다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볶던 김치에 설탕을 넣고 저어가며 볶는다.",
+              "timestamp": "0:31"
+            }
+          ]
+        },
+        {
+          "text": "물 600ml를 붓는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비에 물 600ml를 붓는다.",
+              "timestamp": "0:37"
+            }
+          ]
+        },
+        {
+          "text": "썰어둔 양파와 대파를 넣는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양파와 대파를 냄비에 넣는다.",
+              "timestamp": "0:42"
+            }
+          ]
+        },
+        {
+          "text": "고춧가루 2큰술을 넣고 잘 섞어 끓인다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "고춧가루 2큰술을 넣고 국물에 푼다.",
+              "timestamp": "0:45"
+            }
+          ]
+        },
+        {
+          "text": "국물이 끓어오르면 썰어둔 가공 햄과 두부를 넣는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "끓는 찌개에 가공 햄과 두부를 차례대로 넣는다.",
+              "timestamp": "0:55"
+            }
+          ]
+        },
+        {
+          "text": "멸치액젓 2큰술을 넣어 간을 맞추고 끓인다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "멸치액젓을 국물에 넣고 저어준다.",
+              "timestamp": "1:05"
+            }
+          ]
+        },
+        {
+          "text": "기호에 따라 라면 사리를 넣어 끓여 마무리한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "끓는 찌개에 라면 사리를 넣어 익힌다.",
+              "timestamp": "1:29"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

@@ -6,13 +6,9 @@ from cache import load_json
 
 
 def load_ingredient_master(path: Path) -> dict:
-    master = load_json(path, None)
+    master = load_json(path, {"ingredients": []})
     if not isinstance(master, dict) or not isinstance(master.get("ingredients"), list):
         raise RuntimeError("data/ingredients.json must contain an ingredients array")
-    if not master["ingredients"]:
-        raise RuntimeError(
-            "data/ingredients.json must contain at least one approved Ingredient"
-        )
     return master
 
 

@@ -1,0 +1,290 @@
+{
+  "videoId": "43_eTc2Pkng",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/43_eTc2Pkng",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:18:29.597680+00:00",
+    "rawResponse": "{\n  \"title\": \"Onion Rice Bowl (양파덮밥)\",\n  \"description\": null,\n  \"servings\": \"1\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"1 onion / 양파 1개\",\n      \"displayName\": \"onion\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1 onion / 양파 1개\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"cooking oil / 식용유\",\n      \"displayName\": \"cooking oil\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"cooking oil / 식용유\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"1/2Ts chilli pepper powder / 고춧가루 1/2스푼\",\n      \"displayName\": \"chilli pepper powder\",\n      \"amount\": \"1/2\",\n      \"unit\": \"Ts\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1/2Ts chilli pepper powder / 고춧가루 1/2스푼\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"1/2Ts sugar / 설탕 1/2스푼\",\n      \"displayName\": \"sugar\",\n      \"amount\": \"1/2\",\n      \"unit\": \"Ts\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1/2Ts sugar / 설탕 1/2스푼\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"2Ts soy sauce / 진간장 2스푼을 넣어줍니다\",\n      \"displayName\": \"soy sauce\",\n      \"amount\": \"2\",\n      \"unit\": \"Ts\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"2Ts soy sauce / 진간장 2스푼을 넣어줍니다\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"1Ts sesame oil / 참기름 1스푼\",\n      \"displayName\": \"sesame oil\",\n      \"amount\": \"1\",\n      \"unit\": \"Ts\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1Ts sesame oil / 참기름 1스푼\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"black pepper powder / 후추\",\n      \"displayName\": \"black pepper powder\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"black pepper powder / 후추\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"rice\",\n      \"displayName\": \"cooked rice\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Cooked rice is served in a bowl\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"egg / 계란\",\n      \"displayName\": \"egg\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"egg / 계란\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"A fried egg is placed on top of the rice bowl\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"sesame (or skip) / 참깨 (선택)\",\n      \"displayName\": \"sesame\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"sesame (or skip) / 참깨 (선택)\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"Slice one onion.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Cutting the onion into slices\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Add cooking oil to a pan and fry the sliced onion shortly.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"fry shortly / 양파를 살짝 볶은 후\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Pouring cooking oil and stirring sliced onions in the pan\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Add 1/2 tablespoon chilli pepper powder, 1/2 tablespoon sugar, and 2 tablespoons soy sauce.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1/2Ts chilli pepper powder / 고춧가루 1/2스푼\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1/2Ts sugar / 설탕 1/2스푼\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"2Ts soy sauce / 진간장 2스푼을 넣어줍니다\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Fry for about 1 minute to keep the texture without making the onion too soft, then turn off the heat.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"fry for 1 minute / to keep texture / and stop heating / 양파가 많이 물러지지 않게 1분 정도 볶은 뒤 불을 끄고\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Add 1 tablespoon sesame oil and black pepper powder, then mix evenly.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1Ts sesame oil / 참기름 1스푼\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"black pepper powder / 후추\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"mix / 골고루 섞어줍니다\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Place cooked rice into a bowl and top with the cooked seasoned onion.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Scooping seasoned onions over a bowl of rice\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"Top with a fried egg and optionally garnish with sesame seeds.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"egg / 계란\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"sesame (or skip) / 참깨 (선택)\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"Exact amount of cooking oil\",\n    \"Exact amount of black pepper powder\",\n    \"Exact amount of cooked rice\",\n    \"Exact amount of sesame seeds\"\n  ]\n}",
+    "result": {
+      "title": "Onion Rice Bowl (양파덮밥)",
+      "description": null,
+      "servings": "1",
+      "ingredients": [
+        {
+          "rawText": "1 onion / 양파 1개",
+          "displayName": "onion",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1 onion / 양파 1개",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "cooking oil / 식용유",
+          "displayName": "cooking oil",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "cooking oil / 식용유",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "1/2Ts chilli pepper powder / 고춧가루 1/2스푼",
+          "displayName": "chilli pepper powder",
+          "amount": "1/2",
+          "unit": "Ts",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1/2Ts chilli pepper powder / 고춧가루 1/2스푼",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "1/2Ts sugar / 설탕 1/2스푼",
+          "displayName": "sugar",
+          "amount": "1/2",
+          "unit": "Ts",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1/2Ts sugar / 설탕 1/2스푼",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "2Ts soy sauce / 진간장 2스푼을 넣어줍니다",
+          "displayName": "soy sauce",
+          "amount": "2",
+          "unit": "Ts",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "2Ts soy sauce / 진간장 2스푼을 넣어줍니다",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "1Ts sesame oil / 참기름 1스푼",
+          "displayName": "sesame oil",
+          "amount": "1",
+          "unit": "Ts",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1Ts sesame oil / 참기름 1스푼",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "black pepper powder / 후추",
+          "displayName": "black pepper powder",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "black pepper powder / 후추",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "rice",
+          "displayName": "cooked rice",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Cooked rice is served in a bowl",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "egg / 계란",
+          "displayName": "egg",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "egg / 계란",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "A fried egg is placed on top of the rice bowl",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "sesame (or skip) / 참깨 (선택)",
+          "displayName": "sesame",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "sesame (or skip) / 참깨 (선택)",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Slice one onion.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Cutting the onion into slices",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "Add cooking oil to a pan and fry the sliced onion shortly.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "fry shortly / 양파를 살짝 볶은 후",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Pouring cooking oil and stirring sliced onions in the pan",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "Add 1/2 tablespoon chilli pepper powder, 1/2 tablespoon sugar, and 2 tablespoons soy sauce.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1/2Ts chilli pepper powder / 고춧가루 1/2스푼",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1/2Ts sugar / 설탕 1/2스푼",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "2Ts soy sauce / 진간장 2스푼을 넣어줍니다",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "Fry for about 1 minute to keep the texture without making the onion too soft, then turn off the heat.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "fry for 1 minute / to keep texture / and stop heating / 양파가 많이 물러지지 않게 1분 정도 볶은 뒤 불을 끄고",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "Add 1 tablespoon sesame oil and black pepper powder, then mix evenly.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1Ts sesame oil / 참기름 1스푼",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "black pepper powder / 후추",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "mix / 골고루 섞어줍니다",
+              "timestamp": "00:21"
+            }
+          ]
+        },
+        {
+          "text": "Place cooked rice into a bowl and top with the cooked seasoned onion.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Scooping seasoned onions over a bowl of rice",
+              "timestamp": "00:25"
+            }
+          ]
+        },
+        {
+          "text": "Top with a fried egg and optionally garnish with sesame seeds.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "egg / 계란",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "sesame (or skip) / 참깨 (선택)",
+              "timestamp": "00:28"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "Exact amount of cooking oil",
+        "Exact amount of black pepper powder",
+        "Exact amount of cooked rice",
+        "Exact amount of sesame seeds"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

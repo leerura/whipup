@@ -1,0 +1,236 @@
+{
+  "videoId": "PoQtuCAh1nA",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/PoQtuCAh1nA",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T16:01:10.629198+00:00",
+    "rawResponse": "{\n  \"title\": \"스팸 고추장 덮밥 만들기\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"스팸 200g\",\n      \"displayName\": \"스팸\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스팸 200g 준비 하시구요\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"스팸 200g 준비 하시고요\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 한큰술\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장, 다진마늘, 물엿, 간장 한큰술씩 넣어 주세요\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장, 다진마늘, 물엿, 간장 한큰술씩 넣어 주세요\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 한큰술\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장, 다진마늘, 물엿, 간장 한큰술씩 넣어 주세요\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장, 다진마늘, 물엿, 간장 한큰술씩 넣어 주세요\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물엿 한큰술\",\n      \"displayName\": \"물엿\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장, 다진마늘, 물엿, 간장 한큰술씩 넣어 주세요\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장, 다진마늘, 물엿, 간장 한큰술씩 넣어 주세요\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 한큰술\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장, 다진마늘, 물엿, 간장 한큰술씩 넣어 주세요\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장, 다진마늘, 물엿, 간장 한큰술씩 넣어 주세요\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 위에 올려주세요\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 위에 올려주세요\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 담긴 밥 위에 볶은 스팸을 올림\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 스팸 덮밥 위에 통깨가 뿌려져 있음\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"스팸 200g을 먹기 좋은 크기로 잘라준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스팸 200g 준비 하시구요 먹기 좋은 크기로 잘라주세요\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"스팸 200g 준비 하시고요 먹기 좋은 크기로 잘라주세요\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 스팸을 넣고 노릿노릿하게 구워준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 스팸을 넣고 노릿노릿하게 구워주세요\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 스팸을 넣고 노릿노릿하게 구워주세요\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"스팸이 다 구워졌으면 불을 끄고 고추장, 다진마늘, 물엿, 간장을 1큰술씩 넣어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스팸이 다 구워졌으면 불을 끄고 고추장, 다진마늘, 물엿, 간장 한큰술씩 넣어 주세요\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"스팸이 다 구워졌으면 불을 끄고 고추장, 다진마늘, 물엿, 간장 한큰술씩 넣어 주세요\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양념과 스팸을 맛있게 볶은 후 밥 위에 올려주고 통깨를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스팸을 맛있게 볶은 후 밥 위에 올려주세요\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"스팸을 맛있게 볶은 후 밥 위에 올려주세요\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볶은 스팸을 밥 위에 붓고 통깨를 곁들임\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"통깨와 밥의 정확한 계량 수치는 언급되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "스팸 고추장 덮밥 만들기",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "스팸 200g",
+          "displayName": "스팸",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스팸 200g 준비 하시구요",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "스팸 200g 준비 하시고요",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "고추장 한큰술",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장, 다진마늘, 물엿, 간장 한큰술씩 넣어 주세요",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장, 다진마늘, 물엿, 간장 한큰술씩 넣어 주세요",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "다진마늘 한큰술",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장, 다진마늘, 물엿, 간장 한큰술씩 넣어 주세요",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장, 다진마늘, 물엿, 간장 한큰술씩 넣어 주세요",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "물엿 한큰술",
+          "displayName": "물엿",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장, 다진마늘, 물엿, 간장 한큰술씩 넣어 주세요",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장, 다진마늘, 물엿, 간장 한큰술씩 넣어 주세요",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "간장 한큰술",
+          "displayName": "간장",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장, 다진마늘, 물엿, 간장 한큰술씩 넣어 주세요",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장, 다진마늘, 물엿, 간장 한큰술씩 넣어 주세요",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 위에 올려주세요",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밥 위에 올려주세요",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 담긴 밥 위에 볶은 스팸을 올림",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 스팸 덮밥 위에 통깨가 뿌려져 있음",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "스팸 200g을 먹기 좋은 크기로 잘라준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스팸 200g 준비 하시구요 먹기 좋은 크기로 잘라주세요",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "스팸 200g 준비 하시고요 먹기 좋은 크기로 잘라주세요",
+              "timestamp": "00:02"
+            }
+          ]
+        },
+        {
+          "text": "팬에 스팸을 넣고 노릿노릿하게 구워준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 스팸을 넣고 노릿노릿하게 구워주세요",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "팬에 스팸을 넣고 노릿노릿하게 구워주세요",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "스팸이 다 구워졌으면 불을 끄고 고추장, 다진마늘, 물엿, 간장을 1큰술씩 넣어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스팸이 다 구워졌으면 불을 끄고 고추장, 다진마늘, 물엿, 간장 한큰술씩 넣어 주세요",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "스팸이 다 구워졌으면 불을 끄고 고추장, 다진마늘, 물엿, 간장 한큰술씩 넣어 주세요",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "양념과 스팸을 맛있게 볶은 후 밥 위에 올려주고 통깨를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스팸을 맛있게 볶은 후 밥 위에 올려주세요",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "스팸을 맛있게 볶은 후 밥 위에 올려주세요",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볶은 스팸을 밥 위에 붓고 통깨를 곁들임",
+              "timestamp": "00:12"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "통깨와 밥의 정확한 계량 수치는 언급되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

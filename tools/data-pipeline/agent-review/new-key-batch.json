@@ -1,0 +1,178 @@
+{
+  "source": "Saved Gemini V3 extraction response; no Gemini re-call or video revalidation.",
+  "processedVideoIds": [
+    "5qJxbu81gkc",
+    "BlFh-1-NrQA",
+    "BvaQL2Qktt0",
+    "D2Ez923DEtE",
+    "E4eDEXng1FY",
+    "EC5gGgc3u6g",
+    "F2RYGg9U_RM",
+    "F8C4DLdNSHE",
+    "GAyjyssyR8c",
+    "GkgUrEuC-9I",
+    "I0wuFPoYhek",
+    "J4W-yL70rd4",
+    "J_22wCVGyEM",
+    "Jykzyr860uM",
+    "KGkN07rJO9c",
+    "KHAC6M57vcI",
+    "LMicIBiHZW4"
+  ],
+  "excluded": {},
+  "decisions": {
+    "5qJxbu81gkc": {
+      "recipeKey": "woosamgyeop-rice-bowl-5qjxb",
+      "name": "우삼겹 덮밥",
+      "status": "PUBLISHED",
+      "reason": "모든 필수 source item을 V3 catalog에 매핑했다. 정수는 물 보유 항목으로 recipe-local 수용 매핑했다."
+    },
+    "BlFh-1-NrQA": {
+      "recipeKey": "egg-rice-bowl-blfh1",
+      "name": "달걀 덮밥",
+      "status": "PUBLISHED",
+      "reason": "모든 필수 source item을 매핑했다. Gemini가 불확실하다고 밝힌 3/2 숟가락 표기는 추측하지 않고 추출된 소금 두 꼬집을 보존했다."
+    },
+    "BvaQL2Qktt0": {
+      "recipeKey": "cabbage-spicy-tuna-rice-bowl-bvaql",
+      "name": "양배추 고추참치 덮밥",
+      "status": "PUBLISHED",
+      "reason": "현미밥은 밥 보유 항목으로 recipe-local 수용 매핑했고, 나머지 필수 재료는 기존 catalog에서 재사용했다. 일반 전자레인지 조리이며 추가 가전 의존성은 없다."
+    },
+    "D2Ez923DEtE": {
+      "recipeKey": "one-pan-pasta-d2ez9",
+      "name": "원팬 파스타",
+      "status": "PUBLISHED",
+      "reason": "모든 필수 source item을 기존 catalog에 매핑했다. Gemini가 조리 단계에서 확인하지 못한 파슬리 가니쉬는 새 재료로 추가하지 않았다."
+    },
+    "E4eDEXng1FY": {
+      "recipeKey": "chicken-egg-rice-bowl-e4edex",
+      "name": "닭가슴살 달걀 덮밥",
+      "status": "PUBLISHED",
+      "reason": "모든 필수 source item을 매핑했다. 일반 간장, 기름, 맛술(미림), 현미밥은 이 recipe에 한해 해당 보유 항목을 수용 후보로 기록했고 미표기 수량은 null로 보존했다."
+    },
+    "EC5gGgc3u6g": {
+      "recipeKey": "egg-fried-rice-ec5gg",
+      "name": "계란 볶음밥",
+      "status": "PUBLISHED",
+      "reason": "모든 필수 source item을 기존 catalog에 매핑했다. 김가루는 optional로 유지했다."
+    },
+    "F2RYGg9U_RM": {
+      "recipeKey": "omelet-f2ryg",
+      "name": "오믈렛",
+      "status": "DRAFT",
+      "reason": "DRAFT: Gemini가 팬 코팅용 기름/버터와 간 여부를 unresolved로 남겼고 ingredient 원본에는 계란만 있어, 조리 필수 재료의 완전성을 추측하지 않았다."
+    },
+    "F8C4DLdNSHE": {
+      "recipeKey": "tuna-kimchi-stew-f8c4d",
+      "name": "참치 김치찌개",
+      "status": "PUBLISHED",
+      "reason": "필수 재료를 기존 catalog 또는 사골 코인 육수 신규 selectable item에 매핑했다. optional 계란후라이·김·밥은 requirement에서 제외했다. 미표기 분량은 null로 보존했다."
+    },
+    "GAyjyssyR8c": {
+      "recipeKey": "gochujang-pork-belly-rice-bowl-gayjy",
+      "name": "고추장 삼겹살 덮밥",
+      "status": "PUBLISHED",
+      "reason": "모든 필수 source item을 기존 catalog에 매핑했다. 대패삼겹살은 thinly-sliced-pork-belly owned item에 연결했다."
+    },
+    "GkgUrEuC-9I": {
+      "recipeKey": "shrimp-fried-rice-gkgur",
+      "name": "새우볶음밥",
+      "status": "PUBLISHED",
+      "reason": "모든 필수 source item을 매핑했다. 새우 source 표현은 기존 shrimp item에 recipe-local mapping했다. Gemini 미표기 수량/단위는 추정하지 않았다."
+    },
+    "I0wuFPoYhek": {
+      "recipeKey": "onion-egg-rice-bowl-i0wuf",
+      "name": "양파 계란 덮밥",
+      "status": "PUBLISHED",
+      "reason": "모든 필수 source item을 기존 catalog에 매핑했다. 간장과 기름의 generic source는 이 recipe 맥락의 recipe-local 수용 후보를 사용했다."
+    },
+    "J4W-yL70rd4": {
+      "recipeKey": "egg-soup-j4wyl",
+      "name": "계란탕",
+      "status": "PUBLISHED",
+      "reason": "모든 필수 source item을 기존 catalog에 매핑했다. 물·계란·대파·참치액 외 재료를 추가하지 않았다."
+    },
+    "J_22wCVGyEM": {
+      "recipeKey": "spam-mayo-rice-bowl-j22w",
+      "name": "스팸마요 덮밥",
+      "status": "DRAFT",
+      "reason": "DRAFT: 양파를 조리는 갈색 액체 양념이 간장으로 추정되지만 Gemini가 이름과 분량을 명시하지 않았고 ingredient source에도 별도 항목이 없어, 간장을 발명해 추가하지 않았다."
+    },
+    "Jykzyr860uM": {
+      "recipeKey": "doenjang-stew-jykzy",
+      "name": "된장찌개",
+      "status": "PUBLISHED",
+      "reason": "필수 물·된장·고추장·멸치육수를 매핑했다. 원문에 있는 애호박·버섯은 optional이므로 missing requirement에 포함하지 않았다. 미표기 분량은 null로 보존했다."
+    },
+    "KGkN07rJO9c": {
+      "recipeKey": "ketchup-egg-rice-kgkn07",
+      "name": "케첩 계란밥",
+      "status": "PUBLISHED",
+      "reason": "필수 source item을 매핑했다. 자투리채소는 source 표현을 보존하고, Gemini가 영상 속 재료로 밝힌 양파를 이 recipe에 한해 accepted owned item으로 연결했다."
+    },
+    "KHAC6M57vcI": {
+      "recipeKey": "chicken-mayo-rice-bowl-khac6",
+      "name": "치킨마요 덮밥",
+      "status": "PUBLISHED",
+      "reason": "너겟은 치킨너겟 selectable item으로 추가하고, 나머지는 기존 catalog에 매핑했다. 조리는 팬 조리로 추출되어 특수 조리기구를 요구하지 않는다."
+    },
+    "LMicIBiHZW4": {
+      "recipeKey": "soy-pork-jowl-rice-bowl-lmicib",
+      "name": "간장 항정살 덮밥",
+      "status": "DRAFT",
+      "reason": "DRAFT: 대파가 소스에서 조리되는지 밥 위 고명인지 Gemini 추출 근거가 상충한다. 대파 재료와 조리 단계는 추출 내용대로 보존하고 한쪽으로 임의 해석하지 않았다."
+    }
+  },
+  "catalogDelta": {
+    "ingredientGroupsAdded": 3,
+    "variantsAdded": 3,
+    "ingredientGroupsRemoved": 0,
+    "variantsRemoved": 0,
+    "items": [
+      {
+        "key": "anchovy-stock",
+        "variant": "anchovy-stock-item",
+        "name": "멸치육수"
+      },
+      {
+        "key": "beef-bone-stock-cube",
+        "variant": "beef-bone-stock-cube-item",
+        "name": "사골 코인 육수"
+      },
+      {
+        "key": "chicken-nugget",
+        "variant": "chicken-nugget-item",
+        "name": "치킨너겟"
+      }
+    ]
+  },
+  "dbBefore": {
+    "recipes": 31,
+    "ingredientGroups": 92,
+    "variants": 102,
+    "userPantryRows": 32
+  },
+  "validation": {
+    "result": "PASS",
+    "validator": "backend DatasetLoader through make import-data",
+    "recipesAdded": 17,
+    "published": 14,
+    "draft": 3
+  },
+  "databaseAfter": {
+    "recipes": 48,
+    "published": 40,
+    "draft": 8,
+    "ingredients": 95,
+    "variants": 105,
+    "userPantryRows": 32,
+    "danglingPantryReferences": 0,
+    "newBatchRecipes": 17
+  },
+  "notes": [
+    "Only the 17 listed video IDs were added. Existing DB recipes and pantry entries were retained.",
+    "Gemini checkpoint output files were not modified.",
+    "First import validation rejected a duplicated exact variant inside acceptedOwnedVariants for ingredient-3 in gochujang-pork-belly-rice-bowl-gayjy.json; duplicate candidate was removed, then import passed."
+  ]
+}

@@ -1,0 +1,331 @@
+{
+  "videoId": "xKIIKELDjiU",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/xKIIKELDjiU",
+  "sourceMetadata": {"sourceTitle":null,"sourceChannelName":null,"sourceChannelId":null,"sourceMetadataFetchedAt":null},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T10:50:04.824784+00:00",
+    "rawResponse": "{\n  \"title\": \"신개념 김치 볶음밥\",\n  \"description\": null,\n  \"servings\": \"2인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"잘게 다진 김치 1컵 (200cc 컵으로)\",\n      \"displayName\": \"김치\",\n      \"amount\": \"1\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"잘게 다진 김치 1컵 (200cc 컵으로)\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 김치를 200cc 컵에 한 컵을 잘게 잘라가 준비합니다\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1스푼 (6~7g)\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1스푼 (6~7g)\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 한 스푼\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼 (10g)\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1스푼 (10g)\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 한 스푼\",\n          \"timestamp\": \"01:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 1스푼 (8g)\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 1스푼 (8g)\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 한 스푼\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 2스푼 (12~14g)\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 2스푼 (12~14g)\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름 두 스푼\",\n          \"timestamp\": \"01:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마요네즈 1스푼 (15g)\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마요네즈 1스푼 (15g)\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마요네즈 한 스푼\",\n          \"timestamp\": \"01:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"된장 1/3스푼 (10g)\",\n      \"displayName\": \"된장\",\n      \"amount\": \"1/3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"된장 1/3스푼 (10g)\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"된장 3분의 1스푼\",\n          \"timestamp\": \"01:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진대파 2큰술\",\n      \"displayName\": \"다진 대파\",\n      \"amount\": \"2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진대파 2큰술\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 대파 두 큰술\",\n          \"timestamp\": \"01:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 3스푼\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 3스푼\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후라이팬에 식용유 세 스푼을 부어 줍니다\",\n          \"timestamp\": \"01:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 2공기 (400~420g)\",\n      \"displayName\": \"밥\",\n      \"amount\": \"2\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 2공기 (400~420g)\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 두 공기를 부어가\",\n          \"timestamp\": \"02:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 2공기는 햇반 210g 짜리 2개 분량입니다!\",\n          \"timestamp\": \"02:17\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"김치를 200cc 컵에 1컵 분량으로 잘게 잘라 준비하여 그릇에 담는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 김치를 200cc 컵에 한 컵을 잘게 잘라가 준비합니다\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"잘게 다진 김치를 그릇에 부어 준 다음\",\n          \"timestamp\": \"00:57\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김치가 담긴 그릇에 고춧가루 1스푼, 설탕 1스푼, 진간장 1스푼, 참기름 2스푼, 마요네즈 1스푼, 된장 1/3스푼, 다진 대파 2큰술을 넣고 잘 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 한 스푼, 설탕 한 스푼, 진간장 한 스푼, 참기름 두 스푼, 마요네즈 한 스푼, 된장 3분의 1스푼, 다진 대파 두 큰술을 넣고 잘 섞어 줍니다.\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"폭 20cm 이상의 넓은 후라이팬에 식용유 3스푼을 붓고 강불로 올려 기름을 달군다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후라이팬에 식용유 세 스푼을 부어 줍니다. 후라이팬은 꼭 꼭 20cm 이상 되는 넓은 후라이팬을 사용하셔야 됩니다.\",\n          \"timestamp\": \"01:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식용유를 부었으면 불을 강불로 올리고 식용유를 달가가\",\n          \"timestamp\": \"01:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"달궈진 기름에 양념한 김치를 붓고 후라이팬에 최대한 얇고 골고루 펴준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"섞어 놓은 김치를 붓고 후라이팬에 골고루 잘 펴 줍니다. 요래 요래 골고루 펴 줘야 오늘 맛을 제대로 즐길 수가 있으니 최대한 얇게 펴 주는 거 잊지 마십시오.\",\n          \"timestamp\": \"01:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뚜껑을 덮고 1분간 강불에 그대로 방치한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"뚜껑을 덮으세요. 그러고 나서 1분간 그대로 방치합니다.\",\n          \"timestamp\": \"01:48\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"아무것도 하지 말고 뚜껑 덮고 1분간 강불에 방치!\",\n          \"timestamp\": \"01:47\"\n        }\n      ]\n    },\n    {\n      \"text\": \"1분 후 뚜껑을 열고 강불에서 약 1분 정도 저어가면서 양념이 꾸덕해질 때까지 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 뚜껑을 여시고 잘 섞어 가면서 볶아 줍니다. 강불에 1분 정도 볶으시면 요래 요래 양념이 완전히 꾸덕해질 겁니다.\",\n          \"timestamp\": \"02:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 중불로 줄이고 밥 2공기를 넣어 흰 부분이 보이지 않도록 잘 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이때 불을 중불로 줄이고 밥 두 공기를 부어가 흰 밥에 하얀 부분이 절대로 한 개도 보이지 않게 잘 섞어 줍니다.\",\n          \"timestamp\": \"02:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥을 팬에 다시 골고루 펴준 뒤 뚜껑을 덮고 강불로 올려 30초간 가만히 방치한 후 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"빨간 부분이 밥에 골고루 잘 묻었으면 밥을 골고루 다시 펴 준 다음에 뚜껑을 덮고 강불로 불을 올리고 30초간 또 가만 방치합니다. 이제 요래 요래 극찬 받는 신개념 김치 볶음밥 완성입니다.\",\n          \"timestamp\": \"02:21\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "신개념 김치 볶음밥",
+      "description": null,
+      "servings": "2인분",
+      "ingredients": [
+        {
+          "rawText": "잘게 다진 김치 1컵 (200cc 컵으로)",
+          "displayName": "김치",
+          "amount": "1",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "잘게 다진 김치 1컵 (200cc 컵으로)",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 김치를 200cc 컵에 한 컵을 잘게 잘라가 준비합니다",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "고춧가루 1스푼 (6~7g)",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1스푼 (6~7g)",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 한 스푼",
+              "timestamp": "01:02"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "설탕 1스푼 (10g)",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1스푼 (10g)",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 한 스푼",
+              "timestamp": "01:03"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "진간장 1스푼 (8g)",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 1스푼 (8g)",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장 한 스푼",
+              "timestamp": "01:05"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "참기름 2스푼 (12~14g)",
+          "displayName": "참기름",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 2스푼 (12~14g)",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름 두 스푼",
+              "timestamp": "01:06"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "마요네즈 1스푼 (15g)",
+          "displayName": "마요네즈",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마요네즈 1스푼 (15g)",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마요네즈 한 스푼",
+              "timestamp": "01:07"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "된장 1/3스푼 (10g)",
+          "displayName": "된장",
+          "amount": "1/3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "된장 1/3스푼 (10g)",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "된장 3분의 1스푼",
+              "timestamp": "01:09"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "다진대파 2큰술",
+          "displayName": "다진 대파",
+          "amount": "2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진대파 2큰술",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 대파 두 큰술",
+              "timestamp": "01:10"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "식용유 3스푼",
+          "displayName": "식용유",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 3스푼",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후라이팬에 식용유 세 스푼을 부어 줍니다",
+              "timestamp": "01:23"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "밥 2공기 (400~420g)",
+          "displayName": "밥",
+          "amount": "2",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 2공기 (400~420g)",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밥 두 공기를 부어가",
+              "timestamp": "02:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 2공기는 햇반 210g 짜리 2개 분량입니다!",
+              "timestamp": "02:17"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "김치를 200cc 컵에 1컵 분량으로 잘게 잘라 준비하여 그릇에 담는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 김치를 200cc 컵에 한 컵을 잘게 잘라가 준비합니다",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "SPEECH",
+              "text": "잘게 다진 김치를 그릇에 부어 준 다음",
+              "timestamp": "00:57"
+            }
+          ]
+        },
+        {
+          "text": "김치가 담긴 그릇에 고춧가루 1스푼, 설탕 1스푼, 진간장 1스푼, 참기름 2스푼, 마요네즈 1스푼, 된장 1/3스푼, 다진 대파 2큰술을 넣고 잘 섞어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 한 스푼, 설탕 한 스푼, 진간장 한 스푼, 참기름 두 스푼, 마요네즈 한 스푼, 된장 3분의 1스푼, 다진 대파 두 큰술을 넣고 잘 섞어 줍니다.",
+              "timestamp": "01:02"
+            }
+          ]
+        },
+        {
+          "text": "폭 20cm 이상의 넓은 후라이팬에 식용유 3스푼을 붓고 강불로 올려 기름을 달군다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후라이팬에 식용유 세 스푼을 부어 줍니다. 후라이팬은 꼭 꼭 20cm 이상 되는 넓은 후라이팬을 사용하셔야 됩니다.",
+              "timestamp": "01:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "식용유를 부었으면 불을 강불로 올리고 식용유를 달가가",
+              "timestamp": "01:34"
+            }
+          ]
+        },
+        {
+          "text": "달궈진 기름에 양념한 김치를 붓고 후라이팬에 최대한 얇고 골고루 펴준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "섞어 놓은 김치를 붓고 후라이팬에 골고루 잘 펴 줍니다. 요래 요래 골고루 펴 줘야 오늘 맛을 제대로 즐길 수가 있으니 최대한 얇게 펴 주는 거 잊지 마십시오.",
+              "timestamp": "01:37"
+            }
+          ]
+        },
+        {
+          "text": "뚜껑을 덮고 1분간 강불에 그대로 방치한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "뚜껑을 덮으세요. 그러고 나서 1분간 그대로 방치합니다.",
+              "timestamp": "01:48"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "아무것도 하지 말고 뚜껑 덮고 1분간 강불에 방치!",
+              "timestamp": "01:47"
+            }
+          ]
+        },
+        {
+          "text": "1분 후 뚜껑을 열고 강불에서 약 1분 정도 저어가면서 양념이 꾸덕해질 때까지 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 뚜껑을 여시고 잘 섞어 가면서 볶아 줍니다. 강불에 1분 정도 볶으시면 요래 요래 양념이 완전히 꾸덕해질 겁니다.",
+              "timestamp": "02:02"
+            }
+          ]
+        },
+        {
+          "text": "불을 중불로 줄이고 밥 2공기를 넣어 흰 부분이 보이지 않도록 잘 섞어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이때 불을 중불로 줄이고 밥 두 공기를 부어가 흰 밥에 하얀 부분이 절대로 한 개도 보이지 않게 잘 섞어 줍니다.",
+              "timestamp": "02:08"
+            }
+          ]
+        },
+        {
+          "text": "밥을 팬에 다시 골고루 펴준 뒤 뚜껑을 덮고 강불로 올려 30초간 가만히 방치한 후 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "빨간 부분이 밥에 골고루 잘 묻었으면 밥을 골고루 다시 펴 준 다음에 뚜껑을 덮고 강불로 불을 올리고 30초간 또 가만 방치합니다. 이제 요래 요래 극찬 받는 신개념 김치 볶음밥 완성입니다.",
+              "timestamp": "02:21"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

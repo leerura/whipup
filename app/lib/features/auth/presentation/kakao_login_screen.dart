@@ -149,7 +149,7 @@ class KakaoLoginScreen extends StatelessWidget {
                 Positioned(
                   left: 20 * scale,
                   right: 20 * scale,
-                  bottom: 70 * scale,
+                  bottom: 138 * scale,
                   height: 56,
                   child: FilledButton(
                     onPressed: isLoading ? null : onKakaoLogin,
@@ -168,6 +168,31 @@ class KakaoLoginScreen extends StatelessWidget {
                             child: CircularProgressIndicator(strokeWidth: 2),
                           )
                         : const Text('카카오로 시작하기'),
+                  ),
+                ),
+                Positioned(
+                  left: 20 * scale,
+                  right: 20 * scale,
+                  bottom: 70 * scale,
+                  height: 56,
+                  child: OutlinedButton.icon(
+                    onPressed: () {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(
+                          content: Text('Apple 로그인은 준비 중이에요.'),
+                        ),
+                      );
+                    },
+                    style: OutlinedButton.styleFrom(
+                      backgroundColor: AppColors.systemBlack,
+                      foregroundColor: AppColors.white,
+                      side: BorderSide.none,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                    ),
+                    icon: const Icon(Icons.apple, size: 20),
+                    label: const Text('Apple로 시작하기'),
                   ),
                 ),
               ],

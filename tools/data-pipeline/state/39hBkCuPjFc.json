@@ -1,0 +1,234 @@
+{
+  "videoId": "39hBkCuPjFc",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://youtu.be/39hBkCuPjFc?si=OI7Cca9Dpzlr9BUM",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T09:32:13.288471+00:00",
+    "rawResponse": "{\n  \"title\": \"일매출 2000만원 대파닭구이\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"순살 닭다리 정육\",\n      \"displayName\": \"순살 닭다리 정육\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"첫번째는 순살 닭다리 정육을 준비하는건데\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"순살 닭다리 정육 2조각을 팬에 올려 조리함\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금만 뿌려주면 준비 끝이고\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"닭고기에 소금을 뿌려 밑간함\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": \"살짝\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 기름을 살짝 두르고\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 식용유를 두름\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 닭만큼\",\n      \"displayName\": \"대파\",\n      \"amount\": \"닭만큼\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파도 닭만큼 넣어주고\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"큼직하게 썬 대파를 팬에 넣음\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 2스푼\",\n      \"displayName\": \"간장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 2스푼\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1스푼\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1스푼\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕만 넣고\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"순살 닭다리 정육의 수분을 키친타월로 닦아내고 소금을 뿌려 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이걸 치킨타올로 닦아주고 소금만 뿌려주면 준비 끝이고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"키친타월로 닭다리살을 닦은 뒤 소금을 뿌림\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 기름을 살짝 두르고 닭다리살을 껍질부터 올려 앞뒤로 노릇하게 구워준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"두번째로는 팬에 기름을 살짝 두르고 껍질부터 넣고 닭다리살을 앞뒤로 노릇하게 구워주다가\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 기름을 두르고 닭 껍질 면부터 구운 후 뒤집음\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파를 닭고기 양만큼 넣고 한입 크기로 자른 뒤 골고루 노릇하게 굽는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파도 닭만큼 넣어주고 한입 사이즈로 자른다음 골고루 노릇하게 같이 구워주자\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"대파를 넣고 가위로 닭고기를 한입 크기로 자름\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"간장 2스푼, 굴소스 1스푼, 설탕 1스푼을 넣고 1분 정도 볶아 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 2스푼\\n굴소스 1스푼\\n설탕 1스푼\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"세번째로는 간장 굴소스 설탕만 넣고 1분 정도만 볶아주면 대파닭구이가 뚝딱인데\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양념을 넣고 골고루 볶아 졸여냄\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "일매출 2000만원 대파닭구이",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "순살 닭다리 정육",
+          "displayName": "순살 닭다리 정육",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "첫번째는 순살 닭다리 정육을 준비하는건데",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "순살 닭다리 정육 2조각을 팬에 올려 조리함",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "소금",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소금만 뿌려주면 준비 끝이고",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "닭고기에 소금을 뿌려 밑간함",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": "살짝",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 기름을 살짝 두르고",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 식용유를 두름",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "대파 닭만큼",
+          "displayName": "대파",
+          "amount": "닭만큼",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파도 닭만큼 넣어주고",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "큼직하게 썬 대파를 팬에 넣음",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "간장 2스푼",
+          "displayName": "간장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 2스푼",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "굴소스 1스푼",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1스푼",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "굴소스",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "설탕 1스푼",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1스푼",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕만 넣고",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "순살 닭다리 정육의 수분을 키친타월로 닦아내고 소금을 뿌려 준비한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이걸 치킨타올로 닦아주고 소금만 뿌려주면 준비 끝이고",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "키친타월로 닭다리살을 닦은 뒤 소금을 뿌림",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "팬에 기름을 살짝 두르고 닭다리살을 껍질부터 올려 앞뒤로 노릇하게 구워준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "두번째로는 팬에 기름을 살짝 두르고 껍질부터 넣고 닭다리살을 앞뒤로 노릇하게 구워주다가",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 기름을 두르고 닭 껍질 면부터 구운 후 뒤집음",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "대파를 닭고기 양만큼 넣고 한입 크기로 자른 뒤 골고루 노릇하게 굽는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파도 닭만큼 넣어주고 한입 사이즈로 자른다음 골고루 노릇하게 같이 구워주자",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "대파를 넣고 가위로 닭고기를 한입 크기로 자름",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "간장 2스푼, 굴소스 1스푼, 설탕 1스푼을 넣고 1분 정도 볶아 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 2스푼\n굴소스 1스푼\n설탕 1스푼",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "세번째로는 간장 굴소스 설탕만 넣고 1분 정도만 볶아주면 대파닭구이가 뚝딱인데",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양념을 넣고 골고루 볶아 졸여냄",
+              "timestamp": "00:25"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

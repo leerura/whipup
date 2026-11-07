@@ -1,0 +1,405 @@
+{
+  "videoId": "g768zA6Ep0E",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/g768zA6Ep0E",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:35:57.424194+00:00",
+    "rawResponse": "{\n  \"title\": \"얼큰한 국물파스타\",\n  \"description\": \"짬뽕인지 파스타인지 구분이 안 가는 얼큰하고 묵직한 맛의 국물 파스타\",\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"대패삼겹살 200g\",\n      \"displayName\": \"대패삼겹살\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 팬에 대패삼겹살을 200g 올려줍니다.\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 대패삼겹살을 200g 올려줍니다.\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 반개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"반\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 양파 반개를 대충 채 썰어서 올려준 뒤\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 양파 반개를 대충 채 썰어서 올려준 뒤\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진 마늘 1스푼을 넣고\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘 한 스푼을 넣고\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"시뻘건 고춧가루 1스푼을 골고루 흩뿌려주고\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"시뻘건 고춧가루 한 스푼을 골고루 흩뿌려주고\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 1스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"진간장 1스푼을 팬 빈 공간에 둘러준 뒤\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 한 스푼을 팬 빈 공간에 둘러준 뒤\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 종이컵 3컵 (약 560ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"종이컵 3컵 (약 560ml)\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 곧바로 물 종이컵 3컵(약 560ml)을 부어주고\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 곧바로 물 종이컵 세 컵을 부어주고\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 1스푼\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장 맛이 나는 고추장 1스푼과\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 맛이 나는 고추장 한 스푼과\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"토마토 스파게티 소스 3스푼 가득\",\n      \"displayName\": \"토마토 스파게티 소스\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼 가득\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이런 토메이토 스파게티 소스를 3스푼 가득 넣어줍니다.\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이런 토메이토 스파게티 소스를 세 스푼 가득 넣어줍니다.\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"스파게티 면 1인분 양\",\n      \"displayName\": \"스파게티 면\",\n      \"amount\": \"1\",\n      \"unit\": \"인분 양\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"스파게티 면을 1인분 양으로 넣어주고\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"스파게티 면을 일 인분 양으로 넣어주고\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"만약 국물이 너무 졸아든 것 같다 싶으면 물을 추가해 주시면 바로 해결됩니다.\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만약 국물이 너무 졸아든 것 같다 싶으면 물을 추가해 주시면 바로 해결됩니다.\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"알배추\",\n      \"displayName\": \"알배추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"알배추와 청경채까지 썰어서 넣어주면\",\n          \"timestamp\": \"00:59\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"없다면 당연히 생략하시면 됩니다.\",\n          \"timestamp\": \"01:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"알배추와 청경채까지 썰어서 넣어주면 없당 당연히 생략하시면 됩니다.\",\n          \"timestamp\": \"00:59\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청경채\",\n      \"displayName\": \"청경채\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"알배추와 청경채까지 썰어서 넣어주면\",\n          \"timestamp\": \"00:59\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"없다면 당연히 생략하시면 됩니다.\",\n          \"timestamp\": \"01:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"알배추와 청경채까지 썰어서 넣어주면 없당 당연히 생략하시면 됩니다.\",\n          \"timestamp\": \"00:59\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 살짝\",\n      \"displayName\": \"후추\",\n      \"amount\": \"살짝\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 후추만 살짝 뿌려주면\",\n          \"timestamp\": \"01:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 후추만 살짝 뿌려주면\",\n          \"timestamp\": \"01:08\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 대패삼겹살 200g을 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 팬에 대패삼겹살을 200g 올려줍니다.\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 대패삼겹살을 200g 올려줍니다.\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 반 개를 채 썰어 팬에 올리고, 다진 마늘 1스푼을 넣고 함께 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 양파 반개를 대충 채 썰어서 올려준 뒤 다진 마늘 1스푼을 넣고 다 같이 한번 볶아줍니다.\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 양파 반개를 대충 채 썰어서 올려준 뒤 다진 마늘 한 스푼을 넣고 다 같이 한번 볶아줍니다.\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대패삼겹살이 익고 갈색빛이 돌면 고춧가루 1스푼을 골고루 뿌리고, 팬의 빈 공간에 진간장 1스푼을 둘러 10초간 빠르게 볶아 고춧가루의 풋내를 날리고 간장 향을 더한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 대패 삼겹살도 맛있게 익고 전체적으로 갈색빛이 띤다면 시뻘건 고춧가루 1스푼을 골고루 흩뿌려주고 진간장 1스푼을 팬 빈 공간에 둘러준 뒤 빠르게 10초간 볶아주면서 고춧가루의 풋내도 날리고 간장 향도 더해줍니다.\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 대패 삼겹살도 맛있게 익고 전체적으로 갈색빛이 띤다면 시뻘건 고춧가루 한 스푼을 골고루 흩뿌려주고 진간장 한 스푼을 팬 빈 공간에 둘러준 뒤 빠르게 10초간 볶아주면서 고춧가루의 풋내도 날리고 간장 향도 더해줍니다.\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 종이컵 3컵(약 560ml)을 붓고 고추장 1스푼과 토마토 스파게티 소스 3스푼 가득 넣어 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 곧바로 물 종이컵 3컵(약 560ml)을 부어주고 고추장 맛이 나는 고추장 1스푼과 이런 토메이토 스파게티 소스를 3스푼 가득 넣어줍니다.\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 곧바로 물 종이컵 세 컵을 부어주고 고추장 맛이 나는 고추장 한 스푼과 이런 토메이토 스파게티 소스를 세 스푼 가득 넣어줍니다.\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국물이 끓기 시작하면 스파게티 면 1인분을 넣고 면이 익을 때까지 푹 끓인다 (뚜껑을 덮고 끓이면 시간을 단축할 수 있으며, 국물이 너무 졸아들면 물을 추가한다).\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 물이 보글보글 끓기 시작하면 스파게티 면을 1인분 양으로 넣어주고 면이 익을 때까지 푹 끓여주시면 됩니다. 이때 뚜껑 덮고 끓여주게 되면 면 익히는 시간을 단축시킬 수 있고 만약 국물이 너무 졸아든 것 같다 싶으면 물을 추가해 주시면 바로 해결됩니다.\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 물이 보글보글 끓기 시작하면 스파게티 면을 일 인분 양으로 넣어주고 면이 익을 때까지 푹 끓여주시면 됩니다. 이때 뚜껑 덮고 끓여주게 되면 면 익히는 시간을 단축시킬 수 있고 만약 국물이 너무 졸아든 것 같다 싶으면 물을 추가해 주시면 바로 해결됩니다.\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"면이 다 익기 2~3분 전에 썬 알배추와 청경채를 넣어준다 (생략 가능).\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"면이 다 익기 2~3분 전에 알배추와 청경채까지 썰어서 넣어주면 평범했던 국물 파스타가 짬뽕 같은 스타일로 바뀌게 될 겁니다. 없다면 당연히 생략하시면 됩니다.\",\n          \"timestamp\": \"00:58\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"면이 다 익기 이삼 분 전에 알배추와 청경채까지 썰어서 넣어주면 평범했던 국물 파스타가 짬뽕 같은 스타일로 바뀌게 될 겁니다. 없다면 당연히 생략하시면 됩니다.\",\n          \"timestamp\": \"00:58\"\n        }\n      ]\n    },\n    {\n      \"text\": \"면이 다 익으면 마지막으로 후추를 살짝 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"면이 다 익었을 때쯤에 마지막으로 후추만 살짝 뿌려주면 이게 파스타인지 짬뽕인지 구분이 안 가는 얼큰한 국물 파스타가 완성됩니다.\",\n          \"timestamp\": \"01:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"면이 다 익었을 때쯤에 마지막으로 후추만 살짝 뿌려주면 이게 파스타인지 짬뽕인지 구분이 안 가는 얼큰한 국물 파스타가 완성됩니다.\",\n          \"timestamp\": \"01:07\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "얼큰한 국물파스타",
+      "description": "짬뽕인지 파스타인지 구분이 안 가는 얼큰하고 묵직한 맛의 국물 파스타",
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "대패삼겹살 200g",
+          "displayName": "대패삼겹살",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 팬에 대패삼겹살을 200g 올려줍니다.",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 대패삼겹살을 200g 올려줍니다.",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파 반개",
+          "displayName": "양파",
+          "amount": "반",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 양파 반개를 대충 채 썰어서 올려준 뒤",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 양파 반개를 대충 채 썰어서 올려준 뒤",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "다진 마늘 1스푼",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다진 마늘 1스푼을 넣고",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘 한 스푼을 넣고",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "고춧가루 1스푼",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "시뻘건 고춧가루 1스푼을 골고루 흩뿌려주고",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "시뻘건 고춧가루 한 스푼을 골고루 흩뿌려주고",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "진간장 1스푼",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "진간장 1스푼을 팬 빈 공간에 둘러준 뒤",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장 한 스푼을 팬 빈 공간에 둘러준 뒤",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "물 종이컵 3컵 (약 560ml)",
+          "displayName": "물",
+          "amount": "종이컵 3컵 (약 560ml)",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 곧바로 물 종이컵 3컵(약 560ml)을 부어주고",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 곧바로 물 종이컵 세 컵을 부어주고",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "고추장 1스푼",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고추장 맛이 나는 고추장 1스푼과",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장 맛이 나는 고추장 한 스푼과",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "토마토 스파게티 소스 3스푼 가득",
+          "displayName": "토마토 스파게티 소스",
+          "amount": "3",
+          "unit": "스푼 가득",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이런 토메이토 스파게티 소스를 3스푼 가득 넣어줍니다.",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이런 토메이토 스파게티 소스를 세 스푼 가득 넣어줍니다.",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "스파게티 면 1인분 양",
+          "displayName": "스파게티 면",
+          "amount": "1",
+          "unit": "인분 양",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "스파게티 면을 1인분 양으로 넣어주고",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "SPEECH",
+              "text": "스파게티 면을 일 인분 양으로 넣어주고",
+              "timestamp": "00:43"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "물",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "만약 국물이 너무 졸아든 것 같다 싶으면 물을 추가해 주시면 바로 해결됩니다.",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "SPEECH",
+              "text": "만약 국물이 너무 졸아든 것 같다 싶으면 물을 추가해 주시면 바로 해결됩니다.",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "알배추",
+          "displayName": "알배추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "알배추와 청경채까지 썰어서 넣어주면",
+              "timestamp": "00:59"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "없다면 당연히 생략하시면 됩니다.",
+              "timestamp": "01:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "알배추와 청경채까지 썰어서 넣어주면 없당 당연히 생략하시면 됩니다.",
+              "timestamp": "00:59"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "청경채",
+          "displayName": "청경채",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "알배추와 청경채까지 썰어서 넣어주면",
+              "timestamp": "00:59"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "없다면 당연히 생략하시면 됩니다.",
+              "timestamp": "01:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "알배추와 청경채까지 썰어서 넣어주면 없당 당연히 생략하시면 됩니다.",
+              "timestamp": "00:59"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "후추 살짝",
+          "displayName": "후추",
+          "amount": "살짝",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 후추만 살짝 뿌려주면",
+              "timestamp": "01:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 후추만 살짝 뿌려주면",
+              "timestamp": "01:08"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 대패삼겹살 200g을 올린다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 팬에 대패삼겹살을 200g 올려줍니다.",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 대패삼겹살을 200g 올려줍니다.",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "양파 반 개를 채 썰어 팬에 올리고, 다진 마늘 1스푼을 넣고 함께 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 양파 반개를 대충 채 썰어서 올려준 뒤 다진 마늘 1스푼을 넣고 다 같이 한번 볶아줍니다.",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 양파 반개를 대충 채 썰어서 올려준 뒤 다진 마늘 한 스푼을 넣고 다 같이 한번 볶아줍니다.",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "대패삼겹살이 익고 갈색빛이 돌면 고춧가루 1스푼을 골고루 뿌리고, 팬의 빈 공간에 진간장 1스푼을 둘러 10초간 빠르게 볶아 고춧가루의 풋내를 날리고 간장 향을 더한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 대패 삼겹살도 맛있게 익고 전체적으로 갈색빛이 띤다면 시뻘건 고춧가루 1스푼을 골고루 흩뿌려주고 진간장 1스푼을 팬 빈 공간에 둘러준 뒤 빠르게 10초간 볶아주면서 고춧가루의 풋내도 날리고 간장 향도 더해줍니다.",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 대패 삼겹살도 맛있게 익고 전체적으로 갈색빛이 띤다면 시뻘건 고춧가루 한 스푼을 골고루 흩뿌려주고 진간장 한 스푼을 팬 빈 공간에 둘러준 뒤 빠르게 10초간 볶아주면서 고춧가루의 풋내도 날리고 간장 향도 더해줍니다.",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "물 종이컵 3컵(약 560ml)을 붓고 고추장 1스푼과 토마토 스파게티 소스 3스푼 가득 넣어 섞어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 곧바로 물 종이컵 3컵(약 560ml)을 부어주고 고추장 맛이 나는 고추장 1스푼과 이런 토메이토 스파게티 소스를 3스푼 가득 넣어줍니다.",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 곧바로 물 종이컵 세 컵을 부어주고 고추장 맛이 나는 고추장 한 스푼과 이런 토메이토 스파게티 소스를 세 스푼 가득 넣어줍니다.",
+              "timestamp": "00:33"
+            }
+          ]
+        },
+        {
+          "text": "국물이 끓기 시작하면 스파게티 면 1인분을 넣고 면이 익을 때까지 푹 끓인다 (뚜껑을 덮고 끓이면 시간을 단축할 수 있으며, 국물이 너무 졸아들면 물을 추가한다).",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 물이 보글보글 끓기 시작하면 스파게티 면을 1인분 양으로 넣어주고 면이 익을 때까지 푹 끓여주시면 됩니다. 이때 뚜껑 덮고 끓여주게 되면 면 익히는 시간을 단축시킬 수 있고 만약 국물이 너무 졸아든 것 같다 싶으면 물을 추가해 주시면 바로 해결됩니다.",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 물이 보글보글 끓기 시작하면 스파게티 면을 일 인분 양으로 넣어주고 면이 익을 때까지 푹 끓여주시면 됩니다. 이때 뚜껑 덮고 끓여주게 되면 면 익히는 시간을 단축시킬 수 있고 만약 국물이 너무 졸아든 것 같다 싶으면 물을 추가해 주시면 바로 해결됩니다.",
+              "timestamp": "00:41"
+            }
+          ]
+        },
+        {
+          "text": "면이 다 익기 2~3분 전에 썬 알배추와 청경채를 넣어준다 (생략 가능).",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "면이 다 익기 2~3분 전에 알배추와 청경채까지 썰어서 넣어주면 평범했던 국물 파스타가 짬뽕 같은 스타일로 바뀌게 될 겁니다. 없다면 당연히 생략하시면 됩니다.",
+              "timestamp": "00:58"
+            },
+            {
+              "type": "SPEECH",
+              "text": "면이 다 익기 이삼 분 전에 알배추와 청경채까지 썰어서 넣어주면 평범했던 국물 파스타가 짬뽕 같은 스타일로 바뀌게 될 겁니다. 없다면 당연히 생략하시면 됩니다.",
+              "timestamp": "00:58"
+            }
+          ]
+        },
+        {
+          "text": "면이 다 익으면 마지막으로 후추를 살짝 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "면이 다 익었을 때쯤에 마지막으로 후추만 살짝 뿌려주면 이게 파스타인지 짬뽕인지 구분이 안 가는 얼큰한 국물 파스타가 완성됩니다.",
+              "timestamp": "01:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "면이 다 익었을 때쯤에 마지막으로 후추만 살짝 뿌려주면 이게 파스타인지 짬뽕인지 구분이 안 가는 얼큰한 국물 파스타가 완성됩니다.",
+              "timestamp": "01:07"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "videoId": "UZE6zJH3M-4",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/UZE6zJH3M-4",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T16:26:24.552186+00:00",
+    "rawResponse": "{\n  \"title\": \"미역국, 딱 이것 하나만 바꾸면 맛이 100% 달라집니다!\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"국간장\",\n      \"displayName\": \"국간장\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장 + 참치액 반 스푼\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치액 반 스푼\",\n      \"displayName\": \"참치액\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장 + 참치액 반 스푼\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"미역\",\n      \"displayName\": \"미역\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"미역과 고기를 먼저 볶고 물 붓기\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고기\",\n      \"displayName\": \"고기\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"미역과 고기를 먼저 볶고 물 붓기\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"미역과 고기를 먼저 볶고 물 붓기\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"미역은 참기름 말고 식용유로 볶기\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 간은 마지막에 하기\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"미역은 10~15분만 불려줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"미역은 10~15분만 불리기 (너무 오래 불리면 식감과 향이 떨어집니다.)\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"미역과 고기를 참기름 대신 식용유로 먼저 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"미역과 고기를 먼저 볶고 물 붓기\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"미역은 참기름 말고 식용유로 볶기 (국물이 더 깔끔하고 깊은 맛이 살아납니다.)\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물을 붓고 끓입니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"미역과 고기를 먼저 볶고 물 붓기 (깊고 진한 국물 맛의 핵심입니다.)\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국간장과 참치액 반 스푼을 넣어 감칠맛을 더합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장 + 참치액 반 스푼 (감칠맛이 살아나 식당 미역국 맛이 납니다.)\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마지막에 소금으로 간을 맞춥니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 간은 마지막에 하기 (간이 깔끔하고 미역 본연의 맛이 살아납니다.)\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"정확한 국간장, 고기, 미역, 식용유, 물, 소금의 정량은 명시되어 있지 않습니다.\"\n  ]\n}",
+    "result": {
+      "title": "미역국, 딱 이것 하나만 바꾸면 맛이 100% 달라집니다!",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "국간장",
+          "displayName": "국간장",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장 + 참치액 반 스푼",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "참치액 반 스푼",
+          "displayName": "참치액",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장 + 참치액 반 스푼",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "미역",
+          "displayName": "미역",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "미역과 고기를 먼저 볶고 물 붓기",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "고기",
+          "displayName": "고기",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "미역과 고기를 먼저 볶고 물 붓기",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "물",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "미역과 고기를 먼저 볶고 물 붓기",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "미역은 참기름 말고 식용유로 볶기",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "소금",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 간은 마지막에 하기",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "미역은 10~15분만 불려줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "미역은 10~15분만 불리기 (너무 오래 불리면 식감과 향이 떨어집니다.)",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "미역과 고기를 참기름 대신 식용유로 먼저 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "미역과 고기를 먼저 볶고 물 붓기",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "미역은 참기름 말고 식용유로 볶기 (국물이 더 깔끔하고 깊은 맛이 살아납니다.)",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "물을 붓고 끓입니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "미역과 고기를 먼저 볶고 물 붓기 (깊고 진한 국물 맛의 핵심입니다.)",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "국간장과 참치액 반 스푼을 넣어 감칠맛을 더합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장 + 참치액 반 스푼 (감칠맛이 살아나 식당 미역국 맛이 납니다.)",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "마지막에 소금으로 간을 맞춥니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 간은 마지막에 하기 (간이 깔끔하고 미역 본연의 맛이 살아납니다.)",
+              "timestamp": "00:00"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "정확한 국간장, 고기, 미역, 식용유, 물, 소금의 정량은 명시되어 있지 않습니다."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

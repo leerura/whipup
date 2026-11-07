@@ -38,6 +38,11 @@ public class AuthService {
 		boolean hasOwnedIngredients = userIngredientRepository.existsByUser_Id(user.getId());
 		String accessToken = jwtTokenProvider.issueAccessToken(user.getId());
 
-		return new LoginResult(accessToken, user.getId(), hasOwnedIngredients);
+		return new LoginResult(
+				accessToken,
+				user.getId(),
+				hasOwnedIngredients,
+				user.isOnboardingCompleted()
+		);
 	}
 }

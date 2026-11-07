@@ -1,0 +1,379 @@
+{
+  "videoId": "90sO7IqfGvo",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://youtu.be/90sO7IqfGvo?si=N3wNumh17LraBtO3",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T09:43:25.587891+00:00",
+    "rawResponse": "{\n  \"title\": \"팽이버섯 덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"팽이버섯 1봉(100g)\",\n      \"displayName\": \"팽이버섯\",\n      \"amount\": \"1\",\n      \"unit\": \"봉(100g)\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팽이버섯 1봉(100g)\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"가성비 짱인 팽이버섯으로\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리브오일 1\",\n      \"displayName\": \"올리브오일\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"올리브오일 1\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 올리브오일 1스푼을 두름\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 1\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 다진 마늘 한 스푼이랑\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/2\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/2\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 반 개 넣고 볶다가\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 2\",\n      \"displayName\": \"간장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 2\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장이랑 물 두 스푼\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 2\",\n      \"displayName\": \"물\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 2\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장이랑 물 두 스푼\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 1(선택)\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 1(선택)\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술이랑\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치액 0.5\",\n      \"displayName\": \"참치액\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치액 0.5\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치액 반 스푼도 넣어줘\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 하나\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"중간에 구멍 뽕! 계란 하나 톡\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"가운데에 계란 1개를 깨 넣음\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추 하나\",\n      \"displayName\": \"고추\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"깜~빡한 고추 하나도 썰어 넣어줘\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"초록 고추 1개를 송송 썰어 팬에 넣음\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 담긴 밥 위에 볶은 재료를 얹음\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름\",\n      \"displayName\": \"참기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고소하게 참기름 뿌려\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 덮밥 위에 참기름을 두름\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란 위에 후추를 뿌림\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"덮밥 위에 통깨를 뿌림\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팽이버섯의 밑동을 잘라내고 먹기 좋은 크기로 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팽이버섯 밑동을 자르고 반으로 썬다\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 올리브오일 1스푼, 다진 마늘 1스푼, 채 썬 양파 반 개를 넣고 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"올리브오일 1 / 다진 마늘 1 / 양파 1/2\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 다진 마늘 한 스푼이랑 양파 반 개 넣고 볶다가\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"손질한 팽이버섯을 넣고 숨이 죽을 때까지 함께 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팽이버섯도 넣고 볶아줘 버섯 숨 죽으면\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬 한쪽에 간장 2스푼, 물 2스푼, 맛술 1스푼(선택), 참치액 0.5스푼을 넣고 소스를 살짝 끓이다가 버섯과 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 2 / 물 2 / 맛술 1(선택) / 참치액 0.5\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장이랑 물 두 스푼 맛술이랑 감칠맛 더해줄 포인트 참치액 반 스푼도 넣어줘 소스 살짝 끓이다가 섞어주고\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"가운데에 공간을 만들어 계란을 넣고, 쫑쫑 썬 고추를 주변에 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"중간에 구멍 뽕! 계란 하나 톡 뚜껑 덮기 전에 깜~빡한 고추 하나도 썰어 넣어줘\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뚜껑을 덮고 약불로 계란을 천천히 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"약불로 계란 천천히 익힌 다음\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 위에 올리고 참기름, 후추, 통깨를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고소하게 참기름 뿌려 푹 떠서 한입 먹어보면\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 올린 뒤 참기름, 통깨, 후추를 뿌려 완성\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "팽이버섯 덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "팽이버섯 1봉(100g)",
+          "displayName": "팽이버섯",
+          "amount": "1",
+          "unit": "봉(100g)",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팽이버섯 1봉(100g)",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "가성비 짱인 팽이버섯으로",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "올리브오일 1",
+          "displayName": "올리브오일",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "올리브오일 1",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 올리브오일 1스푼을 두름",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "다진 마늘 1",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 1",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 다진 마늘 한 스푼이랑",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양파 1/2",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/2",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파 반 개 넣고 볶다가",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "간장 2",
+          "displayName": "간장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 2",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장이랑 물 두 스푼",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "물 2",
+          "displayName": "물",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 2",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장이랑 물 두 스푼",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "맛술 1(선택)",
+          "displayName": "맛술",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 1(선택)",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "맛술이랑",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "참치액 0.5",
+          "displayName": "참치액",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치액 0.5",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참치액 반 스푼도 넣어줘",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "계란 하나",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "중간에 구멍 뽕! 계란 하나 톡",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "가운데에 계란 1개를 깨 넣음",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "고추 하나",
+          "displayName": "고추",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "깜~빡한 고추 하나도 썰어 넣어줘",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "초록 고추 1개를 송송 썰어 팬에 넣음",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 담긴 밥 위에 볶은 재료를 얹음",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "참기름",
+          "displayName": "참기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고소하게 참기름 뿌려",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 덮밥 위에 참기름을 두름",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란 위에 후추를 뿌림",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "덮밥 위에 통깨를 뿌림",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팽이버섯의 밑동을 잘라내고 먹기 좋은 크기로 썬다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팽이버섯 밑동을 자르고 반으로 썬다",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "팬에 올리브오일 1스푼, 다진 마늘 1스푼, 채 썬 양파 반 개를 넣고 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "올리브오일 1 / 다진 마늘 1 / 양파 1/2",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 다진 마늘 한 스푼이랑 양파 반 개 넣고 볶다가",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "손질한 팽이버섯을 넣고 숨이 죽을 때까지 함께 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팽이버섯도 넣고 볶아줘 버섯 숨 죽으면",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "팬 한쪽에 간장 2스푼, 물 2스푼, 맛술 1스푼(선택), 참치액 0.5스푼을 넣고 소스를 살짝 끓이다가 버섯과 섞어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 2 / 물 2 / 맛술 1(선택) / 참치액 0.5",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장이랑 물 두 스푼 맛술이랑 감칠맛 더해줄 포인트 참치액 반 스푼도 넣어줘 소스 살짝 끓이다가 섞어주고",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "가운데에 공간을 만들어 계란을 넣고, 쫑쫑 썬 고추를 주변에 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "중간에 구멍 뽕! 계란 하나 톡 뚜껑 덮기 전에 깜~빡한 고추 하나도 썰어 넣어줘",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "뚜껑을 덮고 약불로 계란을 천천히 익힌다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "약불로 계란 천천히 익힌 다음",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "밥 위에 올리고 참기름, 후추, 통깨를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고소하게 참기름 뿌려 푹 떠서 한입 먹어보면",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 올린 뒤 참기름, 통깨, 후추를 뿌려 완성",
+              "timestamp": "00:26"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

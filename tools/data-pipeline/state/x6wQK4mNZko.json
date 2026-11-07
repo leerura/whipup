@@ -1,0 +1,200 @@
+{
+  "videoId": "x6wQK4mNZko",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/x6wQK4mNZko",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:44:35.843076+00:00",
+    "rawResponse": "{\n  \"title\": \"3분 만에 만드는 역대급 밥도둑 참치 레시피\",\n  \"description\": \"참치캔과 간단한 양념을 섞어 밥 위에 얹어 먹는 초간단 비빔참치 레시피입니다.\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"참치 1캔\",\n      \"displayName\": \"참치\",\n      \"amount\": \"1\",\n      \"unit\": \"캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 참치 1캔에\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 참치 1캔에\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 1스푼\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"간장 1스푼\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 1스푼\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"알룰로스 0.5스푼 (설탕/꿀/올리고당/물엿 가능)\",\n      \"displayName\": \"알룰로스\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"알룰로스 0.5스푼\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(설탕/꿀/올리고당/물엿 가능)\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"알룰로스 0.5스푼\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 0.5스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루 0.5스푼\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 0.5스푼\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 100g\",\n      \"displayName\": \"밥\",\n      \"amount\": \"100\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 밥 100g에\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 밥 100g에\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김가루도 뿌리면 더 맛있어요\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김가루도 뿌리면 더 맛있어요\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"참치 1캔에 간장 1스푼, 알룰로스 0.5스푼(설탕, 꿀, 올리고당, 물엿 대체 가능), 고춧가루 0.5스푼을 넣고 골고루 섞어 비빔참치를 만듭니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 참치 1캔에 간장 1스푼 알룰로스 0.5스푼 고춧가루 0.5스푼 골고루 섞어주세요\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 참치, 간장, 알룰로스, 고춧가루를 넣고 숟가락으로 섞음\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 100g 위에 비빔참치를 듬뿍 올려줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 밥 100g에 비빔참치 듬뿍\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 담긴 밥 100g 위에 양념한 비빔참치를 올림\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"취향에 따라 김가루를 뿌려 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김가루도 뿌리면 더 맛있어요\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"비빔참치 위에 김가루를 뿌림\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "3분 만에 만드는 역대급 밥도둑 참치 레시피",
+      "description": "참치캔과 간단한 양념을 섞어 밥 위에 얹어 먹는 초간단 비빔참치 레시피입니다.",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "참치 1캔",
+          "displayName": "참치",
+          "amount": "1",
+          "unit": "캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 참치 1캔에",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 참치 1캔에",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "간장 1스푼",
+          "displayName": "간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "간장 1스푼",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장 1스푼",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "알룰로스 0.5스푼 (설탕/꿀/올리고당/물엿 가능)",
+          "displayName": "알룰로스",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "알룰로스 0.5스푼",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(설탕/꿀/올리고당/물엿 가능)",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "알룰로스 0.5스푼",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "고춧가루 0.5스푼",
+          "displayName": "고춧가루",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루 0.5스푼",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 0.5스푼",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "밥 100g",
+          "displayName": "밥",
+          "amount": "100",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 밥 100g에",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 밥 100g에",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "김가루",
+          "displayName": "김가루",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "김가루도 뿌리면 더 맛있어요",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "김가루도 뿌리면 더 맛있어요",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        }
+      ],
+      "steps": [
+        {
+          "text": "참치 1캔에 간장 1스푼, 알룰로스 0.5스푼(설탕, 꿀, 올리고당, 물엿 대체 가능), 고춧가루 0.5스푼을 넣고 골고루 섞어 비빔참치를 만듭니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 참치 1캔에 간장 1스푼 알룰로스 0.5스푼 고춧가루 0.5스푼 골고루 섞어주세요",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 참치, 간장, 알룰로스, 고춧가루를 넣고 숟가락으로 섞음",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "밥 100g 위에 비빔참치를 듬뿍 올려줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 밥 100g에 비빔참치 듬뿍",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 담긴 밥 100g 위에 양념한 비빔참치를 올림",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "취향에 따라 김가루를 뿌려 완성합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "김가루도 뿌리면 더 맛있어요",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "비빔참치 위에 김가루를 뿌림",
+              "timestamp": "00:11"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

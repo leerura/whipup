@@ -1,0 +1,299 @@
+{
+  "videoId": "3mPwNQ-WiNs",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://youtu.be/3mPwNQ-WiNs?si=3OM4OJJBK0Uh5dhA",
+  "pipelineVersion": 2,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-24T09:29:37.807935+00:00",
+    "rawResponse": "{\n  \"title\": \"규동\",\n  \"description\": \"설탕, 진간장, 미림, 굴소스를 활용한 만능 일식 덮밥 양념장 베이스로 우삼겹과 양파를 볶아 만드는 초간단 규동 레시피입니다.\",\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"설탕 1스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"[양념레시피] 설탕 1스푼\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 2스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 2스푼\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"미림(맛술) 2스푼\",\n      \"displayName\": \"미림(맛술)\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"미림(맛술) 2스푼\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"미림\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 반스푼\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 반스푼\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스 정도만 넣으면\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"+ 물 2~3스푼\",\n      \"displayName\": \"물\",\n      \"amount\": \"2~3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 물 2~3스푼\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우삼겹\",\n      \"displayName\": \"우삼겹\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우삼겹으로 만들면 규동까지\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 우삼겹을 넣어 볶음\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+ 양파 1kg: 2,290원\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"채 썬 양파를 팬에 넣어 볶음\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란을 깨서 흰자와 노른자로 분리함\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(흰자는 버리지말고)\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"덮밥 그릇에 밥이 담겨 있음\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파\",\n      \"displayName\": \"파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"송송 썬 파를 고명으로 올림\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"통깨를 고명으로 뿌림\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"계란 1개를 깨서 노른자와 흰자를 따로 분리해 둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란을 깨뜨려 흰자와 노른자를 각각 볼에 분리함\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 설탕 1스푼, 진간장 2스푼, 미림(맛술) 2스푼, 굴소스 반스푼, 물 2~3스푼을 넣고 잘 섞어 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"[양념레시피] 설탕 1스푼, 진간장 2스푼, 미림(맛술) 2스푼, 굴소스 반스푼, + 물 2~3스푼\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볼에 설탕, 간장, 미림, 굴소스를 넣고 숟가락으로 저어 섞음\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"달군 팬에 우삼겹을 넣고 볶다가 채 썬 양파를 넣어 함께 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 우삼겹을 넣고 젓가락으로 볶다가 채 썬 양파를 투하함\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"준비한 양념장을 붓고 끓이다가, 분리해 둔 계란 흰자를 부어 함께 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 양념 소스를 붓고 계란 흰자를 둘러 넣은 뒤 살짝 저어 익힘\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(흰자는 버리지말고)\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 밥을 담고 볶아낸 우삼겹과 소스를 밥 위에 얹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 집게로 고기를 얹고 숟가락으로 남은 소스를 끼얹음\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"송송 썬 파와 통깨를 뿌리고, 가운데에 분리해 둔 계란 노른자를 올려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"파와 통깨가 올라간 덮밥 중앙에 계란 노른자를 얹어 완성\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "규동",
+      "description": "설탕, 진간장, 미림, 굴소스를 활용한 만능 일식 덮밥 양념장 베이스로 우삼겹과 양파를 볶아 만드는 초간단 규동 레시피입니다.",
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "설탕 1스푼",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "[양념레시피] 설탕 1스푼",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "진간장 2스푼",
+          "displayName": "진간장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 2스푼",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "미림(맛술) 2스푼",
+          "displayName": "미림(맛술)",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "미림(맛술) 2스푼",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "미림",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "굴소스 반스푼",
+          "displayName": "굴소스",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 반스푼",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "굴소스 정도만 넣으면",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "+ 물 2~3스푼",
+          "displayName": "물",
+          "amount": "2~3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 물 2~3스푼",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "우삼겹",
+          "displayName": "우삼겹",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "우삼겹으로 만들면 규동까지",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 우삼겹을 넣어 볶음",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+ 양파 1kg: 2,290원",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "채 썬 양파를 팬에 넣어 볶음",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "계란",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란을 깨서 흰자와 노른자로 분리함",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(흰자는 버리지말고)",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "덮밥 그릇에 밥이 담겨 있음",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "파",
+          "displayName": "파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "송송 썬 파를 고명으로 올림",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "통깨를 고명으로 뿌림",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "계란 1개를 깨서 노른자와 흰자를 따로 분리해 둔다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란을 깨뜨려 흰자와 노른자를 각각 볼에 분리함",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "볼에 설탕 1스푼, 진간장 2스푼, 미림(맛술) 2스푼, 굴소스 반스푼, 물 2~3스푼을 넣고 잘 섞어 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "[양념레시피] 설탕 1스푼, 진간장 2스푼, 미림(맛술) 2스푼, 굴소스 반스푼, + 물 2~3스푼",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볼에 설탕, 간장, 미림, 굴소스를 넣고 숟가락으로 저어 섞음",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "달군 팬에 우삼겹을 넣고 볶다가 채 썬 양파를 넣어 함께 볶는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 우삼겹을 넣고 젓가락으로 볶다가 채 썬 양파를 투하함",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "준비한 양념장을 붓고 끓이다가, 분리해 둔 계란 흰자를 부어 함께 익힌다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 양념 소스를 붓고 계란 흰자를 둘러 넣은 뒤 살짝 저어 익힘",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(흰자는 버리지말고)",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 밥을 담고 볶아낸 우삼겹과 소스를 밥 위에 얹는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 집게로 고기를 얹고 숟가락으로 남은 소스를 끼얹음",
+              "timestamp": "00:00"
+            }
+          ]
+        },
+        {
+          "text": "송송 썬 파와 통깨를 뿌리고, 가운데에 분리해 둔 계란 노른자를 올려 완성한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "파와 통깨가 올라간 덮밥 중앙에 계란 노른자를 얹어 완성",
+              "timestamp": "00:02"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "videoId": "hHrrHEJFNQQ",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/hHrrHEJFNQQ",
+  "sourceMetadata": {"sourceTitle":"짭쪼름한 맛이 일품인 간장우동 | 탱탱한 면의 식감을 느끼며 먹는 국물없는우동 | 입맛없을 때 초간단하게 만들어서 먹어보자!!","sourceChannelName":"한끼대첩:간단한 요리 레시피","sourceChannelId":null,"sourceMetadataFetchedAt":"2026-10-27T11:29:30.742212Z"},
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-27T08:01:03.095706+00:00",
+    "rawResponse": "{\n  \"title\": \"여름엔 차가운 우동\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"우동사리\",\n      \"displayName\": \"우동사리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"우동사리 끓여주고\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우동사리 끓여주고\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"얼음물\",\n      \"displayName\": \"얼음물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"얼음물에 씻어주고\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"얼음물에 씻어주고\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"ev реальноces\": null,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 넣고\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파 넣고\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김가루 넣고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김가루 넣고\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란노른자\",\n      \"displayName\": \"계란노른자\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란노른자 넣고\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란노른자 넣고\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란 노른자 1개를 우동 위에 올린다.\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 2스푼\",\n      \"displayName\": \"물\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 2스푼에\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 2스푼에\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쯔유 1스푼\",\n      \"displayName\": \"쯔유\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쯔유 1스푼 넣어\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"쯔유 1스푼 넣어\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"우동사리를 끓는 물에 삶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"우동사리 끓여주고\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우동사리 끓여주고\",\n          \"timestamp\": \"00:01\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삶은 우동사리를 얼음물에 헹궈 차갑게 씻어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"얼음물에 씻어주고\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"얼음물에 씻어주고\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 면을 담고 대파, 김가루, 계란 노른자를 차례로 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 넣고\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김가루 넣고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란노른자 넣고\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 2스푼에 쯔유 1스푼을 섞어 육수를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 2스푼에 쯔유 1스푼 넣어 육수 만들고\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 2스푼에 쯔유 1스푼 넣어 육수 만들고\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 육수를 면 주위에 둘러 뿌려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"면 주위에 뿌려주면 끝!!\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"면 주위에 뿌려주면 끝\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "여름엔 차가운 우동",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "우동사리",
+          "displayName": "우동사리",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "우동사리 끓여주고",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "SPEECH",
+              "text": "우동사리 끓여주고",
+              "timestamp": "00:01"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "얼음물",
+          "displayName": "얼음물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "얼음물에 씻어주고",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "얼음물에 씻어주고",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "ev реальноces": null,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 넣고",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파 넣고",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "김가루",
+          "displayName": "김가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김가루 넣고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "김가루 넣고",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "계란노른자",
+          "displayName": "계란노른자",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란노른자 넣고",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란노른자 넣고",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란 노른자 1개를 우동 위에 올린다.",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "물 2스푼",
+          "displayName": "물",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 2스푼에",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 2스푼에",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "쯔유 1스푼",
+          "displayName": "쯔유",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쯔유 1스푼 넣어",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "쯔유 1스푼 넣어",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "우동사리를 끓는 물에 삶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "우동사리 끓여주고",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "SPEECH",
+              "text": "우동사리 끓여주고",
+              "timestamp": "00:01"
+            }
+          ]
+        },
+        {
+          "text": "삶은 우동사리를 얼음물에 헹궈 차갑게 씻어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "얼음물에 씻어주고",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "얼음물에 씻어주고",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 면을 담고 대파, 김가루, 계란 노른자를 차례로 올린다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 넣고",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김가루 넣고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란노른자 넣고",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "물 2스푼에 쯔유 1스푼을 섞어 육수를 만든다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 2스푼에 쯔유 1스푼 넣어 육수 만들고",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 2스푼에 쯔유 1스푼 넣어 육수 만들고",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "완성된 육수를 면 주위에 둘러 뿌려준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "면 주위에 뿌려주면 끝!!",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "면 주위에 뿌려주면 끝",
+              "timestamp": "00:10"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

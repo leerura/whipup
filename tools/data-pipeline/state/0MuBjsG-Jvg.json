@@ -1,0 +1,307 @@
+{
+  "videoId": "0MuBjsG-Jvg",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://youtu.be/0MuBjsG-Jvg?si=3iOk5fHNn2RYGkcQ",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-10-25T07:22:37.757494+00:00",
+    "rawResponse": "{\n  \"title\": \"엄마집밥 생각나는 급식대가 된장찌개\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"들기름이나 참기름\",\n      \"displayName\": \"들기름이나 참기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"저는 된장을 들기름이나 참기름에 살짝 한번 볶을 거예요.\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"뚝배기에 기름을 두름\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마늘\",\n      \"displayName\": \"마늘\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마늘 넣고\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"다진 마늘을 냄비에 넣음\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"된장 두 큰술\",\n      \"displayName\": \"된장\",\n      \"amount\": \"2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"된장 두 큰술\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"된장을 숟가락으로 냄비에 넣음\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"동전처럼 생긴 육수\",\n      \"displayName\": \"동전 육수(코인 육수)\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이렇게 동전처럼 생긴 육수 있죠\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"동전 육수 한 개를 냄비에 넣음\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 600ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"600\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 600에\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 600ml에\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비에 물을 부음\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"야채\",\n      \"displayName\": \"야채 (애호박, 양파 등)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"야채 같이 다 넣으셔도 돼요.\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"깍둑썬 애호박, 양파 등의 채소를 한 번에 냄비에 넣음\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"저는 고춧가루 항상 넣어요.\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"고춧가루를 찌개에 넣고 섞음\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치액젓 조금\",\n      \"displayName\": \"참치액젓\",\n      \"amount\": \"조금\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치액젓 조금만 넣어 보세요.\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"참치액젓을 찌개에 둘러 넣음\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"두부\",\n      \"displayName\": \"두부\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"두부도 딱 먹기 좋게\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"깍둑썬 두부를 찌개에 넣음\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 들기름이나 참기름을 두르고 마늘과 된장을 넣어 떫은맛과 쓴맛이 없어지도록 살짝 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"저는 된장을 들기름이나 참기름에 살짝 한번 볶을 거예요. 마늘 넣고 살짝 볶으면은 떫은맛과 쓴맛이 없어져요.\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"기름을 두른 냄비에 마늘과 된장을 넣고 주걱으로 볶음\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"동전 모양 육수와 물 600ml를 넣고 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이렇게 동전처럼 생긴 육수 있죠 물 600에 된장 두 큰술\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"동전 육수를 넣고 물 600ml를 붓고 저어줌\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국물 위에 뜨는 거품을 살짝 걷어낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"요 위에 요런 거를 살짝 걷어내 주세요.\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"숟가락으로 국물 표면의 거품을 그릇에 걷어냄\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"손질한 야채(애호박, 양파 등)를 한꺼번에 다 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"야채 같이 다 넣으셔도 돼요.\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"손질된 야채들을 찌개에 넣음\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고춧가루를 넣고, 참치액젓을 조금 넣어 감칠맛을 더한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"저는 고춧가루 항상 넣어요. 참치액젓 조금만 넣어 보세요. 맛이 확 살아나실 거예요.\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"고춧가루와 참치액젓을 차례로 넣고 섞음\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"먹기 좋은 크기로 썬 두부를 넣고 끓여 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"두부도 딱 먹기 좋게\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"두부를 찌개에 넣고 끓임\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"마늘, 고춧가루, 참치액젓, 야채, 두부의 정확한 중량 및 계량 정보는 영상에서 구체적으로 언급되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "엄마집밥 생각나는 급식대가 된장찌개",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "들기름이나 참기름",
+          "displayName": "들기름이나 참기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "저는 된장을 들기름이나 참기름에 살짝 한번 볶을 거예요.",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "뚝배기에 기름을 두름",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "마늘",
+          "displayName": "마늘",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마늘 넣고",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "다진 마늘을 냄비에 넣음",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "된장 두 큰술",
+          "displayName": "된장",
+          "amount": "2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "된장 두 큰술",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "된장을 숟가락으로 냄비에 넣음",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "동전처럼 생긴 육수",
+          "displayName": "동전 육수(코인 육수)",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이렇게 동전처럼 생긴 육수 있죠",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "동전 육수 한 개를 냄비에 넣음",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "물 600ml",
+          "displayName": "물",
+          "amount": "600",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 600에",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 600ml에",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비에 물을 부음",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "야채",
+          "displayName": "야채 (애호박, 양파 등)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "야채 같이 다 넣으셔도 돼요.",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "깍둑썬 애호박, 양파 등의 채소를 한 번에 냄비에 넣음",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "고춧가루",
+          "displayName": "고춧가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "저는 고춧가루 항상 넣어요.",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "고춧가루를 찌개에 넣고 섞음",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "참치액젓 조금",
+          "displayName": "참치액젓",
+          "amount": "조금",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "참치액젓 조금만 넣어 보세요.",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "참치액젓을 찌개에 둘러 넣음",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "두부",
+          "displayName": "두부",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "두부도 딱 먹기 좋게",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "깍둑썬 두부를 찌개에 넣음",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 들기름이나 참기름을 두르고 마늘과 된장을 넣어 떫은맛과 쓴맛이 없어지도록 살짝 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "저는 된장을 들기름이나 참기름에 살짝 한번 볶을 거예요. 마늘 넣고 살짝 볶으면은 떫은맛과 쓴맛이 없어져요.",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "기름을 두른 냄비에 마늘과 된장을 넣고 주걱으로 볶음",
+              "timestamp": "00:02"
+            }
+          ]
+        },
+        {
+          "text": "동전 모양 육수와 물 600ml를 넣고 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이렇게 동전처럼 생긴 육수 있죠 물 600에 된장 두 큰술",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "동전 육수를 넣고 물 600ml를 붓고 저어줌",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "국물 위에 뜨는 거품을 살짝 걷어낸다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "요 위에 요런 거를 살짝 걷어내 주세요.",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "숟가락으로 국물 표면의 거품을 그릇에 걷어냄",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "손질한 야채(애호박, 양파 등)를 한꺼번에 다 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "야채 같이 다 넣으셔도 돼요.",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "손질된 야채들을 찌개에 넣음",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "고춧가루를 넣고, 참치액젓을 조금 넣어 감칠맛을 더한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "저는 고춧가루 항상 넣어요. 참치액젓 조금만 넣어 보세요. 맛이 확 살아나실 거예요.",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "고춧가루와 참치액젓을 차례로 넣고 섞음",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "먹기 좋은 크기로 썬 두부를 넣고 끓여 마무리한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "두부도 딱 먹기 좋게",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "두부를 찌개에 넣고 끓임",
+              "timestamp": "00:20"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "마늘, 고춧가루, 참치액젓, 야채, 두부의 정확한 중량 및 계량 정보는 영상에서 구체적으로 언급되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}
