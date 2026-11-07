@@ -54,6 +54,22 @@ paths:
       - application/json
       x-tags:
       - tag: Auth
+  /api/v1/me:
+    delete:
+      operationId: deleteCurrentAccount
+      responses:
+        "204":
+          description: Account deleted
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Authentication failed or missing
+      tags:
+      - Auth
+      x-tags:
+      - tag: Auth
   /api/v1/ingredients:
     get:
       operationId: getIngredientGroups

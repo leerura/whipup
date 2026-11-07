@@ -40,6 +40,22 @@ paths:
         '401':
           $ref: '#/components/responses/Unauthorized'
 
+  /api/v1/me:
+    delete:
+      tags: [Auth]
+      operationId: deleteCurrentAccount
+      summary: Permanently delete the authenticated account
+      description: >-
+        Permanently deletes the current user, linked provider accounts, owned
+        ingredients, and onboarding state in one transaction. No backup is
+        retained. Shared ingredient/catalog and recipe data are not deleted.
+        Logout is client-side and has no backend endpoint.
+      responses:
+        '204':
+          description: Account deleted
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
   /api/v1/ingredients:
     get:
       tags: [Ingredient]

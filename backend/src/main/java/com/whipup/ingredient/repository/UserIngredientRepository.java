@@ -8,6 +8,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserIngredientRepository extends JpaRepository<UserIngredient, Long> {
 
+	void deleteAllByUser_Id(Long userId);
+
 	boolean existsByUser_Id(Long userId);
 
 	boolean existsByUser_IdAndIngredientVariant_IdIn(

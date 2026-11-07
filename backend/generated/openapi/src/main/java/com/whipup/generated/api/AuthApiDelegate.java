@@ -54,4 +54,8 @@ public interface AuthApiDelegate {
 
     }
 
+    default ResponseEntity<Void> deleteCurrentAccount() {
+        return new ResponseEntity<>(HttpStatus.NOT_IMPLEMENTED);
+    }
+
 }

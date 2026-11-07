@@ -28,6 +28,7 @@ public interface AuthApi {
     }
 
     String PATH_LOGIN_WITH_KAKAO = "/api/v1/auth/kakao";
+    String PATH_DELETE_CURRENT_ACCOUNT = "/api/v1/me";
     /**
      * POST /api/v1/auth/kakao
      *
@@ -45,6 +46,11 @@ public interface AuthApi {
          @Valid @RequestBody KakaoLoginRequest kakaoLoginRequest
     ) {
         return getDelegate().loginWithKakao(kakaoLoginRequest);
+    }
+
+    @RequestMapping(method = RequestMethod.DELETE, value = AuthApi.PATH_DELETE_CURRENT_ACCOUNT)
+    default ResponseEntity<Void> deleteCurrentAccount() {
+        return getDelegate().deleteCurrentAccount();
     }
 
 }

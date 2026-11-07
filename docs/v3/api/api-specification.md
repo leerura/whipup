@@ -2,6 +2,16 @@
 
 이 API 계약은 [OpenAPI 파일](openapi.yaml)에 정의된 경로·필드·상태 코드를 보완해 도메인 의미를 명시한다. API base path와 JSON response shape는 기존 `/api/v1` 계약을 유지한다. 신규 accepted mapping은 서버 내부 판정 데이터이며 API 요청으로 직접 수정하지 않는다.
 
+## 계정 삭제와 로그아웃
+
+```text
+DELETE /api/v1/me
+```
+
+현재 Bearer 인증 사용자만 호출할 수 있다. 성공하면 `204 No Content`를 반환하며, 현재 사용자의 계정과 연결된 인증 계정, 보유 재료, 온보딩 상태를 하나의 트랜잭션으로 즉시 영구 삭제한다. 백업을 만들거나 삭제를 지연하지 않는다. 공유 Ingredient/Variant 카탈로그와 운영자가 등록한 Recipe 데이터는 삭제하지 않는다. 인증되지 않은 요청은 `401 Unauthorized`다. 삭제 중 오류가 발생하면 트랜잭션 전체를 롤백한다.
+
+로그아웃은 서버 endpoint를 호출하지 않는다. Flutter가 보유한 WhipUp access token과 Kakao SDK 세션을 클라이언트에서 제거하고 로그인 화면으로 이동한다. 서버는 stateless JWT를 즉시 폐기하지 않으며, 만료 전 token을 강제로 무효화하는 기능은 현재 범위에 없다.
+
 ## 재료 목록 및 보유함
 
 기존 경로를 유지한다.
