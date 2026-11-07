@@ -15,16 +15,21 @@ part 'recipe_detail_response.g.dart';
 /// RecipeDetailResponse
 ///
 /// Properties:
-/// * [recipeId] 
-/// * [name] 
-/// * [shortsReference] 
-/// * [thumbnailUrl] 
-/// * [missingCount] 
-/// * [requirements] 
-/// * [optionalIngredients] 
-/// * [steps] 
+/// * [recipeId]
+/// * [name]
+/// * [shortsReference]
+/// * [sourceTitle]
+/// * [sourceChannelName]
+/// * [sourceChannelId]
+/// * [sourceMetadataFetchedAt]
+/// * [thumbnailUrl]
+/// * [missingCount]
+/// * [requirements]
+/// * [optionalIngredients]
+/// * [steps]
 @BuiltValue()
-abstract class RecipeDetailResponse implements Built<RecipeDetailResponse, RecipeDetailResponseBuilder> {
+abstract class RecipeDetailResponse
+    implements Built<RecipeDetailResponse, RecipeDetailResponseBuilder> {
   @BuiltValueField(wireName: r'recipeId')
   int get recipeId;
 
@@ -33,6 +38,18 @@ abstract class RecipeDetailResponse implements Built<RecipeDetailResponse, Recip
 
   @BuiltValueField(wireName: r'shortsReference')
   String get shortsReference;
+
+  @BuiltValueField(wireName: r'sourceTitle')
+  String? get sourceTitle;
+
+  @BuiltValueField(wireName: r'sourceChannelName')
+  String? get sourceChannelName;
+
+  @BuiltValueField(wireName: r'sourceChannelId')
+  String? get sourceChannelId;
+
+  @BuiltValueField(wireName: r'sourceMetadataFetchedAt')
+  DateTime? get sourceMetadataFetchedAt;
 
   @BuiltValueField(wireName: r'thumbnailUrl')
   String get thumbnailUrl;
@@ -51,18 +68,24 @@ abstract class RecipeDetailResponse implements Built<RecipeDetailResponse, Recip
 
   RecipeDetailResponse._();
 
-  factory RecipeDetailResponse([void updates(RecipeDetailResponseBuilder b)]) = _$RecipeDetailResponse;
+  factory RecipeDetailResponse([void updates(RecipeDetailResponseBuilder b)]) =
+      _$RecipeDetailResponse;
 
   @BuiltValueHook(initializeBuilder: true)
   static void _defaults(RecipeDetailResponseBuilder b) => b;
 
   @BuiltValueSerializer(custom: true)
-  static Serializer<RecipeDetailResponse> get serializer => _$RecipeDetailResponseSerializer();
+  static Serializer<RecipeDetailResponse> get serializer =>
+      _$RecipeDetailResponseSerializer();
 }
 
-class _$RecipeDetailResponseSerializer implements PrimitiveSerializer<RecipeDetailResponse> {
+class _$RecipeDetailResponseSerializer
+    implements PrimitiveSerializer<RecipeDetailResponse> {
   @override
-  final Iterable<Type> types = const [RecipeDetailResponse, _$RecipeDetailResponse];
+  final Iterable<Type> types = const [
+    RecipeDetailResponse,
+    _$RecipeDetailResponse
+  ];
 
   @override
   final String wireName = r'RecipeDetailResponse';
@@ -87,6 +110,34 @@ class _$RecipeDetailResponseSerializer implements PrimitiveSerializer<RecipeDeta
       object.shortsReference,
       specifiedType: const FullType(String),
     );
+    if (object.sourceTitle != null) {
+      yield r'sourceTitle';
+      yield serializers.serialize(
+        object.sourceTitle,
+        specifiedType: const FullType(String),
+      );
+    }
+    if (object.sourceChannelName != null) {
+      yield r'sourceChannelName';
+      yield serializers.serialize(
+        object.sourceChannelName,
+        specifiedType: const FullType(String),
+      );
+    }
+    if (object.sourceChannelId != null) {
+      yield r'sourceChannelId';
+      yield serializers.serialize(
+        object.sourceChannelId,
+        specifiedType: const FullType(String),
+      );
+    }
+    if (object.sourceMetadataFetchedAt != null) {
+      yield r'sourceMetadataFetchedAt';
+      yield serializers.serialize(
+        object.sourceMetadataFetchedAt,
+        specifiedType: const FullType(DateTime),
+      );
+    }
     yield r'thumbnailUrl';
     yield serializers.serialize(
       object.thumbnailUrl,
@@ -105,7 +156,8 @@ class _$RecipeDetailResponseSerializer implements PrimitiveSerializer<RecipeDeta
     yield r'optionalIngredients';
     yield serializers.serialize(
       object.optionalIngredients,
-      specifiedType: const FullType(BuiltList, [FullType(DetailIngredientDisplay)]),
+      specifiedType:
+          const FullType(BuiltList, [FullType(DetailIngredientDisplay)]),
     );
     yield r'steps';
     yield serializers.serialize(
@@ -120,7 +172,9 @@ class _$RecipeDetailResponseSerializer implements PrimitiveSerializer<RecipeDeta
     RecipeDetailResponse object, {
     FullType specifiedType = FullType.unspecified,
   }) {
-    return _serializeProperties(serializers, object, specifiedType: specifiedType).toList();
+    return _serializeProperties(serializers, object,
+            specifiedType: specifiedType)
+        .toList();
   }
 
   void _deserializeProperties(
@@ -156,6 +210,30 @@ class _$RecipeDetailResponseSerializer implements PrimitiveSerializer<RecipeDeta
           ) as String;
           result.shortsReference = valueDes;
           break;
+        case r'sourceTitle':
+          result.sourceTitle = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String?;
+          break;
+        case r'sourceChannelName':
+          result.sourceChannelName = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String?;
+          break;
+        case r'sourceChannelId':
+          result.sourceChannelId = serializers.deserialize(
+            value,
+            specifiedType: const FullType(String),
+          ) as String?;
+          break;
+        case r'sourceMetadataFetchedAt':
+          result.sourceMetadataFetchedAt = serializers.deserialize(
+            value,
+            specifiedType: const FullType(DateTime),
+          ) as DateTime?;
+          break;
         case r'thumbnailUrl':
           final valueDes = serializers.deserialize(
             value,
@@ -173,14 +251,16 @@ class _$RecipeDetailResponseSerializer implements PrimitiveSerializer<RecipeDeta
         case r'requirements':
           final valueDes = serializers.deserialize(
             value,
-            specifiedType: const FullType(BuiltList, [FullType(DetailRequirement)]),
+            specifiedType:
+                const FullType(BuiltList, [FullType(DetailRequirement)]),
           ) as BuiltList<DetailRequirement>;
           result.requirements.replace(valueDes);
           break;
         case r'optionalIngredients':
           final valueDes = serializers.deserialize(
             value,
-            specifiedType: const FullType(BuiltList, [FullType(DetailIngredientDisplay)]),
+            specifiedType:
+                const FullType(BuiltList, [FullType(DetailIngredientDisplay)]),
           ) as BuiltList<DetailIngredientDisplay>;
           result.optionalIngredients.replace(valueDes);
           break;
@@ -219,5 +299,3 @@ class _$RecipeDetailResponseSerializer implements PrimitiveSerializer<RecipeDeta
     return result.build();
   }
 }
-
-

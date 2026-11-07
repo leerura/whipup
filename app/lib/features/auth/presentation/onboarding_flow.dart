@@ -158,14 +158,8 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
   void _showRecipeDetail(int recipeId) {
     Navigator.of(context).push<void>(
       MaterialPageRoute<void>(
-        builder: (context) => RecipeDetailScreen(
-          apiClient: _apiClient,
-          recipeId: recipeId,
-          onSettingsSelected: () {
-            Navigator.of(context).pop();
-            _showSettings();
-          },
-        ),
+        builder: (context) =>
+            RecipeDetailScreen(apiClient: _apiClient, recipeId: recipeId),
       ),
     );
   }

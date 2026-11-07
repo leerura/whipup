@@ -11,6 +11,10 @@ Name | Type | Description | Notes
 **recipeId** | **int** |  | 
 **name** | **String** |  | 
 **shortsReference** | **String** |  | 
+**sourceTitle** | **String** | Source video title | [optional]
+**sourceChannelName** | **String** | Source channel name | [optional]
+**sourceChannelId** | **String** | Source channel identifier | [optional]
+**sourceMetadataFetchedAt** | **DateTime** | Source metadata snapshot time | [optional]
 **thumbnailUrl** | **String** |  | 
 **missingCount** | **int** |  | 
 **requirements** | [**BuiltList&lt;DetailRequirement&gt;**](DetailRequirement.md) |  | 
