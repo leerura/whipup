@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 
 import '../../../app/theme.dart';
 import '../../../shared/presentation/widgets/main_bottom_navigation.dart';
+import '../../../shared/presentation/widgets/whippy_header.dart';
 
 class RecommendationScreen extends StatefulWidget {
   const RecommendationScreen({
@@ -14,6 +15,7 @@ class RecommendationScreen extends StatefulWidget {
     this.onHomeSelected,
     this.onIngredientsSelected,
     this.onRecipeSelected,
+    this.onSettingsSelected,
   });
 
   final ApiClient apiClient;
@@ -22,6 +24,7 @@ class RecommendationScreen extends StatefulWidget {
   final VoidCallback? onHomeSelected;
   final VoidCallback? onIngredientsSelected;
   final ValueChanged<int>? onRecipeSelected;
+  final VoidCallback? onSettingsSelected;
 
   @override
   State<RecommendationScreen> createState() => _RecommendationScreenState();
@@ -97,7 +100,10 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
           bottom: false,
           child: Column(
             children: [
-              _ScreenHeader(onTap: widget.onHomeSelected),
+              WhippyHeader(
+                onHomeTap: widget.onHomeSelected,
+                onSettingsTap: widget.onSettingsSelected,
+              ),
               Expanded(
                 child: ListView(
                   padding: const EdgeInsets.fromLTRB(20, 16, 20, 32),
@@ -150,40 +156,6 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
                 ),
               ),
             ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class _ScreenHeader extends StatelessWidget {
-  const _ScreenHeader({this.onTap});
-
-  final VoidCallback? onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: 52,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        child: Align(
-          alignment: Alignment.centerLeft,
-          child: InkWell(
-            onTap: onTap,
-            borderRadius: BorderRadius.circular(8),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 6),
-              child: Text(
-                'whippy',
-                style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                  color: AppColors.primary,
-                  fontSize: 22,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-            ),
           ),
         ),
       ),

@@ -4,6 +4,11 @@ import 'package:flutter/foundation.dart';
 import 'local_config.dart';
 
 abstract final class AppConfig {
+  static const privacyPolicyUrl =
+      'https://app.notion.com/p/404e10b2db2881728abeed9f39726f0?source=copy_link';
+  static const termsUrl =
+      'https://app.notion.com/p/404e10b2db288142ab90c979637aa0ad?source=copy_link';
+
   static String? _apiBaseUrl;
   static Future<void>? _initialization;
 

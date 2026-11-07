@@ -5,6 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../app/theme.dart';
 import '../../../shared/presentation/widgets/main_bottom_navigation.dart';
+import '../../../shared/presentation/widgets/whippy_header.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({
@@ -13,6 +14,7 @@ class HomeScreen extends StatefulWidget {
     this.onIngredientsSelected,
     this.onRecommendationsSelected,
     this.onRecipeSelected,
+    this.onSettingsSelected,
     super.key,
   });
 
@@ -21,6 +23,7 @@ class HomeScreen extends StatefulWidget {
   final VoidCallback? onIngredientsSelected;
   final VoidCallback? onRecommendationsSelected;
   final ValueChanged<int>? onRecipeSelected;
+  final VoidCallback? onSettingsSelected;
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -125,7 +128,10 @@ class _HomeScreenState extends State<HomeScreen> {
           bottom: false,
           child: Column(
             children: [
-              _HomeHeader(onTap: widget.onHomeSelected),
+              WhippyHeader(
+                onHomeTap: widget.onHomeSelected,
+                onSettingsTap: widget.onSettingsSelected,
+              ),
               Expanded(
                 child: _isLoading
                     ? const Center(child: CircularProgressIndicator())
@@ -146,40 +152,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
               ),
             ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class _HomeHeader extends StatelessWidget {
-  const _HomeHeader({this.onTap});
-
-  final VoidCallback? onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: 52,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        child: Align(
-          alignment: Alignment.centerLeft,
-          child: InkWell(
-            onTap: onTap,
-            borderRadius: BorderRadius.circular(8),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 6),
-              child: Text(
-                'whippy',
-                style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                  color: AppColors.primary,
-                  fontSize: 22,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-            ),
           ),
         ),
       ),

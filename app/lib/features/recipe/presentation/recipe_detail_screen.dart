@@ -13,11 +13,13 @@ class RecipeDetailScreen extends StatefulWidget {
   const RecipeDetailScreen({
     required this.apiClient,
     required this.recipeId,
+    this.onSettingsSelected,
     super.key,
   });
 
   final ApiClient apiClient;
   final int recipeId;
+  final VoidCallback? onSettingsSelected;
 
   @override
   State<RecipeDetailScreen> createState() => _RecipeDetailScreenState();
@@ -66,6 +68,13 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen> {
             letterSpacing: 0,
           ),
         ),
+        actions: [
+          IconButton(
+            onPressed: widget.onSettingsSelected,
+            tooltip: '설정',
+            icon: const Icon(Icons.settings_outlined),
+          ),
+        ],
       ),
       body: FutureBuilder<RecipeDetailResponse>(
         future: _recipeFuture,
@@ -101,6 +110,7 @@ class _RecipeDetailContentState extends State<_RecipeDetailContent> {
   WebViewController? _videoController;
   double _videoTop = 0;
   bool _isCollapsed = false;
+  bool _videoUnavailable = false;
 
   RecipeDetailResponse get recipe => widget.recipe;
 
@@ -158,22 +168,33 @@ class _RecipeDetailContentState extends State<_RecipeDetailContent> {
     } else {
       params = const PlatformWebViewControllerCreationParams();
     }
-    final controller = WebViewController.fromPlatformCreationParams(params)
-      ..setJavaScriptMode(JavaScriptMode.unrestricted)
-      ..setBackgroundColor(Colors.black);
-    if (controller.platform is AndroidWebViewController) {
-      await (controller.platform as AndroidWebViewController)
-          .setMediaPlaybackRequiresUserGesture(false);
+    try {
+      final controller = WebViewController.fromPlatformCreationParams(params)
+        ..setJavaScriptMode(JavaScriptMode.unrestricted)
+        ..setBackgroundColor(Colors.black);
+      if (controller.platform is AndroidWebViewController) {
+        await (controller.platform as AndroidWebViewController)
+            .setMediaPlaybackRequiresUserGesture(false);
+      }
+      await controller.loadRequest(
+        YoutubeEmbedRequest.uriForVideo(videoId),
+        headers: headers,
+      );
+      if (!mounted) return;
+      setState(() {
+        _videoController = controller;
+        _videoUnavailable = false;
+        _isCollapsed = false;
+      });
+    } catch (error) {
+      debugPrint('Failed to start YouTube player: $error');
+      if (!mounted) return;
+      setState(() => _videoUnavailable = true);
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('영상을 재생할 수 없어요. 원본 영상 링크를 확인해 주세요.')),
+      );
+      return;
     }
-    await controller.loadRequest(
-      YoutubeEmbedRequest.uriForVideo(videoId),
-      headers: headers,
-    );
-    if (!mounted) return;
-    setState(() {
-      _videoController = controller;
-      _isCollapsed = false;
-    });
     _onScroll();
   }
 
@@ -238,6 +259,7 @@ class _RecipeDetailContentState extends State<_RecipeDetailContent> {
                                   _youtubeVideoId(recipe.shortsReference) !=
                                   null,
                               onPlay: _startVideo,
+                              unavailable: _videoUnavailable,
                             )
                           : const ColoredBox(color: Colors.black),
                     ),
@@ -302,6 +324,8 @@ class _RecipeDetailContentState extends State<_RecipeDetailContent> {
                     ),
                   ],
                   const SizedBox(height: 28),
+                  _SourceCard(onTap: _startVideo),
+                  const SizedBox(height: 28),
                   const Divider(height: 1, color: AppColors.border),
                   const SizedBox(height: 28),
                   _SectionTitle(title: '조리 순서', count: recipe.steps.length),
@@ -357,11 +381,13 @@ class _VideoThumbnail extends StatelessWidget {
     required this.thumbnailUrl,
     required this.hasVideo,
     required this.onPlay,
+    required this.unavailable,
   });
 
   final String thumbnailUrl;
   final bool hasVideo;
   final VoidCallback onPlay;
+  final bool unavailable;
 
   @override
   Widget build(BuildContext context) {
@@ -369,7 +395,36 @@ class _VideoThumbnail extends StatelessWidget {
       fit: StackFit.expand,
       children: [
         _RecipeImage(thumbnailUrl: thumbnailUrl),
-        if (hasVideo)
+        if (unavailable)
+          Center(
+            child: Container(
+              margin: const EdgeInsets.symmetric(horizontal: 20),
+              padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 15),
+              decoration: BoxDecoration(
+                color: AppColors.white,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: const Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    '영상을 재생할 수 없어요',
+                    style: TextStyle(fontWeight: FontWeight.w600),
+                  ),
+                  SizedBox(height: 4),
+                  Text(
+                    '원본 영상은 아래 링크에서 바로 볼 수 있어요',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: AppColors.textSecondary,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          )
+        else if (hasVideo)
           Center(
             child: IconButton.filled(
               tooltip: '유튜브 영상 재생',
@@ -385,6 +440,84 @@ class _VideoThumbnail extends StatelessWidget {
       ],
     );
   }
+}
+
+class _SourceCard extends StatelessWidget {
+  const _SourceCard({required this.onTap});
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) => Material(
+    color: AppColors.surfaceSubtle,
+    borderRadius: BorderRadius.circular(12),
+    child: InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(12),
+      child: SizedBox(
+        height: 64,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+          child: Row(
+            children: [
+              Container(
+                width: 40,
+                height: 40,
+                alignment: Alignment.center,
+                decoration: const BoxDecoration(
+                  color: AppColors.border,
+                  shape: BoxShape.circle,
+                ),
+                child: const Icon(
+                  Icons.play_arrow_rounded,
+                  color: AppColors.primary,
+                  size: 22,
+                ),
+              ),
+              const SizedBox(width: 12),
+              const Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      '원본 영상',
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    Text(
+                      'YouTube Shorts',
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: AppColors.textMuted,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const Text(
+                '원본 보기',
+                style: TextStyle(
+                  fontSize: 12,
+                  color: AppColors.primary,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              const SizedBox(width: 2),
+              const Icon(
+                Icons.open_in_new_rounded,
+                size: 16,
+                color: AppColors.primary,
+              ),
+            ],
+          ),
+        ),
+      ),
+    ),
+  );
 }
 
 class _RecipeImage extends StatelessWidget {

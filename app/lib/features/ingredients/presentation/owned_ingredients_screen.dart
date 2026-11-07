@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 
 import '../../../app/theme.dart';
 import '../../../shared/presentation/widgets/main_bottom_navigation.dart';
+import '../../../shared/presentation/widgets/whippy_header.dart';
 import '../../ingredient/presentation/ingredient_ui_item.dart';
 import '../../ingredient/presentation/widgets/ingredient_group_selector.dart';
 
@@ -14,6 +15,7 @@ class OwnedIngredientsScreen extends StatefulWidget {
     this.onOwnedIngredientsChanged,
     this.onHomeSelected,
     this.onRecommendationsSelected,
+    this.onSettingsSelected,
     super.key,
   });
 
@@ -22,6 +24,7 @@ class OwnedIngredientsScreen extends StatefulWidget {
   final ValueChanged<Set<String>>? onOwnedIngredientsChanged;
   final VoidCallback? onHomeSelected;
   final VoidCallback? onRecommendationsSelected;
+  final VoidCallback? onSettingsSelected;
 
   @override
   State<OwnedIngredientsScreen> createState() => _OwnedIngredientsScreenState();
@@ -205,7 +208,10 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
           bottom: false,
           child: Column(
             children: [
-              _ScreenHeader(onTap: widget.onHomeSelected),
+              WhippyHeader(
+                onHomeTap: widget.onHomeSelected,
+                onSettingsTap: widget.onSettingsSelected,
+              ),
               Expanded(
                 child: ListView(
                   keyboardDismissBehavior:
@@ -311,41 +317,6 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
                 ),
               ),
             ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class _ScreenHeader extends StatelessWidget {
-  const _ScreenHeader({this.onTap});
-
-  final VoidCallback? onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: 52,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        child: Align(
-          alignment: Alignment.centerLeft,
-          child: InkWell(
-            onTap: onTap,
-            borderRadius: BorderRadius.circular(8),
-            child: const Padding(
-              padding: EdgeInsets.symmetric(vertical: 6),
-              child: Text(
-                'whippy',
-                style: TextStyle(
-                  color: AppColors.primary,
-                  fontSize: 22,
-                  fontWeight: FontWeight.w700,
-                  letterSpacing: 0,
-                ),
-              ),
-            ),
           ),
         ),
       ),

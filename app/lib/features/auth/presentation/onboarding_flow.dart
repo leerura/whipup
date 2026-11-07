@@ -1,4 +1,5 @@
 import 'package:api_client/api_client.dart';
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:kakao_flutter_sdk_user/kakao_flutter_sdk_user.dart';
 
@@ -8,6 +9,7 @@ import '../../ingredient/presentation/initial_ingredient_screen.dart';
 import '../../ingredients/presentation/owned_ingredients_screen.dart';
 import '../../recommendation/presentation/recommendation_screen.dart';
 import '../../recipe/presentation/recipe_detail_screen.dart';
+import '../../settings/presentation/settings_screen.dart';
 import 'onboarding_entry.dart';
 import 'kakao_login_screen.dart';
 import 'onboarding_motion_sequence.dart';
@@ -156,10 +158,61 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
   void _showRecipeDetail(int recipeId) {
     Navigator.of(context).push<void>(
       MaterialPageRoute<void>(
-        builder: (context) =>
-            RecipeDetailScreen(apiClient: _apiClient, recipeId: recipeId),
+        builder: (context) => RecipeDetailScreen(
+          apiClient: _apiClient,
+          recipeId: recipeId,
+          onSettingsSelected: () {
+            Navigator.of(context).pop();
+            _showSettings();
+          },
+        ),
       ),
     );
+  }
+
+  void _showSettings() => setState(() => _stage = _OnboardingStage.settings);
+
+  Future<void> _logout() async {
+    try {
+      await UserApi.instance.logout();
+    } catch (_) {
+      // A local session reset is still safe when the provider session has
+      // already expired.
+    }
+    if (mounted) setState(() => _stage = _OnboardingStage.login);
+  }
+
+  Future<void> _deleteAccount() async {
+    try {
+      final response = await _apiClient.getAuthApi().deleteCurrentAccount();
+      debugPrint(
+        '[Account deletion] DELETE ${response.requestOptions.uri} '
+        'status=${response.statusCode}',
+      );
+      _apiClient.removeBearerAuth('bearerAuth');
+      try {
+        await UserApi.instance.logout();
+      } catch (_) {
+        // The backend deletion already succeeded; an expired provider session
+        // should not prevent the local account from being cleared.
+      }
+    } on DioException catch (error, stackTrace) {
+      debugPrint(
+        '[Account deletion] failed '
+        'status=${error.response?.statusCode} '
+        'uri=${error.requestOptions.uri} '
+        'body=${error.response?.data}',
+      );
+      debugPrintStack(
+        label: '[Account deletion] stack',
+        stackTrace: stackTrace,
+      );
+      rethrow;
+    }
+  }
+
+  void _accountDeleted() {
+    if (mounted) setState(() => _stage = _OnboardingStage.login);
   }
 
   @override
@@ -196,6 +249,7 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
           onRegisterIngredients: _showOwnedIngredients,
           onHomeSelected: _showHome,
           onIngredientsSelected: _showOwnedIngredients,
+          onSettingsSelected: _showSettings,
           onRecipeSelected: _showRecipeDetail,
         ),
         _OnboardingStage.home => HomeScreen(
@@ -204,6 +258,7 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
           onHomeSelected: _showHome,
           onIngredientsSelected: _showOwnedIngredients,
           onRecommendationsSelected: _showRecommendations,
+          onSettingsSelected: _showSettings,
           onRecipeSelected: _showRecipeDetail,
         ),
         _OnboardingStage.ownedIngredients => OwnedIngredientsScreen(
@@ -213,6 +268,14 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
           onOwnedIngredientsChanged: _handleOwnedIngredientsChanged,
           onHomeSelected: _showHome,
           onRecommendationsSelected: _showRecommendations,
+          onSettingsSelected: _showSettings,
+        ),
+        _OnboardingStage.settings => SettingsScreen(
+          key: const ValueKey(_OnboardingStage.settings),
+          onBack: _showHome,
+          onLogout: _logout,
+          onDeleteAccount: _deleteAccount,
+          onAccountDeleted: _accountDeleted,
         ),
       },
     );
@@ -226,4 +289,5 @@ enum _OnboardingStage {
   home,
   recommendations,
   ownedIngredients,
+  settings,
 }
