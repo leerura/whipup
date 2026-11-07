@@ -33,6 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
   List<OwnedIngredient> _ownedIngredients = const [];
   List<RecommendationItem> _availableItems = const [];
   List<RecommendationItem> _oneMissingItem = const [];
+  List<RecommendationItem> _dailyMenuItems = const [];
   bool _isLoading = true;
   bool _hasLoadError = false;
   int _requestId = 0;
@@ -60,11 +61,26 @@ class _HomeScreenState extends State<HomeScreen> {
       }
       if (!mounted || requestId != _requestId) return;
 
+      List<RecommendationItem> dailyMenuItems = const [];
+      try {
+        final dailyResponse = await widget.apiClient
+            .getDailyMenuApi()
+            .getDailyMenu();
+        dailyMenuItems =
+            dailyResponse.data?.items.toList(growable: false) ??
+            const <RecommendationItem>[];
+      } catch (error) {
+        // Today-menu is an optional Redis-backed section. A failure must not
+        // turn the rest of the home screen into an error state.
+        debugPrint('Today menu unavailable: $error');
+      }
+
       if (owned.items.isEmpty) {
         setState(() {
           _ownedIngredients = const [];
           _availableItems = const [];
           _oneMissingItem = const [];
+          _dailyMenuItems = dailyMenuItems;
           _isLoading = false;
         });
         return;
@@ -95,6 +111,7 @@ class _HomeScreenState extends State<HomeScreen> {
             .where((item) => item.missingCount == 1)
             .take(1)
             .toList(growable: false);
+        _dailyMenuItems = dailyMenuItems;
         _isLoading = false;
       });
     } catch (error) {
@@ -110,7 +127,10 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     final isInventoryEmpty =
-        !_isLoading && !_hasLoadError && _ownedIngredients.isEmpty;
+        !_isLoading &&
+        !_hasLoadError &&
+        _ownedIngredients.isEmpty &&
+        _dailyMenuItems.isEmpty;
 
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: SystemUiOverlayStyle.dark.copyWith(
@@ -145,6 +165,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         ownedIngredients: _ownedIngredients,
                         availableItems: _availableItems,
                         oneMissingItem: _oneMissingItem,
+                        dailyMenuItems: _dailyMenuItems,
+                        onDailyMenuRemoved: _removeDailyMenu,
                         onIngredientsSelected: widget.onIngredientsSelected,
                         onRecommendationsSelected:
                             widget.onRecommendationsSelected,
@@ -157,6 +179,25 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
+
+  Future<void> _removeDailyMenu(int recipeId) async {
+    try {
+      await widget.apiClient.getDailyMenuApi().removeDailyMenu(
+        recipeId: recipeId,
+      );
+      if (!mounted) return;
+      setState(() {
+        _dailyMenuItems = _dailyMenuItems
+            .where((item) => item.recipeId != recipeId)
+            .toList(growable: false);
+      });
+    } catch (error) {
+      debugPrint('Failed to remove today menu item: $error');
+      if (!mounted) return;
+      ScaffoldMessenger.of(context)
+          .showSnackBar(const SnackBar(content: Text('잠시 후 다시 시도해 주세요.')));
+    }
+  }
 }
 
 class _PopulatedInventoryHome extends StatelessWidget {
@@ -164,6 +205,8 @@ class _PopulatedInventoryHome extends StatelessWidget {
     required this.ownedIngredients,
     required this.availableItems,
     required this.oneMissingItem,
+    required this.dailyMenuItems,
+    required this.onDailyMenuRemoved,
     required this.onIngredientsSelected,
     required this.onRecommendationsSelected,
     required this.onRecipeSelected,
@@ -172,6 +215,8 @@ class _PopulatedInventoryHome extends StatelessWidget {
   final List<OwnedIngredient> ownedIngredients;
   final List<RecommendationItem> availableItems;
   final List<RecommendationItem> oneMissingItem;
+  final List<RecommendationItem> dailyMenuItems;
+  final ValueChanged<int> onDailyMenuRemoved;
   final VoidCallback? onIngredientsSelected;
   final VoidCallback? onRecommendationsSelected;
   final ValueChanged<int>? onRecipeSelected;
@@ -185,8 +230,8 @@ class _PopulatedInventoryHome extends StatelessWidget {
           '오늘, 뭐 먹을까요?',
           style: Theme.of(context).textTheme.titleLarge?.copyWith(
             color: AppColors.textPrimary,
-            fontSize: 24,
-            height: 1.5,
+            fontSize: 20,
+            height: 1.3,
             fontWeight: FontWeight.w700,
           ),
         ),
@@ -196,7 +241,44 @@ class _PopulatedInventoryHome extends StatelessWidget {
           style: Theme.of(context).textTheme.bodyMedium
               ?.copyWith(color: AppColors.textSecondary, fontSize: 14),
         ),
-        const SizedBox(height: 10),
+        if (dailyMenuItems.isNotEmpty) ...[
+          const SizedBox(height: 24),
+          const Row(
+            children: [
+              Icon(Icons.bookmark_border, color: AppColors.primary, size: 16),
+              SizedBox(width: 4),
+              Expanded(
+                child: Text(
+                  '오늘 먹을 메뉴',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
+                ),
+              ),
+              Text(
+                '자정에 사라져요',
+                style: TextStyle(fontSize: 11, color: AppColors.textMuted),
+              ),
+            ],
+          ),
+          const SizedBox(height: 10),
+          Wrap(
+            spacing: 10,
+            runSpacing: 10,
+            children: [
+              for (final item in dailyMenuItems)
+                SizedBox(
+                  width: (MediaQuery.sizeOf(context).width - 50) / 2,
+                  child: _TodayMenuCard(
+                    item: item,
+                    onTap: onRecipeSelected == null
+                        ? null
+                        : () => onRecipeSelected!(item.recipeId),
+                    onRemove: () => onDailyMenuRemoved(item.recipeId),
+                  ),
+                ),
+            ],
+          ),
+        ],
+        const SizedBox(height: 20),
         _InventorySummary(
           ownedIngredients: ownedIngredients,
           onManage: onIngredientsSelected,
@@ -209,30 +291,87 @@ class _PopulatedInventoryHome extends StatelessWidget {
             onAction: onRecommendationsSelected,
           ),
           const SizedBox(height: 10),
-          for (var index = 0; index < availableItems.length; index++) ...[
-            _HomeRecipeCard(
-              item: availableItems[index],
-              onTap: onRecipeSelected == null
-                  ? null
-                  : () => onRecipeSelected!(availableItems[index].recipeId),
-            ),
-            if (index + 1 < availableItems.length) const SizedBox(height: 8),
-          ],
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              for (var index = 0; index < availableItems.length; index++) ...[
+                if (index > 0) const SizedBox(width: 10),
+                Expanded(
+                  child: _HomeRecipeCard(
+                    item: availableItems[index],
+                    onTap: onRecipeSelected == null
+                        ? null
+                        : () =>
+                              onRecipeSelected!(availableItems[index].recipeId),
+                  ),
+                ),
+              ],
+              if (availableItems.length == 1) const Expanded(child: SizedBox()),
+            ],
+          ),
         ],
         if (oneMissingItem.isNotEmpty) ...[
           SizedBox(height: availableItems.isEmpty ? 24 : 18),
           const _SectionHeader(title: '재료 한 가지만 더 있으면 돼요'),
           const SizedBox(height: 10),
-          _HomeRecipeCard(
-            item: oneMissingItem.single,
-            missingIngredientName: _missingIngredientName(
-              oneMissingItem.single,
-            ),
-            onTap: onRecipeSelected == null
-                ? null
-                : () => onRecipeSelected!(oneMissingItem.single.recipeId),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: _HomeRecipeCard(
+                  item: oneMissingItem.single,
+                  missingIngredientName: _missingIngredientName(
+                    oneMissingItem.single,
+                  ),
+                  onTap: onRecipeSelected == null
+                      ? null
+                      : () => onRecipeSelected!(oneMissingItem.single.recipeId),
+                ),
+              ),
+              const SizedBox(width: 10),
+              const Expanded(child: SizedBox()),
+            ],
           ),
         ],
+      ],
+    );
+  }
+}
+
+class _TodayMenuCard extends StatelessWidget {
+  const _TodayMenuCard({
+    required this.item,
+    required this.onTap,
+    required this.onRemove,
+  });
+
+  final RecommendationItem item;
+  final VoidCallback? onTap;
+  final VoidCallback onRemove;
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      children: [
+        _HomeRecipeCard(
+          item: item,
+          onTap: onTap,
+          missingIngredientName: item.missingCount > 0
+              ? _missingIngredientName(item)
+              : null,
+        ),
+        Positioned(
+          top: 4,
+          right: 4,
+          child: IconButton(
+            onPressed: onRemove,
+            tooltip: '오늘 메뉴에서 빼기',
+            visualDensity: VisualDensity.compact,
+            constraints: const BoxConstraints.tightFor(width: 28, height: 28),
+            padding: EdgeInsets.zero,
+            icon: const Icon(Icons.close, size: 16),
+          ),
+        ),
       ],
     );
   }
@@ -325,8 +464,8 @@ class _SectionHeader extends StatelessWidget {
             title,
             style: Theme.of(context).textTheme.titleMedium?.copyWith(
               color: AppColors.textPrimary,
-              fontSize: 18,
-              fontWeight: FontWeight.w600,
+              fontSize: 16,
+              fontWeight: FontWeight.w700,
               letterSpacing: 0,
             ),
           ),
@@ -379,53 +518,44 @@ class _HomeRecipeCard extends StatelessWidget {
         clipBehavior: Clip.antiAlias,
         child: InkWell(
           onTap: onTap,
-          child: SizedBox(
-            height: isMissing ? 88 : 82,
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-              child: Row(
-                children: [
-                  _HomeRecipeThumbnail(item: item),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          item.name,
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: Theme.of(context).textTheme.bodyMedium
-                              ?.copyWith(
-                                color: AppColors.textPrimary,
-                                fontSize: 16,
-                                height: 1.5,
-                                fontWeight: FontWeight.w600,
-                              ),
-                        ),
-                        const SizedBox(height: 2),
-                        Text(
-                          isMissing
-                              ? '$missingIngredientName 부족'
-                              : '재료가 모두 있어요',
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: Theme.of(context).textTheme.bodySmall
-                              ?.copyWith(
-                                color: isMissing
-                                    ? AppColors.primary
-                                    : AppColors.textMuted,
-                                fontSize: 12,
-                                height: 1.5,
-                              ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              AspectRatio(
+                aspectRatio: 1.28,
+                child: _HomeRecipeThumbnail(item: item, size: double.infinity),
               ),
-            ),
+              Padding(
+                padding: const EdgeInsets.all(10),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      item.name,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: const TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w700,
+                        color: AppColors.textPrimary,
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      isMissing ? '$missingIngredientName 부족' : '재료가 모두 있어요',
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        fontSize: 11,
+                        color: isMissing
+                            ? AppColors.primary
+                            : AppColors.textMuted,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ),
         ),
       ),
@@ -434,9 +564,10 @@ class _HomeRecipeCard extends StatelessWidget {
 }
 
 class _HomeRecipeThumbnail extends StatelessWidget {
-  const _HomeRecipeThumbnail({required this.item});
+  const _HomeRecipeThumbnail({required this.item, this.size = 62});
 
   final RecommendationItem item;
+  final double size;
 
   @override
   Widget build(BuildContext context) {
@@ -445,8 +576,8 @@ class _HomeRecipeThumbnail extends StatelessWidget {
         borderRadius: BorderRadius.circular(2),
         child: Image.network(
           item.thumbnailUrl,
-          width: 62,
-          height: 62,
+          width: size,
+          height: size,
           fit: BoxFit.cover,
           errorBuilder: (context, error, stackTrace) => _thumbnailFallback(),
         ),
@@ -456,8 +587,8 @@ class _HomeRecipeThumbnail extends StatelessWidget {
   }
 
   Widget _thumbnailFallback() => SizedBox(
-    width: 62,
-    height: 62,
+    width: size,
+    height: size,
     child: SvgPicture.asset(
       'assets/recipe/kimchi_fried_rice.svg',
       fit: BoxFit.cover,

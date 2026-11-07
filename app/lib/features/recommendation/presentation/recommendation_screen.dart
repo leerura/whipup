@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:api_client/api_client.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -36,6 +38,51 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
   bool _isLoading = true;
   bool _hasLoadError = false;
   int _requestId = 0;
+  final _searchController = TextEditingController();
+  Timer? _debounce;
+  bool _searching = false;
+  bool _hasSearched = false;
+
+  @override
+  void dispose() {
+    _debounce?.cancel();
+    _searchController.dispose();
+    super.dispose();
+  }
+
+  Future<void> _search() async {
+    final query = _searchController.text.trim();
+    final requestId = ++_requestId;
+    if (query.isEmpty) {
+      setState(() => _hasSearched = false);
+      await _loadRecommendations();
+      return;
+    }
+    setState(() {
+      _isLoading = true;
+      _hasLoadError = false;
+      _hasSearched = true;
+    });
+    try {
+      final response = await widget.apiClient.getRecipeApi().searchRecipes(
+        query: query,
+        scope: _selectedMode == RecommendationMode.AVAILABLE
+            ? RecipeSearchScope.AVAILABLE
+            : RecipeSearchScope.ALL,
+      );
+      if (!mounted || requestId != _requestId) return;
+      setState(() {
+        _items = response.data?.items.toList(growable: false) ?? const [];
+        _isLoading = false;
+      });
+    } catch (error) {
+      if (!mounted || requestId != _requestId) return;
+      setState(() {
+        _hasLoadError = true;
+        _isLoading = false;
+      });
+    }
+  }
 
   @override
   void initState() {
@@ -108,29 +155,89 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
                 child: ListView(
                   padding: const EdgeInsets.fromLTRB(20, 16, 20, 32),
                   children: [
-                    Text(
-                      '내 재료 ${widget.ownedIngredientCount}개 기준',
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        color: AppColors.textSecondary,
-                        fontSize: 14,
+                    if (!_hasSearched) ...[
+                      Text(
+                        '내 재료 ${widget.ownedIngredientCount}개 기준',
+                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                          color: AppColors.textSecondary,
+                          fontSize: 14,
+                        ),
+                      ),
+                      const SizedBox(height: 6),
+                      Text(
+                        '만들 수 있는 메뉴예요',
+                        style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                      const SizedBox(height: 16),
+                    ],
+                    TextField(
+                      controller: _searchController,
+                      onTap: () {
+                        if (!_searching) {
+                          setState(() => _searching = true);
+                        }
+                      },
+                      onChanged: (_) {
+                        _debounce?.cancel();
+                        _debounce = Timer(
+                          const Duration(milliseconds: 300),
+                          _search,
+                        );
+                      },
+                      onSubmitted: (_) => _search(),
+                      textInputAction: TextInputAction.search,
+                      decoration: InputDecoration(
+                        hintText: '레시피나 재료를 검색해 보세요',
+                        hintStyle: const TextStyle(
+                          fontSize: 13,
+                          color: AppColors.placeholder,
+                        ),
+                        prefixIcon: const Icon(Icons.search, size: 19),
+                        suffixIcon: _searching
+                            ? IconButton(
+                                onPressed: () {
+                                  _searchController.clear();
+                                  setState(() => _searching = false);
+                                  _loadRecommendations();
+                                },
+                                icon: const Icon(Icons.close, size: 18),
+                              )
+                            : null,
+                        isDense: true,
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(9),
+                          borderSide: const BorderSide(
+                            color: AppColors.searchBorder,
+                          ),
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(9),
+                          borderSide: const BorderSide(
+                            color: AppColors.searchBorder,
+                          ),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(9),
+                          borderSide: const BorderSide(
+                            color: AppColors.primary,
+                          ),
+                        ),
                       ),
                     ),
-                    const SizedBox(height: 6),
-                    Text(
-                      '만들 수 있는 메뉴예요',
-                      style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                        color: AppColors.textPrimary,
-                        fontSize: 24,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                    const SizedBox(height: 24),
+                    const SizedBox(height: 12),
                     _RecommendationSelector(
                       selectedMode: _selectedMode,
                       onChanged: (value) {
                         if (value == _selectedMode) return;
                         setState(() => _selectedMode = value);
-                        _loadRecommendations();
+                        if (_searching) {
+                          _search();
+                        } else {
+                          _loadRecommendations();
+                        }
                       },
                     ),
                     const SizedBox(height: 24),
@@ -140,7 +247,22 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
                         child: Center(child: CircularProgressIndicator()),
                       )
                     else if (_hasLoadError)
-                      _RecommendationLoadError(onRetry: _loadRecommendations)
+                      _RecommendationLoadError(
+                        onRetry: _searching ? _search : _loadRecommendations,
+                      )
+                    else if (_hasSearched && _items.isEmpty)
+                      Column(
+                        children: [
+                          const SizedBox(height: 80),
+                          const Text('검색어와 맞는 메뉴가 없어요'),
+                          if (_selectedMode == RecommendationMode.AVAILABLE &&
+                              widget.ownedIngredientCount == 0)
+                            TextButton(
+                              onPressed: widget.onRegisterIngredients,
+                              child: const Text('재료 등록하기'),
+                            ),
+                        ],
+                      )
                     else if (_items.isEmpty)
                       _EmptyRecommendations(
                         mode: _selectedMode,

@@ -38,6 +38,7 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
   List<IngredientUiItem> _ingredients = const [];
   List<IngredientGroup> _groups = const [];
   String _query = '';
+  bool _ownedOnly = false;
   String? _loadError;
   bool _isLoading = true;
 
@@ -105,6 +106,7 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
     if (_pendingIngredientIds.contains(ingredient.ingredientId)) return;
     setState(() => _pendingIngredientIds.add(ingredient.ingredientId));
     try {
+      final wasOwned = ingredient.isOwned;
       if (ingredient.isOwned) {
         await widget.apiClient.getOwnedIngredientApi().deleteOwnedIngredient(
           userIngredientId: ingredient.userIngredientId!,
@@ -128,6 +130,29 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
         );
       }
       _notifyOwnedIngredientsChanged();
+      if (mounted) {
+        ScaffoldMessenger.of(context)
+          ..hideCurrentSnackBar()
+          ..showSnackBar(
+            SnackBar(
+              content: Text(
+                wasOwned
+                    ? '${ingredient.displayName}을(를) 재료함에서 뺐어요.'
+                    : '${ingredient.displayName}을(를) 재료함에 담았어요.',
+              ),
+              duration: const Duration(seconds: 3),
+              action: SnackBarAction(
+                label: '되돌리기',
+                onPressed: () {
+                  final current = _ingredients.firstWhere(
+                    (item) => item.ingredientId == ingredient.ingredientId,
+                  );
+                  _toggleIngredient(current);
+                },
+              ),
+            ),
+          );
+      }
     } catch (error) {
       debugPrint('Owned ingredient update failed: $error');
       if (!mounted) return;
@@ -189,9 +214,20 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
   Widget build(BuildContext context) {
     final owned = _ingredients
         .where((ingredient) => ingredient.isOwned)
-        .toList(growable: false);
-    final available = _ingredients
-        .where((ingredient) => !ingredient.isOwned)
+        .toList();
+    final ownedIds = owned.map((ingredient) => ingredient.ingredientId).toSet();
+    final visibleGroups = _groups
+        .map(
+          (group) => group.rebuild((builder) {
+            builder.items.replace(
+              group.items.where(
+                (variant) =>
+                    !_ownedOnly || ownedIds.contains(variant.variantId),
+              ),
+            );
+          }),
+        )
+        .where((group) => group.items.isNotEmpty)
         .toList(growable: false);
     final normalizedQuery = _query.trim();
 
@@ -217,13 +253,13 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
                   keyboardDismissBehavior:
                       ScrollViewKeyboardDismissBehavior.onDrag,
                   physics: const AlwaysScrollableScrollPhysics(),
-                  padding: const EdgeInsets.fromLTRB(20, 24, 20, 36),
+                  padding: const EdgeInsets.fromLTRB(20, 16, 20, 36),
                   children: [
                     Text(
                       owned.isEmpty ? '재료를 골라 담아보세요' : '현재 가지고 있는 재료예요',
                       style: Theme.of(context).textTheme.headlineSmall
                           ?.copyWith(
-                            fontSize: 24,
+                            fontSize: 20,
                             height: 1.35,
                             letterSpacing: 0,
                           ),
@@ -246,7 +282,23 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
                       onChanged: (value) => setState(() => _query = value),
                       onClear: _clearSearch,
                     ),
-                    const SizedBox(height: 30),
+                    const SizedBox(height: 14),
+                    Row(
+                      children: [
+                        _IngredientFilterChip(
+                          label: '전체 ${_ingredients.length}',
+                          selected: !_ownedOnly,
+                          onTap: () => setState(() => _ownedOnly = false),
+                        ),
+                        const SizedBox(width: 8),
+                        _IngredientFilterChip(
+                          label: '보유 중 ${owned.length}',
+                          selected: _ownedOnly,
+                          onTap: () => setState(() => _ownedOnly = true),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 14),
                     if (_isLoading)
                       const Padding(
                         padding: EdgeInsets.symmetric(vertical: 64),
@@ -269,50 +321,8 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
                           ],
                         ),
                       )
-                    else if (normalizedQuery.isNotEmpty)
-                      _groupSelector(_groups, query: normalizedQuery)
-                    else if (owned.isEmpty)
-                      _groupSelector(_groups)
-                    else ...[
-                      Text('보유 중 ${owned.length}개'),
-                      const SizedBox(height: 14),
-                      _groupSelector(
-                        _groups
-                            .where(
-                              (group) => group.items.any(
-                                (variant) => owned.any(
-                                  (item) =>
-                                      item.ingredientId == variant.variantId,
-                                ),
-                              ),
-                            )
-                            .toList(),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.symmetric(vertical: 28),
-                        child: Divider(
-                          height: 1,
-                          thickness: 1,
-                          color: Color(0xFFE5E5EA),
-                        ),
-                      ),
-                      if (available.isNotEmpty) ...[
-                        const Text('재료 더 담기'),
-                        const SizedBox(height: 14),
-                        _groupSelector(
-                          _groups
-                              .where(
-                                (group) => group.items.any(
-                                  (variant) => available.any(
-                                    (item) =>
-                                        item.ingredientId == variant.variantId,
-                                  ),
-                                ),
-                              )
-                              .toList(),
-                        ),
-                      ],
-                    ],
+                    else
+                      _groupSelector(visibleGroups, query: normalizedQuery),
                   ],
                 ),
               ),
@@ -322,6 +332,41 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
       ),
     );
   }
+}
+
+class _IngredientFilterChip extends StatelessWidget {
+  const _IngredientFilterChip({
+    required this.label,
+    required this.selected,
+    required this.onTap,
+  });
+  final String label;
+  final bool selected;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) => InkWell(
+    onTap: onTap,
+    borderRadius: BorderRadius.circular(16),
+    child: Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      decoration: BoxDecoration(
+        color: selected ? AppColors.errorSurface : AppColors.white,
+        border: Border.all(
+          color: selected ? AppColors.errorSurface : AppColors.border,
+        ),
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: Text(
+        label,
+        style: TextStyle(
+          color: selected ? AppColors.primary : AppColors.textSecondary,
+          fontSize: 11,
+          fontWeight: selected ? FontWeight.w700 : FontWeight.w500,
+        ),
+      ),
+    ),
+  );
 }
 
 class _IngredientSearchField extends StatelessWidget {

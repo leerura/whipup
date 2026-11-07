@@ -11,10 +11,10 @@ Name | Type | Description | Notes
 **recipeId** | **int** |  | 
 **name** | **String** |  | 
 **shortsReference** | **String** |  | 
-**sourceTitle** | **String** | Source video title | [optional]
-**sourceChannelName** | **String** | Source channel name | [optional]
-**sourceChannelId** | **String** | Source channel identifier | [optional]
-**sourceMetadataFetchedAt** | **DateTime** | Source metadata snapshot time | [optional]
+**sourceTitle** | **String** | Title returned by the stored YouTube source metadata snapshot. | 
+**sourceChannelName** | **String** |  | 
+**sourceChannelId** | **String** |  | 
+**sourceMetadataFetchedAt** | [**DateTime**](DateTime.md) | UTC time when the stored YouTube metadata snapshot was fetched. | 
 **thumbnailUrl** | **String** |  | 
 **missingCount** | **int** |  | 
 **requirements** | [**BuiltList&lt;DetailRequirement&gt;**](DetailRequirement.md) |  | 

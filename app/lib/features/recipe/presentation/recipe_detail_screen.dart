@@ -74,7 +74,11 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen> {
             return _RecipeDetailError(onRetry: _retry);
           }
 
-          return _RecipeDetailContent(recipe: snapshot.requireData);
+          return _RecipeDetailContent(
+            apiClient: widget.apiClient,
+            recipe: snapshot.requireData,
+            onChanged: _retry,
+          );
         },
       ),
     );
@@ -82,9 +86,15 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen> {
 }
 
 class _RecipeDetailContent extends StatefulWidget {
-  const _RecipeDetailContent({required this.recipe});
+  const _RecipeDetailContent({
+    required this.apiClient,
+    required this.recipe,
+    required this.onChanged,
+  });
 
+  final ApiClient apiClient;
   final RecipeDetailResponse recipe;
+  final VoidCallback onChanged;
 
   @override
   State<_RecipeDetailContent> createState() => _RecipeDetailContentState();
@@ -92,6 +102,58 @@ class _RecipeDetailContent extends StatefulWidget {
 
 class _RecipeDetailContentState extends State<_RecipeDetailContent> {
   RecipeDetailResponse get recipe => widget.recipe;
+  bool _isInDailyMenu = false;
+  bool _dailyMenuLoaded = false;
+  bool _isSavingDailyMenu = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadDailyMenuState();
+  }
+
+  Future<void> _loadDailyMenuState() async {
+    try {
+      final response = await widget.apiClient.getDailyMenuApi().getDailyMenu();
+      final items = response.data?.items ?? const <RecommendationItem>[];
+      if (!mounted) return;
+      setState(() {
+        _isInDailyMenu = items.any((item) => item.recipeId == recipe.recipeId);
+        _dailyMenuLoaded = true;
+      });
+    } catch (error) {
+      debugPrint('Today menu state unavailable: $error');
+      if (mounted) setState(() => _dailyMenuLoaded = true);
+    }
+  }
+
+  Future<void> _toggleDailyMenu() async {
+    if (_isSavingDailyMenu) return;
+    setState(() => _isSavingDailyMenu = true);
+    try {
+      if (_isInDailyMenu) {
+        await widget.apiClient.getDailyMenuApi().removeDailyMenu(
+          recipeId: recipe.recipeId,
+        );
+      } else {
+        await widget.apiClient.getDailyMenuApi().addDailyMenu(
+          dailyMenuRequest: DailyMenuRequest(
+            (builder) => builder.recipeId = recipe.recipeId,
+          ),
+        );
+      }
+      if (!mounted) return;
+      setState(() => _isInDailyMenu = !_isInDailyMenu);
+    } catch (error) {
+      debugPrint('Failed to update today menu: $error');
+      if (mounted) {
+        ScaffoldMessenger.of(context)
+            .showSnackBar(const SnackBar(content: Text('잠시 후 다시 시도해 주세요.')));
+      }
+    } finally {
+      if (mounted) setState(() => _isSavingDailyMenu = false);
+    }
+  }
 
   Future<void> _openSource() async {
     final uri = Uri.tryParse(recipe.shortsReference);
@@ -133,83 +195,139 @@ class _RecipeDetailContentState extends State<_RecipeDetailContent> {
     final availabilityMessage = recipe.missingCount == 0
         ? '지금 바로 만들 수 있어요'
         : '재료 ${recipe.missingCount}개가 부족해요';
-    return ListView(
-      padding: const EdgeInsets.fromLTRB(20, 12, 20, 40),
+    return Column(
       children: [
-        ClipRRect(
-          borderRadius: BorderRadius.circular(8),
-          child: AspectRatio(
-            aspectRatio: 16 / 9,
-            child: _VideoThumbnail(
-              thumbnailUrl: recipe.thumbnailUrl,
-              hasVideo: true,
-              onPlay: _openSource,
-              unavailable: false,
-            ),
+        Expanded(
+          child: ListView(
+            padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
+            children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(8),
+                child: AspectRatio(
+                  aspectRatio: 16 / 9,
+                  child: _VideoThumbnail(
+                    thumbnailUrl: recipe.thumbnailUrl,
+                    hasVideo: true,
+                    onPlay: _openSource,
+                    unavailable: false,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 22),
+              Text(
+                recipe.name,
+                style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                  color: AppColors.textPrimary,
+                  fontSize: 26,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              const SizedBox(height: 8),
+              _VideoCredit(
+                channelName: recipe.sourceChannelName,
+                onTap: _openSource,
+              ),
+              const SizedBox(height: 10),
+              Row(
+                children: [
+                  Icon(
+                    recipe.missingCount == 0
+                        ? Icons.check_circle_rounded
+                        : Icons.info_rounded,
+                    size: 19,
+                    color: recipe.missingCount == 0
+                        ? const Color(0xFF2E8B57)
+                        : AppColors.primary,
+                  ),
+                  const SizedBox(width: 7),
+                  Expanded(
+                    child: Text(
+                      availabilityMessage,
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                        color: AppColors.textSecondary,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600,
+                        letterSpacing: 0,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 30),
+              const Divider(height: 1, color: AppColors.border),
+              const SizedBox(height: 28),
+              _SectionTitle(title: '필요한 재료', count: recipe.requirements.length),
+              const SizedBox(height: 14),
+              ...recipe.requirements.map(
+                (requirement) => _RequirementRow(
+                  apiClient: widget.apiClient,
+                  requirement: requirement,
+                  onChanged: widget.onChanged,
+                ),
+              ),
+              if (recipe.optionalIngredients.isNotEmpty) ...[
+                const SizedBox(height: 28),
+                _SectionTitle(
+                  title: '선택 재료',
+                  count: recipe.optionalIngredients.length,
+                ),
+                const SizedBox(height: 14),
+                ...recipe.optionalIngredients.map(
+                  (ingredient) =>
+                      _OptionalIngredientRow(ingredient: ingredient),
+                ),
+              ],
+              const SizedBox(height: 28),
+              const Divider(height: 1, color: AppColors.border),
+              const SizedBox(height: 28),
+              _SectionTitle(title: '조리 순서', count: recipe.steps.length),
+              const SizedBox(height: 18),
+              ...recipe.steps.map((step) => _RecipeStepRow(step: step)),
+            ],
           ),
         ),
-        const SizedBox(height: 22),
-        Text(
-          recipe.name,
-          style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-            color: AppColors.textPrimary,
-            fontSize: 26,
-            fontWeight: FontWeight.w700,
-          ),
-        ),
-        const SizedBox(height: 8),
-        _VideoCredit(channelName: recipe.sourceChannelName, onTap: _openSource),
-        const SizedBox(height: 10),
-        Row(
-          children: [
-            Icon(
-              recipe.missingCount == 0
-                  ? Icons.check_circle_rounded
-                  : Icons.info_rounded,
-              size: 19,
-              color: recipe.missingCount == 0
-                  ? const Color(0xFF2E8B57)
-                  : AppColors.primary,
-            ),
-            const SizedBox(width: 7),
-            Expanded(
-              child: Text(
-                availabilityMessage,
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                  color: AppColors.textSecondary,
-                  fontSize: 14,
-                  fontWeight: FontWeight.w600,
-                  letterSpacing: 0,
+        SafeArea(
+          top: false,
+          child: ColoredBox(
+            color: AppColors.white,
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(20, 10, 20, 12),
+              child: SizedBox(
+                width: double.infinity,
+                height: 48,
+                child: FilledButton.icon(
+                  onPressed: _dailyMenuLoaded && !_isSavingDailyMenu
+                      ? _toggleDailyMenu
+                      : null,
+                  icon: Icon(
+                    _isInDailyMenu
+                        ? Icons.check_rounded
+                        : Icons.bookmark_border_rounded,
+                  ),
+                  label: Text(
+                    _isSavingDailyMenu
+                        ? '저장 중...'
+                        : _isInDailyMenu
+                        ? '오늘 먹을 메뉴에서 빼기'
+                        : '오늘 먹을 메뉴 담기',
+                  ),
+                  style: FilledButton.styleFrom(
+                    backgroundColor: _isInDailyMenu
+                        ? AppColors.errorSurface
+                        : AppColors.primary,
+                    foregroundColor: _isInDailyMenu
+                        ? AppColors.primary
+                        : AppColors.white,
+                    disabledBackgroundColor: AppColors.disabled,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
                 ),
               ),
             ),
-          ],
-        ),
-        const SizedBox(height: 30),
-        const Divider(height: 1, color: AppColors.border),
-        const SizedBox(height: 28),
-        _SectionTitle(title: '필요한 재료', count: recipe.requirements.length),
-        const SizedBox(height: 14),
-        ...recipe.requirements.map(
-          (requirement) => _RequirementRow(requirement: requirement),
-        ),
-        if (recipe.optionalIngredients.isNotEmpty) ...[
-          const SizedBox(height: 28),
-          _SectionTitle(
-            title: '선택 재료',
-            count: recipe.optionalIngredients.length,
           ),
-          const SizedBox(height: 14),
-          ...recipe.optionalIngredients.map(
-            (ingredient) => _OptionalIngredientRow(ingredient: ingredient),
-          ),
-        ],
-        const SizedBox(height: 28),
-        const Divider(height: 1, color: AppColors.border),
-        const SizedBox(height: 28),
-        _SectionTitle(title: '조리 순서', count: recipe.steps.length),
-        const SizedBox(height: 18),
-        ...recipe.steps.map((step) => _RecipeStepRow(step: step)),
+        ),
       ],
     );
   }
@@ -451,9 +569,253 @@ String _withParticle(
 }
 
 class _RequirementRow extends StatelessWidget {
-  const _RequirementRow({required this.requirement});
+  const _RequirementRow({
+    required this.apiClient,
+    required this.requirement,
+    required this.onChanged,
+  });
 
+  final ApiClient apiClient;
   final DetailRequirement requirement;
+  final VoidCallback onChanged;
+
+  Future<void> _addVariant(
+    BuildContext context,
+    IngredientVariantOption variant,
+  ) async {
+    try {
+      await apiClient.getOwnedIngredientApi().addOwnedIngredient(
+        addOwnedIngredientRequest: AddOwnedIngredientRequest(
+          (builder) => builder.variantId = variant.variantId,
+        ),
+      );
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('${variant.name}을(를) 재료함에 담았어요.')),
+        );
+      }
+      onChanged();
+    } catch (error) {
+      debugPrint('Failed to add recipe ingredient: $error');
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('재료를 담지 못했어요. 다시 시도해 주세요.')),
+        );
+      }
+    }
+  }
+
+  Future<void> _removeOwned(BuildContext context, String ownedName) async {
+    final shouldRemove = await showModalBottomSheet<bool>(
+      context: context,
+      builder: (sheetContext) => SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(
+                '$ownedName을 다 먹었나요?',
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+              const SizedBox(height: 8),
+              const Text('확인하면 재료함에서도 삭제돼요.'),
+              const SizedBox(height: 16),
+              FilledButton(
+                onPressed: () => Navigator.of(sheetContext).pop(true),
+                child: const Text('다 먹었어요'),
+              ),
+              TextButton(
+                onPressed: () => Navigator.of(sheetContext).pop(false),
+                child: const Text('아직 있어요'),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+    if (shouldRemove != true || !context.mounted) return;
+
+    try {
+      final response = await apiClient
+          .getOwnedIngredientApi()
+          .getOwnedIngredients();
+      final owned = response.data?.items
+          .where((item) => item.name == ownedName)
+          .toList(growable: false);
+      if (owned == null || owned.isEmpty) return;
+      await apiClient.getOwnedIngredientApi().deleteOwnedIngredient(
+        userIngredientId: owned.first.userIngredientId,
+      );
+      onChanged();
+    } catch (error) {
+      debugPrint('Failed to remove recipe ingredient: $error');
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('재료를 삭제하지 못했어요. 다시 시도해 주세요.')),
+        );
+      }
+    }
+  }
+
+  Future<void> _openCoupang(BuildContext context, String name) async {
+    final last = name.runes.last;
+    final particle =
+        last >= 0xAC00 && last <= 0xD7A3 && (last - 0xAC00) % 28 == 0
+        ? '를'
+        : '을';
+    final shouldOpen = await showModalBottomSheet<bool>(
+      context: context,
+      builder: (sheetContext) => SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(
+                '쿠팡에서 $name$particle 찾아볼까요?',
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+              const SizedBox(height: 8),
+              const Text('쿠팡의 검색 결과를 외부에서 확인할 수 있어요.'),
+              const SizedBox(height: 16),
+              SizedBox(
+                height: 48,
+                child: FilledButton(
+                  style: FilledButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(9),
+                    ),
+                  ),
+                  onPressed: () => Navigator.of(sheetContext).pop(true),
+                  child: const Text('쿠팡으로 이동'),
+                ),
+              ),
+              const SizedBox(height: 8),
+              SizedBox(
+                height: 48,
+                child: OutlinedButton(
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: AppColors.textSecondary,
+                    side: const BorderSide(color: AppColors.border),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(9),
+                    ),
+                  ),
+                  onPressed: () => Navigator.of(sheetContext).pop(false),
+                  child: const Text('취소'),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+    if (shouldOpen != true || !context.mounted) return;
+    final uri = Uri.https('www.coupang.com', '/np/search', {'q': name});
+    if (!await launchUrl(uri, mode: LaunchMode.externalApplication) &&
+        context.mounted) {
+      ScaffoldMessenger.of(context)
+          .showSnackBar(const SnackBar(content: Text('쿠팡을 열 수 없어요.')));
+    }
+  }
+
+  Future<void> _selectVariant(
+    BuildContext context,
+    DetailRequirementOption option,
+  ) async {
+    final variants = option.addableVariants;
+    final selected = await showModalBottomSheet<IngredientVariantOption>(
+      context: context,
+      builder: (sheetContext) {
+        var selected = variants.first;
+        return StatefulBuilder(
+          builder: (context, setSheetState) => SafeArea(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(20, 20, 20, 16),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Text(
+                    '어떤 재료가 있나요?',
+                    style: const TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  const Text(
+                    '이 레시피에 맞는 재료예요. 하나를 골라주세요.',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: AppColors.textSecondary,
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: AppColors.surfaceSubtle,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Column(
+                      children: [
+                        for (final variant in variants)
+                          InkWell(
+                            onTap: () =>
+                                setSheetState(() => selected = variant),
+                            child: SizedBox(
+                              height: 44,
+                              child: Row(
+                                children: [
+                                  const SizedBox(width: 12),
+                                  Icon(
+                                    selected == variant
+                                        ? Icons.check_box
+                                        : Icons.check_box_outline_blank,
+                                    color: selected == variant
+                                        ? AppColors.primary
+                                        : AppColors.border,
+                                    size: 20,
+                                  ),
+                                  const SizedBox(width: 10),
+                                  Text(
+                                    variant.name,
+                                    style: const TextStyle(fontSize: 14),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 14),
+                  SizedBox(
+                    height: 48,
+                    child: FilledButton(
+                      style: FilledButton.styleFrom(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(9),
+                        ),
+                      ),
+                      onPressed: () => Navigator.of(sheetContext).pop(selected),
+                      child: Text('${selected.name} 담기'),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        );
+      },
+    );
+    if (selected != null && context.mounted) {
+      await _addVariant(context, selected);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -524,70 +886,160 @@ class _RequirementRow extends StatelessWidget {
       }
     }
 
+    final addable = options
+        .where((option) => option.addableVariants.isNotEmpty)
+        .toList();
+    final actionCount = satisfied ? matches.length : addable.length;
+    void performAction(int index) {
+      if (satisfied) {
+        _removeOwned(context, matches[index].ownedName);
+      } else {
+        _selectVariant(context, addable[index]);
+      }
+    }
+
     return Semantics(
       label: '${satisfied ? '충족' : '부족'}, $name',
       child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 10),
         decoration: const BoxDecoration(
           border: Border(bottom: BorderSide(color: AppColors.border)),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Icon(
-                  satisfied
-                      ? Icons.check_rounded
-                      : Icons.radio_button_unchecked_rounded,
-                  size: 18,
-                  color: satisfied ? AppColors.primary : AppColors.textMuted,
-                ),
-                const SizedBox(width: 8),
-                Expanded(
-                  flex: 3,
-                  child: Text(
-                    name,
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: AppColors.textPrimary,
-                      fontSize: 14,
-                      fontWeight: FontWeight.w500,
-                      letterSpacing: 0,
+            InkWell(
+              onTap: actionCount == 1 ? () => performAction(0) : null,
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(minHeight: 44),
+                child: Row(
+                  children: [
+                    Icon(
+                      satisfied
+                          ? Icons.check_rounded
+                          : Icons.radio_button_unchecked_rounded,
+                      size: 18,
+                      color: satisfied
+                          ? AppColors.primary
+                          : AppColors.textMuted,
                     ),
-                  ),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: Text(
+                        name,
+                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                          color: AppColors.textPrimary,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w500,
+                          letterSpacing: 0,
+                        ),
+                      ),
+                    ),
+                    if (sharedQuantity.isNotEmpty)
+                      Text(
+                        sharedQuantity,
+                        textAlign: TextAlign.end,
+                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                          color: satisfied
+                              ? AppColors.textMuted
+                              : AppColors.primary,
+                          letterSpacing: 0,
+                        ),
+                      ),
+                    if (actionCount > 1)
+                      PopupMenuButton<int>(
+                        tooltip: satisfied ? '보유 재료 빼기' : '재료함에 담기',
+                        onSelected: performAction,
+                        itemBuilder: (context) => [
+                          for (var i = 0; i < actionCount; i++)
+                            PopupMenuItem(
+                              value: i,
+                              child: Text(
+                                satisfied
+                                    ? '${matches[i].ownedName} 빼기'
+                                    : '${addable[i].displayName} 담기',
+                              ),
+                            ),
+                        ],
+                        icon: const Icon(
+                          Icons.more_horiz,
+                          size: 20,
+                          color: AppColors.textMuted,
+                        ),
+                      ),
+                  ],
                 ),
-                if (sharedQuantity.isNotEmpty) ...[
-                  const SizedBox(width: 12),
-                  Flexible(
-                    child: Text(
-                      sharedQuantity,
-                      textAlign: TextAlign.end,
-                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                        color: satisfied
-                            ? AppColors.textMuted
-                            : AppColors.primary,
-                        letterSpacing: 0,
+              ),
+            ),
+            if (notes.isNotEmpty || !satisfied)
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.only(bottom: 8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          for (final note in notes)
+                            Text(
+                              note,
+                              style: Theme.of(context).textTheme.bodySmall
+                                  ?.copyWith(
+                                    color: !satisfied && note == notes.first
+                                        ? AppColors.primary
+                                        : AppColors.textSecondary,
+                                    fontSize: 12,
+                                    height: 1.4,
+                                    letterSpacing: 0,
+                                  ),
+                            ),
+                        ],
                       ),
                     ),
                   ),
+                  if (!satisfied && options.length == 1)
+                    TextButton(
+                      onPressed: () =>
+                          _openCoupang(context, options.single.displayName),
+                      style: TextButton.styleFrom(
+                        foregroundColor: AppColors.textSecondary,
+                        minimumSize: const Size(44, 44),
+                        padding: const EdgeInsets.symmetric(horizontal: 4),
+                        tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                      ),
+                      child: const Text(
+                        '쿠팡에서 보기 ↗',
+                        style: TextStyle(fontSize: 11),
+                      ),
+                    ),
+                  if (!satisfied && options.length > 1)
+                    PopupMenuButton<int>(
+                      tooltip: '쿠팡에서 보기',
+                      onSelected: (index) =>
+                          _openCoupang(context, options[index].displayName),
+                      itemBuilder: (context) => [
+                        for (var i = 0; i < options.length; i++)
+                          PopupMenuItem(
+                            value: i,
+                            child: Text('${options[i].displayName} 쿠팡에서 보기'),
+                          ),
+                      ],
+                      child: const Padding(
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 4,
+                          vertical: 14,
+                        ),
+                        child: Text(
+                          '쿠팡에서 보기 ↗',
+                          style: TextStyle(
+                            fontSize: 11,
+                            color: AppColors.textSecondary,
+                          ),
+                        ),
+                      ),
+                    ),
                 ],
-              ],
-            ),
-            for (final note in notes) ...[
-              const SizedBox(height: 6),
-              Text(
-                note,
-                style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                  color: !satisfied && note == notes.first
-                      ? AppColors.primary
-                      : AppColors.textSecondary,
-                  fontSize: 13,
-                  height: 1.5,
-                  letterSpacing: 0,
-                ),
               ),
-            ],
           ],
         ),
       ),

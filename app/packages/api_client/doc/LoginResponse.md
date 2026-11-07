@@ -10,8 +10,9 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **accessToken** | **String** |  | 
 **user** | [**UserSummary**](UserSummary.md) |  | 
-**hasOwnedIngredients** | **bool** | Whether the account currently has any owned ingredient rows. |
-**onboardingCompleted** | **bool** | Whether the account has completed initial ingredient registration. Remains true if all owned ingredients are later deleted. |
+**hasOwnedIngredients** | **bool** | Whether the account currently has any owned ingredient rows. | 
+**onboardingCompleted** | **bool** | Whether the account has completed initial ingredient registration. Remains true if all owned ingredients are later deleted. | 
+**termsConsentRequired** | **bool** | Whether the account must accept the current terms before using protected APIs. | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

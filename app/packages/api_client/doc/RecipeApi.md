@@ -10,6 +10,7 @@ All URIs are relative to *http://localhost*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getRecipeDetail**](RecipeApi.md#getrecipedetail) | **GET** /api/v1/recipes/{recipeId} | 
+[**searchRecipes**](RecipeApi.md#searchrecipes) | **GET** /api/v1/recipes/search | 
 
 
 # **getRecipeDetail**
@@ -41,6 +42,49 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**RecipeDetailResponse**](RecipeDetailResponse.md)
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **searchRecipes**
+> RecommendationListResponse searchRecipes(scope, query)
+
+
+
+### Example
+```dart
+import 'package:api_client/api.dart';
+
+final api = ApiClient().getRecipeApi();
+final RecipeSearchScope scope = ; // RecipeSearchScope | 
+final String query = query_example; // String | 
+
+try {
+    final response = api.searchRecipes(scope, query);
+    print(response);
+} on DioException catch (e) {
+    print('Exception when calling RecipeApi->searchRecipes: $e\n');
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **scope** | [**RecipeSearchScope**](.md)|  | 
+ **query** | **String**|  | 
+
+### Return type
+
+[**RecommendationListResponse**](RecommendationListResponse.md)
 
 ### Authorization
 

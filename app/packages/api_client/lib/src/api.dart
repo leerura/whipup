@@ -10,8 +10,10 @@ import 'package:api_client/src/auth/basic_auth.dart';
 import 'package:api_client/src/auth/bearer_auth.dart';
 import 'package:api_client/src/auth/oauth.dart';
 import 'package:api_client/src/api/auth_api.dart';
+import 'package:api_client/src/api/daily_menu_api.dart';
 import 'package:api_client/src/api/health_api.dart';
 import 'package:api_client/src/api/ingredient_api.dart';
+import 'package:api_client/src/api/onboarding_api.dart';
 import 'package:api_client/src/api/owned_ingredient_api.dart';
 import 'package:api_client/src/api/recipe_api.dart';
 import 'package:api_client/src/api/recommendation_api.dart';
@@ -116,6 +118,12 @@ class ApiClient {
     return AuthApi(dio, serializers);
   }
 
+  /// Get DailyMenuApi instance, base route and serializer can be overridden by a given but be careful,
+  /// by doing that all interceptors will not be executed
+  DailyMenuApi getDailyMenuApi() {
+    return DailyMenuApi(dio, serializers);
+  }
+
   /// Get HealthApi instance, base route and serializer can be overridden by a given but be careful,
   /// by doing that all interceptors will not be executed
   HealthApi getHealthApi() {
@@ -126,6 +134,12 @@ class ApiClient {
   /// by doing that all interceptors will not be executed
   IngredientApi getIngredientApi() {
     return IngredientApi(dio, serializers);
+  }
+
+  /// Get OnboardingApi instance, base route and serializer can be overridden by a given but be careful,
+  /// by doing that all interceptors will not be executed
+  OnboardingApi getOnboardingApi() {
+    return OnboardingApi(dio, serializers);
   }
 
   /// Get OwnedIngredientApi instance, base route and serializer can be overridden by a given but be careful,

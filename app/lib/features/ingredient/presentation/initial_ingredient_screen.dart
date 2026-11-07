@@ -8,18 +8,24 @@ import 'ingredient_registration_complete_sheet.dart';
 import 'widgets/ingredient_chip.dart';
 import 'widgets/ingredient_group_selector.dart';
 import 'widgets/ingredient_search_field.dart';
+import 'widgets/ingredient_thumbnail.dart';
+import 'ingredient_presentation_catalog.dart';
 
 class InitialIngredientScreen extends StatefulWidget {
   const InitialIngredientScreen({
     required this.apiClient,
     this.onSubmit,
     this.onViewRecommendations,
+    this.onBatchSubmit,
+    this.allowEmptySubmit = false,
     super.key,
   });
 
   final ApiClient apiClient;
   final ValueChanged<Set<String>>? onSubmit;
   final VoidCallback? onViewRecommendations;
+  final Future<void> Function(Set<int> variantIds)? onBatchSubmit;
+  final bool allowEmptySubmit;
 
   @override
   State<InitialIngredientScreen> createState() =>
@@ -27,7 +33,16 @@ class InitialIngredientScreen extends StatefulWidget {
 }
 
 class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
-  static const _presetNames = {'계란', '대파', '고추장', '김치', '양파', '통마늘', '밥', '간장'};
+  static const _presetNames = {
+    '계란',
+    '대파',
+    '고추장',
+    '김치',
+    '양파',
+    '통마늘',
+    '밥',
+    '진간장',
+  };
 
   final TextEditingController _searchController = TextEditingController();
   final Set<int> _selectedIds = {};
@@ -38,21 +53,15 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
   String? _loadError;
   bool _isLoading = true;
   bool _isSubmitting = false;
+  bool _showCatalog = false;
 
   List<IngredientUiItem> get _selectedIngredients => _ingredients
       .where((ingredient) => _selectedIds.contains(ingredient.ingredientId))
       .toList(growable: false);
 
-  List<IngredientUiItem> get _presetIngredients {
-    final ingredientsByName = {
-      for (final ingredient in _ingredients) ingredient.displayName: ingredient,
-    };
-
-    return _presetNames
-        .map((name) => ingredientsByName[name])
-        .whereType<IngredientUiItem>()
-        .toList(growable: false);
-  }
+  List<IngredientUiItem> get _presetIngredients => _ingredients
+      .where((ingredient) => _presetNames.contains(ingredient.displayName))
+      .toList(growable: false);
 
   Set<String> get _selectedLabels =>
       _selectedIngredients.map((ingredient) => ingredient.displayName).toSet();
@@ -78,7 +87,8 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
         throw StateError('The ingredient response body is empty.');
       }
 
-      final ingredients = data.groups.expand((group) => group.items)
+      final ingredients = data.groups
+          .expand((group) => group.items)
           .map(
             (item) => IngredientUiItem(
               ingredientId: item.variantId,
@@ -91,6 +101,15 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
       setState(() {
         _ingredients = ingredients;
         _groups = data.groups.toList(growable: false);
+        if (widget.onBatchSubmit != null) {
+          _selectedIds.addAll(
+            ingredients
+                .where(
+                  (ingredient) => _presetNames.contains(ingredient.displayName),
+                )
+                .map((ingredient) => ingredient.ingredientId),
+          );
+        }
         _isLoading = false;
       });
     } catch (error) {
@@ -154,25 +173,37 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
   }
 
   Future<void> _submit() async {
-    if (_isSubmitting || _selectedIds.isEmpty) return;
+    if (_isSubmitting || (!widget.allowEmptySubmit && _selectedIds.isEmpty)) {
+      return;
+    }
     setState(() => _isSubmitting = true);
 
     try {
       final selectedIds = Set<int>.of(_selectedIds);
-      for (final id in selectedIds) {
-        if (_savedVariantIds.contains(id)) continue;
-        final response = await widget.apiClient
-            .getOwnedIngredientApi()
-            .addOwnedIngredient(
-              addOwnedIngredientRequest: AddOwnedIngredientRequest(
-                (builder) => builder.variantId = id,
-              ),
-            );
-        if (response.data == null) {
-          throw StateError('The owned ingredient response body is empty.');
+      if (widget.onBatchSubmit != null) {
+        await widget.onBatchSubmit!(selectedIds);
+      } else {
+        for (final id in selectedIds) {
+          if (_savedVariantIds.contains(id)) continue;
+          final response = await widget.apiClient
+              .getOwnedIngredientApi()
+              .addOwnedIngredient(
+                addOwnedIngredientRequest: AddOwnedIngredientRequest(
+                  (builder) => builder.variantId = id,
+                ),
+              );
+          if (response.data == null) {
+            throw StateError('The owned ingredient response body is empty.');
+          }
+          _savedVariantIds.add(id);
         }
-        _savedVariantIds.add(id);
-        if (!mounted) return;
+      }
+
+      if (widget.onBatchSubmit != null) {
+        final selectedLabels = Set<String>.unmodifiable(_selectedLabels);
+        widget.onSubmit?.call(selectedLabels);
+        widget.onViewRecommendations?.call();
+        return;
       }
 
       final recommendationList = await _loadRecommendationPreview();
@@ -201,11 +232,13 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
       debugPrint('Ingredient registration failed: $error');
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(
-          _savedVariantIds.isEmpty
-              ? '재료를 등록하지 못했어요. 다시 시도해주세요.'
-              : '${_savedVariantIds.length}개는 등록됐어요. 다시 시도하면 나머지 재료를 등록해요.',
-        )),
+        SnackBar(
+          content: Text(
+            _savedVariantIds.isEmpty
+                ? '재료를 등록하지 못했어요. 다시 시도해주세요.'
+                : '${_savedVariantIds.length}개는 등록됐어요. 다시 시도하면 나머지 재료를 등록해요.',
+          ),
+        ),
       );
     } finally {
       if (mounted) {
@@ -238,20 +271,28 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
             padding: const EdgeInsets.fromLTRB(20, 20, 20, 24),
             children: [
               Text(
-                '냉장고에 있는\n재료를 골라주세요',
-                style: Theme.of(context).textTheme.titleLarge,
+                widget.onBatchSubmit != null
+                    ? '집에 있을 만한 재료를\n모아봤어요'
+                    : '냉장고에 있는\n재료를 골라주세요',
+                style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                  fontSize: widget.onBatchSubmit != null ? 20 : 24,
+                  height: 1.35,
+                ),
               ),
               const SizedBox(height: 8),
               Text(
-                '하나 이상 고르면 추천이 시작돼요',
+                widget.onBatchSubmit != null
+                    ? '아닌 건 눌러서 빼주세요.\n나머지는 레시피를 보면서 담으면 돼요.'
+                    : '하나 이상 고르면 추천이 시작돼요',
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
-              const SizedBox(height: 24),
-              IngredientSearchField(
-                controller: _searchController,
-                onChanged: (value) => setState(() => _query = value),
-                onClear: hasQuery ? _clearSearch : null,
-              ),
+              const SizedBox(height: 16),
+              if (widget.onBatchSubmit == null || _showCatalog)
+                IngredientSearchField(
+                  controller: _searchController,
+                  onChanged: (value) => setState(() => _query = value),
+                  onClear: hasQuery ? _clearSearch : null,
+                ),
               const SizedBox(height: 16),
               if (_isLoading) ...[
                 const SizedBox(height: 48),
@@ -277,14 +318,15 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    if (_selectedIds.isNotEmpty) ...[
+                    if (_selectedIds.isNotEmpty &&
+                        (widget.onBatchSubmit == null || _showCatalog)) ...[
                       _SelectedIngredientSummary(
                         ingredients: _selectedIngredients,
                         onRemove: (id) => _setIngredientSelected(id, false),
                       ),
                       if (!hasQuery) const SizedBox(height: 16),
                     ],
-                    if (!hasQuery)
+                    if (!hasQuery && !_showCatalog)
                       _PresetCard(
                         ingredients: _presetIngredients,
                         selectedIds: _selectedIds,
@@ -295,11 +337,28 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
                 )
               else
                 const SizedBox.shrink(),
-              if (!_isLoading && _loadError == null) ...[
+              if (!_isLoading &&
+                  _loadError == null &&
+                  (widget.onBatchSubmit == null || _showCatalog)) ...[
                 const SizedBox(height: 24),
-                Text(
-                  hasQuery ? '검색 결과' : '전체 재료',
-                  style: Theme.of(context).textTheme.labelMedium,
+                Row(
+                  children: [
+                    Expanded(
+                      child: Text(
+                        hasQuery
+                            ? '검색 결과'
+                            : widget.onBatchSubmit != null
+                            ? '직접 고르기'
+                            : '전체 재료',
+                        style: Theme.of(context).textTheme.labelMedium,
+                      ),
+                    ),
+                    if (widget.onBatchSubmit != null && !hasQuery)
+                      TextButton(
+                        onPressed: _selectPreset,
+                        child: const Text('추천 재료 선택'),
+                      ),
+                  ],
                 ),
                 const SizedBox(height: 8),
                 IngredientGroupSelector(
@@ -309,11 +368,15 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
                   pendingVariantIds: _isSubmitting
                       ? _ingredients.map((item) => item.ingredientId).toSet()
                       : const <int>{},
-                  onToggle: (id) => _setIngredientSelected(
-                    id, !_selectedIds.contains(id),
-                  ),
+                  onToggle: (id) =>
+                      _setIngredientSelected(id, !_selectedIds.contains(id)),
                 ),
               ],
+              if (widget.onBatchSubmit != null && !_isLoading && !_showCatalog)
+                TextButton(
+                  onPressed: () => setState(() => _showCatalog = true),
+                  child: const Text('직접 고르기'),
+                ),
             ],
           ),
         ),
@@ -323,30 +386,62 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
             color: AppColors.white,
             child: Padding(
               padding: const EdgeInsets.all(20),
-              child: SizedBox(
-                height: 56,
-                child: FilledButton(
-                  onPressed: selectedCount == 0 || _isLoading || _isSubmitting
-                      ? null
-                      : _submit,
-                  style: FilledButton.styleFrom(
-                    elevation: 0,
-                    backgroundColor: AppColors.primary,
-                    disabledBackgroundColor: AppColors.disabled,
-                    foregroundColor: AppColors.white,
-                    disabledForegroundColor: AppColors.white,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  SizedBox(
+                    width: double.infinity,
+                    height: 48,
+                    child: FilledButton(
+                      onPressed:
+                          (!widget.allowEmptySubmit && selectedCount == 0) ||
+                              _isLoading ||
+                              _isSubmitting
+                          ? null
+                          : _submit,
+                      style: FilledButton.styleFrom(
+                        elevation: 0,
+                        backgroundColor: AppColors.primary,
+                        disabledBackgroundColor: AppColors.disabled,
+                        foregroundColor: AppColors.white,
+                        disabledForegroundColor: AppColors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                      child: Text(
+                        _isSubmitting
+                            ? '등록 중...'
+                            : selectedCount == 0 && widget.allowEmptySubmit
+                            ? '재료 없이 둘러보기'
+                            : selectedCount == 0
+                            ? '재료를 골라주세요'
+                            : widget.onBatchSubmit != null
+                            ? (_presetIngredients.isNotEmpty &&
+                                      _selectedIds.length ==
+                                          _presetIngredients.length &&
+                                      _presetIngredients.every(
+                                        (item) => _selectedIds.contains(
+                                          item.ingredientId,
+                                        ),
+                                      )
+                                  ? '이대로 시작하기'
+                                  : '$selectedCount개로 시작하기')
+                            : '선택한 재료 $selectedCount개 등록하기',
+                      ),
                     ),
                   ),
-                  child: Text(
-                    _isSubmitting
-                        ? '등록 중...'
-                        : selectedCount == 0
-                        ? '재료를 골라주세요'
-                        : '선택한 재료 $selectedCount개 등록하기',
-                  ),
-                ),
+                  if (widget.onBatchSubmit != null)
+                    TextButton(
+                      onPressed: _isSubmitting || _isLoading
+                          ? null
+                          : () {
+                              setState(() => _selectedIds.clear());
+                              _submit();
+                            },
+                      child: const Text('재료 없이 둘러보기'),
+                    ),
+                ],
               ),
             ),
           ),
@@ -371,55 +466,117 @@ class _PresetCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DecoratedBox(
-      decoration: BoxDecoration(
-        color: AppColors.surfaceSubtle,
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 18),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
           children: [
-            Text('자주 쓰는 재료 8개', style: Theme.of(context).textTheme.labelLarge),
-            const SizedBox(height: 4),
+            const Expanded(
+              child: Text(
+                '자주 쓰는 재료',
+                style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700),
+              ),
+            ),
             Text(
-              '한 번에 담고 바로 추천받기',
-              style: Theme.of(context).textTheme.bodySmall,
-            ),
-            const SizedBox(height: 12),
-            Wrap(
-              spacing: 6,
-              runSpacing: 6,
-              children: [
-                for (final ingredient in ingredients)
-                  IngredientChip(
-                    label: ingredient.displayName,
-                    selected: selectedIds.contains(ingredient.ingredientId),
-                    onSelectedChanged: (selected) =>
-                        onChanged(ingredient.ingredientId, selected),
-                  ),
-              ],
-            ),
-            const SizedBox(height: 16),
-            SizedBox(
-              width: double.infinity,
-              height: 48,
-              child: OutlinedButton(
-                onPressed: onSelectAll,
-                style: OutlinedButton.styleFrom(
-                  foregroundColor: AppColors.textMuted,
-                  side: const BorderSide(color: Color(0xFFAEAEB2)),
-                  shape: const StadiumBorder(),
-                ),
-                child: const Text('한 번에 담기'),
+              '${selectedIds.length}개 담김',
+              style: const TextStyle(
+                fontSize: 12,
+                color: AppColors.primary,
+                fontWeight: FontWeight.w600,
               ),
             ),
           ],
         ),
-      ),
+        const SizedBox(height: 8),
+        for (var index = 0; index < ingredients.length; index += 2)
+          Row(
+            children: [
+              for (final ingredient in ingredients.skip(index).take(2))
+                Expanded(
+                  child: _QuickIngredientRow(
+                    ingredient: ingredient,
+                    selected: selectedIds.contains(ingredient.ingredientId),
+                    onTap: () => onChanged(
+                      ingredient.ingredientId,
+                      !selectedIds.contains(ingredient.ingredientId),
+                    ),
+                  ),
+                ),
+              if (index + 1 >= ingredients.length)
+                const Expanded(child: SizedBox()),
+            ],
+          ),
+        const SizedBox(height: 12),
+        Container(
+          width: double.infinity,
+          padding: const EdgeInsets.all(12),
+          decoration: BoxDecoration(
+            color: AppColors.surfaceSubtle,
+            borderRadius: BorderRadius.circular(8),
+          ),
+          child: const Text(
+            '지금 다 고르지 않아도 돼요. 나머지는 재료함이나 레시피에서 언제든 담을 수 있어요.',
+            style: TextStyle(fontSize: 11, color: AppColors.textMuted),
+          ),
+        ),
+      ],
     );
   }
+}
+
+class _QuickIngredientRow extends StatelessWidget {
+  const _QuickIngredientRow({
+    required this.ingredient,
+    required this.selected,
+    required this.onTap,
+  });
+  final IngredientUiItem ingredient;
+  final bool selected;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) => InkWell(
+    onTap: onTap,
+    child: SizedBox(
+      height: 42,
+      child: Row(
+        children: [
+          SizedBox(
+            width: 18,
+            height: 18,
+            child: Checkbox(
+              value: selected,
+              onChanged: (_) => onTap(),
+              activeColor: AppColors.primary,
+              materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+              visualDensity: VisualDensity.compact,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(4),
+              ),
+            ),
+          ),
+          const SizedBox(width: 5),
+          IngredientThumbnail(
+            displayName: ingredient.displayName,
+            assetPath: ingredientAssetPathFor(ingredient.displayName),
+            size: 26,
+          ),
+          const SizedBox(width: 5),
+          Expanded(
+            child: Text(
+              ingredient.displayName,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: const TextStyle(
+                fontSize: 12,
+                color: AppColors.textPrimary,
+              ),
+            ),
+          ),
+        ],
+      ),
+    ),
+  );
 }
 
 class _SelectedIngredientSummary extends StatelessWidget {

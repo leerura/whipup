@@ -13,6 +13,7 @@ import '../../settings/presentation/settings_screen.dart';
 import 'onboarding_entry.dart';
 import 'kakao_login_screen.dart';
 import 'onboarding_motion_sequence.dart';
+import 'terms_consent_screen.dart';
 
 class OnboardingFlow extends StatefulWidget {
   const OnboardingFlow({this.onKakaoLogin, super.key});
@@ -89,7 +90,11 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
       debugPrint('[Kakao login] Backend token exchange completed');
 
       Set<String> registeredIngredients = const {};
-      if (loginResponse.hasOwnedIngredients) {
+      // New accounts are blocked by the backend terms-consent filter until
+      // the consent screen completes. Do not query protected inventory before
+      // routing them to that screen; otherwise login appears to fail with 403.
+      if (!loginResponse.termsConsentRequired &&
+          loginResponse.hasOwnedIngredients) {
         loginStep = 'loading owned ingredients';
         final response = await _apiClient
             .getOwnedIngredientApi()
@@ -118,6 +123,9 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
             _OnboardingStage.ingredients,
           OnboardingEntry.home => _OnboardingStage.home,
         };
+        if (loginResponse.termsConsentRequired) {
+          _stage = _OnboardingStage.terms;
+        }
       });
     } catch (error, stackTrace) {
       debugPrint('[Kakao login] Failed during $loginStep: $error');
@@ -153,6 +161,26 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
 
   void _showOwnedIngredients() {
     setState(() => _stage = _OnboardingStage.ownedIngredients);
+  }
+
+  Future<void> _acceptTerms() async {
+    await _apiClient.getAuthApi().acceptTermsConsent(
+      termsConsentRequest: TermsConsentRequest(
+        (builder) => builder
+          ..termsVersion = 'v1'
+          ..privacyVersion = 'v1'
+          ..age14OrOver = true,
+      ),
+    );
+    if (mounted) setState(() => _stage = _OnboardingStage.ingredients);
+  }
+
+  Future<void> _completeV4Onboarding(Set<int> variantIds) async {
+    await _apiClient.getOnboardingApi().completeOnboarding(
+      onboardingRequest: OnboardingRequest(
+        (builder) => builder.variantIds.addAll(variantIds),
+      ),
+    );
   }
 
   void _showRecipeDetail(int recipeId) {
@@ -230,11 +258,17 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
           isLoading: _isLoggingIn,
           hasError: _hasLoginError,
         ),
+        _OnboardingStage.terms => TermsConsentScreen(
+          key: const ValueKey(_OnboardingStage.terms),
+          onAccepted: _acceptTerms,
+        ),
         _OnboardingStage.ingredients => InitialIngredientScreen(
           key: const ValueKey(_OnboardingStage.ingredients),
           apiClient: _apiClient,
           onSubmit: _handleIngredientsSubmitted,
-          onViewRecommendations: _showRecommendations,
+          onBatchSubmit: _completeV4Onboarding,
+          allowEmptySubmit: true,
+          onViewRecommendations: _showHome,
         ),
         _OnboardingStage.recommendations => RecommendationScreen(
           key: const ValueKey(_OnboardingStage.recommendations),
@@ -279,6 +313,7 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
 enum _OnboardingStage {
   splash,
   login,
+  terms,
   ingredients,
   home,
   recommendations,
