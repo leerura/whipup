@@ -1,0 +1,435 @@
+{
+  "videoId": "Mw3VD0xGNjc",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/Mw3VD0xGNjc",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:45:59.200913+00:00",
+    "rawResponse": "{\n  \"title\": \"만두전골 느낌의 만둣국\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"냉동만두를 먹을 만큼 넉넉하게\",\n      \"displayName\": \"냉동만두\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 오늘 필요한 재료로 냉동만두를 먹을 만큼 넉넉하게 준비해 줍니다.\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 오늘 필요한 재료로 냉동만두를 먹을 만큼 넉넉하게 준비해줍니다.\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유를 두세스푼\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"2~3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬이나 냄비에 식용유를 두세 스푼 둘러주고\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 팬이나 냄비에 식용유를 두세스푼 둘러주고\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"시뻘건 고춧가루를 1스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"시뻘건 고춧가루를 한 스푼 흩뿌려주고\",\n          \"timestamp\": \"00:55\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"시뻘건 고춧가루를 1스푼 흩뿌려주고\",\n          \"timestamp\": \"00:55\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물을 종이컵 3컵 (약 540ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"3\",\n      \"unit\": \"종이컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물을 종이컵 세 컵 부어줍니다.\",\n          \"timestamp\": \"01:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물을 종이컵 3컵 (약 540ml) 부어줍니다.\",\n          \"timestamp\": \"01:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1/2스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 이긴 마늘 대신 다진 마늘 반 스푼과\",\n          \"timestamp\": \"01:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 이긴 마늘 대신 다진 마늘 1/2스푼과\",\n          \"timestamp\": \"01:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"치킨스톡 1/2스푼\",\n      \"displayName\": \"치킨스톡\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"닭 300마리는 넣은 듯한 진한 맛을 내게 해 줄 치킨스톡 반 스푼\",\n          \"timestamp\": \"01:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"닭 300마리는 넣은 듯한 진한 맛을 내게 해줄 치킨스톡 1/2스푼\",\n          \"timestamp\": \"01:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"멸치액젓은 1스푼\",\n      \"displayName\": \"멸치액젓\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마 멸치 100마리 느낌에 멸치액젓은 한 스푼 넣어줍니다.\",\n          \"timestamp\": \"01:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"매르치 100마리 느낌의 멸치액젓은 1스푼 넣어줍니다.\",\n          \"timestamp\": \"01:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"숙주나 콩나물\",\n      \"displayName\": \"숙주 또는 콩나물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"숙주나 콩나물도 좋고 냉장고에 남아서 돌아다니는 아무 채소를 추가로 넣어주셔도 좋습니다.\",\n          \"timestamp\": \"01:21\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"숙주나 콩나물도 좋고 냉장고에 남은 아무 채소를 추가로 넣어주셔도 좋습니다.\",\n          \"timestamp\": \"01:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"떡사리나 각종 사리\",\n      \"displayName\": \"떡사리 또는 사리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 떡사리나 각종 사리를 추가하시면 배 든든하게 채우기 좋습니다.\",\n          \"timestamp\": \"01:26\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 떡사리나 각종 사리를 추가하시면 배 든든하게 채우기 좋습니다.\",\n          \"timestamp\": \"01:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"작은 청양고추\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"좀 더 매콤하게 드시고 싶으신 분은 저와는 반대인 이런 작은 청양고추를 준비해가 잘게 썰어준 뒤 넣어주시면\",\n          \"timestamp\": \"01:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"좀 더 매콤하게 드시고 싶으신 분은 저와는 반대인 이런 작은 청양고추를 준비해서 잘게 썰어준 뒤 넣어주시면\",\n          \"timestamp\": \"01:30\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도마 위에 작은 청양고추 1개를 올림\",\n          \"timestamp\": \"01:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 혹은 액젓\",\n      \"displayName\": \"소금 혹은 액젓\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"싱겁다면 입맛에 맞게 소금 혹은 액젓을 추가하시면 됩니다.\",\n          \"timestamp\": \"01:45\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"싱겁다면 입맛에 맞게 소금 혹은 액젓을 추가하시면 됩니다.\",\n          \"timestamp\": \"01:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 한알\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"알\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 계란도 한 알 넣어주고\",\n          \"timestamp\": \"01:48\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 계란도 한알 넣어주고\",\n          \"timestamp\": \"01:48\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파의 초록한 부분\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파의 초록한 부분도 썰어서 올려주고\",\n          \"timestamp\": \"01:50\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파의 초록한 부분도 썰어서 올려주고\",\n          \"timestamp\": \"01:50\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추를 넉넉하게\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추를 넉넉하게 뿌려주면\",\n          \"timestamp\": \"01:53\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추를 넉넉하게 뿌려주면\",\n          \"timestamp\": \"01:53\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냉동만두를 넉넉하게 준비하고, 그중 서너 개는 육수용으로 따로 둡니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 오늘 필요한 재료로 냉동만두를 먹을 만큼 넉넉하게 준비해 줍니다. 이때 서너 개 정도는 육수를 내기 위해 사용하고 남은 건 만두 그대로 사용할 겁니다.\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 오늘 필요한 재료로 냉동만두를 먹을 만큼 넉넉하게 준비해줍니다. 이때 서너개 정도는 육수를 내기 위해 사용하고 남은 건 만두 그대로 사용할 겁니다.\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬이나 냄비에 식용유 2~3스푼을 두르고 육수용 만두 3~4개를 올려 약불에서 해동시킨다는 느낌으로 살짝 익혀줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬이나 냄비에 식용유를 두세 스푼 둘러주고 육수용으로 사용할 만두를 서너 개 올려줍니다. 그러고 뜨끈하게 만두를 한번 익혀줍니다. 이때 만두를 튀긴다는 느낌보다는 아직 딱딱하게 얼려있는 만두를 해동시킨다는 느낌으로 약불에서 살짝만 익혀주시면 됩니다.\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 팬이나 냄비에 식용유를 두세스푼 둘러주고 육수용으로 사용할 만두를 서너개 올려줍니다. 그리고 만두를 한번 익혀줍니다. 이때 만두를 튀긴다는 느낌보다는 아직 딱딱하게 얼려있는 만두를 해동시킨다는 느낌으로 약불에서 살짝만 익혀주시면 됩니다.\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"만두가 부드러워지면 가위로 잘게 자르고 만두피와 속재료를 분리해가며 갈색빛이 돌 때까지 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만두가 뜨끈해지면서 살짝 흐물흐물해졌다면 가위로 다 잘라주고 만두 곤죽을 내줍니다... 이제 만두피와 속재료를 다 분리시켜주면서 마저 구워주면서 익혀주시면 됩니다.\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"만두가 뜨끈해지면서 살짝 흐물흐물해졌다면 가위로 다 잘라주고 만두 곤죽을 내줍니다... 이제 만두피와 속 재료를 다 분리시켜주면서 마저 구워주면서 익혀주시면 됩니다.\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"text\": \"전체적으로 갈색빛이 돌 때 고춧가루 1스푼을 넣고 약불에서 타지 않게 약 10초간 빠르게 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그러고 전체적으로 갈색빛이 띌 때쯤에 시뻘건 고춧가루를 한 스푼 흩뿌려주고 다 같이 한번 더 볶아줍니다. 이때 너무 센 불에서 볶게 되면 고춧가루가 시커멓게 타버리니 반드시 약불로 해주셔야 합니다. 빠르게 10초 정도만 볶아주다가\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 전체적으로 갈색빛이 띌 때쯤에 시뻘건 고춧가루를 1스푼 흩뿌려주고 다같이 한번 더 볶아줍니다. 이때 너무 센 불에서 볶게 되면 고춧가루가 시컴게 타버리니 반드시 약불로 해주셔야 합니다. 빠르게 10초 정도만 볶아주다가\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 3종이컵(약 540ml)을 붓고 다진 마늘 1/2스푼, 치킨스톡 1/2스푼, 멸치액젓 1스푼을 넣고 끓여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물을 종이컵 세 컵 부어줍니다. 그러고 이긴 마늘 대신 다진 마늘 반 스푼과 닭 300마리는 넣은 듯한 진한 맛을 내게 해 줄 치킨스톡 반 스푼, 마 멸치 100마리 느낌에 멸치액젓은 한 스푼 넣어줍니다.\",\n          \"timestamp\": \"01:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물을 종이컵 3컵 (약 540ml) 부어줍니다. 그리고 이긴 마늘 대신 다진 마늘 1/2스푼과 닭 300마리는 넣은 듯한 진한 맛을 내게 해줄 치킨스톡 1/2스푼 매르치 100마리 느낌의 멸치액젓은 1스푼 넣어줍니다.\",\n          \"timestamp\": \"01:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물이 팔팔 끓기 시작하면 남은 만두와 취향에 따라 숙주, 콩나물, 채소, 사리, 썬 청양고추 등을 넣고 만두가 익을 때까지 끓여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 물이 팔팔 끓기 시작하면 만두를 먹을 만큼 넣어주고 숙주나 콩나물도 좋고 냉장고에 남아서 돌아다니는 아무 채소를 추가로 넣어주셔도 좋습니다. 그리고 떡사리나 각종 사리를 추가하시면 배 든든하게 채우기 좋습니다. 좀 더 매콤하게 드시고 싶으신 분은 저와는 반대인 이런 작은 청양고추를 준비해가 잘게 썰어준 뒤 넣어주시면 칼칼한 국물 맛을 낼 수 있습니다. 이제 만두가 익을 때까지만 끓여주시면 됩니다.\",\n          \"timestamp\": \"01:17\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 물이 팔팔 끓기 시작하면 만두를 먹을 만큼 넣어주고 숙주나 콩나물도 좋고 냉장고에 남은 아무 채소를 추가로 넣어주셔도 좋습니다. 그리고 떡사리나 각종 사리를 추가하시면 배 든든하게 채우기 좋습니다. 좀 더 매콤하게 드시고 싶으신 분은 저와는 반대인 이런 작은 청양고추를 준비해서 잘게 썰어준 뒤 넣어주시면 칼칼한 국물 맛을 낼 수 있습니다. 이제 만두가 익을 때까지만 끓여주시면 됩니다.\",\n          \"timestamp\": \"01:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국물 맛을 보고 짜면 물을, 싱거우면 소금이나 액젓을 추가하여 간을 맞춥니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만두가 다 익었을 때쯤에 국물 맛을 살짝 보고 짜다면 물을 추가하거나 싱겁다면 입맛에 맞게 소금 혹은 액젓을 추가하시면 됩니다.\",\n          \"timestamp\": \"01:40\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"만두가 다 익었을 때쯤에 국물 맛을 살짝 보고 짜다면 물을 추가하거나 싱겁다면 입맛에 맞게 소금 혹은 액젓을 추가하시면 됩니다.\",\n          \"timestamp\": \"01:40\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 1알을 넣고, 썬 대파의 초록한 부분과 후추를 넉넉하게 뿌려 마무리합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 계란도 한 알 넣어주고 대파의 초록한 부분도 썰어서 올려주고 후추를 넉넉하게 뿌려주면... 만둣국이 완성됩니다.\",\n          \"timestamp\": \"01:48\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 계란도 한알 넣어주고 대파의 초록한 부분도 썰어서 올려주고 후추를 넉넉하게 뿌려주면... 만둣국이 완성됩니다.\",\n          \"timestamp\": \"01:48\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "만두전골 느낌의 만둣국",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "냉동만두를 먹을 만큼 넉넉하게",
+          "displayName": "냉동만두",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 오늘 필요한 재료로 냉동만두를 먹을 만큼 넉넉하게 준비해 줍니다.",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 오늘 필요한 재료로 냉동만두를 먹을 만큼 넉넉하게 준비해줍니다.",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "식용유를 두세스푼",
+          "displayName": "식용유",
+          "amount": "2~3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 팬이나 냄비에 식용유를 두세 스푼 둘러주고",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 팬이나 냄비에 식용유를 두세스푼 둘러주고",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "시뻘건 고춧가루를 1스푼",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "시뻘건 고춧가루를 한 스푼 흩뿌려주고",
+              "timestamp": "00:55"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "시뻘건 고춧가루를 1스푼 흩뿌려주고",
+              "timestamp": "00:55"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "물을 종이컵 3컵 (약 540ml)",
+          "displayName": "물",
+          "amount": "3",
+          "unit": "종이컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물을 종이컵 세 컵 부어줍니다.",
+              "timestamp": "01:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물을 종이컵 3컵 (약 540ml) 부어줍니다.",
+              "timestamp": "01:06"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "다진 마늘 1/2스푼",
+          "displayName": "다진 마늘",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 이긴 마늘 대신 다진 마늘 반 스푼과",
+              "timestamp": "01:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 이긴 마늘 대신 다진 마늘 1/2스푼과",
+              "timestamp": "01:08"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "치킨스톡 1/2스푼",
+          "displayName": "치킨스톡",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "닭 300마리는 넣은 듯한 진한 맛을 내게 해 줄 치킨스톡 반 스푼",
+              "timestamp": "01:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "닭 300마리는 넣은 듯한 진한 맛을 내게 해줄 치킨스톡 1/2스푼",
+              "timestamp": "01:11"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "멸치액젓은 1스푼",
+          "displayName": "멸치액젓",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마 멸치 100마리 느낌에 멸치액젓은 한 스푼 넣어줍니다.",
+              "timestamp": "01:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "매르치 100마리 느낌의 멸치액젓은 1스푼 넣어줍니다.",
+              "timestamp": "01:14"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "숙주나 콩나물",
+          "displayName": "숙주 또는 콩나물",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "숙주나 콩나물도 좋고 냉장고에 남아서 돌아다니는 아무 채소를 추가로 넣어주셔도 좋습니다.",
+              "timestamp": "01:21"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "숙주나 콩나물도 좋고 냉장고에 남은 아무 채소를 추가로 넣어주셔도 좋습니다.",
+              "timestamp": "01:21"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "떡사리나 각종 사리",
+          "displayName": "떡사리 또는 사리",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 떡사리나 각종 사리를 추가하시면 배 든든하게 채우기 좋습니다.",
+              "timestamp": "01:26"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 떡사리나 각종 사리를 추가하시면 배 든든하게 채우기 좋습니다.",
+              "timestamp": "01:26"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "작은 청양고추",
+          "displayName": "청양고추",
+          "amount": "1",
+          "unit": "개",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "좀 더 매콤하게 드시고 싶으신 분은 저와는 반대인 이런 작은 청양고추를 준비해가 잘게 썰어준 뒤 넣어주시면",
+              "timestamp": "01:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "좀 더 매콤하게 드시고 싶으신 분은 저와는 반대인 이런 작은 청양고추를 준비해서 잘게 썰어준 뒤 넣어주시면",
+              "timestamp": "01:30"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도마 위에 작은 청양고추 1개를 올림",
+              "timestamp": "01:32"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "소금 혹은 액젓",
+          "displayName": "소금 혹은 액젓",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "싱겁다면 입맛에 맞게 소금 혹은 액젓을 추가하시면 됩니다.",
+              "timestamp": "01:45"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "싱겁다면 입맛에 맞게 소금 혹은 액젓을 추가하시면 됩니다.",
+              "timestamp": "01:45"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "계란 한알",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "알",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 계란도 한 알 넣어주고",
+              "timestamp": "01:48"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 계란도 한알 넣어주고",
+              "timestamp": "01:48"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "대파의 초록한 부분",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파의 초록한 부분도 썰어서 올려주고",
+              "timestamp": "01:50"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대파의 초록한 부분도 썰어서 올려주고",
+              "timestamp": "01:50"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "후추를 넉넉하게",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후추를 넉넉하게 뿌려주면",
+              "timestamp": "01:53"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "후추를 넉넉하게 뿌려주면",
+              "timestamp": "01:53"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냉동만두를 넉넉하게 준비하고, 그중 서너 개는 육수용으로 따로 둡니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 오늘 필요한 재료로 냉동만두를 먹을 만큼 넉넉하게 준비해 줍니다. 이때 서너 개 정도는 육수를 내기 위해 사용하고 남은 건 만두 그대로 사용할 겁니다.",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 오늘 필요한 재료로 냉동만두를 먹을 만큼 넉넉하게 준비해줍니다. 이때 서너개 정도는 육수를 내기 위해 사용하고 남은 건 만두 그대로 사용할 겁니다.",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "팬이나 냄비에 식용유 2~3스푼을 두르고 육수용 만두 3~4개를 올려 약불에서 해동시킨다는 느낌으로 살짝 익혀줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 팬이나 냄비에 식용유를 두세 스푼 둘러주고 육수용으로 사용할 만두를 서너 개 올려줍니다. 그러고 뜨끈하게 만두를 한번 익혀줍니다. 이때 만두를 튀긴다는 느낌보다는 아직 딱딱하게 얼려있는 만두를 해동시킨다는 느낌으로 약불에서 살짝만 익혀주시면 됩니다.",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 팬이나 냄비에 식용유를 두세스푼 둘러주고 육수용으로 사용할 만두를 서너개 올려줍니다. 그리고 만두를 한번 익혀줍니다. 이때 만두를 튀긴다는 느낌보다는 아직 딱딱하게 얼려있는 만두를 해동시킨다는 느낌으로 약불에서 살짝만 익혀주시면 됩니다.",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "만두가 부드러워지면 가위로 잘게 자르고 만두피와 속재료를 분리해가며 갈색빛이 돌 때까지 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "만두가 뜨끈해지면서 살짝 흐물흐물해졌다면 가위로 다 잘라주고 만두 곤죽을 내줍니다... 이제 만두피와 속재료를 다 분리시켜주면서 마저 구워주면서 익혀주시면 됩니다.",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "만두가 뜨끈해지면서 살짝 흐물흐물해졌다면 가위로 다 잘라주고 만두 곤죽을 내줍니다... 이제 만두피와 속 재료를 다 분리시켜주면서 마저 구워주면서 익혀주시면 됩니다.",
+              "timestamp": "00:36"
+            }
+          ]
+        },
+        {
+          "text": "전체적으로 갈색빛이 돌 때 고춧가루 1스푼을 넣고 약불에서 타지 않게 약 10초간 빠르게 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그러고 전체적으로 갈색빛이 띌 때쯤에 시뻘건 고춧가루를 한 스푼 흩뿌려주고 다 같이 한번 더 볶아줍니다. 이때 너무 센 불에서 볶게 되면 고춧가루가 시커멓게 타버리니 반드시 약불로 해주셔야 합니다. 빠르게 10초 정도만 볶아주다가",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 전체적으로 갈색빛이 띌 때쯤에 시뻘건 고춧가루를 1스푼 흩뿌려주고 다같이 한번 더 볶아줍니다. 이때 너무 센 불에서 볶게 되면 고춧가루가 시컴게 타버리니 반드시 약불로 해주셔야 합니다. 빠르게 10초 정도만 볶아주다가",
+              "timestamp": "00:53"
+            }
+          ]
+        },
+        {
+          "text": "물 3종이컵(약 540ml)을 붓고 다진 마늘 1/2스푼, 치킨스톡 1/2스푼, 멸치액젓 1스푼을 넣고 끓여줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물을 종이컵 세 컵 부어줍니다. 그러고 이긴 마늘 대신 다진 마늘 반 스푼과 닭 300마리는 넣은 듯한 진한 맛을 내게 해 줄 치킨스톡 반 스푼, 마 멸치 100마리 느낌에 멸치액젓은 한 스푼 넣어줍니다.",
+              "timestamp": "01:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물을 종이컵 3컵 (약 540ml) 부어줍니다. 그리고 이긴 마늘 대신 다진 마늘 1/2스푼과 닭 300마리는 넣은 듯한 진한 맛을 내게 해줄 치킨스톡 1/2스푼 매르치 100마리 느낌의 멸치액젓은 1스푼 넣어줍니다.",
+              "timestamp": "01:06"
+            }
+          ]
+        },
+        {
+          "text": "물이 팔팔 끓기 시작하면 남은 만두와 취향에 따라 숙주, 콩나물, 채소, 사리, 썬 청양고추 등을 넣고 만두가 익을 때까지 끓여줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 물이 팔팔 끓기 시작하면 만두를 먹을 만큼 넣어주고 숙주나 콩나물도 좋고 냉장고에 남아서 돌아다니는 아무 채소를 추가로 넣어주셔도 좋습니다. 그리고 떡사리나 각종 사리를 추가하시면 배 든든하게 채우기 좋습니다. 좀 더 매콤하게 드시고 싶으신 분은 저와는 반대인 이런 작은 청양고추를 준비해가 잘게 썰어준 뒤 넣어주시면 칼칼한 국물 맛을 낼 수 있습니다. 이제 만두가 익을 때까지만 끓여주시면 됩니다.",
+              "timestamp": "01:17"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 물이 팔팔 끓기 시작하면 만두를 먹을 만큼 넣어주고 숙주나 콩나물도 좋고 냉장고에 남은 아무 채소를 추가로 넣어주셔도 좋습니다. 그리고 떡사리나 각종 사리를 추가하시면 배 든든하게 채우기 좋습니다. 좀 더 매콤하게 드시고 싶으신 분은 저와는 반대인 이런 작은 청양고추를 준비해서 잘게 썰어준 뒤 넣어주시면 칼칼한 국물 맛을 낼 수 있습니다. 이제 만두가 익을 때까지만 끓여주시면 됩니다.",
+              "timestamp": "01:17"
+            }
+          ]
+        },
+        {
+          "text": "국물 맛을 보고 짜면 물을, 싱거우면 소금이나 액젓을 추가하여 간을 맞춥니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "만두가 다 익었을 때쯤에 국물 맛을 살짝 보고 짜다면 물을 추가하거나 싱겁다면 입맛에 맞게 소금 혹은 액젓을 추가하시면 됩니다.",
+              "timestamp": "01:40"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "만두가 다 익었을 때쯤에 국물 맛을 살짝 보고 짜다면 물을 추가하거나 싱겁다면 입맛에 맞게 소금 혹은 액젓을 추가하시면 됩니다.",
+              "timestamp": "01:40"
+            }
+          ]
+        },
+        {
+          "text": "계란 1알을 넣고, 썬 대파의 초록한 부분과 후추를 넉넉하게 뿌려 마무리합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 계란도 한 알 넣어주고 대파의 초록한 부분도 썰어서 올려주고 후추를 넉넉하게 뿌려주면... 만둣국이 완성됩니다.",
+              "timestamp": "01:48"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 계란도 한알 넣어주고 대파의 초록한 부분도 썰어서 올려주고 후추를 넉넉하게 뿌려주면... 만둣국이 완성됩니다.",
+              "timestamp": "01:48"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

@@ -1,0 +1,390 @@
+{
+  "videoId": "N2iuV_25KsQ",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/N2iuV_25KsQ",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:39:21.223109+00:00",
+    "rawResponse": "{\n  \"title\": \"대패쌈장덮밥\",\n  \"description\": null,\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"식용유 살짝\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 팬에 식용유를 살짝만 둘러주고\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 식용유를 살짝만 둘러주고\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대패삼겹살 1인분 기준 약 200g\",\n      \"displayName\": \"대패삼겹살\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대패삼겹살을 1인분 기준 약 200g 정도 올려줍니다.\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대패삼겹살을 1인분 기준 약 200g 정도 올려줍니다.\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 반개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 양파 반개를 대충 얇게 썰어서 올려주고\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 양파 반개를 대충 얇게 썰어서 올려주고\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양배추\",\n      \"displayName\": \"양배추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"만약 집에 양파가 없다면 양파 대신 양배추를 넣으셔도 좋습니다.\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만약 집에 양파가 없다면 양파 대신 양배추를 넣으셔도 좋습니다.\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쌈장 1스푼\",\n      \"displayName\": \"쌈장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고기 찍어 먹던 쌈장 1스푼과\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기를 찍어 먹던 쌈장 1스푼과\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돈까스 소스 1스푼\",\n      \"displayName\": \"돈까스 소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"만능 국민 소스인 동개스 소스를 1스푼 넣고\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만능 국민 소스인 돈가스 소스를 1스푼 넣고\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1/2스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 1/2스푼\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 반 스푼\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1/2스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진 마늘도 1/2스푼 넣어준 뒤에\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘도 반 스푼 넣어준 뒤에\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 1/4컵 (약 45ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"1/4\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 촉촉하게 물을 1/4컵(약 45ml) 소량만 넣어주면 끝입니다.\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 촉촉하게 물을 4분의 1컵 소량만 넣어주면 끝입니다.\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"뜨끈한 흰밥\",\n      \"displayName\": \"흰밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다 됐으면 뜨끈한 흰밥 위로 다 올려주고\",\n          \"timestamp\": \"00:56\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다 됐으면 뜨끈한 흰밥 위로 다 올려주고\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깻잎 서너장\",\n      \"displayName\": \"깻잎\",\n      \"amount\": \"3~4\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"느끼한 맛을 한번 잡아줄 깻잎을 서너장 돌돌돌 말아서 얇게 썰어준 뒤 올려주고\",\n          \"timestamp\": \"00:59\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"느끼한 맛을 한번 잡아줄 깻잎을 서너 장 돌돌돌 말아가 얇게 썰어준 뒤 올려주고\",\n          \"timestamp\": \"00:59\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추\",\n      \"displayName\": \"청양고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"매콤한 맛을 위해 청양고추도 스리슬쩍 올려주고\",\n          \"timestamp\": \"01:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"매콤한 맛을 위해 청양고추도 스리슬쩍 올려주고\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 노른자\",\n      \"displayName\": \"계란 노른자\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 노른자와 꼬숩은 통깨도 살포시 올려주면\",\n          \"timestamp\": \"01:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 노른자와 꼬숩은 통깨도 살포시 올려주면\",\n          \"timestamp\": \"01:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"덮밥 위에 계란 노른자를 올림\",\n          \"timestamp\": \"01:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 노른자와 꼬숩은 통깨도 살포시 올려주면\",\n          \"timestamp\": \"01:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 노른자와 꼬숩은 통깨도 살포시 올려주면\",\n          \"timestamp\": \"01:07\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 식용유를 살짝 두르고 대패삼겹살 약 200g을 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 팬에 식용유를 살짝만 둘러주고 대패삼겹살을 1인분 기준 약 200g 정도 올려줍니다.\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 반 개를 얇게 썰어 팬에 올리고, 삼겹살 기름에 양파까지 함께 탄 느낌이 들 때까지 바짝 볶는다 (양파 대신 양배추를 넣어도 무방).\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 양파 반개를 대충 얇게 썰어서 올려주고 삼겹살을 구우면서 나오는 기름에 양파까지 굽는다는 느낌으로 탔다고 생각이 들 때까지 바짝 볶아줍니다.\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"만약 집에 양파가 없다면 양파 대신 양배추를 넣으셔도 좋습니다.\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기가 익고 양파가 갈색빛을 띠기 시작하면 쌈장 1스푼, 돈까스 소스 1스푼, 설탕 1/2스푼, 다진 마늘 1/2스푼을 넣고 고기 기름에 함께 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"어느 정도 고기도 맛있게 잘 익고 양파도 갈색빛이 띄기 시작한다면 고기 찍어 먹던 쌈장 1스푼과 만능 국민 소스인 동개스 소스를 1스푼 넣고 설탕 1/2스푼 다진 마늘도 1/2스푼 넣어준 뒤에 양념장도 삼겹살 기름에 한번 볶아줍니다.\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"촉촉해지도록 물 1/4컵(약 45ml)을 넣고 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 촉촉하게 물을 1/4컵(약 45ml) 소량만 넣어주면 끝입니다.\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뜨끈한 흰밥 위에 볶은 고기를 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다 됐으면 뜨끈한 흰밥 위로 다 올려주고\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"text\": \"깻잎 3~4장을 돌돌 말아 얇게 썰어 덮밥 위에 올리고, 청양고추도 썰어 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"느끼한 맛을 한번 잡아줄 깻잎을 서너장 돌돌돌 말아서 얇게 썰어준 뒤 올려주고 매콤한 맛을 위해 청양고추도 스리슬쩍 올려주고\",\n          \"timestamp\": \"00:59\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 노른자와 통깨를 올려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 노른자와 꼬숩은 통깨도 살포시 올려주면\",\n          \"timestamp\": \"01:07\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "대패쌈장덮밥",
+      "description": null,
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "식용유 살짝",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 팬에 식용유를 살짝만 둘러주고",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 식용유를 살짝만 둘러주고",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대패삼겹살 1인분 기준 약 200g",
+          "displayName": "대패삼겹살",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대패삼겹살을 1인분 기준 약 200g 정도 올려줍니다.",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대패삼겹살을 1인분 기준 약 200g 정도 올려줍니다.",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "양파 반개",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 양파 반개를 대충 얇게 썰어서 올려주고",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 양파 반개를 대충 얇게 썰어서 올려주고",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양배추",
+          "displayName": "양배추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "만약 집에 양파가 없다면 양파 대신 양배추를 넣으셔도 좋습니다.",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SPEECH",
+              "text": "만약 집에 양파가 없다면 양파 대신 양배추를 넣으셔도 좋습니다.",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "쌈장 1스푼",
+          "displayName": "쌈장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고기 찍어 먹던 쌈장 1스푼과",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고기를 찍어 먹던 쌈장 1스푼과",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "돈까스 소스 1스푼",
+          "displayName": "돈까스 소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "만능 국민 소스인 동개스 소스를 1스푼 넣고",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "SPEECH",
+              "text": "만능 국민 소스인 돈가스 소스를 1스푼 넣고",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "설탕 1/2스푼",
+          "displayName": "설탕",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 1/2스푼",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 반 스푼",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "다진 마늘 1/2스푼",
+          "displayName": "다진 마늘",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다진 마늘도 1/2스푼 넣어준 뒤에",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘도 반 스푼 넣어준 뒤에",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "물 1/4컵 (약 45ml)",
+          "displayName": "물",
+          "amount": "1/4",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 촉촉하게 물을 1/4컵(약 45ml) 소량만 넣어주면 끝입니다.",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 촉촉하게 물을 4분의 1컵 소량만 넣어주면 끝입니다.",
+              "timestamp": "00:52"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "뜨끈한 흰밥",
+          "displayName": "흰밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다 됐으면 뜨끈한 흰밥 위로 다 올려주고",
+              "timestamp": "00:56"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다 됐으면 뜨끈한 흰밥 위로 다 올려주고",
+              "timestamp": "00:56"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "깻잎 서너장",
+          "displayName": "깻잎",
+          "amount": "3~4",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "느끼한 맛을 한번 잡아줄 깻잎을 서너장 돌돌돌 말아서 얇게 썰어준 뒤 올려주고",
+              "timestamp": "00:59"
+            },
+            {
+              "type": "SPEECH",
+              "text": "느끼한 맛을 한번 잡아줄 깻잎을 서너 장 돌돌돌 말아가 얇게 썰어준 뒤 올려주고",
+              "timestamp": "00:59"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "청양고추",
+          "displayName": "청양고추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "매콤한 맛을 위해 청양고추도 스리슬쩍 올려주고",
+              "timestamp": "01:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "매콤한 맛을 위해 청양고추도 스리슬쩍 올려주고",
+              "timestamp": "01:05"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "계란 노른자",
+          "displayName": "계란 노른자",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "계란 노른자와 꼬숩은 통깨도 살포시 올려주면",
+              "timestamp": "01:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란 노른자와 꼬숩은 통깨도 살포시 올려주면",
+              "timestamp": "01:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "덮밥 위에 계란 노른자를 올림",
+              "timestamp": "01:07"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "계란 노른자와 꼬숩은 통깨도 살포시 올려주면",
+              "timestamp": "01:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란 노른자와 꼬숩은 통깨도 살포시 올려주면",
+              "timestamp": "01:07"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 식용유를 살짝 두르고 대패삼겹살 약 200g을 올린다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 팬에 식용유를 살짝만 둘러주고 대패삼겹살을 1인분 기준 약 200g 정도 올려줍니다.",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "양파 반 개를 얇게 썰어 팬에 올리고, 삼겹살 기름에 양파까지 함께 탄 느낌이 들 때까지 바짝 볶는다 (양파 대신 양배추를 넣어도 무방).",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 양파 반개를 대충 얇게 썰어서 올려주고 삼겹살을 구우면서 나오는 기름에 양파까지 굽는다는 느낌으로 탔다고 생각이 들 때까지 바짝 볶아줍니다.",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "만약 집에 양파가 없다면 양파 대신 양배추를 넣으셔도 좋습니다.",
+              "timestamp": "00:28"
+            }
+          ]
+        },
+        {
+          "text": "고기가 익고 양파가 갈색빛을 띠기 시작하면 쌈장 1스푼, 돈까스 소스 1스푼, 설탕 1/2스푼, 다진 마늘 1/2스푼을 넣고 고기 기름에 함께 볶는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "어느 정도 고기도 맛있게 잘 익고 양파도 갈색빛이 띄기 시작한다면 고기 찍어 먹던 쌈장 1스푼과 만능 국민 소스인 동개스 소스를 1스푼 넣고 설탕 1/2스푼 다진 마늘도 1/2스푼 넣어준 뒤에 양념장도 삼겹살 기름에 한번 볶아줍니다.",
+              "timestamp": "00:31"
+            }
+          ]
+        },
+        {
+          "text": "촉촉해지도록 물 1/4컵(약 45ml)을 넣고 섞어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 촉촉하게 물을 1/4컵(약 45ml) 소량만 넣어주면 끝입니다.",
+              "timestamp": "00:52"
+            }
+          ]
+        },
+        {
+          "text": "뜨끈한 흰밥 위에 볶은 고기를 올린다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다 됐으면 뜨끈한 흰밥 위로 다 올려주고",
+              "timestamp": "00:56"
+            }
+          ]
+        },
+        {
+          "text": "깻잎 3~4장을 돌돌 말아 얇게 썰어 덮밥 위에 올리고, 청양고추도 썰어 올린다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "느끼한 맛을 한번 잡아줄 깻잎을 서너장 돌돌돌 말아서 얇게 썰어준 뒤 올려주고 매콤한 맛을 위해 청양고추도 스리슬쩍 올려주고",
+              "timestamp": "00:59"
+            }
+          ]
+        },
+        {
+          "text": "계란 노른자와 통깨를 올려 완성한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "계란 노른자와 꼬숩은 통깨도 살포시 올려주면",
+              "timestamp": "01:07"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

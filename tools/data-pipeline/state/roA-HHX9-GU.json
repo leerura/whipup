@@ -1,18 +1,415 @@
 {
   "videoId": "roA-HHX9-GU",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/roA-HHX9-GU",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-10-27T10:32:50.249453+00:00",
-    "accountId": "account-b",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAt": "2026-10-27T10:33:15.333876+00:00",
-    "retryAccountId": "account-b"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T10:03:10.369500+00:00",
+    "rawResponse": "{\n  \"title\": \"집 떡볶이\",\n  \"description\": null,\n  \"servings\": \"3인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"대파 하나\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 하나. 향긋하고 날아가는 풍미\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"파를 이리 넣어주면은 향긋한 풍미 아니라 날아가는 맛, 그 맛이 나.\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 2숟갈\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"2\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 2숟갈 넣고 파 숨을 죽인다\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이거 먼저 식용유를 한 두 숟갈 넣어주고\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 500~600ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"500~600\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 500~600ml\",\n          \"timestamp\": \"00:49\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 500\",\n          \"timestamp\": \"00:49\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고운고춧가루 2큰술\",\n      \"displayName\": \"고운고춧가루\",\n      \"amount\": \"2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고운고춧가루 2큰술 떡에 착 발려요\",\n          \"timestamp\": \"00:56\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"부드러운 고춧가루 있지? 부드러운 거 없으면 일반으로 하고 두 숟갈 넣고\",\n          \"timestamp\": \"00:57\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 봉긋 3큰술\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"3\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 봉긋 3큰술\",\n          \"timestamp\": \"01:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장을 한 스푼, 한 세 스푼 넣어야 안 되겠나\",\n          \"timestamp\": \"01:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 2숟갈\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"2\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 2숟갈\",\n          \"timestamp\": \"01:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장을 한 스푼, 두 스푼\",\n          \"timestamp\": \"01:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"액젓\",\n      \"displayName\": \"액젓\",\n      \"amount\": \"1\",\n      \"unit\": \"숟갈\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 1숟갈 빼고 액젓 넣어도 좋아\",\n          \"timestamp\": \"01:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 빼고 액젓 하나 넣어도 된데이\",\n          \"timestamp\": \"01:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 (원당) 3숟갈\",\n      \"displayName\": \"설탕 (원당)\",\n      \"amount\": \"3\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 (원당) 3숟갈 물엿은 안 넣었다\",\n          \"timestamp\": \"01:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 원당 세 숟갈. 물엿 안 들어간데이.\",\n          \"timestamp\": \"01:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"반숙으로 삶은 달걀 4개\",\n      \"displayName\": \"삶은 달걀\",\n      \"amount\": \"4\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"반숙으로 삶은 달걀 먼저 넣어 간 베이게 해준다\",\n          \"timestamp\": \"01:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"반숙으로 삶아놓은 계란 네 개 있지\",\n          \"timestamp\": \"01:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"떡 1봉지 500g\",\n      \"displayName\": \"떡볶이 떡 (쌀떡)\",\n      \"amount\": \"500\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"떡 1봉지 500g 3인분\",\n          \"timestamp\": \"01:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불려놓은 떡볶이 넣고, 한 봉다리다. 쌀떡이지.\",\n          \"timestamp\": \"01:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"얇은 어묵 3장\",\n      \"displayName\": \"얇은 어묵\",\n      \"amount\": \"3\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"얇은 어묵 3장*\",\n          \"timestamp\": \"01:32\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"오뎅도 크게 잘라놓은 거\",\n          \"timestamp\": \"01:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소고기다시다 반 숟가락\",\n      \"displayName\": \"소고기다시다\",\n      \"amount\": \"0.5\",\n      \"unit\": \"숟가락\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대망의 마지막재료 소고기다시다\",\n          \"timestamp\": \"02:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소고기다시다 한 반 숟가락 넣어주면은 감칠맛 싹 올라와\",\n          \"timestamp\": \"02:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"카레가루 1숟가락\",\n      \"displayName\": \"카레가루\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소고기다시다 대신 카레가루\",\n          \"timestamp\": \"02:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"카레가루 소고기다시다 대신으로 넣는다\",\n          \"timestamp\": \"02:25\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"소고기다시다 대신 카레가루 1숟가락을 팬에 넣음\",\n          \"timestamp\": \"02:25\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"대파 1개를 반으로 길게 가른 후 큼직하게 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"대파를 반으로 가르고 길쭉하게 써는 모습\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 썬 대파와 식용유 2숟갈을 넣고 볶아 파 숨을 죽인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 2숟갈 넣고 파 숨을 죽인다\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식용유를 한 두 숟갈 넣어주고... 파를 이리 골병을 들이죠... 숨을 찌그리는 게 더 낫다\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"파를 볶던 팬에 물 500~600ml를 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 500~600ml 떡. 어묵이 물 빨아먹으니 알아서~\",\n          \"timestamp\": \"00:49\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고운고춧가루 2큰술, 고추장 봉긋하게 3큰술, 진간장 2숟갈(또는 간장 1숟갈과 액젓 1숟갈), 설탕 3숟갈을 넣고 섞는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고운고춧가루 2큰술 떡에 착 발려요\",\n          \"timestamp\": \"00:56\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 봉긋 3큰술\",\n          \"timestamp\": \"01:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 2숟갈\",\n          \"timestamp\": \"01:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 (원당) 3숟갈 물엿은 안 넣었다\",\n          \"timestamp\": \"01:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"반숙으로 삶은 달걀 4개를 먼저 넣어 간이 베이도록 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"반숙으로 삶은 달걀 먼저 넣어 간 베이게 해준다\",\n          \"timestamp\": \"01:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불려둔 떡 500g과 큼직하게 썬 얇은 어묵 3장을 넣고 끓여 졸인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"떡 1봉지 500g 3인분\",\n          \"timestamp\": \"01:27\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"얇은 어묵 3장*\",\n          \"timestamp\": \"01:32\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"바글바글 졸여주면 되는 거라\",\n          \"timestamp\": \"01:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"떡에서 전분기가 나와 국물이 걸쭉해질 때까지 푹 졸여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"푹 졸여주면 떡에 전분기가 나와 걸쭉 ~ 자르르 해져요\",\n          \"timestamp\": \"02:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"기호에 따라 소고기다시다 반 숟가락 또는 카레가루 1숟가락을 넣어 섞어 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대망의 마지막재료 소고기다시다\",\n          \"timestamp\": \"02:19\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소고기다시다 대신 카레가루\",\n          \"timestamp\": \"02:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소고기다시다 대신으로 카레가루 넣는다\",\n          \"timestamp\": \"02:25\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "집 떡볶이",
+      "description": null,
+      "servings": "3인분",
+      "ingredients": [
+        {
+          "rawText": "대파 하나",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 하나. 향긋하고 날아가는 풍미",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "파를 이리 넣어주면은 향긋한 풍미 아니라 날아가는 맛, 그 맛이 나.",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "식용유 2숟갈",
+          "displayName": "식용유",
+          "amount": "2",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 2숟갈 넣고 파 숨을 죽인다",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이거 먼저 식용유를 한 두 숟갈 넣어주고",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "물 500~600ml",
+          "displayName": "물",
+          "amount": "500~600",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 500~600ml",
+              "timestamp": "00:49"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 500",
+              "timestamp": "00:49"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "고운고춧가루 2큰술",
+          "displayName": "고운고춧가루",
+          "amount": "2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고운고춧가루 2큰술 떡에 착 발려요",
+              "timestamp": "00:56"
+            },
+            {
+              "type": "SPEECH",
+              "text": "부드러운 고춧가루 있지? 부드러운 거 없으면 일반으로 하고 두 숟갈 넣고",
+              "timestamp": "00:57"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고추장 봉긋 3큰술",
+          "displayName": "고추장",
+          "amount": "3",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 봉긋 3큰술",
+              "timestamp": "01:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장을 한 스푼, 한 세 스푼 넣어야 안 되겠나",
+              "timestamp": "01:04"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "진간장 2숟갈",
+          "displayName": "진간장",
+          "amount": "2",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 2숟갈",
+              "timestamp": "01:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장을 한 스푼, 두 스푼",
+              "timestamp": "01:09"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "액젓",
+          "displayName": "액젓",
+          "amount": "1",
+          "unit": "숟갈",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 1숟갈 빼고 액젓 넣어도 좋아",
+              "timestamp": "01:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장 빼고 액젓 하나 넣어도 된데이",
+              "timestamp": "01:12"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "설탕 (원당) 3숟갈",
+          "displayName": "설탕 (원당)",
+          "amount": "3",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 (원당) 3숟갈 물엿은 안 넣었다",
+              "timestamp": "01:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 원당 세 숟갈. 물엿 안 들어간데이.",
+              "timestamp": "01:14"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "반숙으로 삶은 달걀 4개",
+          "displayName": "삶은 달걀",
+          "amount": "4",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "반숙으로 삶은 달걀 먼저 넣어 간 베이게 해준다",
+              "timestamp": "01:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "반숙으로 삶아놓은 계란 네 개 있지",
+              "timestamp": "01:20"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "떡 1봉지 500g",
+          "displayName": "떡볶이 떡 (쌀떡)",
+          "amount": "500",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "떡 1봉지 500g 3인분",
+              "timestamp": "01:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "불려놓은 떡볶이 넣고, 한 봉다리다. 쌀떡이지.",
+              "timestamp": "01:27"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "얇은 어묵 3장",
+          "displayName": "얇은 어묵",
+          "amount": "3",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "얇은 어묵 3장*",
+              "timestamp": "01:32"
+            },
+            {
+              "type": "SPEECH",
+              "text": "오뎅도 크게 잘라놓은 거",
+              "timestamp": "01:31"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "소고기다시다 반 숟가락",
+          "displayName": "소고기다시다",
+          "amount": "0.5",
+          "unit": "숟가락",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대망의 마지막재료 소고기다시다",
+              "timestamp": "02:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소고기다시다 한 반 숟가락 넣어주면은 감칠맛 싹 올라와",
+              "timestamp": "02:19"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "카레가루 1숟가락",
+          "displayName": "카레가루",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소고기다시다 대신 카레가루",
+              "timestamp": "02:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "카레가루 소고기다시다 대신으로 넣는다",
+              "timestamp": "02:25"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "소고기다시다 대신 카레가루 1숟가락을 팬에 넣음",
+              "timestamp": "02:25"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "대파 1개를 반으로 길게 가른 후 큼직하게 썬다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "대파를 반으로 가르고 길쭉하게 써는 모습",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "팬에 썬 대파와 식용유 2숟갈을 넣고 볶아 파 숨을 죽인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 2숟갈 넣고 파 숨을 죽인다",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "SPEECH",
+              "text": "식용유를 한 두 숟갈 넣어주고... 파를 이리 골병을 들이죠... 숨을 찌그리는 게 더 낫다",
+              "timestamp": "00:37"
+            }
+          ]
+        },
+        {
+          "text": "파를 볶던 팬에 물 500~600ml를 붓는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 500~600ml 떡. 어묵이 물 빨아먹으니 알아서~",
+              "timestamp": "00:49"
+            }
+          ]
+        },
+        {
+          "text": "고운고춧가루 2큰술, 고추장 봉긋하게 3큰술, 진간장 2숟갈(또는 간장 1숟갈과 액젓 1숟갈), 설탕 3숟갈을 넣고 섞는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고운고춧가루 2큰술 떡에 착 발려요",
+              "timestamp": "00:56"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 봉긋 3큰술",
+              "timestamp": "01:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 2숟갈",
+              "timestamp": "01:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 (원당) 3숟갈 물엿은 안 넣었다",
+              "timestamp": "01:14"
+            }
+          ]
+        },
+        {
+          "text": "반숙으로 삶은 달걀 4개를 먼저 넣어 간이 베이도록 끓인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "반숙으로 삶은 달걀 먼저 넣어 간 베이게 해준다",
+              "timestamp": "01:20"
+            }
+          ]
+        },
+        {
+          "text": "불려둔 떡 500g과 큼직하게 썬 얇은 어묵 3장을 넣고 끓여 졸인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "떡 1봉지 500g 3인분",
+              "timestamp": "01:27"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "얇은 어묵 3장*",
+              "timestamp": "01:32"
+            },
+            {
+              "type": "SPEECH",
+              "text": "바글바글 졸여주면 되는 거라",
+              "timestamp": "01:34"
+            }
+          ]
+        },
+        {
+          "text": "떡에서 전분기가 나와 국물이 걸쭉해질 때까지 푹 졸여준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "푹 졸여주면 떡에 전분기가 나와 걸쭉 ~ 자르르 해져요",
+              "timestamp": "02:05"
+            }
+          ]
+        },
+        {
+          "text": "기호에 따라 소고기다시다 반 숟가락 또는 카레가루 1숟가락을 넣어 섞어 마무리한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대망의 마지막재료 소고기다시다",
+              "timestamp": "02:19"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소고기다시다 대신 카레가루",
+              "timestamp": "02:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소고기다시다 대신으로 카레가루 넣는다",
+              "timestamp": "02:25"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
   }
 }

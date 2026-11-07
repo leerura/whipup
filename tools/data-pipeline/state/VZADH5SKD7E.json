@@ -1,0 +1,399 @@
+{
+  "videoId": "VZADH5SKD7E",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/VZADH5SKD7E",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:47:32.898624+00:00",
+    "rawResponse": "{\n  \"title\": \"참치 김치볶음밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"김치 2~3스푼\",\n      \"displayName\": \"김치\",\n      \"amount\": \"2~3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 김치볶음밥이니 김치를 2~3스푼 준비해줍니다.\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 김치볶음밥이니 김치를 2~3스푼 준비해줍니다.\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 넉넉하게\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파를 흰색 초록색 구분 없이 준비해서 대충 칼질 잘하는 척하면서 썰어줍니다. 이때 대파는 많으면 많을수록 맛이 좋으니 넉넉하게 준비하시는게 좋습니다.\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 대파를 흰색 초록색 구분 없이 준비해서 대충 칼질 잘하는 척하면서 썰어줍니다. 이때 대파는 많으면 많을수록 맛이 좋으니 넉넉하게 준비하시는게 좋습니다.\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 1스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 짭짤하게 진간장 1스푼\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 짭짤하게 진간장 1스푼\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1/2스푼 (신김치일 경우 1스푼, 달달한 김치는 생략)\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"적당히 익은 김치다 싶으면 설탕 1/2스푼, 너무 많이 익은 신김치다 싶으면 설탕을 1스푼 넣고, 밖에서 파는 달달한 김치라면 설탕은 생략하시면 됩니다.\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 적당히 익은 김치다 싶으면 설탕 1/2스푼, 너무 많이 익은 신김치다 싶으면 설탕을 1스푼 넣고, 밖에서 파는 달달한 김치라면 설탕은 생략하시면 됩니다.\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 시뻘건 색감을 위해 고춧가루 1스푼과\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 시뻘건 색감을 위해 고춧가루 1스푼과\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마요네즈 1스푼\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"비장의 재료 마요네즈를 1스푼 넣어줍니다.\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"비장의 재료 마요네즈를 1스푼 넣어줍니다.\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 한두스푼\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"1~2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬에 식용유를 한두스푼 둘러주고\",\n          \"timestamp\": \"00:51\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 팬에 식용유를 한두스푼 둘러주고\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 한 공기\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 밥 한 공기를 넣고\",\n          \"timestamp\": \"01:02\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 밥 한 공기를 넣고\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 혹은 간장 (간 맞추기용)\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"싱겁다면 소금 혹은 간장을 조금씩 추가하면서 볶아주시면 됩니다.\",\n          \"timestamp\": \"01:16\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"싱겁다면 소금 혹은 간장을 조금씩 추가하면서 볶아주시면 됩니다.\",\n          \"timestamp\": \"01:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 (간 맞추기용 추가 간장)\",\n      \"displayName\": \"간장\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"싱겁다면 소금 혹은 간장을 조금씩 추가하면서 볶아주시면 됩니다.\",\n          \"timestamp\": \"01:16\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"싱겁다면 소금 혹은 간장을 조금씩 추가하면서 볶아주시면 됩니다.\",\n          \"timestamp\": \"01:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치 한 캔\",\n      \"displayName\": \"참치캔\",\n      \"amount\": \"1\",\n      \"unit\": \"캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이런 참치 한 캔을 준비해가 기름과 같이 다 넣어줍니다.\",\n          \"timestamp\": \"01:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이런 참치 한캔을 준비해서 기름과 같이 다 넣어줍니다.\",\n          \"timestamp\": \"01:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 톡톡\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다 됐으면 마지막 하이라이트 후추도 톡톡 뿌려주고\",\n          \"timestamp\": \"01:41\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다 됐으면 마지막 하이라이트 후추도 톡톡 뿌려주고\",\n          \"timestamp\": \"01:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리\",\n      \"displayName\": \"파슬리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"있어 보이게 파슬리도 뿌려 마무리해줍니다.\",\n          \"timestamp\": \"01:44\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"있어 보이게 파슬리도 뿌려 마무리해줍니다.\",\n          \"timestamp\": \"01:44\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"볼에 김치 2~3스푼을 넣습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 김치볶음밥이니 김치를 2~3스푼 준비해줍니다.\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볼에 김치를 넣는 모습\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파를 흰 부분과 초록 부분 구분 없이 넉넉하게 썰어 김치가 담긴 볼에 넣습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파를 흰색 초록색 구분 없이 준비해서 대충 칼질 잘하는 척하면서 썰어줍니다. 이때 대파는 많으면 많을수록 맛이 좋으니 넉넉하게 준비하시는게 좋습니다. 대파도 다 넣어주고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"대파를 송송 썰어 볼에 담는 모습\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 진간장 1스푼, 설탕(익은 정도에 따라 1/2스푼 또는 1스푼, 달달한 김치는 생략), 고춧가루 1스푼, 마요네즈 1스푼을 넣고 골고루 섞어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 짭짤하게 진간장 1스푼 그리고 적당히 익은 김치다 싶으면 설탕 1/2스푼 너무 많이 익은 신김치다 싶으면 설탕을 1스푼 넣고 밖에서 파는 달달한 김치라면 설탕은 생략하시면 됩니다. 여기에 시뻘건 색감을 위해 고춧가루 1스푼과 비장의 재료 마요네즈를 1스푼 넣어줍니다. 그라고 잘 섞어주시면 됩니다.\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양념 재료들을 볼에 넣고 숟가락으로 비비는 모습\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유 1~2스푼을 두르고 약불에서 양념한 김치를 넣어 촉촉한 양념이 줄어들고 살짝 뻑뻑해질 때까지 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬에 식용유를 한두스푼 둘러주고 잘 비벼놓은 김치를 다 넣어줍니다. 이때 불은 약불로 해주시면 됩니다. 그리고 촉촉했던 김치의 양념이 줄어들면서 살짝 뻑뻑한 느낌이 들 때까지 볶아줍니다.\",\n          \"timestamp\": \"00:51\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 기름을 두르고 김치를 넣어 볶는 모습\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 한 공기를 넣고, 양념이 타지 않도록 더 약한 약불에서 밥과 김치를 골고루 섞으며 볶아줍니다. 간을 보고 짜면 밥을 추가하고, 싱거우면 소금이나 간장을 조금씩 추가합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 밥 한 공기를 넣고 밥을 잘 섞어준다고 생각하고 다 같이 볶아줍니다. 밥을 넣고 나서는 양념이 타면 안되니 몇 가닥 안 남은 제 머리털처럼 꺼질 듯 말 듯한 더 약한 약불에서 볶아줍니다. 그리고 중간에 맛을 보면서 짜다면 밥을 추가하거나 싱겁다면 소금 혹은 간장을 조금씩 추가하면서 볶아주시면 됩니다.\",\n          \"timestamp\": \"01:02\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥을 넣고 약불에서 볶아 섞는 모습\",\n          \"timestamp\": \"01:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥이 잘 섞이면 참치캔 1개를 기름과 함께 전부 넣고 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥이 잘 섞였으면 이런 참치 한 캔을 준비해가 기름과 같이 다 넣어줍니다. 만약 담백하게 먹고 싶다면 기름을 빼고 참치만 넣어주셔도 되지만 진한 참치의 향을 느끼고 싶다면 기름까지 넣는 걸 추천드립니다. 참치를 처음부터 넣고 볶아주면 참치의 맛도 묻히고 흔적도 찾아볼 수 없게 흩어져버리니 이렇게 참치는 마지막에 넣어줘야지 참치의 참된 맛을 느낄 수 있습니다.\",\n          \"timestamp\": \"01:19\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"참치를 기름째 팬에 넣고 밥과 함께 섞어 볶는 모습\",\n          \"timestamp\": \"01:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"후추를 톡톡 뿌리고 파슬리를 뿌려 마무리합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다 됐으면 마지막 하이라이트 후추도 톡톡 뿌려주고 있어 보이게 파슬리도 뿌려 마무리해줍니다.\",\n          \"timestamp\": \"01:41\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"후추와 파슬리를 뿌려 완성하는 모습\",\n          \"timestamp\": \"01:42\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"설탕 양은 김치 산도에 따라 1/2스푼(적당히 익은 김치), 1스푼(신김치), 생략(달달한 김치) 중 선택\",\n    \"담백한 맛을 원할 경우 참치캔의 기름을 빼고 살코기만 넣을 수 있음\",\n    \"간을 맞출 때 짜면 밥을 추가하고, 싱거우면 소금이나 간장을 기호에 따라 추가\"\n  ]\n}",
+    "result": {
+      "title": "참치 김치볶음밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "김치 2~3스푼",
+          "displayName": "김치",
+          "amount": "2~3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 김치볶음밥이니 김치를 2~3스푼 준비해줍니다.",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 김치볶음밥이니 김치를 2~3스푼 준비해줍니다.",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파 넉넉하게",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파를 흰색 초록색 구분 없이 준비해서 대충 칼질 잘하는 척하면서 썰어줍니다. 이때 대파는 많으면 많을수록 맛이 좋으니 넉넉하게 준비하시는게 좋습니다.",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 대파를 흰색 초록색 구분 없이 준비해서 대충 칼질 잘하는 척하면서 썰어줍니다. 이때 대파는 많으면 많을수록 맛이 좋으니 넉넉하게 준비하시는게 좋습니다.",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "진간장 1스푼",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 짭짤하게 진간장 1스푼",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 짭짤하게 진간장 1스푼",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "설탕 1/2스푼 (신김치일 경우 1스푼, 달달한 김치는 생략)",
+          "displayName": "설탕",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "적당히 익은 김치다 싶으면 설탕 1/2스푼, 너무 많이 익은 신김치다 싶으면 설탕을 1스푼 넣고, 밖에서 파는 달달한 김치라면 설탕은 생략하시면 됩니다.",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 적당히 익은 김치다 싶으면 설탕 1/2스푼, 너무 많이 익은 신김치다 싶으면 설탕을 1스푼 넣고, 밖에서 파는 달달한 김치라면 설탕은 생략하시면 됩니다.",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고춧가루 1스푼",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 시뻘건 색감을 위해 고춧가루 1스푼과",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 시뻘건 색감을 위해 고춧가루 1스푼과",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "마요네즈 1스푼",
+          "displayName": "마요네즈",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "비장의 재료 마요네즈를 1스푼 넣어줍니다.",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "비장의 재료 마요네즈를 1스푼 넣어줍니다.",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "식용유 한두스푼",
+          "displayName": "식용유",
+          "amount": "1~2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 팬에 식용유를 한두스푼 둘러주고",
+              "timestamp": "00:51"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 팬에 식용유를 한두스푼 둘러주고",
+              "timestamp": "00:51"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "밥 한 공기",
+          "displayName": "밥",
+          "amount": "1",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 밥 한 공기를 넣고",
+              "timestamp": "01:02"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 밥 한 공기를 넣고",
+              "timestamp": "01:02"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "소금 혹은 간장 (간 맞추기용)",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "싱겁다면 소금 혹은 간장을 조금씩 추가하면서 볶아주시면 됩니다.",
+              "timestamp": "01:16"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "싱겁다면 소금 혹은 간장을 조금씩 추가하면서 볶아주시면 됩니다.",
+              "timestamp": "01:16"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "간장 (간 맞추기용 추가 간장)",
+          "displayName": "간장",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "싱겁다면 소금 혹은 간장을 조금씩 추가하면서 볶아주시면 됩니다.",
+              "timestamp": "01:16"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "싱겁다면 소금 혹은 간장을 조금씩 추가하면서 볶아주시면 됩니다.",
+              "timestamp": "01:16"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "참치 한 캔",
+          "displayName": "참치캔",
+          "amount": "1",
+          "unit": "캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이런 참치 한 캔을 준비해가 기름과 같이 다 넣어줍니다.",
+              "timestamp": "01:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이런 참치 한캔을 준비해서 기름과 같이 다 넣어줍니다.",
+              "timestamp": "01:20"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "후추 톡톡",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다 됐으면 마지막 하이라이트 후추도 톡톡 뿌려주고",
+              "timestamp": "01:41"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다 됐으면 마지막 하이라이트 후추도 톡톡 뿌려주고",
+              "timestamp": "01:41"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "파슬리",
+          "displayName": "파슬리",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "있어 보이게 파슬리도 뿌려 마무리해줍니다.",
+              "timestamp": "01:44"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "있어 보이게 파슬리도 뿌려 마무리해줍니다.",
+              "timestamp": "01:44"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "볼에 김치 2~3스푼을 넣습니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 김치볶음밥이니 김치를 2~3스푼 준비해줍니다.",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볼에 김치를 넣는 모습",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "대파를 흰 부분과 초록 부분 구분 없이 넉넉하게 썰어 김치가 담긴 볼에 넣습니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파를 흰색 초록색 구분 없이 준비해서 대충 칼질 잘하는 척하면서 썰어줍니다. 이때 대파는 많으면 많을수록 맛이 좋으니 넉넉하게 준비하시는게 좋습니다. 대파도 다 넣어주고",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "대파를 송송 썰어 볼에 담는 모습",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "볼에 진간장 1스푼, 설탕(익은 정도에 따라 1/2스푼 또는 1스푼, 달달한 김치는 생략), 고춧가루 1스푼, 마요네즈 1스푼을 넣고 골고루 섞어줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 짭짤하게 진간장 1스푼 그리고 적당히 익은 김치다 싶으면 설탕 1/2스푼 너무 많이 익은 신김치다 싶으면 설탕을 1스푼 넣고 밖에서 파는 달달한 김치라면 설탕은 생략하시면 됩니다. 여기에 시뻘건 색감을 위해 고춧가루 1스푼과 비장의 재료 마요네즈를 1스푼 넣어줍니다. 그라고 잘 섞어주시면 됩니다.",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양념 재료들을 볼에 넣고 숟가락으로 비비는 모습",
+              "timestamp": "00:39"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유 1~2스푼을 두르고 약불에서 양념한 김치를 넣어 촉촉한 양념이 줄어들고 살짝 뻑뻑해질 때까지 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 팬에 식용유를 한두스푼 둘러주고 잘 비벼놓은 김치를 다 넣어줍니다. 이때 불은 약불로 해주시면 됩니다. 그리고 촉촉했던 김치의 양념이 줄어들면서 살짝 뻑뻑한 느낌이 들 때까지 볶아줍니다.",
+              "timestamp": "00:51"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 기름을 두르고 김치를 넣어 볶는 모습",
+              "timestamp": "00:53"
+            }
+          ]
+        },
+        {
+          "text": "밥 한 공기를 넣고, 양념이 타지 않도록 더 약한 약불에서 밥과 김치를 골고루 섞으며 볶아줍니다. 간을 보고 짜면 밥을 추가하고, 싱거우면 소금이나 간장을 조금씩 추가합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 밥 한 공기를 넣고 밥을 잘 섞어준다고 생각하고 다 같이 볶아줍니다. 밥을 넣고 나서는 양념이 타면 안되니 몇 가닥 안 남은 제 머리털처럼 꺼질 듯 말 듯한 더 약한 약불에서 볶아줍니다. 그리고 중간에 맛을 보면서 짜다면 밥을 추가하거나 싱겁다면 소금 혹은 간장을 조금씩 추가하면서 볶아주시면 됩니다.",
+              "timestamp": "01:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥을 넣고 약불에서 볶아 섞는 모습",
+              "timestamp": "01:04"
+            }
+          ]
+        },
+        {
+          "text": "밥이 잘 섞이면 참치캔 1개를 기름과 함께 전부 넣고 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥이 잘 섞였으면 이런 참치 한 캔을 준비해가 기름과 같이 다 넣어줍니다. 만약 담백하게 먹고 싶다면 기름을 빼고 참치만 넣어주셔도 되지만 진한 참치의 향을 느끼고 싶다면 기름까지 넣는 걸 추천드립니다. 참치를 처음부터 넣고 볶아주면 참치의 맛도 묻히고 흔적도 찾아볼 수 없게 흩어져버리니 이렇게 참치는 마지막에 넣어줘야지 참치의 참된 맛을 느낄 수 있습니다.",
+              "timestamp": "01:19"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "참치를 기름째 팬에 넣고 밥과 함께 섞어 볶는 모습",
+              "timestamp": "01:22"
+            }
+          ]
+        },
+        {
+          "text": "후추를 톡톡 뿌리고 파슬리를 뿌려 마무리합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다 됐으면 마지막 하이라이트 후추도 톡톡 뿌려주고 있어 보이게 파슬리도 뿌려 마무리해줍니다.",
+              "timestamp": "01:41"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "후추와 파슬리를 뿌려 완성하는 모습",
+              "timestamp": "01:42"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "설탕 양은 김치 산도에 따라 1/2스푼(적당히 익은 김치), 1스푼(신김치), 생략(달달한 김치) 중 선택",
+        "담백한 맛을 원할 경우 참치캔의 기름을 빼고 살코기만 넣을 수 있음",
+        "간을 맞출 때 짜면 밥을 추가하고, 싱거우면 소금이나 간장을 기호에 따라 추가"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

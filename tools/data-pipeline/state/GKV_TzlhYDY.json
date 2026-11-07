@@ -1,0 +1,280 @@
+{
+  "videoId": "GKV_TzlhYDY",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/GKV_TzlhYDY",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:59:51.876367+00:00",
+    "rawResponse": "{\n  \"title\": \"초간단(야매) 순두부찌개\",\n  \"description\": \"양념장 없이도 만드는 초간단 순두부찌개 레시피\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"순두부\",\n      \"displayName\": \"순두부\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"준비물: 순두부\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"순두부를 반으로 잘라 퐁당!\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추참치 1캔\",\n      \"displayName\": \"고추참치\",\n      \"amount\": \"1\",\n      \"unit\": \"캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"준비물: 고추참치\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"냄비에 고추참치 1캔을 모두 털어넣고 살짝 볶는다.\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 1개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"준비물: 계란 1개\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간이 맞으면 날계란을 툭~\",\n          \"timestamp\": \"01:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 적당량\",\n      \"displayName\": \"대파\",\n      \"amount\": \"적당량\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"준비물: 대파\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"어슷썬 대파와 후추를 적당량 넣어주고\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 반스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"준비물: 고춧가루\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 반스푼\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 적당량\",\n      \"displayName\": \"후추\",\n      \"amount\": \"적당량\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"준비물: 후추\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추를 적당량 넣어주고\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 조금\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"조금\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"준비물: 설탕\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 조금을 첨가한다.\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 조금\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"조금\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 조금과 다진마늘 1개를 첨가한다.\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1개\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 조금과 다진마늘 1개를 첨가한다.\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"머그컵 기준 물 한 컵\",\n      \"displayName\": \"물\",\n      \"amount\": \"1\",\n      \"unit\": \"머그컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"머그컵 기준 물 한 컵을 넣고\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 고추참치 1캔을 모두 털어넣고 살짝 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1. 냄비에 고추참치 1캔을 모두 털어넣고 살짝 볶는다.\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볶는 도중에 참기름 조금과 다진마늘 1개를 첨가한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"2. 볶는 도중에 참기름 조금과 다진마늘 1개를 첨가한다.\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"머그컵 기준 물 한 컵을 넣고 순두부를 반으로 잘라 퐁당 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"3. 머그컵 기준 물 한 컵을 넣고 순두부를 반으로 잘라 퐁당!\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"센불에 칼칼 끓이면서 고춧가루 반스푼, 설탕 조금을 첨가한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"4. 센불에 칼칼 끓이면서 고춧가루 반스푼, 설탕 조금을 첨가한다.\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"text\": \"어슷썬 대파와 후추를 적당량 넣어주고 간을 보며 졸이듯 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"5. 어슷썬 대파와 후추를 적당량 넣어주고 간을 보며 졸이듯 끓인다.\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"text\": \"간이 맞으면 날계란을 툭 넣어 휘젓지 않고 조금 더 끓여 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"6. 간이 맞으면 날계란을 툭~ 휘젓지 않고 조금 더 끓여주면\",\n          \"timestamp\": \"01:00\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양념장 없이도 만드는 초간단(야매) 순두부찌개 완성!\",\n          \"timestamp\": \"01:10\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "초간단(야매) 순두부찌개",
+      "description": "양념장 없이도 만드는 초간단 순두부찌개 레시피",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "순두부",
+          "displayName": "순두부",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "준비물: 순두부",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "순두부를 반으로 잘라 퐁당!",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "고추참치 1캔",
+          "displayName": "고추참치",
+          "amount": "1",
+          "unit": "캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "준비물: 고추참치",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "냄비에 고추참치 1캔을 모두 털어넣고 살짝 볶는다.",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "계란 1개",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "준비물: 계란 1개",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간이 맞으면 날계란을 툭~",
+              "timestamp": "01:00"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "대파 적당량",
+          "displayName": "대파",
+          "amount": "적당량",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "준비물: 대파",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "어슷썬 대파와 후추를 적당량 넣어주고",
+              "timestamp": "00:50"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고춧가루 반스푼",
+          "displayName": "고춧가루",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "준비물: 고춧가루",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 반스푼",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "후추 적당량",
+          "displayName": "후추",
+          "amount": "적당량",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "준비물: 후추",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추를 적당량 넣어주고",
+              "timestamp": "00:50"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "설탕 조금",
+          "displayName": "설탕",
+          "amount": "조금",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "준비물: 설탕",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 조금을 첨가한다.",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "참기름 조금",
+          "displayName": "참기름",
+          "amount": "조금",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 조금과 다진마늘 1개를 첨가한다.",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "다진마늘 1개",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 조금과 다진마늘 1개를 첨가한다.",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "머그컵 기준 물 한 컵",
+          "displayName": "물",
+          "amount": "1",
+          "unit": "머그컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "머그컵 기준 물 한 컵을 넣고",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 고추참치 1캔을 모두 털어넣고 살짝 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1. 냄비에 고추참치 1캔을 모두 털어넣고 살짝 볶는다.",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "볶는 도중에 참기름 조금과 다진마늘 1개를 첨가한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "2. 볶는 도중에 참기름 조금과 다진마늘 1개를 첨가한다.",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "머그컵 기준 물 한 컵을 넣고 순두부를 반으로 잘라 퐁당 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "3. 머그컵 기준 물 한 컵을 넣고 순두부를 반으로 잘라 퐁당!",
+              "timestamp": "00:30"
+            }
+          ]
+        },
+        {
+          "text": "센불에 칼칼 끓이면서 고춧가루 반스푼, 설탕 조금을 첨가한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "4. 센불에 칼칼 끓이면서 고춧가루 반스푼, 설탕 조금을 첨가한다.",
+              "timestamp": "00:40"
+            }
+          ]
+        },
+        {
+          "text": "어슷썬 대파와 후추를 적당량 넣어주고 간을 보며 졸이듯 끓인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "5. 어슷썬 대파와 후추를 적당량 넣어주고 간을 보며 졸이듯 끓인다.",
+              "timestamp": "00:50"
+            }
+          ]
+        },
+        {
+          "text": "간이 맞으면 날계란을 툭 넣어 휘젓지 않고 조금 더 끓여 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "6. 간이 맞으면 날계란을 툭~ 휘젓지 않고 조금 더 끓여주면",
+              "timestamp": "01:00"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양념장 없이도 만드는 초간단(야매) 순두부찌개 완성!",
+              "timestamp": "01:10"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

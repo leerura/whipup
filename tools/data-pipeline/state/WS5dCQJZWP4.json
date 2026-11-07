@@ -1,0 +1,312 @@
+{
+  "videoId": "WS5dCQJZWP4",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/WS5dCQJZWP4",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:44:10.121621+00:00",
+    "rawResponse": "{\n  \"title\": \"참치마요덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"양파 1/2개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/2개\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치통조림 1캔(100g)\",\n      \"displayName\": \"참치통조림\",\n      \"amount\": \"1\",\n      \"unit\": \"캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치통조림 1캔(100g)\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마요네즈 3숟가락\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": \"3\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마요네즈 3숟가락\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 양파 1숟가락\",\n      \"displayName\": \"다진 양파\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 양파 1숟가락\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 약간\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": \"약간\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 약간\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 약간\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": \"약간\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 약간\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 약간\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": \"약간\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 약간\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"달걀 2개\",\n      \"displayName\": \"달걀\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"달걀 2개\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 2숟가락\",\n      \"displayName\": \"간장\",\n      \"amount\": \"2\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 2숟가락\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 2숟가락\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"2\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 2숟가락\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리고당 2숟가락\",\n      \"displayName\": \"올리고당\",\n      \"amount\": \"2\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"올리고당 2숟가락\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 담겨 있는 밥\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마요네즈 약간\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": null,\n      \"unit\": \"약간\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마요네즈 약간\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쪽파 약간\",\n      \"displayName\": \"쪽파\",\n      \"amount\": null,\n      \"unit\": \"약간\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쪽파 약간\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"참치통조림은 기름기를 빼서 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름기 빼주기!\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 기름기를 뺀 참치, 마요네즈 3숟가락, 다진 양파 1숟가락, 소금 약간, 후추 약간을 넣고 섞는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"참치에 마요네즈, 다진 양파, 소금, 후추를 넣고 숟가락으로 골고루 버무린다.\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유를 두르고 푼 달걀 2개를 넣어 스크램블 에그를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 식용유를 두르고 달걀물을 부어 저어가며 스크램블을 만든다.\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유를 약간 두르고 채 썬 양파 1/2개를 볶다가 간장 2숟가락, 맛술 2숟가락, 올리고당 2숟가락을 넣고 함께 조린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 기름을 두르고 양파를 볶다가 간장, 맛술, 올리고당을 넣어 조린다.\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 위에 스크램블 에그를 가장자리에 둘러 얹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥이 담긴 그릇 가장자리에 스크램블 에그를 얹는다.\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 가운데에 조린 양파를 올리고, 그 위에 버무려 둔 참치를 얹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 가운데에 양파 조림을 올리고 참치마요를 얹는다.\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마요네즈를 지그재그로 뿌리고 송송 썬 쪽파를 올려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"마요네즈를 뿌리고 쪽파를 고명으로 올린다.\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"밥의 정확한 양은 영상 자막이나 설명에 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "참치마요덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "양파 1/2개",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/2개",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "참치통조림 1캔(100g)",
+          "displayName": "참치통조림",
+          "amount": "1",
+          "unit": "캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치통조림 1캔(100g)",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "마요네즈 3숟가락",
+          "displayName": "마요네즈",
+          "amount": "3",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마요네즈 3숟가락",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "다진 양파 1숟가락",
+          "displayName": "다진 양파",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 양파 1숟가락",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "소금 약간",
+          "displayName": "소금",
+          "amount": null,
+          "unit": "약간",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 약간",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "후추 약간",
+          "displayName": "후추",
+          "amount": null,
+          "unit": "약간",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 약간",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "식용유 약간",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": "약간",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 약간",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "달걀 2개",
+          "displayName": "달걀",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "달걀 2개",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "간장 2숟가락",
+          "displayName": "간장",
+          "amount": "2",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 2숟가락",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "맛술 2숟가락",
+          "displayName": "맛술",
+          "amount": "2",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 2숟가락",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "올리고당 2숟가락",
+          "displayName": "올리고당",
+          "amount": "2",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "올리고당 2숟가락",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 담겨 있는 밥",
+              "timestamp": "00:42"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "마요네즈 약간",
+          "displayName": "마요네즈",
+          "amount": null,
+          "unit": "약간",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마요네즈 약간",
+              "timestamp": "00:51"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "쪽파 약간",
+          "displayName": "쪽파",
+          "amount": null,
+          "unit": "약간",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쪽파 약간",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        }
+      ],
+      "steps": [
+        {
+          "text": "참치통조림은 기름기를 빼서 준비한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름기 빼주기!",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "볼에 기름기를 뺀 참치, 마요네즈 3숟가락, 다진 양파 1숟가락, 소금 약간, 후추 약간을 넣고 섞는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "참치에 마요네즈, 다진 양파, 소금, 후추를 넣고 숟가락으로 골고루 버무린다.",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유를 두르고 푼 달걀 2개를 넣어 스크램블 에그를 만든다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 식용유를 두르고 달걀물을 부어 저어가며 스크램블을 만든다.",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유를 약간 두르고 채 썬 양파 1/2개를 볶다가 간장 2숟가락, 맛술 2숟가락, 올리고당 2숟가락을 넣고 함께 조린다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 기름을 두르고 양파를 볶다가 간장, 맛술, 올리고당을 넣어 조린다.",
+              "timestamp": "00:28"
+            }
+          ]
+        },
+        {
+          "text": "밥 위에 스크램블 에그를 가장자리에 둘러 얹는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥이 담긴 그릇 가장자리에 스크램블 에그를 얹는다.",
+              "timestamp": "00:42"
+            }
+          ]
+        },
+        {
+          "text": "밥 가운데에 조린 양파를 올리고, 그 위에 버무려 둔 참치를 얹는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 가운데에 양파 조림을 올리고 참치마요를 얹는다.",
+              "timestamp": "00:45"
+            }
+          ]
+        },
+        {
+          "text": "마요네즈를 지그재그로 뿌리고 송송 썬 쪽파를 올려 완성한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "마요네즈를 뿌리고 쪽파를 고명으로 올린다.",
+              "timestamp": "00:51"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "밥의 정확한 양은 영상 자막이나 설명에 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

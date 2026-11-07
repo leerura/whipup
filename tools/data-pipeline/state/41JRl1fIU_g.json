@@ -1,18 +1,330 @@
 {
   "videoId": "41JRl1fIU_g",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/41JRl1fIU_g",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-10-27T10:52:47.433597+00:00",
-    "accountId": "account-c",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAt": "2026-10-27T10:53:02.638279+00:00",
-    "retryAccountId": "account-c"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T10:10:21.993981+00:00",
+    "rawResponse": "{\n  \"title\": \"돼지고기 김치찌개\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"멸치 다시마 육수\",\n      \"displayName\": \"멸치\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"한식 국물요리는 멸치 다시마 육수를 내주면 은은한 깊은 맛이 납니다.\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비에 물과 함께 멸치를 넣음\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다시마\",\n      \"displayName\": \"다시마\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"한식 국물요리는 멸치 다시마 육수를 내주면 은은한 깊은 맛이 납니다.\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비에 물과 함께 다시마를 넣음\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비에 물을 붓는 모습\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 1개\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 1개 어슷썰기\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"두부한모\",\n      \"displayName\": \"두부\",\n      \"amount\": \"1\",\n      \"unit\": \"모\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부한모\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"찌개용 돼지고기 300g\",\n      \"displayName\": \"찌개용 돼지고기\",\n      \"amount\": \"300\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"찌개용 돼지고기 300g\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"새콤하게 익은김치 1/4포기\",\n      \"displayName\": \"새콤하게 익은김치\",\n      \"amount\": \"1/4\",\n      \"unit\": \"포기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"새콤하게 익은김치 1/4포기\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"들기름 또는 참기름 1T\",\n      \"displayName\": \"들기름 또는 참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 들기름 또는 참기름 1T 에 고기에 후추 좀 뿌려 달달달 볶아 주세요.\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 좀\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 들기름 또는 참기름 1T 에 고기에 후추 좀 뿌려 달달달 볶아 주세요.\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1T\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치 설탕 1T 고춧가루 1T 참치액 1T 넣어 볶아 주세요.\",\n          \"timestamp\": \"01:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1T\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치 설탕 1T 고춧가루 1T 참치액 1T 넣어 볶아 주세요.\",\n          \"timestamp\": \"01:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치액 1T\",\n      \"displayName\": \"참치액\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치 설탕 1T 고춧가루 1T 참치액 1T 넣어 볶아 주세요.\",\n          \"timestamp\": \"01:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"멸치 다시마 육수 400~600ml\",\n      \"displayName\": \"멸치 다시마 육수\",\n      \"amount\": \"400~600\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"멸치 다시마 육수 400~600ml 두부 한모 대파 넣어 한소큼 끓여 주세요.\",\n          \"timestamp\": \"01:46\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 물, 멸치, 다시마를 넣고 끓여 육수를 낸 후 걸러둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"한식 국물요리는 멸치 다시마 육수를 내주면 은은한 깊은 맛이 납니다.\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"우린 육수는 걸러 주세요.\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파 1개를 어슷썰기한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 1개 어슷썰기\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"두부 한 모를 적당한 크기로 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부한모\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"찌개용 돼지고기 300g의 핏물을 닦아내고 먹기 좋은 크기로 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"찌개용 돼지고기 300g\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"새콤하게 익은 김치 1/4포기를 적당한 사이즈로 자른다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"새콤하게 익은김치 1/4포기\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"적당한 사이즈로 잘라 주세요.\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 들기름 또는 참기름 1T를 두르고 돼지고기와 후추를 조금 뿌린 후 수분이 없을 때까지 달달 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 들기름 또는 참기름 1T 에 고기에 후추 좀 뿌려 달달달 볶아 주세요.\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고기의 수분이 없을때까지 달달달 볶아 주세요.\",\n          \"timestamp\": \"01:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"썰어둔 김치, 설탕 1T, 고춧가루 1T, 참치액 1T를 넣고 함께 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치 설탕 1T 고춧가루 1T 참치액 1T 넣어 볶아 주세요.\",\n          \"timestamp\": \"01:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"멸치 다시마 육수 400~600ml를 붓고 두부 한 모와 대파를 넣은 후 뚜껑을 덮고 한소끔 끓여 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"멸치 다시마 육수 400~600ml 두부 한모 대파 넣어 한소큼 끓여 주세요.\",\n          \"timestamp\": \"01:46\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "돼지고기 김치찌개",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "멸치 다시마 육수",
+          "displayName": "멸치",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "한식 국물요리는 멸치 다시마 육수를 내주면 은은한 깊은 맛이 납니다.",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비에 물과 함께 멸치를 넣음",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "다시마",
+          "displayName": "다시마",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "한식 국물요리는 멸치 다시마 육수를 내주면 은은한 깊은 맛이 납니다.",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비에 물과 함께 다시마를 넣음",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "물",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비에 물을 붓는 모습",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "대파 1개",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 1개 어슷썰기",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "두부한모",
+          "displayName": "두부",
+          "amount": "1",
+          "unit": "모",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부한모",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "찌개용 돼지고기 300g",
+          "displayName": "찌개용 돼지고기",
+          "amount": "300",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "찌개용 돼지고기 300g",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "새콤하게 익은김치 1/4포기",
+          "displayName": "새콤하게 익은김치",
+          "amount": "1/4",
+          "unit": "포기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "새콤하게 익은김치 1/4포기",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "들기름 또는 참기름 1T",
+          "displayName": "들기름 또는 참기름",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 들기름 또는 참기름 1T 에 고기에 후추 좀 뿌려 달달달 볶아 주세요.",
+              "timestamp": "00:52"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "후추 좀",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 들기름 또는 참기름 1T 에 고기에 후추 좀 뿌려 달달달 볶아 주세요.",
+              "timestamp": "00:52"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "설탕 1T",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치 설탕 1T 고춧가루 1T 참치액 1T 넣어 볶아 주세요.",
+              "timestamp": "01:24"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "고춧가루 1T",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치 설탕 1T 고춧가루 1T 참치액 1T 넣어 볶아 주세요.",
+              "timestamp": "01:24"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "참치액 1T",
+          "displayName": "참치액",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치 설탕 1T 고춧가루 1T 참치액 1T 넣어 볶아 주세요.",
+              "timestamp": "01:24"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "멸치 다시마 육수 400~600ml",
+          "displayName": "멸치 다시마 육수",
+          "amount": "400~600",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "멸치 다시마 육수 400~600ml 두부 한모 대파 넣어 한소큼 끓여 주세요.",
+              "timestamp": "01:46"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 물, 멸치, 다시마를 넣고 끓여 육수를 낸 후 걸러둔다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "한식 국물요리는 멸치 다시마 육수를 내주면 은은한 깊은 맛이 납니다.",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "우린 육수는 걸러 주세요.",
+              "timestamp": "00:39"
+            }
+          ]
+        },
+        {
+          "text": "대파 1개를 어슷썰기한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 1개 어슷썰기",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "두부 한 모를 적당한 크기로 썬다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부한모",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "찌개용 돼지고기 300g의 핏물을 닦아내고 먹기 좋은 크기로 썬다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "찌개용 돼지고기 300g",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "새콤하게 익은 김치 1/4포기를 적당한 사이즈로 자른다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "새콤하게 익은김치 1/4포기",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "적당한 사이즈로 잘라 주세요.",
+              "timestamp": "00:32"
+            }
+          ]
+        },
+        {
+          "text": "팬에 들기름 또는 참기름 1T를 두르고 돼지고기와 후추를 조금 뿌린 후 수분이 없을 때까지 달달 볶아준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 들기름 또는 참기름 1T 에 고기에 후추 좀 뿌려 달달달 볶아 주세요.",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고기의 수분이 없을때까지 달달달 볶아 주세요.",
+              "timestamp": "01:04"
+            }
+          ]
+        },
+        {
+          "text": "썰어둔 김치, 설탕 1T, 고춧가루 1T, 참치액 1T를 넣고 함께 볶아준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치 설탕 1T 고춧가루 1T 참치액 1T 넣어 볶아 주세요.",
+              "timestamp": "01:24"
+            }
+          ]
+        },
+        {
+          "text": "멸치 다시마 육수 400~600ml를 붓고 두부 한 모와 대파를 넣은 후 뚜껑을 덮고 한소끔 끓여 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "멸치 다시마 육수 400~600ml 두부 한모 대파 넣어 한소큼 끓여 주세요.",
+              "timestamp": "01:46"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
   }
 }

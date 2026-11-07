@@ -1,0 +1,400 @@
+{
+  "videoId": "2BvGr_gSENg",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/2BvGr_gSENg",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:31:17.076735+00:00",
+    "rawResponse": "{\n  \"title\": \"사당동 18억 김치찌개 전문점 레시피\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"돼지고기 앞다리살 500g\",\n      \"displayName\": \"돼지고기 앞다리살\",\n      \"amount\": \"500\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"돼지고기 앞다리살 500g을\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"돼지고기 500g / Pork\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/2\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"믹서기에 양파 반 개와\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/2 / Onion\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치국물 150ml (3국자)\",\n      \"displayName\": \"김치국물\",\n      \"amount\": \"150\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치국물 세 국자를 넣고 갈아줘\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치국물 150ml / Kimchi liquid\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 (믹서용)\",\n      \"displayName\": \"청양고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"매운 걸 좋아하면 청양고추를 넣어줘\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치 1/4포기\",\n      \"displayName\": \"김치\",\n      \"amount\": \"1/4\",\n      \"unit\": \"포기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치 1/4포기를 잘라서 넣어줘\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치 1/4포기 / Kimchi\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추가루 5\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"5\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 다섯 숟가락 넣고\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추가루 5 / Chili powder\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"사골육수 500ml\",\n      \"displayName\": \"사골육수\",\n      \"amount\": \"500\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"육수로 사골육수 500ml를 넣고 잘 풀어줘\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"사골육수 500ml / Beef bone broth\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"두부\",\n      \"displayName\": \"두부\",\n      \"amount\": \"1\",\n      \"unit\": \"모\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"두부도 한 모 잘라서 넣고\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부 / Tofu\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"멸치다시다 1\",\n      \"displayName\": \"멸치다시다\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"멸치다시다와 멸치액젓을 한 숟가락씩 넣어줘\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"멸치다시다 1 / Anchovy seasoning\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"멸치액젓 1\",\n      \"displayName\": \"멸치액젓\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"멸치다시다와 멸치액젓을 한 숟가락씩 넣어줘\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"멸치액젓 1 / Anchovy sauce\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"잼민이가 싫어하는 청양고추도 두 개 넣어주고\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 / Cheongyang red pepper\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파도 하나 잘라서 위에 올려주면\",\n          \"timestamp\": \"00:51\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 / Green onion\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"돼지고기 앞다리살 500g에서 비계 부위만 잘라내고, 살코기는 한입 크기로 자른다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"돼지고기 앞다리살 500g을 비계만 잘라서... 살코기는 한입 크기로 잘라줘\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"앞다리살에서 비계를 칼로 분리하고 살코기를 썬다.\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 잘라낸 돼지 비계를 올리고 바삭하게 굽는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"비계를 바삭하게 굽고\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 비계를 올려 노릇노릇하고 바삭하게 굽는다.\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"믹서기에 양파 1/2개, 구운 돼지 비계, 김치국물 150ml(3국자)를 넣고 간다. 기호에 따라 매운맛을 원하면 청양고추를 함께 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"믹서기에 양파 반 개와 비계를 넣고 김치국물 세 국자를 넣고 갈아줘 매운 걸 좋아하면 청양고추를 넣어줘\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"믹서기에 재료들을 넣고 곱게 간다.\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 믹서기로 간 양념을 붓고, 김치 1/4포기를 썰어 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간 걸 후라이팬에 넣고 김치 1/4포기를 잘라서 넣어줘\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"갈아둔 양념을 팬에 붓고 썬 김치를 팬에 투하한다.\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고춧가루 5숟가락을 넣고 약불에서 천천히 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 고춧가루 다섯 숟가락 넣고 약불에서 천천히 볶아줘\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"고춧가루를 넣고 주걱으로 저어가며 볶는다.\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"사골육수 500ml를 붓고 골고루 풀어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"육수로 사골육수 500ml를 넣고 잘 풀어줘\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"시판 사골육수를 붓고 주걱으로 섞는다.\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"잘라둔 돼지고기 살코기와 깍둑썬 두부 1모를 넣고 함께 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 아까 잘라둔 돼지고기를 넣고 끓여줘 두부도 한 모 잘라서 넣고 같이 끓여줘\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"돼지고기 살코기와 썬 두부를 국물에 넣는다.\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"멸치다시다 1숟가락과 멸치액젓 1숟가락을 넣어 간을 맞춘다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식당에서 파는 맛에 따라하고 싶으면 멸치다시다와 멸치액젓을 한 숟가락씩 넣어줘\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"숟가락에 다시다와 액젓을 부어 국물에 넣는다.\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"text\": \"송송 썬 청양고추 2개와 썬 대파 1대를 올려 한소끔 더 끓여 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"청양고추도 두 개 넣어주고 대파도 하나 잘라서 위에 올려주면... 김치찌개 끝\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"청양고추와 대파를 찌개 위에 올린다.\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "사당동 18억 김치찌개 전문점 레시피",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "돼지고기 앞다리살 500g",
+          "displayName": "돼지고기 앞다리살",
+          "amount": "500",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "돼지고기 앞다리살 500g을",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "돼지고기 500g / Pork",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파 1/2",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "믹서기에 양파 반 개와",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/2 / Onion",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "김치국물 150ml (3국자)",
+          "displayName": "김치국물",
+          "amount": "150",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김치국물 세 국자를 넣고 갈아줘",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치국물 150ml / Kimchi liquid",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "청양고추 (믹서용)",
+          "displayName": "청양고추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "매운 걸 좋아하면 청양고추를 넣어줘",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "김치 1/4포기",
+          "displayName": "김치",
+          "amount": "1/4",
+          "unit": "포기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김치 1/4포기를 잘라서 넣어줘",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치 1/4포기 / Kimchi",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "고추가루 5",
+          "displayName": "고춧가루",
+          "amount": "5",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 다섯 숟가락 넣고",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추가루 5 / Chili powder",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "사골육수 500ml",
+          "displayName": "사골육수",
+          "amount": "500",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "육수로 사골육수 500ml를 넣고 잘 풀어줘",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "사골육수 500ml / Beef bone broth",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "두부",
+          "displayName": "두부",
+          "amount": "1",
+          "unit": "모",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "두부도 한 모 잘라서 넣고",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부 / Tofu",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "멸치다시다 1",
+          "displayName": "멸치다시다",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "멸치다시다와 멸치액젓을 한 숟가락씩 넣어줘",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "멸치다시다 1 / Anchovy seasoning",
+              "timestamp": "00:42"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "멸치액젓 1",
+          "displayName": "멸치액젓",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "멸치다시다와 멸치액젓을 한 숟가락씩 넣어줘",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "멸치액젓 1 / Anchovy sauce",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "청양고추",
+          "displayName": "청양고추",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "잼민이가 싫어하는 청양고추도 두 개 넣어주고",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 / Cheongyang red pepper",
+              "timestamp": "00:46"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파도 하나 잘라서 위에 올려주면",
+              "timestamp": "00:51"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 / Green onion",
+              "timestamp": "00:50"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "돼지고기 앞다리살 500g에서 비계 부위만 잘라내고, 살코기는 한입 크기로 자른다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "돼지고기 앞다리살 500g을 비계만 잘라서... 살코기는 한입 크기로 잘라줘",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "앞다리살에서 비계를 칼로 분리하고 살코기를 썬다.",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "팬에 잘라낸 돼지 비계를 올리고 바삭하게 굽는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "비계를 바삭하게 굽고",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 비계를 올려 노릇노릇하고 바삭하게 굽는다.",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "믹서기에 양파 1/2개, 구운 돼지 비계, 김치국물 150ml(3국자)를 넣고 간다. 기호에 따라 매운맛을 원하면 청양고추를 함께 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "믹서기에 양파 반 개와 비계를 넣고 김치국물 세 국자를 넣고 갈아줘 매운 걸 좋아하면 청양고추를 넣어줘",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "믹서기에 재료들을 넣고 곱게 간다.",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "팬에 믹서기로 간 양념을 붓고, 김치 1/4포기를 썰어 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "간 걸 후라이팬에 넣고 김치 1/4포기를 잘라서 넣어줘",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "갈아둔 양념을 팬에 붓고 썬 김치를 팬에 투하한다.",
+              "timestamp": "00:21"
+            }
+          ]
+        },
+        {
+          "text": "고춧가루 5숟가락을 넣고 약불에서 천천히 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 고춧가루 다섯 숟가락 넣고 약불에서 천천히 볶아줘",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "고춧가루를 넣고 주걱으로 저어가며 볶는다.",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "사골육수 500ml를 붓고 골고루 풀어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "육수로 사골육수 500ml를 넣고 잘 풀어줘",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "시판 사골육수를 붓고 주걱으로 섞는다.",
+              "timestamp": "00:34"
+            }
+          ]
+        },
+        {
+          "text": "잘라둔 돼지고기 살코기와 깍둑썬 두부 1모를 넣고 함께 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 아까 잘라둔 돼지고기를 넣고 끓여줘 두부도 한 모 잘라서 넣고 같이 끓여줘",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "돼지고기 살코기와 썬 두부를 국물에 넣는다.",
+              "timestamp": "00:37"
+            }
+          ]
+        },
+        {
+          "text": "멸치다시다 1숟가락과 멸치액젓 1숟가락을 넣어 간을 맞춘다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "식당에서 파는 맛에 따라하고 싶으면 멸치다시다와 멸치액젓을 한 숟가락씩 넣어줘",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "숟가락에 다시다와 액젓을 부어 국물에 넣는다.",
+              "timestamp": "00:42"
+            }
+          ]
+        },
+        {
+          "text": "송송 썬 청양고추 2개와 썬 대파 1대를 올려 한소끔 더 끓여 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "청양고추도 두 개 넣어주고 대파도 하나 잘라서 위에 올려주면... 김치찌개 끝",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "청양고추와 대파를 찌개 위에 올린다.",
+              "timestamp": "00:48"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

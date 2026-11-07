@@ -1,0 +1,323 @@
+{
+  "videoId": "pEB6gBzwkpM",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/pEB6gBzwkpM",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:31:11.307615+00:00",
+    "rawResponse": "{\n  \"title\": \"간장국수\",\n  \"description\": null,\n  \"servings\": \"2인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"양조간장 4스푼(40g)\",\n      \"displayName\": \"양조간장\",\n      \"amount\": \"4\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장 4스푼(40g)을 넣어주세요.\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양조간장 4스푼(40g)을 먼저 넣어주시고요.\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 2스푼(30g)\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 2스푼(30g)을 넣어주세요.\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕은 2스푼을 넣어주세요.\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 2스푼(8g)\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 2스푼(8g)을 넣어주세요.\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 참기름도 2스푼 넣어주시고요.\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1/2스푼(10g)\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 1/2스푼(10g)을 넣어주세요.\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘도 반 스푼 넣어주세요.\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깻가루 2스푼(12g) (참깨 1스푼, 검정깨 1스푼)\",\n      \"displayName\": \"깻가루\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깻가루 2스푼(12g)을 준비해주세요.\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 여기에 깻가루를 2스푼 넣어주셔야 되는데요. 참깨 1스푼과 검정깨 1스푼을 준비했고요. 검정깨 대신에 참깨로만 2스푼 넣으셔도 됩니다.\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"신김치(묵은지)의 줄기 부분만(100g)\",\n      \"displayName\": \"신김치(묵은지)\",\n      \"amount\": \"100\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"신김치(묵은지)의 줄기 부분만(100g) 준비해주세요.\",\n          \"timestamp\": \"01:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"신김치는 줄기 부분만 사용해 주시고요.\",\n          \"timestamp\": \"01:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식초 1스푼\",\n      \"displayName\": \"식초\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"! 신김치 준비가 안되었으면 양념장에 식초를 1스푼 넣어주세요.\",\n          \"timestamp\": \"01:42\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"신김치가 준비가 안 되었다면 양념장 만들 때 식초를 1스푼 추가해 주세요.\",\n          \"timestamp\": \"01:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소면 2인분\",\n      \"displayName\": \"소면\",\n      \"amount\": \"2\",\n      \"unit\": \"인분\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소면 2인분을 준비해주세요.\",\n          \"timestamp\": \"01:48\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소면 2인분을 준비해 주세요.\",\n          \"timestamp\": \"01:48\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파를 송송 썰어서 올려주세요.\",\n          \"timestamp\": \"03:00\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파를 송송 썰어서 올려주세요.\",\n          \"timestamp\": \"03:00\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"믹싱볼에 양조간장 4스푼(40g), 설탕 2스푼(30g), 참기름 2스푼(8g), 다진 마늘 1/2스푼(10g)을 넣고 설탕이 녹을 때까지 잘 저어서 섞어 양념장을 만듭니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 양념장을 만들어야 됩니다. 이런 믹싱볼 하나를 준비해 주세요. 양조간장 4스푼을 먼저 넣어주시고요. 설탕은 2스푼을 넣어주세요. 여기에 참기름도 2스푼 넣어주시고요. 다진 마늘도 반 스푼 넣어주세요.\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕이 녹을때까지 잘 저어서 섞어주세요.\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"text\": \"신김치(묵은지) 줄기 부분(100g)을 물에 씻어 양념을 헹궈냅니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"신김치(묵은지)를 물에 씻어주세요.\",\n          \"timestamp\": \"01:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"신김치는 바로 사용하지 마시고 물에 한번 씻어주세요.\",\n          \"timestamp\": \"01:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물에 씻은 김치의 물기를 제거하고 손가락 두 마디 정도 길이로 채 썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"신김치(묵은지)의 물기를 제거하고 채썰어주세요.\",\n          \"timestamp\": \"01:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물에 한번 씻은 김치는 물기를 제거하고 손가락 두 마디 정도 길이로 먹기 좋게 채 썰어주세요.\",\n          \"timestamp\": \"01:35\"\n        }\n      ]\n    },\n    {\n      \"text\": \"끓는 물에 소면 2인분을 넣고 약 4분 정도 삶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"끓는 물에 소면을 삶아주세요.\",\n          \"timestamp\": \"01:54\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물이 끓으면 소면을 넣고 약 4분 정도 삶아주세요.\",\n          \"timestamp\": \"01:53\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삶아진 소면을 찬물에 헹궈 전분기를 씻어낸 후 물기를 뺍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"삶아진 소면을 흐르는 물에 씻어주세요.\",\n          \"timestamp\": \"02:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"삶아진 소면을 찬물에 씻어주세요.\",\n          \"timestamp\": \"02:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양념장에 물기를 뺀 소면과 채 썬 신김치를 넣고 골고루 비벼줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"씻은 소면의 물기를 빼고, 양념장에 넣어주세요.\",\n          \"timestamp\": \"02:28\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"채썰은 신김치(묵은지)도 넣어주세요.\",\n          \"timestamp\": \"02:33\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"잘 비벼주세요.\",\n          \"timestamp\": \"02:36\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 담고 1인분당 깻가루 1스푼을 뿌린 후 송송 썬 대파를 고명으로 올려 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깻가루 1스푼을 뿌려주세요. (1인분에 1스푼)\",\n          \"timestamp\": \"02:49\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파를 송송 썰어서 올려주세요.\",\n          \"timestamp\": \"03:00\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"대파의 구체적인 계량(스푼 또는 그램 수)은 명시되지 않음\",\n    \"포기김치 외에 맛김치, 총각무김치, 열무김치로 대체 가능하다고 언급됨\"\n  ]\n}",
+    "result": {
+      "title": "간장국수",
+      "description": null,
+      "servings": "2인분",
+      "ingredients": [
+        {
+          "rawText": "양조간장 4스푼(40g)",
+          "displayName": "양조간장",
+          "amount": "4",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장 4스푼(40g)을 넣어주세요.",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양조간장 4스푼(40g)을 먼저 넣어주시고요.",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "설탕 2스푼(30g)",
+          "displayName": "설탕",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 2스푼(30g)을 넣어주세요.",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕은 2스푼을 넣어주세요.",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "참기름 2스푼(8g)",
+          "displayName": "참기름",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 2스푼(8g)을 넣어주세요.",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 참기름도 2스푼 넣어주시고요.",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "다진 마늘 1/2스푼(10g)",
+          "displayName": "다진 마늘",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 1/2스푼(10g)을 넣어주세요.",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘도 반 스푼 넣어주세요.",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "깻가루 2스푼(12g) (참깨 1스푼, 검정깨 1스푼)",
+          "displayName": "깻가루",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깻가루 2스푼(12g)을 준비해주세요.",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 여기에 깻가루를 2스푼 넣어주셔야 되는데요. 참깨 1스푼과 검정깨 1스푼을 준비했고요. 검정깨 대신에 참깨로만 2스푼 넣으셔도 됩니다.",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "신김치(묵은지)의 줄기 부분만(100g)",
+          "displayName": "신김치(묵은지)",
+          "amount": "100",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "신김치(묵은지)의 줄기 부분만(100g) 준비해주세요.",
+              "timestamp": "01:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "신김치는 줄기 부분만 사용해 주시고요.",
+              "timestamp": "01:11"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "식초 1스푼",
+          "displayName": "식초",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "! 신김치 준비가 안되었으면 양념장에 식초를 1스푼 넣어주세요.",
+              "timestamp": "01:42"
+            },
+            {
+              "type": "SPEECH",
+              "text": "신김치가 준비가 안 되었다면 양념장 만들 때 식초를 1스푼 추가해 주세요.",
+              "timestamp": "01:41"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "소면 2인분",
+          "displayName": "소면",
+          "amount": "2",
+          "unit": "인분",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소면 2인분을 준비해주세요.",
+              "timestamp": "01:48"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소면 2인분을 준비해 주세요.",
+              "timestamp": "01:48"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파를 송송 썰어서 올려주세요.",
+              "timestamp": "03:00"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파를 송송 썰어서 올려주세요.",
+              "timestamp": "03:00"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "믹싱볼에 양조간장 4스푼(40g), 설탕 2스푼(30g), 참기름 2스푼(8g), 다진 마늘 1/2스푼(10g)을 넣고 설탕이 녹을 때까지 잘 저어서 섞어 양념장을 만듭니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 양념장을 만들어야 됩니다. 이런 믹싱볼 하나를 준비해 주세요. 양조간장 4스푼을 먼저 넣어주시고요. 설탕은 2스푼을 넣어주세요. 여기에 참기름도 2스푼 넣어주시고요. 다진 마늘도 반 스푼 넣어주세요.",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕이 녹을때까지 잘 저어서 섞어주세요.",
+              "timestamp": "00:53"
+            }
+          ]
+        },
+        {
+          "text": "신김치(묵은지) 줄기 부분(100g)을 물에 씻어 양념을 헹궈냅니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "신김치(묵은지)를 물에 씻어주세요.",
+              "timestamp": "01:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "신김치는 바로 사용하지 마시고 물에 한번 씻어주세요.",
+              "timestamp": "01:24"
+            }
+          ]
+        },
+        {
+          "text": "물에 씻은 김치의 물기를 제거하고 손가락 두 마디 정도 길이로 채 썰어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "신김치(묵은지)의 물기를 제거하고 채썰어주세요.",
+              "timestamp": "01:36"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물에 한번 씻은 김치는 물기를 제거하고 손가락 두 마디 정도 길이로 먹기 좋게 채 썰어주세요.",
+              "timestamp": "01:35"
+            }
+          ]
+        },
+        {
+          "text": "끓는 물에 소면 2인분을 넣고 약 4분 정도 삶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "끓는 물에 소면을 삶아주세요.",
+              "timestamp": "01:54"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물이 끓으면 소면을 넣고 약 4분 정도 삶아주세요.",
+              "timestamp": "01:53"
+            }
+          ]
+        },
+        {
+          "text": "삶아진 소면을 찬물에 헹궈 전분기를 씻어낸 후 물기를 뺍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "삶아진 소면을 흐르는 물에 씻어주세요.",
+              "timestamp": "02:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "삶아진 소면을 찬물에 씻어주세요.",
+              "timestamp": "02:11"
+            }
+          ]
+        },
+        {
+          "text": "양념장에 물기를 뺀 소면과 채 썬 신김치를 넣고 골고루 비벼줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "씻은 소면의 물기를 빼고, 양념장에 넣어주세요.",
+              "timestamp": "02:28"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "채썰은 신김치(묵은지)도 넣어주세요.",
+              "timestamp": "02:33"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "잘 비벼주세요.",
+              "timestamp": "02:36"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 담고 1인분당 깻가루 1스푼을 뿌린 후 송송 썬 대파를 고명으로 올려 완성합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깻가루 1스푼을 뿌려주세요. (1인분에 1스푼)",
+              "timestamp": "02:49"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파를 송송 썰어서 올려주세요.",
+              "timestamp": "03:00"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "대파의 구체적인 계량(스푼 또는 그램 수)은 명시되지 않음",
+        "포기김치 외에 맛김치, 총각무김치, 열무김치로 대체 가능하다고 언급됨"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

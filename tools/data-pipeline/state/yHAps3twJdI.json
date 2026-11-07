@@ -1,0 +1,415 @@
+{
+  "videoId": "yHAps3twJdI",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/yHAps3twJdI",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:36:48.416927+00:00",
+    "rawResponse": "{\n  \"title\": \"방구석표 순두부찌개\",\n  \"description\": null,\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"다진 돼지고기 (1인분 기준 약 100g)\",\n      \"displayName\": \"다진 돼지고기\",\n      \"amount\": \"100\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 돼지고기를 준비해 줍니다. 돼지고기는 부위 상관없이 저렴한 걸로 가지고 오시면 됩니다. 1인분 기준 100g 정도만 있어도 충분합니다.\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 다진 돼지고기(약 100g)도 넣어줍니다.\",\n          \"timestamp\": \"01:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"순두부 1봉지\",\n      \"displayName\": \"순두부\",\n      \"amount\": \"1\",\n      \"unit\": \"봉지\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 순두부 한 봉지를 준비해 줍니다.\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파는 초록한 부분과 흰 부분 중에 둘 다 사용하면 좋지만 만약 하나를 고르라고 하면 흰 부분을 사용해 줍니다. 그리고 반 가르고 대충 썰어주시면 됩니다. 오늘 대파는 많으면 많을수록 좋습니다.\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/4개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/4\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"추가 건더기 재료로 양파 1/4개를 준비해가\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"애호박 손가락 두 마디 정도\",\n      \"displayName\": \"애호박\",\n      \"amount\": \"손가락 두 마디 정도\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 애호박 같은 경우 손가락 두 마디 정도만 준비해서\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 3~4스푼\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"3~4\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 식용유를 서너 스푼 넉넉하게 둘러주고\",\n          \"timestamp\": \"01:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 식용유를 3~4스푼 넉넉하게 둘러주고\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"시뻘건 고춧가루 2스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 시뻘건 고춧가루를 2스푼 넣고\",\n          \"timestamp\": \"01:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 2컵 (약 360ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"2\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그러고 바로 물 2컵을 부어주고\",\n          \"timestamp\": \"01:46\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 바로 물 2컵 (약 360ml)을 부어주고\",\n          \"timestamp\": \"01:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"바지락이나 해물\",\n      \"displayName\": \"바지락이나 해물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이때 바지락이나 해물 같은 게 있으면 지금 넣어줍니다.\",\n          \"timestamp\": \"01:48\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘을 1스푼 넣어주고\",\n          \"timestamp\": \"01:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"멸치 액젓 2스푼\",\n      \"displayName\": \"멸치 액젓\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"멸치 액젓 2스푼을 넣어줍니다.\",\n          \"timestamp\": \"01:55\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만약 새우젓이나 참치 액젓 같은 거 있으면 섞어서 넣어주시면 더욱 좋습니다.\",\n          \"timestamp\": \"02:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 1스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 짭짤하게 진간장 1스푼을 넣고 간을 해줍니다.\",\n          \"timestamp\": \"02:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"팽이버섯 같은 버섯류\",\n      \"displayName\": \"버섯류\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팽이치기 버섯 같은 버섯류를 추가로 넣어주셔도 좋습니다.\",\n          \"timestamp\": \"02:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 1개\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"청양고추 하나를 대충 썰어서 넣어주거나\",\n          \"timestamp\": \"02:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 1개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 하나를 넣거나\",\n          \"timestamp\": \"02:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추를 뿌려 마무리해 줍니다.\",\n          \"timestamp\": \"02:43\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"순두부는 가운데 점선/자르는 선 부분을 썰어 준비해 둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"순두부는 가운데 빨간 점선과 자르는 선이라고 적힌 게 보일 겁니다. 그 부분을 썰어주시면 찌개에 넣기 좋게 모양이 나옵니다.\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파는 세로로 반을 가른 뒤 대충 썰어두고, 양파 1/4개는 사각형 모양으로 굵직하게 썰며, 애호박 손가락 두 마디 정도 분량은 십자 모양으로 가른 뒤 양파 두께와 비슷하게 썰어둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파는 초록한 부분과 흰 부분 중에 둘 다 사용하면 좋지만 만약 하나를 고르라고 하면 흰 부분을 사용해 줍니다. 그리고 반 가르고 대충 썰어주시면 됩니다.\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"추가 건더기 재료로 양파 1/4개를 준비해가 사선으로 굵직하게 썰어주고 돌리가 세로로 썰어주면 딱 찌개용 건더기로 사용하기 좋은 사각형 모양의 양파가 나옵니다.\",\n          \"timestamp\": \"00:45\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"애호박 같은 경우 손가락 두 마디 정도만 준비해서 십자 모양으로 썰어주고 대충 양파 두께랑 비슷할 정도로 썰어주시면 됩니다.\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뚝배기(또는 일반 냄비)에 식용유 3~4스푼을 넉넉하게 두르고 썰어둔 대파와 다진 돼지고기 약 100g을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"뚝배기가 없으면 일반 냄비에 하셔도 좋습니다. 여기에 식용유를 서너 스푼 넉넉하게 둘러주고\",\n          \"timestamp\": \"01:02\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 썰어 놓은 대파를 다 넣어줍니다.\",\n          \"timestamp\": \"01:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그러고 다진 돼지고기도 넣어줍니다.\",\n          \"timestamp\": \"01:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"중불에서 대파의 숨이 죽고 돼지고기 겉면의 핏기가 사라질 때까지 볶아 파기름과 고기 향을 낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 중불에서 기름에 대파가 숨이 죽고 돼지고기 겉면에 핏기가 안 보일 때까지 볶아줍니다.\",\n          \"timestamp\": \"01:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 약불로 내리고 고춧가루 2스푼을 넣은 뒤, 타지 않도록 10초~20초 사이로 빠르게 볶아 고추기름을 낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불은 약불로 내려줍니다. 여기에 시뻘건 고춧가루를 2스푼 넣고 고춧가루를 볶아주면서 고추기름을 내줍니다. 이때 오랫동안 볶게 되면 고춧가루가 다 타버릴 수도 있으니 10초에서 20초 사이로 빠르게 볶아줍니다.\",\n          \"timestamp\": \"01:32\"\n        }\n      ]\n    },\n    {\n      \"text\": \"바로 물 2컵(약 360ml)을 붓는다. (바지락이나 해물이 있다면 이때 함께 넣는다.)\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그러고 바로 물 2컵을 부어주고 이때 바지락이나 해물 같은 게 있으면 지금 넣어줍니다.\",\n          \"timestamp\": \"01:46\"\n        }\n      ]\n    },\n    {\n      \"text\": \"다진 마늘 1스푼, 멸치 액젓 2스푼, 진간장 1스푼을 넣고 간을 맞춘다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘을 1스푼 넣어주고 멸치 액젓 2스푼을 넣어줍니다.\",\n          \"timestamp\": \"01:53\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 짭짤하게 진간장 1스푼을 넣고 간을 해줍니다.\",\n          \"timestamp\": \"02:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"준비해 둔 양파와 애호박(취향에 따라 팽이버섯 등 버섯류)을 넣고, 순두부 1봉지를 넣은 뒤 숟가락으로 먹기 좋은 크기로 숭덩숭덩 썰어준다. 국물이 넘칠 것 같으면 적당량 덜어낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"준비해 둔 건더기 재료인 양파나 애호박 등 넣어주시면 됩니다. 팽이치기 버섯 같은 버섯류를 추가로 넣어주셔도 좋습니다. 그러고 순두부도 한 봉 넣고 넥슬라이스 하면서 먹기 좋은 크기로 숭덩숭덩 썰어줍니다. 만약 순두부를 넣고 이렇게 물이 넘칠 것 같다 싶으면 이미 간이 맞춰져 있으니 넘치지 않을 정도까지 물을 덜어내 주시면 됩니다.\",\n          \"timestamp\": \"02:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"재료가 익고 맛이 우러나도록 5분 이상 푹 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 순두부도 뜨끈해지면서 맛이 배이고 넣은 재료들도 익으면서 맛이 우러나도록 5분 이상 푹 끓여줍니다.\",\n          \"timestamp\": \"02:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대충 썬 청양고추 1개, 계란 1개를 올리고 후추를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"추가적인 재료로 청양고추 하나를 대충 썰어서 넣어주거나 계란 하나를 넣거나 후추를 뿌려 마무리해 줍니다.\",\n          \"timestamp\": \"02:38\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "방구석표 순두부찌개",
+      "description": null,
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "다진 돼지고기 (1인분 기준 약 100g)",
+          "displayName": "다진 돼지고기",
+          "amount": "100",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진 돼지고기를 준비해 줍니다. 돼지고기는 부위 상관없이 저렴한 걸로 가지고 오시면 됩니다. 1인분 기준 100g 정도만 있어도 충분합니다.",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 다진 돼지고기(약 100g)도 넣어줍니다.",
+              "timestamp": "01:20"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "순두부 1봉지",
+          "displayName": "순두부",
+          "amount": "1",
+          "unit": "봉지",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 순두부 한 봉지를 준비해 줍니다.",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파는 초록한 부분과 흰 부분 중에 둘 다 사용하면 좋지만 만약 하나를 고르라고 하면 흰 부분을 사용해 줍니다. 그리고 반 가르고 대충 썰어주시면 됩니다. 오늘 대파는 많으면 많을수록 좋습니다.",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양파 1/4개",
+          "displayName": "양파",
+          "amount": "1/4",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "추가 건더기 재료로 양파 1/4개를 준비해가",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "애호박 손가락 두 마디 정도",
+          "displayName": "애호박",
+          "amount": "손가락 두 마디 정도",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 애호박 같은 경우 손가락 두 마디 정도만 준비해서",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "식용유 3~4스푼",
+          "displayName": "식용유",
+          "amount": "3~4",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 식용유를 서너 스푼 넉넉하게 둘러주고",
+              "timestamp": "01:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 식용유를 3~4스푼 넉넉하게 둘러주고",
+              "timestamp": "01:05"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "시뻘건 고춧가루 2스푼",
+          "displayName": "고춧가루",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 시뻘건 고춧가루를 2스푼 넣고",
+              "timestamp": "01:34"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "물 2컵 (약 360ml)",
+          "displayName": "물",
+          "amount": "2",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그러고 바로 물 2컵을 부어주고",
+              "timestamp": "01:46"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 바로 물 2컵 (약 360ml)을 부어주고",
+              "timestamp": "01:46"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "바지락이나 해물",
+          "displayName": "바지락이나 해물",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이때 바지락이나 해물 같은 게 있으면 지금 넣어줍니다.",
+              "timestamp": "01:48"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "다진 마늘 1스푼",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘을 1스푼 넣어주고",
+              "timestamp": "01:53"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "멸치 액젓 2스푼",
+          "displayName": "멸치 액젓",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "멸치 액젓 2스푼을 넣어줍니다.",
+              "timestamp": "01:55"
+            },
+            {
+              "type": "SPEECH",
+              "text": "만약 새우젓이나 참치 액젓 같은 거 있으면 섞어서 넣어주시면 더욱 좋습니다.",
+              "timestamp": "02:04"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "진간장 1스푼",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 짭짤하게 진간장 1스푼을 넣고 간을 해줍니다.",
+              "timestamp": "02:07"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "팽이버섯 같은 버섯류",
+          "displayName": "버섯류",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팽이치기 버섯 같은 버섯류를 추가로 넣어주셔도 좋습니다.",
+              "timestamp": "02:15"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "청양고추 1개",
+          "displayName": "청양고추",
+          "amount": "1",
+          "unit": "개",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "청양고추 하나를 대충 썰어서 넣어주거나",
+              "timestamp": "02:39"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "계란 1개",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "개",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 하나를 넣거나",
+              "timestamp": "02:41"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후추를 뿌려 마무리해 줍니다.",
+              "timestamp": "02:43"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        }
+      ],
+      "steps": [
+        {
+          "text": "순두부는 가운데 점선/자르는 선 부분을 썰어 준비해 둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "순두부는 가운데 빨간 점선과 자르는 선이라고 적힌 게 보일 겁니다. 그 부분을 썰어주시면 찌개에 넣기 좋게 모양이 나옵니다.",
+              "timestamp": "00:25"
+            }
+          ]
+        },
+        {
+          "text": "대파는 세로로 반을 가른 뒤 대충 썰어두고, 양파 1/4개는 사각형 모양으로 굵직하게 썰며, 애호박 손가락 두 마디 정도 분량은 십자 모양으로 가른 뒤 양파 두께와 비슷하게 썰어둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파는 초록한 부분과 흰 부분 중에 둘 다 사용하면 좋지만 만약 하나를 고르라고 하면 흰 부분을 사용해 줍니다. 그리고 반 가르고 대충 썰어주시면 됩니다.",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "SPEECH",
+              "text": "추가 건더기 재료로 양파 1/4개를 준비해가 사선으로 굵직하게 썰어주고 돌리가 세로로 썰어주면 딱 찌개용 건더기로 사용하기 좋은 사각형 모양의 양파가 나옵니다.",
+              "timestamp": "00:45"
+            },
+            {
+              "type": "SPEECH",
+              "text": "애호박 같은 경우 손가락 두 마디 정도만 준비해서 십자 모양으로 썰어주고 대충 양파 두께랑 비슷할 정도로 썰어주시면 됩니다.",
+              "timestamp": "00:54"
+            }
+          ]
+        },
+        {
+          "text": "뚝배기(또는 일반 냄비)에 식용유 3~4스푼을 넉넉하게 두르고 썰어둔 대파와 다진 돼지고기 약 100g을 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "뚝배기가 없으면 일반 냄비에 하셔도 좋습니다. 여기에 식용유를 서너 스푼 넉넉하게 둘러주고",
+              "timestamp": "01:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 썰어 놓은 대파를 다 넣어줍니다.",
+              "timestamp": "01:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그러고 다진 돼지고기도 넣어줍니다.",
+              "timestamp": "01:20"
+            }
+          ]
+        },
+        {
+          "text": "중불에서 대파의 숨이 죽고 돼지고기 겉면의 핏기가 사라질 때까지 볶아 파기름과 고기 향을 낸다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 중불에서 기름에 대파가 숨이 죽고 돼지고기 겉면에 핏기가 안 보일 때까지 볶아줍니다.",
+              "timestamp": "01:22"
+            }
+          ]
+        },
+        {
+          "text": "불을 약불로 내리고 고춧가루 2스푼을 넣은 뒤, 타지 않도록 10초~20초 사이로 빠르게 볶아 고추기름을 낸다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "불은 약불로 내려줍니다. 여기에 시뻘건 고춧가루를 2스푼 넣고 고춧가루를 볶아주면서 고추기름을 내줍니다. 이때 오랫동안 볶게 되면 고춧가루가 다 타버릴 수도 있으니 10초에서 20초 사이로 빠르게 볶아줍니다.",
+              "timestamp": "01:32"
+            }
+          ]
+        },
+        {
+          "text": "바로 물 2컵(약 360ml)을 붓는다. (바지락이나 해물이 있다면 이때 함께 넣는다.)",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그러고 바로 물 2컵을 부어주고 이때 바지락이나 해물 같은 게 있으면 지금 넣어줍니다.",
+              "timestamp": "01:46"
+            }
+          ]
+        },
+        {
+          "text": "다진 마늘 1스푼, 멸치 액젓 2스푼, 진간장 1스푼을 넣고 간을 맞춘다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘을 1스푼 넣어주고 멸치 액젓 2스푼을 넣어줍니다.",
+              "timestamp": "01:53"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 짭짤하게 진간장 1스푼을 넣고 간을 해줍니다.",
+              "timestamp": "02:07"
+            }
+          ]
+        },
+        {
+          "text": "준비해 둔 양파와 애호박(취향에 따라 팽이버섯 등 버섯류)을 넣고, 순두부 1봉지를 넣은 뒤 숟가락으로 먹기 좋은 크기로 숭덩숭덩 썰어준다. 국물이 넘칠 것 같으면 적당량 덜어낸다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "준비해 둔 건더기 재료인 양파나 애호박 등 넣어주시면 됩니다. 팽이치기 버섯 같은 버섯류를 추가로 넣어주셔도 좋습니다. 그러고 순두부도 한 봉 넣고 넥슬라이스 하면서 먹기 좋은 크기로 숭덩숭덩 썰어줍니다. 만약 순두부를 넣고 이렇게 물이 넘칠 것 같다 싶으면 이미 간이 맞춰져 있으니 넘치지 않을 정도까지 물을 덜어내 주시면 됩니다.",
+              "timestamp": "02:11"
+            }
+          ]
+        },
+        {
+          "text": "재료가 익고 맛이 우러나도록 5분 이상 푹 끓여준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 순두부도 뜨끈해지면서 맛이 배이고 넣은 재료들도 익으면서 맛이 우러나도록 5분 이상 푹 끓여줍니다.",
+              "timestamp": "02:30"
+            }
+          ]
+        },
+        {
+          "text": "대충 썬 청양고추 1개, 계란 1개를 올리고 후추를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "추가적인 재료로 청양고추 하나를 대충 썰어서 넣어주거나 계란 하나를 넣거나 후추를 뿌려 마무리해 줍니다.",
+              "timestamp": "02:38"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

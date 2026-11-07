@@ -1,0 +1,402 @@
+{
+  "videoId": "0wtsCheygcY",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/0wtsCheygcY",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T10:01:49.700321+00:00",
+    "rawResponse": "{\n  \"title\": \"스팸 덮밥\",\n  \"description\": \"자취생들이 간단하고 쉽게 만들 수 있는 5분 컷 스팸 덮밥 레시피\",\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"스팸\",\n      \"displayName\": \"스팸\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"<스팸 덮밥 재료> SPAM\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"일단 햄을 썰어주세요\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"달걀 2개\",\n      \"displayName\": \"달걀\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"달걀 볶기 달걀 2개\",\n          \"timestamp\": \"01:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"달걀 두 개\",\n          \"timestamp\": \"01:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 2숟갈\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"2\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 2숟갈\",\n          \"timestamp\": \"01:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술은 두 숟갈\",\n          \"timestamp\": \"01:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우유 2숟갈\",\n      \"displayName\": \"우유\",\n      \"amount\": \"2\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"우유 2숟갈\",\n          \"timestamp\": \"01:32\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우유는 이제 부드럽게\",\n          \"timestamp\": \"01:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 1꼬집\",\n      \"displayName\": \"소금\",\n      \"amount\": \"1\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 1꼬집\",\n          \"timestamp\": \"01:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금 살짝\",\n          \"timestamp\": \"01:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1.5꼬집\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1.5\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1.5꼬집\",\n          \"timestamp\": \"01:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 하나 반\",\n          \"timestamp\": \"01:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유를 두르고 약불에 달걀물을 익혀준다\",\n          \"timestamp\": \"01:58\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 식용유를 두름\",\n          \"timestamp\": \"00:55\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"흰 밥\",\n      \"displayName\": \"흰 밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"<스팸 덮밥 재료> 흰 밥\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"흰 밥 위에 김가루를 뿌려준다\",\n          \"timestamp\": \"02:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"※ 없으면 안 넣어도 됨\",\n          \"timestamp\": \"02:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김가루 없으면 안 넣어도 돼요\",\n          \"timestamp\": \"02:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마요네즈\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마요네즈를 보기 좋게 뿌려준다\",\n          \"timestamp\": \"02:41\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마요네즈\",\n          \"timestamp\": \"02:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"오크라\",\n      \"displayName\": \"오크라\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"오크라를 올려 보기 좋게 장식한다 (※ 없으면 안 넣어도 됨)\",\n          \"timestamp\": \"03:02\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이 오크라 없으면 안 넣어도 돼요\",\n          \"timestamp\": \"03:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"케첩\",\n      \"displayName\": \"케첩\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이건 케첩이 있어야 돼\",\n          \"timestamp\": \"04:15\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스팸 덮밥의 완성은 케첩?\",\n          \"timestamp\": \"04:19\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"스팸을 손톱 크기만큼 깍둑썰기한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1. 스팸을 손톱 크기만큼 깍둑 썰기로 썰어준다\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유를 두르고 스팸이 노릇노릇한 색이 날 때까지 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"2. 스팸이 노릇노릇한 색이 날 때까지 볶아준다\",\n          \"timestamp\": \"01:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"노릇노릇 색깔이 나게끔 볶아주세요\",\n          \"timestamp\": \"01:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"다 볶은 스팸은 키친타월에 올려 기름을 빼준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"3. 다 볶은 후에 키친 타올로 기름을 빼준다\",\n          \"timestamp\": \"01:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"건강을 생각해서 기름을 좀 한번 빼주세요\",\n          \"timestamp\": \"01:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 달걀 2개, 맛술 2숟갈, 우유 2숟갈, 소금 1꼬집, 설탕 1.5꼬집을 넣고 골고루 섞어 달걀물을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"달걀 2개 + 맛술 2숟갈 + 우유 2숟갈 + 소금 1꼬집 + 설탕 1.5꼬집\",\n          \"timestamp\": \"01:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이렇게 섞어주세요\",\n          \"timestamp\": \"01:38\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유를 두르고 약불에서 달걀물을 부어준 뒤, 젓가락으로 저어가며 몽글몽글하게 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1. 식용유를 두르고 약불에 달걀물을 익혀준다\",\n          \"timestamp\": \"01:58\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"2. 젓가락으로 저어가며 익혀준다\",\n          \"timestamp\": \"02:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"달걀이 동글동글하게 익으면 불을 끄고 남은 잔열로 조금 더 익혀 부드러운 스크램블 에그를 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"달걀이 동글동글하게 익으면 완성\",\n          \"timestamp\": \"02:09\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"2. 불을 끄고 남은 잔열로 조금 더 익혀준다\",\n          \"timestamp\": \"02:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇의 흰 밥 위에 김가루를 뿌리고 마요네즈를 보기 좋게 뿌려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1. 흰 밥 위에 김가루를 뿌려준다\",\n          \"timestamp\": \"02:36\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"2. 마요네즈를 보기 좋게 뿌려준다\",\n          \"timestamp\": \"02:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볶은 스팸을 양쪽 가장자리에 담고, 가운데에 스크램블 에그를 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"3. 볶은 스팸을 양쪽 가장자리에 담는다\",\n          \"timestamp\": \"02:45\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"4. 스크램블 에그를 가운데에 담는다\",\n          \"timestamp\": \"02:51\"\n        }\n      ]\n    },\n    {\n      \"text\": \"송송 썬 오크라를 올려 장식하고, 취향에 따라 케첩을 곁들여 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"5. 오크라를 올려 보기 좋게 장식한다\",\n          \"timestamp\": \"03:02\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"덮밥 위에 케첩을 뿌려 시식함\",\n          \"timestamp\": \"04:17\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"스팸, 밥, 식용유, 마요네즈, 케첩의 정확한 중량이나 용량은 영상에서 수치로 제시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "스팸 덮밥",
+      "description": "자취생들이 간단하고 쉽게 만들 수 있는 5분 컷 스팸 덮밥 레시피",
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "스팸",
+          "displayName": "스팸",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "<스팸 덮밥 재료> SPAM",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SPEECH",
+              "text": "일단 햄을 썰어주세요",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "달걀 2개",
+          "displayName": "달걀",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "달걀 볶기 달걀 2개",
+              "timestamp": "01:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "달걀 두 개",
+              "timestamp": "01:21"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "맛술 2숟갈",
+          "displayName": "맛술",
+          "amount": "2",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 2숟갈",
+              "timestamp": "01:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "맛술은 두 숟갈",
+              "timestamp": "01:25"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "우유 2숟갈",
+          "displayName": "우유",
+          "amount": "2",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "우유 2숟갈",
+              "timestamp": "01:32"
+            },
+            {
+              "type": "SPEECH",
+              "text": "우유는 이제 부드럽게",
+              "timestamp": "01:32"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "소금 1꼬집",
+          "displayName": "소금",
+          "amount": "1",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 1꼬집",
+              "timestamp": "01:34"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소금 살짝",
+              "timestamp": "01:35"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "설탕 1.5꼬집",
+          "displayName": "설탕",
+          "amount": "1.5",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1.5꼬집",
+              "timestamp": "01:37"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 하나 반",
+              "timestamp": "01:37"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유를 두르고 약불에 달걀물을 익혀준다",
+              "timestamp": "01:58"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 식용유를 두름",
+              "timestamp": "00:55"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "흰 밥",
+          "displayName": "흰 밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "<스팸 덮밥 재료> 흰 밥",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "흰 밥 위에 김가루를 뿌려준다",
+              "timestamp": "02:36"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "김가루",
+          "displayName": "김가루",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "※ 없으면 안 넣어도 됨",
+              "timestamp": "02:37"
+            },
+            {
+              "type": "SPEECH",
+              "text": "김가루 없으면 안 넣어도 돼요",
+              "timestamp": "02:36"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "마요네즈",
+          "displayName": "마요네즈",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마요네즈를 보기 좋게 뿌려준다",
+              "timestamp": "02:41"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마요네즈",
+              "timestamp": "02:39"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "오크라",
+          "displayName": "오크라",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "오크라를 올려 보기 좋게 장식한다 (※ 없으면 안 넣어도 됨)",
+              "timestamp": "03:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이 오크라 없으면 안 넣어도 돼요",
+              "timestamp": "03:01"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "케첩",
+          "displayName": "케첩",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이건 케첩이 있어야 돼",
+              "timestamp": "04:15"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스팸 덮밥의 완성은 케첩?",
+              "timestamp": "04:19"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "스팸을 손톱 크기만큼 깍둑썰기한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1. 스팸을 손톱 크기만큼 깍둑 썰기로 썰어준다",
+              "timestamp": "00:52"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유를 두르고 스팸이 노릇노릇한 색이 날 때까지 볶아준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "2. 스팸이 노릇노릇한 색이 날 때까지 볶아준다",
+              "timestamp": "01:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "노릇노릇 색깔이 나게끔 볶아주세요",
+              "timestamp": "01:13"
+            }
+          ]
+        },
+        {
+          "text": "다 볶은 스팸은 키친타월에 올려 기름을 빼준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "3. 다 볶은 후에 키친 타올로 기름을 빼준다",
+              "timestamp": "01:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "건강을 생각해서 기름을 좀 한번 빼주세요",
+              "timestamp": "01:16"
+            }
+          ]
+        },
+        {
+          "text": "볼에 달걀 2개, 맛술 2숟갈, 우유 2숟갈, 소금 1꼬집, 설탕 1.5꼬집을 넣고 골고루 섞어 달걀물을 만든다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "달걀 2개 + 맛술 2숟갈 + 우유 2숟갈 + 소금 1꼬집 + 설탕 1.5꼬집",
+              "timestamp": "01:37"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이렇게 섞어주세요",
+              "timestamp": "01:38"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유를 두르고 약불에서 달걀물을 부어준 뒤, 젓가락으로 저어가며 몽글몽글하게 익힌다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1. 식용유를 두르고 약불에 달걀물을 익혀준다",
+              "timestamp": "01:58"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "2. 젓가락으로 저어가며 익혀준다",
+              "timestamp": "02:04"
+            }
+          ]
+        },
+        {
+          "text": "달걀이 동글동글하게 익으면 불을 끄고 남은 잔열로 조금 더 익혀 부드러운 스크램블 에그를 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "달걀이 동글동글하게 익으면 완성",
+              "timestamp": "02:09"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "2. 불을 끄고 남은 잔열로 조금 더 익혀준다",
+              "timestamp": "02:15"
+            }
+          ]
+        },
+        {
+          "text": "그릇의 흰 밥 위에 김가루를 뿌리고 마요네즈를 보기 좋게 뿌려준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1. 흰 밥 위에 김가루를 뿌려준다",
+              "timestamp": "02:36"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "2. 마요네즈를 보기 좋게 뿌려준다",
+              "timestamp": "02:41"
+            }
+          ]
+        },
+        {
+          "text": "볶은 스팸을 양쪽 가장자리에 담고, 가운데에 스크램블 에그를 올린다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "3. 볶은 스팸을 양쪽 가장자리에 담는다",
+              "timestamp": "02:45"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "4. 스크램블 에그를 가운데에 담는다",
+              "timestamp": "02:51"
+            }
+          ]
+        },
+        {
+          "text": "송송 썬 오크라를 올려 장식하고, 취향에 따라 케첩을 곁들여 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "5. 오크라를 올려 보기 좋게 장식한다",
+              "timestamp": "03:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "덮밥 위에 케첩을 뿌려 시식함",
+              "timestamp": "04:17"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "스팸, 밥, 식용유, 마요네즈, 케첩의 정확한 중량이나 용량은 영상에서 수치로 제시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

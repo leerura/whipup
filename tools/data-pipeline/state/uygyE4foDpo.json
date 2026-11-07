@@ -1,0 +1,302 @@
+{
+  "videoId": "uygyE4foDpo",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/uygyE4foDpo",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:51:49.406747+00:00",
+    "rawResponse": "{\n  \"title\": \"만두카레\",\n  \"description\": null,\n  \"servings\": \"2인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"식용유 넉넉히\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 식용유 넉넉히 둘러주고\",\n          \"timestamp\": \"0:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 팬에 식용유 넉넉히 둘러주고\",\n          \"timestamp\": \"0:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"버터 소량\",\n      \"displayName\": \"버터\",\n      \"amount\": null,\n      \"unit\": \"소량\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"버터 있다면 소량만 넣지만 없으면 생략하셔도 됩니다.\",\n          \"timestamp\": \"0:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"버터 있다면 소량 넣지만 없으면 생략하셔도 됩니다.\",\n          \"timestamp\": \"0:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 하나\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 양파 하나를 잘게 썰어 넣고\",\n          \"timestamp\": \"0:12\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 양파 하나를 잘게 썰어 넣고\",\n          \"timestamp\": \"0:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"냉동 만두 5~6개\",\n      \"displayName\": \"냉동 만두\",\n      \"amount\": \"5~6\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냉동 만두 대여섯 개도 넣어준 뒤\",\n          \"timestamp\": \"0:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"냉동 만두 5~6개도 넣어준 뒤\",\n          \"timestamp\": \"0:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 2컵(약 360ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"2\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 2컵을 부어줍니다.\",\n          \"timestamp\": \"0:25\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 2컵(약 360ml)을 부어줍니다.\",\n          \"timestamp\": \"0:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고형 카레 2칸\",\n      \"displayName\": \"고형 카레\",\n      \"amount\": \"2\",\n      \"unit\": \"칸\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이런 고형 카레 2칸만 넣고\",\n          \"timestamp\": \"0:27\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이런 고형 카레 2칸만 넣고\",\n          \"timestamp\": \"0:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"케첩 1스푼\",\n      \"displayName\": \"케첩\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"감칠맛을 더해줄 케첩 한 스푼을 추가해 준 뒤\",\n          \"timestamp\": \"0:29\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"감칠맛 더해줄 케첩 1스푼을 추가한 뒤\",\n          \"timestamp\": \"0:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 밥과\",\n          \"timestamp\": \"0:38\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 밥과\",\n          \"timestamp\": \"0:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리\",\n      \"displayName\": \"파슬리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"파슬리까지 뿌려주면\",\n          \"timestamp\": \"0:39\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"파슬리까지 뿌려주면\",\n          \"timestamp\": \"0:39\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 식용유를 넉넉히 두르고, 버터가 있다면 소량 넣어준다 (없으면 생략 가능).\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 식용유 넉넉히 둘러주고 버터 있다면 소량만 넣지만 없으면 생략하셔도 됩니다.\",\n          \"timestamp\": \"0:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 팬에 식용유 넉넉히 둘러주고 버터 있다면 소량 넣지만 없으면 생략하셔도 됩니다.\",\n          \"timestamp\": \"0:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 1개를 썰어 넣고, 냉동 만두 5~6개도 함께 넣어 양파와 만두를 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 양파 하나를 잘게 썰어 넣고 냉동 만두 대여섯 개도 넣어준 뒤에 냉동 만두와 양파를 다 같이 볶아줍니다.\",\n          \"timestamp\": \"0:12\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 양파 하나를 잘게 썰어 넣고 냉동 만두 5~6개도 넣어준 뒤에 냉동 만두와 양파를 다 같이 볶아줍니다.\",\n          \"timestamp\": \"0:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"만두가 잘 구워졌으면 가위로 먹기 좋은 크기로 잘라준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만두도 잘 구워졌으면 먹기 좋은 크기로 잘라주고\",\n          \"timestamp\": \"0:22\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"만두도 잘 구워졌으면 먹기 좋은 크기로 잘라주고\",\n          \"timestamp\": \"0:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 2컵(약 360ml)을 부어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 2컵을 부어줍니다.\",\n          \"timestamp\": \"0:25\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 2컵(약 360ml)을 부어줍니다.\",\n          \"timestamp\": \"0:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고형 카레 2칸과 케첩 1스푼을 넣고 고형 카레를 잘 풀어주며 꾸덕한 느낌이 될 때까지 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"인자 진한 카레 맛을 위해 이런 고형 카레 2칸만 넣고 감칠맛을 더해줄 케첩 한 스푼을 추가해 준 뒤에 고형 카레를 잘 풀어주면서 꾸덕한 느낌이 될 때까지 끓여줍니다.\",\n          \"timestamp\": \"0:26\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 진한 카레 맛을 위해 이런 고형 카레 2칸만 넣고 감칠맛 더해줄 케첩 1스푼을 추가한 뒤 고형 카레를 잘 풀어주면서 꾸덕한 느낌이 될 때까지 끓여줍니다.\",\n          \"timestamp\": \"0:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥을 올리고 파슬리를 뿌려 만두카레를 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 밥과 파슬리까지 뿌려주면 만두카레가 완성됩니다.\",\n          \"timestamp\": \"0:38\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 밥과 파슬리까지 뿌려주면 만두카레가 완성됩니다.\",\n          \"timestamp\": \"0:38\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"영상 후반부(0:45~)에 만두 대신 계란 두세 개를 풀어 넣는 변형 레시피인 '계란카레'가 짧게 추가 소개됨.\"\n  ]\n}",
+    "result": {
+      "title": "만두카레",
+      "description": null,
+      "servings": "2인분",
+      "ingredients": [
+        {
+          "rawText": "식용유 넉넉히",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 식용유 넉넉히 둘러주고",
+              "timestamp": "0:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 팬에 식용유 넉넉히 둘러주고",
+              "timestamp": "0:08"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "버터 소량",
+          "displayName": "버터",
+          "amount": null,
+          "unit": "소량",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "버터 있다면 소량만 넣지만 없으면 생략하셔도 됩니다.",
+              "timestamp": "0:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "버터 있다면 소량 넣지만 없으면 생략하셔도 됩니다.",
+              "timestamp": "0:10"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "양파 하나",
+          "displayName": "양파",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 양파 하나를 잘게 썰어 넣고",
+              "timestamp": "0:12"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 양파 하나를 잘게 썰어 넣고",
+              "timestamp": "0:12"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "냉동 만두 5~6개",
+          "displayName": "냉동 만두",
+          "amount": "5~6",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "냉동 만두 대여섯 개도 넣어준 뒤",
+              "timestamp": "0:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "냉동 만두 5~6개도 넣어준 뒤",
+              "timestamp": "0:14"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "물 2컵(약 360ml)",
+          "displayName": "물",
+          "amount": "2",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 2컵을 부어줍니다.",
+              "timestamp": "0:25"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 2컵(약 360ml)을 부어줍니다.",
+              "timestamp": "0:25"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "고형 카레 2칸",
+          "displayName": "고형 카레",
+          "amount": "2",
+          "unit": "칸",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이런 고형 카레 2칸만 넣고",
+              "timestamp": "0:27"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이런 고형 카레 2칸만 넣고",
+              "timestamp": "0:28"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "케첩 1스푼",
+          "displayName": "케첩",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "감칠맛을 더해줄 케첩 한 스푼을 추가해 준 뒤",
+              "timestamp": "0:29"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "감칠맛 더해줄 케첩 1스푼을 추가한 뒤",
+              "timestamp": "0:29"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 밥과",
+              "timestamp": "0:38"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 밥과",
+              "timestamp": "0:38"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "파슬리",
+          "displayName": "파슬리",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "파슬리까지 뿌려주면",
+              "timestamp": "0:39"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "파슬리까지 뿌려주면",
+              "timestamp": "0:39"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 식용유를 넉넉히 두르고, 버터가 있다면 소량 넣어준다 (없으면 생략 가능).",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 식용유 넉넉히 둘러주고 버터 있다면 소량만 넣지만 없으면 생략하셔도 됩니다.",
+              "timestamp": "0:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 팬에 식용유 넉넉히 둘러주고 버터 있다면 소량 넣지만 없으면 생략하셔도 됩니다.",
+              "timestamp": "0:08"
+            }
+          ]
+        },
+        {
+          "text": "양파 1개를 썰어 넣고, 냉동 만두 5~6개도 함께 넣어 양파와 만두를 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 양파 하나를 잘게 썰어 넣고 냉동 만두 대여섯 개도 넣어준 뒤에 냉동 만두와 양파를 다 같이 볶아줍니다.",
+              "timestamp": "0:12"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 양파 하나를 잘게 썰어 넣고 냉동 만두 5~6개도 넣어준 뒤에 냉동 만두와 양파를 다 같이 볶아줍니다.",
+              "timestamp": "0:12"
+            }
+          ]
+        },
+        {
+          "text": "만두가 잘 구워졌으면 가위로 먹기 좋은 크기로 잘라준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "만두도 잘 구워졌으면 먹기 좋은 크기로 잘라주고",
+              "timestamp": "0:22"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "만두도 잘 구워졌으면 먹기 좋은 크기로 잘라주고",
+              "timestamp": "0:22"
+            }
+          ]
+        },
+        {
+          "text": "물 2컵(약 360ml)을 부어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 2컵을 부어줍니다.",
+              "timestamp": "0:25"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 2컵(약 360ml)을 부어줍니다.",
+              "timestamp": "0:25"
+            }
+          ]
+        },
+        {
+          "text": "고형 카레 2칸과 케첩 1스푼을 넣고 고형 카레를 잘 풀어주며 꾸덕한 느낌이 될 때까지 끓여준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "인자 진한 카레 맛을 위해 이런 고형 카레 2칸만 넣고 감칠맛을 더해줄 케첩 한 스푼을 추가해 준 뒤에 고형 카레를 잘 풀어주면서 꾸덕한 느낌이 될 때까지 끓여줍니다.",
+              "timestamp": "0:26"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 진한 카레 맛을 위해 이런 고형 카레 2칸만 넣고 감칠맛 더해줄 케첩 1스푼을 추가한 뒤 고형 카레를 잘 풀어주면서 꾸덕한 느낌이 될 때까지 끓여줍니다.",
+              "timestamp": "0:26"
+            }
+          ]
+        },
+        {
+          "text": "밥을 올리고 파슬리를 뿌려 만두카레를 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 밥과 파슬리까지 뿌려주면 만두카레가 완성됩니다.",
+              "timestamp": "0:38"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 밥과 파슬리까지 뿌려주면 만두카레가 완성됩니다.",
+              "timestamp": "0:38"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "영상 후반부(0:45~)에 만두 대신 계란 두세 개를 풀어 넣는 변형 레시피인 '계란카레'가 짧게 추가 소개됨."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

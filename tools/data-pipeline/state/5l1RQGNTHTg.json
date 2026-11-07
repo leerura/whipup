@@ -1,0 +1,873 @@
+{
+  "videoId": "5l1RQGNTHTg",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/5l1RQGNTHTg",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:57:37.223244+00:00",
+    "rawResponse": "{\n  \"title\": \"초간단 원팬 파스타 레시피 모음\",\n  \"description\": \"전직 셰프가 알려주는 간단한 재료와 한 팬으로 완성하는 초간단 원팬 파스타 레시피들 (하이엔드 알리오 올리오, 간장계란 파스타, 고기만두 라구 파스타, 감태버터 파스타, 트러플크림 뇨끼 수제비, 수제비 봉골레).\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"통마늘\",\n      \"displayName\": \"통마늘\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"통마늘에 엑스트라버진 오일 잠길만큼 붓고 나서\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"엑스트라버진 오일\",\n      \"displayName\": \"엑스트라버진 올리브 오일\",\n      \"amount\": \"잠길만큼\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"통마늘에 엑스트라버진 오일 잠길만큼 붓고 나서\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"엑스트라버진 올리브오일 살짝 뿌려 드시면 되는데\",\n          \"timestamp\": \"01:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 500ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"500\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 널찍한 팬에 물 500ml 넣고\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 살짝\",\n      \"displayName\": \"소금\",\n      \"amount\": \"살짝\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소금 살짝\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"스파게티는 100원짜리 동전만큼\",\n      \"displayName\": \"스파게티면\",\n      \"amount\": \"100원짜리 동전만큼\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"스파게티는 100원짜리 동전만큼 넣고 나서\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 반 스푼 (다시다 / 참치액 / 치킨스톡 가능)\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"굴소스 반 스푼 (다시다 / 참치액 / 치킨스톡 가능)\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"그라나파다노 치즈\",\n      \"displayName\": \"그라나파다노 치즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그라나파다노 치즈 없으면 이렇게 피자 시켜먹고 남았을 파마산 치즈가루 살짝 뿌리고\",\n          \"timestamp\": \"00:57\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파마산 치즈가루\",\n      \"displayName\": \"파마산 치즈가루\",\n      \"amount\": \"살짝\",\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그라나파다노 치즈 없으면 이렇게 피자 시켜먹고 남았을 파마산 치즈가루 살짝 뿌리고\",\n          \"timestamp\": \"00:57\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"페페론치노\",\n      \"displayName\": \"페페론치노\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"느끼함을 잡아줄 수 있게 페페론치노와 후추\",\n          \"timestamp\": \"01:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"페페론치노와 후추\",\n          \"timestamp\": \"01:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 3컵\",\n      \"displayName\": \"물\",\n      \"amount\": \"3\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 널찍한 팬에 물 3컵\",\n          \"timestamp\": \"01:55\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파스타면\",\n      \"displayName\": \"파스타면\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"파스타면 넣고 10분 삶아주는데\",\n          \"timestamp\": \"01:57\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리브 오일\",\n      \"displayName\": \"올리브 오일\",\n      \"amount\": \"살짝\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"올리브 오일을 살짝 추가해 준 다음\",\n          \"timestamp\": \"02:03\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"올리브오일 뿌려 마무리해주면\",\n          \"timestamp\": \"02:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 3개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"3\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 3개 넣고 나서\",\n          \"timestamp\": \"02:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 1스푼\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"간장 1스푼을 넣어 간을 해주고\",\n          \"timestamp\": \"02:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"접시에 이쁘게 담아 대파랑 후추\",\n          \"timestamp\": \"02:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 600ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"600\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"프라이팬에 물 600ml 넣고\",\n          \"timestamp\": \"02:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고기만두 6알\",\n      \"displayName\": \"고기만두\",\n      \"amount\": \"6\",\n      \"unit\": \"알\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고기만두 6알을 넣어주는데\",\n          \"timestamp\": \"02:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"토마토 소스 8스푼\",\n      \"displayName\": \"토마토 소스\",\n      \"amount\": \"8\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"토마토 소스 8스푼을 넣어주고\",\n          \"timestamp\": \"02:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파스타 1인분\",\n      \"displayName\": \"파스타면\",\n      \"amount\": \"1\",\n      \"unit\": \"인분\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"끓기 시작하면 파스타 1인분을 넣고 나서\",\n          \"timestamp\": \"02:56\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 반 스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 반 스푼이나 굴소스 반 스푼 넣어주면 더 맛있지만 이건 뭐 취향껏 조절해주시면 됩니다\",\n          \"timestamp\": \"03:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"체다치즈 하나\",\n      \"displayName\": \"체다치즈\",\n      \"amount\": \"1\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"체다치즈 하나 싹 올려주면은\",\n          \"timestamp\": \"03:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진 마늘 1스푼 넣고\",\n          \"timestamp\": \"03:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 찔끔 (1/3스푼)\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1/3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"굴소스 찔끔 (1/3스푼) (다시다 / 참치액 / 치킨스톡 가능)\",\n          \"timestamp\": \"03:55\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 찔끔 (아주 살짝)\",\n      \"displayName\": \"소금\",\n      \"amount\": \"찔끔\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소금 찔끔 (아주 살짝) 넣고 나서\",\n          \"timestamp\": \"03:56\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"감태버터 1스푼\",\n      \"displayName\": \"룩트 감태버터\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"감태버터 1스푼 넣고\",\n          \"timestamp\": \"04:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"크래미\",\n      \"displayName\": \"크래미\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"크래미 찢어 올린 다음\",\n          \"timestamp\": \"04:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우유 2컵\",\n      \"displayName\": \"우유\",\n      \"amount\": \"2\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"크림은 비싸니까 우유 2컵\",\n          \"timestamp\": \"05:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"체다치즈 2장\",\n      \"displayName\": \"체다치즈\",\n      \"amount\": \"2\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"꾸덕한 느낌을 내기 위해 체다치즈 2장 넣고 나서\",\n          \"timestamp\": \"05:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"감자 수제비 120g 정도\",\n      \"displayName\": \"감자 수제비\",\n      \"amount\": \"120\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"감자 수제비 120g 정도 넣어주고\",\n          \"timestamp\": \"05:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"버섯\",\n      \"displayName\": \"버섯\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이때 버섯 같은 거 있으면 넣어주시면 좋습니다 (없으면 X)\",\n          \"timestamp\": \"05:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"트러플 버터 1스푼\",\n      \"displayName\": \"룩트 트러플버터\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불 끄고 마지막으로 트러플 버터 1스푼을 넣어주는데\",\n          \"timestamp\": \"05:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 반 스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진 마늘 반 스푼 넣고\",\n          \"timestamp\": \"06:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"냉동 바지락 20알 정도\",\n      \"displayName\": \"냉동 바지락\",\n      \"amount\": \"20\",\n      \"unit\": \"알\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"냉동 바지락 20알 정도 넣고\",\n          \"timestamp\": \"06:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 1컵 반\",\n      \"displayName\": \"물\",\n      \"amount\": \"1.5\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 1컵 반을 넣고\",\n          \"timestamp\": \"06:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"수제비 120g 정도\",\n      \"displayName\": \"수제비\",\n      \"amount\": \"120\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"수제비는 한 120g 정도\",\n          \"timestamp\": \"06:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"버터\",\n      \"displayName\": \"버터\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"버터 넣고 버터가 녹을 때까지 섞어주면 되거든요\",\n          \"timestamp\": \"06:36\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"[원팬 알리오 올리오 파스타] 내열용기에 통마늘을 담고 마늘이 잠길 만큼 엑스트라버진 올리브 오일을 부은 뒤 전자레인지에서 3분간 돌린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"통마늘에 엑스트라버진 오일 잠길만큼 붓고 나서 전자레인지에서 딱 3분만 돌려줄게요\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[원팬 알리오 올리오 파스타] 익힌 마늘을 한 김 식힌 뒤 포크나 핸드블렌더로 으깨어 마늘 퓨레를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"한김 식혔다가 포크나 블렌더로 으깨서 이렇게 퓨레만 만들어주면 끝\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[원팬 알리오 올리오 파스타] 넓은 팬에 물 500ml, 소금 살짝, 스파게티면 100원 동전 크기만큼, 굴소스 반 스푼(다시다, 참치액, 치킨스톡 대체 가능)을 넣고 약 10분간 삶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 널찍한 팬에 물 500ml 넣고 소금 살짝 스파게티는 100원짜리 동전만큼 넣고 나서 굴소스 반 스푼\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 10분 정도 삶아\",\n          \"timestamp\": \"00:49\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[원팬 알리오 올리오 파스타] 국물이 적당히 졸아들면 불을 끄고 마늘 퓨레 2스푼을 넣어 빠르게 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물이 적당히 졸아들었으면 불 끈 상태로 방금 만들었던 마늘 퓨레 2스푼 넣고 빠르게 섞어준 다음\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[원팬 알리오 올리오 파스타] 접시에 면을 담고 그라나파다노 치즈(또는 파마산 치즈가루), 페페론치노, 후추, 엑스트라버진 올리브 오일을 살짝 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"접시에 보기좋게 담아 그라나파다노 치즈 없으면 이렇게 피자 시켜먹고 남았을 파마산 치즈가루 살짝 뿌리고\",\n          \"timestamp\": \"00:56\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"느끼함을 잡아줄 수 있게 페페론치노와 후추 그리고 엑스트라버진 올리브오일 살짝 뿌려 드시면 되는데\",\n          \"timestamp\": \"01:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[간장계란 파스타] 팬에 물 3컵과 소금 살짝을 넣어 끓이다가 파스타면을 넣고 10분간 삶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 널찍한 팬에 물 3컵 소금 살짝 넣어 끓여 주다 파스타면 넣고 10분 삶아주는데\",\n          \"timestamp\": \"01:54\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[간장계란 파스타] 면이 익고 물이 증발하면 굴소스 반 스푼(다시다, 참치액, 치킨스톡 대체 가능)을 넣고, 면을 한쪽으로 민 뒤 빈 공간에 올리브 오일을 살짝 두르고 계란 3개를 깨 넣어 계란프라이를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물이 증발되었으면 굴소스 반 스푼 넣고 나서 면을 한쪽으로 밀어 올리브 오일을 살짝 추가해 준 다음 플렉스 하는 느낌으로다가 계란 3개 넣고 나서 계란프라이를 만들어 주는데\",\n          \"timestamp\": \"02:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[간장계란 파스타] 계란이 어느 정도 익으면 면과 함께 볶듯이 잘 섞어주다가 진간장 1스푼을 넣어 간을 맞춘다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란이 어느 정도 익었으면은 면이랑 같이 볶듯이 잘 비벼주다 간장 1스푼을 넣어 간을 해주고\",\n          \"timestamp\": \"02:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[간장계란 파스타] 접시에 담고 대파, 후추, 올리브 오일을 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"접시에 이쁘게 담아 대파랑 후추 올리브오일 뿌려 마무리해주면 간장계란 파스타가 완성되는데\",\n          \"timestamp\": \"02:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[만두 라구 파스타] 프라이팬에 물 600ml와 고기만두 6알을 넣고 끓인다. 만두가 익으면 주걱으로 터뜨려 으깬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"프라이팬에 물 600ml 넣고 고기만두 6알을 넣어주는데\",\n          \"timestamp\": \"02:45\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"만두가 익었으면 다 터뜨려 주고 나서\",\n          \"timestamp\": \"02:51\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[만두 라구 파스타] 토마토 소스 8스푼을 넣고 끓어오르면 파스타면 1인분을 넣고 약 10분간 면이 다 익을 때까지 삶는다. 취향에 따라 설탕 반 스푼이나 굴소스 반 스푼을 추가한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"토메이로 소스 8스푼을 넣어주고 끓기 시작하면 파스타 1인분을 넣고 나서 한 10분 정도 면이 다 익을 때까지 삶아주시면 되거든요\",\n          \"timestamp\": \"02:53\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 반 스푼이나 굴소스 반 스푼 넣어주면 더 맛있지만 이건 뭐 취향껏 조절해주시면 됩니다\",\n          \"timestamp\": \"03:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[만두 라구 파스타] 면이 다 익고 소스가 적당히 졸아들면 접시에 담고, 위에 체다치즈 1장을 얹어 잔열로 녹인 뒤 섞어 먹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"면이 다 익고 소스가 한 이 정도로 쫄아들었으면은 체다치즈 하나 싹 올려주면은 잔열로 인해 체다치즈가 녹거든요?\",\n          \"timestamp\": \"03:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[감태버터 파스타] 팬에 오일을 살짝 두르고 다진 마늘 1스푼을 넣어 타지 않게 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 프라이팬에 오일 살짝 두른 다음 다진 마늘 1스푼 넣고 타지 않게 볶아주다\",\n          \"timestamp\": \"03:50\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[감태버터 파스타] 물 3컵, 굴소스 1/3스푼, 소금 아주 살짝을 넣고 끓기 시작하면 파스타면을 넣어 10분간 삶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 3컵 굴소스 찔끔 (1/3스푼) (다시다 / 참치액 / 치킨스톡 가능) 소금 찔끔 (아주 살짝) 넣고 나서 파스타면 넣고 10분 정도 삶아주는데\",\n          \"timestamp\": \"03:54\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[감태버터 파스타] 국물이 약간 자작하게 남았을 때 불을 끄고 룩트 감태버터 1스푼을 넣어 빠르게 만테까레(유화)한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이때 물은 한 이 정도 남겨 주시면 되고 불 끈 상태에서 감태버터 1스푼 넣고 빠르게 만테까레 해주는데\",\n          \"timestamp\": \"03:59\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[감태버터 파스타] 접시에 담고 결대로 찢은 크래미를 올린 뒤, 후추와 엑스트라버진 올리브 오일을 살짝 뿌려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"접시에 담으면서... 크래미 찢어 올린 다음 후추랑 엑스트라 버진 살짝 뿌려 마무리 해주면\",\n          \"timestamp\": \"04:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[트러플크림 뇨끼] 팬에 오일을 두르고 다진 마늘을 넣어 향이 올라올 때까지 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 팬에 오일을 두른 다음 마늘 넣고 향 올라오게 볶아주다\",\n          \"timestamp\": \"05:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[트러플크림 뇨끼] 우유 2컵, 굴소스 반 스푼, 체다치즈 2장, 감자 수제비 120g을 넣고 7~8분간 끓인다. 버섯이 있다면 이때 함께 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"우유 2컵 굴소스는 반 스푼 꾸덕한 느낌을 내기 위해 체다치즈 2장 넣고 나서 감자 수제비 120g 정도 넣어주고 한 7~8분 정도 끓여주면 되는데 이때 버섯 같은 거 있으면 넣어주시면 좋습니다\",\n          \"timestamp\": \"05:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[트러플크림 뇨끼] 소스 농도가 꾸덕해지면 불을 끄고 트러플버터 1스푼을 넣어 버터가 다 녹을 때까지 섞는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 농도가 살짝 꾸덕하게 됐으면 불 끄고 마지막으로 트러플 버터 1스푼을 넣어주는데\",\n          \"timestamp\": \"05:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"버터가 다 녹았으면은\",\n          \"timestamp\": \"05:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[트러플크림 뇨끼] 접시에 담고 그라나파다노 치즈(또는 파마산 치즈)와 후추를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"접시에 담고 그라나파다노 아니면은 파마산 치즈 위에 뿌리고 나서 후추까지 뿌려 마무리해주면\",\n          \"timestamp\": \"05:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[수제비 봉골레 파스타] 팬에 오일을 살짝 두르고 다진 마늘 반 스푼을 넣어 향이 올라오게 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬에 오일 살짝 둘러 다진 마늘 반 스푼 넣고 향 올라오게 볶아주다\",\n          \"timestamp\": \"06:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[수제비 봉골레 파스타] 찬물에 해동한 냉동 바지락 약 20알을 넣고 볶아 조개 육수를 뽑는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"냉동 바지락을 넣어주는데... 냉동 바지락 20알 정도 넣고 조개 육수를 뽑아주다가\",\n          \"timestamp\": \"06:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[수제비 봉골레 파스타] 조개가 입을 벌리기 시작하면 물 1컵 반, 굴소스 반 스푼, 수제비 120g, 부순 페페론치노를 넣고 7~8분간 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"입 벌리기 시작했을 때쯤 물 1컵 반을 넣고 굴소스 반 스푼 수제비는 한 120g 정도 페페론치노를 약간 부숴 넣어주고 나서 7~8분 정도 끓여주면 되는데\",\n          \"timestamp\": \"06:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[수제비 봉골레 파스타] 수제비에서 전분이 나와 국물 농도가 잡히면 버터를 넣고 바지락 껍질이 깨지지 않도록 약하게 저어 녹인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"수제비에서 전분이 나와 농도가 잡히기 시작하면은 버터 넣고 버터가 녹을 때까지 섞어주면 되거든요 근데 이때 바지락 껍질이 있으니까 최대한 약하게 섞어주시는게 좋습니다\",\n          \"timestamp\": \"06:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[수제비 봉골레 파스타] 접시에 담고 후추와 송송 썬 대파를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 접시에 담아 후추랑 대파 정도 뿌려 마무리 해주면 이렇게 봉골레 파스타가 완성되는데\",\n          \"timestamp\": \"06:43\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"각 레시피별 사용된 파스타면의 정확한 중량(g)은 '100원짜리 동전만큼', '파스타 1인분' 등으로 표현되어 정확한 그램 수는 명시되지 않음.\",\n    \"수제비 봉골레 파스타에 들어가는 버터의 구체적인 양(g 또는 스푼 단위)은 자막 및 음성으로 명시되지 않고 조각 버터 1~2개 형태로 투하됨.\"\n  ]\n}",
+    "result": {
+      "title": "초간단 원팬 파스타 레시피 모음",
+      "description": "전직 셰프가 알려주는 간단한 재료와 한 팬으로 완성하는 초간단 원팬 파스타 레시피들 (하이엔드 알리오 올리오, 간장계란 파스타, 고기만두 라구 파스타, 감태버터 파스타, 트러플크림 뇨끼 수제비, 수제비 봉골레).",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "통마늘",
+          "displayName": "통마늘",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "통마늘에 엑스트라버진 오일 잠길만큼 붓고 나서",
+              "timestamp": "00:32"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "엑스트라버진 오일",
+          "displayName": "엑스트라버진 올리브 오일",
+          "amount": "잠길만큼",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "통마늘에 엑스트라버진 오일 잠길만큼 붓고 나서",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "엑스트라버진 올리브오일 살짝 뿌려 드시면 되는데",
+              "timestamp": "01:10"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "물 500ml",
+          "displayName": "물",
+          "amount": "500",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 널찍한 팬에 물 500ml 넣고",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "소금 살짝",
+          "displayName": "소금",
+          "amount": "살짝",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "소금 살짝",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "스파게티는 100원짜리 동전만큼",
+          "displayName": "스파게티면",
+          "amount": "100원짜리 동전만큼",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "스파게티는 100원짜리 동전만큼 넣고 나서",
+              "timestamp": "00:46"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "굴소스 반 스푼 (다시다 / 참치액 / 치킨스톡 가능)",
+          "displayName": "굴소스",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "굴소스 반 스푼 (다시다 / 참치액 / 치킨스톡 가능)",
+              "timestamp": "00:48"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "그라나파다노 치즈",
+          "displayName": "그라나파다노 치즈",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "그라나파다노 치즈 없으면 이렇게 피자 시켜먹고 남았을 파마산 치즈가루 살짝 뿌리고",
+              "timestamp": "00:57"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "파마산 치즈가루",
+          "displayName": "파마산 치즈가루",
+          "amount": "살짝",
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "그라나파다노 치즈 없으면 이렇게 피자 시켜먹고 남았을 파마산 치즈가루 살짝 뿌리고",
+              "timestamp": "00:57"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "페페론치노",
+          "displayName": "페페론치노",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "느끼함을 잡아줄 수 있게 페페론치노와 후추",
+              "timestamp": "01:08"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "페페론치노와 후추",
+              "timestamp": "01:08"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "물 3컵",
+          "displayName": "물",
+          "amount": "3",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 널찍한 팬에 물 3컵",
+              "timestamp": "01:55"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "파스타면",
+          "displayName": "파스타면",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "파스타면 넣고 10분 삶아주는데",
+              "timestamp": "01:57"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "올리브 오일",
+          "displayName": "올리브 오일",
+          "amount": "살짝",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "올리브 오일을 살짝 추가해 준 다음",
+              "timestamp": "02:03"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "올리브오일 뿌려 마무리해주면",
+              "timestamp": "02:19"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "계란 3개",
+          "displayName": "계란",
+          "amount": "3",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "계란 3개 넣고 나서",
+              "timestamp": "02:06"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "간장 1스푼",
+          "displayName": "간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "간장 1스푼을 넣어 간을 해주고",
+              "timestamp": "02:15"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "접시에 이쁘게 담아 대파랑 후추",
+              "timestamp": "02:18"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "물 600ml",
+          "displayName": "물",
+          "amount": "600",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "프라이팬에 물 600ml 넣고",
+              "timestamp": "02:45"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        },
+        {
+          "rawText": "고기만두 6알",
+          "displayName": "고기만두",
+          "amount": "6",
+          "unit": "알",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고기만두 6알을 넣어주는데",
+              "timestamp": "02:46"
+            }
+          ],
+          "sourceId": "ingredient-18"
+        },
+        {
+          "rawText": "토마토 소스 8스푼",
+          "displayName": "토마토 소스",
+          "amount": "8",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "토마토 소스 8스푼을 넣어주고",
+              "timestamp": "02:53"
+            }
+          ],
+          "sourceId": "ingredient-19"
+        },
+        {
+          "rawText": "파스타 1인분",
+          "displayName": "파스타면",
+          "amount": "1",
+          "unit": "인분",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "끓기 시작하면 파스타 1인분을 넣고 나서",
+              "timestamp": "02:56"
+            }
+          ],
+          "sourceId": "ingredient-20"
+        },
+        {
+          "rawText": "설탕 반 스푼",
+          "displayName": "설탕",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 반 스푼이나 굴소스 반 스푼 넣어주면 더 맛있지만 이건 뭐 취향껏 조절해주시면 됩니다",
+              "timestamp": "03:00"
+            }
+          ],
+          "sourceId": "ingredient-21"
+        },
+        {
+          "rawText": "체다치즈 하나",
+          "displayName": "체다치즈",
+          "amount": "1",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "체다치즈 하나 싹 올려주면은",
+              "timestamp": "03:08"
+            }
+          ],
+          "sourceId": "ingredient-22"
+        },
+        {
+          "rawText": "다진 마늘 1스푼",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다진 마늘 1스푼 넣고",
+              "timestamp": "03:52"
+            }
+          ],
+          "sourceId": "ingredient-23"
+        },
+        {
+          "rawText": "굴소스 찔끔 (1/3스푼)",
+          "displayName": "굴소스",
+          "amount": "1/3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "굴소스 찔끔 (1/3스푼) (다시다 / 참치액 / 치킨스톡 가능)",
+              "timestamp": "03:55"
+            }
+          ],
+          "sourceId": "ingredient-24"
+        },
+        {
+          "rawText": "소금 찔끔 (아주 살짝)",
+          "displayName": "소금",
+          "amount": "찔끔",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "소금 찔끔 (아주 살짝) 넣고 나서",
+              "timestamp": "03:56"
+            }
+          ],
+          "sourceId": "ingredient-25"
+        },
+        {
+          "rawText": "감태버터 1스푼",
+          "displayName": "룩트 감태버터",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "감태버터 1스푼 넣고",
+              "timestamp": "04:02"
+            }
+          ],
+          "sourceId": "ingredient-26"
+        },
+        {
+          "rawText": "크래미",
+          "displayName": "크래미",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "크래미 찢어 올린 다음",
+              "timestamp": "04:16"
+            }
+          ],
+          "sourceId": "ingredient-27"
+        },
+        {
+          "rawText": "우유 2컵",
+          "displayName": "우유",
+          "amount": "2",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "크림은 비싸니까 우유 2컵",
+              "timestamp": "05:09"
+            }
+          ],
+          "sourceId": "ingredient-28"
+        },
+        {
+          "rawText": "체다치즈 2장",
+          "displayName": "체다치즈",
+          "amount": "2",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "꾸덕한 느낌을 내기 위해 체다치즈 2장 넣고 나서",
+              "timestamp": "05:12"
+            }
+          ],
+          "sourceId": "ingredient-29"
+        },
+        {
+          "rawText": "감자 수제비 120g 정도",
+          "displayName": "감자 수제비",
+          "amount": "120",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "감자 수제비 120g 정도 넣어주고",
+              "timestamp": "05:14"
+            }
+          ],
+          "sourceId": "ingredient-30"
+        },
+        {
+          "rawText": "버섯",
+          "displayName": "버섯",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이때 버섯 같은 거 있으면 넣어주시면 좋습니다 (없으면 X)",
+              "timestamp": "05:18"
+            }
+          ],
+          "sourceId": "ingredient-31"
+        },
+        {
+          "rawText": "트러플 버터 1스푼",
+          "displayName": "룩트 트러플버터",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "불 끄고 마지막으로 트러플 버터 1스푼을 넣어주는데",
+              "timestamp": "05:23"
+            }
+          ],
+          "sourceId": "ingredient-32"
+        },
+        {
+          "rawText": "다진 마늘 반 스푼",
+          "displayName": "다진 마늘",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다진 마늘 반 스푼 넣고",
+              "timestamp": "06:10"
+            }
+          ],
+          "sourceId": "ingredient-33"
+        },
+        {
+          "rawText": "냉동 바지락 20알 정도",
+          "displayName": "냉동 바지락",
+          "amount": "20",
+          "unit": "알",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "냉동 바지락 20알 정도 넣고",
+              "timestamp": "06:18"
+            }
+          ],
+          "sourceId": "ingredient-34"
+        },
+        {
+          "rawText": "물 1컵 반",
+          "displayName": "물",
+          "amount": "1.5",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 1컵 반을 넣고",
+              "timestamp": "06:23"
+            }
+          ],
+          "sourceId": "ingredient-35"
+        },
+        {
+          "rawText": "수제비 120g 정도",
+          "displayName": "수제비",
+          "amount": "120",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "수제비는 한 120g 정도",
+              "timestamp": "06:25"
+            }
+          ],
+          "sourceId": "ingredient-36"
+        },
+        {
+          "rawText": "버터",
+          "displayName": "버터",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "버터 넣고 버터가 녹을 때까지 섞어주면 되거든요",
+              "timestamp": "06:36"
+            }
+          ],
+          "sourceId": "ingredient-37"
+        }
+      ],
+      "steps": [
+        {
+          "text": "[원팬 알리오 올리오 파스타] 내열용기에 통마늘을 담고 마늘이 잠길 만큼 엑스트라버진 올리브 오일을 부은 뒤 전자레인지에서 3분간 돌린다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "통마늘에 엑스트라버진 오일 잠길만큼 붓고 나서 전자레인지에서 딱 3분만 돌려줄게요",
+              "timestamp": "00:32"
+            }
+          ]
+        },
+        {
+          "text": "[원팬 알리오 올리오 파스타] 익힌 마늘을 한 김 식힌 뒤 포크나 핸드블렌더로 으깨어 마늘 퓨레를 만든다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "한김 식혔다가 포크나 블렌더로 으깨서 이렇게 퓨레만 만들어주면 끝",
+              "timestamp": "00:37"
+            }
+          ]
+        },
+        {
+          "text": "[원팬 알리오 올리오 파스타] 넓은 팬에 물 500ml, 소금 살짝, 스파게티면 100원 동전 크기만큼, 굴소스 반 스푼(다시다, 참치액, 치킨스톡 대체 가능)을 넣고 약 10분간 삶는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 널찍한 팬에 물 500ml 넣고 소금 살짝 스파게티는 100원짜리 동전만큼 넣고 나서 굴소스 반 스푼",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 10분 정도 삶아",
+              "timestamp": "00:49"
+            }
+          ]
+        },
+        {
+          "text": "[원팬 알리오 올리오 파스타] 국물이 적당히 졸아들면 불을 끄고 마늘 퓨레 2스푼을 넣어 빠르게 섞어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물이 적당히 졸아들었으면 불 끈 상태로 방금 만들었던 마늘 퓨레 2스푼 넣고 빠르게 섞어준 다음",
+              "timestamp": "00:50"
+            }
+          ]
+        },
+        {
+          "text": "[원팬 알리오 올리오 파스타] 접시에 면을 담고 그라나파다노 치즈(또는 파마산 치즈가루), 페페론치노, 후추, 엑스트라버진 올리브 오일을 살짝 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "접시에 보기좋게 담아 그라나파다노 치즈 없으면 이렇게 피자 시켜먹고 남았을 파마산 치즈가루 살짝 뿌리고",
+              "timestamp": "00:56"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "느끼함을 잡아줄 수 있게 페페론치노와 후추 그리고 엑스트라버진 올리브오일 살짝 뿌려 드시면 되는데",
+              "timestamp": "01:07"
+            }
+          ]
+        },
+        {
+          "text": "[간장계란 파스타] 팬에 물 3컵과 소금 살짝을 넣어 끓이다가 파스타면을 넣고 10분간 삶는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 널찍한 팬에 물 3컵 소금 살짝 넣어 끓여 주다 파스타면 넣고 10분 삶아주는데",
+              "timestamp": "01:54"
+            }
+          ]
+        },
+        {
+          "text": "[간장계란 파스타] 면이 익고 물이 증발하면 굴소스 반 스푼(다시다, 참치액, 치킨스톡 대체 가능)을 넣고, 면을 한쪽으로 민 뒤 빈 공간에 올리브 오일을 살짝 두르고 계란 3개를 깨 넣어 계란프라이를 만든다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물이 증발되었으면 굴소스 반 스푼 넣고 나서 면을 한쪽으로 밀어 올리브 오일을 살짝 추가해 준 다음 플렉스 하는 느낌으로다가 계란 3개 넣고 나서 계란프라이를 만들어 주는데",
+              "timestamp": "02:00"
+            }
+          ]
+        },
+        {
+          "text": "[간장계란 파스타] 계란이 어느 정도 익으면 면과 함께 볶듯이 잘 섞어주다가 진간장 1스푼을 넣어 간을 맞춘다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "계란이 어느 정도 익었으면은 면이랑 같이 볶듯이 잘 비벼주다 간장 1스푼을 넣어 간을 해주고",
+              "timestamp": "02:12"
+            }
+          ]
+        },
+        {
+          "text": "[간장계란 파스타] 접시에 담고 대파, 후추, 올리브 오일을 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "접시에 이쁘게 담아 대파랑 후추 올리브오일 뿌려 마무리해주면 간장계란 파스타가 완성되는데",
+              "timestamp": "02:17"
+            }
+          ]
+        },
+        {
+          "text": "[만두 라구 파스타] 프라이팬에 물 600ml와 고기만두 6알을 넣고 끓인다. 만두가 익으면 주걱으로 터뜨려 으깬다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "프라이팬에 물 600ml 넣고 고기만두 6알을 넣어주는데",
+              "timestamp": "02:45"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "만두가 익었으면 다 터뜨려 주고 나서",
+              "timestamp": "02:51"
+            }
+          ]
+        },
+        {
+          "text": "[만두 라구 파스타] 토마토 소스 8스푼을 넣고 끓어오르면 파스타면 1인분을 넣고 약 10분간 면이 다 익을 때까지 삶는다. 취향에 따라 설탕 반 스푼이나 굴소스 반 스푼을 추가한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "토메이로 소스 8스푼을 넣어주고 끓기 시작하면 파스타 1인분을 넣고 나서 한 10분 정도 면이 다 익을 때까지 삶아주시면 되거든요",
+              "timestamp": "02:53"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 반 스푼이나 굴소스 반 스푼 넣어주면 더 맛있지만 이건 뭐 취향껏 조절해주시면 됩니다",
+              "timestamp": "03:00"
+            }
+          ]
+        },
+        {
+          "text": "[만두 라구 파스타] 면이 다 익고 소스가 적당히 졸아들면 접시에 담고, 위에 체다치즈 1장을 얹어 잔열로 녹인 뒤 섞어 먹는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "면이 다 익고 소스가 한 이 정도로 쫄아들었으면은 체다치즈 하나 싹 올려주면은 잔열로 인해 체다치즈가 녹거든요?",
+              "timestamp": "03:05"
+            }
+          ]
+        },
+        {
+          "text": "[감태버터 파스타] 팬에 오일을 살짝 두르고 다진 마늘 1스푼을 넣어 타지 않게 볶는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 프라이팬에 오일 살짝 두른 다음 다진 마늘 1스푼 넣고 타지 않게 볶아주다",
+              "timestamp": "03:50"
+            }
+          ]
+        },
+        {
+          "text": "[감태버터 파스타] 물 3컵, 굴소스 1/3스푼, 소금 아주 살짝을 넣고 끓기 시작하면 파스타면을 넣어 10분간 삶는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 3컵 굴소스 찔끔 (1/3스푼) (다시다 / 참치액 / 치킨스톡 가능) 소금 찔끔 (아주 살짝) 넣고 나서 파스타면 넣고 10분 정도 삶아주는데",
+              "timestamp": "03:54"
+            }
+          ]
+        },
+        {
+          "text": "[감태버터 파스타] 국물이 약간 자작하게 남았을 때 불을 끄고 룩트 감태버터 1스푼을 넣어 빠르게 만테까레(유화)한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이때 물은 한 이 정도 남겨 주시면 되고 불 끈 상태에서 감태버터 1스푼 넣고 빠르게 만테까레 해주는데",
+              "timestamp": "03:59"
+            }
+          ]
+        },
+        {
+          "text": "[감태버터 파스타] 접시에 담고 결대로 찢은 크래미를 올린 뒤, 후추와 엑스트라버진 올리브 오일을 살짝 뿌려 마무리한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "접시에 담으면서... 크래미 찢어 올린 다음 후추랑 엑스트라 버진 살짝 뿌려 마무리 해주면",
+              "timestamp": "04:06"
+            }
+          ]
+        },
+        {
+          "text": "[트러플크림 뇨끼] 팬에 오일을 두르고 다진 마늘을 넣어 향이 올라올 때까지 볶는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 팬에 오일을 두른 다음 마늘 넣고 향 올라오게 볶아주다",
+              "timestamp": "05:05"
+            }
+          ]
+        },
+        {
+          "text": "[트러플크림 뇨끼] 우유 2컵, 굴소스 반 스푼, 체다치즈 2장, 감자 수제비 120g을 넣고 7~8분간 끓인다. 버섯이 있다면 이때 함께 넣는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "우유 2컵 굴소스는 반 스푼 꾸덕한 느낌을 내기 위해 체다치즈 2장 넣고 나서 감자 수제비 120g 정도 넣어주고 한 7~8분 정도 끓여주면 되는데 이때 버섯 같은 거 있으면 넣어주시면 좋습니다",
+              "timestamp": "05:09"
+            }
+          ]
+        },
+        {
+          "text": "[트러플크림 뇨끼] 소스 농도가 꾸덕해지면 불을 끄고 트러플버터 1스푼을 넣어 버터가 다 녹을 때까지 섞는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 농도가 살짝 꾸덕하게 됐으면 불 끄고 마지막으로 트러플 버터 1스푼을 넣어주는데",
+              "timestamp": "05:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "버터가 다 녹았으면은",
+              "timestamp": "05:27"
+            }
+          ]
+        },
+        {
+          "text": "[트러플크림 뇨끼] 접시에 담고 그라나파다노 치즈(또는 파마산 치즈)와 후추를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "접시에 담고 그라나파다노 아니면은 파마산 치즈 위에 뿌리고 나서 후추까지 뿌려 마무리해주면",
+              "timestamp": "05:28"
+            }
+          ]
+        },
+        {
+          "text": "[수제비 봉골레 파스타] 팬에 오일을 살짝 두르고 다진 마늘 반 스푼을 넣어 향이 올라오게 볶는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "팬에 오일 살짝 둘러 다진 마늘 반 스푼 넣고 향 올라오게 볶아주다",
+              "timestamp": "06:09"
+            }
+          ]
+        },
+        {
+          "text": "[수제비 봉골레 파스타] 찬물에 해동한 냉동 바지락 약 20알을 넣고 볶아 조개 육수를 뽑는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "냉동 바지락을 넣어주는데... 냉동 바지락 20알 정도 넣고 조개 육수를 뽑아주다가",
+              "timestamp": "06:12"
+            }
+          ]
+        },
+        {
+          "text": "[수제비 봉골레 파스타] 조개가 입을 벌리기 시작하면 물 1컵 반, 굴소스 반 스푼, 수제비 120g, 부순 페페론치노를 넣고 7~8분간 끓인다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "입 벌리기 시작했을 때쯤 물 1컵 반을 넣고 굴소스 반 스푼 수제비는 한 120g 정도 페페론치노를 약간 부숴 넣어주고 나서 7~8분 정도 끓여주면 되는데",
+              "timestamp": "06:21"
+            }
+          ]
+        },
+        {
+          "text": "[수제비 봉골레 파스타] 수제비에서 전분이 나와 국물 농도가 잡히면 버터를 넣고 바지락 껍질이 깨지지 않도록 약하게 저어 녹인다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "수제비에서 전분이 나와 농도가 잡히기 시작하면은 버터 넣고 버터가 녹을 때까지 섞어주면 되거든요 근데 이때 바지락 껍질이 있으니까 최대한 약하게 섞어주시는게 좋습니다",
+              "timestamp": "06:34"
+            }
+          ]
+        },
+        {
+          "text": "[수제비 봉골레 파스타] 접시에 담고 후추와 송송 썬 대파를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 접시에 담아 후추랑 대파 정도 뿌려 마무리 해주면 이렇게 봉골레 파스타가 완성되는데",
+              "timestamp": "06:43"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "각 레시피별 사용된 파스타면의 정확한 중량(g)은 '100원짜리 동전만큼', '파스타 1인분' 등으로 표현되어 정확한 그램 수는 명시되지 않음.",
+        "수제비 봉골레 파스타에 들어가는 버터의 구체적인 양(g 또는 스푼 단위)은 자막 및 음성으로 명시되지 않고 조각 버터 1~2개 형태로 투하됨."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

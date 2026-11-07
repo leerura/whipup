@@ -1,0 +1,345 @@
+{
+  "videoId": "jWUEA9qwgc4",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/jWUEA9qwgc4",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:47:55.624254+00:00",
+    "rawResponse": "{\n  \"title\": \"간단 오므라이스 만들기\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"당근\",\n      \"displayName\": \"당근\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"당근\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"햄\",\n      \"displayName\": \"햄\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"햄\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 2개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2개\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 두 개를 풀어주세요\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥을 넣어 주세요\",\n          \"timestamp\": \"01:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"달군 후라이팬에 기름을 둘러주세요\",\n          \"timestamp\": \"01:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"케찹\",\n      \"displayName\": \"케찹\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"케찹을 넣어 주세요\",\n          \"timestamp\": \"01:42\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"케찹과 돈가스소스를 뿌려주세요\",\n          \"timestamp\": \"02:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돈가스소스\",\n      \"displayName\": \"돈가스소스\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"케찹과 돈가스소스를 뿌려주세요\",\n          \"timestamp\": \"02:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리\",\n      \"displayName\": \"파슬리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"파슬리를 뿌려주세요\",\n          \"timestamp\": \"02:46\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양파를 썰어준 뒤 다져줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파를 썰어주세요\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"썰은 양파를 다져주세요\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"당근도 다져줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"당근도 다져주세요\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"햄도 다져줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"햄도 다져주세요\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 두 개를 풀어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 두 개를 풀어주세요\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"text\": \"달군 후라이팬에 기름을 둘러줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"달군 후라이팬에 기름을 둘러주세요\",\n          \"timestamp\": \"01:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"다진 재료들을 넣고 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진 재료들을 넣어주세요\",\n          \"timestamp\": \"01:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"볶아 주세요\",\n          \"timestamp\": \"01:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥을 넣어 줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥을 넣어 주세요\",\n          \"timestamp\": \"01:32\"\n        }\n      ]\n    },\n    {\n      \"text\": \"케찹을 넣어 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"케찹을 넣어 주세요\",\n          \"timestamp\": \"01:42\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 기름을 두르고 계란을 부어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"기름 두르기\",\n          \"timestamp\": \"01:48\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란을 부어 주세요\",\n          \"timestamp\": \"01:52\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란이 80% 정도 익으면 볶음밥을 넣어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란이 80% 정도 익으면 볶음밥을 넣어주세요\",\n          \"timestamp\": \"02:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"찢어지지 않도록 조심스럽게 접어주고, 숟가락을 이용해 모양을 잡아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"찢어지지 않도록 조심스럽게 접어주세요\",\n          \"timestamp\": \"02:25\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"숟가락을 이용해 모양을 잡아주세요\",\n          \"timestamp\": \"02:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"접시에 담아 줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"접시에 담아 주세요\",\n          \"timestamp\": \"02:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"케찹과 돈가스소스를 뿌려줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"케찹과 돈가스소스를 뿌려주세요\",\n          \"timestamp\": \"02:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"파슬리를 뿌려 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"파슬리를 뿌려주세요\",\n          \"timestamp\": \"02:46\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"간단 오므라이스 완성!!!!\",\n          \"timestamp\": \"02:52\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "간단 오므라이스 만들기",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "당근",
+          "displayName": "당근",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "당근",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "햄",
+          "displayName": "햄",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "햄",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "계란 2개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2개",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란 두 개를 풀어주세요",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "밥을 넣어 주세요",
+              "timestamp": "01:32"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "달군 후라이팬에 기름을 둘러주세요",
+              "timestamp": "01:04"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "케찹",
+          "displayName": "케찹",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "케찹을 넣어 주세요",
+              "timestamp": "01:42"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "케찹과 돈가스소스를 뿌려주세요",
+              "timestamp": "02:39"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "돈가스소스",
+          "displayName": "돈가스소스",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "케찹과 돈가스소스를 뿌려주세요",
+              "timestamp": "02:39"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "파슬리",
+          "displayName": "파슬리",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "파슬리를 뿌려주세요",
+              "timestamp": "02:46"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양파를 썰어준 뒤 다져줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파를 썰어주세요",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "썰은 양파를 다져주세요",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "당근도 다져줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "당근도 다져주세요",
+              "timestamp": "00:31"
+            }
+          ]
+        },
+        {
+          "text": "햄도 다져줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "햄도 다져주세요",
+              "timestamp": "00:38"
+            }
+          ]
+        },
+        {
+          "text": "계란 두 개를 풀어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "계란 두 개를 풀어주세요",
+              "timestamp": "00:47"
+            }
+          ]
+        },
+        {
+          "text": "달군 후라이팬에 기름을 둘러줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "달군 후라이팬에 기름을 둘러주세요",
+              "timestamp": "01:04"
+            }
+          ]
+        },
+        {
+          "text": "다진 재료들을 넣고 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다진 재료들을 넣어주세요",
+              "timestamp": "01:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "볶아 주세요",
+              "timestamp": "01:19"
+            }
+          ]
+        },
+        {
+          "text": "밥을 넣어 줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "밥을 넣어 주세요",
+              "timestamp": "01:32"
+            }
+          ]
+        },
+        {
+          "text": "케찹을 넣어 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "케찹을 넣어 주세요",
+              "timestamp": "01:42"
+            }
+          ]
+        },
+        {
+          "text": "팬에 기름을 두르고 계란을 부어줍니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "기름 두르기",
+              "timestamp": "01:48"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란을 부어 주세요",
+              "timestamp": "01:52"
+            }
+          ]
+        },
+        {
+          "text": "계란이 80% 정도 익으면 볶음밥을 넣어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "계란이 80% 정도 익으면 볶음밥을 넣어주세요",
+              "timestamp": "02:10"
+            }
+          ]
+        },
+        {
+          "text": "찢어지지 않도록 조심스럽게 접어주고, 숟가락을 이용해 모양을 잡아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "찢어지지 않도록 조심스럽게 접어주세요",
+              "timestamp": "02:25"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "숟가락을 이용해 모양을 잡아주세요",
+              "timestamp": "02:30"
+            }
+          ]
+        },
+        {
+          "text": "접시에 담아 줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "접시에 담아 주세요",
+              "timestamp": "02:34"
+            }
+          ]
+        },
+        {
+          "text": "케찹과 돈가스소스를 뿌려줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "케찹과 돈가스소스를 뿌려주세요",
+              "timestamp": "02:39"
+            }
+          ]
+        },
+        {
+          "text": "파슬리를 뿌려 완성합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "파슬리를 뿌려주세요",
+              "timestamp": "02:46"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "간단 오므라이스 완성!!!!",
+              "timestamp": "02:52"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

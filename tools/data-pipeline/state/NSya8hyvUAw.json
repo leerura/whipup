@@ -1,0 +1,467 @@
+{
+  "videoId": "NSya8hyvUAw",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/NSya8hyvUAw",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T10:00:22.768999+00:00",
+    "rawResponse": "{\n  \"title\": \"참치마요덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 Rice\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥이 있는지 확인하세요\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"달걀 두 개\",\n      \"displayName\": \"달걀\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"달걀 Egg\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"달걀 두 개는\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 살짝\",\n      \"displayName\": \"후추\",\n      \"amount\": \"살짝\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 Pepper\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추 살짝 넣어\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 Cooking oil\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 식용유를 두르고\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마요네즈 듬뿍 두 큰술\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": \"2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마요네즈 Mayonnaise\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마요네즈 듬뿍 두 큰술에\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 반 큰술\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"0.5\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 Cooking wine\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술과 설탕을 반 큰술\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 반 큰술\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.5\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술과 설탕을 반 큰술\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 Pepper\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추 넣고\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름 뺀 참치 통조림\",\n      \"displayName\": \"참치 통조림\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치 통조림 Tuna can\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기름 뺀 참치를 넣고\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 반 컵\",\n      \"displayName\": \"물\",\n      \"amount\": \"0.5\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 Water\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 반 컵\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 두 큰술\",\n      \"displayName\": \"간장\",\n      \"amount\": \"2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 Soy sauce\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 두 큰술\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 한 큰술\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 Sugar\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 한 큰술\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 한 큰술\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 Sesame oil\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름 한 큰술\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 Pepper\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추를 넣고\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"썰어둔 양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 Onion\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"썰어둔 양파를 넣고\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"취향껏 마요네즈\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마요네즈 Mayonnaise\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"취향껏 마요네즈도 뿌려줍니다\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고소한 김\",\n      \"displayName\": \"김\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김 Laver\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고소한 김도 봉지에 넣어 부셔서 넣어주세요\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"달걀 2개에 후추를 살짝 넣고 잘 풀어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"달걀 두 개는 후추 살짝 넣어 잘 풀어줍니다\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유를 두르고 달걀물을 넣어 스크램블 에그를 만듭니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 식용유를 두르고 달걀을 넣어 스크램블 해주세요\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 위에 스크램블 에그를 올려줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 위에 달걀을 올려줍니다\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 마요네즈 듬뿍 2큰술, 맛술 반 큰술, 설탕 반 큰술, 후추를 넣고 잘 섞어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마요네즈 듬뿍 두 큰술에 맛술과 설탕을 반 큰술 후추 넣고 잘 섞어주세요\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마요네즈 소스에 기름 뺀 참치를 넣고 섞은 뒤, 밥 위 달걀 위에 올려줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기름 뺀 참치를 넣고 잘 섞어준 뒤 달걀 위에 올려주세요\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 물 반 컵, 간장 2큰술, 설탕 1큰술, 참기름 1큰술, 후추를 넣고 저어주며 끓입니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 반 컵 간장 두 큰술 설탕 한 큰술 참기름 한 큰술 후추를 넣고 저어준 뒤 끓여주세요\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소스가 바글바글 끓으면 썰어둔 양파를 넣고 조려줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"바글바글 끓으면 썰어둔 양파를 넣고 조려줍니다\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파에 양념이 잘 배어들면 조린 양파와 소스를 덮밥 위에 올려줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파에 양념이 잘 배어들면 조린 양파 소스를 올려주세요\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"취향껏 마요네즈를 뿌려줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"취향껏 마요네즈도 뿌려줍니다\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김을 봉지에 넣어 부순 뒤 위에 올려 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고소한 김도 봉지에 넣어 부셔서 넣어주세요\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"밥, 참치 통조림, 양파, 김의 정확한 중량이나 수량이 영상에서 언급되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "참치마요덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 Rice",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밥이 있는지 확인하세요",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "달걀 두 개",
+          "displayName": "달걀",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "달걀 Egg",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "달걀 두 개는",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "후추 살짝",
+          "displayName": "후추",
+          "amount": "살짝",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 Pepper",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추 살짝 넣어",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 Cooking oil",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "팬에 식용유를 두르고",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "마요네즈 듬뿍 두 큰술",
+          "displayName": "마요네즈",
+          "amount": "2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마요네즈 Mayonnaise",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마요네즈 듬뿍 두 큰술에",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "맛술 반 큰술",
+          "displayName": "맛술",
+          "amount": "0.5",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 Cooking wine",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "맛술과 설탕을 반 큰술",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "설탕 반 큰술",
+          "displayName": "설탕",
+          "amount": "0.5",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "맛술과 설탕을 반 큰술",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 Pepper",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추 넣고",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "기름 뺀 참치 통조림",
+          "displayName": "참치 통조림",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치 통조림 Tuna can",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "기름 뺀 참치를 넣고",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "물 반 컵",
+          "displayName": "물",
+          "amount": "0.5",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 Water",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 반 컵",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "간장 두 큰술",
+          "displayName": "간장",
+          "amount": "2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 Soy sauce",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장 두 큰술",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "설탕 한 큰술",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 Sugar",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 한 큰술",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "참기름 한 큰술",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 Sesame oil",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름 한 큰술",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 Pepper",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추를 넣고",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "썰어둔 양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 Onion",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SPEECH",
+              "text": "썰어둔 양파를 넣고",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "취향껏 마요네즈",
+          "displayName": "마요네즈",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마요네즈 Mayonnaise",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "SPEECH",
+              "text": "취향껏 마요네즈도 뿌려줍니다",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "고소한 김",
+          "displayName": "김",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김 Laver",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고소한 김도 봉지에 넣어 부셔서 넣어주세요",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        }
+      ],
+      "steps": [
+        {
+          "text": "달걀 2개에 후추를 살짝 넣고 잘 풀어줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "달걀 두 개는 후추 살짝 넣어 잘 풀어줍니다",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유를 두르고 달걀물을 넣어 스크램블 에그를 만듭니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 식용유를 두르고 달걀을 넣어 스크램블 해주세요",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "밥 위에 스크램블 에그를 올려줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥 위에 달걀을 올려줍니다",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 마요네즈 듬뿍 2큰술, 맛술 반 큰술, 설탕 반 큰술, 후추를 넣고 잘 섞어줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마요네즈 듬뿍 두 큰술에 맛술과 설탕을 반 큰술 후추 넣고 잘 섞어주세요",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "마요네즈 소스에 기름 뺀 참치를 넣고 섞은 뒤, 밥 위 달걀 위에 올려줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "기름 뺀 참치를 넣고 잘 섞어준 뒤 달걀 위에 올려주세요",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "팬에 물 반 컵, 간장 2큰술, 설탕 1큰술, 참기름 1큰술, 후추를 넣고 저어주며 끓입니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 반 컵 간장 두 큰술 설탕 한 큰술 참기름 한 큰술 후추를 넣고 저어준 뒤 끓여주세요",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "소스가 바글바글 끓으면 썰어둔 양파를 넣고 조려줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "바글바글 끓으면 썰어둔 양파를 넣고 조려줍니다",
+              "timestamp": "00:33"
+            }
+          ]
+        },
+        {
+          "text": "양파에 양념이 잘 배어들면 조린 양파와 소스를 덮밥 위에 올려줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파에 양념이 잘 배어들면 조린 양파 소스를 올려주세요",
+              "timestamp": "00:37"
+            }
+          ]
+        },
+        {
+          "text": "취향껏 마요네즈를 뿌려줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "취향껏 마요네즈도 뿌려줍니다",
+              "timestamp": "00:41"
+            }
+          ]
+        },
+        {
+          "text": "김을 봉지에 넣어 부순 뒤 위에 올려 완성합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고소한 김도 봉지에 넣어 부셔서 넣어주세요",
+              "timestamp": "00:44"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "밥, 참치 통조림, 양파, 김의 정확한 중량이나 수량이 영상에서 언급되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

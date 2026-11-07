@@ -1,20 +1,375 @@
 {
   "videoId": "DxV08NjmCTE",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/DxV08NjmCTE",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T10:08:18.240138+00:00",
+    "rawResponse": "{\n  \"title\": \"떡국떡 떡볶이\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"떡국떡 250g\",\n      \"displayName\": \"떡국떡\",\n      \"amount\": \"250\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"떡국떡 250g\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"떡국떡을 250g 준비해서\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 1스푼 정도\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"프라이팬에 식용유 1스푼 정도를 둘러주세요.\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"프라이팬에 식용유를 약 한 스푼 정도만 둘러주세요.\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 2스푼\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장 2스푼 넣어주세요.\",\n          \"timestamp\": \"00:56\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 고추장을 두 스푼 넣어주세요.\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양조간장 1스푼\",\n      \"displayName\": \"양조간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양조간장 1스푼 넣어주세요.\",\n          \"timestamp\": \"01:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 양조간장 한 스푼을 넣어주세요.\",\n          \"timestamp\": \"01:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 2스푼 (단맛을 좋아하지 않으면 1스푼 반)\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 2스푼 넣어주세요.\",\n          \"timestamp\": \"01:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 두 스푼 넣어주시는데요, 평소에 단맛을 좋아하지 않으시는 분들은 한 스푼 반만 넣어주세요.\",\n          \"timestamp\": \"01:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 1컵 반 300ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"300\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 300ml를 넣고 끓여주세요.\",\n          \"timestamp\": \"01:59\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 한 컵 반 300ml를 넣어주세요.\",\n          \"timestamp\": \"02:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"어묵 2장\",\n      \"displayName\": \"어묵\",\n      \"amount\": \"2\",\n      \"unit\": \"장\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"어묵\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"부재료로 대파나 어묵을 넣으시면 더욱 맛있는 떡볶이를 만드실 수 있고요, 만약 준비가 안 됐다면 안 넣으셔도 됩니다.\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"어묵 두 장과 대파 한 대를 넣어보겠습니다.\",\n          \"timestamp\": \"02:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 1대\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"대\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"부재료로 대파나 어묵을 넣으시면 더욱 맛있는 떡볶이를 만드실 수 있고요, 만약 준비가 안 됐다면 안 넣으셔도 됩니다.\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"어묵 두 장과 대파 한 대를 넣어보겠습니다.\",\n          \"timestamp\": \"02:11\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"떡국떡 250g을 물에 약 30분 정도 담가 불려둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"떡국떡 250g을 준비해주세요.\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"떡국떡을 물에 30분 정도 담궈주세요.\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"text\": \"프라이팬에 식용유 약 1스푼을 두르고 고추장 2스푼을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"프라이팬에 식용유 1스푼 정도를 둘러주세요.\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장 2스푼 넣어주세요.\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"text\": \"가스 불을 중간 불로 조절하고 고추장이 식용유를 흡수할 때까지 타지 않게 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"가스불을 중간불로 조절하고 고추장을 볶아주세요.\",\n          \"timestamp\": \"01:00\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장이 식용유를 다 흡수할 때까지 볶아주세요.\",\n          \"timestamp\": \"01:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양조간장 1스푼을 프라이팬 가운데에 넣고 한번 끓인 후 고추장과 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양조간장 1스푼 넣어주세요.\",\n          \"timestamp\": \"01:19\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"간장이 끓어주세요.\",\n          \"timestamp\": \"01:25\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"간장이 끓으면 고추장과 섞어주세요.\",\n          \"timestamp\": \"01:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"설탕 2스푼(단맛을 원치 않을 경우 1스푼 반)을 넣고 잘 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 2스푼 넣어주세요.\",\n          \"timestamp\": \"01:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"평소에 단맛을 좋아하지 않으시는 분들은 한 스푼 반만 넣어주세요.\",\n          \"timestamp\": \"01:42\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕과 고추장을 섞어주세요.\",\n          \"timestamp\": \"01:47\"\n        }\n      ]\n    },\n    {\n      \"text\": \"가스 불을 센 불로 올려 고추장을 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"가스불을 센불로 조절해서 고추장을 끓여주세요.\",\n          \"timestamp\": \"01:52\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고추장이 끓어오르면 물 300ml(1컵 반)를 붓고 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 300ml를 넣고 끓여주세요.\",\n          \"timestamp\": \"01:59\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 한 컵 반 300ml를 넣어주세요.\",\n          \"timestamp\": \"02:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"썰어둔 어묵 2장과 대파 1대(부재료)를 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"준비한 부재료를 넣어주세요.\",\n          \"timestamp\": \"02:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"어묵 두 장과 대파 한 대를 넣어보겠습니다.\",\n          \"timestamp\": \"02:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국물이 끓어오르면 물에 불려둔 떡국떡 250g을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"끓어오르면 떡국떡을 넣어주세요.\",\n          \"timestamp\": \"02:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물에 불려놓은 떡국떡 250g을 넣어주세요.\",\n          \"timestamp\": \"02:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국물이 다시 끓어오르면 기호에 맞게 국물 떡볶이 상태로 불을 끄거나, 더 졸여서 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"떡볶이 국물이 다시 한번 끓어오르면 맛있는 떡볶이가 완성이 됩니다. 어느 정도 국물이 있는 떡볶이를 좋아하시면 바로 불을 끄고 드시면 되고요. 진한 양념이 묻어있는 떡볶이를 드시고 싶으면 좀 더 조리신 후에 드시면 됩니다.\",\n          \"timestamp\": \"02:30\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"완~성\",\n          \"timestamp\": \"02:48\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "떡국떡 떡볶이",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "떡국떡 250g",
+          "displayName": "떡국떡",
+          "amount": "250",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "떡국떡 250g",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "떡국떡을 250g 준비해서",
+              "timestamp": "00:46"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "식용유 1스푼 정도",
+          "displayName": "식용유",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "프라이팬에 식용유 1스푼 정도를 둘러주세요.",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "SPEECH",
+              "text": "프라이팬에 식용유를 약 한 스푼 정도만 둘러주세요.",
+              "timestamp": "00:52"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "고추장 2스푼",
+          "displayName": "고추장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고추장 2스푼 넣어주세요.",
+              "timestamp": "00:56"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 고추장을 두 스푼 넣어주세요.",
+              "timestamp": "00:56"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양조간장 1스푼",
+          "displayName": "양조간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양조간장 1스푼 넣어주세요.",
+              "timestamp": "01:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 양조간장 한 스푼을 넣어주세요.",
+              "timestamp": "01:20"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "설탕 2스푼 (단맛을 좋아하지 않으면 1스푼 반)",
+          "displayName": "설탕",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 2스푼 넣어주세요.",
+              "timestamp": "01:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 두 스푼 넣어주시는데요, 평소에 단맛을 좋아하지 않으시는 분들은 한 스푼 반만 넣어주세요.",
+              "timestamp": "01:39"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "물 1컵 반 300ml",
+          "displayName": "물",
+          "amount": "300",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 300ml를 넣고 끓여주세요.",
+              "timestamp": "01:59"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 한 컵 반 300ml를 넣어주세요.",
+              "timestamp": "02:00"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "어묵 2장",
+          "displayName": "어묵",
+          "amount": "2",
+          "unit": "장",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "어묵",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "부재료로 대파나 어묵을 넣으시면 더욱 맛있는 떡볶이를 만드실 수 있고요, 만약 준비가 안 됐다면 안 넣으셔도 됩니다.",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "SPEECH",
+              "text": "어묵 두 장과 대파 한 대를 넣어보겠습니다.",
+              "timestamp": "02:11"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "대파 1대",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "대",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "부재료로 대파나 어묵을 넣으시면 더욱 맛있는 떡볶이를 만드실 수 있고요, 만약 준비가 안 됐다면 안 넣으셔도 됩니다.",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "SPEECH",
+              "text": "어묵 두 장과 대파 한 대를 넣어보겠습니다.",
+              "timestamp": "02:11"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        }
+      ],
+      "steps": [
+        {
+          "text": "떡국떡 250g을 물에 약 30분 정도 담가 불려둔다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "떡국떡 250g을 준비해주세요.",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "떡국떡을 물에 30분 정도 담궈주세요.",
+              "timestamp": "00:46"
+            }
+          ]
+        },
+        {
+          "text": "프라이팬에 식용유 약 1스푼을 두르고 고추장 2스푼을 넣는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "프라이팬에 식용유 1스푼 정도를 둘러주세요.",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고추장 2스푼 넣어주세요.",
+              "timestamp": "00:56"
+            }
+          ]
+        },
+        {
+          "text": "가스 불을 중간 불로 조절하고 고추장이 식용유를 흡수할 때까지 타지 않게 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "가스불을 중간불로 조절하고 고추장을 볶아주세요.",
+              "timestamp": "01:00"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장이 식용유를 다 흡수할 때까지 볶아주세요.",
+              "timestamp": "01:14"
+            }
+          ]
+        },
+        {
+          "text": "양조간장 1스푼을 프라이팬 가운데에 넣고 한번 끓인 후 고추장과 섞어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양조간장 1스푼 넣어주세요.",
+              "timestamp": "01:19"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "간장이 끓어주세요.",
+              "timestamp": "01:25"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "간장이 끓으면 고추장과 섞어주세요.",
+              "timestamp": "01:33"
+            }
+          ]
+        },
+        {
+          "text": "설탕 2스푼(단맛을 원치 않을 경우 1스푼 반)을 넣고 잘 섞어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 2스푼 넣어주세요.",
+              "timestamp": "01:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "평소에 단맛을 좋아하지 않으시는 분들은 한 스푼 반만 넣어주세요.",
+              "timestamp": "01:42"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕과 고추장을 섞어주세요.",
+              "timestamp": "01:47"
+            }
+          ]
+        },
+        {
+          "text": "가스 불을 센 불로 올려 고추장을 끓여준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "가스불을 센불로 조절해서 고추장을 끓여주세요.",
+              "timestamp": "01:52"
+            }
+          ]
+        },
+        {
+          "text": "고추장이 끓어오르면 물 300ml(1컵 반)를 붓고 끓인다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 300ml를 넣고 끓여주세요.",
+              "timestamp": "01:59"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 한 컵 반 300ml를 넣어주세요.",
+              "timestamp": "02:00"
+            }
+          ]
+        },
+        {
+          "text": "썰어둔 어묵 2장과 대파 1대(부재료)를 넣는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "준비한 부재료를 넣어주세요.",
+              "timestamp": "02:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "어묵 두 장과 대파 한 대를 넣어보겠습니다.",
+              "timestamp": "02:11"
+            }
+          ]
+        },
+        {
+          "text": "국물이 끓어오르면 물에 불려둔 떡국떡 250g을 넣는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "끓어오르면 떡국떡을 넣어주세요.",
+              "timestamp": "02:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물에 불려놓은 떡국떡 250g을 넣어주세요.",
+              "timestamp": "02:21"
+            }
+          ]
+        },
+        {
+          "text": "국물이 다시 끓어오르면 기호에 맞게 국물 떡볶이 상태로 불을 끄거나, 더 졸여서 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "떡볶이 국물이 다시 한번 끓어오르면 맛있는 떡볶이가 완성이 됩니다. 어느 정도 국물이 있는 떡볶이를 좋아하시면 바로 불을 끄고 드시면 되고요. 진한 양념이 묻어있는 떡볶이를 드시고 싶으면 좀 더 조리신 후에 드시면 됩니다.",
+              "timestamp": "02:30"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "완~성",
+              "timestamp": "02:48"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
     "retryCount": 0,
-    "startedAt": "2026-10-27T10:50:31.942818+00:00",
-    "accountId": "account-a",
-    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 20h9m27.761205869s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '72567s'}]}}",
-    "retryReason": "quota_retry_info",
-    "retryKind": "quota",
-    "retryAt": "2026-10-28T06:59:59.268370+00:00",
-    "quotaAccounts": {
-      "account-a": "2026-10-28T06:59:59.268370+00:00"
-    }
+    "accountId": "account-d"
   }
 }

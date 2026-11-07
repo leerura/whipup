@@ -1,0 +1,311 @@
+{
+  "videoId": "5FxCmvgLzlU",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/5FxCmvgLzlU",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:59:15.118107+00:00",
+    "rawResponse": "{\n  \"title\": \"치즈햄계란볶음밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"식용유 2스푼\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 2스푼\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 식용유 두 스푼을 둘러주고\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 반대\",\n      \"displayName\": \"대파\",\n      \"amount\": \"0.5\",\n      \"unit\": \"대\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 반대\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파 반대를 칼 도마 설거지하기 귀찮으니 대충 가위로 썰어서 올려주고\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통조림햄 절반\",\n      \"displayName\": \"통조림햄\",\n      \"amount\": \"0.5\",\n      \"unit\": \"캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"통조림햄 절반\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"명절날 받은 통조림 햄을 절반만 퍼서 봉지에 넣고\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 2알\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"알\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2알\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"빈 공간에는 계란 두 알을 톡톡 까서 올려주고\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"체다치즈 1장\",\n      \"displayName\": \"체다치즈\",\n      \"amount\": \"1\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"체다치즈 1장\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진한 고소함을 더해줄 슬라이스 치즈 한 장도 올려준 뒤에\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 1공기\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 1공기\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"전자레인지 돌리지 않은 밥 한 공기와\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 반스푼\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스 반 스푼만 넣고\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1/2스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1/2스푼\",\n          \"timestamp\": \"00:42\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 반 스푼\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돈까스소스 1스푼\",\n      \"displayName\": \"돈까스소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"돈까스소스 1스푼\",\n          \"timestamp\": \"00:45\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"돈까스 소스 한 스푼까지 넣어준 뒤에\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"모짜르트 치즈\",\n      \"displayName\": \"모짜렐라 치즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"모짜르트 치즈\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기서 조금 더 맛있게 먹고 싶다면 모짜르트 치즈를 소량 올려주고\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추만 뿌려주면 치즈햄계란볶음밥까지 완성됩니다.\",\n          \"timestamp\": \"00:58\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 식용유 2스푼을 두르고, 대파 반대를 가위로 썰어 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 식용유 두 스푼을 둘러주고 대파 반대를 칼 도마 설거지하기 귀찮으니 대충 가위로 썰어서 올려주고\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": null,\n      \"text\": \"통조림 햄 절반을 비닐봉지에 넣고 주물러서 으깬 뒤 팬에 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"명절날 받은 통조림 햄을 절반만 퍼서 봉지에 넣고 쪼물딱 쪼물딱거리면서 으깨어준 뒤에 그대로 다 넣어줍니다.\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파와 햄이 갈색빛이 돌 때까지 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"인자 대파와 햄을 갈색빛이 띌 때까지 볶아주다가\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볶은 재료를 팬 한쪽으로 밀어두고, 빈 공간에 계란 2알과 슬라이스 체다치즈 1장을 올려 치즈를 녹이며 계란 스크램블을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬 한쪽으로 밀쳐주고 빈 공간에는 계란 두 알을 톡톡 까서 올려주고 진한 고소함을 더해줄 슬라이스 치즈 한 장도 올려준 뒤에 치즈도 녹여주고 계란 스크램블을 만들어 줍니다.\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 약불로 줄이고, 전자레인지에 돌리지 않은 찬 밥 1공기, 굴소스 반 스푼, 설탕 1/2스푼, 돈까스소스 1스푼을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 불은 후 불면 꺼질듯한 약불로 내려주고 전자레인지 돌리지 않은 밥 한 공기와 햄이 맛 짭짤하기 때문에 굴소스 반 스푼만 넣고 설탕 반 스푼 집에 수돗물은 안 나와도 이건 꼭 있다는 돈까스 소스 한 스푼까지 넣어준 뒤에\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥알을 꾹꾹 눌러주면서 골고루 볶아 햄계란볶음밥을 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥알을 꾹꾹 눌러준다는 느낌으로 다 같이 한 번 볶아주면 햄계란볶음밥이 간단하게 완성됩니다.\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"text\": \"(선택) 취향에 따라 모짜렐라 치즈를 볶음밥 위에 올리고 토치나 뚜껑을 이용해 치즈를 녹인 뒤 후추를 뿌려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기서 조금 더 맛있게 먹고 싶다면 모짜르트 치즈를 소량 올려주고 뚜껑을 덮든 불로 지지든 치즈를 녹여주고 후추만 뿌려주면 치즈햄계란볶음밥까지 완성됩니다.\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "치즈햄계란볶음밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "식용유 2스푼",
+          "displayName": "식용유",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 2스푼",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 식용유 두 스푼을 둘러주고",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파 반대",
+          "displayName": "대파",
+          "amount": "0.5",
+          "unit": "대",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 반대",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파 반대를 칼 도마 설거지하기 귀찮으니 대충 가위로 썰어서 올려주고",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "통조림햄 절반",
+          "displayName": "통조림햄",
+          "amount": "0.5",
+          "unit": "캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "통조림햄 절반",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "명절날 받은 통조림 햄을 절반만 퍼서 봉지에 넣고",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "계란 2알",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "알",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2알",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "빈 공간에는 계란 두 알을 톡톡 까서 올려주고",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "체다치즈 1장",
+          "displayName": "체다치즈",
+          "amount": "1",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "체다치즈 1장",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진한 고소함을 더해줄 슬라이스 치즈 한 장도 올려준 뒤에",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "밥 1공기",
+          "displayName": "밥",
+          "amount": "1",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 1공기",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "전자레인지 돌리지 않은 밥 한 공기와",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "굴소스 반스푼",
+          "displayName": "굴소스",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "굴소스 반 스푼만 넣고",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "설탕 1/2스푼",
+          "displayName": "설탕",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1/2스푼",
+              "timestamp": "00:42"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 반 스푼",
+              "timestamp": "00:42"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "돈까스소스 1스푼",
+          "displayName": "돈까스소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "돈까스소스 1스푼",
+              "timestamp": "00:45"
+            },
+            {
+              "type": "SPEECH",
+              "text": "돈까스 소스 한 스푼까지 넣어준 뒤에",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "모짜르트 치즈",
+          "displayName": "모짜렐라 치즈",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "모짜르트 치즈",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기서 조금 더 맛있게 먹고 싶다면 모짜르트 치즈를 소량 올려주고",
+              "timestamp": "00:52"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후추만 뿌려주면 치즈햄계란볶음밥까지 완성됩니다.",
+              "timestamp": "00:58"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 식용유 2스푼을 두르고, 대파 반대를 가위로 썰어 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 식용유 두 스푼을 둘러주고 대파 반대를 칼 도마 설거지하기 귀찮으니 대충 가위로 썰어서 올려주고",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "rawText": null,
+          "text": "통조림 햄 절반을 비닐봉지에 넣고 주물러서 으깬 뒤 팬에 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "명절날 받은 통조림 햄을 절반만 퍼서 봉지에 넣고 쪼물딱 쪼물딱거리면서 으깨어준 뒤에 그대로 다 넣어줍니다.",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "대파와 햄이 갈색빛이 돌 때까지 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "인자 대파와 햄을 갈색빛이 띌 때까지 볶아주다가",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "볶은 재료를 팬 한쪽으로 밀어두고, 빈 공간에 계란 2알과 슬라이스 체다치즈 1장을 올려 치즈를 녹이며 계란 스크램블을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬 한쪽으로 밀쳐주고 빈 공간에는 계란 두 알을 톡톡 까서 올려주고 진한 고소함을 더해줄 슬라이스 치즈 한 장도 올려준 뒤에 치즈도 녹여주고 계란 스크램블을 만들어 줍니다.",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "불을 약불로 줄이고, 전자레인지에 돌리지 않은 찬 밥 1공기, 굴소스 반 스푼, 설탕 1/2스푼, 돈까스소스 1스푼을 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 불은 후 불면 꺼질듯한 약불로 내려주고 전자레인지 돌리지 않은 밥 한 공기와 햄이 맛 짭짤하기 때문에 굴소스 반 스푼만 넣고 설탕 반 스푼 집에 수돗물은 안 나와도 이건 꼭 있다는 돈까스 소스 한 스푼까지 넣어준 뒤에",
+              "timestamp": "00:35"
+            }
+          ]
+        },
+        {
+          "text": "밥알을 꾹꾹 눌러주면서 골고루 볶아 햄계란볶음밥을 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥알을 꾹꾹 눌러준다는 느낌으로 다 같이 한 번 볶아주면 햄계란볶음밥이 간단하게 완성됩니다.",
+              "timestamp": "00:46"
+            }
+          ]
+        },
+        {
+          "text": "(선택) 취향에 따라 모짜렐라 치즈를 볶음밥 위에 올리고 토치나 뚜껑을 이용해 치즈를 녹인 뒤 후추를 뿌려 마무리한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기서 조금 더 맛있게 먹고 싶다면 모짜르트 치즈를 소량 올려주고 뚜껑을 덮든 불로 지지든 치즈를 녹여주고 후추만 뿌려주면 치즈햄계란볶음밥까지 완성됩니다.",
+              "timestamp": "00:52"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

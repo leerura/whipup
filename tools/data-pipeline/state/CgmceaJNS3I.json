@@ -1,0 +1,475 @@
+{
+  "videoId": "CgmceaJNS3I",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/CgmceaJNS3I",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:58:47.577113+00:00",
+    "rawResponse": "{\n  \"title\": \"삼겹살 덮밥\",\n  \"description\": \"그냥 구워먹는 삼겹살이 지겨울 때 추천드리는 간편하게 만드는 삼겹살 덮밥 레시피입니다.\",\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"양파 반개(1/2개)\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 반개(1/2개)를\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 반개를 예쁘게 채썰어서 준비해 줍니다.\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다음으로 고명으로 사용 할 대파를 얇게 송송송 썰어 줍니다.\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파 대신 쪽파를 사용하시면 더 좋습니다. 둘 다 없다면 굳이 넣지 않으셔도 상관없습니다.\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"삼겹살 1인분(200g)\",\n      \"displayName\": \"삼겹살\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다음으로 삼겹살 1인분(200g)을 준비해 줍니다.\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기 두께는 요렇게 약 1cm 정도 되게 도톰한 녀석으로 준비해 주시면 됩니다.\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1T\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"단맛을 책임질 \\\"설탕 1T\\\"\",\n          \"timestamp\": \"00:57\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"단맛을 책임질 설탕 한 스푼\",\n          \"timestamp\": \"00:57\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1T\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"매콤함을 추가해줄 \\\"고춧가루 1T\\\"\",\n          \"timestamp\": \"00:59\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"매콤함을 추가해 줄 고춧가루 한 스푼\",\n          \"timestamp\": \"00:59\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후춧가루 1/4T\",\n      \"displayName\": \"후춧가루\",\n      \"amount\": \"1/4\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고기의 냄새를 잡아줄 \\\"후춧가루 1/4T\\\"과\",\n          \"timestamp\": \"01:02\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기의 냄새를 잡아줄 후춧가루 4분의 1스푼과\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1T\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"\\\"다진 마늘 1T\\\"\",\n          \"timestamp\": \"01:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘 한 스푼\",\n          \"timestamp\": \"01:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 2T\",\n      \"displayName\": \"간장\",\n      \"amount\": \"2\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"간을 맞춰줄 \\\"간장 2T\\\"과\",\n          \"timestamp\": \"01:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간을 맞춰 줄 간장 두 스푼과\",\n          \"timestamp\": \"01:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치액젓 1T\",\n      \"displayName\": \"참치액젓\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"맛을 한 단계 더 업그레이드 해줄 \\\"참치액젓 1T\\\"\",\n          \"timestamp\": \"01:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛을 한 단계 더 업그레이드해 줄 참치액젓 한 스푼\",\n          \"timestamp\": \"01:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물엿 1T\",\n      \"displayName\": \"물엿\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"추가로 단맛과 광택을 책임질 \\\"물엿 1T\\\"과\",\n          \"timestamp\": \"01:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"추가로 단맛과 광택을 책임질 물엿 한 스푼과\",\n          \"timestamp\": \"01:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물엿 대신 올리고당을 사용하셔도 됩니다.\",\n          \"timestamp\": \"01:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 4T에서 5T\",\n      \"displayName\": \"물\",\n      \"amount\": \"4~5\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"촉촉함과 모두가 잘 섞일 수 있도록 도와줄 \\\"물 4T에서 5T\\\"을 넣고\",\n          \"timestamp\": \"01:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"촉촉함과 모두가 잘 섞일 수 있도록 도와줄 물 네 스푼에서 다섯 스푼을 넣고\",\n          \"timestamp\": \"01:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"공기밥 1인분 (즉석밥 1개)\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1\",\n      \"unit\": \"인분\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 이쁜 그릇에 공기밥 1인분을 준비해 줍니다.\",\n          \"timestamp\": \"02:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"저는 즉석밥 1개를 넣어줬습니다.\",\n          \"timestamp\": \"02:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1T\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 고소함을 더해줄 참기름 1T을 뿌려주고\",\n          \"timestamp\": \"02:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 고소함을 더해 줄 참기름 한 스푼을 뿌려주고\",\n          \"timestamp\": \"02:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"없어도 되지만 있으면 먹음직스러운 통깨를 뿌려줍니다.\",\n          \"timestamp\": \"02:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"없어도 되지만 있으면 먹음직스러운 통깨를 뿌려줍니다.\",\n          \"timestamp\": \"02:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"삶은 달걀\",\n      \"displayName\": \"삶은 달걀\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"삶은 달걀을 반으로 잘라서 올려 줍니다.\",\n          \"timestamp\": \"02:52\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"좀 더 그럴싸하게 만들어주고 싶다면 삶은 달걀을 반으로 잘라서 올려 줍니다. 근데 나는 삶기가 귀찮다. 그럼 그냥 편의점에서 감동란 하나 가져와서 잘라서 올려주시면 됩니다.\",\n          \"timestamp\": \"02:50\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양파 반 개(1/2개)를 채 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 반개(1/2개)를 예쁘게 채썰어서 준비해줍니다.\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고명으로 사용할 대파(또는 쪽파)를 얇게 송송 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다음으로 고명으로 사용 할 대파를 얇게 송송송 썰어 줍니다.\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파 대신 쪽파를 사용하시면 더 좋습니다. 둘 다 없다면 굳이 넣지 않으셔도 상관없습니다.\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삼겹살 1인분(200g)을 약 1cm 정도 두께로 먹기 좋은 크기로 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다음으로 삼겹살 1인분(200g)을 준비해 줍니다.\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기 두께는 요렇게 약 1cm 정도 되게 도톰한 녀석으로 준비해 주시면 됩니다.\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양념장을 만든다. 그릇에 설탕 1T, 고춧가루 1T, 후춧가루 1/4T, 다진 마늘 1T, 간장 2T, 참치액젓 1T, 물엿 1T, 물 4~5T를 넣고 잘 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다음으로 양념장을 만들겠습니다.\",\n          \"timestamp\": \"00:55\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"잘 섞어주기만 하면 끝입니다.\",\n          \"timestamp\": \"01:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬의 불을 중강불로 켜고 달궈지면 썰어둔 삼겹살을 모두 올려 앞뒤로 노릇노릇하게 굽는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 팬의 불을 \\\"중강불\\\"로 켜줍니다.\",\n          \"timestamp\": \"01:34\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 팬이 달궈지면 고기를 모두 올려줍니다.\",\n          \"timestamp\": \"01:37\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 앞뒤로 고기를 노릇노릇하게 구워주시면 되는데요.\",\n          \"timestamp\": \"01:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삼겹살이 거의 다 익어가면 채 썰어 둔 양파를 넣고 고기 기름에 살짝 숨이 죽을 정도로 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 준비해둔 양파를 넣어줍니다.\",\n          \"timestamp\": \"01:56\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고기 기름에 양파가 살짝 숨이 죽을 정도로만 익혀주시면 되는데요.\",\n          \"timestamp\": \"01:58\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 숨이 죽으면 양념장을 붓고 불을 중불로 맞춘 후, 고기에 간이 잘 배도록 살짝 졸여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 준비해둔 양념장을 투하하고 불을 \\\"중불\\\"로 켜줍니다.\",\n          \"timestamp\": \"02:04\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양념장을 넣은 상태에서 \\\"중불\\\"로 한번 끓여주면서 고기에 간이 잘 베이도록 잠시 졸여주기만 하면 완성입니다.\",\n          \"timestamp\": \"02:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 공기밥 1인분을 담고 그 위에 양념과 양파를 얹은 뒤 구운 삼겹살을 보기 좋게 올려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 이쁜 그릇에 공기밥 1인분을 준비해 줍니다.\",\n          \"timestamp\": \"02:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥 위에 취향에 맞게 양념과 양파를 먼저 넣어주시고요. 그 위에 삼겹살을 예쁘게! 각자의 창의력을 발휘해서! 맛있게 나열해줍니다.\",\n          \"timestamp\": \"02:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"참기름 1T를 두르고 통깨를 뿌린 후, 썰어둔 대파(또는 쪽파)와 반으로 자른 삶은 달걀(선택 사항)을 올려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 고소함을 더해줄 참기름 1T을 뿌려주고 없어도 되지만 있으면 먹음직스러운 통깨를 뿌려줍니다.\",\n          \"timestamp\": \"02:34\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"추가로 색감을 더해 줄 대파 또는 쪽파를 올려주겠습니다.\",\n          \"timestamp\": \"02:41\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"삶은 달걀을 반으로 잘라서 올려 줍니다.\",\n          \"timestamp\": \"02:52\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "삼겹살 덮밥",
+      "description": "그냥 구워먹는 삼겹살이 지겨울 때 추천드리는 간편하게 만드는 삼겹살 덮밥 레시피입니다.",
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "양파 반개(1/2개)",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파 반개(1/2개)를",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파 반개를 예쁘게 채썰어서 준비해 줍니다.",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다음으로 고명으로 사용 할 대파를 얇게 송송송 썰어 줍니다.",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파 대신 쪽파를 사용하시면 더 좋습니다. 둘 다 없다면 굳이 넣지 않으셔도 상관없습니다.",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "삼겹살 1인분(200g)",
+          "displayName": "삼겹살",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다음으로 삼겹살 1인분(200g)을 준비해 줍니다.",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고기 두께는 요렇게 약 1cm 정도 되게 도톰한 녀석으로 준비해 주시면 됩니다.",
+              "timestamp": "00:50"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "설탕 1T",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "단맛을 책임질 \"설탕 1T\"",
+              "timestamp": "00:57"
+            },
+            {
+              "type": "SPEECH",
+              "text": "단맛을 책임질 설탕 한 스푼",
+              "timestamp": "00:57"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고춧가루 1T",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "매콤함을 추가해줄 \"고춧가루 1T\"",
+              "timestamp": "00:59"
+            },
+            {
+              "type": "SPEECH",
+              "text": "매콤함을 추가해 줄 고춧가루 한 스푼",
+              "timestamp": "00:59"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "후춧가루 1/4T",
+          "displayName": "후춧가루",
+          "amount": "1/4",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고기의 냄새를 잡아줄 \"후춧가루 1/4T\"과",
+              "timestamp": "01:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고기의 냄새를 잡아줄 후춧가루 4분의 1스푼과",
+              "timestamp": "01:02"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "다진 마늘 1T",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "\"다진 마늘 1T\"",
+              "timestamp": "01:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘 한 스푼",
+              "timestamp": "01:04"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "간장 2T",
+          "displayName": "간장",
+          "amount": "2",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "간을 맞춰줄 \"간장 2T\"과",
+              "timestamp": "01:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간을 맞춰 줄 간장 두 스푼과",
+              "timestamp": "01:06"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "참치액젓 1T",
+          "displayName": "참치액젓",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "맛을 한 단계 더 업그레이드 해줄 \"참치액젓 1T\"",
+              "timestamp": "01:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "맛을 한 단계 더 업그레이드해 줄 참치액젓 한 스푼",
+              "timestamp": "01:09"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "물엿 1T",
+          "displayName": "물엿",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "추가로 단맛과 광택을 책임질 \"물엿 1T\"과",
+              "timestamp": "01:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "추가로 단맛과 광택을 책임질 물엿 한 스푼과",
+              "timestamp": "01:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물엿 대신 올리고당을 사용하셔도 됩니다.",
+              "timestamp": "01:29"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "물 4T에서 5T",
+          "displayName": "물",
+          "amount": "4~5",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "촉촉함과 모두가 잘 섞일 수 있도록 도와줄 \"물 4T에서 5T\"을 넣고",
+              "timestamp": "01:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "촉촉함과 모두가 잘 섞일 수 있도록 도와줄 물 네 스푼에서 다섯 스푼을 넣고",
+              "timestamp": "01:16"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "공기밥 1인분 (즉석밥 1개)",
+          "displayName": "밥",
+          "amount": "1",
+          "unit": "인분",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 이쁜 그릇에 공기밥 1인분을 준비해 줍니다.",
+              "timestamp": "02:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "저는 즉석밥 1개를 넣어줬습니다.",
+              "timestamp": "02:22"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "참기름 1T",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 고소함을 더해줄 참기름 1T을 뿌려주고",
+              "timestamp": "02:34"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 고소함을 더해 줄 참기름 한 스푼을 뿌려주고",
+              "timestamp": "02:34"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "없어도 되지만 있으면 먹음직스러운 통깨를 뿌려줍니다.",
+              "timestamp": "02:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "없어도 되지만 있으면 먹음직스러운 통깨를 뿌려줍니다.",
+              "timestamp": "02:38"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "삶은 달걀",
+          "displayName": "삶은 달걀",
+          "amount": "1",
+          "unit": "개",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "삶은 달걀을 반으로 잘라서 올려 줍니다.",
+              "timestamp": "02:52"
+            },
+            {
+              "type": "SPEECH",
+              "text": "좀 더 그럴싸하게 만들어주고 싶다면 삶은 달걀을 반으로 잘라서 올려 줍니다. 근데 나는 삶기가 귀찮다. 그럼 그냥 편의점에서 감동란 하나 가져와서 잘라서 올려주시면 됩니다.",
+              "timestamp": "02:50"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양파 반 개(1/2개)를 채 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파 반개(1/2개)를 예쁘게 채썰어서 준비해줍니다.",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "고명으로 사용할 대파(또는 쪽파)를 얇게 송송 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다음으로 고명으로 사용 할 대파를 얇게 송송송 썰어 줍니다.",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파 대신 쪽파를 사용하시면 더 좋습니다. 둘 다 없다면 굳이 넣지 않으셔도 상관없습니다.",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "삼겹살 1인분(200g)을 약 1cm 정도 두께로 먹기 좋은 크기로 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다음으로 삼겹살 1인분(200g)을 준비해 줍니다.",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고기 두께는 요렇게 약 1cm 정도 되게 도톰한 녀석으로 준비해 주시면 됩니다.",
+              "timestamp": "00:50"
+            }
+          ]
+        },
+        {
+          "text": "양념장을 만든다. 그릇에 설탕 1T, 고춧가루 1T, 후춧가루 1/4T, 다진 마늘 1T, 간장 2T, 참치액젓 1T, 물엿 1T, 물 4~5T를 넣고 잘 섞어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다음으로 양념장을 만들겠습니다.",
+              "timestamp": "00:55"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "잘 섞어주기만 하면 끝입니다.",
+              "timestamp": "01:20"
+            }
+          ]
+        },
+        {
+          "text": "팬의 불을 중강불로 켜고 달궈지면 썰어둔 삼겹살을 모두 올려 앞뒤로 노릇노릇하게 굽는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 팬의 불을 \"중강불\"로 켜줍니다.",
+              "timestamp": "01:34"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 팬이 달궈지면 고기를 모두 올려줍니다.",
+              "timestamp": "01:37"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 앞뒤로 고기를 노릇노릇하게 구워주시면 되는데요.",
+              "timestamp": "01:45"
+            }
+          ]
+        },
+        {
+          "text": "삼겹살이 거의 다 익어가면 채 썰어 둔 양파를 넣고 고기 기름에 살짝 숨이 죽을 정도로 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 준비해둔 양파를 넣어줍니다.",
+              "timestamp": "01:56"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고기 기름에 양파가 살짝 숨이 죽을 정도로만 익혀주시면 되는데요.",
+              "timestamp": "01:58"
+            }
+          ]
+        },
+        {
+          "text": "양파 숨이 죽으면 양념장을 붓고 불을 중불로 맞춘 후, 고기에 간이 잘 배도록 살짝 졸여준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 준비해둔 양념장을 투하하고 불을 \"중불\"로 켜줍니다.",
+              "timestamp": "02:04"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양념장을 넣은 상태에서 \"중불\"로 한번 끓여주면서 고기에 간이 잘 베이도록 잠시 졸여주기만 하면 완성입니다.",
+              "timestamp": "02:08"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 공기밥 1인분을 담고 그 위에 양념과 양파를 얹은 뒤 구운 삼겹살을 보기 좋게 올려준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 이쁜 그릇에 공기밥 1인분을 준비해 줍니다.",
+              "timestamp": "02:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "밥 위에 취향에 맞게 양념과 양파를 먼저 넣어주시고요. 그 위에 삼겹살을 예쁘게! 각자의 창의력을 발휘해서! 맛있게 나열해줍니다.",
+              "timestamp": "02:24"
+            }
+          ]
+        },
+        {
+          "text": "참기름 1T를 두르고 통깨를 뿌린 후, 썰어둔 대파(또는 쪽파)와 반으로 자른 삶은 달걀(선택 사항)을 올려 완성한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 고소함을 더해줄 참기름 1T을 뿌려주고 없어도 되지만 있으면 먹음직스러운 통깨를 뿌려줍니다.",
+              "timestamp": "02:34"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "추가로 색감을 더해 줄 대파 또는 쪽파를 올려주겠습니다.",
+              "timestamp": "02:41"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "삶은 달걀을 반으로 잘라서 올려 줍니다.",
+              "timestamp": "02:52"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

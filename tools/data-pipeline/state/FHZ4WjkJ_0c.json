@@ -1,0 +1,550 @@
+{
+  "videoId": "FHZ4WjkJ_0c",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/FHZ4WjkJ_0c",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:54:12.766589+00:00",
+    "rawResponse": "{\n  \"title\": \"닭갈비\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"양파 중사이즈 한개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 중사이즈 한개 썰어 주세요.\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"당근 반개\",\n      \"displayName\": \"당근\",\n      \"amount\": \"0.5\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"당근 반개 어슷 썰어 주세요.\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고구마 중간 사이즈 한개\",\n      \"displayName\": \"고구마\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고구마 중간 사이즈 한개 썰어 주세요.\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 한개\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파 한개 썰어 주세요.\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깻잎 20장\",\n      \"displayName\": \"깻잎\",\n      \"amount\": \"20\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"깻잎 20장 썰어 주세요.\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양배추 400g\",\n      \"displayName\": \"양배추\",\n      \"amount\": \"400\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양배추 400g 썰어 주세요.\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마늘 2T\",\n      \"displayName\": \"마늘\",\n      \"amount\": \"2\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마늘 2T 다져 주세요.\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 2T\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"2\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 3T\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"3\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"미림 1T\",\n      \"displayName\": \"미림\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 3T\",\n      \"displayName\": \"간장\",\n      \"amount\": \"3\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1T\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"매실액 1T\",\n      \"displayName\": \"매실액\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 1T\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추가루 조금\",\n      \"displayName\": \"후추가루\",\n      \"amount\": \"조금\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 2T\",\n      \"displayName\": \"물\",\n      \"amount\": \"2\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"카레가루 1t\",\n      \"displayName\": \"카레가루\",\n      \"amount\": \"1\",\n      \"unit\": \"t\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"닭정육 500-600g (껍질까지 있는 닭다리살)\",\n      \"displayName\": \"닭정육\",\n      \"amount\": \"500-600\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"닭정육 500-600g 껍질까지 있는 닭다리살을 사용 하시면 됩니다.\",\n          \"timestamp\": \"01:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"약간의 미림\",\n      \"displayName\": \"미림\",\n      \"amount\": \"약간\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"약간의 미림과 소금을 앞뒤로 뿌려 주세요.\",\n          \"timestamp\": \"01:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"약간의 소금\",\n      \"displayName\": \"소금\",\n      \"amount\": \"약간\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"약간의 미림과 소금을 앞뒤로 뿌려 주세요.\",\n          \"timestamp\": \"01:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"약간의 기름\",\n      \"displayName\": \"기름\",\n      \"amount\": \"약간\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬을 달구고 약간의 기름에 닭정육을 먼저 구워 주세요.\",\n          \"timestamp\": \"01:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"떡사리 (치즈들어 있는 떡)\",\n      \"displayName\": \"떡사리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"떡사리도 넣어 주심 좋아요. 치즈들어 있는 떡을 넣었는데 맛 좋아요.\",\n          \"timestamp\": \"02:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막에 밥을 볶아 드셔도 됩니다.\",\n          \"timestamp\": \"03:20\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양파 중사이즈 한 개를 썰어 줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 중사이즈 한개 썰어 주세요.\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"당근 반 개를 어슷 썰어 줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"당근 반개 어슷 썰어 주세요.\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고구마 중간 사이즈 한 개를 썰어 줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고구마 중간 사이즈 한개 썰어 주세요.\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파 한 개를 썰어 줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파 한개 썰어 주세요.\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"깻잎 20장을 썰어 줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"깻잎 20장 썰어 주세요.\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양배추 400g을 썬 다음 잠시 물에 담갔다가 씻어 줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양배추 400g 썰어 주세요.\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양배추는 썬 다음 잠시 물에 담갔다가 씻어 주세요.\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마늘 2T 분량을 다져 줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마늘 2T 다져 주세요.\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 다진 마늘 2T, 설탕 2T, 고춧가루 3T, 미림 1T, 간장 3T, 참기름 1T, 매실액 1T, 고추장 1T, 후춧가루 조금, 물 2T, 카레가루 1t를 넣고 섞어 양념장을 만듭니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양념장을 섞어 주세요.\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"닭정육 500-600g의 앞뒤로 약간의 미림과 소금을 뿌려 밑간합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"닭정육 500-600g 껍질까지 있는 닭다리살을 사용 하시면 됩니다.\",\n          \"timestamp\": \"01:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"약간의 미림과 소금을 앞뒤로 뿌려 주세요.\",\n          \"timestamp\": \"01:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬을 달구고 약간의 기름을 두른 뒤 닭정육을 먼저 구워 줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬을 달구고 약간의 기름에 닭정육을 먼저 구워 주세요.\",\n          \"timestamp\": \"01:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"닭고기의 한쪽 면을 익힌 다음 썰어 놓은 채소(양파, 당근, 고구마, 대파, 양배추)를 넣어 줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"한쪽면을 익힌다음 썰어 놓은 야채를 넣어 주세요.\",\n          \"timestamp\": \"01:58\"\n        }\n      ]\n    },\n    {\n      \"text\": \"닭고기를 먹기 좋은 사이즈로 잘라 줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"닭은 먹기 좋은 사이즈로 썰어 주세요.\",\n          \"timestamp\": \"02:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양념장을 넣고 물이 생기지 않게 센 불에서 볶아 줍니다 (취향에 따라 떡사리를 함께 넣습니다).\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양념장을 넣고 볶아 주세요. 떡사리도 넣어 주심 좋아요. 치즈들어 있는 떡을 넣었는데 맛 좋아요.\",\n          \"timestamp\": \"02:29\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물이 생기지 않게 센불에 볶아 주심 좋아요.\",\n          \"timestamp\": \"02:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마지막에 깻잎을 넣어 함께 볶아 마무리합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"깻잎은 마지막에 넣어 주세요.\",\n          \"timestamp\": \"02:57\"\n        }\n      ]\n    },\n    {\n      \"text\": \"취향에 따라 남은 양념에 밥을 볶아 먹습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막에 밥을 볶아 드셔도 됩니다.\",\n          \"timestamp\": \"03:20\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "닭갈비",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "양파 중사이즈 한개",
+          "displayName": "양파",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파 중사이즈 한개 썰어 주세요.",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "당근 반개",
+          "displayName": "당근",
+          "amount": "0.5",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "당근 반개 어슷 썰어 주세요.",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "고구마 중간 사이즈 한개",
+          "displayName": "고구마",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고구마 중간 사이즈 한개 썰어 주세요.",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "대파 한개",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대파 한개 썰어 주세요.",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "깻잎 20장",
+          "displayName": "깻잎",
+          "amount": "20",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "깻잎 20장 썰어 주세요.",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "양배추 400g",
+          "displayName": "양배추",
+          "amount": "400",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양배추 400g 썰어 주세요.",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "마늘 2T",
+          "displayName": "마늘",
+          "amount": "2",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마늘 2T 다져 주세요.",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "설탕 2T",
+          "displayName": "설탕",
+          "amount": "2",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "고춧가루 3T",
+          "displayName": "고춧가루",
+          "amount": "3",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "미림 1T",
+          "displayName": "미림",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "간장 3T",
+          "displayName": "간장",
+          "amount": "3",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "참기름 1T",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "매실액 1T",
+          "displayName": "매실액",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "고추장 1T",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "후추가루 조금",
+          "displayName": "후추가루",
+          "amount": "조금",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "물 2T",
+          "displayName": "물",
+          "amount": "2",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "카레가루 1t",
+          "displayName": "카레가루",
+          "amount": "1",
+          "unit": "t",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        },
+        {
+          "rawText": "닭정육 500-600g (껍질까지 있는 닭다리살)",
+          "displayName": "닭정육",
+          "amount": "500-600",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "닭정육 500-600g 껍질까지 있는 닭다리살을 사용 하시면 됩니다.",
+              "timestamp": "01:11"
+            }
+          ],
+          "sourceId": "ingredient-18"
+        },
+        {
+          "rawText": "약간의 미림",
+          "displayName": "미림",
+          "amount": "약간",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "약간의 미림과 소금을 앞뒤로 뿌려 주세요.",
+              "timestamp": "01:15"
+            }
+          ],
+          "sourceId": "ingredient-19"
+        },
+        {
+          "rawText": "약간의 소금",
+          "displayName": "소금",
+          "amount": "약간",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "약간의 미림과 소금을 앞뒤로 뿌려 주세요.",
+              "timestamp": "01:15"
+            }
+          ],
+          "sourceId": "ingredient-20"
+        },
+        {
+          "rawText": "약간의 기름",
+          "displayName": "기름",
+          "amount": "약간",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "팬을 달구고 약간의 기름에 닭정육을 먼저 구워 주세요.",
+              "timestamp": "01:29"
+            }
+          ],
+          "sourceId": "ingredient-21"
+        },
+        {
+          "rawText": "떡사리 (치즈들어 있는 떡)",
+          "displayName": "떡사리",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "떡사리도 넣어 주심 좋아요. 치즈들어 있는 떡을 넣었는데 맛 좋아요.",
+              "timestamp": "02:29"
+            }
+          ],
+          "sourceId": "ingredient-22"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마지막에 밥을 볶아 드셔도 됩니다.",
+              "timestamp": "03:20"
+            }
+          ],
+          "sourceId": "ingredient-23"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양파 중사이즈 한 개를 썰어 줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파 중사이즈 한개 썰어 주세요.",
+              "timestamp": "00:02"
+            }
+          ]
+        },
+        {
+          "text": "당근 반 개를 어슷 썰어 줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "당근 반개 어슷 썰어 주세요.",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "고구마 중간 사이즈 한 개를 썰어 줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고구마 중간 사이즈 한개 썰어 주세요.",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "대파 한 개를 썰어 줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대파 한개 썰어 주세요.",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "깻잎 20장을 썰어 줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "깻잎 20장 썰어 주세요.",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "양배추 400g을 썬 다음 잠시 물에 담갔다가 씻어 줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양배추 400g 썰어 주세요.",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양배추는 썬 다음 잠시 물에 담갔다가 씻어 주세요.",
+              "timestamp": "00:32"
+            }
+          ]
+        },
+        {
+          "text": "마늘 2T 분량을 다져 줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마늘 2T 다져 주세요.",
+              "timestamp": "00:41"
+            }
+          ]
+        },
+        {
+          "text": "볼에 다진 마늘 2T, 설탕 2T, 고춧가루 3T, 미림 1T, 간장 3T, 참기름 1T, 매실액 1T, 고추장 1T, 후춧가루 조금, 물 2T, 카레가루 1t를 넣고 섞어 양념장을 만듭니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마늘 2T 설탕 2T 고춧가루 3T 미림 1T 간장 3T 참기름 1T 매실액 1T 고추장 1T 후추가루 조금 물 2T 카레가루 1t",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양념장을 섞어 주세요.",
+              "timestamp": "01:05"
+            }
+          ]
+        },
+        {
+          "text": "닭정육 500-600g의 앞뒤로 약간의 미림과 소금을 뿌려 밑간합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "닭정육 500-600g 껍질까지 있는 닭다리살을 사용 하시면 됩니다.",
+              "timestamp": "01:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "약간의 미림과 소금을 앞뒤로 뿌려 주세요.",
+              "timestamp": "01:15"
+            }
+          ]
+        },
+        {
+          "text": "팬을 달구고 약간의 기름을 두른 뒤 닭정육을 먼저 구워 줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "팬을 달구고 약간의 기름에 닭정육을 먼저 구워 주세요.",
+              "timestamp": "01:29"
+            }
+          ]
+        },
+        {
+          "text": "닭고기의 한쪽 면을 익힌 다음 썰어 놓은 채소(양파, 당근, 고구마, 대파, 양배추)를 넣어 줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "한쪽면을 익힌다음 썰어 놓은 야채를 넣어 주세요.",
+              "timestamp": "01:58"
+            }
+          ]
+        },
+        {
+          "text": "닭고기를 먹기 좋은 사이즈로 잘라 줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "닭은 먹기 좋은 사이즈로 썰어 주세요.",
+              "timestamp": "02:12"
+            }
+          ]
+        },
+        {
+          "text": "양념장을 넣고 물이 생기지 않게 센 불에서 볶아 줍니다 (취향에 따라 떡사리를 함께 넣습니다).",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양념장을 넣고 볶아 주세요. 떡사리도 넣어 주심 좋아요. 치즈들어 있는 떡을 넣었는데 맛 좋아요.",
+              "timestamp": "02:29"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물이 생기지 않게 센불에 볶아 주심 좋아요.",
+              "timestamp": "02:39"
+            }
+          ]
+        },
+        {
+          "text": "마지막에 깻잎을 넣어 함께 볶아 마무리합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "깻잎은 마지막에 넣어 주세요.",
+              "timestamp": "02:57"
+            }
+          ]
+        },
+        {
+          "text": "취향에 따라 남은 양념에 밥을 볶아 먹습니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마지막에 밥을 볶아 드셔도 됩니다.",
+              "timestamp": "03:20"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

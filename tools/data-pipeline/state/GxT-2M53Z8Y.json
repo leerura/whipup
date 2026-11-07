@@ -1,0 +1,410 @@
+{
+  "videoId": "GxT-2M53Z8Y",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/GxT-2M53Z8Y",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:32:29.892235+00:00",
+    "rawResponse": "{\n  \"title\": \"카페사장님 비법 김치 볶음밥\",\n  \"description\": null,\n  \"servings\": \"2인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"밥 2공기 400~420g\",\n      \"displayName\": \"밥\",\n      \"amount\": \"400~420\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 2공기 400~420g 을 넓은 접시에서 한김 식혀요\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 밥 2공기 400에서 420g을 준비해가 넓은 접시에서 한 김 식혀 줍니다\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"적당히 익은 김치 200~210g\",\n      \"displayName\": \"김치\",\n      \"amount\": \"200~210\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"적당히 익은 김치 밥무게의 절반 200~210g 을 기호에 맞게 썰기\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"적당히 익은 김치로 밥 무게의 절반 200에서 210g을 준비해가 기호에 맞도록 적당히 썰어줍니다\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 흰대 부분 40g\",\n      \"displayName\": \"대파 흰대\",\n      \"amount\": \"40\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 흰대 부분 40g 준비\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파는 흰 대 부분으로 40g을 준비해가\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 3스푼 18g\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 3스푼 18g 팬에 붓기\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식용유 세 스푼 18g을 팬에 부어 주시고\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치캔 작은거 100g, 1개\",\n      \"displayName\": \"참치캔\",\n      \"amount\": \"1\",\n      \"unit\": \"캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치캔 작은거 100g, 1개, 뚜껑 살짝 열어서\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치캔 작은 거 100g짜리 한 개 뚜껑을 쪼매만 뜯어가\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추가루 1.5스푼, 10g\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추가루 1.5스푼, 10g 넣고 약불 유지하고 1분 볶기\",\n          \"timestamp\": \"01:00\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 1.5스푼 약 10g을 넣고 약불을 유지한 채 1분 정도를 볶아 주시다가\",\n          \"timestamp\": \"01:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼 10g\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1스푼 10g 넣고 설탕이 골고루 퍼지게 섞어주고\",\n          \"timestamp\": \"01:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 한 스푼 10g을 넣고 설탕이 골고루 퍼지도록 섞어주신 다음에\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소고기 다시다 반스푼 4g\",\n      \"displayName\": \"소고기 다시다\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"사장님의 NO.1 핵심 비법 소고기 다시다 반스푼 4g\",\n          \"timestamp\": \"01:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"사장님의 넘버원 핵심 비법 소고기 다시다 반 스푼 4g과\",\n          \"timestamp\": \"01:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"미림 1스푼 8g\",\n      \"displayName\": \"미림\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치 전부 넣고 미림 1스푼 8g 투하\",\n          \"timestamp\": \"01:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"미림 한 스푼 8g을 부어 줍니다\",\n          \"timestamp\": \"01:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"볶음 김가루 적당히\",\n      \"displayName\": \"볶음 김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볶음 김가루를 적당히 뿌려서\",\n          \"timestamp\": \"01:50\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥을 너무 많이 넣어 가 간이 좀 싱거운데 하시면 요래 요래 볶음 김가루를 적당히 추가해가 만능 일꾼 김가루 파워로 볶음밥 간을 올려주셔도 됩니다\",\n          \"timestamp\": \"01:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란후라이\",\n      \"displayName\": \"계란후라이\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란후라이는 여러분의 선택으로 남기고 마무리~\",\n          \"timestamp\": \"01:56\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 후라이는 여러분의 선택으로 남겨 두고 마무리하겠습니다\",\n          \"timestamp\": \"01:56\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"밥 2공기(400~420g)를 넓은 접시에 넓게 펴 담아 수분을 날려주며 한 김 식힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 2공기 400~420g 을 넓은 접시에서 한김 식혀요\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥을 식힐때는 넓게 펴서 식히셔야\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"적당히 익은 김치 200~210g을 가위나 칼을 사용해 기호에 맞는 크기로 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"적당히 익은 김치 밥무게의 절반 200~210g 을 기호에 맞게 썰기\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파 흰 대 부분 40g을 반으로 자른 뒤 0.5cm 두께로 큼직하게 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 흰대 부분 40g 준비\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"반으로 잘라서 0.5cm 두께로 큼직하게 썰기\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유 3스푼(18g)을 붓고 썰어둔 대파를 넣은 후 중약불에서 약 2분간 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 3스푼 18g 팬에 붓기\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 넣고 불을 중약불로 올리고 볶아요\",\n          \"timestamp\": \"00:48\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불을 중약불로 올리가 대파를 조금 볶아 줍니다 2분 정도를 볶아 주시다가\",\n          \"timestamp\": \"00:49\"\n        }\n      ]\n    },\n    {\n      \"text\": \"참치캔(100g) 뚜껑을 살짝 열어 틈새로 나오는 참치 국물(기름)만 팬에 부어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치캔 작은거 100g, 1개, 뚜껑 살짝 열어서\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"틈새로 흘러 나오는 만큼만 부어주시고\",\n          \"timestamp\": \"00:57\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고춧가루 1.5스푼(10g)을 넣고 약불을 유지하며 1분간 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추가루 1.5스푼, 10g 넣고 약불 유지하고 1분 볶기\",\n          \"timestamp\": \"01:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"설탕 1스푼(10g)을 넣고 골고루 퍼지게 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1스푼 10g 넣고 설탕이 골고루 퍼지게 섞어주고\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"썰어둔 김치를 넣고 불을 중불로 올린 뒤 약 2분간 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치투하! 김치 넣고 중불로 올리고 2분 정도 볶아주다가\",\n          \"timestamp\": \"01:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소고기 다시다 0.5스푼(4g), 캔에 남은 참치 전량, 미림 1스푼(8g)을 팬에 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"사장님의 NO.1 핵심 비법 소고기 다시다 반스푼 4g\",\n          \"timestamp\": \"01:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치 전부 넣고 미림 1스푼 8g 투하\",\n          \"timestamp\": \"01:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 강불로 올리고 1~2분간 골고루 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"불을 강불로 올리고 1~2분 들들들 볶다가\",\n          \"timestamp\": \"01:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"식혀둔 밥을 넣고 흰 밥알이 보이지 않게 골고루 섞으면서 1~2분간 볶아 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식힌 밥 넣고 볶아주기~\",\n          \"timestamp\": \"01:27\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 넣고 흰부분 안보이게 섞으면서 1~2분 볶으면\",\n          \"timestamp\": \"01:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"간이 싱거울 경우 볶음 김가루를 적당히 뿌려 섞고, 기호에 따라 계란후라이를 올려 곁들인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볶음 김가루를 적당히 뿌려서\",\n          \"timestamp\": \"01:50\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란후라이는 여러분의 선택으로 남기고 마무리~\",\n          \"timestamp\": \"01:56\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "카페사장님 비법 김치 볶음밥",
+      "description": null,
+      "servings": "2인분",
+      "ingredients": [
+        {
+          "rawText": "밥 2공기 400~420g",
+          "displayName": "밥",
+          "amount": "400~420",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 2공기 400~420g 을 넓은 접시에서 한김 식혀요",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 밥 2공기 400에서 420g을 준비해가 넓은 접시에서 한 김 식혀 줍니다",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "적당히 익은 김치 200~210g",
+          "displayName": "김치",
+          "amount": "200~210",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "적당히 익은 김치 밥무게의 절반 200~210g 을 기호에 맞게 썰기",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "적당히 익은 김치로 밥 무게의 절반 200에서 210g을 준비해가 기호에 맞도록 적당히 썰어줍니다",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "대파 흰대 부분 40g",
+          "displayName": "대파 흰대",
+          "amount": "40",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 흰대 부분 40g 준비",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파는 흰 대 부분으로 40g을 준비해가",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "식용유 3스푼 18g",
+          "displayName": "식용유",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 3스푼 18g 팬에 붓기",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "SPEECH",
+              "text": "식용유 세 스푼 18g을 팬에 부어 주시고",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "참치캔 작은거 100g, 1개",
+          "displayName": "참치캔",
+          "amount": "1",
+          "unit": "캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치캔 작은거 100g, 1개, 뚜껑 살짝 열어서",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참치캔 작은 거 100g짜리 한 개 뚜껑을 쪼매만 뜯어가",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "고추가루 1.5스푼, 10g",
+          "displayName": "고춧가루",
+          "amount": "1.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추가루 1.5스푼, 10g 넣고 약불 유지하고 1분 볶기",
+              "timestamp": "01:00"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 1.5스푼 약 10g을 넣고 약불을 유지한 채 1분 정도를 볶아 주시다가",
+              "timestamp": "01:00"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "설탕 1스푼 10g",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1스푼 10g 넣고 설탕이 골고루 퍼지게 섞어주고",
+              "timestamp": "01:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 한 스푼 10g을 넣고 설탕이 골고루 퍼지도록 섞어주신 다음에",
+              "timestamp": "01:05"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "소고기 다시다 반스푼 4g",
+          "displayName": "소고기 다시다",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "사장님의 NO.1 핵심 비법 소고기 다시다 반스푼 4g",
+              "timestamp": "01:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "사장님의 넘버원 핵심 비법 소고기 다시다 반 스푼 4g과",
+              "timestamp": "01:14"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "미림 1스푼 8g",
+          "displayName": "미림",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치 전부 넣고 미림 1스푼 8g 투하",
+              "timestamp": "01:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "미림 한 스푼 8g을 부어 줍니다",
+              "timestamp": "01:19"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "볶음 김가루 적당히",
+          "displayName": "볶음 김가루",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볶음 김가루를 적당히 뿌려서",
+              "timestamp": "01:50"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밥을 너무 많이 넣어 가 간이 좀 싱거운데 하시면 요래 요래 볶음 김가루를 적당히 추가해가 만능 일꾼 김가루 파워로 볶음밥 간을 올려주셔도 됩니다",
+              "timestamp": "01:47"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "계란후라이",
+          "displayName": "계란후라이",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란후라이는 여러분의 선택으로 남기고 마무리~",
+              "timestamp": "01:56"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란 후라이는 여러분의 선택으로 남겨 두고 마무리하겠습니다",
+              "timestamp": "01:56"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "밥 2공기(400~420g)를 넓은 접시에 넓게 펴 담아 수분을 날려주며 한 김 식힌다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 2공기 400~420g 을 넓은 접시에서 한김 식혀요",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥을 식힐때는 넓게 펴서 식히셔야",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "적당히 익은 김치 200~210g을 가위나 칼을 사용해 기호에 맞는 크기로 썬다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "적당히 익은 김치 밥무게의 절반 200~210g 을 기호에 맞게 썰기",
+              "timestamp": "00:25"
+            }
+          ]
+        },
+        {
+          "text": "대파 흰 대 부분 40g을 반으로 자른 뒤 0.5cm 두께로 큼직하게 썬다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 흰대 부분 40g 준비",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "반으로 잘라서 0.5cm 두께로 큼직하게 썰기",
+              "timestamp": "00:37"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유 3스푼(18g)을 붓고 썰어둔 대파를 넣은 후 중약불에서 약 2분간 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 3스푼 18g 팬에 붓기",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 넣고 불을 중약불로 올리고 볶아요",
+              "timestamp": "00:48"
+            },
+            {
+              "type": "SPEECH",
+              "text": "불을 중약불로 올리가 대파를 조금 볶아 줍니다 2분 정도를 볶아 주시다가",
+              "timestamp": "00:49"
+            }
+          ]
+        },
+        {
+          "text": "참치캔(100g) 뚜껑을 살짝 열어 틈새로 나오는 참치 국물(기름)만 팬에 부어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치캔 작은거 100g, 1개, 뚜껑 살짝 열어서",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "틈새로 흘러 나오는 만큼만 부어주시고",
+              "timestamp": "00:57"
+            }
+          ]
+        },
+        {
+          "text": "고춧가루 1.5스푼(10g)을 넣고 약불을 유지하며 1분간 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추가루 1.5스푼, 10g 넣고 약불 유지하고 1분 볶기",
+              "timestamp": "01:00"
+            }
+          ]
+        },
+        {
+          "text": "설탕 1스푼(10g)을 넣고 골고루 퍼지게 섞어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1스푼 10g 넣고 설탕이 골고루 퍼지게 섞어주고",
+              "timestamp": "01:05"
+            }
+          ]
+        },
+        {
+          "text": "썰어둔 김치를 넣고 불을 중불로 올린 뒤 약 2분간 볶아준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치투하! 김치 넣고 중불로 올리고 2분 정도 볶아주다가",
+              "timestamp": "01:09"
+            }
+          ]
+        },
+        {
+          "text": "소고기 다시다 0.5스푼(4g), 캔에 남은 참치 전량, 미림 1스푼(8g)을 팬에 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "사장님의 NO.1 핵심 비법 소고기 다시다 반스푼 4g",
+              "timestamp": "01:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치 전부 넣고 미림 1스푼 8g 투하",
+              "timestamp": "01:18"
+            }
+          ]
+        },
+        {
+          "text": "불을 강불로 올리고 1~2분간 골고루 볶아준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "불을 강불로 올리고 1~2분 들들들 볶다가",
+              "timestamp": "01:22"
+            }
+          ]
+        },
+        {
+          "text": "식혀둔 밥을 넣고 흰 밥알이 보이지 않게 골고루 섞으면서 1~2분간 볶아 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식힌 밥 넣고 볶아주기~",
+              "timestamp": "01:27"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 넣고 흰부분 안보이게 섞으면서 1~2분 볶으면",
+              "timestamp": "01:39"
+            }
+          ]
+        },
+        {
+          "text": "간이 싱거울 경우 볶음 김가루를 적당히 뿌려 섞고, 기호에 따라 계란후라이를 올려 곁들인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볶음 김가루를 적당히 뿌려서",
+              "timestamp": "01:50"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란후라이는 여러분의 선택으로 남기고 마무리~",
+              "timestamp": "01:56"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

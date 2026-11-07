@@ -1,0 +1,470 @@
+{
+  "videoId": "lH7bRtdQZ9k",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/lH7bRtdQZ9k",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:40:44.810204+00:00",
+    "rawResponse": "{\n  \"title\": \"두부볶음\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"부침용 두부 1모(500g)\",\n      \"displayName\": \"두부\",\n      \"amount\": \"1\",\n      \"unit\": \"모\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"부침용 두부를 500g짜리 한 모 준비한 다음\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"두부 1모(500g) 준비해서 먹기좋은 크기로 잘라주세요.\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"실파 (5~6가닥)\",\n      \"displayName\": \"실파\",\n      \"amount\": \"5~6\",\n      \"unit\": \"가닥\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"실파 5~6가닥을 준비해서 작게 송송 썰어주세요.\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"실파 (5~6가닥)를 작게 송송 썰어주세요.\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/2개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 반 개를 준비한 다음 두부와 비슷한 크기로 썰어주시고요.\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 1/2개를 두부와 비슷한 크기로 썰어주세요.\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양조간장(또는 진간장) 3스푼(30g)\",\n      \"displayName\": \"양조간장\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양조간장 3스푼 넣고\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양조간장(또는 진간장) 3스푼(30g) 넣어주세요.\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장 ×3\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1스푼(18g)\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스도 한 스푼 넣어주세요.\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"굴소스 1스푼(18g) 넣어주세요.\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 ×1\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"조청(또는 물엿) 1스푼(13g)\",\n      \"displayName\": \"조청\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"조청 한 스푼\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"조청(또는 물엿) 1스푼(13g) 넣어주세요.\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"조청(쌀엿) ×1\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"매실액 1스푼(10g)\",\n      \"displayName\": \"매실액\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"매실액도 한 스푼 넣어주세요.\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"매실액 1스푼(10g) 넣어주세요.\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"매실액 ×1\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1스푼(20g)\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘 한 스푼과\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진 마늘 1스푼(20g) 넣어주세요.\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 ×1\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 2스푼(20g)\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술 2스푼도 넣어주시고요.\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"맛술 2스푼(20g) 넣어주세요.\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 ×2\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1/2스푼(4g)\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 반 스푼 넣고\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루 1/2스푼(4g) 넣어주세요.\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 ×0.5\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 3스푼 정도\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식용유를 3스푼 정도 두르고\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬에 식용유를 3스푼 정도 둘러주세요.\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1스푼\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름 한 스푼\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참기름 1스푼 넣어주세요.\",\n          \"timestamp\": \"01:28\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름\",\n          \"timestamp\": \"01:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨 1스푼\",\n      \"displayName\": \"통깨\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"통깨 한 스푼을 넣고\",\n          \"timestamp\": \"01:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"통깨 1스푼 넣어주세요.\",\n          \"timestamp\": \"01:30\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"통깨 ×1\",\n          \"timestamp\": \"01:30\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"부침용 두부 1모(500g)를 4등분하고 옆으로 눕혀 반으로 자른 뒤 다시 4등분하여 한 입 크기로 깍둑썰기한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"부침용 두부를 500g짜리 한 모 준비한 다음 4등분하고 옆으로 눕혀 반으로 자르고 한 번 더 4등분해서 한 입에 먹기 좋은 크기로 만들어 주세요.\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"두부 1모(500g) 준비해서 먹기좋은 크기로 잘라주세요.\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"실파 5~6가닥을 잘게 송송 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"실파 5~6가닥을 준비해서 작게 송송 썰어주세요.\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"실파 (5~6가닥)를 작게 송송 썰어주세요.\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 1/2개를 두부와 비슷한 크기로 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 반 개를 준비한 다음 두부와 비슷한 크기로 썰어주시고요.\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 1/2개를 두부와 비슷한 크기로 썰어주세요.\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 양조간장 3스푼(30g), 굴소스 1스푼(18g), 조청 1스푼(13g), 매실액 1스푼(10g), 다진 마늘 1스푼(20g), 맛술 2스푼(20g), 고춧가루 1/2스푼(4g)을 넣고 잘 섞어 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 양조간장 3스푼 넣고 굴소스도 한 스푼 넣어주세요. 은은한 단맛을 위해 조청 한 스푼, 약간의 산미로 입맛을 돋워줄 매실액도 한 스푼 넣어주세요. 다진 마늘 한 스푼과 맛술 2스푼도 넣어주시고요. 마지막으로 고춧가루 반 스푼 넣고 잘 섞어서 양념장을 완성시켜 주세요.\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"잘 섞어주세요.\",\n          \"timestamp\": \"00:49\"\n        }\n      ]\n    },\n    {\n      \"text\": \"달궈진 팬에 식용유를 3스푼 정도 두르고 중불에서 두부를 올려 모든 면이 갈색빛이 돌 때까지 부쳐준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"달궈진 팬에 식용유를 3스푼 정도 두르고 썰어놓았던 두부를 부쳐주세요. 불세기를 중불로 조절한 다음 두부의 고소한 맛과 식감을 위해 모든 면을 갈색빛이 띨 때까지 부쳐주세요.\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불세기 중 불에서 부쳐주세요.\",\n          \"timestamp\": \"01:01\"\n        }\n      ]\n    },\n    {\n      \"text\": \"두부의 마지막 남은 한 면을 부칠 때 썰어놓은 양파를 함께 넣고 부친다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 남은 한 면을 부칠 때 썰어놓았던 양파를 같이 넣어주세요.\",\n          \"timestamp\": \"01:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"썰어놓은 양파를 넣고 부쳐주세요.\",\n          \"timestamp\": \"01:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"두부의 마지막 면이 갈색빛을 띨 때쯤 양념장을 붓고, 불세기를 중불로 유지하며 양념이 조려질 때까지 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"두부의 마지막 면이 갈색빛을 띨 때쯤 만들어놓았던 양념장을 부어주세요. 불세기를 계속 중불로 유지한 상태에서 양념이 조려질 때까지 볶아주세요.\",\n          \"timestamp\": \"01:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불세기 중 불에서 볶아주세요.\",\n          \"timestamp\": \"01:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양념이 충분히 조려졌을 때 참기름 1스푼과 통깨 1스푼을 넣고 잘 섞으면서 한 번 더 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양념이 충분히 조려졌을 때 참기름 한 스푼 그리고 통깨 한 스푼을 넣고 한 번 더 볶아주세요.\",\n          \"timestamp\": \"01:26\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"잘 섞으면서 볶아주세요.\",\n          \"timestamp\": \"01:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 끄고 썰어둔 실파를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 불을 끄고 작게 송송 썰어놓았던 실파를 뿌려주세요. 그러면 세상 맛있는 반찬 두부볶음이 완성됩니다.\",\n          \"timestamp\": \"01:37\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불을 끄고 실파를 뿌려주세요.\",\n          \"timestamp\": \"01:38\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "두부볶음",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "부침용 두부 1모(500g)",
+          "displayName": "두부",
+          "amount": "1",
+          "unit": "모",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "부침용 두부를 500g짜리 한 모 준비한 다음",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "두부 1모(500g) 준비해서 먹기좋은 크기로 잘라주세요.",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "실파 (5~6가닥)",
+          "displayName": "실파",
+          "amount": "5~6",
+          "unit": "가닥",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "실파 5~6가닥을 준비해서 작게 송송 썰어주세요.",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "실파 (5~6가닥)를 작게 송송 썰어주세요.",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "양파 1/2개",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 반 개를 준비한 다음 두부와 비슷한 크기로 썰어주시고요.",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파 1/2개를 두부와 비슷한 크기로 썰어주세요.",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양조간장(또는 진간장) 3스푼(30g)",
+          "displayName": "양조간장",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양조간장 3스푼 넣고",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양조간장(또는 진간장) 3스푼(30g) 넣어주세요.",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장 ×3",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "굴소스 1스푼(18g)",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "굴소스도 한 스푼 넣어주세요.",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "굴소스 1스푼(18g) 넣어주세요.",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 ×1",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "조청(또는 물엿) 1스푼(13g)",
+          "displayName": "조청",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "조청 한 스푼",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "조청(또는 물엿) 1스푼(13g) 넣어주세요.",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "조청(쌀엿) ×1",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "매실액 1스푼(10g)",
+          "displayName": "매실액",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "매실액도 한 스푼 넣어주세요.",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "매실액 1스푼(10g) 넣어주세요.",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "매실액 ×1",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "다진 마늘 1스푼(20g)",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘 한 스푼과",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다진 마늘 1스푼(20g) 넣어주세요.",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 ×1",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "맛술 2스푼(20g)",
+          "displayName": "맛술",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "맛술 2스푼도 넣어주시고요.",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "맛술 2스푼(20g) 넣어주세요.",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 ×2",
+              "timestamp": "00:43"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "고춧가루 1/2스푼(4g)",
+          "displayName": "고춧가루",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 반 스푼 넣고",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루 1/2스푼(4g) 넣어주세요.",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 ×0.5",
+              "timestamp": "00:46"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "식용유 3스푼 정도",
+          "displayName": "식용유",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "식용유를 3스푼 정도 두르고",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "팬에 식용유를 3스푼 정도 둘러주세요.",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "참기름 1스푼",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "참기름 한 스푼",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "참기름 1스푼 넣어주세요.",
+              "timestamp": "01:28"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름",
+              "timestamp": "01:27"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "통깨 1스푼",
+          "displayName": "통깨",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "통깨 한 스푼을 넣고",
+              "timestamp": "01:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "통깨 1스푼 넣어주세요.",
+              "timestamp": "01:30"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "통깨 ×1",
+              "timestamp": "01:30"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "부침용 두부 1모(500g)를 4등분하고 옆으로 눕혀 반으로 자른 뒤 다시 4등분하여 한 입 크기로 깍둑썰기한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "부침용 두부를 500g짜리 한 모 준비한 다음 4등분하고 옆으로 눕혀 반으로 자르고 한 번 더 4등분해서 한 입에 먹기 좋은 크기로 만들어 주세요.",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "두부 1모(500g) 준비해서 먹기좋은 크기로 잘라주세요.",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "실파 5~6가닥을 잘게 송송 썰어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "실파 5~6가닥을 준비해서 작게 송송 썰어주세요.",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "실파 (5~6가닥)를 작게 송송 썰어주세요.",
+              "timestamp": "00:19"
+            }
+          ]
+        },
+        {
+          "text": "양파 1/2개를 두부와 비슷한 크기로 썰어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 반 개를 준비한 다음 두부와 비슷한 크기로 썰어주시고요.",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파 1/2개를 두부와 비슷한 크기로 썰어주세요.",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 양조간장 3스푼(30g), 굴소스 1스푼(18g), 조청 1스푼(13g), 매실액 1스푼(10g), 다진 마늘 1스푼(20g), 맛술 2스푼(20g), 고춧가루 1/2스푼(4g)을 넣고 잘 섞어 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 양조간장 3스푼 넣고 굴소스도 한 스푼 넣어주세요. 은은한 단맛을 위해 조청 한 스푼, 약간의 산미로 입맛을 돋워줄 매실액도 한 스푼 넣어주세요. 다진 마늘 한 스푼과 맛술 2스푼도 넣어주시고요. 마지막으로 고춧가루 반 스푼 넣고 잘 섞어서 양념장을 완성시켜 주세요.",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "잘 섞어주세요.",
+              "timestamp": "00:49"
+            }
+          ]
+        },
+        {
+          "text": "달궈진 팬에 식용유를 3스푼 정도 두르고 중불에서 두부를 올려 모든 면이 갈색빛이 돌 때까지 부쳐준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "달궈진 팬에 식용유를 3스푼 정도 두르고 썰어놓았던 두부를 부쳐주세요. 불세기를 중불로 조절한 다음 두부의 고소한 맛과 식감을 위해 모든 면을 갈색빛이 띨 때까지 부쳐주세요.",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "불세기 중 불에서 부쳐주세요.",
+              "timestamp": "01:01"
+            }
+          ]
+        },
+        {
+          "text": "두부의 마지막 남은 한 면을 부칠 때 썰어놓은 양파를 함께 넣고 부친다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 남은 한 면을 부칠 때 썰어놓았던 양파를 같이 넣어주세요.",
+              "timestamp": "01:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "썰어놓은 양파를 넣고 부쳐주세요.",
+              "timestamp": "01:11"
+            }
+          ]
+        },
+        {
+          "text": "두부의 마지막 면이 갈색빛을 띨 때쯤 양념장을 붓고, 불세기를 중불로 유지하며 양념이 조려질 때까지 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "두부의 마지막 면이 갈색빛을 띨 때쯤 만들어놓았던 양념장을 부어주세요. 불세기를 계속 중불로 유지한 상태에서 양념이 조려질 때까지 볶아주세요.",
+              "timestamp": "01:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "불세기 중 불에서 볶아주세요.",
+              "timestamp": "01:22"
+            }
+          ]
+        },
+        {
+          "text": "양념이 충분히 조려졌을 때 참기름 1스푼과 통깨 1스푼을 넣고 잘 섞으면서 한 번 더 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양념이 충분히 조려졌을 때 참기름 한 스푼 그리고 통깨 한 스푼을 넣고 한 번 더 볶아주세요.",
+              "timestamp": "01:26"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "잘 섞으면서 볶아주세요.",
+              "timestamp": "01:34"
+            }
+          ]
+        },
+        {
+          "text": "불을 끄고 썰어둔 실파를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 불을 끄고 작게 송송 썰어놓았던 실파를 뿌려주세요. 그러면 세상 맛있는 반찬 두부볶음이 완성됩니다.",
+              "timestamp": "01:37"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "불을 끄고 실파를 뿌려주세요.",
+              "timestamp": "01:38"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

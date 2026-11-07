@@ -1,0 +1,290 @@
+{
+  "videoId": "dHaPmBmKNEU",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/dHaPmBmKNEU",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:43:54.056840+00:00",
+    "rawResponse": "{\n  \"title\": \"삼겹살감자조림\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"두툼한 통 삼겹살 500g\",\n      \"displayName\": \"통 삼겹살\",\n      \"amount\": \"500\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 두툼한 통 삼겹살을 500g 준비해줍니다.\",\n          \"timestamp\": \"0:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 두툼한 통 삼겹살을 500g 준비해줍니다.\",\n          \"timestamp\": \"0:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"비슷한 양으로 감자 (3개)\",\n      \"displayName\": \"감자\",\n      \"amount\": \"3\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"추가로 비슷한 양으로 감자도 준비해 준 뒤\",\n          \"timestamp\": \"0:21\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"손에 껍질을 벗긴 감자 3개를 보여줌\",\n          \"timestamp\": \"0:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"콜라 500ml\",\n      \"displayName\": \"콜라\",\n      \"amount\": \"500\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"콜라 하나를 그대로 500ml 다 부어줍니다.\",\n          \"timestamp\": \"0:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그대로 500ml 다 부어줍니다.\",\n          \"timestamp\": \"0:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 1스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 진간장 1스푼과\",\n          \"timestamp\": \"0:36\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 진간장 1스푼과\",\n          \"timestamp\": \"0:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 4스푼\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"4\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스를 4스푼 넣어줍니다.\",\n          \"timestamp\": \"0:39\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"굴소스를 4스푼 넣어줍니다.\",\n          \"timestamp\": \"0:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 두 개\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 청양고추 두개도 올려준 뒤\",\n          \"timestamp\": \"0:41\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 청양고추 두개도 올려준 뒤\",\n          \"timestamp\": \"0:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨 약간\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 통깨만 살짝 뿌려주면\",\n          \"timestamp\": \"1:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 통깨만 살짝 뿌려주면\",\n          \"timestamp\": \"1:05\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"통삼겹살 500g을 두툼한 크기로 숭덩숭덩 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"두툼한 크기가 나오도록 숭덩숭덩 썰어줍니다.\",\n          \"timestamp\": \"0:17\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"두툼한 크기가 나오도록 숭덩숭덩 썰어줍니다.\",\n          \"timestamp\": \"0:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"감자를 삼겹살과 비슷한 크기로 큼지막하게 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"삼겹살과 비슷한 크기가 나오도록 큼지막하게 썰어줍니다.\",\n          \"timestamp\": \"0:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"삼겹살과 비슷한 크기가 나오도록 큼지막하게 썰어줍니다.\",\n          \"timestamp\": \"0:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 썰어놓은 삼겹살과 감자를 모두 올려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬에 썰어 놓은 삼겹살과 감자를 다 올려주고\",\n          \"timestamp\": \"0:27\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 팬에 썰어 놓은 삼겹살과 감자를 다 올려주고\",\n          \"timestamp\": \"0:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"콜라 500ml를 팬에 모두 붓는다 (제로콜라는 사용하지 않는다).\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"콜라 하나를 그대로 500ml 다 부어줍니다. 참고로 제로콜라는 안됩니다잉.\",\n          \"timestamp\": \"0:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그대로 500ml 다 부어줍니다. 참고로 제로콜라는 안됩니다잉\",\n          \"timestamp\": \"0:32\"\n        }\n      ]\n    },\n    {\n      \"text\": \"진간장 1스푼, 굴소스 4스푼을 넣고 청양고추 2개를 올려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 진간장 1스푼과 따로 육수를 우려내지 않기 때문에 굴소스를 4스푼 넣어줍니다. 여기에 청양고추 두개도 올려준 뒤\",\n          \"timestamp\": \"0:36\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 진간장 1스푼과 굴소스를 4스푼 넣어줍니다. 여기에 청양고추 두개도 올려준 뒤\",\n          \"timestamp\": \"0:36\"\n        }\n      ]\n    },\n    {\n      \"text\": \"콜라가 끓기 시작하면 뚜껑을 덮고 삼겹살과 감자가 익을 때까지 15분간 푹 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"콜라가 보글보글 끓기 시작하면 뚜껑 덮고 삼겹살과 감자가 익을 때까지 15분간 푹 끓여줍니다.\",\n          \"timestamp\": \"0:43\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"콜라가 보글보글 끓기 시작하면 뚜껑 덮고 삼겹살과 감자가 익을 때까지 15분간 푹 끓여줍니다.\",\n          \"timestamp\": \"0:43\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삼겹살이 부드럽게 잘 익으면 뚜껑을 열고 콜라가 자박자박한 양념 소스 느낌이 날 때까지 졸여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 삼겹살이 제 피부처럼 보들보들하게 잘 익었으면 뚜껑을 열고 콜라가 자박자박한 양념 소스 느낌이 날 때까지 졸여주시면 됩니다.\",\n          \"timestamp\": \"0:58\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 삼겹살이 제 피부처럼 보들보들하게 잘 익었으면 뚜껑을 열고 콜라가 자박자박한 양념 소스 느낌이 날 때까지 졸여주시면 됩니다.\",\n          \"timestamp\": \"0:58\"\n        }\n      ]\n    },\n    {\n      \"text\": \"통깨를 살짝 뿌려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 통깨만 살짝 뿌려주면\",\n          \"timestamp\": \"1:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 통깨만 살짝 뿌려주면\",\n          \"timestamp\": \"1:05\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "삼겹살감자조림",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "두툼한 통 삼겹살 500g",
+          "displayName": "통 삼겹살",
+          "amount": "500",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 두툼한 통 삼겹살을 500g 준비해줍니다.",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 두툼한 통 삼겹살을 500g 준비해줍니다.",
+              "timestamp": "0:13"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "비슷한 양으로 감자 (3개)",
+          "displayName": "감자",
+          "amount": "3",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "추가로 비슷한 양으로 감자도 준비해 준 뒤",
+              "timestamp": "0:21"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "손에 껍질을 벗긴 감자 3개를 보여줌",
+              "timestamp": "0:21"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "콜라 500ml",
+          "displayName": "콜라",
+          "amount": "500",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "콜라 하나를 그대로 500ml 다 부어줍니다.",
+              "timestamp": "0:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그대로 500ml 다 부어줍니다.",
+              "timestamp": "0:32"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "진간장 1스푼",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 진간장 1스푼과",
+              "timestamp": "0:36"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 진간장 1스푼과",
+              "timestamp": "0:36"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "굴소스 4스푼",
+          "displayName": "굴소스",
+          "amount": "4",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "굴소스를 4스푼 넣어줍니다.",
+              "timestamp": "0:39"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "굴소스를 4스푼 넣어줍니다.",
+              "timestamp": "0:39"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "청양고추 두 개",
+          "displayName": "청양고추",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 청양고추 두개도 올려준 뒤",
+              "timestamp": "0:41"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 청양고추 두개도 올려준 뒤",
+              "timestamp": "0:41"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "통깨 약간",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 통깨만 살짝 뿌려주면",
+              "timestamp": "1:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 통깨만 살짝 뿌려주면",
+              "timestamp": "1:05"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "통삼겹살 500g을 두툼한 크기로 숭덩숭덩 썰어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "두툼한 크기가 나오도록 숭덩숭덩 썰어줍니다.",
+              "timestamp": "0:17"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "두툼한 크기가 나오도록 숭덩숭덩 썰어줍니다.",
+              "timestamp": "0:17"
+            }
+          ]
+        },
+        {
+          "text": "감자를 삼겹살과 비슷한 크기로 큼지막하게 썰어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "삼겹살과 비슷한 크기가 나오도록 큼지막하게 썰어줍니다.",
+              "timestamp": "0:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "삼겹살과 비슷한 크기가 나오도록 큼지막하게 썰어줍니다.",
+              "timestamp": "0:23"
+            }
+          ]
+        },
+        {
+          "text": "팬에 썰어놓은 삼겹살과 감자를 모두 올려준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 팬에 썰어 놓은 삼겹살과 감자를 다 올려주고",
+              "timestamp": "0:27"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 팬에 썰어 놓은 삼겹살과 감자를 다 올려주고",
+              "timestamp": "0:27"
+            }
+          ]
+        },
+        {
+          "text": "콜라 500ml를 팬에 모두 붓는다 (제로콜라는 사용하지 않는다).",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "콜라 하나를 그대로 500ml 다 부어줍니다. 참고로 제로콜라는 안됩니다잉.",
+              "timestamp": "0:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그대로 500ml 다 부어줍니다. 참고로 제로콜라는 안됩니다잉",
+              "timestamp": "0:32"
+            }
+          ]
+        },
+        {
+          "text": "진간장 1스푼, 굴소스 4스푼을 넣고 청양고추 2개를 올려준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 진간장 1스푼과 따로 육수를 우려내지 않기 때문에 굴소스를 4스푼 넣어줍니다. 여기에 청양고추 두개도 올려준 뒤",
+              "timestamp": "0:36"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 진간장 1스푼과 굴소스를 4스푼 넣어줍니다. 여기에 청양고추 두개도 올려준 뒤",
+              "timestamp": "0:36"
+            }
+          ]
+        },
+        {
+          "text": "콜라가 끓기 시작하면 뚜껑을 덮고 삼겹살과 감자가 익을 때까지 15분간 푹 끓여준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "콜라가 보글보글 끓기 시작하면 뚜껑 덮고 삼겹살과 감자가 익을 때까지 15분간 푹 끓여줍니다.",
+              "timestamp": "0:43"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "콜라가 보글보글 끓기 시작하면 뚜껑 덮고 삼겹살과 감자가 익을 때까지 15분간 푹 끓여줍니다.",
+              "timestamp": "0:43"
+            }
+          ]
+        },
+        {
+          "text": "삼겹살이 부드럽게 잘 익으면 뚜껑을 열고 콜라가 자박자박한 양념 소스 느낌이 날 때까지 졸여준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 삼겹살이 제 피부처럼 보들보들하게 잘 익었으면 뚜껑을 열고 콜라가 자박자박한 양념 소스 느낌이 날 때까지 졸여주시면 됩니다.",
+              "timestamp": "0:58"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 삼겹살이 제 피부처럼 보들보들하게 잘 익었으면 뚜껑을 열고 콜라가 자박자박한 양념 소스 느낌이 날 때까지 졸여주시면 됩니다.",
+              "timestamp": "0:58"
+            }
+          ]
+        },
+        {
+          "text": "통깨를 살짝 뿌려 마무리한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 통깨만 살짝 뿌려주면",
+              "timestamp": "1:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 통깨만 살짝 뿌려주면",
+              "timestamp": "1:05"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

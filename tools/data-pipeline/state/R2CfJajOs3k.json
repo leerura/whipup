@@ -1,0 +1,415 @@
+{
+  "videoId": "R2CfJajOs3k",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/R2CfJajOs3k",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:34:19.819799+00:00",
+    "rawResponse": "{\n  \"title\": \"제육볶음\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"삼겹살(오겹살) 500g\",\n      \"displayName\": \"삼겹살(오겹살)\",\n      \"amount\": \"500\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"삼겹살(오겹살) 500g\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"먼저 삼겹살(오겹살) 500g을 먹기좋은 크기로 썰어줍니다\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/2개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/2개\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/2개를 도톰하게 채썰어줍니다\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 1대\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"대\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 1대\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 1대를 반으로 갈라 길게 썰어줍니다\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마늘 10알\",\n      \"displayName\": \"마늘\",\n      \"amount\": \"10\",\n      \"unit\": \"알\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마늘 10알\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마늘 10알을 편썰어줍니다\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 1개\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 1개\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 1개를 어슷썰어줍니다\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양조(진)간장 2큰술\",\n      \"displayName\": \"양조(진)간장\",\n      \"amount\": \"2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조(진)간장 2큰술\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조(진)간장 2큰술\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1.5큰술\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1.5\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1.5큰술\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1큰술과 고춧가루 1.5큰술을 넣고 볶아줍니다(중불)\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 2큰술\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 2큰술\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 2큰술을 넣고 볶아 감칠맛을 올리고 불향을 내줍니다\",\n          \"timestamp\": \"01:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 1큰술\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 1큰술\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 1큰술을 넣고 볶아주다가\",\n          \"timestamp\": \"01:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1큰술\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1큰술\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1큰술과 고춧가루 1.5큰술을 넣고 볶아줍니다(중불)\",\n          \"timestamp\": \"01:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1큰술\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1큰술\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"숨이 살짝 죽으면 불을 끄고 후추와 참기름 1큰술을 넣어줍니다\",\n          \"timestamp\": \"01:51\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"숨이 살짝 죽으면 불을 끄고 후추와 참기름 1큰술을 넣어줍니다\",\n          \"timestamp\": \"01:51\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"삼겹살(오겹살) 500g을 먹기 좋은 크기로 썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"먼저 삼겹살(오겹살) 500g을 먹기좋은 크기로 썰어줍니다\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 1/2개를 도톰하게 채썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/2개를 도톰하게 채썰어줍니다\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파 1대를 반으로 갈라 길게 썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 1대를 반으로 갈라 길게 썰어줍니다\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마늘 10알을 편썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마늘 10알을 편썰어줍니다\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"청양고추 1개를 어슷썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 1개를 어슷썰어줍니다\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"예열된 팬에 삼겹살을 올리고 중불에서 노릇하게 구워줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"예열된 팬에 삼겹살을 노릇하게 구워줍니다(중불)\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삼겹살을 뒤집어서 앞뒤로 겉면을 노릇하게 구워줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"삼겹살을 뒤집어서 앞뒤로 겉면을 노릇하게 구워줍니다\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    },\n    {\n      \"text\": \"키친타월로 삼겹살 기름을 적당히 닦아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"키친타월로 삼겹살 기름을 적당히 닦아주고\",\n          \"timestamp\": \"01:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"설탕 2큰술을 넣고 볶아 감칠맛을 올리고 불향을 내줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 2큰술을 넣고 볶아 감칠맛을 올리고 불향을 내줍니다\",\n          \"timestamp\": \"01:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"편마늘을 넣고 같이 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"편마늘을 넣고 같이 볶아줍니다\",\n          \"timestamp\": \"01:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양조(진)간장 2큰술과 맛술 1큰술을 넣고 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조(진)간장 2큰술\",\n          \"timestamp\": \"01:17\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 1큰술을 넣고 볶아주다가\",\n          \"timestamp\": \"01:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"굴소스 1큰술과 고춧가루 1.5큰술을 넣고 중불에서 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1큰술과 고춧가루 1.5큰술을 넣고 볶아줍니다(중불)\",\n          \"timestamp\": \"01:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파, 대파, 청양고추를 넣고 중불에서 재빨리 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파·대파·청양고추를 넣고 재빨리 볶아줍니다(중불)\",\n          \"timestamp\": \"01:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"채소의 숨이 살짝 죽으면 불을 끄고 후추와 참기름 1큰술을 넣어 마무리합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"숨이 살짝 죽으면 불을 끄고 후추와 참기름 1큰술을 넣어줍니다\",\n          \"timestamp\": \"01:51\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "제육볶음",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "삼겹살(오겹살) 500g",
+          "displayName": "삼겹살(오겹살)",
+          "amount": "500",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "삼겹살(오겹살) 500g",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "먼저 삼겹살(오겹살) 500g을 먹기좋은 크기로 썰어줍니다",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파 1/2개",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/2개",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/2개를 도톰하게 채썰어줍니다",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "대파 1대",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "대",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 1대",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 1대를 반으로 갈라 길게 썰어줍니다",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "마늘 10알",
+          "displayName": "마늘",
+          "amount": "10",
+          "unit": "알",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마늘 10알",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마늘 10알을 편썰어줍니다",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "청양고추 1개",
+          "displayName": "청양고추",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 1개",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 1개를 어슷썰어줍니다",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "양조(진)간장 2큰술",
+          "displayName": "양조(진)간장",
+          "amount": "2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조(진)간장 2큰술",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조(진)간장 2큰술",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "고춧가루 1.5큰술",
+          "displayName": "고춧가루",
+          "amount": "1.5",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1.5큰술",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1큰술과 고춧가루 1.5큰술을 넣고 볶아줍니다(중불)",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "설탕 2큰술",
+          "displayName": "설탕",
+          "amount": "2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 2큰술",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 2큰술을 넣고 볶아 감칠맛을 올리고 불향을 내줍니다",
+              "timestamp": "01:04"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "맛술 1큰술",
+          "displayName": "맛술",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 1큰술",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 1큰술을 넣고 볶아주다가",
+              "timestamp": "01:20"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "굴소스 1큰술",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1큰술",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1큰술과 고춧가루 1.5큰술을 넣고 볶아줍니다(중불)",
+              "timestamp": "01:28"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "참기름 1큰술",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1큰술",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "숨이 살짝 죽으면 불을 끄고 후추와 참기름 1큰술을 넣어줍니다",
+              "timestamp": "01:51"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "숨이 살짝 죽으면 불을 끄고 후추와 참기름 1큰술을 넣어줍니다",
+              "timestamp": "01:51"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "삼겹살(오겹살) 500g을 먹기 좋은 크기로 썰어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "먼저 삼겹살(오겹살) 500g을 먹기좋은 크기로 썰어줍니다",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "양파 1/2개를 도톰하게 채썰어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/2개를 도톰하게 채썰어줍니다",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "대파 1대를 반으로 갈라 길게 썰어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 1대를 반으로 갈라 길게 썰어줍니다",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "마늘 10알을 편썰어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마늘 10알을 편썰어줍니다",
+              "timestamp": "00:25"
+            }
+          ]
+        },
+        {
+          "text": "청양고추 1개를 어슷썰어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 1개를 어슷썰어줍니다",
+              "timestamp": "00:29"
+            }
+          ]
+        },
+        {
+          "text": "예열된 팬에 삼겹살을 올리고 중불에서 노릇하게 구워줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "예열된 팬에 삼겹살을 노릇하게 구워줍니다(중불)",
+              "timestamp": "00:33"
+            }
+          ]
+        },
+        {
+          "text": "삼겹살을 뒤집어서 앞뒤로 겉면을 노릇하게 구워줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "삼겹살을 뒤집어서 앞뒤로 겉면을 노릇하게 구워줍니다",
+              "timestamp": "00:48"
+            }
+          ]
+        },
+        {
+          "text": "키친타월로 삼겹살 기름을 적당히 닦아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "키친타월로 삼겹살 기름을 적당히 닦아주고",
+              "timestamp": "01:00"
+            }
+          ]
+        },
+        {
+          "text": "설탕 2큰술을 넣고 볶아 감칠맛을 올리고 불향을 내줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 2큰술을 넣고 볶아 감칠맛을 올리고 불향을 내줍니다",
+              "timestamp": "01:04"
+            }
+          ]
+        },
+        {
+          "text": "편마늘을 넣고 같이 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "편마늘을 넣고 같이 볶아줍니다",
+              "timestamp": "01:11"
+            }
+          ]
+        },
+        {
+          "text": "양조(진)간장 2큰술과 맛술 1큰술을 넣고 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조(진)간장 2큰술",
+              "timestamp": "01:17"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 1큰술을 넣고 볶아주다가",
+              "timestamp": "01:20"
+            }
+          ]
+        },
+        {
+          "text": "굴소스 1큰술과 고춧가루 1.5큰술을 넣고 중불에서 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1큰술과 고춧가루 1.5큰술을 넣고 볶아줍니다(중불)",
+              "timestamp": "01:28"
+            }
+          ]
+        },
+        {
+          "text": "양파, 대파, 청양고추를 넣고 중불에서 재빨리 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파·대파·청양고추를 넣고 재빨리 볶아줍니다(중불)",
+              "timestamp": "01:41"
+            }
+          ]
+        },
+        {
+          "text": "채소의 숨이 살짝 죽으면 불을 끄고 후추와 참기름 1큰술을 넣어 마무리합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "숨이 살짝 죽으면 불을 끄고 후추와 참기름 1큰술을 넣어줍니다",
+              "timestamp": "01:51"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

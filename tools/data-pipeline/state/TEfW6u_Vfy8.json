@@ -1,18 +1,267 @@
 {
   "videoId": "TEfW6u_Vfy8",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/TEfW6u_Vfy8",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-10-27T10:43:09.880268+00:00",
-    "accountId": "account-a",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAt": "2026-10-27T10:43:41.956593+00:00",
-    "retryAccountId": "account-a"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T10:12:28.197509+00:00",
+    "rawResponse": "{\n  \"title\": \"간장 떡볶이\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"떡 두줌\",\n      \"displayName\": \"떡\",\n      \"amount\": \"2\",\n      \"unit\": \"줌\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"떡 두줌\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 2스푼\",\n      \"displayName\": \"간장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 2스푼\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 2스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 2스푼\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 반스푼\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 반스푼\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"냄비에 물 올리고\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유도 적당히 둘러줬어요\",\n          \"timestamp\": \"01:08\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"볼에 간장 2스푼, 설탕 2스푼, 다진마늘 반스푼을 넣고 섞어 양념을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 2스푼\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 2스푼\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 반스푼\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양념 완성 ~~\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파를 길쭉하게 반으로 가른 뒤 떡 길이만큼 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"길쭉하게 썰어줍니다\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"그리고 떡 길이만큼 썰어줬어요\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 물을 올려 끓인 뒤, 떡을 넣고 약 1분 정도 데쳐서 말랑해지면 건져낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"냄비에 물 올리고\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"보글보글 끓입니다\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"떡을 퐁당\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"떡이 딱딱해서 1분정도 데쳐줬어요\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"데친 떡을 체로 건져낸다\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유를 적당히 두르고 건져둔 떡을 넣어 중약불에서 살짝 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬 올려주고\",\n          \"timestamp\": \"01:05\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유도 적당히 둘러줬어요\",\n          \"timestamp\": \"01:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"건져놓았던 떡을 쏟아줍니다\",\n          \"timestamp\": \"01:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"중약불에서 살짝만 볶아주다가\",\n          \"timestamp\": \"01:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"만들어둔 양념을 끼얹고 중약불에서 노릇해질 때까지 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양념을 끼얹어 줍니다\",\n          \"timestamp\": \"01:19\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"중약불에서 노릇해질때까지 볶아볼게요\",\n          \"timestamp\": \"01:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"썰어둔 대파를 넣고 숨이 살짝 죽을 정도로만 볶아 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"썰어둔 대파\",\n          \"timestamp\": \"01:33\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파는 숨만 살짝 죽여서 먹을거예요\",\n          \"timestamp\": \"01:37\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장떡볶이 완성 !~\",\n          \"timestamp\": \"01:42\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"영상 후반부(02:17~)에 등장하는 '애기수박'은 식사 후 디저트 장면으로 간장 떡볶이 레시피 재료에는 포함하지 않음\"\n  ]\n}",
+    "result": {
+      "title": "간장 떡볶이",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "떡 두줌",
+          "displayName": "떡",
+          "amount": "2",
+          "unit": "줌",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "떡 두줌",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "간장 2스푼",
+          "displayName": "간장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 2스푼",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "설탕 2스푼",
+          "displayName": "설탕",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 2스푼",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "다진마늘 반스푼",
+          "displayName": "다진마늘",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 반스푼",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "물",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "냄비에 물 올리고",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유도 적당히 둘러줬어요",
+              "timestamp": "01:08"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "볼에 간장 2스푼, 설탕 2스푼, 다진마늘 반스푼을 넣고 섞어 양념을 만든다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 2스푼",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 2스푼",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 반스푼",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양념 완성 ~~",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "대파를 길쭉하게 반으로 가른 뒤 떡 길이만큼 썰어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "길쭉하게 썰어줍니다",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "그리고 떡 길이만큼 썰어줬어요",
+              "timestamp": "00:29"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 물을 올려 끓인 뒤, 떡을 넣고 약 1분 정도 데쳐서 말랑해지면 건져낸다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "냄비에 물 올리고",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "보글보글 끓입니다",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "떡을 퐁당",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "떡이 딱딱해서 1분정도 데쳐줬어요",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "데친 떡을 체로 건져낸다",
+              "timestamp": "00:53"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유를 적당히 두르고 건져둔 떡을 넣어 중약불에서 살짝 볶아준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬 올려주고",
+              "timestamp": "01:05"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유도 적당히 둘러줬어요",
+              "timestamp": "01:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "건져놓았던 떡을 쏟아줍니다",
+              "timestamp": "01:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "중약불에서 살짝만 볶아주다가",
+              "timestamp": "01:15"
+            }
+          ]
+        },
+        {
+          "text": "만들어둔 양념을 끼얹고 중약불에서 노릇해질 때까지 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양념을 끼얹어 줍니다",
+              "timestamp": "01:19"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "중약불에서 노릇해질때까지 볶아볼게요",
+              "timestamp": "01:27"
+            }
+          ]
+        },
+        {
+          "text": "썰어둔 대파를 넣고 숨이 살짝 죽을 정도로만 볶아 마무리한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "썰어둔 대파",
+              "timestamp": "01:33"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파는 숨만 살짝 죽여서 먹을거예요",
+              "timestamp": "01:37"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장떡볶이 완성 !~",
+              "timestamp": "01:42"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "영상 후반부(02:17~)에 등장하는 '애기수박'은 식사 후 디저트 장면으로 간장 떡볶이 레시피 재료에는 포함하지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
   }
 }

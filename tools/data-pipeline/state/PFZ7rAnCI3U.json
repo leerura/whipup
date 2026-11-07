@@ -1,0 +1,290 @@
+{
+  "videoId": "PFZ7rAnCI3U",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/PFZ7rAnCI3U",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:44:55.109068+00:00",
+    "rawResponse": "{\n  \"title\": \"자취 요리왕: 간장계란밥과 군만두\",\n  \"description\": \"자취생 대표 음식인 간장계란밥과 군만두를 간단하게 조리하여 비교 평가하는 자취 요리 대결 영상입니다.\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"계란 4개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"4\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"덕연이는 지금 계란을 4개를 깠고요\",\n          \"timestamp\": \"04:58\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 계란 4개를 깨 넣음\",\n          \"timestamp\": \"04:58\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름\",\n      \"displayName\": \"참기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그냥 어차피 참기름으로 그냥 하면 됩니다!\",\n          \"timestamp\": \"04:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"프라이팬에 식용유 대신 참기름을 두름\",\n          \"timestamp\": \"04:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장\",\n      \"displayName\": \"간장\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 이제 여기에 뭘 붓나 간장을 부어요\",\n          \"timestamp\": \"06:38\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"익어가는 계란 스크램블 위에 간장을 둘러 부음\",\n          \"timestamp\": \"06:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"햇반\",\n      \"displayName\": \"햇반\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"완성된 고명을 햇반위에 올리기\",\n          \"timestamp\": \"07:49\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"데운 햇반 위에 계란 간장 고명을 얹음\",\n          \"timestamp\": \"07:49\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"군만두 (냉동만두)\",\n      \"displayName\": \"군만두\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"주원이 형은 군만두를 구울 거고요\",\n          \"timestamp\": \"03:13\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"기름 두른 팬에 냉동 군만두를 얹어 구움\",\n          \"timestamp\": \"04:50\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리브유\",\n      \"displayName\": \"올리브유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이게 근데 올리브유네\",\n          \"timestamp\": \"03:40\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"군만두용 프라이팬에 올리브유를 넉넉히 두름\",\n          \"timestamp\": \"03:45\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"[군만두] 프라이팬에 올리브유를 넉넉하게 두르고 불을 올려 예열합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식용유를 아낄 필요가 없어요!\",\n          \"timestamp\": \"03:48\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"올리브유를 팬에 넉넉히 붓고 가열함\",\n          \"timestamp\": \"03:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": null,\n      \"text\": \"[간장계란밥] 약불로 켠 프라이팬에 식용유 대신 참기름을 넉넉히 두릅니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그냥 어차피 참기름으로 그냥 하면 됩니다! 그래서 포인트가 있습니다. 약불로 조리합니다.\",\n          \"timestamp\": \"04:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 참기름을 두름\",\n          \"timestamp\": \"04:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[간장계란밥] 참기름을 두른 팬에 계란 4개를 깨 넣습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"덕연이는 지금 계란을 4개를 깠고요\",\n          \"timestamp\": \"04:58\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 계란을 연속으로 깨 넣음\",\n          \"timestamp\": \"04:36\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[군만두] 예열된 기름 팬에 냉동 군만두를 올리고, 속까지 익도록 약불로 조절해가며 뒤집어 노릇하게 굽습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"겉에만 익고 안이 차가울 수도 있어! 그래서 불 조절을 잘 해야 됩니다!\",\n          \"timestamp\": \"06:16\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"집게로 군만두를 뒤집어가며 골고루 구움\",\n          \"timestamp\": \"06:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[간장계란밥] 팬 위의 계란을 주걱으로 저어 스크램블을 만들어 줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"스크램블을 먼저 해줍니다.\",\n          \"timestamp\": \"06:36\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"주걱으로 계란을 으깨며 스크램블 형태로 만듦\",\n          \"timestamp\": \"06:36\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[간장계란밥] 계란에 간장을 두르고 함께 섞어주며 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 이제 여기에 뭘 붓나 간장을 부어요. 그럼 간장이 여기서 조금 조리가 돼가지고 조금 맛있어져요.\",\n          \"timestamp\": \"06:38\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"간장을 부은 뒤 계란과 섞어줌\",\n          \"timestamp\": \"06:42\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[간장계란밥] 계란이 바싹 익지 않도록 불을 끄고 잔열로 남은 계란을 익혀 마무리합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 여기서 불을 끄고 잔열로만 익히면 됩니다.\",\n          \"timestamp\": \"07:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[간장계란밥] 데운 햇반 위에 완성된 간장계란 고명을 얹고 골고루 비벼줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"완성된 고명을 햇반위에 올리기\",\n          \"timestamp\": \"07:49\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이거 밥에다가 올리면 됩니다! 아니 그냥 비비는 거예요, 여기서 이제!\",\n          \"timestamp\": \"07:22\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"햇반 용기에 계란 고명을 올리고 숟가락으로 비빔\",\n          \"timestamp\": \"07:50\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[군만두] 약불로 속까지 익힌 후 마지막에 센 불로 올려 바삭함을 살려 굽기를 마무리합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막에 센 불로 하면서 마지막에 바삭함을 좀 더 줄 수 있는 그런 느낌으로 갈 겁니다.\",\n          \"timestamp\": \"07:38\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"바삭하게 구워진 군만두를 꺼냄\",\n          \"timestamp\": \"09:00\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"참기름, 간장, 올리브유의 정확한 계량 수치가 영상에서 언급되지 않음.\",\n    \"군만두의 정확한 개수 또는 중량이 영상에서 명시되지 않음.\",\n    \"제작진이 마가린을 제안했으나 조리자가 자취 요리 컨셉에 맞지 않는다고 거부하여 실제 조리에는 사용되지 않음.\"\n  ]\n}",
+    "result": {
+      "title": "자취 요리왕: 간장계란밥과 군만두",
+      "description": "자취생 대표 음식인 간장계란밥과 군만두를 간단하게 조리하여 비교 평가하는 자취 요리 대결 영상입니다.",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "계란 4개",
+          "displayName": "계란",
+          "amount": "4",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "덕연이는 지금 계란을 4개를 깠고요",
+              "timestamp": "04:58"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 계란 4개를 깨 넣음",
+              "timestamp": "04:58"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "참기름",
+          "displayName": "참기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그냥 어차피 참기름으로 그냥 하면 됩니다!",
+              "timestamp": "04:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "프라이팬에 식용유 대신 참기름을 두름",
+              "timestamp": "04:13"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "간장",
+          "displayName": "간장",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 이제 여기에 뭘 붓나 간장을 부어요",
+              "timestamp": "06:38"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "익어가는 계란 스크램블 위에 간장을 둘러 부음",
+              "timestamp": "06:42"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "햇반",
+          "displayName": "햇반",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "완성된 고명을 햇반위에 올리기",
+              "timestamp": "07:49"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "데운 햇반 위에 계란 간장 고명을 얹음",
+              "timestamp": "07:49"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "군만두 (냉동만두)",
+          "displayName": "군만두",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "주원이 형은 군만두를 구울 거고요",
+              "timestamp": "03:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "기름 두른 팬에 냉동 군만두를 얹어 구움",
+              "timestamp": "04:50"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "올리브유",
+          "displayName": "올리브유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이게 근데 올리브유네",
+              "timestamp": "03:40"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "군만두용 프라이팬에 올리브유를 넉넉히 두름",
+              "timestamp": "03:45"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        }
+      ],
+      "steps": [
+        {
+          "text": "[군만두] 프라이팬에 올리브유를 넉넉하게 두르고 불을 올려 예열합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "식용유를 아낄 필요가 없어요!",
+              "timestamp": "03:48"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "올리브유를 팬에 넉넉히 붓고 가열함",
+              "timestamp": "03:45"
+            }
+          ]
+        },
+        {
+          "rawText": null,
+          "text": "[간장계란밥] 약불로 켠 프라이팬에 식용유 대신 참기름을 넉넉히 두릅니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그냥 어차피 참기름으로 그냥 하면 됩니다! 그래서 포인트가 있습니다. 약불로 조리합니다.",
+              "timestamp": "04:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 참기름을 두름",
+              "timestamp": "04:13"
+            }
+          ]
+        },
+        {
+          "text": "[간장계란밥] 참기름을 두른 팬에 계란 4개를 깨 넣습니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "덕연이는 지금 계란을 4개를 깠고요",
+              "timestamp": "04:58"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 계란을 연속으로 깨 넣음",
+              "timestamp": "04:36"
+            }
+          ]
+        },
+        {
+          "text": "[군만두] 예열된 기름 팬에 냉동 군만두를 올리고, 속까지 익도록 약불로 조절해가며 뒤집어 노릇하게 굽습니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "겉에만 익고 안이 차가울 수도 있어! 그래서 불 조절을 잘 해야 됩니다!",
+              "timestamp": "06:16"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "집게로 군만두를 뒤집어가며 골고루 구움",
+              "timestamp": "06:11"
+            }
+          ]
+        },
+        {
+          "text": "[간장계란밥] 팬 위의 계란을 주걱으로 저어 스크램블을 만들어 줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "스크램블을 먼저 해줍니다.",
+              "timestamp": "06:36"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "주걱으로 계란을 으깨며 스크램블 형태로 만듦",
+              "timestamp": "06:36"
+            }
+          ]
+        },
+        {
+          "text": "[간장계란밥] 계란에 간장을 두르고 함께 섞어주며 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 이제 여기에 뭘 붓나 간장을 부어요. 그럼 간장이 여기서 조금 조리가 돼가지고 조금 맛있어져요.",
+              "timestamp": "06:38"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "간장을 부은 뒤 계란과 섞어줌",
+              "timestamp": "06:42"
+            }
+          ]
+        },
+        {
+          "text": "[간장계란밥] 계란이 바싹 익지 않도록 불을 끄고 잔열로 남은 계란을 익혀 마무리합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 여기서 불을 끄고 잔열로만 익히면 됩니다.",
+              "timestamp": "07:17"
+            }
+          ]
+        },
+        {
+          "text": "[간장계란밥] 데운 햇반 위에 완성된 간장계란 고명을 얹고 골고루 비벼줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "완성된 고명을 햇반위에 올리기",
+              "timestamp": "07:49"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이거 밥에다가 올리면 됩니다! 아니 그냥 비비는 거예요, 여기서 이제!",
+              "timestamp": "07:22"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "햇반 용기에 계란 고명을 올리고 숟가락으로 비빔",
+              "timestamp": "07:50"
+            }
+          ]
+        },
+        {
+          "text": "[군만두] 약불로 속까지 익힌 후 마지막에 센 불로 올려 바삭함을 살려 굽기를 마무리합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막에 센 불로 하면서 마지막에 바삭함을 좀 더 줄 수 있는 그런 느낌으로 갈 겁니다.",
+              "timestamp": "07:38"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "바삭하게 구워진 군만두를 꺼냄",
+              "timestamp": "09:00"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "참기름, 간장, 올리브유의 정확한 계량 수치가 영상에서 언급되지 않음.",
+        "군만두의 정확한 개수 또는 중량이 영상에서 명시되지 않음.",
+        "제작진이 마가린을 제안했으나 조리자가 자취 요리 컨셉에 맞지 않는다고 거부하여 실제 조리에는 사용되지 않음."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

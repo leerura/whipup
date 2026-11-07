@@ -1,0 +1,375 @@
+{
+  "videoId": "niMyqoMPttE",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/niMyqoMPttE",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:56:50.936433+00:00",
+    "rawResponse": "{\n  \"title\": \"만두짜글이\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"냉동 만두 먹을 만큼 넉넉하게 (두세 개는 육수용)\",\n      \"displayName\": \"냉동 만두\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 냉동 만두를 먹을 만큼 넉넉하게 준비해줍니다. 여기서 두세개는 육수용으로 사용할 거라 먹을 개수는 감안하여 준비하시면 됩니다.\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 냉동 만두를 먹을 만큼 넉넉하게 준비해줍니다.\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 살짝\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬에 식용유를 살짝만 둘러주고\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 팬에 식용유를 살짝만 둘러주고\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 종이컵 2컵 (약 360ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"2\",\n      \"unit\": \"종이컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 물을 종이컵 2컵 (약 360ml) 부어주고\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 물을 종이컵 2컵 (약 360ml) 부어주고\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 반개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 반개를 대충 썰어서 올려줍니다.\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 반개를 대충 썰어서 올려줍니다.\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 1스푼\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그라고 고추장 1스푼과\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 고추장 1스푼과\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 1스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"짭짤하게 진간장 1스푼\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"짭짤하게 진간장 1스푼\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1/2스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕은 1/2스푼만 넣고\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕은 1/2스푼 넣고\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"시뻘건 고춧가루 1스푼\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"시뻘건 고춧가루 1스푼\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘 1스푼까지 넣어준 뒤에\",\n          \"timestamp\": \"00:48\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"오늘도 지고 온 다진 마늘 1스푼을 넣어준 뒤\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"팽이버섯\",\n      \"displayName\": \"팽이버섯\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이런 팽이치기버섯을 밑동을 제거해 준 뒤에 가닥가닥 잘 펼쳐주고 올려줍니다.\",\n          \"timestamp\": \"00:56\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이런 팽이버섯을 밑동을 제거해 준 뒤 가닥가닥 잘 펼쳐주고 올려줍니다.\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 하나\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그라고 청양고추도 하나 썰어가 올려준 뒤에\",\n          \"timestamp\": \"01:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 청양고추도 하나 썰어서 올려준 뒤\",\n          \"timestamp\": \"01:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 통깨까지 한번 더 뿌려주면\",\n          \"timestamp\": \"01:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 통깨까지 한번 더 뿌려주면\",\n          \"timestamp\": \"01:10\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 식용유를 살짝 두르고 냉동 만두를 모두 올린 뒤 노릇노릇해지도록 구워준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬에 식용유를 살짝만 둘러주고 준비한 냉동 만두를 다 올려준 뒤에 대충 노릇노릇해지도록 구워주시면 됩니다.\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 팬에 식용유를 살짝만 둘러주고 준비한 냉동 만두를 다 올려준 뒤 대충 노릇노릇해지도록 구워주시면 됩니다.\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"만두가 노릇하게 구워졌을 때 육수용으로 만두 2~3개를 잘게 잘라 속을 분리시켜 준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"어느 정도 노릇하게 구워졌을 때쯤에 만두 두세개는 잘라준 뒤 속을 다 분리시켜 줍니다.\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"어느 정도 노릇하게 구워졌을 때쯤에 만두 두세개는 잘게 잘라준 뒤 속을 다 분리시켜 줍니다.\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 종이컵 2컵(약 360ml)을 붓고, 대충 썬 양파 반 개를 올려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 물을 종이컵 2컵 (약 360ml) 부어주고 양파 반개를 대충 썰어서 올려줍니다.\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 물을 종이컵 2컵 (약 360ml) 부어주고 양파 반개를 대충 썰어서 올려줍니다.\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고추장 1스푼, 진간장 1스푼, 설탕 1/2스푼, 고춧가루 1스푼, 다진 마늘 1스푼을 넣고 골고루 잘 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그라고 고추장 1스푼과 짭짤하게 진간장 1스푼 설탕은 1/2스푼만 넣고 시뻘건 고춧가루 1스푼 오늘도 지고 온 다진 마늘 1스푼까지 넣어준 뒤에 골고루 잘 섞어주면 양념장은 끝입니다.\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"골고루 잘 섞어주면 양념장은 끝입니다.\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    },\n    {\n      \"text\": \"만두가 완전히 익을 때까지 1~2분간 더 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 만두가 완전히 익을 때까지 1~2분만 더 끓여주다가\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 만두가 완전히 익을 때까지 1~2분만 더 끓여주다가\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밑동을 자르고 가닥가닥 펼친 팽이버섯과 썬 청양고추 1개를 올리고, 국물 양념 속으로 밀어 넣어 버섯을 익혀준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이런 팽이치기버섯을 밑동을 제거해 준 뒤에 가닥가닥 잘 펼쳐주고 올려줍니다. 그라고 청양고추도 하나 썰어가 올려준 뒤에 자박한 양념을 머금을 수 있도록 잡아넣어 주면서 버섯도 익혀주시면 됩니다.\",\n          \"timestamp\": \"00:56\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"자박한 양념을 머금을 수 있도록 밀어 넣어주면서 버섯도 익혀주시면 됩니다.\",\n          \"timestamp\": \"01:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마지막으로 통깨를 뿌려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 통깨까지 한번 더 뿌려주면 따로 육수를 우려내거나 특별한 재료 없이도 한그릇 깔끔하게 때릴 수 있는 만두짜글이가 완성됩니다.\",\n          \"timestamp\": \"01:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 통깨까지 한번 더 뿌려주면\",\n          \"timestamp\": \"01:10\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "만두짜글이",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "냉동 만두 먹을 만큼 넉넉하게 (두세 개는 육수용)",
+          "displayName": "냉동 만두",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 냉동 만두를 먹을 만큼 넉넉하게 준비해줍니다. 여기서 두세개는 육수용으로 사용할 거라 먹을 개수는 감안하여 준비하시면 됩니다.",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 냉동 만두를 먹을 만큼 넉넉하게 준비해줍니다.",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "식용유 살짝",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 팬에 식용유를 살짝만 둘러주고",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 팬에 식용유를 살짝만 둘러주고",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "물 종이컵 2컵 (약 360ml)",
+          "displayName": "물",
+          "amount": "2",
+          "unit": "종이컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 물을 종이컵 2컵 (약 360ml) 부어주고",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 물을 종이컵 2컵 (약 360ml) 부어주고",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양파 반개",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 반개를 대충 썰어서 올려줍니다.",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파 반개를 대충 썰어서 올려줍니다.",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고추장 1스푼",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그라고 고추장 1스푼과",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 고추장 1스푼과",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "진간장 1스푼",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "짭짤하게 진간장 1스푼",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "짭짤하게 진간장 1스푼",
+              "timestamp": "00:43"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "설탕 1/2스푼",
+          "displayName": "설탕",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "설탕은 1/2스푼만 넣고",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕은 1/2스푼 넣고",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "고춧가루 1스푼",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "시뻘건 고춧가루 1스푼",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "시뻘건 고춧가루 1스푼",
+              "timestamp": "00:46"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "다진 마늘 1스푼",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘 1스푼까지 넣어준 뒤에",
+              "timestamp": "00:48"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "오늘도 지고 온 다진 마늘 1스푼을 넣어준 뒤",
+              "timestamp": "00:48"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "팽이버섯",
+          "displayName": "팽이버섯",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이런 팽이치기버섯을 밑동을 제거해 준 뒤에 가닥가닥 잘 펼쳐주고 올려줍니다.",
+              "timestamp": "00:56"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이런 팽이버섯을 밑동을 제거해 준 뒤 가닥가닥 잘 펼쳐주고 올려줍니다.",
+              "timestamp": "00:56"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "청양고추 하나",
+          "displayName": "청양고추",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그라고 청양고추도 하나 썰어가 올려준 뒤에",
+              "timestamp": "01:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 청양고추도 하나 썰어서 올려준 뒤",
+              "timestamp": "01:01"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 통깨까지 한번 더 뿌려주면",
+              "timestamp": "01:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 통깨까지 한번 더 뿌려주면",
+              "timestamp": "01:10"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 식용유를 살짝 두르고 냉동 만두를 모두 올린 뒤 노릇노릇해지도록 구워준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 팬에 식용유를 살짝만 둘러주고 준비한 냉동 만두를 다 올려준 뒤에 대충 노릇노릇해지도록 구워주시면 됩니다.",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 팬에 식용유를 살짝만 둘러주고 준비한 냉동 만두를 다 올려준 뒤 대충 노릇노릇해지도록 구워주시면 됩니다.",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "만두가 노릇하게 구워졌을 때 육수용으로 만두 2~3개를 잘게 잘라 속을 분리시켜 준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "어느 정도 노릇하게 구워졌을 때쯤에 만두 두세개는 잘라준 뒤 속을 다 분리시켜 줍니다.",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "어느 정도 노릇하게 구워졌을 때쯤에 만두 두세개는 잘게 잘라준 뒤 속을 다 분리시켜 줍니다.",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "물 종이컵 2컵(약 360ml)을 붓고, 대충 썬 양파 반 개를 올려준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 물을 종이컵 2컵 (약 360ml) 부어주고 양파 반개를 대충 썰어서 올려줍니다.",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 물을 종이컵 2컵 (약 360ml) 부어주고 양파 반개를 대충 썰어서 올려줍니다.",
+              "timestamp": "00:36"
+            }
+          ]
+        },
+        {
+          "text": "고추장 1스푼, 진간장 1스푼, 설탕 1/2스푼, 고춧가루 1스푼, 다진 마늘 1스푼을 넣고 골고루 잘 섞어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그라고 고추장 1스푼과 짭짤하게 진간장 1스푼 설탕은 1/2스푼만 넣고 시뻘건 고춧가루 1스푼 오늘도 지고 온 다진 마늘 1스푼까지 넣어준 뒤에 골고루 잘 섞어주면 양념장은 끝입니다.",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "골고루 잘 섞어주면 양념장은 끝입니다.",
+              "timestamp": "00:51"
+            }
+          ]
+        },
+        {
+          "text": "만두가 완전히 익을 때까지 1~2분간 더 끓여준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 만두가 완전히 익을 때까지 1~2분만 더 끓여주다가",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 만두가 완전히 익을 때까지 1~2분만 더 끓여주다가",
+              "timestamp": "00:53"
+            }
+          ]
+        },
+        {
+          "text": "밑동을 자르고 가닥가닥 펼친 팽이버섯과 썬 청양고추 1개를 올리고, 국물 양념 속으로 밀어 넣어 버섯을 익혀준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이런 팽이치기버섯을 밑동을 제거해 준 뒤에 가닥가닥 잘 펼쳐주고 올려줍니다. 그라고 청양고추도 하나 썰어가 올려준 뒤에 자박한 양념을 머금을 수 있도록 잡아넣어 주면서 버섯도 익혀주시면 됩니다.",
+              "timestamp": "00:56"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "자박한 양념을 머금을 수 있도록 밀어 넣어주면서 버섯도 익혀주시면 됩니다.",
+              "timestamp": "01:03"
+            }
+          ]
+        },
+        {
+          "text": "마지막으로 통깨를 뿌려 마무리한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 통깨까지 한번 더 뿌려주면 따로 육수를 우려내거나 특별한 재료 없이도 한그릇 깔끔하게 때릴 수 있는 만두짜글이가 완성됩니다.",
+              "timestamp": "01:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 통깨까지 한번 더 뿌려주면",
+              "timestamp": "01:10"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

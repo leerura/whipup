@@ -1,0 +1,232 @@
+{
+  "videoId": "ilVKSIaKojw",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/ilVKSIaKojw",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:52:55.404620+00:00",
+    "rawResponse": "{\n  \"title\": \"5분 컷 명란 달걀 덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"명란\",\n      \"displayName\": \"명란\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"오늘의 재료, 명란\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"명란\",\n          \"timestamp\": \"01:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"버터\",\n      \"displayName\": \"버터\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"버터를 조금만 더 자신있게 넣자!\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"버터에다 후라이를 하면 되겠더라고\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 두 개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 두 개를 잘 풀어줍니다\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"보통 밥에다가 버터를 녹여 갖고 먹었는데\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"그릇에 담긴 밥\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쪽파\",\n      \"displayName\": \"쪽파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쪽파\",\n          \"timestamp\": \"01:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그 쪽파는 꼭 있어야 돼\",\n          \"timestamp\": \"02:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깨\",\n      \"displayName\": \"깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"명란 달걀 덮밥 위에 통깨를 뿌림\",\n          \"timestamp\": \"01:51\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 버터를 넉넉히 넣고 녹인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"버터를 조금만 더 자신있게 넣자!\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 버터 두 조각을 넣고 가열함\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 계란 두 개를 깨뜨려 잘 풀어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 두 개를 잘 풀어줍니다\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"text\": \"버터가 녹아 끓을 때 약불에서 계란물을 붓고 스크램블처럼 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"약불일 때 얘를 이렇게 넣는 거야\",\n          \"timestamp\": \"00:51\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"약불에서 스크램블처럼 익혀주세요\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 끄고 밥 위에 익힌 계란과 팬의 버터 기름을 함께 부어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불 끄고\",\n          \"timestamp\": \"01:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이대로 버터 기름과 함께\",\n          \"timestamp\": \"01:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"명란을 한 입 크기로 썰어 밥 위에 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"명란\",\n          \"timestamp\": \"01:27\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"명란을 썰어 계란 위에 올림\",\n          \"timestamp\": \"01:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"쪽파를 송송 썰어 올리고 깨를 뿌려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쪽파\",\n          \"timestamp\": \"01:37\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"썰어둔 쪽파를 밥 위에 얹고 깨를 뿌림\",\n          \"timestamp\": \"01:44\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"5분 컷 완성!\",\n          \"timestamp\": \"01:54\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"버터, 명란, 쪽파, 깨, 밥의 정확한 중량 및 계량 수치가 영상에서 언급되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "5분 컷 명란 달걀 덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "명란",
+          "displayName": "명란",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "오늘의 재료, 명란",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "명란",
+              "timestamp": "01:27"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "버터",
+          "displayName": "버터",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "버터를 조금만 더 자신있게 넣자!",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "버터에다 후라이를 하면 되겠더라고",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "계란 두 개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "계란 두 개를 잘 풀어줍니다",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "보통 밥에다가 버터를 녹여 갖고 먹었는데",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "그릇에 담긴 밥",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "쪽파",
+          "displayName": "쪽파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쪽파",
+              "timestamp": "01:37"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그 쪽파는 꼭 있어야 돼",
+              "timestamp": "02:53"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "깨",
+          "displayName": "깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "명란 달걀 덮밥 위에 통깨를 뿌림",
+              "timestamp": "01:51"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 버터를 넉넉히 넣고 녹인다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "버터를 조금만 더 자신있게 넣자!",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 버터 두 조각을 넣고 가열함",
+              "timestamp": "00:30"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 계란 두 개를 깨뜨려 잘 풀어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "계란 두 개를 잘 풀어줍니다",
+              "timestamp": "00:38"
+            }
+          ]
+        },
+        {
+          "text": "버터가 녹아 끓을 때 약불에서 계란물을 붓고 스크램블처럼 익힌다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "약불일 때 얘를 이렇게 넣는 거야",
+              "timestamp": "00:51"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "약불에서 스크램블처럼 익혀주세요",
+              "timestamp": "00:56"
+            }
+          ]
+        },
+        {
+          "text": "불을 끄고 밥 위에 익힌 계란과 팬의 버터 기름을 함께 부어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "불 끄고",
+              "timestamp": "01:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이대로 버터 기름과 함께",
+              "timestamp": "01:15"
+            }
+          ]
+        },
+        {
+          "text": "명란을 한 입 크기로 썰어 밥 위에 올린다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "명란",
+              "timestamp": "01:27"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "명란을 썰어 계란 위에 올림",
+              "timestamp": "01:28"
+            }
+          ]
+        },
+        {
+          "text": "쪽파를 송송 썰어 올리고 깨를 뿌려 마무리한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쪽파",
+              "timestamp": "01:37"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "썰어둔 쪽파를 밥 위에 얹고 깨를 뿌림",
+              "timestamp": "01:44"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "5분 컷 완성!",
+              "timestamp": "01:54"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "버터, 명란, 쪽파, 깨, 밥의 정확한 중량 및 계량 수치가 영상에서 언급되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

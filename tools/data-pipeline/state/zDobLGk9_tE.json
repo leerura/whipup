@@ -1,0 +1,460 @@
+{
+  "videoId": "zDobLGk9_tE",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/zDobLGk9_tE",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:39:43.850830+00:00",
+    "rawResponse": "{\n  \"title\": \"초간단 육수없이 끓이는 참치 김치찌개\",\n  \"description\": \"육수 없이 참치캔 기름과 기본 양념만으로 깊은 맛을 내는 초간단 참치 김치찌개 레시피\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"양파 1/2개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/2개\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 반 개 사용합니다\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 1대\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"대\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 1대\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파 한 대 사용합니다\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 1개\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 1개\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"청양고추 한 개 사용합니다\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"두부 1팩 (230g)\",\n      \"displayName\": \"두부\",\n      \"amount\": \"230\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부 1팩 (230g)\",\n          \"timestamp\": \"01:00\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"두부 한 팩 230g입니다\",\n          \"timestamp\": \"01:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치캔 1캔\",\n      \"displayName\": \"참치캔\",\n      \"amount\": \"1\",\n      \"unit\": \"캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치캔 국물만 팬에 부어주세요\",\n          \"timestamp\": \"01:22\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치를 넣어주세요\",\n          \"timestamp\": \"03:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"1캔 분량의 참치캔에서 기름을 붓고 후반에 살코기를 넣음\",\n          \"timestamp\": \"01:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치 1/4포기\",\n      \"displayName\": \"김치\",\n      \"amount\": \"1/4\",\n      \"unit\": \"포기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치 1/4포기\",\n          \"timestamp\": \"01:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치 4분의 1 포기입니다 미리 썰어서 준비해 놨습니다\",\n          \"timestamp\": \"01:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1스푼\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 1스푼\",\n          \"timestamp\": \"01:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘 한 스푼 넣습니다\",\n          \"timestamp\": \"01:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1/2스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1/2스푼\",\n          \"timestamp\": \"01:55\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 반 스푼 넣습니다\",\n          \"timestamp\": \"01:56\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 600ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"600\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 600ml\",\n          \"timestamp\": \"02:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 600ml 부어줍니다\",\n          \"timestamp\": \"02:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"(가볍게) 새우젓 1스푼\",\n      \"displayName\": \"새우젓\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(가볍게) 새우젓 1스푼\",\n          \"timestamp\": \"02:32\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"새우젓 가볍게 한 스푼요\",\n          \"timestamp\": \"02:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"멸치액젓 1스푼\",\n      \"displayName\": \"멸치액젓\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"멸치액젓 1스푼\",\n          \"timestamp\": \"02:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"액젓 한 스푼 넣습니다 이거는 멸치액젓입니다\",\n          \"timestamp\": \"02:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1스푼\",\n          \"timestamp\": \"02:53\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"색감을 위해서 고춧가루 한 스푼 넣습니다\",\n          \"timestamp\": \"02:53\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양파 1/2개를 채 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파는 채 썰어주세요\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파 1대를 어슷썰기한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"어슷썰기로 썰어주세요\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    },\n    {\n      \"text\": \"청양고추 1개를 얇게 송송 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"청양고추를 송송 썬다\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"text\": \"두부 1팩(230g)을 반으로 가른 뒤 1cm 두께로 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"반으로 나눈 뒤 1cm 두께로 썰어주세요\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 불을 켜고 참치캔의 국물(기름)만 부어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"가스불을 켜주세요\",\n          \"timestamp\": \"01:17\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치캔 국물만 팬에 부어주세요\",\n          \"timestamp\": \"01:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"썰어둔 김치 1/4포기와 다진 마늘 1스푼을 넣고 중강불에서 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치 1/4포기\",\n          \"timestamp\": \"01:29\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 1스푼\",\n          \"timestamp\": \"01:35\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"가스불은 중강불로 맞춰주세요\",\n          \"timestamp\": \"01:48\"\n        }\n      ]\n    },\n    {\n      \"text\": \"1분 정도 볶아준 뒤 설탕 1/2스푼을 넣고 계속 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1분정도 볶아주다가\",\n          \"timestamp\": \"01:53\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1/2스푼\",\n          \"timestamp\": \"01:56\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 600ml를 붓고 가스불을 강불로 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 600ml\",\n          \"timestamp\": \"02:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"가스불은 강불로 해주세요\",\n          \"timestamp\": \"02:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국물이 끓어오르면 새우젓 가볍게 1스푼과 멸치액젓 1스푼을 넣어 간을 맞춘다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"끓어올라오면 간을 해주세요\",\n          \"timestamp\": \"02:27\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(가볍게) 새우젓 1스푼\",\n          \"timestamp\": \"02:32\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"멸치액젓 1스푼\",\n          \"timestamp\": \"02:38\"\n        }\n      ]\n    },\n    {\n      \"text\": \"썰어놓은 양파와 청양고추를 넣고, 고춧가루 1스푼을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"썰어놓은 양파, 청양고추를 넣어주세요\",\n          \"timestamp\": \"02:44\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1스푼\",\n          \"timestamp\": \"02:53\"\n        }\n      ]\n    },\n    {\n      \"text\": \"중강불로 5분간 푹 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"중강불로 5분 끓여주세요\",\n          \"timestamp\": \"03:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"5분 후 참치 살코기, 썰어둔 두부, 대파를 차례로 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"5분 후..\",\n          \"timestamp\": \"03:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치를 넣어주세요\",\n          \"timestamp\": \"03:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"썰어놓은 두부를 넣어주세요\",\n          \"timestamp\": \"03:17\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"썰어놓은 대파를 넣어주세요\",\n          \"timestamp\": \"03:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"3~4분 정도 더 끓여 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"3~4분 정도 더 끓여주시면 됩니다.\",\n          \"timestamp\": \"03:28\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "초간단 육수없이 끓이는 참치 김치찌개",
+      "description": "육수 없이 참치캔 기름과 기본 양념만으로 깊은 맛을 내는 초간단 참치 김치찌개 레시피",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "양파 1/2개",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/2개",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파 반 개 사용합니다",
+              "timestamp": "00:32"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파 1대",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "대",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 1대",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파 한 대 사용합니다",
+              "timestamp": "00:46"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "청양고추 1개",
+          "displayName": "청양고추",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 1개",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "SPEECH",
+              "text": "청양고추 한 개 사용합니다",
+              "timestamp": "00:52"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "두부 1팩 (230g)",
+          "displayName": "두부",
+          "amount": "230",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부 1팩 (230g)",
+              "timestamp": "01:00"
+            },
+            {
+              "type": "SPEECH",
+              "text": "두부 한 팩 230g입니다",
+              "timestamp": "01:00"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "참치캔 1캔",
+          "displayName": "참치캔",
+          "amount": "1",
+          "unit": "캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치캔 국물만 팬에 부어주세요",
+              "timestamp": "01:22"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치를 넣어주세요",
+              "timestamp": "03:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "1캔 분량의 참치캔에서 기름을 붓고 후반에 살코기를 넣음",
+              "timestamp": "01:20"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "김치 1/4포기",
+          "displayName": "김치",
+          "amount": "1/4",
+          "unit": "포기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치 1/4포기",
+              "timestamp": "01:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "김치 4분의 1 포기입니다 미리 썰어서 준비해 놨습니다",
+              "timestamp": "01:30"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "다진마늘 1스푼",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 1스푼",
+              "timestamp": "01:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘 한 스푼 넣습니다",
+              "timestamp": "01:36"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "설탕 1/2스푼",
+          "displayName": "설탕",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1/2스푼",
+              "timestamp": "01:55"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 반 스푼 넣습니다",
+              "timestamp": "01:56"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "물 600ml",
+          "displayName": "물",
+          "amount": "600",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 600ml",
+              "timestamp": "02:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 600ml 부어줍니다",
+              "timestamp": "02:14"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "(가볍게) 새우젓 1스푼",
+          "displayName": "새우젓",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(가볍게) 새우젓 1스푼",
+              "timestamp": "02:32"
+            },
+            {
+              "type": "SPEECH",
+              "text": "새우젓 가볍게 한 스푼요",
+              "timestamp": "02:32"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "멸치액젓 1스푼",
+          "displayName": "멸치액젓",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "멸치액젓 1스푼",
+              "timestamp": "02:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "액젓 한 스푼 넣습니다 이거는 멸치액젓입니다",
+              "timestamp": "02:38"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "고춧가루 1스푼",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1스푼",
+              "timestamp": "02:53"
+            },
+            {
+              "type": "SPEECH",
+              "text": "색감을 위해서 고춧가루 한 스푼 넣습니다",
+              "timestamp": "02:53"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양파 1/2개를 채 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파는 채 썰어주세요",
+              "timestamp": "00:40"
+            }
+          ]
+        },
+        {
+          "text": "대파 1대를 어슷썰기한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "어슷썰기로 썰어주세요",
+              "timestamp": "00:48"
+            }
+          ]
+        },
+        {
+          "text": "청양고추 1개를 얇게 송송 썬다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "청양고추를 송송 썬다",
+              "timestamp": "00:56"
+            }
+          ]
+        },
+        {
+          "text": "두부 1팩(230g)을 반으로 가른 뒤 1cm 두께로 썬다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "반으로 나눈 뒤 1cm 두께로 썰어주세요",
+              "timestamp": "01:05"
+            }
+          ]
+        },
+        {
+          "text": "팬에 불을 켜고 참치캔의 국물(기름)만 부어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "가스불을 켜주세요",
+              "timestamp": "01:17"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치캔 국물만 팬에 부어주세요",
+              "timestamp": "01:23"
+            }
+          ]
+        },
+        {
+          "text": "썰어둔 김치 1/4포기와 다진 마늘 1스푼을 넣고 중강불에서 볶아준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치 1/4포기",
+              "timestamp": "01:29"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 1스푼",
+              "timestamp": "01:35"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "가스불은 중강불로 맞춰주세요",
+              "timestamp": "01:48"
+            }
+          ]
+        },
+        {
+          "text": "1분 정도 볶아준 뒤 설탕 1/2스푼을 넣고 계속 볶아준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1분정도 볶아주다가",
+              "timestamp": "01:53"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1/2스푼",
+              "timestamp": "01:56"
+            }
+          ]
+        },
+        {
+          "text": "물 600ml를 붓고 가스불을 강불로 올린다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 600ml",
+              "timestamp": "02:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "가스불은 강불로 해주세요",
+              "timestamp": "02:17"
+            }
+          ]
+        },
+        {
+          "text": "국물이 끓어오르면 새우젓 가볍게 1스푼과 멸치액젓 1스푼을 넣어 간을 맞춘다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "끓어올라오면 간을 해주세요",
+              "timestamp": "02:27"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(가볍게) 새우젓 1스푼",
+              "timestamp": "02:32"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "멸치액젓 1스푼",
+              "timestamp": "02:38"
+            }
+          ]
+        },
+        {
+          "text": "썰어놓은 양파와 청양고추를 넣고, 고춧가루 1스푼을 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "썰어놓은 양파, 청양고추를 넣어주세요",
+              "timestamp": "02:44"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1스푼",
+              "timestamp": "02:53"
+            }
+          ]
+        },
+        {
+          "text": "중강불로 5분간 푹 끓여준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "중강불로 5분 끓여주세요",
+              "timestamp": "03:02"
+            }
+          ]
+        },
+        {
+          "text": "5분 후 참치 살코기, 썰어둔 두부, 대파를 차례로 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "5분 후..",
+              "timestamp": "03:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치를 넣어주세요",
+              "timestamp": "03:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "썰어놓은 두부를 넣어주세요",
+              "timestamp": "03:17"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "썰어놓은 대파를 넣어주세요",
+              "timestamp": "03:22"
+            }
+          ]
+        },
+        {
+          "text": "3~4분 정도 더 끓여 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "3~4분 정도 더 끓여주시면 됩니다.",
+              "timestamp": "03:28"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

@@ -1,0 +1,330 @@
+{
+  "videoId": "MBW3pyyShDM",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/MBW3pyyShDM",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:42:03.003299+00:00",
+    "rawResponse": "{\n  \"title\": \"비장의 오므라이스 레시피\",\n  \"description\": \"강식당에서 백종원이 전수한 비장의 오므라이스 소스와 부드러운 달걀 이불을 얹은 오므라이스 조리법입니다.\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"버터 90g\",\n      \"displayName\": \"버터\",\n      \"amount\": \"90\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"버터 90g에\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"버터를 이렇게 녹이면서\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 3숟갈\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"3\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 3숟갈을 볶다가\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘을 먼저 버터에다 이제 볶아줬어\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 소고기 듬뿍\",\n      \"displayName\": \"다진 소고기\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 소고기를 듬뿍 넣고\",\n          \"timestamp\": \"00:45\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소고기예요\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"향신료 조금\",\n      \"displayName\": \"향신료\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"향신료 조금\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우스터 소스 1컵\",\n      \"displayName\": \"우스터 소스\",\n      \"amount\": \"1\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"우스터 소스 1컵\",\n          \"timestamp\": \"00:55\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이거 하나에\",\n          \"timestamp\": \"00:55\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"케첩 3컵\",\n      \"displayName\": \"케첩\",\n      \"amount\": \"3\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"케첩 3컵\",\n          \"timestamp\": \"00:55\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"케첩 세 컵\",\n          \"timestamp\": \"00:55\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"잘게 갈린 채소들\",\n      \"displayName\": \"믹서기에 간 채소 (양파, 당근 등)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"믹서기를 사용해\",\n          \"timestamp\": \"01:23\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"잘게 갈린 채소들\",\n          \"timestamp\": \"01:26\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양파, 당근, 셀러리 등이 도마에 놓여 있고 믹서기에 갈아 컵으로 소스에 넣음\",\n          \"timestamp\": \"01:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 한 공기\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 한 공기에\",\n          \"timestamp\": \"01:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"달걀물\",\n      \"displayName\": \"달걀물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다음은 달걀\",\n          \"timestamp\": \"01:49\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"달걀물을\",\n          \"timestamp\": \"01:49\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돈가스 소스\",\n      \"displayName\": \"돈가스 소스\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"돈가스 소스와 함께 먹으면\",\n          \"timestamp\": \"02:04\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 버터 90g을 녹이며 다진 마늘 3숟갈을 넣고 먼저 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"버터 90g에 다진 마늘 3숟갈을 볶다가\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"다진 소고기를 듬뿍 넣고 함께 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 소고기를 듬뿍 넣고\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기가 익기 시작하면 향신료를 조금 넣어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고기가 익기 시작하면 향신료 조금\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"text\": \"우스터 소스 1컵과 케첩 3컵을 넣고 섞어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"우스터 소스 1컵 케첩 3컵\",\n          \"timestamp\": \"00:55\"\n        }\n      ]\n    },\n    {\n      \"text\": \"믹서기에 곱게 간 채소들을 소스 팬에 듬뿍 넣고 함께 끓여 오므라이스 소스를 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"믹서기를 사용해 잘게 갈린 채소들\",\n          \"timestamp\": \"01:23\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"비장의 오므라이스 소스 완성\",\n          \"timestamp\": \"01:38\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 밥 한 공기와 오므라이스 소스를 작은 국자로 두 번 정도 넣고, 비비듯이 골고루 볶아 그릇에 담아냅니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 한 공기에 작은 국자로 두 번\",\n          \"timestamp\": \"01:41\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"비비듯이 골고루 볶아주고\",\n          \"timestamp\": \"01:46\"\n        }\n      ]\n    },\n    {\n      \"text\": \"달군 팬에 센 불에서 달걀물을 붓고, 아래쪽만 익도록 젓가락으로 저어주며 가장자리를 안쪽으로 밀어 모양을 잡아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"센 불에서 아래쪽만 익도록 휘저어 준 후\",\n          \"timestamp\": \"01:52\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"가쪽을 안쪽으로 자꾸 넣어요. 가쪽이 새로워져야 돼.\",\n          \"timestamp\": \"02:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"가운데가 몽글몽글하게 익은 달걀을 볶아둔 밥 위에 부드럽게 덮어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 위에 덮어줍니다\",\n          \"timestamp\": \"02:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 오므라이스 위에 돈가스 소스를 끼얹어 냅니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"돈가스 소스와 함께 먹으면\",\n          \"timestamp\": \"02:04\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"다진 소고기의 정확한 중량 미명시 ('듬뿍'으로만 표현)\",\n    \"사용된 향신료의 구체적인 명칭 미명시 ('향신료 조금'으로 자막 표기)\",\n    \"믹서기에 갈아 넣은 채소의 종류와 정확한 양 미명시 (도마에 양파, 당근, 셀러리 등이 노출되었으나 정확한 배합비는 나오지 않음)\",\n    \"오므라이스 1인분당 사용되는 달걀의 정확한 개수 미명시\"\n  ]\n}",
+    "result": {
+      "title": "비장의 오므라이스 레시피",
+      "description": "강식당에서 백종원이 전수한 비장의 오므라이스 소스와 부드러운 달걀 이불을 얹은 오므라이스 조리법입니다.",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "버터 90g",
+          "displayName": "버터",
+          "amount": "90",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "버터 90g에",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "SPEECH",
+              "text": "버터를 이렇게 녹이면서",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "다진 마늘 3숟갈",
+          "displayName": "다진 마늘",
+          "amount": "3",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 3숟갈을 볶다가",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘을 먼저 버터에다 이제 볶아줬어",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "다진 소고기 듬뿍",
+          "displayName": "다진 소고기",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 소고기를 듬뿍 넣고",
+              "timestamp": "00:45"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소고기예요",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "향신료 조금",
+          "displayName": "향신료",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "향신료 조금",
+              "timestamp": "00:51"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "우스터 소스 1컵",
+          "displayName": "우스터 소스",
+          "amount": "1",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "우스터 소스 1컵",
+              "timestamp": "00:55"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이거 하나에",
+              "timestamp": "00:55"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "케첩 3컵",
+          "displayName": "케첩",
+          "amount": "3",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "케첩 3컵",
+              "timestamp": "00:55"
+            },
+            {
+              "type": "SPEECH",
+              "text": "케첩 세 컵",
+              "timestamp": "00:55"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "잘게 갈린 채소들",
+          "displayName": "믹서기에 간 채소 (양파, 당근 등)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "믹서기를 사용해",
+              "timestamp": "01:23"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "잘게 갈린 채소들",
+              "timestamp": "01:26"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양파, 당근, 셀러리 등이 도마에 놓여 있고 믹서기에 갈아 컵으로 소스에 넣음",
+              "timestamp": "01:12"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "밥 한 공기",
+          "displayName": "밥",
+          "amount": "1",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 한 공기에",
+              "timestamp": "01:41"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "달걀물",
+          "displayName": "달걀물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다음은 달걀",
+              "timestamp": "01:49"
+            },
+            {
+              "type": "SPEECH",
+              "text": "달걀물을",
+              "timestamp": "01:49"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "돈가스 소스",
+          "displayName": "돈가스 소스",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "돈가스 소스와 함께 먹으면",
+              "timestamp": "02:04"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 버터 90g을 녹이며 다진 마늘 3숟갈을 넣고 먼저 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "버터 90g에 다진 마늘 3숟갈을 볶다가",
+              "timestamp": "00:37"
+            }
+          ]
+        },
+        {
+          "text": "다진 소고기를 듬뿍 넣고 함께 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 소고기를 듬뿍 넣고",
+              "timestamp": "00:45"
+            }
+          ]
+        },
+        {
+          "text": "고기가 익기 시작하면 향신료를 조금 넣어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고기가 익기 시작하면 향신료 조금",
+              "timestamp": "00:50"
+            }
+          ]
+        },
+        {
+          "text": "우스터 소스 1컵과 케첩 3컵을 넣고 섞어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "우스터 소스 1컵 케첩 3컵",
+              "timestamp": "00:55"
+            }
+          ]
+        },
+        {
+          "text": "믹서기에 곱게 간 채소들을 소스 팬에 듬뿍 넣고 함께 끓여 오므라이스 소스를 완성합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "믹서기를 사용해 잘게 갈린 채소들",
+              "timestamp": "01:23"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "비장의 오므라이스 소스 완성",
+              "timestamp": "01:38"
+            }
+          ]
+        },
+        {
+          "text": "팬에 밥 한 공기와 오므라이스 소스를 작은 국자로 두 번 정도 넣고, 비비듯이 골고루 볶아 그릇에 담아냅니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 한 공기에 작은 국자로 두 번",
+              "timestamp": "01:41"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "비비듯이 골고루 볶아주고",
+              "timestamp": "01:46"
+            }
+          ]
+        },
+        {
+          "text": "달군 팬에 센 불에서 달걀물을 붓고, 아래쪽만 익도록 젓가락으로 저어주며 가장자리를 안쪽으로 밀어 모양을 잡아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "센 불에서 아래쪽만 익도록 휘저어 준 후",
+              "timestamp": "01:52"
+            },
+            {
+              "type": "SPEECH",
+              "text": "가쪽을 안쪽으로 자꾸 넣어요. 가쪽이 새로워져야 돼.",
+              "timestamp": "02:21"
+            }
+          ]
+        },
+        {
+          "text": "가운데가 몽글몽글하게 익은 달걀을 볶아둔 밥 위에 부드럽게 덮어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 위에 덮어줍니다",
+              "timestamp": "02:00"
+            }
+          ]
+        },
+        {
+          "text": "완성된 오므라이스 위에 돈가스 소스를 끼얹어 냅니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "돈가스 소스와 함께 먹으면",
+              "timestamp": "02:04"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "다진 소고기의 정확한 중량 미명시 ('듬뿍'으로만 표현)",
+        "사용된 향신료의 구체적인 명칭 미명시 ('향신료 조금'으로 자막 표기)",
+        "믹서기에 갈아 넣은 채소의 종류와 정확한 양 미명시 (도마에 양파, 당근, 셀러리 등이 노출되었으나 정확한 배합비는 나오지 않음)",
+        "오므라이스 1인분당 사용되는 달걀의 정확한 개수 미명시"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

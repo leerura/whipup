@@ -1,18 +1,405 @@
 {
   "videoId": "yiBvT475p2Y",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/yiBvT475p2Y",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-10-27T10:37:22.887839+00:00",
-    "accountId": "account-b",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAt": "2026-10-27T10:37:42.953041+00:00",
-    "retryAccountId": "account-b"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T10:06:45.514672+00:00",
+    "rawResponse": "{\n  \"title\": \"비빔국수\",\n  \"description\": null,\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"국수(중면) 1인분\",\n      \"displayName\": \"국수(중면)\",\n      \"amount\": \"1\",\n      \"unit\": \"인분\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국수 (중면)\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"국수는 1인분만 삶아볼게요\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 1스푼\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 1스푼\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양조간장 1스푼\",\n      \"displayName\": \"양조간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장 1스푼\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 반스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 반스푼\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 반스푼\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 반스푼\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"냄비에 물 올리고\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 반컵을 쪼록\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란\",\n      \"displayName\": \"계란\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"뭔가 아쉬워서 계란도 삶아봅니다\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"국자로 냄비에 계란 2개를 넣음\",\n          \"timestamp\": \"01:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 1티스푼\",\n      \"displayName\": \"소금\",\n      \"amount\": \"1\",\n      \"unit\": \"티스푼\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 1티스푼\",\n          \"timestamp\": \"01:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 한스푼\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 꼬수운 참기름도\",\n          \"timestamp\": \"02:25\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"느낌적으로 한스푼 넣어줍니다\",\n          \"timestamp\": \"02:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"오이\",\n      \"displayName\": \"오이\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"오이도 있어서 올려봤어요\",\n          \"timestamp\": \"02:32\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"볼에 고추장 1스푼, 양조간장 1스푼, 설탕 1스푼, 고춧가루 반스푼, 다진마늘 반스푼을 넣고 섞어 양념장을 만듭니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 1스푼\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장 1스푼\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 반스푼\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 반스푼\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양념장 완성 ~~\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 물을 올리고 보글보글 끓여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"냄비에 물 올리고\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"보글보글 끓여줍니다\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"끓는 물에 국수 1인분을 넣고 저어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"국수는 1인분만 삶아볼게요\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"휘적휘적\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물이 끓어오를 때마다 찬물 반 컵씩 총 세 번 붓고, 네 번째로 끓어오를 때 불을 끕니다. (소면일 경우 세 번째 끓을 때 불을 끕니다.)\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이렇게 물이 끓어오르면 물 반컵을 쪼록\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"두번째로 끓어오르면 또 반컵 쪼로록\",\n          \"timestamp\": \"00:51\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"세번째 끓어오르면 또 반컵 넣고\",\n          \"timestamp\": \"00:57\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"네번째 끓어오를때 불을 끕니다\",\n          \"timestamp\": \"01:00\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소면일 경우 세번째 끓을때 불을 끄세요\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삶은 국수를 체반에 붓고 찬물에 바락바락 씻어준 뒤 물기를 털어냅니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"삶은 국수는 채반에 부어주고\",\n          \"timestamp\": \"01:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"찬물에 바락바락 씻겨줍니다\",\n          \"timestamp\": \"01:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물기없이 탈탈탈탈\",\n          \"timestamp\": \"01:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"선택사항으로, 냄비에 물을 끓이고 소금 1티스푼을 넣은 후, 1시간 정도 상온에 꺼내둔 계란을 국자로 넣어 8분간 삶아 찬물에 헹궈 껍질을 까서 반으로 자릅니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"뭔가 아쉬워서 계란도 삶아봅니다\",\n          \"timestamp\": \"01:21\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 1티스푼\",\n          \"timestamp\": \"01:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물이 팔팔 끓으면 국자로 사뿐히 넣어줍니다\",\n          \"timestamp\": \"01:26\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"넣는 순간부터 8분간 삶아요\",\n          \"timestamp\": \"01:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란은 1시간 정도 상온에 꺼내두면 터지지 않고 예쁘게 삶아져요\",\n          \"timestamp\": \"01:33\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"삶은 계란을 찬물에 헹궈 껍질을 벗기고 반으로 썲\",\n          \"timestamp\": \"01:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 국수를 담고 만들어둔 양념장을 넣어 비벼줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이쁜 그릇에 국수를 담고 만들어둔 양념\",\n          \"timestamp\": \"02:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"왼손으로 비비고~ 오른손으로 비비고~\",\n          \"timestamp\": \"02:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"참기름 한 스푼을 넣고 섞은 후, 채 썬 오이와 삶은 계란을 올려 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 꼬수운 참기름도 느낌적으로 한스푼 넣어줍니다\",\n          \"timestamp\": \"02:25\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"오이도 있어서 올려봤어요\",\n          \"timestamp\": \"02:32\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"비빈 국수 위에 채 썬 오이와 삶은 달걀을 얹음\",\n          \"timestamp\": \"02:34\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"비빔국수 완성 ~\",\n          \"timestamp\": \"02:38\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "비빔국수",
+      "description": null,
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "국수(중면) 1인분",
+          "displayName": "국수(중면)",
+          "amount": "1",
+          "unit": "인분",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국수 (중면)",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "국수는 1인분만 삶아볼게요",
+              "timestamp": "00:32"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "고추장 1스푼",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 1스푼",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "양조간장 1스푼",
+          "displayName": "양조간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장 1스푼",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "설탕 1스푼",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1스푼",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고춧가루 반스푼",
+          "displayName": "고춧가루",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 반스푼",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "다진마늘 반스푼",
+          "displayName": "다진마늘",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 반스푼",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "물",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "냄비에 물 올리고",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 반컵을 쪼록",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "계란",
+          "displayName": "계란",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "뭔가 아쉬워서 계란도 삶아봅니다",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "국자로 냄비에 계란 2개를 넣음",
+              "timestamp": "01:28"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "소금 1티스푼",
+          "displayName": "소금",
+          "amount": "1",
+          "unit": "티스푼",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 1티스푼",
+              "timestamp": "01:23"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "참기름 한스푼",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 꼬수운 참기름도",
+              "timestamp": "02:25"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "느낌적으로 한스푼 넣어줍니다",
+              "timestamp": "02:27"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "오이",
+          "displayName": "오이",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "오이도 있어서 올려봤어요",
+              "timestamp": "02:32"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "볼에 고추장 1스푼, 양조간장 1스푼, 설탕 1스푼, 고춧가루 반스푼, 다진마늘 반스푼을 넣고 섞어 양념장을 만듭니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 1스푼",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장 1스푼",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1스푼",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 반스푼",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 반스푼",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양념장 완성 ~~",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 물을 올리고 보글보글 끓여줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "냄비에 물 올리고",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "보글보글 끓여줍니다",
+              "timestamp": "00:29"
+            }
+          ]
+        },
+        {
+          "text": "끓는 물에 국수 1인분을 넣고 저어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "국수는 1인분만 삶아볼게요",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "휘적휘적",
+              "timestamp": "00:39"
+            }
+          ]
+        },
+        {
+          "text": "물이 끓어오를 때마다 찬물 반 컵씩 총 세 번 붓고, 네 번째로 끓어오를 때 불을 끕니다. (소면일 경우 세 번째 끓을 때 불을 끕니다.)",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이렇게 물이 끓어오르면 물 반컵을 쪼록",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "두번째로 끓어오르면 또 반컵 쪼로록",
+              "timestamp": "00:51"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "세번째 끓어오르면 또 반컵 넣고",
+              "timestamp": "00:57"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "네번째 끓어오를때 불을 끕니다",
+              "timestamp": "01:00"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "소면일 경우 세번째 끓을때 불을 끄세요",
+              "timestamp": "01:05"
+            }
+          ]
+        },
+        {
+          "text": "삶은 국수를 체반에 붓고 찬물에 바락바락 씻어준 뒤 물기를 털어냅니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "삶은 국수는 채반에 부어주고",
+              "timestamp": "01:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "찬물에 바락바락 씻겨줍니다",
+              "timestamp": "01:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물기없이 탈탈탈탈",
+              "timestamp": "01:18"
+            }
+          ]
+        },
+        {
+          "text": "선택사항으로, 냄비에 물을 끓이고 소금 1티스푼을 넣은 후, 1시간 정도 상온에 꺼내둔 계란을 국자로 넣어 8분간 삶아 찬물에 헹궈 껍질을 까서 반으로 자릅니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "뭔가 아쉬워서 계란도 삶아봅니다",
+              "timestamp": "01:21"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 1티스푼",
+              "timestamp": "01:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물이 팔팔 끓으면 국자로 사뿐히 넣어줍니다",
+              "timestamp": "01:26"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "넣는 순간부터 8분간 삶아요",
+              "timestamp": "01:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란은 1시간 정도 상온에 꺼내두면 터지지 않고 예쁘게 삶아져요",
+              "timestamp": "01:33"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "삶은 계란을 찬물에 헹궈 껍질을 벗기고 반으로 썲",
+              "timestamp": "01:41"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 국수를 담고 만들어둔 양념장을 넣어 비벼줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이쁜 그릇에 국수를 담고 만들어둔 양념",
+              "timestamp": "02:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "왼손으로 비비고~ 오른손으로 비비고~",
+              "timestamp": "02:18"
+            }
+          ]
+        },
+        {
+          "text": "참기름 한 스푼을 넣고 섞은 후, 채 썬 오이와 삶은 계란을 올려 완성합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 꼬수운 참기름도 느낌적으로 한스푼 넣어줍니다",
+              "timestamp": "02:25"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "오이도 있어서 올려봤어요",
+              "timestamp": "02:32"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "비빈 국수 위에 채 썬 오이와 삶은 달걀을 얹음",
+              "timestamp": "02:34"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "비빔국수 완성 ~",
+              "timestamp": "02:38"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
   }
 }

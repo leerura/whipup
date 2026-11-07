@@ -1,0 +1,514 @@
+{
+  "videoId": "WcjziQEnHdM",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/WcjziQEnHdM",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-07T09:47:34.555925+00:00",
+    "rawResponse": "{\n  \"title\": \"제육볶음\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"돼지 앞다리살 600g\",\n      \"displayName\": \"돼지 앞다리살\",\n      \"amount\": \"600\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"돼지 앞다리살 600g\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 돼지 앞다리살 600g에 설탕과 맛술 2큰술을 넣고\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 2큰술\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술, 설탕 2큰술\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕과 맛술 2큰술을 넣고\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 2큰술\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술, 설탕 2큰술\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕과 맛술 2큰술을 넣고\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/2개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/2개\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 1/2개를 채썰어줍니다\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 1대\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"대\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 1대\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파 1대를 반으로 갈라 5cm길이로 썰어줍니다\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 2개\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 2개\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"청양고추 2개를 어슷썰어줍니다\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 3큰술\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"3\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 3큰술\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루 3큰술\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물엿 2큰술\",\n      \"displayName\": \"물엿\",\n      \"amount\": \"2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물엿 2큰술\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 2큰술\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장, 고추장 2큰술\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장 2큰술\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 2큰술\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 2큰술\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘 2큰술\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1/2큰술\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1/2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1/2큰술\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"굴소스 1/2큰술\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진생강 1작은술\",\n      \"displayName\": \"다진생강\",\n      \"amount\": \"1\",\n      \"unit\": \"작은술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진생강 1작은술\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진생강 1작은술\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 1/2작은술\",\n      \"displayName\": \"후추\",\n      \"amount\": \"1/2\",\n      \"unit\": \"작은술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 1/2작은술\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추 약간을 넣고 섞어줍니다\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 1큰술\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"예열된 팬에 식용유 1큰술을 두르고\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 2큰술\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장, 고추장 2큰술\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고기가 어느정도 익으면 진간장 2큰술을 넣고 볶아줍니다\",\n          \"timestamp\": \"01:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1큰술\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1큰술\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불을 끄고 참기름 1큰술을 넣어줍니다\",\n          \"timestamp\": \"01:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 통깨를 뿌려주면\",\n          \"timestamp\": \"01:56\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"돼지 앞다리살 600g에 설탕과 맛술 2큰술을 넣고 골고루 버무려 30분간 재워둡니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 돼지 앞다리살 600g에 설탕과 맛술 2큰술을 넣고\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"골고루 버무려 30분간 재워둡니다\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 1/2개를 채썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 1/2개를 채썰어줍니다\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파 1대를 반으로 갈라 5cm길이로 썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파 1대를 반으로 갈라 5cm길이로 썰어줍니다\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"청양고추 2개를 어슷썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"청양고추 2개를 어슷썰어줍니다\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 고춧가루 3큰술, 물엿 2큰술, 고추장 2큰술, 다진마늘 2큰술, 굴소스 1/2큰술, 다진생강 1작은술, 후추 약간을 넣고 섞어 양념장을 만듭니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루 3큰술\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물엿 2큰술\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장 2큰술\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘 2큰술\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"굴소스 1/2큰술\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진생강 1작은술\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추 약간을 넣고 섞어줍니다\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"예열된 팬에 식용유 1큰술을 두르고 돼지고기를 중·강불에서 구워줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"예열된 팬에 식용유 1큰술을 두르고\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"돼지고기를 구워줍니다(중·강불)\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기가 어느정도 익으면 진간장 2큰술을 넣고 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고기가 어느정도 익으면 진간장 2큰술을 넣고 볶아줍니다\",\n          \"timestamp\": \"01:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양념장과 양파를 넣고 중불에서 같이 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양념장과 양파를 넣고 같이 볶아줍니다(중불)\",\n          \"timestamp\": \"01:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파와 청양고추를 넣고 조금 더 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파와 청양고추를 넣고 조금 더 볶아줍니다\",\n          \"timestamp\": \"01:38\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 끄고 참기름 1큰술을 넣어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불을 끄고 참기름 1큰술을 넣어줍니다\",\n          \"timestamp\": \"01:47\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마지막으로 통깨를 뿌려 제육볶음을 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 통깨를 뿌려주면\",\n          \"timestamp\": \"01:56\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"끝내주게 맛있는 제육볶음 완성\",\n          \"timestamp\": \"01:58\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"물엿 2큰술은 00:07의 전체 재료 목록에는 명시되어 있지 않았으나 00:34의 양념장 제조 단계에서 추가되었습니다.\",\n    \"식용유 1큰술과 통깨는 00:07의 전체 재료 목록 텍스트에 포함되지 않았으나 조리 과정에서 사용되었습니다.\",\n    \"후추 양은 00:07 목록에는 '1/2작은술'로 표기되었으나 00:45 자막에는 '약간'으로 표기되었습니다.\"\n  ]\n}",
+    "result": {
+      "title": "제육볶음",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "돼지 앞다리살 600g",
+          "displayName": "돼지 앞다리살",
+          "amount": "600",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "돼지 앞다리살 600g",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 돼지 앞다리살 600g에 설탕과 맛술 2큰술을 넣고",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "설탕 2큰술",
+          "displayName": "설탕",
+          "amount": "2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술, 설탕 2큰술",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕과 맛술 2큰술을 넣고",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "맛술 2큰술",
+          "displayName": "맛술",
+          "amount": "2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술, 설탕 2큰술",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕과 맛술 2큰술을 넣고",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양파 1/2개",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/2개",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파 1/2개를 채썰어줍니다",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "대파 1대",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "대",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 1대",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대파 1대를 반으로 갈라 5cm길이로 썰어줍니다",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "청양고추 2개",
+          "displayName": "청양고추",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 2개",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "청양고추 2개를 어슷썰어줍니다",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "고춧가루 3큰술",
+          "displayName": "고춧가루",
+          "amount": "3",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 3큰술",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루 3큰술",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "물엿 2큰술",
+          "displayName": "물엿",
+          "amount": "2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물엿 2큰술",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "고추장 2큰술",
+          "displayName": "고추장",
+          "amount": "2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장, 고추장 2큰술",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고추장 2큰술",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "다진마늘 2큰술",
+          "displayName": "다진마늘",
+          "amount": "2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 2큰술",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘 2큰술",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "굴소스 1/2큰술",
+          "displayName": "굴소스",
+          "amount": "1/2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1/2큰술",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "굴소스 1/2큰술",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "다진생강 1작은술",
+          "displayName": "다진생강",
+          "amount": "1",
+          "unit": "작은술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진생강 1작은술",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다진생강 1작은술",
+              "timestamp": "00:43"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "후추 1/2작은술",
+          "displayName": "후추",
+          "amount": "1/2",
+          "unit": "작은술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 1/2작은술",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "후추 약간을 넣고 섞어줍니다",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "식용유 1큰술",
+          "displayName": "식용유",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "예열된 팬에 식용유 1큰술을 두르고",
+              "timestamp": "00:52"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "진간장 2큰술",
+          "displayName": "진간장",
+          "amount": "2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장, 고추장 2큰술",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고기가 어느정도 익으면 진간장 2큰술을 넣고 볶아줍니다",
+              "timestamp": "01:09"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "참기름 1큰술",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1큰술",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "불을 끄고 참기름 1큰술을 넣어줍니다",
+              "timestamp": "01:47"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 통깨를 뿌려주면",
+              "timestamp": "01:56"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        }
+      ],
+      "steps": [
+        {
+          "text": "돼지 앞다리살 600g에 설탕과 맛술 2큰술을 넣고 골고루 버무려 30분간 재워둡니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 돼지 앞다리살 600g에 설탕과 맛술 2큰술을 넣고",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "골고루 버무려 30분간 재워둡니다",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "양파 1/2개를 채썰어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파 1/2개를 채썰어줍니다",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "대파 1대를 반으로 갈라 5cm길이로 썰어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대파 1대를 반으로 갈라 5cm길이로 썰어줍니다",
+              "timestamp": "00:25"
+            }
+          ]
+        },
+        {
+          "text": "청양고추 2개를 어슷썰어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "청양고추 2개를 어슷썰어줍니다",
+              "timestamp": "00:29"
+            }
+          ]
+        },
+        {
+          "text": "볼에 고춧가루 3큰술, 물엿 2큰술, 고추장 2큰술, 다진마늘 2큰술, 굴소스 1/2큰술, 다진생강 1작은술, 후추 약간을 넣고 섞어 양념장을 만듭니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루 3큰술",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물엿 2큰술",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고추장 2큰술",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘 2큰술",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "굴소스 1/2큰술",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다진생강 1작은술",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "후추 약간을 넣고 섞어줍니다",
+              "timestamp": "00:45"
+            }
+          ]
+        },
+        {
+          "text": "예열된 팬에 식용유 1큰술을 두르고 돼지고기를 중·강불에서 구워줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "예열된 팬에 식용유 1큰술을 두르고",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "돼지고기를 구워줍니다(중·강불)",
+              "timestamp": "00:54"
+            }
+          ]
+        },
+        {
+          "text": "고기가 어느정도 익으면 진간장 2큰술을 넣고 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고기가 어느정도 익으면 진간장 2큰술을 넣고 볶아줍니다",
+              "timestamp": "01:09"
+            }
+          ]
+        },
+        {
+          "text": "양념장과 양파를 넣고 중불에서 같이 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양념장과 양파를 넣고 같이 볶아줍니다(중불)",
+              "timestamp": "01:19"
+            }
+          ]
+        },
+        {
+          "text": "대파와 청양고추를 넣고 조금 더 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대파와 청양고추를 넣고 조금 더 볶아줍니다",
+              "timestamp": "01:38"
+            }
+          ]
+        },
+        {
+          "text": "불을 끄고 참기름 1큰술을 넣어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "불을 끄고 참기름 1큰술을 넣어줍니다",
+              "timestamp": "01:47"
+            }
+          ]
+        },
+        {
+          "text": "마지막으로 통깨를 뿌려 제육볶음을 완성합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 통깨를 뿌려주면",
+              "timestamp": "01:56"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "끝내주게 맛있는 제육볶음 완성",
+              "timestamp": "01:58"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "물엿 2큰술은 00:07의 전체 재료 목록에는 명시되어 있지 않았으나 00:34의 양념장 제조 단계에서 추가되었습니다.",
+        "식용유 1큰술과 통깨는 00:07의 전체 재료 목록 텍스트에 포함되지 않았으나 조리 과정에서 사용되었습니다.",
+        "후추 양은 00:07 목록에는 '1/2작은술'로 표기되었으나 00:45 자막에는 '약간'으로 표기되었습니다."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}
