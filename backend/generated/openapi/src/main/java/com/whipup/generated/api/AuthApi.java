@@ -8,6 +8,7 @@ package com.whipup.generated.api;
 import com.whipup.generated.model.ErrorResponse;
 import com.whipup.generated.model.KakaoLoginRequest;
 import com.whipup.generated.model.LoginResponse;
+import com.whipup.generated.model.TermsConsentRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -27,8 +28,49 @@ public interface AuthApi {
         return new AuthApiDelegate() {};
     }
 
-    String PATH_LOGIN_WITH_KAKAO = "/api/v1/auth/kakao";
+    String PATH_ACCEPT_TERMS_CONSENT = "/api/v1/me/terms-consent";
+    /**
+     * POST /api/v1/me/terms-consent
+     *
+     * @param termsConsentRequest  (required)
+     * @return Terms accepted (status code 204)
+     *         or Invalid request (status code 400)
+     *         or Authentication failed or missing (status code 401)
+     */
+    @RequestMapping(
+        method = RequestMethod.POST,
+        value = AuthApi.PATH_ACCEPT_TERMS_CONSENT,
+        produces = { "application/json" },
+        consumes = { "application/json" }
+    )
+    default ResponseEntity<Void> acceptTermsConsent(
+         @Valid @RequestBody TermsConsentRequest termsConsentRequest
+    ) {
+        return getDelegate().acceptTermsConsent(termsConsentRequest);
+    }
+
+
     String PATH_DELETE_CURRENT_ACCOUNT = "/api/v1/me";
+    /**
+     * DELETE /api/v1/me : Permanently delete the authenticated account
+     * Permanently deletes the current user, linked provider accounts, owned ingredients, and onboarding state in one transaction. No backup is retained. Shared ingredient/catalog and recipe data are not deleted. Logout is client-side and has no backend endpoint.
+     *
+     * @return Account deleted (status code 204)
+     *         or Authentication failed or missing (status code 401)
+     */
+    @RequestMapping(
+        method = RequestMethod.DELETE,
+        value = AuthApi.PATH_DELETE_CURRENT_ACCOUNT,
+        produces = { "application/json" }
+    )
+    default ResponseEntity<Void> deleteCurrentAccount(
+        
+    ) {
+        return getDelegate().deleteCurrentAccount();
+    }
+
+
+    String PATH_LOGIN_WITH_KAKAO = "/api/v1/auth/kakao";
     /**
      * POST /api/v1/auth/kakao
      *
@@ -46,11 +88,6 @@ public interface AuthApi {
          @Valid @RequestBody KakaoLoginRequest kakaoLoginRequest
     ) {
         return getDelegate().loginWithKakao(kakaoLoginRequest);
-    }
-
-    @RequestMapping(method = RequestMethod.DELETE, value = AuthApi.PATH_DELETE_CURRENT_ACCOUNT)
-    default ResponseEntity<Void> deleteCurrentAccount() {
-        return getDelegate().deleteCurrentAccount();
     }
 
 }

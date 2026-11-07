@@ -2,6 +2,8 @@ package com.whipup.generated.api;
 
 import com.whipup.generated.model.ErrorResponse;
 import com.whipup.generated.model.RecipeDetailResponse;
+import com.whipup.generated.model.RecipeSearchScope;
+import com.whipup.generated.model.RecommendationListResponse;
 
 
 import org.springframework.beans.factory.annotation.Autowired;

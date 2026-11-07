@@ -3,6 +3,7 @@ package com.whipup.generated.api;
 import com.whipup.generated.model.ErrorResponse;
 import com.whipup.generated.model.KakaoLoginRequest;
 import com.whipup.generated.model.LoginResponse;
+import com.whipup.generated.model.TermsConsentRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -28,18 +29,19 @@ public interface AuthApiDelegate {
     }
 
     /**
-     * POST /api/v1/auth/kakao
+     * POST /api/v1/me/terms-consent
      *
-     * @param kakaoLoginRequest  (required)
-     * @return Login success (status code 200)
+     * @param termsConsentRequest  (required)
+     * @return Terms accepted (status code 204)
+     *         or Invalid request (status code 400)
      *         or Authentication failed or missing (status code 401)
-     * @see AuthApi#loginWithKakao
+     * @see AuthApi#acceptTermsConsent
      */
-    default ResponseEntity<LoginResponse> loginWithKakao(KakaoLoginRequest kakaoLoginRequest) {
+    default ResponseEntity<Void> acceptTermsConsent(TermsConsentRequest termsConsentRequest) {
         getRequest().ifPresent(request -> {
             for (MediaType mediaType: MediaType.parseMediaTypes(request.getHeader("Accept"))) {
                 if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
-                    String exampleString = "{ \"accessToken\" : \"accessToken\", \"user\" : { \"userId\" : 0 }, \"hasOwnedIngredients\" : true, \"onboardingCompleted\" : true }";
+                    String exampleString = "{ \"code\" : \"code\", \"message\" : \"message\" }";
                     ApiUtil.setExampleResponse(request, "application/json", exampleString);
                     break;
                 }
@@ -54,8 +56,53 @@ public interface AuthApiDelegate {
 
     }
 
+    /**
+     * DELETE /api/v1/me : Permanently delete the authenticated account
+     * Permanently deletes the current user, linked provider accounts, owned ingredients, and onboarding state in one transaction. No backup is retained. Shared ingredient/catalog and recipe data are not deleted. Logout is client-side and has no backend endpoint.
+     *
+     * @return Account deleted (status code 204)
+     *         or Authentication failed or missing (status code 401)
+     * @see AuthApi#deleteCurrentAccount
+     */
     default ResponseEntity<Void> deleteCurrentAccount() {
+        getRequest().ifPresent(request -> {
+            for (MediaType mediaType: MediaType.parseMediaTypes(request.getHeader("Accept"))) {
+                if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
+                    String exampleString = "{ \"code\" : \"code\", \"message\" : \"message\" }";
+                    ApiUtil.setExampleResponse(request, "application/json", exampleString);
+                    break;
+                }
+            }
+        });
         return new ResponseEntity<>(HttpStatus.NOT_IMPLEMENTED);
+
+    }
+
+    /**
+     * POST /api/v1/auth/kakao
+     *
+     * @param kakaoLoginRequest  (required)
+     * @return Login success (status code 200)
+     *         or Authentication failed or missing (status code 401)
+     * @see AuthApi#loginWithKakao
+     */
+    default ResponseEntity<LoginResponse> loginWithKakao(KakaoLoginRequest kakaoLoginRequest) {
+        getRequest().ifPresent(request -> {
+            for (MediaType mediaType: MediaType.parseMediaTypes(request.getHeader("Accept"))) {
+                if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
+                    String exampleString = "{ \"accessToken\" : \"accessToken\", \"user\" : { \"userId\" : 0 }, \"hasOwnedIngredients\" : true, \"onboardingCompleted\" : true, \"termsConsentRequired\" : true }";
+                    ApiUtil.setExampleResponse(request, "application/json", exampleString);
+                    break;
+                }
+                if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
+                    String exampleString = "{ \"code\" : \"code\", \"message\" : \"message\" }";
+                    ApiUtil.setExampleResponse(request, "application/json", exampleString);
+                    break;
+                }
+            }
+        });
+        return new ResponseEntity<>(HttpStatus.NOT_IMPLEMENTED);
+
     }
 
 }

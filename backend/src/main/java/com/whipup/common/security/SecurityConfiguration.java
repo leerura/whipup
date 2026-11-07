@@ -9,6 +9,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter;
 
 @Configuration
 @EnableWebSecurity
@@ -17,7 +18,8 @@ public class SecurityConfiguration {
 	@Bean
 	SecurityFilterChain securityFilterChain(
 			HttpSecurity http,
-			JwtAuthenticationEntryPoint entryPoint
+			JwtAuthenticationEntryPoint entryPoint,
+			TermsConsentFilter termsConsentFilter
 	) throws Exception {
 		http
 				.csrf(AbstractHttpConfigurer::disable)
@@ -34,6 +36,7 @@ public class SecurityConfiguration {
 						.jwt(Customizer.withDefaults())
 						.authenticationEntryPoint(entryPoint)
 				)
+				.addFilterAfter(termsConsentFilter, BearerTokenAuthenticationFilter.class)
 				.exceptionHandling(exceptions -> exceptions
 						.authenticationEntryPoint(entryPoint)
 				);

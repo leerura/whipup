@@ -29,6 +29,8 @@ public class LoginResponse {
 
   private Boolean onboardingCompleted;
 
+  private Boolean termsConsentRequired;
+
   public LoginResponse() {
     super();
   }
@@ -36,11 +38,12 @@ public class LoginResponse {
   /**
    * Constructor with only required parameters
    */
-  public LoginResponse(String accessToken, UserSummary user, Boolean hasOwnedIngredients, Boolean onboardingCompleted) {
+  public LoginResponse(String accessToken, UserSummary user, Boolean hasOwnedIngredients, Boolean onboardingCompleted, Boolean termsConsentRequired) {
     this.accessToken = accessToken;
     this.user = user;
     this.hasOwnedIngredients = hasOwnedIngredients;
     this.onboardingCompleted = onboardingCompleted;
+    this.termsConsentRequired = termsConsentRequired;
   }
 
   public LoginResponse accessToken(String accessToken) {
@@ -52,7 +55,7 @@ public class LoginResponse {
    * Get accessToken
    * @return accessToken
    */
-  @NotNull
+  @NotNull 
   @JsonProperty("accessToken")
   public String getAccessToken() {
     return accessToken;
@@ -112,7 +115,7 @@ public class LoginResponse {
    * Whether the account has completed initial ingredient registration. Remains true if all owned ingredients are later deleted.
    * @return onboardingCompleted
    */
-  @NotNull
+  @NotNull 
   @JsonProperty("onboardingCompleted")
   public Boolean getOnboardingCompleted() {
     return onboardingCompleted;
@@ -121,6 +124,26 @@ public class LoginResponse {
   @JsonProperty("onboardingCompleted")
   public void setOnboardingCompleted(Boolean onboardingCompleted) {
     this.onboardingCompleted = onboardingCompleted;
+  }
+
+  public LoginResponse termsConsentRequired(Boolean termsConsentRequired) {
+    this.termsConsentRequired = termsConsentRequired;
+    return this;
+  }
+
+  /**
+   * Whether the account must accept the current terms before using protected APIs.
+   * @return termsConsentRequired
+   */
+  @NotNull 
+  @JsonProperty("termsConsentRequired")
+  public Boolean getTermsConsentRequired() {
+    return termsConsentRequired;
+  }
+
+  @JsonProperty("termsConsentRequired")
+  public void setTermsConsentRequired(Boolean termsConsentRequired) {
+    this.termsConsentRequired = termsConsentRequired;
   }
 
   @Override
@@ -135,12 +158,13 @@ public class LoginResponse {
     return Objects.equals(this.accessToken, loginResponse.accessToken) &&
         Objects.equals(this.user, loginResponse.user) &&
         Objects.equals(this.hasOwnedIngredients, loginResponse.hasOwnedIngredients) &&
-        Objects.equals(this.onboardingCompleted, loginResponse.onboardingCompleted);
+        Objects.equals(this.onboardingCompleted, loginResponse.onboardingCompleted) &&
+        Objects.equals(this.termsConsentRequired, loginResponse.termsConsentRequired);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(accessToken, user, hasOwnedIngredients, onboardingCompleted);
+    return Objects.hash(accessToken, user, hasOwnedIngredients, onboardingCompleted, termsConsentRequired);
   }
 
   @Override
@@ -151,6 +175,7 @@ public class LoginResponse {
     sb.append("    user: ").append(toIndentedString(user)).append("\n");
     sb.append("    hasOwnedIngredients: ").append(toIndentedString(hasOwnedIngredients)).append("\n");
     sb.append("    onboardingCompleted: ").append(toIndentedString(onboardingCompleted)).append("\n");
+    sb.append("    termsConsentRequired: ").append(toIndentedString(termsConsentRequired)).append("\n");
     sb.append("}");
     return sb.toString();
   }

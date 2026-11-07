@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class AuthService {
+	private static final String CURRENT_TERMS_VERSION = "v1";
+	private static final String CURRENT_PRIVACY_VERSION = "v1";
 
 	private final KakaoUserClient kakaoUserClient;
 	private final AuthAccountService authAccountService;
@@ -42,7 +44,8 @@ public class AuthService {
 				accessToken,
 				user.getId(),
 				hasOwnedIngredients,
-				user.isOnboardingCompleted()
+				user.isOnboardingCompleted(),
+				user.requiresTermsConsent(CURRENT_TERMS_VERSION, CURRENT_PRIVACY_VERSION)
 		);
 	}
 }

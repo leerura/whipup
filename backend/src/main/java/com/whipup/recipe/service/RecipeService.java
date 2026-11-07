@@ -5,6 +5,7 @@ import com.whipup.generated.model.DetailIngredientDisplay;
 import com.whipup.generated.model.DetailRequirement;
 import com.whipup.generated.model.DetailRequirementOption;
 import com.whipup.generated.model.IngredientMatch;
+import com.whipup.generated.model.IngredientVariantOption;
 import com.whipup.generated.model.MissingDetailRequirement;
 import com.whipup.generated.model.RecipeDetailResponse;
 import com.whipup.generated.model.SatisfiedDetailRequirement;
@@ -24,6 +25,7 @@ import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.LinkedHashMap;
 import java.util.List;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -103,6 +105,10 @@ public class RecipeService {
             recipe.getId(),
             recipe.getName(),
             shortsReference,
+            recipe.getSourceTitle(),
+            recipe.getSourceChannelName(),
+            recipe.getSourceChannelId(),
+            recipe.getSourceMetadataFetchedAt(),
             thumbnailUrl,
             matchResult.missingCount(),
             requirements,
@@ -125,7 +131,7 @@ public class RecipeService {
             .sorted(Comparator.comparingInt(
                 RecipeRequirementOption::getDisplayOrder
             ))
-            .map(this::toDetailRequirementOption)
+            .map(option -> toDetailRequirementOption(option, !result.satisfied()))
             .toList();
 
         if (result.satisfied()) {
@@ -148,7 +154,8 @@ public class RecipeService {
     }
 
     private DetailRequirementOption toDetailRequirementOption(
-        RecipeRequirementOption option
+        RecipeRequirementOption option,
+        boolean includeAddableVariants
     ) {
         RecipeIngredient ingredient = option.getIngredient();
         List<DetailIngredientDisplay> substitutes = option.getSubstitutes()
@@ -160,13 +167,35 @@ public class RecipeService {
             .map(this::toIngredientDisplay)
             .toList();
 
+        List<IngredientVariantOption> addableVariants = includeAddableVariants
+            ? addableVariants(option)
+            : List.of();
+
         return new DetailRequirementOption(
             ingredient.getDisplayName(),
             ingredient.getRawText(),
-            substitutes
+            substitutes,
+            addableVariants
         )
             .amount(ingredient.getAmount())
             .unit(ingredient.getUnit());
+    }
+
+    private List<IngredientVariantOption> addableVariants(RecipeRequirementOption option) {
+        var candidates = new LinkedHashMap<Long, IngredientVariant>();
+        IngredientVariant exact = option.getIngredient().getIngredientVariant();
+        if (exact != null) {
+            candidates.put(exact.getId(), exact);
+        }
+        option.getIngredient().getAcceptedOwnedVariants()
+            .forEach(candidate -> candidates.put(candidate.getId(), candidate));
+        option.getAllowedVariants()
+            .forEach(candidate -> candidates.put(candidate.getId(), candidate));
+        return candidates.values().stream()
+            .sorted(Comparator.comparing(IngredientVariant::getName)
+                .thenComparing(IngredientVariant::getId))
+            .map(candidate -> new IngredientVariantOption(candidate.getId(), candidate.getName()))
+            .toList();
     }
 
     private DetailIngredientDisplay toIngredientDisplay(

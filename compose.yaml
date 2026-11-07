@@ -32,6 +32,14 @@ services:
       DB_USERNAME: ${DB_USERNAME}
       DB_PASSWORD: ${DB_PASSWORD}
       JWT_SECRET: ${JWT_SECRET}
+      SPRING_DATA_REDIS_HOST: redis
+      SPRING_DATA_REDIS_PORT: 6379
+
+  redis:
+    image: redis:7.4-alpine
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis_data:/data
 
   https-proxy:
     image: caddy:2.11.7-alpine
@@ -70,3 +78,4 @@ volumes:
   postgres_data:
   caddy_data:
   caddy_config:
+  redis_data:

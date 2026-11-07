@@ -5,6 +5,7 @@ import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.whipup.generated.model.DetailIngredientDisplay;
+import com.whipup.generated.model.IngredientVariantOption;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -34,6 +35,8 @@ public class DetailRequirementOption {
 
   private List<@Valid DetailIngredientDisplay> substitutes = new ArrayList<>();
 
+  private List<@Valid IngredientVariantOption> addableVariants = new ArrayList<>();
+
   public DetailRequirementOption() {
     super();
   }
@@ -41,10 +44,11 @@ public class DetailRequirementOption {
   /**
    * Constructor with only required parameters
    */
-  public DetailRequirementOption(String displayName, String rawText, List<@Valid DetailIngredientDisplay> substitutes) {
+  public DetailRequirementOption(String displayName, String rawText, List<@Valid DetailIngredientDisplay> substitutes, List<@Valid IngredientVariantOption> addableVariants) {
     this.displayName = displayName;
     this.rawText = rawText;
     this.substitutes = substitutes;
+    this.addableVariants = addableVariants;
   }
 
   public DetailRequirementOption displayName(String displayName) {
@@ -155,6 +159,34 @@ public class DetailRequirementOption {
     this.substitutes = substitutes;
   }
 
+  public DetailRequirementOption addableVariants(List<@Valid IngredientVariantOption> addableVariants) {
+    this.addableVariants = addableVariants;
+    return this;
+  }
+
+  public DetailRequirementOption addAddableVariantsItem(IngredientVariantOption addableVariantsItem) {
+    if (this.addableVariants == null) {
+      this.addableVariants = new ArrayList<>();
+    }
+    this.addableVariants.add(addableVariantsItem);
+    return this;
+  }
+
+  /**
+   * Get addableVariants
+   * @return addableVariants
+   */
+  @NotNull @Valid 
+  @JsonProperty("addableVariants")
+  public List<@Valid IngredientVariantOption> getAddableVariants() {
+    return addableVariants;
+  }
+
+  @JsonProperty("addableVariants")
+  public void setAddableVariants(List<@Valid IngredientVariantOption> addableVariants) {
+    this.addableVariants = addableVariants;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -168,12 +200,13 @@ public class DetailRequirementOption {
         Objects.equals(this.rawText, detailRequirementOption.rawText) &&
         Objects.equals(this.amount, detailRequirementOption.amount) &&
         Objects.equals(this.unit, detailRequirementOption.unit) &&
-        Objects.equals(this.substitutes, detailRequirementOption.substitutes);
+        Objects.equals(this.substitutes, detailRequirementOption.substitutes) &&
+        Objects.equals(this.addableVariants, detailRequirementOption.addableVariants);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, rawText, amount, unit, substitutes);
+    return Objects.hash(displayName, rawText, amount, unit, substitutes, addableVariants);
   }
 
   @Override
@@ -185,6 +218,7 @@ public class DetailRequirementOption {
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
     sb.append("    unit: ").append(toIndentedString(unit)).append("\n");
     sb.append("    substitutes: ").append(toIndentedString(substitutes)).append("\n");
+    sb.append("    addableVariants: ").append(toIndentedString(addableVariants)).append("\n");
     sb.append("}");
     return sb.toString();
   }

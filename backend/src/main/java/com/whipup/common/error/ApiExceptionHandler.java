@@ -5,6 +5,7 @@ import com.whipup.generated.model.ErrorResponse;
 import com.whipup.ingredient.exception.OwnedIngredientException;
 import com.whipup.recipe.exception.RecipeNotFoundException;
 import com.whipup.recommendation.exception.RecommendationException;
+import com.whipup.dailyMenu.service.DailyMenuUnavailableException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.AuthenticationException;
@@ -91,5 +92,11 @@ public class ApiExceptionHandler {
 		return ResponseEntity
 				.status(HttpStatus.UNAUTHORIZED)
 				.body(response);
+	}
+
+	@ExceptionHandler(DailyMenuUnavailableException.class)
+	public ResponseEntity<ErrorResponse> handleDailyMenuUnavailableException() {
+		return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE)
+				.body(new ErrorResponse("DAILY_MENU_UNAVAILABLE", "오늘 메뉴를 잠시 사용할 수 없습니다."));
 	}
 }

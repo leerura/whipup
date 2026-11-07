@@ -4,6 +4,7 @@ public record LoginResult(
 		String accessToken,
 		Long userId,
 		boolean hasOwnedIngredients,
-		boolean onboardingCompleted
+		boolean onboardingCompleted,
+		boolean termsConsentRequired
 ) {
 }

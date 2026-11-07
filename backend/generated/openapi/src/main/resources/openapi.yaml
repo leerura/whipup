@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: WhipUp API
-  version: 1.0.0-v3-design
+  version: 1.0.0-v4-design
 servers:
 - url: /
 security:
@@ -56,6 +56,10 @@ paths:
       - tag: Auth
   /api/v1/me:
     delete:
+      description: "Permanently deletes the current user, linked provider accounts,\
+        \ owned ingredients, and onboarding state in one transaction. No backup is\
+        \ retained. Shared ingredient/catalog and recipe data are not deleted. Logout\
+        \ is client-side and has no backend endpoint."
       operationId: deleteCurrentAccount
       responses:
         "204":
@@ -66,10 +70,75 @@ paths:
               schema:
                 $ref: "#/components/schemas/ErrorResponse"
           description: Authentication failed or missing
+      summary: Permanently delete the authenticated account
       tags:
       - Auth
+      x-accepts:
+      - application/json
       x-tags:
       - tag: Auth
+  /api/v1/me/terms-consent:
+    post:
+      operationId: acceptTermsConsent
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TermsConsentRequest"
+        required: true
+      responses:
+        "204":
+          description: Terms accepted
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Invalid request
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Authentication failed or missing
+      tags:
+      - Auth
+      x-content-type: application/json
+      x-accepts:
+      - application/json
+      x-tags:
+      - tag: Auth
+  /api/v1/me/onboarding:
+    post:
+      operationId: completeOnboarding
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/OnboardingRequest"
+        required: true
+      responses:
+        "204":
+          description: Onboarding completed
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Invalid request
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Authentication failed or missing
+      tags:
+      - Onboarding
+      x-content-type: application/json
+      x-accepts:
+      - application/json
+      x-tags:
+      - tag: Onboarding
   /api/v1/ingredients:
     get:
       operationId: getIngredientGroups
@@ -236,6 +305,133 @@ paths:
       - application/json
       x-tags:
       - tag: Recommendation
+  /api/v1/recipes/search:
+    get:
+      operationId: searchRecipes
+      parameters:
+      - explode: true
+        in: query
+        name: scope
+        required: true
+        schema:
+          $ref: "#/components/schemas/RecipeSearchScope"
+        style: form
+      - explode: true
+        in: query
+        name: query
+        required: true
+        schema:
+          minLength: 1
+          type: string
+        style: form
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RecommendationListResponse"
+          description: Published recipes matching the selected scope and query
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Invalid request
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Authentication failed or missing
+      tags:
+      - Recipe
+      x-accepts:
+      - application/json
+      x-tags:
+      - tag: Recipe
+  /api/v1/me/daily-menu:
+    get:
+      operationId: getDailyMenu
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RecommendationListResponse"
+          description: Today's menu in most-recently-added order
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Authentication failed or missing
+      tags:
+      - DailyMenu
+      x-accepts:
+      - application/json
+      x-tags:
+      - tag: DailyMenu
+    post:
+      operationId: addDailyMenu
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DailyMenuRequest"
+        required: true
+      responses:
+        "204":
+          description: Added (or already present)
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Resource not found
+        "503":
+          description: Daily menu storage unavailable
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Authentication failed or missing
+      tags:
+      - DailyMenu
+      x-content-type: application/json
+      x-accepts:
+      - application/json
+      x-tags:
+      - tag: DailyMenu
+  /api/v1/me/daily-menu/{recipeId}:
+    delete:
+      operationId: removeDailyMenu
+      parameters:
+      - explode: false
+        in: path
+        name: recipeId
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "204":
+          description: Removed (or already absent)
+        "503":
+          description: Daily menu storage unavailable
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Authentication failed or missing
+      tags:
+      - DailyMenu
+      x-accepts:
+      - application/json
+      x-tags:
+      - tag: DailyMenu
   /api/v1/recipes/{recipeId}:
     get:
       operationId: getRecipeDetail
@@ -319,6 +515,53 @@ components:
       required:
       - kakaoAccessToken
       type: object
+    TermsConsentRequest:
+      example:
+        termsVersion: termsVersion
+        privacyVersion: privacyVersion
+        age14OrOver: true
+      properties:
+        termsVersion:
+          type: string
+        privacyVersion:
+          type: string
+        age14OrOver:
+          type: boolean
+      required:
+      - age14OrOver
+      - privacyVersion
+      - termsVersion
+      type: object
+    OnboardingRequest:
+      example:
+        variantIds:
+        - 0
+        - 0
+      properties:
+        variantIds:
+          items:
+            format: int64
+            type: integer
+          type: array
+          uniqueItems: true
+      required:
+      - variantIds
+      type: object
+    DailyMenuRequest:
+      example:
+        recipeId: 0
+      properties:
+        recipeId:
+          format: int64
+          type: integer
+      required:
+      - recipeId
+      type: object
+    RecipeSearchScope:
+      enum:
+      - AVAILABLE
+      - ALL
+      type: string
     LoginResponse:
       example:
         accessToken: accessToken
@@ -326,6 +569,7 @@ components:
           userId: 0
         hasOwnedIngredients: true
         onboardingCompleted: true
+        termsConsentRequired: true
       properties:
         accessToken:
           type: string
@@ -338,10 +582,15 @@ components:
           description: Whether the account has completed initial ingredient registration.
             Remains true if all owned ingredients are later deleted.
           type: boolean
+        termsConsentRequired:
+          description: Whether the account must accept the current terms before using
+            protected APIs.
+          type: boolean
       required:
       - accessToken
       - hasOwnedIngredients
       - onboardingCompleted
+      - termsConsentRequired
       - user
       type: object
     UserSummary:
@@ -659,10 +908,10 @@ components:
         recipeId: 0
         name: name
         shortsReference: https://openapi-generator.tech
-        sourceTitle: Source video title
-        sourceChannelName: Source channel
-        sourceChannelId: UCxxxxxxxxxxxxxxxxxxxxxx
-        sourceMetadataFetchedAt: '2026-10-25T12:00:00Z'
+        sourceTitle: sourceTitle
+        sourceChannelName: sourceChannelName
+        sourceChannelId: sourceChannelId
+        sourceMetadataFetchedAt: 2000-01-23T04:56:07.000+00:00
         thumbnailUrl: https://openapi-generator.tech
         missingCount: 0
         requirements:
@@ -681,6 +930,11 @@ components:
               rawText: rawText
               amount: amount
               unit: unit
+            addableVariants:
+            - variantId: 0
+              name: name
+            - variantId: 0
+              name: name
           - displayName: displayName
             rawText: rawText
             amount: amount
@@ -694,6 +948,11 @@ components:
               rawText: rawText
               amount: amount
               unit: unit
+            addableVariants:
+            - variantId: 0
+              name: name
+            - variantId: 0
+              name: name
           matches:
           - type: DIRECT
             requiredName: requiredName
@@ -716,6 +975,11 @@ components:
               rawText: rawText
               amount: amount
               unit: unit
+            addableVariants:
+            - variantId: 0
+              name: name
+            - variantId: 0
+              name: name
           - displayName: displayName
             rawText: rawText
             amount: amount
@@ -729,6 +993,11 @@ components:
               rawText: rawText
               amount: amount
               unit: unit
+            addableVariants:
+            - variantId: 0
+              name: name
+            - variantId: 0
+              name: name
           matches:
           - type: DIRECT
             requiredName: requiredName
@@ -760,6 +1029,7 @@ components:
           format: uri
           type: string
         sourceTitle:
+          description: Title returned by the stored YouTube source metadata snapshot.
           nullable: true
           type: string
         sourceChannelName:
@@ -769,6 +1039,7 @@ components:
           nullable: true
           type: string
         sourceMetadataFetchedAt:
+          description: UTC time when the stored YouTube metadata snapshot was fetched.
           format: date-time
           nullable: true
           type: string
@@ -798,10 +1069,10 @@ components:
       - recipeId
       - requirements
       - shortsReference
-      - sourceTitle
-      - sourceChannelName
       - sourceChannelId
+      - sourceChannelName
       - sourceMetadataFetchedAt
+      - sourceTitle
       - steps
       - thumbnailUrl
       type: object
@@ -832,6 +1103,11 @@ components:
             rawText: rawText
             amount: amount
             unit: unit
+          addableVariants:
+          - variantId: 0
+            name: name
+          - variantId: 0
+            name: name
         - displayName: displayName
           rawText: rawText
           amount: amount
@@ -845,6 +1121,11 @@ components:
             rawText: rawText
             amount: amount
             unit: unit
+          addableVariants:
+          - variantId: 0
+            name: name
+          - variantId: 0
+            name: name
         matches:
         - type: DIRECT
           requiredName: requiredName
@@ -902,6 +1183,11 @@ components:
           rawText: rawText
           amount: amount
           unit: unit
+        addableVariants:
+        - variantId: 0
+          name: name
+        - variantId: 0
+          name: name
       properties:
         displayName:
           type: string
@@ -917,7 +1203,12 @@ components:
           items:
             $ref: "#/components/schemas/DetailIngredientDisplay"
           type: array
+        addableVariants:
+          items:
+            $ref: "#/components/schemas/IngredientVariantOption"
+          type: array
       required:
+      - addableVariants
       - displayName
       - rawText
       - substitutes

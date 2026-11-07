@@ -60,11 +60,28 @@ public class OwnedIngredientService {
 
 		try {
 			UserIngredient saved = userIngredientRepository.saveAndFlush(userIngredient);
-			user.markOnboardingCompleted();
 			return toOwnedIngredient(saved);
 		} catch (DataIntegrityViolationException exception) {
 			throw OwnedIngredientException.alreadyExists();
 		}
+	}
+
+	@Transactional
+	public void completeOnboarding(Long userId, java.util.Set<Long> variantIds) {
+		if (variantIds == null) {
+			throw OwnedIngredientException.invalidRequest();
+		}
+
+		User user = userRepository.getReferenceById(userId);
+		for (Long variantId : variantIds) {
+			IngredientVariant ingredientVariant = ingredientVariantRepository.findById(variantId)
+					.orElseThrow(OwnedIngredientException::ingredientNotFound);
+			if (!userIngredientRepository.existsByUser_IdAndIngredientVariant_IdIn(
+					userId, List.of(variantId))) {
+				userIngredientRepository.save(UserIngredient.create(user, ingredientVariant));
+			}
+		}
+		user.markOnboardingCompleted();
 	}
 
 	@Transactional
