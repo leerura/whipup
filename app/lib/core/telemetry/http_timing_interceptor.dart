@@ -42,6 +42,10 @@ class HttpTimingInterceptor extends Interceptor {
     stopwatch.stop();
     final route = _routeTemplate(options.uri.path);
     if (route == null) return;
+    final authorization = _authorizationHeader(options);
+    // Telemetry is accepted only for authenticated users. Login and other
+    // unauthenticated requests are intentionally not reported.
+    if (authorization == null) return;
     final outcome = statusCode == null
         ? 'NETWORK_ERROR'
         : statusCode >= 500
@@ -50,7 +54,13 @@ class HttpTimingInterceptor extends Interceptor {
         ? 'CLIENT_ERROR'
         : 'SUCCESS';
     unawaited(
-      _send(route, options.method, outcome, stopwatch.elapsedMilliseconds),
+      _send(
+        route,
+        options.method,
+        outcome,
+        stopwatch.elapsedMilliseconds,
+        authorization,
+      ),
     );
   }
 
@@ -59,6 +69,7 @@ class HttpTimingInterceptor extends Interceptor {
     String method,
     String outcome,
     int durationMs,
+    String authorization,
   ) async {
     try {
       await _dio.post<void>(
@@ -69,7 +80,10 @@ class HttpTimingInterceptor extends Interceptor {
           'outcome': outcome,
           'durationMs': durationMs.clamp(0, 60000),
         },
-        options: Options(extra: const {'whipupTelemetry': true}),
+        options: Options(
+          headers: {'Authorization': authorization},
+          extra: const {'whipupTelemetry': true},
+        ),
       );
     } catch (_) {
       debugPrint('HTTP timing telemetry dropped');
@@ -79,6 +93,16 @@ class HttpTimingInterceptor extends Interceptor {
   bool _isTelemetry(RequestOptions options) =>
       options.extra['whipupTelemetry'] == true ||
       options.path == _telemetryPath;
+
+  String? _authorizationHeader(RequestOptions options) {
+    for (final entry in options.headers.entries) {
+      if (entry.key.toLowerCase() == 'authorization') {
+        final value = entry.value?.toString().trim();
+        if (value != null && value.isNotEmpty) return value;
+      }
+    }
+    return null;
+  }
 
   String? _routeTemplate(String path) {
     if (path == '/api/v1/recipes/recommendations' ||
