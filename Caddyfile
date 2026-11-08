@@ -5,7 +5,19 @@
 }
 
 {$WHIPUP_PUBLIC_IP} {
+	log {
+		output stdout
+		format filter {
+			wrap json
+			fields {
+				request>headers delete
+				request>remote_ip delete
+			}
+		}
+	}
 	encode zstd gzip
+	@monitoring path /actuator/*
+	respond @monitoring 404
 	reverse_proxy backend:8080
 	tls {
 		issuer acme {

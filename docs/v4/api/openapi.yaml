@@ -289,6 +289,25 @@ paths:
         '404':
           $ref: '#/components/responses/NotFound'
 
+  /api/v1/telemetry/http-timing:
+    post:
+      tags: [Telemetry]
+      operationId: recordHttpTiming
+      description: Aggregates authenticated client HTTP timing without storing raw events.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/HttpTimingRequest'
+      responses:
+        '204':
+          description: Timing aggregated
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
 components:
   securitySchemes:
     bearerAuth:
@@ -367,6 +386,24 @@ components:
         recipeId:
           type: integer
           format: int64
+
+    HttpTimingRequest:
+      type: object
+      required: [route, method, outcome, durationMs]
+      properties:
+        route:
+          type: string
+          enum: [/api/v1/auth/kakao, /api/v1/me, /api/v1/me/terms-consent, /api/v1/me/onboarding, /api/v1/recipes/recommendations, /api/v1/recipes/search, /api/v1/recipes/{recipeId}, /api/v1/me/daily-menu, /api/v1/me/daily-menu/{recipeId}, /api/v1/me/ingredients, /api/v1/me/ingredients/{userIngredientId}, /api/v1/ingredients]
+        method:
+          type: string
+          enum: [GET, POST, DELETE]
+        outcome:
+          type: string
+          enum: [SUCCESS, CLIENT_ERROR, SERVER_ERROR, NETWORK_ERROR]
+        durationMs:
+          type: integer
+          minimum: 0
+          maximum: 60000
 
     RecipeSearchScope:
       type: string

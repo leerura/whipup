@@ -1,0 +1,16 @@
+{
+  "annotations": {"list": []},
+  "editable": true,
+  "panels": [
+    {"type":"timeseries","title":"API request rate / errors","targets":[{"expr":"sum(rate(http_server_requests_seconds_count[5m])) by (uri,status)","refId":"A"}]},
+    {"type":"timeseries","title":"API p95 latency","targets":[{"expr":"histogram_quantile(0.95, sum(rate(http_server_requests_seconds_bucket{uri=~\"/api/v1/recipes.*\"}[5m])) by (le,uri))","refId":"A"}]},
+    {"type":"timeseries","title":"Recommendation load / match / projection p95","targets":[{"expr":"histogram_quantile(0.95, sum(rate(whipup_recommendation_load_seconds_bucket[5m])) by (le))","refId":"A"},{"expr":"histogram_quantile(0.95, sum(rate(whipup_recommendation_match_seconds_bucket[5m])) by (le))","refId":"B"},{"expr":"histogram_quantile(0.95, sum(rate(whipup_recommendation_project_seconds_bucket[5m])) by (le))","refId":"C"}]},
+    {"type":"timeseries","title":"Flutter vs server p95","targets":[{"expr":"histogram_quantile(0.95, sum(rate(whipup_client_http_seconds_bucket[5m])) by (le,route))","refId":"A"}]},
+    {"type":"timeseries","title":"Hikari connections","targets":[{"expr":"hikaricp_connections_active","refId":"A"},{"expr":"hikaricp_connections_pending","refId":"B"}]},
+    {"type":"timeseries","title":"JVM heap / CPU","targets":[{"expr":"jvm_memory_used_bytes{area=\"heap\"}","refId":"A"},{"expr":"process_cpu_usage","refId":"B"}]},
+    {"type":"timeseries","title":"Daily menu availability","targets":[{"expr":"sum(rate(whipup_daily_menu_seconds_count[5m])) by (operation,result)","refId":"A"}]}
+  ],
+  "schemaVersion": 41,
+  "title": "Whippy API Performance",
+  "version": 1
+}

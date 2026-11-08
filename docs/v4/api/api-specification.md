@@ -56,7 +56,7 @@ GET /api/v1/recipes/search?scope=AVAILABLE|ALL&query={query}
 - `scope`와 `query`는 필수다.
 - 빈 문자열 또는 공백뿐인 `query`는 `400`이다.
 - response는 `RecommendationListResponse`와 동일한 `items` 배열이다. 각 item의 match/missingCount는 현재 inventory 기준이다.
-- `AVAILABLE`은 `missingCount=0`인 `PUBLISHED`만, `ALL`은 모든 `PUBLISHED`만 반환한다.
+- `AVAILABLE`은 `missingCount=0`인 `PUBLISHED`만, `ALL`은 `missingCount>=1`인 `PUBLISHED`만 반환한다. 두 결과 집합은 겹치지 않는다.
 - 제목 또는 RecipeIngredient의 `displayName`이 정규화된 query를 포함하는 경우만 반환한다.
 - 정렬 규칙은 [제품 문서](../product/product.md#검색)를 따른다.
 
@@ -94,6 +94,23 @@ DELETE /api/v1/me/daily-menu/{recipeId}
 ```
 
 `addableVariants`는 해당 부족 Requirement를 충족하는 V3 recipe-local 후보만 포함한다. 비어 있을 수 있으며, 이 경우 상세에서 재료함 추가 동작을 제공하지 않는다. Flutter는 사용자가 고른 `variantId`를 기존 `POST /api/v1/me/ingredients`에 보낸다. DELETE는 기존 `userIngredientId` endpoint를 사용한다.
+
+## HTTP 체감 시간 집계
+
+```text
+POST /api/v1/telemetry/http-timing
+```
+
+```json
+{
+  "route": "/api/v1/recipes/recommendations",
+  "method": "GET",
+  "outcome": "SUCCESS",
+  "durationMs": 2880
+}
+```
+
+인증된 앱만 호출한다. `route`는 서버가 허용한 정규화된 API template, `method`는 `GET`·`POST`·`DELETE`, `outcome`은 `SUCCESS`·`CLIENT_ERROR`·`SERVER_ERROR`·`NETWORK_ERROR`만 허용한다. `durationMs`는 0 이상 60,000 이하 정수다. 서버는 raw event를 저장하지 않고 Prometheus용 `whipup.client.http` Timer에만 누적한 뒤 `204 No Content`를 반환한다.
 
 ## 오류 형식
 
