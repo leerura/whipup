@@ -49,7 +49,7 @@ V3의 Ingredient group/selectable owned item 정책은 그대로 유지한다. �
 
 ## 부족 재료의 외부 구매 탐색
 
-부족한 필수 재료에는 `쿠팡에서 보기`를 제공할 수 있다. 누르면 먼저 `쿠팡에서 {재료명}을 찾아볼까요?` 확인 시트를 보여 주며, 사용자가 `쿠팡으로 이동`을 선택한 경우에만 외부 브라우저/쿠팡 앱으로 이동한다.
+쿠팡파트너스 출시 전까지는 부족한 필수 재료의 `쿠팡에서 보기` 진입점을 노출하지 않는다. 제휴 기능 출시 시 아래 외부 구매 탐색 흐름을 다시 활성화한다.
 
 - URL은 `https://www.coupang.com/np/search?q={URL-encoded requiredName}` 형식의 일반 검색 URL이다.
 - 표시하는 재료명은 현재 부족한 Requirement의 `requiredName`이다.

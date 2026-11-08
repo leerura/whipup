@@ -7,6 +7,9 @@ import '../../../app/theme.dart';
 import '../../ingredient/presentation/ingredient_presentation_catalog.dart';
 import '../../ingredient/presentation/widgets/ingredient_thumbnail.dart';
 
+// Coupang Partners is not enabled until the app is released.
+const _coupangEnabled = false;
+
 class RecipeDetailScreen extends StatefulWidget {
   const RecipeDetailScreen({
     required this.apiClient,
@@ -1030,7 +1033,7 @@ class _RequirementRow extends StatelessWidget {
                         ],
                       ),
                     ),
-                    if (!satisfied && options.length == 1)
+                    if (_coupangEnabled && !satisfied && options.length == 1)
                       TextButton(
                         onPressed: () =>
                             _openCoupang(context, options.single.displayName),
@@ -1048,7 +1051,7 @@ class _RequirementRow extends StatelessWidget {
                           ),
                         ),
                       ),
-                    if (!satisfied && options.length > 1)
+                    if (_coupangEnabled && !satisfied && options.length > 1)
                       PopupMenuButton<int>(
                         tooltip: '쿠팡에서 보기',
                         onSelected: (index) =>
