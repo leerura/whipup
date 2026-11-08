@@ -5,10 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../../app/theme.dart';
 
 class OnboardingMotionSequence extends StatefulWidget {
-  const OnboardingMotionSequence({
-    required this.onCompleted,
-    super.key,
-  });
+  const OnboardingMotionSequence({required this.onCompleted, super.key});
 
   final VoidCallback onCompleted;
 
@@ -214,9 +211,8 @@ class _OnboardingMotionSequenceState extends State<OnboardingMotionSequence>
         opacity: introProgress * (1 - loginProgress),
         child: Text(
           '있는 재료로\n오늘의 한 끼를!',
-          style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-            color: AppColors.white,
-          ),
+          style: Theme.of(context).textTheme.headlineSmall
+              ?.copyWith(color: AppColors.white),
           textAlign: TextAlign.center,
         ),
       ),
@@ -279,7 +275,7 @@ class _OnboardingMotionSequenceState extends State<OnboardingMotionSequence>
           Positioned(
             left: 20 * scale,
             right: 20 * scale,
-            bottom: 70 * scale,
+            bottom: 138 * scale,
             height: 56,
             child: DecoratedBox(
               decoration: BoxDecoration(
@@ -290,6 +286,32 @@ class _OnboardingMotionSequenceState extends State<OnboardingMotionSequence>
                 child: Text(
                   '카카오로 시작하기',
                   style: Theme.of(context).textTheme.labelLarge,
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            left: 20 * scale,
+            right: 20 * scale,
+            bottom: 70 * scale,
+            height: 56,
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                color: AppColors.systemBlack,
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Center(
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const Icon(Icons.apple, color: AppColors.white, size: 20),
+                    const SizedBox(width: 8),
+                    Text(
+                      'Apple로 시작하기',
+                      style: Theme.of(context).textTheme.labelLarge
+                          ?.copyWith(color: AppColors.white),
+                    ),
+                  ],
                 ),
               ),
             ),

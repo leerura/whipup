@@ -6,6 +6,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import com.whipup.generated.model.MissingRequirementResult;
+import com.whipup.common.observability.WhipupMetrics;
 import com.whipup.generated.model.RecommendationMode;
 import com.whipup.ingredient.domain.IngredientVariant;
 import com.whipup.ingredient.domain.UserIngredient;
@@ -19,6 +20,7 @@ import com.whipup.recipe.domain.RecipeStatus;
 import com.whipup.recipe.repository.RecipeRepository;
 import com.whipup.recipe.service.RecipeMatchService;
 import java.util.List;
+import io.micrometer.core.instrument.simple.SimpleMeterRegistry;
 import org.junit.jupiter.api.Test;
 
 class RecommendationServiceV3Test {
@@ -85,7 +87,8 @@ class RecommendationServiceV3Test {
         RecommendationService service = new RecommendationService(
             recipeRepository,
             userIngredientRepository,
-            new RecipeMatchService(relationRepository)
+            new RecipeMatchService(relationRepository),
+            new WhipupMetrics(new SimpleMeterRegistry())
         );
 
         MissingRequirementResult missing = (MissingRequirementResult) service

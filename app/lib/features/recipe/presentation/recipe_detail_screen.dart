@@ -4,6 +4,8 @@ import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../app/theme.dart';
+import '../../ingredient/presentation/ingredient_presentation_catalog.dart';
+import '../../ingredient/presentation/widgets/ingredient_thumbnail.dart';
 
 class RecipeDetailScreen extends StatefulWidget {
   const RecipeDetailScreen({
@@ -375,6 +377,7 @@ class _VideoThumbnail extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 12,
                       color: AppColors.textSecondary,
+                      fontWeight: FontWeight.w500,
                     ),
                   ),
                 ],
@@ -715,8 +718,27 @@ class _RequirementRow extends StatelessWidget {
     );
     if (shouldOpen != true || !context.mounted) return;
     final uri = Uri.https('www.coupang.com', '/np/search', {'q': name});
-    if (!await launchUrl(uri, mode: LaunchMode.externalApplication) &&
-        context.mounted) {
+    var opened = false;
+    try {
+      opened = await launchUrl(
+        uri,
+        mode: LaunchMode.externalNonBrowserApplication,
+      );
+    } catch (error, stackTrace) {
+      debugPrint(
+        'Failed to open Coupang as a Universal Link: $error\n$stackTrace',
+      );
+    }
+    if (!opened) {
+      try {
+        opened = await launchUrl(uri, mode: LaunchMode.externalApplication);
+      } catch (error, stackTrace) {
+        debugPrint(
+          'Failed to open Coupang in an external browser: $error\n$stackTrace',
+        );
+      }
+    }
+    if (!opened && context.mounted) {
       ScaffoldMessenger.of(context)
           .showSnackBar(const SnackBar(content: Text('쿠팡을 열 수 없어요.')));
     }
@@ -752,6 +774,7 @@ class _RequirementRow extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 12,
                       color: AppColors.textSecondary,
+                      fontWeight: FontWeight.w500,
                     ),
                   ),
                   const SizedBox(height: 12),
@@ -781,9 +804,20 @@ class _RequirementRow extends StatelessWidget {
                                     size: 20,
                                   ),
                                   const SizedBox(width: 10),
+                                  IngredientThumbnail(
+                                    displayName: variant.name,
+                                    assetPath: ingredientAssetPathFor(
+                                      variant.name,
+                                    ),
+                                    size: 20,
+                                  ),
+                                  const SizedBox(width: 8),
                                   Text(
                                     variant.name,
-                                    style: const TextStyle(fontSize: 14),
+                                    style: const TextStyle(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w500,
+                                    ),
                                   ),
                                 ],
                               ),
@@ -971,12 +1005,12 @@ class _RequirementRow extends StatelessWidget {
               ),
             ),
             if (notes.isNotEmpty || !satisfied)
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.only(bottom: 8),
+              Padding(
+                padding: const EdgeInsets.only(top: 1, bottom: 7),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -996,49 +1030,53 @@ class _RequirementRow extends StatelessWidget {
                         ],
                       ),
                     ),
-                  ),
-                  if (!satisfied && options.length == 1)
-                    TextButton(
-                      onPressed: () =>
-                          _openCoupang(context, options.single.displayName),
-                      style: TextButton.styleFrom(
-                        foregroundColor: AppColors.textSecondary,
-                        minimumSize: const Size(44, 44),
-                        padding: const EdgeInsets.symmetric(horizontal: 4),
-                        tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                      ),
-                      child: const Text(
-                        '쿠팡에서 보기 ↗',
-                        style: TextStyle(fontSize: 11),
-                      ),
-                    ),
-                  if (!satisfied && options.length > 1)
-                    PopupMenuButton<int>(
-                      tooltip: '쿠팡에서 보기',
-                      onSelected: (index) =>
-                          _openCoupang(context, options[index].displayName),
-                      itemBuilder: (context) => [
-                        for (var i = 0; i < options.length; i++)
-                          PopupMenuItem(
-                            value: i,
-                            child: Text('${options[i].displayName} 쿠팡에서 보기'),
-                          ),
-                      ],
-                      child: const Padding(
-                        padding: EdgeInsets.symmetric(
-                          horizontal: 4,
-                          vertical: 14,
+                    if (!satisfied && options.length == 1)
+                      TextButton(
+                        onPressed: () =>
+                            _openCoupang(context, options.single.displayName),
+                        style: TextButton.styleFrom(
+                          foregroundColor: AppColors.textSecondary,
+                          minimumSize: const Size(0, 28),
+                          padding: const EdgeInsets.only(left: 8),
+                          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                         ),
-                        child: Text(
+                        child: const Text(
                           '쿠팡에서 보기 ↗',
                           style: TextStyle(
                             fontSize: 11,
-                            color: AppColors.textSecondary,
+                            fontWeight: FontWeight.w500,
                           ),
                         ),
                       ),
-                    ),
-                ],
+                    if (!satisfied && options.length > 1)
+                      PopupMenuButton<int>(
+                        tooltip: '쿠팡에서 보기',
+                        onSelected: (index) =>
+                            _openCoupang(context, options[index].displayName),
+                        itemBuilder: (context) => [
+                          for (var i = 0; i < options.length; i++)
+                            PopupMenuItem(
+                              value: i,
+                              child: Text('${options[i].displayName} 쿠팡에서 보기'),
+                            ),
+                        ],
+                        child: const Padding(
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 4,
+                            vertical: 14,
+                          ),
+                          child: Text(
+                            '쿠팡에서 보기 ↗',
+                            style: TextStyle(
+                              fontSize: 11,
+                              color: AppColors.textSecondary,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ),
+                      ),
+                  ],
+                ),
               ),
           ],
         ),

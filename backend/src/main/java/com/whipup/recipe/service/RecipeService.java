@@ -1,6 +1,7 @@
 package com.whipup.recipe.service;
 
 import com.whipup.common.security.CurrentUserProvider;
+import com.whipup.common.observability.WhipupMetrics;
 import com.whipup.generated.model.DetailIngredientDisplay;
 import com.whipup.generated.model.DetailRequirement;
 import com.whipup.generated.model.DetailRequirementOption;
@@ -40,21 +41,28 @@ public class RecipeService {
     private final UserIngredientRepository userIngredientRepository;
     private final CurrentUserProvider currentUserProvider;
     private final RecipeMatchService recipeMatchService;
+    private final WhipupMetrics metrics;
 
     public RecipeService(
         RecipeRepository recipeRepository,
         UserIngredientRepository userIngredientRepository,
         CurrentUserProvider currentUserProvider,
-        RecipeMatchService recipeMatchService
+        RecipeMatchService recipeMatchService,
+        WhipupMetrics metrics
     ) {
         this.recipeRepository = recipeRepository;
         this.userIngredientRepository = userIngredientRepository;
         this.currentUserProvider = currentUserProvider;
         this.recipeMatchService = recipeMatchService;
+        this.metrics = metrics;
     }
 
     @Transactional(readOnly = true)
     public RecipeDetailResponse getRecipeDetail(Long recipeId) {
+        return metrics.record("whipup.recipe.detail", () -> getRecipeDetailInternal(recipeId));
+    }
+
+    private RecipeDetailResponse getRecipeDetailInternal(Long recipeId) {
         Long userId = currentUserProvider.getUserId();
         Recipe recipe = recipeRepository
             .findByIdAndStatus(recipeId, RecipeStatus.PUBLISHED)

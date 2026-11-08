@@ -15,14 +15,14 @@ V4 구현자는 먼저 이 문서와 링크된 V4 계약을 읽고, 변경하지
 ## Flutter
 
 - API base URL, auth token 저장, 기존 공통 header/탭/router/state-management 관례를 유지한다.
-- 검색·오늘 메뉴·온보딩 화면은 Figma V4-S/T/E/G 시안의 레이아웃을 구현하되, 상태 판단은 API response로 한다.
+- 검색·오늘 메뉴·온보딩 화면은 Figma V4-S/T/E/G 시안의 레이아웃을 구현하되, 상태 판단은 API response로 한다. 검색 결과는 추천 목록 화면의 문맥을 유지한 채 교체한다.
 - 재료 상세 조작 후 현재 detail을 재조회하거나 동일한 repository state를 갱신해 충족 상태를 즉시 반영한다.
-- 외부 Notion·Coupang URL은 `url_launcher`의 외부 application mode를 사용한다. 외부 이동 실패는 앱이 멈추지 않게 짧은 오류 안내를 보인다.
+- 외부 Notion·Coupang URL은 `url_launcher`의 외부 application mode를 사용한다. Coupang은 non-browser application(Universal Link)을 먼저 시도하고 지원되지 않으면 외부 브라우저로 fallback한다. 외부 이동 실패는 앱이 멈추지 않게 짧은 오류 안내를 보인다.
 - Redis unavailable, 검색 empty, network error를 같은 빈 상태로 합치지 않는다.
 
 ## 검증 시나리오
 
-1. 동일 검색어에서 `AVAILABLE`에는 바로 만들 수 있는 결과만, `ALL`에는 부족 결과도 보인다.
+1. 동일 검색어에서 `AVAILABLE`에는 바로 만들 수 있는 결과만, `ALL`에는 하나 이상 부족한 결과만 보이며 두 결과는 겹치지 않는다.
 2. 제목 또는 source ingredient display name이 검색어와 일치할 때만 결과에 들어가며 `DRAFT`는 어느 검색에도 없다.
 3. 오늘 메뉴는 동일 recipe 중복 없이 최신순이고, KST 자정 뒤 새 목록이다. `DRAFT`로 바뀐 recipe는 목록에서 숨는다.
 4. Redis read 장애는 홈의 오늘 메뉴만 숨기며 추천/재료함은 동작한다. Redis write 장애는 담김 상태로 바꾸지 않는다.

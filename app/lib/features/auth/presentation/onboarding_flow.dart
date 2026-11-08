@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:kakao_flutter_sdk_user/kakao_flutter_sdk_user.dart';
 
 import '../../../core/config/app_config.dart';
+import '../../../core/telemetry/http_timing_interceptor.dart';
 import '../../home/presentation/home_screen.dart';
 import '../../ingredient/presentation/initial_ingredient_screen.dart';
 import '../../ingredients/presentation/owned_ingredients_screen.dart';
@@ -25,14 +26,20 @@ class OnboardingFlow extends StatefulWidget {
 }
 
 class _OnboardingFlowState extends State<OnboardingFlow> {
-  late final ApiClient _apiClient = ApiClient(
-    basePathOverride: AppConfig.apiBaseUrl,
-  );
+  late final ApiClient _apiClient;
 
   _OnboardingStage _stage = _OnboardingStage.splash;
   Set<String> _registeredIngredients = const {};
   bool _isLoggingIn = false;
   bool _hasLoginError = false;
+  int _homeRevision = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    _apiClient = ApiClient(basePathOverride: AppConfig.apiBaseUrl);
+    _apiClient.dio.interceptors.add(HttpTimingInterceptor(_apiClient.dio));
+  }
 
   void _finishOnboardingMotion() {
     setState(() => _stage = _OnboardingStage.login);
@@ -183,13 +190,14 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
     );
   }
 
-  void _showRecipeDetail(int recipeId) {
-    Navigator.of(context).push<void>(
+  Future<void> _showRecipeDetail(int recipeId) async {
+    await Navigator.of(context).push<void>(
       MaterialPageRoute<void>(
         builder: (context) =>
             RecipeDetailScreen(apiClient: _apiClient, recipeId: recipeId),
       ),
     );
+    if (mounted) setState(() => _homeRevision++);
   }
 
   void _showSettings() => setState(() => _stage = _OnboardingStage.settings);
@@ -267,7 +275,6 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
           apiClient: _apiClient,
           onSubmit: _handleIngredientsSubmitted,
           onBatchSubmit: _completeV4Onboarding,
-          allowEmptySubmit: true,
           onViewRecommendations: _showHome,
         ),
         _OnboardingStage.recommendations => RecommendationScreen(
@@ -281,7 +288,7 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
           onRecipeSelected: _showRecipeDetail,
         ),
         _OnboardingStage.home => HomeScreen(
-          key: const ValueKey(_OnboardingStage.home),
+          key: ValueKey('home-$_homeRevision'),
           apiClient: _apiClient,
           onHomeSelected: _showHome,
           onIngredientsSelected: _showOwnedIngredients,

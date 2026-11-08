@@ -17,7 +17,7 @@ V4는 V3의 Ingredient group, selectable owned item, RecipeIngredient, Requireme
 
 ## 검색 범위
 
-검색의 `AVAILABLE` 범위는 V3 recommendation matcher 결과 `missingCount == 0`인 `PUBLISHED` Recipe다. `ALL` 범위는 모든 `PUBLISHED` Recipe이며, 각각의 `missingCount`와 Requirement 결과는 현재 사용자의 inventory를 기준으로 계속 계산한다. 검색은 Recipe status나 inventory 판정을 별도 캐시로 복제하지 않는다.
+검색의 `AVAILABLE` 범위는 V3 recommendation matcher 결과 `missingCount == 0`인 `PUBLISHED` Recipe다. `ALL` 범위는 `missingCount >= 1`인 `PUBLISHED` Recipe다. 각각의 `missingCount`와 Requirement 결과는 현재 사용자의 inventory를 기준으로 계속 계산하며, 두 범위는 겹치지 않는다. 검색은 Recipe status나 inventory 판정을 별도 캐시로 복제하지 않는다.
 
 ## 동의와 온보딩 상태
 

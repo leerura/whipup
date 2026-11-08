@@ -173,7 +173,11 @@ class _ConsentRow extends StatelessWidget {
       visualDensity: VisualDensity.compact,
       title: Text.rich(
         TextSpan(
-          style: const TextStyle(fontSize: 13, color: AppColors.textPrimary),
+          style: const TextStyle(
+            fontSize: 13,
+            color: AppColors.textPrimary,
+            fontWeight: FontWeight.w500,
+          ),
           children: [
             const TextSpan(
               text: '(필수)  ',
@@ -196,7 +200,11 @@ class _ConsentRow extends StatelessWidget {
               icon: const SizedBox.shrink(),
               label: const Text(
                 '보기 ›',
-                style: TextStyle(fontSize: 11, color: AppColors.textMuted),
+                style: TextStyle(
+                  fontSize: 11,
+                  color: AppColors.textMuted,
+                  fontWeight: FontWeight.w500,
+                ),
               ),
             ),
     );

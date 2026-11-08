@@ -155,24 +155,20 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
                 child: ListView(
                   padding: const EdgeInsets.fromLTRB(20, 16, 20, 32),
                   children: [
-                    if (!_hasSearched) ...[
-                      Text(
-                        '내 재료 ${widget.ownedIngredientCount}개 기준',
-                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                          color: AppColors.textSecondary,
-                          fontSize: 14,
-                        ),
+                    Text(
+                      '내 재료 ${widget.ownedIngredientCount}개 기준',
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                        color: AppColors.textSecondary,
+                        fontSize: 14,
                       ),
-                      const SizedBox(height: 6),
-                      Text(
-                        '만들 수 있는 메뉴예요',
-                        style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                          fontSize: 20,
-                          fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                      const SizedBox(height: 16),
-                    ],
+                    ),
+                    const SizedBox(height: 6),
+                    Text(
+                      '만들 수 있는 메뉴예요',
+                      style: Theme.of(context).textTheme.titleLarge
+                          ?.copyWith(fontSize: 20, fontWeight: FontWeight.w700),
+                    ),
+                    const SizedBox(height: 16),
                     TextField(
                       controller: _searchController,
                       onTap: () {
@@ -194,6 +190,7 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
                         hintStyle: const TextStyle(
                           fontSize: 13,
                           color: AppColors.placeholder,
+                          fontWeight: FontWeight.w500,
                         ),
                         prefixIcon: const Icon(Icons.search, size: 19),
                         suffixIcon: _searching

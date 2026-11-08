@@ -255,7 +255,11 @@ class _PopulatedInventoryHome extends StatelessWidget {
               ),
               Text(
                 '자정에 사라져요',
-                style: TextStyle(fontSize: 11, color: AppColors.textMuted),
+                style: TextStyle(
+                  fontSize: 11,
+                  color: AppColors.textMuted,
+                  fontWeight: FontWeight.w500,
+                ),
               ),
             ],
           ),
@@ -361,15 +365,29 @@ class _TodayMenuCard extends StatelessWidget {
               : null,
         ),
         Positioned(
-          top: 4,
-          right: 4,
-          child: IconButton(
-            onPressed: onRemove,
-            tooltip: '오늘 메뉴에서 빼기',
-            visualDensity: VisualDensity.compact,
-            constraints: const BoxConstraints.tightFor(width: 28, height: 28),
-            padding: EdgeInsets.zero,
-            icon: const Icon(Icons.close, size: 16),
+          top: 5,
+          right: 5,
+          child: SizedBox(
+            width: 30,
+            height: 30,
+            child: Center(
+              child: Material(
+                color: AppColors.white.withValues(alpha: 0.9),
+                shape: const CircleBorder(),
+                child: IconButton(
+                  onPressed: onRemove,
+                  tooltip: '오늘 메뉴에서 빼기',
+                  color: AppColors.textPrimary,
+                  visualDensity: VisualDensity.compact,
+                  constraints: const BoxConstraints.tightFor(
+                    width: 22,
+                    height: 22,
+                  ),
+                  padding: EdgeInsets.zero,
+                  icon: const Icon(Icons.close_rounded, size: 13),
+                ),
+              ),
+            ),
           ),
         ),
       ],
@@ -550,6 +568,7 @@ class _HomeRecipeCard extends StatelessWidget {
                         color: isMissing
                             ? AppColors.primary
                             : AppColors.textMuted,
+                        fontWeight: FontWeight.w500,
                       ),
                     ),
                   ],

@@ -34,14 +34,20 @@ class InitialIngredientScreen extends StatefulWidget {
 
 class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
   static const _presetNames = {
-    '계란',
-    '대파',
-    '고추장',
-    '김치',
-    '양파',
-    '통마늘',
-    '밥',
     '진간장',
+    '계란',
+    '고추장',
+    '밥',
+    '물',
+    '식용유',
+    '참기름',
+    '참깨',
+    '양파',
+    '대파',
+    '김치',
+    '다진 마늘',
+    '소금',
+    '설탕',
   };
 
   final TextEditingController _searchController = TextEditingController();
@@ -53,7 +59,6 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
   String? _loadError;
   bool _isLoading = true;
   bool _isSubmitting = false;
-  bool _showCatalog = false;
 
   List<IngredientUiItem> get _selectedIngredients => _ingredients
       .where((ingredient) => _selectedIds.contains(ingredient.ingredientId))
@@ -251,6 +256,7 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
   Widget build(BuildContext context) {
     final selectedCount = _selectedIds.length;
     final hasQuery = _query.trim().isNotEmpty;
+    final showFullCatalog = widget.onBatchSubmit == null;
 
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: const SystemUiOverlayStyle(
@@ -287,7 +293,7 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(height: 16),
-              if (widget.onBatchSubmit == null || _showCatalog)
+              if (showFullCatalog)
                 IngredientSearchField(
                   controller: _searchController,
                   onChanged: (value) => setState(() => _query = value),
@@ -318,15 +324,14 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    if (_selectedIds.isNotEmpty &&
-                        (widget.onBatchSubmit == null || _showCatalog)) ...[
+                    if (_selectedIds.isNotEmpty && showFullCatalog) ...[
                       _SelectedIngredientSummary(
                         ingredients: _selectedIngredients,
                         onRemove: (id) => _setIngredientSelected(id, false),
                       ),
                       if (!hasQuery) const SizedBox(height: 16),
                     ],
-                    if (!hasQuery && !_showCatalog)
+                    if (!hasQuery && !showFullCatalog)
                       _PresetCard(
                         ingredients: _presetIngredients,
                         selectedIds: _selectedIds,
@@ -337,9 +342,7 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
                 )
               else
                 const SizedBox.shrink(),
-              if (!_isLoading &&
-                  _loadError == null &&
-                  (widget.onBatchSubmit == null || _showCatalog)) ...[
+              if (!_isLoading && _loadError == null && showFullCatalog) ...[
                 const SizedBox(height: 24),
                 Row(
                   children: [
@@ -372,11 +375,6 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
                       _setIngredientSelected(id, !_selectedIds.contains(id)),
                 ),
               ],
-              if (widget.onBatchSubmit != null && !_isLoading && !_showCatalog)
-                TextButton(
-                  onPressed: () => setState(() => _showCatalog = true),
-                  child: const Text('직접 고르기'),
-                ),
             ],
           ),
         ),
@@ -431,16 +429,6 @@ class _InitialIngredientScreenState extends State<InitialIngredientScreen> {
                       ),
                     ),
                   ),
-                  if (widget.onBatchSubmit != null)
-                    TextButton(
-                      onPressed: _isSubmitting || _isLoading
-                          ? null
-                          : () {
-                              setState(() => _selectedIds.clear());
-                              _submit();
-                            },
-                      child: const Text('재료 없이 둘러보기'),
-                    ),
                 ],
               ),
             ),
@@ -516,7 +504,11 @@ class _PresetCard extends StatelessWidget {
           ),
           child: const Text(
             '지금 다 고르지 않아도 돼요. 나머지는 재료함이나 레시피에서 언제든 담을 수 있어요.',
-            style: TextStyle(fontSize: 11, color: AppColors.textMuted),
+            style: TextStyle(
+              fontSize: 11,
+              color: AppColors.textMuted,
+              fontWeight: FontWeight.w500,
+            ),
           ),
         ),
       ],
@@ -538,38 +530,39 @@ class _QuickIngredientRow extends StatelessWidget {
   Widget build(BuildContext context) => InkWell(
     onTap: onTap,
     child: SizedBox(
-      height: 42,
+      height: 44,
       child: Row(
         children: [
-          SizedBox(
-            width: 18,
-            height: 18,
-            child: Checkbox(
-              value: selected,
-              onChanged: (_) => onTap(),
-              activeColor: AppColors.primary,
-              materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-              visualDensity: VisualDensity.compact,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(4),
+          Container(
+            width: 24,
+            height: 24,
+            decoration: BoxDecoration(
+              color: selected ? AppColors.primary : Colors.white,
+              borderRadius: BorderRadius.circular(5),
+              border: Border.all(
+                color: selected ? AppColors.primary : const Color(0xFFD1D1D6),
               ),
             ),
+            child: selected
+                ? const Icon(Icons.check_rounded, size: 17, color: Colors.white)
+                : null,
           ),
-          const SizedBox(width: 5),
+          const SizedBox(width: 8),
           IngredientThumbnail(
             displayName: ingredient.displayName,
             assetPath: ingredientAssetPathFor(ingredient.displayName),
-            size: 26,
+            size: 30,
           ),
-          const SizedBox(width: 5),
+          const SizedBox(width: 8),
           Expanded(
             child: Text(
               ingredient.displayName,
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               style: const TextStyle(
-                fontSize: 12,
+                fontSize: 14,
                 color: AppColors.textPrimary,
+                fontWeight: FontWeight.w500,
               ),
             ),
           ),
