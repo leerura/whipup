@@ -1,5 +1,7 @@
 package com.whipup.generated.api;
 
+import com.whipup.generated.model.AppleLoginRequest;
+import com.whipup.generated.model.CurrentAccountResponse;
 import com.whipup.generated.model.ErrorResponse;
 import com.whipup.generated.model.KakaoLoginRequest;
 import com.whipup.generated.model.LoginResponse;

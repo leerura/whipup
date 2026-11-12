@@ -5,6 +5,8 @@
  */
 package com.whipup.generated.api;
 
+import com.whipup.generated.model.AppleLoginRequest;
+import com.whipup.generated.model.CurrentAccountResponse;
 import com.whipup.generated.model.ErrorResponse;
 import com.whipup.generated.model.KakaoLoginRequest;
 import com.whipup.generated.model.LoginResponse;
@@ -53,7 +55,7 @@ public interface AuthApi {
     String PATH_DELETE_CURRENT_ACCOUNT = "/api/v1/me";
     /**
      * DELETE /api/v1/me : Permanently delete the authenticated account
-     * Permanently deletes the current user, linked provider accounts, owned ingredients, and onboarding state in one transaction. No backup is retained. Shared ingredient/catalog and recipe data are not deleted. Logout is client-side and has no backend endpoint.
+     * Permanently deletes the current user, linked provider accounts, owned ingredients, and onboarding state in one transaction. No backup is retained. Shared ingredient/catalog and recipe data are not deleted. For an Apple account the stored Apple refresh token is revoked with Apple after the deletion commits; a revoke failure does not fail the request. Logout is client-side and has no backend endpoint.
      *
      * @return Account deleted (status code 204)
      *         or Authentication failed or missing (status code 401)
@@ -67,6 +69,50 @@ public interface AuthApi {
         
     ) {
         return getDelegate().deleteCurrentAccount();
+    }
+
+
+    String PATH_GET_CURRENT_ACCOUNT = "/api/v1/me";
+    /**
+     * GET /api/v1/me : Read the authenticated account state
+     * Returns the same account state fields as LoginResponse without issuing a token. Callable while terms consent is still pending.
+     *
+     * @return Current account state (status code 200)
+     *         or Authentication failed or missing (status code 401)
+     */
+    @RequestMapping(
+        method = RequestMethod.GET,
+        value = AuthApi.PATH_GET_CURRENT_ACCOUNT,
+        produces = { "application/json" }
+    )
+    default ResponseEntity<CurrentAccountResponse> getCurrentAccount(
+        
+    ) {
+        return getDelegate().getCurrentAccount();
+    }
+
+
+    String PATH_LOGIN_WITH_APPLE = "/api/v1/auth/apple";
+    /**
+     * POST /api/v1/auth/apple : Sign in with Apple (iOS)
+     * Verifies the Apple identity token, exchanges the authorization code with Apple, and returns the same LoginResponse as Kakao login. Returns 503 APPLE_LOGIN_UNAVAILABLE when Apple credentials are not configured.
+     *
+     * @param appleLoginRequest  (required)
+     * @return Login success (status code 200)
+     *         or Invalid request (status code 400)
+     *         or Authentication failed or missing (status code 401)
+     *         or Apple login is not configured or Apple is unreachable (status code 503)
+     */
+    @RequestMapping(
+        method = RequestMethod.POST,
+        value = AuthApi.PATH_LOGIN_WITH_APPLE,
+        produces = { "application/json" },
+        consumes = { "application/json" }
+    )
+    default ResponseEntity<LoginResponse> loginWithApple(
+         @Valid @RequestBody AppleLoginRequest appleLoginRequest
+    ) {
+        return getDelegate().loginWithApple(appleLoginRequest);
     }
 
 

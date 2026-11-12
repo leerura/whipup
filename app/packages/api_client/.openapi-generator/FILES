@@ -2,7 +2,9 @@
 README.md
 analysis_options.yaml
 doc/AddOwnedIngredientRequest.md
+doc/AppleLoginRequest.md
 doc/AuthApi.md
+doc/CurrentAccountResponse.md
 doc/DailyMenuApi.md
 doc/DailyMenuRequest.md
 doc/DetailIngredientDisplay.md
@@ -11,6 +13,7 @@ doc/DetailRequirementOption.md
 doc/ErrorResponse.md
 doc/HealthApi.md
 doc/HealthResponse.md
+doc/HttpTimingRequest.md
 doc/IngredientApi.md
 doc/IngredientGroup.md
 doc/IngredientGroupListResponse.md
@@ -38,6 +41,7 @@ doc/RecommendationMode.md
 doc/RequirementResult.md
 doc/SatisfiedDetailRequirement.md
 doc/SatisfiedRequirementResult.md
+doc/TelemetryApi.md
 doc/TermsConsentRequest.md
 doc/UserSummary.md
 lib/api_client.dart
@@ -50,6 +54,7 @@ lib/src/api/onboarding_api.dart
 lib/src/api/owned_ingredient_api.dart
 lib/src/api/recipe_api.dart
 lib/src/api/recommendation_api.dart
+lib/src/api/telemetry_api.dart
 lib/src/api_util.dart
 lib/src/auth/api_key_auth.dart
 lib/src/auth/auth.dart
@@ -58,6 +63,8 @@ lib/src/auth/bearer_auth.dart
 lib/src/auth/oauth.dart
 lib/src/date_serializer.dart
 lib/src/model/add_owned_ingredient_request.dart
+lib/src/model/apple_login_request.dart
+lib/src/model/current_account_response.dart
 lib/src/model/daily_menu_request.dart
 lib/src/model/date.dart
 lib/src/model/detail_ingredient_display.dart
@@ -65,6 +72,7 @@ lib/src/model/detail_requirement.dart
 lib/src/model/detail_requirement_option.dart
 lib/src/model/error_response.dart
 lib/src/model/health_response.dart
+lib/src/model/http_timing_request.dart
 lib/src/model/ingredient_group.dart
 lib/src/model/ingredient_group_list_response.dart
 lib/src/model/ingredient_match.dart
@@ -91,9 +99,4 @@ lib/src/model/terms_consent_request.dart
 lib/src/model/user_summary.dart
 lib/src/serializers.dart
 pubspec.yaml
-test/daily_menu_api_test.dart
-test/daily_menu_request_test.dart
-test/onboarding_api_test.dart
-test/onboarding_request_test.dart
-test/recipe_search_scope_test.dart
-test/terms_consent_request_test.dart
+test/current_account_response_test.dart

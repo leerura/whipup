@@ -38,3 +38,13 @@ daily-menu:{userId}:{YYYY-MM-DD}  -- Redis sorted set, KST 날짜
 ```
 
 `ZADD NX`로 중복을 막고 `ZREVRANGE`로 최신순을 읽는다. `EXPIREAT`은 최초 추가와 이후 모든 추가 때 그 날짜의 다음 KST 자정으로 설정한다. Redis AOF와 Docker volume을 활성화해 컨테이너 재시작 동안에는 키가 유지되도록 한다. Redis 영속화는 자정 이후 이력 보관을 의미하지 않는다.
+
+## Apple 인증 계정
+
+```text
+USER_AUTH_ACCOUNT
+  ...existing fields
+  apple_refresh_token_encrypted NULL
+```
+
+`provider=APPLE`인 행에만 값이 있다. Apple refresh token은 인증 암호화(AES-256-GCM)로 암호화해 저장하고 키는 환경 변수로 주입한다. 계정 삭제 때 행과 함께 지워진다. 컬럼 추가는 forward migration으로 한다. `provider` 값에 `APPLE`을 허용한다. 이름·이메일은 저장하지 않는다.

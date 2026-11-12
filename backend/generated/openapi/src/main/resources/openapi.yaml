@@ -54,11 +54,59 @@ paths:
       - application/json
       x-tags:
       - tag: Auth
+  /api/v1/auth/apple:
+    post:
+      description: "Verifies the Apple identity token, exchanges the authorization\
+        \ code with Apple, and returns the same LoginResponse as Kakao login. Returns\
+        \ 503 APPLE_LOGIN_UNAVAILABLE when Apple credentials are not configured."
+      operationId: loginWithApple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AppleLoginRequest"
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LoginResponse"
+          description: Login success
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Invalid request
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Authentication failed or missing
+        "503":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Apple login is not configured or Apple is unreachable
+      security: []
+      summary: Sign in with Apple (iOS)
+      tags:
+      - Auth
+      x-content-type: application/json
+      x-accepts:
+      - application/json
+      x-tags:
+      - tag: Auth
   /api/v1/me:
     delete:
       description: "Permanently deletes the current user, linked provider accounts,\
         \ owned ingredients, and onboarding state in one transaction. No backup is\
-        \ retained. Shared ingredient/catalog and recipe data are not deleted. Logout\
+        \ retained. Shared ingredient/catalog and recipe data are not deleted. For\
+        \ an Apple account the stored Apple refresh token is revoked with Apple after\
+        \ the deletion commits; a revoke failure does not fail the request. Logout\
         \ is client-side and has no backend endpoint."
       operationId: deleteCurrentAccount
       responses:
@@ -71,6 +119,30 @@ paths:
                 $ref: "#/components/schemas/ErrorResponse"
           description: Authentication failed or missing
       summary: Permanently delete the authenticated account
+      tags:
+      - Auth
+      x-accepts:
+      - application/json
+      x-tags:
+      - tag: Auth
+    get:
+      description: Returns the same account state fields as LoginResponse without
+        issuing a token. Callable while terms consent is still pending.
+      operationId: getCurrentAccount
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CurrentAccountResponse"
+          description: Current account state
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Authentication failed or missing
+      summary: Read the authenticated account state
       tags:
       - Auth
       x-accepts:
@@ -469,6 +541,39 @@ paths:
       - application/json
       x-tags:
       - tag: Recipe
+  /api/v1/telemetry/http-timing:
+    post:
+      description: Aggregates authenticated client HTTP timing without storing raw
+        events.
+      operationId: recordHttpTiming
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/HttpTimingRequest"
+        required: true
+      responses:
+        "204":
+          description: Timing aggregated
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Invalid request
+        "401":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+          description: Authentication failed or missing
+      tags:
+      - Telemetry
+      x-content-type: application/json
+      x-accepts:
+      - application/json
+      x-tags:
+      - tag: Telemetry
 components:
   responses:
     BadRequest:
@@ -515,6 +620,28 @@ components:
       required:
       - kakaoAccessToken
       type: object
+    AppleLoginRequest:
+      example:
+        identityToken: identityToken
+        authorizationCode: authorizationCode
+        nonce: nonce
+      properties:
+        identityToken:
+          description: Apple identity token (JWT) returned to the app.
+          type: string
+        authorizationCode:
+          description: Short-lived Apple authorization code the server exchanges with
+            Apple.
+          type: string
+        nonce:
+          description: Raw nonce the app generated; its SHA-256 hex digest was sent
+            to Apple.
+          type: string
+      required:
+      - authorizationCode
+      - identityToken
+      - nonce
+      type: object
     TermsConsentRequest:
       example:
         termsVersion: termsVersion
@@ -557,6 +684,52 @@ components:
       required:
       - recipeId
       type: object
+    HttpTimingRequest:
+      example:
+        route: /api/v1/auth/kakao
+        method: GET
+        outcome: SUCCESS
+        durationMs: 4804
+      properties:
+        route:
+          enum:
+          - /api/v1/auth/kakao
+          - /api/v1/auth/apple
+          - /api/v1/me
+          - /api/v1/me/terms-consent
+          - /api/v1/me/onboarding
+          - /api/v1/recipes/recommendations
+          - /api/v1/recipes/search
+          - "/api/v1/recipes/{recipeId}"
+          - /api/v1/me/daily-menu
+          - "/api/v1/me/daily-menu/{recipeId}"
+          - /api/v1/me/ingredients
+          - "/api/v1/me/ingredients/{userIngredientId}"
+          - /api/v1/ingredients
+          type: string
+        method:
+          enum:
+          - GET
+          - POST
+          - DELETE
+          type: string
+        outcome:
+          enum:
+          - SUCCESS
+          - CLIENT_ERROR
+          - SERVER_ERROR
+          - NETWORK_ERROR
+          type: string
+        durationMs:
+          maximum: 60000
+          minimum: 0
+          type: integer
+      required:
+      - durationMs
+      - method
+      - outcome
+      - route
+      type: object
     RecipeSearchScope:
       enum:
       - AVAILABLE
@@ -588,6 +761,28 @@ components:
           type: boolean
       required:
       - accessToken
+      - hasOwnedIngredients
+      - onboardingCompleted
+      - termsConsentRequired
+      - user
+      type: object
+    CurrentAccountResponse:
+      example:
+        user:
+          userId: 0
+        hasOwnedIngredients: true
+        onboardingCompleted: true
+        termsConsentRequired: true
+      properties:
+        user:
+          $ref: "#/components/schemas/UserSummary"
+        hasOwnedIngredients:
+          type: boolean
+        onboardingCompleted:
+          type: boolean
+        termsConsentRequired:
+          type: boolean
+      required:
       - hasOwnedIngredients
       - onboardingCompleted
       - termsConsentRequired

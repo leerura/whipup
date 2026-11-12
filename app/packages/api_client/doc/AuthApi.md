@@ -11,6 +11,8 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**acceptTermsConsent**](AuthApi.md#accepttermsconsent) | **POST** /api/v1/me/terms-consent | 
 [**deleteCurrentAccount**](AuthApi.md#deletecurrentaccount) | **DELETE** /api/v1/me | Permanently delete the authenticated account
+[**getCurrentAccount**](AuthApi.md#getcurrentaccount) | **GET** /api/v1/me | Read the authenticated account state
+[**loginWithApple**](AuthApi.md#loginwithapple) | **POST** /api/v1/auth/apple | Sign in with Apple (iOS)
 [**loginWithKakao**](AuthApi.md#loginwithkakao) | **POST** /api/v1/auth/kakao | 
 
 
@@ -59,7 +61,7 @@ void (empty response body)
 
 Permanently delete the authenticated account
 
-Permanently deletes the current user, linked provider accounts, owned ingredients, and onboarding state in one transaction. No backup is retained. Shared ingredient/catalog and recipe data are not deleted. Logout is client-side and has no backend endpoint.
+Permanently deletes the current user, linked provider accounts, owned ingredients, and onboarding state in one transaction. No backup is retained. Shared ingredient/catalog and recipe data are not deleted. For an Apple account the stored Apple refresh token is revoked with Apple after the deletion commits; a revoke failure does not fail the request. Logout is client-side and has no backend endpoint.
 
 ### Example
 ```dart
@@ -88,6 +90,88 @@ void (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **getCurrentAccount**
+> CurrentAccountResponse getCurrentAccount()
+
+Read the authenticated account state
+
+Returns the same account state fields as LoginResponse without issuing a token. Callable while terms consent is still pending.
+
+### Example
+```dart
+import 'package:api_client/api.dart';
+
+final api = ApiClient().getAuthApi();
+
+try {
+    final response = api.getCurrentAccount();
+    print(response);
+} on DioException catch (e) {
+    print('Exception when calling AuthApi->getCurrentAccount: $e\n');
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**CurrentAccountResponse**](CurrentAccountResponse.md)
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **loginWithApple**
+> LoginResponse loginWithApple(appleLoginRequest)
+
+Sign in with Apple (iOS)
+
+Verifies the Apple identity token, exchanges the authorization code with Apple, and returns the same LoginResponse as Kakao login. Returns 503 APPLE_LOGIN_UNAVAILABLE when Apple credentials are not configured.
+
+### Example
+```dart
+import 'package:api_client/api.dart';
+
+final api = ApiClient().getAuthApi();
+final AppleLoginRequest appleLoginRequest = ; // AppleLoginRequest | 
+
+try {
+    final response = api.loginWithApple(appleLoginRequest);
+    print(response);
+} on DioException catch (e) {
+    print('Exception when calling AuthApi->loginWithApple: $e\n');
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **appleLoginRequest** | [**AppleLoginRequest**](AppleLoginRequest.md)|  | 
+
+### Return type
+
+[**LoginResponse**](LoginResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

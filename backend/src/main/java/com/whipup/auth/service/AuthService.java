@@ -37,6 +37,20 @@ public class AuthService {
 				providerUserId
 		);
 
+		return toLoginResult(user);
+	}
+
+	/** Current account state for token re-entry. */
+	public AccountState toAccountState(User user) {
+		return new AccountState(
+				user.getId(),
+				userIngredientRepository.existsByUser_Id(user.getId()),
+				user.isOnboardingCompleted(),
+				user.requiresTermsConsent(CURRENT_TERMS_VERSION, CURRENT_PRIVACY_VERSION)
+		);
+	}
+
+	public LoginResult toLoginResult(User user) {
 		boolean hasOwnedIngredients = userIngredientRepository.existsByUser_Id(user.getId());
 		String accessToken = jwtTokenProvider.issueAccessToken(user.getId());
 

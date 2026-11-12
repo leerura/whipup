@@ -1,6 +1,6 @@
 # V4 문서
 
-V4는 V3의 재료 카탈로그, Recipe Requirement, recipe-local accepted mapping, 추천 매칭 규칙과 레시피 데이터 파이프라인을 유지하면서 탐색·보유 재료 관리·오늘 메뉴·신규 가입 온보딩을 개선한다.
+V4는 V3의 재료 카탈로그, Recipe Requirement, recipe-local accepted mapping, 추천 매칭 규칙과 레시피 데이터 파이프라인을 유지하면서 탐색·보유 재료 관리·오늘 메뉴·신규 가입 온보딩을 개선하고 iOS Apple 로그인을 추가한다.
 
 V3의 규칙을 바꾸지 않는 영역은 V3 문서를 계속 따른다. 특히 재료가 실제 보유 단위라는 원칙, 레시피 원문 재료 표현 보존, recipe-local mapping, `PUBLISHED` 검증과 Gemini 파이프라인은 V3가 기준이다. 이 디렉터리의 문서와 V3가 다르면 V4가 우선한다.
 
@@ -20,6 +20,7 @@ V3의 규칙을 바꾸지 않는 영역은 V3 문서를 계속 따른다. 특히
 - 새로운 전역 재료 대체·호환 규칙
 - 쿠팡 파트너스, 상품·가격·재고 데이터, 제휴 수익 추적
 - 오늘 메뉴 외 일반 캐시 도입
-- 실제 Apple 로그인 연동
+- Apple 서버 간 알림(S2S) endpoint와 앱 시작 시 Apple credential state 확인
+- Android·웹 Apple 로그인(Services ID 흐름)
 
 위 항목을 V4 구현 중 임의로 추가하지 않는다.

@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -5,9 +6,17 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../../app/theme.dart';
 
 class OnboardingMotionSequence extends StatefulWidget {
-  const OnboardingMotionSequence({required this.onCompleted, super.key});
+  const OnboardingMotionSequence({
+    required this.onCompleted,
+    this.showLoginContent = true,
+    super.key,
+  });
 
   final VoidCallback onCompleted;
+
+  /// False when a saved session is being restored, so the sign-in buttons are
+  /// not shown to a user who will not need them.
+  final bool showLoginContent;
 
   @override
   State<OnboardingMotionSequence> createState() =>
@@ -111,10 +120,11 @@ class _OnboardingMotionSequenceState extends State<OnboardingMotionSequence>
                       introProgress: introProgress,
                       loginProgress: loginProgress,
                     ),
-                    _buildLoginContent(
-                      scale: scale,
-                      loginProgress: loginProgress,
-                    ),
+                    if (widget.showLoginContent)
+                      _buildLoginContent(
+                        scale: scale,
+                        loginProgress: loginProgress,
+                      ),
                   ],
                 );
               },
@@ -290,32 +300,33 @@ class _OnboardingMotionSequenceState extends State<OnboardingMotionSequence>
               ),
             ),
           ),
-          Positioned(
-            left: 20 * scale,
-            right: 20 * scale,
-            bottom: 70 * scale,
-            height: 56,
-            child: DecoratedBox(
-              decoration: BoxDecoration(
-                color: AppColors.systemBlack,
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Center(
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    const Icon(Icons.apple, color: AppColors.white, size: 20),
-                    const SizedBox(width: 8),
-                    Text(
-                      'Apple로 시작하기',
-                      style: Theme.of(context).textTheme.labelLarge
-                          ?.copyWith(color: AppColors.white),
-                    ),
-                  ],
+          if (defaultTargetPlatform == TargetPlatform.iOS)
+            Positioned(
+              left: 20 * scale,
+              right: 20 * scale,
+              bottom: 70 * scale,
+              height: 56,
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  color: AppColors.systemBlack,
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Center(
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const Icon(Icons.apple, color: AppColors.white, size: 20),
+                      const SizedBox(width: 8),
+                      Text(
+                        'Apple로 시작하기',
+                        style: Theme.of(context).textTheme.labelLarge
+                            ?.copyWith(color: AppColors.white),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
-          ),
         ],
       ),
     );

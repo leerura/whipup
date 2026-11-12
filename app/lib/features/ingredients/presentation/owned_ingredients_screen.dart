@@ -106,7 +106,6 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
     if (_pendingIngredientIds.contains(ingredient.ingredientId)) return;
     setState(() => _pendingIngredientIds.add(ingredient.ingredientId));
     try {
-      final wasOwned = ingredient.isOwned;
       if (ingredient.isOwned) {
         await widget.apiClient.getOwnedIngredientApi().deleteOwnedIngredient(
           userIngredientId: ingredient.userIngredientId!,
@@ -130,29 +129,6 @@ class _OwnedIngredientsScreenState extends State<OwnedIngredientsScreen> {
         );
       }
       _notifyOwnedIngredientsChanged();
-      if (mounted) {
-        ScaffoldMessenger.of(context)
-          ..hideCurrentSnackBar()
-          ..showSnackBar(
-            SnackBar(
-              content: Text(
-                wasOwned
-                    ? '${ingredient.displayName}을(를) 재료함에서 뺐어요.'
-                    : '${ingredient.displayName}을(를) 재료함에 담았어요.',
-              ),
-              duration: const Duration(seconds: 3),
-              action: SnackBarAction(
-                label: '되돌리기',
-                onPressed: () {
-                  final current = _ingredients.firstWhere(
-                    (item) => item.ingredientId == ingredient.ingredientId,
-                  );
-                  _toggleIngredient(current);
-                },
-              ),
-            ),
-          );
-      }
     } catch (error) {
       debugPrint('Owned ingredient update failed: $error');
       if (!mounted) return;

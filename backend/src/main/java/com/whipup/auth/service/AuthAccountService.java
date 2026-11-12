@@ -30,6 +30,23 @@ public class AuthAccountService {
 				.orElseGet(() -> createUser(provider, providerUserId));
 	}
 
+	/** Finds or creates the Apple-linked user and stores the (already encrypted) refresh token. */
+	@Transactional
+	public User findOrCreateAppleUser(String providerUserId, String encryptedRefreshToken) {
+		UserAuthAccount account = authAccountRepository
+				.findByProviderAndProviderUserId(AuthProvider.APPLE, providerUserId)
+				.orElseGet(() -> {
+					User user = userRepository.save(User.create());
+					return authAccountRepository.save(
+							UserAuthAccount.link(user, AuthProvider.APPLE, providerUserId)
+					);
+				});
+		if (encryptedRefreshToken != null) {
+			account.setAppleRefreshTokenEncrypted(encryptedRefreshToken);
+		}
+		return account.getUser();
+	}
+
 	private User createUser(AuthProvider provider, String providerUserId) {
 		User user = userRepository.save(User.create());
 

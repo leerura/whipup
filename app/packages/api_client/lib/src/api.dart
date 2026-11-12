@@ -17,6 +17,7 @@ import 'package:api_client/src/api/onboarding_api.dart';
 import 'package:api_client/src/api/owned_ingredient_api.dart';
 import 'package:api_client/src/api/recipe_api.dart';
 import 'package:api_client/src/api/recommendation_api.dart';
+import 'package:api_client/src/api/telemetry_api.dart';
 
 class ApiClient {
   static const String basePath = r'http://localhost';
@@ -158,5 +159,11 @@ class ApiClient {
   /// by doing that all interceptors will not be executed
   RecommendationApi getRecommendationApi() {
     return RecommendationApi(dio, serializers);
+  }
+
+  /// Get TelemetryApi instance, base route and serializer can be overridden by a given but be careful,
+  /// by doing that all interceptors will not be executed
+  TelemetryApi getTelemetryApi() {
+    return TelemetryApi(dio, serializers);
   }
 }

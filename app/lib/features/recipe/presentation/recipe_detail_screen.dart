@@ -1,11 +1,17 @@
 import 'package:api_client/api_client.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:webview_flutter_android/webview_flutter_android.dart';
+import 'package:webview_flutter/webview_flutter.dart';
+import 'package:webview_flutter_wkwebview/webview_flutter_wkwebview.dart';
 
 import '../../../app/theme.dart';
 import '../../ingredient/presentation/ingredient_presentation_catalog.dart';
 import '../../ingredient/presentation/widgets/ingredient_thumbnail.dart';
+import 'video_pip_geometry.dart';
+import 'youtube_embed_request.dart';
 
 // Coupang Partners is not enabled until the app is released.
 const _coupangEnabled = false;
@@ -106,6 +112,14 @@ class _RecipeDetailContent extends StatefulWidget {
 }
 
 class _RecipeDetailContentState extends State<_RecipeDetailContent> {
+  final _scrollController = ScrollController();
+  final _videoKey = GlobalKey();
+  final _overlayKey = GlobalKey();
+  WebViewController? _videoController;
+  double _videoTop = 0;
+  bool _isCollapsed = false;
+  bool _videoUnavailable = false;
+
   RecipeDetailResponse get recipe => widget.recipe;
   bool _isInDailyMenu = false;
   bool _dailyMenuLoaded = false;
@@ -160,6 +174,109 @@ class _RecipeDetailContentState extends State<_RecipeDetailContent> {
     }
   }
 
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
+  void _onScroll() {
+    if (_videoController == null) return;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted || _videoController == null) return;
+      final videoContext = _videoKey.currentContext;
+      final stackContext = _overlayKey.currentContext;
+      if (videoContext == null ||
+          stackContext == null ||
+          !stackContext.mounted) {
+        return;
+      }
+      final videoBox = videoContext.findRenderObject() as RenderBox?;
+      final stackBox = stackContext.findRenderObject() as RenderBox?;
+      if (videoBox == null || stackBox == null || !videoBox.hasSize) return;
+      final stackTop = stackBox.localToGlobal(Offset.zero).dy;
+      final videoPosition = videoBox.localToGlobal(Offset.zero).dy - stackTop;
+      final collapsed = videoPosition <= 0;
+      final top = videoPosition;
+      if (top != _videoTop || collapsed != _isCollapsed) {
+        setState(() {
+          _videoTop = top;
+          _isCollapsed = collapsed;
+        });
+      }
+    });
+  }
+
+  Future<void> _startVideo() async {
+    final videoId = _youtubeVideoId(recipe.shortsReference);
+    if (videoId == null) return;
+    final headers = YoutubeEmbedRequest.headersForPlatform(
+      defaultTargetPlatform,
+    );
+    if (headers == null) {
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text('이 기기에서는 영상 재생을 지원하지 않아요.')));
+      return;
+    }
+    final PlatformWebViewControllerCreationParams params;
+    if (WebViewPlatform.instance is WebKitWebViewPlatform) {
+      params = WebKitWebViewControllerCreationParams(
+        allowsInlineMediaPlayback: true,
+        mediaTypesRequiringUserAction: const <PlaybackMediaTypes>{},
+      );
+    } else {
+      params = const PlatformWebViewControllerCreationParams();
+    }
+    try {
+      final controller = WebViewController.fromPlatformCreationParams(params)
+        ..setJavaScriptMode(JavaScriptMode.unrestricted)
+        ..setBackgroundColor(Colors.black);
+      if (controller.platform is AndroidWebViewController) {
+        await (controller.platform as AndroidWebViewController)
+            .setMediaPlaybackRequiresUserGesture(false);
+      }
+      await controller.loadRequest(
+        YoutubeEmbedRequest.uriForVideo(videoId),
+        headers: headers,
+      );
+      if (!mounted) return;
+      setState(() {
+        _videoController = controller;
+        _videoUnavailable = false;
+        _isCollapsed = false;
+      });
+    } catch (error) {
+      debugPrint('Failed to start YouTube player: $error');
+      if (!mounted) return;
+      setState(() => _videoUnavailable = true);
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('영상을 재생할 수 없어요. 원본 영상 링크를 확인해 주세요.')),
+      );
+      return;
+    }
+    _onScroll();
+  }
+
+  String? _youtubeVideoId(String reference) {
+    final uri = Uri.tryParse(reference);
+    if (uri == null) return null;
+    if (uri.host == 'youtu.be' || uri.host == 'www.youtu.be') {
+      return uri.pathSegments.isEmpty ? null : uri.pathSegments.first;
+    }
+    if (uri.queryParameters['v']?.isNotEmpty == true) {
+      return uri.queryParameters['v'];
+    }
+    final segments = uri.pathSegments;
+    for (final marker in ['shorts', 'embed', 'live']) {
+      final index = segments.indexOf(marker);
+      if (index >= 0 && index + 1 < segments.length) {
+        return segments[index + 1];
+      }
+    }
+    return null;
+  }
+
   Future<void> _openSource() async {
     final uri = Uri.tryParse(recipe.shortsReference);
     if (uri == null ||
@@ -203,92 +320,156 @@ class _RecipeDetailContentState extends State<_RecipeDetailContent> {
     return Column(
       children: [
         Expanded(
-          child: ListView(
-            padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
-            children: [
-              ClipRRect(
-                borderRadius: BorderRadius.circular(8),
-                child: AspectRatio(
-                  aspectRatio: 16 / 9,
-                  child: _VideoThumbnail(
-                    thumbnailUrl: recipe.thumbnailUrl,
-                    hasVideo: true,
-                    onPlay: _openSource,
-                    unavailable: false,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 22),
-              Text(
-                recipe.name,
-                style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                  color: AppColors.textPrimary,
-                  fontSize: 26,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-              const SizedBox(height: 8),
-              _VideoCredit(
-                channelName: recipe.sourceChannelName,
-                onTap: _openSource,
-              ),
-              const SizedBox(height: 10),
-              Row(
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              final availablePipSize = VideoPipGeometry.sizeForAvailableWidth(
+                constraints.maxWidth,
+              );
+              final showPip = _isCollapsed && availablePipSize != null;
+              final pipSize = showPip ? availablePipSize : null;
+              final hidePlayerForNarrowPip =
+                  _isCollapsed && availablePipSize == null;
+
+              return Stack(
+                key: _overlayKey,
+                clipBehavior: Clip.none,
                 children: [
-                  Icon(
-                    recipe.missingCount == 0
-                        ? Icons.check_circle_rounded
-                        : Icons.info_rounded,
-                    size: 19,
-                    color: recipe.missingCount == 0
-                        ? const Color(0xFF2E8B57)
-                        : AppColors.primary,
-                  ),
-                  const SizedBox(width: 7),
-                  Expanded(
-                    child: Text(
-                      availabilityMessage,
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        color: AppColors.textSecondary,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w600,
-                        letterSpacing: 0,
-                      ),
+                  NotificationListener<ScrollNotification>(
+                    onNotification: (notification) {
+                      if (notification is ScrollUpdateNotification ||
+                          notification is ScrollEndNotification) {
+                        _onScroll();
+                      }
+                      return false;
+                    },
+                    child: ListView(
+                      controller: _scrollController,
+                      padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
+                      children: [
+                        ClipRRect(
+                          key: _videoKey,
+                          borderRadius: BorderRadius.circular(8),
+                          child: AspectRatio(
+                            aspectRatio: 16 / 9,
+                            child: _videoController == null
+                                ? _VideoThumbnail(
+                                    thumbnailUrl: recipe.thumbnailUrl,
+                                    hasVideo:
+                                        _youtubeVideoId(
+                                          recipe.shortsReference,
+                                        ) !=
+                                        null,
+                                    onPlay: _startVideo,
+                                    unavailable: _videoUnavailable,
+                                  )
+                                : const ColoredBox(color: Colors.black),
+                          ),
+                        ),
+                        const SizedBox(height: 22),
+                        Text(
+                          recipe.name,
+                          style: Theme.of(context).textTheme.headlineSmall
+                              ?.copyWith(
+                                color: AppColors.textPrimary,
+                                fontSize: 26,
+                                fontWeight: FontWeight.w700,
+                              ),
+                        ),
+                        const SizedBox(height: 8),
+                        _VideoCredit(
+                          channelName: recipe.sourceChannelName,
+                          onTap: _openSource,
+                        ),
+                        const SizedBox(height: 10),
+                        Row(
+                          children: [
+                            Icon(
+                              recipe.missingCount == 0
+                                  ? Icons.check_circle_rounded
+                                  : Icons.info_rounded,
+                              size: 19,
+                              color: recipe.missingCount == 0
+                                  ? const Color(0xFF2E8B57)
+                                  : AppColors.primary,
+                            ),
+                            const SizedBox(width: 7),
+                            Expanded(
+                              child: Text(
+                                availabilityMessage,
+                                style: Theme.of(context).textTheme.bodyMedium
+                                    ?.copyWith(
+                                      color: AppColors.textSecondary,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                      letterSpacing: 0,
+                                    ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 30),
+                        const Divider(height: 1, color: AppColors.border),
+                        const SizedBox(height: 28),
+                        _SectionTitle(
+                          title: '필요한 재료',
+                          count: recipe.requirements.length,
+                        ),
+                        const SizedBox(height: 14),
+                        ...recipe.requirements.map(
+                          (requirement) => _RequirementRow(
+                            apiClient: widget.apiClient,
+                            requirement: requirement,
+                            onChanged: widget.onChanged,
+                          ),
+                        ),
+                        if (recipe.optionalIngredients.isNotEmpty) ...[
+                          const SizedBox(height: 28),
+                          _SectionTitle(
+                            title: '선택 재료',
+                            count: recipe.optionalIngredients.length,
+                          ),
+                          const SizedBox(height: 14),
+                          ...recipe.optionalIngredients.map(
+                            (ingredient) =>
+                                _OptionalIngredientRow(ingredient: ingredient),
+                          ),
+                        ],
+                        const SizedBox(height: 28),
+                        const Divider(height: 1, color: AppColors.border),
+                        const SizedBox(height: 28),
+                        _SectionTitle(
+                          title: '조리 순서',
+                          count: recipe.steps.length,
+                        ),
+                        const SizedBox(height: 18),
+                        ...recipe.steps.map(
+                          (step) => _RecipeStepRow(step: step),
+                        ),
+                      ],
                     ),
                   ),
+                  if (_videoController != null)
+                    AnimatedPositioned(
+                      duration: const Duration(milliseconds: 220),
+                      curve: Curves.easeOut,
+                      top: showPip ? VideoPipGeometry.topInset : _videoTop,
+                      left: showPip ? null : 20,
+                      right: showPip ? VideoPipGeometry.rightInset : 20,
+                      width: pipSize?.width,
+                      height:
+                          pipSize?.height ??
+                          (constraints.maxWidth - 40) * 9 / 16,
+                      child: Offstage(
+                        offstage: hidePlayerForNarrowPip,
+                        child: _ActiveVideoPlayer(
+                          controller: _videoController!,
+                          collapsed: showPip,
+                        ),
+                      ),
+                    ),
                 ],
-              ),
-              const SizedBox(height: 30),
-              const Divider(height: 1, color: AppColors.border),
-              const SizedBox(height: 28),
-              _SectionTitle(title: '필요한 재료', count: recipe.requirements.length),
-              const SizedBox(height: 14),
-              ...recipe.requirements.map(
-                (requirement) => _RequirementRow(
-                  apiClient: widget.apiClient,
-                  requirement: requirement,
-                  onChanged: widget.onChanged,
-                ),
-              ),
-              if (recipe.optionalIngredients.isNotEmpty) ...[
-                const SizedBox(height: 28),
-                _SectionTitle(
-                  title: '선택 재료',
-                  count: recipe.optionalIngredients.length,
-                ),
-                const SizedBox(height: 14),
-                ...recipe.optionalIngredients.map(
-                  (ingredient) =>
-                      _OptionalIngredientRow(ingredient: ingredient),
-                ),
-              ],
-              const SizedBox(height: 28),
-              const Divider(height: 1, color: AppColors.border),
-              const SizedBox(height: 28),
-              _SectionTitle(title: '조리 순서', count: recipe.steps.length),
-              const SizedBox(height: 18),
-              ...recipe.steps.map((step) => _RecipeStepRow(step: step)),
-            ],
+              );
+            },
           ),
         ),
         SafeArea(
@@ -334,6 +515,24 @@ class _RecipeDetailContentState extends State<_RecipeDetailContent> {
           ),
         ),
       ],
+    );
+  }
+}
+
+class _ActiveVideoPlayer extends StatelessWidget {
+  const _ActiveVideoPlayer({required this.controller, required this.collapsed});
+
+  final WebViewController controller;
+  final bool collapsed;
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: Colors.black,
+      elevation: collapsed ? 8 : 0,
+      clipBehavior: Clip.antiAlias,
+      borderRadius: BorderRadius.circular(collapsed ? 0 : 8),
+      child: WebViewWidget(controller: controller),
     );
   }
 }
@@ -595,11 +794,6 @@ class _RequirementRow extends StatelessWidget {
           (builder) => builder.variantId = variant.variantId,
         ),
       );
-      if (context.mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('${variant.name}을(를) 재료함에 담았어요.')),
-        );
-      }
       onChanged();
     } catch (error) {
       debugPrint('Failed to add recipe ingredient: $error');

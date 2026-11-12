@@ -1,8 +1,15 @@
 import 'package:api_client/api_client.dart';
 import 'package:dio/dio.dart';
+
+import 'dart:convert';
+import 'dart:math';
+
+import 'package:crypto/crypto.dart';
 import 'package:flutter/material.dart';
 import 'package:kakao_flutter_sdk_user/kakao_flutter_sdk_user.dart';
+import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 
+import '../../../core/auth/auth_token_store.dart';
 import '../../../core/config/app_config.dart';
 import '../../../core/telemetry/http_timing_interceptor.dart';
 import '../../home/presentation/home_screen.dart';
@@ -27,6 +34,9 @@ class OnboardingFlow extends StatefulWidget {
 
 class _OnboardingFlowState extends State<OnboardingFlow> {
   late final ApiClient _apiClient;
+  final _tokenStore = AuthTokenStore();
+  late final Future<CurrentAccountResponse?> _restoredSession;
+  bool _hasSavedToken = false;
 
   _OnboardingStage _stage = _OnboardingStage.splash;
   Set<String> _registeredIngredients = const {};
@@ -39,13 +49,204 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
     super.initState();
     _apiClient = ApiClient(basePathOverride: AppConfig.apiBaseUrl);
     _apiClient.dio.interceptors.add(HttpTimingInterceptor(_apiClient.dio));
+    // The start motion always plays; the saved session is checked meanwhile.
+    _restoredSession = _restoreSession();
   }
 
-  void _finishOnboardingMotion() {
-    setState(() => _stage = _OnboardingStage.login);
+  /// Returns the account state for a saved token, or null when there is no
+  /// usable session. A 401 means the token is invalid or expired and is deleted;
+  /// other failures keep the token so the next launch can try again.
+  Future<CurrentAccountResponse?> _restoreSession() async {
+    final token = await _tokenStore.read();
+    if (token == null) return null;
+    if (mounted) setState(() => _hasSavedToken = true);
+
+    _apiClient.setBearerAuth('bearerAuth', token);
+    try {
+      final response = await _apiClient.getAuthApi().getCurrentAccount();
+      final account = response.data;
+      if (account == null) throw StateError('The account response is empty.');
+      return account;
+    } catch (error) {
+      debugPrint('[Session restore] failed: $error');
+      _apiClient.removeBearerAuth('bearerAuth');
+      if (error is DioException && error.response?.statusCode == 401) {
+        await _tokenStore.delete();
+      }
+      return null;
+    }
   }
 
-  Future<void> _handleKakaoLogin() async {
+  Future<void> _finishOnboardingMotion() async {
+    final account = await _restoredSession;
+    if (!mounted) return;
+    if (account == null) {
+      setState(() {
+        _hasSavedToken = false;
+        _stage = _OnboardingStage.login;
+      });
+      return;
+    }
+
+    try {
+      await _enterApp(
+        termsConsentRequired: account.termsConsentRequired,
+        onboardingCompleted: account.onboardingCompleted,
+        hasOwnedIngredients: account.hasOwnedIngredients,
+        setStep: (_) {},
+      );
+    } catch (error) {
+      debugPrint('[Session restore] routing failed: $error');
+      _apiClient.removeBearerAuth('bearerAuth');
+      if (mounted) {
+        setState(() {
+          _hasSavedToken = false;
+          _stage = _OnboardingStage.login;
+        });
+      }
+    }
+  }
+
+  /// Loads what the next screen needs and routes there. Shared by fresh login
+  /// and restored sessions.
+  Future<void> _enterApp({
+    required bool termsConsentRequired,
+    required bool onboardingCompleted,
+    required bool hasOwnedIngredients,
+    required void Function(String step) setStep,
+  }) async {
+    Set<String> registeredIngredients = const {};
+    // New accounts are blocked by the backend terms-consent filter until
+    // the consent screen completes. Do not query protected inventory before
+    // routing them to that screen; otherwise login appears to fail with 403.
+    if (!termsConsentRequired && hasOwnedIngredients) {
+      setStep('loading owned ingredients');
+      final response = await _apiClient
+          .getOwnedIngredientApi()
+          .getOwnedIngredients();
+      final data = response.data;
+      if (data == null) {
+        throw StateError('The owned ingredient response body is empty.');
+      }
+
+      registeredIngredients = data.items
+          .map((ingredient) => ingredient.name)
+          .toSet();
+    }
+
+    if (!mounted) return;
+
+    setState(() {
+      _registeredIngredients = Set<String>.unmodifiable(registeredIngredients);
+      _stage = switch (onboardingEntryFor(
+        onboardingCompleted: onboardingCompleted,
+      )) {
+        OnboardingEntry.initialIngredientRegistration =>
+          _OnboardingStage.ingredients,
+        OnboardingEntry.home => _OnboardingStage.home,
+      };
+      if (termsConsentRequired) {
+        _stage = _OnboardingStage.terms;
+      }
+    });
+  }
+
+  Future<void> _handleKakaoLogin() =>
+      _runLogin('Kakao', _authenticateWithKakao);
+
+  Future<void> _handleAppleLogin() =>
+      _runLogin('Apple', _authenticateWithApple);
+
+  Future<LoginResponse> _authenticateWithApple(
+    void Function(String step) setStep,
+  ) async {
+    setStep('Apple authorization');
+    final rawNonce = _generateNonce();
+    final credential = await SignInWithApple.getAppleIDCredential(
+      scopes: const [],
+      nonce: sha256.convert(utf8.encode(rawNonce)).toString(),
+    );
+    final identityToken = credential.identityToken;
+    if (identityToken == null) {
+      throw StateError('Apple did not return an identity token.');
+    }
+
+    setStep('backend token exchange');
+    final response = await _apiClient.getAuthApi().loginWithApple(
+      appleLoginRequest: AppleLoginRequest(
+        (builder) => builder
+          ..identityToken = identityToken
+          ..authorizationCode = credential.authorizationCode
+          ..nonce = rawNonce,
+      ),
+    );
+    final loginResponse = response.data;
+    if (loginResponse == null) {
+      throw StateError('The login response body is empty.');
+    }
+    return loginResponse;
+  }
+
+  String _generateNonce() {
+    final random = Random.secure();
+    return base64Url
+        .encode(List<int>.generate(32, (_) => random.nextInt(256)))
+        .replaceAll('=', '');
+  }
+
+  Future<LoginResponse> _authenticateWithKakao(
+    void Function(String step) setStep,
+  ) async {
+    var loginStep = 'checking KakaoTalk availability';
+    setStep(loginStep);
+    late final OAuthToken kakaoToken;
+
+    final isTalkInstalled = await isKakaoTalkInstalled();
+    debugPrint('[Kakao login] KakaoTalk installed: $isTalkInstalled');
+    if (isTalkInstalled) {
+      try {
+        setStep('KakaoTalk login');
+        debugPrint('[Kakao login] Starting KakaoTalk login');
+        kakaoToken = await UserApi.instance.loginWithKakaoTalk();
+      } catch (error, stackTrace) {
+        debugPrint('[Kakao login] KakaoTalk login failed: $error');
+        debugPrintStack(
+          label: '[Kakao login] KakaoTalk failure stack',
+          stackTrace: stackTrace,
+        );
+        setStep('Kakao Account login after KakaoTalk failure');
+        debugPrint('[Kakao login] Falling back to Kakao Account login');
+        kakaoToken = await UserApi.instance.loginWithKakaoAccount();
+      }
+    } else {
+      setStep('Kakao Account login without KakaoTalk');
+      debugPrint('[Kakao login] Starting Kakao Account login');
+      kakaoToken = await UserApi.instance.loginWithKakaoAccount();
+    }
+
+    debugPrint('[Kakao login] SDK login completed');
+    setStep('backend token exchange');
+    debugPrint('[Kakao login] Starting backend token exchange');
+    final response = await _apiClient.getAuthApi().loginWithKakao(
+      kakaoLoginRequest: KakaoLoginRequest(
+        (builder) => builder.kakaoAccessToken = kakaoToken.accessToken,
+      ),
+    );
+    final loginResponse = response.data;
+    if (loginResponse == null) {
+      throw StateError('The login response body is empty.');
+    }
+    debugPrint('[Kakao login] Backend token exchange completed');
+    return loginResponse;
+  }
+
+  /// Runs a provider login and routes to the next screen. Both providers return
+  /// the same [LoginResponse], so everything after authentication is shared.
+  Future<void> _runLogin(
+    String provider,
+    Future<LoginResponse> Function(void Function(String step) setStep)
+    authenticate,
+  ) async {
     if (_isLoggingIn) return;
 
     setState(() {
@@ -53,95 +254,37 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
       _hasLoginError = false;
     });
 
-    var loginStep = 'checking KakaoTalk availability';
+    var loginStep = 'authenticating';
     try {
-      late final OAuthToken kakaoToken;
-
-      final isTalkInstalled = await isKakaoTalkInstalled();
-      debugPrint('[Kakao login] KakaoTalk installed: $isTalkInstalled');
-      if (isTalkInstalled) {
-        try {
-          loginStep = 'KakaoTalk login';
-          debugPrint('[Kakao login] Starting KakaoTalk login');
-          kakaoToken = await UserApi.instance.loginWithKakaoTalk();
-        } catch (error, stackTrace) {
-          debugPrint('[Kakao login] KakaoTalk login failed: $error');
-          debugPrintStack(
-            label: '[Kakao login] KakaoTalk failure stack',
-            stackTrace: stackTrace,
-          );
-          loginStep = 'Kakao Account login after KakaoTalk failure';
-          debugPrint('[Kakao login] Falling back to Kakao Account login');
-          kakaoToken = await UserApi.instance.loginWithKakaoAccount();
-        }
-      } else {
-        loginStep = 'Kakao Account login without KakaoTalk';
-        debugPrint('[Kakao login] Starting Kakao Account login');
-        kakaoToken = await UserApi.instance.loginWithKakaoAccount();
-      }
-
-      debugPrint('[Kakao login] SDK login completed');
-      loginStep = 'backend token exchange';
-      debugPrint('[Kakao login] Starting backend token exchange');
-      final response = await _apiClient.getAuthApi().loginWithKakao(
-        kakaoLoginRequest: KakaoLoginRequest(
-          (builder) => builder.kakaoAccessToken = kakaoToken.accessToken,
-        ),
-      );
-      final loginResponse = response.data;
-      if (loginResponse == null) {
-        throw StateError('The login response body is empty.');
-      }
-
+      final loginResponse = await authenticate((step) => loginStep = step);
       _apiClient.setBearerAuth('bearerAuth', loginResponse.accessToken);
-      debugPrint('[Kakao login] Backend token exchange completed');
+      await _tokenStore.write(loginResponse.accessToken);
 
-      Set<String> registeredIngredients = const {};
-      // New accounts are blocked by the backend terms-consent filter until
-      // the consent screen completes. Do not query protected inventory before
-      // routing them to that screen; otherwise login appears to fail with 403.
-      if (!loginResponse.termsConsentRequired &&
-          loginResponse.hasOwnedIngredients) {
-        loginStep = 'loading owned ingredients';
-        final response = await _apiClient
-            .getOwnedIngredientApi()
-            .getOwnedIngredients();
-        final data = response.data;
-        if (data == null) {
-          throw StateError('The owned ingredient response body is empty.');
-        }
-
-        registeredIngredients = data.items
-            .map((ingredient) => ingredient.name)
-            .toSet();
-      }
-
+      await _enterApp(
+        termsConsentRequired: loginResponse.termsConsentRequired,
+        onboardingCompleted: loginResponse.onboardingCompleted,
+        hasOwnedIngredients: loginResponse.hasOwnedIngredients,
+        setStep: (step) => loginStep = step,
+      );
       widget.onKakaoLogin?.call();
-      if (!mounted) return;
-
-      setState(() {
-        _registeredIngredients = Set<String>.unmodifiable(
-          registeredIngredients,
-        );
-        _stage = switch (onboardingEntryFor(
-          onboardingCompleted: loginResponse.onboardingCompleted,
-        )) {
-          OnboardingEntry.initialIngredientRegistration =>
-            _OnboardingStage.ingredients,
-          OnboardingEntry.home => _OnboardingStage.home,
-        };
-        if (loginResponse.termsConsentRequired) {
-          _stage = _OnboardingStage.terms;
-        }
-      });
     } catch (error, stackTrace) {
-      debugPrint('[Kakao login] Failed during $loginStep: $error');
+      if (error is SignInWithAppleAuthorizationException &&
+          error.code == AuthorizationErrorCode.canceled) {
+        return;
+      }
+      debugPrint('[$provider login] Failed during $loginStep: $error');
       debugPrintStack(
-        label: '[Kakao login] Failure stack',
+        label: '[$provider login] Failure stack',
         stackTrace: stackTrace,
       );
       if (!mounted) return;
 
+      if (error is DioException && error.response?.statusCode == 503) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('지금은 로그인할 수 없어요. 잠시 후 다시 시도해 주세요.')),
+        );
+        return;
+      }
       setState(() => _hasLoginError = true);
     } finally {
       if (mounted) {
@@ -209,6 +352,8 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
       // A local session reset is still safe when the provider session has
       // already expired.
     }
+    _apiClient.removeBearerAuth('bearerAuth');
+    await _tokenStore.delete();
     if (mounted) setState(() => _stage = _OnboardingStage.login);
   }
 
@@ -220,6 +365,7 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
         'status=${response.statusCode}',
       );
       _apiClient.removeBearerAuth('bearerAuth');
+      await _tokenStore.delete();
       try {
         await UserApi.instance.logout();
       } catch (_) {
@@ -259,10 +405,12 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
         _OnboardingStage.splash => OnboardingMotionSequence(
           key: const ValueKey(_OnboardingStage.splash),
           onCompleted: _finishOnboardingMotion,
+          showLoginContent: !_hasSavedToken,
         ),
         _OnboardingStage.login => KakaoLoginScreen(
           key: const ValueKey(_OnboardingStage.login),
           onKakaoLogin: _handleKakaoLogin,
+          onAppleLogin: _handleAppleLogin,
           isLoading: _isLoggingIn,
           hasError: _hasLoginError,
         ),

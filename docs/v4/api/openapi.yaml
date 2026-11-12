@@ -40,7 +40,57 @@ paths:
         '401':
           $ref: '#/components/responses/Unauthorized'
 
+  /api/v1/auth/apple:
+    post:
+      tags: [Auth]
+      operationId: loginWithApple
+      summary: Sign in with Apple (iOS)
+      description: >-
+        Verifies the Apple identity token, exchanges the authorization code with
+        Apple, and returns the same LoginResponse as Kakao login. Returns 503
+        APPLE_LOGIN_UNAVAILABLE when Apple credentials are not configured.
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AppleLoginRequest'
+      responses:
+        '200':
+          description: Login success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LoginResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '503':
+          description: Apple login is not configured or Apple is unreachable
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
   /api/v1/me:
+    get:
+      tags: [Auth]
+      operationId: getCurrentAccount
+      summary: Read the authenticated account state
+      description: >-
+        Returns the same account state fields as LoginResponse without issuing a
+        token. Callable while terms consent is still pending.
+      responses:
+        '200':
+          description: Current account state
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CurrentAccountResponse'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
     delete:
       tags: [Auth]
       operationId: deleteCurrentAccount
@@ -49,7 +99,9 @@ paths:
         Permanently deletes the current user, linked provider accounts, owned
         ingredients, and onboarding state in one transaction. No backup is
         retained. Shared ingredient/catalog and recipe data are not deleted.
-        Logout is client-side and has no backend endpoint.
+        For an Apple account the stored Apple refresh token is revoked with
+        Apple after the deletion commits; a revoke failure does not fail the
+        request. Logout is client-side and has no backend endpoint.
       responses:
         '204':
           description: Account deleted
@@ -357,6 +409,20 @@ components:
         kakaoAccessToken:
           type: string
 
+    AppleLoginRequest:
+      type: object
+      required: [identityToken, authorizationCode, nonce]
+      properties:
+        identityToken:
+          type: string
+          description: Apple identity token (JWT) returned to the app.
+        authorizationCode:
+          type: string
+          description: Short-lived Apple authorization code the server exchanges with Apple.
+        nonce:
+          type: string
+          description: Raw nonce the app generated; its SHA-256 hex digest was sent to Apple.
+
     TermsConsentRequest:
       type: object
       required: [termsVersion, privacyVersion, age14OrOver]
@@ -393,7 +459,7 @@ components:
       properties:
         route:
           type: string
-          enum: [/api/v1/auth/kakao, /api/v1/me, /api/v1/me/terms-consent, /api/v1/me/onboarding, /api/v1/recipes/recommendations, /api/v1/recipes/search, /api/v1/recipes/{recipeId}, /api/v1/me/daily-menu, /api/v1/me/daily-menu/{recipeId}, /api/v1/me/ingredients, /api/v1/me/ingredients/{userIngredientId}, /api/v1/ingredients]
+          enum: [/api/v1/auth/kakao, /api/v1/auth/apple, /api/v1/me, /api/v1/me/terms-consent, /api/v1/me/onboarding, /api/v1/recipes/recommendations, /api/v1/recipes/search, '/api/v1/recipes/{recipeId}', /api/v1/me/daily-menu, '/api/v1/me/daily-menu/{recipeId}', /api/v1/me/ingredients, '/api/v1/me/ingredients/{userIngredientId}', /api/v1/ingredients]
         method:
           type: string
           enum: [GET, POST, DELETE]
@@ -426,6 +492,19 @@ components:
         termsConsentRequired:
           type: boolean
           description: Whether the account must accept the current terms before using protected APIs.
+
+    CurrentAccountResponse:
+      type: object
+      required: [user, hasOwnedIngredients, onboardingCompleted, termsConsentRequired]
+      properties:
+        user:
+          $ref: '#/components/schemas/UserSummary'
+        hasOwnedIngredients:
+          type: boolean
+        onboardingCompleted:
+          type: boolean
+        termsConsentRequired:
+          type: boolean
 
     UserSummary:
       type: object

@@ -45,9 +45,8 @@ class OnboardingIntroScreen extends StatelessWidget {
                   right: 0,
                   child: Text(
                     '있는 재료로\n오늘의 한 끼를!',
-                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                      color: Colors.white,
-                    ),
+                    style: Theme.of(context).textTheme.headlineSmall
+                        ?.copyWith(color: Colors.white),
                     textAlign: TextAlign.center,
                   ),
                 ),

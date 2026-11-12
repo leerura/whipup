@@ -75,7 +75,7 @@ public class RequestObservabilityFilter extends OncePerRequestFilter {
 
     private String routeTemplate(String uri) {
         return switch (uri) {
-            case "/health", "/api/v1/auth/kakao", "/api/v1/me",
+            case "/health", "/api/v1/auth/kakao", "/api/v1/auth/apple", "/api/v1/me",
                 "/api/v1/me/terms-consent", "/api/v1/me/onboarding",
                 "/api/v1/ingredients", "/api/v1/me/ingredients",
                 "/api/v1/recipes/recommendations", "/api/v1/recipes/search",

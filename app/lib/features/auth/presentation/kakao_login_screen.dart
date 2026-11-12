@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -7,6 +8,7 @@ import '../../../app/theme.dart';
 class KakaoLoginScreen extends StatelessWidget {
   const KakaoLoginScreen({
     required this.onKakaoLogin,
+    this.onAppleLogin,
     this.isLoading = false,
     this.hasError = false,
     super.key,
@@ -14,7 +16,11 @@ class KakaoLoginScreen extends StatelessWidget {
 
   static const _designWidth = 390.0;
 
+  // Apple login is iOS-only (docs/v4/ux/ux.md).
+  static bool get showAppleLogin => defaultTargetPlatform == TargetPlatform.iOS;
+
   final VoidCallback onKakaoLogin;
+  final VoidCallback? onAppleLogin;
   final bool isLoading;
   final bool hasError;
 
@@ -68,8 +74,7 @@ class KakaoLoginScreen extends StatelessWidget {
                     size: 13 * scale,
                   ),
                   _DecorationDot(
-                    assetName:
-                        'assets/onboarding/login_dot_small_bottom.svg',
+                    assetName: 'assets/onboarding/login_dot_small_bottom.svg',
                     left: 146 * scale,
                     top: 522 * scale,
                     size: 12 * scale,
@@ -137,10 +142,11 @@ class KakaoLoginScreen extends StatelessWidget {
                       child: Center(
                         child: Text(
                           '로그인 상태가 인증되지 않았어요',
-                          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: AppColors.primary,
-                            fontWeight: FontWeight.w600,
-                          ),
+                          style: Theme.of(context).textTheme.bodyMedium
+                              ?.copyWith(
+                                color: AppColors.primary,
+                                fontWeight: FontWeight.w600,
+                              ),
                         ),
                       ),
                     ),
@@ -170,31 +176,27 @@ class KakaoLoginScreen extends StatelessWidget {
                         : const Text('카카오로 시작하기'),
                   ),
                 ),
-                Positioned(
-                  left: 20 * scale,
-                  right: 20 * scale,
-                  bottom: 70 * scale,
-                  height: 56,
-                  child: OutlinedButton.icon(
-                    onPressed: () {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(
-                          content: Text('Apple 로그인은 준비 중이에요.'),
+                if (showAppleLogin)
+                  Positioned(
+                    left: 20 * scale,
+                    right: 20 * scale,
+                    bottom: 70 * scale,
+                    height: 56,
+                    child: OutlinedButton.icon(
+                      onPressed: isLoading ? null : onAppleLogin,
+                      style: OutlinedButton.styleFrom(
+                        backgroundColor: AppColors.systemBlack,
+                        foregroundColor: AppColors.white,
+                        side: BorderSide.none,
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8),
                         ),
-                      );
-                    },
-                    style: OutlinedButton.styleFrom(
-                      backgroundColor: AppColors.systemBlack,
-                      foregroundColor: AppColors.white,
-                      side: BorderSide.none,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8),
                       ),
+                      icon: const Icon(Icons.apple, size: 20),
+                      label: const Text('Apple로 시작하기'),
                     ),
-                    icon: const Icon(Icons.apple, size: 20),
-                    label: const Text('Apple로 시작하기'),
                   ),
-                ),
               ],
             );
           },

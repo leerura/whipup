@@ -60,7 +60,9 @@ public class TermsConsentFilter extends OncePerRequestFilter {
         String path = request.getRequestURI();
         return path.equals("/health")
             || path.equals("/api/v1/auth/kakao")
+            || path.equals("/api/v1/auth/apple")
             || path.equals("/api/v1/me/terms-consent")
-            || (path.equals("/api/v1/me") && "DELETE".equalsIgnoreCase(request.getMethod()));
+            || (path.equals("/api/v1/me") && ("GET".equalsIgnoreCase(request.getMethod())
+                || "DELETE".equalsIgnoreCase(request.getMethod())));
     }
 }
