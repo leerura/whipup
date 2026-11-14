@@ -17,6 +17,7 @@ services:
       - ./tools/data-pipeline/accounts:/workspace/tools/data-pipeline/accounts:ro
 
   backend:
+    restart: unless-stopped
     build:
       context: ./backend
     ports:
@@ -36,6 +37,7 @@ services:
       SPRING_DATA_REDIS_PORT: 6379
 
   redis:
+    restart: unless-stopped
     image: redis:7.4-alpine
     command: ["redis-server", "--appendonly", "yes"]
     volumes:
@@ -85,6 +87,7 @@ services:
       - prometheus
 
   postgres:
+    restart: unless-stopped
     image: postgres:17.6-alpine
     ports:
       - "127.0.0.1:5432:5432"
