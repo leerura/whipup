@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../../app/theme.dart';
 import '../../../core/config/app_config.dart';
+import '../../recipe/presentation/policy_webview_screen.dart';
 
 class TermsConsentScreen extends StatefulWidget {
   const TermsConsentScreen({required this.onAccepted, super.key});
@@ -21,13 +21,12 @@ class _TermsConsentScreenState extends State<TermsConsentScreen> {
 
   bool get _allSelected => _terms && _privacy && _age;
 
-  Future<void> _open(String url) async {
-    final uri = Uri.parse(url);
-    if (!await launchUrl(uri, mode: LaunchMode.externalApplication) &&
-        mounted) {
-      ScaffoldMessenger.of(context)
-          .showSnackBar(const SnackBar(content: Text('문서를 열 수 없어요.')));
-    }
+  void _open(String title, String url) {
+    Navigator.of(context).push<void>(
+      MaterialPageRoute<void>(
+        builder: (_) => PolicyWebViewScreen(title: title, url: url),
+      ),
+    );
   }
 
   Future<void> _submit() async {
@@ -97,14 +96,14 @@ class _TermsConsentScreenState extends State<TermsConsentScreen> {
                     title: '서비스 이용약관',
                     onChanged: (value) =>
                         setState(() => _terms = value ?? false),
-                    onOpen: () => _open(AppConfig.termsUrl),
+                    onOpen: () => _open('서비스 이용약관', AppConfig.termsUrl),
                   ),
                   _ConsentRow(
                     value: _privacy,
                     title: '개인정보 수집·이용',
                     onChanged: (value) =>
                         setState(() => _privacy = value ?? false),
-                    onOpen: () => _open(AppConfig.privacyPolicyUrl),
+                    onOpen: () => _open('개인정보처리방침', AppConfig.privacyPolicyUrl),
                   ),
                   _ConsentRow(
                     value: _age,
