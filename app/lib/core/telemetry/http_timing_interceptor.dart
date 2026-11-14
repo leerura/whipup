@@ -107,7 +107,7 @@ class HttpTimingInterceptor extends Interceptor {
   String? _routeTemplate(String path) {
     if (path == '/api/v1/recipes/recommendations' ||
         path == '/api/v1/recipes/search' ||
-        path == '/api/v1/auth/kakao' ||
+        path == '/api/v1/auth/guest' ||
         path == '/api/v1/me' ||
         path == '/api/v1/me/terms-consent' ||
         path == '/api/v1/me/onboarding' ||

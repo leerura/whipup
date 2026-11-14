@@ -82,6 +82,7 @@ class _TermsConsentScreenState extends State<TermsConsentScreen> {
                         style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.w700,
+                          letterSpacing: 0,
                         ),
                       ),
                       contentPadding: const EdgeInsets.symmetric(horizontal: 8),
@@ -173,17 +174,19 @@ class _ConsentRow extends StatelessWidget {
       visualDensity: VisualDensity.compact,
       title: Text.rich(
         TextSpan(
+          // CheckboxListTile otherwise inherits Material's 0.5 letter spacing.
           style: const TextStyle(
-            fontSize: 13,
+            fontSize: 14,
             color: AppColors.textPrimary,
             fontWeight: FontWeight.w500,
+            letterSpacing: 0,
           ),
           children: [
             const TextSpan(
               text: '(필수)  ',
               style: TextStyle(
                 color: AppColors.primary,
-                fontSize: 12,
+                fontSize: 14,
                 fontWeight: FontWeight.w700,
               ),
             ),
@@ -201,7 +204,7 @@ class _ConsentRow extends StatelessWidget {
               label: const Text(
                 '보기 ›',
                 style: TextStyle(
-                  fontSize: 11,
+                  fontSize: 12,
                   color: AppColors.textMuted,
                   fontWeight: FontWeight.w500,
                 ),

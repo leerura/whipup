@@ -126,6 +126,7 @@ public class RecipeService {
         response.setSourceTitle(recipe.getSourceTitle());
         response.setSourceChannelName(recipe.getSourceChannelName());
         response.setSourceChannelId(recipe.getSourceChannelId());
+        response.setSourceChannelThumbnailUrl(toUri(recipe.getSourceChannelThumbnailUrl()));
         response.setSourceMetadataFetchedAt(recipe.getSourceMetadataFetchedAt());
         return response;
     }
@@ -276,5 +277,15 @@ public class RecipeService {
             .orElseThrow(() -> new IllegalStateException(
                 "YouTube reference does not contain video id"
             ));
+    }
+
+    /** Stored dataset snapshot URL, or null when missing or malformed (clients fall back to an initial). */
+    private static java.net.URI toUri(String value) {
+        if (value == null || value.isBlank()) return null;
+        try {
+            return java.net.URI.create(value);
+        } catch (IllegalArgumentException exception) {
+            return null;
+        }
     }
 }

@@ -43,9 +43,6 @@ public class UserAuthAccount {
 	@Column(name = "provider_user_id", nullable = false, length = 255)
 	private String providerUserId;
 
-	@Column(name = "apple_refresh_token_encrypted")
-	private String appleRefreshTokenEncrypted;
-
 	@CreationTimestamp
 	@Column(name = "created_at", nullable = false, updatable = false)
 	private OffsetDateTime createdAt;
@@ -69,11 +66,4 @@ public class UserAuthAccount {
 		return user;
 	}
 
-	public String getAppleRefreshTokenEncrypted() {
-		return appleRefreshTokenEncrypted;
-	}
-
-	public void setAppleRefreshTokenEncrypted(String appleRefreshTokenEncrypted) {
-		this.appleRefreshTokenEncrypted = appleRefreshTokenEncrypted;
-	}
 }

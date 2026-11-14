@@ -59,8 +59,7 @@ public class TermsConsentFilter extends OncePerRequestFilter {
     private boolean isExempt(HttpServletRequest request) {
         String path = request.getRequestURI();
         return path.equals("/health")
-            || path.equals("/api/v1/auth/kakao")
-            || path.equals("/api/v1/auth/apple")
+            || path.equals("/api/v1/auth/guest")
             || path.equals("/api/v1/me/terms-consent")
             || (path.equals("/api/v1/me") && ("GET".equalsIgnoreCase(request.getMethod())
                 || "DELETE".equalsIgnoreCase(request.getMethod())));

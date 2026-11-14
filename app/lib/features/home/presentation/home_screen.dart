@@ -3,9 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../recipe/presentation/widgets/channel_avatar.dart';
 import '../../../app/theme.dart';
 import '../../../shared/presentation/widgets/main_bottom_navigation.dart';
 import '../../../shared/presentation/widgets/whippy_header.dart';
+
+/// Cards per home preview section (docs/v4/ux V4-K).
+const _homePreviewLimit = 8;
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({
@@ -105,11 +109,11 @@ class _HomeScreenState extends State<HomeScreen> {
         _ownedIngredients = owned.items.toList(growable: false);
         _availableItems = available.items
             .where((item) => item.missingCount == 0)
-            .take(2)
+            .take(_homePreviewLimit)
             .toList(growable: false);
         _oneMissingItem = missing.items
             .where((item) => item.missingCount == 1)
-            .take(1)
+            .take(_homePreviewLimit)
             .toList(growable: false);
         _dailyMenuItems = dailyMenuItems;
         _isLoading = false;
@@ -223,121 +227,157 @@ class _PopulatedInventoryHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const edge = EdgeInsets.symmetric(horizontal: 20);
+    final cardWidth = (MediaQuery.sizeOf(context).width - 50) / 2;
     return ListView(
-      padding: const EdgeInsets.fromLTRB(20, 16, 20, 32),
+      padding: const EdgeInsets.fromLTRB(0, 16, 0, 32),
       children: [
-        Text(
-          '오늘, 뭐 먹을까요?',
-          style: Theme.of(context).textTheme.titleLarge?.copyWith(
-            color: AppColors.textPrimary,
-            fontSize: 20,
-            height: 1.3,
-            fontWeight: FontWeight.w700,
-          ),
-        ),
-        const SizedBox(height: 1),
-        Text(
-          '내 재료에 맞는 메뉴를 골라봤어요.',
-          style: Theme.of(context).textTheme.bodyMedium
-              ?.copyWith(color: AppColors.textSecondary, fontSize: 14),
-        ),
-        if (dailyMenuItems.isNotEmpty) ...[
-          const SizedBox(height: 24),
-          const Row(
-            children: [
-              Icon(Icons.bookmark_border, color: AppColors.primary, size: 16),
-              SizedBox(width: 4),
-              Expanded(
-                child: Text(
-                  '오늘 먹을 메뉴',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
-                ),
-              ),
-              Text(
-                '자정에 사라져요',
-                style: TextStyle(
-                  fontSize: 11,
-                  color: AppColors.textMuted,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 10),
-          Wrap(
-            spacing: 10,
-            runSpacing: 10,
-            children: [
-              for (final item in dailyMenuItems)
-                SizedBox(
-                  width: (MediaQuery.sizeOf(context).width - 50) / 2,
-                  child: _TodayMenuCard(
-                    item: item,
-                    onTap: onRecipeSelected == null
-                        ? null
-                        : () => onRecipeSelected!(item.recipeId),
-                    onRemove: () => onDailyMenuRemoved(item.recipeId),
-                  ),
-                ),
-            ],
-          ),
-        ],
-        const SizedBox(height: 20),
-        _InventorySummary(
-          ownedIngredients: ownedIngredients,
-          onManage: onIngredientsSelected,
-        ),
-        if (availableItems.isNotEmpty) ...[
-          const SizedBox(height: 24),
-          _SectionHeader(
-            title: '지금 바로 만들 수 있어요',
-            actionLabel: '추천 더 보기',
-            onAction: onRecommendationsSelected,
-          ),
-          const SizedBox(height: 10),
-          Row(
+        Padding(
+          padding: edge,
+          child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              for (var index = 0; index < availableItems.length; index++) ...[
-                if (index > 0) const SizedBox(width: 10),
-                Expanded(
-                  child: _HomeRecipeCard(
-                    item: availableItems[index],
-                    onTap: onRecipeSelected == null
-                        ? null
-                        : () =>
-                              onRecipeSelected!(availableItems[index].recipeId),
-                  ),
+              Text(
+                '오늘, 뭐 먹을까요?',
+                style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                  color: AppColors.textPrimary,
+                  fontSize: 20,
+                  height: 1.3,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              const SizedBox(height: 1),
+              Text(
+                '내 재료에 맞는 메뉴를 골라봤어요.',
+                style: Theme.of(context).textTheme.bodyMedium
+                    ?.copyWith(color: AppColors.textSecondary, fontSize: 14),
+              ),
+              if (dailyMenuItems.isNotEmpty) ...[
+                const SizedBox(height: 24),
+                const Row(
+                  children: [
+                    Icon(
+                      Icons.bookmark_border,
+                      color: AppColors.primary,
+                      size: 16,
+                    ),
+                    SizedBox(width: 4),
+                    Expanded(
+                      child: Text(
+                        '오늘 먹을 메뉴',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                    ),
+                    Text(
+                      '자정에 사라져요',
+                      style: TextStyle(
+                        fontSize: 11,
+                        color: AppColors.textMuted,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 10),
+                Wrap(
+                  spacing: 10,
+                  runSpacing: 10,
+                  children: [
+                    for (final item in dailyMenuItems)
+                      SizedBox(
+                        width: cardWidth,
+                        child: _TodayMenuCard(
+                          item: item,
+                          onTap: onRecipeSelected == null
+                              ? null
+                              : () => onRecipeSelected!(item.recipeId),
+                          onRemove: () => onDailyMenuRemoved(item.recipeId),
+                        ),
+                      ),
+                  ],
                 ),
               ],
-              if (availableItems.length == 1) const Expanded(child: SizedBox()),
+              const SizedBox(height: 20),
+              _InventorySummary(
+                ownedIngredients: ownedIngredients,
+                onManage: onIngredientsSelected,
+              ),
+              if (availableItems.isNotEmpty) ...[
+                const SizedBox(height: 24),
+                _SectionHeader(
+                  title: '지금 바로 만들 수 있어요',
+                  actionLabel: '추천 더 보기',
+                  onAction: onRecommendationsSelected,
+                ),
+                const SizedBox(height: 10),
+              ],
             ],
           ),
-        ],
-        if (oneMissingItem.isNotEmpty) ...[
-          SizedBox(height: availableItems.isEmpty ? 24 : 18),
-          const _SectionHeader(title: '재료 한 가지만 더 있으면 돼요'),
-          const SizedBox(height: 10),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
+        ),
+        if (availableItems.isNotEmpty)
+          _HomeCarousel(
+            cardWidth: cardWidth,
             children: [
-              Expanded(
-                child: _HomeRecipeCard(
-                  item: oneMissingItem.single,
-                  missingIngredientName: _missingIngredientName(
-                    oneMissingItem.single,
-                  ),
+              for (final item in availableItems)
+                _HomeRecipeCard(
+                  item: item,
                   onTap: onRecipeSelected == null
                       ? null
-                      : () => onRecipeSelected!(oneMissingItem.single.recipeId),
+                      : () => onRecipeSelected!(item.recipeId),
                 ),
-              ),
-              const SizedBox(width: 10),
-              const Expanded(child: SizedBox()),
+            ],
+          ),
+        if (oneMissingItem.isNotEmpty) ...[
+          SizedBox(height: availableItems.isEmpty ? 24 : 18),
+          const Padding(
+            padding: edge,
+            child: _SectionHeader(title: '재료 한 가지만 더 있으면 돼요'),
+          ),
+          const SizedBox(height: 10),
+          _HomeCarousel(
+            cardWidth: cardWidth,
+            children: [
+              for (final item in oneMissingItem)
+                _HomeRecipeCard(
+                  item: item,
+                  missingIngredientName: _missingIngredientName(item),
+                  onTap: onRecipeSelected == null
+                      ? null
+                      : () => onRecipeSelected!(item.recipeId),
+                ),
             ],
           ),
         ],
       ],
+    );
+  }
+}
+
+/// Horizontally scrolling row of home cards that runs to the screen edges.
+/// The first card lines up with the other home content (left inset 20).
+class _HomeCarousel extends StatelessWidget {
+  const _HomeCarousel({required this.cardWidth, required this.children});
+
+  final double cardWidth;
+  final List<Widget> children;
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          for (var index = 0; index < children.length; index++) ...[
+            if (index > 0) const SizedBox(width: 10),
+            SizedBox(width: cardWidth, child: children[index]),
+          ],
+        ],
+      ),
     );
   }
 }
@@ -558,6 +598,16 @@ class _HomeRecipeCard extends StatelessWidget {
                         color: AppColors.textPrimary,
                       ),
                     ),
+                    if (RecipeChannelLabel.hasChannel(
+                      item.sourceChannelName,
+                    )) ...[
+                      const SizedBox(height: 3),
+                      RecipeChannelLabel(
+                        channelName: item.sourceChannelName,
+                        thumbnailUrl: item.sourceChannelThumbnailUrl,
+                        fontSize: 11,
+                      ),
+                    ],
                     const SizedBox(height: 4),
                     Text(
                       isMissing ? '$missingIngredientName 부족' : '재료가 모두 있어요',

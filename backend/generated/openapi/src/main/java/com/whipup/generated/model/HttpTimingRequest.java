@@ -25,9 +25,7 @@ public class HttpTimingRequest {
    * Gets or Sets route
    */
   public enum RouteEnum {
-    _API_V1_AUTH_KAKAO("/api/v1/auth/kakao"),
-    
-    _API_V1_AUTH_APPLE("/api/v1/auth/apple"),
+    _API_V1_AUTH_GUEST("/api/v1/auth/guest"),
     
     _API_V1_ME("/api/v1/me"),
     

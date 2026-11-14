@@ -45,11 +45,25 @@ public class User {
 	@Column(name = "age_14_confirmed_at")
 	private OffsetDateTime age14ConfirmedAt;
 
+	@Column(name = "last_active_at", nullable = false)
+	private OffsetDateTime lastActiveAt;
+
 	protected User() {
 	}
 
 	public static User create() {
-		return new User();
+		User user = new User();
+		user.lastActiveAt = OffsetDateTime.now();
+		return user;
+	}
+
+	/** Records that the account was just used, so it is not deleted as inactive. */
+	public void markActive(OffsetDateTime now) {
+		this.lastActiveAt = now;
+	}
+
+	public OffsetDateTime getLastActiveAt() {
+		return lastActiveAt;
 	}
 
 	public Long getId() {

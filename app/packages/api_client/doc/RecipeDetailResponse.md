@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **sourceTitle** | **String** | Title returned by the stored YouTube source metadata snapshot. | 
 **sourceChannelName** | **String** |  | 
 **sourceChannelId** | **String** |  | 
+**sourceChannelThumbnailUrl** | **String** | Original YouTube channel profile image. Clients fall back to the channel name's first letter. | [optional] 
 **sourceMetadataFetchedAt** | [**DateTime**](DateTime.md) | UTC time when the stored YouTube metadata snapshot was fetched. | 
 **thumbnailUrl** | **String** |  | 
 **missingCount** | **int** |  | 

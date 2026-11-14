@@ -12,8 +12,7 @@ Method | HTTP request | Description
 [**acceptTermsConsent**](AuthApi.md#accepttermsconsent) | **POST** /api/v1/me/terms-consent | 
 [**deleteCurrentAccount**](AuthApi.md#deletecurrentaccount) | **DELETE** /api/v1/me | Permanently delete the authenticated account
 [**getCurrentAccount**](AuthApi.md#getcurrentaccount) | **GET** /api/v1/me | Read the authenticated account state
-[**loginWithApple**](AuthApi.md#loginwithapple) | **POST** /api/v1/auth/apple | Sign in with Apple (iOS)
-[**loginWithKakao**](AuthApi.md#loginwithkakao) | **POST** /api/v1/auth/kakao | 
+[**startGuestSession**](AuthApi.md#startguestsession) | **POST** /api/v1/auth/guest | Create a guest account without personal information
 
 
 # **acceptTermsConsent**
@@ -61,7 +60,7 @@ void (empty response body)
 
 Permanently delete the authenticated account
 
-Permanently deletes the current user, linked provider accounts, owned ingredients, and onboarding state in one transaction. No backup is retained. Shared ingredient/catalog and recipe data are not deleted. For an Apple account the stored Apple refresh token is revoked with Apple after the deletion commits; a revoke failure does not fail the request. Logout is client-side and has no backend endpoint.
+Permanently deletes the current user, linked provider accounts, owned ingredients, and onboarding state in one transaction. No backup is retained. Shared ingredient/catalog and recipe data are not deleted. Logout does not exist; after deletion the app starts a new guest account.
 
 ### Example
 ```dart
@@ -133,33 +132,29 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **loginWithApple**
-> LoginResponse loginWithApple(appleLoginRequest)
+# **startGuestSession**
+> LoginResponse startGuestSession()
 
-Sign in with Apple (iOS)
+Create a guest account without personal information
 
-Verifies the Apple identity token, exchanges the authorization code with Apple, and returns the same LoginResponse as Kakao login. Returns 503 APPLE_LOGIN_UNAVAILABLE when Apple credentials are not configured.
+Creates a new account with no personal information and returns the same LoginResponse shape as before. The account always starts with terms consent required and onboarding incomplete.
 
 ### Example
 ```dart
 import 'package:api_client/api.dart';
 
 final api = ApiClient().getAuthApi();
-final AppleLoginRequest appleLoginRequest = ; // AppleLoginRequest | 
 
 try {
-    final response = api.loginWithApple(appleLoginRequest);
+    final response = api.startGuestSession();
     print(response);
 } on DioException catch (e) {
-    print('Exception when calling AuthApi->loginWithApple: $e\n');
+    print('Exception when calling AuthApi->startGuestSession: $e\n');
 }
 ```
 
 ### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appleLoginRequest** | [**AppleLoginRequest**](AppleLoginRequest.md)|  | 
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -171,48 +166,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **loginWithKakao**
-> LoginResponse loginWithKakao(kakaoLoginRequest)
-
-
-
-### Example
-```dart
-import 'package:api_client/api.dart';
-
-final api = ApiClient().getAuthApi();
-final KakaoLoginRequest kakaoLoginRequest = ; // KakaoLoginRequest | 
-
-try {
-    final response = api.loginWithKakao(kakaoLoginRequest);
-    print(response);
-} on DioException catch (e) {
-    print('Exception when calling AuthApi->loginWithKakao: $e\n');
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **kakaoLoginRequest** | [**KakaoLoginRequest**](KakaoLoginRequest.md)|  | 
-
-### Return type
-
-[**LoginResponse**](LoginResponse.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -39,12 +39,24 @@ daily-menu:{userId}:{YYYY-MM-DD}  -- Redis sorted set, KST 날짜
 
 `ZADD NX`로 중복을 막고 `ZREVRANGE`로 최신순을 읽는다. `EXPIREAT`은 최초 추가와 이후 모든 추가 때 그 날짜의 다음 KST 자정으로 설정한다. Redis AOF와 Docker volume을 활성화해 컨테이너 재시작 동안에는 키가 유지되도록 한다. Redis 영속화는 자정 이후 이력 보관을 의미하지 않는다.
 
-## Apple 인증 계정
+## 게스트 계정
+
+계정은 `USERS` 행 하나다. V4는 외부 로그인을 쓰지 않으므로 `USER_AUTH_ACCOUNT`에 새 행을 만들지 않고 이름·이메일도 저장하지 않는다. 기존 테이블은 제거하지 않고 그대로 두며, 계정 삭제는 해당 사용자의 행이 있으면 함께 지운다.
 
 ```text
-USER_AUTH_ACCOUNT
+USERS
   ...existing fields
-  apple_refresh_token_encrypted NULL
+  last_active_at NOT NULL
 ```
 
-`provider=APPLE`인 행에만 값이 있다. Apple refresh token은 인증 암호화(AES-256-GCM)로 암호화해 저장하고 키는 환경 변수로 주입한다. 계정 삭제 때 행과 함께 지워진다. 컬럼 추가는 forward migration으로 한다. `provider` 값에 `APPLE`을 허용한다. 이름·이메일은 저장하지 않는다.
+계정 생성 시각으로 시작하고 `GET /api/v1/me`가 성공할 때마다 현재 시각으로 갱신한다. 이 값이 365일보다 오래된 계정은 매일 정리 작업이 계정 삭제와 같은 범위(보유 재료, 인증 계정 행, 사용자 행)로 지운다. 도입 migration은 기존 계정의 값을 migration 시각으로 채운다.
+
+## 레시피 출처 채널 사진
+
+```text
+RECIPE
+  ...existing fields
+  source_channel_thumbnail_url NULL
+```
+
+원본 YouTube 채널의 프로필 사진 주소다. dataset recipe JSON의 선택 필드 `sourceChannelThumbnailUrl`에서 import한다. 없으면 `NULL`이며 앱은 채널명 첫 글자를 보인다. 컬럼 추가는 forward migration으로 한다.

@@ -1,8 +1,5 @@
 package com.whipup.common.error;
 
-import com.whipup.auth.apple.AppleAuthenticationException;
-import com.whipup.auth.apple.AppleLoginUnavailableException;
-import com.whipup.auth.exception.KakaoAuthenticationException;
 import com.whipup.generated.model.ErrorResponse;
 import com.whipup.ingredient.exception.OwnedIngredientException;
 import com.whipup.recipe.exception.RecipeNotFoundException;
@@ -55,42 +52,6 @@ public class ApiExceptionHandler {
 
 		return ResponseEntity
 				.status(exception.getStatus())
-				.body(response);
-	}
-
-	@ExceptionHandler(KakaoAuthenticationException.class)
-	public ResponseEntity<ErrorResponse> handleKakaoAuthenticationException() {
-		ErrorResponse response = new ErrorResponse(
-				"KAKAO_AUTH_FAILED",
-				"카카오 인증에 실패했습니다."
-		);
-
-		return ResponseEntity
-				.status(HttpStatus.UNAUTHORIZED)
-				.body(response);
-	}
-
-	@ExceptionHandler(AppleAuthenticationException.class)
-	public ResponseEntity<ErrorResponse> handleAppleAuthenticationException() {
-		ErrorResponse response = new ErrorResponse(
-				"APPLE_AUTH_FAILED",
-				"Apple 인증에 실패했습니다."
-		);
-
-		return ResponseEntity
-				.status(HttpStatus.UNAUTHORIZED)
-				.body(response);
-	}
-
-	@ExceptionHandler(AppleLoginUnavailableException.class)
-	public ResponseEntity<ErrorResponse> handleAppleLoginUnavailableException() {
-		ErrorResponse response = new ErrorResponse(
-				"APPLE_LOGIN_UNAVAILABLE",
-				"Apple 로그인을 지금 사용할 수 없습니다."
-		);
-
-		return ResponseEntity
-				.status(HttpStatus.SERVICE_UNAVAILABLE)
 				.body(response);
 	}
 

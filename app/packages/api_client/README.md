@@ -67,8 +67,7 @@ Class | Method | HTTP request | Description
 [*AuthApi*](doc/AuthApi.md) | [**acceptTermsConsent**](doc/AuthApi.md#accepttermsconsent) | **POST** /api/v1/me/terms-consent | 
 [*AuthApi*](doc/AuthApi.md) | [**deleteCurrentAccount**](doc/AuthApi.md#deletecurrentaccount) | **DELETE** /api/v1/me | Permanently delete the authenticated account
 [*AuthApi*](doc/AuthApi.md) | [**getCurrentAccount**](doc/AuthApi.md#getcurrentaccount) | **GET** /api/v1/me | Read the authenticated account state
-[*AuthApi*](doc/AuthApi.md) | [**loginWithApple**](doc/AuthApi.md#loginwithapple) | **POST** /api/v1/auth/apple | Sign in with Apple (iOS)
-[*AuthApi*](doc/AuthApi.md) | [**loginWithKakao**](doc/AuthApi.md#loginwithkakao) | **POST** /api/v1/auth/kakao | 
+[*AuthApi*](doc/AuthApi.md) | [**startGuestSession**](doc/AuthApi.md#startguestsession) | **POST** /api/v1/auth/guest | Create a guest account without personal information
 [*DailyMenuApi*](doc/DailyMenuApi.md) | [**addDailyMenu**](doc/DailyMenuApi.md#adddailymenu) | **POST** /api/v1/me/daily-menu | 
 [*DailyMenuApi*](doc/DailyMenuApi.md) | [**getDailyMenu**](doc/DailyMenuApi.md#getdailymenu) | **GET** /api/v1/me/daily-menu | 
 [*DailyMenuApi*](doc/DailyMenuApi.md) | [**removeDailyMenu**](doc/DailyMenuApi.md#removedailymenu) | **DELETE** /api/v1/me/daily-menu/{recipeId} | 
@@ -87,7 +86,6 @@ Class | Method | HTTP request | Description
 ## Documentation For Models
 
  - [AddOwnedIngredientRequest](doc/AddOwnedIngredientRequest.md)
- - [AppleLoginRequest](doc/AppleLoginRequest.md)
  - [CurrentAccountResponse](doc/CurrentAccountResponse.md)
  - [DailyMenuRequest](doc/DailyMenuRequest.md)
  - [DetailIngredientDisplay](doc/DetailIngredientDisplay.md)
@@ -100,7 +98,6 @@ Class | Method | HTTP request | Description
  - [IngredientGroupListResponse](doc/IngredientGroupListResponse.md)
  - [IngredientMatch](doc/IngredientMatch.md)
  - [IngredientVariantOption](doc/IngredientVariantOption.md)
- - [KakaoLoginRequest](doc/KakaoLoginRequest.md)
  - [LoginResponse](doc/LoginResponse.md)
  - [MissingDetailRequirement](doc/MissingDetailRequirement.md)
  - [MissingOption](doc/MissingOption.md)

@@ -5,10 +5,8 @@
  */
 package com.whipup.generated.api;
 
-import com.whipup.generated.model.AppleLoginRequest;
 import com.whipup.generated.model.CurrentAccountResponse;
 import com.whipup.generated.model.ErrorResponse;
-import com.whipup.generated.model.KakaoLoginRequest;
 import com.whipup.generated.model.LoginResponse;
 import com.whipup.generated.model.TermsConsentRequest;
 import org.springframework.http.ResponseEntity;
@@ -55,7 +53,7 @@ public interface AuthApi {
     String PATH_DELETE_CURRENT_ACCOUNT = "/api/v1/me";
     /**
      * DELETE /api/v1/me : Permanently delete the authenticated account
-     * Permanently deletes the current user, linked provider accounts, owned ingredients, and onboarding state in one transaction. No backup is retained. Shared ingredient/catalog and recipe data are not deleted. For an Apple account the stored Apple refresh token is revoked with Apple after the deletion commits; a revoke failure does not fail the request. Logout is client-side and has no backend endpoint.
+     * Permanently deletes the current user, linked provider accounts, owned ingredients, and onboarding state in one transaction. No backup is retained. Shared ingredient/catalog and recipe data are not deleted. Logout does not exist; after deletion the app starts a new guest account.
      *
      * @return Account deleted (status code 204)
      *         or Authentication failed or missing (status code 401)
@@ -92,48 +90,22 @@ public interface AuthApi {
     }
 
 
-    String PATH_LOGIN_WITH_APPLE = "/api/v1/auth/apple";
+    String PATH_START_GUEST_SESSION = "/api/v1/auth/guest";
     /**
-     * POST /api/v1/auth/apple : Sign in with Apple (iOS)
-     * Verifies the Apple identity token, exchanges the authorization code with Apple, and returns the same LoginResponse as Kakao login. Returns 503 APPLE_LOGIN_UNAVAILABLE when Apple credentials are not configured.
+     * POST /api/v1/auth/guest : Create a guest account without personal information
+     * Creates a new account with no personal information and returns the same LoginResponse shape as before. The account always starts with terms consent required and onboarding incomplete.
      *
-     * @param appleLoginRequest  (required)
-     * @return Login success (status code 200)
-     *         or Invalid request (status code 400)
-     *         or Authentication failed or missing (status code 401)
-     *         or Apple login is not configured or Apple is unreachable (status code 503)
+     * @return Guest account created (status code 200)
      */
     @RequestMapping(
         method = RequestMethod.POST,
-        value = AuthApi.PATH_LOGIN_WITH_APPLE,
-        produces = { "application/json" },
-        consumes = { "application/json" }
+        value = AuthApi.PATH_START_GUEST_SESSION,
+        produces = { "application/json" }
     )
-    default ResponseEntity<LoginResponse> loginWithApple(
-         @Valid @RequestBody AppleLoginRequest appleLoginRequest
+    default ResponseEntity<LoginResponse> startGuestSession(
+        
     ) {
-        return getDelegate().loginWithApple(appleLoginRequest);
-    }
-
-
-    String PATH_LOGIN_WITH_KAKAO = "/api/v1/auth/kakao";
-    /**
-     * POST /api/v1/auth/kakao
-     *
-     * @param kakaoLoginRequest  (required)
-     * @return Login success (status code 200)
-     *         or Authentication failed or missing (status code 401)
-     */
-    @RequestMapping(
-        method = RequestMethod.POST,
-        value = AuthApi.PATH_LOGIN_WITH_KAKAO,
-        produces = { "application/json" },
-        consumes = { "application/json" }
-    )
-    default ResponseEntity<LoginResponse> loginWithKakao(
-         @Valid @RequestBody KakaoLoginRequest kakaoLoginRequest
-    ) {
-        return getDelegate().loginWithKakao(kakaoLoginRequest);
+        return getDelegate().startGuestSession();
     }
 
 }

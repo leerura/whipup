@@ -7,6 +7,7 @@ import 'package:webview_flutter_android/webview_flutter_android.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'package:webview_flutter_wkwebview/webview_flutter_wkwebview.dart';
 
+import 'widgets/channel_avatar.dart';
 import '../../../app/theme.dart';
 import '../../ingredient/presentation/ingredient_presentation_catalog.dart';
 import '../../ingredient/presentation/widgets/ingredient_thumbnail.dart';
@@ -378,6 +379,7 @@ class _RecipeDetailContentState extends State<_RecipeDetailContent> {
                         const SizedBox(height: 8),
                         _VideoCredit(
                           channelName: recipe.sourceChannelName,
+                          thumbnailUrl: recipe.sourceChannelThumbnailUrl,
                           onTap: _openSource,
                         ),
                         const SizedBox(height: 10),
@@ -605,9 +607,14 @@ class _VideoThumbnail extends StatelessWidget {
 }
 
 class _VideoCredit extends StatelessWidget {
-  const _VideoCredit({required this.channelName, required this.onTap});
+  const _VideoCredit({
+    required this.channelName,
+    required this.thumbnailUrl,
+    required this.onTap,
+  });
 
   final String? channelName;
+  final String? thumbnailUrl;
   final VoidCallback onTap;
 
   @override
@@ -615,7 +622,6 @@ class _VideoCredit extends StatelessWidget {
     final label = channelName?.trim().isNotEmpty == true
         ? channelName!.trim()
         : '원본 채널';
-    final initial = String.fromCharCode(label.runes.first);
     return SizedBox(
       height: 20,
       child: Material(
@@ -625,23 +631,11 @@ class _VideoCredit extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
           child: Row(
             children: [
-              Container(
-                width: 20,
-                height: 20,
-                alignment: Alignment.center,
-                decoration: const BoxDecoration(
-                  color: Color(0xFFE5E5EA),
-                  shape: BoxShape.circle,
-                ),
-                child: Text(
-                  initial,
-                  style: const TextStyle(
-                    color: Color(0xFF636366),
-                    fontSize: 12,
-                    fontWeight: FontWeight.w600,
-                    height: 1.4,
-                  ),
-                ),
+              ChannelAvatar(
+                channelName: label,
+                thumbnailUrl: thumbnailUrl,
+                size: 20,
+                initialFontSize: 12,
               ),
               const SizedBox(width: 6),
               Expanded(

@@ -18,6 +18,8 @@ part 'recommendation_item.g.dart';
 /// * [thumbnailUrl] 
 /// * [missingCount] 
 /// * [requirementResults] 
+/// * [sourceChannelName] - Original YouTube channel name, used to tell apart recipes with the same name.
+/// * [sourceChannelThumbnailUrl] - Original YouTube channel profile image. Clients fall back to the channel name's first letter.
 @BuiltValue()
 abstract class RecommendationItem implements Built<RecommendationItem, RecommendationItemBuilder> {
   @BuiltValueField(wireName: r'recipeId')
@@ -34,6 +36,14 @@ abstract class RecommendationItem implements Built<RecommendationItem, Recommend
 
   @BuiltValueField(wireName: r'requirementResults')
   BuiltList<RequirementResult> get requirementResults;
+
+  /// Original YouTube channel name, used to tell apart recipes with the same name.
+  @BuiltValueField(wireName: r'sourceChannelName')
+  String? get sourceChannelName;
+
+  /// Original YouTube channel profile image. Clients fall back to the channel name's first letter.
+  @BuiltValueField(wireName: r'sourceChannelThumbnailUrl')
+  String? get sourceChannelThumbnailUrl;
 
   RecommendationItem._();
 
@@ -83,6 +93,20 @@ class _$RecommendationItemSerializer implements PrimitiveSerializer<Recommendati
       object.requirementResults,
       specifiedType: const FullType(BuiltList, [FullType(RequirementResult)]),
     );
+    if (object.sourceChannelName != null) {
+      yield r'sourceChannelName';
+      yield serializers.serialize(
+        object.sourceChannelName,
+        specifiedType: const FullType.nullable(String),
+      );
+    }
+    if (object.sourceChannelThumbnailUrl != null) {
+      yield r'sourceChannelThumbnailUrl';
+      yield serializers.serialize(
+        object.sourceChannelThumbnailUrl,
+        specifiedType: const FullType.nullable(String),
+      );
+    }
   }
 
   @override
@@ -140,6 +164,22 @@ class _$RecommendationItemSerializer implements PrimitiveSerializer<Recommendati
             specifiedType: const FullType(BuiltList, [FullType(RequirementResult)]),
           ) as BuiltList<RequirementResult>;
           result.requirementResults.replace(valueDes);
+          break;
+        case r'sourceChannelName':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType.nullable(String),
+          ) as String?;
+          if (valueDes == null) continue;
+          result.sourceChannelName = valueDes;
+          break;
+        case r'sourceChannelThumbnailUrl':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType.nullable(String),
+          ) as String?;
+          if (valueDes == null) continue;
+          result.sourceChannelThumbnailUrl = valueDes;
           break;
         default:
           unhandled.add(key);

@@ -20,7 +20,7 @@ part 'http_timing_request.g.dart';
 abstract class HttpTimingRequest implements Built<HttpTimingRequest, HttpTimingRequestBuilder> {
   @BuiltValueField(wireName: r'route')
   HttpTimingRequestRouteEnum get route;
-  // enum routeEnum {  /api/v1/auth/kakao,  /api/v1/auth/apple,  /api/v1/me,  /api/v1/me/terms-consent,  /api/v1/me/onboarding,  /api/v1/recipes/recommendations,  /api/v1/recipes/search,  /api/v1/recipes/{recipeId},  /api/v1/me/daily-menu,  /api/v1/me/daily-menu/{recipeId},  /api/v1/me/ingredients,  /api/v1/me/ingredients/{userIngredientId},  /api/v1/ingredients,  };
+  // enum routeEnum {  /api/v1/auth/guest,  /api/v1/me,  /api/v1/me/terms-consent,  /api/v1/me/onboarding,  /api/v1/recipes/recommendations,  /api/v1/recipes/search,  /api/v1/recipes/{recipeId},  /api/v1/me/daily-menu,  /api/v1/me/daily-menu/{recipeId},  /api/v1/me/ingredients,  /api/v1/me/ingredients/{userIngredientId},  /api/v1/ingredients,  };
 
   @BuiltValueField(wireName: r'method')
   HttpTimingRequestMethodEnum get method;
@@ -159,10 +159,8 @@ class _$HttpTimingRequestSerializer implements PrimitiveSerializer<HttpTimingReq
 
 class HttpTimingRequestRouteEnum extends EnumClass {
 
-  @BuiltValueEnumConst(wireName: r'/api/v1/auth/kakao')
-  static const HttpTimingRequestRouteEnum slashApiSlashV1SlashAuthSlashKakao = _$httpTimingRequestRouteEnum_slashApiSlashV1SlashAuthSlashKakao;
-  @BuiltValueEnumConst(wireName: r'/api/v1/auth/apple')
-  static const HttpTimingRequestRouteEnum slashApiSlashV1SlashAuthSlashApple = _$httpTimingRequestRouteEnum_slashApiSlashV1SlashAuthSlashApple;
+  @BuiltValueEnumConst(wireName: r'/api/v1/auth/guest')
+  static const HttpTimingRequestRouteEnum slashApiSlashV1SlashAuthSlashGuest = _$httpTimingRequestRouteEnum_slashApiSlashV1SlashAuthSlashGuest;
   @BuiltValueEnumConst(wireName: r'/api/v1/me')
   static const HttpTimingRequestRouteEnum slashApiSlashV1SlashMe = _$httpTimingRequestRouteEnum_slashApiSlashV1SlashMe;
   @BuiltValueEnumConst(wireName: r'/api/v1/me/terms-consent')

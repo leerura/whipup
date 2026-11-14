@@ -17,6 +17,10 @@ class _$RecommendationItem extends RecommendationItem {
   final int missingCount;
   @override
   final BuiltList<RequirementResult> requirementResults;
+  @override
+  final String? sourceChannelName;
+  @override
+  final String? sourceChannelThumbnailUrl;
 
   factory _$RecommendationItem(
           [void Function(RecommendationItemBuilder)? updates]) =>
@@ -27,7 +31,9 @@ class _$RecommendationItem extends RecommendationItem {
       required this.name,
       required this.thumbnailUrl,
       required this.missingCount,
-      required this.requirementResults})
+      required this.requirementResults,
+      this.sourceChannelName,
+      this.sourceChannelThumbnailUrl})
       : super._();
   @override
   RecommendationItem rebuild(
@@ -46,7 +52,9 @@ class _$RecommendationItem extends RecommendationItem {
         name == other.name &&
         thumbnailUrl == other.thumbnailUrl &&
         missingCount == other.missingCount &&
-        requirementResults == other.requirementResults;
+        requirementResults == other.requirementResults &&
+        sourceChannelName == other.sourceChannelName &&
+        sourceChannelThumbnailUrl == other.sourceChannelThumbnailUrl;
   }
 
   @override
@@ -57,6 +65,8 @@ class _$RecommendationItem extends RecommendationItem {
     _$hash = $jc(_$hash, thumbnailUrl.hashCode);
     _$hash = $jc(_$hash, missingCount.hashCode);
     _$hash = $jc(_$hash, requirementResults.hashCode);
+    _$hash = $jc(_$hash, sourceChannelName.hashCode);
+    _$hash = $jc(_$hash, sourceChannelThumbnailUrl.hashCode);
     _$hash = $jf(_$hash);
     return _$hash;
   }
@@ -68,7 +78,9 @@ class _$RecommendationItem extends RecommendationItem {
           ..add('name', name)
           ..add('thumbnailUrl', thumbnailUrl)
           ..add('missingCount', missingCount)
-          ..add('requirementResults', requirementResults))
+          ..add('requirementResults', requirementResults)
+          ..add('sourceChannelName', sourceChannelName)
+          ..add('sourceChannelThumbnailUrl', sourceChannelThumbnailUrl))
         .toString();
   }
 }
@@ -99,6 +111,16 @@ class RecommendationItemBuilder
   set requirementResults(ListBuilder<RequirementResult>? requirementResults) =>
       _$this._requirementResults = requirementResults;
 
+  String? _sourceChannelName;
+  String? get sourceChannelName => _$this._sourceChannelName;
+  set sourceChannelName(String? sourceChannelName) =>
+      _$this._sourceChannelName = sourceChannelName;
+
+  String? _sourceChannelThumbnailUrl;
+  String? get sourceChannelThumbnailUrl => _$this._sourceChannelThumbnailUrl;
+  set sourceChannelThumbnailUrl(String? sourceChannelThumbnailUrl) =>
+      _$this._sourceChannelThumbnailUrl = sourceChannelThumbnailUrl;
+
   RecommendationItemBuilder() {
     RecommendationItem._defaults(this);
   }
@@ -111,6 +133,8 @@ class RecommendationItemBuilder
       _thumbnailUrl = $v.thumbnailUrl;
       _missingCount = $v.missingCount;
       _requirementResults = $v.requirementResults.toBuilder();
+      _sourceChannelName = $v.sourceChannelName;
+      _sourceChannelThumbnailUrl = $v.sourceChannelThumbnailUrl;
       _$v = null;
     }
     return this;
@@ -143,6 +167,8 @@ class RecommendationItemBuilder
             missingCount: BuiltValueNullFieldError.checkNotNull(
                 missingCount, r'RecommendationItem', 'missingCount'),
             requirementResults: requirementResults.build(),
+            sourceChannelName: sourceChannelName,
+            sourceChannelThumbnailUrl: sourceChannelThumbnailUrl,
           );
     } catch (_) {
       late String _$failedField;

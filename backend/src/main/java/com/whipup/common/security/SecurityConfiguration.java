@@ -29,7 +29,7 @@ public class SecurityConfiguration {
 				.authorizeHttpRequests(authorize -> authorize
 						.requestMatchers(HttpMethod.GET, "/health").permitAll()
 					.requestMatchers(HttpMethod.GET, "/actuator/health", "/actuator/prometheus").permitAll()
-						.requestMatchers(HttpMethod.POST, "/api/v1/auth/kakao", "/api/v1/auth/apple").permitAll()
+						.requestMatchers(HttpMethod.POST, "/api/v1/auth/guest").permitAll()
 						.requestMatchers("/error").permitAll()
 						.anyRequest().authenticated()
 				)

@@ -227,6 +227,7 @@ The Recipe Pipeline Agent must:
 - follow alias and recipe-local mapping rules defined in the active docs
 - preserve ambiguity or missing information explicitly reported by Gemini instead of guessing
 - follow the active Requirement / Variant / Relation rules
+- read and follow `docs/v4/development/recipe-data-guidelines.md` (the active version's recipe data guidelines) before applying recipe data
 - run the repository validator before completion
 - keep a recipe `DRAFT` when required mappings remain unresolved or validation fails; otherwise it may be `PUBLISHED`
 - confirm that the final dataset is valid

@@ -203,13 +203,16 @@ public class RecommendationService {
             .map(this::toRequirementResult)
             .toList();
 
-        return new RecommendationItem(
+        RecommendationItem item = new RecommendationItem(
             recipe.getId(),
             recipe.getName(),
             thumbnailUrl,
             matchResult.missingCount(),
             requirementResults
         );
+        item.setSourceChannelName(recipe.getSourceChannelName());
+        item.setSourceChannelThumbnailUrl(toUri(recipe.getSourceChannelThumbnailUrl()));
+        return item;
     }
 
     private RequirementResult toRequirementResult(
@@ -320,5 +323,15 @@ public class RecommendationService {
             .orElseThrow(() -> new IllegalStateException(
                 "YouTube reference does not contain video id"
             ));
+    }
+
+    /** Stored dataset snapshot URL, or null when missing or malformed (clients fall back to an initial). */
+    private static java.net.URI toUri(String value) {
+        if (value == null || value.isBlank()) return null;
+        try {
+            return java.net.URI.create(value);
+        } catch (IllegalArgumentException exception) {
+            return null;
+        }
     }
 }

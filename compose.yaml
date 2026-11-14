@@ -32,11 +32,6 @@ services:
       DB_USERNAME: ${DB_USERNAME}
       DB_PASSWORD: ${DB_PASSWORD}
       JWT_SECRET: ${JWT_SECRET}
-      APPLE_CLIENT_ID: ${APPLE_CLIENT_ID:-}
-      APPLE_TEAM_ID: ${APPLE_TEAM_ID:-}
-      APPLE_KEY_ID: ${APPLE_KEY_ID:-}
-      APPLE_PRIVATE_KEY: ${APPLE_PRIVATE_KEY:-}
-      APPLE_TOKEN_ENCRYPTION_KEY: ${APPLE_TOKEN_ENCRYPTION_KEY:-}
       SPRING_DATA_REDIS_HOST: redis
       SPRING_DATA_REDIS_PORT: 6379
 
@@ -92,7 +87,7 @@ services:
   postgres:
     image: postgres:17.6-alpine
     ports:
-      - "5432:5432"
+      - "127.0.0.1:5432:5432"
     environment:
       POSTGRES_DB: ${DB_NAME}
       POSTGRES_USER: ${DB_USERNAME}

@@ -1,10 +1,9 @@
 package com.whipup.auth.service;
 
-import com.whipup.auth.domain.AuthProvider;
 import com.whipup.auth.jwt.JwtTokenProvider;
-import com.whipup.auth.kakao.KakaoUserClient;
 import com.whipup.ingredient.repository.UserIngredientRepository;
 import com.whipup.user.domain.User;
+import com.whipup.user.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -12,32 +11,23 @@ public class AuthService {
 	private static final String CURRENT_TERMS_VERSION = "v1";
 	private static final String CURRENT_PRIVACY_VERSION = "v1";
 
-	private final KakaoUserClient kakaoUserClient;
-	private final AuthAccountService authAccountService;
 	private final JwtTokenProvider jwtTokenProvider;
 	private final UserIngredientRepository userIngredientRepository;
+	private final UserRepository userRepository;
 
 	public AuthService(
-			KakaoUserClient kakaoUserClient,
-			AuthAccountService authAccountService,
 			JwtTokenProvider jwtTokenProvider,
-			UserIngredientRepository userIngredientRepository
+			UserIngredientRepository userIngredientRepository,
+			UserRepository userRepository
 	) {
-		this.kakaoUserClient = kakaoUserClient;
-		this.authAccountService = authAccountService;
 		this.jwtTokenProvider = jwtTokenProvider;
 		this.userIngredientRepository = userIngredientRepository;
+		this.userRepository = userRepository;
 	}
 
-	public LoginResult loginWithKakao(String kakaoAccessToken) {
-		String providerUserId = kakaoUserClient.getProviderUserId(kakaoAccessToken);
-
-		User user = authAccountService.findOrCreateUser(
-				AuthProvider.KAKAO,
-				providerUserId
-		);
-
-		return toLoginResult(user);
+	/** Creates a new account that holds no personal information. */
+	public LoginResult startGuestSession() {
+		return toLoginResult(userRepository.save(User.create()));
 	}
 
 	/** Current account state for token re-entry. */

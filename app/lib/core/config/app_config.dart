@@ -5,10 +5,10 @@ import 'local_config.dart';
 
 abstract final class AppConfig {
   static const privacyPolicyUrl =
-      'https://cherry-target-075.notion.site/404e10b2db2881728abeed9f39726f0';
+      'https://cherry-target-075.notion.site/404e10b2db2881728abeed9f39726f0e';
   static const termsUrl =
       'https://cherry-target-075.notion.site/404e10b2db288142ab90c979637aa0ad';
-  static const supportEmail = 'yssw09112@yonsei.ac.kr';
+  static const supportEmail = 'sw09112@naver.com';
 
   static String? _apiBaseUrl;
   static Future<void>? _initialization;
@@ -70,6 +70,4 @@ abstract final class AppConfig {
     }
     _apiBaseUrl = 'http://localhost:8080';
   }
-
-  static const kakaoNativeAppKey = '67b2557d18e0f70f51523f7c4f37bc53';
 }

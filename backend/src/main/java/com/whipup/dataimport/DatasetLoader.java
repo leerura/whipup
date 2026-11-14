@@ -169,7 +169,7 @@ public class DatasetLoader {
         }
         return new Dataset.RecipeData(key, name, status, shortsReference,
             optionalText(recipe.sourceTitle()), optionalText(recipe.sourceChannelName()),
-            optionalText(recipe.sourceChannelId()), sourceMetadataFetchedAt,
+            optionalText(recipe.sourceChannelId()), optionalText(recipe.sourceChannelThumbnailUrl()), sourceMetadataFetchedAt,
             ingredients, requirements, steps);
     }
 
@@ -397,7 +397,8 @@ public class DatasetLoader {
     @JsonIgnoreProperties(ignoreUnknown = false)
     private record RecipeJson(
         String key, String name, String status, String shortsReference,
-        String sourceTitle, String sourceChannelName, String sourceChannelId, String sourceMetadataFetchedAt,
+        String sourceTitle, String sourceChannelName, String sourceChannelId, String sourceChannelThumbnailUrl,
+        String sourceMetadataFetchedAt,
         List<RecipeIngredientJson> ingredients, List<RequirementJson> requirements, List<String> steps
     ) { }
 

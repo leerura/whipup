@@ -1,13 +1,6 @@
 import 'package:api_client/api_client.dart';
 import 'package:dio/dio.dart';
-
-import 'dart:convert';
-import 'dart:math';
-
-import 'package:crypto/crypto.dart';
 import 'package:flutter/material.dart';
-import 'package:kakao_flutter_sdk_user/kakao_flutter_sdk_user.dart';
-import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 
 import '../../../core/auth/auth_token_store.dart';
 import '../../../core/config/app_config.dart';
@@ -19,29 +12,38 @@ import '../../recommendation/presentation/recommendation_screen.dart';
 import '../../recipe/presentation/recipe_detail_screen.dart';
 import '../../settings/presentation/settings_screen.dart';
 import 'onboarding_entry.dart';
-import 'kakao_login_screen.dart';
+import 'connection_error_screen.dart';
 import 'onboarding_motion_sequence.dart';
 import 'terms_consent_screen.dart';
 
 class OnboardingFlow extends StatefulWidget {
-  const OnboardingFlow({this.onKakaoLogin, super.key});
-
-  final VoidCallback? onKakaoLogin;
+  const OnboardingFlow({super.key});
 
   @override
   State<OnboardingFlow> createState() => _OnboardingFlowState();
 }
 
+/// What the start flow needs to know to pick the first screen.
+class _AccountSnapshot {
+  const _AccountSnapshot({
+    required this.termsConsentRequired,
+    required this.onboardingCompleted,
+    required this.hasOwnedIngredients,
+  });
+
+  final bool termsConsentRequired;
+  final bool onboardingCompleted;
+  final bool hasOwnedIngredients;
+}
+
 class _OnboardingFlowState extends State<OnboardingFlow> {
   late final ApiClient _apiClient;
   final _tokenStore = AuthTokenStore();
-  late final Future<CurrentAccountResponse?> _restoredSession;
-  bool _hasSavedToken = false;
+  late final Future<_AccountSnapshot> _session;
 
   _OnboardingStage _stage = _OnboardingStage.splash;
   Set<String> _registeredIngredients = const {};
-  bool _isLoggingIn = false;
-  bool _hasLoginError = false;
+  bool _isRetrying = false;
   int _homeRevision = 0;
 
   @override
@@ -49,78 +51,79 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
     super.initState();
     _apiClient = ApiClient(basePathOverride: AppConfig.apiBaseUrl);
     _apiClient.dio.interceptors.add(HttpTimingInterceptor(_apiClient.dio));
-    // The start motion always plays; the saved session is checked meanwhile.
-    _restoredSession = _restoreSession();
+    // The start motion always plays; the account is prepared meanwhile.
+    _session = _startSession();
   }
 
-  /// Returns the account state for a saved token, or null when there is no
-  /// usable session. A 401 means the token is invalid or expired and is deleted;
-  /// other failures keep the token so the next launch can try again.
-  Future<CurrentAccountResponse?> _restoreSession() async {
+  /// Reuses the saved account, or creates a guest account when there is none.
+  /// A 401 means the saved token is no longer valid, so it is dropped and a
+  /// new guest account replaces it. Any other failure keeps the token and is
+  /// reported to the caller so the user can retry.
+  Future<_AccountSnapshot> _startSession() async {
     final token = await _tokenStore.read();
-    if (token == null) return null;
-    if (mounted) setState(() => _hasSavedToken = true);
-
-    _apiClient.setBearerAuth('bearerAuth', token);
-    try {
-      final response = await _apiClient.getAuthApi().getCurrentAccount();
-      final account = response.data;
-      if (account == null) throw StateError('The account response is empty.');
-      return account;
-    } catch (error) {
-      debugPrint('[Session restore] failed: $error');
-      _apiClient.removeBearerAuth('bearerAuth');
-      if (error is DioException && error.response?.statusCode == 401) {
+    if (token != null) {
+      _apiClient.setBearerAuth('bearerAuth', token);
+      try {
+        final response = await _apiClient.getAuthApi().getCurrentAccount();
+        final account = response.data;
+        if (account == null) {
+          throw StateError('The account response is empty.');
+        }
+        return _AccountSnapshot(
+          termsConsentRequired: account.termsConsentRequired,
+          onboardingCompleted: account.onboardingCompleted,
+          hasOwnedIngredients: account.hasOwnedIngredients,
+        );
+      } on DioException catch (error) {
+        _apiClient.removeBearerAuth('bearerAuth');
+        if (error.response?.statusCode != 401) rethrow;
         await _tokenStore.delete();
       }
-      return null;
     }
+    return _createGuest();
   }
 
-  Future<void> _finishOnboardingMotion() async {
-    final account = await _restoredSession;
-    if (!mounted) return;
-    if (account == null) {
-      setState(() {
-        _hasSavedToken = false;
-        _stage = _OnboardingStage.login;
-      });
-      return;
-    }
+  Future<_AccountSnapshot> _createGuest() async {
+    final response = await _apiClient.getAuthApi().startGuestSession();
+    final login = response.data;
+    if (login == null) throw StateError('The guest response is empty.');
 
+    _apiClient.setBearerAuth('bearerAuth', login.accessToken);
+    await _tokenStore.write(login.accessToken);
+    return _AccountSnapshot(
+      termsConsentRequired: login.termsConsentRequired,
+      onboardingCompleted: login.onboardingCompleted,
+      hasOwnedIngredients: login.hasOwnedIngredients,
+    );
+  }
+
+  Future<void> _finishOnboardingMotion() => _enterApp(_session);
+
+  Future<void> _retryStart() async {
+    setState(() => _isRetrying = true);
+    await _enterApp(_startSession());
+    if (mounted) setState(() => _isRetrying = false);
+  }
+
+  /// Routes to the first screen for the prepared account. Failures show the
+  /// connection error screen instead of leaving the user on a blank motion.
+  Future<void> _enterApp(Future<_AccountSnapshot> session) async {
     try {
-      await _enterApp(
-        termsConsentRequired: account.termsConsentRequired,
-        onboardingCompleted: account.onboardingCompleted,
-        hasOwnedIngredients: account.hasOwnedIngredients,
-        setStep: (_) {},
-      );
-    } catch (error) {
-      debugPrint('[Session restore] routing failed: $error');
-      _apiClient.removeBearerAuth('bearerAuth');
-      if (mounted) {
-        setState(() {
-          _hasSavedToken = false;
-          _stage = _OnboardingStage.login;
-        });
-      }
+      final account = await session;
+      if (!mounted) return;
+      await _routeTo(account);
+    } catch (error, stackTrace) {
+      debugPrint('[Start] failed: $error');
+      debugPrintStack(label: '[Start] stack', stackTrace: stackTrace);
+      if (mounted) setState(() => _stage = _OnboardingStage.connectionError);
     }
   }
 
-  /// Loads what the next screen needs and routes there. Shared by fresh login
-  /// and restored sessions.
-  Future<void> _enterApp({
-    required bool termsConsentRequired,
-    required bool onboardingCompleted,
-    required bool hasOwnedIngredients,
-    required void Function(String step) setStep,
-  }) async {
+  Future<void> _routeTo(_AccountSnapshot account) async {
     Set<String> registeredIngredients = const {};
     // New accounts are blocked by the backend terms-consent filter until
-    // the consent screen completes. Do not query protected inventory before
-    // routing them to that screen; otherwise login appears to fail with 403.
-    if (!termsConsentRequired && hasOwnedIngredients) {
-      setStep('loading owned ingredients');
+    // the consent screen completes, so inventory is not read before that.
+    if (!account.termsConsentRequired && account.hasOwnedIngredients) {
       final response = await _apiClient
           .getOwnedIngredientApi()
           .getOwnedIngredients();
@@ -139,158 +142,16 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
     setState(() {
       _registeredIngredients = Set<String>.unmodifiable(registeredIngredients);
       _stage = switch (onboardingEntryFor(
-        onboardingCompleted: onboardingCompleted,
+        onboardingCompleted: account.onboardingCompleted,
       )) {
         OnboardingEntry.initialIngredientRegistration =>
           _OnboardingStage.ingredients,
         OnboardingEntry.home => _OnboardingStage.home,
       };
-      if (termsConsentRequired) {
+      if (account.termsConsentRequired) {
         _stage = _OnboardingStage.terms;
       }
     });
-  }
-
-  Future<void> _handleKakaoLogin() =>
-      _runLogin('Kakao', _authenticateWithKakao);
-
-  Future<void> _handleAppleLogin() =>
-      _runLogin('Apple', _authenticateWithApple);
-
-  Future<LoginResponse> _authenticateWithApple(
-    void Function(String step) setStep,
-  ) async {
-    setStep('Apple authorization');
-    final rawNonce = _generateNonce();
-    final credential = await SignInWithApple.getAppleIDCredential(
-      scopes: const [],
-      nonce: sha256.convert(utf8.encode(rawNonce)).toString(),
-    );
-    final identityToken = credential.identityToken;
-    if (identityToken == null) {
-      throw StateError('Apple did not return an identity token.');
-    }
-
-    setStep('backend token exchange');
-    final response = await _apiClient.getAuthApi().loginWithApple(
-      appleLoginRequest: AppleLoginRequest(
-        (builder) => builder
-          ..identityToken = identityToken
-          ..authorizationCode = credential.authorizationCode
-          ..nonce = rawNonce,
-      ),
-    );
-    final loginResponse = response.data;
-    if (loginResponse == null) {
-      throw StateError('The login response body is empty.');
-    }
-    return loginResponse;
-  }
-
-  String _generateNonce() {
-    final random = Random.secure();
-    return base64Url
-        .encode(List<int>.generate(32, (_) => random.nextInt(256)))
-        .replaceAll('=', '');
-  }
-
-  Future<LoginResponse> _authenticateWithKakao(
-    void Function(String step) setStep,
-  ) async {
-    var loginStep = 'checking KakaoTalk availability';
-    setStep(loginStep);
-    late final OAuthToken kakaoToken;
-
-    final isTalkInstalled = await isKakaoTalkInstalled();
-    debugPrint('[Kakao login] KakaoTalk installed: $isTalkInstalled');
-    if (isTalkInstalled) {
-      try {
-        setStep('KakaoTalk login');
-        debugPrint('[Kakao login] Starting KakaoTalk login');
-        kakaoToken = await UserApi.instance.loginWithKakaoTalk();
-      } catch (error, stackTrace) {
-        debugPrint('[Kakao login] KakaoTalk login failed: $error');
-        debugPrintStack(
-          label: '[Kakao login] KakaoTalk failure stack',
-          stackTrace: stackTrace,
-        );
-        setStep('Kakao Account login after KakaoTalk failure');
-        debugPrint('[Kakao login] Falling back to Kakao Account login');
-        kakaoToken = await UserApi.instance.loginWithKakaoAccount();
-      }
-    } else {
-      setStep('Kakao Account login without KakaoTalk');
-      debugPrint('[Kakao login] Starting Kakao Account login');
-      kakaoToken = await UserApi.instance.loginWithKakaoAccount();
-    }
-
-    debugPrint('[Kakao login] SDK login completed');
-    setStep('backend token exchange');
-    debugPrint('[Kakao login] Starting backend token exchange');
-    final response = await _apiClient.getAuthApi().loginWithKakao(
-      kakaoLoginRequest: KakaoLoginRequest(
-        (builder) => builder.kakaoAccessToken = kakaoToken.accessToken,
-      ),
-    );
-    final loginResponse = response.data;
-    if (loginResponse == null) {
-      throw StateError('The login response body is empty.');
-    }
-    debugPrint('[Kakao login] Backend token exchange completed');
-    return loginResponse;
-  }
-
-  /// Runs a provider login and routes to the next screen. Both providers return
-  /// the same [LoginResponse], so everything after authentication is shared.
-  Future<void> _runLogin(
-    String provider,
-    Future<LoginResponse> Function(void Function(String step) setStep)
-    authenticate,
-  ) async {
-    if (_isLoggingIn) return;
-
-    setState(() {
-      _isLoggingIn = true;
-      _hasLoginError = false;
-    });
-
-    var loginStep = 'authenticating';
-    try {
-      final loginResponse = await authenticate((step) => loginStep = step);
-      _apiClient.setBearerAuth('bearerAuth', loginResponse.accessToken);
-      await _tokenStore.write(loginResponse.accessToken);
-
-      await _enterApp(
-        termsConsentRequired: loginResponse.termsConsentRequired,
-        onboardingCompleted: loginResponse.onboardingCompleted,
-        hasOwnedIngredients: loginResponse.hasOwnedIngredients,
-        setStep: (step) => loginStep = step,
-      );
-      widget.onKakaoLogin?.call();
-    } catch (error, stackTrace) {
-      if (error is SignInWithAppleAuthorizationException &&
-          error.code == AuthorizationErrorCode.canceled) {
-        return;
-      }
-      debugPrint('[$provider login] Failed during $loginStep: $error');
-      debugPrintStack(
-        label: '[$provider login] Failure stack',
-        stackTrace: stackTrace,
-      );
-      if (!mounted) return;
-
-      if (error is DioException && error.response?.statusCode == 503) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('지금은 로그인할 수 없어요. 잠시 후 다시 시도해 주세요.')),
-        );
-        return;
-      }
-      setState(() => _hasLoginError = true);
-    } finally {
-      if (mounted) {
-        setState(() => _isLoggingIn = false);
-      }
-    }
   }
 
   void _handleIngredientsSubmitted(Set<String> ingredients) {
@@ -345,18 +206,6 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
 
   void _showSettings() => setState(() => _stage = _OnboardingStage.settings);
 
-  Future<void> _logout() async {
-    try {
-      await UserApi.instance.logout();
-    } catch (_) {
-      // A local session reset is still safe when the provider session has
-      // already expired.
-    }
-    _apiClient.removeBearerAuth('bearerAuth');
-    await _tokenStore.delete();
-    if (mounted) setState(() => _stage = _OnboardingStage.login);
-  }
-
   Future<void> _deleteAccount() async {
     try {
       final response = await _apiClient.getAuthApi().deleteCurrentAccount();
@@ -366,12 +215,6 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
       );
       _apiClient.removeBearerAuth('bearerAuth');
       await _tokenStore.delete();
-      try {
-        await UserApi.instance.logout();
-      } catch (_) {
-        // The backend deletion already succeeded; an expired provider session
-        // should not prevent the local account from being cleared.
-      }
     } on DioException catch (error, stackTrace) {
       debugPrint(
         '[Account deletion] failed '
@@ -387,16 +230,14 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
     }
   }
 
-  void _accountDeleted() {
-    if (mounted) setState(() => _stage = _OnboardingStage.login);
-  }
+  /// A deleted account is replaced by a new guest account, starting again
+  /// from the terms screen.
+  void _accountDeleted() => _enterApp(_startSession());
 
   @override
   Widget build(BuildContext context) {
     return AnimatedSwitcher(
-      duration: _stage == _OnboardingStage.login
-          ? Duration.zero
-          : const Duration(milliseconds: 300),
+      duration: const Duration(milliseconds: 300),
       switchInCurve: Curves.easeOut,
       switchOutCurve: Curves.easeIn,
       transitionBuilder: (child, animation) =>
@@ -405,14 +246,11 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
         _OnboardingStage.splash => OnboardingMotionSequence(
           key: const ValueKey(_OnboardingStage.splash),
           onCompleted: _finishOnboardingMotion,
-          showLoginContent: !_hasSavedToken,
         ),
-        _OnboardingStage.login => KakaoLoginScreen(
-          key: const ValueKey(_OnboardingStage.login),
-          onKakaoLogin: _handleKakaoLogin,
-          onAppleLogin: _handleAppleLogin,
-          isLoading: _isLoggingIn,
-          hasError: _hasLoginError,
+        _OnboardingStage.connectionError => ConnectionErrorScreen(
+          key: const ValueKey(_OnboardingStage.connectionError),
+          isRetrying: _isRetrying,
+          onRetry: _retryStart,
         ),
         _OnboardingStage.terms => TermsConsentScreen(
           key: const ValueKey(_OnboardingStage.terms),
@@ -456,7 +294,6 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
         _OnboardingStage.settings => SettingsScreen(
           key: const ValueKey(_OnboardingStage.settings),
           onBack: _showHome,
-          onLogout: _logout,
           onDeleteAccount: _deleteAccount,
           onAccountDeleted: _accountDeleted,
         ),
@@ -467,7 +304,7 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
 
 enum _OnboardingStage {
   splash,
-  login,
+  connectionError,
   terms,
   ingredients,
   home,

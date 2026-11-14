@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -6,17 +5,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../../app/theme.dart';
 
 class OnboardingMotionSequence extends StatefulWidget {
-  const OnboardingMotionSequence({
-    required this.onCompleted,
-    this.showLoginContent = true,
-    super.key,
-  });
+  const OnboardingMotionSequence({required this.onCompleted, super.key});
 
   final VoidCallback onCompleted;
-
-  /// False when a saved session is being restored, so the sign-in buttons are
-  /// not shown to a user who will not need them.
-  final bool showLoginContent;
 
   @override
   State<OnboardingMotionSequence> createState() =>
@@ -120,11 +111,6 @@ class _OnboardingMotionSequenceState extends State<OnboardingMotionSequence>
                       introProgress: introProgress,
                       loginProgress: loginProgress,
                     ),
-                    if (widget.showLoginContent)
-                      _buildLoginContent(
-                        scale: scale,
-                        loginProgress: loginProgress,
-                      ),
                   ],
                 );
               },
@@ -226,134 +212,6 @@ class _OnboardingMotionSequenceState extends State<OnboardingMotionSequence>
           textAlign: TextAlign.center,
         ),
       ),
-    );
-  }
-
-  Widget _buildLoginContent({
-    required double scale,
-    required double loginProgress,
-  }) {
-    return Opacity(
-      opacity: loginProgress,
-      child: Stack(
-        children: [
-          _DecorationDot(
-            assetName: 'assets/onboarding/login_dot_large.svg',
-            left: 72 * scale,
-            top: 320 * scale,
-            size: 27 * scale,
-          ),
-          _DecorationDot(
-            assetName: 'assets/onboarding/login_dot_right.svg',
-            left: 334 * scale,
-            top: 408 * scale,
-            size: 21 * scale,
-          ),
-          _DecorationDot(
-            assetName: 'assets/onboarding/login_dot_small_top.svg',
-            left: 119 * scale,
-            top: 292 * scale,
-            size: 13 * scale,
-          ),
-          _DecorationDot(
-            assetName: 'assets/onboarding/login_dot_small_bottom.svg',
-            left: 146 * scale,
-            top: 522 * scale,
-            size: 12 * scale,
-          ),
-          Positioned(
-            top: 369 * scale,
-            left: 20 * scale,
-            right: 20 * scale,
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(
-                  '냉장고 속\n재료를 골라보세요',
-                  style: Theme.of(context).textTheme.headlineSmall,
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: 8),
-                Text(
-                  '지금 만들 수 있는 메뉴를 찾아드릴게요',
-                  style: Theme.of(context).textTheme.bodyMedium,
-                  textAlign: TextAlign.center,
-                ),
-              ],
-            ),
-          ),
-          Positioned(
-            left: 20 * scale,
-            right: 20 * scale,
-            bottom: 138 * scale,
-            height: 56,
-            child: DecoratedBox(
-              decoration: BoxDecoration(
-                color: AppColors.kakao,
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Center(
-                child: Text(
-                  '카카오로 시작하기',
-                  style: Theme.of(context).textTheme.labelLarge,
-                ),
-              ),
-            ),
-          ),
-          if (defaultTargetPlatform == TargetPlatform.iOS)
-            Positioned(
-              left: 20 * scale,
-              right: 20 * scale,
-              bottom: 70 * scale,
-              height: 56,
-              child: DecoratedBox(
-                decoration: BoxDecoration(
-                  color: AppColors.systemBlack,
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: Center(
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      const Icon(Icons.apple, color: AppColors.white, size: 20),
-                      const SizedBox(width: 8),
-                      Text(
-                        'Apple로 시작하기',
-                        style: Theme.of(context).textTheme.labelLarge
-                            ?.copyWith(color: AppColors.white),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-        ],
-      ),
-    );
-  }
-}
-
-class _DecorationDot extends StatelessWidget {
-  const _DecorationDot({
-    required this.assetName,
-    required this.left,
-    required this.top,
-    required this.size,
-  });
-
-  final String assetName;
-  final double left;
-  final double top;
-  final double size;
-
-  @override
-  Widget build(BuildContext context) {
-    return Positioned(
-      left: left,
-      top: top,
-      width: size,
-      height: size,
-      child: SvgPicture.asset(assetName, fit: BoxFit.fill),
     );
   }
 }

@@ -12,19 +12,24 @@ V4 구현자는 먼저 이 문서와 링크된 V4 계약을 읽고, 변경하지
 - 기존 계정의 약관 동의·온보딩 backfill은 forward migration으로 처리한다. 이미 적용된 migration을 편집하지 않는다.
 - detail projection에 `addableVariants`를 추가하고, 후보 계산은 V3 문서의 exact/accepted/option 후보를 따르며 새 전역 매칭을 만들지 않는다.
 
-## Apple 로그인
+## 게스트 시작
 
-- `AuthProvider`에 `APPLE`을 추가하고 `POST /api/v1/auth/apple`은 `loginWithApple`로 구현한다. Kakao 로그인 코드와 `LoginResponse`를 재사용한다.
-- Apple 검증 클라이언트(공개키 조회·캐시, 토큰 교환, revoke)와 설정 값은 Apple 전용 패키지에 둔다. 설정이 비어 있으면 애플리케이션은 정상 기동하고 Apple 로그인만 `503 APPLE_LOGIN_UNAVAILABLE`을 반환한다.
-- 설정 값은 environment variable로 주입하며 `.env.example`에는 이름만 둔다. 실제 key는 commit하지 않는다.
-- 계정 삭제는 DB 삭제 커밋 뒤에 revoke를 호출하고, revoke 실패가 삭제 결과를 바꾸지 않는다.
-- Flutter는 `sign_in_with_apple`로 nonce를 생성하고 SHA-256 hex를 Apple 요청에 넣는다. iOS Sign in with Apple capability/entitlements 설정이 필요하다.
+- `POST /api/v1/auth/guest`는 `User`를 새로 만들고 WhipUp JWT를 발급해 `LoginResponse`로 반환한다. Kakao·Apple 클라이언트, 설정, 관련 DB 컬럼과 테스트는 제거한다. 이미 쓰는 `user_auth_account` 테이블 구조는 바꾸지 않는다.
+- 약관 동의 필터의 예외 경로에는 `POST /api/v1/auth/guest`와 `GET /api/v1/me`, `DELETE /api/v1/me`, 약관 동의 endpoint를 둔다.
+- 비활성 계정 정리는 매일 04:00(KST) 한 번 실행하는 Spring scheduled job으로 하고(검증용으로 `whipup.account-cleanup.cron` 설정으로 주기를 바꿀 수 있다), 삭제는 기존 계정 삭제 서비스를 계정마다 재사용한다. 한 계정의 삭제 실패가 나머지 정리를 멈추지 않는다.
+- JWT 유효기간 설정은 3650일로 둔다. refresh token과 속도 제한은 만들지 않는다.
+- Flutter는 access token 하나를 iOS Keychain 등 보안 저장소에 저장한다. 저장은 계정 생성 성공 때, 삭제는 계정 삭제와 `401` 확인 실패에서만 한다. Kakao SDK, Apple 로그인 의존성과 로그인 화면을 제거한다.
+- 시작 모션은 유지하고, 토큰 확인이나 계정 생성은 모션과 병렬로 수행한다.
 
-## 자동 로그인
+## 레시피 출처 채널
 
-- `GET /api/v1/me`는 기존 `User`의 동의·온보딩 상태와 보유 재료 존재 여부를 읽는 조회 하나이며 새 도메인 개념이 아니다. 약관 동의 필터의 예외 경로에 포함한다.
-- Flutter는 access token 하나를 iOS Keychain 등 보안 저장소에 저장하고 앱 시작 때 읽는다. 저장·삭제는 로그인 성공, 로그아웃, 계정 삭제, `401` 확인 실패에서만 한다.
-- 시작 모션은 유지하고, 토큰 확인은 모션과 병렬로 수행한다.
+- recipe JSON에 선택 필드 `sourceChannelThumbnailUrl`을 추가한다. 값은 원본 채널의 프로필 사진 주소(88px)다. 수집하지 못하면 필드를 비워 두고 추측해서 채우지 않는다.
+- recipe pipeline의 source metadata 수집(V3 pipeline 4단계)은 V4에서 `sourceTitle`, `sourceChannelName`, `sourceChannelId`, `sourceChannelThumbnailUrl`, `sourceMetadataFetchedAt` 다섯 값을 저장한다. Gemini 추출과는 계속 별도 단계다.
+  - YouTube Data API 키가 있으면 videos API(제목·채널명·채널 ID)와 channels API(프로필 사진 `default` 크기)를 쓴다.
+  - 키가 없거나 API 호출이 실패하면 공개 oEmbed(제목·채널명), 영상 공개 페이지(채널 ID), 채널 공개 페이지(프로필 사진)로 채운다.
+  - 각 값은 따로 실패할 수 있으며, 실패한 값만 `null`로 남긴다.
+- 에이전트가 저장된 source metadata를 recipe JSON에 반영할 때 `sourceChannelThumbnailUrl`도 그대로 옮긴다. 수집은 pipeline 실행 때 한 번 하고, 앱 요청 때 YouTube를 조회하지 않는다.
+- 카드와 상세의 프로필 사진은 네트워크 이미지로 불러오고, 실패하면 첫 글자 원으로 대체한다. 이미지 실패가 화면 오류로 이어지지 않는다.
 
 ## Flutter
 
@@ -45,6 +50,8 @@ V4 구현자는 먼저 이 문서와 링크된 V4 계약을 읽고, 변경하지
 7. 신규 계정은 약관 세 항목 동의 전 보호 API를 쓸 수 없고, 기존 계정은 약관 화면을 다시 보지 않는다.
 8. 빠른 선택, 전체 목록 선택, 빈 선택 모두 온보딩을 한 번만 완료한다. 이후 재료를 모두 지워도 온보딩을 반복하지 않는다.
 9. 쿠팡 이동은 일반 검색 URL을 외부로 열며 inventory를 변경하지 않는다.
-10. Apple 로그인은 키가 없을 때 `503`으로 실패하고 다른 로그인·API에 영향이 없다. 유효한 키를 넣으면 로그인·계정 삭제 revoke가 코드 변경 없이 동작한다.
-11. 로그인 후 앱을 완전히 종료했다가 다시 열면 모션 뒤에 로그인 없이 상태에 맞는 화면으로 이동한다. 만료·무효 토큰은 지워지고 로그인 화면이 보이며, 로그아웃과 계정 삭제 뒤에는 재진입해도 로그인 화면이다.
-12. 기존 V3 ingredient matcher, recommendation, recipe detail, account deletion 관련 테스트가 회귀하지 않는다.
+10. 처음 실행하면 로그인 없이 게스트 계정이 만들어지고 약관 화면으로 간다. 앱을 완전히 종료했다가 다시 열어도 같은 계정이 유지되고 새 계정이 만들어지지 않는다.
+11. 저장된 토큰이 `401`이면 지우고 새 게스트 계정으로 시작한다. 서버에 연결할 수 없으면 다시 시도 안내를 보이고 토큰은 지우지 않는다.
+12. 계정 삭제 뒤에는 새 게스트 계정으로 약관 화면부터 다시 시작한다. 설정에 로그아웃은 없다.
+13. `last_active_at`이 365일보다 오래된 계정은 정리 작업 뒤 사라지고, 그 안의 계정은 남는다. 앱을 열면 해당 계정의 `last_active_at`이 갱신된다.
+14. 기존 V3 ingredient matcher, recommendation, recipe detail, account deletion 관련 테스트가 회귀하지 않는다.

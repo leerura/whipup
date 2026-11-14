@@ -21,6 +21,7 @@ part 'recipe_detail_response.g.dart';
 /// * [sourceTitle] - Title returned by the stored YouTube source metadata snapshot.
 /// * [sourceChannelName] 
 /// * [sourceChannelId] 
+/// * [sourceChannelThumbnailUrl] - Original YouTube channel profile image. Clients fall back to the channel name's first letter.
 /// * [sourceMetadataFetchedAt] - UTC time when the stored YouTube metadata snapshot was fetched.
 /// * [thumbnailUrl] 
 /// * [missingCount] 
@@ -47,6 +48,10 @@ abstract class RecipeDetailResponse implements Built<RecipeDetailResponse, Recip
 
   @BuiltValueField(wireName: r'sourceChannelId')
   String? get sourceChannelId;
+
+  /// Original YouTube channel profile image. Clients fall back to the channel name's first letter.
+  @BuiltValueField(wireName: r'sourceChannelThumbnailUrl')
+  String? get sourceChannelThumbnailUrl;
 
   /// UTC time when the stored YouTube metadata snapshot was fetched.
   @BuiltValueField(wireName: r'sourceMetadataFetchedAt')
@@ -120,6 +125,13 @@ class _$RecipeDetailResponseSerializer implements PrimitiveSerializer<RecipeDeta
       object.sourceChannelId,
       specifiedType: const FullType.nullable(String),
     );
+    if (object.sourceChannelThumbnailUrl != null) {
+      yield r'sourceChannelThumbnailUrl';
+      yield serializers.serialize(
+        object.sourceChannelThumbnailUrl,
+        specifiedType: const FullType.nullable(String),
+      );
+    }
     yield r'sourceMetadataFetchedAt';
     yield object.sourceMetadataFetchedAt == null ? null : serializers.serialize(
       object.sourceMetadataFetchedAt,
@@ -217,6 +229,14 @@ class _$RecipeDetailResponseSerializer implements PrimitiveSerializer<RecipeDeta
           ) as String?;
           if (valueDes == null) continue;
           result.sourceChannelId = valueDes;
+          break;
+        case r'sourceChannelThumbnailUrl':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType.nullable(String),
+          ) as String?;
+          if (valueDes == null) continue;
+          result.sourceChannelThumbnailUrl = valueDes;
           break;
         case r'sourceMetadataFetchedAt':
           final valueDes = serializers.deserialize(

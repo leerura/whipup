@@ -4,6 +4,7 @@ import 'package:api_client/api_client.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../../recipe/presentation/widgets/channel_avatar.dart';
 import '../../../app/theme.dart';
 import '../../../shared/presentation/widgets/main_bottom_navigation.dart';
 import '../../../shared/presentation/widgets/whippy_header.dart';
@@ -427,6 +428,15 @@ class _RecipeGrid extends StatelessWidget {
     return width / 1.28 +
         12 +
         textHeight(item.name, titleStyle, width - 24, 1) +
+        (RecipeChannelLabel.hasChannel(item.sourceChannelName)
+            ? 4 +
+                  textHeight(
+                    '채널',
+                    const TextStyle(fontSize: 12, height: 1.4),
+                    width - 24,
+                    1,
+                  )
+            : 0) +
         4 +
         textHeight(copy.primary, summaryStyle, width - 24, 1) +
         12;
@@ -477,6 +487,15 @@ class _RecipeCard extends StatelessWidget {
                         fontWeight: FontWeight.w700,
                       ),
                     ),
+                    if (RecipeChannelLabel.hasChannel(
+                      item.sourceChannelName,
+                    )) ...[
+                      const SizedBox(height: 4),
+                      RecipeChannelLabel(
+                        channelName: item.sourceChannelName,
+                        thumbnailUrl: item.sourceChannelThumbnailUrl,
+                      ),
+                    ],
                     const SizedBox(height: 4),
                     Text(
                       copy.primary,

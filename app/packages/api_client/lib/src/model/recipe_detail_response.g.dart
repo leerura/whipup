@@ -20,6 +20,8 @@ class _$RecipeDetailResponse extends RecipeDetailResponse {
   @override
   final String? sourceChannelId;
   @override
+  final String? sourceChannelThumbnailUrl;
+  @override
   final DateTime? sourceMetadataFetchedAt;
   @override
   final String thumbnailUrl;
@@ -43,6 +45,7 @@ class _$RecipeDetailResponse extends RecipeDetailResponse {
       this.sourceTitle,
       this.sourceChannelName,
       this.sourceChannelId,
+      this.sourceChannelThumbnailUrl,
       this.sourceMetadataFetchedAt,
       required this.thumbnailUrl,
       required this.missingCount,
@@ -69,6 +72,7 @@ class _$RecipeDetailResponse extends RecipeDetailResponse {
         sourceTitle == other.sourceTitle &&
         sourceChannelName == other.sourceChannelName &&
         sourceChannelId == other.sourceChannelId &&
+        sourceChannelThumbnailUrl == other.sourceChannelThumbnailUrl &&
         sourceMetadataFetchedAt == other.sourceMetadataFetchedAt &&
         thumbnailUrl == other.thumbnailUrl &&
         missingCount == other.missingCount &&
@@ -86,6 +90,7 @@ class _$RecipeDetailResponse extends RecipeDetailResponse {
     _$hash = $jc(_$hash, sourceTitle.hashCode);
     _$hash = $jc(_$hash, sourceChannelName.hashCode);
     _$hash = $jc(_$hash, sourceChannelId.hashCode);
+    _$hash = $jc(_$hash, sourceChannelThumbnailUrl.hashCode);
     _$hash = $jc(_$hash, sourceMetadataFetchedAt.hashCode);
     _$hash = $jc(_$hash, thumbnailUrl.hashCode);
     _$hash = $jc(_$hash, missingCount.hashCode);
@@ -105,6 +110,7 @@ class _$RecipeDetailResponse extends RecipeDetailResponse {
           ..add('sourceTitle', sourceTitle)
           ..add('sourceChannelName', sourceChannelName)
           ..add('sourceChannelId', sourceChannelId)
+          ..add('sourceChannelThumbnailUrl', sourceChannelThumbnailUrl)
           ..add('sourceMetadataFetchedAt', sourceMetadataFetchedAt)
           ..add('thumbnailUrl', thumbnailUrl)
           ..add('missingCount', missingCount)
@@ -145,6 +151,11 @@ class RecipeDetailResponseBuilder
   String? get sourceChannelId => _$this._sourceChannelId;
   set sourceChannelId(String? sourceChannelId) =>
       _$this._sourceChannelId = sourceChannelId;
+
+  String? _sourceChannelThumbnailUrl;
+  String? get sourceChannelThumbnailUrl => _$this._sourceChannelThumbnailUrl;
+  set sourceChannelThumbnailUrl(String? sourceChannelThumbnailUrl) =>
+      _$this._sourceChannelThumbnailUrl = sourceChannelThumbnailUrl;
 
   DateTime? _sourceMetadataFetchedAt;
   DateTime? get sourceMetadataFetchedAt => _$this._sourceMetadataFetchedAt;
@@ -190,6 +201,7 @@ class RecipeDetailResponseBuilder
       _sourceTitle = $v.sourceTitle;
       _sourceChannelName = $v.sourceChannelName;
       _sourceChannelId = $v.sourceChannelId;
+      _sourceChannelThumbnailUrl = $v.sourceChannelThumbnailUrl;
       _sourceMetadataFetchedAt = $v.sourceMetadataFetchedAt;
       _thumbnailUrl = $v.thumbnailUrl;
       _missingCount = $v.missingCount;
@@ -228,6 +240,7 @@ class RecipeDetailResponseBuilder
             sourceTitle: sourceTitle,
             sourceChannelName: sourceChannelName,
             sourceChannelId: sourceChannelId,
+            sourceChannelThumbnailUrl: sourceChannelThumbnailUrl,
             sourceMetadataFetchedAt: sourceMetadataFetchedAt,
             thumbnailUrl: BuiltValueNullFieldError.checkNotNull(
                 thumbnailUrl, r'RecipeDetailResponse', 'thumbnailUrl'),

@@ -4,7 +4,6 @@ abstract final class AppColors {
   static const background = Color(0xFFFFFEFD);
   static const white = Color(0xFFFFFFFF);
   static const primary = Color(0xFFFF4900);
-  static const kakao = Color(0xFFFEE500);
   static const textPrimary = Color(0xFF1C1C1E);
   static const textSecondary = Color(0xFF636366);
   static const textMuted = Color(0xFF8E8E93);

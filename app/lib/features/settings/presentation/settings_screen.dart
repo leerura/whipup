@@ -13,7 +13,6 @@ import 'account_deletion_screen.dart';
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({
     required this.onBack,
-    required this.onLogout,
     required this.onDeleteAccount,
     required this.onAccountDeleted,
     this.privacyPolicyUrl = AppConfig.privacyPolicyUrl,
@@ -22,7 +21,6 @@ class SettingsScreen extends StatelessWidget {
   });
 
   final VoidCallback onBack;
-  final VoidCallback onLogout;
   final Future<void> Function() onDeleteAccount;
   final VoidCallback onAccountDeleted;
   final String? privacyPolicyUrl;
@@ -89,7 +87,6 @@ class SettingsScreen extends StatelessWidget {
             ),
             const SizedBox(height: 40),
             const _SettingsSectionLabel('계정'),
-            _SettingsRow(title: '로그아웃', onTap: () => _confirmLogout(context)),
             _SettingsRow(
               title: '계정 삭제',
               titleColor: const Color(0xFFFF3B30),
@@ -107,50 +104,6 @@ class SettingsScreen extends StatelessWidget {
         ),
       ),
     );
-  }
-
-  Future<void> _confirmLogout(BuildContext context) async {
-    final shouldLogout = await showModalBottomSheet<bool>(
-      context: context,
-      backgroundColor: AppColors.white,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(18)),
-      ),
-      builder: (context) => SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(24, 20, 24, 24),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Center(
-                child: Container(width: 40, height: 4, color: AppColors.border),
-              ),
-              const SizedBox(height: 26),
-              Text('로그아웃할까요?', style: Theme.of(context).textTheme.titleLarge),
-              const SizedBox(height: 8),
-              const Text('다음에 다시 로그인할 수 있어요.'),
-              const SizedBox(height: 24),
-              SizedBox(
-                width: double.infinity,
-                child: FilledButton(
-                  onPressed: () => Navigator.pop(context, true),
-                  child: const Text('로그아웃'),
-                ),
-              ),
-              TextButton(
-                onPressed: () => Navigator.pop(context, false),
-                child: const SizedBox(
-                  width: double.infinity,
-                  child: Center(child: Text('취소')),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-    if (shouldLogout == true && context.mounted) onLogout();
   }
 }
 

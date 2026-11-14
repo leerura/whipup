@@ -41,6 +41,8 @@ public class RecipeDetailResponse {
 
   private String sourceChannelId = null;
 
+  private @Nullable URI sourceChannelThumbnailUrl = null;
+
   @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
   private OffsetDateTime sourceMetadataFetchedAt = null;
 
@@ -194,6 +196,26 @@ public class RecipeDetailResponse {
   @JsonProperty("sourceChannelId")
   public void setSourceChannelId(String sourceChannelId) {
     this.sourceChannelId = sourceChannelId;
+  }
+
+  public RecipeDetailResponse sourceChannelThumbnailUrl(@Nullable URI sourceChannelThumbnailUrl) {
+    this.sourceChannelThumbnailUrl = sourceChannelThumbnailUrl;
+    return this;
+  }
+
+  /**
+   * Original YouTube channel profile image. Clients fall back to the channel name's first letter.
+   * @return sourceChannelThumbnailUrl
+   */
+  @Valid 
+  @JsonProperty("sourceChannelThumbnailUrl")
+  public @Nullable URI getSourceChannelThumbnailUrl() {
+    return sourceChannelThumbnailUrl;
+  }
+
+  @JsonProperty("sourceChannelThumbnailUrl")
+  public void setSourceChannelThumbnailUrl(@Nullable URI sourceChannelThumbnailUrl) {
+    this.sourceChannelThumbnailUrl = sourceChannelThumbnailUrl;
   }
 
   public RecipeDetailResponse sourceMetadataFetchedAt(OffsetDateTime sourceMetadataFetchedAt) {
@@ -356,6 +378,7 @@ public class RecipeDetailResponse {
         Objects.equals(this.sourceTitle, recipeDetailResponse.sourceTitle) &&
         Objects.equals(this.sourceChannelName, recipeDetailResponse.sourceChannelName) &&
         Objects.equals(this.sourceChannelId, recipeDetailResponse.sourceChannelId) &&
+        Objects.equals(this.sourceChannelThumbnailUrl, recipeDetailResponse.sourceChannelThumbnailUrl) &&
         Objects.equals(this.sourceMetadataFetchedAt, recipeDetailResponse.sourceMetadataFetchedAt) &&
         Objects.equals(this.thumbnailUrl, recipeDetailResponse.thumbnailUrl) &&
         Objects.equals(this.missingCount, recipeDetailResponse.missingCount) &&
@@ -366,7 +389,7 @@ public class RecipeDetailResponse {
 
   @Override
   public int hashCode() {
-    return Objects.hash(recipeId, name, shortsReference, sourceTitle, sourceChannelName, sourceChannelId, sourceMetadataFetchedAt, thumbnailUrl, missingCount, requirements, optionalIngredients, steps);
+    return Objects.hash(recipeId, name, shortsReference, sourceTitle, sourceChannelName, sourceChannelId, sourceChannelThumbnailUrl, sourceMetadataFetchedAt, thumbnailUrl, missingCount, requirements, optionalIngredients, steps);
   }
 
   @Override
@@ -379,6 +402,7 @@ public class RecipeDetailResponse {
     sb.append("    sourceTitle: ").append(toIndentedString(sourceTitle)).append("\n");
     sb.append("    sourceChannelName: ").append(toIndentedString(sourceChannelName)).append("\n");
     sb.append("    sourceChannelId: ").append(toIndentedString(sourceChannelId)).append("\n");
+    sb.append("    sourceChannelThumbnailUrl: ").append(toIndentedString(sourceChannelThumbnailUrl)).append("\n");
     sb.append("    sourceMetadataFetchedAt: ").append(toIndentedString(sourceMetadataFetchedAt)).append("\n");
     sb.append("    thumbnailUrl: ").append(toIndentedString(thumbnailUrl)).append("\n");
     sb.append("    missingCount: ").append(toIndentedString(missingCount)).append("\n");

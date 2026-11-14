@@ -15,7 +15,6 @@ import 'package:api_client/src/date_serializer.dart';
 import 'package:api_client/src/model/date.dart';
 
 import 'package:api_client/src/model/add_owned_ingredient_request.dart';
-import 'package:api_client/src/model/apple_login_request.dart';
 import 'package:api_client/src/model/current_account_response.dart';
 import 'package:api_client/src/model/daily_menu_request.dart';
 import 'package:api_client/src/model/detail_ingredient_display.dart';
@@ -28,7 +27,6 @@ import 'package:api_client/src/model/ingredient_group.dart';
 import 'package:api_client/src/model/ingredient_group_list_response.dart';
 import 'package:api_client/src/model/ingredient_match.dart';
 import 'package:api_client/src/model/ingredient_variant_option.dart';
-import 'package:api_client/src/model/kakao_login_request.dart';
 import 'package:api_client/src/model/login_response.dart';
 import 'package:api_client/src/model/missing_detail_requirement.dart';
 import 'package:api_client/src/model/missing_option.dart';
@@ -53,7 +51,6 @@ part 'serializers.g.dart';
 
 @SerializersFor([
   AddOwnedIngredientRequest,
-  AppleLoginRequest,
   CurrentAccountResponse,
   DailyMenuRequest,
   DetailIngredientDisplay,
@@ -66,7 +63,6 @@ part 'serializers.g.dart';
   IngredientGroupListResponse,
   IngredientMatch,
   IngredientVariantOption,
-  KakaoLoginRequest,
   LoginResponse,
   MissingDetailRequirement,
   MissingOption,

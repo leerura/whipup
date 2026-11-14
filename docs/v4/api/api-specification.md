@@ -1,33 +1,16 @@
 # V4 API 계약
 
-V3 API의 인증, ingredient catalog, 보유 재료 추가/삭제, recommendation, recipe detail 계약은 유지한다. V4는 아래 endpoint와 response field를 추가한다. 모든 경로는 Bearer 인증이 필요하며, 약관 동의 대기 사용자는 `POST /api/v1/me/terms-consent`, `GET /api/v1/me`, `DELETE /api/v1/me` 외 요청에서 `403 TERMS_CONSENT_REQUIRED`를 받는다.
+V3 API의 인증, ingredient catalog, 보유 재료 추가/삭제, recommendation, recipe detail 계약은 유지한다. V4는 아래 endpoint와 response field를 추가한다. `POST /api/v1/auth/guest`를 제외한 모든 경로는 Bearer 인증이 필요하며, 약관 동의 대기 사용자는 `POST /api/v1/me/terms-consent`, `GET /api/v1/me`, `DELETE /api/v1/me` 외 요청에서 `403 TERMS_CONSENT_REQUIRED`를 받는다.
 
-## Apple 로그인
+## 게스트 계정 시작
 
 ```text
-POST /api/v1/auth/apple
+POST /api/v1/auth/guest
 ```
 
-```json
-{
-  "identityToken": "<JWT>",
-  "authorizationCode": "<code>",
-  "nonce": "<raw nonce>"
-}
-```
+인증 없이 호출하며 요청 본문은 없다. 호출할 때마다 개인정보 없는 새 계정을 만들고 `LoginResponse`를 반환한다. 새 계정이므로 `hasOwnedIngredients=false`, `onboardingCompleted=false`, `termsConsentRequired=true`다. 토큰 유효기간은 3650일이다.
 
-세 필드는 모두 필수다. 인증 없이 호출하며 응답은 `LoginResponse`다. iOS 전용이므로 `aud`는 앱 번들 ID다.
-
-서버 처리 순서:
-
-1. `identityToken`을 Apple 공개키(`https://appleid.apple.com/auth/keys`, `kid`로 선택, 캐시하되 모르는 `kid`면 갱신)로 서명 검증하고 `iss`(`https://appleid.apple.com`), `aud`(`APPLE_CLIENT_ID`), `exp`를 확인한다.
-2. 토큰의 `nonce` claim이 요청 `nonce`의 SHA-256 hex와 같아야 한다. claim이 없거나 다르면 실패다.
-3. `authorizationCode`를 Apple 토큰 endpoint에 교환한다(`client_secret`은 Team ID·Key ID·private key로 서버가 ES256 JWT로 생성). 응답의 `id_token`의 `sub`가 1번에서 검증한 `sub`와 같아야 한다.
-4. `(APPLE, sub)`로 계정을 찾거나 새로 만들고, 응답의 refresh token을 암호화해 저장한다(기존 값은 덮어쓴다). 이후 WhipUp JWT 발급과 `LoginResponse`는 Kakao와 같다.
-
-오류: 요청 필드 누락은 `400`, 토큰·nonce·code 검증 실패는 `401`, Apple 설정(`APPLE_CLIENT_ID`, `APPLE_TEAM_ID`, `APPLE_KEY_ID`, `APPLE_PRIVATE_KEY`, 토큰 암호화 키)이 없거나 Apple 호출 자체가 실패하면 `503 APPLE_LOGIN_UNAVAILABLE`이다. 이름·이메일은 받지도 저장하지도 않는다.
-
-계정 삭제(`DELETE /api/v1/me`)에서 Apple 계정이면 삭제 트랜잭션이 커밋된 뒤 저장된 refresh token으로 Apple revoke를 호출한다. revoke 실패는 응답을 바꾸지 않고, 토큰·사용자 식별자 없이 로그만 남긴다.
+V3의 `POST /api/v1/auth/kakao`는 V4에서 제거한다. 외부 로그인 endpoint는 없으며 속도 제한 같은 어뷰징 방지는 두지 않는다.
 
 ## 로그인 응답
 
@@ -59,7 +42,7 @@ Bearer 인증 사용자의 현재 계정 상태를 반환한다. 앱이 저장�
 }
 ```
 
-각 필드의 의미는 `LoginResponse`와 같다. `accessToken`은 포함하지 않고 새 토큰도 발급하지 않는다. 토큰이 없거나 만료·무효이거나 토큰의 사용자가 이미 삭제됐으면 `401`이다.
+각 필드의 의미는 `LoginResponse`와 같다. `accessToken`은 포함하지 않고 새 토큰도 발급하지 않는다. 성공하면 계정의 마지막 사용 시각(`last_active_at`)을 현재 시각으로 갱신한다. 토큰이 없거나 만료·무효이거나 토큰의 사용자가 이미 삭제됐으면 `401`이다.
 
 ## 약관 동의
 
@@ -158,6 +141,19 @@ POST /api/v1/telemetry/http-timing
 
 인증된 앱만 호출한다. `route`는 서버가 허용한 정규화된 API template, `method`는 `GET`·`POST`·`DELETE`, `outcome`은 `SUCCESS`·`CLIENT_ERROR`·`SERVER_ERROR`·`NETWORK_ERROR`만 허용한다. `durationMs`는 0 이상 60,000 이하 정수다. 서버는 raw event를 저장하지 않고 Prometheus용 `whipup.client.http` Timer에만 누적한 뒤 `204 No Content`를 반환한다.
 
+## 레시피 출처 채널
+
+`RecommendationItem`(추천, 검색, 오늘 메뉴 공통)에 아래 필드를 추가한다.
+
+```json
+{
+  "sourceChannelName": "자취생존",
+  "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/...=s88-c-k-c0x00ffffff-no-rj"
+}
+```
+
+`RecipeDetailResponse`에는 `sourceChannelThumbnailUrl`을 추가한다(`sourceChannelName`은 이미 있다). 두 필드 모두 nullable이며 저장된 dataset snapshot을 그대로 반환한다. 서버는 요청 때 YouTube를 다시 조회하지 않는다.
+
 ## 오류 형식
 
-기존 `ErrorResponse`를 유지한다. V4가 추가하는 code는 `TERMS_CONSENT_REQUIRED`, `DAILY_MENU_UNAVAILABLE`, `APPLE_LOGIN_UNAVAILABLE`이다.
+기존 `ErrorResponse`를 유지한다. V4가 추가하는 code는 `TERMS_CONSENT_REQUIRED`, `DAILY_MENU_UNAVAILABLE`이다.

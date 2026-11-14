@@ -35,6 +35,10 @@ public class RecommendationItem {
 
   private List<RequirementResult> requirementResults = new ArrayList<>();
 
+  private @Nullable String sourceChannelName = null;
+
+  private @Nullable URI sourceChannelThumbnailUrl = null;
+
   public RecommendationItem() {
     super();
   }
@@ -159,6 +163,46 @@ public class RecommendationItem {
     this.requirementResults = requirementResults;
   }
 
+  public RecommendationItem sourceChannelName(@Nullable String sourceChannelName) {
+    this.sourceChannelName = sourceChannelName;
+    return this;
+  }
+
+  /**
+   * Original YouTube channel name, used to tell apart recipes with the same name.
+   * @return sourceChannelName
+   */
+  
+  @JsonProperty("sourceChannelName")
+  public @Nullable String getSourceChannelName() {
+    return sourceChannelName;
+  }
+
+  @JsonProperty("sourceChannelName")
+  public void setSourceChannelName(@Nullable String sourceChannelName) {
+    this.sourceChannelName = sourceChannelName;
+  }
+
+  public RecommendationItem sourceChannelThumbnailUrl(@Nullable URI sourceChannelThumbnailUrl) {
+    this.sourceChannelThumbnailUrl = sourceChannelThumbnailUrl;
+    return this;
+  }
+
+  /**
+   * Original YouTube channel profile image. Clients fall back to the channel name's first letter.
+   * @return sourceChannelThumbnailUrl
+   */
+  @Valid 
+  @JsonProperty("sourceChannelThumbnailUrl")
+  public @Nullable URI getSourceChannelThumbnailUrl() {
+    return sourceChannelThumbnailUrl;
+  }
+
+  @JsonProperty("sourceChannelThumbnailUrl")
+  public void setSourceChannelThumbnailUrl(@Nullable URI sourceChannelThumbnailUrl) {
+    this.sourceChannelThumbnailUrl = sourceChannelThumbnailUrl;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -172,12 +216,14 @@ public class RecommendationItem {
         Objects.equals(this.name, recommendationItem.name) &&
         Objects.equals(this.thumbnailUrl, recommendationItem.thumbnailUrl) &&
         Objects.equals(this.missingCount, recommendationItem.missingCount) &&
-        Objects.equals(this.requirementResults, recommendationItem.requirementResults);
+        Objects.equals(this.requirementResults, recommendationItem.requirementResults) &&
+        Objects.equals(this.sourceChannelName, recommendationItem.sourceChannelName) &&
+        Objects.equals(this.sourceChannelThumbnailUrl, recommendationItem.sourceChannelThumbnailUrl);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(recipeId, name, thumbnailUrl, missingCount, requirementResults);
+    return Objects.hash(recipeId, name, thumbnailUrl, missingCount, requirementResults, sourceChannelName, sourceChannelThumbnailUrl);
   }
 
   @Override
@@ -189,6 +235,8 @@ public class RecommendationItem {
     sb.append("    thumbnailUrl: ").append(toIndentedString(thumbnailUrl)).append("\n");
     sb.append("    missingCount: ").append(toIndentedString(missingCount)).append("\n");
     sb.append("    requirementResults: ").append(toIndentedString(requirementResults)).append("\n");
+    sb.append("    sourceChannelName: ").append(toIndentedString(sourceChannelName)).append("\n");
+    sb.append("    sourceChannelThumbnailUrl: ").append(toIndentedString(sourceChannelThumbnailUrl)).append("\n");
     sb.append("}");
     return sb.toString();
   }

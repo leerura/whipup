@@ -7,11 +7,8 @@ part of 'http_timing_request.dart';
 // **************************************************************************
 
 const HttpTimingRequestRouteEnum
-    _$httpTimingRequestRouteEnum_slashApiSlashV1SlashAuthSlashKakao =
-    const HttpTimingRequestRouteEnum._('slashApiSlashV1SlashAuthSlashKakao');
-const HttpTimingRequestRouteEnum
-    _$httpTimingRequestRouteEnum_slashApiSlashV1SlashAuthSlashApple =
-    const HttpTimingRequestRouteEnum._('slashApiSlashV1SlashAuthSlashApple');
+    _$httpTimingRequestRouteEnum_slashApiSlashV1SlashAuthSlashGuest =
+    const HttpTimingRequestRouteEnum._('slashApiSlashV1SlashAuthSlashGuest');
 const HttpTimingRequestRouteEnum
     _$httpTimingRequestRouteEnum_slashApiSlashV1SlashMe =
     const HttpTimingRequestRouteEnum._('slashApiSlashV1SlashMe');
@@ -55,10 +52,8 @@ const HttpTimingRequestRouteEnum
 
 HttpTimingRequestRouteEnum _$httpTimingRequestRouteEnumValueOf(String name) {
   switch (name) {
-    case 'slashApiSlashV1SlashAuthSlashKakao':
-      return _$httpTimingRequestRouteEnum_slashApiSlashV1SlashAuthSlashKakao;
-    case 'slashApiSlashV1SlashAuthSlashApple':
-      return _$httpTimingRequestRouteEnum_slashApiSlashV1SlashAuthSlashApple;
+    case 'slashApiSlashV1SlashAuthSlashGuest':
+      return _$httpTimingRequestRouteEnum_slashApiSlashV1SlashAuthSlashGuest;
     case 'slashApiSlashV1SlashMe':
       return _$httpTimingRequestRouteEnum_slashApiSlashV1SlashMe;
     case 'slashApiSlashV1SlashMeSlashTermsConsent':
@@ -88,8 +83,7 @@ HttpTimingRequestRouteEnum _$httpTimingRequestRouteEnumValueOf(String name) {
 
 final BuiltSet<HttpTimingRequestRouteEnum> _$httpTimingRequestRouteEnumValues =
     BuiltSet<HttpTimingRequestRouteEnum>(const <HttpTimingRequestRouteEnum>[
-  _$httpTimingRequestRouteEnum_slashApiSlashV1SlashAuthSlashKakao,
-  _$httpTimingRequestRouteEnum_slashApiSlashV1SlashAuthSlashApple,
+  _$httpTimingRequestRouteEnum_slashApiSlashV1SlashAuthSlashGuest,
   _$httpTimingRequestRouteEnum_slashApiSlashV1SlashMe,
   _$httpTimingRequestRouteEnum_slashApiSlashV1SlashMeSlashTermsConsent,
   _$httpTimingRequestRouteEnum_slashApiSlashV1SlashMeSlashOnboarding,
@@ -178,8 +172,7 @@ Serializer<HttpTimingRequestOutcomeEnum>
 class _$HttpTimingRequestRouteEnumSerializer
     implements PrimitiveSerializer<HttpTimingRequestRouteEnum> {
   static const Map<String, Object> _toWire = const <String, Object>{
-    'slashApiSlashV1SlashAuthSlashKakao': '/api/v1/auth/kakao',
-    'slashApiSlashV1SlashAuthSlashApple': '/api/v1/auth/apple',
+    'slashApiSlashV1SlashAuthSlashGuest': '/api/v1/auth/guest',
     'slashApiSlashV1SlashMe': '/api/v1/me',
     'slashApiSlashV1SlashMeSlashTermsConsent': '/api/v1/me/terms-consent',
     'slashApiSlashV1SlashMeSlashOnboarding': '/api/v1/me/onboarding',
@@ -197,8 +190,7 @@ class _$HttpTimingRequestRouteEnumSerializer
     'slashApiSlashV1SlashIngredients': '/api/v1/ingredients',
   };
   static const Map<Object, String> _fromWire = const <Object, String>{
-    '/api/v1/auth/kakao': 'slashApiSlashV1SlashAuthSlashKakao',
-    '/api/v1/auth/apple': 'slashApiSlashV1SlashAuthSlashApple',
+    '/api/v1/auth/guest': 'slashApiSlashV1SlashAuthSlashGuest',
     '/api/v1/me': 'slashApiSlashV1SlashMe',
     '/api/v1/me/terms-consent': 'slashApiSlashV1SlashMeSlashTermsConsent',
     '/api/v1/me/onboarding': 'slashApiSlashV1SlashMeSlashOnboarding',

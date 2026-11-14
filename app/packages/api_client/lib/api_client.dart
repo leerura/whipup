@@ -21,7 +21,6 @@ export 'package:api_client/src/api/recommendation_api.dart';
 export 'package:api_client/src/api/telemetry_api.dart';
 
 export 'package:api_client/src/model/add_owned_ingredient_request.dart';
-export 'package:api_client/src/model/apple_login_request.dart';
 export 'package:api_client/src/model/current_account_response.dart';
 export 'package:api_client/src/model/daily_menu_request.dart';
 export 'package:api_client/src/model/detail_ingredient_display.dart';
@@ -34,7 +33,6 @@ export 'package:api_client/src/model/ingredient_group.dart';
 export 'package:api_client/src/model/ingredient_group_list_response.dart';
 export 'package:api_client/src/model/ingredient_match.dart';
 export 'package:api_client/src/model/ingredient_variant_option.dart';
-export 'package:api_client/src/model/kakao_login_request.dart';
 export 'package:api_client/src/model/login_response.dart';
 export 'package:api_client/src/model/missing_detail_requirement.dart';
 export 'package:api_client/src/model/missing_option.dart';
