@@ -1,4 +1,5 @@
 import 'package:api_client/api_client.dart';
+import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -53,7 +54,9 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen> {
   }
 
   void _retry() {
-    setState(() => _recipeFuture = _fetchRecipe());
+    setState(() {
+      _recipeFuture = _fetchRecipe();
+    });
   }
 
   @override
@@ -790,6 +793,11 @@ class _RequirementRow extends StatelessWidget {
       );
       onChanged();
     } catch (error) {
+      // 이미 보유 중이면(409) 화면이 서버 상태보다 오래된 것이므로 실패로 알리지 않고 새로 불러온다.
+      if (error is DioException && error.response?.statusCode == 409) {
+        onChanged();
+        return;
+      }
       debugPrint('Failed to add recipe ingredient: $error');
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
