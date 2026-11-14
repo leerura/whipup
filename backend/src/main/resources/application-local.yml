@@ -7,6 +7,9 @@ spring:
   jpa:
     hibernate:
       ddl-auto: validate
+    properties:
+      # lazy 연관을 요청마다 1건씩 읽지 않고 묶어서 읽는다(N+1 완화).
+      hibernate.default_batch_fetch_size: 200
 
   flyway:
     enabled: true
