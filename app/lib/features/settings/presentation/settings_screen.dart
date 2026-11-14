@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../../app/theme.dart';
 import '../../../core/config/app_config.dart';
@@ -17,6 +16,7 @@ class SettingsScreen extends StatelessWidget {
     required this.onAccountDeleted,
     this.privacyPolicyUrl = AppConfig.privacyPolicyUrl,
     this.termsUrl = AppConfig.termsUrl,
+    this.supportUrl = AppConfig.supportUrl,
     super.key,
   });
 
@@ -25,6 +25,7 @@ class SettingsScreen extends StatelessWidget {
   final VoidCallback onAccountDeleted;
   final String? privacyPolicyUrl;
   final String? termsUrl;
+  final String? supportUrl;
 
   void _openPolicy(BuildContext context, String title, String? url) {
     if (url == null || url.trim().isEmpty) {
@@ -37,15 +38,6 @@ class SettingsScreen extends StatelessWidget {
         builder: (_) => PolicyWebViewScreen(title: title, url: url),
       ),
     );
-  }
-
-  Future<void> _openSupport(BuildContext context) async {
-    final uri = Uri(scheme: 'mailto', path: AppConfig.supportEmail);
-    if (!await launchUrl(uri, mode: LaunchMode.externalApplication) &&
-        context.mounted) {
-      ScaffoldMessenger.of(context)
-          .showSnackBar(const SnackBar(content: Text('문의 메일을 열 수 없어요.')));
-    }
   }
 
   @override
@@ -83,7 +75,7 @@ class SettingsScreen extends StatelessWidget {
             _SettingsRow(
               title: '지원 및 문의',
               trailing: const Icon(Icons.open_in_new_rounded, size: 18),
-              onTap: () => _openSupport(context),
+              onTap: () => _openPolicy(context, '지원 및 문의', supportUrl),
             ),
             const SizedBox(height: 40),
             const _SettingsSectionLabel('계정'),

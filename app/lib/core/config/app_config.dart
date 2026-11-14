@@ -8,7 +8,8 @@ abstract final class AppConfig {
       'https://cherry-target-075.notion.site/404e10b2db2881728abeed9f39726f0e';
   static const termsUrl =
       'https://cherry-target-075.notion.site/404e10b2db288142ab90c979637aa0ad';
-  static const supportEmail = 'sw09112@naver.com';
+  static const supportUrl =
+      'https://cherry-target-075.notion.site/404e10b2db2881bbb839d65b03cdc707';
 
   static String? _apiBaseUrl;
   static Future<void>? _initialization;

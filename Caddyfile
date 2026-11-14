@@ -4,7 +4,8 @@
 	default_sni {$WHIPUP_PUBLIC_IP}
 }
 
-{$WHIPUP_PUBLIC_IP} {
+(whippy_site) {
+
 	log {
 		output stdout
 		format filter {
@@ -19,6 +20,14 @@
 	@monitoring path /actuator/*
 	respond @monitoring 404
 	reverse_proxy backend:8080
+}
+
+api.seokwonlee.xyz {
+	import whippy_site
+}
+
+{$WHIPUP_PUBLIC_IP} {
+	import whippy_site
 	tls {
 		issuer acme {
 			profile shortlived
