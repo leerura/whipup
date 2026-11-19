@@ -1,18 +1,300 @@
 {
   "videoId": "2aVBV0ngMDs",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/2aVBV0ngMDs",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-10-27T10:50:05.006378+00:00",
-    "accountId": "account-e",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAt": "2026-10-27T10:50:36.252176+00:00",
-    "retryAccountId": "account-e"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-08T08:57:58.006028+00:00",
+    "rawResponse": "{\n  \"title\": \"들기름국수\",\n  \"description\": null,\n  \"servings\": \"2인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"김밥용 김 4장 또는 재래김 3장 (국수 1인분 기준)\",\n      \"displayName\": \"마른 김 (김밥용 김 또는 재래김)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국수 1인분 : 김밥용 김 4장 또는 재래김 3장\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국수 1인분에 이런 김밥용 김은 4장이 필요하고 크기가 큰 재래김은 3장 정도를 준비해 주세요.\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛간장\",\n      \"displayName\": \"맛간장\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛간장을 사용하시면 더욱 맛있어요!\",\n          \"timestamp\": \"01:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양념을 만들 때는 맛간장을 사용하세요.\",\n          \"timestamp\": \"01:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양조간장 4스푼(40g)\",\n      \"displayName\": \"양조간장\",\n      \"amount\": \"4\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장 4스푼(40g) 넣어주세요.\",\n          \"timestamp\": \"01:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대신 양조간장을 4스푼 넣어주시고요.\",\n          \"timestamp\": \"01:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"매실액 1스푼(13g)\",\n      \"displayName\": \"매실액\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"매실액 1스푼(13g) 넣어주세요.\",\n          \"timestamp\": \"01:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"매실액 1스푼을 같이 넣어주세요.\",\n          \"timestamp\": \"01:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1/2스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만약 매실액마저 똑 떨어졌다면 설탕을 1/2스푼만 넣어주세요.\",\n          \"timestamp\": \"01:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"들기름 3스푼\",\n      \"displayName\": \"들기름\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"들기름 3스푼 넣어주세요.\",\n          \"timestamp\": \"01:29\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 들기름을 3스푼 넣어주세요.\",\n          \"timestamp\": \"01:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소면(또는 메밀국수) 2인분(200g)\",\n      \"displayName\": \"소면 (또는 메밀국수)\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"끓는 물에 소면(또는 메밀국수) 2인분(200g)을 삶아주세요.\",\n          \"timestamp\": \"01:50\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"끓는 물에 소면 2인분, 200g을 넣고 삶아주세요. 소면 대신에 메밀국수를 사용하시면 더욱 맛이 좋습니다.\",\n          \"timestamp\": \"01:49\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깻가루 1스푼\",\n      \"displayName\": \"깻가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깻가루 1스푼 뿌려주세요.\",\n          \"timestamp\": \"02:55\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 여기에 마지막으로 깻가루를 한 스푼 넣어주세요.\",\n          \"timestamp\": \"02:54\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"달궈진 마른 팬에 김을 올리고 주걱으로 모서리를 눌러가며 앞뒤로 바싹 구워 비린내를 날린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"준비한 김을 구워주세요.\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"뜨겁게 달궈진 마른 팬에 김 2장을 넣고 앞뒤로 살짝씩 구워주세요. 주걱으로 모서리 부분을 눌러서 고르게 구워주세요. 바싹 잘 구워야 김 비린내가 나지 않습니다.\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"구운 김을 위생비닐봉지에 찢어 넣고 손으로 곱게 비벼 김가루를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"구운 김을 위생비닐봉지에 찢어서 넣어주세요.\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"비벼서 김가루를 만들어주세요.\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"손으로 비벼서 김가루를 만들어주세요. 최대한 작고 곱게 만들어주세요.\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 양조간장 4스푼(또는 맛간장), 매실액 1스푼(또는 설탕 1/2스푼), 들기름 3스푼을 넣고 잘 섞어 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"잘 섞어주세요.\",\n          \"timestamp\": \"01:43\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양념장을 잘 섞은 후에 잠시 옆에 놔두고\",\n          \"timestamp\": \"01:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"끓는 물에 소면(또는 메밀국수) 200g을 넣고 3~4분간 삶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"끓는 물에 소면(또는 메밀국수) 2인분(200g)을 삶아주세요.\",\n          \"timestamp\": \"01:50\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물은 넉넉하게 하셔야 골고루 잘 삶아집니다. 3~4분 정도 삶은 후에 국수 몇 가닥을 먹어보고 잘 익었으면\",\n          \"timestamp\": \"02:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삶은 소면을 찬물에 헹궈 전분기를 말끔히 제거하고 체에 밭쳐 물기를 뺀다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"삶은 소면을 물에 씻어 붙어있는 전분을 제거해 주세요.\",\n          \"timestamp\": \"02:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국수가 불지 않게 재빨리 물을 따라내고 국수를 씻어주세요. 국수의 전분기가 남아있지 않도록 몇 번의 헹굼 과정을 거쳐서 잘 씻어주셔야 됩니다.\",\n          \"timestamp\": \"02:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"만들어 둔 양념장에 물기를 뺀 국수를 넣고 골고루 비벼준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물기를 제거하고 양념장에 넣어 비벼주세요.\",\n          \"timestamp\": \"02:29\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"체에 밭쳐 물기를 말끔히 제거한 후에 만들어 놓았던 양념장에 삶아 놓은 국수를 모두 다 넣고 잘 비벼주세요.\",\n          \"timestamp\": \"02:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"비빈 국수를 그릇에 담고 김가루를 수북하게 올린 뒤 깻가루 1스푼을 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"그릇에 담고 김가루를 수북하게 뿌려주세요.\",\n          \"timestamp\": \"02:44\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깻가루 1스푼 뿌려주세요.\",\n          \"timestamp\": \"02:55\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"완~성\",\n          \"timestamp\": \"03:13\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "들기름국수",
+      "description": null,
+      "servings": "2인분",
+      "ingredients": [
+        {
+          "rawText": "김밥용 김 4장 또는 재래김 3장 (국수 1인분 기준)",
+          "displayName": "마른 김 (김밥용 김 또는 재래김)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국수 1인분 : 김밥용 김 4장 또는 재래김 3장",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "국수 1인분에 이런 김밥용 김은 4장이 필요하고 크기가 큰 재래김은 3장 정도를 준비해 주세요.",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "맛간장",
+          "displayName": "맛간장",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛간장을 사용하시면 더욱 맛있어요!",
+              "timestamp": "01:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양념을 만들 때는 맛간장을 사용하세요.",
+              "timestamp": "01:07"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "양조간장 4스푼(40g)",
+          "displayName": "양조간장",
+          "amount": "4",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장 4스푼(40g) 넣어주세요.",
+              "timestamp": "01:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대신 양조간장을 4스푼 넣어주시고요.",
+              "timestamp": "01:19"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "매실액 1스푼(13g)",
+          "displayName": "매실액",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "매실액 1스푼(13g) 넣어주세요.",
+              "timestamp": "01:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "매실액 1스푼을 같이 넣어주세요.",
+              "timestamp": "01:21"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "설탕 1/2스푼",
+          "displayName": "설탕",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "만약 매실액마저 똑 떨어졌다면 설탕을 1/2스푼만 넣어주세요.",
+              "timestamp": "01:24"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "들기름 3스푼",
+          "displayName": "들기름",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "들기름 3스푼 넣어주세요.",
+              "timestamp": "01:29"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 들기름을 3스푼 넣어주세요.",
+              "timestamp": "01:29"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "소면(또는 메밀국수) 2인분(200g)",
+          "displayName": "소면 (또는 메밀국수)",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "끓는 물에 소면(또는 메밀국수) 2인분(200g)을 삶아주세요.",
+              "timestamp": "01:50"
+            },
+            {
+              "type": "SPEECH",
+              "text": "끓는 물에 소면 2인분, 200g을 넣고 삶아주세요. 소면 대신에 메밀국수를 사용하시면 더욱 맛이 좋습니다.",
+              "timestamp": "01:49"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "깻가루 1스푼",
+          "displayName": "깻가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깻가루 1스푼 뿌려주세요.",
+              "timestamp": "02:55"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 여기에 마지막으로 깻가루를 한 스푼 넣어주세요.",
+              "timestamp": "02:54"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        }
+      ],
+      "steps": [
+        {
+          "text": "달궈진 마른 팬에 김을 올리고 주걱으로 모서리를 눌러가며 앞뒤로 바싹 구워 비린내를 날린다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "준비한 김을 구워주세요.",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "뜨겁게 달궈진 마른 팬에 김 2장을 넣고 앞뒤로 살짝씩 구워주세요. 주걱으로 모서리 부분을 눌러서 고르게 구워주세요. 바싹 잘 구워야 김 비린내가 나지 않습니다.",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "구운 김을 위생비닐봉지에 찢어 넣고 손으로 곱게 비벼 김가루를 만든다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "구운 김을 위생비닐봉지에 찢어서 넣어주세요.",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "비벼서 김가루를 만들어주세요.",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "SPEECH",
+              "text": "손으로 비벼서 김가루를 만들어주세요. 최대한 작고 곱게 만들어주세요.",
+              "timestamp": "00:45"
+            }
+          ]
+        },
+        {
+          "text": "볼에 양조간장 4스푼(또는 맛간장), 매실액 1스푼(또는 설탕 1/2스푼), 들기름 3스푼을 넣고 잘 섞어 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "잘 섞어주세요.",
+              "timestamp": "01:43"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양념장을 잘 섞은 후에 잠시 옆에 놔두고",
+              "timestamp": "01:45"
+            }
+          ]
+        },
+        {
+          "text": "끓는 물에 소면(또는 메밀국수) 200g을 넣고 3~4분간 삶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "끓는 물에 소면(또는 메밀국수) 2인분(200g)을 삶아주세요.",
+              "timestamp": "01:50"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물은 넉넉하게 하셔야 골고루 잘 삶아집니다. 3~4분 정도 삶은 후에 국수 몇 가닥을 먹어보고 잘 익었으면",
+              "timestamp": "02:00"
+            }
+          ]
+        },
+        {
+          "text": "삶은 소면을 찬물에 헹궈 전분기를 말끔히 제거하고 체에 밭쳐 물기를 뺀다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "삶은 소면을 물에 씻어 붙어있는 전분을 제거해 주세요.",
+              "timestamp": "02:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "국수가 불지 않게 재빨리 물을 따라내고 국수를 씻어주세요. 국수의 전분기가 남아있지 않도록 몇 번의 헹굼 과정을 거쳐서 잘 씻어주셔야 됩니다.",
+              "timestamp": "02:08"
+            }
+          ]
+        },
+        {
+          "text": "만들어 둔 양념장에 물기를 뺀 국수를 넣고 골고루 비벼준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물기를 제거하고 양념장에 넣어 비벼주세요.",
+              "timestamp": "02:29"
+            },
+            {
+              "type": "SPEECH",
+              "text": "체에 밭쳐 물기를 말끔히 제거한 후에 만들어 놓았던 양념장에 삶아 놓은 국수를 모두 다 넣고 잘 비벼주세요.",
+              "timestamp": "02:28"
+            }
+          ]
+        },
+        {
+          "text": "비빈 국수를 그릇에 담고 김가루를 수북하게 올린 뒤 깻가루 1스푼을 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "그릇에 담고 김가루를 수북하게 뿌려주세요.",
+              "timestamp": "02:44"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깻가루 1스푼 뿌려주세요.",
+              "timestamp": "02:55"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "완~성",
+              "timestamp": "03:13"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
   }
 }

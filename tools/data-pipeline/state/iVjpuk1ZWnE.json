@@ -1,0 +1,457 @@
+{
+  "videoId": "iVjpuk1ZWnE",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/iVjpuk1ZWnE",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-08T09:01:30.672832+00:00",
+    "rawResponse": "{\n  \"title\": \"원팬 매콤크림 파스타\",\n  \"description\": \"원팬으로 쉽고 간단하게 만드는 매콤하고 꾸덕한 우유 크림 파스타\",\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"링귀니 파스타 1인분(120g)\",\n      \"displayName\": \"링귀니 파스타\",\n      \"amount\": \"120\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"링귀니 파스타 1인분(120g)을 넣어줍니다.\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 링귀니 파스타 1인분을 넣어줍니다.\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우삼겹 100g (냉동 우삼겹 10조각)\",\n      \"displayName\": \"우삼겹\",\n      \"amount\": \"100\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그다음 우삼겹 100g을 넣어주는데요. 저는 냉동 우삼겹 10조각을 사용 했습니다.\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그다음 우삼겹 100g을 넣어주는데요. 저는 냉동 우삼겹 10조각을 사용 했습니다.\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/4개 (종이컵 대략 1컵)\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/4\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다음으로 양파 1/4개를 채 썰어서 넣어주는데요. 종이컵으로는 대략 1컵 나왔습니다.\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다음으로 양파 1/4개를 채 썰어서 넣어주는데요. 종이컵으로는 대략 1컵 나왔습니다.\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"버터 20g\",\n      \"displayName\": \"버터\",\n      \"amount\": \"20\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그다음 풍미를 높여줄 버터 20g을 넣어주시고요.\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그다음 풍미를 높여줄 버터 20g을 넣어주시고요.\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"치킨스톡 1/2T\",\n      \"displayName\": \"치킨스톡\",\n      \"amount\": \"1/2\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"감칠맛과 간을 책임질 치킨스톡 1/2T을 넣어 줍니다.\",\n          \"timestamp\": \"00:42\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"감칠맛과 간을 책임질 치킨스톡 반 스푼을 넣어 줍니다.\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"크러쉬드 레드페퍼 1T\",\n      \"displayName\": \"크러쉬드 레드페퍼\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다음으로 매콤함을 책임질 크러쉬드 레드페퍼 1T과\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다음으로 매콤함을 책임질 크러쉬드 레드페퍼 한 스푼과\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고운 고춧가루(보통맵기) 1T\",\n      \"displayName\": \"고운 고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"빨간색을 책임질 고운 고춧가루(보통맵기) 1T을 넣어 줍니다.\",\n          \"timestamp\": \"00:49\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"빨간색을 책임질 고운 고춧가루 한 스푼을 넣어 줍니다.\",\n          \"timestamp\": \"00:49\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1/2T\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1/2\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그다음 텁텁함을 잡아줄 설탕 1/2T을 넣어주시고요.\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그다음 텁텁함을 잡아줄 설탕 반 스푼을 넣어주시고요.\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1T\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘 1T을 넣어 줍니다.\",\n          \"timestamp\": \"00:57\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘 한 스푼을 넣어 줍니다.\",\n          \"timestamp\": \"00:57\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"체다치즈 2장\",\n      \"displayName\": \"체다치즈\",\n      \"amount\": \"2\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다음으로 체다치즈 2장을 넣어 주시고요.\",\n          \"timestamp\": \"01:00\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다음으로 체다치즈 두 장을 넣어 주시고요.\",\n          \"timestamp\": \"01:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 1/2T\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1/2\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장 1/2T을 넣어줍니다.\",\n          \"timestamp\": \"01:02\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 반 스푼을 넣어줍니다.\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우유 200ml\",\n      \"displayName\": \"우유\",\n      \"amount\": \"200\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 팬에 우유 200ml와\",\n          \"timestamp\": \"01:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬에 우유 200ml와\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 400ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"400\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 400ml를 넣어주시면 되는데요.\",\n          \"timestamp\": \"01:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 400ml를 넣어주시면 되는데요.\",\n          \"timestamp\": \"01:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛소금 1/6T (또는 소금)\",\n      \"displayName\": \"맛소금\",\n      \"amount\": \"1/6\",\n      \"unit\": \"T\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그다음 기호에 맞게 맛소금이나 소금으로 간을 해주시면 되는데요. 저는 맛소금 1/6T을 추가했습니다.\",\n          \"timestamp\": \"02:29\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그다음 기호에 맞게 맛소금이나 소금으로 간을 해주시면 되는데요. 저는 맛소금 6분의 1 스푼을 추가했습니다.\",\n          \"timestamp\": \"02:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 1/3대 (종이컵 대략 1/2컵)\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1/3\",\n      \"unit\": \"대\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파 1/3 대를 채 썰어서 넣어 주시면 되는데요. 대파 대신 쪽파를 사용하셔도 좋습니다. 저는 종이컵으로 대략 1/2컵 나왔습니다.\",\n          \"timestamp\": \"02:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파 3분의 1 대를 채 썰어서 넣어 주시면 되는데요. 대파 대신 쪽파를 사용하셔도 좋습니다. 저는 종이컵으로 대략 반 컵 나왔습니다.\",\n          \"timestamp\": \"02:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파마산 치즈가루 2T (또는 파르미지아노 레지아노 등 경성치즈)\",\n      \"displayName\": \"파마산 치즈가루\",\n      \"amount\": \"2\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 마무리로 파르미지아노 레지아노와 같은 경성치즈를 뿌려 주시면 좋은데요. 오늘따라 집에 없기 때문에 피자 먹고 남은 파마산 치즈가루 2T을 뿌려주면?\",\n          \"timestamp\": \"03:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 마무리로 파르미지아노 레지아노와 같은 경성치즈를 뿌려 주시면 좋은데요. 오늘따라 집에 없기 때문에 피자 먹고 남은 파마산 치즈가루 두 스푼을 뿌려주면?\",\n          \"timestamp\": \"03:04\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 링귀니 파스타 1인분(120g), 우삼겹 100g, 채 썬 양파 1/4개를 넣습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 링귀니 파스타 1인분을 넣어줍니다. 그다음 우삼겹 100g을 넣어주는데요. 다음으로 양파 1/4개를 채 썰어서 넣어주는데요.\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 링귀니 파스타 면, 우삼겹, 채 썬 양파를 차례대로 담음\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"버터 20g, 치킨스톡 1/2T, 크러쉬드 레드페퍼 1T, 고운 고춧가루 1T, 설탕 1/2T, 다진마늘 1T, 체다치즈 2장, 고추장 1/2T를 팬에 함께 넣습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"풍미를 높여줄 버터 20g을 넣어주시고요. 치킨스톡 반 스푼을 넣어 줍니다. 크러쉬드 레드페퍼 한 스푼과 고운 고춧가루 한 스푼을 넣어 줍니다. 설탕 반 스푼을 넣어주시고요, 다진마늘 한 스푼을 넣어 줍니다. 체다치즈 두 장을 넣어 주시고요, 고추장 반 스푼을 넣어줍니다.\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 버터, 치킨스톡, 고춧가루, 크러쉬드 레드페퍼, 설탕, 다진마늘, 체다치즈, 고추장을 차례대로 올림\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"우유 200ml와 물 400ml를 팬에 붓습니다. (우유팩을 가득 채워 두 번 부으면 물 400ml 계량이 가능합니다.)\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬에 우유 200ml와 물 400ml를 넣어주시면 되는데요. 이때 계량컵이 없다면 이 우유팩이 넘칠 듯 말 듯 할 정도로 물을 가득 채워서 넣어주시면 됩니다.\",\n          \"timestamp\": \"01:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 우유를 붓고, 비어있는 우유팩에 물을 채워 두 번 붓는 모습\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 중강불로 켜고, 면이 익을 때까지 중간중간 저어가며 졸여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬에 불을 중강불로 켜주시고요. 면이 익을 때까지 중간중간 저어주면서 졸여주시면 끝입니다.\",\n          \"timestamp\": \"01:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"가스레인지 불을 켜고 면과 소스를 저어가며 끓이는 모습\",\n          \"timestamp\": \"01:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"면이 익고 팬 바닥이 보이기 시작하면 불을 끄고 면의 익힘과 소스 간을 확인한 뒤, 기호에 따라 맛소금이나 소금으로 간을 맞춥니다. (영상에서는 맛소금 1/6T 사용)\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"어느새 면이 익고 팬의 바닥이 보이기 시작한다면 불을 꺼주시고요. 꼭 한번 더 면의 상태와 소스의 간을 확인해줍니다. 그다음 기호에 맞게 맛소금이나 소금으로 간을 해주시면 되는데요. 저는 맛소금 6분의 1 스푼을 추가했습니다.\",\n          \"timestamp\": \"02:20\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"면 상태를 확인하고 맛소금을 뿌리는 모습\",\n          \"timestamp\": \"02:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"채 썬 대파 1/3대(또는 쪽파)를 넣고, 전분과 수분, 지방이 유화되어 크림소스 농도가 나오도록 골고루 치대어 섞어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 향과 상큼함을 더해줄 대파 3분의 1 대를 채 썰어서 넣어 주시면 되는데요. 이제 면의 전분과 물 그리고 지방이 만나 소스처럼 변할 수 있도록 열심히 치대 주시고요.\",\n          \"timestamp\": \"02:36\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"송송 썬 대파를 파스타 위에 넣고 젓가락과 숟가락으로 빠르게 섞어주는 모습\",\n          \"timestamp\": \"02:44\"\n        }\n      ]\n    },\n    {\n      \"text\": \"파스타를 접시에 담고 소스를 부은 뒤, 파마산 치즈가루 2T(또는 파르미지아노 레지아노 등 경성치즈)를 뿌려 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"면을 예쁘게 돌돌 말아 접시 위로 고정해 주시고요. 소스를 부어줍니다. 이제 마무리로 파르미지아노 레지아노와 같은 경성치즈를 뿌려 주시면 좋은데요. 오늘따라 집에 없기 때문에 피자 먹고 남은 파마산 치즈가루 2T을 뿌려주면? 짠! 최종 완성된 원팬 매콤 크림 파스타입니다.\",\n          \"timestamp\": \"02:58\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"접시에 면과 소스를 담고 파마산 치즈가루와 파슬리를 뿌려 완성함\",\n          \"timestamp\": \"03:00\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"완성 접시 위에 파슬리 가루로 보이는 초록색 허브 가루가 시각적으로 뿌려지나, 재료 및 음성 설명에는 별도로 언급되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "원팬 매콤크림 파스타",
+      "description": "원팬으로 쉽고 간단하게 만드는 매콤하고 꾸덕한 우유 크림 파스타",
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "링귀니 파스타 1인분(120g)",
+          "displayName": "링귀니 파스타",
+          "amount": "120",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "링귀니 파스타 1인분(120g)을 넣어줍니다.",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 링귀니 파스타 1인분을 넣어줍니다.",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "우삼겹 100g (냉동 우삼겹 10조각)",
+          "displayName": "우삼겹",
+          "amount": "100",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "그다음 우삼겹 100g을 넣어주는데요. 저는 냉동 우삼겹 10조각을 사용 했습니다.",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그다음 우삼겹 100g을 넣어주는데요. 저는 냉동 우삼겹 10조각을 사용 했습니다.",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "양파 1/4개 (종이컵 대략 1컵)",
+          "displayName": "양파",
+          "amount": "1/4",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다음으로 양파 1/4개를 채 썰어서 넣어주는데요. 종이컵으로는 대략 1컵 나왔습니다.",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다음으로 양파 1/4개를 채 썰어서 넣어주는데요. 종이컵으로는 대략 1컵 나왔습니다.",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "버터 20g",
+          "displayName": "버터",
+          "amount": "20",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "그다음 풍미를 높여줄 버터 20g을 넣어주시고요.",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그다음 풍미를 높여줄 버터 20g을 넣어주시고요.",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "치킨스톡 1/2T",
+          "displayName": "치킨스톡",
+          "amount": "1/2",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "감칠맛과 간을 책임질 치킨스톡 1/2T을 넣어 줍니다.",
+              "timestamp": "00:42"
+            },
+            {
+              "type": "SPEECH",
+              "text": "감칠맛과 간을 책임질 치킨스톡 반 스푼을 넣어 줍니다.",
+              "timestamp": "00:42"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "크러쉬드 레드페퍼 1T",
+          "displayName": "크러쉬드 레드페퍼",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다음으로 매콤함을 책임질 크러쉬드 레드페퍼 1T과",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다음으로 매콤함을 책임질 크러쉬드 레드페퍼 한 스푼과",
+              "timestamp": "00:46"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "고운 고춧가루(보통맵기) 1T",
+          "displayName": "고운 고춧가루",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "빨간색을 책임질 고운 고춧가루(보통맵기) 1T을 넣어 줍니다.",
+              "timestamp": "00:49"
+            },
+            {
+              "type": "SPEECH",
+              "text": "빨간색을 책임질 고운 고춧가루 한 스푼을 넣어 줍니다.",
+              "timestamp": "00:49"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "설탕 1/2T",
+          "displayName": "설탕",
+          "amount": "1/2",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "그다음 텁텁함을 잡아줄 설탕 1/2T을 넣어주시고요.",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그다음 텁텁함을 잡아줄 설탕 반 스푼을 넣어주시고요.",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "다진마늘 1T",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘 1T을 넣어 줍니다.",
+              "timestamp": "00:57"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진마늘 한 스푼을 넣어 줍니다.",
+              "timestamp": "00:57"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "체다치즈 2장",
+          "displayName": "체다치즈",
+          "amount": "2",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다음으로 체다치즈 2장을 넣어 주시고요.",
+              "timestamp": "01:00"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다음으로 체다치즈 두 장을 넣어 주시고요.",
+              "timestamp": "01:00"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "고추장 1/2T",
+          "displayName": "고추장",
+          "amount": "1/2",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "고추장 1/2T을 넣어줍니다.",
+              "timestamp": "01:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장 반 스푼을 넣어줍니다.",
+              "timestamp": "01:02"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "우유 200ml",
+          "displayName": "우유",
+          "amount": "200",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 팬에 우유 200ml와",
+              "timestamp": "01:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 팬에 우유 200ml와",
+              "timestamp": "01:05"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "물 400ml",
+          "displayName": "물",
+          "amount": "400",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 400ml를 넣어주시면 되는데요.",
+              "timestamp": "01:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 400ml를 넣어주시면 되는데요.",
+              "timestamp": "01:07"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "맛소금 1/6T (또는 소금)",
+          "displayName": "맛소금",
+          "amount": "1/6",
+          "unit": "T",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "그다음 기호에 맞게 맛소금이나 소금으로 간을 해주시면 되는데요. 저는 맛소금 1/6T을 추가했습니다.",
+              "timestamp": "02:29"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그다음 기호에 맞게 맛소금이나 소금으로 간을 해주시면 되는데요. 저는 맛소금 6분의 1 스푼을 추가했습니다.",
+              "timestamp": "02:29"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "대파 1/3대 (종이컵 대략 1/2컵)",
+          "displayName": "대파",
+          "amount": "1/3",
+          "unit": "대",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대파 1/3 대를 채 썰어서 넣어 주시면 되는데요. 대파 대신 쪽파를 사용하셔도 좋습니다. 저는 종이컵으로 대략 1/2컵 나왔습니다.",
+              "timestamp": "02:37"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파 3분의 1 대를 채 썰어서 넣어 주시면 되는데요. 대파 대신 쪽파를 사용하셔도 좋습니다. 저는 종이컵으로 대략 반 컵 나왔습니다.",
+              "timestamp": "02:37"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "파마산 치즈가루 2T (또는 파르미지아노 레지아노 등 경성치즈)",
+          "displayName": "파마산 치즈가루",
+          "amount": "2",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 마무리로 파르미지아노 레지아노와 같은 경성치즈를 뿌려 주시면 좋은데요. 오늘따라 집에 없기 때문에 피자 먹고 남은 파마산 치즈가루 2T을 뿌려주면?",
+              "timestamp": "03:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 마무리로 파르미지아노 레지아노와 같은 경성치즈를 뿌려 주시면 좋은데요. 오늘따라 집에 없기 때문에 피자 먹고 남은 파마산 치즈가루 두 스푼을 뿌려주면?",
+              "timestamp": "03:04"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 링귀니 파스타 1인분(120g), 우삼겹 100g, 채 썬 양파 1/4개를 넣습니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 링귀니 파스타 1인분을 넣어줍니다. 그다음 우삼겹 100g을 넣어주는데요. 다음으로 양파 1/4개를 채 썰어서 넣어주는데요.",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 링귀니 파스타 면, 우삼겹, 채 썬 양파를 차례대로 담음",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "버터 20g, 치킨스톡 1/2T, 크러쉬드 레드페퍼 1T, 고운 고춧가루 1T, 설탕 1/2T, 다진마늘 1T, 체다치즈 2장, 고추장 1/2T를 팬에 함께 넣습니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "풍미를 높여줄 버터 20g을 넣어주시고요. 치킨스톡 반 스푼을 넣어 줍니다. 크러쉬드 레드페퍼 한 스푼과 고운 고춧가루 한 스푼을 넣어 줍니다. 설탕 반 스푼을 넣어주시고요, 다진마늘 한 스푼을 넣어 줍니다. 체다치즈 두 장을 넣어 주시고요, 고추장 반 스푼을 넣어줍니다.",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 버터, 치킨스톡, 고춧가루, 크러쉬드 레드페퍼, 설탕, 다진마늘, 체다치즈, 고추장을 차례대로 올림",
+              "timestamp": "00:39"
+            }
+          ]
+        },
+        {
+          "text": "우유 200ml와 물 400ml를 팬에 붓습니다. (우유팩을 가득 채워 두 번 부으면 물 400ml 계량이 가능합니다.)",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 팬에 우유 200ml와 물 400ml를 넣어주시면 되는데요. 이때 계량컵이 없다면 이 우유팩이 넘칠 듯 말 듯 할 정도로 물을 가득 채워서 넣어주시면 됩니다.",
+              "timestamp": "01:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 우유를 붓고, 비어있는 우유팩에 물을 채워 두 번 붓는 모습",
+              "timestamp": "01:05"
+            }
+          ]
+        },
+        {
+          "text": "불을 중강불로 켜고, 면이 익을 때까지 중간중간 저어가며 졸여줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 팬에 불을 중강불로 켜주시고요. 면이 익을 때까지 중간중간 저어주면서 졸여주시면 끝입니다.",
+              "timestamp": "01:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "가스레인지 불을 켜고 면과 소스를 저어가며 끓이는 모습",
+              "timestamp": "01:20"
+            }
+          ]
+        },
+        {
+          "text": "면이 익고 팬 바닥이 보이기 시작하면 불을 끄고 면의 익힘과 소스 간을 확인한 뒤, 기호에 따라 맛소금이나 소금으로 간을 맞춥니다. (영상에서는 맛소금 1/6T 사용)",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "어느새 면이 익고 팬의 바닥이 보이기 시작한다면 불을 꺼주시고요. 꼭 한번 더 면의 상태와 소스의 간을 확인해줍니다. 그다음 기호에 맞게 맛소금이나 소금으로 간을 해주시면 되는데요. 저는 맛소금 6분의 1 스푼을 추가했습니다.",
+              "timestamp": "02:20"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "면 상태를 확인하고 맛소금을 뿌리는 모습",
+              "timestamp": "02:27"
+            }
+          ]
+        },
+        {
+          "text": "채 썬 대파 1/3대(또는 쪽파)를 넣고, 전분과 수분, 지방이 유화되어 크림소스 농도가 나오도록 골고루 치대어 섞어줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 향과 상큼함을 더해줄 대파 3분의 1 대를 채 썰어서 넣어 주시면 되는데요. 이제 면의 전분과 물 그리고 지방이 만나 소스처럼 변할 수 있도록 열심히 치대 주시고요.",
+              "timestamp": "02:36"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "송송 썬 대파를 파스타 위에 넣고 젓가락과 숟가락으로 빠르게 섞어주는 모습",
+              "timestamp": "02:44"
+            }
+          ]
+        },
+        {
+          "text": "파스타를 접시에 담고 소스를 부은 뒤, 파마산 치즈가루 2T(또는 파르미지아노 레지아노 등 경성치즈)를 뿌려 완성합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "면을 예쁘게 돌돌 말아 접시 위로 고정해 주시고요. 소스를 부어줍니다. 이제 마무리로 파르미지아노 레지아노와 같은 경성치즈를 뿌려 주시면 좋은데요. 오늘따라 집에 없기 때문에 피자 먹고 남은 파마산 치즈가루 2T을 뿌려주면? 짠! 최종 완성된 원팬 매콤 크림 파스타입니다.",
+              "timestamp": "02:58"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "접시에 면과 소스를 담고 파마산 치즈가루와 파슬리를 뿌려 완성함",
+              "timestamp": "03:00"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "완성 접시 위에 파슬리 가루로 보이는 초록색 허브 가루가 시각적으로 뿌려지나, 재료 및 음성 설명에는 별도로 언급되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

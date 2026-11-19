@@ -1,18 +1,470 @@
 {
   "videoId": "t70eGxX-3_Q",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/t70eGxX-3_Q",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-10-27T10:56:26.615409+00:00",
-    "accountId": "account-e",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAt": "2026-10-27T10:56:44.687253+00:00",
-    "retryAccountId": "account-e"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-08T09:03:16.005871+00:00",
+    "rawResponse": "{\n  \"title\": \"햄(스팸) 볶음밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"밥 1.5공기(300g)\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1.5\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 1.5공기(300g)\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"식은밥 1.5공기를 넣고 주걱으로 골고루 펴줍니다\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"햄(스팸) 150g\",\n      \"displayName\": \"햄(스팸)\",\n      \"amount\": \"150\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"햄(스팸) 150g\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 햄(스팸)을 뜨거운물로 데쳐 불순물을 제거해줍니다\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"당근 1/3개\",\n      \"displayName\": \"당근\",\n      \"amount\": \"1/3\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"당근, 대파 1/3개\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"당근 1/3개를 잘게 깍둑썰어줍니다\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 1/3개\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1/3\",\n      \"unit\": \"대\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"당근, 대파 1/3개\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파 1/3대를 쫑쫑 썰어줍니다\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"애호박 2/3개\",\n      \"displayName\": \"애호박\",\n      \"amount\": \"2/3\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"애호박 2/3개\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"애호박 2/3개를 4등분 해준 뒤\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 2개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2개\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 2개를 넣고 스크램블을 만들어줍니다(중·강불)\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 1큰술\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 1큰술\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"애호박이 익으면 진간장 1큰술을 가장자리에 둘러주고\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1/2큰술\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1/2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1/2큰술\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"굴소스 1/2큰술을 넣고 고슬고슬하게 볶아줍니다(중·강불)\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 1~2꼬집\",\n      \"displayName\": \"소금\",\n      \"amount\": \"1~2\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금, 후추\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소금 1~2꼬집을 넣고\",\n          \"timestamp\": \"00:57\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 약간\",\n      \"displayName\": \"후추\",\n      \"amount\": \"약간\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금, 후추\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파와 후추 약간을 넣고 조금 더 볶아줍니다\",\n          \"timestamp\": \"01:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"예열한 웍에 식용유를 넉넉히 두르고\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"식용유를 넉넉히 두르고\",\n          \"timestamp\": \"01:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"뜨거운물\",\n      \"displayName\": \"뜨거운 물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 햄(스팸)을 뜨거운물로 데쳐 불순물을 제거해줍니다\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"케첩\",\n      \"displayName\": \"케첩\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기호에 따라 케첩을 뿌려먹어도 맛있습니다\",\n          \"timestamp\": \"02:05\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"햄(스팸)을 뜨거운 물로 데쳐 불순물을 제거해준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 햄(스팸)을 뜨거운물로 데쳐 불순물을 제거해줍니다\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"애호박 2/3개를 4등분 해준 뒤 수분 생김을 방지하기 위해 씨 부분을 제거하고 잘게 깍둑썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"애호박 2/3개를 4등분 해준 뒤\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"씨부분을 제거해줍니다(수분생김 방지)\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"잘게 깍둑썰어줍니다\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"당근 1/3개를 잘게 깍둑썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"당근 1/3개를 잘게 깍둑썰어줍니다\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파 1/3대를 쫑쫑 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파 1/3대를 쫑쫑 썰어줍니다\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"햄(스팸)의 물기를 제거한 후 잘게 깍둑썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"햄(스팸)의 물기를 제거 후 잘게 깍둑썰어줍니다\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"text\": \"예열한 웍에 식용유를 넉넉히 두르고 계란 2개를 넣고 중·강불에서 스크램블을 만들어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"예열한 웍에 식용유를 넉넉히 두르고\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 2개를 넣고 스크램블을 만들어줍니다(중·강불)\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"text\": \"식은밥 1.5공기를 넣고 주걱으로 골고루 펴준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"식은밥 1.5공기를 넣고 주걱으로 골고루 펴줍니다\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소금 1~2꼬집을 넣고 밥이 고슬해질 때까지 중·강불에서 볶아준 뒤 볶은 밥을 덜어내준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소금 1~2꼬집을 넣고\",\n          \"timestamp\": \"00:57\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥이 고슬해질 때까지 볶아줍니다(중·강불)\",\n          \"timestamp\": \"00:59\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥이 고슬 볶은밥을 들어내줍니다\",\n          \"timestamp\": \"01:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"웍에 식용유를 넉넉히 두르고 햄(스팸)을 넣고 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"식용유를 넉넉히 두르고\",\n          \"timestamp\": \"01:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"햄(스팸)을 넣고 볶아줍니다\",\n          \"timestamp\": \"01:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"당근을 넣고 익을 때까지 중·강불에서 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"당근을 넣고 익을때까지 볶아줍니다(중·강불)\",\n          \"timestamp\": \"01:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"애호박을 넣고 같이 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"애호박을 넣고 같이 볶아줍니다\",\n          \"timestamp\": \"01:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"덜어냈던 밥을 넣고 함께 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 들어냈던 밥을 넣고 함께 볶아줍니다\",\n          \"timestamp\": \"01:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"애호박이 익으면 진간장 1큰술을 가장자리에 둘러주고 굴소스 1/2큰술을 넣고 중·강불에서 고슬고슬하게 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"애호박이 익으면 진간장 1큰술을 가장자리에 둘러주고\",\n          \"timestamp\": \"01:35\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"굴소스 1/2큰술을 넣고 고슬고슬하게 볶아줍니다(중·강불)\",\n          \"timestamp\": \"01:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파와 후추 약간을 넣고 조금 더 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파와 후추 약간을 넣고 조금 더 볶아줍니다\",\n          \"timestamp\": \"01:47\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 볶음밥을 접시에 담고, 기호에 따라 케첩을 뿌려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"완성 된 볶음밥을 접시에 담고\",\n          \"timestamp\": \"01:58\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기호에 따라 케첩을 뿌려먹어도 맛있습니다\",\n          \"timestamp\": \"02:05\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "햄(스팸) 볶음밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "밥 1.5공기(300g)",
+          "displayName": "밥",
+          "amount": "1.5",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 1.5공기(300g)",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "식은밥 1.5공기를 넣고 주걱으로 골고루 펴줍니다",
+              "timestamp": "00:52"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "햄(스팸) 150g",
+          "displayName": "햄(스팸)",
+          "amount": "150",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "햄(스팸) 150g",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 햄(스팸)을 뜨거운물로 데쳐 불순물을 제거해줍니다",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "당근 1/3개",
+          "displayName": "당근",
+          "amount": "1/3",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "당근, 대파 1/3개",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "당근 1/3개를 잘게 깍둑썰어줍니다",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "대파 1/3개",
+          "displayName": "대파",
+          "amount": "1/3",
+          "unit": "대",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "당근, 대파 1/3개",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대파 1/3대를 쫑쫑 썰어줍니다",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "애호박 2/3개",
+          "displayName": "애호박",
+          "amount": "2/3",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "애호박 2/3개",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "애호박 2/3개를 4등분 해준 뒤",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "계란 2개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2개",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란 2개를 넣고 스크램블을 만들어줍니다(중·강불)",
+              "timestamp": "00:43"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "진간장 1큰술",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 1큰술",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "애호박이 익으면 진간장 1큰술을 가장자리에 둘러주고",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "굴소스 1/2큰술",
+          "displayName": "굴소스",
+          "amount": "1/2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1/2큰술",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "굴소스 1/2큰술을 넣고 고슬고슬하게 볶아줍니다(중·강불)",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "소금 1~2꼬집",
+          "displayName": "소금",
+          "amount": "1~2",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금, 후추",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "소금 1~2꼬집을 넣고",
+              "timestamp": "00:57"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "후추 약간",
+          "displayName": "후추",
+          "amount": "약간",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금, 후추",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대파와 후추 약간을 넣고 조금 더 볶아줍니다",
+              "timestamp": "01:47"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "예열한 웍에 식용유를 넉넉히 두르고",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "식용유를 넉넉히 두르고",
+              "timestamp": "01:09"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "뜨거운물",
+          "displayName": "뜨거운 물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 햄(스팸)을 뜨거운물로 데쳐 불순물을 제거해줍니다",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "케첩",
+          "displayName": "케첩",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "기호에 따라 케첩을 뿌려먹어도 맛있습니다",
+              "timestamp": "02:05"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "햄(스팸)을 뜨거운 물로 데쳐 불순물을 제거해준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 햄(스팸)을 뜨거운물로 데쳐 불순물을 제거해줍니다",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "애호박 2/3개를 4등분 해준 뒤 수분 생김을 방지하기 위해 씨 부분을 제거하고 잘게 깍둑썰어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "애호박 2/3개를 4등분 해준 뒤",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "씨부분을 제거해줍니다(수분생김 방지)",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "잘게 깍둑썰어줍니다",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "당근 1/3개를 잘게 깍둑썰어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "당근 1/3개를 잘게 깍둑썰어줍니다",
+              "timestamp": "00:28"
+            }
+          ]
+        },
+        {
+          "text": "대파 1/3대를 쫑쫑 썰어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대파 1/3대를 쫑쫑 썰어줍니다",
+              "timestamp": "00:30"
+            }
+          ]
+        },
+        {
+          "text": "햄(스팸)의 물기를 제거한 후 잘게 깍둑썰어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "햄(스팸)의 물기를 제거 후 잘게 깍둑썰어줍니다",
+              "timestamp": "00:35"
+            }
+          ]
+        },
+        {
+          "text": "예열한 웍에 식용유를 넉넉히 두르고 계란 2개를 넣고 중·강불에서 스크램블을 만들어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "예열한 웍에 식용유를 넉넉히 두르고",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란 2개를 넣고 스크램블을 만들어줍니다(중·강불)",
+              "timestamp": "00:43"
+            }
+          ]
+        },
+        {
+          "text": "식은밥 1.5공기를 넣고 주걱으로 골고루 펴준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "식은밥 1.5공기를 넣고 주걱으로 골고루 펴줍니다",
+              "timestamp": "00:52"
+            }
+          ]
+        },
+        {
+          "text": "소금 1~2꼬집을 넣고 밥이 고슬해질 때까지 중·강불에서 볶아준 뒤 볶은 밥을 덜어내준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "소금 1~2꼬집을 넣고",
+              "timestamp": "00:57"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "밥이 고슬해질 때까지 볶아줍니다(중·강불)",
+              "timestamp": "00:59"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "밥이 고슬 볶은밥을 들어내줍니다",
+              "timestamp": "01:06"
+            }
+          ]
+        },
+        {
+          "text": "웍에 식용유를 넉넉히 두르고 햄(스팸)을 넣고 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "식용유를 넉넉히 두르고",
+              "timestamp": "01:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "햄(스팸)을 넣고 볶아줍니다",
+              "timestamp": "01:11"
+            }
+          ]
+        },
+        {
+          "text": "당근을 넣고 익을 때까지 중·강불에서 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "당근을 넣고 익을때까지 볶아줍니다(중·강불)",
+              "timestamp": "01:17"
+            }
+          ]
+        },
+        {
+          "text": "애호박을 넣고 같이 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "애호박을 넣고 같이 볶아줍니다",
+              "timestamp": "01:22"
+            }
+          ]
+        },
+        {
+          "text": "덜어냈던 밥을 넣고 함께 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 들어냈던 밥을 넣고 함께 볶아줍니다",
+              "timestamp": "01:29"
+            }
+          ]
+        },
+        {
+          "text": "애호박이 익으면 진간장 1큰술을 가장자리에 둘러주고 굴소스 1/2큰술을 넣고 중·강불에서 고슬고슬하게 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "애호박이 익으면 진간장 1큰술을 가장자리에 둘러주고",
+              "timestamp": "01:35"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "굴소스 1/2큰술을 넣고 고슬고슬하게 볶아줍니다(중·강불)",
+              "timestamp": "01:37"
+            }
+          ]
+        },
+        {
+          "text": "대파와 후추 약간을 넣고 조금 더 볶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대파와 후추 약간을 넣고 조금 더 볶아줍니다",
+              "timestamp": "01:47"
+            }
+          ]
+        },
+        {
+          "text": "완성된 볶음밥을 접시에 담고, 기호에 따라 케첩을 뿌려 마무리한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "완성 된 볶음밥을 접시에 담고",
+              "timestamp": "01:58"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "기호에 따라 케첩을 뿌려먹어도 맛있습니다",
+              "timestamp": "02:05"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
   }
 }

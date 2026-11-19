@@ -1,20 +1,460 @@
 {
   "videoId": "Z1ewCfL5GRs",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/Z1ewCfL5GRs",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-14T02:34:28.441318+00:00",
+    "rawResponse": "{\n  \"title\": \"오므라이스\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"스팸 1/3캔\",\n      \"displayName\": \"스팸\",\n      \"amount\": \"1/3\",\n      \"unit\": \"캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스팸 1/3캔\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"스팸 1/3캔을 썰어줍니다\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 한공기\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 한공기\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 반뿌리\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"뿌리\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 반뿌리\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"남는 채소들\",\n      \"displayName\": \"남는 채소들\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"남는 채소들\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/4개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/4\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다음으로 양파 1/4개를 다져줍니다\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"당근\",\n      \"displayName\": \"당근\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이번엔 당근\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"감자\",\n      \"displayName\": \"감자\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"감자를 넣고 볶아줍니다\",\n          \"timestamp\": \"01:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 2개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2개\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 2개\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1큰술\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1큰술\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"굴소스 1큰술과 소금 한꼬집 넣고\",\n          \"timestamp\": \"01:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금\",\n      \"displayName\": \"소금\",\n      \"amount\": \"2\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소금 한꼬집을 넣고\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"굴소스 1큰술과 소금 한꼬집 넣고\",\n          \"timestamp\": \"01:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기름두른 팬에 파를 넣고\",\n          \"timestamp\": \"01:03\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬에 키친타올로 얇게 기름을 바르고 불은 약불\",\n          \"timestamp\": \"02:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"케찹\",\n      \"displayName\": \"케찹\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"케찹과 파슬리를 뿌려줍니다\",\n          \"timestamp\": \"02:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리\",\n      \"displayName\": \"파슬리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"케찹과 파슬리를 뿌려줍니다\",\n          \"timestamp\": \"02:44\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"대파를 썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 대파를 썰어줍니다\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 1/4개를 다져줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다음으로 양파 1/4개를 다져줍니다\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"당근과 감자를 잘게 다져줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이번엔 당근\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"당근을 잘게 썰고 감자도 준비함\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"스팸 1/3캔을 잘게 썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"스팸 1/3캔을 썰어줍니다\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 계란 2개와 소금 한꼬집을 넣고 풀어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 2개\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소금 한꼬집을 넣고\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란을 풀어줍니다\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"text\": \"기름 두른 팬에 파를 넣고 볶아 파향을 냅니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기름두른 팬에 파를 넣고\",\n          \"timestamp\": \"01:03\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"맛있는 파향이 올라오면\",\n          \"timestamp\": \"01:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"감자를 넣고 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"감자를 넣고 볶아줍니다\",\n          \"timestamp\": \"01:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"다음으로 햄을 넣고 노릇해질 때까지 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다음으로 햄을 넣고 볶아줍니다\",\n          \"timestamp\": \"01:22\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"햄이 노릇해지면\",\n          \"timestamp\": \"01:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"당근과 양파를 넣고 양파가 투명해질 때까지 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"당근과 양파를 넣고 볶아줍니다\",\n          \"timestamp\": \"01:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파가 투명해지면\",\n          \"timestamp\": \"01:35\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥을 넣고 함께 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥 넣고 볶볶볶\",\n          \"timestamp\": \"01:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"굴소스 1큰술과 소금 한꼬집을 넣고 섞어가며 볶은 후, 다 볶아지면 그릇에 따로 담아둡니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"굴소스 1큰술과 소금 한꼬집 넣고\",\n          \"timestamp\": \"01:52\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"섞어줍니다\",\n          \"timestamp\": \"01:56\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다 볶아지면 그릇에 따로 담아줍니다\",\n          \"timestamp\": \"02:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 키친타올로 기름을 얇게 바르고 약불로 달군 뒤 계란물을 부어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬에 키친타올로 얇게 기름을 바르고 불은 약불\",\n          \"timestamp\": \"02:16\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"달궈진 팬에 계란을 부어줍니다\",\n          \"timestamp\": \"02:17\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불은 약불을 유지해주세요\",\n          \"timestamp\": \"02:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란이 완전히 익기 전에 볶음밥을 올리고, 계란 지단을 감싸 모양을 잡아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란이 익기 전에 밥을 올리고\",\n          \"timestamp\": \"02:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 모양을 잡아줍니다\",\n          \"timestamp\": \"02:27\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"덜익은 계란 지단을 밥에 살짝 눌러주면 모양이 잡혀요\",\n          \"timestamp\": \"02:32\"\n        }\n      ]\n    },\n    {\n      \"text\": \"오므라이스를 접시에 담고 케찹과 파슬리를 뿌려 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"오므라이스를 접시에 담고\",\n          \"timestamp\": \"02:43\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"케찹과 파슬리를 뿌려줍니다\",\n          \"timestamp\": \"02:44\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"오므라이스 완성!!\",\n          \"timestamp\": \"02:47\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "오므라이스",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "스팸 1/3캔",
+          "displayName": "스팸",
+          "amount": "1/3",
+          "unit": "캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스팸 1/3캔",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "스팸 1/3캔을 썰어줍니다",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "밥 한공기",
+          "displayName": "밥",
+          "amount": "1",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 한공기",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "대파 반뿌리",
+          "displayName": "대파",
+          "amount": "1/2",
+          "unit": "뿌리",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 반뿌리",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "남는 채소들",
+          "displayName": "남는 채소들",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "남는 채소들",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "양파 1/4개",
+          "displayName": "양파",
+          "amount": "1/4",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다음으로 양파 1/4개를 다져줍니다",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "당근",
+          "displayName": "당근",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이번엔 당근",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "감자",
+          "displayName": "감자",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "감자를 넣고 볶아줍니다",
+              "timestamp": "01:14"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "계란 2개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2개",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란 2개",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "굴소스 1큰술",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1큰술",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "굴소스 1큰술과 소금 한꼬집 넣고",
+              "timestamp": "01:52"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "소금",
+          "displayName": "소금",
+          "amount": "2",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "소금 한꼬집을 넣고",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "굴소스 1큰술과 소금 한꼬집 넣고",
+              "timestamp": "01:52"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "기름두른 팬에 파를 넣고",
+              "timestamp": "01:03"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "팬에 키친타올로 얇게 기름을 바르고 불은 약불",
+              "timestamp": "02:16"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "케찹",
+          "displayName": "케찹",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "케찹과 파슬리를 뿌려줍니다",
+              "timestamp": "02:44"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "파슬리",
+          "displayName": "파슬리",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "케찹과 파슬리를 뿌려줍니다",
+              "timestamp": "02:44"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "대파를 썰어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 대파를 썰어줍니다",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "양파 1/4개를 다져줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다음으로 양파 1/4개를 다져줍니다",
+              "timestamp": "00:19"
+            }
+          ]
+        },
+        {
+          "text": "당근과 감자를 잘게 다져줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이번엔 당근",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "당근을 잘게 썰고 감자도 준비함",
+              "timestamp": "00:34"
+            }
+          ]
+        },
+        {
+          "text": "스팸 1/3캔을 잘게 썰어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "스팸 1/3캔을 썰어줍니다",
+              "timestamp": "00:40"
+            }
+          ]
+        },
+        {
+          "text": "볼에 계란 2개와 소금 한꼬집을 넣고 풀어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "계란 2개",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "소금 한꼬집을 넣고",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란을 풀어줍니다",
+              "timestamp": "00:56"
+            }
+          ]
+        },
+        {
+          "text": "기름 두른 팬에 파를 넣고 볶아 파향을 냅니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "기름두른 팬에 파를 넣고",
+              "timestamp": "01:03"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "맛있는 파향이 올라오면",
+              "timestamp": "01:08"
+            }
+          ]
+        },
+        {
+          "text": "감자를 넣고 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "감자를 넣고 볶아줍니다",
+              "timestamp": "01:14"
+            }
+          ]
+        },
+        {
+          "text": "다음으로 햄을 넣고 노릇해질 때까지 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다음으로 햄을 넣고 볶아줍니다",
+              "timestamp": "01:22"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "햄이 노릇해지면",
+              "timestamp": "01:30"
+            }
+          ]
+        },
+        {
+          "text": "당근과 양파를 넣고 양파가 투명해질 때까지 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "당근과 양파를 넣고 볶아줍니다",
+              "timestamp": "01:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파가 투명해지면",
+              "timestamp": "01:35"
+            }
+          ]
+        },
+        {
+          "text": "밥을 넣고 함께 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "밥 넣고 볶볶볶",
+              "timestamp": "01:39"
+            }
+          ]
+        },
+        {
+          "text": "굴소스 1큰술과 소금 한꼬집을 넣고 섞어가며 볶은 후, 다 볶아지면 그릇에 따로 담아둡니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "굴소스 1큰술과 소금 한꼬집 넣고",
+              "timestamp": "01:52"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "섞어줍니다",
+              "timestamp": "01:56"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다 볶아지면 그릇에 따로 담아줍니다",
+              "timestamp": "02:12"
+            }
+          ]
+        },
+        {
+          "text": "팬에 키친타올로 기름을 얇게 바르고 약불로 달군 뒤 계란물을 부어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "팬에 키친타올로 얇게 기름을 바르고 불은 약불",
+              "timestamp": "02:16"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "달궈진 팬에 계란을 부어줍니다",
+              "timestamp": "02:17"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "불은 약불을 유지해주세요",
+              "timestamp": "02:22"
+            }
+          ]
+        },
+        {
+          "text": "계란이 완전히 익기 전에 볶음밥을 올리고, 계란 지단을 감싸 모양을 잡아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "계란이 익기 전에 밥을 올리고",
+              "timestamp": "02:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란 모양을 잡아줍니다",
+              "timestamp": "02:27"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "덜익은 계란 지단을 밥에 살짝 눌러주면 모양이 잡혀요",
+              "timestamp": "02:32"
+            }
+          ]
+        },
+        {
+          "text": "오므라이스를 접시에 담고 케찹과 파슬리를 뿌려 완성합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "오므라이스를 접시에 담고",
+              "timestamp": "02:43"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "케찹과 파슬리를 뿌려줍니다",
+              "timestamp": "02:44"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "오므라이스 완성!!",
+              "timestamp": "02:47"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
     "retryCount": 0,
-    "startedAt": "2026-10-27T11:19:25.901322+00:00",
-    "accountId": "account-c",
-    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 19h40m33.791748772s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '70833s'}]}}",
-    "retryReason": "quota_retry_info",
-    "retryKind": "quota",
-    "retryAt": "2026-10-28T06:59:59.248884+00:00",
-    "quotaAccounts": {
-      "account-c": "2026-10-28T06:59:59.248884+00:00"
-    }
+    "accountId": "account-a"
   }
 }

@@ -1,0 +1,402 @@
+{
+  "videoId": "6oyzJGO0asU",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/6oyzJGO0asU",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-14T02:35:59.292059+00:00",
+    "rawResponse": "{\n  \"title\": \"크림떡볶이\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"베이컨 2장\",\n      \"displayName\": \"베이컨\",\n      \"amount\": \"2\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"베이컨 Bacon\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"베이컨 2장을 썰어주세요\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"체다치즈 2장\",\n      \"displayName\": \"체다치즈\",\n      \"amount\": \"2\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"체다치즈 Cheddar cheese\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"체다치즈 2장 넣어요\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"떡볶이떡\",\n      \"displayName\": \"떡볶이떡\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"떡볶이떡 Rice cake\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"또 끓기 시작하면 떡을 넣어요\",\n          \"timestamp\": \"01:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양송이버섯\",\n      \"displayName\": \"양송이버섯\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양송이버섯 White Mushroom\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양송이는 편썰기 해주세요\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 Chopped garlic\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"적당히 볶아지면 마늘을 넣어요\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"통마늘을 편썰기해서 넣어도 좋아요\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우유 300ml\",\n      \"displayName\": \"우유\",\n      \"amount\": \"300\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"우유 Milk\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"우유 300ml\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"브로콜리\",\n      \"displayName\": \"브로콜리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"브로콜리 Broccoli\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 브로콜리와 버섯도 넣어주세요\",\n          \"timestamp\": \"01:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 약간\",\n      \"displayName\": \"후추\",\n      \"amount\": \"약간\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추 약간\",\n          \"timestamp\": \"01:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리\",\n      \"displayName\": \"파슬리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"파슬리로 치장\",\n          \"timestamp\": \"02:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"새우\",\n      \"displayName\": \"새우\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"저는 생략했지만, 새우를 넣어도 잘 어울려요\",\n          \"timestamp\": \"01:24\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양송이버섯은 편썰기한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양송이는 편썰기 해주세요\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양송이버섯을 편 썰어 준비함\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"베이컨 2장을 손가락 두께로 자른다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"베이컨 2장을 썰어주세요\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"손가락 두께로 잘라주세요\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 베이컨을 넣고 노릇노릇하게 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"달군 팬에 자른 베이컨을 넣음\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"노릇노릇하게 볶아주세요\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"text\": \"베이컨이 적당히 볶아지면 마늘을 넣고 약불에서 마늘이 익을 때까지 볶는다 (통마늘을 편썰어 넣어도 좋음).\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"적당히 볶아지면 마늘을 넣어요\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"통마늘을 편썰기해서 넣어도 좋아요\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"약불에서 마늘이 익을때까지 볶아요\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"text\": \"우유 300ml를 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"우유 300ml\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볶은 베이컨과 마늘 팬에 우유를 부음\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"text\": \"보글보글 끓어오르면 체다치즈 2장을 넣고 섞어 녹인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"보글보글 끓어오르면\",\n          \"timestamp\": \"00:59\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"체다치즈 2장 넣어요\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"다시 끓기 시작하면 떡을 넣고 바닥에 눌어붙지 않게 저어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"또 끓기 시작하면 떡을 넣어요\",\n          \"timestamp\": \"01:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"눌러붙지 않게 저어주세요\",\n          \"timestamp\": \"01:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"브로콜리와 썰어둔 버섯을 넣는다 (취향에 따라 새우 추가 가능).\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 브로콜리와 버섯도 넣어주세요\",\n          \"timestamp\": \"01:19\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"저는 생략했지만, 새우를 넣어도 잘 어울려요\",\n          \"timestamp\": \"01:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"저어가며 졸여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 저으면서 졸여주기만 하면 돼요\",\n          \"timestamp\": \"01:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"후추를 약간 넣고 섞는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추 약간\",\n          \"timestamp\": \"01:32\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국물이 자작해지면 불을 끈다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"벌써 다 됐어요\",\n          \"timestamp\": \"01:40\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"국물이 자작할때 불을 꺼주세요\",\n          \"timestamp\": \"01:43\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"국물의 농도는 이정도...\",\n          \"timestamp\": \"01:49\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 떡볶이를 접시에 담고 파슬리를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"접시에 크림떡볶이를 담음\",\n          \"timestamp\": \"01:53\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"파슬리로 치장\",\n          \"timestamp\": \"02:00\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"떡볶이떡, 양송이버섯, 다진마늘, 브로콜리의 정확한 중량이나 수량은 영상에서 언급되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "크림떡볶이",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "베이컨 2장",
+          "displayName": "베이컨",
+          "amount": "2",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "베이컨 Bacon",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "베이컨 2장을 썰어주세요",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "체다치즈 2장",
+          "displayName": "체다치즈",
+          "amount": "2",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "체다치즈 Cheddar cheese",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "체다치즈 2장 넣어요",
+              "timestamp": "01:02"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "떡볶이떡",
+          "displayName": "떡볶이떡",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "떡볶이떡 Rice cake",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "또 끓기 시작하면 떡을 넣어요",
+              "timestamp": "01:11"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양송이버섯",
+          "displayName": "양송이버섯",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양송이버섯 White Mushroom",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양송이는 편썰기 해주세요",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "다진마늘",
+          "displayName": "다진마늘",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 Chopped garlic",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "적당히 볶아지면 마늘을 넣어요",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "통마늘을 편썰기해서 넣어도 좋아요",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "우유 300ml",
+          "displayName": "우유",
+          "amount": "300",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "우유 Milk",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "우유 300ml",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "브로콜리",
+          "displayName": "브로콜리",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "브로콜리 Broccoli",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 브로콜리와 버섯도 넣어주세요",
+              "timestamp": "01:19"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "후추 약간",
+          "displayName": "후추",
+          "amount": "약간",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "후추 약간",
+              "timestamp": "01:32"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "파슬리",
+          "displayName": "파슬리",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "파슬리로 치장",
+              "timestamp": "02:00"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "새우",
+          "displayName": "새우",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "저는 생략했지만, 새우를 넣어도 잘 어울려요",
+              "timestamp": "01:24"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양송이버섯은 편썰기한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양송이는 편썰기 해주세요",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양송이버섯을 편 썰어 준비함",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "베이컨 2장을 손가락 두께로 자른다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "베이컨 2장을 썰어주세요",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "손가락 두께로 잘라주세요",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "팬에 베이컨을 넣고 노릇노릇하게 볶는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "달군 팬에 자른 베이컨을 넣음",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "노릇노릇하게 볶아주세요",
+              "timestamp": "00:38"
+            }
+          ]
+        },
+        {
+          "text": "베이컨이 적당히 볶아지면 마늘을 넣고 약불에서 마늘이 익을 때까지 볶는다 (통마늘을 편썰어 넣어도 좋음).",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "적당히 볶아지면 마늘을 넣어요",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "통마늘을 편썰기해서 넣어도 좋아요",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "약불에서 마늘이 익을때까지 볶아요",
+              "timestamp": "00:50"
+            }
+          ]
+        },
+        {
+          "text": "우유 300ml를 붓는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "우유 300ml",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볶은 베이컨과 마늘 팬에 우유를 부음",
+              "timestamp": "00:54"
+            }
+          ]
+        },
+        {
+          "text": "보글보글 끓어오르면 체다치즈 2장을 넣고 섞어 녹인다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "보글보글 끓어오르면",
+              "timestamp": "00:59"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "체다치즈 2장 넣어요",
+              "timestamp": "01:02"
+            }
+          ]
+        },
+        {
+          "text": "다시 끓기 시작하면 떡을 넣고 바닥에 눌어붙지 않게 저어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "또 끓기 시작하면 떡을 넣어요",
+              "timestamp": "01:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "눌러붙지 않게 저어주세요",
+              "timestamp": "01:14"
+            }
+          ]
+        },
+        {
+          "text": "브로콜리와 썰어둔 버섯을 넣는다 (취향에 따라 새우 추가 가능).",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 브로콜리와 버섯도 넣어주세요",
+              "timestamp": "01:19"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "저는 생략했지만, 새우를 넣어도 잘 어울려요",
+              "timestamp": "01:24"
+            }
+          ]
+        },
+        {
+          "text": "저어가며 졸여준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 저으면서 졸여주기만 하면 돼요",
+              "timestamp": "01:29"
+            }
+          ]
+        },
+        {
+          "text": "후추를 약간 넣고 섞는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "후추 약간",
+              "timestamp": "01:32"
+            }
+          ]
+        },
+        {
+          "text": "국물이 자작해지면 불을 끈다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "벌써 다 됐어요",
+              "timestamp": "01:40"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "국물이 자작할때 불을 꺼주세요",
+              "timestamp": "01:43"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "국물의 농도는 이정도...",
+              "timestamp": "01:49"
+            }
+          ]
+        },
+        {
+          "text": "완성된 떡볶이를 접시에 담고 파슬리를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "접시에 크림떡볶이를 담음",
+              "timestamp": "01:53"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "파슬리로 치장",
+              "timestamp": "02:00"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "떡볶이떡, 양송이버섯, 다진마늘, 브로콜리의 정확한 중량이나 수량은 영상에서 언급되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

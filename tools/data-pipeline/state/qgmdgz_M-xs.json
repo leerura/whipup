@@ -1,0 +1,380 @@
+{
+  "videoId": "qgmdgz_M-xs",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/qgmdgz_M-xs",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-14T13:45:22.368408+00:00",
+    "rawResponse": "{\n  \"title\": \"튀기지 않은 치미창가 (다이어트 치미창가)\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"양배추 120g\",\n      \"displayName\": \"양배추\",\n      \"amount\": \"120\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양배추 120g\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 대신 양배추 작게 다지고\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"닭가슴살 100g\",\n      \"displayName\": \"닭가슴살\",\n      \"amount\": \"100\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"닭가슴살 100g\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"단백질로 닭가슴살도 얇게 썰어서 잘게 찢어줬어\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리브오일 1\",\n      \"displayName\": \"올리브오일\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"올리브오일 1\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"올리브오일에\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"겉에 올리브오일도 골고루 발라\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"카레가루 1\",\n      \"displayName\": \"카레가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"카레가루 1\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"카레랑 케찹 1스푼\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"저당 케첩 1\",\n      \"displayName\": \"저당 케첩\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"저당 케첩 1\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"카레랑 케찹 1스푼\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추 톡톡하고 잘 볶아줘\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통밀 또띠아 2장\",\n      \"displayName\": \"통밀 또띠아\",\n      \"amount\": \"2\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"통밀 또띠아 2장\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"통밀 또띠아 위에\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"모짜렐라치즈\",\n      \"displayName\": \"모짜렐라치즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"모짜렐라치즈\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"모짜렐라치즈,\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파 슬라이스\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"생략 가능한 양파 슬라이스 올려서\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소스\",\n      \"displayName\": \"소스\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(소스는 고정 댓글!)\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대망의 소스 듬뿍 뿌려 한 입 먹어봐\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양배추를 밥 대신 작게 다진다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 대신 양배추 작게 다지고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도마 위에서 양배추를 칼로 잘게 다지는 모습\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"닭가슴살을 얇게 썬 후 손으로 잘게 찢어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"단백질로 닭가슴살도 얇게 썰어서 잘게 찢어줬어\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"익힌 닭가슴살을 썰고 손으로 찢는 모습\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 올리브오일을 두르고 닭가슴살과 양배추를 넣어 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"올리브오일에 닭가슴살, 양배추 넣고 볶다가\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"달군 팬에 올리브유를 붓고 닭가슴살과 양배추를 볶는 모습\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양배추가 익으면 카레가루 1스푼, 저당 케첩 1스푼, 후추를 넣고 골고루 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양배추가 익으면 카레랑 케찹 1스푼, 후추 톡톡하고 잘 볶아줘\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"카레가루 1 저당 케첩 1 후추\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"통밀 또띠아 위에 모짜렐라 치즈, 볶은 재료, 채 썬 양파를 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"통밀 또띠아 위에 모짜렐라치즈, 볶은 재료, 생략 가능한 양파 슬라이스 올려서\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"또띠아 위에 치즈, 볶은 속재료, 양파를 얹는 모습\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"또띠아의 양 옆과 위아래를 안쪽으로 접어 네모 모양으로 만다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양옆 위아래로 접기!\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"또띠아 양옆과 위아래를 차례로 접는 모습\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"text\": \"에어프라이어 트레이에 올리고 겉면에 올리브오일을 골고루 바른다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"겉에 올리브오일도 골고루 발라\",\n          \"timestamp\": \"00:45\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"접은 또띠아 표면에 숟가락으로 올리브오일을 펴 바르는 모습\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"text\": \"에어프라이어 180도에서 10분간 구운 뒤, 뒤집어서 5분 더 굽는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"에어프라이어 180도 10분 5분\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"에프에 180도 10분 굽고 뒤집어서 5분 더 구워주면 끝\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 치미창가를 반으로 자르고 소스를 듬뿍 뿌려 먹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대망의 소스 듬뿍 뿌려 한 입 먹어봐\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"자른 치미창가 위에 흰색 및 주황색 소스를 뿌리는 모습\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"치미창가 위에 곁들이는 소스의 구체적인 재료와 배합 비율은 영상 본문에서 '(소스는 고정 댓글!)'로 안내되어 영상 화면/음성 내에서는 확인되지 않음\",\n    \"모짜렐라 치즈와 양파 슬라이스, 표면에 바르는 올리브오일의 정확한 계량 수치가 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "튀기지 않은 치미창가 (다이어트 치미창가)",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "양배추 120g",
+          "displayName": "양배추",
+          "amount": "120",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양배추 120g",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밥 대신 양배추 작게 다지고",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "닭가슴살 100g",
+          "displayName": "닭가슴살",
+          "amount": "100",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "닭가슴살 100g",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "단백질로 닭가슴살도 얇게 썰어서 잘게 찢어줬어",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "올리브오일 1",
+          "displayName": "올리브오일",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "올리브오일 1",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "올리브오일에",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "겉에 올리브오일도 골고루 발라",
+              "timestamp": "00:46"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "카레가루 1",
+          "displayName": "카레가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "카레가루 1",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "카레랑 케찹 1스푼",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "저당 케첩 1",
+          "displayName": "저당 케첩",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "저당 케첩 1",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "카레랑 케찹 1스푼",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추 톡톡하고 잘 볶아줘",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "통밀 또띠아 2장",
+          "displayName": "통밀 또띠아",
+          "amount": "2",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "통밀 또띠아 2장",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "통밀 또띠아 위에",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "모짜렐라치즈",
+          "displayName": "모짜렐라치즈",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "모짜렐라치즈",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "모짜렐라치즈,",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파 슬라이스",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "생략 가능한 양파 슬라이스 올려서",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "소스",
+          "displayName": "소스",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(소스는 고정 댓글!)",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대망의 소스 듬뿍 뿌려 한 입 먹어봐",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양배추를 밥 대신 작게 다진다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥 대신 양배추 작게 다지고",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도마 위에서 양배추를 칼로 잘게 다지는 모습",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "닭가슴살을 얇게 썬 후 손으로 잘게 찢어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "단백질로 닭가슴살도 얇게 썰어서 잘게 찢어줬어",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "익힌 닭가슴살을 썰고 손으로 찢는 모습",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "팬에 올리브오일을 두르고 닭가슴살과 양배추를 넣어 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "올리브오일에 닭가슴살, 양배추 넣고 볶다가",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "달군 팬에 올리브유를 붓고 닭가슴살과 양배추를 볶는 모습",
+              "timestamp": "00:21"
+            }
+          ]
+        },
+        {
+          "text": "양배추가 익으면 카레가루 1스푼, 저당 케첩 1스푼, 후추를 넣고 골고루 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양배추가 익으면 카레랑 케찹 1스푼, 후추 톡톡하고 잘 볶아줘",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "카레가루 1 저당 케첩 1 후추",
+              "timestamp": "00:25"
+            }
+          ]
+        },
+        {
+          "text": "통밀 또띠아 위에 모짜렐라 치즈, 볶은 재료, 채 썬 양파를 올린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "통밀 또띠아 위에 모짜렐라치즈, 볶은 재료, 생략 가능한 양파 슬라이스 올려서",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "또띠아 위에 치즈, 볶은 속재료, 양파를 얹는 모습",
+              "timestamp": "00:39"
+            }
+          ]
+        },
+        {
+          "text": "또띠아의 양 옆과 위아래를 안쪽으로 접어 네모 모양으로 만다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양옆 위아래로 접기!",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "또띠아 양옆과 위아래를 차례로 접는 모습",
+              "timestamp": "00:44"
+            }
+          ]
+        },
+        {
+          "text": "에어프라이어 트레이에 올리고 겉면에 올리브오일을 골고루 바른다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "겉에 올리브오일도 골고루 발라",
+              "timestamp": "00:45"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "접은 또띠아 표면에 숟가락으로 올리브오일을 펴 바르는 모습",
+              "timestamp": "00:46"
+            }
+          ]
+        },
+        {
+          "text": "에어프라이어 180도에서 10분간 구운 뒤, 뒤집어서 5분 더 굽는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "에어프라이어 180도 10분 5분",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "SPEECH",
+              "text": "에프에 180도 10분 굽고 뒤집어서 5분 더 구워주면 끝",
+              "timestamp": "00:48"
+            }
+          ]
+        },
+        {
+          "text": "완성된 치미창가를 반으로 자르고 소스를 듬뿍 뿌려 먹는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대망의 소스 듬뿍 뿌려 한 입 먹어봐",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "자른 치미창가 위에 흰색 및 주황색 소스를 뿌리는 모습",
+              "timestamp": "00:54"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "치미창가 위에 곁들이는 소스의 구체적인 재료와 배합 비율은 영상 본문에서 '(소스는 고정 댓글!)'로 안내되어 영상 화면/음성 내에서는 확인되지 않음",
+        "모짜렐라 치즈와 양파 슬라이스, 표면에 바르는 올리브오일의 정확한 계량 수치가 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "치미창가 사장님 죄송합니다..",
+    "sourceChannelName": "유지만 yuziman",
+    "sourceChannelId": "UCslni4iVQ-e784AU83eVcnQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/h9Vt4_UB_kTv6ijmpNN2Hw-Sv-2ACsIfI1rnEXDzx_6fDBVGeX2nJcDCEBgYBBrOJbmylUR4IeI=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-14T13:45:19.825941Z"
+  }
+}

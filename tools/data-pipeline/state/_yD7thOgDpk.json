@@ -1,0 +1,387 @@
+{
+  "videoId": "_yD7thOgDpk",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/_yD7thOgDpk",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-14T13:41:01.085725+00:00",
+    "rawResponse": "{\n  \"title\": \"허니콤보 치밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"닭다리살\",\n      \"displayName\": \"닭다리살\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국내산 닭다리살만 사용해도\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 닭다리살에\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금으로 밑간을 해준 다음\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"감자전분\",\n      \"displayName\": \"감자전분\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"감자전분\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"채망을 이용해서 감자전분을 아주 얇게 뿌려줘\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 식용유를 둘러준 다음\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 3spoons\",\n      \"displayName\": \"물\",\n      \"amount\": \"3\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 3spoons\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 물\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 2spoons\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"2\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 2spoons\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양조간장 3spoons\",\n      \"displayName\": \"양조간장\",\n      \"amount\": \"3\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장 3spoons\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양조간장\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"꿀 3spoons\",\n      \"displayName\": \"꿀\",\n      \"amount\": \"3\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"꿀 3spoons\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"꿀\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 0.7spoon\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"0.7\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 0.7spoon\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘을 넣고\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥과\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"접시에 밥을 담는 모습\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양배추채\",\n      \"displayName\": \"양배추채\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양배추채\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양배추 샐러드랑 같이\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"드레싱\",\n      \"displayName\": \"드레싱\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"드레싱\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양배추채 위에 드레싱을 뿌리는 모습\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"레드페퍼\",\n      \"displayName\": \"레드페퍼\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"레드페퍼\",\n          \"timestamp\": \"00:55\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 여기에 레드페퍼와\",\n          \"timestamp\": \"00:55\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리\",\n      \"displayName\": \"파슬리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"파슬리\",\n          \"timestamp\": \"00:57\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"파슬리 살짝 뿌려서\",\n          \"timestamp\": \"00:57\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"닭다리살의 앞뒤에 소금으로 밑간을 하고, 채망을 사용해 감자전분을 앞뒤로 아주 얇게 골고루 뿌려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 닭다리살에 소금으로 밑간을 해준 다음 채망을 이용해서 감자전분을 아주 얇게 뿌려줘\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"닭다리살을 뒤집어 반대편에도 소금과 감자전분을 뿌림\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유를 두르고 전분을 묻힌 닭다리살을 올려 중불에서 앞뒤로 노릇노릇하고 바삭하게 구워낸 뒤 건져둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 식용유를 둘러준 다음 닭다리살을 올리고 중불에서 노릇노릇하게 구워줄 거야\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"구워진 치킨을 망에 올려 기름을 뺌\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 물 3스푼, 맛술 2스푼, 양조간장 3스푼, 꿀 3스푼, 다진 마늘 0.7스푼을 넣고 바글바글 끓여 소스가 끈적끈적해질 때까지 졸인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 물, 맛술, 양조간장, 꿀, 다진 마늘을 넣고 빠글빠글 끓여줘 소스가 끈적끈적해지면\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 끄고 구워둔 치킨을 소스에 넣어 앞뒤로 빠르게 적셔 소스를 입힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불을 끄고 치킨을 앞뒤로 빠르게 적셔줄 거야\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소스를 입힌 치킨을 먹기 좋은 크기로 잘라 접시에 밥, 양배추채와 함께 담고 양배추채 위에 드레싱을 뿌린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"치킨을 먹기 좋게 잘라준 다음 밥과 양배추 샐러드랑 같이 플레이팅을 해줘\",\n          \"timestamp\": \"00:49\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마지막으로 레드페퍼와 파슬리를 살짝 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 여기에 레드페퍼와 파슬리 살짝 뿌려서 남아있는 느끼함 잡아주면 허니콤보 치밥 끝\",\n          \"timestamp\": \"00:55\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "허니콤보 치밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "닭다리살",
+          "displayName": "닭다리살",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "국내산 닭다리살만 사용해도",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 닭다리살에",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "소금",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소금으로 밑간을 해준 다음",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "감자전분",
+          "displayName": "감자전분",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "감자전분",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "채망을 이용해서 감자전분을 아주 얇게 뿌려줘",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "팬에 식용유를 둘러준 다음",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "물 3spoons",
+          "displayName": "물",
+          "amount": "3",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 3spoons",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "SPEECH",
+              "text": "팬에 물",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "맛술 2spoons",
+          "displayName": "맛술",
+          "amount": "2",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 2spoons",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "맛술",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "양조간장 3spoons",
+          "displayName": "양조간장",
+          "amount": "3",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장 3spoons",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양조간장",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "꿀 3spoons",
+          "displayName": "꿀",
+          "amount": "3",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "꿀 3spoons",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "SPEECH",
+              "text": "꿀",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "다진 마늘 0.7spoon",
+          "displayName": "다진 마늘",
+          "amount": "0.7",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 0.7spoon",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘을 넣고",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥과",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "접시에 밥을 담는 모습",
+              "timestamp": "00:52"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "양배추채",
+          "displayName": "양배추채",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양배추채",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양배추 샐러드랑 같이",
+              "timestamp": "00:53"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "드레싱",
+          "displayName": "드레싱",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "드레싱",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양배추채 위에 드레싱을 뿌리는 모습",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "레드페퍼",
+          "displayName": "레드페퍼",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "레드페퍼",
+              "timestamp": "00:55"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 여기에 레드페퍼와",
+              "timestamp": "00:55"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "파슬리",
+          "displayName": "파슬리",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "파슬리",
+              "timestamp": "00:57"
+            },
+            {
+              "type": "SPEECH",
+              "text": "파슬리 살짝 뿌려서",
+              "timestamp": "00:57"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        }
+      ],
+      "steps": [
+        {
+          "text": "닭다리살의 앞뒤에 소금으로 밑간을 하고, 채망을 사용해 감자전분을 앞뒤로 아주 얇게 골고루 뿌려준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 닭다리살에 소금으로 밑간을 해준 다음 채망을 이용해서 감자전분을 아주 얇게 뿌려줘",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "닭다리살을 뒤집어 반대편에도 소금과 감자전분을 뿌림",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유를 두르고 전분을 묻힌 닭다리살을 올려 중불에서 앞뒤로 노릇노릇하고 바삭하게 구워낸 뒤 건져둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 식용유를 둘러준 다음 닭다리살을 올리고 중불에서 노릇노릇하게 구워줄 거야",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "구워진 치킨을 망에 올려 기름을 뺌",
+              "timestamp": "00:31"
+            }
+          ]
+        },
+        {
+          "text": "팬에 물 3스푼, 맛술 2스푼, 양조간장 3스푼, 꿀 3스푼, 다진 마늘 0.7스푼을 넣고 바글바글 끓여 소스가 끈적끈적해질 때까지 졸인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 물, 맛술, 양조간장, 꿀, 다진 마늘을 넣고 빠글빠글 끓여줘 소스가 끈적끈적해지면",
+              "timestamp": "00:34"
+            }
+          ]
+        },
+        {
+          "text": "불을 끄고 구워둔 치킨을 소스에 넣어 앞뒤로 빠르게 적셔 소스를 입힌다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "불을 끄고 치킨을 앞뒤로 빠르게 적셔줄 거야",
+              "timestamp": "00:41"
+            }
+          ]
+        },
+        {
+          "text": "소스를 입힌 치킨을 먹기 좋은 크기로 잘라 접시에 밥, 양배추채와 함께 담고 양배추채 위에 드레싱을 뿌린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "치킨을 먹기 좋게 잘라준 다음 밥과 양배추 샐러드랑 같이 플레이팅을 해줘",
+              "timestamp": "00:49"
+            }
+          ]
+        },
+        {
+          "text": "마지막으로 레드페퍼와 파슬리를 살짝 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 여기에 레드페퍼와 파슬리 살짝 뿌려서 남아있는 느끼함 잡아주면 허니콤보 치밥 끝",
+              "timestamp": "00:55"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "딱 10분이면 반값에 만들 수 있습니다!",
+    "sourceChannelName": "1분요리 뚝딱이형",
+    "sourceChannelId": "UC0htUSwcxfSGNfK_5Q28JkA",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/MHTy5jXZQPwKwrGtAV-gLL6ei9YTOgR8Z6GESkhAAIz0kkG4d6B6vu6CUPNNsLOzqcGxGfBK=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-14T13:40:58.625790Z"
+  }
+}

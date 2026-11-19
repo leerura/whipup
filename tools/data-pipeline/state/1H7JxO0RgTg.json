@@ -1,0 +1,342 @@
+{
+  "videoId": "1H7JxO0RgTg",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/1H7JxO0RgTg",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-08T09:31:25.975029+00:00",
+    "rawResponse": "{\n  \"title\": \"스팸참치마요 덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥위에 계란,스팸,참치마요 이쁘게 깔아주시고\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김가루\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 김가루 뿌려주면 맛있는 스팸참치마요 덮밥 완성 ❤️\",\n          \"timestamp\": \"01:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"스팸\",\n      \"displayName\": \"스팸\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스팸\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"스팸은 먹기 좋은 크기로 준비해주세요\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치\",\n      \"displayName\": \"참치\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참치는 기름을 빼서 준비해주시고\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란\",\n      \"displayName\": \"계란\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란으로 이제 스크램블 만들어 볼게요 계란은 하나씩 볶아줬어요\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마요네즈\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마요네즈\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기름기 짜낸 참치에 마요네즈를 듬뿍 넣어주세요\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마요네즈를 그위에 얇게 뿌려주세요!\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 5 / 진간장 5숟가락\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"5\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장5\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"진간장 5숟가락 넣어주세요\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 4 / 설탕 4숟가락\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"4\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕4\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 4숟가락\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그다음 후추 조금 톡톡 뿌려주세요\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 반컵\",\n      \"displayName\": \"물\",\n      \"amount\": \"반\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"약불에 물 반컵 넣어주시고\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먹기좋게 해놓은 스팸을 식용유에 볶아주세요\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"참치는 기름을 빼서 준비하고, 스팸은 먹기 좋은 크기로 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참치는 기름을 빼서 준비해주시고,스팸은 먹기 좋은 크기로 준비해주세요\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"기름기를 짠 참치에 마요네즈를 듬뿍 넣고 후추를 조금 톡톡 뿌려 골고루 섞어 참치마요를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기름기 짜낸 참치에 마요네즈를 듬뿍 넣어주세요\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그다음 후추 조금 톡톡 뿌려주세요\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"골고루 슥슥 비벼줍니다\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 설탕 4숟가락, 진간장 5숟가락, 물 반 컵을 넣고 약불에서 설탕이 눌어붙지 않게 저어가며 끓여 양념 소스를 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양념을 만들어 볼게요 설탕 4숟가락, 진간장 5숟가락 넣어주세요\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"약불에 물 반컵 넣어주시고 설탕이 늘러붙지 않게 잘 저어주세요\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕이 다 녹으면 양념 끝!\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유를 두르고 썰어둔 스팸을 노릇노릇하게 볶은 뒤 기름기를 털어 덜어둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먹기좋게 해놓은 스팸을 식용유에 볶아주세요\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"노릇노릇 볶아졌으면 기름기를 털어서 덜어주세요\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 계란을 넣고 저어가며 스크램블을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란으로 이제 스크램블 만들어 볼게요 계란은 하나씩 볶아줬어요 한번에 많이 해버리면 양이 줄어드는 느낌이..(개인적인 생각)\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇의 밥 위에 계란 스크램블, 볶은 스팸, 참치마요를 올리고 마요네즈를 얇게 뿌려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥위에 계란,스팸,참치마요 이쁘게 깔아주시고 마요네즈를 그위에 얇게 뿌려주세요! (마요네즈 뚜껑에 비닐씌우고 이쑤시개로 구멍 뚫어서 얇게 뿌렸어요!)\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마지막으로 김가루를 뿌려 스팸참치마요 덮밥을 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 김가루 뿌려주면 맛있는 스팸참치마요 덮밥 완성 ❤️\",\n          \"timestamp\": \"01:11\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"간장 소스를 밥 위에 붓는 구체적인 시점이나 양은 자막이나 나레이션에서 별도로 언급되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "스팸참치마요 덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "밥위에 계란,스팸,참치마요 이쁘게 깔아주시고",
+              "timestamp": "01:05"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "김가루",
+          "displayName": "김가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김가루",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 김가루 뿌려주면 맛있는 스팸참치마요 덮밥 완성 ❤️",
+              "timestamp": "01:11"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "스팸",
+          "displayName": "스팸",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스팸",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "스팸은 먹기 좋은 크기로 준비해주세요",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "참치",
+          "displayName": "참치",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "참치는 기름을 빼서 준비해주시고",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "계란",
+          "displayName": "계란",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란으로 이제 스크램블 만들어 볼게요 계란은 하나씩 볶아줬어요",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "마요네즈",
+          "displayName": "마요네즈",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마요네즈",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "기름기 짜낸 참치에 마요네즈를 듬뿍 넣어주세요",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마요네즈를 그위에 얇게 뿌려주세요!",
+              "timestamp": "01:05"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "간장 5 / 진간장 5숟가락",
+          "displayName": "진간장",
+          "amount": "5",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장5",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "진간장 5숟가락 넣어주세요",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "설탕 4 / 설탕 4숟가락",
+          "displayName": "설탕",
+          "amount": "4",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕4",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 4숟가락",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그다음 후추 조금 톡톡 뿌려주세요",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "물 반컵",
+          "displayName": "물",
+          "amount": "반",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "약불에 물 반컵 넣어주시고",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먹기좋게 해놓은 스팸을 식용유에 볶아주세요",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "참치는 기름을 빼서 준비하고, 스팸은 먹기 좋은 크기로 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "참치는 기름을 빼서 준비해주시고,스팸은 먹기 좋은 크기로 준비해주세요",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "기름기를 짠 참치에 마요네즈를 듬뿍 넣고 후추를 조금 톡톡 뿌려 골고루 섞어 참치마요를 만든다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "기름기 짜낸 참치에 마요네즈를 듬뿍 넣어주세요",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그다음 후추 조금 톡톡 뿌려주세요",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "골고루 슥슥 비벼줍니다",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "팬에 설탕 4숟가락, 진간장 5숟가락, 물 반 컵을 넣고 약불에서 설탕이 눌어붙지 않게 저어가며 끓여 양념 소스를 완성한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양념을 만들어 볼게요 설탕 4숟가락, 진간장 5숟가락 넣어주세요",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "약불에 물 반컵 넣어주시고 설탕이 늘러붙지 않게 잘 저어주세요",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕이 다 녹으면 양념 끝!",
+              "timestamp": "00:28"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유를 두르고 썰어둔 스팸을 노릇노릇하게 볶은 뒤 기름기를 털어 덜어둔다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먹기좋게 해놓은 스팸을 식용유에 볶아주세요",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "노릇노릇 볶아졌으면 기름기를 털어서 덜어주세요",
+              "timestamp": "00:39"
+            }
+          ]
+        },
+        {
+          "text": "팬에 계란을 넣고 저어가며 스크램블을 만든다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "계란으로 이제 스크램블 만들어 볼게요 계란은 하나씩 볶아줬어요 한번에 많이 해버리면 양이 줄어드는 느낌이..(개인적인 생각)",
+              "timestamp": "00:45"
+            }
+          ]
+        },
+        {
+          "text": "그릇의 밥 위에 계란 스크램블, 볶은 스팸, 참치마요를 올리고 마요네즈를 얇게 뿌려준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "밥위에 계란,스팸,참치마요 이쁘게 깔아주시고 마요네즈를 그위에 얇게 뿌려주세요! (마요네즈 뚜껑에 비닐씌우고 이쑤시개로 구멍 뚫어서 얇게 뿌렸어요!)",
+              "timestamp": "01:05"
+            }
+          ]
+        },
+        {
+          "text": "마지막으로 김가루를 뿌려 스팸참치마요 덮밥을 완성한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 김가루 뿌려주면 맛있는 스팸참치마요 덮밥 완성 ❤️",
+              "timestamp": "01:11"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "간장 소스를 밥 위에 붓는 구체적인 시점이나 양은 자막이나 나레이션에서 별도로 언급되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

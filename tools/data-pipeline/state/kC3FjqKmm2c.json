@@ -1,0 +1,405 @@
+{
+  "videoId": "kC3FjqKmm2c",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/kC3FjqKmm2c",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-15T08:08:41.301625+00:00",
+    "rawResponse": "{\n  \"title\": \"업그레이드 약고추장\",\n  \"description\": \"기름기가 적은 다진 소고기를 바싹 볶고 참기름 대신 올리브유를 활용해 깔끔하고 부드럽게 만든 소고기 볶음고추장(약고추장) 레시피입니다.\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"다진 소고기\",\n      \"displayName\": \"다진 소고기\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 소고기는 마트에서 파는 다진 소고기를 준비해 주세요\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"최대한 기름 없는 고기를 골라줍니다!\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1개 통째로\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파는 1개 통째로 최대한 작게 다져주고요\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파는 1개 통째로\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파도 비슷하게 잘게 다져줄게요\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파도 비슷하게\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 5스푼\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기에 맛술 5스푼 넣고 약불에서 달달달 볶아서 수분을 최대한 날려줍니다\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"맛술 5스푼 넣고\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리브유 10숟갈\",\n      \"displayName\": \"올리브유\",\n      \"amount\": \"10\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"올리브유 10숟갈 두르고\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"올리브유 10숟갈 두르고\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"저희는 유기농 올리브유를 사용해서 윤기는 살리고 조금 더 부드럽고 깔끔한 소고기고추장을 만들었어요\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 5컵\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"5\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 5컵\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장 5컵\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 2숟갈\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"2\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스 2숟갈\",\n          \"timestamp\": \"00:55\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"굴소스 2숟갈\",\n          \"timestamp\": \"00:55\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"알룰로스 7숟갈\",\n      \"displayName\": \"알룰로스\",\n      \"amount\": \"7\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"알룰로스 7숟갈\",\n          \"timestamp\": \"00:56\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"알룰로스 7숟갈\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 5숟갈\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"5\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술 5숟갈 넣어서 골고루 섞어줍니다\",\n          \"timestamp\": \"00:57\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"맛술 5숟갈 넣어서\",\n          \"timestamp\": \"00:57\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1숟갈\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 참기름 1숟갈\",\n          \"timestamp\": \"01:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참기름 1숟갈\",\n          \"timestamp\": \"01:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"볶은깨 3숟갈\",\n      \"displayName\": \"볶은깨\",\n      \"amount\": \"3\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"볶은깨 3숟갈 추가해 주고요\",\n          \"timestamp\": \"01:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"볶은깨 3숟갈\",\n          \"timestamp\": \"01:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 부추\",\n      \"displayName\": \"부추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"쫑쫑쫑 다진 부추랑\",\n          \"timestamp\": \"01:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"쫑쫑쫑 다진 부추랑\",\n          \"timestamp\": \"01:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란후라이\",\n      \"displayName\": \"계란\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고소한 계란후라이까지 더해서 슥슥 비벼주고!\",\n          \"timestamp\": \"01:12\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고소한 계란후라이까지 더해서\",\n          \"timestamp\": \"01:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"도시락김\",\n      \"displayName\": \"도시락김\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 집에 있는 도시락김 하나 까서 올려 먹으면...!!\",\n          \"timestamp\": \"01:15\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"도시락김 하나 까서\",\n          \"timestamp\": \"01:16\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"식었을 때 하얀 기름이 굳지 않도록 최대한 지방이 적고 기름기 없는 다진 소고기를 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 소고기는 마트에서 파는 다진 소고기를 준비해 주세요 소고기에 지방이 많으면 나중에 식었을 때 하얀 기름이 굳을 수 있으니까요 최대한 기름 없는 고기를 골라줍니다!\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 1개를 통째로 최대한 작게 다지고, 대파도 잘게 다져준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파는 1개 통째로 최대한 작게 다져주고요 대파도 비슷하게 잘게 다져줄게요\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 다진 소고기와 맛술 5스푼을 넣고 약불에서 달달 볶아 수분이 없도록 바싹 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬으로 가서 고기를 볶아줄 건데요 여기서 포인트 최대한 수분이 없이 고기를 바싹 볶아야 보관기간도 길어지고 농도 조절하기도 쉽거든요! 고기에 맛술 5스푼 넣고 약불에서 달달달 볶아서 수분을 최대한 날려줍니다\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"수분이 날아간 고기에 올리브유 10숟갈을 두르고 손질해 둔 양파와 대파를 넣어 강불에서 1분간 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"올리브유 10숟갈 두르고 손질해둔 양파랑 대파 넣어서 강불에서 1분 볶아줍니다\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고추장이 타지 않도록 불을 중불로 줄인 뒤, 고추장 5컵, 굴소스 2숟갈, 알룰로스 7숟갈, 맛술 5숟갈을 넣고 골고루 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 고추장이 타지 않게 중불로 줄여주고요 고추장 5컵, 굴소스 2숟갈, 알룰로스 7숟갈, 맛술 5숟갈 넣어서 골고루 섞어줍니다\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    },\n    {\n      \"text\": \"온도가 올라 기포가 뽀글뽀글 올라오면 한 번 저어주고 다시 기포가 올라올 때까지 기다리는 과정을 약 5회 반복한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"온도가 점점 올라가면 기포가 뽀글뽀글 올라오는 거 보이시나요? 이때 한 번 더 저어주고요 다시 기포가 올라오길 기다려주세요 이렇게 5번 정도 반복한 다음\",\n          \"timestamp\": \"00:59\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마지막으로 참기름 1숟갈과 볶은깨 3숟갈을 추가하여 약고추장을 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 참기름 1숟갈, 볶은깨 3숟갈 추가해 주고요\",\n          \"timestamp\": \"01:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"(선택사항) 밥 위에 약고추장, 쫑쫑 다진 부추, 계란후라이를 올려 비빈 뒤 도시락김에 싸서 먹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"쫑쫑쫑 다진 부추랑 고소한 계란후라이까지 더해서 슥슥 비벼주고! 여기에 집에 있는 도시락김 하나 까서 올려 먹으면...!!\",\n          \"timestamp\": \"01:11\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"다진 소고기의 정확한 중량(g 또는 팩 수)은 영상에서 구체적인 수치로 명시되지 않음(영상 화면상 마트 팩 2개 지참)\",\n    \"대파의 구체적인 개수나 양은 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "업그레이드 약고추장",
+      "description": "기름기가 적은 다진 소고기를 바싹 볶고 참기름 대신 올리브유를 활용해 깔끔하고 부드럽게 만든 소고기 볶음고추장(약고추장) 레시피입니다.",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "다진 소고기",
+          "displayName": "다진 소고기",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 소고기는 마트에서 파는 다진 소고기를 준비해 주세요",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "최대한 기름 없는 고기를 골라줍니다!",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파 1개 통째로",
+          "displayName": "양파",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파는 1개 통째로 최대한 작게 다져주고요",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파는 1개 통째로",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파도 비슷하게 잘게 다져줄게요",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대파도 비슷하게",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "맛술 5스푼",
+          "displayName": "맛술",
+          "amount": "5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고기에 맛술 5스푼 넣고 약불에서 달달달 볶아서 수분을 최대한 날려줍니다",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "맛술 5스푼 넣고",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "올리브유 10숟갈",
+          "displayName": "올리브유",
+          "amount": "10",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "올리브유 10숟갈 두르고",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "올리브유 10숟갈 두르고",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "저희는 유기농 올리브유를 사용해서 윤기는 살리고 조금 더 부드럽고 깔끔한 소고기고추장을 만들었어요",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "고추장 5컵",
+          "displayName": "고추장",
+          "amount": "5",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고추장 5컵",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고추장 5컵",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "굴소스 2숟갈",
+          "displayName": "굴소스",
+          "amount": "2",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "굴소스 2숟갈",
+              "timestamp": "00:55"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "굴소스 2숟갈",
+              "timestamp": "00:55"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "알룰로스 7숟갈",
+          "displayName": "알룰로스",
+          "amount": "7",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "알룰로스 7숟갈",
+              "timestamp": "00:56"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "알룰로스 7숟갈",
+              "timestamp": "00:56"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "맛술 5숟갈",
+          "displayName": "맛술",
+          "amount": "5",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "맛술 5숟갈 넣어서 골고루 섞어줍니다",
+              "timestamp": "00:57"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "맛술 5숟갈 넣어서",
+              "timestamp": "00:57"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "참기름 1숟갈",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 참기름 1숟갈",
+              "timestamp": "01:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "참기름 1숟갈",
+              "timestamp": "01:08"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "볶은깨 3숟갈",
+          "displayName": "볶은깨",
+          "amount": "3",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "볶은깨 3숟갈 추가해 주고요",
+              "timestamp": "01:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "볶은깨 3숟갈",
+              "timestamp": "01:09"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "다진 부추",
+          "displayName": "부추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "쫑쫑쫑 다진 부추랑",
+              "timestamp": "01:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "쫑쫑쫑 다진 부추랑",
+              "timestamp": "01:11"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "계란후라이",
+          "displayName": "계란",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고소한 계란후라이까지 더해서 슥슥 비벼주고!",
+              "timestamp": "01:12"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고소한 계란후라이까지 더해서",
+              "timestamp": "01:12"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "도시락김",
+          "displayName": "도시락김",
+          "amount": "1",
+          "unit": "개",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 집에 있는 도시락김 하나 까서 올려 먹으면...!!",
+              "timestamp": "01:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "도시락김 하나 까서",
+              "timestamp": "01:16"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        }
+      ],
+      "steps": [
+        {
+          "text": "식었을 때 하얀 기름이 굳지 않도록 최대한 지방이 적고 기름기 없는 다진 소고기를 준비한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 소고기는 마트에서 파는 다진 소고기를 준비해 주세요 소고기에 지방이 많으면 나중에 식었을 때 하얀 기름이 굳을 수 있으니까요 최대한 기름 없는 고기를 골라줍니다!",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "양파 1개를 통째로 최대한 작게 다지고, 대파도 잘게 다져준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파는 1개 통째로 최대한 작게 다져주고요 대파도 비슷하게 잘게 다져줄게요",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "팬에 다진 소고기와 맛술 5스푼을 넣고 약불에서 달달 볶아 수분이 없도록 바싹 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 팬으로 가서 고기를 볶아줄 건데요 여기서 포인트 최대한 수분이 없이 고기를 바싹 볶아야 보관기간도 길어지고 농도 조절하기도 쉽거든요! 고기에 맛술 5스푼 넣고 약불에서 달달달 볶아서 수분을 최대한 날려줍니다",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "수분이 날아간 고기에 올리브유 10숟갈을 두르고 손질해 둔 양파와 대파를 넣어 강불에서 1분간 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "올리브유 10숟갈 두르고 손질해둔 양파랑 대파 넣어서 강불에서 1분 볶아줍니다",
+              "timestamp": "00:38"
+            }
+          ]
+        },
+        {
+          "text": "고추장이 타지 않도록 불을 중불로 줄인 뒤, 고추장 5컵, 굴소스 2숟갈, 알룰로스 7숟갈, 맛술 5숟갈을 넣고 골고루 섞어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 고추장이 타지 않게 중불로 줄여주고요 고추장 5컵, 굴소스 2숟갈, 알룰로스 7숟갈, 맛술 5숟갈 넣어서 골고루 섞어줍니다",
+              "timestamp": "00:51"
+            }
+          ]
+        },
+        {
+          "text": "온도가 올라 기포가 뽀글뽀글 올라오면 한 번 저어주고 다시 기포가 올라올 때까지 기다리는 과정을 약 5회 반복한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "온도가 점점 올라가면 기포가 뽀글뽀글 올라오는 거 보이시나요? 이때 한 번 더 저어주고요 다시 기포가 올라오길 기다려주세요 이렇게 5번 정도 반복한 다음",
+              "timestamp": "00:59"
+            }
+          ]
+        },
+        {
+          "text": "마지막으로 참기름 1숟갈과 볶은깨 3숟갈을 추가하여 약고추장을 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 참기름 1숟갈, 볶은깨 3숟갈 추가해 주고요",
+              "timestamp": "01:07"
+            }
+          ]
+        },
+        {
+          "text": "(선택사항) 밥 위에 약고추장, 쫑쫑 다진 부추, 계란후라이를 올려 비빈 뒤 도시락김에 싸서 먹는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "쫑쫑쫑 다진 부추랑 고소한 계란후라이까지 더해서 슥슥 비벼주고! 여기에 집에 있는 도시락김 하나 까서 올려 먹으면...!!",
+              "timestamp": "01:11"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "다진 소고기의 정확한 중량(g 또는 팩 수)은 영상에서 구체적인 수치로 명시되지 않음(영상 화면상 마트 팩 2개 지참)",
+        "대파의 구체적인 개수나 양은 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "여름방학 시작하면, 무조건 만드는 레시피!",
+    "sourceChannelName": "김진순 점심시간",
+    "sourceChannelId": "UC9She1e6OWUpwJpwZtbqhjQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/BvOrdVOmTRlMEFygfbeuka_30BrSZenSof2_yC4RCxF0gEKvRzJTn6NEzMTJYQSe8aBxV9iMbQ=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-15T08:08:38.502750Z"
+  }
+}

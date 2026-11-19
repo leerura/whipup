@@ -1,0 +1,310 @@
+{
+  "videoId": "tWPWd65NiPU",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/tWPWd65NiPU",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-08T09:01:30.059343+00:00",
+    "rawResponse": "{\n  \"title\": \"대패삼겹살 덮밥\",\n  \"description\": null,\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"대패삼겹살 200g\",\n      \"displayName\": \"대패삼겹살\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬에 대패 삼겹살 200g을 올려줍니다.\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"300g\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 1스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 1스푼\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+진간장 1스푼\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"스테이크나 돈가스 소스 1스푼\",\n      \"displayName\": \"돈가스 소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"스테이크나 돈가스 소스 1스푼\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+돈가스 소스 1스푼\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"돈가스 소스가 없다면 진간장으로 대체해 주시면 됩니다.\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕은 숟가락에 평평하게 1스푼 넣어주고\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+설탕 1스푼\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 반 컵 (약 100ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"1/2\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 반 컵(약 100ml) 넣어줍니다.\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"+물 1/2컵\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛소금 살짝\",\n      \"displayName\": \"맛소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이때 맛소금이나 후추를 살짝 뿌려주시면 더더욱 맛이 좋습니다.\",\n          \"timestamp\": \"00:58\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 살짝\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이때 맛소금이나 후추를 살짝 뿌려주시면 더더욱 맛이 좋습니다.\",\n          \"timestamp\": \"00:58\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 반 개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 반 개를 본인 능력껏 얍실하게 썰어서 다 넣어줍니다.\",\n          \"timestamp\": \"01:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 2개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그 사이에 계란 두 개를 톡톡 까서\",\n          \"timestamp\": \"01:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 한 공기\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다 됐으면 그릇에 밥 한 공기를 뒤집어서 빼주고\",\n          \"timestamp\": \"02:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리\",\n      \"displayName\": \"파슬리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 있어 보이게 파슬리를 넉넉하게 뿌려줍니다.\",\n          \"timestamp\": \"02:06\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"볼에 진간장 1스푼, 돈가스 소스(또는 스테이크 소스) 1스푼, 설탕 1스푼, 물 반 컵(약 100ml)을 넣고 설탕이 녹을 때까지 잘 섞어 양념장을 만듭니다. (돈가스 소스가 없다면 진간장으로 대체 가능)\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 양념장을 준비해 줍시다. 진간장 1스푼, 스테이크나 돈가스 소스 1스푼, 설탕은 숟가락에 평평하게 1스푼 넣어주고, 물 반 컵(약 100ml) 넣어줍니다. 그라고 설탕이 녹도록 잘 슥까 줍니다.\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"돈가스 소스가 없다면 진간장으로 대체해 주시면 됩니다.\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 대패삼겹살 200g을 올리고 노릇노릇하게 굽습니다. 이때 취향에 따라 맛소금이나 후추를 살짝 뿌려주고 크기가 크다면 먹기 좋은 크기로 잘라가며 굽습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬에 대패 삼겹살 200g을 올려줍니다.\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 대패삼겹살을 노릇노릇하게 잘 구워줍니다. 이때 맛소금이나 후추를 살짝 뿌려주시면 더더욱 맛이 좋습니다.\",\n          \"timestamp\": \"00:56\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만약 대패삼겹살이 크다면 먹기 좋은 한 입 크기로 잘라주시면 됩니다. 그러고 마저 잘 구워줍니다.\",\n          \"timestamp\": \"01:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기가 익으면 팬 가장자리로 밀어두고, 얇게 채 썬 양파 반 개를 넣어 기름에 1~2분 정도 노릇노릇하게 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"잘 익은 대패삼겹살을 팬 가 쪽으로 살짝 빼주고 양파 반 개를 본인 능력껏 얍실하게 썰어서 다 넣어줍니다.\",\n          \"timestamp\": \"01:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그라고 양파도 노릇노릇해질 때까지 기름에 한번 볶아줍니다. 1~2분 정도 씩에 볶아주다가\",\n          \"timestamp\": \"01:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"미리 만들어 둔 양념장을 모두 붓고 고기와 양파에 양념이 배도록 1~2분간 끓여 졸여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"미리 만들어둔 양념장을 다 넣어줍니다. 그리고 1~2분간 고기와 양파에 양념이 배도록 양념장을 한번 살짝 끓여줍니다.\",\n          \"timestamp\": \"01:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 2개를 풀어 계란물을 만든 뒤, 졸아든 양념 위에 붓고 젓가락으로 가볍게 흔들어 펼쳐준 다음 서서히 익을 때까지 그대로 둡니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그 사이에 계란 두 개를 톡톡 까서 노른자를 흔들어가 잘 풀어줍니다.\",\n          \"timestamp\": \"01:40\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"인자 살짝 졸여진 양념 위로 계란물을 다 부어줍니다. 이때 꿀팁 하나 말씀드리자면 계란물이 잘 퍼질 수 있도록 계란물을 부어주는 동시에 바로 흔들어 재껴줍니다. 그러고 서서히 익을 때까지 가만히 내버려 둡니다.\",\n          \"timestamp\": \"01:46\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 밥 한 공기를 담고 그 위에 조리한 대패삼겹살과 계란을 얹은 뒤 파슬리를 뿌려 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다 됐으면 그릇에 밥 한 공기를 뒤집어서 빼주고 밥 위로 다 얹어줍니다. 마지막으로 있어 보이게 파슬리를 넉넉하게 뿌려줍니다.\",\n          \"timestamp\": \"02:02\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "대패삼겹살 덮밥",
+      "description": null,
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "대패삼겹살 200g",
+          "displayName": "대패삼겹살",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 팬에 대패 삼겹살 200g을 올려줍니다.",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "300g",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "진간장 1스푼",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "진간장 1스푼",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+진간장 1스푼",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "스테이크나 돈가스 소스 1스푼",
+          "displayName": "돈가스 소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "스테이크나 돈가스 소스 1스푼",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+돈가스 소스 1스푼",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SPEECH",
+              "text": "돈가스 소스가 없다면 진간장으로 대체해 주시면 됩니다.",
+              "timestamp": "00:42"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "설탕 1스푼",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "설탕은 숟가락에 평평하게 1스푼 넣어주고",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+설탕 1스푼",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "물 반 컵 (약 100ml)",
+          "displayName": "물",
+          "amount": "1/2",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 반 컵(약 100ml) 넣어줍니다.",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "+물 1/2컵",
+              "timestamp": "00:32"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "맛소금 살짝",
+          "displayName": "맛소금",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이때 맛소금이나 후추를 살짝 뿌려주시면 더더욱 맛이 좋습니다.",
+              "timestamp": "00:58"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "후추 살짝",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이때 맛소금이나 후추를 살짝 뿌려주시면 더더욱 맛이 좋습니다.",
+              "timestamp": "00:58"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "양파 반 개",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 반 개를 본인 능력껏 얍실하게 썰어서 다 넣어줍니다.",
+              "timestamp": "01:23"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "계란 2개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그 사이에 계란 두 개를 톡톡 까서",
+              "timestamp": "01:40"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "밥 한 공기",
+          "displayName": "밥",
+          "amount": "1",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다 됐으면 그릇에 밥 한 공기를 뒤집어서 빼주고",
+              "timestamp": "02:02"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "파슬리",
+          "displayName": "파슬리",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 있어 보이게 파슬리를 넉넉하게 뿌려줍니다.",
+              "timestamp": "02:06"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "볼에 진간장 1스푼, 돈가스 소스(또는 스테이크 소스) 1스푼, 설탕 1스푼, 물 반 컵(약 100ml)을 넣고 설탕이 녹을 때까지 잘 섞어 양념장을 만듭니다. (돈가스 소스가 없다면 진간장으로 대체 가능)",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 양념장을 준비해 줍시다. 진간장 1스푼, 스테이크나 돈가스 소스 1스푼, 설탕은 숟가락에 평평하게 1스푼 넣어주고, 물 반 컵(약 100ml) 넣어줍니다. 그라고 설탕이 녹도록 잘 슥까 줍니다.",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "돈가스 소스가 없다면 진간장으로 대체해 주시면 됩니다.",
+              "timestamp": "00:42"
+            }
+          ]
+        },
+        {
+          "text": "팬에 대패삼겹살 200g을 올리고 노릇노릇하게 굽습니다. 이때 취향에 따라 맛소금이나 후추를 살짝 뿌려주고 크기가 크다면 먹기 좋은 크기로 잘라가며 굽습니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 팬에 대패 삼겹살 200g을 올려줍니다.",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 대패삼겹살을 노릇노릇하게 잘 구워줍니다. 이때 맛소금이나 후추를 살짝 뿌려주시면 더더욱 맛이 좋습니다.",
+              "timestamp": "00:56"
+            },
+            {
+              "type": "SPEECH",
+              "text": "만약 대패삼겹살이 크다면 먹기 좋은 한 입 크기로 잘라주시면 됩니다. 그러고 마저 잘 구워줍니다.",
+              "timestamp": "01:04"
+            }
+          ]
+        },
+        {
+          "text": "고기가 익으면 팬 가장자리로 밀어두고, 얇게 채 썬 양파 반 개를 넣어 기름에 1~2분 정도 노릇노릇하게 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "잘 익은 대패삼겹살을 팬 가 쪽으로 살짝 빼주고 양파 반 개를 본인 능력껏 얍실하게 썰어서 다 넣어줍니다.",
+              "timestamp": "01:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그라고 양파도 노릇노릇해질 때까지 기름에 한번 볶아줍니다. 1~2분 정도 씩에 볶아주다가",
+              "timestamp": "01:28"
+            }
+          ]
+        },
+        {
+          "text": "미리 만들어 둔 양념장을 모두 붓고 고기와 양파에 양념이 배도록 1~2분간 끓여 졸여줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "미리 만들어둔 양념장을 다 넣어줍니다. 그리고 1~2분간 고기와 양파에 양념이 배도록 양념장을 한번 살짝 끓여줍니다.",
+              "timestamp": "01:33"
+            }
+          ]
+        },
+        {
+          "text": "계란 2개를 풀어 계란물을 만든 뒤, 졸아든 양념 위에 붓고 젓가락으로 가볍게 흔들어 펼쳐준 다음 서서히 익을 때까지 그대로 둡니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그 사이에 계란 두 개를 톡톡 까서 노른자를 흔들어가 잘 풀어줍니다.",
+              "timestamp": "01:40"
+            },
+            {
+              "type": "SPEECH",
+              "text": "인자 살짝 졸여진 양념 위로 계란물을 다 부어줍니다. 이때 꿀팁 하나 말씀드리자면 계란물이 잘 퍼질 수 있도록 계란물을 부어주는 동시에 바로 흔들어 재껴줍니다. 그러고 서서히 익을 때까지 가만히 내버려 둡니다.",
+              "timestamp": "01:46"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 밥 한 공기를 담고 그 위에 조리한 대패삼겹살과 계란을 얹은 뒤 파슬리를 뿌려 완성합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다 됐으면 그릇에 밥 한 공기를 뒤집어서 빼주고 밥 위로 다 얹어줍니다. 마지막으로 있어 보이게 파슬리를 넉넉하게 뿌려줍니다.",
+              "timestamp": "02:02"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

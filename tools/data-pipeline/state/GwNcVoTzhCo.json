@@ -1,18 +1,505 @@
 {
   "videoId": "GwNcVoTzhCo",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/GwNcVoTzhCo",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-10-27T11:00:37.035414+00:00",
-    "accountId": "account-d",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAt": "2026-10-27T11:01:02.324591+00:00",
-    "retryAccountId": "account-d"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-08T09:06:29.755242+00:00",
+    "rawResponse": "{\n  \"title\": \"얼큰 만두 해장국\",\n  \"description\": \"냉동 물만두를 활용하여 별다른 고기나 해물 없이도 진하고 얼큰하게 끓여내는 만두 해장국 레시피입니다.\",\n  \"servings\": \"3인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"냉동 물만두\",\n      \"displayName\": \"냉동 물만두\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"오늘은 냉동만두를 활용해서 얼큰한 해장국을 만들어 볼게요~ 야 물만두 냉동만두입니다\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파, 대파, 김치 반컵, 만두 조금을 같이 볶아 주세요\",\n          \"timestamp\": \"00:59\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국물이 끓으면 만두를 넣어 주세요\",\n          \"timestamp\": \"03:56\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"당면\",\n      \"displayName\": \"당면\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"당면을 따뜻한 물에 불려 주세요\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"당면 있는 분들 요렇게 불려서 같이 넣어 주시면은 좋다는 거 그냥 참고하시고요\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 반 개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"0.5\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파, 대파\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"썰어 놓은 양파 반 개에\",\n          \"timestamp\": \"00:59\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파, 대파\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파는 조금 나눠서 반만\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 2T\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"2\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 식용유 2T를 넣어 주세요\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치 반 컵\",\n      \"displayName\": \"김치\",\n      \"amount\": \"0.5\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파, 대파, 김치 반컵, 만두 조금을 같이 볶아 주세요\",\n          \"timestamp\": \"00:59\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치를 반 컵 정도\",\n          \"timestamp\": \"01:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 3T\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"3\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추가루 3T 넣고 같이 볶아 주세요\",\n          \"timestamp\": \"02:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 5컵 (1L)\",\n      \"displayName\": \"물\",\n      \"amount\": \"1\",\n      \"unit\": \"L\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 5컵(1L)\",\n          \"timestamp\": \"02:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 1T\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장1T, 소고기다시다0.5T, 참치액0.5T, 후추, 다진마늘1T\",\n          \"timestamp\": \"02:58\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소고기다시다 0.5T\",\n      \"displayName\": \"소고기다시다\",\n      \"amount\": \"0.5\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장1T, 소고기다시다0.5T, 참치액0.5T, 후추, 다진마늘1T\",\n          \"timestamp\": \"02:58\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치액 0.5T\",\n      \"displayName\": \"참치액\",\n      \"amount\": \"0.5\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장1T, 소고기다시다0.5T, 참치액0.5T, 후추, 다진마늘1T\",\n          \"timestamp\": \"02:58\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치액이나 뭐 멸치액젓 요런 거 있으면은 요것도 한 반 스푼\",\n          \"timestamp\": \"03:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장1T, 소고기다시다0.5T, 참치액0.5T, 후추, 다진마늘1T\",\n          \"timestamp\": \"02:58\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추 톡톡톡톡\",\n          \"timestamp\": \"03:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1T\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"T\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장1T, 소고기다시다0.5T, 참치액0.5T, 후추, 다진마늘1T\",\n          \"timestamp\": \"02:58\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 2개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2개를 풀어놔 주세요\",\n          \"timestamp\": \"04:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"부족한 간은 소금으로 맞춰 주세요\",\n          \"timestamp\": \"05:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깨소금\",\n      \"displayName\": \"깨소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마지막으로 깨소금, 김가루를 넣어 주세요\",\n          \"timestamp\": \"05:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"깨소금이에요 깨소금 깨를 으깨 가지고 살짝 올려 주시고\",\n          \"timestamp\": \"05:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마지막으로 깨소금, 김가루를 넣어 주세요\",\n          \"timestamp\": \"05:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김가루 약간까지 요 옆에다가 조금 올려 주시면은\",\n          \"timestamp\": \"05:46\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"당면을 따뜻한 물에 미리 20~30분간 불려 둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"당면을 따뜻한 물에 불려 주세요\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"당면은 뜨거운 물로 한 2~30분 정도 미리 불려 놓고\",\n          \"timestamp\": \"06:35\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 반 개를 채 썰고, 대파를 어슷하게 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파, 대파\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도마 위에서 양파 반 개와 대파를 썬다\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유 2T를 두르고 썰어둔 양파 반 개, 대파 절반, 김치 반 컵, 국물용 만두 약 5~6개를 넣고 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 식용유 2T를 넣어 주세요\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파, 대파, 김치 반컵, 만두 조금을 같이 볶아 주세요\",\n          \"timestamp\": \"00:59\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만두를 우선 조금만 뭐 지금 한 다섯 개 들어간 거 같은데 요렇게 해서 같이 한번 볶아 줄 거예요\",\n          \"timestamp\": \"01:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"약불로 줄인 뒤 고춧가루 3T를 넣고 타지 않게 1~2분간 볶아 고추기름을 낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추가루 3T 넣고 같이 볶아 주세요\",\n          \"timestamp\": \"02:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추가루는 약불에 볶아 주세요\",\n          \"timestamp\": \"02:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 5컵(1L)을 붓고 잘 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 5컵(1L)\",\n          \"timestamp\": \"02:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고추장 1T, 소고기다시다 0.5T, 참치액 0.5T, 후추 약간, 다진마늘 1T를 넣고 고추장을 잘 풀어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장1T, 소고기다시다0.5T, 참치액0.5T, 후추, 다진마늘1T\",\n          \"timestamp\": \"02:58\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장을 잘 풀어 주세요\",\n          \"timestamp\": \"03:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국물이 끓어오르면 처음에 넣었던 국물용 만두를 가위로 잘라 만두소가 국물에 풀리도록 한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국물용 만두를 가위로 잘라 주세요\",\n          \"timestamp\": \"03:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국물을 5분 정도 팔팔 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"5분정도 끓여 주세요\",\n          \"timestamp\": \"03:47\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국물이 끓으면 건더기용 만두를 넣고 만두가 익어 떠오를 때까지 약 5분 정도 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국물이 끓으면 만두를 넣어 주세요\",\n          \"timestamp\": \"03:56\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"만두가 익을때까지 5분정도 끓여 주세요\",\n          \"timestamp\": \"04:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 2개를 그릇에 깨서 풀어두고, 국물 간을 본 뒤 부족한 간은 소금으로 맞춘다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2개를 풀어놔 주세요\",\n          \"timestamp\": \"04:44\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"부족한 간은 소금으로 맞춰 주세요\",\n          \"timestamp\": \"05:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"푼 계란을 국물에 둘러 넣고 살짝 저어준 뒤 계란이 익으면 불을 끄고 남은 대파를 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란을 넣고 살짝 저어 주세요\",\n          \"timestamp\": \"05:09\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란이 익으면 불을 끄고 대파를 넣어 주세요\",\n          \"timestamp\": \"05:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 미리 불려둔 당면을 담고 만두국을 옮겨 담은 뒤, 으깬 깨소금과 김가루를 올려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"불려 놓은 당면을 그릇에 담고 만두국을 담아 주세요\",\n          \"timestamp\": \"05:28\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마지막으로 깨소금, 김가루를 넣어 주세요\",\n          \"timestamp\": \"05:38\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "얼큰 만두 해장국",
+      "description": "냉동 물만두를 활용하여 별다른 고기나 해물 없이도 진하고 얼큰하게 끓여내는 만두 해장국 레시피입니다.",
+      "servings": "3인분",
+      "ingredients": [
+        {
+          "rawText": "냉동 물만두",
+          "displayName": "냉동 물만두",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "오늘은 냉동만두를 활용해서 얼큰한 해장국을 만들어 볼게요~ 야 물만두 냉동만두입니다",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파, 대파, 김치 반컵, 만두 조금을 같이 볶아 주세요",
+              "timestamp": "00:59"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국물이 끓으면 만두를 넣어 주세요",
+              "timestamp": "03:56"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "당면",
+          "displayName": "당면",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "당면을 따뜻한 물에 불려 주세요",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "당면 있는 분들 요렇게 불려서 같이 넣어 주시면은 좋다는 거 그냥 참고하시고요",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "양파 반 개",
+          "displayName": "양파",
+          "amount": "0.5",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파, 대파",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "썰어 놓은 양파 반 개에",
+              "timestamp": "00:59"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파, 대파",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파는 조금 나눠서 반만",
+              "timestamp": "01:02"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "식용유 2T",
+          "displayName": "식용유",
+          "amount": "2",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 식용유 2T를 넣어 주세요",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "김치 반 컵",
+          "displayName": "김치",
+          "amount": "0.5",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파, 대파, 김치 반컵, 만두 조금을 같이 볶아 주세요",
+              "timestamp": "00:59"
+            },
+            {
+              "type": "SPEECH",
+              "text": "김치를 반 컵 정도",
+              "timestamp": "01:12"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "고춧가루 3T",
+          "displayName": "고춧가루",
+          "amount": "3",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추가루 3T 넣고 같이 볶아 주세요",
+              "timestamp": "02:04"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "물 5컵 (1L)",
+          "displayName": "물",
+          "amount": "1",
+          "unit": "L",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 5컵(1L)",
+              "timestamp": "02:41"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "고추장 1T",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장1T, 소고기다시다0.5T, 참치액0.5T, 후추, 다진마늘1T",
+              "timestamp": "02:58"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "소고기다시다 0.5T",
+          "displayName": "소고기다시다",
+          "amount": "0.5",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장1T, 소고기다시다0.5T, 참치액0.5T, 후추, 다진마늘1T",
+              "timestamp": "02:58"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "참치액 0.5T",
+          "displayName": "참치액",
+          "amount": "0.5",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장1T, 소고기다시다0.5T, 참치액0.5T, 후추, 다진마늘1T",
+              "timestamp": "02:58"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참치액이나 뭐 멸치액젓 요런 거 있으면은 요것도 한 반 스푼",
+              "timestamp": "03:03"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장1T, 소고기다시다0.5T, 참치액0.5T, 후추, 다진마늘1T",
+              "timestamp": "02:58"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추 톡톡톡톡",
+              "timestamp": "03:07"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "다진마늘 1T",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": "T",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장1T, 소고기다시다0.5T, 참치액0.5T, 후추, 다진마늘1T",
+              "timestamp": "02:58"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "계란 2개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2개를 풀어놔 주세요",
+              "timestamp": "04:44"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "소금",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "부족한 간은 소금으로 맞춰 주세요",
+              "timestamp": "05:00"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "깨소금",
+          "displayName": "깨소금",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마지막으로 깨소금, 김가루를 넣어 주세요",
+              "timestamp": "05:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "깨소금이에요 깨소금 깨를 으깨 가지고 살짝 올려 주시고",
+              "timestamp": "05:41"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "김가루",
+          "displayName": "김가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마지막으로 깨소금, 김가루를 넣어 주세요",
+              "timestamp": "05:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "김가루 약간까지 요 옆에다가 조금 올려 주시면은",
+              "timestamp": "05:46"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        }
+      ],
+      "steps": [
+        {
+          "text": "당면을 따뜻한 물에 미리 20~30분간 불려 둔다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "당면을 따뜻한 물에 불려 주세요",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "당면은 뜨거운 물로 한 2~30분 정도 미리 불려 놓고",
+              "timestamp": "06:35"
+            }
+          ]
+        },
+        {
+          "text": "양파 반 개를 채 썰고, 대파를 어슷하게 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파, 대파",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도마 위에서 양파 반 개와 대파를 썬다",
+              "timestamp": "00:37"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유 2T를 두르고 썰어둔 양파 반 개, 대파 절반, 김치 반 컵, 국물용 만두 약 5~6개를 넣고 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 식용유 2T를 넣어 주세요",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파, 대파, 김치 반컵, 만두 조금을 같이 볶아 주세요",
+              "timestamp": "00:59"
+            },
+            {
+              "type": "SPEECH",
+              "text": "만두를 우선 조금만 뭐 지금 한 다섯 개 들어간 거 같은데 요렇게 해서 같이 한번 볶아 줄 거예요",
+              "timestamp": "01:20"
+            }
+          ]
+        },
+        {
+          "text": "약불로 줄인 뒤 고춧가루 3T를 넣고 타지 않게 1~2분간 볶아 고추기름을 낸다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추가루 3T 넣고 같이 볶아 주세요",
+              "timestamp": "02:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추가루는 약불에 볶아 주세요",
+              "timestamp": "02:26"
+            }
+          ]
+        },
+        {
+          "text": "물 5컵(1L)을 붓고 잘 섞어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 5컵(1L)",
+              "timestamp": "02:41"
+            }
+          ]
+        },
+        {
+          "text": "고추장 1T, 소고기다시다 0.5T, 참치액 0.5T, 후추 약간, 다진마늘 1T를 넣고 고추장을 잘 풀어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장1T, 소고기다시다0.5T, 참치액0.5T, 후추, 다진마늘1T",
+              "timestamp": "02:58"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장을 잘 풀어 주세요",
+              "timestamp": "03:14"
+            }
+          ]
+        },
+        {
+          "text": "국물이 끓어오르면 처음에 넣었던 국물용 만두를 가위로 잘라 만두소가 국물에 풀리도록 한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국물용 만두를 가위로 잘라 주세요",
+              "timestamp": "03:26"
+            }
+          ]
+        },
+        {
+          "text": "국물을 5분 정도 팔팔 끓여준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "5분정도 끓여 주세요",
+              "timestamp": "03:47"
+            }
+          ]
+        },
+        {
+          "text": "국물이 끓으면 건더기용 만두를 넣고 만두가 익어 떠오를 때까지 약 5분 정도 끓인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국물이 끓으면 만두를 넣어 주세요",
+              "timestamp": "03:56"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "만두가 익을때까지 5분정도 끓여 주세요",
+              "timestamp": "04:19"
+            }
+          ]
+        },
+        {
+          "text": "계란 2개를 그릇에 깨서 풀어두고, 국물 간을 본 뒤 부족한 간은 소금으로 맞춘다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2개를 풀어놔 주세요",
+              "timestamp": "04:44"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "부족한 간은 소금으로 맞춰 주세요",
+              "timestamp": "05:00"
+            }
+          ]
+        },
+        {
+          "text": "푼 계란을 국물에 둘러 넣고 살짝 저어준 뒤 계란이 익으면 불을 끄고 남은 대파를 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란을 넣고 살짝 저어 주세요",
+              "timestamp": "05:09"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란이 익으면 불을 끄고 대파를 넣어 주세요",
+              "timestamp": "05:20"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 미리 불려둔 당면을 담고 만두국을 옮겨 담은 뒤, 으깬 깨소금과 김가루를 올려 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "불려 놓은 당면을 그릇에 담고 만두국을 담아 주세요",
+              "timestamp": "05:28"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마지막으로 깨소금, 김가루를 넣어 주세요",
+              "timestamp": "05:38"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
   }
 }

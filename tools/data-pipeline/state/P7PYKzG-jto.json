@@ -1,0 +1,404 @@
+{
+  "videoId": "P7PYKzG-jto",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/P7PYKzG-jto",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-08T09:15:24.486745+00:00",
+    "rawResponse": "{\n  \"title\": \"오므라이스\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"밥 / 찬밥 한공기\",\n      \"displayName\": \"찬밥\",\n      \"amount\": \"1\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"찬밥 한공기\",\n          \"timestamp\": \"02:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"햄 반쪽\",\n      \"displayName\": \"햄\",\n      \"amount\": \"반\",\n      \"unit\": \"쪽\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"햄\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"햄 반쪽도 비슷한 크기로 썰어 주세요\",\n          \"timestamp\": \"01:28\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"아무 햄이든 상관 없어요\",\n          \"timestamp\": \"01:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란 2개를 볼에 깨뜨려 넣음\",\n          \"timestamp\": \"01:50\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"하나더~\",\n          \"timestamp\": \"01:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 반개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"반\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 반개도 잘게 썰어 줍니다\",\n          \"timestamp\": \"01:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 1국자 분량 정도\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"국자 분량\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 1국자 분량 정도 송송 썰어줄게요\",\n          \"timestamp\": \"00:59\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"파를 좋아한다면 더 넣어도 괜찮아요\",\n          \"timestamp\": \"01:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"케첩 5스푼\",\n      \"displayName\": \"케첩\",\n      \"amount\": \"5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"케첩 5스푼\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돈까스소스 3스푼(또는 간장1)\",\n      \"displayName\": \"돈까스소스\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"돈까스소스 3스푼(또는 간장1)\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리고당 2스푼(또는 설탕)\",\n      \"displayName\": \"올리고당\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"올리고당 2스푼(또는 설탕)\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 두르고,\",\n          \"timestamp\": \"02:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다시 식용유 쓰윽,\",\n          \"timestamp\": \"02:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"케첩\",\n      \"displayName\": \"케첩 (마무리용)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"케첩으로 마무리\",\n          \"timestamp\": \"03:07\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"볼에 케첩 5스푼, 돈까스소스 3스푼(또는 간장 1스푼), 올리고당 2스푼(또는 설탕)을 넣고 잘 섞어 소스를 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"케첩 5스푼\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"돈까스소스 3스푼(또는 간장1)\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"올리고당 2스푼(또는 설탕)\",\n          \"timestamp\": \"00:42\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쉐킷쉐킷~\",\n          \"timestamp\": \"00:51\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소스완성\",\n          \"timestamp\": \"00:55\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파는 1국자 분량 정도 송송 썰고, 양파 반 개와 햄 반 쪽도 비슷한 크기로 잘게 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 1국자 분량 정도 송송 썰어줄게요\",\n          \"timestamp\": \"00:59\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 반개도 잘게 썰어 줍니다\",\n          \"timestamp\": \"01:13\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"햄 반쪽도 비슷한 크기로 썰어 주세요\",\n          \"timestamp\": \"01:28\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"썰기 끝~\",\n          \"timestamp\": \"01:43\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 계란 2개를 풀어준 뒤, 팬에 식용유를 두르고 약불에서 뒤집지 말고 80% 정도만 은근히 익힌 후 그릇에 덜어둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"이제 계란을 풀어 줄거예요\",\n          \"timestamp\": \"01:49\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쉐킷쉐킷~\",\n          \"timestamp\": \"01:59\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 두르고,\",\n          \"timestamp\": \"02:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"약불에서 은근히 익혀 줄게요\",\n          \"timestamp\": \"02:05\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"뒤집지 말고 80% 정도만 익히는게 포인트\",\n          \"timestamp\": \"02:09\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란은 잠시 그릇에서 쉬게 해줄게요\",\n          \"timestamp\": \"02:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 다시 식용유를 두르고 대파를 넣어 중약불에서 파기름을 낸 뒤, 파향이 올라오면 햄과 양파를 넣어 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다시 식용유 쓰윽,\",\n          \"timestamp\": \"02:18\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"중약불에서 파기름을 내줍니다\",\n          \"timestamp\": \"02:24\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"파향이 맛있게 올라오면 햄과 양파를 넣어 주세요\",\n          \"timestamp\": \"02:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파가 살짝 투명해지면 만들어둔 소스를 넣어 저어준 후, 찬밥 한 공기를 넣고 약불에서 1분간 골고루 볶아 밥을 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파가 살짝 투명해 지면,\",\n          \"timestamp\": \"02:32\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소스를 넣어 줍니다\",\n          \"timestamp\": \"02:34\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"휘휘 저어 주세요\",\n          \"timestamp\": \"02:38\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"찬밥 한공기\",\n          \"timestamp\": \"02:42\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"약불에서 삭삭 볶아 줄게요\",\n          \"timestamp\": \"02:45\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1분만 볶볶~\",\n          \"timestamp\": \"02:51\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"오므라이스완성~\",\n          \"timestamp\": \"02:53\"\n        }\n      ]\n    },\n    {\n      \"text\": \"접시에 부쳐둔 계란 지단을 깔고 그 위에 볶음밥을 올린 후 반달 모양으로 감싸고 케첩을 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"오므라이스의 꽃\",\n          \"timestamp\": \"02:56\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란위에 밥을 척척\",\n          \"timestamp\": \"02:59\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"오늘은 반달 모양~\",\n          \"timestamp\": \"03:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"케첩으로 마무리\",\n          \"timestamp\": \"03:07\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"돈까스소스 대신 간장 1스푼으로 대체 가능\",\n    \"올리고당 대신 설탕으로 대체 가능\",\n    \"영상 03:33 이후 등장하는 차(티백)는 식사 후 마시는 차로 오므라이스 조리 과정에는 포함되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "오므라이스",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "밥 / 찬밥 한공기",
+          "displayName": "찬밥",
+          "amount": "1",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "찬밥 한공기",
+              "timestamp": "02:42"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "햄 반쪽",
+          "displayName": "햄",
+          "amount": "반",
+          "unit": "쪽",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "햄",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "햄 반쪽도 비슷한 크기로 썰어 주세요",
+              "timestamp": "01:28"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "아무 햄이든 상관 없어요",
+              "timestamp": "01:33"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "계란",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란 2개를 볼에 깨뜨려 넣음",
+              "timestamp": "01:50"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "하나더~",
+              "timestamp": "01:54"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양파 반개",
+          "displayName": "양파",
+          "amount": "반",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 반개도 잘게 썰어 줍니다",
+              "timestamp": "01:13"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "대파 1국자 분량 정도",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "국자 분량",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 1국자 분량 정도 송송 썰어줄게요",
+              "timestamp": "00:59"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "파를 좋아한다면 더 넣어도 괜찮아요",
+              "timestamp": "01:07"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "케첩 5스푼",
+          "displayName": "케첩",
+          "amount": "5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "케첩 5스푼",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "돈까스소스 3스푼(또는 간장1)",
+          "displayName": "돈까스소스",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "돈까스소스 3스푼(또는 간장1)",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "올리고당 2스푼(또는 설탕)",
+          "displayName": "올리고당",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "올리고당 2스푼(또는 설탕)",
+              "timestamp": "00:42"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 두르고,",
+              "timestamp": "02:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다시 식용유 쓰윽,",
+              "timestamp": "02:18"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "케첩",
+          "displayName": "케첩 (마무리용)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "케첩으로 마무리",
+              "timestamp": "03:07"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "볼에 케첩 5스푼, 돈까스소스 3스푼(또는 간장 1스푼), 올리고당 2스푼(또는 설탕)을 넣고 잘 섞어 소스를 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "케첩 5스푼",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "돈까스소스 3스푼(또는 간장1)",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "올리고당 2스푼(또는 설탕)",
+              "timestamp": "00:42"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쉐킷쉐킷~",
+              "timestamp": "00:51"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소스완성",
+              "timestamp": "00:55"
+            }
+          ]
+        },
+        {
+          "text": "대파는 1국자 분량 정도 송송 썰고, 양파 반 개와 햄 반 쪽도 비슷한 크기로 잘게 썰어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 1국자 분량 정도 송송 썰어줄게요",
+              "timestamp": "00:59"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 반개도 잘게 썰어 줍니다",
+              "timestamp": "01:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "햄 반쪽도 비슷한 크기로 썰어 주세요",
+              "timestamp": "01:28"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "썰기 끝~",
+              "timestamp": "01:43"
+            }
+          ]
+        },
+        {
+          "text": "볼에 계란 2개를 풀어준 뒤, 팬에 식용유를 두르고 약불에서 뒤집지 말고 80% 정도만 은근히 익힌 후 그릇에 덜어둔다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "이제 계란을 풀어 줄거예요",
+              "timestamp": "01:49"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쉐킷쉐킷~",
+              "timestamp": "01:59"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 두르고,",
+              "timestamp": "02:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "약불에서 은근히 익혀 줄게요",
+              "timestamp": "02:05"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "뒤집지 말고 80% 정도만 익히는게 포인트",
+              "timestamp": "02:09"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란은 잠시 그릇에서 쉬게 해줄게요",
+              "timestamp": "02:13"
+            }
+          ]
+        },
+        {
+          "text": "팬에 다시 식용유를 두르고 대파를 넣어 중약불에서 파기름을 낸 뒤, 파향이 올라오면 햄과 양파를 넣어 볶아준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다시 식용유 쓰윽,",
+              "timestamp": "02:18"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "중약불에서 파기름을 내줍니다",
+              "timestamp": "02:24"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "파향이 맛있게 올라오면 햄과 양파를 넣어 주세요",
+              "timestamp": "02:27"
+            }
+          ]
+        },
+        {
+          "text": "양파가 살짝 투명해지면 만들어둔 소스를 넣어 저어준 후, 찬밥 한 공기를 넣고 약불에서 1분간 골고루 볶아 밥을 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파가 살짝 투명해 지면,",
+              "timestamp": "02:32"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소스를 넣어 줍니다",
+              "timestamp": "02:34"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "휘휘 저어 주세요",
+              "timestamp": "02:38"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "찬밥 한공기",
+              "timestamp": "02:42"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "약불에서 삭삭 볶아 줄게요",
+              "timestamp": "02:45"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1분만 볶볶~",
+              "timestamp": "02:51"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "오므라이스완성~",
+              "timestamp": "02:53"
+            }
+          ]
+        },
+        {
+          "text": "접시에 부쳐둔 계란 지단을 깔고 그 위에 볶음밥을 올린 후 반달 모양으로 감싸고 케첩을 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "오므라이스의 꽃",
+              "timestamp": "02:56"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란위에 밥을 척척",
+              "timestamp": "02:59"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "오늘은 반달 모양~",
+              "timestamp": "03:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "케첩으로 마무리",
+              "timestamp": "03:07"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "돈까스소스 대신 간장 1스푼으로 대체 가능",
+        "올리고당 대신 설탕으로 대체 가능",
+        "영상 03:33 이후 등장하는 차(티백)는 식사 후 마시는 차로 오므라이스 조리 과정에는 포함되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

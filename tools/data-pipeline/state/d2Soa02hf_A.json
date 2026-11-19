@@ -1,0 +1,475 @@
+{
+  "videoId": "d2Soa02hf_A",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/d2Soa02hf_A",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-08T09:05:49.571059+00:00",
+    "rawResponse": "{\n  \"title\": \"간장국수\",\n  \"description\": null,\n  \"servings\": \"2인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"양조간장(또는 진간장) 5스푼(50g)\",\n      \"displayName\": \"양조간장\",\n      \"amount\": \"5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장 x5\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"[2인분 기준] 양조간장(또는 진간장) 5스푼(50g) 넣어주세요.\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 양조간장 다섯 스푼\",\n          \"timestamp\": \"00:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 크게 1스푼(20g)\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 x1\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"[2인분 기준] 설탕 크게 1스푼(20g) 넣어주세요.\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕은 두 스푼 같은 한 스푼 눈치껏 수북이 넣어주시고요.\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"매실액 1스푼(13g)\",\n      \"displayName\": \"매실액\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"매실액 x1\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"[2인분 기준] 매실액 1스푼(13g) 넣어주세요.\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 매실액도 한 스푼 넣고\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 2스푼\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 x2\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"[2인분 기준] 참기름 2스푼 넣어주세요.\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름은 두 스푼을 넣어주세요.\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1/2스푼(10g)\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 x0.5\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"[2인분 기준] 다진 마늘 1/2스푼(10g) 넣어주세요.\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘 반 스푼 넣고\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"사각어묵 2장\",\n      \"displayName\": \"사각어묵\",\n      \"amount\": \"2\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"사각어묵 2장을 가늘게 채썰어주세요.\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"사각어묵 2장을 준비해서 반으로 자른 후에 가늘게 채썰어주세요.\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/2개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 1/2개를 채썰어주세요.\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냉장고에 흔하게 있는 양파 반 개에 역시 채썰어주시고요.\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 2개\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"청양고추 2개를 송송 썰어주세요.\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그 옆에 있는 청양고추가 있다면 두 개만 송송 썰어주세요.\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"당근 한 줌\",\n      \"displayName\": \"당근\",\n      \"amount\": \"1\",\n      \"unit\": \"줌\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"당근을 가늘게 채썰어서 한 줌 준비해 주세요.\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"당근도 색감을 위해서 가늘게 채썰어 한 줌 준비해 주시면 좋고요.\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬에 식용유를 두르고 어묵을 볶아주세요.\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 달궈진 팬에 식용유를 넉넉하게 두른 후에\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1/2스푼\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 x0.5\",\n          \"timestamp\": \"00:57\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"굴소스 1/2스푼 넣어주세요.\",\n          \"timestamp\": \"00:58\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 굴소스 반 스푼을 넣고\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소면 2인분\",\n      \"displayName\": \"소면\",\n      \"amount\": \"2\",\n      \"unit\": \"인분\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"끓는물에 소면 2인분을 삶아주세요.\",\n          \"timestamp\": \"01:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"끓는 물에 소면 2인분을 넣고 삶아주세요.\",\n          \"timestamp\": \"01:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨 2스푼\",\n      \"displayName\": \"통깨\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"통깨 x2\",\n          \"timestamp\": \"01:26\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"삶은 소면을 믹싱볼에 넣고 통깨 2스푼 넣어주세요.\",\n          \"timestamp\": \"01:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이어서 고소한 통깨도 두 스푼 넣어주세요.\",\n          \"timestamp\": \"01:27\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"볼에 양조간장 5스푼, 설탕 크게 1스푼, 매실액 1스푼, 참기름 2스푼, 다진 마늘 1/2스푼을 넣고 설탕이 녹을 때까지 잘 저어 양념을 만듭니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"잘 섞어주세요.\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕이 녹을 때까지 잘 저어서 섞어주세요.\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"사각어묵 2장을 반으로 자른 후 가늘게 채썰고, 양파 1/2개도 채썰어줍니다. 청양고추 2개는 송송 썰고, 당근도 가늘게 채썰어 한 줌 준비합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"사각어묵 2장을 가늘게 채썰어주세요.\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 1/2개를 채썰어주세요.\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"청양고추 2개를 송송 썰어주세요.\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"당근을 가늘게 채썰어서 한 줌 준비해 주세요.\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"text\": \"달궈진 팬에 식용유를 넉넉하게 두르고 채썬 어묵을 넣어 중불에서 진한 갈색이 될 때까지 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불세기 중 불에서 진한 갈색이 될때까지 볶아주세요.\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불세기 중불에서 볶아주세요. 어묵이 짙은 진갈색이 될 때까지 볶아서\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볶은 어묵에 채썬 양파와 당근, 굴소스 1/2스푼을 넣고 가볍게 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파와 당근을 넣어주세요.\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"굴소스 1/2스푼 넣어주세요.\",\n          \"timestamp\": \"00:58\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"채썰어 놓았던 양파와 당근 그리고 굴소스 반 스푼을 넣고 한 번 더 가볍게 볶아주세요.\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 테두리가 반투명해지면 송송 썬 청양고추를 넣고 약 30초간 더 볶아준 후 불을 끕니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 테두리가 불투명해질때까지 볶아주세요.\",\n          \"timestamp\": \"01:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"청양고추를 넣고 30초간 볶아주세요.\",\n          \"timestamp\": \"01:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 테두리가 반투명하게 되면 송송 썰어놓았던 청양고추를 넣고 약 30초 정도만 더 섞으면서 볶아준 후에 불을 꺼주세요.\",\n          \"timestamp\": \"01:01\"\n        }\n      ]\n    },\n    {\n      \"text\": \"끓는 물에 소면 2인분을 삶은 뒤, 찬물에 한 번 정도 가볍게 헹궈 온기와 전분기가 살짝 남도록 한 후 물기를 완전히 뺍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"끓는물에 소면 2인분을 삶아주세요.\",\n          \"timestamp\": \"01:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"찬물에 가볍게 헹궈주세요.\",\n          \"timestamp\": \"01:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"잘 삶아진 소면은 찬물에 한 번 정도만 가볍게 헹궈서 따뜻한 온기와 부드러운 전분기가 살짝 남아 있게 한 다음 물기를 완전히 빼고\",\n          \"timestamp\": \"01:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삶은 소면을 믹싱볼에 넣고 통깨 2스푼과 만들어둔 양념을 모두 부어 비벼줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"삶은 소면을 믹싱볼에 넣고 통깨 2스푼 넣어주세요.\",\n          \"timestamp\": \"01:26\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양념을 넣고 비벼주세요.\",\n          \"timestamp\": \"01:32\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만들어 놓았던 양념을 한 방울 남김없이 싹싹 모아서 다 부어준 다음 비벼주세요.\",\n          \"timestamp\": \"01:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"비빈 국수 1인분을 그릇에 담고 볶아둔 고명을 수북하게 올려 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그릇에 담고 고명을 올려주세요.\",\n          \"timestamp\": \"01:40\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국수 1인분을 그릇에 담고 만들어 놓았던 고명을 수북하게 올려주면 세상 맛있는 간장국수가 완성됩니다.\",\n          \"timestamp\": \"01:39\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "간장국수",
+      "description": null,
+      "servings": "2인분",
+      "ingredients": [
+        {
+          "rawText": "양조간장(또는 진간장) 5스푼(50g)",
+          "displayName": "양조간장",
+          "amount": "5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장 x5",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "[2인분 기준] 양조간장(또는 진간장) 5스푼(50g) 넣어주세요.",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 양조간장 다섯 스푼",
+              "timestamp": "00:02"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "설탕 크게 1스푼(20g)",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 x1",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "[2인분 기준] 설탕 크게 1스푼(20g) 넣어주세요.",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕은 두 스푼 같은 한 스푼 눈치껏 수북이 넣어주시고요.",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "매실액 1스푼(13g)",
+          "displayName": "매실액",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "매실액 x1",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "[2인분 기준] 매실액 1스푼(13g) 넣어주세요.",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 매실액도 한 스푼 넣고",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "참기름 2스푼",
+          "displayName": "참기름",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 x2",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "[2인분 기준] 참기름 2스푼 넣어주세요.",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름은 두 스푼을 넣어주세요.",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "다진 마늘 1/2스푼(10g)",
+          "displayName": "다진 마늘",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 x0.5",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "[2인분 기준] 다진 마늘 1/2스푼(10g) 넣어주세요.",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘 반 스푼 넣고",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "사각어묵 2장",
+          "displayName": "사각어묵",
+          "amount": "2",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "사각어묵 2장을 가늘게 채썰어주세요.",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "사각어묵 2장을 준비해서 반으로 자른 후에 가늘게 채썰어주세요.",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "양파 1/2개",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파 1/2개를 채썰어주세요.",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냉장고에 흔하게 있는 양파 반 개에 역시 채썰어주시고요.",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "청양고추 2개",
+          "displayName": "청양고추",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "청양고추 2개를 송송 썰어주세요.",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그 옆에 있는 청양고추가 있다면 두 개만 송송 썰어주세요.",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "당근 한 줌",
+          "displayName": "당근",
+          "amount": "1",
+          "unit": "줌",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "당근을 가늘게 채썰어서 한 줌 준비해 주세요.",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SPEECH",
+              "text": "당근도 색감을 위해서 가늘게 채썰어 한 줌 준비해 주시면 좋고요.",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "팬에 식용유를 두르고 어묵을 볶아주세요.",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 달궈진 팬에 식용유를 넉넉하게 두른 후에",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "굴소스 1/2스푼",
+          "displayName": "굴소스",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 x0.5",
+              "timestamp": "00:57"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "굴소스 1/2스푼 넣어주세요.",
+              "timestamp": "00:58"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 굴소스 반 스푼을 넣고",
+              "timestamp": "00:56"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "소면 2인분",
+          "displayName": "소면",
+          "amount": "2",
+          "unit": "인분",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "끓는물에 소면 2인분을 삶아주세요.",
+              "timestamp": "01:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "끓는 물에 소면 2인분을 넣고 삶아주세요.",
+              "timestamp": "01:11"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "통깨 2스푼",
+          "displayName": "통깨",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "통깨 x2",
+              "timestamp": "01:26"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "삶은 소면을 믹싱볼에 넣고 통깨 2스푼 넣어주세요.",
+              "timestamp": "01:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이어서 고소한 통깨도 두 스푼 넣어주세요.",
+              "timestamp": "01:27"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "볼에 양조간장 5스푼, 설탕 크게 1스푼, 매실액 1스푼, 참기름 2스푼, 다진 마늘 1/2스푼을 넣고 설탕이 녹을 때까지 잘 저어 양념을 만듭니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "잘 섞어주세요.",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕이 녹을 때까지 잘 저어서 섞어주세요.",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "사각어묵 2장을 반으로 자른 후 가늘게 채썰고, 양파 1/2개도 채썰어줍니다. 청양고추 2개는 송송 썰고, 당근도 가늘게 채썰어 한 줌 준비합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "사각어묵 2장을 가늘게 채썰어주세요.",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파 1/2개를 채썰어주세요.",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "청양고추 2개를 송송 썰어주세요.",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "당근을 가늘게 채썰어서 한 줌 준비해 주세요.",
+              "timestamp": "00:36"
+            }
+          ]
+        },
+        {
+          "text": "달궈진 팬에 식용유를 넉넉하게 두르고 채썬 어묵을 넣어 중불에서 진한 갈색이 될 때까지 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "불세기 중 불에서 진한 갈색이 될때까지 볶아주세요.",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "SPEECH",
+              "text": "불세기 중불에서 볶아주세요. 어묵이 짙은 진갈색이 될 때까지 볶아서",
+              "timestamp": "00:46"
+            }
+          ]
+        },
+        {
+          "text": "볶은 어묵에 채썬 양파와 당근, 굴소스 1/2스푼을 넣고 가볍게 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파와 당근을 넣어주세요.",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "굴소스 1/2스푼 넣어주세요.",
+              "timestamp": "00:58"
+            },
+            {
+              "type": "SPEECH",
+              "text": "채썰어 놓았던 양파와 당근 그리고 굴소스 반 스푼을 넣고 한 번 더 가볍게 볶아주세요.",
+              "timestamp": "00:54"
+            }
+          ]
+        },
+        {
+          "text": "양파 테두리가 반투명해지면 송송 썬 청양고추를 넣고 약 30초간 더 볶아준 후 불을 끕니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파 테두리가 불투명해질때까지 볶아주세요.",
+              "timestamp": "01:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "청양고추를 넣고 30초간 볶아주세요.",
+              "timestamp": "01:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파 테두리가 반투명하게 되면 송송 썰어놓았던 청양고추를 넣고 약 30초 정도만 더 섞으면서 볶아준 후에 불을 꺼주세요.",
+              "timestamp": "01:01"
+            }
+          ]
+        },
+        {
+          "text": "끓는 물에 소면 2인분을 삶은 뒤, 찬물에 한 번 정도 가볍게 헹궈 온기와 전분기가 살짝 남도록 한 후 물기를 완전히 뺍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "끓는물에 소면 2인분을 삶아주세요.",
+              "timestamp": "01:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "찬물에 가볍게 헹궈주세요.",
+              "timestamp": "01:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "잘 삶아진 소면은 찬물에 한 번 정도만 가볍게 헹궈서 따뜻한 온기와 부드러운 전분기가 살짝 남아 있게 한 다음 물기를 완전히 빼고",
+              "timestamp": "01:16"
+            }
+          ]
+        },
+        {
+          "text": "삶은 소면을 믹싱볼에 넣고 통깨 2스푼과 만들어둔 양념을 모두 부어 비벼줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "삶은 소면을 믹싱볼에 넣고 통깨 2스푼 넣어주세요.",
+              "timestamp": "01:26"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양념을 넣고 비벼주세요.",
+              "timestamp": "01:32"
+            },
+            {
+              "type": "SPEECH",
+              "text": "만들어 놓았던 양념을 한 방울 남김없이 싹싹 모아서 다 부어준 다음 비벼주세요.",
+              "timestamp": "01:31"
+            }
+          ]
+        },
+        {
+          "text": "비빈 국수 1인분을 그릇에 담고 볶아둔 고명을 수북하게 올려 완성합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "그릇에 담고 고명을 올려주세요.",
+              "timestamp": "01:40"
+            },
+            {
+              "type": "SPEECH",
+              "text": "국수 1인분을 그릇에 담고 만들어 놓았던 고명을 수북하게 올려주면 세상 맛있는 간장국수가 완성됩니다.",
+              "timestamp": "01:39"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "videoId": "TXQlq1Ffcz0",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/TXQlq1Ffcz0",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-08T09:16:15.580795+00:00",
+    "rawResponse": "{\n  \"title\": \"전자레인지 두부조림\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"두부 한모\",\n      \"displayName\": \"두부\",\n      \"amount\": \"1\",\n      \"unit\": \"모\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 두부\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"두부 한모는 많은 것 같아요\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1스푼\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 1스푼\",\n          \"timestamp\": \"00:50\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘 한 스푼\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추가루 2스푼\",\n      \"displayName\": \"고추가루\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추가루 2스푼\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 두 스푼\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"알룰로스 or 설탕 2스푼\",\n      \"displayName\": \"알룰로스 or 설탕\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"알룰로스 or 설탕 2스푼\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"알룰로스나 설탕 두 스푼\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 2스푼\",\n      \"displayName\": \"간장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 2스푼\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장 두 스푼\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파는 알싸한 맛이 좋으니까 귀찮아도 꼭 넣어주세요\",\n          \"timestamp\": \"00:56\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"가위로 대파를 잘라 양념 그릇에 넣음\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추\",\n      \"displayName\": \"청양고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"저같은 매운맛 쳐돌이분들은 청양고추도 추가\",\n          \"timestamp\": \"01:00\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"청양고추도 추가\",\n          \"timestamp\": \"01:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨 솔솔\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"통깨 솔솔 뿌려\",\n          \"timestamp\": \"01:03\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"통깨 솔솔 뿌려 섞어주면 끝!\",\n          \"timestamp\": \"01:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 2스푼\",\n      \"displayName\": \"물\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(퍽퍽하니 물 2스푼 추가해주세요)\",\n          \"timestamp\": \"01:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"물병에서 양념장에 물을 붓는 모습\",\n          \"timestamp\": \"01:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"들기름 한바퀴 슥-\",\n      \"displayName\": \"들기름\",\n      \"amount\": \"1\",\n      \"unit\": \"바퀴\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대신 들기름 한바퀴 슥- 둘러주면\",\n          \"timestamp\": \"01:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"두부 위에 들기름을 두르는 모습\",\n          \"timestamp\": \"01:09\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"두부를 팩 안에서 가위로 자른 뒤 전자레인지 전용 용기에 옮겨 담는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팩 안에서 가위로 툭툭 잘라줄게요. 왜냐면 뒤에서 가위 또 쓸거거든요. 환경호르몬은 걱정되니까 전자레인지 용기에 옮겨주고\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"두부의 수분 제거를 위해 전자레인지에 2분간 돌린 뒤, 빠져나온 수분을 버린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"수분 제거를 위해 전자레인지 2분만 돌려줄게요. 이렇게 하면 수분이 쫙 빠져서 두부가 더 단단해지고 양념도 훨씬 잘 배요. 빠져나온 물은 버려주시고요\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 다진마늘 1스푼, 고춧가루 2스푼, 알룰로스(또는 설탕) 2스푼, 간장 2스푼, 가위로 자른 대파, 청양고추, 통깨, 물 2스푼을 넣고 섞어 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 입맛 싹- 돋우는 매콤짭짤달콤 양념장 만들어볼게요. 다진마늘 한 스푼, 고춧가루 두 스푼, 알룰로스나 설탕 두 스푼, 간장 두 스푼, 대파는 알싸한 맛이 좋으니까 귀찮아도 꼭 넣어주세요. 저같은 매운맛 쳐돌이분들은 청양고추도 추가. 통깨 솔솔 뿌려 섞어주면 끝!\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(퍽퍽하니 물 2스푼 추가해주세요)\",\n          \"timestamp\": \"01:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"수분을 빼낸 두부 위에 들기름을 한 바퀴 둘러준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"두부를 기름에 부쳐주면 더 맛있지만 프라이팬 닦기 귀찮잖아요? 대신 들기름 한바퀴 슥- 둘러주면 조금은 튀겨지지 않을까요?\",\n          \"timestamp\": \"01:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양념장을 두부 위에 골고루 얹은 뒤 뚜껑을 덮고 전자레인지에 3분간 더 돌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양념장 골고루 올려서 전자레인지 3분만 더 돌려주면 다른 반찬 필요 없이 밥 두 공기는 싹- 비우게 되는 밥도둑 두부조림 완성입니다~!\",\n          \"timestamp\": \"01:14\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "전자레인지 두부조림",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "두부 한모",
+          "displayName": "두부",
+          "amount": "1",
+          "unit": "모",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 두부",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "두부 한모는 많은 것 같아요",
+              "timestamp": "00:32"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "다진마늘 1스푼",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 1스푼",
+              "timestamp": "00:50"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진마늘 한 스푼",
+              "timestamp": "00:50"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "고추가루 2스푼",
+          "displayName": "고추가루",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추가루 2스푼",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 두 스푼",
+              "timestamp": "00:52"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "알룰로스 or 설탕 2스푼",
+          "displayName": "알룰로스 or 설탕",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "알룰로스 or 설탕 2스푼",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "SPEECH",
+              "text": "알룰로스나 설탕 두 스푼",
+              "timestamp": "00:53"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "간장 2스푼",
+          "displayName": "간장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 2스푼",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장 두 스푼",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파는 알싸한 맛이 좋으니까 귀찮아도 꼭 넣어주세요",
+              "timestamp": "00:56"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "가위로 대파를 잘라 양념 그릇에 넣음",
+              "timestamp": "00:56"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "청양고추",
+          "displayName": "청양고추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "저같은 매운맛 쳐돌이분들은 청양고추도 추가",
+              "timestamp": "01:00"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "청양고추도 추가",
+              "timestamp": "01:01"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "통깨 솔솔",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "통깨 솔솔 뿌려",
+              "timestamp": "01:03"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "통깨 솔솔 뿌려 섞어주면 끝!",
+              "timestamp": "01:03"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "물 2스푼",
+          "displayName": "물",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(퍽퍽하니 물 2스푼 추가해주세요)",
+              "timestamp": "01:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "물병에서 양념장에 물을 붓는 모습",
+              "timestamp": "01:04"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "들기름 한바퀴 슥-",
+          "displayName": "들기름",
+          "amount": "1",
+          "unit": "바퀴",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대신 들기름 한바퀴 슥- 둘러주면",
+              "timestamp": "01:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "두부 위에 들기름을 두르는 모습",
+              "timestamp": "01:09"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "두부를 팩 안에서 가위로 자른 뒤 전자레인지 전용 용기에 옮겨 담는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팩 안에서 가위로 툭툭 잘라줄게요. 왜냐면 뒤에서 가위 또 쓸거거든요. 환경호르몬은 걱정되니까 전자레인지 용기에 옮겨주고",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "두부의 수분 제거를 위해 전자레인지에 2분간 돌린 뒤, 빠져나온 수분을 버린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "수분 제거를 위해 전자레인지 2분만 돌려줄게요. 이렇게 하면 수분이 쫙 빠져서 두부가 더 단단해지고 양념도 훨씬 잘 배요. 빠져나온 물은 버려주시고요",
+              "timestamp": "00:35"
+            }
+          ]
+        },
+        {
+          "text": "볼에 다진마늘 1스푼, 고춧가루 2스푼, 알룰로스(또는 설탕) 2스푼, 간장 2스푼, 가위로 자른 대파, 청양고추, 통깨, 물 2스푼을 넣고 섞어 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 입맛 싹- 돋우는 매콤짭짤달콤 양념장 만들어볼게요. 다진마늘 한 스푼, 고춧가루 두 스푼, 알룰로스나 설탕 두 스푼, 간장 두 스푼, 대파는 알싸한 맛이 좋으니까 귀찮아도 꼭 넣어주세요. 저같은 매운맛 쳐돌이분들은 청양고추도 추가. 통깨 솔솔 뿌려 섞어주면 끝!",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(퍽퍽하니 물 2스푼 추가해주세요)",
+              "timestamp": "01:03"
+            }
+          ]
+        },
+        {
+          "text": "수분을 빼낸 두부 위에 들기름을 한 바퀴 둘러준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "두부를 기름에 부쳐주면 더 맛있지만 프라이팬 닦기 귀찮잖아요? 대신 들기름 한바퀴 슥- 둘러주면 조금은 튀겨지지 않을까요?",
+              "timestamp": "01:06"
+            }
+          ]
+        },
+        {
+          "text": "양념장을 두부 위에 골고루 얹은 뒤 뚜껑을 덮고 전자레인지에 3분간 더 돌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양념장 골고루 올려서 전자레인지 3분만 더 돌려주면 다른 반찬 필요 없이 밥 두 공기는 싹- 비우게 되는 밥도둑 두부조림 완성입니다~!",
+              "timestamp": "01:14"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

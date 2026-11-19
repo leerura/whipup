@@ -1,0 +1,450 @@
+{
+  "videoId": "Q_VYnkKvO5o",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/Q_VYnkKvO5o",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-08T08:58:33.323607+00:00",
+    "rawResponse": "{\n  \"title\": \"참치마요덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"참치\",\n      \"displayName\": \"참치\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 참치 양파\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 참치를 망에걸러 기름을 제거해주세요\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 2개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마요네즈 계란\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 톡\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란 2개를 그릇에 깨 넣음\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 한꼬집\",\n      \"displayName\": \"소금\",\n      \"amount\": \"1\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소금 한꼬집\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기름을 두른 후\",\n          \"timestamp\": \"00:42\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬에 기름을 충분히 둘러주고\",\n          \"timestamp\": \"01:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 참치 양파\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥옆에 스크램블 세팅\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 하나\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 참치 양파\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"저는 하나 다썼어요\",\n          \"timestamp\": \"01:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 4스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"4\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 설탕\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"진간장 4스푼\",\n          \"timestamp\": \"01:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 2스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 설탕\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 2스푼\",\n          \"timestamp\": \"01:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 2스푼\",\n      \"displayName\": \"물\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 2스푼\",\n          \"timestamp\": \"01:58\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추가루 조금\",\n      \"displayName\": \"후추가루\",\n      \"amount\": \"조금\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추가루 김가루\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추가루 조금\",\n          \"timestamp\": \"02:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추가루 김가루\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김가루도 솔솔솔\",\n          \"timestamp\": \"02:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마요네즈\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마요네즈 계란\",\n          \"timestamp\": \"00:02\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 마요네즈를 뿌려주면 완성~\",\n          \"timestamp\": \"02:44\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"참치를 망에 걸러 숟가락으로 꾹꾹 눌러가며 기름을 제거해 둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 참치를 망에걸러 기름을 제거해주세요\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"꾸욱꾸욱\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 계란 2개를 깨 넣고 소금 한 꼬집을 넣은 뒤 잘 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 톡\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소금 한꼬집\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"잘 섞어주세요\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬을 중약불로 달군 뒤 기름을 두르고 풀어둔 계란물을 부어 살짝 익으면 젓가락으로 저어가며 스크램블을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"중약불\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기름을 두른 후\",\n          \"timestamp\": \"00:42\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"풀어둔 계란물을 넣어주세요\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"살짝 익으면 재빨리 젓가락으로 휘적휘적\",\n          \"timestamp\": \"00:50\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"스크램블을 만들어주세요\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 담긴 밥 주변으로 완성된 스크램블 에그를 둘러 세팅한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥옆에 스크램블 세팅\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파는 양 끝을 잘라내고 먹기 좋게 얇게 채 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파끝은 잘라내고\",\n          \"timestamp\": \"01:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먹기좋게 얇게 채썰어주세요\",\n          \"timestamp\": \"01:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 기름을 충분히 두르고 중약불에서 양파가 투명해질 때까지 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬에 기름을 충분히 둘러주고\",\n          \"timestamp\": \"01:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파를 볶아주세요\",\n          \"timestamp\": \"01:35\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"타지않게 중약불에 볶아주다가\",\n          \"timestamp\": \"01:38\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파가 투명해지면\",\n          \"timestamp\": \"01:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"진간장 4스푼, 설탕 2스푼, 물 2스푼을 넣고 함께 잘 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"진간장 4스푼\",\n          \"timestamp\": \"01:46\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 2스푼\",\n          \"timestamp\": \"01:52\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 2스푼\",\n          \"timestamp\": \"01:58\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"같이 잘 볶아주세요\",\n          \"timestamp\": \"02:01\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파가 흐물흐물해지면 후추가루를 조금 넣고 양념이 다 배도록 충분히 졸인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파가 어느정도 흐물흐물해지면\",\n          \"timestamp\": \"02:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추가루 조금\",\n          \"timestamp\": \"02:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양념이 다 배도록 충분히 졸이면 완성\",\n          \"timestamp\": \"02:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 위에 졸인 양파, 기름 뺀 참치, 김가루를 차례로 얹고 마요네즈를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥위에 살포시~\",\n          \"timestamp\": \"02:21\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"준비해둔 참치도 올려주세요\",\n          \"timestamp\": \"02:28\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김가루도 솔솔솔\",\n          \"timestamp\": \"02:38\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 마요네즈를 뿌려주면 완성~\",\n          \"timestamp\": \"02:44\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "참치마요덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "참치",
+          "displayName": "참치",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 참치 양파",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 참치를 망에걸러 기름을 제거해주세요",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "계란 2개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마요네즈 계란",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란 톡",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란 2개를 그릇에 깨 넣음",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "소금 한꼬집",
+          "displayName": "소금",
+          "amount": "1",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "소금 한꼬집",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "기름을 두른 후",
+              "timestamp": "00:42"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "팬에 기름을 충분히 둘러주고",
+              "timestamp": "01:30"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 참치 양파",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "밥옆에 스크램블 세팅",
+              "timestamp": "01:02"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "양파 하나",
+          "displayName": "양파",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 참치 양파",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "저는 하나 다썼어요",
+              "timestamp": "01:23"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "진간장 4스푼",
+          "displayName": "진간장",
+          "amount": "4",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 설탕",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "진간장 4스푼",
+              "timestamp": "01:46"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "설탕 2스푼",
+          "displayName": "설탕",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 설탕",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 2스푼",
+              "timestamp": "01:52"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "물 2스푼",
+          "displayName": "물",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 2스푼",
+              "timestamp": "01:58"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "후추가루 조금",
+          "displayName": "후추가루",
+          "amount": "조금",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추가루 김가루",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "후추가루 조금",
+              "timestamp": "02:08"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "김가루",
+          "displayName": "김가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추가루 김가루",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "김가루도 솔솔솔",
+              "timestamp": "02:38"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "마요네즈",
+          "displayName": "마요네즈",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마요네즈 계란",
+              "timestamp": "00:02"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 마요네즈를 뿌려주면 완성~",
+              "timestamp": "02:44"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "참치를 망에 걸러 숟가락으로 꾹꾹 눌러가며 기름을 제거해 둔다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 참치를 망에걸러 기름을 제거해주세요",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "꾸욱꾸욱",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 계란 2개를 깨 넣고 소금 한 꼬집을 넣은 뒤 잘 섞어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "계란 톡",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "소금 한꼬집",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "잘 섞어주세요",
+              "timestamp": "00:29"
+            }
+          ]
+        },
+        {
+          "text": "팬을 중약불로 달군 뒤 기름을 두르고 풀어둔 계란물을 부어 살짝 익으면 젓가락으로 저어가며 스크램블을 만든다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "중약불",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "기름을 두른 후",
+              "timestamp": "00:42"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "풀어둔 계란물을 넣어주세요",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "살짝 익으면 재빨리 젓가락으로 휘적휘적",
+              "timestamp": "00:50"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "스크램블을 만들어주세요",
+              "timestamp": "00:53"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 담긴 밥 주변으로 완성된 스크램블 에그를 둘러 세팅한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "밥옆에 스크램블 세팅",
+              "timestamp": "01:02"
+            }
+          ]
+        },
+        {
+          "text": "양파는 양 끝을 잘라내고 먹기 좋게 얇게 채 썬다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파끝은 잘라내고",
+              "timestamp": "01:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먹기좋게 얇게 채썰어주세요",
+              "timestamp": "01:17"
+            }
+          ]
+        },
+        {
+          "text": "팬에 기름을 충분히 두르고 중약불에서 양파가 투명해질 때까지 볶는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "팬에 기름을 충분히 둘러주고",
+              "timestamp": "01:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파를 볶아주세요",
+              "timestamp": "01:35"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "타지않게 중약불에 볶아주다가",
+              "timestamp": "01:38"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파가 투명해지면",
+              "timestamp": "01:41"
+            }
+          ]
+        },
+        {
+          "text": "진간장 4스푼, 설탕 2스푼, 물 2스푼을 넣고 함께 잘 볶는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "진간장 4스푼",
+              "timestamp": "01:46"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 2스푼",
+              "timestamp": "01:52"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 2스푼",
+              "timestamp": "01:58"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "같이 잘 볶아주세요",
+              "timestamp": "02:01"
+            }
+          ]
+        },
+        {
+          "text": "양파가 흐물흐물해지면 후추가루를 조금 넣고 양념이 다 배도록 충분히 졸인다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파가 어느정도 흐물흐물해지면",
+              "timestamp": "02:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "후추가루 조금",
+              "timestamp": "02:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양념이 다 배도록 충분히 졸이면 완성",
+              "timestamp": "02:16"
+            }
+          ]
+        },
+        {
+          "text": "밥 위에 졸인 양파, 기름 뺀 참치, 김가루를 차례로 얹고 마요네즈를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "밥위에 살포시~",
+              "timestamp": "02:21"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "준비해둔 참치도 올려주세요",
+              "timestamp": "02:28"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "김가루도 솔솔솔",
+              "timestamp": "02:38"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 마요네즈를 뿌려주면 완성~",
+              "timestamp": "02:44"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

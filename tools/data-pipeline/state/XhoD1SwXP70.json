@@ -1,0 +1,300 @@
+{
+  "videoId": "XhoD1SwXP70",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/XhoD1SwXP70",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-08T09:02:12.824272+00:00",
+    "rawResponse": "{\n  \"title\": \"쉬림프 고추장크림 파스타\",\n  \"description\": null,\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"소금\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금을 쪼매 넣어주고\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파스타 면 1인분\",\n      \"displayName\": \"파스타 면\",\n      \"amount\": \"1\",\n      \"unit\": \"인분\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"파스타 면을 1인분에 맞춰 넣고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"파스타 면을 1인분에 맞춰 넣고\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬에 식용유를 넉넉하게 둘러주고\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 팬에 식용유를 넉넉하게 둘러주고\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 1스푼\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘을 한국인스러운 크게 한 스푼과\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 반개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"0.5\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 반개를 기영이 대가리 맹키로 쪼뼛하고 입체감 있게 썰어서 다 넣어줍니다.\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 반개를 기영이 대가리 맹키로 쪼뼛하고 입체감 있게 썰어서 다 넣어줍니다.\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"냉동 새우 한줌 가득\",\n      \"displayName\": \"냉동 새우\",\n      \"amount\": \"1\",\n      \"unit\": \"줌 가득\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 쉬림프 맛이 나는 신기한 냉동 새우도 한줌 가득 넣어준 뒤에\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 쉬림프 맛이 나는 신기한 냉동 새우도 한줌 가득 넣어준 뒤에\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우유 1컵 (약 180ml)\",\n      \"displayName\": \"우유\",\n      \"amount\": \"1\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"우유 1컵 (약 180ml)\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"생크림 대신 우유를 1컵 부어줍니다.\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 1스푼\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 1스푼\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 외국인들도 좋아하는 고추장 1스푼과\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"토마토 스파게티 소스 4스푼\",\n      \"displayName\": \"토마토 스파게티 소스\",\n      \"amount\": \"4\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"토마토 스파게티 소스 4스푼\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"토메이토 스파게티 소스를 4스푼 넣고\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추와 파슬리까지 뿌려주면\",\n          \"timestamp\": \"00:57\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추와 파슬리까지 뿌려주면\",\n          \"timestamp\": \"00:57\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리\",\n      \"displayName\": \"파슬리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추와 파슬리까지 뿌려주면\",\n          \"timestamp\": \"00:57\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추와 파슬리까지 뿌려주면\",\n          \"timestamp\": \"00:57\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팔팔 끓는 물에 소금을 조금 넣고 파스타 면 1인분을 넣어 원하는 면발이 되도록 삶아준 뒤 건져낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팔팔 끓는 물에 소금을 쪼매 넣어주고 파스타 면을 1인분에 맞춰 넣고 본인이 좋아하는 면발이 되도록 끓여준 뒤에 빼줍니다.\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유를 넉넉하게 두르고 다진 마늘 1스푼, 깍둑썰기한 양파 반 개, 냉동 새우 한 줌 가득을 넣고 전체적으로 갈색빛이 돌 때까지 골고루 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬에 식용유를 넉넉하게 둘러주고 다진 마늘을 한국인스러운 크게 한 스푼과 양파 반개를 기영이 대가리 맹키로 쪼뼛하고 입체감 있게 썰어서 다 넣어줍니다. 여기에 쉬림프 맛이 나는 신기한 냉동 새우도 한줌 가득 넣어준 뒤에 전체적으로 갈색빛이 띌 때까지 골고루 볶아주다가\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"우유 1컵(약 180ml), 고추장 1스푼, 토마토 스파게티 소스 4스푼을 넣고 섞어주며 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"생크림 대신 우유를 1컵 부어줍니다. 여기에 외국인들도 좋아하는 고추장 1스푼과 토메이토 스파게티 소스를 4스푼 넣고\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소스가 주황빛을 띠면 삶아둔 파스타 면을 넣고 저어가며 1~2분 정도 더 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"주황 빛이 띠면 미리 삶아서 빼둔 파스타면을 넣고 저어주면서 1~2분 정도만 더 끓여주면 끝입니다.\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 파스타의 면을 먼저 그릇에 담아 모양을 잡아준 뒤, 남은 고추장 크림소스를 얹고 후추와 파슬리를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다 됐으면 면 부터 빼주고 대충 젓가락으로 모양을 잡아준 뒤 남은 꾸덕한 고추장 크림소스까지 곁들여주고 후추와 파슬리까지 뿌려주면\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "쉬림프 고추장크림 파스타",
+      "description": null,
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "소금",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소금을 쪼매 넣어주고",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "파스타 면 1인분",
+          "displayName": "파스타 면",
+          "amount": "1",
+          "unit": "인분",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "파스타 면을 1인분에 맞춰 넣고",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "파스타 면을 1인분에 맞춰 넣고",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 팬에 식용유를 넉넉하게 둘러주고",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 팬에 식용유를 넉넉하게 둘러주고",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "다진 마늘 1스푼",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 1스푼",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘을 한국인스러운 크게 한 스푼과",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "양파 반개",
+          "displayName": "양파",
+          "amount": "0.5",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 반개를 기영이 대가리 맹키로 쪼뼛하고 입체감 있게 썰어서 다 넣어줍니다.",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파 반개를 기영이 대가리 맹키로 쪼뼛하고 입체감 있게 썰어서 다 넣어줍니다.",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "냉동 새우 한줌 가득",
+          "displayName": "냉동 새우",
+          "amount": "1",
+          "unit": "줌 가득",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 쉬림프 맛이 나는 신기한 냉동 새우도 한줌 가득 넣어준 뒤에",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 쉬림프 맛이 나는 신기한 냉동 새우도 한줌 가득 넣어준 뒤에",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "우유 1컵 (약 180ml)",
+          "displayName": "우유",
+          "amount": "1",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "우유 1컵 (약 180ml)",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SPEECH",
+              "text": "생크림 대신 우유를 1컵 부어줍니다.",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "고추장 1스푼",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 1스푼",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 외국인들도 좋아하는 고추장 1스푼과",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "토마토 스파게티 소스 4스푼",
+          "displayName": "토마토 스파게티 소스",
+          "amount": "4",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "토마토 스파게티 소스 4스푼",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "SPEECH",
+              "text": "토메이토 스파게티 소스를 4스푼 넣고",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후추와 파슬리까지 뿌려주면",
+              "timestamp": "00:57"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "후추와 파슬리까지 뿌려주면",
+              "timestamp": "00:57"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "파슬리",
+          "displayName": "파슬리",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후추와 파슬리까지 뿌려주면",
+              "timestamp": "00:57"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "후추와 파슬리까지 뿌려주면",
+              "timestamp": "00:57"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팔팔 끓는 물에 소금을 조금 넣고 파스타 면 1인분을 넣어 원하는 면발이 되도록 삶아준 뒤 건져낸다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 팔팔 끓는 물에 소금을 쪼매 넣어주고 파스타 면을 1인분에 맞춰 넣고 본인이 좋아하는 면발이 되도록 끓여준 뒤에 빼줍니다.",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유를 넉넉하게 두르고 다진 마늘 1스푼, 깍둑썰기한 양파 반 개, 냉동 새우 한 줌 가득을 넣고 전체적으로 갈색빛이 돌 때까지 골고루 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 팬에 식용유를 넉넉하게 둘러주고 다진 마늘을 한국인스러운 크게 한 스푼과 양파 반개를 기영이 대가리 맹키로 쪼뼛하고 입체감 있게 썰어서 다 넣어줍니다. 여기에 쉬림프 맛이 나는 신기한 냉동 새우도 한줌 가득 넣어준 뒤에 전체적으로 갈색빛이 띌 때까지 골고루 볶아주다가",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "우유 1컵(약 180ml), 고추장 1스푼, 토마토 스파게티 소스 4스푼을 넣고 섞어주며 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "생크림 대신 우유를 1컵 부어줍니다. 여기에 외국인들도 좋아하는 고추장 1스푼과 토메이토 스파게티 소스를 4스푼 넣고",
+              "timestamp": "00:36"
+            }
+          ]
+        },
+        {
+          "text": "소스가 주황빛을 띠면 삶아둔 파스타 면을 넣고 저어가며 1~2분 정도 더 끓여준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "주황 빛이 띠면 미리 삶아서 빼둔 파스타면을 넣고 저어주면서 1~2분 정도만 더 끓여주면 끝입니다.",
+              "timestamp": "00:44"
+            }
+          ]
+        },
+        {
+          "text": "완성된 파스타의 면을 먼저 그릇에 담아 모양을 잡아준 뒤, 남은 고추장 크림소스를 얹고 후추와 파슬리를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다 됐으면 면 부터 빼주고 대충 젓가락으로 모양을 잡아준 뒤 남은 꾸덕한 고추장 크림소스까지 곁들여주고 후추와 파슬리까지 뿌려주면",
+              "timestamp": "00:51"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

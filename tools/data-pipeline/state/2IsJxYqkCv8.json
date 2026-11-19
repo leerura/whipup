@@ -1,0 +1,565 @@
+{
+  "videoId": "2IsJxYqkCv8",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/2IsJxYqkCv8",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-14T13:20:16.657483+00:00",
+    "rawResponse": "{\n  \"title\": \"우거지 갈비탕\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"얼갈이 배추 700g\",\n      \"displayName\": \"얼갈이 배추\",\n      \"amount\": \"700\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"얼갈이 배추 700g\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 끓는 물에 얼갈이 배추를 넣고\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"LA갈비 2kg\",\n      \"displayName\": \"LA갈비\",\n      \"amount\": \"2\",\n      \"unit\": \"kg\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"LA갈비 2kg\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"배추를 데친 물에 LA갈비도 넣고 데쳐줄 거야\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 3.5L\",\n      \"displayName\": \"물\",\n      \"amount\": \"3.5\",\n      \"unit\": \"L\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 3.5L\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 깨끗하게 씻은 냄비에 물을 부어준 다음\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"무 300g\",\n      \"displayName\": \"무\",\n      \"amount\": \"300\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"무 300g\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 무\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 150g\",\n      \"displayName\": \"양파\",\n      \"amount\": \"150\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 150g\",\n          \"timestamp\": \"00:42\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다시마 10g\",\n      \"displayName\": \"다시마\",\n      \"amount\": \"10\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다시마 10g\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다시마를 넣고 30분간 푹 끓여줄 거야\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"된장 5spoons\",\n      \"displayName\": \"된장\",\n      \"amount\": \"5\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"된장 5spoons\",\n          \"timestamp\": \"00:50\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"된장\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 3spoons\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"3\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 3spoons\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"국간장 4spoons\",\n      \"displayName\": \"국간장\",\n      \"amount\": \"4\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장 4spoons\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국간장\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"멸치액젓 4spoons\",\n      \"displayName\": \"멸치액젓\",\n      \"amount\": \"4\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"멸치액젓 4spoons\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"멸치액젓\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 0.3spoon\",\n      \"displayName\": \"후추\",\n      \"amount\": \"0.3\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 0.3spoon\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추로 양념을 해줘\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물\",\n          \"timestamp\": \"01:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 아까 처음 물높이만큼 물을 추가로 부어준 다음\",\n          \"timestamp\": \"01:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 150g\",\n      \"displayName\": \"대파\",\n      \"amount\": \"150\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 150g\",\n          \"timestamp\": \"01:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파\",\n          \"timestamp\": \"01:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"들깨가루 3spoons\",\n      \"displayName\": \"들깨가루\",\n      \"amount\": \"3\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"들깨가루 3spoons\",\n          \"timestamp\": \"01:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"들깨가루를 넣고\",\n          \"timestamp\": \"01:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 (꽃소금)\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금\",\n          \"timestamp\": \"01:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간을 보고 부족한 간은 꽃소금과\",\n          \"timestamp\": \"01:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소고기 다시다\",\n      \"displayName\": \"소고기 다시다\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소고기 다시다\",\n          \"timestamp\": \"01:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소고기 다시다로 맞춰줄 거야\",\n          \"timestamp\": \"01:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고기 기름\",\n      \"displayName\": \"고기 기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"얼큰 칼칼하게 먹고 싶은 사람들은 아까 빼둔 기름에\",\n          \"timestamp\": \"01:36\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"우려낸 육수에서 걷어낸 기름을 그릇에 담음\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1spoon\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 1spoon\",\n          \"timestamp\": \"01:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘\",\n          \"timestamp\": \"01:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 3spoons\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"3\",\n      \"unit\": \"spoon\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 3spoons\",\n          \"timestamp\": \"01:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루\",\n          \"timestamp\": \"01:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 0.3spoon\",\n      \"displayName\": \"후추\",\n      \"amount\": \"0.3\",\n      \"unit\": \"spoon\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 0.3spoon\",\n          \"timestamp\": \"01:39\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추를 넣고 섞어준 다음\",\n          \"timestamp\": \"01:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추\",\n      \"displayName\": \"청양고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추\",\n          \"timestamp\": \"01:47\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"펄펄 끓는 갈비탕에 청양고추와 다데기를 같이 넣어주면\",\n          \"timestamp\": \"01:46\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"끓는 물에 얼갈이 배추 700g을 넣고 1분간 데쳐 찬물이나 채반에 건져 풋내를 날려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 끓는 물에 얼갈이 배추를 넣고 한번 데쳐서 풋내를 날려줘. 딱 1분만 데쳐주면 충분하단다.\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"배추를 데쳐낸 물에 LA갈비 2kg을 넣고 불순물이 나오도록 살짝 데쳐 건져낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 배추를 데친 물에 LA갈비도 넣고 데쳐줄 거야. 저기 떠 있는 불순물 보이지? 저게 들어가면 국밥이 텁텁해지더라고.\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"깨끗이 씻은 냄비에 물 3.5L를 붓고 데친 LA갈비를 넣은 뒤 한입 크기로 가위로 잘라준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 깨끗하게 씻은 냄비에 물을 부어준 다음 데친 LA갈비를 넣고 한입 크기로 잘라줘.\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"무 300g, 양파 150g, 다시마 10g을 넣고 30분간 푹 끓여 육수를 낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 무, 양파, 다시마를 넣고 30분간 푹 끓여줄 거야.\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"text\": \"데쳐둔 얼갈이 배추를 한입 크기로 자른 후 된장 5스푼, 다진 마늘 3스푼, 국간장 4스푼, 멸치액젓 4스푼, 후추 0.3스푼을 넣고 조물조물 무쳐 양념한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그동안 데친 얼갈이 배추를 한입 크기로 잘라준 다음 된장, 다진 마늘, 국간장, 멸치액젓, 후추로 양념을 해줘.\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    },\n    {\n      \"text\": \"30분이 지나면 무, 양파, 다시마를 건져내고 탕 위에 뜬 고기 기름을 그릇에 걷어낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그럼 무랑 양파, 다시마를 건져줄 거야. 그리고 이게 핵심인데 고기에 뜬 기름을 조금 건져줘.\",\n          \"timestamp\": \"00:57\"\n        }\n      ]\n    },\n    {\n      \"text\": \"증발한 육수만큼 처음에 부었던 물높이로 물을 추가하고, 양념한 얼갈이 배추, 대파 150g, 들깨가루 3스푼을 넣고 30분간 더 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 아까 처음 물높이만큼 물을 추가로 부어준 다음 얼갈이 배추 무침, 대파, 들깨가루를 넣고 30분간 더 끓여주면 우거지 갈비탕 끝.\",\n          \"timestamp\": \"01:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국물 간을 보고 부족하면 꽃소금과 소고기 다시다로 맞춘다. (건져낸 무를 썰어서 원하는 경우 다시 국에 넣어도 된다.)\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간을 보고 부족한 간은 꽃소금과 소고기 다시다로 맞춰줄 거야. 아 그리고 아까 육수 우리고 남은 무 있잖아 이거 넣고 싶은 사람들은 잘라서 넣어도 맛있단다.\",\n          \"timestamp\": \"01:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"(선택사항) 얼큰하게 먹으려면 걷어낸 고기 기름에 다진 마늘 1스푼, 고춧가루 3스푼, 후추 0.3스푼을 섞은 후 700W 전자레인지에 2분간 돌려 고추기름 다데기를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"얼큰 칼칼하게 먹고 싶은 사람들은 아까 빼둔 기름에 다진 마늘, 고춧가루, 후추를 넣고 섞어준 다음 전자레인지에서 2분간 돌려서 고추기름 다데기를 만들어줘.\",\n          \"timestamp\": \"01:36\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"700W 전자레인지 2분\",\n          \"timestamp\": \"01:42\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뚝배기에 끓는 갈비탕을 담고 썰어둔 청양고추와 다데기를 올려 얼큰 우거지 갈비탕으로 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 펄펄 끓는 갈비탕에 청양고추와 다데기를 같이 넣어주면 얼큰 우거지 갈비탕까지 끝.\",\n          \"timestamp\": \"01:45\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"보충하는 물의 정확한 양은 계량 수치 없이 '처음 물높이만큼'으로만 제시됨\",\n    \"소금(꽃소금)과 소고기 다시다, 청양고추의 계량 수치는 언급되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "우거지 갈비탕",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "얼갈이 배추 700g",
+          "displayName": "얼갈이 배추",
+          "amount": "700",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "얼갈이 배추 700g",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 끓는 물에 얼갈이 배추를 넣고",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "LA갈비 2kg",
+          "displayName": "LA갈비",
+          "amount": "2",
+          "unit": "kg",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "LA갈비 2kg",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "배추를 데친 물에 LA갈비도 넣고 데쳐줄 거야",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "물 3.5L",
+          "displayName": "물",
+          "amount": "3.5",
+          "unit": "L",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 3.5L",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 깨끗하게 씻은 냄비에 물을 부어준 다음",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "무 300g",
+          "displayName": "무",
+          "amount": "300",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "무 300g",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 무",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "양파 150g",
+          "displayName": "양파",
+          "amount": "150",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 150g",
+              "timestamp": "00:42"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파",
+              "timestamp": "00:42"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "다시마 10g",
+          "displayName": "다시마",
+          "amount": "10",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다시마 10g",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다시마를 넣고 30분간 푹 끓여줄 거야",
+              "timestamp": "00:43"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "된장 5spoons",
+          "displayName": "된장",
+          "amount": "5",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "된장 5spoons",
+              "timestamp": "00:50"
+            },
+            {
+              "type": "SPEECH",
+              "text": "된장",
+              "timestamp": "00:51"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "다진 마늘 3spoons",
+          "displayName": "다진 마늘",
+          "amount": "3",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 3spoons",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘",
+              "timestamp": "00:51"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "국간장 4spoons",
+          "displayName": "국간장",
+          "amount": "4",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장 4spoons",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "SPEECH",
+              "text": "국간장",
+              "timestamp": "00:52"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "멸치액젓 4spoons",
+          "displayName": "멸치액젓",
+          "amount": "4",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "멸치액젓 4spoons",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "SPEECH",
+              "text": "멸치액젓",
+              "timestamp": "00:53"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "후추 0.3spoon",
+          "displayName": "후추",
+          "amount": "0.3",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 0.3spoon",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추로 양념을 해줘",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "물",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물",
+              "timestamp": "01:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 아까 처음 물높이만큼 물을 추가로 부어준 다음",
+              "timestamp": "01:07"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "대파 150g",
+          "displayName": "대파",
+          "amount": "150",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 150g",
+              "timestamp": "01:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파",
+              "timestamp": "01:12"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "들깨가루 3spoons",
+          "displayName": "들깨가루",
+          "amount": "3",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "들깨가루 3spoons",
+              "timestamp": "01:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "들깨가루를 넣고",
+              "timestamp": "01:13"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "소금 (꽃소금)",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금",
+              "timestamp": "01:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간을 보고 부족한 간은 꽃소금과",
+              "timestamp": "01:19"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "소고기 다시다",
+          "displayName": "소고기 다시다",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소고기 다시다",
+              "timestamp": "01:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소고기 다시다로 맞춰줄 거야",
+              "timestamp": "01:21"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "고기 기름",
+          "displayName": "고기 기름",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "얼큰 칼칼하게 먹고 싶은 사람들은 아까 빼둔 기름에",
+              "timestamp": "01:36"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "우려낸 육수에서 걷어낸 기름을 그릇에 담음",
+              "timestamp": "01:02"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        },
+        {
+          "rawText": "다진 마늘 1spoon",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 1spoon",
+              "timestamp": "01:37"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘",
+              "timestamp": "01:38"
+            }
+          ],
+          "sourceId": "ingredient-18"
+        },
+        {
+          "rawText": "고춧가루 3spoons",
+          "displayName": "고춧가루",
+          "amount": "3",
+          "unit": "spoon",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 3spoons",
+              "timestamp": "01:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루",
+              "timestamp": "01:38"
+            }
+          ],
+          "sourceId": "ingredient-19"
+        },
+        {
+          "rawText": "후추 0.3spoon",
+          "displayName": "후추",
+          "amount": "0.3",
+          "unit": "spoon",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 0.3spoon",
+              "timestamp": "01:39"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추를 넣고 섞어준 다음",
+              "timestamp": "01:39"
+            }
+          ],
+          "sourceId": "ingredient-20"
+        },
+        {
+          "rawText": "청양고추",
+          "displayName": "청양고추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추",
+              "timestamp": "01:47"
+            },
+            {
+              "type": "SPEECH",
+              "text": "펄펄 끓는 갈비탕에 청양고추와 다데기를 같이 넣어주면",
+              "timestamp": "01:46"
+            }
+          ],
+          "sourceId": "ingredient-21"
+        }
+      ],
+      "steps": [
+        {
+          "text": "끓는 물에 얼갈이 배추 700g을 넣고 1분간 데쳐 찬물이나 채반에 건져 풋내를 날려준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 끓는 물에 얼갈이 배추를 넣고 한번 데쳐서 풋내를 날려줘. 딱 1분만 데쳐주면 충분하단다.",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "배추를 데쳐낸 물에 LA갈비 2kg을 넣고 불순물이 나오도록 살짝 데쳐 건져낸다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 배추를 데친 물에 LA갈비도 넣고 데쳐줄 거야. 저기 떠 있는 불순물 보이지? 저게 들어가면 국밥이 텁텁해지더라고.",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "깨끗이 씻은 냄비에 물 3.5L를 붓고 데친 LA갈비를 넣은 뒤 한입 크기로 가위로 잘라준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 깨끗하게 씻은 냄비에 물을 부어준 다음 데친 LA갈비를 넣고 한입 크기로 잘라줘.",
+              "timestamp": "00:31"
+            }
+          ]
+        },
+        {
+          "text": "무 300g, 양파 150g, 다시마 10g을 넣고 30분간 푹 끓여 육수를 낸다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 무, 양파, 다시마를 넣고 30분간 푹 끓여줄 거야.",
+              "timestamp": "00:40"
+            }
+          ]
+        },
+        {
+          "text": "데쳐둔 얼갈이 배추를 한입 크기로 자른 후 된장 5스푼, 다진 마늘 3스푼, 국간장 4스푼, 멸치액젓 4스푼, 후추 0.3스푼을 넣고 조물조물 무쳐 양념한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그동안 데친 얼갈이 배추를 한입 크기로 잘라준 다음 된장, 다진 마늘, 국간장, 멸치액젓, 후추로 양념을 해줘.",
+              "timestamp": "00:48"
+            }
+          ]
+        },
+        {
+          "text": "30분이 지나면 무, 양파, 다시마를 건져내고 탕 위에 뜬 고기 기름을 그릇에 걷어낸다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그럼 무랑 양파, 다시마를 건져줄 거야. 그리고 이게 핵심인데 고기에 뜬 기름을 조금 건져줘.",
+              "timestamp": "00:57"
+            }
+          ]
+        },
+        {
+          "text": "증발한 육수만큼 처음에 부었던 물높이로 물을 추가하고, 양념한 얼갈이 배추, 대파 150g, 들깨가루 3스푼을 넣고 30분간 더 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 아까 처음 물높이만큼 물을 추가로 부어준 다음 얼갈이 배추 무침, 대파, 들깨가루를 넣고 30분간 더 끓여주면 우거지 갈비탕 끝.",
+              "timestamp": "01:07"
+            }
+          ]
+        },
+        {
+          "text": "국물 간을 보고 부족하면 꽃소금과 소고기 다시다로 맞춘다. (건져낸 무를 썰어서 원하는 경우 다시 국에 넣어도 된다.)",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "간을 보고 부족한 간은 꽃소금과 소고기 다시다로 맞춰줄 거야. 아 그리고 아까 육수 우리고 남은 무 있잖아 이거 넣고 싶은 사람들은 잘라서 넣어도 맛있단다.",
+              "timestamp": "01:19"
+            }
+          ]
+        },
+        {
+          "text": "(선택사항) 얼큰하게 먹으려면 걷어낸 고기 기름에 다진 마늘 1스푼, 고춧가루 3스푼, 후추 0.3스푼을 섞은 후 700W 전자레인지에 2분간 돌려 고추기름 다데기를 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "얼큰 칼칼하게 먹고 싶은 사람들은 아까 빼둔 기름에 다진 마늘, 고춧가루, 후추를 넣고 섞어준 다음 전자레인지에서 2분간 돌려서 고추기름 다데기를 만들어줘.",
+              "timestamp": "01:36"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "700W 전자레인지 2분",
+              "timestamp": "01:42"
+            }
+          ]
+        },
+        {
+          "text": "뚝배기에 끓는 갈비탕을 담고 썰어둔 청양고추와 다데기를 올려 얼큰 우거지 갈비탕으로 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 펄펄 끓는 갈비탕에 청양고추와 다데기를 같이 넣어주면 얼큰 우거지 갈비탕까지 끝.",
+              "timestamp": "01:45"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "보충하는 물의 정확한 양은 계량 수치 없이 '처음 물높이만큼'으로만 제시됨",
+        "소금(꽃소금)과 소고기 다시다, 청양고추의 계량 수치는 언급되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "맛은 잡았는데 단가를 못 잡았습니다!",
+    "sourceChannelName": "1분요리 뚝딱이형",
+    "sourceChannelId": "UC0htUSwcxfSGNfK_5Q28JkA",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/MHTy5jXZQPwKwrGtAV-gLL6ei9YTOgR8Z6GESkhAAIz0kkG4d6B6vu6CUPNNsLOzqcGxGfBK=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-14T13:20:13.496424Z"
+  }
+}

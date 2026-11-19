@@ -1,0 +1,319 @@
+{
+  "videoId": "YkM717dWJxo",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/YkM717dWJxo",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-15T08:09:23.596960+00:00",
+    "rawResponse": "{\n  \"title\": \"고깃집 김치볶음밥\",\n  \"description\": null,\n  \"servings\": \"4\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"재료는 간단해요 대파, 스팸, 그리고 김치!\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"스팸\",\n      \"displayName\": \"스팸\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"재료는 간단해요 대파, 스팸, 그리고 김치!\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"스팸\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치\",\n      \"displayName\": \"김치\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"재료는 간단해요 대파, 스팸, 그리고 김치!\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 김치!\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기버터 (또는 식용유)\",\n      \"displayName\": \"기버터\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"볶음밥 하면 보통 식용유 쓰시죠? 당연히 쓰셔도 되는데요 저희는 요즘 기버터에 빠져있어서 이걸로 만들어볼게요\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기버터에 빠져있어서...\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 4공기\",\n      \"displayName\": \"밥\",\n      \"amount\": \"4\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"자 이제 밥 4공기 들어갑니다!\",\n          \"timestamp\": \"00:55\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥 4공기 들어갑니다!\",\n          \"timestamp\": \"00:55\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름 살짝\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"뚝배기 하나 준비해서 기름 살짝 두르고\",\n          \"timestamp\": \"00:122\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기름 살짝 두르고\",\n          \"timestamp\": \"00:123\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"볶음밥 올린 다음 김가루\",\n          \"timestamp\": \"00:124\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김가루\",\n          \"timestamp\": \"00:125\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 노른자\",\n      \"displayName\": \"계란 노른자\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 노른자 올리고\",\n          \"timestamp\": \"00:126\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 노른자 올리고\",\n          \"timestamp\": \"00:126\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"대파와 스팸을 잘게 썰어 준비합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파랑 스팸은 작게 썰어주고요!\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"작게 썰어주고요!\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김치는 국물을 한 번 꽉 짜낸 뒤 썰어주고, 썬 김치의 수분을 다시 한 번 꼭 짜냅니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치는 그냥 쓰시면 안 됩니다 한번 꾹 짜고 썰어준 다음 다시 한번 꾹 짜주세요\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다시 한 번 꾹 짜주세요\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 기버터(또는 식용유)를 두르고 썰어둔 대파를 넣어 파향이 올라오고 노릇해질 때까지 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"일단 기름을 두르고 대파부터 볶아주세요 파향이 올라올 때까지 노릇하게 볶아주는 게 중요합니다\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파부터 볶아주세요\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"text\": \"스팸을 넣고 함께 노릇하게 익혀줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그 다음 스팸 넣고 같이 노릇하게 익혀주세요\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"같이 노릇하게 익혀주세요\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"수분이 생기지 않도록 강불에서 김치를 넣고 딱 2분간 빠르게 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치는 강불에서 딱 2분만 볶아주세요!\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"딱 2분만 볶아주세요!\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥 4공기를 넣고 별도의 추가 양념 없이 재료와 잘 섞이도록 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"자 이제 밥 4공기 들어갑니다! 여기서 또 하나 양념... 이 빠졌잖아요? 근데 안 넣어도 됩니다.\",\n          \"timestamp\": \"00:55\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥 4공기 들어갑니다!\",\n          \"timestamp\": \"00:55\"\n        }\n      ]\n    },\n    {\n      \"text\": \"모든 재료가 고루 섞이면 불을 강하게 올리고 수분을 날리기 위해 마지막으로 1분간 더 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"모든 재료가 섞어졌으면 불을 강하게 올리고 마지막으로 1분만 더 볶아보세요!\",\n          \"timestamp\": \"01:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"1분만 더 볶아보세요!\",\n          \"timestamp\": \"01:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"(선택 사항) 뚝배기에 기름을 살짝 두르고 볶음밥을 올린 뒤, 김가루와 계란 노른자를 얹고 불 위에서 2분간 눌러 누룽지를 만들어 줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고깃집 느낌 내고 싶으면 뚝배기 하나 준비해서 기름 살짝 두르고 볶음밥 올린 다음 김가루 계란 노른자 올리고 2분만 눌려주세요\",\n          \"timestamp\": \"01:21\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"2분만 눌려주세요\",\n          \"timestamp\": \"01:27\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"대파, 스팸, 김치, 기버터의 정확한 계량 수치가 언급되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "고깃집 김치볶음밥",
+      "description": null,
+      "servings": "4",
+      "ingredients": [
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "재료는 간단해요 대파, 스팸, 그리고 김치!",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대파",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "스팸",
+          "displayName": "스팸",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "재료는 간단해요 대파, 스팸, 그리고 김치!",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "스팸",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "김치",
+          "displayName": "김치",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "재료는 간단해요 대파, 스팸, 그리고 김치!",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 김치!",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "기버터 (또는 식용유)",
+          "displayName": "기버터",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "볶음밥 하면 보통 식용유 쓰시죠? 당연히 쓰셔도 되는데요 저희는 요즘 기버터에 빠져있어서 이걸로 만들어볼게요",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "기버터에 빠져있어서...",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "밥 4공기",
+          "displayName": "밥",
+          "amount": "4",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "자 이제 밥 4공기 들어갑니다!",
+              "timestamp": "00:55"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "밥 4공기 들어갑니다!",
+              "timestamp": "00:55"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "기름 살짝",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "뚝배기 하나 준비해서 기름 살짝 두르고",
+              "timestamp": "00:122"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "기름 살짝 두르고",
+              "timestamp": "00:123"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "김가루",
+          "displayName": "김가루",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "볶음밥 올린 다음 김가루",
+              "timestamp": "00:124"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "김가루",
+              "timestamp": "00:125"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "계란 노른자",
+          "displayName": "계란 노른자",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 노른자 올리고",
+              "timestamp": "00:126"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란 노른자 올리고",
+              "timestamp": "00:126"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        }
+      ],
+      "steps": [
+        {
+          "text": "대파와 스팸을 잘게 썰어 준비합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파랑 스팸은 작게 썰어주고요!",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "작게 썰어주고요!",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "김치는 국물을 한 번 꽉 짜낸 뒤 썰어주고, 썬 김치의 수분을 다시 한 번 꼭 짜냅니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김치는 그냥 쓰시면 안 됩니다 한번 꾹 짜고 썰어준 다음 다시 한번 꾹 짜주세요",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다시 한 번 꾹 짜주세요",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "팬에 기버터(또는 식용유)를 두르고 썰어둔 대파를 넣어 파향이 올라오고 노릇해질 때까지 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "일단 기름을 두르고 대파부터 볶아주세요 파향이 올라올 때까지 노릇하게 볶아주는 게 중요합니다",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대파부터 볶아주세요",
+              "timestamp": "00:36"
+            }
+          ]
+        },
+        {
+          "text": "스팸을 넣고 함께 노릇하게 익혀줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그 다음 스팸 넣고 같이 노릇하게 익혀주세요",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "같이 노릇하게 익혀주세요",
+              "timestamp": "00:41"
+            }
+          ]
+        },
+        {
+          "text": "수분이 생기지 않도록 강불에서 김치를 넣고 딱 2분간 빠르게 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김치는 강불에서 딱 2분만 볶아주세요!",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "딱 2분만 볶아주세요!",
+              "timestamp": "00:45"
+            }
+          ]
+        },
+        {
+          "text": "밥 4공기를 넣고 별도의 추가 양념 없이 재료와 잘 섞이도록 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "자 이제 밥 4공기 들어갑니다! 여기서 또 하나 양념... 이 빠졌잖아요? 근데 안 넣어도 됩니다.",
+              "timestamp": "00:55"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "밥 4공기 들어갑니다!",
+              "timestamp": "00:55"
+            }
+          ]
+        },
+        {
+          "text": "모든 재료가 고루 섞이면 불을 강하게 올리고 수분을 날리기 위해 마지막으로 1분간 더 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "모든 재료가 섞어졌으면 불을 강하게 올리고 마지막으로 1분만 더 볶아보세요!",
+              "timestamp": "01:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "1분만 더 볶아보세요!",
+              "timestamp": "01:13"
+            }
+          ]
+        },
+        {
+          "text": "(선택 사항) 뚝배기에 기름을 살짝 두르고 볶음밥을 올린 뒤, 김가루와 계란 노른자를 얹고 불 위에서 2분간 눌러 누룽지를 만들어 줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고깃집 느낌 내고 싶으면 뚝배기 하나 준비해서 기름 살짝 두르고 볶음밥 올린 다음 김가루 계란 노른자 올리고 2분만 눌려주세요",
+              "timestamp": "01:21"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "2분만 눌려주세요",
+              "timestamp": "01:27"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "대파, 스팸, 김치, 기버터의 정확한 계량 수치가 언급되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "고깃집 볶음밥은… 김치를 잘못 볶으면 실패합니다!",
+    "sourceChannelName": "김진순 점심시간",
+    "sourceChannelId": "UC9She1e6OWUpwJpwZtbqhjQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/BvOrdVOmTRlMEFygfbeuka_30BrSZenSof2_yC4RCxF0gEKvRzJTn6NEzMTJYQSe8aBxV9iMbQ=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-15T08:09:20.825544Z"
+  }
+}

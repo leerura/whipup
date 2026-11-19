@@ -1,18 +1,575 @@
 {
   "videoId": "8W4dWj3v5wg",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/8W4dWj3v5wg",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-10-27T10:56:53.612015+00:00",
-    "accountId": "account-d",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAt": "2026-10-27T10:57:07.707929+00:00",
-    "retryAccountId": "account-d"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-14T02:37:53.649273+00:00",
+    "rawResponse": "{\n  \"title\": \"감자탕\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"돼지 등뼈\",\n      \"displayName\": \"돼지 등뼈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"돼지 등뼈를 물에 6시간 이상 담가서 핏물을 빼고 깨끗이 씻어줘\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통후추\",\n      \"displayName\": \"통후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"통후추와\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"통후추\\nPepper\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"월계수잎\",\n      \"displayName\": \"월계수잎\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"월계수잎\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"월계수잎\\nAlloro\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"생강\",\n      \"displayName\": \"생강\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"생강\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"생강\\nGinger\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소주나 맛술 90ml (소주잔/종이컵 반 컵)\",\n      \"displayName\": \"맛술 (또는 소주)\",\n      \"amount\": \"90\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소주나 맛술 반 컵을 넣고\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 90ml\\nCooking wine\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 5L\",\n      \"displayName\": \"물\",\n      \"amount\": \"5\",\n      \"unit\": \"L\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물을 5L를 부어줘\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 5L\\nWater\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"된장 크게 3숟가락\",\n      \"displayName\": \"된장\",\n      \"amount\": \"3\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"된장 크게 세 숟가락\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"된장 3\\nSoybean paste\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 크게 1숟가락\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 크게 한 숟가락 넣고\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 1\\nRed pepper paste\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 2\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘 두 개\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 2\\nCrushed garlic\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1/2cup\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1/2\",\n      \"unit\": \"cup\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 반 컵\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1/2cup\\nChili powder\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 50ml (소주잔 한 컵)\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"50\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 소주잔 한 컵\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 50ml\\nDark soy sauce\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"국간장 50ml (소주잔 한 컵)\",\n      \"displayName\": \"국간장\",\n      \"amount\": \"50\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국간장 소주잔 한 컵\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장 50ml\\nKorean style soy sauce\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"멸치액젓 25ml (소주잔 반 컵)\",\n      \"displayName\": \"멸치액젓\",\n      \"amount\": \"25\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"멸치액젓 소주잔 반 컵\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"멸치액젓 25ml\\nAnchovy sauce\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치 반의 반 포기\",\n      \"displayName\": \"김치\",\n      \"amount\": \"1/4\",\n      \"unit\": \"포기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치 반에 반 포기와\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치\\nKimchi\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치국물 100ml (두 국자)\",\n      \"displayName\": \"김치국물\",\n      \"amount\": \"100\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치국물 두 국자\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치국물 100ml\\nKimchi liquid\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"데친 시래기 크게 두 줌\",\n      \"displayName\": \"데친 시래기\",\n      \"amount\": \"2\",\n      \"unit\": \"줌\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"데친 시래기 크게 두 줌을 넣고\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"데친 시래기\\nDried radish greens\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/2\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 반 개와\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/2\\nOnion\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추\",\n      \"displayName\": \"청양고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"청양고추를 넣어줘\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추\\nCheongyang red pepper\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파도 둘 내 잘라서 넣어주고\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파\\nGreen onion\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"버섯\",\n      \"displayName\": \"버섯\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"집에 남는 버섯도 좀 넣어줄게\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"버섯\\nMushroom\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소고기다시다 2숟가락\",\n      \"displayName\": \"소고기 다시다\",\n      \"amount\": \"2\",\n      \"unit\": \"숟가락\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소고기 다시다 두 숟가락 넣어주고\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소고기다시다 2\\nBeef seasoning\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"감자\",\n      \"displayName\": \"감자\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"감자를 넣고\",\n          \"timestamp\": \"00:45\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"감자\\nPotato\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깻잎\",\n      \"displayName\": \"깻잎\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 깻잎과\",\n          \"timestamp\": \"00:51\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깻잎\\nPerilla leaf\",\n          \"timestamp\": \"00:49\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"들깨가루 한 국자\",\n      \"displayName\": \"들깨가루\",\n      \"amount\": \"1\",\n      \"unit\": \"국자\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"들깨가루 한 국자 넣어주면\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"들깨가루\\nPerilla powder\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"돼지 등뼈를 물에 6시간 이상 담가 핏물을 빼고 깨끗이 씻어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"돼지 등뼈를 물에 6시간 이상 담가서 핏물을 빼고 깨끗이 씻어줘\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 등뼈, 통후추, 월계수잎, 생강, 소주 또는 맛술 반 컵(90ml)을 넣고 30분간 삶아준다. (재료가 없으면 된장만 2숟가락 넣고 삶아도 됨)\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 통후추와 월계수잎 생강 소주나 맛술 반 컵을 넣고 없으면 된장만 두 숟가락 넣고 30분 삶아줘\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삶은 뼈를 한 번 더 깨끗이 씻어 냄비에 넣고 물 5L를 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"뼈를 한 번 더 깨끗이 씻어서 물을 5L를 부어줘\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"된장 3숟가락, 고추장 1숟가락, 다진마늘 2스푼, 고춧가루 1/2컵, 진간장 50ml, 국간장 50ml, 멸치액젓 25ml, 김치 1/4포기, 김치국물 100ml(2국자), 데친 시래기 크게 두 줌, 양파 1/2개, 청양고추, 대파, 버섯, 소고기 다시다 2숟가락을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 된장 크게 세 숟가락 고추장 크게 한 숟가락 넣고 다진마늘 두 개 고춧가루 반 컵 진간장 소주잔 한 컵 국간장 소주잔 한 컵 멸치액젓 소주잔 반 컵 김치 반에 반 포기와 김치국물 두 국자 데친 시래기 크게 두 줌을 넣고 양파 반 개와 청양고추를 넣어줘 대파도 둘 내 잘라서 넣어주고 집에 남는 버섯도 좀 넣어줄게 소고기 다시다 두 숟가락 넣어주고\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"중간 불로 2시간 동안 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"2시간을 중간 불로 끓여줄게\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"text\": \"감자를 넣고 약한 불로 1시간 더 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"감자를 넣고 약불로 1시간 더 끓여줘\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마지막으로 깻잎과 들깨가루 1국자를 넣어 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 깻잎과 들깨가루 한 국자 넣어주면 감자탕 끝\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "감자탕",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "돼지 등뼈",
+          "displayName": "돼지 등뼈",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "돼지 등뼈를 물에 6시간 이상 담가서 핏물을 빼고 깨끗이 씻어줘",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "통후추",
+          "displayName": "통후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "통후추와",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "통후추\nPepper",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "월계수잎",
+          "displayName": "월계수잎",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "월계수잎",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "월계수잎\nAlloro",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "생강",
+          "displayName": "생강",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "생강",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "생강\nGinger",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "소주나 맛술 90ml (소주잔/종이컵 반 컵)",
+          "displayName": "맛술 (또는 소주)",
+          "amount": "90",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소주나 맛술 반 컵을 넣고",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 90ml\nCooking wine",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "물 5L",
+          "displayName": "물",
+          "amount": "5",
+          "unit": "L",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물을 5L를 부어줘",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 5L\nWater",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "된장 크게 3숟가락",
+          "displayName": "된장",
+          "amount": "3",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "된장 크게 세 숟가락",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "된장 3\nSoybean paste",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "고추장 크게 1숟가락",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고추장 크게 한 숟가락 넣고",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 1\nRed pepper paste",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "다진마늘 2",
+          "displayName": "다진마늘",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진마늘 두 개",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 2\nCrushed garlic",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "고춧가루 1/2cup",
+          "displayName": "고춧가루",
+          "amount": "1/2",
+          "unit": "cup",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 반 컵",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1/2cup\nChili powder",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "진간장 50ml (소주잔 한 컵)",
+          "displayName": "진간장",
+          "amount": "50",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "진간장 소주잔 한 컵",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 50ml\nDark soy sauce",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "국간장 50ml (소주잔 한 컵)",
+          "displayName": "국간장",
+          "amount": "50",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "국간장 소주잔 한 컵",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장 50ml\nKorean style soy sauce",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "멸치액젓 25ml (소주잔 반 컵)",
+          "displayName": "멸치액젓",
+          "amount": "25",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "멸치액젓 소주잔 반 컵",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "멸치액젓 25ml\nAnchovy sauce",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "김치 반의 반 포기",
+          "displayName": "김치",
+          "amount": "1/4",
+          "unit": "포기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김치 반에 반 포기와",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치\nKimchi",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "김치국물 100ml (두 국자)",
+          "displayName": "김치국물",
+          "amount": "100",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김치국물 두 국자",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치국물 100ml\nKimchi liquid",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "데친 시래기 크게 두 줌",
+          "displayName": "데친 시래기",
+          "amount": "2",
+          "unit": "줌",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "데친 시래기 크게 두 줌을 넣고",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "데친 시래기\nDried radish greens",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "양파 1/2",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 반 개와",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/2\nOnion",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        },
+        {
+          "rawText": "청양고추",
+          "displayName": "청양고추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "청양고추를 넣어줘",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추\nCheongyang red pepper",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-18"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파도 둘 내 잘라서 넣어주고",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파\nGreen onion",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-19"
+        },
+        {
+          "rawText": "버섯",
+          "displayName": "버섯",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "집에 남는 버섯도 좀 넣어줄게",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "버섯\nMushroom",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-20"
+        },
+        {
+          "rawText": "소고기다시다 2숟가락",
+          "displayName": "소고기 다시다",
+          "amount": "2",
+          "unit": "숟가락",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소고기 다시다 두 숟가락 넣어주고",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소고기다시다 2\nBeef seasoning",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-21"
+        },
+        {
+          "rawText": "감자",
+          "displayName": "감자",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "감자를 넣고",
+              "timestamp": "00:45"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "감자\nPotato",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-22"
+        },
+        {
+          "rawText": "깻잎",
+          "displayName": "깻잎",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 깻잎과",
+              "timestamp": "00:51"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깻잎\nPerilla leaf",
+              "timestamp": "00:49"
+            }
+          ],
+          "sourceId": "ingredient-23"
+        },
+        {
+          "rawText": "들깨가루 한 국자",
+          "displayName": "들깨가루",
+          "amount": "1",
+          "unit": "국자",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "들깨가루 한 국자 넣어주면",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "들깨가루\nPerilla powder",
+              "timestamp": "00:53"
+            }
+          ],
+          "sourceId": "ingredient-24"
+        }
+      ],
+      "steps": [
+        {
+          "text": "돼지 등뼈를 물에 6시간 이상 담가 핏물을 빼고 깨끗이 씻어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "돼지 등뼈를 물에 6시간 이상 담가서 핏물을 빼고 깨끗이 씻어줘",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 등뼈, 통후추, 월계수잎, 생강, 소주 또는 맛술 반 컵(90ml)을 넣고 30분간 삶아준다. (재료가 없으면 된장만 2숟가락 넣고 삶아도 됨)",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 통후추와 월계수잎 생강 소주나 맛술 반 컵을 넣고 없으면 된장만 두 숟가락 넣고 30분 삶아줘",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "삶은 뼈를 한 번 더 깨끗이 씻어 냄비에 넣고 물 5L를 붓는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "뼈를 한 번 더 깨끗이 씻어서 물을 5L를 부어줘",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "된장 3숟가락, 고추장 1숟가락, 다진마늘 2스푼, 고춧가루 1/2컵, 진간장 50ml, 국간장 50ml, 멸치액젓 25ml, 김치 1/4포기, 김치국물 100ml(2국자), 데친 시래기 크게 두 줌, 양파 1/2개, 청양고추, 대파, 버섯, 소고기 다시다 2숟가락을 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 된장 크게 세 숟가락 고추장 크게 한 숟가락 넣고 다진마늘 두 개 고춧가루 반 컵 진간장 소주잔 한 컵 국간장 소주잔 한 컵 멸치액젓 소주잔 반 컵 김치 반에 반 포기와 김치국물 두 국자 데친 시래기 크게 두 줌을 넣고 양파 반 개와 청양고추를 넣어줘 대파도 둘 내 잘라서 넣어주고 집에 남는 버섯도 좀 넣어줄게 소고기 다시다 두 숟가락 넣어주고",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "중간 불로 2시간 동안 끓여준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "2시간을 중간 불로 끓여줄게",
+              "timestamp": "00:43"
+            }
+          ]
+        },
+        {
+          "text": "감자를 넣고 약한 불로 1시간 더 끓여준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "감자를 넣고 약불로 1시간 더 끓여줘",
+              "timestamp": "00:45"
+            }
+          ]
+        },
+        {
+          "text": "마지막으로 깻잎과 들깨가루 1국자를 넣어 마무리한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 깻잎과 들깨가루 한 국자 넣어주면 감자탕 끝",
+              "timestamp": "00:51"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
   }
 }

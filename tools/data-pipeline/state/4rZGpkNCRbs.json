@@ -1,0 +1,359 @@
+{
+  "videoId": "4rZGpkNCRbs",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/4rZGpkNCRbs",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-15T08:12:50.384526+00:00",
+    "rawResponse": "{\n  \"title\": \"소고기집 후식 된장찌개\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"대파는 2cm 정도 두께로 두툼하게 썰어주고요\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파는 2cm 정도 두께로 두툼하게 썰어주고요\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파는 2cm 정도 두께로 두툼하게 썰어주고요\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파도 비슷한 크기로 썰어주세요\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파도 비슷한 크기로 썰어주세요!\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파도 비슷한 크기로 썰어주세요!\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"냉장고에 감자나\",\n      \"displayName\": \"감자\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냉장고에 감자나 애호박 그리고 버섯이 있다면 적당한 크기로 깍둑썰기 해줄 건데 이 세 가지 재료는 하나씩 빠져도 맛에 큰 차이는 없을 거예요\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"냉장고에 감자나\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"애호박\",\n      \"displayName\": \"애호박\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"애호박 그리고 버섯이 있다면\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"애호박 그리고 버섯이 있다면!\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"버섯\",\n      \"displayName\": \"버섯\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 버섯이 있다면\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그리고 버섯이 있다면!\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추도 작게 썰어 줄게요\",\n      \"displayName\": \"고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추도 작게 썰어 줄게요!\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추도 작게 썰어 줄게요!\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"두부\",\n      \"displayName\": \"두부\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"깍둑썰기한 두부가 재료 트레이와 볼에 담겨 있고 냄비에 투하됨\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리브오일 두 숟갈\",\n      \"displayName\": \"올리브오일\",\n      \"amount\": \"2\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"올리브오일 두 숟갈 두르고\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"올리브오일 두 숟갈 두르고\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우삼겹을 먼저 구워주세요\",\n      \"displayName\": \"우삼겹\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우삼겹을 먼저 구워주세요\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"우삼겹을 먼저 구워 주세요!\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"된장 4숟갈\",\n      \"displayName\": \"된장\",\n      \"amount\": \"4\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"된장 네 숟갈\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"된장 4숟갈\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 1숟갈\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 한 숟갈\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 1숟갈\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 3컵 부어주고\",\n      \"displayName\": \"물\",\n      \"amount\": \"3\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 세 컵 부어주고\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 3컵 부어주고\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"사골육수 한 팩\",\n      \"displayName\": \"사골육수\",\n      \"amount\": \"1\",\n      \"unit\": \"팩\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"사골육수를 부어주세요\",\n          \"timestamp\": \"00:56\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"사골육수 한 팩 넣으면\",\n          \"timestamp\": \"00:59\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"대파는 약 2cm 두께로 두툼하게 썰고, 양파도 비슷한 크기로 썰어둔다. 감자, 애호박, 버섯도 적당한 크기로 깍둑썰기하고, 두부도 깍둑썰기하며, 고추는 작게 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파는 2cm 정도 두께로 두툼하게 썰어주고요 마찬가지로 양파도 비슷한 크기로 썰어주세요 냉장고에 감자나 애호박 그리고 버섯이 있다면 적당한 크기로 깍둑썰기 해줄 건데 ... 고추도 작게 썰어 줄게요\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"달궈진 냄비에 올리브오일 2숟갈을 두르고 우삼겹을 넣어 노릇하게 굽는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"달궈진 냄비에 올리브오일 두 숟갈 두르고 우삼겹을 먼저 구워주세요\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"우삼겹이 노릇하게 익으면 된장 4숟갈, 고추장 1숟갈을 넣고 고기 기름에 약 2분간 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우삼겹이 노릇하게 익었을 때 된장 4숟갈 고추장 1숟갈 4대1 비율로 넣어주고요 우삼겹에서 나온 소기름에 된장이랑 고추장을 볶아서 텁텁한 맛은 줄이고 구수한 풍미는 살려줍니다 이대로 2분 정도 볶았으면\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 3컵과 사골육수 1팩을 부어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 3컵 부어주고 마지막 오늘의 킥! 사골육수를 부어주세요\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"text\": \"감자와 양파, 버섯을 넣고 감자가 익을 때까지 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 감자랑 버섯 넣고 감자가 익을 때까지 끓여주다가\",\n          \"timestamp\": \"01:04\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"감자, 양파, 버섯을 냄비에 넣는 모습\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"애호박, 두부, 대파, 고추 등 남은 야채를 모두 추가하고 3분간 더 끓여 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 애호박이랑 다른 야채 추가해서 3분 더 끓여주면 소고기집에서 먹었던 후식 된장찌개 완성이예요!\",\n          \"timestamp\": \"01:07\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"대파, 양파, 감자, 애호박, 버섯, 고추, 두부, 우삼겹의 구체적인 중량 또는 개수 미표기\"\n  ]\n}",
+    "result": {
+      "title": "소고기집 후식 된장찌개",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "대파는 2cm 정도 두께로 두툼하게 썰어주고요",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파는 2cm 정도 두께로 두툼하게 썰어주고요",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "대파는 2cm 정도 두께로 두툼하게 썰어주고요",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파도 비슷한 크기로 썰어주세요",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파도 비슷한 크기로 썰어주세요!",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "양파도 비슷한 크기로 썰어주세요!",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "냉장고에 감자나",
+          "displayName": "감자",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "냉장고에 감자나 애호박 그리고 버섯이 있다면 적당한 크기로 깍둑썰기 해줄 건데 이 세 가지 재료는 하나씩 빠져도 맛에 큰 차이는 없을 거예요",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "냉장고에 감자나",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "애호박",
+          "displayName": "애호박",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "애호박 그리고 버섯이 있다면",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "애호박 그리고 버섯이 있다면!",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "버섯",
+          "displayName": "버섯",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 버섯이 있다면",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그리고 버섯이 있다면!",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "고추도 작게 썰어 줄게요",
+          "displayName": "고추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고추도 작게 썰어 줄게요!",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고추도 작게 썰어 줄게요!",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "두부",
+          "displayName": "두부",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "깍둑썰기한 두부가 재료 트레이와 볼에 담겨 있고 냄비에 투하됨",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "올리브오일 두 숟갈",
+          "displayName": "올리브오일",
+          "amount": "2",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "올리브오일 두 숟갈 두르고",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "올리브오일 두 숟갈 두르고",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "우삼겹을 먼저 구워주세요",
+          "displayName": "우삼겹",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "우삼겹을 먼저 구워주세요",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "우삼겹을 먼저 구워 주세요!",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "된장 4숟갈",
+          "displayName": "된장",
+          "amount": "4",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "된장 네 숟갈",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "된장 4숟갈",
+              "timestamp": "00:43"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "고추장 1숟갈",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고추장 한 숟갈",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 1숟갈",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "물 3컵 부어주고",
+          "displayName": "물",
+          "amount": "3",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 세 컵 부어주고",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 3컵 부어주고",
+              "timestamp": "00:53"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "사골육수 한 팩",
+          "displayName": "사골육수",
+          "amount": "1",
+          "unit": "팩",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "사골육수를 부어주세요",
+              "timestamp": "00:56"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "사골육수 한 팩 넣으면",
+              "timestamp": "00:59"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "대파는 약 2cm 두께로 두툼하게 썰고, 양파도 비슷한 크기로 썰어둔다. 감자, 애호박, 버섯도 적당한 크기로 깍둑썰기하고, 두부도 깍둑썰기하며, 고추는 작게 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파는 2cm 정도 두께로 두툼하게 썰어주고요 마찬가지로 양파도 비슷한 크기로 썰어주세요 냉장고에 감자나 애호박 그리고 버섯이 있다면 적당한 크기로 깍둑썰기 해줄 건데 ... 고추도 작게 썰어 줄게요",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "달궈진 냄비에 올리브오일 2숟갈을 두르고 우삼겹을 넣어 노릇하게 굽는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "달궈진 냄비에 올리브오일 두 숟갈 두르고 우삼겹을 먼저 구워주세요",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "우삼겹이 노릇하게 익으면 된장 4숟갈, 고추장 1숟갈을 넣고 고기 기름에 약 2분간 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "우삼겹이 노릇하게 익었을 때 된장 4숟갈 고추장 1숟갈 4대1 비율로 넣어주고요 우삼겹에서 나온 소기름에 된장이랑 고추장을 볶아서 텁텁한 맛은 줄이고 구수한 풍미는 살려줍니다 이대로 2분 정도 볶았으면",
+              "timestamp": "00:41"
+            }
+          ]
+        },
+        {
+          "text": "물 3컵과 사골육수 1팩을 부어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 3컵 부어주고 마지막 오늘의 킥! 사골육수를 부어주세요",
+              "timestamp": "00:53"
+            }
+          ]
+        },
+        {
+          "text": "감자와 양파, 버섯을 넣고 감자가 익을 때까지 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 감자랑 버섯 넣고 감자가 익을 때까지 끓여주다가",
+              "timestamp": "01:04"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "감자, 양파, 버섯을 냄비에 넣는 모습",
+              "timestamp": "01:05"
+            }
+          ]
+        },
+        {
+          "text": "애호박, 두부, 대파, 고추 등 남은 야채를 모두 추가하고 3분간 더 끓여 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 애호박이랑 다른 야채 추가해서 3분 더 끓여주면 소고기집에서 먹었던 후식 된장찌개 완성이예요!",
+              "timestamp": "01:07"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "대파, 양파, 감자, 애호박, 버섯, 고추, 두부, 우삼겹의 구체적인 중량 또는 개수 미표기"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "소고깃집 후식 된장찌개… ‘이렇게’ 따라하시면 됩니다!",
+    "sourceChannelName": "김진순 점심시간",
+    "sourceChannelId": "UC9She1e6OWUpwJpwZtbqhjQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/BvOrdVOmTRlMEFygfbeuka_30BrSZenSof2_yC4RCxF0gEKvRzJTn6NEzMTJYQSe8aBxV9iMbQ=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-15T08:12:47.733461Z"
+  }
+}

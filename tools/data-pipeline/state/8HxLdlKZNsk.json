@@ -1,0 +1,325 @@
+{
+  "videoId": "8HxLdlKZNsk",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/8HxLdlKZNsk",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-08T09:06:05.559038+00:00",
+    "rawResponse": "{\n  \"title\": \"전자레인지로 만드는 김치볶음밥\",\n  \"description\": null,\n  \"servings\": \"1\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"신김치나 일반김치 한주먹\",\n      \"displayName\": \"김치\",\n      \"amount\": \"1\",\n      \"unit\": \"주먹\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"신김치나 일반김치 한주먹 준비 ★\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 1스푼 (김치가 많이 신 경우, 조금 더 넣어주세요)\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1스푼\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참기름 1스푼 (고소함을 더해줘요)\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치 통조림 제일 작은 사이즈(85g) 1캔\",\n      \"displayName\": \"참치 통조림\",\n      \"amount\": \"1\",\n      \"unit\": \"캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치 통조림\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참고로 참치 제일 작은 사이즈(85g) 1캔 다 넣어줬어요.\",\n          \"timestamp\": \"01:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"뜨끈한 밥 1공기\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 1공기\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"뜨끈한 밥 1공기 넣고\",\n          \"timestamp\": \"01:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 반스푼~1스푼\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"0.5~1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장 반스푼~1스푼 넣기\",\n          \"timestamp\": \"01:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"달걀후라이\",\n      \"displayName\": \"달걀후라이\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"달걀후라이도 후딱 만들어왔어요.\",\n          \"timestamp\": \"01:54\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볶음밥 위에 계란후라이를 올림\",\n          \"timestamp\": \"01:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깨\",\n      \"displayName\": \"깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"비주얼을 위해 깨도 솔솔\",\n          \"timestamp\": \"01:58\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란 노른자 위에 통깨를 솔솔 뿌림\",\n          \"timestamp\": \"01:58\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김\",\n      \"displayName\": \"김\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"더 맛있게 먹기 !!! 김 등장\",\n          \"timestamp\": \"02:54\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"빠르게 꺼내서 김볶이랑 싸먹을거에요\",\n          \"timestamp\": \"02:58\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"신김치 또는 일반김치 한 주먹을 가위로 잘게 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"신김치나 일반김치 한주먹 준비 ★\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"가위로 잘게 썰어줄게요\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"전자레인지 사용이 가능한 그릇에 잘게 썬 김치를 담는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"전자레인지 사용가능한 그릇에 잘게 썬 김치를 담아줍니당\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김치에 설탕 1스푼, 참기름 1스푼을 넣고 잘 섞이도록 버무린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 1스푼 (김치가 많이 신 경우, 조금 더 넣어주세요)\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참기름 1스푼 (고소함을 더해줘요)\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"잘 섞이도록 버무려줍니당\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"text\": \"참치캔 기름을 제거한 후 김치에 넣고 함께 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참치기름 제거하기 ★\",\n          \"timestamp\": \"01:00\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기름 제거한 참치도 넣어줍니당\",\n          \"timestamp\": \"01:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참고로 참치 제일 작은 사이즈(85g) 1캔 다 넣어줬어요.\",\n          \"timestamp\": \"01:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"섞어 ♪ 섞어 ♬\",\n          \"timestamp\": \"01:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"전자레인지(700W 기준)에 넣고 2분 30초 동안 돌린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"[전자레인지 700W 기준] 2분 30초 돌리기\",\n          \"timestamp\": \"01:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"데워진 김치와 참치에 뜨끈한 밥 1공기와 고추장 0.5~1스푼을 넣고 잘 비벼준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"뜨끈한 밥 1공기 넣고\",\n          \"timestamp\": \"01:25\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장 반스푼~1스푼 넣기\",\n          \"timestamp\": \"01:27\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"요로코롬 잘 비벼주면 맛있는 김볶쓰 완성!\",\n          \"timestamp\": \"01:40\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 옮겨 담은 후 취향에 따라 달걀후라이를 얹고 깨를 뿌려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"달걀후라이도 후딱 만들어왔어요.\",\n          \"timestamp\": \"01:54\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"비주얼을 위해 깨도 솔솔\",\n          \"timestamp\": \"01:58\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "전자레인지로 만드는 김치볶음밥",
+      "description": null,
+      "servings": "1",
+      "ingredients": [
+        {
+          "rawText": "신김치나 일반김치 한주먹",
+          "displayName": "김치",
+          "amount": "1",
+          "unit": "주먹",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "신김치나 일반김치 한주먹 준비 ★",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "설탕 1스푼",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 1스푼 (김치가 많이 신 경우, 조금 더 넣어주세요)",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "참기름 1스푼",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "참기름 1스푼 (고소함을 더해줘요)",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "참치 통조림 제일 작은 사이즈(85g) 1캔",
+          "displayName": "참치 통조림",
+          "amount": "1",
+          "unit": "캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치 통조림",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "참고로 참치 제일 작은 사이즈(85g) 1캔 다 넣어줬어요.",
+              "timestamp": "01:08"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "뜨끈한 밥 1공기",
+          "displayName": "밥",
+          "amount": "1",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 1공기",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "뜨끈한 밥 1공기 넣고",
+              "timestamp": "01:25"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "고추장 반스푼~1스푼",
+          "displayName": "고추장",
+          "amount": "0.5~1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고추장 반스푼~1스푼 넣기",
+              "timestamp": "01:27"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "달걀후라이",
+          "displayName": "달걀후라이",
+          "amount": "1",
+          "unit": "개",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "달걀후라이도 후딱 만들어왔어요.",
+              "timestamp": "01:54"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볶음밥 위에 계란후라이를 올림",
+              "timestamp": "01:54"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "깨",
+          "displayName": "깨",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "비주얼을 위해 깨도 솔솔",
+              "timestamp": "01:58"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란 노른자 위에 통깨를 솔솔 뿌림",
+              "timestamp": "01:58"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "김",
+          "displayName": "김",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "더 맛있게 먹기 !!! 김 등장",
+              "timestamp": "02:54"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "빠르게 꺼내서 김볶이랑 싸먹을거에요",
+              "timestamp": "02:58"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "신김치 또는 일반김치 한 주먹을 가위로 잘게 썰어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "신김치나 일반김치 한주먹 준비 ★",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "가위로 잘게 썰어줄게요",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "전자레인지 사용이 가능한 그릇에 잘게 썬 김치를 담는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "전자레인지 사용가능한 그릇에 잘게 썬 김치를 담아줍니당",
+              "timestamp": "00:34"
+            }
+          ]
+        },
+        {
+          "text": "김치에 설탕 1스푼, 참기름 1스푼을 넣고 잘 섞이도록 버무린다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 1스푼 (김치가 많이 신 경우, 조금 더 넣어주세요)",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "참기름 1스푼 (고소함을 더해줘요)",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "잘 섞이도록 버무려줍니당",
+              "timestamp": "00:46"
+            }
+          ]
+        },
+        {
+          "text": "참치캔 기름을 제거한 후 김치에 넣고 함께 섞어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "참치기름 제거하기 ★",
+              "timestamp": "01:00"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "기름 제거한 참치도 넣어줍니당",
+              "timestamp": "01:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "참고로 참치 제일 작은 사이즈(85g) 1캔 다 넣어줬어요.",
+              "timestamp": "01:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "섞어 ♪ 섞어 ♬",
+              "timestamp": "01:12"
+            }
+          ]
+        },
+        {
+          "text": "전자레인지(700W 기준)에 넣고 2분 30초 동안 돌린다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "[전자레인지 700W 기준] 2분 30초 돌리기",
+              "timestamp": "01:19"
+            }
+          ]
+        },
+        {
+          "text": "데워진 김치와 참치에 뜨끈한 밥 1공기와 고추장 0.5~1스푼을 넣고 잘 비벼준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "뜨끈한 밥 1공기 넣고",
+              "timestamp": "01:25"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고추장 반스푼~1스푼 넣기",
+              "timestamp": "01:27"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "요로코롬 잘 비벼주면 맛있는 김볶쓰 완성!",
+              "timestamp": "01:40"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 옮겨 담은 후 취향에 따라 달걀후라이를 얹고 깨를 뿌려 마무리한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "달걀후라이도 후딱 만들어왔어요.",
+              "timestamp": "01:54"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "비주얼을 위해 깨도 솔솔",
+              "timestamp": "01:58"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  }
+}

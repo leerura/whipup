@@ -1,0 +1,469 @@
+{
+  "videoId": "N1Rkyrhlm3g",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/N1Rkyrhlm3g",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-14T13:13:13.998047+00:00",
+    "rawResponse": "{\n  \"title\": \"돼지김치두루치기 (양파폭탄 돼지김치두루치기)\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"양파 3개 (500g)\",\n      \"displayName\": \"양파\",\n      \"amount\": \"500\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 양파 세 개를 적당한 두께로 채 썰어준 다음\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 500g\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 1spoon\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 1spoon\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식용유 한 숟가락을 두르고\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"신김치 400g\",\n      \"displayName\": \"신김치\",\n      \"amount\": \"400\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"신김치 400g\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 양파 위에 신김치를 올릴 건데 김치찌개 쪽으로 가고 싶으면 조금 더 넣어도 된단다\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"앞다리살 600g\",\n      \"displayName\": \"앞다리살\",\n      \"amount\": \"600\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"앞다리살 600g\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"두껍게 썰린 찌개용 앞다리살을 김치 위에 깔아준 다음\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 50ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"50\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 50ml\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양념장을 만들 거야 물에\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 1spoon\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 1spoon\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양조간장 3spoons\",\n      \"displayName\": \"양조간장\",\n      \"amount\": \"3\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장 3spoons\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양조간장\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 2spoons\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"2\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 2spoons\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 3spoons\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"3\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 3spoons\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 0.3spoon\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.3\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 0.3spoon\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다시다 0.5spoon\",\n      \"displayName\": \"다시다\",\n      \"amount\": \"0.5\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다시다 0.5spoon\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다시다\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"미원 0.2spoon\",\n      \"displayName\": \"미원\",\n      \"amount\": \"0.2\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"미원 0.2spoon\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"미원\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 0.2spoon\",\n      \"displayName\": \"후추\",\n      \"amount\": \"0.2\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 0.2spoon\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추를 넣고\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 100g\",\n      \"displayName\": \"대파\",\n      \"amount\": \"100\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 100g\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파와\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 15g\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"15\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 15g\",\n          \"timestamp\": \"00:56\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"청양고추를 넣고\",\n          \"timestamp\": \"00:55\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양파 3개(500g)를 적당한 두께로 채 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 양파 세 개를 적당한 두께로 채 썰어준 다음\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 500g\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유 1숟가락을 두르고 그 위에 채 썬 양파를 깐다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식용유 한 숟가락을 두르고 그 위에 양파를 깔아줘\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 1spoon\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 위에 신김치 400g을 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 양파 위에 신김치를 올릴 건데 김치찌개 쪽으로 가고 싶으면 조금 더 넣어도 된단다\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"신김치 400g\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"두껍게 썰린 찌개용 앞다리살 600g을 김치 위에 얹어 깔아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 두껍게 썰린 찌개용 앞다리살을 김치 위에 깔아준 다음\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"앞다리살 600g\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 50ml에 고춧가루, 고추장 1스푼, 양조간장 3스푼, 다진 마늘 2스푼, 맛술 3스푼, 설탕 0.3스푼, 다시다 0.5스푼, 미원 0.2스푼, 후추 0.2스푼을 넣고 잘 풀어 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양념장을 만들 거야 물에 고춧가루 고추장 양조간장 다진 마늘 맛술 설탕 다시다 미원 후추를 넣고 잘 풀어준 다음\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 50ml, 고추장 1spoon, 양조간장 3spoons, 다진 마늘 2spoons, 맛술 3spoons, 설탕 0.3spoon, 다시다 0.5spoon, 미원 0.2spoon, 후추 0.2spoon\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기 위에 양념장을 모두 붓고 뚜껑(또는 내열 유리볼)을 덮은 뒤 약불에서 10분간 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기 위에 모두 부어줘 그리고 뚜껑을 덮고 약불로 10분간 끓여줄 건데 나는 맞는 뚜껑이 없어서 급한 대로 유리볼이라도 하나 덮어줬어\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양념장 / 약불에서 10분\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"10분 뒤 뚜껑을 열고 전체적으로 한 번 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"10분 뒤 양파에서 물이 나와서 이렇게 물이 많아진 걸 볼 수 있을 거야 마지막으로 전체적으로 한 번 섞어준 다음\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파 100g과 청양고추 15g을 넣고 중불로 올려 10분간 더 끓여 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파와 청양고추를 넣고 중불로 올려서 10분간 더 끓여주면 양파폭탄 돼지김치두루치기 끝\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 100g / 청양고추 15g\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"양념장에 들어가는 고춧가루의 구체적인 양(수치 및 단위)이 화면 자막이나 나레이션에 언급되지 않았습니다.\"\n  ]\n}",
+    "result": {
+      "title": "돼지김치두루치기 (양파폭탄 돼지김치두루치기)",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "양파 3개 (500g)",
+          "displayName": "양파",
+          "amount": "500",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 양파 세 개를 적당한 두께로 채 썰어준 다음",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 500g",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "식용유 1spoon",
+          "displayName": "식용유",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 1spoon",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "식용유 한 숟가락을 두르고",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "신김치 400g",
+          "displayName": "신김치",
+          "amount": "400",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "신김치 400g",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 양파 위에 신김치를 올릴 건데 김치찌개 쪽으로 가고 싶으면 조금 더 넣어도 된단다",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "앞다리살 600g",
+          "displayName": "앞다리살",
+          "amount": "600",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "앞다리살 600g",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "두껍게 썰린 찌개용 앞다리살을 김치 위에 깔아준 다음",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "물 50ml",
+          "displayName": "물",
+          "amount": "50",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 50ml",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양념장을 만들 거야 물에",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "고춧가루",
+          "displayName": "고춧가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "고추장 1spoon",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 1spoon",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "양조간장 3spoons",
+          "displayName": "양조간장",
+          "amount": "3",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장 3spoons",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양조간장",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "다진 마늘 2spoons",
+          "displayName": "다진 마늘",
+          "amount": "2",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 2spoons",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "맛술 3spoons",
+          "displayName": "맛술",
+          "amount": "3",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 3spoons",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "맛술",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "설탕 0.3spoon",
+          "displayName": "설탕",
+          "amount": "0.3",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 0.3spoon",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "다시다 0.5spoon",
+          "displayName": "다시다",
+          "amount": "0.5",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다시다 0.5spoon",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다시다",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "미원 0.2spoon",
+          "displayName": "미원",
+          "amount": "0.2",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "미원 0.2spoon",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "미원",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "후추 0.2spoon",
+          "displayName": "후추",
+          "amount": "0.2",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 0.2spoon",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추를 넣고",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "대파 100g",
+          "displayName": "대파",
+          "amount": "100",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 100g",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파와",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "청양고추 15g",
+          "displayName": "청양고추",
+          "amount": "15",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 15g",
+              "timestamp": "00:56"
+            },
+            {
+              "type": "SPEECH",
+              "text": "청양고추를 넣고",
+              "timestamp": "00:55"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양파 3개(500g)를 적당한 두께로 채 썬다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 양파 세 개를 적당한 두께로 채 썰어준 다음",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 500g",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유 1숟가락을 두르고 그 위에 채 썬 양파를 깐다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "식용유 한 숟가락을 두르고 그 위에 양파를 깔아줘",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 1spoon",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "양파 위에 신김치 400g을 올린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 양파 위에 신김치를 올릴 건데 김치찌개 쪽으로 가고 싶으면 조금 더 넣어도 된단다",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "신김치 400g",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "두껍게 썰린 찌개용 앞다리살 600g을 김치 위에 얹어 깔아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 두껍게 썰린 찌개용 앞다리살을 김치 위에 깔아준 다음",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "앞다리살 600g",
+              "timestamp": "00:19"
+            }
+          ]
+        },
+        {
+          "text": "물 50ml에 고춧가루, 고추장 1스푼, 양조간장 3스푼, 다진 마늘 2스푼, 맛술 3스푼, 설탕 0.3스푼, 다시다 0.5스푼, 미원 0.2스푼, 후추 0.2스푼을 넣고 잘 풀어 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양념장을 만들 거야 물에 고춧가루 고추장 양조간장 다진 마늘 맛술 설탕 다시다 미원 후추를 넣고 잘 풀어준 다음",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 50ml, 고추장 1spoon, 양조간장 3spoons, 다진 마늘 2spoons, 맛술 3spoons, 설탕 0.3spoon, 다시다 0.5spoon, 미원 0.2spoon, 후추 0.2spoon",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "고기 위에 양념장을 모두 붓고 뚜껑(또는 내열 유리볼)을 덮은 뒤 약불에서 10분간 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고기 위에 모두 부어줘 그리고 뚜껑을 덮고 약불로 10분간 끓여줄 건데 나는 맞는 뚜껑이 없어서 급한 대로 유리볼이라도 하나 덮어줬어",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양념장 / 약불에서 10분",
+              "timestamp": "00:33"
+            }
+          ]
+        },
+        {
+          "text": "10분 뒤 뚜껑을 열고 전체적으로 한 번 섞어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "10분 뒤 양파에서 물이 나와서 이렇게 물이 많아진 걸 볼 수 있을 거야 마지막으로 전체적으로 한 번 섞어준 다음",
+              "timestamp": "00:47"
+            }
+          ]
+        },
+        {
+          "text": "대파 100g과 청양고추 15g을 넣고 중불로 올려 10분간 더 끓여 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파와 청양고추를 넣고 중불로 올려서 10분간 더 끓여주면 양파폭탄 돼지김치두루치기 끝",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 100g / 청양고추 15g",
+              "timestamp": "00:54"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "양념장에 들어가는 고춧가루의 구체적인 양(수치 및 단위)이 화면 자막이나 나레이션에 언급되지 않았습니다."
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "물 넣고 끓이면 절대 이 맛 안 납니다!",
+    "sourceChannelName": "1분요리 뚝딱이형",
+    "sourceChannelId": "UC0htUSwcxfSGNfK_5Q28JkA",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/MHTy5jXZQPwKwrGtAV-gLL6ei9YTOgR8Z6GESkhAAIz0kkG4d6B6vu6CUPNNsLOzqcGxGfBK=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-14T13:13:11.226007Z"
+  }
+}

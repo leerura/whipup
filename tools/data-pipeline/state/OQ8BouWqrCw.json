@@ -1,0 +1,307 @@
+{
+  "videoId": "OQ8BouWqrCw",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/OQ8BouWqrCw",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-15T09:43:20.892068+00:00",
+    "rawResponse": "{\n  \"title\": \"삼겹살 파스타\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"대패삼겹살 200g\",\n      \"displayName\": \"대패삼겹살\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대패삼겹살 200g\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대패삼겹살 200g과\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진 마늘 1스푼\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘 1스푼을 넣고\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/4개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/4\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 1/4개\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 4분의 1개\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돈까스 소스 1스푼\",\n      \"displayName\": \"돈까스 소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"돈까스 소스 1스푼\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"돈까스 소스 1스푼\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1스푼\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"굴소스 1스푼\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스 1스푼으로\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"냉동 스파게티면 하나\",\n      \"displayName\": \"냉동 스파게티면\",\n      \"amount\": \"하나\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"냉동 스파게티면 하나\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냉동 스파게티면 하나와\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 반 컵\",\n      \"displayName\": \"물\",\n      \"amount\": \"반\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 반 컵\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 반 컵을 부어가\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 하나\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"하나\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"청양고추 하나\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"땡초 하나도 추가해준 뒤에\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추와 파슬리\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추와 파슬리를 뿌려주면\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리\",\n      \"displayName\": \"파슬리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추와 파슬리\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추와 파슬리를 뿌려주면\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 대패삼겹살 200g과 다진 마늘 1스푼을 넣고 고기가 노릇해질 때까지 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대패삼겹살 200g과 다진 마늘 1스푼을 넣고 고기를 노릇하게 한번 구워주다가\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 1/4개, 설탕 1스푼, 돈까스 소스 1스푼, 굴소스 1스푼을 넣고 다 같이 한 번 더 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 4분의 1개, 설탕 1스푼, 돈까스 소스 1스푼, 굴소스 1스푼으로 유명한 설동굴 조합을 완성시켜준 뒤에 다 같이 한번 더 볶아주다가\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냉동 스파게티면 하나와 물 반 컵을 붓고 면이 완전히 풀릴 때까지 한 번 더 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냉동 스파게티면 하나와 물 반 컵을 부어가 면이 완전히 풀릴 때까지 한번 더 볶아주다가\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"청양고추(땡초) 하나를 추가하고 젓가락으로 파스타 모양을 잡아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"땡초 하나도 추가해준 뒤에 젓가락으로 대충 파스타 모양을 잡아주고\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"후추와 파슬리를 뿌려 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추와 파슬리를 뿌려주면 만드는데 5분이면 충분한 삼겹살 파스타 완성!\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "삼겹살 파스타",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "대패삼겹살 200g",
+          "displayName": "대패삼겹살",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대패삼겹살 200g",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대패삼겹살 200g과",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "다진 마늘 1스푼",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다진 마늘 1스푼",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘 1스푼을 넣고",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "양파 1/4개",
+          "displayName": "양파",
+          "amount": "1/4",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파 1/4개",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파 4분의 1개",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "설탕 1스푼",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 1스푼",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 1스푼",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "돈까스 소스 1스푼",
+          "displayName": "돈까스 소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "돈까스 소스 1스푼",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "돈까스 소스 1스푼",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "굴소스 1스푼",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "굴소스 1스푼",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "굴소스 1스푼으로",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "냉동 스파게티면 하나",
+          "displayName": "냉동 스파게티면",
+          "amount": "하나",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "냉동 스파게티면 하나",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냉동 스파게티면 하나와",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "물 반 컵",
+          "displayName": "물",
+          "amount": "반",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 반 컵",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 반 컵을 부어가",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "청양고추 하나",
+          "displayName": "청양고추",
+          "amount": "하나",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "청양고추 하나",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "땡초 하나도 추가해준 뒤에",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "후추와 파슬리",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추와 파슬리를 뿌려주면",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "파슬리",
+          "displayName": "파슬리",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "후추와 파슬리",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추와 파슬리를 뿌려주면",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 대패삼겹살 200g과 다진 마늘 1스푼을 넣고 고기가 노릇해질 때까지 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대패삼겹살 200g과 다진 마늘 1스푼을 넣고 고기를 노릇하게 한번 구워주다가",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "양파 1/4개, 설탕 1스푼, 돈까스 소스 1스푼, 굴소스 1스푼을 넣고 다 같이 한 번 더 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 4분의 1개, 설탕 1스푼, 돈까스 소스 1스푼, 굴소스 1스푼으로 유명한 설동굴 조합을 완성시켜준 뒤에 다 같이 한번 더 볶아주다가",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "냉동 스파게티면 하나와 물 반 컵을 붓고 면이 완전히 풀릴 때까지 한 번 더 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "냉동 스파게티면 하나와 물 반 컵을 부어가 면이 완전히 풀릴 때까지 한번 더 볶아주다가",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "청양고추(땡초) 하나를 추가하고 젓가락으로 파스타 모양을 잡아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "땡초 하나도 추가해준 뒤에 젓가락으로 대충 파스타 모양을 잡아주고",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "후추와 파슬리를 뿌려 완성합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후추와 파슬리를 뿌려주면 만드는데 5분이면 충분한 삼겹살 파스타 완성!",
+              "timestamp": "00:21"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "요즘 SNS에서 난리난 특별한 조합",
+    "sourceChannelName": "자취요리신 simple cooking",
+    "sourceChannelId": "UCC9pQY_uaBSa0WOpMNJHbEQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/hZHUS5wW20j39kfLUfmeHDwvC8aG7kvNblsP_gXiclsXzf7ixDgAp5ml_2cjqTzMcpsKG9hwkA=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-15T09:43:17.225697Z"
+  }
+}
