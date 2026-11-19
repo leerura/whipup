@@ -98,6 +98,8 @@ def describe_worker(entry: dict, now: datetime) -> dict:
         return {"kind": QUOTA, "label": "한도 소진", "detail": detail, "videoId": None}
     if status == "IDLE":
         return {"kind": IDLE, "label": "대기", "detail": "처리할 영상이 없어요", "videoId": None}
+    if status == "SKIPPED_NOT_SHORT":
+        return {"kind": DONE, "label": "건너뜀", "detail": "쇼츠가 아니에요", "videoId": None}
     if status == "EXTRACTION_READY":
         return {"kind": DONE, "label": "방금 완료", "detail": "다음 영상을 찾는 중", "videoId": None}
     if status == "WAITING_RETRY":
@@ -147,9 +149,10 @@ def _page(snapshot: dict, now: datetime | None = None) -> str:
     retrying = counts.get("WAITING_RETRY", 0)
     done = counts.get("EXTRACTION_READY", 0)
     failed = sum(count for status, count in counts.items() if status.startswith("FAILED"))
+    skipped = counts.get("SKIPPED_NOT_SHORT", 0)
     queue = (
         f"<span>대기<b>{waiting}</b></span><span>처리 중<b>{running}</b></span>"
-        f"<span>재시도 대기<b>{retrying}</b></span><span>추출 완료<b>{done}</b></span><span>실패<b>{failed}</b></span>"
+        f"<span>재시도 대기<b>{retrying}</b></span><span>추출 완료<b>{done}</b></span><span>쇼츠 아님<b>{skipped}</b></span><span>실패<b>{failed}</b></span>"
     )
     return (
         "<!doctype html><html lang='ko'><head><meta charset='utf-8'><meta http-equiv='refresh' content='5'>"

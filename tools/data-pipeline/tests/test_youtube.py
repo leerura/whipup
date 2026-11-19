@@ -13,6 +13,35 @@ VIDEO_PAGE = '<meta name="title" content="간장계란밥 &amp; 계란"> "extern
 CHANNEL_PAGE = '<meta property="og:image" content="https://yt3.googleusercontent.com/xyz=s900-c-k-c0x00ffffff-no-rj">'
 
 
+class IsShortTests(unittest.TestCase):
+    def _opener(self, outcome):
+        class Opener:
+            def open(self, *_args, **_kwargs):
+                if isinstance(outcome, Exception):
+                    raise outcome
+                return outcome
+        return Opener()
+
+    def test_ok_response_is_a_short(self):
+        class Response:
+            status = 200
+            def __enter__(self): return self
+            def __exit__(self, *_args): return False
+        with patch.object(youtube, "build_opener", return_value=self._opener(Response())):
+            self.assertIs(youtube.is_short("abc"), True)
+
+    def test_redirect_to_watch_is_not_a_short(self):
+        error = HTTPError("u", 303, "See Other", {"Location": "https://www.youtube.com/watch?v=abc"}, None)
+        with patch.object(youtube, "build_opener", return_value=self._opener(error)):
+            self.assertIs(youtube.is_short("abc"), False)
+
+    def test_other_failures_are_unknown(self):
+        with patch.object(youtube, "build_opener", return_value=self._opener(HTTPError("u", 500, "x", {}, None))):
+            self.assertIsNone(youtube.is_short("abc"))
+        with patch.object(youtube, "build_opener", return_value=self._opener(TimeoutError())):
+            self.assertIsNone(youtube.is_short("abc"))
+
+
 class FetchSourceMetadataTests(unittest.TestCase):
     def test_public_pages_fill_every_field_without_api_key(self):
         def get_text(url):

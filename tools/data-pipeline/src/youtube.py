@@ -5,7 +5,7 @@ import re
 from datetime import datetime, timezone
 from urllib.error import HTTPError, URLError
 from urllib.parse import parse_qs, urlencode, urlparse
-from urllib.request import Request, urlopen
+from urllib.request import HTTPRedirectHandler, Request, build_opener, urlopen
 
 
 def extract_video_id(url: str) -> str:
@@ -135,3 +135,26 @@ def fetch_source_metadata(video_id: str) -> dict:
     found_any = any(result.get(key) for key in ("sourceTitle", "sourceChannelName", "sourceChannelId"))
     result["sourceMetadataFetchedAt"] = fetched_at if found_any else None
     return result
+
+
+class _NoRedirect(HTTPRedirectHandler):
+    def redirect_request(self, *args, **kwargs):
+        return None
+
+
+def is_short(video_id: str) -> bool | None:
+    """영상이 YouTube Shorts인지 확인한다.
+
+    `/shorts/{id}`는 쇼츠면 그대로 열리고(200), 일반 영상이면 `/watch`로 넘어간다(3xx).
+    확인할 수 없으면(네트워크 오류 등) None을 돌려주며, 호출하는 쪽은 건너뛰지 않는다.
+    """
+    request = Request(f"https://www.youtube.com/shorts/{video_id}", headers=_PAGE_HEADERS)
+    try:
+        with build_opener(_NoRedirect).open(request, timeout=15) as response:
+            return response.status == 200
+    except HTTPError as error:
+        if 300 <= error.code < 400 and "/watch" in (error.headers.get("Location") or ""):
+            return False
+        return None
+    except (URLError, TimeoutError, OSError):
+        return None
