@@ -1,0 +1,15 @@
+apiVersion: 1
+datasources:
+  - name: Whippy Postgres
+    uid: whippy-postgres
+    type: grafana-postgresql-datasource
+    access: proxy
+    url: postgres:5432
+    user: grafana_ro
+    jsonData:
+      database: whipup
+      sslmode: disable
+      postgresVersion: 1700
+      timescaledb: false
+    secureJsonData:
+      password: $GRAFANA_DB_PASSWORD

@@ -160,6 +160,16 @@ N+1이 확인되면 repository의 `EntityGraph` 또는 필요한 범위의 fetch
 
 Prometheus는 수치 시계열을 HTTP pull 방식으로 수집·저장하는 도구이므로, backend와 Prometheus가 같은 Compose network 안에서 scrape하도록 설정한다. [Prometheus overview](https://prometheus.io/docs/introduction/overview/)
 
+## 사용자 현황 dashboard
+
+`Whippy Users` dashboard는 앱 설치 후 실제로 열어 본 사용자 수를 기간을 골라 본다. 게스트 계정은 첫 실행 때 자동으로 만들어지므로 `users` 행 수를 "앱을 열어 본 사용자"로 읽는다.
+
+- 기간은 Grafana 오른쪽 위 time picker로 고른다(최근 7일, 지난달, 직접 지정 등). 집계 단위는 dashboard 변수 `단위`(일·주·월)로 바꾼다. 날짜 경계는 한국 시간(`Asia/Seoul`) 기준이다.
+- panel: 기간 내 가입 수, 기간 내 활성 사용자 수, 누적 가입자 수, 온보딩 완료율, 단위별 가입 수, 단위별 누적 가입자 수.
+- 데이터 출처는 PostgreSQL이며 Grafana에 **읽기 전용 datasource**(`Whippy Postgres`)를 추가한다. 이 datasource의 DB 역할 `grafana_ro`는 `users` 테이블의 시각·플래그 컬럼(`created_at`, `last_active_at`, `onboarding_completed`)에만 SELECT 권한을 갖고, 쓰기 권한과 다른 테이블 접근 권한은 없다.
+- 사용자 ID, 약관·개인정보 동의 시각, 재료 목록은 panel에 올리지 않는다. 집계 숫자만 표시한다.
+- 접근 경계는 위 Grafana와 같다(loopback/SSH tunnel). 운영(Windows 서버)에는 로컬에서 확인한 뒤 같은 방식으로 적용한다.
+
 ## 완료 기준
 
 1. 외부 public HTTPS로 호출한 추천 API 한 건이 Flutter total, Caddy access duration, backend route duration 중 어디에서 느린지 비교 가능하다.
