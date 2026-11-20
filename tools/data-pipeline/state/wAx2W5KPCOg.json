@@ -1,15 +1,22 @@
 {
   "videoId": "wAx2W5KPCOg",
-  "status": "FAILED_RETRYABLE",
+  "status": "WAITING_RETRY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/wAx2W5KPCOg",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "FAILED_RETRYABLE",
+    "status": "WAITING_RETRY",
     "retryCount": 0,
-    "startedAt": "2026-11-14T15:17:40.803272+00:00",
-    "accountId": "account-d",
-    "error": "Server disconnected without sending a response.",
-    "retryReason": "failed_retryable"
+    "startedAt": "2026-11-20T13:25:48.747230+00:00",
+    "accountId": "account-b",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 18h34m11.122816203s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '66851s'}]}}",
+    "retryReason": "quota_retry_info",
+    "retryableRuns": 1,
+    "retryKind": "quota",
+    "retryAt": "2026-11-21T08:00:00.000278+00:00",
+    "retryAccountId": "account-b",
+    "quotaAccounts": {
+      "account-b": "2026-11-21T08:00:00.000278+00:00"
+    }
   }
 }

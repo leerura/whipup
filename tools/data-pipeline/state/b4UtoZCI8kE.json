@@ -1,18 +1,19 @@
 {
   "videoId": "b4UtoZCI8kE",
-  "status": "FAILED_RETRYABLE",
+  "status": "WAITING_RETRY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/b4UtoZCI8kE",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "FAILED_RETRYABLE",
+    "status": "WAITING_RETRY",
     "retryCount": 1,
-    "startedAt": "2026-11-14T15:53:20.643413+00:00",
+    "startedAt": "2026-11-20T13:08:51.417040+00:00",
     "accountId": "account-e",
-    "error": "Server disconnected without sending a response.",
-    "retryReason": "failed_retryable",
+    "error": "504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}",
+    "retryReason": "transient_backoff",
     "retryKind": "transient",
-    "retryAt": "2026-11-14T13:55:27.323633+00:00",
-    "retryAccountId": "account-e"
+    "retryAccountId": "account-e",
+    "retryableRuns": 1,
+    "retryAt": "2026-11-20T13:11:59.649700+00:00"
   }
 }

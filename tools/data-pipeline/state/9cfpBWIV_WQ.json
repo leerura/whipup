@@ -1,18 +1,19 @@
 {
   "videoId": "9cfpBWIV_WQ",
-  "status": "FAILED_RETRYABLE",
+  "status": "WAITING_RETRY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/9cfpBWIV_WQ",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "FAILED_RETRYABLE",
-    "retryCount": 3,
-    "startedAt": "2026-11-15T08:26:23.016113+00:00",
-    "accountId": "account-a",
-    "error": "504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}",
-    "retryReason": "failed_retryable",
+    "status": "WAITING_RETRY",
+    "retryCount": 1,
+    "startedAt": "2026-11-20T13:14:59.953991+00:00",
+    "accountId": "account-e",
+    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+    "retryReason": "transient_backoff",
     "retryKind": "transient",
-    "retryAt": "2026-11-15T08:24:23.673558+00:00",
-    "retryAccountId": "account-a"
+    "retryAccountId": "account-e",
+    "retryableRuns": 1,
+    "retryAt": "2026-11-20T13:15:18.397607+00:00"
   }
 }
