@@ -1,0 +1,16 @@
+---
+import { recipePath, type Recipe } from '../lib/data';
+interface Props { recipe: Recipe }
+const { recipe } = Astro.props;
+---
+<a class="card" href={recipePath(recipe)}>
+  <div class="thumb"><img src={recipe.thumbnail} alt={`${recipe.name} 쇼츠 영상 썸네일`} loading="lazy" width="480" height="360" /></div>
+  <div class="card-body">
+    <div class="card-title">{recipe.name}</div>
+    <div class="channel">
+      {recipe.channelAvatar ? <img class="avatar" src={recipe.channelAvatar} alt="" loading="lazy" width="20" height="20" /> : <span class="avatar"></span>}
+      <span>{recipe.channelName}</span>
+    </div>
+    <div class="meta">재료 {recipe.requiredCount}개</div>
+  </div>
+</a>

@@ -1,0 +1,122 @@
+---
+import Base from '../layouts/Base.astro';
+import RecipeCard from './RecipeCard.astro';
+import { APP_STORE_URL, DEFINITION, getRecipes, pageCount, pageItems } from '../lib/data';
+
+interface Props { page: number }
+const { page } = Astro.props;
+const total = getRecipes().length;
+const pages = pageCount();
+const items = pageItems(page);
+const path = page === 1 ? '/' : `/page/${page}/`;
+
+const pageHref = (n: number) => (n === 1 ? '/' : `/page/${n}/`);
+// 현재 주변과 처음·끝만 보여 준다.
+const shown: (number | 'gap')[] = [];
+for (let n = 1; n <= pages; n++) {
+  if (n === 1 || n === pages || Math.abs(n - page) <= 1) shown.push(n);
+  else if (shown[shown.length - 1] !== 'gap') shown.push('gap');
+}
+
+const title = page === 1 ? `Whippy - 자취생 냉장고 재료 레시피 ${total}개` : `자취생 레시피 ${page}페이지 | Whippy`;
+const description = `Whippy는 ${DEFINITION}이에요. 쇼츠로 따라 하는 자취생 레시피 ${total}개를 요리 이름이나 재료로 검색해 보세요.`;
+const jsonLd = page === 1 ? [{
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Whippy',
+  url: Astro.site?.toString(),
+  inLanguage: 'ko',
+  description,
+}] : [];
+---
+<Base title={title} description={description} path={path} current="home" jsonLd={jsonLd}>
+  <div class="page-head container">
+    <div class="crumbs">홈 › 레시피{page > 1 && ` › ${page}페이지`}</div>
+    <h1>자취생 레시피 {total}개</h1>
+    <p class="lead">Whippy는 가진 재료로 지금 만들 수 있는 요리를 찾아 주는 앱이에요. 쇼츠로 따라 하는 자취생 레시피를 요리 이름이나 재료로 검색해 보세요.</p>
+  </div>
+
+  <label class="search">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="#8E8E93" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="#8E8E93" stroke-width="2" stroke-linecap="round"/></svg>
+    <input id="q" type="search" placeholder="레시피나 재료를 검색해 보세요 (예: 계란, 김치볶음밥)" autocomplete="off" aria-label="레시피 검색" />
+  </label>
+
+  <div id="results" hidden>
+    <p class="empty" id="results-empty" hidden>검색 결과가 없어요. 다른 재료나 요리 이름으로 찾아 보세요.</p>
+    <div class="grid" id="results-grid"></div>
+  </div>
+
+  <div id="listing">
+    <div class="grid">
+      {items.map((recipe) => <RecipeCard recipe={recipe} />)}
+    </div>
+    {pages > 1 && (
+      <nav class="pagination" aria-label="페이지 이동">
+        {page > 1 && <a href={pageHref(page - 1)} aria-label="이전 페이지">‹</a>}
+        {shown.map((n) => n === 'gap'
+          ? <span class="gap">…</span>
+          : n === page
+            ? <span class="current" aria-current="page">{n}</span>
+            : <a href={pageHref(n)}>{n}</a>)}
+        {page < pages && <a href={pageHref(page + 1)} aria-label="다음 페이지">›</a>}
+      </nav>
+    )}
+
+    <div class="cta-wrap">
+      <div class="cta" id="about">
+        <h2>Whippy란?</h2>
+        <p>{DEFINITION}이에요. 냉장고에 있는 재료를 앱에 한 번 담아 두면, 지금 바로 만들 수 있는 요리와 한두 개만 더 있으면 되는 요리를 알려 줘요. 모든 레시피는 유튜브 쇼츠 영상과 재료, 만드는 순서를 함께 보여 줘요.</p>
+        <div class="examples">
+          <strong>이런 때 써요</strong>
+          <span>“냉장고에 계란이랑 김치밖에 없는데 뭐 해 먹지?”</span>
+          <span>“장 보기 전에 집에 있는 재료로 만들 수 있는 요리가 궁금해요”</span>
+          <span>“자취하는데 오늘 뭐 먹을지 매번 고민돼요”</span>
+        </div>
+        <a class="btn" href={APP_STORE_URL} rel="noopener">App Store에서 받기</a>
+        <span class="cta-note">iPhone용 무료 앱 · 회원가입 필요 없음</span>
+      </div>
+    </div>
+  </div>
+
+  <script is:inline>
+    (function () {
+      var input = document.getElementById('q');
+      var results = document.getElementById('results');
+      var grid = document.getElementById('results-grid');
+      var empty = document.getElementById('results-empty');
+      var listing = document.getElementById('listing');
+      var index = null;
+      var loading = null;
+      function esc(s) {
+        return String(s).replace(/[&<>"']/g, function (c) {
+          return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+        });
+      }
+      function load() {
+        if (index) return Promise.resolve(index);
+        if (!loading) loading = fetch('/search-index.json').then(function (r) { return r.json(); }).then(function (d) { index = d; return d; });
+        return loading;
+      }
+      function card(r) {
+        var avatar = r.a ? '<img class="avatar" src="' + esc(r.a) + '" alt="" loading="lazy" width="20" height="20">' : '<span class="avatar"></span>';
+        return '<a class="card" href="' + esc(r.u) + '"><div class="thumb"><img src="' + esc(r.t) + '" alt="" loading="lazy" width="480" height="360"></div>' +
+          '<div class="card-body"><div class="card-title">' + esc(r.n) + '</div><div class="channel">' + avatar + '<span>' + esc(r.c) + '</span></div>' +
+          '<div class="meta">재료 ' + r.k + '개</div></div></a>';
+      }
+      function norm(s) { return String(s).toLowerCase().replace(/\s+/g, ''); }
+      function run() {
+        var q = norm(input.value);
+        if (!q) { results.hidden = true; listing.hidden = false; return; }
+        load().then(function (data) {
+          if (norm(input.value) !== q) return;
+          var hits = data.filter(function (r) { return norm(r.n).indexOf(q) >= 0 || norm(r.c).indexOf(q) >= 0 || norm(r.i).indexOf(q) >= 0; });
+          grid.innerHTML = hits.slice(0, 60).map(card).join('');
+          empty.hidden = hits.length > 0;
+          results.hidden = false; listing.hidden = true;
+        });
+      }
+      input.addEventListener('input', run);
+      input.addEventListener('focus', load, { once: true });
+    })();
+  </script>
+</Base>

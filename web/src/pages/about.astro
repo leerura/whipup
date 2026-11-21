@@ -1,0 +1,85 @@
+---
+import Base from '../layouts/Base.astro';
+import InstallBlock from '../components/InstallBlock.astro';
+import { APP_STORE_URL, CONTACT_EMAIL, DEFINITION } from '../lib/data';
+
+const title = 'Whippy 소개 - 냉장고 재료로 요리를 찾는 자취생용 앱';
+const description = `Whippy는 ${DEFINITION}이에요. iPhone용 무료 앱이고 회원가입이 필요 없어요.`;
+
+const faq = [
+  ['안드로이드에서도 쓸 수 있나요?', '지금은 iPhone(iOS)용만 제공해요. 웹 사이트에서는 누구나 레시피를 볼 수 있어요.'],
+  ['회원가입이 필요한가요?', '아니요. 처음 실행하면 이름이나 이메일 없이 바로 시작해요.'],
+  ['레시피 영상은 어디에서 오나요?', '각 레시피는 유튜브 쇼츠 영상을 그대로 재생하고, 채널명과 원본 영상 링크를 함께 보여 줘요. 삭제를 원하시면 문의로 알려 주세요.'],
+  ['재료가 모자라도 추천해 주나요?', '네. 지금 만들 수 있는 요리와 한두 개만 더 있으면 되는 요리를 나눠서 보여 줘요.'],
+  ['무료인가요?', '네, 무료예요.'],
+];
+const facts = [
+  ['플랫폼', 'iPhone(iOS) 앱'],
+  ['가격', '무료'],
+  ['회원가입', '필요 없음 (이름·이메일 없이 바로 시작)'],
+  ['레시피', '유튜브 쇼츠 영상과 재료, 만드는 순서'],
+  ['레시피 출처', '각 쇼츠 영상 그대로 재생, 채널명과 원본 링크 표시'],
+];
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'MobileApplication',
+    name: 'Whippy',
+    description: `${DEFINITION}.`,
+    operatingSystem: 'iOS',
+    applicationCategory: 'LifestyleApplication',
+    inLanguage: 'ko',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'KRW' },
+    downloadUrl: APP_STORE_URL,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })),
+  },
+];
+---
+<Base title={title} description={description} path="/about/" current="about" jsonLd={jsonLd}>
+  <div class="page-head container">
+    <div class="crumbs"><a href="/">홈</a> › 앱 소개</div>
+    <h1>Whippy 소개</h1>
+    <p class="lead">Whippy는 냉장고에 있는 재료로 지금 만들 수 있는 요리를 추천해 주는 자취생용 iPhone 앱이에요.</p>
+  </div>
+
+  <section class="section">
+    <h2>한눈에 보기</h2>
+    <dl class="facts">
+      {facts.map(([k, v]) => <div><dt>{k}</dt><dd>{v}</dd></div>)}
+    </dl>
+  </section>
+
+  <section class="section">
+    <h2>이렇게 사용해요</h2>
+    <div class="how">
+      <div><span class="num">1</span><h3>재료 담기</h3><p>냉장고에 있는 재료를 골라 담아요.</p></div>
+      <div><span class="num">2</span><h3>추천 받기</h3><p>지금 만들 수 있는 요리와, 한두 개만 더 있으면 되는 요리를 나눠서 보여 줘요.</p></div>
+      <div><span class="num">3</span><h3>영상 보며 따라 하기</h3><p>쇼츠 영상과 재료, 단계별 설명을 한 화면에서 봐요.</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>이런 때 써요</h2>
+    <div class="quotes">
+      <p>“냉장고에 계란이랑 김치밖에 없는데 뭐 해 먹지?”</p>
+      <p>“장 보기 전에 집에 있는 재료로 만들 수 있는 요리가 궁금해요”</p>
+      <p>“자취하는데 오늘 뭐 먹을지 매번 고민돼요”</p>
+    </div>
+  </section>
+
+  <section class="section faq">
+    <h2>자주 묻는 질문</h2>
+    {faq.map(([q, a]) => <details open><summary>{q}</summary><p>{a}</p></details>)}
+  </section>
+
+  <InstallBlock heading="내 냉장고 재료로 만들 수 있는 요리를 찾아 보세요" />
+
+  <section class="section">
+    <h2>개발자·문의</h2>
+    <p class="lead" style="font-size:15px">개발: 이석원 · 문의: <a href={`mailto:${CONTACT_EMAIL}`} style="text-decoration:underline">{CONTACT_EMAIL}</a> · 레시피 삭제 요청도 같은 주소로 받아요.</p>
+  </section>
+</Base>

@@ -15,6 +15,7 @@ V3의 규칙을 바꾸지 않는 영역은 V3 문서를 계속 따른다. 특히
 - [성능 관측·병목 분석](development/observability.md)
 - [레시피 데이터 반영 가이드](development/recipe-data-guidelines.md)
 - [배포: Oracle Cloud](development/deployment.md)
+- [웹 사이트(검색·AI 유입)](development/web-site.md)
 
 ## 범위 밖
 
