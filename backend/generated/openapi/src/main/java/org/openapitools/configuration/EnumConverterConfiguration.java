@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.net.URI;
 import java.util.UUID;
 
+import com.whipup.generated.model.RecipeSearchScope;
 import com.whipup.generated.model.RecommendationMode;
 
 import jakarta.annotation.Generated;
@@ -23,6 +24,15 @@ import org.springframework.core.convert.converter.Converter;
 @Configuration(value = "org.openapitools.configuration.enumConverterConfiguration")
 public class EnumConverterConfiguration {
 
+    @Bean(name = "org.openapitools.configuration.EnumConverterConfiguration.recipeSearchScopeConverter")
+    Converter<String, RecipeSearchScope> recipeSearchScopeConverter() {
+        return new Converter<String, RecipeSearchScope>() {
+            @Override
+            public RecipeSearchScope convert(String source) {
+                return RecipeSearchScope.fromValue(source);
+            }
+        };
+    }
     @Bean(name = "org.openapitools.configuration.EnumConverterConfiguration.recommendationModeConverter")
     Converter<String, RecommendationMode> recommendationModeConverter() {
         return new Converter<String, RecommendationMode>() {

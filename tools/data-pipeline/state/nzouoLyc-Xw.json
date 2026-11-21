@@ -1,0 +1,360 @@
+{
+  "videoId": "nzouoLyc-Xw",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/nzouoLyc-Xw",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-14T13:55:00.899525+00:00",
+    "rawResponse": "{\n  \"title\": \"엄마표 땡초어묵김밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"당근 1개\",\n      \"displayName\": \"당근\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"당근 1개\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리브오일 1\",\n      \"displayName\": \"올리브오일\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"올리브오일 1\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"어묵 200g\",\n      \"displayName\": \"어묵\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"어묵 200g\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"땡초 8개\",\n      \"displayName\": \"땡초\",\n      \"amount\": \"8\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"땡초 8개\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 1\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"볶으면서 다진마늘을 넣어\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 2\",\n      \"displayName\": \"간장\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 2\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"저당 굴소스 1.5\",\n      \"displayName\": \"저당 굴소스\",\n      \"amount\": \"1.5\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"저당 굴소스1.5\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"알룰로스 1\",\n      \"displayName\": \"알룰로스\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"알룰로스 1\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 3공기(390g)\",\n      \"displayName\": \"밥\",\n      \"amount\": \"390\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 3공기(390g)\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 2\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 2\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깨\",\n      \"displayName\": \"깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깨\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름, 깨를 넣어\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"단무지 1줌\",\n      \"displayName\": \"단무지\",\n      \"amount\": \"1\",\n      \"unit\": \"줌\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"단무지 1줌\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김\",\n      \"displayName\": \"김\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김 위에 펼쳐서\",\n          \"timestamp\": \"00:45\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"김 위에 밥을 올리는 장면\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마요네즈\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마요네즈 찍먹이 진리\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"주먹밥에 마요네즈를 뿌리고 김밥을 마요네즈에 찍어 먹는 모습\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"당근 1개를 잘게 다진 후, 팬에 올리브오일 1을 두르고 단단한 당근을 먼저 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"당근을 다지기에 넣고 간 뒤 팬에 기름과 함께 볶음\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 당근을 볶아 / 당근이 딱딱하니까 빨리 안 익잖아\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"어묵 200g과 땡초 8개를 잘게 다진 뒤, 볶던 당근에 함께 넣고 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"어묵과 땡초를 칼과 다지기로 잘게 썰어 팬에 넣음\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"당근을 볶다가~ 땡초랑 어묵 다진걸 넣어\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"다진마늘 1을 넣고 함께 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"볶으면서 다진마늘을 넣어\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"재료가 어느 정도 익으면 간장 2, 저당 굴소스 1.5, 알룰로스 1을 넣고 밥과 섞었을 때 간이 맞도록 세게 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그러고 어느정도 익으면~ 간장, 굴소스, 알룰로스~ 조금 간을 세게 해야지 밥하고 섞으면 간이 되는거야\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양푼에 밥 3공기(390g)와 볶은 재료를 모두 넣고, 참기름 2와 깨를 넣어 골고루 비벼준 뒤 한 김 식힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양푼이에다가 밥을 넣고 재료를 다 넣어 그러면서 비비면서 참기름, 깨를 넣어 근데 처음에는 밥도 뜨겁고 야채도 뜨겁잖아?\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"비빈 밥이 식으면 잘게 다진 단무지 1줌을 넣어 골고루 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그럼 좀 식으면 단무지 다진걸 넣어야 돼\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김 위에 양념한 밥을 넓게 펼쳐 올리고 단단하게 말아준 뒤, 터지지 않게 먹기 좋은 크기로 썬다 (남은 분량은 주먹밥으로 만들어도 좋다).\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김 위에 펼쳐서 최대한 단단하게 말아주고 옆구리 안 터지게 잘 썰어줘\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"취향에 따라 마요네즈를 찍어 먹거나 뿌려 먹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"역시 김밥에 마요네즈 찍먹이 진리\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"올리브오일, 다진마늘, 간장, 저당 굴소스, 알룰로스, 참기름의 계량 단위(숟가락/스푼 여부)가 영상 자막에 숫자로만 표기됨\",\n    \"김의 구체적인 장수 미표기\"\n  ]\n}",
+    "result": {
+      "title": "엄마표 땡초어묵김밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "당근 1개",
+          "displayName": "당근",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "당근 1개",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "올리브오일 1",
+          "displayName": "올리브오일",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "올리브오일 1",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "어묵 200g",
+          "displayName": "어묵",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "어묵 200g",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "땡초 8개",
+          "displayName": "땡초",
+          "amount": "8",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "땡초 8개",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "다진마늘 1",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 1",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "볶으면서 다진마늘을 넣어",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "간장 2",
+          "displayName": "간장",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 2",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "저당 굴소스 1.5",
+          "displayName": "저당 굴소스",
+          "amount": "1.5",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "저당 굴소스1.5",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "알룰로스 1",
+          "displayName": "알룰로스",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "알룰로스 1",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "밥 3공기(390g)",
+          "displayName": "밥",
+          "amount": "390",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 3공기(390g)",
+              "timestamp": "00:32"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "참기름 2",
+          "displayName": "참기름",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 2",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "깨",
+          "displayName": "깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깨",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름, 깨를 넣어",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "단무지 1줌",
+          "displayName": "단무지",
+          "amount": "1",
+          "unit": "줌",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "단무지 1줌",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "김",
+          "displayName": "김",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김 위에 펼쳐서",
+              "timestamp": "00:45"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "김 위에 밥을 올리는 장면",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "마요네즈",
+          "displayName": "마요네즈",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마요네즈 찍먹이 진리",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "주먹밥에 마요네즈를 뿌리고 김밥을 마요네즈에 찍어 먹는 모습",
+              "timestamp": "00:51"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        }
+      ],
+      "steps": [
+        {
+          "text": "당근 1개를 잘게 다진 후, 팬에 올리브오일 1을 두르고 단단한 당근을 먼저 볶는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "당근을 다지기에 넣고 간 뒤 팬에 기름과 함께 볶음",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 당근을 볶아 / 당근이 딱딱하니까 빨리 안 익잖아",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "어묵 200g과 땡초 8개를 잘게 다진 뒤, 볶던 당근에 함께 넣고 볶는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "어묵과 땡초를 칼과 다지기로 잘게 썰어 팬에 넣음",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "당근을 볶다가~ 땡초랑 어묵 다진걸 넣어",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "다진마늘 1을 넣고 함께 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "볶으면서 다진마늘을 넣어",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "재료가 어느 정도 익으면 간장 2, 저당 굴소스 1.5, 알룰로스 1을 넣고 밥과 섞었을 때 간이 맞도록 세게 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그러고 어느정도 익으면~ 간장, 굴소스, 알룰로스~ 조금 간을 세게 해야지 밥하고 섞으면 간이 되는거야",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "양푼에 밥 3공기(390g)와 볶은 재료를 모두 넣고, 참기름 2와 깨를 넣어 골고루 비벼준 뒤 한 김 식힌다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양푼이에다가 밥을 넣고 재료를 다 넣어 그러면서 비비면서 참기름, 깨를 넣어 근데 처음에는 밥도 뜨겁고 야채도 뜨겁잖아?",
+              "timestamp": "00:30"
+            }
+          ]
+        },
+        {
+          "text": "비빈 밥이 식으면 잘게 다진 단무지 1줌을 넣어 골고루 섞어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그럼 좀 식으면 단무지 다진걸 넣어야 돼",
+              "timestamp": "00:39"
+            }
+          ]
+        },
+        {
+          "text": "김 위에 양념한 밥을 넓게 펼쳐 올리고 단단하게 말아준 뒤, 터지지 않게 먹기 좋은 크기로 썬다 (남은 분량은 주먹밥으로 만들어도 좋다).",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김 위에 펼쳐서 최대한 단단하게 말아주고 옆구리 안 터지게 잘 썰어줘",
+              "timestamp": "00:45"
+            }
+          ]
+        },
+        {
+          "text": "취향에 따라 마요네즈를 찍어 먹거나 뿌려 먹는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "역시 김밥에 마요네즈 찍먹이 진리",
+              "timestamp": "00:53"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "올리브오일, 다진마늘, 간장, 저당 굴소스, 알룰로스, 참기름의 계량 단위(숟가락/스푼 여부)가 영상 자막에 숫자로만 표기됨",
+        "김의 구체적인 장수 미표기"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "우리 엄마 동결건조 시켜줘",
+    "sourceChannelName": "유지만 yuziman",
+    "sourceChannelId": "UCslni4iVQ-e784AU83eVcnQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/h9Vt4_UB_kTv6ijmpNN2Hw-Sv-2ACsIfI1rnEXDzx_6fDBVGeX2nJcDCEBgYBBrOJbmylUR4IeI=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-14T13:54:58.446131Z"
+  }
+}

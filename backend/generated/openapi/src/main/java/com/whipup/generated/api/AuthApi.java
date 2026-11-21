@@ -5,9 +5,10 @@
  */
 package com.whipup.generated.api;
 
+import com.whipup.generated.model.CurrentAccountResponse;
 import com.whipup.generated.model.ErrorResponse;
-import com.whipup.generated.model.KakaoLoginRequest;
 import com.whipup.generated.model.LoginResponse;
+import com.whipup.generated.model.TermsConsentRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -27,30 +28,84 @@ public interface AuthApi {
         return new AuthApiDelegate() {};
     }
 
-    String PATH_LOGIN_WITH_KAKAO = "/api/v1/auth/kakao";
-    String PATH_DELETE_CURRENT_ACCOUNT = "/api/v1/me";
+    String PATH_ACCEPT_TERMS_CONSENT = "/api/v1/me/terms-consent";
     /**
-     * POST /api/v1/auth/kakao
+     * POST /api/v1/me/terms-consent
      *
-     * @param kakaoLoginRequest  (required)
-     * @return Login success (status code 200)
+     * @param termsConsentRequest  (required)
+     * @return Terms accepted (status code 204)
+     *         or Invalid request (status code 400)
      *         or Authentication failed or missing (status code 401)
      */
     @RequestMapping(
         method = RequestMethod.POST,
-        value = AuthApi.PATH_LOGIN_WITH_KAKAO,
+        value = AuthApi.PATH_ACCEPT_TERMS_CONSENT,
         produces = { "application/json" },
         consumes = { "application/json" }
     )
-    default ResponseEntity<LoginResponse> loginWithKakao(
-         @Valid @RequestBody KakaoLoginRequest kakaoLoginRequest
+    default ResponseEntity<Void> acceptTermsConsent(
+         @Valid @RequestBody TermsConsentRequest termsConsentRequest
     ) {
-        return getDelegate().loginWithKakao(kakaoLoginRequest);
+        return getDelegate().acceptTermsConsent(termsConsentRequest);
     }
 
-    @RequestMapping(method = RequestMethod.DELETE, value = AuthApi.PATH_DELETE_CURRENT_ACCOUNT)
-    default ResponseEntity<Void> deleteCurrentAccount() {
+
+    String PATH_DELETE_CURRENT_ACCOUNT = "/api/v1/me";
+    /**
+     * DELETE /api/v1/me : Permanently delete the authenticated account
+     * Permanently deletes the current user, linked provider accounts, owned ingredients, and onboarding state in one transaction. No backup is retained. Shared ingredient/catalog and recipe data are not deleted. Logout does not exist; after deletion the app starts a new guest account.
+     *
+     * @return Account deleted (status code 204)
+     *         or Authentication failed or missing (status code 401)
+     */
+    @RequestMapping(
+        method = RequestMethod.DELETE,
+        value = AuthApi.PATH_DELETE_CURRENT_ACCOUNT,
+        produces = { "application/json" }
+    )
+    default ResponseEntity<Void> deleteCurrentAccount(
+        
+    ) {
         return getDelegate().deleteCurrentAccount();
+    }
+
+
+    String PATH_GET_CURRENT_ACCOUNT = "/api/v1/me";
+    /**
+     * GET /api/v1/me : Read the authenticated account state
+     * Returns the same account state fields as LoginResponse without issuing a token. Callable while terms consent is still pending.
+     *
+     * @return Current account state (status code 200)
+     *         or Authentication failed or missing (status code 401)
+     */
+    @RequestMapping(
+        method = RequestMethod.GET,
+        value = AuthApi.PATH_GET_CURRENT_ACCOUNT,
+        produces = { "application/json" }
+    )
+    default ResponseEntity<CurrentAccountResponse> getCurrentAccount(
+        
+    ) {
+        return getDelegate().getCurrentAccount();
+    }
+
+
+    String PATH_START_GUEST_SESSION = "/api/v1/auth/guest";
+    /**
+     * POST /api/v1/auth/guest : Create a guest account without personal information
+     * Creates a new account with no personal information and returns the same LoginResponse shape as before. The account always starts with terms consent required and onboarding incomplete.
+     *
+     * @return Guest account created (status code 200)
+     */
+    @RequestMapping(
+        method = RequestMethod.POST,
+        value = AuthApi.PATH_START_GUEST_SESSION,
+        produces = { "application/json" }
+    )
+    default ResponseEntity<LoginResponse> startGuestSession(
+        
+    ) {
+        return getDelegate().startGuestSession();
     }
 
 }

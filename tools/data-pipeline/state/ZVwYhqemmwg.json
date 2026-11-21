@@ -1,0 +1,367 @@
+{
+  "videoId": "ZVwYhqemmwg",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/ZVwYhqemmwg",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-15T08:24:43.651937+00:00",
+    "rawResponse": "{\n  \"title\": \"얼큰한 짬뽕 파스타\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"식용유 2스푼\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"식용유 2스푼을 둘러 주고\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 식용유 두 스푼을 둘러 주고\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파의 흰 부분\",\n      \"displayName\": \"대파의 흰 부분\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파의 흰 부분만 잘게 썰어 넣고\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파의 흰 부분만 잘게 썰어서 넣고\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/4개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/4\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 1/4개도 썰어 올려 줍니다.\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 1/4개도 썰어서 올려 줍니다.\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 1스푼\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"인자 다진 마늘 한 스푼을 넣고\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"냉동 새우 한 줌\",\n      \"displayName\": \"냉동 새우\",\n      \"amount\": \"1\",\n      \"unit\": \"줌\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"냉동 새우 한 줌\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냉동 새우 한 줌도 넣고\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"알배추 서너 장\",\n      \"displayName\": \"알배추\",\n      \"amount\": \"3~4\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"알배추 서너 장을\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"알배추 서너 장을 먹기 좋게 썰어서 넣고\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1스푼\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"인자 고춧가루 한 스푼을 넣고\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"토마토소스 5스푼\",\n      \"displayName\": \"토마토소스\",\n      \"amount\": \"5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"토마토소스 5스푼\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"토메이로 스파게티 소스 다섯 스푼\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1스푼\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1스푼\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스 한 스푼\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"치킨스톡 1/2스푼\",\n      \"displayName\": \"치킨스톡\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"치킨스톡 1/2스푼\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"치킨스톡 반 스푼을 넣고\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 1컵(약 180ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"1\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 1컵(약 180ml)\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 한 컵을 부어 줍니다.\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"냉동 스파게티면 하나\",\n      \"displayName\": \"냉동 스파게티면\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"냉동 스파게티면 하나를\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냉동 스파게티면 하나를 냉동 상태 그대로 넣고\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추를 넉넉하게 뿌려 주면\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추를 넉넉하게 뿌려 주면\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 식용유 2스푼을 둘러주고, 대파의 흰 부분만 잘게 썰어 넣고, 양파 1/4개를 썰어 올린 뒤 다진 마늘 1스푼을 넣고 다 같이 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 식용유 두 스푼을 둘러 주고 대파의 흰 부분만 잘게 썰어서 넣고 양파 1/4개도 썰어서 올려 줍니다. 인자 다진 마늘 한 스푼을 넣고 다 같이 볶아 주다가\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냉동 새우 한 줌을 넣고 새우 겉면이 익을 때까지 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냉동 새우 한 줌도 넣고 새우 겉면이 익을 때까지 볶아 줍니다.\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"알배추 서너 장을 먹기 좋게 썰어 넣고 숨이 살짝 죽을 때까지 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"알배추 서너 장을 먹기 좋게 썰어서 넣고 역시 숨이 살짝 죽을 때까지 볶아 줍니다.\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고춧가루 1스푼을 넣고 약불에서 10초만 볶아 고추기름을 내준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"인자 고춧가루 한 스푼을 넣고 약불에서 10초만 볶아가 고추기름을 내 주고\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"토마토소스 5스푼, 굴소스 1스푼, 치킨스톡 1/2스푼을 넣고 골고루 섞어준 뒤 물 1컵(약 180ml)을 부어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"토메이로 스파게티 소스 다섯 스푼, 굴소스 한 스푼, 치킨스톡 반 스푼을 넣고 골고루 섞어 준 뒤에 물 한 컵을 부어 줍니다.\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냉동 스파게티면 하나를 냉동 상태 그대로 넣고 면이 잘 풀리고 소스를 머금을 수 있도록 2~3분간 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냉동 스파게티면 하나를 냉동 상태 그대로 넣고 면이 잘 풀리고 소스를 쪼메 머금을 수 있도록 2~3분간 끓여 주다가\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"후추를 넉넉하게 뿌려 얼큰한 짬뽕 파스타를 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추를 넉넉하게 뿌려 주면 얼큰한 짬뽕 파스타가 완성됩니다.\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "얼큰한 짬뽕 파스타",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "식용유 2스푼",
+          "displayName": "식용유",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "식용유 2스푼을 둘러 주고",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "팬에 식용유 두 스푼을 둘러 주고",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파의 흰 부분",
+          "displayName": "대파의 흰 부분",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대파의 흰 부분만 잘게 썰어 넣고",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파의 흰 부분만 잘게 썰어서 넣고",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "양파 1/4개",
+          "displayName": "양파",
+          "amount": "1/4",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파 1/4개도 썰어 올려 줍니다.",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파 1/4개도 썰어서 올려 줍니다.",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "다진 마늘 1스푼",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 1스푼",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "인자 다진 마늘 한 스푼을 넣고",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "냉동 새우 한 줌",
+          "displayName": "냉동 새우",
+          "amount": "1",
+          "unit": "줌",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "냉동 새우 한 줌",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냉동 새우 한 줌도 넣고",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "알배추 서너 장",
+          "displayName": "알배추",
+          "amount": "3~4",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "알배추 서너 장을",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "알배추 서너 장을 먹기 좋게 썰어서 넣고",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "고춧가루 1스푼",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1스푼",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "인자 고춧가루 한 스푼을 넣고",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "토마토소스 5스푼",
+          "displayName": "토마토소스",
+          "amount": "5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "토마토소스 5스푼",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "토메이로 스파게티 소스 다섯 스푼",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "굴소스 1스푼",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1스푼",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SPEECH",
+              "text": "굴소스 한 스푼",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "치킨스톡 1/2스푼",
+          "displayName": "치킨스톡",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "치킨스톡 1/2스푼",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "치킨스톡 반 스푼을 넣고",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "물 1컵(약 180ml)",
+          "displayName": "물",
+          "amount": "1",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 1컵(약 180ml)",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 한 컵을 부어 줍니다.",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "냉동 스파게티면 하나",
+          "displayName": "냉동 스파게티면",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "냉동 스파게티면 하나를",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냉동 스파게티면 하나를 냉동 상태 그대로 넣고",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "후추를 넉넉하게 뿌려 주면",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추를 넉넉하게 뿌려 주면",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 식용유 2스푼을 둘러주고, 대파의 흰 부분만 잘게 썰어 넣고, 양파 1/4개를 썰어 올린 뒤 다진 마늘 1스푼을 넣고 다 같이 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 식용유 두 스푼을 둘러 주고 대파의 흰 부분만 잘게 썰어서 넣고 양파 1/4개도 썰어서 올려 줍니다. 인자 다진 마늘 한 스푼을 넣고 다 같이 볶아 주다가",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "냉동 새우 한 줌을 넣고 새우 겉면이 익을 때까지 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "냉동 새우 한 줌도 넣고 새우 겉면이 익을 때까지 볶아 줍니다.",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "알배추 서너 장을 먹기 좋게 썰어 넣고 숨이 살짝 죽을 때까지 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "알배추 서너 장을 먹기 좋게 썰어서 넣고 역시 숨이 살짝 죽을 때까지 볶아 줍니다.",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "고춧가루 1스푼을 넣고 약불에서 10초만 볶아 고추기름을 내준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "인자 고춧가루 한 스푼을 넣고 약불에서 10초만 볶아가 고추기름을 내 주고",
+              "timestamp": "00:19"
+            }
+          ]
+        },
+        {
+          "text": "토마토소스 5스푼, 굴소스 1스푼, 치킨스톡 1/2스푼을 넣고 골고루 섞어준 뒤 물 1컵(약 180ml)을 부어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "토메이로 스파게티 소스 다섯 스푼, 굴소스 한 스푼, 치킨스톡 반 스푼을 넣고 골고루 섞어 준 뒤에 물 한 컵을 부어 줍니다.",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "냉동 스파게티면 하나를 냉동 상태 그대로 넣고 면이 잘 풀리고 소스를 머금을 수 있도록 2~3분간 끓여준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "냉동 스파게티면 하나를 냉동 상태 그대로 넣고 면이 잘 풀리고 소스를 쪼메 머금을 수 있도록 2~3분간 끓여 주다가",
+              "timestamp": "00:29"
+            }
+          ]
+        },
+        {
+          "text": "후추를 넉넉하게 뿌려 얼큰한 짬뽕 파스타를 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후추를 넉넉하게 뿌려 주면 얼큰한 짬뽕 파스타가 완성됩니다.",
+              "timestamp": "00:35"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "파는 것 보다 100배 더 맛있습니다.",
+    "sourceChannelName": "자취요리신 simple cooking",
+    "sourceChannelId": "UCC9pQY_uaBSa0WOpMNJHbEQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/hZHUS5wW20j39kfLUfmeHDwvC8aG7kvNblsP_gXiclsXzf7ixDgAp5ml_2cjqTzMcpsKG9hwkA=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-15T08:24:41.079444Z"
+  }
+}

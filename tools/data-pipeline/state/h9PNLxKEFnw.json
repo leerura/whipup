@@ -1,0 +1,330 @@
+{
+  "videoId": "h9PNLxKEFnw",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/h9PNLxKEFnw",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-15T08:09:43.767575+00:00",
+    "rawResponse": "{\n  \"title\": \"한국식 마늘 볶음밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"얇게 썬 대파 추가해서 같이 볶아주고요!\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"대파를 얇게 썰어 준비하는 모습\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"칼로 직접 다진마늘\",\n      \"displayName\": \"마늘\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"칼로 직접.. 다진마늘이요!\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"직접 칼로 다진마늘\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통조림 햄 / 스팸\",\n      \"displayName\": \"통조림 햄\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마지막으로 통조림 햄까지 먹기 좋은 크기로 잘라주면 재료준비 끝!\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"(통조림햄) 스팸 넣어서! 2분 정도 볶아주고요!\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 16숟갈\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"16\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 16숟갈\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 달궈진 팬에 식용유 16숟갈 넣어주고\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리브오일\",\n      \"displayName\": \"올리브오일\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"볶음밥은 식용유를 사용해도 되지만 올리브오일을 사용하면 기름지지 않아 깔끔하고\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"난각 1번 계란 5개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"5\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"5개 풀어줍니다!\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"난각 1번 계란을 5개 풀어줍니다!\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 4숟갈\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"4\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 4숟갈\",\n          \"timestamp\": \"01:00\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 네 숟갈\",\n          \"timestamp\": \"01:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1숟갈\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1숟갈\",\n          \"timestamp\": \"01:01\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스 한 숟갈\",\n          \"timestamp\": \"01:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"흰쌀밥 5공기\",\n      \"displayName\": \"흰쌀밥\",\n      \"amount\": \"5\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"흰쌀밥 5공기\",\n          \"timestamp\": \"01:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 밥 다섯 공기 넣고\",\n          \"timestamp\": \"01:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"크래쉬드 레드페퍼 1숟갈\",\n      \"displayName\": \"크래쉬드 레드페퍼\",\n      \"amount\": \"1\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"크래쉬드 레드페퍼 1숟갈\",\n          \"timestamp\": \"01:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"크래쉬드 레드페퍼를 한 숟갈 넣어줍니다\",\n          \"timestamp\": \"01:12\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"대파를 얇게 썰고, 통마늘은 칼로 직접 다지며, 통조림 햄을 깍둑썰기해 먹기 좋은 크기로 손질한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"대파, 마늘, 통조림 햄을 썰어 준비하는 과정\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"칼로 직접 다진 마늘이요! 마늘은 직접 다지면 달큰한 맛도 훨씬 강하고 텍스처가 거칠어서 고소한 풍미도 살아납니다 마지막으로 통조림 햄까지 먹기 좋은 크기로 잘라주면 재료준비 끝!\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"달궈진 팬에 식용유(또는 올리브오일) 16숟갈을 두르고 직접 다진 마늘을 먼저 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 달궈진 팬에 식용유 16숟갈 넣어주고 칼로 다진 마늘 먼저 볶아줄게요!\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마늘에서 고소한 향기가 올라올 때 얇게 썬 대파를 추가하여 함께 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마늘에서 고소한 향기가 올라올 때 얇게 썬 대파 추가해서 같이 볶아주고요!\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"깍둑썰기한 통조림 햄을 넣고 약 2분 정도 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제부터는 깍둑썰기한 스팸 넣어서 2분 정도 볶아주고요!\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볶던 재료들을 팬 한쪽으로 몰아둔 다음, 빈 공간에 계란 5개를 깨 넣고 살짝 익기 시작하면 살살 저어 스크램블을 만든 후 다른 재료들과 섞어 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"재료들 한쪽으로 몰아준 다음 난각 1번 계란을 5개 풀어줍니다! 계란이 살짝 익기 시작하면 살살살 저어서 스크램블 만들어주고요! 다른 재료들이랑 함께 볶아준 다음\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"text\": \"진간장 4숟갈과 굴소스 1숟갈을 넣어 간을 맞추며 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간 맞춰줄게요 진간장 네 숟갈 굴소스 한 숟갈\",\n          \"timestamp\": \"00:59\"\n        }\n      ]\n    },\n    {\n      \"text\": \"흰쌀밥 5공기를 넣고 국자로 밥이 뭉치지 않게 고슬고슬 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 밥 다섯 공기 넣고 뭉치지 않게 국자로 고슬고슬 섞어주고요!\",\n          \"timestamp\": \"01:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"크래쉬드 레드페퍼 1숟갈을 넣고 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막 오늘의 킥! 크래쉬드 레드페퍼를 한 숟갈 넣어줍니다\",\n          \"timestamp\": \"01:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"강불에서 수분을 최대한 날려주며 볶아 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 강불에서 수분을 최대한 날려주기만 하면\",\n          \"timestamp\": \"01:18\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"대파, 마늘, 통조림 햄의 정확한 계량 수치가 영상 내에 언급되지 않음\",\n    \"완성된 요리의 서빙 인원수가 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "한국식 마늘 볶음밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "얇게 썬 대파 추가해서 같이 볶아주고요!",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "대파를 얇게 썰어 준비하는 모습",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "칼로 직접 다진마늘",
+          "displayName": "마늘",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "칼로 직접.. 다진마늘이요!",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "직접 칼로 다진마늘",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "통조림 햄 / 스팸",
+          "displayName": "통조림 햄",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마지막으로 통조림 햄까지 먹기 좋은 크기로 잘라주면 재료준비 끝!",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "(통조림햄) 스팸 넣어서! 2분 정도 볶아주고요!",
+              "timestamp": "00:48"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "식용유 16숟갈",
+          "displayName": "식용유",
+          "amount": "16",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 16숟갈",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 달궈진 팬에 식용유 16숟갈 넣어주고",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "올리브오일",
+          "displayName": "올리브오일",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "볶음밥은 식용유를 사용해도 되지만 올리브오일을 사용하면 기름지지 않아 깔끔하고",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "난각 1번 계란 5개",
+          "displayName": "계란",
+          "amount": "5",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "5개 풀어줍니다!",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "SPEECH",
+              "text": "난각 1번 계란을 5개 풀어줍니다!",
+              "timestamp": "00:52"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "진간장 4숟갈",
+          "displayName": "진간장",
+          "amount": "4",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 4숟갈",
+              "timestamp": "01:00"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장 네 숟갈",
+              "timestamp": "01:00"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "굴소스 1숟갈",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1숟갈",
+              "timestamp": "01:01"
+            },
+            {
+              "type": "SPEECH",
+              "text": "굴소스 한 숟갈",
+              "timestamp": "01:01"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "흰쌀밥 5공기",
+          "displayName": "흰쌀밥",
+          "amount": "5",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "흰쌀밥 5공기",
+              "timestamp": "01:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 밥 다섯 공기 넣고",
+              "timestamp": "01:07"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "크래쉬드 레드페퍼 1숟갈",
+          "displayName": "크래쉬드 레드페퍼",
+          "amount": "1",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "크래쉬드 레드페퍼 1숟갈",
+              "timestamp": "01:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "크래쉬드 레드페퍼를 한 숟갈 넣어줍니다",
+              "timestamp": "01:12"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "대파를 얇게 썰고, 통마늘은 칼로 직접 다지며, 통조림 햄을 깍둑썰기해 먹기 좋은 크기로 손질한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "대파, 마늘, 통조림 햄을 썰어 준비하는 과정",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "칼로 직접 다진 마늘이요! 마늘은 직접 다지면 달큰한 맛도 훨씬 강하고 텍스처가 거칠어서 고소한 풍미도 살아납니다 마지막으로 통조림 햄까지 먹기 좋은 크기로 잘라주면 재료준비 끝!",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "달궈진 팬에 식용유(또는 올리브오일) 16숟갈을 두르고 직접 다진 마늘을 먼저 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 달궈진 팬에 식용유 16숟갈 넣어주고 칼로 다진 마늘 먼저 볶아줄게요!",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "마늘에서 고소한 향기가 올라올 때 얇게 썬 대파를 추가하여 함께 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마늘에서 고소한 향기가 올라올 때 얇게 썬 대파 추가해서 같이 볶아주고요!",
+              "timestamp": "00:31"
+            }
+          ]
+        },
+        {
+          "text": "깍둑썰기한 통조림 햄을 넣고 약 2분 정도 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제부터는 깍둑썰기한 스팸 넣어서 2분 정도 볶아주고요!",
+              "timestamp": "00:47"
+            }
+          ]
+        },
+        {
+          "text": "볶던 재료들을 팬 한쪽으로 몰아둔 다음, 빈 공간에 계란 5개를 깨 넣고 살짝 익기 시작하면 살살 저어 스크램블을 만든 후 다른 재료들과 섞어 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "재료들 한쪽으로 몰아준 다음 난각 1번 계란을 5개 풀어줍니다! 계란이 살짝 익기 시작하면 살살살 저어서 스크램블 만들어주고요! 다른 재료들이랑 함께 볶아준 다음",
+              "timestamp": "00:50"
+            }
+          ]
+        },
+        {
+          "text": "진간장 4숟갈과 굴소스 1숟갈을 넣어 간을 맞추며 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "간 맞춰줄게요 진간장 네 숟갈 굴소스 한 숟갈",
+              "timestamp": "00:59"
+            }
+          ]
+        },
+        {
+          "text": "흰쌀밥 5공기를 넣고 국자로 밥이 뭉치지 않게 고슬고슬 섞어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 밥 다섯 공기 넣고 뭉치지 않게 국자로 고슬고슬 섞어주고요!",
+              "timestamp": "01:07"
+            }
+          ]
+        },
+        {
+          "text": "크래쉬드 레드페퍼 1숟갈을 넣고 섞어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막 오늘의 킥! 크래쉬드 레드페퍼를 한 숟갈 넣어줍니다",
+              "timestamp": "01:11"
+            }
+          ]
+        },
+        {
+          "text": "강불에서 수분을 최대한 날려주며 볶아 마무리한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 강불에서 수분을 최대한 날려주기만 하면",
+              "timestamp": "01:18"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "대파, 마늘, 통조림 햄의 정확한 계량 수치가 영상 내에 언급되지 않음",
+        "완성된 요리의 서빙 인원수가 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "계란볶음밥에… 마늘 추가하면 벌어지는 일",
+    "sourceChannelName": "김진순 점심시간",
+    "sourceChannelId": "UC9She1e6OWUpwJpwZtbqhjQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/BvOrdVOmTRlMEFygfbeuka_30BrSZenSof2_yC4RCxF0gEKvRzJTn6NEzMTJYQSe8aBxV9iMbQ=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-15T08:09:41.499545Z"
+  }
+}

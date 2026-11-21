@@ -1,18 +1,575 @@
 {
   "videoId": "MvxXe4gDjcI",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/MvxXe4gDjcI",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-10-27T10:45:10.049714+00:00",
-    "accountId": "account-e",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAt": "2026-10-27T10:45:35.740322+00:00",
-    "retryAccountId": "account-e"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-12T11:56:24.079877+00:00",
+    "rawResponse": "{\n  \"title\": \"기똥찬 돼지고기 볶음\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"양파 1/4개 대략 60g\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/4\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/4개 60g 잘라줄거에요\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 양파 1/4개 대략 60g을 잘라줄끼라예\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 흰대위주 20g (잘게 잘라 2~3큰술)\",\n      \"displayName\": \"대파 흰대\",\n      \"amount\": \"20\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 흰대위주 20g\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"잘게 잘라 2~3큰술 나오는양\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파를 흰대 위주로 요마이 20g을 갖고 옵니다\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"아주 매운 땡초 2개\",\n      \"displayName\": \"땡초 (청양고추)\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"아주 매운 땡초 2개 준비\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"겁나 매운 땡초 2개를 갖고 와가\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"수육용 앞다리살 450~500g (뼈 제외 실중량 대략 450g)\",\n      \"displayName\": \"돼지고기 앞다리살 (수육용 또는 찌개용)\",\n      \"amount\": \"450\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"수육용 앞다리살 450~500g\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"어쨌든... 뼈무게 빼면 대략 450g\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"뼈다귀 무게 50g을 빼면 대략 450g 정도가 나오니까\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛소금 2꼬집\",\n      \"displayName\": \"맛소금\",\n      \"amount\": \"2\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고기를 비닐에 담고 맛소금 2꼬집\",\n          \"timestamp\": \"01:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛소금을 요마이 짚어가 두 꼬집 정도를 꼬집꼬집 뿌려주이소\",\n          \"timestamp\": \"01:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후춧가루 1~2꼬집\",\n      \"displayName\": \"후춧가루\",\n      \"amount\": \"1~2\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후춧가루 1~2꼬집\",\n          \"timestamp\": \"01:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후춧가루 한두 꼬집을 듬뿍 뿌려준 다음에\",\n          \"timestamp\": \"01:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"감자전분 (또는 감자전분 함량 높은 믹스제품) 적당히 2큰술 24g\",\n      \"displayName\": \"감자전분\",\n      \"amount\": \"24\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"전분은 감자전분!! 또는 감자전분함량이 다른 전분보다 높은 믹스제품\",\n          \"timestamp\": \"01:17\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"적당히 퍼서 2큰술 24g\",\n          \"timestamp\": \"01:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고봉으로 푸지 말고 적당히 퍼가 두 큰술 대략 24g을 부어가\",\n          \"timestamp\": \"01:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 깎아서 2스푼 20g\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"20\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 깎아서 2스푼 20g\",\n          \"timestamp\": \"01:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕을 깎아가 두 스푼 20g\",\n          \"timestamp\": \"01:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 4스푼 32g\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"32\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 4스푼 32g\",\n          \"timestamp\": \"01:40\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 네 스푼 32g\",\n          \"timestamp\": \"01:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"미림 2스푼 16g\",\n      \"displayName\": \"미림\",\n      \"amount\": \"16\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"미림 2스푼 16g\",\n          \"timestamp\": \"01:42\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"미림 두 스푼 16g\",\n          \"timestamp\": \"01:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 2스푼 (미림 대체용)\",\n      \"displayName\": \"물\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"미림 없으면 물 2스푼 + 설탕 1/5스푼 2g\",\n          \"timestamp\": \"01:43\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"미림이 없으면 물 두 스푼이랑 설탕 1/5스푼 2g 정도를 더 넣어줍니다\",\n          \"timestamp\": \"01:43\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1/5스푼 2g (미림 대체용 추가분)\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"2\",\n      \"unit\": \"g\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"미림 없으면 물 2스푼 + 설탕 1/5스푼 2g\",\n          \"timestamp\": \"01:43\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"미림이 없으면 물 두 스푼이랑 설탕 1/5스푼 2g 정도를 더 넣어줍니다\",\n          \"timestamp\": \"01:43\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양조식초 반스푼 4~5g\",\n      \"displayName\": \"양조식초\",\n      \"amount\": \"4~5\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조식초 반스푼 4~5g\",\n          \"timestamp\": \"01:47\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식초를 양조식초로 갖다가 반 스푼 4~5g을 부어주고\",\n          \"timestamp\": \"01:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물엿 1스푼 10g\",\n      \"displayName\": \"물엿\",\n      \"amount\": \"10\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물엿 1스푼 10g\",\n          \"timestamp\": \"01:50\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물엿 한 스푼 10g\",\n          \"timestamp\": \"01:50\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1스푼 12g\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"12\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1스푼 12g\",\n          \"timestamp\": \"01:52\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스를 적당히 부어가 한 스푼 12g을 넣고\",\n          \"timestamp\": \"01:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1스푼 7g\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"7\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"웍에 고춧가루 1스푼 7g\",\n          \"timestamp\": \"01:56\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 한 스푼 7g\",\n          \"timestamp\": \"01:57\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간마늘 1스푼 20g\",\n      \"displayName\": \"간마늘\",\n      \"amount\": \"20\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간마늘 1스푼 20g\",\n          \"timestamp\": \"01:58\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간마늘 한 스푼 20g\",\n          \"timestamp\": \"01:58\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 4스푼 20g\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"20\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 4스푼 20g\",\n          \"timestamp\": \"02:02\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식용유 네 스푼 20g을 부어줍니다\",\n          \"timestamp\": \"02:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 1~2스푼 (볶을 때 수분감/기름감 부족시 추가)\",\n      \"displayName\": \"식용유 (추가용)\",\n      \"amount\": \"1~2\",\n      \"unit\": \"스푼\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 1~2스푼 추가하면 굿굿굿!\",\n          \"timestamp\": \"02:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"수분감, 기름감이 너무 없다 싶으시면 기름 한두 스푼을 추가해 주시면\",\n          \"timestamp\": \"02:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨 반스푼 정도\",\n      \"displayName\": \"통깨\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"통깨는 기호에 따라 반스푼 정도 뿌려서\",\n          \"timestamp\": \"03:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"통깨는 기호에 맞춰가 반 스푼 정도 솔솔 뿌리가\",\n          \"timestamp\": \"03:04\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양파 1/4개(60g)를 너무 크지 않게 잘게 다져준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/4개 60g 잘라줄거에요 / 너무 크지 않게 잘게 자르고\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파 흰 대 위주로 20g을 썰어 가볍게 다져준다 (잘게 잘라 약 2~3큰술 분량).\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 흰대위주 20g / 몇번만 다져주세요\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"매운 땡초 2개를 칼로 꾹꾹 눌러 살짝 으깬 뒤 잘게 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"꾹꾹 눌러 준 다음 / 너무 크지 않게 잘게 자르기\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"돼지고기 앞다리살(450g)을 1.5~2cm 폭으로 썬 뒤 한 입 크기로 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1.5~2cm 폭으로 썬 다음 한입 크기로 써세요\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"text\": \"비닐봉지에 썬 고기를 넣고 맛소금 2꼬집, 후춧가루 1~2꼬집을 넣어 골고루 주물러 밑간한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고기를 비닐에 담고 맛소금 2꼬집 / 후춧가루 1~2꼬집 / 골고루 버무려서 소금, 후추가 골고루 퍼지게 밑간하고\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밑간한 고기가 담긴 비닐에 감자전분 2큰술(24g)을 넣고, 비닐에 공기를 넣어 흔들며 전분가루가 고기에 골고루 묻도록 코팅한 뒤 10분 정도 둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"적당히 퍼서 2큰술 24g / 흔들어서 가루가 안에서 흩날려서 고기에 들러붙게 만들고 / 10분 정도 대기!\",\n          \"timestamp\": \"01:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 설탕 깎아서 2스푼(20g), 진간장 4스푼(32g), 미림 2스푼(16g, 없을 시 물 2스푼+설탕 1/5스푼), 양조식초 1/2스푼(4~5g), 물엿 1스푼(10g), 굴소스 1스푼(12g)을 넣고 골고루 섞어 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 깎아서 2스푼 20g / 진간장 4스푼 32g / 미림 2스푼 16g / 양조식초 반스푼 4~5g / 물엿 1스푼 10g / 굴소스 1스푼 12g / 골고루 섞기\",\n          \"timestamp\": \"01:38\"\n        }\n      ]\n    },\n    {\n      \"text\": \"웍에 고춧가루 1스푼(7g), 간마늘 1스푼(20g), 썰어둔 대파, 식용유 4스푼(20g)을 넣고 강불에서 기름이 자글거리면 약불로 줄여 약 2분간 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"웍에 고춧가루 1스푼 7g / 간마늘 1스푼 20g / 대파썬거 넣고 / 식용유 4스푼 20g / 강불에 자글 거리면 약불로 불을 바로 줄이고 대략 2분 볶기\",\n          \"timestamp\": \"01:56\"\n        }\n      ]\n    },\n    {\n      \"text\": \"다진 양파를 넣고 불을 중불로 올린 뒤 약 1분간 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파넣고 불 중불 / 1분 정도 볶은 다음\",\n          \"timestamp\": \"02:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"전분을 입혀둔 고기를 전부 넣고 중불을 유지하며 골고루 섞어가며 약 2분 30초 정도 볶아 80% 이상 익힌다 (기름이나 수분이 부족하면 식용유 1~2스푼을 추가한다).\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고기 전부넣고 / 중불 유지하고 볶기 / 섞으며 2분 30초 정도 볶아서 고기를 80% 이상 익혀서\",\n          \"timestamp\": \"02:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"만들어둔 양념장을 전부 붓고 중불을 유지하며 약 1분 30초간 더 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"만들어둔 양념장 투하 / 중불 유지하고 1분 30초 더 볶기\",\n          \"timestamp\": \"02:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"썰어둔 땡초를 넣고 불을 강불로 바꾼 뒤 타지 않게 저어가며 30~40초간 더 볶아 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"땡초 넣고 강불로 불 바꾸고 타지 않게 30~40초 더 볶으면\",\n          \"timestamp\": \"02:54\"\n        }\n      ]\n    },\n    {\n      \"text\": \"기호에 따라 통깨 반 스푼 정도를 솔솔 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"통깨는 기호에 따라 반스푼 정도 뿌려서\",\n          \"timestamp\": \"03:04\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "기똥찬 돼지고기 볶음",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "양파 1/4개 대략 60g",
+          "displayName": "양파",
+          "amount": "1/4",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/4개 60g 잘라줄거에요",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 양파 1/4개 대략 60g을 잘라줄끼라예",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파 흰대위주 20g (잘게 잘라 2~3큰술)",
+          "displayName": "대파 흰대",
+          "amount": "20",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 흰대위주 20g",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "잘게 잘라 2~3큰술 나오는양",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파를 흰대 위주로 요마이 20g을 갖고 옵니다",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "아주 매운 땡초 2개",
+          "displayName": "땡초 (청양고추)",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "아주 매운 땡초 2개 준비",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "겁나 매운 땡초 2개를 갖고 와가",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "수육용 앞다리살 450~500g (뼈 제외 실중량 대략 450g)",
+          "displayName": "돼지고기 앞다리살 (수육용 또는 찌개용)",
+          "amount": "450",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "수육용 앞다리살 450~500g",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "어쨌든... 뼈무게 빼면 대략 450g",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "SPEECH",
+              "text": "뼈다귀 무게 50g을 빼면 대략 450g 정도가 나오니까",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "맛소금 2꼬집",
+          "displayName": "맛소금",
+          "amount": "2",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고기를 비닐에 담고 맛소금 2꼬집",
+              "timestamp": "01:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "맛소금을 요마이 짚어가 두 꼬집 정도를 꼬집꼬집 뿌려주이소",
+              "timestamp": "01:06"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "후춧가루 1~2꼬집",
+          "displayName": "후춧가루",
+          "amount": "1~2",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후춧가루 1~2꼬집",
+              "timestamp": "01:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후춧가루 한두 꼬집을 듬뿍 뿌려준 다음에",
+              "timestamp": "01:09"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "감자전분 (또는 감자전분 함량 높은 믹스제품) 적당히 2큰술 24g",
+          "displayName": "감자전분",
+          "amount": "24",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "전분은 감자전분!! 또는 감자전분함량이 다른 전분보다 높은 믹스제품",
+              "timestamp": "01:17"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "적당히 퍼서 2큰술 24g",
+              "timestamp": "01:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고봉으로 푸지 말고 적당히 퍼가 두 큰술 대략 24g을 부어가",
+              "timestamp": "01:23"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "설탕 깎아서 2스푼 20g",
+          "displayName": "설탕",
+          "amount": "20",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 깎아서 2스푼 20g",
+              "timestamp": "01:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕을 깎아가 두 스푼 20g",
+              "timestamp": "01:38"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "진간장 4스푼 32g",
+          "displayName": "진간장",
+          "amount": "32",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 4스푼 32g",
+              "timestamp": "01:40"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장 네 스푼 32g",
+              "timestamp": "01:40"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "미림 2스푼 16g",
+          "displayName": "미림",
+          "amount": "16",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "미림 2스푼 16g",
+              "timestamp": "01:42"
+            },
+            {
+              "type": "SPEECH",
+              "text": "미림 두 스푼 16g",
+              "timestamp": "01:42"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "물 2스푼 (미림 대체용)",
+          "displayName": "물",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "미림 없으면 물 2스푼 + 설탕 1/5스푼 2g",
+              "timestamp": "01:43"
+            },
+            {
+              "type": "SPEECH",
+              "text": "미림이 없으면 물 두 스푼이랑 설탕 1/5스푼 2g 정도를 더 넣어줍니다",
+              "timestamp": "01:43"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "설탕 1/5스푼 2g (미림 대체용 추가분)",
+          "displayName": "설탕",
+          "amount": "2",
+          "unit": "g",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "미림 없으면 물 2스푼 + 설탕 1/5스푼 2g",
+              "timestamp": "01:43"
+            },
+            {
+              "type": "SPEECH",
+              "text": "미림이 없으면 물 두 스푼이랑 설탕 1/5스푼 2g 정도를 더 넣어줍니다",
+              "timestamp": "01:43"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "양조식초 반스푼 4~5g",
+          "displayName": "양조식초",
+          "amount": "4~5",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조식초 반스푼 4~5g",
+              "timestamp": "01:47"
+            },
+            {
+              "type": "SPEECH",
+              "text": "식초를 양조식초로 갖다가 반 스푼 4~5g을 부어주고",
+              "timestamp": "01:47"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "물엿 1스푼 10g",
+          "displayName": "물엿",
+          "amount": "10",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물엿 1스푼 10g",
+              "timestamp": "01:50"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물엿 한 스푼 10g",
+              "timestamp": "01:50"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "굴소스 1스푼 12g",
+          "displayName": "굴소스",
+          "amount": "12",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1스푼 12g",
+              "timestamp": "01:52"
+            },
+            {
+              "type": "SPEECH",
+              "text": "굴소스를 적당히 부어가 한 스푼 12g을 넣고",
+              "timestamp": "01:52"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "고춧가루 1스푼 7g",
+          "displayName": "고춧가루",
+          "amount": "7",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "웍에 고춧가루 1스푼 7g",
+              "timestamp": "01:56"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 한 스푼 7g",
+              "timestamp": "01:57"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "간마늘 1스푼 20g",
+          "displayName": "간마늘",
+          "amount": "20",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간마늘 1스푼 20g",
+              "timestamp": "01:58"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간마늘 한 스푼 20g",
+              "timestamp": "01:58"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        },
+        {
+          "rawText": "식용유 4스푼 20g",
+          "displayName": "식용유",
+          "amount": "20",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 4스푼 20g",
+              "timestamp": "02:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "식용유 네 스푼 20g을 부어줍니다",
+              "timestamp": "02:02"
+            }
+          ],
+          "sourceId": "ingredient-18"
+        },
+        {
+          "rawText": "식용유 1~2스푼 (볶을 때 수분감/기름감 부족시 추가)",
+          "displayName": "식용유 (추가용)",
+          "amount": "1~2",
+          "unit": "스푼",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 1~2스푼 추가하면 굿굿굿!",
+              "timestamp": "02:34"
+            },
+            {
+              "type": "SPEECH",
+              "text": "수분감, 기름감이 너무 없다 싶으시면 기름 한두 스푼을 추가해 주시면",
+              "timestamp": "02:32"
+            }
+          ],
+          "sourceId": "ingredient-19"
+        },
+        {
+          "rawText": "통깨 반스푼 정도",
+          "displayName": "통깨",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "통깨는 기호에 따라 반스푼 정도 뿌려서",
+              "timestamp": "03:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "통깨는 기호에 맞춰가 반 스푼 정도 솔솔 뿌리가",
+              "timestamp": "03:04"
+            }
+          ],
+          "sourceId": "ingredient-20"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양파 1/4개(60g)를 너무 크지 않게 잘게 다져준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/4개 60g 잘라줄거에요 / 너무 크지 않게 잘게 자르고",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "대파 흰 대 위주로 20g을 썰어 가볍게 다져준다 (잘게 잘라 약 2~3큰술 분량).",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 흰대위주 20g / 몇번만 다져주세요",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "매운 땡초 2개를 칼로 꾹꾹 눌러 살짝 으깬 뒤 잘게 썰어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "꾹꾹 눌러 준 다음 / 너무 크지 않게 잘게 자르기",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "돼지고기 앞다리살(450g)을 1.5~2cm 폭으로 썬 뒤 한 입 크기로 썰어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1.5~2cm 폭으로 썬 다음 한입 크기로 써세요",
+              "timestamp": "00:38"
+            }
+          ]
+        },
+        {
+          "text": "비닐봉지에 썬 고기를 넣고 맛소금 2꼬집, 후춧가루 1~2꼬집을 넣어 골고루 주물러 밑간한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고기를 비닐에 담고 맛소금 2꼬집 / 후춧가루 1~2꼬집 / 골고루 버무려서 소금, 후추가 골고루 퍼지게 밑간하고",
+              "timestamp": "01:05"
+            }
+          ]
+        },
+        {
+          "text": "밑간한 고기가 담긴 비닐에 감자전분 2큰술(24g)을 넣고, 비닐에 공기를 넣어 흔들며 전분가루가 고기에 골고루 묻도록 코팅한 뒤 10분 정도 둔다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "적당히 퍼서 2큰술 24g / 흔들어서 가루가 안에서 흩날려서 고기에 들러붙게 만들고 / 10분 정도 대기!",
+              "timestamp": "01:23"
+            }
+          ]
+        },
+        {
+          "text": "볼에 설탕 깎아서 2스푼(20g), 진간장 4스푼(32g), 미림 2스푼(16g, 없을 시 물 2스푼+설탕 1/5스푼), 양조식초 1/2스푼(4~5g), 물엿 1스푼(10g), 굴소스 1스푼(12g)을 넣고 골고루 섞어 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 깎아서 2스푼 20g / 진간장 4스푼 32g / 미림 2스푼 16g / 양조식초 반스푼 4~5g / 물엿 1스푼 10g / 굴소스 1스푼 12g / 골고루 섞기",
+              "timestamp": "01:38"
+            }
+          ]
+        },
+        {
+          "text": "웍에 고춧가루 1스푼(7g), 간마늘 1스푼(20g), 썰어둔 대파, 식용유 4스푼(20g)을 넣고 강불에서 기름이 자글거리면 약불로 줄여 약 2분간 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "웍에 고춧가루 1스푼 7g / 간마늘 1스푼 20g / 대파썬거 넣고 / 식용유 4스푼 20g / 강불에 자글 거리면 약불로 불을 바로 줄이고 대략 2분 볶기",
+              "timestamp": "01:56"
+            }
+          ]
+        },
+        {
+          "text": "다진 양파를 넣고 불을 중불로 올린 뒤 약 1분간 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파넣고 불 중불 / 1분 정도 볶은 다음",
+              "timestamp": "02:13"
+            }
+          ]
+        },
+        {
+          "text": "전분을 입혀둔 고기를 전부 넣고 중불을 유지하며 골고루 섞어가며 약 2분 30초 정도 볶아 80% 이상 익힌다 (기름이나 수분이 부족하면 식용유 1~2스푼을 추가한다).",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고기 전부넣고 / 중불 유지하고 볶기 / 섞으며 2분 30초 정도 볶아서 고기를 80% 이상 익혀서",
+              "timestamp": "02:17"
+            }
+          ]
+        },
+        {
+          "text": "만들어둔 양념장을 전부 붓고 중불을 유지하며 약 1분 30초간 더 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "만들어둔 양념장 투하 / 중불 유지하고 1분 30초 더 볶기",
+              "timestamp": "02:41"
+            }
+          ]
+        },
+        {
+          "text": "썰어둔 땡초를 넣고 불을 강불로 바꾼 뒤 타지 않게 저어가며 30~40초간 더 볶아 마무리한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "땡초 넣고 강불로 불 바꾸고 타지 않게 30~40초 더 볶으면",
+              "timestamp": "02:54"
+            }
+          ]
+        },
+        {
+          "text": "기호에 따라 통깨 반 스푼 정도를 솔솔 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "통깨는 기호에 따라 반스푼 정도 뿌려서",
+              "timestamp": "03:04"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
   }
 }

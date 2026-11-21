@@ -1,0 +1,418 @@
+{
+  "videoId": "NA3qWIqo864",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/NA3qWIqo864",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-08T09:14:14.258478+00:00",
+    "rawResponse": "{\n  \"title\": \"깐풍 만두\",\n  \"description\": \"바삭하게 튀기듯 구워낸 냉동만두에 매콤새콤한 깐풍 소스를 빠르게 조려 버무려 먹는 깐풍 만두 레시피\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"비비고 왕교자 350g\",\n      \"displayName\": \"비비고 왕교자\",\n      \"amount\": \"350\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"비비고 왕교자 350g\",\n          \"timestamp\": \"05:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 2개\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추 2개\",\n          \"timestamp\": \"05:02\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다음으로 청양고추 2개 썰고요\",\n          \"timestamp\": \"05:35\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 2개\",\n          \"timestamp\": \"05:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 1/3~1/2개\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1/3~1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 1/3\",\n          \"timestamp\": \"05:01\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 1/2개\",\n          \"timestamp\": \"05:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 적당량\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유\",\n          \"timestamp\": \"05:20\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 식용유를 자작하게 붓기\",\n          \"timestamp\": \"05:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추기름 3큰술\",\n      \"displayName\": \"고추기름\",\n      \"amount\": \"3\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추기름\",\n          \"timestamp\": \"05:03\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 고추기름 3큰술\",\n          \"timestamp\": \"11:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1큰술\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘\",\n          \"timestamp\": \"05:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마늘 한 큰술만 넣어주세요\",\n          \"timestamp\": \"11:39\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 1큰술\",\n          \"timestamp\": \"11:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 1큰술\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장\",\n          \"timestamp\": \"05:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장을 먼저\",\n          \"timestamp\": \"11:51\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 1\",\n          \"timestamp\": \"11:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소주 1큰술\",\n      \"displayName\": \"소주\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소주\",\n          \"timestamp\": \"05:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"술을 한 큰술\",\n          \"timestamp\": \"11:55\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소주 1\",\n          \"timestamp\": \"11:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식초 1.5큰술\",\n      \"displayName\": \"식초\",\n      \"amount\": \"1.5\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식초\",\n          \"timestamp\": \"05:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식초 1.5\",\n          \"timestamp\": \"11:57\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식초 1.5\",\n          \"timestamp\": \"11:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 2큰술\",\n      \"displayName\": \"물\",\n      \"amount\": \"2\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 두 개\",\n          \"timestamp\": \"11:59\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 2\",\n          \"timestamp\": \"11:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1큰술\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕\",\n          \"timestamp\": \"05:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕을 10mm\",\n          \"timestamp\": \"12:00\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1\",\n          \"timestamp\": \"11:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 2/3큰술\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"2/3\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스\",\n          \"timestamp\": \"05:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴 소스 2/3\",\n          \"timestamp\": \"11:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 약간\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": \"약간\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 약간\",\n          \"timestamp\": \"11:53\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추도\",\n          \"timestamp\": \"12:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨 약간\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": \"약간\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 깐풍 만두 위에 통깨를 뿌려 마무리함\",\n          \"timestamp\": \"12:40\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"청양고추 2개와 대파 1/2개(또는 1/3대)를 식감이 살아있도록 두툼하게 썰어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1. 청양고추 2개, 대파 1/2개를 두툼하게 썰어 식감을 살립니다\",\n          \"timestamp\": \"05:41\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"고추를 어슷썰고 대파를 큼직하게 써는 모습\",\n          \"timestamp\": \"05:40\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유를 자작하게 부어 달군 뒤, 냉동만두를 넣고 튀기듯 한 면씩 바삭하고 노릇하게 굽습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"2. 팬에 기름을 자작하게 붓고 냉동만두를 튀기듯 바삭하게 굽습니다\",\n          \"timestamp\": \"06:26\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"한 면씩 튀겨주고 뒤집기\",\n          \"timestamp\": \"07:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"바삭하게 구워진 만두를 건져 키친타월에 올려 수분과 기름기를 날립니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"3. 구워진 만두는 키친타월에 올려 수분을 날려야 끝까지 바삭합니다\",\n          \"timestamp\": \"10:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 고추기름 3큰술을 두르고 썰어둔 대파와 청양고추, 다진 마늘 1큰술을 넣고 강불에서 빠르게 볶아 향을 냅니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"4. 팬에 고추기름 3큰술, 다진 마늘 1큰술, 썰어둔 고추와 대파를 넣고 강불에서 빠르게 볶아 향을 냅니다\",\n          \"timestamp\": \"11:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 진간장 1큰술, 소주 1큰술, 식초 1.5큰술, 물 2큰술, 설탕 1큰술, 굴소스 2/3큰술, 후추 약간을 모두 넣어 깐풍 매콤 소스를 만듭니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"5. 위 재료를 모두 넣어 깐풍 매콤 소스를 만듭니다\",\n          \"timestamp\": \"11:53\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양념이 끓어오르면 튀겨둔 만두를 넣고 센 불에서 양념이 거의 다 조려질 때까지 빠르게 휘리릭 볶아냅니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"6. 양념이 끓어오르면 소스에 만두를 넣고 빠르게 휘리릭 볶아내면 완성!\",\n          \"timestamp\": \"12:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양념이 끓으면 만두 넣겠습니다. 빠르게 조려내는 겁니다.\",\n          \"timestamp\": \"12:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 깐풍 만두를 접시에 담고 취향에 따라 통깨를 뿌려 마무리합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"접시에 깐풍 만두를 담고 통깨를 솔솔 뿌려 담아내는 모습\",\n          \"timestamp\": \"12:29\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"대파 분량이 재료 소개 화면(05:01)에서는 1/3개로, 조리 자막(05:41)에서는 1/2개로 상이하게 표기됨\",\n    \"마무리용 통깨는 재료 목록 및 자막에 별도 명시되지 않았으나 완성 영상(12:40)에서 뿌려져 있음\"\n  ]\n}",
+    "result": {
+      "title": "깐풍 만두",
+      "description": "바삭하게 튀기듯 구워낸 냉동만두에 매콤새콤한 깐풍 소스를 빠르게 조려 버무려 먹는 깐풍 만두 레시피",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "비비고 왕교자 350g",
+          "displayName": "비비고 왕교자",
+          "amount": "350",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "비비고 왕교자 350g",
+              "timestamp": "05:01"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "청양고추 2개",
+          "displayName": "청양고추",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추 2개",
+              "timestamp": "05:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다음으로 청양고추 2개 썰고요",
+              "timestamp": "05:35"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 2개",
+              "timestamp": "05:41"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "대파 1/3~1/2개",
+          "displayName": "대파",
+          "amount": "1/3~1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 1/3",
+              "timestamp": "05:01"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 1/2개",
+              "timestamp": "05:41"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "식용유 적당량",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유",
+              "timestamp": "05:20"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 식용유를 자작하게 붓기",
+              "timestamp": "05:21"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고추기름 3큰술",
+          "displayName": "고추기름",
+          "amount": "3",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추기름",
+              "timestamp": "05:03"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 고추기름 3큰술",
+              "timestamp": "11:41"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "다진 마늘 1큰술",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘",
+              "timestamp": "05:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마늘 한 큰술만 넣어주세요",
+              "timestamp": "11:39"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 1큰술",
+              "timestamp": "11:41"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "진간장 1큰술",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장",
+              "timestamp": "05:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장을 먼저",
+              "timestamp": "11:51"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 1",
+              "timestamp": "11:53"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "소주 1큰술",
+          "displayName": "소주",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소주",
+              "timestamp": "05:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "술을 한 큰술",
+              "timestamp": "11:55"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소주 1",
+              "timestamp": "11:53"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "식초 1.5큰술",
+          "displayName": "식초",
+          "amount": "1.5",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식초",
+              "timestamp": "05:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "식초 1.5",
+              "timestamp": "11:57"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식초 1.5",
+              "timestamp": "11:53"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "물 2큰술",
+          "displayName": "물",
+          "amount": "2",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 두 개",
+              "timestamp": "11:59"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 2",
+              "timestamp": "11:53"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "설탕 1큰술",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕",
+              "timestamp": "05:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕을 10mm",
+              "timestamp": "12:00"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1",
+              "timestamp": "11:53"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "굴소스 2/3큰술",
+          "displayName": "굴소스",
+          "amount": "2/3",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스",
+              "timestamp": "05:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴 소스 2/3",
+              "timestamp": "11:53"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "후추 약간",
+          "displayName": "후추",
+          "amount": null,
+          "unit": "약간",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 약간",
+              "timestamp": "11:53"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추도",
+              "timestamp": "12:03"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "통깨 약간",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": "약간",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 깐풍 만두 위에 통깨를 뿌려 마무리함",
+              "timestamp": "12:40"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        }
+      ],
+      "steps": [
+        {
+          "text": "청양고추 2개와 대파 1/2개(또는 1/3대)를 식감이 살아있도록 두툼하게 썰어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1. 청양고추 2개, 대파 1/2개를 두툼하게 썰어 식감을 살립니다",
+              "timestamp": "05:41"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "고추를 어슷썰고 대파를 큼직하게 써는 모습",
+              "timestamp": "05:40"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유를 자작하게 부어 달군 뒤, 냉동만두를 넣고 튀기듯 한 면씩 바삭하고 노릇하게 굽습니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "2. 팬에 기름을 자작하게 붓고 냉동만두를 튀기듯 바삭하게 굽습니다",
+              "timestamp": "06:26"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "한 면씩 튀겨주고 뒤집기",
+              "timestamp": "07:37"
+            }
+          ]
+        },
+        {
+          "text": "바삭하게 구워진 만두를 건져 키친타월에 올려 수분과 기름기를 날립니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "3. 구워진 만두는 키친타월에 올려 수분을 날려야 끝까지 바삭합니다",
+              "timestamp": "10:04"
+            }
+          ]
+        },
+        {
+          "text": "팬에 고추기름 3큰술을 두르고 썰어둔 대파와 청양고추, 다진 마늘 1큰술을 넣고 강불에서 빠르게 볶아 향을 냅니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "4. 팬에 고추기름 3큰술, 다진 마늘 1큰술, 썰어둔 고추와 대파를 넣고 강불에서 빠르게 볶아 향을 냅니다",
+              "timestamp": "11:41"
+            }
+          ]
+        },
+        {
+          "text": "팬에 진간장 1큰술, 소주 1큰술, 식초 1.5큰술, 물 2큰술, 설탕 1큰술, 굴소스 2/3큰술, 후추 약간을 모두 넣어 깐풍 매콤 소스를 만듭니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "5. 위 재료를 모두 넣어 깐풍 매콤 소스를 만듭니다",
+              "timestamp": "11:53"
+            }
+          ]
+        },
+        {
+          "text": "양념이 끓어오르면 튀겨둔 만두를 넣고 센 불에서 양념이 거의 다 조려질 때까지 빠르게 휘리릭 볶아냅니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "6. 양념이 끓어오르면 소스에 만두를 넣고 빠르게 휘리릭 볶아내면 완성!",
+              "timestamp": "12:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양념이 끓으면 만두 넣겠습니다. 빠르게 조려내는 겁니다.",
+              "timestamp": "12:07"
+            }
+          ]
+        },
+        {
+          "text": "완성된 깐풍 만두를 접시에 담고 취향에 따라 통깨를 뿌려 마무리합니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "접시에 깐풍 만두를 담고 통깨를 솔솔 뿌려 담아내는 모습",
+              "timestamp": "12:29"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "대파 분량이 재료 소개 화면(05:01)에서는 1/3개로, 조리 자막(05:41)에서는 1/2개로 상이하게 표기됨",
+        "마무리용 통깨는 재료 목록 및 자막에 별도 명시되지 않았으나 완성 영상(12:40)에서 뿌려져 있음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  }
+}

@@ -1,0 +1,362 @@
+{
+  "videoId": "CpLmUqx4l_w",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/CpLmUqx4l_w",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-15T08:08:09.106059+00:00",
+    "rawResponse": "{\n  \"title\": \"롤 유부초밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"롤 유부초밥 키트 (유부, 김, 조미깨)\",\n      \"displayName\": \"롤 유부초밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"롤 유부초밥\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"롤 유부초밥 키트 포장을 뜯어 유부, 김, 조미깨 등을 꺼냄\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"유부\",\n      \"displayName\": \"유부\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 유부랑 참치 한 캔은 물기 적당히 덜어내고\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"유부 파우치의 조미액을 싱크대에 살짝 따라냄\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치 100g\",\n      \"displayName\": \"참치\",\n      \"amount\": \"100\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 유부랑 참치 한 캔은 물기 적당히 덜어내고\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치 100g\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"단백질로 기름 뺀 참치 넣고\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 130g\",\n      \"displayName\": \"밥\",\n      \"amount\": \"130\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 130g\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 한 공기에\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"알룰로스 1\",\n      \"displayName\": \"알룰로스\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"알룰로스 1\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"알룰로스랑 식초 넣어서\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식초 1\",\n      \"displayName\": \"식초\",\n      \"amount\": \"1\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식초 1\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"알룰로스랑 식초 넣어서\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"무가당 스위트콘 2\",\n      \"displayName\": \"무가당 스위트콘\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"무가당 스위트콘 2\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"톡톡 씹히는 무가당 스위트콘이 진짜 킥이야\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"조미깨\",\n      \"displayName\": \"조미깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"조미깨\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"조미깨 넣어서 잘 비벼준 다음\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김\",\n      \"displayName\": \"김\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"유부랑 김 위에 올려서 돌돌 말아주면 돼\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"야채믹스\",\n      \"displayName\": \"야채믹스\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그냥 이런 야채믹스에 저당 드레싱만 뿌려줘도\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"저당 시저 드레싱\",\n      \"displayName\": \"저당 시저 드레싱\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"저당 시저 드레싱\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"저당 드레싱만 뿌려줘도\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"샐러드 위에 후추를 갈아서 뿌림\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"유부와 참치 1캔의 물기(기름)를 적당히 덜어낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 유부랑 참치 한 캔은 물기 적당히 덜어내고\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"유부 국물과 참치 캔의 기름을 따라냄\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 밥 130g을 담고 알룰로스 1숟가락, 식초 1숟가락을 넣어 섞는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 130g 알룰로스 1 식초 1\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"난 이 설탕 든 초밥소스 대신에 밥 한 공기에 알룰로스랑 식초 넣어서 감칠맛 더해줬어\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"기름 뺀 참치 100g, 무가당 스위트콘 2숟가락, 조미깨를 넣고 골고루 비벼준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치 100g\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"무가당 스위트콘 2\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"조미깨\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"단백질로 기름 뺀 참치 넣고 이건 마지막 한 입까지 맛있게 해줄 포인트! 톡톡 씹히는 무가당 스위트콘이 진짜 킥이야 조미깨 넣어서 잘 비벼준 다음\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"비벼둔 밥을 동글동글 뭉친 뒤, 펼친 유부와 김 위에 올려 돌돌 말아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 동글동글 뭉쳐주고 유부랑 김 위에 올려서 돌돌 말아주면 돼\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"김과 유부 위에 뭉친 밥을 얹고 김밥처럼 말아줌\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"도시락에 롤 유부초밥을 담고 곁들임으로 야채믹스에 스위트콘, 저당 시저 드레싱, 후추를 뿌려 샐러드를 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우리 샐러드도 매번 사먹긴 힘드니까 그냥 이런 야채믹스에 저당 드레싱만 뿌려줘도 진짜 사먹는 샐러드 저리가라다\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"저당 시저 드레싱 후추\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도시락 칸에 야채믹스를 담고 옥수수 콘, 저당 시저 드레싱, 후추를 뿌림\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "롤 유부초밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "롤 유부초밥 키트 (유부, 김, 조미깨)",
+          "displayName": "롤 유부초밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "롤 유부초밥",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "롤 유부초밥 키트 포장을 뜯어 유부, 김, 조미깨 등을 꺼냄",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "유부",
+          "displayName": "유부",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 유부랑 참치 한 캔은 물기 적당히 덜어내고",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "유부 파우치의 조미액을 싱크대에 살짝 따라냄",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "참치 100g",
+          "displayName": "참치",
+          "amount": "100",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 유부랑 참치 한 캔은 물기 적당히 덜어내고",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치 100g",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "단백질로 기름 뺀 참치 넣고",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "밥 130g",
+          "displayName": "밥",
+          "amount": "130",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 130g",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밥 한 공기에",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "알룰로스 1",
+          "displayName": "알룰로스",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "알룰로스 1",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "알룰로스랑 식초 넣어서",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "식초 1",
+          "displayName": "식초",
+          "amount": "1",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식초 1",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "알룰로스랑 식초 넣어서",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "무가당 스위트콘 2",
+          "displayName": "무가당 스위트콘",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "무가당 스위트콘 2",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SPEECH",
+              "text": "톡톡 씹히는 무가당 스위트콘이 진짜 킥이야",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "조미깨",
+          "displayName": "조미깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "조미깨",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "조미깨 넣어서 잘 비벼준 다음",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "김",
+          "displayName": "김",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "유부랑 김 위에 올려서 돌돌 말아주면 돼",
+              "timestamp": "00:32"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "야채믹스",
+          "displayName": "야채믹스",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그냥 이런 야채믹스에 저당 드레싱만 뿌려줘도",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "저당 시저 드레싱",
+          "displayName": "저당 시저 드레싱",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "저당 시저 드레싱",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "저당 드레싱만 뿌려줘도",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "샐러드 위에 후추를 갈아서 뿌림",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "유부와 참치 1캔의 물기(기름)를 적당히 덜어낸다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 유부랑 참치 한 캔은 물기 적당히 덜어내고",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "유부 국물과 참치 캔의 기름을 따라냄",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "볼에 밥 130g을 담고 알룰로스 1숟가락, 식초 1숟가락을 넣어 섞는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 130g 알룰로스 1 식초 1",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "난 이 설탕 든 초밥소스 대신에 밥 한 공기에 알룰로스랑 식초 넣어서 감칠맛 더해줬어",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "기름 뺀 참치 100g, 무가당 스위트콘 2숟가락, 조미깨를 넣고 골고루 비벼준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치 100g",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "무가당 스위트콘 2",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "조미깨",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "단백질로 기름 뺀 참치 넣고 이건 마지막 한 입까지 맛있게 해줄 포인트! 톡톡 씹히는 무가당 스위트콘이 진짜 킥이야 조미깨 넣어서 잘 비벼준 다음",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "비벼둔 밥을 동글동글 뭉친 뒤, 펼친 유부와 김 위에 올려 돌돌 말아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "밥 동글동글 뭉쳐주고 유부랑 김 위에 올려서 돌돌 말아주면 돼",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "김과 유부 위에 뭉친 밥을 얹고 김밥처럼 말아줌",
+              "timestamp": "00:31"
+            }
+          ]
+        },
+        {
+          "text": "도시락에 롤 유부초밥을 담고 곁들임으로 야채믹스에 스위트콘, 저당 시저 드레싱, 후추를 뿌려 샐러드를 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "우리 샐러드도 매번 사먹긴 힘드니까 그냥 이런 야채믹스에 저당 드레싱만 뿌려줘도 진짜 사먹는 샐러드 저리가라다",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "저당 시저 드레싱 후추",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도시락 칸에 야채믹스를 담고 옥수수 콘, 저당 시저 드레싱, 후추를 뿌림",
+              "timestamp": "00:36"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "이번주 내내 주야장천 먹게 될",
+    "sourceChannelName": "유지만 yuziman",
+    "sourceChannelId": "UCslni4iVQ-e784AU83eVcnQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/h9Vt4_UB_kTv6ijmpNN2Hw-Sv-2ACsIfI1rnEXDzx_6fDBVGeX2nJcDCEBgYBBrOJbmylUR4IeI=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-15T08:08:05.967386Z"
+  }
+}

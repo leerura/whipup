@@ -1,0 +1,294 @@
+{
+  "videoId": "0gwFxEfKBls",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/0gwFxEfKBls",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-15T08:10:59.723918+00:00",
+    "rawResponse": "{\n  \"title\": \"돼지고기 된장찌개\",\n  \"description\": \"감자탕처럼 구수한 돼지고기 된장찌개 레시피\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"식용유 5숟갈 (올리브오일 대체 가능)\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"5\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"일단 팬에 식용유 5숟갈 두르고\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"저희는 식용유 대신 올리브오일을 사용하는데요\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"작게 썬 목살\",\n      \"displayName\": \"목살\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 작게 썬 목살을 볶아줄 거예요\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 3숟갈\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"3\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술 3숟갈 추가해서 잡내를 잡아주고요\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"된장 6숟갈\",\n      \"displayName\": \"된장\",\n      \"amount\": \"6\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 된장 6숟갈\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 2숟갈\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"2\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 2숟갈 넣고\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 3컵\",\n      \"displayName\": \"물\",\n      \"amount\": \"3\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 3컵 넣어서 베이스를 끓여줄게요\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"작게 썬 감자\",\n      \"displayName\": \"감자\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"작게 썬 감자 넣어주고요\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"애호박\",\n      \"displayName\": \"애호박\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냉장고 상황에 따라서 애호박 대파 양파 넣어주고요\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냉장고 상황에 따라서 애호박 대파 양파 넣어주고요\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냉장고 상황에 따라서 애호박 대파 양파 넣어주고요\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"두부\",\n      \"displayName\": \"두부\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 두부랑 고추 넣어서 한 번 더 끓여주면\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추\",\n      \"displayName\": \"고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 두부랑 고추 넣어서 한 번 더 끓여주면\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 식용유(또는 올리브오일) 5숟갈을 두르고 작게 썬 목살을 넣고 볶습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"일단 팬에 식용유 5숟갈 두르고 여기에 작게 썬 목살을 볶아줄 거예요\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기가 노릇하게 익기 시작하면 맛술 3숟갈을 추가하여 완전히 100% 익을 때까지 구워줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기가 노릇하게 익기 시작하면 맛술 3숟갈 추가해서 잡내를 잡아주고요 고기가 완전히 익어서 바로 먹을 수 있을 정도로 100% 구워줍니다\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"된장 6숟갈과 고춧가루 2숟갈을 넣고 약 30초 정도 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 된장 6숟갈 고춧가루 2숟갈 넣고 30초 정도 볶아서\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 3컵을 붓고 베이스 국물을 끓여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 냄비에 물 3컵 넣어서 베이스를 끓여줄게요\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국물이 끓기 시작하면 작게 썬 감자를 넣고 약 5분 정도 끓입니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국물이 끓기 시작하면 작게 썬 감자 넣어주고요 이대로 5분 정도 끓여주세요\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"text\": \"감자가 다 익으면 썰어둔 애호박, 대파, 양파를 넣고 3분간 더 끓여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"감자가 다 익었을 때 나머지 야채 넣어줄 건데 냉장고 상황에 따라서 애호박 대파 양파 넣어주고요 이대로 3분 끓여준 다음\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"text\": \"두부와 고추를 넣고 한 번 더 끓여 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 두부랑 고추 넣어서 한 번 더 끓여주면\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"목살, 감자, 애호박, 대파, 양파, 두부, 고추의 정확한 계량 수치가 영상에서 언급되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "돼지고기 된장찌개",
+      "description": "감자탕처럼 구수한 돼지고기 된장찌개 레시피",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "식용유 5숟갈 (올리브오일 대체 가능)",
+          "displayName": "식용유",
+          "amount": "5",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "일단 팬에 식용유 5숟갈 두르고",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "저희는 식용유 대신 올리브오일을 사용하는데요",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "작게 썬 목살",
+          "displayName": "목살",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 작게 썬 목살을 볶아줄 거예요",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "맛술 3숟갈",
+          "displayName": "맛술",
+          "amount": "3",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "맛술 3숟갈 추가해서 잡내를 잡아주고요",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "된장 6숟갈",
+          "displayName": "된장",
+          "amount": "6",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 된장 6숟갈",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고춧가루 2숟갈",
+          "displayName": "고춧가루",
+          "amount": "2",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 2숟갈 넣고",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "물 3컵",
+          "displayName": "물",
+          "amount": "3",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 3컵 넣어서 베이스를 끓여줄게요",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "작게 썬 감자",
+          "displayName": "감자",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "작게 썬 감자 넣어주고요",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "애호박",
+          "displayName": "애호박",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "냉장고 상황에 따라서 애호박 대파 양파 넣어주고요",
+              "timestamp": "00:50"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "냉장고 상황에 따라서 애호박 대파 양파 넣어주고요",
+              "timestamp": "00:50"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "냉장고 상황에 따라서 애호박 대파 양파 넣어주고요",
+              "timestamp": "00:50"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "두부",
+          "displayName": "두부",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 두부랑 고추 넣어서 한 번 더 끓여주면",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "고추",
+          "displayName": "고추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 두부랑 고추 넣어서 한 번 더 끓여주면",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 식용유(또는 올리브오일) 5숟갈을 두르고 작게 썬 목살을 넣고 볶습니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "일단 팬에 식용유 5숟갈 두르고 여기에 작게 썬 목살을 볶아줄 거예요",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "고기가 노릇하게 익기 시작하면 맛술 3숟갈을 추가하여 완전히 100% 익을 때까지 구워줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고기가 노릇하게 익기 시작하면 맛술 3숟갈 추가해서 잡내를 잡아주고요 고기가 완전히 익어서 바로 먹을 수 있을 정도로 100% 구워줍니다",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "된장 6숟갈과 고춧가루 2숟갈을 넣고 약 30초 정도 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 된장 6숟갈 고춧가루 2숟갈 넣고 30초 정도 볶아서",
+              "timestamp": "00:34"
+            }
+          ]
+        },
+        {
+          "text": "물 3컵을 붓고 베이스 국물을 끓여줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 냄비에 물 3컵 넣어서 베이스를 끓여줄게요",
+              "timestamp": "00:40"
+            }
+          ]
+        },
+        {
+          "text": "국물이 끓기 시작하면 작게 썬 감자를 넣고 약 5분 정도 끓입니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "국물이 끓기 시작하면 작게 썬 감자 넣어주고요 이대로 5분 정도 끓여주세요",
+              "timestamp": "00:43"
+            }
+          ]
+        },
+        {
+          "text": "감자가 다 익으면 썰어둔 애호박, 대파, 양파를 넣고 3분간 더 끓여줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "감자가 다 익었을 때 나머지 야채 넣어줄 건데 냉장고 상황에 따라서 애호박 대파 양파 넣어주고요 이대로 3분 끓여준 다음",
+              "timestamp": "00:47"
+            }
+          ]
+        },
+        {
+          "text": "두부와 고추를 넣고 한 번 더 끓여 완성합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 두부랑 고추 넣어서 한 번 더 끓여주면",
+              "timestamp": "00:54"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "목살, 감자, 애호박, 대파, 양파, 두부, 고추의 정확한 계량 수치가 영상에서 언급되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "돼지고기 된장찌개.. 왜 감자탕 맛이나죠??",
+    "sourceChannelName": "김진순 점심시간",
+    "sourceChannelId": "UC9She1e6OWUpwJpwZtbqhjQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/BvOrdVOmTRlMEFygfbeuka_30BrSZenSof2_yC4RCxF0gEKvRzJTn6NEzMTJYQSe8aBxV9iMbQ=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-15T08:10:57.152041Z"
+  }
+}

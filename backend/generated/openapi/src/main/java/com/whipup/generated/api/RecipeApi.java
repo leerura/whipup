@@ -7,6 +7,8 @@ package com.whipup.generated.api;
 
 import com.whipup.generated.model.ErrorResponse;
 import com.whipup.generated.model.RecipeDetailResponse;
+import com.whipup.generated.model.RecipeSearchScope;
+import com.whipup.generated.model.RecommendationListResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -44,6 +46,29 @@ public interface RecipeApi {
          @PathVariable("recipeId") Long recipeId
     ) {
         return getDelegate().getRecipeDetail(recipeId);
+    }
+
+
+    String PATH_SEARCH_RECIPES = "/api/v1/recipes/search";
+    /**
+     * GET /api/v1/recipes/search
+     *
+     * @param scope  (required)
+     * @param query  (required)
+     * @return Published recipes matching the selected scope and query (status code 200)
+     *         or Invalid request (status code 400)
+     *         or Authentication failed or missing (status code 401)
+     */
+    @RequestMapping(
+        method = RequestMethod.GET,
+        value = RecipeApi.PATH_SEARCH_RECIPES,
+        produces = { "application/json" }
+    )
+    default ResponseEntity<RecommendationListResponse> searchRecipes(
+        @NotNull  @Valid @RequestParam(value = "scope", required = true) RecipeSearchScope scope,
+        @NotNull @Size(min = 1)  @Valid @RequestParam(value = "query", required = true) String query
+    ) {
+        return getDelegate().searchRecipes(scope, query);
     }
 
 }

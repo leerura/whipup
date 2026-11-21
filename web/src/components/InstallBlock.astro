@@ -1,0 +1,13 @@
+---
+import { APP_STORE_URL } from '../lib/data';
+interface Props { heading: string; note?: string; compact?: boolean }
+const { heading, note } = Astro.props;
+---
+<div class="cta-wrap">
+  <div class="cta">
+    <h2>{heading}</h2>
+    {note && <p>{note}</p>}
+    <a class="btn" href={APP_STORE_URL} rel="noopener">App Store에서 받기</a>
+    <span class="cta-note">iPhone용 무료 앱 · 회원가입 필요 없음</span>
+  </div>
+</div>

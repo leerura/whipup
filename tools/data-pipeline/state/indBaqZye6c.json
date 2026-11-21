@@ -1,0 +1,429 @@
+{
+  "videoId": "indBaqZye6c",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/indBaqZye6c",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-15T07:47:42.628321+00:00",
+    "rawResponse": "{\n  \"title\": \"고추장 수제비\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"물 1.2L\",\n      \"displayName\": \"물\",\n      \"amount\": \"1.2\",\n      \"unit\": \"L\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 1.2L\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 냄비에 물을 부어준 다음\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"코인육수 2알\",\n      \"displayName\": \"코인육수\",\n      \"amount\": \"2\",\n      \"unit\": \"알\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"코인육수 2알\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"코인육수 혹은 멸치다시다\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 5spoons\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"5\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 5spoons\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양조간장 2spoons\",\n      \"displayName\": \"양조간장\",\n      \"amount\": \"2\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장 2spoons\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양조간장\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 2spoons\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"2\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 2spoons\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1.5spoons\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1.5\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 1.5spoons\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 0.1spoon\",\n      \"displayName\": \"후추\",\n      \"amount\": \"0.1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 0.1spoon\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소고기 다시다 0.3spoon\",\n      \"displayName\": \"소고기 다시다\",\n      \"amount\": \"0.3\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소고기 다시다 0.3spoon\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소고기 다시다를 넣고 끓여줘\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"앞다리살 600g\",\n      \"displayName\": \"앞다리살\",\n      \"amount\": \"600\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"앞다리살 600g\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"큼지막하게 찌개용으로 썰린 앞다리살과\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"감자 200g\",\n      \"displayName\": \"감자\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"감자 200g\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"감자를 써는 모습\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 100g\",\n      \"displayName\": \"양파\",\n      \"amount\": \"100\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 100g\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양파를 써는 모습\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"애호박 150g\",\n      \"displayName\": \"애호박\",\n      \"amount\": \"150\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"애호박 150g\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"애호박을 썰어서 넣어줄 거야\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 70g\",\n      \"displayName\": \"대파\",\n      \"amount\": \"70\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 70g\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 대파와\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 7g\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"7\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 7g\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"청양고추를 취향껏 넣어주면\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"찹쌀 만두피 200g\",\n      \"displayName\": \"찹쌀 만두피\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"찹쌀 만두피 200g\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이 찹쌀 만두피를 한 장씩 떼서 넣어봐\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김가루\",\n          \"timestamp\": \"00:56\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 그릇에 덜어서 취향껏 김가루와\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"빻은 참깨\",\n      \"displayName\": \"빻은 참깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"빻은 참깨\",\n          \"timestamp\": \"00:58\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"빻은 참깨 뿌려주면\",\n          \"timestamp\": \"00:58\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 물 1.2L를 붓고 코인육수 2알(또는 멸치다시다), 고춧가루 5spoons, 양조간장 2spoons, 고추장 2spoons, 다진 마늘 1.5spoons, 후추 0.1spoon, 소고기 다시다 0.3spoon을 넣고 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 냄비에 물을 부어준 다음 코인육수 혹은 멸치다시다 고춧가루 양조간장 고추장 다진 마늘 후추 소고기 다시다를 넣고 끓여줘\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물이 끓는 동안 감자와 양파를 손질하고, 국물이 끓기 시작하면 찌개용으로 큼직하게 썬 앞다리살 600g과 손질한 감자 200g, 양파 100g을 넣고 15분간 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그동안 집에 남는 야채들을 조금 손질해 줄 거야 물이 끓기 시작하면 큼지막하게 찌개용으로 썰린 앞다리살과 방금 손질한 야채를 넣고 15분간 끓여줘\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"애호박 150g을 썰어 넣고, 대파 70g과 청양고추 7g을 썰어 함께 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"애호박을 썰어서 넣어줄 거야 이제 대파와 청양고추를 취향껏 넣어주면\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"text\": \"찹쌀 만두피 200g을 한 장씩 떼어 넣고 국물이 밸 때까지 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 이 찹쌀 만두피를 한 장씩 떼서 넣어봐\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 덜어 취향껏 김가루와 빻은 참깨를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 그릇에 덜어서 취향껏 김가루와 빻은 참깨 뿌려주면 고추장 수제비 끝\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"코인육수 대신 멸치다시다를 대체재로 언급했으나 구체적인 양은 제시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "고추장 수제비",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "물 1.2L",
+          "displayName": "물",
+          "amount": "1.2",
+          "unit": "L",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 1.2L",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 냄비에 물을 부어준 다음",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "코인육수 2알",
+          "displayName": "코인육수",
+          "amount": "2",
+          "unit": "알",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "코인육수 2알",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "코인육수 혹은 멸치다시다",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "고춧가루 5spoons",
+          "displayName": "고춧가루",
+          "amount": "5",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 5spoons",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양조간장 2spoons",
+          "displayName": "양조간장",
+          "amount": "2",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장 2spoons",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양조간장",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고추장 2spoons",
+          "displayName": "고추장",
+          "amount": "2",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 2spoons",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "다진 마늘 1.5spoons",
+          "displayName": "다진 마늘",
+          "amount": "1.5",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 1.5spoons",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "후추 0.1spoon",
+          "displayName": "후추",
+          "amount": "0.1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 0.1spoon",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "소고기 다시다 0.3spoon",
+          "displayName": "소고기 다시다",
+          "amount": "0.3",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소고기 다시다 0.3spoon",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소고기 다시다를 넣고 끓여줘",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "앞다리살 600g",
+          "displayName": "앞다리살",
+          "amount": "600",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "앞다리살 600g",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "큼지막하게 찌개용으로 썰린 앞다리살과",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "감자 200g",
+          "displayName": "감자",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "감자 200g",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "감자를 써는 모습",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "양파 100g",
+          "displayName": "양파",
+          "amount": "100",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 100g",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양파를 써는 모습",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "애호박 150g",
+          "displayName": "애호박",
+          "amount": "150",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "애호박 150g",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SPEECH",
+              "text": "애호박을 썰어서 넣어줄 거야",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "대파 70g",
+          "displayName": "대파",
+          "amount": "70",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 70g",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 대파와",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "청양고추 7g",
+          "displayName": "청양고추",
+          "amount": "7",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 7g",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SPEECH",
+              "text": "청양고추를 취향껏 넣어주면",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "찹쌀 만두피 200g",
+          "displayName": "찹쌀 만두피",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "찹쌀 만두피 200g",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이 찹쌀 만두피를 한 장씩 떼서 넣어봐",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "김가루",
+          "displayName": "김가루",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김가루",
+              "timestamp": "00:56"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 그릇에 덜어서 취향껏 김가루와",
+              "timestamp": "00:56"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "빻은 참깨",
+          "displayName": "빻은 참깨",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "빻은 참깨",
+              "timestamp": "00:58"
+            },
+            {
+              "type": "SPEECH",
+              "text": "빻은 참깨 뿌려주면",
+              "timestamp": "00:58"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 물 1.2L를 붓고 코인육수 2알(또는 멸치다시다), 고춧가루 5spoons, 양조간장 2spoons, 고추장 2spoons, 다진 마늘 1.5spoons, 후추 0.1spoon, 소고기 다시다 0.3spoon을 넣고 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 냄비에 물을 부어준 다음 코인육수 혹은 멸치다시다 고춧가루 양조간장 고추장 다진 마늘 후추 소고기 다시다를 넣고 끓여줘",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "물이 끓는 동안 감자와 양파를 손질하고, 국물이 끓기 시작하면 찌개용으로 큼직하게 썬 앞다리살 600g과 손질한 감자 200g, 양파 100g을 넣고 15분간 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그동안 집에 남는 야채들을 조금 손질해 줄 거야 물이 끓기 시작하면 큼지막하게 찌개용으로 썰린 앞다리살과 방금 손질한 야채를 넣고 15분간 끓여줘",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "애호박 150g을 썰어 넣고, 대파 70g과 청양고추 7g을 썰어 함께 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "애호박을 썰어서 넣어줄 거야 이제 대파와 청양고추를 취향껏 넣어주면",
+              "timestamp": "00:32"
+            }
+          ]
+        },
+        {
+          "text": "찹쌀 만두피 200g을 한 장씩 떼어 넣고 국물이 밸 때까지 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 이 찹쌀 만두피를 한 장씩 떼서 넣어봐",
+              "timestamp": "00:44"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 덜어 취향껏 김가루와 빻은 참깨를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 그릇에 덜어서 취향껏 김가루와 빻은 참깨 뿌려주면 고추장 수제비 끝",
+              "timestamp": "00:56"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "코인육수 대신 멸치다시다를 대체재로 언급했으나 구체적인 양은 제시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "앞으로 고추장찌개에는 밥 말고 수제비입니다!",
+    "sourceChannelName": "1분요리 뚝딱이형",
+    "sourceChannelId": "UC0htUSwcxfSGNfK_5Q28JkA",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/MHTy5jXZQPwKwrGtAV-gLL6ei9YTOgR8Z6GESkhAAIz0kkG4d6B6vu6CUPNNsLOzqcGxGfBK=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-15T07:47:40.240928Z"
+  }
+}

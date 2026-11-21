@@ -4,6 +4,7 @@
 
 // ignore_for_file: unused_element
 import 'package:built_collection/built_collection.dart';
+import 'package:api_client/src/model/ingredient_variant_option.dart';
 import 'package:api_client/src/model/detail_ingredient_display.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
@@ -18,6 +19,7 @@ part 'detail_requirement_option.g.dart';
 /// * [amount] 
 /// * [unit] 
 /// * [substitutes] 
+/// * [addableVariants] 
 @BuiltValue()
 abstract class DetailRequirementOption implements Built<DetailRequirementOption, DetailRequirementOptionBuilder> {
   @BuiltValueField(wireName: r'displayName')
@@ -34,6 +36,9 @@ abstract class DetailRequirementOption implements Built<DetailRequirementOption,
 
   @BuiltValueField(wireName: r'substitutes')
   BuiltList<DetailIngredientDisplay> get substitutes;
+
+  @BuiltValueField(wireName: r'addableVariants')
+  BuiltList<IngredientVariantOption> get addableVariants;
 
   DetailRequirementOption._();
 
@@ -86,6 +91,11 @@ class _$DetailRequirementOptionSerializer implements PrimitiveSerializer<DetailR
     yield serializers.serialize(
       object.substitutes,
       specifiedType: const FullType(BuiltList, [FullType(DetailIngredientDisplay)]),
+    );
+    yield r'addableVariants';
+    yield serializers.serialize(
+      object.addableVariants,
+      specifiedType: const FullType(BuiltList, [FullType(IngredientVariantOption)]),
     );
   }
 
@@ -146,6 +156,13 @@ class _$DetailRequirementOptionSerializer implements PrimitiveSerializer<DetailR
             specifiedType: const FullType(BuiltList, [FullType(DetailIngredientDisplay)]),
           ) as BuiltList<DetailIngredientDisplay>;
           result.substitutes.replace(valueDes);
+          break;
+        case r'addableVariants':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(BuiltList, [FullType(IngredientVariantOption)]),
+          ) as BuiltList<IngredientVariantOption>;
+          result.addableVariants.replace(valueDes);
           break;
         default:
           unhandled.add(key);

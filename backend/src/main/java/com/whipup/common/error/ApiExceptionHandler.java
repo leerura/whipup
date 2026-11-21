@@ -1,10 +1,10 @@
 package com.whipup.common.error;
 
-import com.whipup.auth.exception.KakaoAuthenticationException;
 import com.whipup.generated.model.ErrorResponse;
 import com.whipup.ingredient.exception.OwnedIngredientException;
 import com.whipup.recipe.exception.RecipeNotFoundException;
 import com.whipup.recommendation.exception.RecommendationException;
+import com.whipup.dailyMenu.service.DailyMenuUnavailableException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.AuthenticationException;
@@ -55,18 +55,6 @@ public class ApiExceptionHandler {
 				.body(response);
 	}
 
-	@ExceptionHandler(KakaoAuthenticationException.class)
-	public ResponseEntity<ErrorResponse> handleKakaoAuthenticationException() {
-		ErrorResponse response = new ErrorResponse(
-				"KAKAO_AUTH_FAILED",
-				"카카오 인증에 실패했습니다."
-		);
-
-		return ResponseEntity
-				.status(HttpStatus.UNAUTHORIZED)
-				.body(response);
-	}
-
 	@ExceptionHandler(RecipeNotFoundException.class)
 	public ResponseEntity<ErrorResponse> handleRecipeNotFoundException(
 			RecipeNotFoundException exception
@@ -91,5 +79,11 @@ public class ApiExceptionHandler {
 		return ResponseEntity
 				.status(HttpStatus.UNAUTHORIZED)
 				.body(response);
+	}
+
+	@ExceptionHandler(DailyMenuUnavailableException.class)
+	public ResponseEntity<ErrorResponse> handleDailyMenuUnavailableException() {
+		return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE)
+				.body(new ErrorResponse("DAILY_MENU_UNAVAILABLE", "오늘 메뉴를 잠시 사용할 수 없습니다."));
 	}
 }

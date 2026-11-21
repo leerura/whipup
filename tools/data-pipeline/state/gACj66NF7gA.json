@@ -1,0 +1,365 @@
+{
+  "videoId": "gACj66NF7gA",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/gACj66NF7gA",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-15T08:12:20.548750+00:00",
+    "rawResponse": "{\n  \"title\": \"초간단 멸치김밥 (견과류 멸치볶음 김밥)\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"잔멸치 200g\",\n      \"displayName\": \"잔멸치\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 잔멸치를 200g 정도 준비해 주세요\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"200g 정도 준비해 주세요\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"견과류\",\n      \"displayName\": \"견과류\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이어서 김신영 님이 말했던 견과류\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"견과류\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"헤라스 올리브 오일 10스푼\",\n      \"displayName\": \"올리브 오일\",\n      \"amount\": \"10\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이번에는 헤라스 올리브 오일 10숟갈 두르고요\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"10스푼 두르고요\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 5숟갈\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"5\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술 다섯 숟갈\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"맛술 5숟갈\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 7숟갈\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"7\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 일곱 숟갈\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"진간장 7숟갈\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물엿 10숟갈\",\n      \"displayName\": \"물엿\",\n      \"amount\": \"10\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물엿 열 숟갈\",\n          \"timestamp\": \"00:45\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물엿 10숟갈\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"볶은 깨 (멸치볶음용 2숟갈 + 밥용 2숟갈)\",\n      \"displayName\": \"볶은 깨\",\n      \"amount\": \"4\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"볶은 깨 두 숟갈\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"볶은 깨 2숟갈\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"볶은 깨 두 숟갈 추가해서\",\n          \"timestamp\": \"00:58\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"볶은 깨 2숟갈 추가해서\",\n          \"timestamp\": \"00:58\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 (멸치볶음용 2숟갈 + 밥용 3숟갈)\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"5\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름 두 숟갈\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참기름 2숟갈\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다시 참기름 세 숟갈\",\n          \"timestamp\": \"00:57\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다시 참기름 3숟갈\",\n          \"timestamp\": \"00:57\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 5공기\",\n      \"displayName\": \"밥\",\n      \"amount\": \"5\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우리는 믹싱볼에 밥 다섯 공기 넣고\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥 5공기 넣고\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김 (김밥김 또는 도시락김)\",\n      \"displayName\": \"김\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"도시락김에 싸먹어도 정말 맛있고요\",\n          \"timestamp\": \"01:02\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"김밥용 김 위에 양념된 밥을 올려 김밥을 만다\",\n          \"timestamp\": \"01:04\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"마른 팬에 기름 없이 잔멸치 200g을 넣고 2~3분간 볶아 비린내를 날려줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마른 팬에 기름 없이 2~3분 볶아준 다음\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마른 팬에 기름 없이 2-3분 볶아준 다음\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볶은 멸치를 체반에 털어 부스러기와 가루를 분리해 줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이렇게 체반에 털어주면 방금 사 온 것처럼 뽀송뽀송한 멸치를 만들 수 있습니다\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이렇게 체반에 털어주면\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"견과류를 칼의 옆면으로 가볍게 으깨어 부숴줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"견과류도 이렇게 칼로 가볍게 부숴서 넣으면\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"가볍게 부숴서 넣으면\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 올리브 오일 10숟갈을 두르고, 볶아둔 잔멸치를 넣어 중불에서 튀기듯 바삭하게 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이번에는 헤라스 올리브 오일 10숟갈 두르고요 여기에 미리 볶아두었던 뽀송뽀송한 잔멸치를 중불에서 튀기듯 볶아줍니다\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"중불에서 튀기듯 볶아줍니다\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"text\": \"멸치가 바삭해지면 준비한 견과류, 맛술 5숟갈, 진간장 7숟갈, 물엿 10숟갈, 볶은 깨 2숟갈, 참기름 2숟갈을 한 번에 다 넣고 골고루 섞어 멸치볶음을 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"멸치가 바삭하게 볶아졌다면 견과류 넣어주고요 맛술 5숟갈 진간장 7숟갈 물엿 10숟갈 볶은 깨 2숟갈 참기름 2숟갈 한 번에 다 넣고 골고루 섞어주면 견과류 멸치볶음 완성이에요\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"골고루 섞어주면 견과류 멸치볶음 완성이예요\",\n          \"timestamp\": \"00:49\"\n        }\n      ]\n    },\n    {\n      \"text\": \"믹싱볼에 밥 5공기, 완성된 멸치볶음 200g, 참기름 3숟갈, 볶은 깨 2숟갈을 넣고 골고루 섞어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우리는 믹싱볼에 밥 5공기 넣고 멸치볶음 200g 다시 참기름 3숟갈 볶은 깨 2숟갈 추가해서 김밥을 만들어줍니다\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥 5공기 넣고 멸치볶음 200g 다시 참기름 3숟갈 볶은 깨 2숟갈 추가해서\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양념한 밥을 김 위에 얹어 돌돌 말아 김밥을 싸거나, 도시락김에 즉석에서 싸 먹습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김신영 님처럼 즉석에서 도시락김에 싸먹어도 정말 맛있고요 저희는 직원들이랑 같이 먹는 거라서 어미새인 김진순 여사님이 돌돌돌 말아주셨는데요\",\n          \"timestamp\": \"01:00\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"돌돌돌 말아주셨는데요\",\n          \"timestamp\": \"01:07\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"견과류의 정확한 계량/중량은 영상에서 수치로 언급되지 않음 (봉지 견과류 여러 개를 사용한 것으로 보임)\",\n    \"김의 구체적인 장수 및 김밥 완성 줄 수는 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "초간단 멸치김밥 (견과류 멸치볶음 김밥)",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "잔멸치 200g",
+          "displayName": "잔멸치",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 잔멸치를 200g 정도 준비해 주세요",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "200g 정도 준비해 주세요",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "견과류",
+          "displayName": "견과류",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이어서 김신영 님이 말했던 견과류",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "견과류",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "헤라스 올리브 오일 10스푼",
+          "displayName": "올리브 오일",
+          "amount": "10",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이번에는 헤라스 올리브 오일 10숟갈 두르고요",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "10스푼 두르고요",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "맛술 5숟갈",
+          "displayName": "맛술",
+          "amount": "5",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "맛술 다섯 숟갈",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "맛술 5숟갈",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "진간장 7숟갈",
+          "displayName": "진간장",
+          "amount": "7",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "진간장 일곱 숟갈",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "진간장 7숟갈",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "물엿 10숟갈",
+          "displayName": "물엿",
+          "amount": "10",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물엿 열 숟갈",
+              "timestamp": "00:45"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물엿 10숟갈",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "볶은 깨 (멸치볶음용 2숟갈 + 밥용 2숟갈)",
+          "displayName": "볶은 깨",
+          "amount": "4",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "볶은 깨 두 숟갈",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "볶은 깨 2숟갈",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "SPEECH",
+              "text": "볶은 깨 두 숟갈 추가해서",
+              "timestamp": "00:58"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "볶은 깨 2숟갈 추가해서",
+              "timestamp": "00:58"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "참기름 (멸치볶음용 2숟갈 + 밥용 3숟갈)",
+          "displayName": "참기름",
+          "amount": "5",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "참기름 두 숟갈",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "참기름 2숟갈",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다시 참기름 세 숟갈",
+              "timestamp": "00:57"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다시 참기름 3숟갈",
+              "timestamp": "00:57"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "밥 5공기",
+          "displayName": "밥",
+          "amount": "5",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "우리는 믹싱볼에 밥 다섯 공기 넣고",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "밥 5공기 넣고",
+              "timestamp": "00:56"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "김 (김밥김 또는 도시락김)",
+          "displayName": "김",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "도시락김에 싸먹어도 정말 맛있고요",
+              "timestamp": "01:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "김밥용 김 위에 양념된 밥을 올려 김밥을 만다",
+              "timestamp": "01:04"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "마른 팬에 기름 없이 잔멸치 200g을 넣고 2~3분간 볶아 비린내를 날려줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마른 팬에 기름 없이 2~3분 볶아준 다음",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마른 팬에 기름 없이 2-3분 볶아준 다음",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "볶은 멸치를 체반에 털어 부스러기와 가루를 분리해 줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이렇게 체반에 털어주면 방금 사 온 것처럼 뽀송뽀송한 멸치를 만들 수 있습니다",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이렇게 체반에 털어주면",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "견과류를 칼의 옆면으로 가볍게 으깨어 부숴줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "견과류도 이렇게 칼로 가볍게 부숴서 넣으면",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "가볍게 부숴서 넣으면",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "팬에 올리브 오일 10숟갈을 두르고, 볶아둔 잔멸치를 넣어 중불에서 튀기듯 바삭하게 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이번에는 헤라스 올리브 오일 10숟갈 두르고요 여기에 미리 볶아두었던 뽀송뽀송한 잔멸치를 중불에서 튀기듯 볶아줍니다",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "중불에서 튀기듯 볶아줍니다",
+              "timestamp": "00:38"
+            }
+          ]
+        },
+        {
+          "text": "멸치가 바삭해지면 준비한 견과류, 맛술 5숟갈, 진간장 7숟갈, 물엿 10숟갈, 볶은 깨 2숟갈, 참기름 2숟갈을 한 번에 다 넣고 골고루 섞어 멸치볶음을 완성합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "멸치가 바삭하게 볶아졌다면 견과류 넣어주고요 맛술 5숟갈 진간장 7숟갈 물엿 10숟갈 볶은 깨 2숟갈 참기름 2숟갈 한 번에 다 넣고 골고루 섞어주면 견과류 멸치볶음 완성이에요",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "골고루 섞어주면 견과류 멸치볶음 완성이예요",
+              "timestamp": "00:49"
+            }
+          ]
+        },
+        {
+          "text": "믹싱볼에 밥 5공기, 완성된 멸치볶음 200g, 참기름 3숟갈, 볶은 깨 2숟갈을 넣고 골고루 섞어줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "우리는 믹싱볼에 밥 5공기 넣고 멸치볶음 200g 다시 참기름 3숟갈 볶은 깨 2숟갈 추가해서 김밥을 만들어줍니다",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "밥 5공기 넣고 멸치볶음 200g 다시 참기름 3숟갈 볶은 깨 2숟갈 추가해서",
+              "timestamp": "00:56"
+            }
+          ]
+        },
+        {
+          "text": "양념한 밥을 김 위에 얹어 돌돌 말아 김밥을 싸거나, 도시락김에 즉석에서 싸 먹습니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김신영 님처럼 즉석에서 도시락김에 싸먹어도 정말 맛있고요 저희는 직원들이랑 같이 먹는 거라서 어미새인 김진순 여사님이 돌돌돌 말아주셨는데요",
+              "timestamp": "01:00"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "돌돌돌 말아주셨는데요",
+              "timestamp": "01:07"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "견과류의 정확한 계량/중량은 영상에서 수치로 언급되지 않음 (봉지 견과류 여러 개를 사용한 것으로 보임)",
+        "김의 구체적인 장수 및 김밥 완성 줄 수는 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "아이들 방학때, 꼭한번 만들어보세요! (feat. 김신영님)",
+    "sourceChannelName": "김진순 점심시간",
+    "sourceChannelId": "UC9She1e6OWUpwJpwZtbqhjQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/BvOrdVOmTRlMEFygfbeuka_30BrSZenSof2_yC4RCxF0gEKvRzJTn6NEzMTJYQSe8aBxV9iMbQ=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-15T08:12:17.835879Z"
+  }
+}

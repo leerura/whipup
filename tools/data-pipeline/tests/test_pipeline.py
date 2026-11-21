@@ -35,6 +35,26 @@ class PipelineQueueTests(unittest.TestCase):
         })
         self.source_metadata_patch.start()
         self.addCleanup(self.source_metadata_patch.stop)
+        self.is_short_patch = patch("pipeline.is_short", return_value=True)
+        self.is_short_mock = self.is_short_patch.start()
+        self.addCleanup(self.is_short_patch.stop)
+
+    def test_non_short_video_is_skipped_without_calling_gemini(self):
+        class ExplodingClient:
+            def extract_recipe_source(self, *_args):
+                raise AssertionError("Gemini must not be called for a non-Short")
+        self.is_short_mock.return_value = False
+        state.claim_video("abc123", "https://youtu.be/abc123", "worker-a")
+        result = pipeline.process_claimed_video("abc123", "https://youtu.be/abc123", ExplodingClient(), "test", "worker-a", "account-a")
+        self.assertEqual(result, "SKIPPED_NOT_SHORT")
+        saved = state.load_video("abc123")
+        self.assertEqual(saved["status"], "SKIPPED_NOT_SHORT")
+        self.assertNotIn("lease", saved)
+        self.assertFalse(pipeline._eligible("abc123", "account-a", True))
+
+    def test_unknown_short_status_still_extracts(self):
+        self.is_short_mock.return_value = None
+        self.assertTrue(pipeline._eligible("fresh123", "account-a", False))
 
     def test_duplicate_urls_are_video_id_deduplicated(self):
         urls = self.root / "urls.txt"

@@ -1,0 +1,265 @@
+{
+  "videoId": "PQY-xJn5u5o",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/PQY-xJn5u5o",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-08T09:10:16.206084+00:00",
+    "rawResponse": "{\n  \"title\": \"비빔국수\",\n  \"description\": \"순식간에 만들어 먹을 수 있는 초고추장을 활용한 초간단 새콤달콤 비빔국수\",\n  \"servings\": \"1인분~1.5인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"초고추장 2스푼 반\",\n      \"displayName\": \"초고추장\",\n      \"amount\": \"2.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"초고추장 2스푼 반\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"초고추장 2스푼 반\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"생수 종이컵 1/4컵\",\n      \"displayName\": \"생수\",\n      \"amount\": \"1/4\",\n      \"unit\": \"종이컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"생수 종이컵 1/4컵\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"생수 종이컵 1/4컵\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1스푼\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참기름 1스푼을 넣고 잘 섞어준 뒤\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름 1스푼을 넣고 잘 섞어준 뒤\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"볶은깨 2스푼 정도\",\n      \"displayName\": \"볶은깨\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼 정도\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"볶은깨를 충분히 많이 2스푼 정도 넣어주면 끝!\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"볶은깨를 충분히 많이 2스푼 정도 넣어주면 끝!\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소면 500원짜리 동전 크기보다 조금 더 많이\",\n      \"displayName\": \"소면\",\n      \"amount\": \"500원짜리 동전 크기보다 조금 더 많이\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소면을 500원짜리 동전 크기보다 조금 더 많이 꺼내서 넣어주세요\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소면을 500원짜리 동전 크기보다 조금 더 많이 꺼내서 넣어주세요\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"냄비에 물을 끓인 뒤\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냄비에 물을 끓인 뒤\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"반찬 김\",\n      \"displayName\": \"반찬 김\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 반찬 김을 가위로 잘라 넣어주면\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 반찬 김을 가위로 잘라 넣어주면\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"볼에 초고추장 2스푼 반, 설탕 1스푼, 생수 종이컵 1/4컵, 참기름 1스푼을 넣고 잘 섞어준 뒤 볶은깨를 충분히 2스푼 정도 넣어 양념장을 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먼저 양념부터 만들어볼게요 초고추장 2스푼 반 설탕 1스푼 생수 종이컵 1/4컵 참기름 1스푼을 넣고 잘 섞어준 뒤 볶은깨를 충분히 많이 2스푼 정도 넣어주면 끝!\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"용기에 양념 재료들을 차례대로 넣고 수저로 섞어 양념장을 만드는 장면\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 물을 끓인 뒤, 500원 동전 크기보다 조금 더 많은 양의 소면을 넣고 퍼지지 않게 삶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"냄비에 물을 끓인 뒤 소면을 500원짜리 동전 크기보다 조금 더 많이 꺼내서 넣어주세요 면은 퍼지지 않게 삶아준 다음\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"끓는 물에 소면을 넣고 젓가락으로 저으며 삶는 장면\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삶은 면을 찬물에 헹궈 물기를 빼고 그릇에 담아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"찬물에 헹궈 그릇에 담아주시고요\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"찬물에 헹군 소면을 냄비 형태의 그릇에 담는 장면\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소면에 만들어둔 양념장을 붓고 골고루 잘 버무려줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양념장을 잘 섞어주기만 하면 아주 간단하게 새콤달콤한 비빔국수 한 끼 완성\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"소면에 양념장을 붓고 위생장갑을 낀 손으로 비비는 장면\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"text\": \"반찬 김을 가위로 잘라 넣고 함께 섞어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 반찬 김을 가위로 잘라 넣어주면 김에 있는 소금과 김 자체의 식감이 국수를 계속 먹으면 무를 수 있는 먹먹함을 잘 잡아줘서 더 맛있게 즐기실 수 있어요\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"가위로 조미김을 잘라 국수 위에 올린 뒤 손으로 버무리는 장면\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "비빔국수",
+      "description": "순식간에 만들어 먹을 수 있는 초고추장을 활용한 초간단 새콤달콤 비빔국수",
+      "servings": "1인분~1.5인분",
+      "ingredients": [
+        {
+          "rawText": "초고추장 2스푼 반",
+          "displayName": "초고추장",
+          "amount": "2.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "초고추장 2스푼 반",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "초고추장 2스푼 반",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "설탕 1스푼",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 1스푼",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 1스푼",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "생수 종이컵 1/4컵",
+          "displayName": "생수",
+          "amount": "1/4",
+          "unit": "종이컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "생수 종이컵 1/4컵",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "생수 종이컵 1/4컵",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "참기름 1스푼",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "참기름 1스푼을 넣고 잘 섞어준 뒤",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름 1스푼을 넣고 잘 섞어준 뒤",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "볶은깨 2스푼 정도",
+          "displayName": "볶은깨",
+          "amount": "2",
+          "unit": "스푼 정도",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "볶은깨를 충분히 많이 2스푼 정도 넣어주면 끝!",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "볶은깨를 충분히 많이 2스푼 정도 넣어주면 끝!",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "소면 500원짜리 동전 크기보다 조금 더 많이",
+          "displayName": "소면",
+          "amount": "500원짜리 동전 크기보다 조금 더 많이",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "소면을 500원짜리 동전 크기보다 조금 더 많이 꺼내서 넣어주세요",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소면을 500원짜리 동전 크기보다 조금 더 많이 꺼내서 넣어주세요",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "물",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "냄비에 물을 끓인 뒤",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냄비에 물을 끓인 뒤",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "반찬 김",
+          "displayName": "반찬 김",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 반찬 김을 가위로 잘라 넣어주면",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 반찬 김을 가위로 잘라 넣어주면",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        }
+      ],
+      "steps": [
+        {
+          "text": "볼에 초고추장 2스푼 반, 설탕 1스푼, 생수 종이컵 1/4컵, 참기름 1스푼을 넣고 잘 섞어준 뒤 볶은깨를 충분히 2스푼 정도 넣어 양념장을 완성합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "먼저 양념부터 만들어볼게요 초고추장 2스푼 반 설탕 1스푼 생수 종이컵 1/4컵 참기름 1스푼을 넣고 잘 섞어준 뒤 볶은깨를 충분히 많이 2스푼 정도 넣어주면 끝!",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "용기에 양념 재료들을 차례대로 넣고 수저로 섞어 양념장을 만드는 장면",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 물을 끓인 뒤, 500원 동전 크기보다 조금 더 많은 양의 소면을 넣고 퍼지지 않게 삶아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "냄비에 물을 끓인 뒤 소면을 500원짜리 동전 크기보다 조금 더 많이 꺼내서 넣어주세요 면은 퍼지지 않게 삶아준 다음",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "끓는 물에 소면을 넣고 젓가락으로 저으며 삶는 장면",
+              "timestamp": "00:29"
+            }
+          ]
+        },
+        {
+          "text": "삶은 면을 찬물에 헹궈 물기를 빼고 그릇에 담아줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "찬물에 헹궈 그릇에 담아주시고요",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "찬물에 헹군 소면을 냄비 형태의 그릇에 담는 장면",
+              "timestamp": "00:34"
+            }
+          ]
+        },
+        {
+          "text": "소면에 만들어둔 양념장을 붓고 골고루 잘 버무려줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양념장을 잘 섞어주기만 하면 아주 간단하게 새콤달콤한 비빔국수 한 끼 완성",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "소면에 양념장을 붓고 위생장갑을 낀 손으로 비비는 장면",
+              "timestamp": "00:35"
+            }
+          ]
+        },
+        {
+          "text": "반찬 김을 가위로 잘라 넣고 함께 섞어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 반찬 김을 가위로 잘라 넣어주면 김에 있는 소금과 김 자체의 식감이 국수를 계속 먹으면 무를 수 있는 먹먹함을 잘 잡아줘서 더 맛있게 즐기실 수 있어요",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "가위로 조미김을 잘라 국수 위에 올린 뒤 손으로 버무리는 장면",
+              "timestamp": "00:40"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

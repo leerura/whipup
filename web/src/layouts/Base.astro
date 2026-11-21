@@ -1,0 +1,52 @@
+---
+import '../styles/global.css';
+import { SITE_NAME, APP_STORE_URL } from '../lib/data';
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  image?: string;
+  jsonLd?: object[];
+  current?: 'home' | 'about';
+}
+const { title, description, path, image, jsonLd = [], current } = Astro.props;
+const site = (Astro.site?.toString() ?? 'http://localhost:4321').replace(/\/$/, '');
+const canonical = `${site}${path}`;
+---
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="apple-itunes-app" content="app-id=6834718918" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    {image && <meta property="og:image" content={image} />}
+    <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    {jsonLd.map((data) => <script type="application/ld+json" set:html={JSON.stringify(data)} />)}
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="/">Whippy</a>
+      <nav class="nav">
+        <a href="/" aria-current={current === 'home' ? 'page' : undefined}>레시피</a>
+        <a href="/about/" aria-current={current === 'about' ? 'page' : undefined}>앱 소개</a>
+        <a class="btn small" href={APP_STORE_URL} rel="noopener">앱 다운로드</a>
+      </nav>
+    </header>
+    <slot />
+    <footer class="site-footer">
+      <strong>Whippy · 냉장고 털이</strong>
+      <p>레시피 출처: 각 YouTube Shorts 영상. 영상은 YouTube 공식 플레이어로만 재생하며 저장·재배포하지 않아요.</p>
+      <p>레시피·영상 삭제 요청과 문의는 <a href="mailto:sw09112@naver.com">sw09112@naver.com</a>으로 알려 주세요.</p>
+    </footer>
+  </body>
+</html>

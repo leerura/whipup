@@ -1,0 +1,549 @@
+{
+  "videoId": "xik-CdZg78A",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/xik-CdZg78A",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-15T08:10:02.838174+00:00",
+    "rawResponse": "{\n  \"title\": \"해물찜\",\n  \"description\": \"소량 해물 모듬과 콩나물 육수를 활용하여 감칠맛을 살린 해물찜 레시피\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"해물 모듬\",\n      \"displayName\": \"해물 모듬\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"해물 모듬으로 만든 해물찜입니다\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 해물 모듬을 가볍게 헹궈서 물기를 빼주세요!\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"일자 콩나물\",\n      \"displayName\": \"일자 콩나물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우리는 오늘 콩나물로 감칠맛을 잡을 거예요!\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 끓는 물에 일자 콩나물 넣고 5분 삶아줍니다\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"일자 콩나물을 추천!\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파는 5cm 정도 길이로 큼직하게 썰어주고요\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"당근\",\n      \"displayName\": \"당근\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고명으로 들어가는 당근이랑 고추는 얇게 썰어줍니다\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"당근\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추\",\n      \"displayName\": \"청양고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고명으로 들어가는 당근이랑 고추는 얇게 썰어줍니다\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파, 당근, 고추 넣고 30초 정도 살~짝 볶아줍니다\",\n          \"timestamp\": \"00:55\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 10숟갈\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"10\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 10숟갈\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"까나리액젓 10숟갈\",\n      \"displayName\": \"까나리액젓\",\n      \"amount\": \"10\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"까나리액젓 10숟갈\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 10숟갈\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"10\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 10숟갈\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 5숟갈\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"5\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 5숟갈\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물엿 5숟갈\",\n      \"displayName\": \"물엿\",\n      \"amount\": \"5\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물엿 5숟갈\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 5숟갈\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"5\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 5숟갈\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 10스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"10\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 10스푼\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"매운 고춧가루 1/2숟갈\",\n      \"displayName\": \"매운 고춧가루\",\n      \"amount\": \"1/2\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"매운 고춧가루 1/2숟갈\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1숟갈\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1숟갈\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리브오일 8숟갈\",\n      \"displayName\": \"올리브오일\",\n      \"amount\": \"8\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"8숟갈 두르고\",\n          \"timestamp\": \"00:51\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 올리브오일 8숟갈 두르고\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"콩나물 육수 2컵\",\n      \"displayName\": \"콩나물 육수\",\n      \"amount\": \"2\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"콩나물 육수 2컵\",\n          \"timestamp\": \"01:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"아까 콩나물 삶았던 물 있죠? 이걸 2컵 부어줍니다\",\n          \"timestamp\": \"01:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"전분가루 2숟갈\",\n      \"displayName\": \"전분가루\",\n      \"amount\": \"2\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"전분가루 2숟갈\",\n          \"timestamp\": \"01:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 8숟갈\",\n      \"displayName\": \"물\",\n      \"amount\": \"8\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 8숟갈\",\n          \"timestamp\": \"01:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 4숟갈\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"4\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 4숟갈\",\n          \"timestamp\": \"01:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"미나리\",\n      \"displayName\": \"미나리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"미나리를 살~짝 섞어주면\",\n          \"timestamp\": \"01:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 해물찜 위에 통깨를 뿌린다\",\n          \"timestamp\": \"01:33\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"해물 모듬을 가볍게 헹구어 체에 밭쳐 물기를 빼둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 해물 모듬을 가볍게 헹궈서 물기를 빼주세요!\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파는 5cm 정도 길이로 큼직하게 썰고, 당근, 청양고추, 양파는 얇게 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파는 5cm 정도 길이로 큼직하게 썰어주고요 고명으로 들어가는 당근이랑 고추는 얇게 썰어줍니다\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양파, 당근, 청양고추를 채 썰어 준비해 둔 모습\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 콩나물 삶을 물을 먼저 불에 올려 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"시간 단축을 위해서 콩나물 삶는 물 먼저 끓여놓고 양념 소스 만들게요\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 진간장 10숟갈, 까나리액젓 10숟갈, 맛술 10숟갈, 굴소스 5숟갈, 물엿 5숟갈, 다진마늘 5숟갈, 고춧가루 10스푼, 매운 고춧가루 1/2숟갈, 설탕 1숟갈을 넣고 섞어 양념 소스를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 10숟갈 까나리액젓 10숟갈 맛술 10숟갈 굴소스 5숟갈 물엿 5숟갈 다진마늘 5숟갈 고춧가루 10스푼 매운 고춧가루 반 숟갈 설탕 1숟갈\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"끓는 물에 일자 콩나물을 넣고 중간에 한 번 뒤집어주며 5분간 삶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 끓는 물에 일자 콩나물 넣고 5분 삶아줍니다\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"콩나물은 중간에 꼭 한번 뒤집어주고\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"5분간 삶은 콩나물만 건져내어 찬물에 헹궈두고, 콩나물 삶았던 국물(육수)은 버리지 않고 남겨둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"5분 삶았으면 건져서 찬물에 헹궈줄 건데요 여기서 오늘의 포인트! 콩나물 삶았던 국물 절대 버리시면 안 돼요 콩나물만 건져서 찬물에 헹궈주세요\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 올리브오일 8숟갈을 두르고 강불에서 썬 대파를 노릇하게 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 올리브오일 8숟갈 두르고 강불에서 대파를 볶아주세요!\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파가 노릇하게 볶아지면 양파, 당근, 고추를 넣고 센불을 유지하며 30초 정도 살짝 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파가 노릇하게 볶아졌으면 양파, 당근, 고추 넣고 30초 정도 살~짝 볶아줍니다 이때 불은 계속해서 센불 유지하는 거예요\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"text\": \"해물 모듬을 팬에 넣고 30초 더 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 해물 모듬 넣고 30초 더 볶아줄게요!\",\n          \"timestamp\": \"01:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"식혀둔 콩나물과 양념장을 모두 넣고 콩나물 삶은 육수 2컵을 부어 2분 정도 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 식혀둔 콩나물 넣고 양념장도 모두 넣어주세요 그리고 여기서 오늘의 킥! 소스만으로는 감칠맛이 부족해요 아까 콩나물 삶았던 물 있죠? 이걸 2컵 부어줍니다\",\n          \"timestamp\": \"01:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이대로 2분 정도 볶아주고요\",\n          \"timestamp\": \"01:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"전분가루 2숟갈과 물 8숟갈을 섞어 전분물을 만든 뒤, 팬에 조금씩 부어가며 농도를 맞춘다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"전분가루 2숟갈, 물 8숟갈 섞어서 만든 전분물 조금씩 부어주면 식당에서 봤던 해물찜 비주얼이 만들어집니다\",\n          \"timestamp\": \"01:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 끄고 참기름 4숟갈을 두른 후, 썰어둔 미나리를 넣고 잔열로 살짝 섞어 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 불 꺼주고 참기름 4숟갈 둘러준 다음 해물찜에 남아있는 열기에 미나리를 살~짝 섞어주면\",\n          \"timestamp\": \"01:29\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"접시에 담고 참깨를 뿌려 완성\",\n          \"timestamp\": \"01:33\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"해물 모듬, 대파, 당근, 청양고추, 양파, 콩나물, 미나리의 구체적인 중량/수량은 영상에서 수치로 제시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "해물찜",
+      "description": "소량 해물 모듬과 콩나물 육수를 활용하여 감칠맛을 살린 해물찜 레시피",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "해물 모듬",
+          "displayName": "해물 모듬",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "해물 모듬으로 만든 해물찜입니다",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 해물 모듬을 가볍게 헹궈서 물기를 빼주세요!",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "일자 콩나물",
+          "displayName": "일자 콩나물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "우리는 오늘 콩나물로 감칠맛을 잡을 거예요!",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 끓는 물에 일자 콩나물 넣고 5분 삶아줍니다",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "일자 콩나물을 추천!",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파는 5cm 정도 길이로 큼직하게 썰어주고요",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "당근",
+          "displayName": "당근",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고명으로 들어가는 당근이랑 고추는 얇게 썰어줍니다",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "당근",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "청양고추",
+          "displayName": "청양고추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고명으로 들어가는 당근이랑 고추는 얇게 썰어줍니다",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파, 당근, 고추 넣고 30초 정도 살~짝 볶아줍니다",
+              "timestamp": "00:55"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "진간장 10숟갈",
+          "displayName": "진간장",
+          "amount": "10",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 10숟갈",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "까나리액젓 10숟갈",
+          "displayName": "까나리액젓",
+          "amount": "10",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "까나리액젓 10숟갈",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "맛술 10숟갈",
+          "displayName": "맛술",
+          "amount": "10",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 10숟갈",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "굴소스 5숟갈",
+          "displayName": "굴소스",
+          "amount": "5",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 5숟갈",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "물엿 5숟갈",
+          "displayName": "물엿",
+          "amount": "5",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물엿 5숟갈",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "다진마늘 5숟갈",
+          "displayName": "다진마늘",
+          "amount": "5",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 5숟갈",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "고춧가루 10스푼",
+          "displayName": "고춧가루",
+          "amount": "10",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 10스푼",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "매운 고춧가루 1/2숟갈",
+          "displayName": "매운 고춧가루",
+          "amount": "1/2",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "매운 고춧가루 1/2숟갈",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "설탕 1숟갈",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1숟갈",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "올리브오일 8숟갈",
+          "displayName": "올리브오일",
+          "amount": "8",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "8숟갈 두르고",
+              "timestamp": "00:51"
+            },
+            {
+              "type": "SPEECH",
+              "text": "팬에 올리브오일 8숟갈 두르고",
+              "timestamp": "00:50"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "콩나물 육수 2컵",
+          "displayName": "콩나물 육수",
+          "amount": "2",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "콩나물 육수 2컵",
+              "timestamp": "01:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "아까 콩나물 삶았던 물 있죠? 이걸 2컵 부어줍니다",
+              "timestamp": "01:11"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        },
+        {
+          "rawText": "전분가루 2숟갈",
+          "displayName": "전분가루",
+          "amount": "2",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "전분가루 2숟갈",
+              "timestamp": "01:23"
+            }
+          ],
+          "sourceId": "ingredient-18"
+        },
+        {
+          "rawText": "물 8숟갈",
+          "displayName": "물",
+          "amount": "8",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 8숟갈",
+              "timestamp": "01:24"
+            }
+          ],
+          "sourceId": "ingredient-19"
+        },
+        {
+          "rawText": "참기름 4숟갈",
+          "displayName": "참기름",
+          "amount": "4",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 4숟갈",
+              "timestamp": "01:30"
+            }
+          ],
+          "sourceId": "ingredient-20"
+        },
+        {
+          "rawText": "미나리",
+          "displayName": "미나리",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "미나리를 살~짝 섞어주면",
+              "timestamp": "01:32"
+            }
+          ],
+          "sourceId": "ingredient-21"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 해물찜 위에 통깨를 뿌린다",
+              "timestamp": "01:33"
+            }
+          ],
+          "sourceId": "ingredient-22"
+        }
+      ],
+      "steps": [
+        {
+          "text": "해물 모듬을 가볍게 헹구어 체에 밭쳐 물기를 빼둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 해물 모듬을 가볍게 헹궈서 물기를 빼주세요!",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "대파는 5cm 정도 길이로 큼직하게 썰고, 당근, 청양고추, 양파는 얇게 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파는 5cm 정도 길이로 큼직하게 썰어주고요 고명으로 들어가는 당근이랑 고추는 얇게 썰어줍니다",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양파, 당근, 청양고추를 채 썰어 준비해 둔 모습",
+              "timestamp": "00:54"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 콩나물 삶을 물을 먼저 불에 올려 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "시간 단축을 위해서 콩나물 삶는 물 먼저 끓여놓고 양념 소스 만들게요",
+              "timestamp": "00:19"
+            }
+          ]
+        },
+        {
+          "text": "볼에 진간장 10숟갈, 까나리액젓 10숟갈, 맛술 10숟갈, 굴소스 5숟갈, 물엿 5숟갈, 다진마늘 5숟갈, 고춧가루 10스푼, 매운 고춧가루 1/2숟갈, 설탕 1숟갈을 넣고 섞어 양념 소스를 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "진간장 10숟갈 까나리액젓 10숟갈 맛술 10숟갈 굴소스 5숟갈 물엿 5숟갈 다진마늘 5숟갈 고춧가루 10스푼 매운 고춧가루 반 숟갈 설탕 1숟갈",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "끓는 물에 일자 콩나물을 넣고 중간에 한 번 뒤집어주며 5분간 삶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 끓는 물에 일자 콩나물 넣고 5분 삶아줍니다",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "SPEECH",
+              "text": "콩나물은 중간에 꼭 한번 뒤집어주고",
+              "timestamp": "00:41"
+            }
+          ]
+        },
+        {
+          "text": "5분간 삶은 콩나물만 건져내어 찬물에 헹궈두고, 콩나물 삶았던 국물(육수)은 버리지 않고 남겨둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "5분 삶았으면 건져서 찬물에 헹궈줄 건데요 여기서 오늘의 포인트! 콩나물 삶았던 국물 절대 버리시면 안 돼요 콩나물만 건져서 찬물에 헹궈주세요",
+              "timestamp": "00:43"
+            }
+          ]
+        },
+        {
+          "text": "팬에 올리브오일 8숟갈을 두르고 강불에서 썬 대파를 노릇하게 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 올리브오일 8숟갈 두르고 강불에서 대파를 볶아주세요!",
+              "timestamp": "00:50"
+            }
+          ]
+        },
+        {
+          "text": "대파가 노릇하게 볶아지면 양파, 당근, 고추를 넣고 센불을 유지하며 30초 정도 살짝 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파가 노릇하게 볶아졌으면 양파, 당근, 고추 넣고 30초 정도 살~짝 볶아줍니다 이때 불은 계속해서 센불 유지하는 거예요",
+              "timestamp": "00:53"
+            }
+          ]
+        },
+        {
+          "text": "해물 모듬을 팬에 넣고 30초 더 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 해물 모듬 넣고 30초 더 볶아줄게요!",
+              "timestamp": "01:00"
+            }
+          ]
+        },
+        {
+          "text": "식혀둔 콩나물과 양념장을 모두 넣고 콩나물 삶은 육수 2컵을 부어 2분 정도 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 식혀둔 콩나물 넣고 양념장도 모두 넣어주세요 그리고 여기서 오늘의 킥! 소스만으로는 감칠맛이 부족해요 아까 콩나물 삶았던 물 있죠? 이걸 2컵 부어줍니다",
+              "timestamp": "01:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이대로 2분 정도 볶아주고요",
+              "timestamp": "01:20"
+            }
+          ]
+        },
+        {
+          "text": "전분가루 2숟갈과 물 8숟갈을 섞어 전분물을 만든 뒤, 팬에 조금씩 부어가며 농도를 맞춘다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "전분가루 2숟갈, 물 8숟갈 섞어서 만든 전분물 조금씩 부어주면 식당에서 봤던 해물찜 비주얼이 만들어집니다",
+              "timestamp": "01:23"
+            }
+          ]
+        },
+        {
+          "text": "불을 끄고 참기름 4숟갈을 두른 후, 썰어둔 미나리를 넣고 잔열로 살짝 섞어 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 불 꺼주고 참기름 4숟갈 둘러준 다음 해물찜에 남아있는 열기에 미나리를 살~짝 섞어주면",
+              "timestamp": "01:29"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "접시에 담고 참깨를 뿌려 완성",
+              "timestamp": "01:33"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "해물 모듬, 대파, 당근, 청양고추, 양파, 콩나물, 미나리의 구체적인 중량/수량은 영상에서 수치로 제시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "7천원 짜리… “해물모듬”으로 만든, 콩나물 해물찜!",
+    "sourceChannelName": "김진순 점심시간",
+    "sourceChannelId": "UC9She1e6OWUpwJpwZtbqhjQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/BvOrdVOmTRlMEFygfbeuka_30BrSZenSof2_yC4RCxF0gEKvRzJTn6NEzMTJYQSe8aBxV9iMbQ=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-15T08:10:00.349161Z"
+  }
+}

@@ -16,6 +16,7 @@ part 'login_response.g.dart';
 /// * [user] 
 /// * [hasOwnedIngredients] - Whether the account currently has any owned ingredient rows.
 /// * [onboardingCompleted] - Whether the account has completed initial ingredient registration. Remains true if all owned ingredients are later deleted.
+/// * [termsConsentRequired] - Whether the account must accept the current terms before using protected APIs.
 @BuiltValue()
 abstract class LoginResponse implements Built<LoginResponse, LoginResponseBuilder> {
   @BuiltValueField(wireName: r'accessToken')
@@ -31,6 +32,10 @@ abstract class LoginResponse implements Built<LoginResponse, LoginResponseBuilde
   /// Whether the account has completed initial ingredient registration. Remains true if all owned ingredients are later deleted.
   @BuiltValueField(wireName: r'onboardingCompleted')
   bool get onboardingCompleted;
+
+  /// Whether the account must accept the current terms before using protected APIs.
+  @BuiltValueField(wireName: r'termsConsentRequired')
+  bool get termsConsentRequired;
 
   LoginResponse._();
 
@@ -73,6 +78,11 @@ class _$LoginResponseSerializer implements PrimitiveSerializer<LoginResponse> {
     yield r'onboardingCompleted';
     yield serializers.serialize(
       object.onboardingCompleted,
+      specifiedType: const FullType(bool),
+    );
+    yield r'termsConsentRequired';
+    yield serializers.serialize(
+      object.termsConsentRequired,
       specifiedType: const FullType(bool),
     );
   }
@@ -125,6 +135,13 @@ class _$LoginResponseSerializer implements PrimitiveSerializer<LoginResponse> {
             specifiedType: const FullType(bool),
           ) as bool;
           result.onboardingCompleted = valueDes;
+          break;
+        case r'termsConsentRequired':
+          final valueDes = serializers.deserialize(
+            value,
+            specifiedType: const FullType(bool),
+          ) as bool;
+          result.termsConsentRequired = valueDes;
           break;
         default:
           unhandled.add(key);

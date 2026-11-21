@@ -1,18 +1,370 @@
 {
   "videoId": "KcFPklUQkjY",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/KcFPklUQkjY",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-10-27T10:45:36.829364+00:00",
-    "accountId": "account-b",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAt": "2026-10-27T10:45:58.369921+00:00",
-    "retryAccountId": "account-b"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-12T12:14:49.407516+00:00",
+    "rawResponse": "{\n  \"title\": \"참치마요\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치\",\n      \"displayName\": \"참치\",\n      \"amount\": \"1\",\n      \"unit\": \"캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기름을 뺀 참치를 그릇에 넣어 줄게요\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 1개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 1개를 샤샤샥 풀어 줄게요\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마요네즈\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마요네즈\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 2스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 2스푼\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 4스푼\",\n      \"displayName\": \"물\",\n      \"amount\": \"4\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 4스푼\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 4스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"4\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 4스푼\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 조금 톡톡\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": \"조금\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 조금 톡톡\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마요네즈 3스푼\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마요네즈 3스푼\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬에 기름을 두르고,\",\n          \"timestamp\": \"00:55\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김가루도 있으면 뿌려주세요\",\n          \"timestamp\": \"01:48\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"볼에 설탕 2스푼, 물 4스푼, 진간장 4스푼을 넣고 섞어 소스를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 2스푼\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 4스푼\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 4스푼\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쉐킷쉐킷\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소스완성\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"기름을 뺀 참치를 그릇에 담고, 후추를 톡톡 뿌린 뒤 마요네즈 3스푼을 넣어 골고루 섞어둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기름을 뺀 참치를 그릇에 넣어 줄게요\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 조금 톡톡\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마요네즈 3스푼\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쉐킷쉐킷\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 1개를 곱게 풀어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란 1개를 샤샤샥 풀어 줄게요\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 기름을 두르고 약불에서 계란물을 부어 스크램블을 만들어 그릇에 덜어둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬에 기름을 두르고,\",\n          \"timestamp\": \"00:55\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"약불에서 스크램블을 만들어 주세요\",\n          \"timestamp\": \"00:58\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"60%만 익혀도 잔열로 금방 익을거예요\",\n          \"timestamp\": \"01:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"스크램블은 그릇에 잠시 쉬게 할게요\",\n          \"timestamp\": \"01:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소스를 약불의 팬에 넣어 15초간 살짝 졸여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소스를 약불의 팬에 넣어 15초 조려 줍니다\",\n          \"timestamp\": \"01:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"금방 걸쭉해지니 오래 조리지 않아도 돼요\",\n          \"timestamp\": \"01:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 담은 밥 위에 양념한 참치를 올리고, 주변에 스크램블드에그를 둘러 장식한 뒤 남은 참치를 더 얹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 밥위에 참치를 얹어 줄게요\",\n          \"timestamp\": \"01:17\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란으로 나름 장식도 해봅니다\",\n          \"timestamp\": \"01:21\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"남은 참치도 더 얹어 줬어요\",\n          \"timestamp\": \"01:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"비닐봉지나 짤주머니를 이용해 마요네즈를 가늘게 짜서 뿌리고, 졸여둔 소스를 끼얹은 뒤 마요네즈를 추가로 뿌린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"짤순이가 없는분들은 요로코롬 해보세요\",\n          \"timestamp\": \"01:29\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"구멍을 뽁 뚫으면 짤순이 완성\",\n          \"timestamp\": \"01:34\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마요네즈가 가늘게 나오는게 보이죵?\",\n          \"timestamp\": \"01:38\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"앗!소스 깜빡했다\",\n          \"timestamp\": \"01:42\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥과 참치 위에 졸인 소스를 숟가락으로 얹은 후 마요네즈를 뿌림\",\n          \"timestamp\": \"01:43\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김가루가 있다면 위에 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김가루도 있으면 뿌려주세요\",\n          \"timestamp\": \"01:48\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "참치마요",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "참치",
+          "displayName": "참치",
+          "amount": "1",
+          "unit": "캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "기름을 뺀 참치를 그릇에 넣어 줄게요",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "계란 1개",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란 1개를 샤샤샥 풀어 줄게요",
+              "timestamp": "00:52"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "마요네즈",
+          "displayName": "마요네즈",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마요네즈",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "설탕 2스푼",
+          "displayName": "설탕",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 2스푼",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "물 4스푼",
+          "displayName": "물",
+          "amount": "4",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 4스푼",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "진간장 4스푼",
+          "displayName": "진간장",
+          "amount": "4",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 4스푼",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "후추 조금 톡톡",
+          "displayName": "후추",
+          "amount": null,
+          "unit": "조금",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 조금 톡톡",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "마요네즈 3스푼",
+          "displayName": "마요네즈",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마요네즈 3스푼",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "팬에 기름을 두르고,",
+              "timestamp": "00:55"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "김가루",
+          "displayName": "김가루",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "김가루도 있으면 뿌려주세요",
+              "timestamp": "01:48"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "볼에 설탕 2스푼, 물 4스푼, 진간장 4스푼을 넣고 섞어 소스를 만든다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 2스푼",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 4스푼",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 4스푼",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쉐킷쉐킷",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소스완성",
+              "timestamp": "00:31"
+            }
+          ]
+        },
+        {
+          "text": "기름을 뺀 참치를 그릇에 담고, 후추를 톡톡 뿌린 뒤 마요네즈 3스푼을 넣어 골고루 섞어둔다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "기름을 뺀 참치를 그릇에 넣어 줄게요",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 조금 톡톡",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마요네즈 3스푼",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쉐킷쉐킷",
+              "timestamp": "00:45"
+            }
+          ]
+        },
+        {
+          "text": "계란 1개를 곱게 풀어준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "계란 1개를 샤샤샥 풀어 줄게요",
+              "timestamp": "00:52"
+            }
+          ]
+        },
+        {
+          "text": "팬에 기름을 두르고 약불에서 계란물을 부어 스크램블을 만들어 그릇에 덜어둔다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "팬에 기름을 두르고,",
+              "timestamp": "00:55"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "약불에서 스크램블을 만들어 주세요",
+              "timestamp": "00:58"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "60%만 익혀도 잔열로 금방 익을거예요",
+              "timestamp": "01:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "스크램블은 그릇에 잠시 쉬게 할게요",
+              "timestamp": "01:04"
+            }
+          ]
+        },
+        {
+          "text": "소스를 약불의 팬에 넣어 15초간 살짝 졸여준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "소스를 약불의 팬에 넣어 15초 조려 줍니다",
+              "timestamp": "01:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "금방 걸쭉해지니 오래 조리지 않아도 돼요",
+              "timestamp": "01:10"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 담은 밥 위에 양념한 참치를 올리고, 주변에 스크램블드에그를 둘러 장식한 뒤 남은 참치를 더 얹는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이제 밥위에 참치를 얹어 줄게요",
+              "timestamp": "01:17"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란으로 나름 장식도 해봅니다",
+              "timestamp": "01:21"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "남은 참치도 더 얹어 줬어요",
+              "timestamp": "01:25"
+            }
+          ]
+        },
+        {
+          "text": "비닐봉지나 짤주머니를 이용해 마요네즈를 가늘게 짜서 뿌리고, 졸여둔 소스를 끼얹은 뒤 마요네즈를 추가로 뿌린다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "짤순이가 없는분들은 요로코롬 해보세요",
+              "timestamp": "01:29"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "구멍을 뽁 뚫으면 짤순이 완성",
+              "timestamp": "01:34"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마요네즈가 가늘게 나오는게 보이죵?",
+              "timestamp": "01:38"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "앗!소스 깜빡했다",
+              "timestamp": "01:42"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥과 참치 위에 졸인 소스를 숟가락으로 얹은 후 마요네즈를 뿌림",
+              "timestamp": "01:43"
+            }
+          ]
+        },
+        {
+          "text": "김가루가 있다면 위에 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "김가루도 있으면 뿌려주세요",
+              "timestamp": "01:48"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
   }
 }

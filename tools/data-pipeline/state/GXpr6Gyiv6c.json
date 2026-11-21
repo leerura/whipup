@@ -1,0 +1,266 @@
+{
+  "videoId": "GXpr6Gyiv6c",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/GXpr6Gyiv6c",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-15T09:38:11.763353+00:00",
+    "rawResponse": "{\n  \"title\": \"생생우동 파 샤브샤브\",\n  \"description\": \"인터넷에서 화제가 된 파국 육수에 생생우동 액상 스프를 더해 샤브샤브 고기와 우동 사리까지 즐기는 요리법입니다.\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"물 500ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"500\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 500ml\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 물 500ml에\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파의 흰 부분만 한트럭\",\n      \"displayName\": \"대파 흰 부분\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파의 흰 부분만 한트럭 준비해서\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파의 흰 부분만 한트럭 준비해가 잘게 썰어 넣어줍니다.\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"생생우동 스프\",\n      \"displayName\": \"생생우동 액상스프\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"생생우동 스프를\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"생생우동 스프를 함 넣어 보이소.\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"생생우동 액상스프를 파가 담긴 육수에 부어 넣음\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"샤브용 고기 듬뿍\",\n      \"displayName\": \"샤브용 고기\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"샤브용 고기 듬뿍 넣고 익혀준 뒤에\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"샤브용 고기 듬뿍 넣고 익혀준 뒤에\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참소스\",\n      \"displayName\": \"참소스\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참소스에 바로 찍어서 무뿌면\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참소스에 바로 찍어서 무뿌면\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우동면\",\n      \"displayName\": \"우동면\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"우동면 넣고 끓여준 뒤에\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우동면 넣고 끓여준 뒤에\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후레이크\",\n      \"displayName\": \"생생우동 후레이크\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후레이크를 뿌려서 마무리하면\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후레이크를 뿌려가 마무리하면\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 물 500ml를 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 물 500ml에\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 물 500ml를 붓는 모습\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파의 흰 부분만 넉넉히 준비해 잘게 썰어서 물에 넣어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파의 흰 부분만 한트럭 준비해가 잘게 썰어 넣어줍니다.\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"송송 썬 대파를 냄비에 넣는 모습\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"생생우동 스프를 냄비에 넣고 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"생생우동 스프를 함 넣어 보이소.\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"생생우동 액상스프를 넣는 모습\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국물이 보글보글 끓으면 샤브용 고기를 듬뿍 넣고 익혀 참소스에 찍어 먹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 물이 보글보글 끓으면 샤브용 고기 듬뿍 넣고 익혀준 뒤에 참소스에 바로 찍어서 무뿌면 진짜 맛있습니다.\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기를 어느 정도 먹고 난 뒤 남은 국물에 우동면을 넣고 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"어느 정도 다 먹고 나면 우동면 넣고 끓여준 뒤에\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"후레이크를 뿌려서 마무리하고, 우동 사리도 참소스에 찍어 먹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후레이크를 뿌려가 마무리하면 우동 사리까지 즐길 수 있습니다.\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우동 사리도 참소스에 싹 찍어 묵으면 이거 완전 개꿀맛도리입니다.\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"대파의 정확한 수량은 언급되지 않고 '한트럭'(시각적으로 대파 흰 대 약 5~6개 분량)으로만 표현됨\",\n    \"샤브용 고기의 부위 및 정확한 중량은 언급되지 않고 '듬뿍'으로만 표현됨\",\n    \"싱거울 경우 생생우동 2개를 넣어 끓여도 된다고 언급됨\"\n  ]\n}",
+    "result": {
+      "title": "생생우동 파 샤브샤브",
+      "description": "인터넷에서 화제가 된 파국 육수에 생생우동 액상 스프를 더해 샤브샤브 고기와 우동 사리까지 즐기는 요리법입니다.",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "물 500ml",
+          "displayName": "물",
+          "amount": "500",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 500ml",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 물 500ml에",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "대파의 흰 부분만 한트럭",
+          "displayName": "대파 흰 부분",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대파의 흰 부분만 한트럭 준비해서",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파의 흰 부분만 한트럭 준비해가 잘게 썰어 넣어줍니다.",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "생생우동 스프",
+          "displayName": "생생우동 액상스프",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "생생우동 스프를",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "생생우동 스프를 함 넣어 보이소.",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "생생우동 액상스프를 파가 담긴 육수에 부어 넣음",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "샤브용 고기 듬뿍",
+          "displayName": "샤브용 고기",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "샤브용 고기 듬뿍 넣고 익혀준 뒤에",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "샤브용 고기 듬뿍 넣고 익혀준 뒤에",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "참소스",
+          "displayName": "참소스",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "참소스에 바로 찍어서 무뿌면",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참소스에 바로 찍어서 무뿌면",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "우동면",
+          "displayName": "우동면",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "우동면 넣고 끓여준 뒤에",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "우동면 넣고 끓여준 뒤에",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "후레이크",
+          "displayName": "생생우동 후레이크",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "후레이크를 뿌려서 마무리하면",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후레이크를 뿌려가 마무리하면",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 물 500ml를 붓는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 물 500ml에",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 물 500ml를 붓는 모습",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "대파의 흰 부분만 넉넉히 준비해 잘게 썰어서 물에 넣어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파의 흰 부분만 한트럭 준비해가 잘게 썰어 넣어줍니다.",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "송송 썬 대파를 냄비에 넣는 모습",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "생생우동 스프를 냄비에 넣고 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "생생우동 스프를 함 넣어 보이소.",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "생생우동 액상스프를 넣는 모습",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "국물이 보글보글 끓으면 샤브용 고기를 듬뿍 넣고 익혀 참소스에 찍어 먹는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 물이 보글보글 끓으면 샤브용 고기 듬뿍 넣고 익혀준 뒤에 참소스에 바로 찍어서 무뿌면 진짜 맛있습니다.",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "고기를 어느 정도 먹고 난 뒤 남은 국물에 우동면을 넣고 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "어느 정도 다 먹고 나면 우동면 넣고 끓여준 뒤에",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "후레이크를 뿌려서 마무리하고, 우동 사리도 참소스에 찍어 먹는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후레이크를 뿌려가 마무리하면 우동 사리까지 즐길 수 있습니다.",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "우동 사리도 참소스에 싹 찍어 묵으면 이거 완전 개꿀맛도리입니다.",
+              "timestamp": "00:28"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "대파의 정확한 수량은 언급되지 않고 '한트럭'(시각적으로 대파 흰 대 약 5~6개 분량)으로만 표현됨",
+        "샤브용 고기의 부위 및 정확한 중량은 언급되지 않고 '듬뿍'으로만 표현됨",
+        "싱거울 경우 생생우동 2개를 넣어 끓여도 된다고 언급됨"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "SNS에서 난리난 부자들의 비밀",
+    "sourceChannelName": "자취요리신 simple cooking",
+    "sourceChannelId": "UCC9pQY_uaBSa0WOpMNJHbEQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/hZHUS5wW20j39kfLUfmeHDwvC8aG7kvNblsP_gXiclsXzf7ixDgAp5ml_2cjqTzMcpsKG9hwkA=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-15T09:38:09.719383Z"
+  }
+}

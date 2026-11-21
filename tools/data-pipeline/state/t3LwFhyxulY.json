@@ -1,0 +1,602 @@
+{
+  "videoId": "t3LwFhyxulY",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/t3LwFhyxulY",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-14T13:26:36.444003+00:00",
+    "rawResponse": "{\n  \"title\": \"양념 소갈비 정식\",\n  \"description\": null,\n  \"servings\": \"2\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"부채살 500g\",\n      \"displayName\": \"부채살\",\n      \"amount\": \"500\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"부채살 500g\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 스테이크용 부채살을 사 와서\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양조간장 3spoons\",\n      \"displayName\": \"양조간장\",\n      \"amount\": \"3\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장 3spoons\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 볼에 양조간장\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 1spoon\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 1spoon\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물엿 1spoon\",\n      \"displayName\": \"물엿\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물엿 1spoon\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물엿\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 0.5spoon\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.5\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 0.5spoon\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1spoon\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 1spoon\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간 마늘 30g\",\n      \"displayName\": \"간 마늘\",\n      \"amount\": \"30\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간 마늘 30g\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간마늘\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 0.5spoon\",\n      \"displayName\": \"후추\",\n      \"amount\": \"0.5\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 0.5spoon\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"갈아만든배 음료수 50ml\",\n      \"displayName\": \"갈아만든배 음료수\",\n      \"amount\": \"50\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"갈아만든배 음료수 50ml\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"갈아만든배\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 50ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"50\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 50ml\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"연겨자 0.2spoon\",\n      \"displayName\": \"연겨자\",\n      \"amount\": \"0.2\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"연겨자 0.2spoon\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"오늘의 킥 느끼함을 잡아줄 연겨자\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 30g\",\n      \"displayName\": \"대파\",\n      \"amount\": \"30\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 30g\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파를 넣고 섞어서 갈비 양념을 만들어준 다음\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"무 300g\",\n      \"displayName\": \"무\",\n      \"amount\": \"300\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"무 300g\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그동안 무를 채 썰어준 다음\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 0.5spoon\",\n      \"displayName\": \"소금\",\n      \"amount\": \"0.5\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 0.5spoon\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"채 썬 무에 소금과\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 0.5spoon\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.5\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 0.5spoon\",\n          \"timestamp\": \"00:48\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕을 넣고 절여놔줘\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 3spoons\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"3\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 3spoons\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식초 2spoons\",\n      \"displayName\": \"식초\",\n      \"amount\": \"2\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식초 2spoons\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식초\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양조간장 0.5spoon\",\n      \"displayName\": \"양조간장\",\n      \"amount\": \"0.5\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장 0.5spoon\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양조간장\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"멸치액젓 0.5spoon\",\n      \"displayName\": \"멸치액젓\",\n      \"amount\": \"0.5\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"멸치액젓 0.5spoon\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"멸치액젓\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"매실청 0.5spoon\",\n      \"displayName\": \"매실청\",\n      \"amount\": \"0.5\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"매실청 0.5spoon\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"매실청\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1spoon\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 1spoon\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 15g\",\n      \"displayName\": \"대파\",\n      \"amount\": \"15\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 15g\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파로 양념을 해줘\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깻잎 20g\",\n      \"displayName\": \"깻잎\",\n      \"amount\": \"20\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깻잎 20g\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"근데 깻잎을 얇게 채 썰어서 넣고\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참깨 1spoon\",\n      \"displayName\": \"참깨\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참깨 1spoon\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"통깨와 함께 버무려봐\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"스테이크용 부채살 1/3 지점에 칼집을 넣고 뒤집어서 반대쪽 1/3 지점에도 칼집을 넣어 얇게 편 뒤, 앞뒤로 사선 칼집을 낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"스테이크용 부채살을 사 와서 1/3 지점에 칼을 넣어준 다음 뒤집어서 반대쪽 1/3 지점에 또 한 번 칼을 넣어줘 이걸 펴주면 이렇게 얇게 펴지거든 여기에 앞뒤로 칼집을 넣어줄 거야\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"부채살을 포를 떠서 얇게 펼친 뒤 앞뒤로 촘촘하게 칼집을 낸다\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 양조간장 3스푼, 맛술 1스푼, 물엿 1스푼, 설탕 0.5스푼, 참기름 1스푼, 간 마늘 30g, 후추 0.5스푼, 갈아만든배 음료수 50ml, 물 50ml, 연겨자 0.2스푼, 대파 30g을 넣고 섞어 갈비 양념을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"볼에 양조간장 맛술 물엿 설탕 참기름 간마늘 후추 갈아만든배 물 오늘의 킥 느끼함을 잡아줄 연겨자 대파를 넣고 섞어서 갈비 양념을 만들어준 다음\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"손질한 부채살에 갈비 양념을 모두 붓고 냉장고에서 30분간 재운다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기에 모두 부어줘 그리고 30분간 냉장고에서 재워줄 거야\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"냉장고에서 30분간 재우기\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"무 300g을 채 썰고 소금 0.5스푼과 설탕 0.5스푼을 넣어 절여둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그동안 무를 채 썰어준 다음 채 썬 무에 소금과 설탕을 넣고 절여놔줘\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 재워둔 양념 소갈비와 양념을 모두 붓고 구운 뒤 가위로 먹기 좋은 크기로 자른다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그럼 갈비를 팬에 넣고 구워줄 거야 이때 양념도 모두 부어줘 고기를 다 구웠으면\",\n          \"timestamp\": \"00:51\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에서 양념 소갈비를 구운 후 가위로 자르고 접시에 담아둔다\",\n          \"timestamp\": \"01:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"절여놓은 무채의 물기를 꼭 짠 후 고춧가루 3스푼, 식초 2스푼, 양조간장 0.5스푼, 멸치액젓 0.5스푼, 매실청 0.5스푼, 다진 마늘 1스푼, 대파 15g, 얇게 채 썬 깻잎 20g, 참깨 1스푼을 넣고 버무려 무생채를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"절여놨던 무채의 물을 꽉 짜준 다음 고춧가루 식초 양조간장 멸치액젓 매실청 다진 마늘 대파로 양념을 해줘... 깻잎을 얇게 채 썰어서 넣고 통깨와 함께 버무려봐\",\n          \"timestamp\": \"01:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"구워낸 소갈비 옆에 깻잎 무생채를 함께 담아 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 고기 옆에 함께 플레이팅해 주면 둘이서 2만 원도 안 되는 가격으로 즐길 수 있는 양념 소갈비 정식 끝\",\n          \"timestamp\": \"01:31\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "양념 소갈비 정식",
+      "description": null,
+      "servings": "2",
+      "ingredients": [
+        {
+          "rawText": "부채살 500g",
+          "displayName": "부채살",
+          "amount": "500",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "부채살 500g",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 스테이크용 부채살을 사 와서",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양조간장 3spoons",
+          "displayName": "양조간장",
+          "amount": "3",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장 3spoons",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 볼에 양조간장",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "맛술 1spoon",
+          "displayName": "맛술",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 1spoon",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "맛술",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "물엿 1spoon",
+          "displayName": "물엿",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물엿 1spoon",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물엿",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "설탕 0.5spoon",
+          "displayName": "설탕",
+          "amount": "0.5",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 0.5spoon",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "참기름 1spoon",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 1spoon",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "간 마늘 30g",
+          "displayName": "간 마늘",
+          "amount": "30",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간 마늘 30g",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간마늘",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "후추 0.5spoon",
+          "displayName": "후추",
+          "amount": "0.5",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 0.5spoon",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "갈아만든배 음료수 50ml",
+          "displayName": "갈아만든배 음료수",
+          "amount": "50",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "갈아만든배 음료수 50ml",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "SPEECH",
+              "text": "갈아만든배",
+              "timestamp": "00:32"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "물 50ml",
+          "displayName": "물",
+          "amount": "50",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 50ml",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "연겨자 0.2spoon",
+          "displayName": "연겨자",
+          "amount": "0.2",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "연겨자 0.2spoon",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "SPEECH",
+              "text": "오늘의 킥 느끼함을 잡아줄 연겨자",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "대파 30g",
+          "displayName": "대파",
+          "amount": "30",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 30g",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파를 넣고 섞어서 갈비 양념을 만들어준 다음",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "무 300g",
+          "displayName": "무",
+          "amount": "300",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "무 300g",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그동안 무를 채 썰어준 다음",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "소금 0.5spoon",
+          "displayName": "소금",
+          "amount": "0.5",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 0.5spoon",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "SPEECH",
+              "text": "채 썬 무에 소금과",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "설탕 0.5spoon",
+          "displayName": "설탕",
+          "amount": "0.5",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 0.5spoon",
+              "timestamp": "00:48"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕을 넣고 절여놔줘",
+              "timestamp": "00:48"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "고춧가루 3spoons",
+          "displayName": "고춧가루",
+          "amount": "3",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 3spoons",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "식초 2spoons",
+          "displayName": "식초",
+          "amount": "2",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식초 2spoons",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "식초",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        },
+        {
+          "rawText": "양조간장 0.5spoon",
+          "displayName": "양조간장",
+          "amount": "0.5",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장 0.5spoon",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양조간장",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-18"
+        },
+        {
+          "rawText": "멸치액젓 0.5spoon",
+          "displayName": "멸치액젓",
+          "amount": "0.5",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "멸치액젓 0.5spoon",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "멸치액젓",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-19"
+        },
+        {
+          "rawText": "매실청 0.5spoon",
+          "displayName": "매실청",
+          "amount": "0.5",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "매실청 0.5spoon",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "매실청",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-20"
+        },
+        {
+          "rawText": "다진 마늘 1spoon",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 1spoon",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-21"
+        },
+        {
+          "rawText": "대파 15g",
+          "displayName": "대파",
+          "amount": "15",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 15g",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파로 양념을 해줘",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-22"
+        },
+        {
+          "rawText": "깻잎 20g",
+          "displayName": "깻잎",
+          "amount": "20",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깻잎 20g",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "근데 깻잎을 얇게 채 썰어서 넣고",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-23"
+        },
+        {
+          "rawText": "참깨 1spoon",
+          "displayName": "참깨",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참깨 1spoon",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "통깨와 함께 버무려봐",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-24"
+        }
+      ],
+      "steps": [
+        {
+          "text": "스테이크용 부채살 1/3 지점에 칼집을 넣고 뒤집어서 반대쪽 1/3 지점에도 칼집을 넣어 얇게 편 뒤, 앞뒤로 사선 칼집을 낸다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "스테이크용 부채살을 사 와서 1/3 지점에 칼을 넣어준 다음 뒤집어서 반대쪽 1/3 지점에 또 한 번 칼을 넣어줘 이걸 펴주면 이렇게 얇게 펴지거든 여기에 앞뒤로 칼집을 넣어줄 거야",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "부채살을 포를 떠서 얇게 펼친 뒤 앞뒤로 촘촘하게 칼집을 낸다",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "볼에 양조간장 3스푼, 맛술 1스푼, 물엿 1스푼, 설탕 0.5스푼, 참기름 1스푼, 간 마늘 30g, 후추 0.5스푼, 갈아만든배 음료수 50ml, 물 50ml, 연겨자 0.2스푼, 대파 30g을 넣고 섞어 갈비 양념을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "볼에 양조간장 맛술 물엿 설탕 참기름 간마늘 후추 갈아만든배 물 오늘의 킥 느끼함을 잡아줄 연겨자 대파를 넣고 섞어서 갈비 양념을 만들어준 다음",
+              "timestamp": "00:25"
+            }
+          ]
+        },
+        {
+          "text": "손질한 부채살에 갈비 양념을 모두 붓고 냉장고에서 30분간 재운다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고기에 모두 부어줘 그리고 30분간 냉장고에서 재워줄 거야",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "냉장고에서 30분간 재우기",
+              "timestamp": "00:41"
+            }
+          ]
+        },
+        {
+          "text": "무 300g을 채 썰고 소금 0.5스푼과 설탕 0.5스푼을 넣어 절여둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그동안 무를 채 썰어준 다음 채 썬 무에 소금과 설탕을 넣고 절여놔줘",
+              "timestamp": "00:44"
+            }
+          ]
+        },
+        {
+          "text": "팬에 재워둔 양념 소갈비와 양념을 모두 붓고 구운 뒤 가위로 먹기 좋은 크기로 자른다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그럼 갈비를 팬에 넣고 구워줄 거야 이때 양념도 모두 부어줘 고기를 다 구웠으면",
+              "timestamp": "00:51"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에서 양념 소갈비를 구운 후 가위로 자르고 접시에 담아둔다",
+              "timestamp": "01:00"
+            }
+          ]
+        },
+        {
+          "text": "절여놓은 무채의 물기를 꼭 짠 후 고춧가루 3스푼, 식초 2스푼, 양조간장 0.5스푼, 멸치액젓 0.5스푼, 매실청 0.5스푼, 다진 마늘 1스푼, 대파 15g, 얇게 채 썬 깻잎 20g, 참깨 1스푼을 넣고 버무려 무생채를 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "절여놨던 무채의 물을 꽉 짜준 다음 고춧가루 식초 양조간장 멸치액젓 매실청 다진 마늘 대파로 양념을 해줘... 깻잎을 얇게 채 썰어서 넣고 통깨와 함께 버무려봐",
+              "timestamp": "01:08"
+            }
+          ]
+        },
+        {
+          "text": "구워낸 소갈비 옆에 깻잎 무생채를 함께 담아 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 고기 옆에 함께 플레이팅해 주면 둘이서 2만 원도 안 되는 가격으로 즐길 수 있는 양념 소갈비 정식 끝",
+              "timestamp": "01:31"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "칼질 조금만 해주면 고기를 업그레이드할 수 있습니다!",
+    "sourceChannelName": "1분요리 뚝딱이형",
+    "sourceChannelId": "UC0htUSwcxfSGNfK_5Q28JkA",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/MHTy5jXZQPwKwrGtAV-gLL6ei9YTOgR8Z6GESkhAAIz0kkG4d6B6vu6CUPNNsLOzqcGxGfBK=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-14T13:26:33.505080Z"
+  }
+}

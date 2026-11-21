@@ -8,17 +8,22 @@ part of 'serializers.dart';
 
 Serializers _$serializers = (Serializers().toBuilder()
       ..add(AddOwnedIngredientRequest.serializer)
+      ..add(CurrentAccountResponse.serializer)
+      ..add(DailyMenuRequest.serializer)
       ..add(DetailIngredientDisplay.serializer)
       ..add(DetailRequirement.serializer)
       ..add(DetailRequirementOption.serializer)
       ..add(ErrorResponse.serializer)
       ..add(HealthResponse.serializer)
+      ..add(HttpTimingRequest.serializer)
+      ..add(HttpTimingRequestMethodEnum.serializer)
+      ..add(HttpTimingRequestOutcomeEnum.serializer)
+      ..add(HttpTimingRequestRouteEnum.serializer)
       ..add(IngredientGroup.serializer)
       ..add(IngredientGroupListResponse.serializer)
       ..add(IngredientMatch.serializer)
       ..add(IngredientMatchTypeEnum.serializer)
       ..add(IngredientVariantOption.serializer)
-      ..add(KakaoLoginRequest.serializer)
       ..add(LoginResponse.serializer)
       ..add(MissingDetailRequirement.serializer)
       ..add(MissingDetailRequirementStatusEnum.serializer)
@@ -26,9 +31,11 @@ Serializers _$serializers = (Serializers().toBuilder()
       ..add(MissingRequirementResult.serializer)
       ..add(MissingRequirementResultStatusEnum.serializer)
       ..add(MissingSubstitute.serializer)
+      ..add(OnboardingRequest.serializer)
       ..add(OwnedIngredient.serializer)
       ..add(OwnedIngredientListResponse.serializer)
       ..add(RecipeDetailResponse.serializer)
+      ..add(RecipeSearchScope.serializer)
       ..add(RecipeStep.serializer)
       ..add(RecommendationItem.serializer)
       ..add(RecommendationListResponse.serializer)
@@ -38,11 +45,16 @@ Serializers _$serializers = (Serializers().toBuilder()
       ..add(SatisfiedDetailRequirementStatusEnum.serializer)
       ..add(SatisfiedRequirementResult.serializer)
       ..add(SatisfiedRequirementResultStatusEnum.serializer)
+      ..add(TermsConsentRequest.serializer)
       ..add(UserSummary.serializer)
       ..addBuilderFactory(
           const FullType(
               BuiltList, const [const FullType(DetailIngredientDisplay)]),
           () => ListBuilder<DetailIngredientDisplay>())
+      ..addBuilderFactory(
+          const FullType(
+              BuiltList, const [const FullType(IngredientVariantOption)]),
+          () => ListBuilder<IngredientVariantOption>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [const FullType(DetailRequirement)]),
           () => ListBuilder<DetailRequirement>())
@@ -88,7 +100,9 @@ Serializers _$serializers = (Serializers().toBuilder()
           () => ListBuilder<RecommendationItem>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [const FullType(RequirementResult)]),
-          () => ListBuilder<RequirementResult>()))
+          () => ListBuilder<RequirementResult>())
+      ..addBuilderFactory(const FullType(BuiltSet, const [const FullType(int)]),
+          () => SetBuilder<int>()))
     .build();
 
 // ignore_for_file: deprecated_member_use_from_same_package,type=lint

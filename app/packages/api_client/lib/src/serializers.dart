@@ -15,24 +15,28 @@ import 'package:api_client/src/date_serializer.dart';
 import 'package:api_client/src/model/date.dart';
 
 import 'package:api_client/src/model/add_owned_ingredient_request.dart';
+import 'package:api_client/src/model/current_account_response.dart';
+import 'package:api_client/src/model/daily_menu_request.dart';
 import 'package:api_client/src/model/detail_ingredient_display.dart';
 import 'package:api_client/src/model/detail_requirement.dart';
 import 'package:api_client/src/model/detail_requirement_option.dart';
 import 'package:api_client/src/model/error_response.dart';
 import 'package:api_client/src/model/health_response.dart';
+import 'package:api_client/src/model/http_timing_request.dart';
 import 'package:api_client/src/model/ingredient_group.dart';
 import 'package:api_client/src/model/ingredient_group_list_response.dart';
 import 'package:api_client/src/model/ingredient_match.dart';
 import 'package:api_client/src/model/ingredient_variant_option.dart';
-import 'package:api_client/src/model/kakao_login_request.dart';
 import 'package:api_client/src/model/login_response.dart';
 import 'package:api_client/src/model/missing_detail_requirement.dart';
 import 'package:api_client/src/model/missing_option.dart';
 import 'package:api_client/src/model/missing_requirement_result.dart';
 import 'package:api_client/src/model/missing_substitute.dart';
+import 'package:api_client/src/model/onboarding_request.dart';
 import 'package:api_client/src/model/owned_ingredient.dart';
 import 'package:api_client/src/model/owned_ingredient_list_response.dart';
 import 'package:api_client/src/model/recipe_detail_response.dart';
+import 'package:api_client/src/model/recipe_search_scope.dart';
 import 'package:api_client/src/model/recipe_step.dart';
 import 'package:api_client/src/model/recommendation_item.dart';
 import 'package:api_client/src/model/recommendation_list_response.dart';
@@ -40,30 +44,35 @@ import 'package:api_client/src/model/recommendation_mode.dart';
 import 'package:api_client/src/model/requirement_result.dart';
 import 'package:api_client/src/model/satisfied_detail_requirement.dart';
 import 'package:api_client/src/model/satisfied_requirement_result.dart';
+import 'package:api_client/src/model/terms_consent_request.dart';
 import 'package:api_client/src/model/user_summary.dart';
 
 part 'serializers.g.dart';
 
 @SerializersFor([
   AddOwnedIngredientRequest,
+  CurrentAccountResponse,
+  DailyMenuRequest,
   DetailIngredientDisplay,
   DetailRequirement,
   DetailRequirementOption,
   ErrorResponse,
   HealthResponse,
+  HttpTimingRequest,
   IngredientGroup,
   IngredientGroupListResponse,
   IngredientMatch,
   IngredientVariantOption,
-  KakaoLoginRequest,
   LoginResponse,
   MissingDetailRequirement,
   MissingOption,
   MissingRequirementResult,
   MissingSubstitute,
+  OnboardingRequest,
   OwnedIngredient,
   OwnedIngredientListResponse,
   RecipeDetailResponse,
+  RecipeSearchScope,
   RecipeStep,
   RecommendationItem,
   RecommendationListResponse,
@@ -71,24 +80,13 @@ part 'serializers.g.dart';
   RequirementResult,
   SatisfiedDetailRequirement,
   SatisfiedRequirementResult,
+  TermsConsentRequest,
   UserSummary,
 ])
 Serializers serializers = (_$serializers.toBuilder()
       ..addBuilderFactory(
-        const FullType(BuiltList, [FullType(RequirementResult)]),
-        () => ListBuilder<RequirementResult>(),
-      )
-      ..addBuilderFactory(
         const FullType(BuiltList, [FullType(MissingSubstitute)]),
         () => ListBuilder<MissingSubstitute>(),
-      )
-      ..addBuilderFactory(
-        const FullType(BuiltList, [FullType(MissingOption)]),
-        () => ListBuilder<MissingOption>(),
-      )
-      ..addBuilderFactory(
-        const FullType(BuiltList, [FullType(DetailRequirement)]),
-        () => ListBuilder<DetailRequirement>(),
       )
       ..addBuilderFactory(
         const FullType(BuiltList, [FullType(DetailRequirementOption)]),
@@ -97,10 +95,6 @@ Serializers serializers = (_$serializers.toBuilder()
       ..addBuilderFactory(
         const FullType(BuiltList, [FullType(IngredientMatch)]),
         () => ListBuilder<IngredientMatch>(),
-      )
-      ..addBuilderFactory(
-        const FullType(BuiltList, [FullType(DetailIngredientDisplay)]),
-        () => ListBuilder<DetailIngredientDisplay>(),
       )
       ..addBuilderFactory(
         const FullType(BuiltList, [FullType(IngredientVariantOption)]),
@@ -115,12 +109,32 @@ Serializers serializers = (_$serializers.toBuilder()
         () => ListBuilder<RecipeStep>(),
       )
       ..addBuilderFactory(
-        const FullType(BuiltList, [FullType(IngredientGroup)]),
-        () => ListBuilder<IngredientGroup>(),
-      )
-      ..addBuilderFactory(
         const FullType(BuiltList, [FullType(RecommendationItem)]),
         () => ListBuilder<RecommendationItem>(),
+      )
+      ..addBuilderFactory(
+        const FullType(BuiltList, [FullType(RequirementResult)]),
+        () => ListBuilder<RequirementResult>(),
+      )
+      ..addBuilderFactory(
+        const FullType(BuiltList, [FullType(MissingOption)]),
+        () => ListBuilder<MissingOption>(),
+      )
+      ..addBuilderFactory(
+        const FullType(BuiltList, [FullType(DetailRequirement)]),
+        () => ListBuilder<DetailRequirement>(),
+      )
+      ..addBuilderFactory(
+        const FullType(BuiltSet, [FullType(int)]),
+        () => SetBuilder<int>(),
+      )
+      ..addBuilderFactory(
+        const FullType(BuiltList, [FullType(DetailIngredientDisplay)]),
+        () => ListBuilder<DetailIngredientDisplay>(),
+      )
+      ..addBuilderFactory(
+        const FullType(BuiltList, [FullType(IngredientGroup)]),
+        () => ListBuilder<IngredientGroup>(),
       )
       ..add(const OneOfSerializer())
       ..add(const AnyOfSerializer())

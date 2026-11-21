@@ -48,6 +48,9 @@ public class Recipe {
     @Column(name = "source_channel_id", length = 128)
     private String sourceChannelId;
 
+    @Column(name = "source_channel_thumbnail_url", length = 2048)
+    private String sourceChannelThumbnailUrl;
+
     @Column(name = "source_metadata_fetched_at")
     private OffsetDateTime sourceMetadataFetchedAt;
 
@@ -70,21 +73,22 @@ public class Recipe {
     }
 
     public static Recipe createPublished(String datasetKey, String name, String shortsReference) {
-        return create(datasetKey, name, RecipeStatus.PUBLISHED, shortsReference, null, null, null, null);
+        return create(datasetKey, name, RecipeStatus.PUBLISHED, shortsReference, null, null, null, null, null);
     }
 
     public static Recipe create(String datasetKey, String name, RecipeStatus status, String shortsReference) {
-        return create(datasetKey, name, status, shortsReference, null, null, null, null);
+        return create(datasetKey, name, status, shortsReference, null, null, null, null, null);
     }
 
     public static Recipe create(String datasetKey, String name, RecipeStatus status, String shortsReference,
-            String sourceTitle, String sourceChannelName, String sourceChannelId, OffsetDateTime sourceMetadataFetchedAt) {
+            String sourceTitle, String sourceChannelName, String sourceChannelId, String sourceChannelThumbnailUrl,
+            OffsetDateTime sourceMetadataFetchedAt) {
         Recipe recipe = new Recipe();
         recipe.datasetKey = datasetKey;
         recipe.name = name;
         recipe.status = status;
         recipe.shortsReference = shortsReference;
-        recipe.updateSourceMetadata(sourceTitle, sourceChannelName, sourceChannelId, sourceMetadataFetchedAt);
+        recipe.updateSourceMetadata(sourceTitle, sourceChannelName, sourceChannelId, sourceChannelThumbnailUrl, sourceMetadataFetchedAt);
         return recipe;
     }
 
@@ -98,10 +102,12 @@ public class Recipe {
         this.shortsReference = shortsReference;
     }
 
-    public void updateSourceMetadata(String title, String channelName, String channelId, OffsetDateTime fetchedAt) {
+    public void updateSourceMetadata(String title, String channelName, String channelId, String channelThumbnailUrl,
+            OffsetDateTime fetchedAt) {
         this.sourceTitle = title;
         this.sourceChannelName = channelName;
         this.sourceChannelId = channelId;
+        this.sourceChannelThumbnailUrl = channelThumbnailUrl;
         this.sourceMetadataFetchedAt = fetchedAt;
     }
 
@@ -152,6 +158,7 @@ public class Recipe {
     public String getSourceTitle() { return sourceTitle; }
     public String getSourceChannelName() { return sourceChannelName; }
     public String getSourceChannelId() { return sourceChannelId; }
+    public String getSourceChannelThumbnailUrl() { return sourceChannelThumbnailUrl; }
     public OffsetDateTime getSourceMetadataFetchedAt() { return sourceMetadataFetchedAt; }
 
     public List<RecipeIngredient> getIngredients() {

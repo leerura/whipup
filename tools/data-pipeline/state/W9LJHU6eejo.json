@@ -1,18 +1,385 @@
 {
   "videoId": "W9LJHU6eejo",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/W9LJHU6eejo",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-10-27T10:47:07.367212+00:00",
-    "accountId": "account-a",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAt": "2026-10-27T10:50:41.753767+00:00",
-    "retryAccountId": "account-a"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-14T02:34:25.942525+00:00",
+    "rawResponse": "{\n  \"title\": \"두부조림\",\n  \"description\": null,\n  \"servings\": \"3인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"두부 460g (3인분)\",\n      \"displayName\": \"두부\",\n      \"amount\": \"460\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부 460g (3인분)\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/6개 (40g)\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/6\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/6개는 다지고\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/6개 (40g)\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"홍고추 1개\",\n      \"displayName\": \"홍고추\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"홍고추 1개, 청양고추 1개는 어슷 썰고\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"홍고추 1개, 청양고추 1개\",\n          \"timestamp\": \"01:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 1개\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"홍고추 1개, 청양고추 1개는 어슷 썰고\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"홍고추 1개, 청양고추 1개\",\n          \"timestamp\": \"01:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 2개 (50g)\",\n      \"displayName\": \"대파\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 2개는 송송 썰어요.\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 2개 (50g)\",\n          \"timestamp\": \"01:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 2.5스푼 (17g)\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"2.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 2.5스푼 (17g)\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"국간장 3스푼 (27g)\",\n      \"displayName\": \"국간장\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장 3스푼 (27g)\",\n          \"timestamp\": \"01:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양조간장 1스푼 (12g, 진간장)\",\n      \"displayName\": \"양조간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장 1스푼 (12g, 진간장)\",\n          \"timestamp\": \"01:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"들기름 2스푼 (14g)\",\n      \"displayName\": \"들기름\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"들기름 2스푼 (14g) * 참기름 안돼요. 반드시 들기름!!\",\n          \"timestamp\": \"01:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1스푼 (19g)\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 1스푼 (19g)\",\n          \"timestamp\": \"01:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"갈은 깨 1스푼 (7g)\",\n      \"displayName\": \"갈은 깨\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"갈은 깨 1스푼 (7g) * 통깨를 손으로 으깨서 넣어도 돼요.\",\n          \"timestamp\": \"01:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 200ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"200\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 200ml\",\n          \"timestamp\": \"01:31\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"두부는 도톰하게 썹니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부는 도톰하게 썰어요.\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 1/6개는 다지고, 홍고추 1개와 청양고추 1개는 어슷 썰며, 대파 2개는 송송 썹니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/6개는 다지고\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"홍고추 1개, 청양고추 1개는 어슷 썰고\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 2개는 송송 썰어요.\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 썬 두부를 깝니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"냄비에 두부를 깔고\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"두부 위에 고춧가루 2.5스푼(17g), 국간장 3스푼(27g), 양조간장 1스푼(12g), 들기름 2스푼(14g), 다진마늘 1스푼(19g), 갈은 깨 1스푼(7g), 다진 양파, 썬 대파, 썬 홍고추와 청양고추를 올립니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 2.5스푼 (17g)\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장 3스푼 (27g)\",\n          \"timestamp\": \"01:00\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장 1스푼 (12g, 진간장)\",\n          \"timestamp\": \"01:03\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"들기름 2스푼 (14g)\",\n          \"timestamp\": \"01:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 1스푼 (19g)\",\n          \"timestamp\": \"01:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"갈은 깨 1스푼 (7g)\",\n          \"timestamp\": \"01:13\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/6개 (40g)\",\n          \"timestamp\": \"01:17\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 2개 (50g)\",\n          \"timestamp\": \"01:21\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"홍고추 1개, 청양고추 1개\",\n          \"timestamp\": \"01:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 200ml를 붓습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 200ml\",\n          \"timestamp\": \"01:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 켜고 뚜껑을 닫고 끓입니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"불을 켜고\",\n          \"timestamp\": \"01:36\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"뚜껑을 닫고 끓여요.\",\n          \"timestamp\": \"01:38\"\n        }\n      ]\n    },\n    {\n      \"text\": \"끓으면 불을 중불로 줄여 3분 끓입니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"끓으면 불을 중불로 줄여 3분 끓여요.\",\n          \"timestamp\": \"01:43\"\n        }\n      ]\n    },\n    {\n      \"text\": \"약불에서 4~5분 더 끓여 국물이 약간 있고 자작해지도록 조려 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"약불에서 4~5분 더 끓여요.\",\n          \"timestamp\": \"01:55\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"약불에서 끓여주면 간이 더 잘 배요.\",\n          \"timestamp\": \"02:00\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국물이 자작해지게 끓이되 국물이 약간 있게 끓여요.\",\n          \"timestamp\": \"02:05\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부는 너무 오래 끓이면 단단해지니 주의!!\",\n          \"timestamp\": \"02:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부조림 완성이예요.\",\n          \"timestamp\": \"02:18\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "두부조림",
+      "description": null,
+      "servings": "3인분",
+      "ingredients": [
+        {
+          "rawText": "두부 460g (3인분)",
+          "displayName": "두부",
+          "amount": "460",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부 460g (3인분)",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파 1/6개 (40g)",
+          "displayName": "양파",
+          "amount": "1/6",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/6개는 다지고",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/6개 (40g)",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "홍고추 1개",
+          "displayName": "홍고추",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "홍고추 1개, 청양고추 1개는 어슷 썰고",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "홍고추 1개, 청양고추 1개",
+              "timestamp": "01:27"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "청양고추 1개",
+          "displayName": "청양고추",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "홍고추 1개, 청양고추 1개는 어슷 썰고",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "홍고추 1개, 청양고추 1개",
+              "timestamp": "01:27"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "대파 2개 (50g)",
+          "displayName": "대파",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 2개는 송송 썰어요.",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 2개 (50g)",
+              "timestamp": "01:21"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "고춧가루 2.5스푼 (17g)",
+          "displayName": "고춧가루",
+          "amount": "2.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 2.5스푼 (17g)",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "국간장 3스푼 (27g)",
+          "displayName": "국간장",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장 3스푼 (27g)",
+              "timestamp": "01:00"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "양조간장 1스푼 (12g, 진간장)",
+          "displayName": "양조간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장 1스푼 (12g, 진간장)",
+              "timestamp": "01:03"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "들기름 2스푼 (14g)",
+          "displayName": "들기름",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "들기름 2스푼 (14g) * 참기름 안돼요. 반드시 들기름!!",
+              "timestamp": "01:06"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "다진마늘 1스푼 (19g)",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 1스푼 (19g)",
+              "timestamp": "01:10"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "갈은 깨 1스푼 (7g)",
+          "displayName": "갈은 깨",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "갈은 깨 1스푼 (7g) * 통깨를 손으로 으깨서 넣어도 돼요.",
+              "timestamp": "01:13"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "물 200ml",
+          "displayName": "물",
+          "amount": "200",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 200ml",
+              "timestamp": "01:31"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "두부는 도톰하게 썹니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부는 도톰하게 썰어요.",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "양파 1/6개는 다지고, 홍고추 1개와 청양고추 1개는 어슷 썰며, 대파 2개는 송송 썹니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/6개는 다지고",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "홍고추 1개, 청양고추 1개는 어슷 썰고",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 2개는 송송 썰어요.",
+              "timestamp": "00:40"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 썬 두부를 깝니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "냄비에 두부를 깔고",
+              "timestamp": "00:45"
+            }
+          ]
+        },
+        {
+          "text": "두부 위에 고춧가루 2.5스푼(17g), 국간장 3스푼(27g), 양조간장 1스푼(12g), 들기름 2스푼(14g), 다진마늘 1스푼(19g), 갈은 깨 1스푼(7g), 다진 양파, 썬 대파, 썬 홍고추와 청양고추를 올립니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 2.5스푼 (17g)",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장 3스푼 (27g)",
+              "timestamp": "01:00"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장 1스푼 (12g, 진간장)",
+              "timestamp": "01:03"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "들기름 2스푼 (14g)",
+              "timestamp": "01:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 1스푼 (19g)",
+              "timestamp": "01:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "갈은 깨 1스푼 (7g)",
+              "timestamp": "01:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/6개 (40g)",
+              "timestamp": "01:17"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 2개 (50g)",
+              "timestamp": "01:21"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "홍고추 1개, 청양고추 1개",
+              "timestamp": "01:27"
+            }
+          ]
+        },
+        {
+          "text": "물 200ml를 붓습니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 200ml",
+              "timestamp": "01:31"
+            }
+          ]
+        },
+        {
+          "text": "불을 켜고 뚜껑을 닫고 끓입니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "불을 켜고",
+              "timestamp": "01:36"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "뚜껑을 닫고 끓여요.",
+              "timestamp": "01:38"
+            }
+          ]
+        },
+        {
+          "text": "끓으면 불을 중불로 줄여 3분 끓입니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "끓으면 불을 중불로 줄여 3분 끓여요.",
+              "timestamp": "01:43"
+            }
+          ]
+        },
+        {
+          "text": "약불에서 4~5분 더 끓여 국물이 약간 있고 자작해지도록 조려 완성합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "약불에서 4~5분 더 끓여요.",
+              "timestamp": "01:55"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "약불에서 끓여주면 간이 더 잘 배요.",
+              "timestamp": "02:00"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국물이 자작해지게 끓이되 국물이 약간 있게 끓여요.",
+              "timestamp": "02:05"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부는 너무 오래 끓이면 단단해지니 주의!!",
+              "timestamp": "02:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부조림 완성이예요.",
+              "timestamp": "02:18"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
   }
 }

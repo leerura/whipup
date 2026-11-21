@@ -65,4 +65,5 @@ public class UserAuthAccount {
 	public User getUser() {
 		return user;
 	}
+
 }

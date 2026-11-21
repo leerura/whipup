@@ -1,0 +1,492 @@
+{
+  "videoId": "xL4uRA7djlw",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/xL4uRA7djlw",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-14T13:41:34.881811+00:00",
+    "rawResponse": "{\n  \"title\": \"고기국수\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"물 1.5L\",\n      \"displayName\": \"물\",\n      \"amount\": \"1.5\",\n      \"unit\": \"L\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 1.5L\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 냄비에 물을 부어준 다음\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1spoon\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 1spoon\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘과\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청주 2spoons\",\n      \"displayName\": \"청주\",\n      \"amount\": \"2\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청주 2spoons\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"청주를 살짝만 넣어줄 거야\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"수육용 앞다리살 600g\",\n      \"displayName\": \"수육용 앞다리살\",\n      \"amount\": \"600\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"수육용 앞다리살 600g\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"보쌈용 앞다리살을 넣고\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"사골곰탕 500ml\",\n      \"displayName\": \"사골곰탕\",\n      \"amount\": \"500\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"사골곰탕 500ml\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"시판용 사골곰탕 한 팩을 넣어준 다음\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"미소된장 0.3spoon\",\n      \"displayName\": \"미소된장\",\n      \"amount\": \"0.3\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"미소된장 0.3spoon\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"미소된장을 아주 살짝만 풀어줘\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 0.2spoon\",\n      \"displayName\": \"소금\",\n      \"amount\": \"0.2\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 0.2spoon\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"부족한 간은 소금으로 맞춰준 다음\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"중면\",\n      \"displayName\": \"중면\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"중면\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"육수에 중면을 넣고 삶아준 다음\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란지단\",\n      \"displayName\": \"계란지단\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란지단\",\n          \"timestamp\": \"00:55\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란지단과\",\n          \"timestamp\": \"00:55\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파\",\n          \"timestamp\": \"00:56\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파로 플레이팅을 해줄 거야\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 2spoons\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"2\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 2spoons\",\n          \"timestamp\": \"00:58\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루\",\n          \"timestamp\": \"01:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"국간장 1spoon\",\n      \"displayName\": \"국간장\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장 1spoon\",\n          \"timestamp\": \"00:59\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국간장\",\n          \"timestamp\": \"01:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1spoon\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 1spoon\",\n          \"timestamp\": \"01:00\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘\",\n          \"timestamp\": \"01:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 0.2spoon\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.2\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 0.2spoon\",\n          \"timestamp\": \"01:01\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 0.1spoon\",\n      \"displayName\": \"후추\",\n      \"amount\": \"0.1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 0.1spoon\",\n          \"timestamp\": \"01:02\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추를 넣고\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"빻은 참깨\",\n      \"displayName\": \"빻은 참깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"빻은 참깨\",\n          \"timestamp\": \"01:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"빻은 참깨를 살짝 뿌려주면\",\n          \"timestamp\": \"01:06\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 물 1.5L, 다진 마늘 1스푼, 청주 2스푼을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 냄비에 물을 부어준 다음 다진 마늘과 청주를 살짝만 넣어줄 거야\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비에 물, 다진 마늘, 청주를 붓는다\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비 위에 찜기를 올리고 수육용 앞다리살 600g을 올린 뒤 뚜껑을 덮고 40분간 찐다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 그 위에 찜기를 올린 다음 보쌈용 앞다리살을 넣고 뚜껑을 덮고 40분간 쪄줘\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"뚜껑을 덮고 40분간 찌기\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 끄고 뚜껑을 덮은 채로 10분간 뜸을 들인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그럼 불을 끄고 뚜껑을 덮은 채로 10분간 뜸을 들여줄 거야\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"불을 끄고 뚜껑을 덮은 채로 10분간 뜸들이기\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"쪄낸 수육을 꺼내어 얇게 썰어둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"고기를 꺼내 도마에서 얇게 썬다\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기를 찌던 냄비에서 찜기를 빼고, 남은 고기 찐 국물에 사골곰탕 500ml, 미소된장 0.3스푼, 소금 0.2스푼을 넣어 섞는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"아까 고기를 찌던 찜기를 뺀 다음 고기를 찐 국물에 시판용 사골곰탕 한 팩을 넣어준 다음 미소된장을 아주 살짝만 풀어줘 그리고 부족한 간은 소금으로 맞춰준 다음\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"끓인 육수 중 약 2숟가락 분량을 양념장(다데기) 용으로 따로 덜어둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"육수 두 숟가락 정도를 미리 빼놔줄 거야\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"숟가락으로 육수 2스푼을 작은 볼에 덜어놓는다\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비의 육수에 중면을 넣고 삶은 뒤 건져 그릇에 담는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"육수에 중면을 넣고 삶아준 다음 그릇에 면과 육수를 붓고\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"삶은 면을 건져 그릇에 담는다\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"text\": \"면에 육수를 붓고, 썰어둔 앞다리살 수육, 계란지단, 대파를 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"아까 썰어둔 고기를 올려줘 그리고 계란지단과 대파로 플레이팅을 해줄 거야\",\n          \"timestamp\": \"00:51\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"육수, 앞다리살 수육, 계란지단, 대파\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"text\": \"따로 덜어둔 육수에 고춧가루 2스푼, 국간장 1스푼, 다진 마늘 1스푼, 설탕 0.2스푼, 후추 0.1스푼을 섞어 다데기를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"아까 빼놓은 육수에 고춧가루 국간장 다진 마늘 설탕 후추를 넣고 섞어서 만든\",\n          \"timestamp\": \"00:59\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국수 위에 다데기를 올리고 빻은 참깨를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다데기를 올리고 빻은 참깨를 살짝 뿌려주면 고기는 촉촉하고 국물은 녹진한 고기국수 끝\",\n          \"timestamp\": \"01:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다데기, 빻은 참깨\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "고기국수",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "물 1.5L",
+          "displayName": "물",
+          "amount": "1.5",
+          "unit": "L",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 1.5L",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 냄비에 물을 부어준 다음",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "다진 마늘 1spoon",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 1spoon",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘과",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "청주 2spoons",
+          "displayName": "청주",
+          "amount": "2",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청주 2spoons",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "청주를 살짝만 넣어줄 거야",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "수육용 앞다리살 600g",
+          "displayName": "수육용 앞다리살",
+          "amount": "600",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "수육용 앞다리살 600g",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "보쌈용 앞다리살을 넣고",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "사골곰탕 500ml",
+          "displayName": "사골곰탕",
+          "amount": "500",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "사골곰탕 500ml",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SPEECH",
+              "text": "시판용 사골곰탕 한 팩을 넣어준 다음",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "미소된장 0.3spoon",
+          "displayName": "미소된장",
+          "amount": "0.3",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "미소된장 0.3spoon",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "미소된장을 아주 살짝만 풀어줘",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "소금 0.2spoon",
+          "displayName": "소금",
+          "amount": "0.2",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 0.2spoon",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "부족한 간은 소금으로 맞춰준 다음",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "중면",
+          "displayName": "중면",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "중면",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "SPEECH",
+              "text": "육수에 중면을 넣고 삶아준 다음",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "계란지단",
+          "displayName": "계란지단",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란지단",
+              "timestamp": "00:55"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란지단과",
+              "timestamp": "00:55"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파",
+              "timestamp": "00:56"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파로 플레이팅을 해줄 거야",
+              "timestamp": "00:56"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "고춧가루 2spoons",
+          "displayName": "고춧가루",
+          "amount": "2",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 2spoons",
+              "timestamp": "00:58"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루",
+              "timestamp": "01:00"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "국간장 1spoon",
+          "displayName": "국간장",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장 1spoon",
+              "timestamp": "00:59"
+            },
+            {
+              "type": "SPEECH",
+              "text": "국간장",
+              "timestamp": "01:01"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "다진 마늘 1spoon",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 1spoon",
+              "timestamp": "01:00"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘",
+              "timestamp": "01:01"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "설탕 0.2spoon",
+          "displayName": "설탕",
+          "amount": "0.2",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 0.2spoon",
+              "timestamp": "01:01"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕",
+              "timestamp": "01:02"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "후추 0.1spoon",
+          "displayName": "후추",
+          "amount": "0.1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 0.1spoon",
+              "timestamp": "01:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추를 넣고",
+              "timestamp": "01:02"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "빻은 참깨",
+          "displayName": "빻은 참깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "빻은 참깨",
+              "timestamp": "01:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "빻은 참깨를 살짝 뿌려주면",
+              "timestamp": "01:06"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 물 1.5L, 다진 마늘 1스푼, 청주 2스푼을 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 냄비에 물을 부어준 다음 다진 마늘과 청주를 살짝만 넣어줄 거야",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비에 물, 다진 마늘, 청주를 붓는다",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "냄비 위에 찜기를 올리고 수육용 앞다리살 600g을 올린 뒤 뚜껑을 덮고 40분간 찐다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 그 위에 찜기를 올린 다음 보쌈용 앞다리살을 넣고 뚜껑을 덮고 40분간 쪄줘",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "뚜껑을 덮고 40분간 찌기",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "불을 끄고 뚜껑을 덮은 채로 10분간 뜸을 들인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그럼 불을 끄고 뚜껑을 덮은 채로 10분간 뜸을 들여줄 거야",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "불을 끄고 뚜껑을 덮은 채로 10분간 뜸들이기",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "쪄낸 수육을 꺼내어 얇게 썰어둔다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "고기를 꺼내 도마에서 얇게 썬다",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "고기를 찌던 냄비에서 찜기를 빼고, 남은 고기 찐 국물에 사골곰탕 500ml, 미소된장 0.3스푼, 소금 0.2스푼을 넣어 섞는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "아까 고기를 찌던 찜기를 뺀 다음 고기를 찐 국물에 시판용 사골곰탕 한 팩을 넣어준 다음 미소된장을 아주 살짝만 풀어줘 그리고 부족한 간은 소금으로 맞춰준 다음",
+              "timestamp": "00:30"
+            }
+          ]
+        },
+        {
+          "text": "끓인 육수 중 약 2숟가락 분량을 양념장(다데기) 용으로 따로 덜어둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "육수 두 숟가락 정도를 미리 빼놔줄 거야",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "숟가락으로 육수 2스푼을 작은 볼에 덜어놓는다",
+              "timestamp": "00:40"
+            }
+          ]
+        },
+        {
+          "text": "냄비의 육수에 중면을 넣고 삶은 뒤 건져 그릇에 담는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "육수에 중면을 넣고 삶아준 다음 그릇에 면과 육수를 붓고",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "삶은 면을 건져 그릇에 담는다",
+              "timestamp": "00:46"
+            }
+          ]
+        },
+        {
+          "text": "면에 육수를 붓고, 썰어둔 앞다리살 수육, 계란지단, 대파를 올린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "아까 썰어둔 고기를 올려줘 그리고 계란지단과 대파로 플레이팅을 해줄 거야",
+              "timestamp": "00:51"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "육수, 앞다리살 수육, 계란지단, 대파",
+              "timestamp": "00:50"
+            }
+          ]
+        },
+        {
+          "text": "따로 덜어둔 육수에 고춧가루 2스푼, 국간장 1스푼, 다진 마늘 1스푼, 설탕 0.2스푼, 후추 0.1스푼을 섞어 다데기를 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "아까 빼놓은 육수에 고춧가루 국간장 다진 마늘 설탕 후추를 넣고 섞어서 만든",
+              "timestamp": "00:59"
+            }
+          ]
+        },
+        {
+          "text": "국수 위에 다데기를 올리고 빻은 참깨를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다데기를 올리고 빻은 참깨를 살짝 뿌려주면 고기는 촉촉하고 국물은 녹진한 고기국수 끝",
+              "timestamp": "01:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다데기, 빻은 참깨",
+              "timestamp": "01:05"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "수육을 절대 물에 삶으면 안되는 이유!",
+    "sourceChannelName": "1분요리 뚝딱이형",
+    "sourceChannelId": "UC0htUSwcxfSGNfK_5Q28JkA",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/MHTy5jXZQPwKwrGtAV-gLL6ei9YTOgR8Z6GESkhAAIz0kkG4d6B6vu6CUPNNsLOzqcGxGfBK=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-14T13:41:32.456096Z"
+  }
+}

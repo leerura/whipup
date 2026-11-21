@@ -1,7 +1,7 @@
 package com.whipup.ingredient.service;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
@@ -23,7 +23,7 @@ class OwnedIngredientOnboardingTest {
     private final UserRepository userRepository = mock(UserRepository.class);
 
     @Test
-    void successfulFirstIngredientRegistrationMarksOnboardingComplete() {
+    void directIngredientRegistrationDoesNotCompleteV4Onboarding() {
         User user = User.create();
         assertFalse(user.isOnboardingCompleted());
         IngredientVariant variant = mock(IngredientVariant.class);
@@ -43,7 +43,7 @@ class OwnedIngredientOnboardingTest {
             userRepository
         ).addOwnedIngredient(7L, 5L);
 
-        assertTrue(user.isOnboardingCompleted());
+        assertFalse(user.isOnboardingCompleted());
     }
 
     @Test

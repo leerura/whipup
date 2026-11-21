@@ -1,0 +1,349 @@
+{
+  "videoId": "7sxoPwNhrMU",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/7sxoPwNhrMU",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-14T13:41:39.406399+00:00",
+    "rawResponse": "{\n  \"title\": \"우삼겹 두부조림\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"우삼겹 300g\",\n      \"displayName\": \"우삼겹\",\n      \"amount\": \"300\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"우삼겹 300g\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우삼겹 300g 올려주고\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 반 개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"0.5\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 반 개와\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파와 대파\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 한 대\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"대\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파 한 대\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파와 대파\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"두부\",\n      \"displayName\": \"두부\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부도 올리고\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"두부도 올리고\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 2스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 2스푼\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 2스푼\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1스푼\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 1스푼\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스 1스푼\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 2스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 2스푼\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 2스푼\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 1스푼\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘 1스푼\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추를 정확히 1.23g\",\n      \"displayName\": \"후추\",\n      \"amount\": \"1.23\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추를 정확히 1.23g 뿌리고\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추를 정확히 1.23g 뿌려주고\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 1컵(약 180ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"1\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 1컵(약 180ml)\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 1컵을 부어줍니다\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 우삼겹 300g을 올려 바로 집어 먹어도 될 정도로 구워준 뒤 건져냅니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우삼겹 300g 올려주고 바로 집어서 먹어도 될 정도로 구워준 뒤에 빼줍니다.\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"우삼겹을 팬에서 굽고 그릇에 덜어놓음\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬 바닥에 남아 있는 기름은 키친타월로 70~80% 정도 닦아냅니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬 바닥에 남아 있는 기름은 키친타월로 70~80% 정도 닦아준 뒤에\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"키친타월로 팬의 고기 기름을 닦아냄\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 양파 반 개, 대파 한 대, 썰어둔 두부를 올립니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 반 개와 대파 한 대, 두부도 올리고\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 채 썬 양파, 썬 대파, 썬 두부를 차례로 올림\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"진간장 2스푼, 굴소스 1스푼, 설탕 1스푼, 고춧가루 2스푼, 다진 마늘 1스푼, 후추 1.23g, 물 1컵(약 180ml)을 넣습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 2스푼, 굴소스 1스푼, 설탕 1스푼, 고춧가루 2스푼, 다진 마늘 1스푼, 후추를 정확히 1.23g 뿌려주고, 물 1컵을 부어줍니다.\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"두부 위에 양념재료들과 물을 붓는 모습\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"조림 느낌이 나도록 국물이 다 졸아들 때까지 5분 이상 푹 끓여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 조림 느낌 나게 국물이 다 졸아들 때까지 5분 이상 푹 끓여주다가\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양념과 두부를 센 불에서 국물이 졸아들 때까지 끓임\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"처음에 구워서 빼둔 우삼겹을 위에 올려 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"처음에 구워서 빼둔 우삼겹만 올려주면 밥 2공기는 무조건 먹는 우삼겹 두부조림이 완성됩니다.\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"졸아든 두부조림 위에 구워둔 우삼겹을 올림\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"두부의 정확한 수량 및 중량 미언급\"\n  ]\n}",
+    "result": {
+      "title": "우삼겹 두부조림",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "우삼겹 300g",
+          "displayName": "우삼겹",
+          "amount": "300",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "우삼겹 300g",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "우삼겹 300g 올려주고",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파 반 개",
+          "displayName": "양파",
+          "amount": "0.5",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 반 개와",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파와 대파",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "대파 한 대",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "대",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파 한 대",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파와 대파",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "두부",
+          "displayName": "두부",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부도 올리고",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "두부도 올리고",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "진간장 2스푼",
+          "displayName": "진간장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 2스푼",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장 2스푼",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "굴소스 1스푼",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 1스푼",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "굴소스 1스푼",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "설탕 1스푼",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1스푼",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 1스푼",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "고춧가루 2스푼",
+          "displayName": "고춧가루",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 2스푼",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 2스푼",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "다진 마늘 1스푼",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 1스푼",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘 1스푼",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "후추를 정확히 1.23g",
+          "displayName": "후추",
+          "amount": "1.23",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추를 정확히 1.23g 뿌리고",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추를 정확히 1.23g 뿌려주고",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "물 1컵(약 180ml)",
+          "displayName": "물",
+          "amount": "1",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 1컵(약 180ml)",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 1컵을 부어줍니다",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 우삼겹 300g을 올려 바로 집어 먹어도 될 정도로 구워준 뒤 건져냅니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "우삼겹 300g 올려주고 바로 집어서 먹어도 될 정도로 구워준 뒤에 빼줍니다.",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "우삼겹을 팬에서 굽고 그릇에 덜어놓음",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "팬 바닥에 남아 있는 기름은 키친타월로 70~80% 정도 닦아냅니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬 바닥에 남아 있는 기름은 키친타월로 70~80% 정도 닦아준 뒤에",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "키친타월로 팬의 고기 기름을 닦아냄",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "팬에 양파 반 개, 대파 한 대, 썰어둔 두부를 올립니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 반 개와 대파 한 대, 두부도 올리고",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 채 썬 양파, 썬 대파, 썬 두부를 차례로 올림",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "진간장 2스푼, 굴소스 1스푼, 설탕 1스푼, 고춧가루 2스푼, 다진 마늘 1스푼, 후추 1.23g, 물 1컵(약 180ml)을 넣습니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "진간장 2스푼, 굴소스 1스푼, 설탕 1스푼, 고춧가루 2스푼, 다진 마늘 1스푼, 후추를 정확히 1.23g 뿌려주고, 물 1컵을 부어줍니다.",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "두부 위에 양념재료들과 물을 붓는 모습",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "조림 느낌이 나도록 국물이 다 졸아들 때까지 5분 이상 푹 끓여줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 조림 느낌 나게 국물이 다 졸아들 때까지 5분 이상 푹 끓여주다가",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양념과 두부를 센 불에서 국물이 졸아들 때까지 끓임",
+              "timestamp": "00:21"
+            }
+          ]
+        },
+        {
+          "text": "처음에 구워서 빼둔 우삼겹을 위에 올려 완성합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "처음에 구워서 빼둔 우삼겹만 올려주면 밥 2공기는 무조건 먹는 우삼겹 두부조림이 완성됩니다.",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "졸아든 두부조림 위에 구워둔 우삼겹을 올림",
+              "timestamp": "00:25"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "두부의 정확한 수량 및 중량 미언급"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "입맛 없을 때 무조건 밥 2공기 먹습니다.",
+    "sourceChannelName": "자취요리신 simple cooking",
+    "sourceChannelId": "UCC9pQY_uaBSa0WOpMNJHbEQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/hZHUS5wW20j39kfLUfmeHDwvC8aG7kvNblsP_gXiclsXzf7ixDgAp5ml_2cjqTzMcpsKG9hwkA=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-14T13:41:37.034652Z"
+  }
+}

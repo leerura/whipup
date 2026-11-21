@@ -1,0 +1,402 @@
+{
+  "videoId": "yAN5SXBNj0c",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/yAN5SXBNj0c",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-15T08:23:35.966238+00:00",
+    "rawResponse": "{\n  \"title\": \"얼큰 도가니탕 전골\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"차돌박이\",\n      \"displayName\": \"차돌박이\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"차돌박이\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 전골냄비에 차돌박이와\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"부추\",\n      \"displayName\": \"부추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"부추\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"부추를 깔아준 다음\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"시판용 도가니탕 (뚝딱 도가니탕)\",\n      \"displayName\": \"도가니탕\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"뚝딱 도가니탕\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"시판용 도가니탕을 부어줘\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"표고버섯\",\n      \"displayName\": \"표고버섯\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"표고버섯\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 표고버섯과\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"홍고추\",\n      \"displayName\": \"홍고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"홍고추\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"홍고추로 가볍게 플레이팅을 해 준 다음 끓여줘\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 30ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"30\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 30ml\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물에\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양조간장 30ml\",\n      \"displayName\": \"양조간장\",\n      \"amount\": \"30\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장 30ml\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양조간장과 식초를 1:1:1의 비율로 섞어준 다음\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식초 30ml\",\n      \"displayName\": \"식초\",\n      \"amount\": \"30\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식초 30ml\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"식초를 1:1:1의 비율로 섞어준 다음\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 청양고추\",\n      \"displayName\": \"다진 청양고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 청양고추\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"취향껏 다진 청양고추와\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"연겨자\",\n      \"displayName\": \"연겨자\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"연겨자\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"연겨자를 풀어주면 끝이란다\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"뚝딱 얼큰 다대기\",\n      \"displayName\": \"얼큰 다대기\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"뚝딱 얼큰 다대기\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"내가 개발한 뚝딱 얼큰 다대기를 풀어봐\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"칼국수\",\n      \"displayName\": \"칼국수 면\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"칼국수\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 면까지 넣어서 먹으면\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 남은 도가니탕 국물에 볶음밥까지 해 먹으면\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김가루\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"전골냄비에 차돌박이와 부추를 깔아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 전골냄비에 차돌박이와 부추를 깔아준 다음\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"전골냄비에 차돌박이와 썰어둔 부추를 담는다.\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"도가니탕을 붓고 표고버섯과 홍고추를 올려준 다음 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"시판용 도가니탕을 부어줘... 그리고 표고버섯과 홍고추로 가볍게 플레이팅을 해 준 다음 끓여줘\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비에 도가니탕을 붓고 썰어둔 표고버섯과 홍고추를 얹어 끓인다.\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 30ml, 양조간장 30ml, 식초 30ml를 1:1:1 비율로 섞고 다진 청양고추와 연겨자를 풀어 소스를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물에 양조간장과 식초를 1:1:1의 비율로 섞어준 다음 취향껏 다진 청양고추와 연겨자를 풀어주면 끝이란다\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볼에 물, 양조간장, 식초를 섞은 후 다진 청양고추와 연겨자를 넣어 섞는다.\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기와 건더기를 소스에 찍어 먹다가, 전골 국물에 얼큰 다대기를 풀어 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이렇게만 먹어도 맛있지만 이번에 내가 개발한 뚝딱 얼큰 다대기를 풀어봐\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"전골 국물에 다대기 양념을 풀어 붉은 국물로 끓인다.\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"얼큰해진 국물에 칼국수 면을 넣고 끓여 먹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 면까지 넣어서 먹으면 이건 음식이 아니라 보약이란다\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"전골에 칼국수 면을 넣어 끓여 건져 먹는다.\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"text\": \"남은 국물에 밥과 김가루를 넣고 볶아 볶음밥을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 남은 도가니탕 국물에 볶음밥까지 해 먹으면 얼큰 도가니탕 전골 끝\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"남은 국물에 밥과 김가루를 넣어 볶아 완성한다.\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "얼큰 도가니탕 전골",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "차돌박이",
+          "displayName": "차돌박이",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "차돌박이",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 전골냄비에 차돌박이와",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "부추",
+          "displayName": "부추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "부추",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "부추를 깔아준 다음",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "시판용 도가니탕 (뚝딱 도가니탕)",
+          "displayName": "도가니탕",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "뚝딱 도가니탕",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "시판용 도가니탕을 부어줘",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "표고버섯",
+          "displayName": "표고버섯",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "표고버섯",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 표고버섯과",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "홍고추",
+          "displayName": "홍고추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "홍고추",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "홍고추로 가볍게 플레이팅을 해 준 다음 끓여줘",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "물 30ml",
+          "displayName": "물",
+          "amount": "30",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 30ml",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물에",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "양조간장 30ml",
+          "displayName": "양조간장",
+          "amount": "30",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장 30ml",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양조간장과 식초를 1:1:1의 비율로 섞어준 다음",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "식초 30ml",
+          "displayName": "식초",
+          "amount": "30",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식초 30ml",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "식초를 1:1:1의 비율로 섞어준 다음",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "다진 청양고추",
+          "displayName": "다진 청양고추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 청양고추",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SPEECH",
+              "text": "취향껏 다진 청양고추와",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "연겨자",
+          "displayName": "연겨자",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "연겨자",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "연겨자를 풀어주면 끝이란다",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "뚝딱 얼큰 다대기",
+          "displayName": "얼큰 다대기",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "뚝딱 얼큰 다대기",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "SPEECH",
+              "text": "내가 개발한 뚝딱 얼큰 다대기를 풀어봐",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "칼국수",
+          "displayName": "칼국수 면",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "칼국수",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 면까지 넣어서 먹으면",
+              "timestamp": "00:43"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 남은 도가니탕 국물에 볶음밥까지 해 먹으면",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "김가루",
+          "displayName": "김가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김가루",
+              "timestamp": "00:53"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        }
+      ],
+      "steps": [
+        {
+          "text": "전골냄비에 차돌박이와 부추를 깔아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 전골냄비에 차돌박이와 부추를 깔아준 다음",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "전골냄비에 차돌박이와 썰어둔 부추를 담는다.",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "도가니탕을 붓고 표고버섯과 홍고추를 올려준 다음 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "시판용 도가니탕을 부어줘... 그리고 표고버섯과 홍고추로 가볍게 플레이팅을 해 준 다음 끓여줘",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비에 도가니탕을 붓고 썰어둔 표고버섯과 홍고추를 얹어 끓인다.",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "물 30ml, 양조간장 30ml, 식초 30ml를 1:1:1 비율로 섞고 다진 청양고추와 연겨자를 풀어 소스를 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물에 양조간장과 식초를 1:1:1의 비율로 섞어준 다음 취향껏 다진 청양고추와 연겨자를 풀어주면 끝이란다",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볼에 물, 양조간장, 식초를 섞은 후 다진 청양고추와 연겨자를 넣어 섞는다.",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "고기와 건더기를 소스에 찍어 먹다가, 전골 국물에 얼큰 다대기를 풀어 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이렇게만 먹어도 맛있지만 이번에 내가 개발한 뚝딱 얼큰 다대기를 풀어봐",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "전골 국물에 다대기 양념을 풀어 붉은 국물로 끓인다.",
+              "timestamp": "00:37"
+            }
+          ]
+        },
+        {
+          "text": "얼큰해진 국물에 칼국수 면을 넣고 끓여 먹는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 면까지 넣어서 먹으면 이건 음식이 아니라 보약이란다",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "전골에 칼국수 면을 넣어 끓여 건져 먹는다.",
+              "timestamp": "00:44"
+            }
+          ]
+        },
+        {
+          "text": "남은 국물에 밥과 김가루를 넣고 볶아 볶음밥을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 남은 도가니탕 국물에 볶음밥까지 해 먹으면 얼큰 도가니탕 전골 끝",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "남은 국물에 밥과 김가루를 넣어 볶아 완성한다.",
+              "timestamp": "00:52"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "제대로 돈 벌려고 제대로 만들었습니다!",
+    "sourceChannelName": "1분요리 뚝딱이형",
+    "sourceChannelId": "UC0htUSwcxfSGNfK_5Q28JkA",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/MHTy5jXZQPwKwrGtAV-gLL6ei9YTOgR8Z6GESkhAAIz0kkG4d6B6vu6CUPNNsLOzqcGxGfBK=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-15T08:23:33.098288Z"
+  }
+}

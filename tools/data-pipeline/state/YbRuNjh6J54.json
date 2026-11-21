@@ -1,0 +1,416 @@
+{
+  "videoId": "YbRuNjh6J54",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/YbRuNjh6J54",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-15T08:08:52.723334+00:00",
+    "rawResponse": "{\n  \"title\": \"사골 육개장\",\n  \"description\": \"20분 만에 끓여내는 진하고 얼큰한 사골 육개장 레시피\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"대파 2대 정도 (1인분 기준)\",\n      \"displayName\": \"대파\",\n      \"amount\": \"2\",\n      \"unit\": \"대\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"1인분 기준 대파 2대 정도 넣어줄 거고요\",\n          \"timestamp\": \"0:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"1인분 기준 대파 2대 정도\",\n          \"timestamp\": \"0:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리브오일 8숟갈\",\n      \"displayName\": \"올리브오일\",\n      \"amount\": \"8\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"올리브오일 여덟 숟갈 두르고\",\n          \"timestamp\": \"0:12\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"올리브오일 8숟갈 두르고\",\n          \"timestamp\": \"0:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우삼겹\",\n      \"displayName\": \"우삼겹\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우삼겹 넣어서 같이 볶아주고요\",\n          \"timestamp\": \"0:16\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"우삼겹 넣어서\",\n          \"timestamp\": \"0:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 8숟갈\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"8\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 여덟 숟갈\",\n          \"timestamp\": \"0:21\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루 8숟갈\",\n          \"timestamp\": \"0:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 2숟갈\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"2\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘 두 숟갈 넣고\",\n          \"timestamp\": \"0:22\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘 2숟갈 넣고\",\n          \"timestamp\": \"0:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 8컵\",\n      \"displayName\": \"물\",\n      \"amount\": \"8\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 물 여덟 컵 추가해서\",\n          \"timestamp\": \"0:24\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 물 8컵 추가해서\",\n          \"timestamp\": \"0:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"사골 육수 2팩\",\n      \"displayName\": \"사골 육수\",\n      \"amount\": \"2\",\n      \"unit\": \"팩\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"사골육수 두 팩 부어줄게요\",\n          \"timestamp\": \"0:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"사골 육수 2팩 부어줄게요\",\n          \"timestamp\": \"0:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"꽃소금 2숟갈\",\n      \"displayName\": \"꽃소금\",\n      \"amount\": \"2\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"꽃소금 두 숟갈\",\n          \"timestamp\": \"0:44\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"꽃소금 2숟갈\",\n          \"timestamp\": \"0:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"까나리액젓 4숟갈\",\n      \"displayName\": \"까나리액젓\",\n      \"amount\": \"4\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"까나리액젓 네 숟갈\",\n          \"timestamp\": \"0:44\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"까나리액젓 4숟갈\",\n          \"timestamp\": \"0:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"생강 반 숟갈\",\n      \"displayName\": \"생강\",\n      \"amount\": \"0.5\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 생강 반 숟갈 추가해서\",\n          \"timestamp\": \"0:45\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 생강 반 숟갈\",\n          \"timestamp\": \"0:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"난각 1번 계란 4개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"4\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"믹싱볼에 난각 1번 계란 네 개 까서 잘 풀어주고요\",\n          \"timestamp\": \"0:49\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"난각 1번 계란 4개 까서\",\n          \"timestamp\": \"0:50\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란물을 두른 후 순후추를 냄비에 톡톡 뿌림\",\n          \"timestamp\": \"0:54\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"송송 썬 대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란물 투하 후 송송 썬 대파를 냄비에 추가함\",\n          \"timestamp\": \"0:53\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"대파를 손가락 정도의 길이로 큼직하게 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"손가락 정도 길이로 큼직하게 썰어줍니다\",\n          \"timestamp\": \"0:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"손가락 정도 길이로 큼직하게 썰어줍니다\",\n          \"timestamp\": \"0:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"달궈진 팬에 올리브오일 8숟갈을 두르고 대파를 노릇하게 구워준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"달궈진 팬에 올리브오일 여덟 숟갈 두르고 대파를 노릇하게 구워주세요\",\n          \"timestamp\": \"0:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"달궈진 팬에 올리브오일 8숟갈 두르고 대파를 노릇하게 구워주세요\",\n          \"timestamp\": \"0:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파가 노릇하게 익기 시작하면 우삼겹을 넣어 색깔이 변할 때까지 함께 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파가 노릇하게 익기 시작하면 우삼겹 넣어서 같이 볶아주고요\",\n          \"timestamp\": \"0:15\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"우삼겹 넣어서 같이 볶아주고요 우삼겹 색깔이 변했을 때\",\n          \"timestamp\": \"0:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"우삼겹의 색이 변하면 약불로 줄이고 고춧가루 8숟갈과 다진 마늘 2숟갈을 넣어 약 1분간 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"약불로 줄여준 다음 고춧가루 여덟 숟갈 다진마늘 두 숟갈 넣고 일 분 정도 볶아줍니다\",\n          \"timestamp\": \"0:19\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"약불로 줄여준 다음 고춧가루 8숟갈 다진마늘 2숟갈 넣고 1분 정도 볶아줍니다\",\n          \"timestamp\": \"0:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 8컵을 붓고 보글보글 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 물 여덟 컵 추가해서 보글보글 끓여줄 거예요\",\n          \"timestamp\": \"0:24\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이제 물 8컵 추가해서 보글보글 끓여줄 거예요\",\n          \"timestamp\": \"0:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"사골 육수 2팩을 부어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"깊은 맛을 위해서 사골육수 두 팩 부어줄게요\",\n          \"timestamp\": \"0:29\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"깊은 맛을 위해서 사골 육수 2팩 부어줄게요\",\n          \"timestamp\": \"0:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"꽃소금 2숟갈, 까나리액젓 4숟갈, 생강 반 숟갈을 넣고 보글보글 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"꽃소금 두 숟갈 까나리액젓 네 숟갈 여기에 생강 반 숟갈 추가해서 보글보글 끓여줍니다\",\n          \"timestamp\": \"0:44\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"꽃소금 2숟갈 까나리액젓 4숟갈 여기에 생강 반 숟갈 보글보글 끓여줍니다!\",\n          \"timestamp\": \"0:44\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 4개를 풀어 끓는 국물 위에 천천히 원을 그리며 붓고 썬 대파와 후추를 넣은 뒤, 10초간 그대로 두었다가 살살 저어 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"믹싱볼에 난각 1번 계란 네 개 까서 잘 풀어주고요 천천히 원을 그리면서 부어준 다음 바로 휘젓지 말고 십 초 기다렸다가 살살살 저어주면 전문점보다 맛있는 사골 육개장 완성이에요\",\n          \"timestamp\": \"0:49\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"난각 1번 계란 4개 까서 천천히 원을 그리면서 바로 휘젓지 말고 10초 기다렸다가 살살살 저어주면 사골 육개장\",\n          \"timestamp\": \"0:50\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란물을 원 그리며 붓고, 썬 대파와 후추를 뿌린 뒤 잠시 후 국자로 살살 저음\",\n          \"timestamp\": \"0:52\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"우삼겹의 정확한 중량(g)은 언급되지 않음\",\n    \"마지막에 추가된 송송 썬 대파 및 후춧가루의 구체적인 양은 제시되지 않음\",\n    \"전체 완성 요리의 총 분량/인분수는 명시되지 않음 (대파 2대는 '1인분 기준'으로만 언급됨)\"\n  ]\n}",
+    "result": {
+      "title": "사골 육개장",
+      "description": "20분 만에 끓여내는 진하고 얼큰한 사골 육개장 레시피",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "대파 2대 정도 (1인분 기준)",
+          "displayName": "대파",
+          "amount": "2",
+          "unit": "대",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "1인분 기준 대파 2대 정도 넣어줄 거고요",
+              "timestamp": "0:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "1인분 기준 대파 2대 정도",
+              "timestamp": "0:07"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "올리브오일 8숟갈",
+          "displayName": "올리브오일",
+          "amount": "8",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "올리브오일 여덟 숟갈 두르고",
+              "timestamp": "0:12"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "올리브오일 8숟갈 두르고",
+              "timestamp": "0:12"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "우삼겹",
+          "displayName": "우삼겹",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "우삼겹 넣어서 같이 볶아주고요",
+              "timestamp": "0:16"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "우삼겹 넣어서",
+              "timestamp": "0:16"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "고춧가루 8숟갈",
+          "displayName": "고춧가루",
+          "amount": "8",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 여덟 숟갈",
+              "timestamp": "0:21"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루 8숟갈",
+              "timestamp": "0:21"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "다진마늘 2숟갈",
+          "displayName": "다진마늘",
+          "amount": "2",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진마늘 두 숟갈 넣고",
+              "timestamp": "0:22"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘 2숟갈 넣고",
+              "timestamp": "0:22"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "물 8컵",
+          "displayName": "물",
+          "amount": "8",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 물 여덟 컵 추가해서",
+              "timestamp": "0:24"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 물 8컵 추가해서",
+              "timestamp": "0:24"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "사골 육수 2팩",
+          "displayName": "사골 육수",
+          "amount": "2",
+          "unit": "팩",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "사골육수 두 팩 부어줄게요",
+              "timestamp": "0:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "사골 육수 2팩 부어줄게요",
+              "timestamp": "0:30"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "꽃소금 2숟갈",
+          "displayName": "꽃소금",
+          "amount": "2",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "꽃소금 두 숟갈",
+              "timestamp": "0:44"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "꽃소금 2숟갈",
+              "timestamp": "0:44"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "까나리액젓 4숟갈",
+          "displayName": "까나리액젓",
+          "amount": "4",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "까나리액젓 네 숟갈",
+              "timestamp": "0:44"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "까나리액젓 4숟갈",
+              "timestamp": "0:44"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "생강 반 숟갈",
+          "displayName": "생강",
+          "amount": "0.5",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 생강 반 숟갈 추가해서",
+              "timestamp": "0:45"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 생강 반 숟갈",
+              "timestamp": "0:46"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "난각 1번 계란 4개",
+          "displayName": "계란",
+          "amount": "4",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "믹싱볼에 난각 1번 계란 네 개 까서 잘 풀어주고요",
+              "timestamp": "0:49"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "난각 1번 계란 4개 까서",
+              "timestamp": "0:50"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란물을 두른 후 순후추를 냄비에 톡톡 뿌림",
+              "timestamp": "0:54"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "송송 썬 대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란물 투하 후 송송 썬 대파를 냄비에 추가함",
+              "timestamp": "0:53"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "대파를 손가락 정도의 길이로 큼직하게 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "손가락 정도 길이로 큼직하게 썰어줍니다",
+              "timestamp": "0:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "손가락 정도 길이로 큼직하게 썰어줍니다",
+              "timestamp": "0:09"
+            }
+          ]
+        },
+        {
+          "text": "달궈진 팬에 올리브오일 8숟갈을 두르고 대파를 노릇하게 구워준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "달궈진 팬에 올리브오일 여덟 숟갈 두르고 대파를 노릇하게 구워주세요",
+              "timestamp": "0:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "달궈진 팬에 올리브오일 8숟갈 두르고 대파를 노릇하게 구워주세요",
+              "timestamp": "0:11"
+            }
+          ]
+        },
+        {
+          "text": "대파가 노릇하게 익기 시작하면 우삼겹을 넣어 색깔이 변할 때까지 함께 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파가 노릇하게 익기 시작하면 우삼겹 넣어서 같이 볶아주고요",
+              "timestamp": "0:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "우삼겹 넣어서 같이 볶아주고요 우삼겹 색깔이 변했을 때",
+              "timestamp": "0:17"
+            }
+          ]
+        },
+        {
+          "text": "우삼겹의 색이 변하면 약불로 줄이고 고춧가루 8숟갈과 다진 마늘 2숟갈을 넣어 약 1분간 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "약불로 줄여준 다음 고춧가루 여덟 숟갈 다진마늘 두 숟갈 넣고 일 분 정도 볶아줍니다",
+              "timestamp": "0:19"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "약불로 줄여준 다음 고춧가루 8숟갈 다진마늘 2숟갈 넣고 1분 정도 볶아줍니다",
+              "timestamp": "0:20"
+            }
+          ]
+        },
+        {
+          "text": "물 8컵을 붓고 보글보글 끓여준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 물 여덟 컵 추가해서 보글보글 끓여줄 거예요",
+              "timestamp": "0:24"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이제 물 8컵 추가해서 보글보글 끓여줄 거예요",
+              "timestamp": "0:24"
+            }
+          ]
+        },
+        {
+          "text": "사골 육수 2팩을 부어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "깊은 맛을 위해서 사골육수 두 팩 부어줄게요",
+              "timestamp": "0:29"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "깊은 맛을 위해서 사골 육수 2팩 부어줄게요",
+              "timestamp": "0:29"
+            }
+          ]
+        },
+        {
+          "text": "꽃소금 2숟갈, 까나리액젓 4숟갈, 생강 반 숟갈을 넣고 보글보글 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "꽃소금 두 숟갈 까나리액젓 네 숟갈 여기에 생강 반 숟갈 추가해서 보글보글 끓여줍니다",
+              "timestamp": "0:44"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "꽃소금 2숟갈 까나리액젓 4숟갈 여기에 생강 반 숟갈 보글보글 끓여줍니다!",
+              "timestamp": "0:44"
+            }
+          ]
+        },
+        {
+          "text": "계란 4개를 풀어 끓는 국물 위에 천천히 원을 그리며 붓고 썬 대파와 후추를 넣은 뒤, 10초간 그대로 두었다가 살살 저어 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "믹싱볼에 난각 1번 계란 네 개 까서 잘 풀어주고요 천천히 원을 그리면서 부어준 다음 바로 휘젓지 말고 십 초 기다렸다가 살살살 저어주면 전문점보다 맛있는 사골 육개장 완성이에요",
+              "timestamp": "0:49"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "난각 1번 계란 4개 까서 천천히 원을 그리면서 바로 휘젓지 말고 10초 기다렸다가 살살살 저어주면 사골 육개장",
+              "timestamp": "0:50"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란물을 원 그리며 붓고, 썬 대파와 후추를 뿌린 뒤 잠시 후 국자로 살살 저음",
+              "timestamp": "0:52"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "우삼겹의 정확한 중량(g)은 언급되지 않음",
+        "마지막에 추가된 송송 썬 대파 및 후춧가루의 구체적인 양은 제시되지 않음",
+        "전체 완성 요리의 총 분량/인분수는 명시되지 않음 (대파 2대는 '1인분 기준'으로만 언급됨)"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "육개장은 대파만 잔뜩 넣으면, 게임 끝이에요‼️",
+    "sourceChannelName": "김진순 점심시간",
+    "sourceChannelId": "UC9She1e6OWUpwJpwZtbqhjQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/BvOrdVOmTRlMEFygfbeuka_30BrSZenSof2_yC4RCxF0gEKvRzJTn6NEzMTJYQSe8aBxV9iMbQ=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-15T08:08:50.417564Z"
+  }
+}

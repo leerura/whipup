@@ -17,6 +17,8 @@ class _$DetailRequirementOption extends DetailRequirementOption {
   final String? unit;
   @override
   final BuiltList<DetailIngredientDisplay> substitutes;
+  @override
+  final BuiltList<IngredientVariantOption> addableVariants;
 
   factory _$DetailRequirementOption(
           [void Function(DetailRequirementOptionBuilder)? updates]) =>
@@ -27,7 +29,8 @@ class _$DetailRequirementOption extends DetailRequirementOption {
       required this.rawText,
       this.amount,
       this.unit,
-      required this.substitutes})
+      required this.substitutes,
+      required this.addableVariants})
       : super._();
   @override
   DetailRequirementOption rebuild(
@@ -46,7 +49,8 @@ class _$DetailRequirementOption extends DetailRequirementOption {
         rawText == other.rawText &&
         amount == other.amount &&
         unit == other.unit &&
-        substitutes == other.substitutes;
+        substitutes == other.substitutes &&
+        addableVariants == other.addableVariants;
   }
 
   @override
@@ -57,6 +61,7 @@ class _$DetailRequirementOption extends DetailRequirementOption {
     _$hash = $jc(_$hash, amount.hashCode);
     _$hash = $jc(_$hash, unit.hashCode);
     _$hash = $jc(_$hash, substitutes.hashCode);
+    _$hash = $jc(_$hash, addableVariants.hashCode);
     _$hash = $jf(_$hash);
     return _$hash;
   }
@@ -68,7 +73,8 @@ class _$DetailRequirementOption extends DetailRequirementOption {
           ..add('rawText', rawText)
           ..add('amount', amount)
           ..add('unit', unit)
-          ..add('substitutes', substitutes))
+          ..add('substitutes', substitutes)
+          ..add('addableVariants', addableVariants))
         .toString();
   }
 }
@@ -100,6 +106,12 @@ class DetailRequirementOptionBuilder
   set substitutes(ListBuilder<DetailIngredientDisplay>? substitutes) =>
       _$this._substitutes = substitutes;
 
+  ListBuilder<IngredientVariantOption>? _addableVariants;
+  ListBuilder<IngredientVariantOption> get addableVariants =>
+      _$this._addableVariants ??= ListBuilder<IngredientVariantOption>();
+  set addableVariants(ListBuilder<IngredientVariantOption>? addableVariants) =>
+      _$this._addableVariants = addableVariants;
+
   DetailRequirementOptionBuilder() {
     DetailRequirementOption._defaults(this);
   }
@@ -112,6 +124,7 @@ class DetailRequirementOptionBuilder
       _amount = $v.amount;
       _unit = $v.unit;
       _substitutes = $v.substitutes.toBuilder();
+      _addableVariants = $v.addableVariants.toBuilder();
       _$v = null;
     }
     return this;
@@ -142,12 +155,15 @@ class DetailRequirementOptionBuilder
             amount: amount,
             unit: unit,
             substitutes: substitutes.build(),
+            addableVariants: addableVariants.build(),
           );
     } catch (_) {
       late String _$failedField;
       try {
         _$failedField = 'substitutes';
         substitutes.build();
+        _$failedField = 'addableVariants';
+        addableVariants.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
             r'DetailRequirementOption', _$failedField, e.toString());

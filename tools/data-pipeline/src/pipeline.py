@@ -18,7 +18,7 @@ from gemini_client import GeminiClient
 from retry import resolve_retry_at, retry_decision
 from state import claim_video, heartbeat, load_video, recover_stale_claims, release_claim, save_runtime_status, save_video, update_worker
 from validator import validate_source_extraction
-from youtube import extract_video_id, fetch_source_metadata
+from youtube import extract_video_id, fetch_source_metadata, is_short
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUT_FILE = ROOT / "input" / "shorts-urls.txt"
@@ -195,6 +195,15 @@ def process_claimed_video(video_id: str, source_url: str, client: GeminiClient, 
     # claim_video has already set the durable lease. Keep it until result/error
     # state is saved; no other account can duplicate this Gemini request.
     from state import locked_video
+    # 쇼츠가 아닌 영상은 Gemini 쿼터를 쓰지 않고 건너뛴다. 확인하지 못하면(None) 그대로 진행한다.
+    if is_short(video_id) is False:
+        skipped = load_video(video_id)
+        skipped["status"] = "SKIPPED_NOT_SHORT"
+        skipped.setdefault("extraction", {}).update({"status": "SKIPPED", "reason": "not a YouTube Short"})
+        if release_claim(skipped, worker_id):
+            print(f"[{video_id}] SKIPPED_NOT_SHORT: not a YouTube Short", flush=True)
+            return "SKIPPED_NOT_SHORT"
+        return "PENDING"
     with locked_video(video_id) as persisted:
         if persisted.get("lease", {}).get("workerId") != worker_id:
             return "PENDING"

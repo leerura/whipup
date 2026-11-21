@@ -30,11 +30,40 @@ public class User {
 	@Column(name = "onboarding_completed", nullable = false)
 	private boolean onboardingCompleted;
 
+	@Column(name = "terms_version")
+	private String termsVersion;
+
+	@Column(name = "terms_accepted_at")
+	private OffsetDateTime termsAcceptedAt;
+
+	@Column(name = "privacy_version")
+	private String privacyVersion;
+
+	@Column(name = "privacy_accepted_at")
+	private OffsetDateTime privacyAcceptedAt;
+
+	@Column(name = "age_14_confirmed_at")
+	private OffsetDateTime age14ConfirmedAt;
+
+	@Column(name = "last_active_at", nullable = false)
+	private OffsetDateTime lastActiveAt;
+
 	protected User() {
 	}
 
 	public static User create() {
-		return new User();
+		User user = new User();
+		user.lastActiveAt = OffsetDateTime.now();
+		return user;
+	}
+
+	/** Records that the account was just used, so it is not deleted as inactive. */
+	public void markActive(OffsetDateTime now) {
+		this.lastActiveAt = now;
+	}
+
+	public OffsetDateTime getLastActiveAt() {
+		return lastActiveAt;
 	}
 
 	public Long getId() {
@@ -47,5 +76,25 @@ public class User {
 
 	public void markOnboardingCompleted() {
 		this.onboardingCompleted = true;
+	}
+
+	public boolean requiresTermsConsent(String currentTermsVersion, String currentPrivacyVersion) {
+		return termsAcceptedAt == null
+				|| privacyAcceptedAt == null
+				|| age14ConfirmedAt == null
+				|| !currentTermsVersion.equals(termsVersion)
+				|| !currentPrivacyVersion.equals(privacyVersion);
+	}
+
+	public void acceptTerms(
+			String termsVersion,
+			String privacyVersion,
+			OffsetDateTime acceptedAt
+	) {
+		this.termsVersion = termsVersion;
+		this.termsAcceptedAt = acceptedAt;
+		this.privacyVersion = privacyVersion;
+		this.privacyAcceptedAt = acceptedAt;
+		this.age14ConfirmedAt = acceptedAt;
 	}
 }

@@ -15,6 +15,8 @@ class _$LoginResponse extends LoginResponse {
   final bool hasOwnedIngredients;
   @override
   final bool onboardingCompleted;
+  @override
+  final bool termsConsentRequired;
 
   factory _$LoginResponse([void Function(LoginResponseBuilder)? updates]) =>
       (LoginResponseBuilder()..update(updates))._build();
@@ -23,7 +25,8 @@ class _$LoginResponse extends LoginResponse {
       {required this.accessToken,
       required this.user,
       required this.hasOwnedIngredients,
-      required this.onboardingCompleted})
+      required this.onboardingCompleted,
+      required this.termsConsentRequired})
       : super._();
   @override
   LoginResponse rebuild(void Function(LoginResponseBuilder) updates) =>
@@ -39,7 +42,8 @@ class _$LoginResponse extends LoginResponse {
         accessToken == other.accessToken &&
         user == other.user &&
         hasOwnedIngredients == other.hasOwnedIngredients &&
-        onboardingCompleted == other.onboardingCompleted;
+        onboardingCompleted == other.onboardingCompleted &&
+        termsConsentRequired == other.termsConsentRequired;
   }
 
   @override
@@ -49,6 +53,7 @@ class _$LoginResponse extends LoginResponse {
     _$hash = $jc(_$hash, user.hashCode);
     _$hash = $jc(_$hash, hasOwnedIngredients.hashCode);
     _$hash = $jc(_$hash, onboardingCompleted.hashCode);
+    _$hash = $jc(_$hash, termsConsentRequired.hashCode);
     _$hash = $jf(_$hash);
     return _$hash;
   }
@@ -59,7 +64,8 @@ class _$LoginResponse extends LoginResponse {
           ..add('accessToken', accessToken)
           ..add('user', user)
           ..add('hasOwnedIngredients', hasOwnedIngredients)
-          ..add('onboardingCompleted', onboardingCompleted))
+          ..add('onboardingCompleted', onboardingCompleted)
+          ..add('termsConsentRequired', termsConsentRequired))
         .toString();
   }
 }
@@ -86,6 +92,11 @@ class LoginResponseBuilder
   set onboardingCompleted(bool? onboardingCompleted) =>
       _$this._onboardingCompleted = onboardingCompleted;
 
+  bool? _termsConsentRequired;
+  bool? get termsConsentRequired => _$this._termsConsentRequired;
+  set termsConsentRequired(bool? termsConsentRequired) =>
+      _$this._termsConsentRequired = termsConsentRequired;
+
   LoginResponseBuilder() {
     LoginResponse._defaults(this);
   }
@@ -97,6 +108,7 @@ class LoginResponseBuilder
       _user = $v.user.toBuilder();
       _hasOwnedIngredients = $v.hasOwnedIngredients;
       _onboardingCompleted = $v.onboardingCompleted;
+      _termsConsentRequired = $v.termsConsentRequired;
       _$v = null;
     }
     return this;
@@ -127,6 +139,8 @@ class LoginResponseBuilder
                 hasOwnedIngredients, r'LoginResponse', 'hasOwnedIngredients'),
             onboardingCompleted: BuiltValueNullFieldError.checkNotNull(
                 onboardingCompleted, r'LoginResponse', 'onboardingCompleted'),
+            termsConsentRequired: BuiltValueNullFieldError.checkNotNull(
+                termsConsentRequired, r'LoginResponse', 'termsConsentRequired'),
           );
     } catch (_) {
       late String _$failedField;

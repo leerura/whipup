@@ -138,7 +138,7 @@ class _AccountDeletionScreenState extends State<AccountDeletionScreen> {
                     SizedBox(height: 12),
                     Text('•  온보딩 완료 상태'),
                     SizedBox(height: 12),
-                    Text('•  연결된 소셜 계정 정보'),
+                    Text('•  약관 동의 기록'),
                   ],
                 ),
               ),

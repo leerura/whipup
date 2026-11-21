@@ -1,0 +1,71 @@
+---
+import Base from '../../layouts/Base.astro';
+import InstallBlock from '../../components/InstallBlock.astro';
+import { getRecipes, recipePath } from '../../lib/data';
+
+export function getStaticPaths() {
+  return getRecipes().map((recipe) => ({ params: { slug: recipe.slug }, props: { recipe } }));
+}
+const { recipe } = Astro.props;
+const title = `${recipe.name} - ${recipe.channelName} | Whippy`;
+const required = recipe.ingredients.filter((i) => !i.optional);
+const optional = recipe.ingredients.filter((i) => i.optional);
+const site = (Astro.site?.toString() ?? 'http://localhost:4321').replace(/\/$/, '');
+const jsonLd = [{
+  '@context': 'https://schema.org',
+  '@type': 'Recipe',
+  name: recipe.name,
+  description: recipe.summary,
+  image: [recipe.thumbnail],
+  author: { '@type': 'Person', name: recipe.channelName },
+  recipeIngredient: recipe.ingredients.map((i) => (i.quantity ? `${i.name} ${i.quantity}` : i.name)),
+  recipeInstructions: recipe.steps.map((text, i) => ({ '@type': 'HowToStep', position: i + 1, text })),
+  video: {
+    '@type': 'VideoObject',
+    name: recipe.sourceTitle ?? recipe.name,
+    description: recipe.summary,
+    thumbnailUrl: recipe.thumbnail,
+    embedUrl: recipe.embedUrl,
+    contentUrl: recipe.videoUrl,
+  },
+  mainEntityOfPage: `${site}${recipePath(recipe)}`,
+  inLanguage: 'ko',
+}];
+---
+<Base title={title} description={recipe.summary} path={recipePath(recipe)} image={recipe.thumbnail} jsonLd={jsonLd} current="home">
+  <div class="page-head container" style="padding-bottom:0">
+    <div class="crumbs"><a href="/">레시피</a> › {recipe.name}</div>
+  </div>
+
+  <article>
+    <div class="detail">
+      <div>
+        <div class="video">
+          <iframe src={recipe.embedUrl} title={`${recipe.name} 쇼츠 영상`} loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="source">
+          <strong>출처 · {recipe.channelName}</strong>
+          <span>{recipe.sourceTitle ?? recipe.name} · <a href={recipe.videoUrl} target="_blank" rel="noopener">YouTube에서 보기 ↗</a></span>
+        </div>
+      </div>
+      <div>
+        <h1>{recipe.name}</h1>
+        <p class="summary">{recipe.summary}</p>
+        <section class="ingredients" aria-label="재료">
+          <h2>재료 {required.length}개</h2>
+          <ul>
+            {required.map((i) => <li><span>{i.name}</span><span>{i.quantity}</span></li>)}
+            {optional.map((i) => <li><span>{i.name}<span class="optional">선택</span></span><span>{i.quantity}</span></li>)}
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <section class="steps" aria-label="만드는 순서">
+      <h2>만드는 순서</h2>
+      <ol>{recipe.steps.map((s) => <li><span>{s}</span></li>)}</ol>
+    </section>
+  </article>
+
+  <InstallBlock heading="이 레시피, 내 냉장고 재료로 만들 수 있을까요?" note="앱에 재료를 담아 두면 이 요리에 부족한 재료만 바로 알려드려요." />
+</Base>

@@ -1,0 +1,331 @@
+{
+  "videoId": "yJ-VswE4XEQ",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/yJ-VswE4XEQ",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-15T08:12:53.826491+00:00",
+    "rawResponse": "{\n  \"title\": \"10분 만두국\",\n  \"description\": \"비오는 날 칼칼하게 먹기 좋은, 마른 당면을 불리지 않고 끓여내는 초간단 10분 만두국 레시피\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"선호하는 교자 만두\",\n      \"displayName\": \"교자만두\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"개인 입맛에 따라 선호하는 교자 만두를 준비해주고요!\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"선호하는 교자 만두를 준비해주고요!\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"비비고 왕교자 한 봉지를 끓는 국물에 투하함\",\n          \"timestamp\": \"00:59\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마른 당면\",\n      \"displayName\": \"마른 당면\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마른 당면 불리지 말고! 이렇게 만들어 보세요!\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마른 당면 불리지 말고!\",\n          \"timestamp\": \"00:01\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"불리지 않은 마른 당면 한 줌 이상을 냄비에 투하함\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 10숟갈 (또는 유기농 엑스트라 버진 올리브유)\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"10\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"달궈진 팬에 식용유 10숟갈 두르고\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"식용유 10숟갈 두르고\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기서 저희는 식용유 대신 유기농 엑스트라 버진 올리브유를 사용해서\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"얇게 썬 대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"얇게 썬 대파를 볶아줍니다!\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"얇게 썬 대파를 볶아줍니다!\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 5숟갈\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"5\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 5숟갈 추가해주고요!\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루 5숟갈 추가해주고요!\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 3.2리터\",\n      \"displayName\": \"물\",\n      \"amount\": \"3.2\",\n      \"unit\": \"리터\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 3.2리터 부어서 베이스를 끓여주고요\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 3.2리터 부어서\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치액 8숟갈\",\n      \"displayName\": \"참치액\",\n      \"amount\": \"8\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 참치액 8숟갈\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 참치액 8숟갈\",\n          \"timestamp\": \"00:55\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"꽃소금 1숟갈\",\n      \"displayName\": \"꽃소금\",\n      \"amount\": \"1\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"꽃소금 1숟갈 넣어서 간 맞춰주고요\",\n          \"timestamp\": \"00:56\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"꽃소금 1숟갈 넣어서 간 맞춰주고요\",\n          \"timestamp\": \"00:57\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"난각 1번 계란 12개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"12\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그동안 난각 1번 계란 계란 12개 깨서\",\n          \"timestamp\": \"01:00\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"그동안 난각 1번 계란 계란 12개 깨서\",\n          \"timestamp\": \"01:01\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"달궈진 팬에 식용유(또는 올리브유) 10숟갈을 두르고 얇게 썬 대파를 넣어 노릇해질 때까지 볶아 파기름을 냅니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"달궈진 팬에 식용유 10숟갈 두르고 얇게 썬 대파를 볶아줍니다!\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이대로 파가 노릇하게 익었을 때\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"파가 노릇해지면 고춧가루 5숟갈을 넣고 타지 않게 약불에서 약 1분간 볶아 고추기름을 만듭니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 5숟갈 추가해주고요! 고춧가루가 타지 않게 약불에서 1분 정도 볶아주면\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 3.2리터를 붓고 국물 베이스를 끓여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 3.2리터 부어서 베이스를 끓여주고요\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"국물에 마른 당면을 불리지 않고 그대로 넣고 3분간 끓여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 마른 당면 넣고 3분 끓여줄게요\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"text\": \"참치액 8숟갈과 꽃소금 1숟갈을 넣어 간을 맞춥니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 참치액 8숟갈 꽃소금 1숟갈 넣어서 간 맞춰주고요\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"text\": \"만두를 넣고 7분간 더 끓여줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 만두 넣고 7분 더 끓여줍니다\",\n          \"timestamp\": \"00:58\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그동안 계란 12개를 깨서 골고루 풀어 계란물을 준비합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그동안 난각 1번 계란 계란 12개 깨서 골고루 풀어주고!\",\n          \"timestamp\": \"01:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"만두가 다 익었을 때 계란물을 원을 그리면서 천천히 부어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만두가 다 익었을 때 계란물을 천천히 원을 그리면서 부으면\",\n          \"timestamp\": \"01:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"10초간 그대로 기다렸다가 천천히 저어주어 몽글몽글한 계란국 형태로 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이대로 10초만 기다렸다가 천천히 저어주면 당면 불리지 않고 만든 초간단 10분 만두국 완성이예요!!\",\n          \"timestamp\": \"01:09\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"마른 당면의 정확한 중량이나 개량 단위가 영상에서 명시되지 않음\",\n    \"교자만두의 정확한 개수 또는 중량이 영상에서 명시되지 않음 (비비고 왕교자 포장팩 사용)\",\n    \"얇게 썬 대파의 수량이나 중량이 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "10분 만두국",
+      "description": "비오는 날 칼칼하게 먹기 좋은, 마른 당면을 불리지 않고 끓여내는 초간단 10분 만두국 레시피",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "선호하는 교자 만두",
+          "displayName": "교자만두",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "개인 입맛에 따라 선호하는 교자 만두를 준비해주고요!",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "선호하는 교자 만두를 준비해주고요!",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "비비고 왕교자 한 봉지를 끓는 국물에 투하함",
+              "timestamp": "00:59"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "마른 당면",
+          "displayName": "마른 당면",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마른 당면 불리지 말고! 이렇게 만들어 보세요!",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마른 당면 불리지 말고!",
+              "timestamp": "00:01"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "불리지 않은 마른 당면 한 줌 이상을 냄비에 투하함",
+              "timestamp": "00:43"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "식용유 10숟갈 (또는 유기농 엑스트라 버진 올리브유)",
+          "displayName": "식용유",
+          "amount": "10",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "달궈진 팬에 식용유 10숟갈 두르고",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "식용유 10숟갈 두르고",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기서 저희는 식용유 대신 유기농 엑스트라 버진 올리브유를 사용해서",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "얇게 썬 대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "얇게 썬 대파를 볶아줍니다!",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "얇게 썬 대파를 볶아줍니다!",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고춧가루 5숟갈",
+          "displayName": "고춧가루",
+          "amount": "5",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 5숟갈 추가해주고요!",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루 5숟갈 추가해주고요!",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "물 3.2리터",
+          "displayName": "물",
+          "amount": "3.2",
+          "unit": "리터",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 3.2리터 부어서 베이스를 끓여주고요",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 3.2리터 부어서",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "참치액 8숟갈",
+          "displayName": "참치액",
+          "amount": "8",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 참치액 8숟갈",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 참치액 8숟갈",
+              "timestamp": "00:55"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "꽃소금 1숟갈",
+          "displayName": "꽃소금",
+          "amount": "1",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "꽃소금 1숟갈 넣어서 간 맞춰주고요",
+              "timestamp": "00:56"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "꽃소금 1숟갈 넣어서 간 맞춰주고요",
+              "timestamp": "00:57"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "난각 1번 계란 12개",
+          "displayName": "계란",
+          "amount": "12",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그동안 난각 1번 계란 계란 12개 깨서",
+              "timestamp": "01:00"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "그동안 난각 1번 계란 계란 12개 깨서",
+              "timestamp": "01:01"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "달궈진 팬에 식용유(또는 올리브유) 10숟갈을 두르고 얇게 썬 대파를 넣어 노릇해질 때까지 볶아 파기름을 냅니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "달궈진 팬에 식용유 10숟갈 두르고 얇게 썬 대파를 볶아줍니다!",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이대로 파가 노릇하게 익었을 때",
+              "timestamp": "00:19"
+            }
+          ]
+        },
+        {
+          "text": "파가 노릇해지면 고춧가루 5숟갈을 넣고 타지 않게 약불에서 약 1분간 볶아 고추기름을 만듭니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 5숟갈 추가해주고요! 고춧가루가 타지 않게 약불에서 1분 정도 볶아주면",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "물 3.2리터를 붓고 국물 베이스를 끓여줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 3.2리터 부어서 베이스를 끓여주고요",
+              "timestamp": "00:41"
+            }
+          ]
+        },
+        {
+          "text": "국물에 마른 당면을 불리지 않고 그대로 넣고 3분간 끓여줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 마른 당면 넣고 3분 끓여줄게요",
+              "timestamp": "00:43"
+            }
+          ]
+        },
+        {
+          "text": "참치액 8숟갈과 꽃소금 1숟갈을 넣어 간을 맞춥니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 참치액 8숟갈 꽃소금 1숟갈 넣어서 간 맞춰주고요",
+              "timestamp": "00:54"
+            }
+          ]
+        },
+        {
+          "text": "만두를 넣고 7분간 더 끓여줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 만두 넣고 7분 더 끓여줍니다",
+              "timestamp": "00:58"
+            }
+          ]
+        },
+        {
+          "text": "그동안 계란 12개를 깨서 골고루 풀어 계란물을 준비합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그동안 난각 1번 계란 계란 12개 깨서 골고루 풀어주고!",
+              "timestamp": "01:00"
+            }
+          ]
+        },
+        {
+          "text": "만두가 다 익었을 때 계란물을 원을 그리면서 천천히 부어줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "만두가 다 익었을 때 계란물을 천천히 원을 그리면서 부으면",
+              "timestamp": "01:04"
+            }
+          ]
+        },
+        {
+          "text": "10초간 그대로 기다렸다가 천천히 저어주어 몽글몽글한 계란국 형태로 완성합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이대로 10초만 기다렸다가 천천히 저어주면 당면 불리지 않고 만든 초간단 10분 만두국 완성이예요!!",
+              "timestamp": "01:09"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "마른 당면의 정확한 중량이나 개량 단위가 영상에서 명시되지 않음",
+        "교자만두의 정확한 개수 또는 중량이 영상에서 명시되지 않음 (비비고 왕교자 포장팩 사용)",
+        "얇게 썬 대파의 수량이나 중량이 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "마른 당면으로 10분, 얼큰 만두국 레시피! 🥟🥟",
+    "sourceChannelName": "김진순 점심시간",
+    "sourceChannelId": "UC9She1e6OWUpwJpwZtbqhjQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/BvOrdVOmTRlMEFygfbeuka_30BrSZenSof2_yC4RCxF0gEKvRzJTn6NEzMTJYQSe8aBxV9iMbQ=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-15T08:12:51.264560Z"
+  }
+}

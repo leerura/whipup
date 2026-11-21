@@ -5,10 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../../app/theme.dart';
 
 class OnboardingMotionSequence extends StatefulWidget {
-  const OnboardingMotionSequence({
-    required this.onCompleted,
-    super.key,
-  });
+  const OnboardingMotionSequence({required this.onCompleted, super.key});
 
   final VoidCallback onCompleted;
 
@@ -114,10 +111,6 @@ class _OnboardingMotionSequenceState extends State<OnboardingMotionSequence>
                       introProgress: introProgress,
                       loginProgress: loginProgress,
                     ),
-                    _buildLoginContent(
-                      scale: scale,
-                      loginProgress: loginProgress,
-                    ),
                   ],
                 );
               },
@@ -214,113 +207,11 @@ class _OnboardingMotionSequenceState extends State<OnboardingMotionSequence>
         opacity: introProgress * (1 - loginProgress),
         child: Text(
           '있는 재료로\n오늘의 한 끼를!',
-          style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-            color: AppColors.white,
-          ),
+          style: Theme.of(context).textTheme.headlineSmall
+              ?.copyWith(color: AppColors.white),
           textAlign: TextAlign.center,
         ),
       ),
-    );
-  }
-
-  Widget _buildLoginContent({
-    required double scale,
-    required double loginProgress,
-  }) {
-    return Opacity(
-      opacity: loginProgress,
-      child: Stack(
-        children: [
-          _DecorationDot(
-            assetName: 'assets/onboarding/login_dot_large.svg',
-            left: 72 * scale,
-            top: 320 * scale,
-            size: 27 * scale,
-          ),
-          _DecorationDot(
-            assetName: 'assets/onboarding/login_dot_right.svg',
-            left: 334 * scale,
-            top: 408 * scale,
-            size: 21 * scale,
-          ),
-          _DecorationDot(
-            assetName: 'assets/onboarding/login_dot_small_top.svg',
-            left: 119 * scale,
-            top: 292 * scale,
-            size: 13 * scale,
-          ),
-          _DecorationDot(
-            assetName: 'assets/onboarding/login_dot_small_bottom.svg',
-            left: 146 * scale,
-            top: 522 * scale,
-            size: 12 * scale,
-          ),
-          Positioned(
-            top: 369 * scale,
-            left: 20 * scale,
-            right: 20 * scale,
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(
-                  '냉장고 속\n재료를 골라보세요',
-                  style: Theme.of(context).textTheme.headlineSmall,
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: 8),
-                Text(
-                  '지금 만들 수 있는 메뉴를 찾아드릴게요',
-                  style: Theme.of(context).textTheme.bodyMedium,
-                  textAlign: TextAlign.center,
-                ),
-              ],
-            ),
-          ),
-          Positioned(
-            left: 20 * scale,
-            right: 20 * scale,
-            bottom: 70 * scale,
-            height: 56,
-            child: DecoratedBox(
-              decoration: BoxDecoration(
-                color: AppColors.kakao,
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Center(
-                child: Text(
-                  '카카오로 시작하기',
-                  style: Theme.of(context).textTheme.labelLarge,
-                ),
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _DecorationDot extends StatelessWidget {
-  const _DecorationDot({
-    required this.assetName,
-    required this.left,
-    required this.top,
-    required this.size,
-  });
-
-  final String assetName;
-  final double left;
-  final double top;
-  final double size;
-
-  @override
-  Widget build(BuildContext context) {
-    return Positioned(
-      left: left,
-      top: top,
-      width: size,
-      height: size,
-      child: SvgPicture.asset(assetName, fit: BoxFit.fill),
     );
   }
 }

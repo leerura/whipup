@@ -1,0 +1,754 @@
+{
+  "videoId": "N4AWC98NBnY",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/N4AWC98NBnY",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-08T09:22:37.322766+00:00",
+    "rawResponse": "{\n  \"title\": \"오므라이스 (정통 버전 & 회오리 오므라이스)\",\n  \"description\": \"한 그릇으로 든든한 정통 버전의 데미글라스풍 오므라이스와 요즘 유행하는 회오리 토마토 오므라이스 2가지 레시피\",\n  \"servings\": \"2~3인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"대파 150g\",\n      \"displayName\": \"대파\",\n      \"amount\": \"150\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 150g\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파는 이렇게 십자로 갈라준 다음 최대한 잘게 썰어주면 되고\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"당근\",\n      \"displayName\": \"당근\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"당근은 먼저 슬라이스를 한 다음 채를 썰어줘 그리고 이 상태에서 다져주면 쉽게 다질 수 있단다\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"당근을 썰어 팬에 넣음\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"베이컨 110g\",\n      \"displayName\": \"베이컨\",\n      \"amount\": \"110\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"베이컨 110g\",\n          \"timestamp\": \"00:42\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"베이컨은 당근처럼 똑같이 채를 썬 다음 다져주면 되고\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 120g\",\n      \"displayName\": \"양파\",\n      \"amount\": \"120\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 120g\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파는 반으로 갈라준 다음 세로로 자르고 돌려서 가로로 잘라주면 쉽게 다질 수 있단다\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 3spoons\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"3\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 3spoons\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬에 식용유를 넉넉하게 두른 다음\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 600g\",\n      \"displayName\": \"밥\",\n      \"amount\": \"600\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 600g\",\n          \"timestamp\": \"00:50\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 여기에 밥을 넣어준 다음\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"케찹 3spoons\",\n      \"displayName\": \"케찹\",\n      \"amount\": \"3\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"케찹 3spoons\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"케찹과 굴소스로 간을 맞춰줄 거야\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 3spoons\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"3\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴소스 3spoons\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"케찹과 굴소스로 간을 맞춰줄 거야\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 1spoon\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 1spoon\",\n          \"timestamp\": \"01:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 식용유를 딱 한 숟가락만 두른 다음\",\n          \"timestamp\": \"01:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 두 개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 두 개\",\n          \"timestamp\": \"01:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 두 개를 풀어서 넣고 계란을 딱 80% 정도만 익혀줘\",\n          \"timestamp\": \"01:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"버터 15g\",\n      \"displayName\": \"버터\",\n      \"amount\": \"15\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"버터 15g\",\n          \"timestamp\": \"01:32\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란을 굽던 팬에 버터와 밀가루를 넣고\",\n          \"timestamp\": \"01:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밀가루 1spoon\",\n      \"displayName\": \"밀가루\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밀가루 1spoon\",\n          \"timestamp\": \"01:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"버터와 밀가루를 넣고 연한 갈색빛이 날 때까지 볶아서 루를 만들어줘\",\n          \"timestamp\": \"01:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 180ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"180\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 180ml\",\n          \"timestamp\": \"01:40\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물을 한 컵 부어준 다음\",\n          \"timestamp\": \"01:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우스터 소스 3spoons\",\n      \"displayName\": \"우스터 소스\",\n      \"amount\": \"3\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"우스터 소스 3spoons\",\n          \"timestamp\": \"01:42\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우스터 소스, 참고로 우스터 소스 없으면 돈까스 소스도 가능하단다\",\n          \"timestamp\": \"01:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"돈까스 소스\",\n      \"displayName\": \"돈까스 소스\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참고로 우스터 소스 없으면 돈까스 소스도 가능하단다\",\n          \"timestamp\": \"01:43\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 2spoons\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"2\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 2spoons\",\n          \"timestamp\": \"01:44\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장, 케찹, 설탕을 넣고 약불로 끓여줄 거야\",\n          \"timestamp\": \"01:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"케찹 2spoons\",\n      \"displayName\": \"케찹\",\n      \"amount\": \"2\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"케찹 2spoons\",\n          \"timestamp\": \"01:45\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장, 케찹, 설탕을 넣고 약불로 끓여줄 거야\",\n          \"timestamp\": \"01:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1spoon\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1spoon\",\n          \"timestamp\": \"01:47\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장, 케찹, 설탕을 넣고 약불로 끓여줄 거야\",\n          \"timestamp\": \"01:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리\",\n      \"displayName\": \"파슬리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"파슬리\",\n          \"timestamp\": \"01:56\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 파슬리 뿌려주면\",\n          \"timestamp\": \"01:59\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 3spoons\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"3\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 3spoons\",\n          \"timestamp\": \"02:02\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이번에는 팬에 식용유를 넉넉하게 두르고\",\n          \"timestamp\": \"02:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 세 개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"3\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 세 개\",\n          \"timestamp\": \"02:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 세 개를 섞어서 부어줘\",\n          \"timestamp\": \"02:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"버터 10g\",\n      \"displayName\": \"버터\",\n      \"amount\": \"10\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"버터 10g\",\n          \"timestamp\": \"02:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 버터를 녹여줘\",\n          \"timestamp\": \"02:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 양파 40g\",\n      \"displayName\": \"다진 양파\",\n      \"amount\": \"40\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 양파 40g\",\n          \"timestamp\": \"02:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 다진 양파와 다진 마늘을 넣고 볶아줄 거야\",\n          \"timestamp\": \"02:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 다진 양파와 다진 마늘을 넣고 볶아줄 거야\",\n          \"timestamp\": \"02:18\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 다진 마늘을 넣고 볶음\",\n          \"timestamp\": \"02:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 90ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"90\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 90ml\",\n          \"timestamp\": \"02:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물을 반 컵 부어준 다음\",\n          \"timestamp\": \"02:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"토마토 파스타 소스 6spoons\",\n      \"displayName\": \"토마토 파스타 소스\",\n      \"amount\": \"6\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"토마토 파스타 소스 6spoons\",\n          \"timestamp\": \"02:24\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"토마토 파스타 소스\",\n          \"timestamp\": \"02:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우스터 소스 1spoon\",\n      \"displayName\": \"우스터 소스\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"우스터 소스 1spoon\",\n          \"timestamp\": \"02:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우스터 소스\",\n          \"timestamp\": \"02:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 1spoon\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 1spoon\",\n          \"timestamp\": \"02:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장, 설탕, 후추를 넣고 약불로 끓여줘\",\n          \"timestamp\": \"02:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 0.5spoon\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.5\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 0.5spoon\",\n          \"timestamp\": \"02:28\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕, 후추를 넣고 약불로 끓여줘\",\n          \"timestamp\": \"02:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕, 후추를 넣고 약불로 끓여줘\",\n          \"timestamp\": \"02:28\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"소스 팬에 후추를 톡톡 뿌려 넣음\",\n          \"timestamp\": \"02:28\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"대파는 십자로 가른 뒤 잘게 다지고, 당근과 베이컨도 얇게 채 썬 후 곱게 다져준다. 양파는 반으로 갈라 세로, 가로로 칼집을 내어 잘게 다진다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파는 이렇게 십자로 갈라준 다음 최대한 잘게 썰어주면 되고 당근은 먼저 슬라이스를 한 다음 채를 썰어줘 그리고 이 상태에서 다져주면 쉽게 다질 수 있단다 베이컨은 당근처럼 똑같이 채를 썬 다음 다져주면 되고 양파는 반으로 갈라준 다음 세로로 자르고 돌려서 가로로 잘라주면 쉽게 다질 수 있단다\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유 3스푼을 두르고 다진 대파 150g, 당근, 베이컨 110g, 양파 120g을 넣고 양파가 투명해지고 대파가 흐물흐물해질 때까지 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 팬에 식용유를 넉넉하게 두른 다음 방금 다진 대파, 당근, 베이컨, 양파를 넣고 볶아줄 거야... 양파가 투명해지고 대파가 흐물흐물해질 때까지 볶아줘\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볶은 재료에 밥 600g, 케찹 3스푼, 굴소스 3스푼을 넣고 밥알에 양념이 코팅될 때까지 볶아 볶음밥을 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 여기에 밥을 넣어준 다음 케찹과 굴소스로 간을 맞춰줄 거야... 그리고 밥알이 코팅될 때까지 볶아주면 밥 준비는 끝이란다\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 볶음밥을 밥공기 두 그릇에 나눠 담은 뒤 각각 접시 위에 뒤집어 엎어 동그란 모양을 잡아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그래서 두 그릇에 나눠서 담은 다음\",\n          \"timestamp\": \"01:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥공기에 담은 밥을 접시에 뒤집어 올려 모양을 잡음\",\n          \"timestamp\": \"01:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[정통 버전] 팬에 식용유 1스푼을 두르고 푼 계란 2개를 넣어 약 80% 정도만 익힌 지단을 볶음밥 위에 얹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 식용유를 딱 한 숟가락만 두른 다음 계란 두 개를 풀어서 넣고 계란을 딱 80% 정도만 익혀줘... 구워진 계란은 밥 위에 빼두고\",\n          \"timestamp\": \"01:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[정통 버전 소스] 계란을 구운 팬에 버터 15g과 밀가루 1스푼을 넣고 연한 갈색빛이 날 때까지 볶아 루를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란을 굽던 팬에 버터와 밀가루를 넣고 연한 갈색빛이 날 때까지 볶아서 루를 만들어줘\",\n          \"timestamp\": \"01:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[정통 버전 소스] 물 180ml(1컵), 우스터 소스 3스푼(또는 돈까스 소스), 진간장 2스푼, 케찹 2스푼, 설탕 1스푼을 넣고 약불에서 끓이다가 끓어오르면 불을 끈다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물을 한 컵 부어준 다음 우스터 소스... 진간장, 케찹, 설탕을 넣고 약불로 끓여줄 거야 소스가 끓기 시작하면 불을 끄고\",\n          \"timestamp\": \"01:40\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[정통 버전 완성] 계란 지단을 피해 접시의 빈 곳에 소스를 붓고 파슬리를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란지단을 피해서 그릇 빈 곳에 부어줘... 그리고 파슬리 뿌려주면 정통 버전의 오므라이스 끝\",\n          \"timestamp\": \"01:50\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[회오리 버전] 팬에 식용유 3스푼을 넉넉히 두르고 계란 3개를 풀어 부은 뒤, 젓가락으로 가운데를 모아 회전시키며 약 60% 정도만 익힌 회오리 계란을 만들어 다른 접시의 볶음밥 위에 얹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이번에는 팬에 식용유를 넉넉하게 두르고 계란 세 개를 섞어서 부어줘 그리고 젓가락으로 회오리 모양을 내줄 거야 이 때 계란은 한 60% 정도만 익히는 게 좋단다 완성된 회오리 계란을 밥 위에 올려준 다음\",\n          \"timestamp\": \"02:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[회오리 버전 소스] 팬에 버터 10g을 녹인 뒤 다진 양파 40g과 다진 마늘을 넣고 양파가 투명해질 때까지 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 버터를 녹여줘 그리고 다진 양파와 다진 마늘을 넣고 볶아줄 거야 양파가 투명하게 익으면\",\n          \"timestamp\": \"02:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[회오리 버전 소스] 물 90ml(반 컵), 토마토 파스타 소스 6스푼, 우스터 소스 1스푼, 진간장 1스푼, 설탕 0.5스푼, 후추를 넣고 약불로 끓이다가 끓어오르면 불을 끈다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물을 반 컵 부어준 다음 토마토 파스타 소스, 우스터 소스, 진간장, 설탕, 후추를 넣고 약불로 끓여줘 소스가 끓기 시작하면 불을 끄고\",\n          \"timestamp\": \"02:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[회오리 버전 완성] 계란을 피해 접시의 빈 곳에 토마토 소스를 부어준 뒤 파슬리를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마찬가지로 계란을 피해 그릇 빈 곳에 소스를 부어줄 거야... 마지막으로 파슬리 뿌려주면 새콤달콤한 토마토 베이스의 회오리 오므라이스 끝\",\n          \"timestamp\": \"02:30\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"볶음밥에 사용된 당근의 정확한 중량이나 수량이 영상에 표기되지 않음\",\n    \"회오리 오므라이스 소스에 사용된 다진 마늘의 정확한 계량이 화면 자막이나 내레이션에 명시되지 않음\",\n    \"두 가지 버전 소스 마무리용 파슬리와 후추의 정확한 계량이 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "오므라이스 (정통 버전 & 회오리 오므라이스)",
+      "description": "한 그릇으로 든든한 정통 버전의 데미글라스풍 오므라이스와 요즘 유행하는 회오리 토마토 오므라이스 2가지 레시피",
+      "servings": "2~3인분",
+      "ingredients": [
+        {
+          "rawText": "대파 150g",
+          "displayName": "대파",
+          "amount": "150",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 150g",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파는 이렇게 십자로 갈라준 다음 최대한 잘게 썰어주면 되고",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "당근",
+          "displayName": "당근",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "당근은 먼저 슬라이스를 한 다음 채를 썰어줘 그리고 이 상태에서 다져주면 쉽게 다질 수 있단다",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "당근을 썰어 팬에 넣음",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "베이컨 110g",
+          "displayName": "베이컨",
+          "amount": "110",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "베이컨 110g",
+              "timestamp": "00:42"
+            },
+            {
+              "type": "SPEECH",
+              "text": "베이컨은 당근처럼 똑같이 채를 썬 다음 다져주면 되고",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양파 120g",
+          "displayName": "양파",
+          "amount": "120",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 120g",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파는 반으로 갈라준 다음 세로로 자르고 돌려서 가로로 잘라주면 쉽게 다질 수 있단다",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "식용유 3spoons",
+          "displayName": "식용유",
+          "amount": "3",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 3spoons",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 팬에 식용유를 넉넉하게 두른 다음",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "밥 600g",
+          "displayName": "밥",
+          "amount": "600",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 600g",
+              "timestamp": "00:50"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 여기에 밥을 넣어준 다음",
+              "timestamp": "00:50"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "케찹 3spoons",
+          "displayName": "케찹",
+          "amount": "3",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "케찹 3spoons",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "SPEECH",
+              "text": "케찹과 굴소스로 간을 맞춰줄 거야",
+              "timestamp": "00:52"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "굴소스 3spoons",
+          "displayName": "굴소스",
+          "amount": "3",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴소스 3spoons",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "SPEECH",
+              "text": "케찹과 굴소스로 간을 맞춰줄 거야",
+              "timestamp": "00:52"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "식용유 1spoon",
+          "displayName": "식용유",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 1spoon",
+              "timestamp": "01:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 식용유를 딱 한 숟가락만 두른 다음",
+              "timestamp": "01:17"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "계란 두 개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 두 개",
+              "timestamp": "01:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란 두 개를 풀어서 넣고 계란을 딱 80% 정도만 익혀줘",
+              "timestamp": "01:19"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "버터 15g",
+          "displayName": "버터",
+          "amount": "15",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "버터 15g",
+              "timestamp": "01:32"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란을 굽던 팬에 버터와 밀가루를 넣고",
+              "timestamp": "01:31"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "밀가루 1spoon",
+          "displayName": "밀가루",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밀가루 1spoon",
+              "timestamp": "01:34"
+            },
+            {
+              "type": "SPEECH",
+              "text": "버터와 밀가루를 넣고 연한 갈색빛이 날 때까지 볶아서 루를 만들어줘",
+              "timestamp": "01:33"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "물 180ml",
+          "displayName": "물",
+          "amount": "180",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 180ml",
+              "timestamp": "01:40"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물을 한 컵 부어준 다음",
+              "timestamp": "01:40"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "우스터 소스 3spoons",
+          "displayName": "우스터 소스",
+          "amount": "3",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "우스터 소스 3spoons",
+              "timestamp": "01:42"
+            },
+            {
+              "type": "SPEECH",
+              "text": "우스터 소스, 참고로 우스터 소스 없으면 돈까스 소스도 가능하단다",
+              "timestamp": "01:42"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "돈까스 소스",
+          "displayName": "돈까스 소스",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "참고로 우스터 소스 없으면 돈까스 소스도 가능하단다",
+              "timestamp": "01:43"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "진간장 2spoons",
+          "displayName": "진간장",
+          "amount": "2",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 2spoons",
+              "timestamp": "01:44"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장, 케찹, 설탕을 넣고 약불로 끓여줄 거야",
+              "timestamp": "01:44"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "케찹 2spoons",
+          "displayName": "케찹",
+          "amount": "2",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "케찹 2spoons",
+              "timestamp": "01:45"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장, 케찹, 설탕을 넣고 약불로 끓여줄 거야",
+              "timestamp": "01:44"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        },
+        {
+          "rawText": "설탕 1spoon",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1spoon",
+              "timestamp": "01:47"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장, 케찹, 설탕을 넣고 약불로 끓여줄 거야",
+              "timestamp": "01:44"
+            }
+          ],
+          "sourceId": "ingredient-18"
+        },
+        {
+          "rawText": "파슬리",
+          "displayName": "파슬리",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "파슬리",
+              "timestamp": "01:56"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 파슬리 뿌려주면",
+              "timestamp": "01:59"
+            }
+          ],
+          "sourceId": "ingredient-19"
+        },
+        {
+          "rawText": "식용유 3spoons",
+          "displayName": "식용유",
+          "amount": "3",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 3spoons",
+              "timestamp": "02:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이번에는 팬에 식용유를 넉넉하게 두르고",
+              "timestamp": "02:02"
+            }
+          ],
+          "sourceId": "ingredient-20"
+        },
+        {
+          "rawText": "계란 세 개",
+          "displayName": "계란",
+          "amount": "3",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 세 개",
+              "timestamp": "02:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란 세 개를 섞어서 부어줘",
+              "timestamp": "02:04"
+            }
+          ],
+          "sourceId": "ingredient-21"
+        },
+        {
+          "rawText": "버터 10g",
+          "displayName": "버터",
+          "amount": "10",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "버터 10g",
+              "timestamp": "02:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 버터를 녹여줘",
+              "timestamp": "02:15"
+            }
+          ],
+          "sourceId": "ingredient-22"
+        },
+        {
+          "rawText": "다진 양파 40g",
+          "displayName": "다진 양파",
+          "amount": "40",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 양파 40g",
+              "timestamp": "02:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 다진 양파와 다진 마늘을 넣고 볶아줄 거야",
+              "timestamp": "02:18"
+            }
+          ],
+          "sourceId": "ingredient-23"
+        },
+        {
+          "rawText": "다진 마늘",
+          "displayName": "다진 마늘",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 다진 양파와 다진 마늘을 넣고 볶아줄 거야",
+              "timestamp": "02:18"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 다진 마늘을 넣고 볶음",
+              "timestamp": "02:20"
+            }
+          ],
+          "sourceId": "ingredient-24"
+        },
+        {
+          "rawText": "물 90ml",
+          "displayName": "물",
+          "amount": "90",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 90ml",
+              "timestamp": "02:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물을 반 컵 부어준 다음",
+              "timestamp": "02:22"
+            }
+          ],
+          "sourceId": "ingredient-25"
+        },
+        {
+          "rawText": "토마토 파스타 소스 6spoons",
+          "displayName": "토마토 파스타 소스",
+          "amount": "6",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "토마토 파스타 소스 6spoons",
+              "timestamp": "02:24"
+            },
+            {
+              "type": "SPEECH",
+              "text": "토마토 파스타 소스",
+              "timestamp": "02:24"
+            }
+          ],
+          "sourceId": "ingredient-26"
+        },
+        {
+          "rawText": "우스터 소스 1spoon",
+          "displayName": "우스터 소스",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "우스터 소스 1spoon",
+              "timestamp": "02:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "우스터 소스",
+              "timestamp": "02:25"
+            }
+          ],
+          "sourceId": "ingredient-27"
+        },
+        {
+          "rawText": "진간장 1spoon",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 1spoon",
+              "timestamp": "02:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장, 설탕, 후추를 넣고 약불로 끓여줘",
+              "timestamp": "02:27"
+            }
+          ],
+          "sourceId": "ingredient-28"
+        },
+        {
+          "rawText": "설탕 0.5spoon",
+          "displayName": "설탕",
+          "amount": "0.5",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 0.5spoon",
+              "timestamp": "02:28"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕, 후추를 넣고 약불로 끓여줘",
+              "timestamp": "02:27"
+            }
+          ],
+          "sourceId": "ingredient-29"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "설탕, 후추를 넣고 약불로 끓여줘",
+              "timestamp": "02:28"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "소스 팬에 후추를 톡톡 뿌려 넣음",
+              "timestamp": "02:28"
+            }
+          ],
+          "sourceId": "ingredient-30"
+        }
+      ],
+      "steps": [
+        {
+          "text": "대파는 십자로 가른 뒤 잘게 다지고, 당근과 베이컨도 얇게 채 썬 후 곱게 다져준다. 양파는 반으로 갈라 세로, 가로로 칼집을 내어 잘게 다진다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "대파는 이렇게 십자로 갈라준 다음 최대한 잘게 썰어주면 되고 당근은 먼저 슬라이스를 한 다음 채를 썰어줘 그리고 이 상태에서 다져주면 쉽게 다질 수 있단다 베이컨은 당근처럼 똑같이 채를 썬 다음 다져주면 되고 양파는 반으로 갈라준 다음 세로로 자르고 돌려서 가로로 잘라주면 쉽게 다질 수 있단다",
+              "timestamp": "00:19"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유 3스푼을 두르고 다진 대파 150g, 당근, 베이컨 110g, 양파 120g을 넣고 양파가 투명해지고 대파가 흐물흐물해질 때까지 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 팬에 식용유를 넉넉하게 두른 다음 방금 다진 대파, 당근, 베이컨, 양파를 넣고 볶아줄 거야... 양파가 투명해지고 대파가 흐물흐물해질 때까지 볶아줘",
+              "timestamp": "00:38"
+            }
+          ]
+        },
+        {
+          "text": "볶은 재료에 밥 600g, 케찹 3스푼, 굴소스 3스푼을 넣고 밥알에 양념이 코팅될 때까지 볶아 볶음밥을 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 여기에 밥을 넣어준 다음 케찹과 굴소스로 간을 맞춰줄 거야... 그리고 밥알이 코팅될 때까지 볶아주면 밥 준비는 끝이란다",
+              "timestamp": "00:50"
+            }
+          ]
+        },
+        {
+          "text": "완성된 볶음밥을 밥공기 두 그릇에 나눠 담은 뒤 각각 접시 위에 뒤집어 엎어 동그란 모양을 잡아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그래서 두 그릇에 나눠서 담은 다음",
+              "timestamp": "01:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥공기에 담은 밥을 접시에 뒤집어 올려 모양을 잡음",
+              "timestamp": "01:12"
+            }
+          ]
+        },
+        {
+          "text": "[정통 버전] 팬에 식용유 1스푼을 두르고 푼 계란 2개를 넣어 약 80% 정도만 익힌 지단을 볶음밥 위에 얹는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 식용유를 딱 한 숟가락만 두른 다음 계란 두 개를 풀어서 넣고 계란을 딱 80% 정도만 익혀줘... 구워진 계란은 밥 위에 빼두고",
+              "timestamp": "01:17"
+            }
+          ]
+        },
+        {
+          "text": "[정통 버전 소스] 계란을 구운 팬에 버터 15g과 밀가루 1스푼을 넣고 연한 갈색빛이 날 때까지 볶아 루를 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란을 굽던 팬에 버터와 밀가루를 넣고 연한 갈색빛이 날 때까지 볶아서 루를 만들어줘",
+              "timestamp": "01:31"
+            }
+          ]
+        },
+        {
+          "text": "[정통 버전 소스] 물 180ml(1컵), 우스터 소스 3스푼(또는 돈까스 소스), 진간장 2스푼, 케찹 2스푼, 설탕 1스푼을 넣고 약불에서 끓이다가 끓어오르면 불을 끈다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물을 한 컵 부어준 다음 우스터 소스... 진간장, 케찹, 설탕을 넣고 약불로 끓여줄 거야 소스가 끓기 시작하면 불을 끄고",
+              "timestamp": "01:40"
+            }
+          ]
+        },
+        {
+          "text": "[정통 버전 완성] 계란 지단을 피해 접시의 빈 곳에 소스를 붓고 파슬리를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란지단을 피해서 그릇 빈 곳에 부어줘... 그리고 파슬리 뿌려주면 정통 버전의 오므라이스 끝",
+              "timestamp": "01:50"
+            }
+          ]
+        },
+        {
+          "text": "[회오리 버전] 팬에 식용유 3스푼을 넉넉히 두르고 계란 3개를 풀어 부은 뒤, 젓가락으로 가운데를 모아 회전시키며 약 60% 정도만 익힌 회오리 계란을 만들어 다른 접시의 볶음밥 위에 얹는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이번에는 팬에 식용유를 넉넉하게 두르고 계란 세 개를 섞어서 부어줘 그리고 젓가락으로 회오리 모양을 내줄 거야 이 때 계란은 한 60% 정도만 익히는 게 좋단다 완성된 회오리 계란을 밥 위에 올려준 다음",
+              "timestamp": "02:02"
+            }
+          ]
+        },
+        {
+          "text": "[회오리 버전 소스] 팬에 버터 10g을 녹인 뒤 다진 양파 40g과 다진 마늘을 넣고 양파가 투명해질 때까지 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 버터를 녹여줘 그리고 다진 양파와 다진 마늘을 넣고 볶아줄 거야 양파가 투명하게 익으면",
+              "timestamp": "02:15"
+            }
+          ]
+        },
+        {
+          "text": "[회오리 버전 소스] 물 90ml(반 컵), 토마토 파스타 소스 6스푼, 우스터 소스 1스푼, 진간장 1스푼, 설탕 0.5스푼, 후추를 넣고 약불로 끓이다가 끓어오르면 불을 끈다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물을 반 컵 부어준 다음 토마토 파스타 소스, 우스터 소스, 진간장, 설탕, 후추를 넣고 약불로 끓여줘 소스가 끓기 시작하면 불을 끄고",
+              "timestamp": "02:22"
+            }
+          ]
+        },
+        {
+          "text": "[회오리 버전 완성] 계란을 피해 접시의 빈 곳에 토마토 소스를 부어준 뒤 파슬리를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마찬가지로 계란을 피해 그릇 빈 곳에 소스를 부어줄 거야... 마지막으로 파슬리 뿌려주면 새콤달콤한 토마토 베이스의 회오리 오므라이스 끝",
+              "timestamp": "02:30"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "볶음밥에 사용된 당근의 정확한 중량이나 수량이 영상에 표기되지 않음",
+        "회오리 오므라이스 소스에 사용된 다진 마늘의 정확한 계량이 화면 자막이나 내레이션에 명시되지 않음",
+        "두 가지 버전 소스 마무리용 파슬리와 후추의 정확한 계량이 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}

@@ -9,6 +9,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter;
 
 @Configuration
 @EnableWebSecurity
@@ -17,7 +18,8 @@ public class SecurityConfiguration {
 	@Bean
 	SecurityFilterChain securityFilterChain(
 			HttpSecurity http,
-			JwtAuthenticationEntryPoint entryPoint
+			JwtAuthenticationEntryPoint entryPoint,
+			TermsConsentFilter termsConsentFilter
 	) throws Exception {
 		http
 				.csrf(AbstractHttpConfigurer::disable)
@@ -26,7 +28,8 @@ public class SecurityConfiguration {
 				)
 				.authorizeHttpRequests(authorize -> authorize
 						.requestMatchers(HttpMethod.GET, "/health").permitAll()
-						.requestMatchers(HttpMethod.POST, "/api/v1/auth/kakao").permitAll()
+					.requestMatchers(HttpMethod.GET, "/actuator/health", "/actuator/prometheus").permitAll()
+						.requestMatchers(HttpMethod.POST, "/api/v1/auth/guest").permitAll()
 						.requestMatchers("/error").permitAll()
 						.anyRequest().authenticated()
 				)
@@ -34,6 +37,7 @@ public class SecurityConfiguration {
 						.jwt(Customizer.withDefaults())
 						.authenticationEntryPoint(entryPoint)
 				)
+				.addFilterAfter(termsConsentFilter, BearerTokenAuthenticationFilter.class)
 				.exceptionHandling(exceptions -> exceptions
 						.authenticationEntryPoint(entryPoint)
 				);

@@ -1,18 +1,330 @@
 {
   "videoId": "dtYexNnsGvI",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/dtYexNnsGvI",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-10-27T10:56:11.496348+00:00",
-    "accountId": "account-e",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAt": "2026-10-27T10:56:36.419722+00:00",
-    "retryAccountId": "account-e"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-08T08:59:44.829072+00:00",
+    "rawResponse": "{\n  \"title\": \"스팸마요\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"오뚜기 즉석밥 1개를 그릇에 담아 준비함\",\n          \"timestamp\": \"01:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"스팸 반\",\n      \"displayName\": \"스팸\",\n      \"amount\": \"1/2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스팸\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"스팸반\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 1개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란 1개를 볼에 깨뜨려 넣음\",\n          \"timestamp\": \"00:49\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 4스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"4\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"진간장 4스푼\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 4스푼\",\n      \"displayName\": \"물\",\n      \"amount\": \"4\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 4스푼\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 2스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 2스푼\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"약불의 팬에 기름을 두르고,\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마요네즈\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"비닐봉지에 담은 마요네즈를 가늘게 짜냄\",\n          \"timestamp\": \"01:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김\",\n      \"displayName\": \"김\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김도 싸악~\",\n          \"timestamp\": \"01:55\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"볼에 진간장 4스푼, 물 4스푼, 설탕 2스푼을 넣고 잘 섞어 소스를 만듭니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"진간장 4스푼\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 4스푼\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 2스푼\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"쉐킷쉐킷\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"스팸 반 개를 먹기 좋은 크기로 깍둑썰기합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"스팸반\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"먹기 좋게 깍둑 썰어 줄게요\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"3등분이 제일 적당한것 같아요\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 1개를 볼에 깨뜨려 넣고 잘 풀어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란탁\",\n          \"timestamp\": \"00:49\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란을 잘 풀어 줍니다\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    },\n    {\n      \"text\": \"약불로 달군 팬에 기름을 두르고 계란물을 부어 저어가며 스크램블 에그를 만듭니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"약불의 팬에 기름을 두르고,\",\n          \"timestamp\": \"00:56\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"계란좌악\",\n          \"timestamp\": \"01:00\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"휘휘 저어 스크램블을 만들어 주세요\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 기름을 두르고 썰어둔 스팸을 노릇노릇하게 굽습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"약불의 팬에 기름을 두르고,\",\n          \"timestamp\": \"01:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"스팸을 노릇노릇 구워주세요\",\n          \"timestamp\": \"01:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 미리 섞어둔 소스를 붓고 약불에서 약 15초간 보글보글 졸입니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소스좌악\",\n          \"timestamp\": \"01:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"15초 정도 약불에서 보글보글 졸여줍니다\",\n          \"timestamp\": \"01:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 밥을 담아 정리한 후, 가장자리에 스크램블 에그를 빙 둘러 얹고 가운데에 구운 스팸을 올립니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"밥을 슥슥 정리후,\",\n          \"timestamp\": \"01:33\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"예쁘게 계란을 빙 둘러줄게요\",\n          \"timestamp\": \"01:36\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"스팸을 봉긋하게 얹고,\",\n          \"timestamp\": \"01:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"졸인 소스를 뿌리고 마요네즈를 가늘게 둘러준 뒤 김가루를 얹어 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"소스를 뿌려 줍니다\",\n          \"timestamp\": \"01:42\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"요로코롬 가늘게 나와요\",\n          \"timestamp\": \"01:51\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김도 싸악~\",\n          \"timestamp\": \"01:55\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "스팸마요",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "오뚜기 즉석밥 1개를 그릇에 담아 준비함",
+              "timestamp": "01:33"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "스팸 반",
+          "displayName": "스팸",
+          "amount": "1/2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스팸",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "스팸반",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "계란 1개",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란 1개를 볼에 깨뜨려 넣음",
+              "timestamp": "00:49"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "진간장 4스푼",
+          "displayName": "진간장",
+          "amount": "4",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "진간장 4스푼",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "물 4스푼",
+          "displayName": "물",
+          "amount": "4",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물 4스푼",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "설탕 2스푼",
+          "displayName": "설탕",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 2스푼",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "약불의 팬에 기름을 두르고,",
+              "timestamp": "00:56"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "마요네즈",
+          "displayName": "마요네즈",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "비닐봉지에 담은 마요네즈를 가늘게 짜냄",
+              "timestamp": "01:45"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "김",
+          "displayName": "김",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "김도 싸악~",
+              "timestamp": "01:55"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "볼에 진간장 4스푼, 물 4스푼, 설탕 2스푼을 넣고 잘 섞어 소스를 만듭니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "진간장 4스푼",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 4스푼",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 2스푼",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "쉐킷쉐킷",
+              "timestamp": "00:25"
+            }
+          ]
+        },
+        {
+          "text": "스팸 반 개를 먹기 좋은 크기로 깍둑썰기합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "스팸반",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "먹기 좋게 깍둑 썰어 줄게요",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "3등분이 제일 적당한것 같아요",
+              "timestamp": "00:41"
+            }
+          ]
+        },
+        {
+          "text": "계란 1개를 볼에 깨뜨려 넣고 잘 풀어줍니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "계란탁",
+              "timestamp": "00:49"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란을 잘 풀어 줍니다",
+              "timestamp": "00:51"
+            }
+          ]
+        },
+        {
+          "text": "약불로 달군 팬에 기름을 두르고 계란물을 부어 저어가며 스크램블 에그를 만듭니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "약불의 팬에 기름을 두르고,",
+              "timestamp": "00:56"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "계란좌악",
+              "timestamp": "01:00"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "휘휘 저어 스크램블을 만들어 주세요",
+              "timestamp": "01:02"
+            }
+          ]
+        },
+        {
+          "text": "팬에 기름을 두르고 썰어둔 스팸을 노릇노릇하게 굽습니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "약불의 팬에 기름을 두르고,",
+              "timestamp": "01:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "스팸을 노릇노릇 구워주세요",
+              "timestamp": "01:12"
+            }
+          ]
+        },
+        {
+          "text": "팬에 미리 섞어둔 소스를 붓고 약불에서 약 15초간 보글보글 졸입니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "소스좌악",
+              "timestamp": "01:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "15초 정도 약불에서 보글보글 졸여줍니다",
+              "timestamp": "01:23"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 밥을 담아 정리한 후, 가장자리에 스크램블 에그를 빙 둘러 얹고 가운데에 구운 스팸을 올립니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "밥을 슥슥 정리후,",
+              "timestamp": "01:33"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "예쁘게 계란을 빙 둘러줄게요",
+              "timestamp": "01:36"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "스팸을 봉긋하게 얹고,",
+              "timestamp": "01:39"
+            }
+          ]
+        },
+        {
+          "text": "졸인 소스를 뿌리고 마요네즈를 가늘게 둘러준 뒤 김가루를 얹어 완성합니다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "소스를 뿌려 줍니다",
+              "timestamp": "01:42"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "요로코롬 가늘게 나와요",
+              "timestamp": "01:51"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "김도 싸악~",
+              "timestamp": "01:55"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
   }
 }

@@ -62,11 +62,17 @@ def _strip_json_fence(text: str) -> str:
 class GeminiClient:
     def __init__(self, model: str, api_key: str | None = None) -> None:
         from google import genai
+        from google.genai import types
 
         api_key = api_key or os.environ.get("GEMINI_API_KEY")
         if not api_key:
             raise RuntimeError("GEMINI_API_KEY is required")
-        self._client = genai.Client(api_key=api_key)
+        # 응답이 끊긴 요청이 계정 하나를 무한정 붙잡지 않도록 시간 제한을 둔다. 초과하면 일시 오류로 재시도한다.
+        timeout_seconds = float(os.environ.get("GEMINI_REQUEST_TIMEOUT_SECONDS", "180"))
+        self._client = genai.Client(
+            api_key=api_key,
+            http_options=types.HttpOptions(timeout=int(timeout_seconds * 1000)),
+        )
         self._model = model
 
     def extract_recipe_source(self, source_url: str, video_id: str) -> tuple[dict, str]:

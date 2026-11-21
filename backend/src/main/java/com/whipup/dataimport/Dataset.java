@@ -31,6 +31,7 @@ public record Dataset(List<IngredientData> ingredients, List<RecipeData> recipes
         String sourceTitle,
         String sourceChannelName,
         String sourceChannelId,
+        String sourceChannelThumbnailUrl,
         java.time.OffsetDateTime sourceMetadataFetchedAt,
         List<RecipeIngredientData> ingredients,
         List<RequirementData> requirements,
@@ -38,7 +39,7 @@ public record Dataset(List<IngredientData> ingredients, List<RecipeData> recipes
     ) {
         public RecipeData(String key, String name, String status, String shortsReference,
                 List<RecipeIngredientData> ingredients, List<RequirementData> requirements, List<String> steps) {
-            this(key, name, status, shortsReference, null, null, null, null, ingredients, requirements, steps);
+            this(key, name, status, shortsReference, null, null, null, null, null, ingredients, requirements, steps);
         }
 
         public RecipeData {

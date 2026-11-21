@@ -1,18 +1,315 @@
 {
   "videoId": "-RYp4v1XLes",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/-RYp4v1XLes",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-10-27T11:04:11.474271+00:00",
-    "accountId": "account-c",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAt": "2026-10-27T11:04:31.367973+00:00",
-    "retryAccountId": "account-c"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-08T08:57:45.996818+00:00",
+    "rawResponse": "{\n  \"title\": \"스팸김치볶음밥\",\n  \"description\": \"5분완성!! 맛있는 볶음밥 요리!! 스팸과 김치를 이용한 초간단 스팸김치볶음밥 레시피\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"밥 210g\",\n      \"displayName\": \"밥\",\n      \"amount\": \"210\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 210g\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"스팸 100g\",\n      \"displayName\": \"스팸\",\n      \"amount\": \"100\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스팸 100g\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"제가 준비한 스팸은 200g짜리인데 스팸을 반정도만 사용하시면 됩니다\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치 적당량\",\n      \"displayName\": \"김치\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김치 적당량\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치는 잘 익은 김치를 사용해야 볶음밥이 맛있겠죠\",\n          \"timestamp\": \"00:118\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1큰술\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1큰술\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕도 1큰술 넣어주세요~\",\n          \"timestamp\": \"02:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 1큰술\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 1큰술\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장도 1큰술 넣어주세요~\",\n          \"timestamp\": \"02:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 1개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 1개\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"처음에 김치볶음밥에 올릴 계란후라이를 먼저 만들어주세요\",\n          \"timestamp\": \"01:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"잘 달궈진 팬에 기름을 둘러주세요\",\n          \"timestamp\": \"01:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 1큰술\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불을 꺼주시고 참기름 1큰술을 넣어주세요 참기름을 싫어하시는 분들은 안 넣으셔도 됩니다\",\n          \"timestamp\": \"02:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김\",\n      \"displayName\": \"김\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"입맛에 따라서 김이나 통깨를 넣어주셔도 됩니다\",\n          \"timestamp\": \"03:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"입맛에 따라서 김이나 통깨를 넣어주셔도 됩니다\",\n          \"timestamp\": \"03:06\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"스팸 100g을 깍둑썰기로 일정한 간격으로 잘라줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"스팸을 깍둑 썰기로 일정간격으로 잘라주세요\",\n          \"timestamp\": \"01:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김치를 가위로 잘게 잘라 준비합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치를 영상처럼 가위로 마구마구 잘라주시면 됩니다\",\n          \"timestamp\": \"01:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 기름을 두르고 볶음밥 위에 올릴 계란후라이를 먼저 부쳐둡니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"처음에 김치볶음밥에 올릴 계란후라이를 먼저 만들어주세요\",\n          \"timestamp\": \"01:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"잘 달궈진 팬에 기름을 두르고 중불에서 썰어둔 스팸을 넣어 잘 익을 때까지 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"잘 달궈진 팬에 기름을 둘러주세요 불세기는 중불입니다\",\n          \"timestamp\": \"01:33\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그다음 스팸을 넣어주세요 스팸이 잘 익을때까지 볶아주세요\",\n          \"timestamp\": \"01:38\"\n        }\n      ]\n    },\n    {\n      \"text\": \"스팸이 다 볶아지면 잘라둔 김치를 넣고, 설탕 1큰술과 간장 1큰술을 넣은 뒤 김치가 어느 정도 익을 때까지 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"스팸이 다 볶아졌으면 김치를 준비하시구요 김치를 넣어주세요\",\n          \"timestamp\": \"01:50\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕도 1큰술 넣어주세요~ 간장도 1큰술 넣어주세요~\",\n          \"timestamp\": \"02:01\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치가 어느정도 익을때까지 볶아주세요\",\n          \"timestamp\": \"02:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"김치가 익으면 밥 210g을 넣고 불세기를 강중불로 올려 골고루 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김치가 어느정도 익었으면 밥을 넣어주세요\",\n          \"timestamp\": \"02:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥을 넣고 불세기는 강중으로 해주세요\",\n          \"timestamp\": \"02:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불을 끄고 참기름 1큰술을 넣은 뒤 잔열에서 골고루 섞어 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불을 꺼주시고 참기름 1큰술을 넣어주세요\",\n          \"timestamp\": \"02:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불은 끈 상태에서 참기름이 잘 섞이게 조금 더 볶아주세요\",\n          \"timestamp\": \"02:44\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 볶음밥을 그릇에 담고 미리 부쳐둔 계란후라이를 올린 뒤, 취향에 따라 김이나 통깨를 곁들입니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그릇에 이쁘게 담아볼께요 처음에 준비한 계란후라이도 올려볼께요\",\n          \"timestamp\": \"02:53\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"입맛에 따라서 김이나 통깨를 넣어주셔도 됩니다\",\n          \"timestamp\": \"03:06\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "스팸김치볶음밥",
+      "description": "5분완성!! 맛있는 볶음밥 요리!! 스팸과 김치를 이용한 초간단 스팸김치볶음밥 레시피",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "밥 210g",
+          "displayName": "밥",
+          "amount": "210",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 210g",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "스팸 100g",
+          "displayName": "스팸",
+          "amount": "100",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스팸 100g",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "제가 준비한 스팸은 200g짜리인데 스팸을 반정도만 사용하시면 됩니다",
+              "timestamp": "00:50"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "김치 적당량",
+          "displayName": "김치",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김치 적당량",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "김치는 잘 익은 김치를 사용해야 볶음밥이 맛있겠죠",
+              "timestamp": "00:118"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "설탕 1큰술",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1큰술",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕도 1큰술 넣어주세요~",
+              "timestamp": "02:01"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "간장 1큰술",
+          "displayName": "간장",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 1큰술",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장도 1큰술 넣어주세요~",
+              "timestamp": "02:06"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "계란 1개",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 1개",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "처음에 김치볶음밥에 올릴 계란후라이를 먼저 만들어주세요",
+              "timestamp": "01:23"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "잘 달궈진 팬에 기름을 둘러주세요",
+              "timestamp": "01:33"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "참기름 1큰술",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "불을 꺼주시고 참기름 1큰술을 넣어주세요 참기름을 싫어하시는 분들은 안 넣으셔도 됩니다",
+              "timestamp": "02:36"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "김",
+          "displayName": "김",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "입맛에 따라서 김이나 통깨를 넣어주셔도 됩니다",
+              "timestamp": "03:06"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "입맛에 따라서 김이나 통깨를 넣어주셔도 됩니다",
+              "timestamp": "03:06"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "스팸 100g을 깍둑썰기로 일정한 간격으로 잘라줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "스팸을 깍둑 썰기로 일정간격으로 잘라주세요",
+              "timestamp": "01:04"
+            }
+          ]
+        },
+        {
+          "text": "김치를 가위로 잘게 잘라 준비합니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김치를 영상처럼 가위로 마구마구 잘라주시면 됩니다",
+              "timestamp": "01:12"
+            }
+          ]
+        },
+        {
+          "text": "팬에 기름을 두르고 볶음밥 위에 올릴 계란후라이를 먼저 부쳐둡니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "처음에 김치볶음밥에 올릴 계란후라이를 먼저 만들어주세요",
+              "timestamp": "01:23"
+            }
+          ]
+        },
+        {
+          "text": "잘 달궈진 팬에 기름을 두르고 중불에서 썰어둔 스팸을 넣어 잘 익을 때까지 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "잘 달궈진 팬에 기름을 둘러주세요 불세기는 중불입니다",
+              "timestamp": "01:33"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그다음 스팸을 넣어주세요 스팸이 잘 익을때까지 볶아주세요",
+              "timestamp": "01:38"
+            }
+          ]
+        },
+        {
+          "text": "스팸이 다 볶아지면 잘라둔 김치를 넣고, 설탕 1큰술과 간장 1큰술을 넣은 뒤 김치가 어느 정도 익을 때까지 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "스팸이 다 볶아졌으면 김치를 준비하시구요 김치를 넣어주세요",
+              "timestamp": "01:50"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕도 1큰술 넣어주세요~ 간장도 1큰술 넣어주세요~",
+              "timestamp": "02:01"
+            },
+            {
+              "type": "SPEECH",
+              "text": "김치가 어느정도 익을때까지 볶아주세요",
+              "timestamp": "02:10"
+            }
+          ]
+        },
+        {
+          "text": "김치가 익으면 밥 210g을 넣고 불세기를 강중불로 올려 골고루 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김치가 어느정도 익었으면 밥을 넣어주세요",
+              "timestamp": "02:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밥을 넣고 불세기는 강중으로 해주세요",
+              "timestamp": "02:24"
+            }
+          ]
+        },
+        {
+          "text": "불을 끄고 참기름 1큰술을 넣은 뒤 잔열에서 골고루 섞어 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "불을 꺼주시고 참기름 1큰술을 넣어주세요",
+              "timestamp": "02:36"
+            },
+            {
+              "type": "SPEECH",
+              "text": "불은 끈 상태에서 참기름이 잘 섞이게 조금 더 볶아주세요",
+              "timestamp": "02:44"
+            }
+          ]
+        },
+        {
+          "text": "완성된 볶음밥을 그릇에 담고 미리 부쳐둔 계란후라이를 올린 뒤, 취향에 따라 김이나 통깨를 곁들입니다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그릇에 이쁘게 담아볼께요 처음에 준비한 계란후라이도 올려볼께요",
+              "timestamp": "02:53"
+            },
+            {
+              "type": "SPEECH",
+              "text": "입맛에 따라서 김이나 통깨를 넣어주셔도 됩니다",
+              "timestamp": "03:06"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
   }
 }

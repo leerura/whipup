@@ -8,9 +8,11 @@ import com.whipup.generated.model.DetailIngredientDisplay;
 import com.whipup.generated.model.DetailRequirement;
 import com.whipup.generated.model.RecipeStep;
 import java.net.URI;
+import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.lang.Nullable;
 import java.time.OffsetDateTime;
 import jakarta.validation.Valid;
@@ -33,13 +35,16 @@ public class RecipeDetailResponse {
 
   private URI shortsReference;
 
-  private String sourceTitle;
+  private String sourceTitle = null;
 
-  private String sourceChannelName;
+  private String sourceChannelName = null;
 
-  private String sourceChannelId;
+  private String sourceChannelId = null;
 
-  private OffsetDateTime sourceMetadataFetchedAt;
+  private @Nullable URI sourceChannelThumbnailUrl = null;
+
+  @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
+  private OffsetDateTime sourceMetadataFetchedAt = null;
 
   private URI thumbnailUrl;
 
@@ -58,10 +63,14 @@ public class RecipeDetailResponse {
   /**
    * Constructor with only required parameters
    */
-  public RecipeDetailResponse(Long recipeId, String name, URI shortsReference, URI thumbnailUrl, Integer missingCount, List<DetailRequirement> requirements, List<@Valid DetailIngredientDisplay> optionalIngredients, List<@Valid RecipeStep> steps) {
+  public RecipeDetailResponse(Long recipeId, String name, URI shortsReference, String sourceTitle, String sourceChannelName, String sourceChannelId, OffsetDateTime sourceMetadataFetchedAt, URI thumbnailUrl, Integer missingCount, List<DetailRequirement> requirements, List<@Valid DetailIngredientDisplay> optionalIngredients, List<@Valid RecipeStep> steps) {
     this.recipeId = recipeId;
     this.name = name;
     this.shortsReference = shortsReference;
+    this.sourceTitle = sourceTitle;
+    this.sourceChannelName = sourceChannelName;
+    this.sourceChannelId = sourceChannelId;
+    this.sourceMetadataFetchedAt = sourceMetadataFetchedAt;
     this.thumbnailUrl = thumbnailUrl;
     this.missingCount = missingCount;
     this.requirements = requirements;
@@ -129,29 +138,105 @@ public class RecipeDetailResponse {
     this.shortsReference = shortsReference;
   }
 
-  public RecipeDetailResponse sourceTitle(String sourceTitle) { this.sourceTitle = sourceTitle; return this; }
+  public RecipeDetailResponse sourceTitle(String sourceTitle) {
+    this.sourceTitle = sourceTitle;
+    return this;
+  }
+
+  /**
+   * Title returned by the stored YouTube source metadata snapshot.
+   * @return sourceTitle
+   */
+  
   @JsonProperty("sourceTitle")
-  public String getSourceTitle() { return sourceTitle; }
+  public String getSourceTitle() {
+    return sourceTitle;
+  }
+
   @JsonProperty("sourceTitle")
-  public void setSourceTitle(String sourceTitle) { this.sourceTitle = sourceTitle; }
+  public void setSourceTitle(String sourceTitle) {
+    this.sourceTitle = sourceTitle;
+  }
 
-  public RecipeDetailResponse sourceChannelName(String sourceChannelName) { this.sourceChannelName = sourceChannelName; return this; }
+  public RecipeDetailResponse sourceChannelName(String sourceChannelName) {
+    this.sourceChannelName = sourceChannelName;
+    return this;
+  }
+
+  /**
+   * Get sourceChannelName
+   * @return sourceChannelName
+   */
+  
   @JsonProperty("sourceChannelName")
-  public String getSourceChannelName() { return sourceChannelName; }
+  public String getSourceChannelName() {
+    return sourceChannelName;
+  }
+
   @JsonProperty("sourceChannelName")
-  public void setSourceChannelName(String sourceChannelName) { this.sourceChannelName = sourceChannelName; }
+  public void setSourceChannelName(String sourceChannelName) {
+    this.sourceChannelName = sourceChannelName;
+  }
 
-  public RecipeDetailResponse sourceChannelId(String sourceChannelId) { this.sourceChannelId = sourceChannelId; return this; }
-  @JsonProperty("sourceChannelId")
-  public String getSourceChannelId() { return sourceChannelId; }
-  @JsonProperty("sourceChannelId")
-  public void setSourceChannelId(String sourceChannelId) { this.sourceChannelId = sourceChannelId; }
+  public RecipeDetailResponse sourceChannelId(String sourceChannelId) {
+    this.sourceChannelId = sourceChannelId;
+    return this;
+  }
 
-  public RecipeDetailResponse sourceMetadataFetchedAt(OffsetDateTime sourceMetadataFetchedAt) { this.sourceMetadataFetchedAt = sourceMetadataFetchedAt; return this; }
+  /**
+   * Get sourceChannelId
+   * @return sourceChannelId
+   */
+  
+  @JsonProperty("sourceChannelId")
+  public String getSourceChannelId() {
+    return sourceChannelId;
+  }
+
+  @JsonProperty("sourceChannelId")
+  public void setSourceChannelId(String sourceChannelId) {
+    this.sourceChannelId = sourceChannelId;
+  }
+
+  public RecipeDetailResponse sourceChannelThumbnailUrl(@Nullable URI sourceChannelThumbnailUrl) {
+    this.sourceChannelThumbnailUrl = sourceChannelThumbnailUrl;
+    return this;
+  }
+
+  /**
+   * Original YouTube channel profile image. Clients fall back to the channel name's first letter.
+   * @return sourceChannelThumbnailUrl
+   */
+  @Valid 
+  @JsonProperty("sourceChannelThumbnailUrl")
+  public @Nullable URI getSourceChannelThumbnailUrl() {
+    return sourceChannelThumbnailUrl;
+  }
+
+  @JsonProperty("sourceChannelThumbnailUrl")
+  public void setSourceChannelThumbnailUrl(@Nullable URI sourceChannelThumbnailUrl) {
+    this.sourceChannelThumbnailUrl = sourceChannelThumbnailUrl;
+  }
+
+  public RecipeDetailResponse sourceMetadataFetchedAt(OffsetDateTime sourceMetadataFetchedAt) {
+    this.sourceMetadataFetchedAt = sourceMetadataFetchedAt;
+    return this;
+  }
+
+  /**
+   * UTC time when the stored YouTube metadata snapshot was fetched.
+   * @return sourceMetadataFetchedAt
+   */
+  @Valid 
   @JsonProperty("sourceMetadataFetchedAt")
-  public OffsetDateTime getSourceMetadataFetchedAt() { return sourceMetadataFetchedAt; }
+  public OffsetDateTime getSourceMetadataFetchedAt() {
+    return sourceMetadataFetchedAt;
+  }
+
   @JsonProperty("sourceMetadataFetchedAt")
-  public void setSourceMetadataFetchedAt(OffsetDateTime sourceMetadataFetchedAt) { this.sourceMetadataFetchedAt = sourceMetadataFetchedAt; }
+  public void setSourceMetadataFetchedAt(OffsetDateTime sourceMetadataFetchedAt) {
+    this.sourceMetadataFetchedAt = sourceMetadataFetchedAt;
+  }
 
   public RecipeDetailResponse thumbnailUrl(URI thumbnailUrl) {
     this.thumbnailUrl = thumbnailUrl;
@@ -293,6 +378,7 @@ public class RecipeDetailResponse {
         Objects.equals(this.sourceTitle, recipeDetailResponse.sourceTitle) &&
         Objects.equals(this.sourceChannelName, recipeDetailResponse.sourceChannelName) &&
         Objects.equals(this.sourceChannelId, recipeDetailResponse.sourceChannelId) &&
+        Objects.equals(this.sourceChannelThumbnailUrl, recipeDetailResponse.sourceChannelThumbnailUrl) &&
         Objects.equals(this.sourceMetadataFetchedAt, recipeDetailResponse.sourceMetadataFetchedAt) &&
         Objects.equals(this.thumbnailUrl, recipeDetailResponse.thumbnailUrl) &&
         Objects.equals(this.missingCount, recipeDetailResponse.missingCount) &&
@@ -303,7 +389,7 @@ public class RecipeDetailResponse {
 
   @Override
   public int hashCode() {
-    return Objects.hash(recipeId, name, shortsReference, sourceTitle, sourceChannelName, sourceChannelId, sourceMetadataFetchedAt, thumbnailUrl, missingCount, requirements, optionalIngredients, steps);
+    return Objects.hash(recipeId, name, shortsReference, sourceTitle, sourceChannelName, sourceChannelId, sourceChannelThumbnailUrl, sourceMetadataFetchedAt, thumbnailUrl, missingCount, requirements, optionalIngredients, steps);
   }
 
   @Override
@@ -316,6 +402,7 @@ public class RecipeDetailResponse {
     sb.append("    sourceTitle: ").append(toIndentedString(sourceTitle)).append("\n");
     sb.append("    sourceChannelName: ").append(toIndentedString(sourceChannelName)).append("\n");
     sb.append("    sourceChannelId: ").append(toIndentedString(sourceChannelId)).append("\n");
+    sb.append("    sourceChannelThumbnailUrl: ").append(toIndentedString(sourceChannelThumbnailUrl)).append("\n");
     sb.append("    sourceMetadataFetchedAt: ").append(toIndentedString(sourceMetadataFetchedAt)).append("\n");
     sb.append("    thumbnailUrl: ").append(toIndentedString(thumbnailUrl)).append("\n");
     sb.append("    missingCount: ").append(toIndentedString(missingCount)).append("\n");

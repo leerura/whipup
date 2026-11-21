@@ -1,0 +1,335 @@
+{
+  "videoId": "-ho9pM_I5iw",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/-ho9pM_I5iw",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-08T09:03:48.229761+00:00",
+    "rawResponse": "{\n  \"title\": \"오므라이스\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"대파 반 컵\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파, 양파 반 컵씩\",\n          \"timestamp\": \"0:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 반 컵\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/2\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파, 양파 반 컵씩\",\n          \"timestamp\": \"0:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"스팸 1/4쪽\",\n      \"displayName\": \"스팸\",\n      \"amount\": \"1/4\",\n      \"unit\": \"쪽\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스팸 1/4쪽, 새송이버섯 반 컵\",\n          \"timestamp\": \"0:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"새송이버섯 반 컵\",\n      \"displayName\": \"새송이버섯\",\n      \"amount\": \"1/2\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스팸 1/4쪽, 새송이버섯 반 컵\",\n          \"timestamp\": \"0:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴 소스 2/3스푼\",\n      \"displayName\": \"굴 소스\",\n      \"amount\": \"2/3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴 소스 2/3스푼\",\n          \"timestamp\": \"0:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 밥을 넣음\",\n          \"timestamp\": \"0:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금\",\n          \"timestamp\": \"0:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"케첩 2~3스푼\",\n      \"displayName\": \"케첩\",\n      \"amount\": \"2~3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"케첩 2~3스푼\",\n          \"timestamp\": \"0:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 2\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2, 소금 한꼬집\",\n          \"timestamp\": \"1:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 한꼬집\",\n      \"displayName\": \"소금\",\n      \"amount\": \"1\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2, 소금 한꼬집\",\n          \"timestamp\": \"1:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름 두른 팬에 넣고 저어 가며 계란을 2/3정도 익힙니다\",\n          \"timestamp\": \"1:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"케첩\",\n      \"displayName\": \"케첩\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"케첩\",\n          \"timestamp\": \"1:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리 가루\",\n      \"displayName\": \"파슬리 가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 오므라이스 위에 파슬리 가루를 뿌림\",\n          \"timestamp\": \"1:31\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 기름을 두르고 썰어둔 대파와 양파 각 1/2컵을 넣어 볶습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파, 양파 반 컵씩\",\n          \"timestamp\": \"0:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"잘게 썬 스팸 1/4쪽과 새송이버섯 1/2컵을 넣고 함께 볶습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스팸 1/4쪽, 새송이버섯 반 컵\",\n          \"timestamp\": \"0:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"굴 소스 2/3스푼을 넣고 재료와 잘 섞어 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굴 소스 2/3스푼\",\n          \"timestamp\": \"0:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밥과 소금을 넣고 고슬고슬하게 볶습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 밥을 투하하고 볶음\",\n          \"timestamp\": \"0:28\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금\",\n          \"timestamp\": \"0:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"케첩 2~3스푼을 넣고 밥에 골고루 양념이 배도록 볶습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"케첩 2~3스푼\",\n          \"timestamp\": \"0:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볶음밥을 작은 밥공기에 꾹꾹 눌러 담은 뒤, 접시 위에 뒤집어 둥근 모양을 잡습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"공기에 볶음밥을 채워 넣고 접시 위에 뒤집어 모양을 냄\",\n          \"timestamp\": \"1:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 2개에 소금 한 꼬집을 넣고 잘 풀어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2, 소금 한꼬집\",\n          \"timestamp\": \"1:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"기름 두른 팬에 계란물을 붓고 저어가며 2/3 정도 부드럽게 익힙니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름 두른 팬에 넣고 저어 가며 계란을 2/3정도 익힙니다\",\n          \"timestamp\": \"1:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"모양을 잡은 볶음밥 위에 익힌 계란을 덮고, 케첩과 파슬리 가루를 뿌려 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥 위에 계란을 올림\",\n          \"timestamp\": \"1:25\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"케첩\",\n          \"timestamp\": \"1:27\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"파슬리 가루를 살짝 뿌려 마무리\",\n          \"timestamp\": \"1:31\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"밥의 정확한 용량 미표기\",\n    \"볶음용 소금의 정량 미표기\",\n    \"팬에 두르는 식용유의 정량 미표기\",\n    \"완성 후 토핑으로 뿌리는 케첩 및 파슬리 가루의 정량 미표기\"\n  ]\n}",
+    "result": {
+      "title": "오므라이스",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "대파 반 컵",
+          "displayName": "대파",
+          "amount": "1/2",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파, 양파 반 컵씩",
+              "timestamp": "0:06"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파 반 컵",
+          "displayName": "양파",
+          "amount": "1/2",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파, 양파 반 컵씩",
+              "timestamp": "0:06"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "스팸 1/4쪽",
+          "displayName": "스팸",
+          "amount": "1/4",
+          "unit": "쪽",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스팸 1/4쪽, 새송이버섯 반 컵",
+              "timestamp": "0:11"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "새송이버섯 반 컵",
+          "displayName": "새송이버섯",
+          "amount": "1/2",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스팸 1/4쪽, 새송이버섯 반 컵",
+              "timestamp": "0:11"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "굴 소스 2/3스푼",
+          "displayName": "굴 소스",
+          "amount": "2/3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴 소스 2/3스푼",
+              "timestamp": "0:21"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 밥을 넣음",
+              "timestamp": "0:28"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "소금",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금",
+              "timestamp": "0:33"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "케첩 2~3스푼",
+          "displayName": "케첩",
+          "amount": "2~3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "케첩 2~3스푼",
+              "timestamp": "0:45"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "계란 2",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2, 소금 한꼬집",
+              "timestamp": "1:08"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "소금 한꼬집",
+          "displayName": "소금",
+          "amount": "1",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2, 소금 한꼬집",
+              "timestamp": "1:08"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름 두른 팬에 넣고 저어 가며 계란을 2/3정도 익힙니다",
+              "timestamp": "1:14"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "케첩",
+          "displayName": "케첩",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "케첩",
+              "timestamp": "1:27"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "파슬리 가루",
+          "displayName": "파슬리 가루",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 오므라이스 위에 파슬리 가루를 뿌림",
+              "timestamp": "1:31"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 기름을 두르고 썰어둔 대파와 양파 각 1/2컵을 넣어 볶습니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파, 양파 반 컵씩",
+              "timestamp": "0:06"
+            }
+          ]
+        },
+        {
+          "text": "잘게 썬 스팸 1/4쪽과 새송이버섯 1/2컵을 넣고 함께 볶습니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스팸 1/4쪽, 새송이버섯 반 컵",
+              "timestamp": "0:11"
+            }
+          ]
+        },
+        {
+          "text": "굴 소스 2/3스푼을 넣고 재료와 잘 섞어 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굴 소스 2/3스푼",
+              "timestamp": "0:21"
+            }
+          ]
+        },
+        {
+          "text": "밥과 소금을 넣고 고슬고슬하게 볶습니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 밥을 투하하고 볶음",
+              "timestamp": "0:28"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금",
+              "timestamp": "0:33"
+            }
+          ]
+        },
+        {
+          "text": "케첩 2~3스푼을 넣고 밥에 골고루 양념이 배도록 볶습니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "케첩 2~3스푼",
+              "timestamp": "0:45"
+            }
+          ]
+        },
+        {
+          "text": "볶음밥을 작은 밥공기에 꾹꾹 눌러 담은 뒤, 접시 위에 뒤집어 둥근 모양을 잡습니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "공기에 볶음밥을 채워 넣고 접시 위에 뒤집어 모양을 냄",
+              "timestamp": "1:00"
+            }
+          ]
+        },
+        {
+          "text": "계란 2개에 소금 한 꼬집을 넣고 잘 풀어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2, 소금 한꼬집",
+              "timestamp": "1:08"
+            }
+          ]
+        },
+        {
+          "text": "기름 두른 팬에 계란물을 붓고 저어가며 2/3 정도 부드럽게 익힙니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름 두른 팬에 넣고 저어 가며 계란을 2/3정도 익힙니다",
+              "timestamp": "1:14"
+            }
+          ]
+        },
+        {
+          "text": "모양을 잡은 볶음밥 위에 익힌 계란을 덮고, 케첩과 파슬리 가루를 뿌려 완성합니다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥 위에 계란을 올림",
+              "timestamp": "1:25"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "케첩",
+              "timestamp": "1:27"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "파슬리 가루를 살짝 뿌려 마무리",
+              "timestamp": "1:31"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "밥의 정확한 용량 미표기",
+        "볶음용 소금의 정량 미표기",
+        "팬에 두르는 식용유의 정량 미표기",
+        "완성 후 토핑으로 뿌리는 케첩 및 파슬리 가루의 정량 미표기"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  }
+}

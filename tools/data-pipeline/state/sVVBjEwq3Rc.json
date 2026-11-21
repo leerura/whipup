@@ -1,18 +1,485 @@
 {
   "videoId": "sVVBjEwq3Rc",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/sVVBjEwq3Rc",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-10-27T10:39:16.850443+00:00",
-    "accountId": "account-e",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAt": "2026-10-27T10:39:48.342323+00:00",
-    "retryAccountId": "account-e"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-12T12:16:33.750956+00:00",
+    "rawResponse": "{\n  \"title\": \"비빔국수 (Bibim-guksu)\",\n  \"description\": null,\n  \"servings\": \"2인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"물 2리터\",\n      \"displayName\": \"물\",\n      \"amount\": \"2\",\n      \"unit\": \"L\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"[2인분 기준] 물 2리터를 끓여주세요.\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 소면 2인분을 삶을 물을 끓여주세요.\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소면 2인분\",\n      \"displayName\": \"소면\",\n      \"amount\": \"2\",\n      \"unit\": \"인분\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물이 끓어오르면 소면 2인분을 넣어주세요.\",\n          \"timestamp\": \"02:29\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"500원짜리 동전 크기만큼 잡았을 때 1인분, 총 2인분 1,000원어치 넣어주시고요\",\n          \"timestamp\": \"02:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/4개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1/4\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 1/4개를 채썰어주세요.\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고명으로 쓸 양파를 1/4개만 채썰어주세요.\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"오이\",\n      \"displayName\": \"오이\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 외에도 냉장고에 오이가 있으면 오이 이거 좋고요\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"상추 (또는 깻잎)\",\n      \"displayName\": \"상추 (또는 깻잎)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"상추(또는 깻잎)를 큼직하게 잘라주세요. (생략 가능)\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"상추나 깻잎이 보이면 큼직하게 썰어서 넣어주시고요, 없으면 생략해주세요.\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김치 한 줌\",\n      \"displayName\": \"김치\",\n      \"amount\": \"1\",\n      \"unit\": \"줌\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만약 집에 맛있게 잘 익은 김치가 있다면 한 줌 정도는 썰어서 넣으셔도 좋습니다.\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 흰대부분 10cm\",\n      \"displayName\": \"대파 흰대부분\",\n      \"amount\": \"10\",\n      \"unit\": \"cm\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파 흰대부분을 10cm 정도 작게 다져주세요.\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파 흰대부분을 약 10cm 정도만 작게 다져서 준비해 주세요.\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깐마늘 3~4알 (또는 다진 마늘 1스푼/20g)\",\n      \"displayName\": \"깐마늘\",\n      \"amount\": \"3~4\",\n      \"unit\": \"알\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"깐마늘 3~4알을 작게 다져주세요. (또는 다진 마늘 1스푼)\",\n          \"timestamp\": \"00:50\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진 마늘 1스푼(20g) 넣어주세요.\",\n          \"timestamp\": \"01:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 2스푼(50g)\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"[2인분 기준] 고추장 2스푼(50g) 넣어주세요.\",\n          \"timestamp\": \"01:01\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 × 2\",\n          \"timestamp\": \"01:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"(고운) 고춧가루 1스푼(7g)\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"[2인분 기준] (고운) 고춧가루 1스푼(7g) 넣어주세요.\",\n          \"timestamp\": \"01:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 × 1\",\n          \"timestamp\": \"01:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양조간장(또는 진간장) 2스푼(20g)\",\n      \"displayName\": \"양조간장 (또는 진간장)\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"[2인분 기준] 양조간장(또는 진간장) 2스푼(20g) 넣어주세요.\",\n          \"timestamp\": \"01:17\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장 × 2\",\n          \"timestamp\": \"01:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼(13g)\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"[2인분 기준] 설탕 1스푼(13g) 넣어주세요.\",\n          \"timestamp\": \"01:21\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 × 1\",\n          \"timestamp\": \"01:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식초 3스푼(30g)\",\n      \"displayName\": \"식초\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"[2인분 기준] 식초 3스푼(30g) 넣어주세요.\",\n          \"timestamp\": \"01:24\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식초 × 3\",\n          \"timestamp\": \"01:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물엿(또는 올리고당) 4스푼(52g)\",\n      \"displayName\": \"물엿 (또는 올리고당)\",\n      \"amount\": \"4\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"[2인분 기준] 물엿(또는 올리고당) 4스푼(52g) 넣어주세요.\",\n          \"timestamp\": \"01:28\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물엿 × 4\",\n          \"timestamp\": \"01:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소고기다시다 1/2스푼\",\n      \"displayName\": \"소고기다시다\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"[2인분 기준] 소고기다시다 1/2스푼 넣어주세요.\",\n          \"timestamp\": \"01:45\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다시다 × 0.5\",\n          \"timestamp\": \"01:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 2스푼\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"[2인분 기준] 참기름 2스푼 넣어주세요.\",\n          \"timestamp\": \"01:56\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 × 2\",\n          \"timestamp\": \"01:56\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨 2스푼\",\n      \"displayName\": \"통깨\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"[2인분 기준] 통깨 2스푼을 으깨서 넣어주세요.\",\n          \"timestamp\": \"02:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물(또는 사이다) 5스푼(50g)\",\n      \"displayName\": \"물 (또는 사이다)\",\n      \"amount\": \"5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"[2인분 기준] 물(또는 사이다) 5스푼(50g) 넣어주세요.\",\n          \"timestamp\": \"02:13\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 × 5\",\n          \"timestamp\": \"02:12\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 물 2리터를 넣고 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"[2인분 기준] 물 2리터를 끓여주세요.\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 1/4개를 채 썰어 찬물에 5분 정도 담가 매운맛을 빼준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양파 1/4개를 채썰어주세요.\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"찬물에 5분 정도 담가주세요.\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파 흰대 약 10cm를 잘게 다지고, 깐마늘 3~4알(또는 다진 마늘 1스푼)을 잘게 다져 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"대파 흰대부분을 10cm 정도 작게 다져주세요.\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"깐마늘 3~4알을 작게 다져주세요. (또는 다진 마늘 1스푼)\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"text\": \"믹싱볼에 고추장 2스푼(50g), 고운 고춧가루 1스푼(7g), 양조간장 2스푼(20g), 설탕 1스푼(13g), 식초 3스푼(30g), 물엿(또는 올리고당) 4스푼(52g), 다져놓은 대파, 다진 마늘 1스푼(20g), 소고기다시다 1/2스푼, 참기름 2스푼, 손으로 으깬 통깨 2스푼, 물(또는 사이다) 5스푼(50g)을 넣고 설탕 알갱이가 녹을 때까지 잘 섞어 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"[2인분 기준] 고추장 2스푼(50g) 넣어주세요.\",\n          \"timestamp\": \"01:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다져놓은 대파 흰대부분을 넣어주세요.\",\n          \"timestamp\": \"01:38\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"잘 섞어주세요.\",\n          \"timestamp\": \"02:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물이 끓어오르면 소면 2인분을 넣고 뭉치지 않게 저어가며 약 4분간 삶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물이 끓어오르면 소면 2인분을 넣어주세요.\",\n          \"timestamp\": \"02:29\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"약 4분 정도 삶아주세요.\",\n          \"timestamp\": \"02:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삶은 소면을 찬물에 넣고 전분기를 비벼 씻어내며 2~3번 헹군 뒤, 체에 밭쳐 물기를 빼준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물에 2~3번 정도 헹궈주세요.\",\n          \"timestamp\": \"02:46\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물기를 빼주세요.\",\n          \"timestamp\": \"02:56\"\n        }\n      ]\n    },\n    {\n      \"text\": \"만들어둔 양념장에 물기를 뺀 채 썬 양파와 삶은 소면을 넣고 빠르게 비벼 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양념에 채썰어놓은 양파를 넣어주세요.\",\n          \"timestamp\": \"03:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"삶은 소면을 넣어주세요.\",\n          \"timestamp\": \"03:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"잘 비벼주세요.\",\n          \"timestamp\": \"03:10\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "비빔국수 (Bibim-guksu)",
+      "description": null,
+      "servings": "2인분",
+      "ingredients": [
+        {
+          "rawText": "물 2리터",
+          "displayName": "물",
+          "amount": "2",
+          "unit": "L",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "[2인분 기준] 물 2리터를 끓여주세요.",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 소면 2인분을 삶을 물을 끓여주세요.",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "소면 2인분",
+          "displayName": "소면",
+          "amount": "2",
+          "unit": "인분",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물이 끓어오르면 소면 2인분을 넣어주세요.",
+              "timestamp": "02:29"
+            },
+            {
+              "type": "SPEECH",
+              "text": "500원짜리 동전 크기만큼 잡았을 때 1인분, 총 2인분 1,000원어치 넣어주시고요",
+              "timestamp": "02:30"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "양파 1/4개",
+          "displayName": "양파",
+          "amount": "1/4",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파 1/4개를 채썰어주세요.",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고명으로 쓸 양파를 1/4개만 채썰어주세요.",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "오이",
+          "displayName": "오이",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 외에도 냉장고에 오이가 있으면 오이 이거 좋고요",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "상추 (또는 깻잎)",
+          "displayName": "상추 (또는 깻잎)",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "상추(또는 깻잎)를 큼직하게 잘라주세요. (생략 가능)",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "상추나 깻잎이 보이면 큼직하게 썰어서 넣어주시고요, 없으면 생략해주세요.",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "김치 한 줌",
+          "displayName": "김치",
+          "amount": "1",
+          "unit": "줌",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "만약 집에 맛있게 잘 익은 김치가 있다면 한 줌 정도는 썰어서 넣으셔도 좋습니다.",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "대파 흰대부분 10cm",
+          "displayName": "대파 흰대부분",
+          "amount": "10",
+          "unit": "cm",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대파 흰대부분을 10cm 정도 작게 다져주세요.",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파 흰대부분을 약 10cm 정도만 작게 다져서 준비해 주세요.",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "깐마늘 3~4알 (또는 다진 마늘 1스푼/20g)",
+          "displayName": "깐마늘",
+          "amount": "3~4",
+          "unit": "알",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "깐마늘 3~4알을 작게 다져주세요. (또는 다진 마늘 1스푼)",
+              "timestamp": "00:50"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다진 마늘 1스푼(20g) 넣어주세요.",
+              "timestamp": "01:41"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "고추장 2스푼(50g)",
+          "displayName": "고추장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "[2인분 기준] 고추장 2스푼(50g) 넣어주세요.",
+              "timestamp": "01:01"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 × 2",
+              "timestamp": "01:01"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "(고운) 고춧가루 1스푼(7g)",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "[2인분 기준] (고운) 고춧가루 1스푼(7g) 넣어주세요.",
+              "timestamp": "01:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 × 1",
+              "timestamp": "01:06"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "양조간장(또는 진간장) 2스푼(20g)",
+          "displayName": "양조간장 (또는 진간장)",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "[2인분 기준] 양조간장(또는 진간장) 2스푼(20g) 넣어주세요.",
+              "timestamp": "01:17"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장 × 2",
+              "timestamp": "01:17"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "설탕 1스푼(13g)",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "[2인분 기준] 설탕 1스푼(13g) 넣어주세요.",
+              "timestamp": "01:21"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 × 1",
+              "timestamp": "01:21"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "식초 3스푼(30g)",
+          "displayName": "식초",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "[2인분 기준] 식초 3스푼(30g) 넣어주세요.",
+              "timestamp": "01:24"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식초 × 3",
+              "timestamp": "01:24"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "물엿(또는 올리고당) 4스푼(52g)",
+          "displayName": "물엿 (또는 올리고당)",
+          "amount": "4",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "[2인분 기준] 물엿(또는 올리고당) 4스푼(52g) 넣어주세요.",
+              "timestamp": "01:28"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물엿 × 4",
+              "timestamp": "01:28"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "소고기다시다 1/2스푼",
+          "displayName": "소고기다시다",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "[2인분 기준] 소고기다시다 1/2스푼 넣어주세요.",
+              "timestamp": "01:45"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다시다 × 0.5",
+              "timestamp": "01:45"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "참기름 2스푼",
+          "displayName": "참기름",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "[2인분 기준] 참기름 2스푼 넣어주세요.",
+              "timestamp": "01:56"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 × 2",
+              "timestamp": "01:56"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "통깨 2스푼",
+          "displayName": "통깨",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "[2인분 기준] 통깨 2스푼을 으깨서 넣어주세요.",
+              "timestamp": "02:01"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        },
+        {
+          "rawText": "물(또는 사이다) 5스푼(50g)",
+          "displayName": "물 (또는 사이다)",
+          "amount": "5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "[2인분 기준] 물(또는 사이다) 5스푼(50g) 넣어주세요.",
+              "timestamp": "02:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 × 5",
+              "timestamp": "02:12"
+            }
+          ],
+          "sourceId": "ingredient-18"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 물 2리터를 넣고 끓여준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "[2인분 기준] 물 2리터를 끓여주세요.",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "양파 1/4개를 채 썰어 찬물에 5분 정도 담가 매운맛을 빼준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양파 1/4개를 채썰어주세요.",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "찬물에 5분 정도 담가주세요.",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "대파 흰대 약 10cm를 잘게 다지고, 깐마늘 3~4알(또는 다진 마늘 1스푼)을 잘게 다져 준비한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "대파 흰대부분을 10cm 정도 작게 다져주세요.",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "깐마늘 3~4알을 작게 다져주세요. (또는 다진 마늘 1스푼)",
+              "timestamp": "00:50"
+            }
+          ]
+        },
+        {
+          "text": "믹싱볼에 고추장 2스푼(50g), 고운 고춧가루 1스푼(7g), 양조간장 2스푼(20g), 설탕 1스푼(13g), 식초 3스푼(30g), 물엿(또는 올리고당) 4스푼(52g), 다져놓은 대파, 다진 마늘 1스푼(20g), 소고기다시다 1/2스푼, 참기름 2스푼, 손으로 으깬 통깨 2스푼, 물(또는 사이다) 5스푼(50g)을 넣고 설탕 알갱이가 녹을 때까지 잘 섞어 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "[2인분 기준] 고추장 2스푼(50g) 넣어주세요.",
+              "timestamp": "01:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다져놓은 대파 흰대부분을 넣어주세요.",
+              "timestamp": "01:38"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "잘 섞어주세요.",
+              "timestamp": "02:20"
+            }
+          ]
+        },
+        {
+          "text": "물이 끓어오르면 소면 2인분을 넣고 뭉치지 않게 저어가며 약 4분간 삶아준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물이 끓어오르면 소면 2인분을 넣어주세요.",
+              "timestamp": "02:29"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "약 4분 정도 삶아주세요.",
+              "timestamp": "02:39"
+            }
+          ]
+        },
+        {
+          "text": "삶은 소면을 찬물에 넣고 전분기를 비벼 씻어내며 2~3번 헹군 뒤, 체에 밭쳐 물기를 빼준다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "물에 2~3번 정도 헹궈주세요.",
+              "timestamp": "02:46"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물기를 빼주세요.",
+              "timestamp": "02:56"
+            }
+          ]
+        },
+        {
+          "text": "만들어둔 양념장에 물기를 뺀 채 썬 양파와 삶은 소면을 넣고 빠르게 비벼 완성한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양념에 채썰어놓은 양파를 넣어주세요.",
+              "timestamp": "03:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "삶은 소면을 넣어주세요.",
+              "timestamp": "03:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "잘 비벼주세요.",
+              "timestamp": "03:10"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
   }
 }

@@ -1,0 +1,405 @@
+{
+  "videoId": "bJ-TtTSraGI",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/bJ-TtTSraGI",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-08T09:02:50.377526+00:00",
+    "rawResponse": "{\n  \"title\": \"맛있는 참치순두부찌개 만들기\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"대파 한대\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"대\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 한대 썰어주기\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 반개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"0.5\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 반개\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 2개\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 2개\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유 2스푼\",\n      \"displayName\": \"식용유\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 2스푼\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 반스푼\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 반스푼\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 2스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 2스푼\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 250ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"250\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 250ml\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 반스푼\",\n      \"displayName\": \"소금\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 반스푼\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"국간장 2스푼\",\n      \"displayName\": \"국간장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장 2스푼\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치\",\n      \"displayName\": \"참치캔\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치 투하\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"동원참치 1캔을 냄비에 통째로 넣음\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"순두부\",\n      \"displayName\": \"순두부\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"순두부 투하\",\n          \"timestamp\": \"00:48\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"순두부 1팩을 반 잘라 넣음\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 1개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 1개\",\n          \"timestamp\": \"00:57\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"대파 한 대를 송송 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 한대 썰어주기\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도마 위에서 대파를 썬다\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 반 개를 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 반개\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양파 반 개를 채 썬다\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"청양고추 2개를 송송 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 2개\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"청양고추를 썬다\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 식용유 2스푼, 다진마늘 반스푼, 썰어둔 대파 일부를 넣고 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유 2스푼\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 반스푼\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 투하\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비에 기름, 마늘, 대파를 넣고 주걱으로 볶는다\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파를 넣고 함께 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 투하\",\n          \"timestamp\": \"00:56\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양파를 넣고 볶는다\",\n          \"timestamp\": \"01:00\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고춧가루 2스푼을 넣고 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 2스푼\",\n          \"timestamp\": \"01:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"고춧가루를 넣고 채소와 함께 볶는다\",\n          \"timestamp\": \"01:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 250ml를 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 250ml\",\n          \"timestamp\": \"01:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소금 반스푼, 국간장 2스푼을 넣고 섞는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 반스푼\",\n          \"timestamp\": \"01:31\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장 2스푼\",\n          \"timestamp\": \"01:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"참치를 넣고 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치 투하\",\n          \"timestamp\": \"01:37\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"참치를 넣고 주걱으로 풀어준다\",\n          \"timestamp\": \"01:42\"\n        }\n      ]\n    },\n    {\n      \"text\": \"순두부를 넣고 칼로 적당한 크기로 자른다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"순두부 투하\",\n          \"timestamp\": \"01:48\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"순두부를 넣고 칼로 썰어준다\",\n          \"timestamp\": \"01:51\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 1개를 깨 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 1개\",\n          \"timestamp\": \"01:57\"\n        }\n      ]\n    },\n    {\n      \"text\": \"썰어둔 청양고추와 남은 대파를 몽땅 넣고 끓여 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 뿌리기\",\n          \"timestamp\": \"02:02\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"남은 대파 몽땅\",\n          \"timestamp\": \"02:05\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛있는 참치순두부찌개 완성\",\n          \"timestamp\": \"02:25\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "맛있는 참치순두부찌개 만들기",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "대파 한대",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "대",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 한대 썰어주기",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "양파 반개",
+          "displayName": "양파",
+          "amount": "0.5",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 반개",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "청양고추 2개",
+          "displayName": "청양고추",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 2개",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "식용유 2스푼",
+          "displayName": "식용유",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 2스푼",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "다진마늘 반스푼",
+          "displayName": "다진마늘",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 반스푼",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "고춧가루 2스푼",
+          "displayName": "고춧가루",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 2스푼",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "물 250ml",
+          "displayName": "물",
+          "amount": "250",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 250ml",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "소금 반스푼",
+          "displayName": "소금",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 반스푼",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "국간장 2스푼",
+          "displayName": "국간장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장 2스푼",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "참치",
+          "displayName": "참치캔",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치 투하",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "동원참치 1캔을 냄비에 통째로 넣음",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "순두부",
+          "displayName": "순두부",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "순두부 투하",
+              "timestamp": "00:48"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "순두부 1팩을 반 잘라 넣음",
+              "timestamp": "00:48"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "계란 1개",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 1개",
+              "timestamp": "00:57"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "대파 한 대를 송송 썬다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 한대 썰어주기",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도마 위에서 대파를 썬다",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "양파 반 개를 썬다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 반개",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양파 반 개를 채 썬다",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "청양고추 2개를 송송 썬다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 2개",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "청양고추를 썬다",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 식용유 2스푼, 다진마늘 반스푼, 썰어둔 대파 일부를 넣고 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유 2스푼",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 반스푼",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 투하",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비에 기름, 마늘, 대파를 넣고 주걱으로 볶는다",
+              "timestamp": "00:45"
+            }
+          ]
+        },
+        {
+          "text": "양파를 넣고 함께 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 투하",
+              "timestamp": "00:56"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양파를 넣고 볶는다",
+              "timestamp": "01:00"
+            }
+          ]
+        },
+        {
+          "text": "고춧가루 2스푼을 넣고 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 2스푼",
+              "timestamp": "01:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "고춧가루를 넣고 채소와 함께 볶는다",
+              "timestamp": "01:14"
+            }
+          ]
+        },
+        {
+          "text": "물 250ml를 붓는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 250ml",
+              "timestamp": "01:22"
+            }
+          ]
+        },
+        {
+          "text": "소금 반스푼, 국간장 2스푼을 넣고 섞는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 반스푼",
+              "timestamp": "01:31"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장 2스푼",
+              "timestamp": "01:33"
+            }
+          ]
+        },
+        {
+          "text": "참치를 넣고 섞어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치 투하",
+              "timestamp": "01:37"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "참치를 넣고 주걱으로 풀어준다",
+              "timestamp": "01:42"
+            }
+          ]
+        },
+        {
+          "text": "순두부를 넣고 칼로 적당한 크기로 자른다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "순두부 투하",
+              "timestamp": "01:48"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "순두부를 넣고 칼로 썰어준다",
+              "timestamp": "01:51"
+            }
+          ]
+        },
+        {
+          "text": "계란 1개를 깨 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 1개",
+              "timestamp": "01:57"
+            }
+          ]
+        },
+        {
+          "text": "썰어둔 청양고추와 남은 대파를 몽땅 넣고 끓여 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 뿌리기",
+              "timestamp": "02:02"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "남은 대파 몽땅",
+              "timestamp": "02:05"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛있는 참치순두부찌개 완성",
+              "timestamp": "02:25"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  }
+}

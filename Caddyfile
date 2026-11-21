@@ -4,9 +4,30 @@
 	default_sni {$WHIPUP_PUBLIC_IP}
 }
 
-{$WHIPUP_PUBLIC_IP} {
+(whippy_site) {
+
+	log {
+		output stdout
+		format filter {
+			wrap json
+			fields {
+				request>headers delete
+				request>remote_ip delete
+			}
+		}
+	}
 	encode zstd gzip
+	@monitoring path /actuator/*
+	respond @monitoring 404
 	reverse_proxy backend:8080
+}
+
+api.seokwonlee.xyz {
+	import whippy_site
+}
+
+{$WHIPUP_PUBLIC_IP} {
+	import whippy_site
 	tls {
 		issuer acme {
 			profile shortlived

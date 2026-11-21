@@ -1,0 +1,272 @@
+{
+  "videoId": "syFOL_U9uEM",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/syFOL_U9uEM",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-15T09:34:34.523880+00:00",
+    "rawResponse": "{\n  \"title\": \"치즈해시브라운\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"감자 5개 (500g)\",\n      \"displayName\": \"감자\",\n      \"amount\": \"500\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 감자 다섯 개를 작은 큐브 모양이 나오게 썰어준 다음 볼에 담아줘\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"감자 500g\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"감자 2개 (200g)\",\n      \"displayName\": \"감자\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 이번에는 감자 두 개를 한 입 크기로 썰어준 다음 끓는 물에 넣고 10분간 끓여줄 거야\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"감자 200g\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"옥수수전분 30g\",\n      \"displayName\": \"옥수수전분\",\n      \"amount\": \"30\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 옥수수 전분과 소금을 넣고\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"옥수수전분 30g\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 0.5g\",\n      \"displayName\": \"소금\",\n      \"amount\": \"0.5\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"옥수수 전분과 소금을 넣고\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 0.5g\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"모짜렐라치즈\",\n      \"displayName\": \"모짜렐라치즈\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"반죽 위에 모짜렐라 치즈를 하나씩 올려준 다음 반죽으로 모짜렐라 치즈를 덮어줘\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"모짜렐라치즈\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 180도 기름에 넣고\",\n          \"timestamp\": \"00:48\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"180도 기름에 튀기기\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"감자 5개(500g)를 작은 큐브 모양으로 잘게 썰어 볼에 담아둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 감자 다섯 개를 작은 큐브 모양이 나오게 썰어준 다음 볼에 담아줘\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"감자 500g\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"감자 2개(200g)를 한 입 크기로 썰어 끓는 물에 넣고 10분간 삶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 이번에는 감자 두 개를 한 입 크기로 썰어준 다음 끓는 물에 넣고 10분간 끓여줄 거야\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"10분간 끓이기\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"10분 뒤 삶은 감자를 건져 썰어둔 생감자가 담긴 볼에 함께 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"10분 뒤 감자를 건져준 다음 아까 그 큐브 모양의 감자가 있던 볼에 모두 넣어줘\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"삶은 감자\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 옥수수전분 30g과 소금 0.5g을 넣고, 손으로 뜨거운 감자를 으깨가며 반죽한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 옥수수 전분과 소금을 넣고 손으로 뜨거운 감자를 으깨가며 반죽을 해 줄 거야\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"옥수수전분 30g\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 0.5g\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"종이호일을 깔고 감자 반죽을 넓게 펼쳐 직사각형 형태로 모양을 잡는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 종이 호일을 하나 깔아준 다음 감자를 넓게 펼쳐줘\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"반죽 위에 모짜렐라치즈를 간격을 두어 올리고, 반죽으로 치즈를 덮어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"반죽 위에 모짜렐라 치즈를 하나씩 올려준 다음 반죽으로 모짜렐라 치즈를 덮어줘\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"모짜렐라치즈\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"모짜렐라치즈 사이를 피해 먹기 좋은 크기로 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 모짜렐라 치즈를 피해서 먹기 좋은 크기로 잘라줄 거야\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"text\": \"180도로 달군 기름에 넣고 겉면이 노릇노릇해질 때까지 튀겨낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 180도 기름에 넣고 겉면이 노릇노릇해질 때까지 튀겨주면\",\n          \"timestamp\": \"00:48\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"180도 기름에 튀기기\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "치즈해시브라운",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "감자 5개 (500g)",
+          "displayName": "감자",
+          "amount": "500",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 감자 다섯 개를 작은 큐브 모양이 나오게 썰어준 다음 볼에 담아줘",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "감자 500g",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "감자 2개 (200g)",
+          "displayName": "감자",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 이번에는 감자 두 개를 한 입 크기로 썰어준 다음 끓는 물에 넣고 10분간 끓여줄 거야",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "감자 200g",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "옥수수전분 30g",
+          "displayName": "옥수수전분",
+          "amount": "30",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 옥수수 전분과 소금을 넣고",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "옥수수전분 30g",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "소금 0.5g",
+          "displayName": "소금",
+          "amount": "0.5",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "옥수수 전분과 소금을 넣고",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 0.5g",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "모짜렐라치즈",
+          "displayName": "모짜렐라치즈",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "반죽 위에 모짜렐라 치즈를 하나씩 올려준 다음 반죽으로 모짜렐라 치즈를 덮어줘",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "모짜렐라치즈",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 180도 기름에 넣고",
+              "timestamp": "00:48"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "180도 기름에 튀기기",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        }
+      ],
+      "steps": [
+        {
+          "text": "감자 5개(500g)를 작은 큐브 모양으로 잘게 썰어 볼에 담아둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 감자 다섯 개를 작은 큐브 모양이 나오게 썰어준 다음 볼에 담아줘",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "감자 500g",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "감자 2개(200g)를 한 입 크기로 썰어 끓는 물에 넣고 10분간 삶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 이번에는 감자 두 개를 한 입 크기로 썰어준 다음 끓는 물에 넣고 10분간 끓여줄 거야",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "10분간 끓이기",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "10분 뒤 삶은 감자를 건져 썰어둔 생감자가 담긴 볼에 함께 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "10분 뒤 감자를 건져준 다음 아까 그 큐브 모양의 감자가 있던 볼에 모두 넣어줘",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "삶은 감자",
+              "timestamp": "00:19"
+            }
+          ]
+        },
+        {
+          "text": "볼에 옥수수전분 30g과 소금 0.5g을 넣고, 손으로 뜨거운 감자를 으깨가며 반죽한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 옥수수 전분과 소금을 넣고 손으로 뜨거운 감자를 으깨가며 반죽을 해 줄 거야",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "옥수수전분 30g",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 0.5g",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "종이호일을 깔고 감자 반죽을 넓게 펼쳐 직사각형 형태로 모양을 잡는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 종이 호일을 하나 깔아준 다음 감자를 넓게 펼쳐줘",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "반죽 위에 모짜렐라치즈를 간격을 두어 올리고, 반죽으로 치즈를 덮어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "반죽 위에 모짜렐라 치즈를 하나씩 올려준 다음 반죽으로 모짜렐라 치즈를 덮어줘",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "모짜렐라치즈",
+              "timestamp": "00:39"
+            }
+          ]
+        },
+        {
+          "text": "모짜렐라치즈 사이를 피해 먹기 좋은 크기로 썰어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 모짜렐라 치즈를 피해서 먹기 좋은 크기로 잘라줄 거야",
+              "timestamp": "00:44"
+            }
+          ]
+        },
+        {
+          "text": "180도로 달군 기름에 넣고 겉면이 노릇노릇해질 때까지 튀겨낸다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 180도 기름에 넣고 겉면이 노릇노릇해질 때까지 튀겨주면",
+              "timestamp": "00:48"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "180도 기름에 튀기기",
+              "timestamp": "00:47"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "애들간식인데 와이프가 다 먹어버렸습니다ㅠ",
+    "sourceChannelName": "1분요리 뚝딱이형",
+    "sourceChannelId": "UC0htUSwcxfSGNfK_5Q28JkA",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/MHTy5jXZQPwKwrGtAV-gLL6ei9YTOgR8Z6GESkhAAIz0kkG4d6B6vu6CUPNNsLOzqcGxGfBK=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-15T09:34:31.384579Z"
+  }
+}

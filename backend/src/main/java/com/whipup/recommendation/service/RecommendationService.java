@@ -7,8 +7,10 @@ import com.whipup.generated.model.MissingSubstitute;
 import com.whipup.generated.model.RecommendationItem;
 import com.whipup.generated.model.RecommendationListResponse;
 import com.whipup.generated.model.RecommendationMode;
+import com.whipup.generated.model.RecipeSearchScope;
 import com.whipup.generated.model.RequirementResult;
 import com.whipup.generated.model.SatisfiedRequirementResult;
+import com.whipup.common.observability.WhipupMetrics;
 import com.whipup.ingredient.domain.IngredientVariant;
 import com.whipup.ingredient.domain.UserIngredient;
 import com.whipup.ingredient.repository.UserIngredientRepository;
@@ -40,15 +42,18 @@ public class RecommendationService {
     private final RecipeRepository recipeRepository;
     private final UserIngredientRepository userIngredientRepository;
     private final RecipeMatchService recipeMatchService;
+    private final WhipupMetrics metrics;
 
     public RecommendationService(
         RecipeRepository recipeRepository,
         UserIngredientRepository userIngredientRepository,
-        RecipeMatchService recipeMatchService
+        RecipeMatchService recipeMatchService,
+        WhipupMetrics metrics
     ) {
         this.recipeRepository = recipeRepository;
         this.userIngredientRepository = userIngredientRepository;
         this.recipeMatchService = recipeMatchService;
+        this.metrics = metrics;
     }
 
     @Transactional(readOnly = true)
@@ -60,29 +65,102 @@ public class RecommendationService {
             throw RecommendationException.invalidRequest();
         }
 
-        List<IngredientVariant> ownedVariants = userIngredientRepository
-            .findAllByUser_IdOrderByIngredientVariant_NameAsc(userId)
-            .stream()
-            .map(UserIngredient::getIngredientVariant)
-            .toList();
+        LoadedRecommendationData loaded = metrics.record("whipup.recommendation.load", () ->
+            new LoadedRecommendationData(
+                userIngredientRepository.findAllByUser_IdOrderByIngredientVariant_NameAsc(userId)
+                    .stream().map(UserIngredient::getIngredientVariant).toList(),
+                recipeRepository.findAllByStatusOrderByIdAsc(RecipeStatus.PUBLISHED)
+            ));
+        List<IngredientVariant> ownedVariants = loaded.ownedVariants();
 
         if (ownedVariants.isEmpty()) {
             throw RecommendationException.noOwnedIngredients();
         }
 
-        List<Recipe> recipes = recipeRepository
-            .findAllByStatusOrderByIdAsc(RecipeStatus.PUBLISHED);
-
-        List<RecommendationItem> items = recipeMatchService
-            .matchAll(recipes, ownedVariants)
+        List<MatchedRecipe> matched = metrics.record("whipup.recommendation.match", () -> recipeMatchService
+            .matchAll(loaded.recipes(), ownedVariants)
             .stream()
             .filter(matchedRecipe -> matchesMode(matchedRecipe, mode))
             .sorted(recommendationComparator(mode))
-            .map(this::toRecommendationItem)
-            .toList();
+            .toList());
+        List<RecommendationItem> items = metrics.record("whipup.recommendation.project", () ->
+            matched.stream().map(this::toRecommendationItem).toList());
 
         return new RecommendationListResponse(items);
     }
+
+    @Transactional(readOnly = true)
+    public RecommendationListResponse toRecommendationItems(
+        Long userId,
+        List<Recipe> recipes
+    ) {
+        List<IngredientVariant> ownedVariants = userIngredientRepository
+            .findAllByUser_IdOrderByIngredientVariant_NameAsc(userId)
+            .stream()
+            .map(UserIngredient::getIngredientVariant)
+            .toList();
+        return new RecommendationListResponse(recipeMatchService
+            .matchAll(recipes, ownedVariants)
+            .stream()
+            .map(this::toRecommendationItem)
+            .toList());
+    }
+
+    @Transactional(readOnly = true)
+    public RecommendationListResponse searchRecipes(
+        Long userId,
+        RecipeSearchScope scope,
+        String query
+    ) {
+        if (scope == null || query == null || query.isBlank()) {
+            throw RecommendationException.invalidRequest();
+        }
+        return metrics.record("whipup.recipe.search", () -> {
+            String normalizedQuery = normalize(query);
+            List<IngredientVariant> ownedVariants = userIngredientRepository
+                .findAllByUser_IdOrderByIngredientVariant_NameAsc(userId).stream()
+                .map(UserIngredient::getIngredientVariant).toList();
+            List<MatchedRecipe> matched = recipeMatchService
+                .matchAll(recipeRepository.findAllByStatusOrderByIdAsc(RecipeStatus.PUBLISHED), ownedVariants)
+                .stream().filter(item -> matchesSearch(item.recipe(), normalizedQuery))
+                .filter(item -> scope == RecipeSearchScope.AVAILABLE
+                    ? item.matchResult().missingCount() == 0
+                    : item.matchResult().missingCount() >= 1)
+                .sorted(searchComparator(scope, normalizedQuery)).toList();
+            return new RecommendationListResponse(matched.stream().map(this::toRecommendationItem).toList());
+        }, "scope", scope.name());
+    }
+
+    private boolean matchesSearch(Recipe recipe, String query) {
+        if (normalize(recipe.getName()).contains(query)) {
+            return true;
+        }
+        return recipe.getIngredients().stream()
+            .anyMatch(ingredient -> normalize(ingredient.getDisplayName()).contains(query));
+    }
+
+    private Comparator<MatchedRecipe> searchComparator(
+        RecipeSearchScope scope,
+        String query
+    ) {
+        return Comparator
+            .comparing((MatchedRecipe item) -> scope == RecipeSearchScope.ALL
+                ? item.matchResult().missingCount() : 0)
+            .thenComparing(item -> normalize(item.recipe().getName()).startsWith(query) ? 0 : 1)
+            .thenComparing(item -> normalize(item.recipe().getName()).contains(query) ? 0 : 1)
+            .thenComparing(item -> item.recipe().getName())
+            .thenComparing(item -> item.recipe().getId());
+    }
+
+    private String normalize(String value) {
+        return value.toLowerCase(java.util.Locale.ROOT)
+            .replaceAll("\\s+", "");
+    }
+
+    private record LoadedRecommendationData(
+        List<IngredientVariant> ownedVariants,
+        List<Recipe> recipes
+    ) { }
 
     private boolean matchesMode(
         MatchedRecipe matchedRecipe,
@@ -125,13 +203,16 @@ public class RecommendationService {
             .map(this::toRequirementResult)
             .toList();
 
-        return new RecommendationItem(
+        RecommendationItem item = new RecommendationItem(
             recipe.getId(),
             recipe.getName(),
             thumbnailUrl,
             matchResult.missingCount(),
             requirementResults
         );
+        item.setSourceChannelName(recipe.getSourceChannelName());
+        item.setSourceChannelThumbnailUrl(toUri(recipe.getSourceChannelThumbnailUrl()));
+        return item;
     }
 
     private RequirementResult toRequirementResult(
@@ -242,5 +323,15 @@ public class RecommendationService {
             .orElseThrow(() -> new IllegalStateException(
                 "YouTube reference does not contain video id"
             ));
+    }
+
+    /** Stored dataset snapshot URL, or null when missing or malformed (clients fall back to an initial). */
+    private static java.net.URI toUri(String value) {
+        if (value == null || value.isBlank()) return null;
+        try {
+            return java.net.URI.create(value);
+        } catch (IllegalArgumentException exception) {
+            return null;
+        }
     }
 }

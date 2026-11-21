@@ -1,0 +1,380 @@
+{
+  "videoId": "yZnFlEP-l_Q",
+  "status": "EXTRACTION_READY",
+  "stages": {},
+  "sourceUrl": "https://www.youtube.com/shorts/yZnFlEP-l_Q",
+  "pipelineVersion": 3,
+  "extraction": {
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-08T09:28:15.661984+00:00",
+    "rawResponse": "{\n  \"title\": \"10분 달걀덮밥\",\n  \"description\": null,\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"양파 한개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"재료(1인기준) : 양파, 계란 2개, 설탕, 소금, 진간장, 참치액\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"먼저 양파 한개를 반을 갈라 얇게 썰어주세요\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 양파 한 개를 반을 갈라 얇게 썰어주세요\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"기름을 4번 정도 두른\",\n      \"displayName\": \"기름\",\n      \"amount\": \"4\",\n      \"unit\": \"번 두름\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"프라이팬에 기름을 4번 정도 두른 후 양파를 볶아주세요\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"프라이팬에 기름을 4번 정도 두른 후 양파를 볶아주세요\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 두 꼬집\",\n      \"displayName\": \"소금\",\n      \"amount\": \"2\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 두 꼬집만 넣어 양파에 간을 해주세요\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금 두 꼬집만 넣어 양파에 간을 해주세요\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 한 컵\",\n      \"displayName\": \"물\",\n      \"amount\": \"1\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볶은 양파 위에 물 한 컵을 넣어주세요\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"볶은 양파 위에 물 한 컵을 넣어주세요\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 / 간장 한스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"재료(1인기준) : 양파, 계란 2개, 설탕, 소금, 진간장, 참치액\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 한스푼\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 간장 한 스푼\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치액 한스푼\",\n      \"displayName\": \"참치액\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치액 한스푼\",\n          \"timestamp\": \"00:42\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치액 한 스푼\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 반스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 반스푼\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 반 스푼을 넣어주세요\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 2개\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"재료(1인기준) : 양파, 계란 2개, 설탕, 소금, 진간장, 참치액\",\n          \"timestamp\": \"00:00\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2개를 대충 풀어주세요\",\n          \"timestamp\": \"00:55\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 2개를 대충 풀어주세요\",\n          \"timestamp\": \"00:55\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"달걀소스를 밥 위에 얹어주면 완성이예요\",\n          \"timestamp\": \"01:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"달걀소스를 밥 위에 얹어주면 완성이예요\",\n          \"timestamp\": \"01:14\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥이 담긴 그릇 위에 조리된 달걀 소스를 붓는다\",\n          \"timestamp\": \"01:15\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양파 1개를 반으로 가른 뒤 얇게 썰어 준비합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"먼저 양파 한개를 반을 갈라 얇게 썰어주세요\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 양파 한 개를 반을 갈라 얇게 썰어주세요\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"프라이팬에 기름을 4번 정도 두른 후 썬 양파를 넣고 볶습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"프라이팬에 기름을 4번 정도 두른 후 양파를 볶아주세요\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"프라이팬에 기름을 4번 정도 두른 후 양파를 볶아주세요\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소금 두 꼬집을 넣어 양파에 간을 합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 두 꼬집만 넣어 양파에 간을 해주세요\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금 두 꼬집만 넣어 양파에 간을 해주세요\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"약불에서 양파가 노릇해질 때까지 볶아줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"약불에 양파가 노릇해질 때까지 볶아주세요\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"약불에 양파가 노릇해질 때까지 볶아주세요\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"노릇하게 볶은 양파 위에 물 한 컵을 붓습니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"볶은 양파 위에 물 한 컵을 넣어주세요\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"볶은 양파 위에 물 한 컵을 넣어주세요\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"간장 1스푼, 참치액 1스푼, 설탕 0.5스푼을 넣고 섞어 끓입니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 한스푼 / 참치액 한스푼 / 설탕 반스푼\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 간장 한 스푼, 참치액 한 스푼, 설탕 반 스푼을 넣어주세요\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 계란 2개를 깨뜨려 대충 풀어줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2개를 대충 풀어주세요\",\n          \"timestamp\": \"00:55\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 2개를 대충 풀어주세요\",\n          \"timestamp\": \"00:55\"\n        }\n      ]\n    },\n    {\n      \"text\": \"끓고 있는 양파 소스 위에 푼 계란을 둘러 뿌려줍니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대충 위에 뿌려서 기호에 맞게 익혀주면 끝!\",\n          \"timestamp\": \"00:58\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대충 위에 뿌려서 기호에 맞게 익혀주면 끝\",\n          \"timestamp\": \"00:58\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뚜껑을 덮고 1분간 익힙니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"뚜껑 덮고 1분이면 끝이에요\",\n          \"timestamp\": \"01:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"뚜껑 덮고 1분이면 끝이에요\",\n          \"timestamp\": \"01:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"완성된 달걀소스를 밥 위에 얹어 완성합니다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"달걀소스를 밥 위에 얹어주면 완성이예요\",\n          \"timestamp\": \"01:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"달걀소스를 밥 위에 얹어주면 완성이예요\",\n          \"timestamp\": \"01:14\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "10분 달걀덮밥",
+      "description": null,
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "양파 한개",
+          "displayName": "양파",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "재료(1인기준) : 양파, 계란 2개, 설탕, 소금, 진간장, 참치액",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "먼저 양파 한개를 반을 갈라 얇게 썰어주세요",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 양파 한 개를 반을 갈라 얇게 썰어주세요",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "기름을 4번 정도 두른",
+          "displayName": "기름",
+          "amount": "4",
+          "unit": "번 두름",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "프라이팬에 기름을 4번 정도 두른 후 양파를 볶아주세요",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "프라이팬에 기름을 4번 정도 두른 후 양파를 볶아주세요",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "소금 두 꼬집",
+          "displayName": "소금",
+          "amount": "2",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 두 꼬집만 넣어 양파에 간을 해주세요",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소금 두 꼬집만 넣어 양파에 간을 해주세요",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "물 한 컵",
+          "displayName": "물",
+          "amount": "1",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볶은 양파 위에 물 한 컵을 넣어주세요",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "SPEECH",
+              "text": "볶은 양파 위에 물 한 컵을 넣어주세요",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "진간장 / 간장 한스푼",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "재료(1인기준) : 양파, 계란 2개, 설탕, 소금, 진간장, 참치액",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 한스푼",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 간장 한 스푼",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "참치액 한스푼",
+          "displayName": "참치액",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치액 한스푼",
+              "timestamp": "00:42"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참치액 한 스푼",
+              "timestamp": "00:42"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "설탕 반스푼",
+          "displayName": "설탕",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 반스푼",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 반 스푼을 넣어주세요",
+              "timestamp": "00:43"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "계란 2개",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "재료(1인기준) : 양파, 계란 2개, 설탕, 소금, 진간장, 참치액",
+              "timestamp": "00:00"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2개를 대충 풀어주세요",
+              "timestamp": "00:55"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란 2개를 대충 풀어주세요",
+              "timestamp": "00:55"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "달걀소스를 밥 위에 얹어주면 완성이예요",
+              "timestamp": "01:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "달걀소스를 밥 위에 얹어주면 완성이예요",
+              "timestamp": "01:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥이 담긴 그릇 위에 조리된 달걀 소스를 붓는다",
+              "timestamp": "01:15"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양파 1개를 반으로 가른 뒤 얇게 썰어 준비합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "먼저 양파 한개를 반을 갈라 얇게 썰어주세요",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 양파 한 개를 반을 갈라 얇게 썰어주세요",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "프라이팬에 기름을 4번 정도 두른 후 썬 양파를 넣고 볶습니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "프라이팬에 기름을 4번 정도 두른 후 양파를 볶아주세요",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "프라이팬에 기름을 4번 정도 두른 후 양파를 볶아주세요",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "소금 두 꼬집을 넣어 양파에 간을 합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 두 꼬집만 넣어 양파에 간을 해주세요",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소금 두 꼬집만 넣어 양파에 간을 해주세요",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "약불에서 양파가 노릇해질 때까지 볶아줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "약불에 양파가 노릇해질 때까지 볶아주세요",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "약불에 양파가 노릇해질 때까지 볶아주세요",
+              "timestamp": "00:30"
+            }
+          ]
+        },
+        {
+          "text": "노릇하게 볶은 양파 위에 물 한 컵을 붓습니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "볶은 양파 위에 물 한 컵을 넣어주세요",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "SPEECH",
+              "text": "볶은 양파 위에 물 한 컵을 넣어주세요",
+              "timestamp": "00:37"
+            }
+          ]
+        },
+        {
+          "text": "간장 1스푼, 참치액 1스푼, 설탕 0.5스푼을 넣고 섞어 끓입니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 한스푼 / 참치액 한스푼 / 설탕 반스푼",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 간장 한 스푼, 참치액 한 스푼, 설탕 반 스푼을 넣어주세요",
+              "timestamp": "00:41"
+            }
+          ]
+        },
+        {
+          "text": "볼에 계란 2개를 깨뜨려 대충 풀어줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2개를 대충 풀어주세요",
+              "timestamp": "00:55"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란 2개를 대충 풀어주세요",
+              "timestamp": "00:55"
+            }
+          ]
+        },
+        {
+          "text": "끓고 있는 양파 소스 위에 푼 계란을 둘러 뿌려줍니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대충 위에 뿌려서 기호에 맞게 익혀주면 끝!",
+              "timestamp": "00:58"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대충 위에 뿌려서 기호에 맞게 익혀주면 끝",
+              "timestamp": "00:58"
+            }
+          ]
+        },
+        {
+          "text": "뚜껑을 덮고 1분간 익힙니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "뚜껑 덮고 1분이면 끝이에요",
+              "timestamp": "01:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "뚜껑 덮고 1분이면 끝이에요",
+              "timestamp": "01:12"
+            }
+          ]
+        },
+        {
+          "text": "완성된 달걀소스를 밥 위에 얹어 완성합니다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "달걀소스를 밥 위에 얹어주면 완성이예요",
+              "timestamp": "01:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "달걀소스를 밥 위에 얹어주면 완성이예요",
+              "timestamp": "01:14"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  }
+}
