@@ -275,9 +275,9 @@ def is_blocked(title: str, blocked: tuple) -> bool:
     taxonomy, codes = blocked
     if not codes:
         return False
-    code = taxonomy.classify_name(title)
-    if code in codes:
-        print(f"  [종류 초과로 제외: {taxonomy.label(code).split('(')[0]}] {title}")
+    main, others = taxonomy.other_types(title)
+    if main in codes and others <= codes:  # "라면보다 쉬운 계란국" also names 국, so it is kept
+        print(f"  [종류 초과로 제외: {taxonomy.label(main).split('(')[0]}] {title}")
         return True
     return False
 

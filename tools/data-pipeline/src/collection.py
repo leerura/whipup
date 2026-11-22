@@ -79,6 +79,23 @@ class Taxonomy:
                 return dish_type.code
         return "OTHER"
 
+    def other_types(self, name: str) -> tuple[str, set[str]]:
+        """(main type, types matched outside the word that gave the main type).
+
+        Lets discover keep "라면보다 쉬운 계란국" (계란국 is still collected) while still dropping
+        "두부조림덮밥" (조림 is part of the rice-bowl word itself).
+        """
+        text = clean_title(name)
+        main = self.classify_name(name)
+        if main == "OTHER":
+            return main, set()
+        dish = next(t for t in self.types if t.code == main)
+        match = next(m for m in (p.search(text) for p in dish.patterns) if m)
+        start = text.rfind(" ", 0, match.start()) + 1
+        end = text.find(" ", match.end())
+        rest = text[:start] + " " + (text[end:] if end != -1 else "")
+        return main, {t.code for t in self.types if t.code != "OTHER" and any(p.search(rest) for p in t.patterns)}
+
     def classify(self, video_id: str, name: str | None, gemini_type: str | None) -> tuple[str, str]:
         """(code, how): override > Gemini dishType (extraction v2) > name rules."""
         if video_id in self.overrides:

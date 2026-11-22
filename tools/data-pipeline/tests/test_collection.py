@@ -37,6 +37,20 @@ class TaxonomyTests(unittest.TestCase):
         self.assertAlmostEqual(shares["RICE"], 60)
 
 
+class BlockingTests(unittest.TestCase):
+    def test_titles_are_dropped_only_when_nothing_still_collected_fits(self):
+        from discover import is_blocked
+        blocked = (Taxonomy.load(), {"RICE", "NOODLE"})
+        dropped = ["간장계란밥 #shorts", "닭죽 끓이기", "김치볶음밥 초간단", "두부조림덮밥, 통장 잔고 바닥일 땐"]
+        kept = ["15분만에 만드는 집밥 | 참치 무조림 레시피!", "명절 부침개 반죽 하나로 모둠전 만들기",
+                "라면보다 끓이기 더 쉽다는 3분 계란국 레시피", "놀라운 신라면 국물 전자렌지 계란찜!",
+                "1인 부대찌개_중학생 혼밥 일기 #cooking", "9분완성 건강식집밥 | 원팬샌드위치"]
+        for title in dropped:
+            self.assertTrue(is_blocked(title, blocked), title)
+        for title in kept:
+            self.assertFalse(is_blocked(title, blocked), title)
+
+
 class PlanTests(unittest.TestCase):
     def setUp(self):
         self.taxonomy = Taxonomy.load()
