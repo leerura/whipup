@@ -1,19 +1,452 @@
 {
   "videoId": "9cfpBWIV_WQ",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/9cfpBWIV_WQ",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-11-20T13:14:59.953991+00:00",
-    "accountId": "account-e",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAccountId": "account-e",
-    "retryableRuns": 1,
-    "retryAt": "2026-11-20T13:15:18.397607+00:00"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-21T08:26:50.603474+00:00",
+    "rawResponse": "{\n  \"title\": \"매운 삼겹살찜\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"삼겹살 1kg\",\n      \"displayName\": \"삼겹살\",\n      \"amount\": \"1\",\n      \"unit\": \"kg\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"삼겹살 1kg\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 삼겹살을 노릇노릇하게 구워줄 거야\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 6spoons\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"6\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 6spoons\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 볼에 고춧가루\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 3spoons\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"3\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 3spoons\",\n          \"timestamp\": \"00:25\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양조간장 2spoons\",\n      \"displayName\": \"양조간장\",\n      \"amount\": \"2\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양조간장 2spoons\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양조간장\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 3spoons\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"3\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 3spoons\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물엿 0.5spoon\",\n      \"displayName\": \"물엿\",\n      \"amount\": \"0.5\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물엿 0.5spoon\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물엿\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 0.5spoon\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.5\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 0.5spoon\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 0.2spoon\",\n      \"displayName\": \"후추\",\n      \"amount\": \"0.2\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 0.2spoon\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"미원 0.3spoon\",\n      \"displayName\": \"미원\",\n      \"amount\": \"0.3\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"미원 0.3spoon\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"미원\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간 마늘 2spoons\",\n      \"displayName\": \"간 마늘\",\n      \"amount\": \"2\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간 마늘 2spoons\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간 마늘을 넣어준 다음\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 250ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"250\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 250ml\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물을 부어서 양념을 잘 풀어줄 거야\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"메추리알 270g\",\n      \"displayName\": \"메추리알\",\n      \"amount\": \"270\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"메추리알 270g\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"메추리알을 넣어줘\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 60g\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"60\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 60g\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마늘을 칼로 굵게 다져서 넣어줄 거야\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 30g\",\n      \"displayName\": \"대파\",\n      \"amount\": \"30\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 30g\",\n          \"timestamp\": \"00:45\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"대파\",\n          \"timestamp\": \"00:49\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 20g\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"20\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 20g\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"청양고추를 넣고\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참깨\",\n      \"displayName\": \"참깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참깨\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬 위에 참깨를 뿌림\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 두툼한 삼겹살(보쌈용 삼겹살)을 넣고 노릇노릇하게 굽다가 한입 크기로 자른 후 골고루 익혀준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 삼겹살을 노릇노릇하게 구워줄 거야 나는 보쌈용 삼겹살을 반 잘라서 사용했어 찜으로 먹을 때는 확실히 두꺼운 게 더 맛있더라고\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 삼겹살을 올려 굽다가 가위로 먹기 좋은 크기로 자름\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삼겹살이 노릇노릇하게 익으면 키친타올로 팬의 기름을 모두 닦아낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"삼겹살이 노릇노릇하게 익으면 키친타올로 기름을 모두 닦아내줘\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"키친타올로 팬의 기름을 닦아냄\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 고춧가루 6스푼, 고추장 3스푼, 양조간장 2스푼, 맛술 3스푼, 물엿 0.5스푼, 설탕 0.5스푼, 후추 0.2스푼, 미원 0.3스푼, 간 마늘 2스푼, 물 250ml를 넣고 잘 풀어 양념을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 볼에 고춧가루 고추장 양조간장 맛술 물엿 설탕 후추 미원 간 마늘을 넣어준 다음 물을 부어서 양념을 잘 풀어줄 거야\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볼에 양념 재료와 물을 붓고 숟가락으로 섞음\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"구워진 삼겹살에 만든 양념을 모두 붓고 메추리알 270g을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 삼겹살에 방금 만든 양념을 모두 부어준 다음 메추리알을 넣어줘\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬의 고기 위에 양념과 메추리알을 투하함\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"text\": \"통마늘을 칼로 굵게 다져 굵게 다진 마늘 60g, 송송 썬 대파 30g, 청양고추 20g을 팬에 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 오늘의 킥 마늘을 칼로 굵게 다져서 넣어줄 거야 마지막으로 다진 마늘과 대파 청양고추를 넣고\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"칼로 마늘을 굵게 다진 뒤 대파, 청양고추와 함께 팬에 넣음\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"text\": \"재료들을 섞어가며 딱 3분만 더 졸여준 후, 참깨를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"딱 3분만 더 졸여주면 마늘폭탄 매운 삼겹살찜 끝\",\n          \"timestamp\": \"00:51\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"재료를 저어가며 졸인 뒤 참깨를 뿌림\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "매운 삼겹살찜",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "삼겹살 1kg",
+          "displayName": "삼겹살",
+          "amount": "1",
+          "unit": "kg",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "삼겹살 1kg",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 삼겹살을 노릇노릇하게 구워줄 거야",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "고춧가루 6spoons",
+          "displayName": "고춧가루",
+          "amount": "6",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 6spoons",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 볼에 고춧가루",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "고추장 3spoons",
+          "displayName": "고추장",
+          "amount": "3",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 3spoons",
+              "timestamp": "00:25"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양조간장 2spoons",
+          "displayName": "양조간장",
+          "amount": "2",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양조간장 2spoons",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양조간장",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "맛술 3spoons",
+          "displayName": "맛술",
+          "amount": "3",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 3spoons",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "맛술",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "물엿 0.5spoon",
+          "displayName": "물엿",
+          "amount": "0.5",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물엿 0.5spoon",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물엿",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "설탕 0.5spoon",
+          "displayName": "설탕",
+          "amount": "0.5",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 0.5spoon",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "후추 0.2spoon",
+          "displayName": "후추",
+          "amount": "0.2",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 0.2spoon",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "미원 0.3spoon",
+          "displayName": "미원",
+          "amount": "0.3",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "미원 0.3spoon",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "SPEECH",
+              "text": "미원",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "간 마늘 2spoons",
+          "displayName": "간 마늘",
+          "amount": "2",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간 마늘 2spoons",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간 마늘을 넣어준 다음",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "물 250ml",
+          "displayName": "물",
+          "amount": "250",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 250ml",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물을 부어서 양념을 잘 풀어줄 거야",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "메추리알 270g",
+          "displayName": "메추리알",
+          "amount": "270",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "메추리알 270g",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "메추리알을 넣어줘",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "다진 마늘 60g",
+          "displayName": "다진 마늘",
+          "amount": "60",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 60g",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마늘을 칼로 굵게 다져서 넣어줄 거야",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "대파 30g",
+          "displayName": "대파",
+          "amount": "30",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 30g",
+              "timestamp": "00:45"
+            },
+            {
+              "type": "SPEECH",
+              "text": "대파",
+              "timestamp": "00:49"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "청양고추 20g",
+          "displayName": "청양고추",
+          "amount": "20",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 20g",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "SPEECH",
+              "text": "청양고추를 넣고",
+              "timestamp": "00:50"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "참깨",
+          "displayName": "참깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참깨",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬 위에 참깨를 뿌림",
+              "timestamp": "00:54"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 두툼한 삼겹살(보쌈용 삼겹살)을 넣고 노릇노릇하게 굽다가 한입 크기로 자른 후 골고루 익혀준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 삼겹살을 노릇노릇하게 구워줄 거야 나는 보쌈용 삼겹살을 반 잘라서 사용했어 찜으로 먹을 때는 확실히 두꺼운 게 더 맛있더라고",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 삼겹살을 올려 굽다가 가위로 먹기 좋은 크기로 자름",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "삼겹살이 노릇노릇하게 익으면 키친타올로 팬의 기름을 모두 닦아낸다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "삼겹살이 노릇노릇하게 익으면 키친타올로 기름을 모두 닦아내줘",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "키친타올로 팬의 기름을 닦아냄",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "볼에 고춧가루 6스푼, 고추장 3스푼, 양조간장 2스푼, 맛술 3스푼, 물엿 0.5스푼, 설탕 0.5스푼, 후추 0.2스푼, 미원 0.3스푼, 간 마늘 2스푼, 물 250ml를 넣고 잘 풀어 양념을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 볼에 고춧가루 고추장 양조간장 맛술 물엿 설탕 후추 미원 간 마늘을 넣어준 다음 물을 부어서 양념을 잘 풀어줄 거야",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볼에 양념 재료와 물을 붓고 숟가락으로 섞음",
+              "timestamp": "00:33"
+            }
+          ]
+        },
+        {
+          "text": "구워진 삼겹살에 만든 양념을 모두 붓고 메추리알 270g을 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 삼겹살에 방금 만든 양념을 모두 부어준 다음 메추리알을 넣어줘",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬의 고기 위에 양념과 메추리알을 투하함",
+              "timestamp": "00:36"
+            }
+          ]
+        },
+        {
+          "text": "통마늘을 칼로 굵게 다져 굵게 다진 마늘 60g, 송송 썬 대파 30g, 청양고추 20g을 팬에 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 오늘의 킥 마늘을 칼로 굵게 다져서 넣어줄 거야 마지막으로 다진 마늘과 대파 청양고추를 넣고",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "칼로 마늘을 굵게 다진 뒤 대파, 청양고추와 함께 팬에 넣음",
+              "timestamp": "00:40"
+            }
+          ]
+        },
+        {
+          "text": "재료들을 섞어가며 딱 3분만 더 졸여준 후, 참깨를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "딱 3분만 더 졸여주면 마늘폭탄 매운 삼겹살찜 끝",
+              "timestamp": "00:51"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "재료를 저어가며 졸인 뒤 참깨를 뿌림",
+              "timestamp": "00:52"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "삼겹살 그냥 굽지 말고 이렇게 드세요!",
+    "sourceChannelName": "1분요리 뚝딱이형",
+    "sourceChannelId": "UC0htUSwcxfSGNfK_5Q28JkA",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/MHTy5jXZQPwKwrGtAV-gLL6ei9YTOgR8Z6GESkhAAIz0kkG4d6B6vu6CUPNNsLOzqcGxGfBK=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:26:47.361201Z"
+  },
+  "applyChecks": {
+    "short": true,
+    "embeddable": true,
+    "checkedAt": "2026-11-22T08:10:17Z"
   }
 }

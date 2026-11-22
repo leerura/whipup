@@ -1,18 +1,340 @@
 {
   "videoId": "Uv1VG9wqm1s",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/Uv1VG9wqm1s",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 3,
-    "startedAt": "2026-11-15T09:38:12.112147+00:00",
-    "accountId": "account-e",
-    "error": "504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAt": "2026-11-15T09:42:10.838364+00:00",
-    "retryAccountId": "account-e"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-21T08:45:19.477105+00:00",
+    "rawResponse": "{\n  \"title\": \"다이어트 프로틴 요거트 & 프로틴 바크 아이스크림\",\n  \"description\": \"자기 전에 미리 만들어두어 식욕을 달래주는 초콜릿 코팅 프로틴 치아시드 요거트와 얼려 먹는 초코 바나나 프로틴 요거트 아이스크림 레시피입니다.\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"요거트 2컵\",\n      \"displayName\": \"요거트\",\n      \"amount\": \"2\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"요거트 2컵\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"요거트에\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"치아시드 1스푼씩\",\n      \"displayName\": \"치아시드\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"치아시드 1\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"치아시드 1스푼씩\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"프로티원 한스쿱\",\n      \"displayName\": \"프로티원 단백질 쉐이크 (딸기맛 / 얼그레이 밀크티맛)\",\n      \"amount\": \"1\",\n      \"unit\": \"스쿱\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"프로티원 한 스쿱 넣고 잘 섞어줘\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"프로티원 한스쿱 넣고 섞기!\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"바나나 1/2개\",\n      \"displayName\": \"바나나\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"바나나 1/2개\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"좋아하는 과일도 넣어서\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"블루베리 1줌\",\n      \"displayName\": \"블루베리\",\n      \"amount\": \"1\",\n      \"unit\": \"줌\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"블루베리 1줌\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"좋아하는 과일도 넣어서\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다크초콜릿 3조각\",\n      \"displayName\": \"다크초콜릿\",\n      \"amount\": \"3\",\n      \"unit\": \"조각\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다크초콜릿 3조각\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"뜨거운 물에 다크초콜릿 3조각 녹여서\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"토핑 (카카오닙스 또는 그래놀라 추정)\",\n      \"displayName\": \"토핑\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"초콜릿 위에 카카오닙스 또는 견과류 토핑을 뿌림\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"요거트 3컵\",\n      \"displayName\": \"요거트 (아이스크림용)\",\n      \"amount\": \"3\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"요거트 3컵\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"프로티원 초코맛 1팩\",\n      \"displayName\": \"프로티원 단백질 쉐이크 파우치 초코맛\",\n      \"amount\": \"1\",\n      \"unit\": \"팩\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"프로티원 파우치 초코맛 1팩을 요거트에 부음\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"요거트랑 프로티원 초코맛 섞어서\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"바나나\",\n      \"displayName\": \"바나나 (아이스크림 토핑용)\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"바나나랑 같이 얼려주면\",\n          \"timestamp\": \"00:48\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"초코 요거트 위에 바나나 슬라이스를 올림\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"유리 용기에 요거트를 덜고 치아시드를 1스푼씩 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"요거트에 치아시드 1스푼씩\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"용기에 담긴 요거트 위에 치아시드를 넣음\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"프로티원 단백질 쉐이크 파우더를 1스쿱씩 넣고 잘 섞는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"프로티원 한스쿱 넣고 잘 섞어줘\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"프로티원 한스쿱 넣고 섞기!\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"취향에 따라 슬라이스한 바나나, 블루베리 등 과일을 넣고 섞는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"좋아하는 과일도 넣어서 잘 섞은 다음\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"바나나 1/2개 블루베리 1줌\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뜨거운 물 위에 그릇을 얹어 다크초콜릿 3조각을 중탕으로 녹인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"뜨거운 물에 다크초콜릿 3조각 녹여서\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"뜨거운 물을 담은 그릇 위에 다크초콜릿이 담긴 볼을 얹어 녹임\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"녹인 다크초콜릿을 요거트 위에 얇게 부어 코팅하고 취향에 따라 토핑을 뿌린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"얇게 코팅해봐\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"숟가락으로 녹인 초콜릿을 펴 바르고 카카오닙스를 올림\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뚜껑을 닫고 냉장고에 넣어 최소 4시간 또는 하룻밤 동안 굳힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"냉장고 최소 4시간!\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그럼 냉장고에 하룻밤만 둬도 진짜진짜 맛있는데\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"[응용 레시피] 볼에 요거트 3컵과 프로티원 초코맛 파우치를 넣고 섞은 뒤 종이호일을 깐 틀에 붓고 바나나 슬라이스를 올려 냉동실에 얼려 프로틴 아이스크림을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"요거트랑 프로티원 초코맛 섞어서 바나나라 같이 얼려주면 속세맛 아이스크림까지 해결\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"요거트와 초코맛 프로틴을 섞어 틀에 붓고 바나나를 얹어 얼린 후 칼로 자름\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"00:31 시점에 초콜릿 위에 뿌리는 토핑의 정확한 명칭과 분량은 영상 자막 및 음성으로 언급되지 않음 (카카오닙스 또는 그래놀라로 추정)\",\n    \"00:47 프로틴 요거트 바크 아이스크림에 사용된 바나나의 정확한 수량과 냉동 시간은 언급되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "다이어트 프로틴 요거트 & 프로틴 바크 아이스크림",
+      "description": "자기 전에 미리 만들어두어 식욕을 달래주는 초콜릿 코팅 프로틴 치아시드 요거트와 얼려 먹는 초코 바나나 프로틴 요거트 아이스크림 레시피입니다.",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "요거트 2컵",
+          "displayName": "요거트",
+          "amount": "2",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "요거트 2컵",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "요거트에",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "치아시드 1스푼씩",
+          "displayName": "치아시드",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "치아시드 1",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "치아시드 1스푼씩",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "프로티원 한스쿱",
+          "displayName": "프로티원 단백질 쉐이크 (딸기맛 / 얼그레이 밀크티맛)",
+          "amount": "1",
+          "unit": "스쿱",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "프로티원 한 스쿱 넣고 잘 섞어줘",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "프로티원 한스쿱 넣고 섞기!",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "바나나 1/2개",
+          "displayName": "바나나",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "바나나 1/2개",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "좋아하는 과일도 넣어서",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "블루베리 1줌",
+          "displayName": "블루베리",
+          "amount": "1",
+          "unit": "줌",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "블루베리 1줌",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "좋아하는 과일도 넣어서",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "다크초콜릿 3조각",
+          "displayName": "다크초콜릿",
+          "amount": "3",
+          "unit": "조각",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다크초콜릿 3조각",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "뜨거운 물에 다크초콜릿 3조각 녹여서",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "토핑 (카카오닙스 또는 그래놀라 추정)",
+          "displayName": "토핑",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "초콜릿 위에 카카오닙스 또는 견과류 토핑을 뿌림",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "요거트 3컵",
+          "displayName": "요거트 (아이스크림용)",
+          "amount": "3",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "요거트 3컵",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "프로티원 초코맛 1팩",
+          "displayName": "프로티원 단백질 쉐이크 파우치 초코맛",
+          "amount": "1",
+          "unit": "팩",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "프로티원 파우치 초코맛 1팩을 요거트에 부음",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SPEECH",
+              "text": "요거트랑 프로티원 초코맛 섞어서",
+              "timestamp": "00:46"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "바나나",
+          "displayName": "바나나 (아이스크림 토핑용)",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "바나나랑 같이 얼려주면",
+              "timestamp": "00:48"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "초코 요거트 위에 바나나 슬라이스를 올림",
+              "timestamp": "00:47"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "유리 용기에 요거트를 덜고 치아시드를 1스푼씩 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "요거트에 치아시드 1스푼씩",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "용기에 담긴 요거트 위에 치아시드를 넣음",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "프로티원 단백질 쉐이크 파우더를 1스쿱씩 넣고 잘 섞는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "프로티원 한스쿱 넣고 잘 섞어줘",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "프로티원 한스쿱 넣고 섞기!",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "취향에 따라 슬라이스한 바나나, 블루베리 등 과일을 넣고 섞는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "좋아하는 과일도 넣어서 잘 섞은 다음",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "바나나 1/2개 블루베리 1줌",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "뜨거운 물 위에 그릇을 얹어 다크초콜릿 3조각을 중탕으로 녹인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "뜨거운 물에 다크초콜릿 3조각 녹여서",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "뜨거운 물을 담은 그릇 위에 다크초콜릿이 담긴 볼을 얹어 녹임",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "녹인 다크초콜릿을 요거트 위에 얇게 부어 코팅하고 취향에 따라 토핑을 뿌린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "얇게 코팅해봐",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "숟가락으로 녹인 초콜릿을 펴 바르고 카카오닙스를 올림",
+              "timestamp": "00:29"
+            }
+          ]
+        },
+        {
+          "text": "뚜껑을 닫고 냉장고에 넣어 최소 4시간 또는 하룻밤 동안 굳힌다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "냉장고 최소 4시간!",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그럼 냉장고에 하룻밤만 둬도 진짜진짜 맛있는데",
+              "timestamp": "00:30"
+            }
+          ]
+        },
+        {
+          "text": "[응용 레시피] 볼에 요거트 3컵과 프로티원 초코맛 파우치를 넣고 섞은 뒤 종이호일을 깐 틀에 붓고 바나나 슬라이스를 올려 냉동실에 얼려 프로틴 아이스크림을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "요거트랑 프로티원 초코맛 섞어서 바나나라 같이 얼려주면 속세맛 아이스크림까지 해결",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "요거트와 초코맛 프로틴을 섞어 틀에 붓고 바나나를 얹어 얼린 후 칼로 자름",
+              "timestamp": "00:44"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "00:31 시점에 초콜릿 위에 뿌리는 토핑의 정확한 명칭과 분량은 영상 자막 및 음성으로 언급되지 않음 (카카오닙스 또는 그래놀라로 추정)",
+        "00:47 프로틴 요거트 바크 아이스크림에 사용된 바나나의 정확한 수량과 냉동 시간은 언급되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "자기전 만들어두면 과자끊는게 쉬워짐",
+    "sourceChannelName": "유지만 yuziman",
+    "sourceChannelId": "UCslni4iVQ-e784AU83eVcnQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/h9Vt4_UB_kTv6ijmpNN2Hw-Sv-2ACsIfI1rnEXDzx_6fDBVGeX2nJcDCEBgYBBrOJbmylUR4IeI=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:45:17.081744Z"
+  },
+  "applyChecks": {
+    "short": true,
+    "embeddable": true,
+    "checkedAt": "2026-11-22T08:10:44Z"
   }
 }

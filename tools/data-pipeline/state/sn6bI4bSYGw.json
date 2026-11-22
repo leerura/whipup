@@ -1,19 +1,437 @@
 {
   "videoId": "sn6bI4bSYGw",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/sn6bI4bSYGw",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-11-20T13:05:52.429942+00:00",
-    "accountId": "account-e",
-    "error": "504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAccountId": "account-e",
-    "retryableRuns": 1,
-    "retryAt": "2026-11-20T13:09:00.950710+00:00"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-21T08:11:56.734153+00:00",
+    "rawResponse": "{\n  \"title\": \"다이어트 두바이 쫀득 쿠키 (두쫀쿠)\",\n  \"description\": \"마시멜로와 버터 없이 두유면, 피스타치오, 타피오카 전분 등을 활용해 만드는 저칼로리 다이어트 두바이 쫀득 쿠키 레시피\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"피스타치오 200g\",\n      \"displayName\": \"피스타치오\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"피스타치오 200g\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"피스타치오 200g 에프에 120도 10분 구워서\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 1~2꼬집\",\n      \"displayName\": \"소금\",\n      \"amount\": \"1~2\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 1~2꼬집\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금이랑 알룰로스로 맛 더하고\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"알룰로스 3스푼\",\n      \"displayName\": \"알룰로스\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"알룰로스 3스푼\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금이랑 알룰로스로 맛 더하고\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"오일 5스푼(취향껏) (향 없는 오일 추천)\",\n      \"displayName\": \"오일\",\n      \"amount\": \"5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"오일 5스푼(취향껏)\\n(향 없는 오일 추천)\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"촉촉한 정도는 오일을 조금씩 추가하면서 원하는 정도까지 취향껏 조절\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"얇은 두유면 3봉\",\n      \"displayName\": \"얇은 두유면\",\n      \"amount\": \"3\",\n      \"unit\": \"봉\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"얇은 두유면 3봉\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"저칼로리 두유면 3개\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"타피오카전분 2\",\n      \"displayName\": \"타피오카전분\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"타피오카전분 2\",\n          \"timestamp\": \"00:59\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"타피오카전분 둘\",\n          \"timestamp\": \"00:58\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우유 7\",\n      \"displayName\": \"우유\",\n      \"amount\": \"7\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"우유 7\",\n          \"timestamp\": \"00:59\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우유랑 알룰로스\",\n          \"timestamp\": \"00:59\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"알룰로스 3\",\n      \"displayName\": \"알룰로스\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"알룰로스 3\",\n          \"timestamp\": \"00:59\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우유랑 알룰로스\",\n          \"timestamp\": \"00:59\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 1~2꼬집\",\n      \"displayName\": \"소금\",\n      \"amount\": \"1~2\",\n      \"unit\": \"꼬집\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 1~2꼬집\",\n          \"timestamp\": \"00:59\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금 살짝이랑\",\n          \"timestamp\": \"01:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"무가당 코코아가루 1\",\n      \"displayName\": \"무가당 코코아가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"무가당 코코아가루 1\",\n          \"timestamp\": \"00:59\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"무가당 코코아가루 넣고\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"손에 바를 오일\",\n      \"displayName\": \"오일\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(손에 오일 바르기!)\",\n          \"timestamp\": \"01:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"겉면에 묻힐 코코아가루\",\n      \"displayName\": \"코코아가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(코코아가루 묻히기)\",\n          \"timestamp\": \"01:18\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"접시에 덜어둔 코코아가루에 완성된 쿠키를 굴려 묻힘\",\n          \"timestamp\": \"01:18\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"피스타치오 200g을 에어프라이어에 넣고 120도에서 10분간 굽는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"에프 120도 10분\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"피스타치오 200g 에프에 120도 10분 구워서\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"구운 피스타치오를 믹서기에 넣고 갈면서 중간중간 뭉친 옆면을 긁어 풀어주며 꾸덕해질 때까지 간다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"믹서기로 갈았어 믹서기가 죽지 않으려면 중간중간 뭉친 부분을 꼭 잘 풀어줘야 해 이렇게 꾸덕해지면\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(옆면 긁어주기)\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소금 1~2꼬집, 알룰로스 3스푼, 오일 5스푼을 넣고 원하는 농도까지 취향껏 갈아 피스타치오 스프레드를 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 1~2꼬집 알룰로스 3스푼 오일 5스푼(취향껏)\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금이랑 알룰로스로 맛 더하고 촉촉한 정도는 오일을 조금씩 추가하면서 원하는 정도까지 취향껏 조절하면 돼\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"얇은 두유면 3봉의 물기를 키친타월로 제거하고 트레이에 넓게 펼친다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"저칼로리 두유면 3개 물기 제거해서 넓게 펼쳐주고\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"text\": \"에어프라이어 160도에서 뒤집어가며 8분씩 총 4번 바싹 마를 때까지 굽는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"에프 160도 8분 x 4번\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"에어프라이어 160도로 빠싹 마를 때까지 뒤집으면서 8분씩 구워주면\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"text\": \"바삭해진 두유면에 만들어둔 피스타치오 스프레드를 부어 골고루 섞는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"아까 만든 피스타치오 스프레드 섞고\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    },\n    {\n      \"text\": \"섞은 두유면 피스타치오 필링을 동글동글하게 빚어 냉장고에 잠시 대기시켜 둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"동글동글 빚어서 잠시 냉장고에 대기\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"동글동글 빚어서 냉장고에 대기!\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 타피오카전분 2스푼, 우유 7스푼, 알룰로스 3스푼, 소금 1~2꼬집, 무가당 코코아가루 1스푼을 넣고 뭉치지 않게 잘 섞는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"타피오카전분 2 우유 7 알룰로스 3 소금 1-2꼬집 무가당 코코아가루 1\",\n          \"timestamp\": \"00:59\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"타피오카전분 둘 우유랑 알룰로스 소금 살짝이랑 무가당 코코아가루 넣고 잘 섞어서\",\n          \"timestamp\": \"00:58\"\n        }\n      ]\n    },\n    {\n      \"text\": \"전자레인지에 1분간 돌린 뒤 쫀득해지면 냉장고에 20분간 식혀 마시멜로우 피를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"전자레인지 1분 냉장 20분\",\n          \"timestamp\": \"01:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"렌지에 1분만 돌려주면 이렇게 쫀득해지거든 냉장고에 20분만 식혀주면 끝이야\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"장갑 낀 손에 오일을 바르고, 마시멜로우 피를 최대한 얇게 펴서 냉장 보관했던 피스타치오 볼을 감싼다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(손에 오일 바르기!)\",\n          \"timestamp\": \"01:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(최대한 얇게 싸기)\",\n          \"timestamp\": \"01:14\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"얇게 늘린 피로 피스타치오 볼을 감싸 둥글게 모양을 잡음\",\n          \"timestamp\": \"01:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"겉면에 코코아가루를 골고루 묻혀 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(코코아가루 묻히기)\",\n          \"timestamp\": \"01:18\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"코코아가루가 담긴 접시에 굴려 골고루 묻힘\",\n          \"timestamp\": \"01:19\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "다이어트 두바이 쫀득 쿠키 (두쫀쿠)",
+      "description": "마시멜로와 버터 없이 두유면, 피스타치오, 타피오카 전분 등을 활용해 만드는 저칼로리 다이어트 두바이 쫀득 쿠키 레시피",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "피스타치오 200g",
+          "displayName": "피스타치오",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "피스타치오 200g",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "피스타치오 200g 에프에 120도 10분 구워서",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "소금 1~2꼬집",
+          "displayName": "소금",
+          "amount": "1~2",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 1~2꼬집",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소금이랑 알룰로스로 맛 더하고",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "알룰로스 3스푼",
+          "displayName": "알룰로스",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "알룰로스 3스푼",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소금이랑 알룰로스로 맛 더하고",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "오일 5스푼(취향껏) (향 없는 오일 추천)",
+          "displayName": "오일",
+          "amount": "5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "오일 5스푼(취향껏)\n(향 없는 오일 추천)",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SPEECH",
+              "text": "촉촉한 정도는 오일을 조금씩 추가하면서 원하는 정도까지 취향껏 조절",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "얇은 두유면 3봉",
+          "displayName": "얇은 두유면",
+          "amount": "3",
+          "unit": "봉",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "얇은 두유면 3봉",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "SPEECH",
+              "text": "저칼로리 두유면 3개",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "타피오카전분 2",
+          "displayName": "타피오카전분",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "타피오카전분 2",
+              "timestamp": "00:59"
+            },
+            {
+              "type": "SPEECH",
+              "text": "타피오카전분 둘",
+              "timestamp": "00:58"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "우유 7",
+          "displayName": "우유",
+          "amount": "7",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "우유 7",
+              "timestamp": "00:59"
+            },
+            {
+              "type": "SPEECH",
+              "text": "우유랑 알룰로스",
+              "timestamp": "00:59"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "알룰로스 3",
+          "displayName": "알룰로스",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "알룰로스 3",
+              "timestamp": "00:59"
+            },
+            {
+              "type": "SPEECH",
+              "text": "우유랑 알룰로스",
+              "timestamp": "00:59"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "소금 1~2꼬집",
+          "displayName": "소금",
+          "amount": "1~2",
+          "unit": "꼬집",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 1~2꼬집",
+              "timestamp": "00:59"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소금 살짝이랑",
+              "timestamp": "01:01"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "무가당 코코아가루 1",
+          "displayName": "무가당 코코아가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "무가당 코코아가루 1",
+              "timestamp": "00:59"
+            },
+            {
+              "type": "SPEECH",
+              "text": "무가당 코코아가루 넣고",
+              "timestamp": "01:02"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "손에 바를 오일",
+          "displayName": "오일",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(손에 오일 바르기!)",
+              "timestamp": "01:11"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "겉면에 묻힐 코코아가루",
+          "displayName": "코코아가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(코코아가루 묻히기)",
+              "timestamp": "01:18"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "접시에 덜어둔 코코아가루에 완성된 쿠키를 굴려 묻힘",
+              "timestamp": "01:18"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "피스타치오 200g을 에어프라이어에 넣고 120도에서 10분간 굽는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "에프 120도 10분",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "피스타치오 200g 에프에 120도 10분 구워서",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "구운 피스타치오를 믹서기에 넣고 갈면서 중간중간 뭉친 옆면을 긁어 풀어주며 꾸덕해질 때까지 간다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "믹서기로 갈았어 믹서기가 죽지 않으려면 중간중간 뭉친 부분을 꼭 잘 풀어줘야 해 이렇게 꾸덕해지면",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(옆면 긁어주기)",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "소금 1~2꼬집, 알룰로스 3스푼, 오일 5스푼을 넣고 원하는 농도까지 취향껏 갈아 피스타치오 스프레드를 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 1~2꼬집 알룰로스 3스푼 오일 5스푼(취향껏)",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소금이랑 알룰로스로 맛 더하고 촉촉한 정도는 오일을 조금씩 추가하면서 원하는 정도까지 취향껏 조절하면 돼",
+              "timestamp": "00:29"
+            }
+          ]
+        },
+        {
+          "text": "얇은 두유면 3봉의 물기를 키친타월로 제거하고 트레이에 넓게 펼친다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "저칼로리 두유면 3개 물기 제거해서 넓게 펼쳐주고",
+              "timestamp": "00:40"
+            }
+          ]
+        },
+        {
+          "text": "에어프라이어 160도에서 뒤집어가며 8분씩 총 4번 바싹 마를 때까지 굽는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "에프 160도 8분 x 4번",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SPEECH",
+              "text": "에어프라이어 160도로 빠싹 마를 때까지 뒤집으면서 8분씩 구워주면",
+              "timestamp": "00:44"
+            }
+          ]
+        },
+        {
+          "text": "바삭해진 두유면에 만들어둔 피스타치오 스프레드를 부어 골고루 섞는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "아까 만든 피스타치오 스프레드 섞고",
+              "timestamp": "00:51"
+            }
+          ]
+        },
+        {
+          "text": "섞은 두유면 피스타치오 필링을 동글동글하게 빚어 냉장고에 잠시 대기시켜 둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "동글동글 빚어서 잠시 냉장고에 대기",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "동글동글 빚어서 냉장고에 대기!",
+              "timestamp": "00:53"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 타피오카전분 2스푼, 우유 7스푼, 알룰로스 3스푼, 소금 1~2꼬집, 무가당 코코아가루 1스푼을 넣고 뭉치지 않게 잘 섞는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "타피오카전분 2 우유 7 알룰로스 3 소금 1-2꼬집 무가당 코코아가루 1",
+              "timestamp": "00:59"
+            },
+            {
+              "type": "SPEECH",
+              "text": "타피오카전분 둘 우유랑 알룰로스 소금 살짝이랑 무가당 코코아가루 넣고 잘 섞어서",
+              "timestamp": "00:58"
+            }
+          ]
+        },
+        {
+          "text": "전자레인지에 1분간 돌린 뒤 쫀득해지면 냉장고에 20분간 식혀 마시멜로우 피를 만든다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "전자레인지 1분 냉장 20분",
+              "timestamp": "01:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "렌지에 1분만 돌려주면 이렇게 쫀득해지거든 냉장고에 20분만 식혀주면 끝이야",
+              "timestamp": "01:05"
+            }
+          ]
+        },
+        {
+          "text": "장갑 낀 손에 오일을 바르고, 마시멜로우 피를 최대한 얇게 펴서 냉장 보관했던 피스타치오 볼을 감싼다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(손에 오일 바르기!)",
+              "timestamp": "01:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(최대한 얇게 싸기)",
+              "timestamp": "01:14"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "얇게 늘린 피로 피스타치오 볼을 감싸 둥글게 모양을 잡음",
+              "timestamp": "01:13"
+            }
+          ]
+        },
+        {
+          "text": "겉면에 코코아가루를 골고루 묻혀 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(코코아가루 묻히기)",
+              "timestamp": "01:18"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "코코아가루가 담긴 접시에 굴려 골고루 묻힘",
+              "timestamp": "01:19"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "그놈의 두쫀쿠가 뭐라고",
+    "sourceChannelName": "유지만 yuziman",
+    "sourceChannelId": "UCslni4iVQ-e784AU83eVcnQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/h9Vt4_UB_kTv6ijmpNN2Hw-Sv-2ACsIfI1rnEXDzx_6fDBVGeX2nJcDCEBgYBBrOJbmylUR4IeI=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:11:54.156465Z"
+  },
+  "applyChecks": {
+    "short": true,
+    "embeddable": true,
+    "checkedAt": "2026-11-22T08:11:28Z"
   }
 }

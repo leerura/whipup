@@ -1,19 +1,427 @@
 {
   "videoId": "Vr3S5wqt8aQ",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/Vr3S5wqt8aQ",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-11-20T13:15:05.591272+00:00",
-    "accountId": "account-b",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAccountId": "account-b",
-    "retryableRuns": 1,
-    "retryAt": "2026-11-20T13:15:40.310716+00:00"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-21T08:28:01.216042+00:00",
+    "rawResponse": "{\n  \"title\": \"커리부어스트\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"소세지\",\n      \"displayName\": \"소세지\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 소세지에 칼집을 넣어줘\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"칼집 넣은 소세지\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 팬에 물을 살짝만 부어준 다음\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기름을 살짝만 두른 다음 구워줘\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 80g\",\n      \"displayName\": \"양파\",\n      \"amount\": \"80\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 80g\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"쓰던 팬에 다진 양파를 넣고 볶아줄 거야\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 50ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"50\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 50ml\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파가 투명해지면 물을 부어준 다음\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"골든카레 1/4조각\",\n      \"displayName\": \"골든카레\",\n      \"amount\": \"1/4\",\n      \"unit\": \"조각\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"골든카레 1/4조각\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고형 카레\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"홀토마토 200g\",\n      \"displayName\": \"홀토마토\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"홀토마토 200g\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"홀토마토\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 0.3spoon\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"0.3\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 0.3spoon\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 0.3spoon\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.3\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 0.3spoon\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 0.1spoon\",\n      \"displayName\": \"후추\",\n      \"amount\": \"0.1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 0.1spoon\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"케첩 1spoon\",\n      \"displayName\": \"케첩\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"케첩 1spoon\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"케첩을 넣고\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"감자\",\n      \"displayName\": \"감자\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"감자\",\n          \"timestamp\": \"00:46\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 감자튀김을 할 거야\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리\",\n      \"displayName\": \"파슬리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"취향껏 레드페퍼와 파슬리 뿌려주면 커리부어스트 끝\",\n          \"timestamp\": \"00:59\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"파슬리\",\n          \"timestamp\": \"01:00\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"레드페퍼\",\n      \"displayName\": \"레드페퍼\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"취향껏 레드페퍼와 파슬리 뿌려주면 커리부어스트 끝\",\n          \"timestamp\": \"00:59\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"레드페퍼\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"소세지에 칼집을 넣어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 소세지에 칼집을 넣어줘\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"소세지에 대각선으로 칼집을 넣는 모습\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 물을 살짝 붓고 칼집을 넣은 소세지를 넣어 물에 끓여주듯이 익힌다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 물을 살짝만 부어준 다음 소세지를 넣고 물에 튀겨줄 거야\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 물을 붓고 소세지를 끓이는 모습\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물이 모두 졸아들면 식용유를 살짝 두르고 소세지를 굴려가며 갈색빛이 돌 때까지 구운 뒤 꺼내둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물이 모두 졸아들면 기름을 살짝만 두른 다음 구워줘 소세지가 갈색빛이 돌면 잠시 빼두고\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"구워진 소세지를 접시에 덜어두는 모습\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"소세지를 구운 팬에 다진 양파 80g을 넣고 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"쓰던 팬에 다진 양파를 넣고 볶아줄 거야\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 80g\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파가 투명해지면 물 50ml, 골든카레 1/4조각, 홀토마토 200g, 다진 마늘 0.3spoon, 설탕 0.3spoon, 후추 0.1spoon, 케첩 1spoon을 넣고 저어가며 끓여 소스를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파가 투명해지면 물을 부어준 다음 고형 카레 홀토마토 다진 마늘 설탕 후추 케첩을 넣고 섞어서 소스를 만들어 줘\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"재료들을 팬에 넣고 주걱으로 섞어가며 소스를 끓이는 모습\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물결무늬 칼로 썬 감자를 기름에 바삭하게 튀겨낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 감자튀김을 할 거야\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"물결무늬로 썬 감자를 기름에 튀겨 건지는 모습\",\n          \"timestamp\": \"00:46\"\n        }\n      ]\n    },\n    {\n      \"text\": \"접시에 구운 소세지와 튀긴 감자를 담고 끓인 소스를 듬뿍 부어준 뒤 취향껏 파슬리와 레드페퍼를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 소세지 옆에 잘 튀겨진 감자튀김을 올리고 방금 만든 소스를 듬뿍 부어준 다음 취향껏 레드페퍼와 파슬리 뿌려주면 커리부어스트 끝\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"감자튀김과 소세지 위에 소스와 파슬리, 레드페퍼를 뿌리는 모습\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "커리부어스트",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "소세지",
+          "displayName": "소세지",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 소세지에 칼집을 넣어줘",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "칼집 넣은 소세지",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "물",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 팬에 물을 살짝만 부어준 다음",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "기름을 살짝만 두른 다음 구워줘",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양파 80g",
+          "displayName": "양파",
+          "amount": "80",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 80g",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SPEECH",
+              "text": "쓰던 팬에 다진 양파를 넣고 볶아줄 거야",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "물 50ml",
+          "displayName": "물",
+          "amount": "50",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 50ml",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파가 투명해지면 물을 부어준 다음",
+              "timestamp": "00:32"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "골든카레 1/4조각",
+          "displayName": "골든카레",
+          "amount": "1/4",
+          "unit": "조각",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "골든카레 1/4조각",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고형 카레",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "홀토마토 200g",
+          "displayName": "홀토마토",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "홀토마토 200g",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "홀토마토",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "다진 마늘 0.3spoon",
+          "displayName": "다진 마늘",
+          "amount": "0.3",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 0.3spoon",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "설탕 0.3spoon",
+          "displayName": "설탕",
+          "amount": "0.3",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 0.3spoon",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "후추 0.1spoon",
+          "displayName": "후추",
+          "amount": "0.1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 0.1spoon",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "케첩 1spoon",
+          "displayName": "케첩",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "케첩 1spoon",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SPEECH",
+              "text": "케첩을 넣고",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "감자",
+          "displayName": "감자",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "감자",
+              "timestamp": "00:46"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 감자튀김을 할 거야",
+              "timestamp": "00:43"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "파슬리",
+          "displayName": "파슬리",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "취향껏 레드페퍼와 파슬리 뿌려주면 커리부어스트 끝",
+              "timestamp": "00:59"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "파슬리",
+              "timestamp": "01:00"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "레드페퍼",
+          "displayName": "레드페퍼",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "취향껏 레드페퍼와 파슬리 뿌려주면 커리부어스트 끝",
+              "timestamp": "00:59"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "레드페퍼",
+              "timestamp": "01:02"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        }
+      ],
+      "steps": [
+        {
+          "text": "소세지에 칼집을 넣어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 소세지에 칼집을 넣어줘",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "소세지에 대각선으로 칼집을 넣는 모습",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "팬에 물을 살짝 붓고 칼집을 넣은 소세지를 넣어 물에 끓여주듯이 익힌다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 물을 살짝만 부어준 다음 소세지를 넣고 물에 튀겨줄 거야",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 물을 붓고 소세지를 끓이는 모습",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "물이 모두 졸아들면 식용유를 살짝 두르고 소세지를 굴려가며 갈색빛이 돌 때까지 구운 뒤 꺼내둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물이 모두 졸아들면 기름을 살짝만 두른 다음 구워줘 소세지가 갈색빛이 돌면 잠시 빼두고",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "구워진 소세지를 접시에 덜어두는 모습",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "소세지를 구운 팬에 다진 양파 80g을 넣고 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "쓰던 팬에 다진 양파를 넣고 볶아줄 거야",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 80g",
+              "timestamp": "00:28"
+            }
+          ]
+        },
+        {
+          "text": "양파가 투명해지면 물 50ml, 골든카레 1/4조각, 홀토마토 200g, 다진 마늘 0.3spoon, 설탕 0.3spoon, 후추 0.1spoon, 케첩 1spoon을 넣고 저어가며 끓여 소스를 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파가 투명해지면 물을 부어준 다음 고형 카레 홀토마토 다진 마늘 설탕 후추 케첩을 넣고 섞어서 소스를 만들어 줘",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "재료들을 팬에 넣고 주걱으로 섞어가며 소스를 끓이는 모습",
+              "timestamp": "00:35"
+            }
+          ]
+        },
+        {
+          "text": "물결무늬 칼로 썬 감자를 기름에 바삭하게 튀겨낸다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 감자튀김을 할 거야",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "물결무늬로 썬 감자를 기름에 튀겨 건지는 모습",
+              "timestamp": "00:46"
+            }
+          ]
+        },
+        {
+          "text": "접시에 구운 소세지와 튀긴 감자를 담고 끓인 소스를 듬뿍 부어준 뒤 취향껏 파슬리와 레드페퍼를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 소세지 옆에 잘 튀겨진 감자튀김을 올리고 방금 만든 소스를 듬뿍 부어준 다음 취향껏 레드페퍼와 파슬리 뿌려주면 커리부어스트 끝",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "감자튀김과 소세지 위에 소스와 파슬리, 레드페퍼를 뿌리는 모습",
+              "timestamp": "00:56"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "독일 음식인데 왜 한국인 입맛에 딱 맞는 거지?",
+    "sourceChannelName": "1분요리 뚝딱이형",
+    "sourceChannelId": "UC0htUSwcxfSGNfK_5Q28JkA",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/MHTy5jXZQPwKwrGtAV-gLL6ei9YTOgR8Z6GESkhAAIz0kkG4d6B6vu6CUPNNsLOzqcGxGfBK=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:27:58.183722Z"
+  },
+  "applyChecks": {
+    "short": true,
+    "embeddable": true,
+    "checkedAt": "2026-11-22T08:10:50Z"
   }
 }

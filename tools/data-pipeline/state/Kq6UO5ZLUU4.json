@@ -1,19 +1,298 @@
 {
   "videoId": "Kq6UO5ZLUU4",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/Kq6UO5ZLUU4",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-11-20T13:09:24.697538+00:00",
-    "accountId": "account-d",
-    "error": "504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}",
-    "retryReason": "transient_backoff",
-    "retryableRuns": 1,
-    "retryKind": "transient",
-    "retryAt": "2026-11-20T13:12:33.008838+00:00",
-    "retryAccountId": "account-d"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-21T08:24:33.099315+00:00",
+    "rawResponse": "{\n  \"title\": \"황태채 고추장무침\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"황태채\",\n      \"displayName\": \"황태채\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"바싹 마른 황태채에\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"바싹 마른 황태채에\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술\",\n      \"displayName\": \"맛술\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"맛술\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"들기름\",\n      \"displayName\": \"들기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"들기름\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"들기름\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장\",\n      \"displayName\": \"고추장\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고춧가루\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장\",\n      \"displayName\": \"진간장\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"진간장\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리고당\",\n      \"displayName\": \"올리고당\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"올리고당으로 먼저 코팅해주고요\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"올리고당으로 먼저 코팅해주고요\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 황태채무침 위에 통깨가 뿌려져 있음\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"바싹 마른 황태채에 물 대신 맛술과 들기름을 넣고 조물조물 버무려 준 뒤 5분간 불린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"바싹 마른 황태채에 맛술, 들기름 이렇게 두 가지만 넣고 조물조물 섞어주세요! 이대로 5분만 불려주면\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"바싹 마른 황태채에 맛술, 들기름 이렇게 두 가지만 넣고 조물조물 섞어주세요! 이대로 5분만 불려주면\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"text\": \"황태채가 불려지는 동안 가위로 먹기 좋은 크기로 잘라준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불려지는 동안 황태를 먹기 좋은 크기로 잘라주고요\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불려지는 동안 황태를 먹기 좋은 크기로 잘라주고요\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고추장, 고춧가루, 진간장, 맛술, 다진마늘을 섞어 고추장 소스를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"바로 고추장 소스 만들어줄게요! 고추장, 고춧가루, 진간장, 맛술, 다진마늘\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"바로 고추장 소스 만들어줄게요! 고추장, 고춧가루, 진간장, 맛술, 다진마늘\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"불려진 황태채에 양념 소스가 겉돌지 않도록 올리고당을 넣어 먼저 코팅해준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"불려진 황태채에 소스가 겉돌지 않도록 올리고당으로 먼저 코팅해주고요\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"불려진 황태채에 소스가 겉돌지 않도록 올리고당으로 먼저 코팅해주고요\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고추장 소스 5숟가락을 넣고 골고루 무쳐서 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 고추장 소스 5숟갈 넣고 다시 한번 무쳐주면\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 고추장 소스 5숟갈 넣고 다시 한번 무쳐주면\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"황태채 중량 미표기\",\n    \"황태채 불릴 때 사용하는 맛술 및 들기름의 정량 미표기\",\n    \"고추장 소스 재료(고추장, 고춧가루, 진간장, 맛술, 다진마늘)의 정확한 분량 미표기\",\n    \"올리고당 분량 미표기 (영상에서 숟가락으로 덜어 넣는 모습만 확인됨)\",\n    \"통깨 사용 여부가 음성이나 자막으로 언급되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "황태채 고추장무침",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "황태채",
+          "displayName": "황태채",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "바싹 마른 황태채에",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "바싹 마른 황태채에",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "맛술",
+          "displayName": "맛술",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "맛술",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "맛술",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "들기름",
+          "displayName": "들기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "들기름",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "들기름",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "고추장",
+          "displayName": "고추장",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고추장",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고추장",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고춧가루",
+          "displayName": "고춧가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고춧가루",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "진간장",
+          "displayName": "진간장",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "진간장",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "진간장",
+              "timestamp": "00:32"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "다진마늘",
+          "displayName": "다진마늘",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진마늘",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘",
+              "timestamp": "00:32"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "올리고당",
+          "displayName": "올리고당",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "올리고당으로 먼저 코팅해주고요",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "올리고당으로 먼저 코팅해주고요",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 황태채무침 위에 통깨가 뿌려져 있음",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "바싹 마른 황태채에 물 대신 맛술과 들기름을 넣고 조물조물 버무려 준 뒤 5분간 불린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "바싹 마른 황태채에 맛술, 들기름 이렇게 두 가지만 넣고 조물조물 섞어주세요! 이대로 5분만 불려주면",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "바싹 마른 황태채에 맛술, 들기름 이렇게 두 가지만 넣고 조물조물 섞어주세요! 이대로 5분만 불려주면",
+              "timestamp": "00:17"
+            }
+          ]
+        },
+        {
+          "text": "황태채가 불려지는 동안 가위로 먹기 좋은 크기로 잘라준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "불려지는 동안 황태를 먹기 좋은 크기로 잘라주고요",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "불려지는 동안 황태를 먹기 좋은 크기로 잘라주고요",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "고추장, 고춧가루, 진간장, 맛술, 다진마늘을 섞어 고추장 소스를 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "바로 고추장 소스 만들어줄게요! 고추장, 고춧가루, 진간장, 맛술, 다진마늘",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "바로 고추장 소스 만들어줄게요! 고추장, 고춧가루, 진간장, 맛술, 다진마늘",
+              "timestamp": "00:29"
+            }
+          ]
+        },
+        {
+          "text": "불려진 황태채에 양념 소스가 겉돌지 않도록 올리고당을 넣어 먼저 코팅해준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "불려진 황태채에 소스가 겉돌지 않도록 올리고당으로 먼저 코팅해주고요",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "불려진 황태채에 소스가 겉돌지 않도록 올리고당으로 먼저 코팅해주고요",
+              "timestamp": "00:33"
+            }
+          ]
+        },
+        {
+          "text": "고추장 소스 5숟가락을 넣고 골고루 무쳐서 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 고추장 소스 5숟갈 넣고 다시 한번 무쳐주면",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 고추장 소스 5숟갈 넣고 다시 한번 무쳐주면",
+              "timestamp": "00:38"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "황태채 중량 미표기",
+        "황태채 불릴 때 사용하는 맛술 및 들기름의 정량 미표기",
+        "고추장 소스 재료(고추장, 고춧가루, 진간장, 맛술, 다진마늘)의 정확한 분량 미표기",
+        "올리고당 분량 미표기 (영상에서 숟가락으로 덜어 넣는 모습만 확인됨)",
+        "통깨 사용 여부가 음성이나 자막으로 언급되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "반찬가게에서는… ”황태채” 물에 불리지 않아요‼️",
+    "sourceChannelName": "김진순 점심시간",
+    "sourceChannelId": "UC9She1e6OWUpwJpwZtbqhjQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/BvOrdVOmTRlMEFygfbeuka_30BrSZenSof2_yC4RCxF0gEKvRzJTn6NEzMTJYQSe8aBxV9iMbQ=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:24:30.378996Z"
+  },
+  "applyChecks": {
+    "short": true,
+    "embeddable": true,
+    "checkedAt": "2026-11-22T08:10:32Z"
   }
 }

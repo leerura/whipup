@@ -1,19 +1,285 @@
 {
   "videoId": "e2_n-i3yJlg",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/e2_n-i3yJlg",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-11-20T13:12:23.486727+00:00",
-    "accountId": "account-d",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryableRuns": 1,
-    "retryKind": "transient",
-    "retryAt": "2026-11-20T13:12:38.140533+00:00",
-    "retryAccountId": "account-d"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-21T08:27:15.028903+00:00",
+    "rawResponse": "{\n  \"title\": \"면사리 비빔면\",\n  \"description\": \"면사리 2개와 간단한 양념장으로 빠르고 맛있게 만들어 먹는 비빔면 레시피입니다.\",\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"면사리 2개\",\n      \"displayName\": \"면사리\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"면사리 2개 3분간 삶아서\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"면사리 두 개 3분간 삶아서\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"팬에 기름 5스푼\",\n      \"displayName\": \"기름\",\n      \"amount\": \"5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬에 기름 5스푼\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 기름 다섯 스푼\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 1스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"진간장 1스푼\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 한 스푼\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 1스푼\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"굴소스 1스푼\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스 한 스푼\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 0.5스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 0.5스푼\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 반 스푼\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"멸치액젓 1스푼\",\n      \"displayName\": \"멸치액젓\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"멸치액젓 1스푼 넣고,\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"멸치액젓 한 스푼 넣고\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"취향껏 자른 쪽파\",\n      \"displayName\": \"쪽파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"취향껏 자른 쪽파\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"취향껏 자른 쪽파\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루 넉넉히\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"김가루 넉넉히 뿌려주고,\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김가루 넉넉히 뿌려주고\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨 1스푼\",\n      \"displayName\": \"통깨\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마무리 통깨 1스푼 넣어주세요.\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마무리 통깨 한 스푼 넣어주세요.\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"끓는 물에 면사리 2개를 넣고 3분간 삶은 뒤 찬물에 헹군다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"면사리 2개 3분간 삶아서 찬물에 헹궈줄게요.\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"면사리 2개 3분간 삶아서 찬물에 헹궈줄게요.\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 기름 5스푼, 진간장 1스푼, 굴소스 1스푼, 설탕 0.5스푼, 멸치액젓 1스푼을 넣고 한 번 바르르 끓여 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 기름 5스푼, 진간장 1스푼, 굴소스 1스푼, 설탕 반 스푼, 멸치액젓 1스푼 넣고, 한번 바르르 끓이기만 하면 1분 만에 완성.\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"팬에 기름 5스푼 진간장 1스푼 굴소스 1스푼 설탕 0.5스푼 멸치액젓 1스푼 넣고, 바르르 끓이기만 하면, 1분 만에 완성\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 삶은 면사리를 넣고, 취향껏 자른 쪽파, 김가루를 넉넉히 뿌린 후 통깨 1스푼을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"볼에 면사리 넣고, 취향껏 자른 쪽파, 김가루 넉넉히 뿌려주고, 마무리 통깨 한 스푼 넣어주세요.\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"볼에 면사리 넣고, 취향껏 자른 쪽파 김가루 넉넉히 뿌려주고, 마무리 통깨 1스푼 넣어주세요.\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양념장을 붓고 골고루 비벼 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 양념장 넣고, 비비기만 하면 완성.\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 양념장 넣고, 비비기만 하면 완성\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"공식 요리 명칭이 영상 자막이나 음성에 직접적으로 명시되지 않아 '면사리 비빔면'으로 기재함\",\n    \"쪽파와 김가루의 정량 수치가 명시되지 않음 ('취향껏', '넉넉히'로 표현)\"\n  ]\n}",
+    "result": {
+      "title": "면사리 비빔면",
+      "description": "면사리 2개와 간단한 양념장으로 빠르고 맛있게 만들어 먹는 비빔면 레시피입니다.",
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "면사리 2개",
+          "displayName": "면사리",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "면사리 2개 3분간 삶아서",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "면사리 두 개 3분간 삶아서",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "팬에 기름 5스푼",
+          "displayName": "기름",
+          "amount": "5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "팬에 기름 5스푼",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "팬에 기름 다섯 스푼",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "진간장 1스푼",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "진간장 1스푼",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장 한 스푼",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "굴소스 1스푼",
+          "displayName": "굴소스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "굴소스 1스푼",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "굴소스 한 스푼",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "설탕 0.5스푼",
+          "displayName": "설탕",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 0.5스푼",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 반 스푼",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "멸치액젓 1스푼",
+          "displayName": "멸치액젓",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "멸치액젓 1스푼 넣고,",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SPEECH",
+              "text": "멸치액젓 한 스푼 넣고",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "취향껏 자른 쪽파",
+          "displayName": "쪽파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "취향껏 자른 쪽파",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "취향껏 자른 쪽파",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "김가루 넉넉히",
+          "displayName": "김가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "김가루 넉넉히 뿌려주고,",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "김가루 넉넉히 뿌려주고",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "통깨 1스푼",
+          "displayName": "통깨",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마무리 통깨 1스푼 넣어주세요.",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마무리 통깨 한 스푼 넣어주세요.",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "끓는 물에 면사리 2개를 넣고 3분간 삶은 뒤 찬물에 헹군다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "면사리 2개 3분간 삶아서 찬물에 헹궈줄게요.",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "면사리 2개 3분간 삶아서 찬물에 헹궈줄게요.",
+              "timestamp": "00:05"
+            }
+          ]
+        },
+        {
+          "text": "팬에 기름 5스푼, 진간장 1스푼, 굴소스 1스푼, 설탕 0.5스푼, 멸치액젓 1스푼을 넣고 한 번 바르르 끓여 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 기름 5스푼, 진간장 1스푼, 굴소스 1스푼, 설탕 반 스푼, 멸치액젓 1스푼 넣고, 한번 바르르 끓이기만 하면 1분 만에 완성.",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "팬에 기름 5스푼 진간장 1스푼 굴소스 1스푼 설탕 0.5스푼 멸치액젓 1스푼 넣고, 바르르 끓이기만 하면, 1분 만에 완성",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "볼에 삶은 면사리를 넣고, 취향껏 자른 쪽파, 김가루를 넉넉히 뿌린 후 통깨 1스푼을 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "볼에 면사리 넣고, 취향껏 자른 쪽파, 김가루 넉넉히 뿌려주고, 마무리 통깨 한 스푼 넣어주세요.",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "볼에 면사리 넣고, 취향껏 자른 쪽파 김가루 넉넉히 뿌려주고, 마무리 통깨 1스푼 넣어주세요.",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "양념장을 붓고 골고루 비벼 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 양념장 넣고, 비비기만 하면 완성.",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 양념장 넣고, 비비기만 하면 완성",
+              "timestamp": "00:20"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "공식 요리 명칭이 영상 자막이나 음성에 직접적으로 명시되지 않아 '면사리 비빔면'으로 기재함",
+        "쪽파와 김가루의 정량 수치가 명시되지 않음 ('취향껏', '넉넉히'로 표현)"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "면사리 2개로..",
+    "sourceChannelName": "살림팝",
+    "sourceChannelId": "UCqp72t-eSw3AFSesyjzk59g",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/FWQw9Hkbyc3vfy84PM9gzpHYF-M9evLVXqFVqd0o3Lf0I8p69XT9ms-pYKdhXBj5DASG0za86KI=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:27:12.753105Z"
+  },
+  "applyChecks": {
+    "short": true,
+    "embeddable": true,
+    "checkedAt": "2026-11-22T08:11:06Z"
   }
 }

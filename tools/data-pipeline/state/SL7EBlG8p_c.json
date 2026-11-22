@@ -1,19 +1,274 @@
 {
   "videoId": "SL7EBlG8p_c",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/SL7EBlG8p_c",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 2,
-    "startedAt": "2026-11-20T13:25:37.102326+00:00",
-    "accountId": "account-b",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryableRuns": 1,
-    "retryKind": "transient",
-    "retryAt": "2026-11-20T13:26:11.491688+00:00",
-    "retryAccountId": "account-b"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-21T08:12:52.210966+00:00",
+    "rawResponse": "{\n  \"title\": \"사천 짜파게티\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"기름 4스푼\",\n      \"displayName\": \"기름\",\n      \"amount\": \"4\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기름 4스푼 부어주고\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"기름 4스푼 부어주고,\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"편 썰어둔 마늘\",\n      \"displayName\": \"마늘\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"편 썰어둔 마늘 넣어줄게요\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"편 썰어둔 마늘 넣어줄게요\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"찬물에 해동한 냉동새우 6마리\",\n      \"displayName\": \"냉동새우\",\n      \"amount\": \"6\",\n      \"unit\": \"마리\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 찬물에 해동한 냉동새우 6마리 넣고\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 찬물에 해동한 냉동새우 6마리 넣고,\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1스푼\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘 1스푼 넣어\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘 1스푼 넣어,\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"사천 짜파게티 면사리, 후레이크, 스프 2개, 액상 기름\",\n      \"displayName\": \"사천 짜파게티\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"사천 짜파게티 풍미가 더 훌륭합니다! 면사리 후레이크 다 넣어주고 스프 2개 액상 기름까지 다 넣어줄게요\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"사천 짜파게티 풍미가 더 훌륭합니다! 면사리 후레이크 다 넣어주고, 스프 2개 액상 기름까지 다 넣어줄게요\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"면수 큰 국자로 한 스푼\",\n      \"displayName\": \"면수\",\n      \"amount\": \"1\",\n      \"unit\": \"큰 국자\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마무리로 여기에 면수 큰 국자로 한 스푼 넣어서 농도 조절하고\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마무리로 여기에 면수 큰 국자로 한 스푼 넣어서 농도 조절하고,\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"크러쉬드페퍼\",\n      \"displayName\": \"크러쉬드페퍼\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"크러쉬드페퍼 좀 뿌려주면\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"크러쉬드페퍼 좀 뿌려주면,\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"예열된 팬에 기름 4스푼을 붓고 편으로 썬 마늘을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"예열된 팬에 기름 4스푼 부어주고 편 썰어둔 마늘 넣어줄게요\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"예열된 팬에 기름 4스푼 부어주고, 편 썰어둔 마늘 넣어줄게요\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"찬물에 해동한 냉동새우 6마리를 팬에 넣고 30초간 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 찬물에 해동한 냉동새우 6마리 넣고, 30초간 볶다가,\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 찬물에 해동한 냉동새우 6마리 넣고, 30초간 볶다가,\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"다진마늘 1스푼을 넣어 풍미를 더해 함께 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘 1스푼 넣어, 마늘 풍미 더 올려줄게요\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘 1스푼 넣어, 마늘 풍미 더 올려줄게요\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삶아둔 면사리와 후레이크를 넣고, 스프 2개와 액상 기름을 모두 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"면사리 후레이크 다 넣어주고 스프 2개 액상 기름까지 다 넣어줄게요\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"면사리 후레이크 다 넣어주고, 스프 2개 액상 기름까지 다 넣어줄게요\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"면수 큰 국자로 1스푼을 넣어 농도를 조절하며 볶아 섞는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마무리로 여기에 면수 큰 국자로 한 스푼 넣어서 농도 조절하고\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마무리로 여기에 면수 큰 국자로 한 스푼 넣어서 농도 조절하고,\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"크러쉬드 페퍼를 뿌려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"크러쉬드페퍼 좀 뿌려주면\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"크러쉬드페퍼 좀 뿌려주면,\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"편 썰어둔 마늘과 크러쉬드페퍼의 정확한 계량 수치는 언급되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "사천 짜파게티",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "기름 4스푼",
+          "displayName": "기름",
+          "amount": "4",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "기름 4스푼 부어주고",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "기름 4스푼 부어주고,",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "편 썰어둔 마늘",
+          "displayName": "마늘",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "편 썰어둔 마늘 넣어줄게요",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "편 썰어둔 마늘 넣어줄게요",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "찬물에 해동한 냉동새우 6마리",
+          "displayName": "냉동새우",
+          "amount": "6",
+          "unit": "마리",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 찬물에 해동한 냉동새우 6마리 넣고",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 찬물에 해동한 냉동새우 6마리 넣고,",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "다진마늘 1스푼",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진마늘 1스푼 넣어",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘 1스푼 넣어,",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "사천 짜파게티 면사리, 후레이크, 스프 2개, 액상 기름",
+          "displayName": "사천 짜파게티",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "사천 짜파게티 풍미가 더 훌륭합니다! 면사리 후레이크 다 넣어주고 스프 2개 액상 기름까지 다 넣어줄게요",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "사천 짜파게티 풍미가 더 훌륭합니다! 면사리 후레이크 다 넣어주고, 스프 2개 액상 기름까지 다 넣어줄게요",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "면수 큰 국자로 한 스푼",
+          "displayName": "면수",
+          "amount": "1",
+          "unit": "큰 국자",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마무리로 여기에 면수 큰 국자로 한 스푼 넣어서 농도 조절하고",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마무리로 여기에 면수 큰 국자로 한 스푼 넣어서 농도 조절하고,",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "크러쉬드페퍼",
+          "displayName": "크러쉬드페퍼",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "크러쉬드페퍼 좀 뿌려주면",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "크러쉬드페퍼 좀 뿌려주면,",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        }
+      ],
+      "steps": [
+        {
+          "text": "예열된 팬에 기름 4스푼을 붓고 편으로 썬 마늘을 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "예열된 팬에 기름 4스푼 부어주고 편 썰어둔 마늘 넣어줄게요",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "예열된 팬에 기름 4스푼 부어주고, 편 썰어둔 마늘 넣어줄게요",
+              "timestamp": "00:06"
+            }
+          ]
+        },
+        {
+          "text": "찬물에 해동한 냉동새우 6마리를 팬에 넣고 30초간 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 찬물에 해동한 냉동새우 6마리 넣고, 30초간 볶다가,",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 찬물에 해동한 냉동새우 6마리 넣고, 30초간 볶다가,",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "다진마늘 1스푼을 넣어 풍미를 더해 함께 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진마늘 1스푼 넣어, 마늘 풍미 더 올려줄게요",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘 1스푼 넣어, 마늘 풍미 더 올려줄게요",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "삶아둔 면사리와 후레이크를 넣고, 스프 2개와 액상 기름을 모두 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "면사리 후레이크 다 넣어주고 스프 2개 액상 기름까지 다 넣어줄게요",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "면사리 후레이크 다 넣어주고, 스프 2개 액상 기름까지 다 넣어줄게요",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "면수 큰 국자로 1스푼을 넣어 농도를 조절하며 볶아 섞는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마무리로 여기에 면수 큰 국자로 한 스푼 넣어서 농도 조절하고",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "마무리로 여기에 면수 큰 국자로 한 스푼 넣어서 농도 조절하고,",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "크러쉬드 페퍼를 뿌려 마무리한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "크러쉬드페퍼 좀 뿌려주면",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "크러쉬드페퍼 좀 뿌려주면,",
+              "timestamp": "00:27"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "편 썰어둔 마늘과 크러쉬드페퍼의 정확한 계량 수치는 언급되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "1등은 괜히 1등이 아니네요",
+    "sourceChannelName": "살림팝",
+    "sourceChannelId": "UCqp72t-eSw3AFSesyjzk59g",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/FWQw9Hkbyc3vfy84PM9gzpHYF-M9evLVXqFVqd0o3Lf0I8p69XT9ms-pYKdhXBj5DASG0za86KI=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:12:49.479387Z"
+  },
+  "applyChecks": {
+    "short": true,
+    "embeddable": true,
+    "checkedAt": "2026-11-22T08:10:37Z"
   }
 }

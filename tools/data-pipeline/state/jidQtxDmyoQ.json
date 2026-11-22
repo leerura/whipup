@@ -1,22 +1,547 @@
 {
   "videoId": "jidQtxDmyoQ",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/jidQtxDmyoQ",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-11-20T13:15:08.836151+00:00",
-    "accountId": "account-e",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "quotaAccounts": {
-      "account-a": "2026-11-15T08:00:00.024428+00:00"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
     },
-    "retryAccountId": "account-e",
-    "retryableRuns": 1,
-    "retryAt": "2026-11-20T13:15:35.703486+00:00"
+    "completedAt": "2026-11-21T08:25:09.748590+00:00",
+    "rawResponse": "{\n  \"title\": \"미나리 부대찌개\",\n  \"description\": \"강남에서 유명한 5만 원짜리 미나리 부대찌개를 최대한 비슷하게 재현한 레시피\",\n  \"servings\": \"4인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"미나리 250g\",\n      \"displayName\": \"미나리\",\n      \"amount\": \"250\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"미나리 250g\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 미나리를 듬뿍 깔아줘\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파채 150g\",\n      \"displayName\": \"파채\",\n      \"amount\": \"150\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"파채 150g\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 그 위에 파채\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 150g\",\n      \"displayName\": \"양파\",\n      \"amount\": \"150\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 150g\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"채 썬 양파\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소세지 500g\",\n      \"displayName\": \"콘킹 소세지\",\n      \"amount\": \"500\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소세지 500g\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"부대찌개 소세지로 유명한 콘킹 소세지\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"햄 400g\",\n      \"displayName\": \"튤립푸드 촙트햄\",\n      \"amount\": \"400\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"햄 400g\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"부대찌개 햄으로 유명한 튤립푸드 촙트햄\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"두부 300g\",\n      \"displayName\": \"찌개용 두부\",\n      \"amount\": \"300\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"두부 300g\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"찌개용 두부\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"떡국떡 200g\",\n      \"displayName\": \"떡국떡\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"떡국떡 200g\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"떡국떡을 올려줄 거야\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 소고기 200g\",\n      \"displayName\": \"다진 소고기(소고기 민찌)\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 소고기 200g\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"부대찌개에 소고기 민찌와\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"등심 400g\",\n      \"displayName\": \"소고기 등심\",\n      \"amount\": \"400\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"등심 400g\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소고기 등심이 들어가더라고\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"오뚜기 사골곰탕 500ml\",\n      \"displayName\": \"오뚜기 사골곰탕\",\n      \"amount\": \"500\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"오뚜기 사골곰탕 500ml\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 시판용 사골곰탕과\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 1.5L\",\n      \"displayName\": \"물\",\n      \"amount\": \"1.5\",\n      \"unit\": \"L\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 1.5L\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물을 부어준 다음\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굵은 고춧가루 5spoons\",\n      \"displayName\": \"굵은 고춧가루\",\n      \"amount\": \"5\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"굵은 고춧가루 5spoons\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"볼에 굵은 고춧가루\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고운 고춧가루 3spoons\",\n      \"displayName\": \"고운 고춧가루\",\n      \"amount\": \"3\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고운 고춧가루 3spoons\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고운 고춧가루\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 3spoons\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"3\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 3spoons\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"국간장 1.5spoons\",\n      \"displayName\": \"국간장\",\n      \"amount\": \"1.5\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"국간장 1.5spoons\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국간장\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소고기 다시다 1spoon\",\n      \"displayName\": \"소고기 다시다\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소고기 다시다 1spoon\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소고기 다시다\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 1spoon\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 1spoon\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 3spoons\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"3\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 3spoons\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술을 넣고\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 0.1spoon\",\n      \"displayName\": \"후추\",\n      \"amount\": \"0.1\",\n      \"unit\": \"spoon\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 0.1spoon\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"취향껏 후추 조금만 뿌려주면\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"라면\",\n      \"displayName\": \"라면 사리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"라면\",\n          \"timestamp\": \"00:57\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"라면 반개는\",\n          \"timestamp\": \"00:59\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 미나리 250g을 듬뿍 깔아준 뒤, 그 위에 파채 150g, 채 썬 양파 150g을 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 팬에 미나리를 듬뿍 깔아줘 이래도 되나 싶을 정도로 많이 깔아줘야 해 그리고 그 위에 파채 채 썬 양파\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 미나리, 파채, 양파를 순서대로 올림\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"콘킹 소세지 500g, 촙트햄 400g, 찌개용 두부 300g, 떡국떡 200g, 다진 소고기 200g, 등심 400g을 차례대로 올려 담는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"부대찌개 소세지로 유명한 콘킹 소세지 부대찌개 햄으로 유명한 튤립푸드 촙트햄 찌개용 두부 떡국떡을 올려줄 거야... 소고기 민찌와 소고기 등심이 들어가더라고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"소세지, 햄, 두부, 떡국떡, 다진 소고기, 등심을 팬 위에 얹음\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"시판용 사골곰탕 500ml와 물 1.5L를 부어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 시판용 사골곰탕과 물을 부어준 다음 양념장을 만들 거야\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"사골곰탕과 물을 팬에 붓는 모습\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 굵은 고춧가루 5스푼, 고운 고춧가루 3스푼, 다진 마늘 3스푼, 국간장 1.5스푼, 소고기 다시다 1스푼, 고추장 1스푼, 맛술 3스푼을 넣고 섞어 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"볼에 굵은 고춧가루 고운 고춧가루 다진 마늘 국간장 소고기 다시다 고추장 맛술을 넣고 섞어서 양념장을 만들어줘\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"볼에 양념 재료들을 넣고 숟가락으로 섞음\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 양념장을 올리고 끓이면서 미나리와 파채를 가위로 먹기 좋게 자른다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양념장을 넣고 끓이다가\",\n          \"timestamp\": \"00:50\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"끓는 찌개 속 미나리와 파채를 집게로 들어 가위로 자르는 모습\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    },\n    {\n      \"text\": \"찌개의 간을 보고 취향에 맞게 후추 0.1스푼을 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간을 보고 취향껏 후추 조금만 뿌려주면 미나리 부대찌개 끝\",\n          \"timestamp\": \"00:52\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"찌개 국물 맛을 본 후 후추를 톡톡 뿌림\",\n          \"timestamp\": \"00:53\"\n        }\n      ]\n    },\n    {\n      \"text\": \"라면 사리를 넣고 끓여가며 건져 먹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"라면은 미리 넣으면 퍼지기 때문에 조금씩 넣고 계속 건져 먹는 거란다\",\n          \"timestamp\": \"01:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"라면 사리를 넣고 끓여 그릇에 덜어 먹는 모습\",\n          \"timestamp\": \"00:57\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "미나리 부대찌개",
+      "description": "강남에서 유명한 5만 원짜리 미나리 부대찌개를 최대한 비슷하게 재현한 레시피",
+      "servings": "4인분",
+      "ingredients": [
+        {
+          "rawText": "미나리 250g",
+          "displayName": "미나리",
+          "amount": "250",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "미나리 250g",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 미나리를 듬뿍 깔아줘",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "파채 150g",
+          "displayName": "파채",
+          "amount": "150",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "파채 150g",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 그 위에 파채",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "양파 150g",
+          "displayName": "양파",
+          "amount": "150",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 150g",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "채 썬 양파",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "소세지 500g",
+          "displayName": "콘킹 소세지",
+          "amount": "500",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소세지 500g",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "부대찌개 소세지로 유명한 콘킹 소세지",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "햄 400g",
+          "displayName": "튤립푸드 촙트햄",
+          "amount": "400",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "햄 400g",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "부대찌개 햄으로 유명한 튤립푸드 촙트햄",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "두부 300g",
+          "displayName": "찌개용 두부",
+          "amount": "300",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "두부 300g",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "찌개용 두부",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "떡국떡 200g",
+          "displayName": "떡국떡",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "떡국떡 200g",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "떡국떡을 올려줄 거야",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "다진 소고기 200g",
+          "displayName": "다진 소고기(소고기 민찌)",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 소고기 200g",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SPEECH",
+              "text": "부대찌개에 소고기 민찌와",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "등심 400g",
+          "displayName": "소고기 등심",
+          "amount": "400",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "등심 400g",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소고기 등심이 들어가더라고",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "오뚜기 사골곰탕 500ml",
+          "displayName": "오뚜기 사골곰탕",
+          "amount": "500",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "오뚜기 사골곰탕 500ml",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 시판용 사골곰탕과",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "물 1.5L",
+          "displayName": "물",
+          "amount": "1.5",
+          "unit": "L",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 1.5L",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물을 부어준 다음",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "굵은 고춧가루 5spoons",
+          "displayName": "굵은 고춧가루",
+          "amount": "5",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "굵은 고춧가루 5spoons",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "볼에 굵은 고춧가루",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "고운 고춧가루 3spoons",
+          "displayName": "고운 고춧가루",
+          "amount": "3",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고운 고춧가루 3spoons",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고운 고춧가루",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "다진 마늘 3spoons",
+          "displayName": "다진 마늘",
+          "amount": "3",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 3spoons",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "국간장 1.5spoons",
+          "displayName": "국간장",
+          "amount": "1.5",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "국간장 1.5spoons",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "국간장",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        },
+        {
+          "rawText": "소고기 다시다 1spoon",
+          "displayName": "소고기 다시다",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소고기 다시다 1spoon",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소고기 다시다",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-16"
+        },
+        {
+          "rawText": "고추장 1spoon",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 1spoon",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-17"
+        },
+        {
+          "rawText": "맛술 3spoons",
+          "displayName": "맛술",
+          "amount": "3",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 3spoons",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SPEECH",
+              "text": "맛술을 넣고",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-18"
+        },
+        {
+          "rawText": "후추 0.1spoon",
+          "displayName": "후추",
+          "amount": "0.1",
+          "unit": "spoon",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 0.1spoon",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "SPEECH",
+              "text": "취향껏 후추 조금만 뿌려주면",
+              "timestamp": "00:53"
+            }
+          ],
+          "sourceId": "ingredient-19"
+        },
+        {
+          "rawText": "라면",
+          "displayName": "라면 사리",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "라면",
+              "timestamp": "00:57"
+            },
+            {
+              "type": "SPEECH",
+              "text": "라면 반개는",
+              "timestamp": "00:59"
+            }
+          ],
+          "sourceId": "ingredient-20"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 미나리 250g을 듬뿍 깔아준 뒤, 그 위에 파채 150g, 채 썬 양파 150g을 올린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 팬에 미나리를 듬뿍 깔아줘 이래도 되나 싶을 정도로 많이 깔아줘야 해 그리고 그 위에 파채 채 썬 양파",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 미나리, 파채, 양파를 순서대로 올림",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "콘킹 소세지 500g, 촙트햄 400g, 찌개용 두부 300g, 떡국떡 200g, 다진 소고기 200g, 등심 400g을 차례대로 올려 담는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "부대찌개 소세지로 유명한 콘킹 소세지 부대찌개 햄으로 유명한 튤립푸드 촙트햄 찌개용 두부 떡국떡을 올려줄 거야... 소고기 민찌와 소고기 등심이 들어가더라고",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "소세지, 햄, 두부, 떡국떡, 다진 소고기, 등심을 팬 위에 얹음",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "시판용 사골곰탕 500ml와 물 1.5L를 부어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 시판용 사골곰탕과 물을 부어준 다음 양념장을 만들 거야",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "사골곰탕과 물을 팬에 붓는 모습",
+              "timestamp": "00:30"
+            }
+          ]
+        },
+        {
+          "text": "볼에 굵은 고춧가루 5스푼, 고운 고춧가루 3스푼, 다진 마늘 3스푼, 국간장 1.5스푼, 소고기 다시다 1스푼, 고추장 1스푼, 맛술 3스푼을 넣고 섞어 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "볼에 굵은 고춧가루 고운 고춧가루 다진 마늘 국간장 소고기 다시다 고추장 맛술을 넣고 섞어서 양념장을 만들어줘",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "볼에 양념 재료들을 넣고 숟가락으로 섞음",
+              "timestamp": "00:35"
+            }
+          ]
+        },
+        {
+          "text": "팬에 양념장을 올리고 끓이면서 미나리와 파채를 가위로 먹기 좋게 자른다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양념장을 넣고 끓이다가",
+              "timestamp": "00:50"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "끓는 찌개 속 미나리와 파채를 집게로 들어 가위로 자르는 모습",
+              "timestamp": "00:48"
+            }
+          ]
+        },
+        {
+          "text": "찌개의 간을 보고 취향에 맞게 후추 0.1스푼을 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "간을 보고 취향껏 후추 조금만 뿌려주면 미나리 부대찌개 끝",
+              "timestamp": "00:52"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "찌개 국물 맛을 본 후 후추를 톡톡 뿌림",
+              "timestamp": "00:53"
+            }
+          ]
+        },
+        {
+          "text": "라면 사리를 넣고 끓여가며 건져 먹는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "라면은 미리 넣으면 퍼지기 때문에 조금씩 넣고 계속 건져 먹는 거란다",
+              "timestamp": "01:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "라면 사리를 넣고 끓여 그릇에 덜어 먹는 모습",
+              "timestamp": "00:57"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-e"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "강남에서 2인분에 5만 원 받는 부대찌개!",
+    "sourceChannelName": "1분요리 뚝딱이형",
+    "sourceChannelId": "UC0htUSwcxfSGNfK_5Q28JkA",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/MHTy5jXZQPwKwrGtAV-gLL6ei9YTOgR8Z6GESkhAAIz0kkG4d6B6vu6CUPNNsLOzqcGxGfBK=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:25:05.654533Z"
+  },
+  "applyChecks": {
+    "short": true,
+    "embeddable": true,
+    "checkedAt": "2026-11-22T08:11:20Z"
   }
 }

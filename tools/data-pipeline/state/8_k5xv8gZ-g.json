@@ -1,21 +1,447 @@
 {
   "videoId": "8_k5xv8gZ-g",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/8_k5xv8gZ-g",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-21T08:24:43.901774+00:00",
+    "rawResponse": "{\n  \"title\": \"크림 카레 당면\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"라이스페이퍼 3장\",\n      \"displayName\": \"라이스페이퍼\",\n      \"amount\": \"3\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"라이스페이퍼 3장 꺼내고\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"라이스페이퍼 세 장 꺼내고\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"적신 라이스페이퍼 1장\",\n      \"displayName\": \"라이스페이퍼\",\n      \"amount\": \"1\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"적신 라이스페이퍼 위에\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물에 적신 한 장에\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"모짜렐라 치즈 한 줌\",\n      \"displayName\": \"모짜렐라 치즈\",\n      \"amount\": \"1\",\n      \"unit\": \"줌\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"모짜렐라 치즈 한 줌\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"치즈 한 줌 넣고\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 반 개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"0.5\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 반 개랑\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 반 개랑\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"닭가슴살\",\n      \"displayName\": \"닭가슴살\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"닭가슴살도 볶\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"닭가슴살도 볶아주면\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"오일\",\n      \"displayName\": \"오일\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 오일 두르고\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 오일 두르고\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우유 1.5컵 (종이컵 기준)\",\n      \"displayName\": \"우유\",\n      \"amount\": \"1.5\",\n      \"unit\": \"종이컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"종이컵으로 우유 1.5컵\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우유 한 컵 반이랑\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 0.5컵 (종이컵 기준)\",\n      \"displayName\": \"물\",\n      \"amount\": \"0.5\",\n      \"unit\": \"종이컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 0.5컵\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 반 컵\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 0.5스푼\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 0.5스푼\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘 반 스푼\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"카레가루 1스푼 (+0.5스푼 추가)\",\n      \"displayName\": \"카레가루\",\n      \"amount\": \"1.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"카레가루 1스푼\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"카레가루 반스푼 추가했어요\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"카레가루 딱 한 스푼 넣었죠\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"반 스푼 추가\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"저당 고추장 0.5스푼\",\n      \"displayName\": \"저당 고추장\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"저당 고추장 0.5스푼\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"저당 고추장 반 스푼\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1스푼\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 한 스푼\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"체다치즈\",\n      \"displayName\": \"체다치즈\",\n      \"amount\": \"1\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"체다치즈 녹여주면\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"체다 슬라이스 치즈 1장을 소스에 넣고 녹임\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리\",\n      \"displayName\": \"파슬리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 요리 위에 파슬리 가루가 뿌려져 있음\",\n          \"timestamp\": \"00:00\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"라이스페이퍼 3장을 준비하여 안 적신 것, 물에 적신 것, 안 적신 것 순으로 겹쳐 쌓은 뒤 가위로 넓적당면 크기로 자른다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"라이스페이퍼 3장 꺼내고 / 안 적신거 / 적신거 / 안 적신거 / 자르기 짱 편함\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"라이스페이퍼 세 장 꺼내고 중간에 한 장만 적시는 거야. 안 적신 거 위에 적신 거 올리고 그 위에 안 적신 거.\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물에 적신 라이스페이퍼 위에 모짜렐라 치즈 한 줌을 올리고 돌돌 말아 치즈떡을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"적신 라이스페이퍼 위에 모짜렐라 치즈 한 줌 / 돌돌\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물에 적신 한 장에 치즈 한 줌 넣고 요래 요래 요래 요래 끝\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 반 개를 채 썰고, 닭가슴살을 한 입 크기로 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기본 토핑으로 양파 반 개랑 단백질은 필수실게요\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"양파를 썰고 닭가슴살을 깍둑썰기함\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 오일을 두르고 양파를 먼저 볶다가 노릇해지면 닭가슴살을 넣어 함께 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"팬에 오일 두르고 양파 먼저 볶다가 노릇해지면 닭가슴살도 볶\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 오일 두르고 양파 먼저 노릇노릇 볶다가 닭가슴살도 볶아주면\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"종이컵 기준으로 우유 1.5컵, 물 0.5컵을 팬에 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"종이컵으로 우유 1.5컵, 물 0.5컵\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"우유 한 컵 반이랑 물 반 컵\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"다진마늘 0.5스푼, 카레가루 1스푼, 저당 고추장 0.5스푼, 고춧가루 1스푼을 넣고 잘 섞어 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 0.5스푼 / 카레가루 1스푼 / 매콤한 맛을 위해 저당 고추장 0.5스푼 / 고춧가루 1스푼 / 잘 섞고\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘 반 스푼, 카레가루 딱 한 스푼 넣었죠. 저당 고추장 반 스푼 이 정도? 고춧가루 한 스푼\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"간을 보고 필요 시 카레가루 0.5스푼을 추가하고, 체다치즈 1장을 넣어 녹인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"전 살짝 싱거워서 카레가루 반스푼 추가했어요 / 체다치즈 녹여주면\",\n          \"timestamp\": \"00:42\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냄새 벌써 좋은데? 반 스푼 추가. 체다치즈 삭 녹여주면\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"text\": \"만들어둔 라이스페이퍼 당면과 치즈떡이 서로 겹치지 않게 넣고, 아주 약불에서 국물에 푹 담가 불려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"겹치지 않게! 당면 투하 / 아주 약불로 푹 담가 잘 불려주기\",\n          \"timestamp\": \"00:47\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"라이스페이퍼가 겹치지 않게 당면을 넣는 거야. 아주 약불로 불려주면 완성\",\n          \"timestamp\": \"00:47\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "크림 카레 당면",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "라이스페이퍼 3장",
+          "displayName": "라이스페이퍼",
+          "amount": "3",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "라이스페이퍼 3장 꺼내고",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "라이스페이퍼 세 장 꺼내고",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "적신 라이스페이퍼 1장",
+          "displayName": "라이스페이퍼",
+          "amount": "1",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "적신 라이스페이퍼 위에",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물에 적신 한 장에",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "모짜렐라 치즈 한 줌",
+          "displayName": "모짜렐라 치즈",
+          "amount": "1",
+          "unit": "줌",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "모짜렐라 치즈 한 줌",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "치즈 한 줌 넣고",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양파 반 개",
+          "displayName": "양파",
+          "amount": "0.5",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 반 개랑",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파 반 개랑",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "닭가슴살",
+          "displayName": "닭가슴살",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "닭가슴살도 볶",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SPEECH",
+              "text": "닭가슴살도 볶아주면",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "오일",
+          "displayName": "오일",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 오일 두르고",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "팬에 오일 두르고",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "우유 1.5컵 (종이컵 기준)",
+          "displayName": "우유",
+          "amount": "1.5",
+          "unit": "종이컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "종이컵으로 우유 1.5컵",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "우유 한 컵 반이랑",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "물 0.5컵 (종이컵 기준)",
+          "displayName": "물",
+          "amount": "0.5",
+          "unit": "종이컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 0.5컵",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물 반 컵",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "다진마늘 0.5스푼",
+          "displayName": "다진마늘",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 0.5스푼",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘 반 스푼",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "카레가루 1스푼 (+0.5스푼 추가)",
+          "displayName": "카레가루",
+          "amount": "1.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "카레가루 1스푼",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "카레가루 반스푼 추가했어요",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "SPEECH",
+              "text": "카레가루 딱 한 스푼 넣었죠",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "SPEECH",
+              "text": "반 스푼 추가",
+              "timestamp": "00:43"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "저당 고추장 0.5스푼",
+          "displayName": "저당 고추장",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "저당 고추장 0.5스푼",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "저당 고추장 반 스푼",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "고춧가루 1스푼",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1스푼",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 한 스푼",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "체다치즈",
+          "displayName": "체다치즈",
+          "amount": "1",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "체다치즈 녹여주면",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "체다 슬라이스 치즈 1장을 소스에 넣고 녹임",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "파슬리",
+          "displayName": "파슬리",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 요리 위에 파슬리 가루가 뿌려져 있음",
+              "timestamp": "00:00"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        }
+      ],
+      "steps": [
+        {
+          "text": "라이스페이퍼 3장을 준비하여 안 적신 것, 물에 적신 것, 안 적신 것 순으로 겹쳐 쌓은 뒤 가위로 넓적당면 크기로 자른다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "라이스페이퍼 3장 꺼내고 / 안 적신거 / 적신거 / 안 적신거 / 자르기 짱 편함",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "라이스페이퍼 세 장 꺼내고 중간에 한 장만 적시는 거야. 안 적신 거 위에 적신 거 올리고 그 위에 안 적신 거.",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "물에 적신 라이스페이퍼 위에 모짜렐라 치즈 한 줌을 올리고 돌돌 말아 치즈떡을 만든다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "적신 라이스페이퍼 위에 모짜렐라 치즈 한 줌 / 돌돌",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물에 적신 한 장에 치즈 한 줌 넣고 요래 요래 요래 요래 끝",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "양파 반 개를 채 썰고, 닭가슴살을 한 입 크기로 썬다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기본 토핑으로 양파 반 개랑 단백질은 필수실게요",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "양파를 썰고 닭가슴살을 깍둑썰기함",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "팬에 오일을 두르고 양파를 먼저 볶다가 노릇해지면 닭가슴살을 넣어 함께 볶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "팬에 오일 두르고 양파 먼저 볶다가 노릇해지면 닭가슴살도 볶",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "팬에 오일 두르고 양파 먼저 노릇노릇 볶다가 닭가슴살도 볶아주면",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "종이컵 기준으로 우유 1.5컵, 물 0.5컵을 팬에 붓는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "종이컵으로 우유 1.5컵, 물 0.5컵",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "우유 한 컵 반이랑 물 반 컵",
+              "timestamp": "00:30"
+            }
+          ]
+        },
+        {
+          "text": "다진마늘 0.5스푼, 카레가루 1스푼, 저당 고추장 0.5스푼, 고춧가루 1스푼을 넣고 잘 섞어 끓인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 0.5스푼 / 카레가루 1스푼 / 매콤한 맛을 위해 저당 고추장 0.5스푼 / 고춧가루 1스푼 / 잘 섞고",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘 반 스푼, 카레가루 딱 한 스푼 넣었죠. 저당 고추장 반 스푼 이 정도? 고춧가루 한 스푼",
+              "timestamp": "00:33"
+            }
+          ]
+        },
+        {
+          "text": "간을 보고 필요 시 카레가루 0.5스푼을 추가하고, 체다치즈 1장을 넣어 녹인다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "전 살짝 싱거워서 카레가루 반스푼 추가했어요 / 체다치즈 녹여주면",
+              "timestamp": "00:42"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냄새 벌써 좋은데? 반 스푼 추가. 체다치즈 삭 녹여주면",
+              "timestamp": "00:42"
+            }
+          ]
+        },
+        {
+          "text": "만들어둔 라이스페이퍼 당면과 치즈떡이 서로 겹치지 않게 넣고, 아주 약불에서 국물에 푹 담가 불려 완성한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "겹치지 않게! 당면 투하 / 아주 약불로 푹 담가 잘 불려주기",
+              "timestamp": "00:47"
+            },
+            {
+              "type": "SPEECH",
+              "text": "라이스페이퍼가 겹치지 않게 당면을 넣는 거야. 아주 약불로 불려주면 완성",
+              "timestamp": "00:47"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
     "retryCount": 0,
-    "startedAt": "2026-11-15T09:41:11.290849+00:00",
-    "accountId": "account-e",
-    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 22h18m48.391350177s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '80328s'}]}}",
-    "retryReason": "quota_retry_info",
-    "retryKind": "quota",
-    "retryAt": "2026-11-16T07:59:59.653069+00:00",
-    "retryAccountId": "account-e",
-    "quotaAccounts": {
-      "account-e": "2026-11-16T07:59:59.653069+00:00"
-    }
+    "accountId": "account-a"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "주말 저녁 죄책감 없이 먹는 크카당",
+    "sourceChannelName": "유지만 yuziman",
+    "sourceChannelId": "UCslni4iVQ-e784AU83eVcnQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/h9Vt4_UB_kTv6ijmpNN2Hw-Sv-2ACsIfI1rnEXDzx_6fDBVGeX2nJcDCEBgYBBrOJbmylUR4IeI=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:24:41.179401Z"
+  },
+  "applyChecks": {
+    "short": true,
+    "embeddable": true,
+    "checkedAt": "2026-11-22T08:10:13Z"
   }
 }

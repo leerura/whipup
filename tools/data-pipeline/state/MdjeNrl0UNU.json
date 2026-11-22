@@ -1,23 +1,242 @@
 {
   "videoId": "MdjeNrl0UNU",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/MdjeNrl0UNU",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-11-20T13:25:41.982701+00:00",
-    "accountId": "account-b",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryableRuns": 2,
-    "retryKind": "transient",
-    "retryAccountId": "account-b",
-    "retryAt": "2026-11-20T13:25:58.249860+00:00",
-    "quotaAccounts": {
-      "account-a": "2026-11-21T08:00:00.244818+00:00",
-      "account-d": "2026-11-21T07:59:59.501694+00:00"
-    }
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-21T08:06:36.686298+00:00",
+    "rawResponse": "{\n  \"title\": \"참치캔 10배 더 맛있게 먹는 방법\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"기름기 뺀 참치 한 캔(100g)\",\n      \"displayName\": \"참치\",\n      \"amount\": \"1\",\n      \"unit\": \"캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름기 뺀 참치 한 캔(100g)\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 기름기 뺀 참치 한 캔에\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 1스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 1스푼\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 한 스푼\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 한 스푼\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름 한 스푼\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1/2스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 1/2스푼\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘 반 스푼\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 하나\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 하나\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"땡초 하나와\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨는 50알\",\n      \"displayName\": \"통깨\",\n      \"amount\": \"50\",\n      \"unit\": \"알\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"통깨는 50알만 뿌려준 뒤에\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"흰밥\",\n      \"displayName\": \"흰밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"흰밥 위에 올려주고\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"흰밥 위에 올려주고\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김\",\n      \"displayName\": \"김\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"김에 싸 먹으면 진짜 맛있습니다.\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"밥을 김에 싸서 먹는 장면\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"그릇에 기름기를 뺀 참치 1캔(100g), 진간장 1스푼, 참기름 1스푼, 다진 마늘 1/2스푼, 송송 썬 청양고추 1개, 통깨 50알을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 기름기 뺀 참치 한 캔에 진간장 한 스푼, 참기름 한 스푼, 다진 마늘 반 스푼, 땡초 하나와 통깨는 50알만 뿌려준 뒤에\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"기름기 뺀 참치 한 캔(100g), 진간장 1스푼, 다진 마늘 1/2스푼, 청양고추 하나\",\n          \"timestamp\": \"00:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양념과 재료를 골고루 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"골고루 섞어서\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"골고루 슥까\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"흰밥 위에 올리고 골고루 비벼준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"흰밥 위에 올려주고 잘 비벼주면 끝입니다.\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"흰밥 위에 올려주고 잘 비비주면 끝입니다.\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그냥 먹거나 취향에 따라 김에 싸서 먹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이건 그냥 먹어도 되고 김에 싸 먹으면 진짜 맛있습니다.\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "참치캔 10배 더 맛있게 먹는 방법",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "기름기 뺀 참치 한 캔(100g)",
+          "displayName": "참치",
+          "amount": "1",
+          "unit": "캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름기 뺀 참치 한 캔(100g)",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 기름기 뺀 참치 한 캔에",
+              "timestamp": "00:04"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "진간장 1스푼",
+          "displayName": "진간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 1스푼",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장 한 스푼",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "참기름 한 스푼",
+          "displayName": "참기름",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "참기름 한 스푼",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "다진 마늘 1/2스푼",
+          "displayName": "다진 마늘",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 1/2스푼",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘 반 스푼",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "청양고추 하나",
+          "displayName": "청양고추",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 하나",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "땡초 하나와",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "통깨는 50알",
+          "displayName": "통깨",
+          "amount": "50",
+          "unit": "알",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "통깨는 50알만 뿌려준 뒤에",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "흰밥",
+          "displayName": "흰밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "흰밥 위에 올려주고",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "흰밥 위에 올려주고",
+              "timestamp": "00:11"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "김",
+          "displayName": "김",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "김에 싸 먹으면 진짜 맛있습니다.",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "밥을 김에 싸서 먹는 장면",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        }
+      ],
+      "steps": [
+        {
+          "text": "그릇에 기름기를 뺀 참치 1캔(100g), 진간장 1스푼, 참기름 1스푼, 다진 마늘 1/2스푼, 송송 썬 청양고추 1개, 통깨 50알을 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 기름기 뺀 참치 한 캔에 진간장 한 스푼, 참기름 한 스푼, 다진 마늘 반 스푼, 땡초 하나와 통깨는 50알만 뿌려준 뒤에",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "기름기 뺀 참치 한 캔(100g), 진간장 1스푼, 다진 마늘 1/2스푼, 청양고추 하나",
+              "timestamp": "00:04"
+            }
+          ]
+        },
+        {
+          "text": "양념과 재료를 골고루 섞어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "골고루 섞어서",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "골고루 슥까",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "흰밥 위에 올리고 골고루 비벼준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "흰밥 위에 올려주고 잘 비벼주면 끝입니다.",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "흰밥 위에 올려주고 잘 비비주면 끝입니다.",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "그냥 먹거나 취향에 따라 김에 싸서 먹는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이건 그냥 먹어도 되고 김에 싸 먹으면 진짜 맛있습니다.",
+              "timestamp": "00:14"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "SNS에서 대존맛이라고 난리난 참치캔 먹는 방법",
+    "sourceChannelName": "자취요리신 simple cooking",
+    "sourceChannelId": "UCC9pQY_uaBSa0WOpMNJHbEQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/hZHUS5wW20j39kfLUfmeHDwvC8aG7kvNblsP_gXiclsXzf7ixDgAp5ml_2cjqTzMcpsKG9hwkA=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:06:34.414820Z"
   }
 }

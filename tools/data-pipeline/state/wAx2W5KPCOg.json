@@ -1,22 +1,374 @@
 {
   "videoId": "wAx2W5KPCOg",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/wAx2W5KPCOg",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-21T08:13:56.589641+00:00",
+    "rawResponse": "{\n  \"title\": \"LA갈비\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"LA갈비\",\n      \"displayName\": \"LA갈비\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"LA갈비 사신다면\",\n          \"timestamp\": \"0:01\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"LA 갈비 사신다면\",\n          \"timestamp\": \"0:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물\",\n      \"displayName\": \"물\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기는 물에 담근 후\",\n          \"timestamp\": \"0:10\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고기는 물에 담근 후,\",\n          \"timestamp\": \"0:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 2스푼 (핏물 제거용)\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 2스푼 넣어 1시간 담가놓을게요\",\n          \"timestamp\": \"0:11\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 2스푼 넣어\",\n          \"timestamp\": \"0:11\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"갈아만든배 2캔\",\n      \"displayName\": \"갈아만든배\",\n      \"amount\": \"2\",\n      \"unit\": \"캔\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"갈아만든배 2캔\",\n          \"timestamp\": \"0:21\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"갈아만든배 2캔\",\n          \"timestamp\": \"0:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 150g\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"150\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 150g\",\n          \"timestamp\": \"0:22\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 150g\",\n          \"timestamp\": \"0:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 5스푼\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술 다섯 스푼\",\n          \"timestamp\": \"0:23\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 5스푼\",\n          \"timestamp\": \"0:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 2스푼 (양념용)\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 두 스푼\",\n          \"timestamp\": \"0:23\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 2스푼\",\n          \"timestamp\": \"0:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 3스푼\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름 세 스푼\",\n          \"timestamp\": \"0:24\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 3스푼\",\n          \"timestamp\": \"0:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 0.5스푼\",\n      \"displayName\": \"후추\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추 반 스푼\",\n          \"timestamp\": \"0:25\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 0.5스푼\",\n          \"timestamp\": \"0:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깨소금 3스푼\",\n      \"displayName\": \"깨소금\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"깨소금 세 스푼\",\n          \"timestamp\": \"0:26\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깨소금 3스푼\",\n          \"timestamp\": \"0:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 3스푼\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘 세 스푼\",\n          \"timestamp\": \"0:27\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 3스푼\",\n          \"timestamp\": \"0:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"자른대파 1쪽\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"쪽\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"자른대파 한 쪽 넣어\",\n          \"timestamp\": \"0:28\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"자른대파 1쪽\",\n          \"timestamp\": \"0:28\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"LA갈비를 물에 담근 후 설탕 2스푼을 넣어 1시간 동안 핏물을 뺀다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"일단, 핏물빼기 작업은 꼭! 해주셔야 해요. 고기는 물에 담근 후, 설탕 2스푼 넣어 1시간 담가놓을게요\",\n          \"timestamp\": \"0:06\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고기는 물에 담근 후, 설탕 2스푼 넣어 1시간 담가놓을게요\",\n          \"timestamp\": \"0:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"1시간 후 흐르는 물에 뼈 가루 등 불순물을 깨끗이 씻어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"1시간 후 흐르는 물에 잘 씻어주셔야 하는데, LA갈비는 뼈를 커팅한 부위라서 불순물이 많아 꼭! 해주셔야 해요\",\n          \"timestamp\": \"0:13\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"1시간 후, 잘 씻어주셔야 하는데, 뼈를 커팅한 부위라서 불순물이 많아 꼭! 해주셔야 해요\",\n          \"timestamp\": \"0:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"넓은 용기(밧드)에 갈아만든배 2캔, 진간장 150g, 맛술 5스푼, 설탕 2스푼, 참기름 3스푼, 후추 0.5스푼, 깨소금 3스푼, 다진마늘 3스푼, 자른 대파 1쪽을 넣고 잘 섞어 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"넉넉히 담길 수 있는 밧드 준비해 주시고, 갈아만든배 2캔, 진간장 150g, 맛술 다섯 스푼, 설탕 두 스푼, 참기름 세 스푼, 후추 반 스푼, 깨소금 세 스푼, 다진마늘 세 스푼, 자른대파 한 쪽 넣어 잘 섞어주세요\",\n          \"timestamp\": \"0:19\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"갈아만든배 2캔 진간장 150g 맛술 5스푼 설탕 2스푼 참기름 3스푼 후추 0.5스푼 깨소금 3스푼 다진마늘 3스푼 자른대파 1쪽\",\n          \"timestamp\": \"0:21\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양념장에 씻어둔 고기를 골고루 담가 재운다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그 후 고기만 담가주면 완성인데,\",\n          \"timestamp\": \"0:29\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고기만 담가주면 완성인데,\",\n          \"timestamp\": \"0:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"뚜껑을 덮어 24시간 정도 냉장 숙성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"24시간 정도 냉장 숙성하면 더 진한 맛을 느끼실 수 있을 거예요\",\n          \"timestamp\": \"0:31\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"24시간 정도 냉장숙성하면\",\n          \"timestamp\": \"0:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"숙성된 LA갈비를 팬에 올려 노릇하게 구워 먹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 숙성된 LA갈비를 올려 굽고 먹기 좋게 자르는 모습\",\n          \"timestamp\": \"0:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"프라이팬에서 양념 LA갈비를 굽는 모습\",\n          \"timestamp\": \"0:35\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"LA갈비의 구체적인 중량이나 양은 영상 내에서 언급되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "LA갈비",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "LA갈비",
+          "displayName": "LA갈비",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "LA갈비 사신다면",
+              "timestamp": "0:01"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "LA 갈비 사신다면",
+              "timestamp": "0:01"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "물",
+          "displayName": "물",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고기는 물에 담근 후",
+              "timestamp": "0:10"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고기는 물에 담근 후,",
+              "timestamp": "0:10"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "설탕 2스푼 (핏물 제거용)",
+          "displayName": "설탕",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "설탕 2스푼 넣어 1시간 담가놓을게요",
+              "timestamp": "0:11"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 2스푼 넣어",
+              "timestamp": "0:11"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "갈아만든배 2캔",
+          "displayName": "갈아만든배",
+          "amount": "2",
+          "unit": "캔",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "갈아만든배 2캔",
+              "timestamp": "0:21"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "갈아만든배 2캔",
+              "timestamp": "0:21"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "진간장 150g",
+          "displayName": "진간장",
+          "amount": "150",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "진간장 150g",
+              "timestamp": "0:22"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 150g",
+              "timestamp": "0:22"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "맛술 5스푼",
+          "displayName": "맛술",
+          "amount": "5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "맛술 다섯 스푼",
+              "timestamp": "0:23"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 5스푼",
+              "timestamp": "0:23"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "설탕 2스푼 (양념용)",
+          "displayName": "설탕",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "설탕 두 스푼",
+              "timestamp": "0:23"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 2스푼",
+              "timestamp": "0:24"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "참기름 3스푼",
+          "displayName": "참기름",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "참기름 세 스푼",
+              "timestamp": "0:24"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 3스푼",
+              "timestamp": "0:24"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "후추 0.5스푼",
+          "displayName": "후추",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후추 반 스푼",
+              "timestamp": "0:25"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 0.5스푼",
+              "timestamp": "0:25"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "깨소금 3스푼",
+          "displayName": "깨소금",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "깨소금 세 스푼",
+              "timestamp": "0:26"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깨소금 3스푼",
+              "timestamp": "0:26"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "다진마늘 3스푼",
+          "displayName": "다진마늘",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진마늘 세 스푼",
+              "timestamp": "0:27"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 3스푼",
+              "timestamp": "0:27"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "자른대파 1쪽",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "쪽",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "자른대파 한 쪽 넣어",
+              "timestamp": "0:28"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "자른대파 1쪽",
+              "timestamp": "0:28"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "LA갈비를 물에 담근 후 설탕 2스푼을 넣어 1시간 동안 핏물을 뺀다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "일단, 핏물빼기 작업은 꼭! 해주셔야 해요. 고기는 물에 담근 후, 설탕 2스푼 넣어 1시간 담가놓을게요",
+              "timestamp": "0:06"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고기는 물에 담근 후, 설탕 2스푼 넣어 1시간 담가놓을게요",
+              "timestamp": "0:10"
+            }
+          ]
+        },
+        {
+          "text": "1시간 후 흐르는 물에 뼈 가루 등 불순물을 깨끗이 씻어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "1시간 후 흐르는 물에 잘 씻어주셔야 하는데, LA갈비는 뼈를 커팅한 부위라서 불순물이 많아 꼭! 해주셔야 해요",
+              "timestamp": "0:13"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "1시간 후, 잘 씻어주셔야 하는데, 뼈를 커팅한 부위라서 불순물이 많아 꼭! 해주셔야 해요",
+              "timestamp": "0:13"
+            }
+          ]
+        },
+        {
+          "text": "넓은 용기(밧드)에 갈아만든배 2캔, 진간장 150g, 맛술 5스푼, 설탕 2스푼, 참기름 3스푼, 후추 0.5스푼, 깨소금 3스푼, 다진마늘 3스푼, 자른 대파 1쪽을 넣고 잘 섞어 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "넉넉히 담길 수 있는 밧드 준비해 주시고, 갈아만든배 2캔, 진간장 150g, 맛술 다섯 스푼, 설탕 두 스푼, 참기름 세 스푼, 후추 반 스푼, 깨소금 세 스푼, 다진마늘 세 스푼, 자른대파 한 쪽 넣어 잘 섞어주세요",
+              "timestamp": "0:19"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "갈아만든배 2캔 진간장 150g 맛술 5스푼 설탕 2스푼 참기름 3스푼 후추 0.5스푼 깨소금 3스푼 다진마늘 3스푼 자른대파 1쪽",
+              "timestamp": "0:21"
+            }
+          ]
+        },
+        {
+          "text": "양념장에 씻어둔 고기를 골고루 담가 재운다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그 후 고기만 담가주면 완성인데,",
+              "timestamp": "0:29"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고기만 담가주면 완성인데,",
+              "timestamp": "0:30"
+            }
+          ]
+        },
+        {
+          "text": "뚜껑을 덮어 24시간 정도 냉장 숙성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "24시간 정도 냉장 숙성하면 더 진한 맛을 느끼실 수 있을 거예요",
+              "timestamp": "0:31"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "24시간 정도 냉장숙성하면",
+              "timestamp": "0:31"
+            }
+          ]
+        },
+        {
+          "text": "숙성된 LA갈비를 팬에 올려 노릇하게 구워 먹는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 숙성된 LA갈비를 올려 굽고 먹기 좋게 자르는 모습",
+              "timestamp": "0:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "프라이팬에서 양념 LA갈비를 굽는 모습",
+              "timestamp": "0:35"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "LA갈비의 구체적인 중량이나 양은 영상 내에서 언급되지 않음"
+      ]
+    },
+    "structuralErrors": [],
     "retryCount": 0,
-    "startedAt": "2026-11-20T13:25:48.747230+00:00",
-    "accountId": "account-b",
-    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 18h34m11.122816203s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '66851s'}]}}",
-    "retryReason": "quota_retry_info",
-    "retryableRuns": 1,
-    "retryKind": "quota",
-    "retryAt": "2026-11-21T08:00:00.000278+00:00",
-    "retryAccountId": "account-b",
-    "quotaAccounts": {
-      "account-b": "2026-11-21T08:00:00.000278+00:00"
-    }
+    "accountId": "account-e"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "코스트코 LA갈비",
+    "sourceChannelName": "살림팝",
+    "sourceChannelId": "UCqp72t-eSw3AFSesyjzk59g",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/FWQw9Hkbyc3vfy84PM9gzpHYF-M9evLVXqFVqd0o3Lf0I8p69XT9ms-pYKdhXBj5DASG0za86KI=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:13:53.850934Z"
+  },
+  "applyChecks": {
+    "short": true,
+    "embeddable": true,
+    "checkedAt": "2026-11-22T08:11:35Z"
   }
 }

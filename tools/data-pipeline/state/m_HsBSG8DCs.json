@@ -1,19 +1,19 @@
 {
   "videoId": "m_HsBSG8DCs",
-  "status": "WAITING_RETRY",
+  "status": "FAILED_RETRYABLE",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/m_HsBSG8DCs",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-11-20T13:12:15.158813+00:00",
+    "status": "FAILED_RETRYABLE",
+    "retryCount": 3,
+    "startedAt": "2026-11-21T08:50:24.722645+00:00",
     "accountId": "account-c",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
+    "error": "Server disconnected without sending a response.",
+    "retryReason": "failed_retryable",
     "retryableRuns": 1,
     "retryKind": "transient",
-    "retryAt": "2026-11-20T13:12:29.690706+00:00",
+    "retryAt": "2026-11-21T08:46:34.861917+00:00",
     "retryAccountId": "account-c"
   }
 }

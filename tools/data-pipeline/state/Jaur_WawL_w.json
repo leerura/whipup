@@ -1,18 +1,18 @@
 {
   "videoId": "Jaur_WawL_w",
-  "status": "WAITING_RETRY",
+  "status": "FAILED_RETRYABLE",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/Jaur_WawL_w",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-11-14T14:14:50.586354+00:00",
+    "status": "FAILED_RETRYABLE",
+    "retryCount": 2,
+    "startedAt": "2026-11-21T08:27:15.532773+00:00",
     "accountId": "account-d",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
+    "error": "Server disconnected without sending a response.",
+    "retryReason": "failed_retryable",
     "retryKind": "transient",
-    "retryAt": "2026-11-14T14:15:17.309982+00:00",
+    "retryAt": "2026-11-21T08:26:07.823976+00:00",
     "retryAccountId": "account-d"
   }
 }

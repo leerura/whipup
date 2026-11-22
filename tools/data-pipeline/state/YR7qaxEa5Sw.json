@@ -1,19 +1,245 @@
 {
   "videoId": "YR7qaxEa5Sw",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/YR7qaxEa5Sw",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-11-20T13:09:17.460516+00:00",
-    "accountId": "account-d",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAccountId": "account-d",
-    "retryableRuns": 1,
-    "retryAt": "2026-11-20T13:09:34.227998+00:00"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-21T08:24:02.489312+00:00",
+    "rawResponse": "{\n  \"title\": \"제육볶음\",\n  \"description\": null,\n  \"servings\": \"3인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"헤라스 올리브오일\",\n      \"displayName\": \"헤라스 올리브오일\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"일단 헤라스 올리브오일 넉넉하게 부어주고요\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"일단 헤라스 올리브오일 넉넉하게 부어주고요\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기름이 많이 나오는 삼겹살을 사용한다면 오일은 생략하셔도 됩니다\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"앞다리살 2kg\",\n      \"displayName\": \"앞다리살\",\n      \"amount\": \"2\",\n      \"unit\": \"kg\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"3인분 = 2kg로\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"3인분 2kg나 준비하셨더라고요\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 앞다리살을 노릇하게 구워줄 거예요\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 앞다리살을 노릇하게 구워줄 거예요\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파\",\n      \"displayName\": \"양파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이때 양파랑 대파를 넣어주고요\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이때 양파랑 대파를 넣어주고요\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이때 양파랑 대파를 넣어주고요\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이때 양파랑 대파를 넣어주고요\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"비법소스\",\n      \"displayName\": \"비법소스\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 비법소스 추가해서 딱 3분만 볶아주면 완성입니다\",\n          \"timestamp\": \"00:40\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"(소스 레시피는 고정댓글 참고)\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"통깨\",\n      \"displayName\": \"통깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"완성된 제육볶음 위에 통깨를 뿌려 마무리함\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"팬에 올리브오일을 넉넉하게 붓는다. (기름이 많이 나오는 삼겹살을 사용할 경우 오일 생략 가능)\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"일단 헤라스 올리브오일 넉넉하게 부어주고요\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"기름이 많이 나오는 삼겹살을 사용한다면 오일은 생략하셔도 됩니다\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"앞다리살을 팬에 넣고 노릇하게 구워준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 앞다리살을 노릇하게 구워줄 거예요\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 고기를 넣고 노릇해질 때까지 볶아 익힘\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고기가 노릇하게 익으면 썰어둔 양파와 대파를 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고기가 노릇하게 익었죠? 이때 양파랑 대파를 넣어주고요\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"비법소스를 추가하여 딱 3분간 볶아 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 비법소스 추가해서 딱 3분만 볶아주면 완성입니다\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"text\": \"접시에 담고 깨를 뿌려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"접시에 담긴 제육볶음 위에 깨를 뿌림\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"비법소스의 구체적인 배합 재료 및 계량은 영상 본문에서 공개되지 않고 고정댓글을 참고하도록 안내됨\",\n    \"양파, 대파, 통깨의 정확한 계량이 영상 내에 명시되지 않음\"\n  ]\n}",
+    "result": {
+      "title": "제육볶음",
+      "description": null,
+      "servings": "3인분",
+      "ingredients": [
+        {
+          "rawText": "헤라스 올리브오일",
+          "displayName": "헤라스 올리브오일",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "일단 헤라스 올리브오일 넉넉하게 부어주고요",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "일단 헤라스 올리브오일 넉넉하게 부어주고요",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SPEECH",
+              "text": "기름이 많이 나오는 삼겹살을 사용한다면 오일은 생략하셔도 됩니다",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "앞다리살 2kg",
+          "displayName": "앞다리살",
+          "amount": "2",
+          "unit": "kg",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "3인분 = 2kg로",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "3인분 2kg나 준비하셨더라고요",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 앞다리살을 노릇하게 구워줄 거예요",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 앞다리살을 노릇하게 구워줄 거예요",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "양파",
+          "displayName": "양파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이때 양파랑 대파를 넣어주고요",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이때 양파랑 대파를 넣어주고요",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "대파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이때 양파랑 대파를 넣어주고요",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이때 양파랑 대파를 넣어주고요",
+              "timestamp": "00:39"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "비법소스",
+          "displayName": "비법소스",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 비법소스 추가해서 딱 3분만 볶아주면 완성입니다",
+              "timestamp": "00:40"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "(소스 레시피는 고정댓글 참고)",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "통깨",
+          "displayName": "통깨",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "완성된 제육볶음 위에 통깨를 뿌려 마무리함",
+              "timestamp": "00:51"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        }
+      ],
+      "steps": [
+        {
+          "text": "팬에 올리브오일을 넉넉하게 붓는다. (기름이 많이 나오는 삼겹살을 사용할 경우 오일 생략 가능)",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "일단 헤라스 올리브오일 넉넉하게 부어주고요",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SPEECH",
+              "text": "기름이 많이 나오는 삼겹살을 사용한다면 오일은 생략하셔도 됩니다",
+              "timestamp": "00:33"
+            }
+          ]
+        },
+        {
+          "text": "앞다리살을 팬에 넣고 노릇하게 구워준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 앞다리살을 노릇하게 구워줄 거예요",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 고기를 넣고 노릇해질 때까지 볶아 익힘",
+              "timestamp": "00:37"
+            }
+          ]
+        },
+        {
+          "text": "고기가 노릇하게 익으면 썰어둔 양파와 대파를 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고기가 노릇하게 익었죠? 이때 양파랑 대파를 넣어주고요",
+              "timestamp": "00:37"
+            }
+          ]
+        },
+        {
+          "text": "비법소스를 추가하여 딱 3분간 볶아 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 비법소스 추가해서 딱 3분만 볶아주면 완성입니다",
+              "timestamp": "00:40"
+            }
+          ]
+        },
+        {
+          "text": "접시에 담고 깨를 뿌려 마무리한다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "접시에 담긴 제육볶음 위에 깨를 뿌림",
+              "timestamp": "00:51"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "비법소스의 구체적인 배합 재료 및 계량은 영상 본문에서 공개되지 않고 고정댓글을 참고하도록 안내됨",
+        "양파, 대파, 통깨의 정확한 계량이 영상 내에 명시되지 않음"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "신혼여행에서 돌아온 큰며느리 (1탄)",
+    "sourceChannelName": "김진순 점심시간",
+    "sourceChannelId": "UC9She1e6OWUpwJpwZtbqhjQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/BvOrdVOmTRlMEFygfbeuka_30BrSZenSof2_yC4RCxF0gEKvRzJTn6NEzMTJYQSe8aBxV9iMbQ=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:23:59.604857Z"
+  },
+  "applyChecks": {
+    "short": true,
+    "embeddable": true,
+    "checkedAt": "2026-11-22T08:10:54Z"
   }
 }

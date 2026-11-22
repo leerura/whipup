@@ -1,19 +1,317 @@
 {
   "videoId": "7q0YMzjPnvo",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/7q0YMzjPnvo",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 2,
-    "startedAt": "2026-11-20T13:25:28.321073+00:00",
-    "accountId": "account-d",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAccountId": "account-d",
-    "retryableRuns": 1,
-    "retryAt": "2026-11-20T13:26:01.099337+00:00"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-21T08:14:10.565764+00:00",
+    "rawResponse": "{\n  \"title\": \"귀찮아도 건강하게 챙기는 현실 한끼 (연두부 부추 비빔밥)\",\n  \"description\": null,\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"다 죽어가는 부추 한 줌\",\n      \"displayName\": \"부추\",\n      \"amount\": \"1\",\n      \"unit\": \"줌\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다 죽어가는 부추 한 줌\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"현미밥 한 공기\",\n      \"displayName\": \"현미밥\",\n      \"amount\": \"1\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"현미밥 한 공기 데우고\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"연두부\",\n      \"displayName\": \"연두부\",\n      \"amount\": \"2\",\n      \"unit\": \"팩\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"오늘의 주인공 연두부\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"네컵연두부 중 2팩을 뜯어서 밥 위에 올림\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 1\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 1\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치액 1\",\n      \"displayName\": \"참치액\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치액 1\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"알룰로스 1\",\n      \"displayName\": \"알룰로스\",\n      \"amount\": \"1\",\n      \"unit\": \"큰술\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"알룰로스 1\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 (후라이)\",\n      \"displayName\": \"계란\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"빠지면 섭한 후라이까지\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 계란후라이를 하나 부침\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깨\",\n      \"displayName\": \"깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"깨, 참기름으로 고소함 더하면\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름\",\n      \"displayName\": \"참기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"깨, 참기름으로 고소함 더하면\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김\",\n      \"displayName\": \"김\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"더 맛있게 먹으려면 김에 싸서 한입\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"부추 한 줌을 물에 깨끗이 씻어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다 죽어가는 부추 한 줌\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"흐르는 물에 부추를 씻는다\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"현미밥 한 공기를 전자레인지에 데워 그릇에 담는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"현미밥 한 공기 데우고\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"현미밥 위에 씻은 부추를 가위로 대충 송송 썰어 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"칼 쓰기 귀찮으니 가위로 대충 송송\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"부추 위에 연두부를 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"오늘의 주인공 연두부\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"연두부 2개를 부추 밥 위에 올린다\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 고춧가루 1, 간장 1, 참치액 1, 알룰로스 1을 넣고 섞어 매콤 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"매콤 양념장은\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1 간장 1 참치액 1 알룰로스 1\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"계란 후라이를 부쳐 밥 위에 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"빠지면 섭한 후라이까지\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"취향껏 양념장을 두부 위에 얹고, 깨와 참기름을 뿌려 고소함을 더한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"양념을 따로 섞어두면 취향껏 조절 할 수 있어 좋은데\",\n          \"timestamp\": \"00:31\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"깨, 참기름으로 고소함 더하면\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"text\": \"골고루 비벼 먹으며, 취향에 따라 김에 싸서 먹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"더 맛있게 먹으려면 김에 싸서 한입\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "귀찮아도 건강하게 챙기는 현실 한끼 (연두부 부추 비빔밥)",
+      "description": null,
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "다 죽어가는 부추 한 줌",
+          "displayName": "부추",
+          "amount": "1",
+          "unit": "줌",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다 죽어가는 부추 한 줌",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "현미밥 한 공기",
+          "displayName": "현미밥",
+          "amount": "1",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "현미밥 한 공기 데우고",
+              "timestamp": "00:09"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "연두부",
+          "displayName": "연두부",
+          "amount": "2",
+          "unit": "팩",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "오늘의 주인공 연두부",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "네컵연두부 중 2팩을 뜯어서 밥 위에 올림",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "고춧가루 1",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "간장 1",
+          "displayName": "간장",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 1",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "참치액 1",
+          "displayName": "참치액",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치액 1",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "알룰로스 1",
+          "displayName": "알룰로스",
+          "amount": "1",
+          "unit": "큰술",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "알룰로스 1",
+              "timestamp": "00:25"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "계란 (후라이)",
+          "displayName": "계란",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "빠지면 섭한 후라이까지",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 계란후라이를 하나 부침",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "깨",
+          "displayName": "깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "깨, 참기름으로 고소함 더하면",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "참기름",
+          "displayName": "참기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "깨, 참기름으로 고소함 더하면",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "김",
+          "displayName": "김",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "더 맛있게 먹으려면 김에 싸서 한입",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "부추 한 줌을 물에 깨끗이 씻어 준비한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "다 죽어가는 부추 한 줌",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "흐르는 물에 부추를 씻는다",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "현미밥 한 공기를 전자레인지에 데워 그릇에 담는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "현미밥 한 공기 데우고",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "현미밥 위에 씻은 부추를 가위로 대충 송송 썰어 올린다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "칼 쓰기 귀찮으니 가위로 대충 송송",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "부추 위에 연두부를 올린다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "오늘의 주인공 연두부",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "연두부 2개를 부추 밥 위에 올린다",
+              "timestamp": "00:19"
+            }
+          ]
+        },
+        {
+          "text": "볼에 고춧가루 1, 간장 1, 참치액 1, 알룰로스 1을 넣고 섞어 매콤 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "매콤 양념장은",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1 간장 1 참치액 1 알룰로스 1",
+              "timestamp": "00:25"
+            }
+          ]
+        },
+        {
+          "text": "계란 후라이를 부쳐 밥 위에 올린다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "빠지면 섭한 후라이까지",
+              "timestamp": "00:29"
+            }
+          ]
+        },
+        {
+          "text": "취향껏 양념장을 두부 위에 얹고, 깨와 참기름을 뿌려 고소함을 더한다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "양념을 따로 섞어두면 취향껏 조절 할 수 있어 좋은데",
+              "timestamp": "00:31"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "깨, 참기름으로 고소함 더하면",
+              "timestamp": "00:37"
+            }
+          ]
+        },
+        {
+          "text": "골고루 비벼 먹으며, 취향에 따라 김에 싸서 먹는다.",
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "더 맛있게 먹으려면 김에 싸서 한입",
+              "timestamp": "00:45"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "보기와 다르게 맛은 깡패",
+    "sourceChannelName": "유지만 yuziman",
+    "sourceChannelId": "UCslni4iVQ-e784AU83eVcnQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/h9Vt4_UB_kTv6ijmpNN2Hw-Sv-2ACsIfI1rnEXDzx_6fDBVGeX2nJcDCEBgYBBrOJbmylUR4IeI=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:14:08.227165Z"
+  },
+  "applyChecks": {
+    "short": true,
+    "embeddable": true,
+    "checkedAt": "2026-11-22T08:10:12Z"
   }
 }

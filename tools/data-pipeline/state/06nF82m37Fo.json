@@ -1,19 +1,252 @@
 {
   "videoId": "06nF82m37Fo",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/06nF82m37Fo",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 2,
-    "startedAt": "2026-11-20T13:25:31.594268+00:00",
-    "accountId": "account-d",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAccountId": "account-d",
-    "retryableRuns": 1,
-    "retryAt": "2026-11-20T13:26:06.477086+00:00"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-21T08:16:30.161523+00:00",
+    "rawResponse": "{\n  \"title\": \"무화과 요거트 바크 (무화과는 이렇게 드세요)\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"무화과 두 알\",\n      \"displayName\": \"무화과\",\n      \"amount\": \"2\",\n      \"unit\": \"알\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"무화과인데 진짜 꿀 맛이야 두 알 씻어서\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"두 알 씻어서\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"요거트\",\n      \"displayName\": \"요거트\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"요거트 부어 얼리면 되는데\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"요거트 부어 얼리면 되는데\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"얼그레이 시럽\",\n      \"displayName\": \"얼그레이 시럽\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"무화과 + 얼그레이\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"요거트에 달달한 알룰로스나 얼그레이시럽 넣어서\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"알룰로스\",\n      \"displayName\": \"알룰로스\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"달달한 알룰로스나 얼그레이시럽 넣어서\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"알룰로스나\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"치아씨드\",\n      \"displayName\": \"치아씨드\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"집에 치아씨드밖에 없는게 뿌려봤거든\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"치아씨드\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"견과류\",\n      \"displayName\": \"견과류\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"원래 견과류를 뿌리려했는데\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"원래 견과류를 뿌리려했는데\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"무화과 2알을 씻어서 꼭지를 자르고 반으로 썬다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"무화과 씻어서 꼭지 잘라주고 반으로 썰어줘\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"꼭지 제거 반갈\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"종이호일 위에 자른 무화과를 올리고, 다시 종이호일로 덮은 뒤 용기로 꾹 눌러 납작하게 펴준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"종이호일로 덮어서 용기로 꼭 눌러주는데\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"종이호일로 덮어서 용기로 꾹 눌러주는데\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"text\": \"요거트에 얼그레이 시럽(또는 알룰로스)을 넣어 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"요거트에 달달한 알룰로스나 얼그레이시럽 넣어서\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"요거트 통에 얼그레이 시럽을 짜 넣고 숟가락으로 젓는 모습\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"납작해진 무화과 뒷면에 섞어둔 요거트를 나누어 부어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"무화과 뒷면에다가 요거트 부어 얼리면 되는데... 나눠 부어주기\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"나눠 부어주기\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"요거트 위에 치아씨드(또는 견과류)를 골고루 뿌린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"치아씨드밖에 없는게 뿌려봤거든\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"요거트 위에 치아씨드를 골고루 뿌리는 모습\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"text\": \"종이호일로 감싸 접은 뒤 보관 용기에 담아 냉동실에서 하룻밤 얼린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"종이호일 덮어 접고 접고 접고 접고 아무 용기에다가 옮겨 심기 냉동실에 하룻밤만 두면\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"냉동실에 하룻밤\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "무화과 요거트 바크 (무화과는 이렇게 드세요)",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "무화과 두 알",
+          "displayName": "무화과",
+          "amount": "2",
+          "unit": "알",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "무화과인데 진짜 꿀 맛이야 두 알 씻어서",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "두 알 씻어서",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "요거트",
+          "displayName": "요거트",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "요거트 부어 얼리면 되는데",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "요거트 부어 얼리면 되는데",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "얼그레이 시럽",
+          "displayName": "얼그레이 시럽",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "무화과 + 얼그레이",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "요거트에 달달한 알룰로스나 얼그레이시럽 넣어서",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "알룰로스",
+          "displayName": "알룰로스",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "달달한 알룰로스나 얼그레이시럽 넣어서",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "알룰로스나",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "치아씨드",
+          "displayName": "치아씨드",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "집에 치아씨드밖에 없는게 뿌려봤거든",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "치아씨드",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "견과류",
+          "displayName": "견과류",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "원래 견과류를 뿌리려했는데",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "원래 견과류를 뿌리려했는데",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        }
+      ],
+      "steps": [
+        {
+          "text": "무화과 2알을 씻어서 꼭지를 자르고 반으로 썬다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "무화과 씻어서 꼭지 잘라주고 반으로 썰어줘",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "꼭지 제거 반갈",
+              "timestamp": "00:16"
+            }
+          ]
+        },
+        {
+          "text": "종이호일 위에 자른 무화과를 올리고, 다시 종이호일로 덮은 뒤 용기로 꾹 눌러 납작하게 펴준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "종이호일로 덮어서 용기로 꼭 눌러주는데",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "종이호일로 덮어서 용기로 꾹 눌러주는데",
+              "timestamp": "00:18"
+            }
+          ]
+        },
+        {
+          "text": "요거트에 얼그레이 시럽(또는 알룰로스)을 넣어 섞어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "요거트에 달달한 알룰로스나 얼그레이시럽 넣어서",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "요거트 통에 얼그레이 시럽을 짜 넣고 숟가락으로 젓는 모습",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "납작해진 무화과 뒷면에 섞어둔 요거트를 나누어 부어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "무화과 뒷면에다가 요거트 부어 얼리면 되는데... 나눠 부어주기",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "나눠 부어주기",
+              "timestamp": "00:31"
+            }
+          ]
+        },
+        {
+          "text": "요거트 위에 치아씨드(또는 견과류)를 골고루 뿌린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "치아씨드밖에 없는게 뿌려봤거든",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "요거트 위에 치아씨드를 골고루 뿌리는 모습",
+              "timestamp": "00:36"
+            }
+          ]
+        },
+        {
+          "text": "종이호일로 감싸 접은 뒤 보관 용기에 담아 냉동실에서 하룻밤 얼린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "종이호일 덮어 접고 접고 접고 접고 아무 용기에다가 옮겨 심기 냉동실에 하룻밤만 두면",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "냉동실에 하룻밤",
+              "timestamp": "00:43"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "집에 무화과 있으면 당장 누르세요",
+    "sourceChannelName": "유지만 yuziman",
+    "sourceChannelId": "UCslni4iVQ-e784AU83eVcnQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/h9Vt4_UB_kTv6ijmpNN2Hw-Sv-2ACsIfI1rnEXDzx_6fDBVGeX2nJcDCEBgYBBrOJbmylUR4IeI=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:16:27.691367Z"
+  },
+  "applyChecks": {
+    "short": true,
+    "embeddable": true,
+    "checkedAt": "2026-11-22T08:10:10Z"
   }
 }

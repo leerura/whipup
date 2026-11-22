@@ -1,22 +1,392 @@
 {
   "videoId": "WSRqsYgHexM",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/WSRqsYgHexM",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 2,
-    "startedAt": "2026-11-20T13:25:29.029096+00:00",
-    "accountId": "account-a",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAccountId": "account-a",
-    "retryableRuns": 1,
-    "retryAt": "2026-11-20T13:26:04.322619+00:00",
-    "quotaAccounts": {
-      "account-e": "2026-11-21T08:00:00.171734+00:00"
-    }
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-21T08:04:58.340694+00:00",
+    "rawResponse": "{\n  \"title\": \"원팬 가지덮밥\",\n  \"description\": null,\n  \"servings\": \"1인분\",\n  \"ingredients\": [\n    {\n      \"rawText\": \"가지 하나\",\n      \"displayName\": \"가지\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 가지 하나를 통째로 전자레인지에 넣고\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"부침가루\",\n      \"displayName\": \"부침가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"부침가루\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"앞면과 뒷면에 부침가루를 아주 얇게 묻혀줘\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식용유\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 팬에 기름을 넉넉하게 두른 다음\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 2spoons\",\n      \"displayName\": \"물\",\n      \"amount\": \"2\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 2spoons\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"가지를 굽던 팬에 물\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 2spoons\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"2\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 2spoons\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 1spoon\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"맛술 1spoon\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 0.5spoon\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.5\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 0.5spoon\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1spoon\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1spoon\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 0.5spoon\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"0.5\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 0.5spoon\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 0.5spoon\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"0.5\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참기름 0.5spoon\",\n          \"timestamp\": \"00:39\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름을 넣고\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 방금 지은 따끈한 밥 위에\",\n          \"timestamp\": \"00:42\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란\",\n          \"timestamp\": \"00:49\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"팬에 계란 2개를 깨뜨려 부친다\",\n          \"timestamp\": \"00:49\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물론 이렇게만 먹어도 맛있지만 단백질이 좀 부족하잖아 계란후라이 좀 해서 올려주고\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"부추 15g\",\n      \"displayName\": \"부추\",\n      \"amount\": \"15\",\n      \"unit\": \"g\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"부추 15g\",\n          \"timestamp\": \"00:53\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"건강을 위해 초록 채소 살짝 뿌린 다음\",\n          \"timestamp\": \"00:52\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"가지 1개를 통째로 700w 전자레인지에 넣고 2분 30초간 돌려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"700w 전자레인지에서 2분 30초간 돌려주기\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 가지 하나를 통째로 전자레인지에 넣고 2분 30초간 돌려줄 거야\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"2분 30초 뒤 가지를 꺼내 반으로 갈라 넓게 펼쳐준 후, 앞면과 뒷면에 부침가루를 아주 얇게 묻혀준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"2분 30초 뒤 가지를 꺼내서 펼쳐준 다음 앞면과 뒷면에 부침가루를 아주 얇게 묻혀줘\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"칼로 가지를 갈라 펼치고 부침가루를 바른다\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 식용유를 넉넉하게 두른 뒤 부침가루 입힌 가지를 앞뒤로 노릇노릇하게 굽고 잠시 꺼내둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"팬에 기름을 넉넉하게 두른 다음 가지를 구워줄 거야 가지가 노릇노릇하게 익으면 가지는 잠시 빼두고\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"부침가루 입힌 가지\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    },\n    {\n      \"text\": \"가지를 굽던 팬에 물 2스푼, 진간장 2스푼, 맛술 1스푼, 설탕 0.5스푼, 고춧가루 1스푼, 다진 마늘 0.5스푼, 참기름 0.5스푼을 넣고 바글바글 끓여 양념장을 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"가지를 굽던 팬에 물, 진간장, 맛술, 설탕, 고춧가루, 다진 마늘, 참기름을 넣고 바글바글 끓여서 양념장을 만들어줘\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 2spoons, 진간장 2spoons, 맛술 1spoon, 설탕 0.5spoon, 고춧가루 1spoon, 다진 마늘 0.5spoon, 참기름 0.5spoon\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"text\": \"따끈한 밥 위에 구운 가지를 올리고 양념장을 부어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 방금 지은 따끈한 밥 위에 구운 가지를 올리고 양념장 부어주면 초간단 가지덮밥 끝\",\n          \"timestamp\": \"00:42\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"구운 가지, 양념장\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    },\n    {\n      \"text\": \"(선택) 팬에 계란후라이를 만들어 덮밥 위에 올리고, 부추 15g을 얹어 함께 비벼 먹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란후라이 좀 해서 올려주고 건강을 위해 초록 채소 살짝 뿌린 다음 비벼주면 진짜 끝\",\n          \"timestamp\": \"00:50\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란후라이, 부추 15g\",\n          \"timestamp\": \"00:51\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "원팬 가지덮밥",
+      "description": null,
+      "servings": "1인분",
+      "ingredients": [
+        {
+          "rawText": "가지 하나",
+          "displayName": "가지",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 가지 하나를 통째로 전자레인지에 넣고",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "부침가루",
+          "displayName": "부침가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "부침가루",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "앞면과 뒷면에 부침가루를 아주 얇게 묻혀줘",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식용유",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 팬에 기름을 넉넉하게 두른 다음",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "물 2spoons",
+          "displayName": "물",
+          "amount": "2",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 2spoons",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SPEECH",
+              "text": "가지를 굽던 팬에 물",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "진간장 2spoons",
+          "displayName": "진간장",
+          "amount": "2",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 2spoons",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "맛술 1spoon",
+          "displayName": "맛술",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "맛술 1spoon",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "맛술",
+              "timestamp": "00:35"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "설탕 0.5spoon",
+          "displayName": "설탕",
+          "amount": "0.5",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 0.5spoon",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "고춧가루 1spoon",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1spoon",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "다진 마늘 0.5spoon",
+          "displayName": "다진 마늘",
+          "amount": "0.5",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 0.5spoon",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "참기름 0.5spoon",
+          "displayName": "참기름",
+          "amount": "0.5",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참기름 0.5spoon",
+              "timestamp": "00:39"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참기름을 넣고",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "밥",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 방금 지은 따끈한 밥 위에",
+              "timestamp": "00:42"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "계란",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란",
+              "timestamp": "00:49"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "팬에 계란 2개를 깨뜨려 부친다",
+              "timestamp": "00:49"
+            },
+            {
+              "type": "SPEECH",
+              "text": "물론 이렇게만 먹어도 맛있지만 단백질이 좀 부족하잖아 계란후라이 좀 해서 올려주고",
+              "timestamp": "00:48"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "부추 15g",
+          "displayName": "부추",
+          "amount": "15",
+          "unit": "g",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "부추 15g",
+              "timestamp": "00:53"
+            },
+            {
+              "type": "SPEECH",
+              "text": "건강을 위해 초록 채소 살짝 뿌린 다음",
+              "timestamp": "00:52"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        }
+      ],
+      "steps": [
+        {
+          "text": "가지 1개를 통째로 700w 전자레인지에 넣고 2분 30초간 돌려준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "700w 전자레인지에서 2분 30초간 돌려주기",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 가지 하나를 통째로 전자레인지에 넣고 2분 30초간 돌려줄 거야",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "2분 30초 뒤 가지를 꺼내 반으로 갈라 넓게 펼쳐준 후, 앞면과 뒷면에 부침가루를 아주 얇게 묻혀준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "2분 30초 뒤 가지를 꺼내서 펼쳐준 다음 앞면과 뒷면에 부침가루를 아주 얇게 묻혀줘",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "칼로 가지를 갈라 펼치고 부침가루를 바른다",
+              "timestamp": "00:13"
+            }
+          ]
+        },
+        {
+          "text": "팬에 식용유를 넉넉하게 두른 뒤 부침가루 입힌 가지를 앞뒤로 노릇노릇하게 굽고 잠시 꺼내둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "팬에 기름을 넉넉하게 두른 다음 가지를 구워줄 거야 가지가 노릇노릇하게 익으면 가지는 잠시 빼두고",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "부침가루 입힌 가지",
+              "timestamp": "00:24"
+            }
+          ]
+        },
+        {
+          "text": "가지를 굽던 팬에 물 2스푼, 진간장 2스푼, 맛술 1스푼, 설탕 0.5스푼, 고춧가루 1스푼, 다진 마늘 0.5스푼, 참기름 0.5스푼을 넣고 바글바글 끓여 양념장을 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "가지를 굽던 팬에 물, 진간장, 맛술, 설탕, 고춧가루, 다진 마늘, 참기름을 넣고 바글바글 끓여서 양념장을 만들어줘",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 2spoons, 진간장 2spoons, 맛술 1spoon, 설탕 0.5spoon, 고춧가루 1spoon, 다진 마늘 0.5spoon, 참기름 0.5spoon",
+              "timestamp": "00:33"
+            }
+          ]
+        },
+        {
+          "text": "따끈한 밥 위에 구운 가지를 올리고 양념장을 부어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 방금 지은 따끈한 밥 위에 구운 가지를 올리고 양념장 부어주면 초간단 가지덮밥 끝",
+              "timestamp": "00:42"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "구운 가지, 양념장",
+              "timestamp": "00:44"
+            }
+          ]
+        },
+        {
+          "text": "(선택) 팬에 계란후라이를 만들어 덮밥 위에 올리고, 부추 15g을 얹어 함께 비벼 먹는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란후라이 좀 해서 올려주고 건강을 위해 초록 채소 살짝 뿌린 다음 비벼주면 진짜 끝",
+              "timestamp": "00:50"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란후라이, 부추 15g",
+              "timestamp": "00:51"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "한국에서만 저평가되어 있는 채소",
+    "sourceChannelName": "1분요리 뚝딱이형",
+    "sourceChannelId": "UC0htUSwcxfSGNfK_5Q28JkA",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/MHTy5jXZQPwKwrGtAV-gLL6ei9YTOgR8Z6GESkhAAIz0kkG4d6B6vu6CUPNNsLOzqcGxGfBK=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:04:55.345170Z"
+  },
+  "applyChecks": {
+    "short": true,
+    "embeddable": true,
+    "checkedAt": "2026-11-22T08:10:53Z"
   }
 }

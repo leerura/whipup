@@ -1,19 +1,307 @@
 {
   "videoId": "CEZ4JoNlKvM",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/CEZ4JoNlKvM",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 2,
-    "startedAt": "2026-11-20T13:21:57.308391+00:00",
-    "accountId": "account-a",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAccountId": "account-a",
-    "retryableRuns": 1,
-    "retryAt": "2026-11-20T13:22:31.040461+00:00"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-21T08:13:44.388053+00:00",
+    "rawResponse": "{\n  \"title\": \"우삼겹 술밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"우삼겹 200g\",\n      \"displayName\": \"우삼겹\",\n      \"amount\": \"200\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"우삼겹 200g\",\n          \"timestamp\": \"00:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 과장님 뚝배기에 우삼겹 200g과\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 1스푼\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추장 1스푼\",\n          \"timestamp\": \"00:05\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 한 스푼\",\n          \"timestamp\": \"00:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쌈장 1스푼\",\n      \"displayName\": \"쌈장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쌈장 1스푼\",\n          \"timestamp\": \"00:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"쌈장 한 스푼\",\n          \"timestamp\": \"00:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진 마늘 1스푼\",\n      \"displayName\": \"다진 마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진 마늘 1스푼\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진 마늘 한 스푼만 올려주면\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 1컵 반 (약 270ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"1.5\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 1컵 반 (약 270ml)\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 물 한 컵 반을 부어주고\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 반 개\",\n      \"displayName\": \"양파\",\n      \"amount\": \"0.5\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 반 개를 큼지막하게 썰어서 넣고\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"애호박도 양파와 비슷한 양\",\n      \"displayName\": \"애호박\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"애호박도 양파와 비슷한 양으로\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"애호박도 양파와 비슷한 양으로 넣어준 뒤에\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"입맛에 맞게 소금\",\n      \"displayName\": \"소금\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"입맛에 맞게 소금\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"입맛에 맞게 소금\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"밥 1공기\",\n      \"displayName\": \"밥\",\n      \"amount\": \"1\",\n      \"unit\": \"공기\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 1공기와 후추 듬뿍 뿌려서\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 한 공기와 후추를 듬뿍 뿌려가\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 듬뿍\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"밥 1공기와 후추 듬뿍 뿌려서\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"밥 한 공기와 후추를 듬뿍 뿌려가\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"뚝배기에 우삼겹 200g, 고추장 1스푼, 쌈장 1스푼, 다진 마늘 1스푼을 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 과장님 뚝배기에 우삼겹 200g과 고추장 한 스푼, 쌈장 한 스푼, 다진 마늘 한 스푼만 올려주면 오늘 양념장은 끝입니다.\",\n          \"timestamp\": \"00:03\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"뚝배기에 우삼겹, 고추장, 쌈장, 다진 마늘을 차례로 넣는다.\",\n          \"timestamp\": \"00:03\"\n        }\n      ]\n    },\n    {\n      \"text\": \"우삼겹이 익으면서 나오는 기름에 양념장을 다 같이 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"인자 우삼겹이 익으면서 나오는 기름에 양념장도 다 같이 볶아주면 기가 막힌 맛으로 만들 수 있습니다.\",\n          \"timestamp\": \"00:09\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"주걱으로 고기와 양념을 함께 볶는다.\",\n          \"timestamp\": \"00:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 1컵 반 (약 270ml)을 부어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 물 한 컵 반을 부어주고\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 1컵 반 (약 270ml)\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"양파 반 개를 큼지막하게 썰어 넣고, 애호박도 양파와 비슷한 양으로 썰어 넣은 뒤 2~3분간 더 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 반 개를 큼지막하게 썰어서 넣고 애호박도 양파와 비슷한 양으로 넣어준 뒤에 2~3분간 더 끓여주다가\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"2~3분간 더 끓여주다가\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"입맛에 맞게 소금을 넣고, 밥 1공기와 후추를 듬뿍 뿌려 골고루 섞어 우삼겹 술밥을 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"입맛에 맞게 소금, 밥 한 공기와 후추를 듬뿍 뿌려가 골고루 섞어주면 국물 맛이 막 기가 막힌 우삼겹 술밥이 완성됩니다.\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"우삼겹 술밥이 완성됩니다.\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "우삼겹 술밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "우삼겹 200g",
+          "displayName": "우삼겹",
+          "amount": "200",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "우삼겹 200g",
+              "timestamp": "00:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 과장님 뚝배기에 우삼겹 200g과",
+              "timestamp": "00:03"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "고추장 1스푼",
+          "displayName": "고추장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추장 1스푼",
+              "timestamp": "00:05"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추장 한 스푼",
+              "timestamp": "00:05"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "쌈장 1스푼",
+          "displayName": "쌈장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쌈장 1스푼",
+              "timestamp": "00:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "쌈장 한 스푼",
+              "timestamp": "00:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "다진 마늘 1스푼",
+          "displayName": "다진 마늘",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진 마늘 1스푼",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진 마늘 한 스푼만 올려주면",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "물 1컵 반 (약 270ml)",
+          "displayName": "물",
+          "amount": "1.5",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 1컵 반 (약 270ml)",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 물 한 컵 반을 부어주고",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "양파 반 개",
+          "displayName": "양파",
+          "amount": "0.5",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 반 개를 큼지막하게 썰어서 넣고",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "애호박도 양파와 비슷한 양",
+          "displayName": "애호박",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "애호박도 양파와 비슷한 양으로",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "애호박도 양파와 비슷한 양으로 넣어준 뒤에",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "입맛에 맞게 소금",
+          "displayName": "소금",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "입맛에 맞게 소금",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "입맛에 맞게 소금",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "밥 1공기",
+          "displayName": "밥",
+          "amount": "1",
+          "unit": "공기",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 1공기와 후추 듬뿍 뿌려서",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밥 한 공기와 후추를 듬뿍 뿌려가",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "후추 듬뿍",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "밥 1공기와 후추 듬뿍 뿌려서",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "밥 한 공기와 후추를 듬뿍 뿌려가",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        }
+      ],
+      "steps": [
+        {
+          "text": "뚝배기에 우삼겹 200g, 고추장 1스푼, 쌈장 1스푼, 다진 마늘 1스푼을 올린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 과장님 뚝배기에 우삼겹 200g과 고추장 한 스푼, 쌈장 한 스푼, 다진 마늘 한 스푼만 올려주면 오늘 양념장은 끝입니다.",
+              "timestamp": "00:03"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "뚝배기에 우삼겹, 고추장, 쌈장, 다진 마늘을 차례로 넣는다.",
+              "timestamp": "00:03"
+            }
+          ]
+        },
+        {
+          "text": "우삼겹이 익으면서 나오는 기름에 양념장을 다 같이 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "인자 우삼겹이 익으면서 나오는 기름에 양념장도 다 같이 볶아주면 기가 막힌 맛으로 만들 수 있습니다.",
+              "timestamp": "00:09"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "주걱으로 고기와 양념을 함께 볶는다.",
+              "timestamp": "00:09"
+            }
+          ]
+        },
+        {
+          "text": "물 1컵 반 (약 270ml)을 부어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 물 한 컵 반을 부어주고",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 1컵 반 (약 270ml)",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "양파 반 개를 큼지막하게 썰어 넣고, 애호박도 양파와 비슷한 양으로 썰어 넣은 뒤 2~3분간 더 끓여준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양파 반 개를 큼지막하게 썰어서 넣고 애호박도 양파와 비슷한 양으로 넣어준 뒤에 2~3분간 더 끓여주다가",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "2~3분간 더 끓여주다가",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "입맛에 맞게 소금을 넣고, 밥 1공기와 후추를 듬뿍 뿌려 골고루 섞어 우삼겹 술밥을 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "입맛에 맞게 소금, 밥 한 공기와 후추를 듬뿍 뿌려가 골고루 섞어주면 국물 맛이 막 기가 막힌 우삼겹 술밥이 완성됩니다.",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "우삼겹 술밥이 완성됩니다.",
+              "timestamp": "00:26"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "국물맛이 진심 미쳤습니다.",
+    "sourceChannelName": "자취요리신 simple cooking",
+    "sourceChannelId": "UCC9pQY_uaBSa0WOpMNJHbEQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/hZHUS5wW20j39kfLUfmeHDwvC8aG7kvNblsP_gXiclsXzf7ixDgAp5ml_2cjqTzMcpsKG9hwkA=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:13:42.069106Z"
   }
 }

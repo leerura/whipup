@@ -1,22 +1,352 @@
 {
   "videoId": "rlA2NhVRZWI",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/rlA2NhVRZWI",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-11-20T13:12:28.817725+00:00",
-    "accountId": "account-a",
-    "error": "504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAccountId": "account-a",
-    "quotaAccounts": {
-      "account-e": "2026-11-15T07:44:47.401991+00:00"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
     },
-    "retryableRuns": 1,
-    "retryAt": "2026-11-20T13:15:37.035251+00:00"
+    "completedAt": "2026-11-21T08:15:48.643139+00:00",
+    "rawResponse": "{\n  \"title\": \"닭다리살로 만드는 순살닭볶음탕\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"닭다리살 500g\",\n      \"displayName\": \"닭다리살\",\n      \"amount\": \"500\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"냄비에 닭다리살 500g\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냄비에 닭다리살 500g\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"감자 2개\",\n      \"displayName\": \"감자\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"감자 2개 넣어주세요\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"감자 두 개 넣어주세요\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 700ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"700\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"여기에 물 700ml 부은 후,\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 물 700ml 부은 후\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 2스푼\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양념은 고추장 2스푼\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양념은 고추장 두 스푼\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 2스푼\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 두 스푼\",\n          \"timestamp\": \"00:13\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"Adding red pepper flakes to the pot\",\n          \"timestamp\": \"00:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 3스푼\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"3\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"진간장 3스푼\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 세 스푼\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 한 스푼\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"육수가루 2포 또는 다시다 0.5스푼\",\n      \"displayName\": \"육수가루\",\n      \"amount\": \"2\",\n      \"unit\": \"포\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"육수가루 2포\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"육수가루 두 포 또는 다시다 반 스푼\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다시다 0.5스푼\",\n      \"displayName\": \"다시다\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다시다 0.5스푼\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"육수가루 두 포 또는 다시다 반 스푼\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 2스푼\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 2스푼 넣은 후,\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘 두 스푼 넣은 후\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"어슷하게 자른 대파 1쪽\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"쪽\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"어슷하게 자른 대파 1쪽\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마무리 자른 대파 한 쪽\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 2개\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"청양고추 2개 넣은 후,\",\n          \"timestamp\": \"00:24\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"청양고추 두 개 넣은 후\",\n          \"timestamp\": \"00:24\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 닭다리살 500g과 큼직하게 썬 감자 2개를 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"냄비에 닭다리살 500g 감자 2개 넣어주세요\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냄비에 닭다리살 500g 감자 두 개 넣어주세요\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물 700ml를 붓고 고추장 2스푼, 고춧가루 2스푼, 진간장 3스푼, 설탕 1스푼, 육수가루 2포(또는 다시다 0.5스푼), 다진마늘 2스푼을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"여기에 물 700ml 부은 후, 끓여주기만 하면 됩니다 양념은 고추장 2스푼 진간장 3스푼 설탕 1스푼 육수가루 2포 다시다 0.5스푼 다진마늘 2스푼 넣은 후,\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 물 700ml 부은 후 끓여주기만 하면 됩니다 양념은 고추장 두 스푼 고춧가루 두 스푼 진간장 세 스푼 설탕 한 스푼 육수가루 두 포 또는 다시다 반 스푼 다진마늘 두 스푼 넣은 후\",\n          \"timestamp\": \"00:10\"\n        }\n      ]\n    },\n    {\n      \"text\": \"15분간 끓여준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"15분간 끓여주세요\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"15분간 끓여주세요\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"닭다리살을 한 입에 먹기 좋은 크기로 가위로 잘라준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"닭다리살은 한 입에 먹기 좋은 사이즈로 잘라주고,\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"닭다리살은 한 입에 먹기 좋은 사이즈로 잘라주고\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"어슷 썬 대파 1쪽과 청양고추 2개를 넣고 3분간 더 끓여 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"어슷하게 자른 대파 1쪽 청양고추 2개 넣은 후, 3분만 더 끓여주면 완성인데,\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마무리 자른 대파 한 쪽 청양고추 두 개 넣은 후 3분만 더 끓여주면 완성인데\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "닭다리살로 만드는 순살닭볶음탕",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "닭다리살 500g",
+          "displayName": "닭다리살",
+          "amount": "500",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "냄비에 닭다리살 500g",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냄비에 닭다리살 500g",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "감자 2개",
+          "displayName": "감자",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "감자 2개 넣어주세요",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "감자 두 개 넣어주세요",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "물 700ml",
+          "displayName": "물",
+          "amount": "700",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "여기에 물 700ml 부은 후,",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 물 700ml 부은 후",
+              "timestamp": "00:10"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "고추장 2스푼",
+          "displayName": "고추장",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양념은 고추장 2스푼",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양념은 고추장 두 스푼",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "고춧가루 2스푼",
+          "displayName": "고춧가루",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 두 스푼",
+              "timestamp": "00:13"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "Adding red pepper flakes to the pot",
+              "timestamp": "00:13"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "진간장 3스푼",
+          "displayName": "진간장",
+          "amount": "3",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "진간장 3스푼",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "진간장 세 스푼",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "설탕 1스푼",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 1스푼",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕 한 스푼",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "육수가루 2포 또는 다시다 0.5스푼",
+          "displayName": "육수가루",
+          "amount": "2",
+          "unit": "포",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "육수가루 2포",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SPEECH",
+              "text": "육수가루 두 포 또는 다시다 반 스푼",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "다시다 0.5스푼",
+          "displayName": "다시다",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다시다 0.5스푼",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "육수가루 두 포 또는 다시다 반 스푼",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "다진마늘 2스푼",
+          "displayName": "다진마늘",
+          "amount": "2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 2스푼 넣은 후,",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진마늘 두 스푼 넣은 후",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "어슷하게 자른 대파 1쪽",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "쪽",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "어슷하게 자른 대파 1쪽",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마무리 자른 대파 한 쪽",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "청양고추 2개",
+          "displayName": "청양고추",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "청양고추 2개 넣은 후,",
+              "timestamp": "00:24"
+            },
+            {
+              "type": "SPEECH",
+              "text": "청양고추 두 개 넣은 후",
+              "timestamp": "00:24"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 닭다리살 500g과 큼직하게 썬 감자 2개를 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "냄비에 닭다리살 500g 감자 2개 넣어주세요",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냄비에 닭다리살 500g 감자 두 개 넣어주세요",
+              "timestamp": "00:07"
+            }
+          ]
+        },
+        {
+          "text": "물 700ml를 붓고 고추장 2스푼, 고춧가루 2스푼, 진간장 3스푼, 설탕 1스푼, 육수가루 2포(또는 다시다 0.5스푼), 다진마늘 2스푼을 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "여기에 물 700ml 부은 후, 끓여주기만 하면 됩니다 양념은 고추장 2스푼 진간장 3스푼 설탕 1스푼 육수가루 2포 다시다 0.5스푼 다진마늘 2스푼 넣은 후,",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에 물 700ml 부은 후 끓여주기만 하면 됩니다 양념은 고추장 두 스푼 고춧가루 두 스푼 진간장 세 스푼 설탕 한 스푼 육수가루 두 포 또는 다시다 반 스푼 다진마늘 두 스푼 넣은 후",
+              "timestamp": "00:10"
+            }
+          ]
+        },
+        {
+          "text": "15분간 끓여준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "15분간 끓여주세요",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "15분간 끓여주세요",
+              "timestamp": "00:19"
+            }
+          ]
+        },
+        {
+          "text": "닭다리살을 한 입에 먹기 좋은 크기로 가위로 잘라준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "닭다리살은 한 입에 먹기 좋은 사이즈로 잘라주고,",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "닭다리살은 한 입에 먹기 좋은 사이즈로 잘라주고",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "어슷 썬 대파 1쪽과 청양고추 2개를 넣고 3분간 더 끓여 마무리한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "어슷하게 자른 대파 1쪽 청양고추 2개 넣은 후, 3분만 더 끓여주면 완성인데,",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마무리 자른 대파 한 쪽 청양고추 두 개 넣은 후 3분만 더 끓여주면 완성인데",
+              "timestamp": "00:23"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "10배는 더 맛있어져요",
+    "sourceChannelName": "살림팝",
+    "sourceChannelId": "UCqp72t-eSw3AFSesyjzk59g",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/FWQw9Hkbyc3vfy84PM9gzpHYF-M9evLVXqFVqd0o3Lf0I8p69XT9ms-pYKdhXBj5DASG0za86KI=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:15:46.177931Z"
   }
 }

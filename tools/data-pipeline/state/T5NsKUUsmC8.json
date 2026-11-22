@@ -1,19 +1,312 @@
 {
   "videoId": "T5NsKUUsmC8",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/T5NsKUUsmC8",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-11-20T13:05:46.726540+00:00",
-    "accountId": "account-c",
-    "error": "504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAccountId": "account-c",
-    "retryableRuns": 1,
-    "retryAt": "2026-11-20T13:08:55.439410+00:00"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-21T08:04:27.400993+00:00",
+    "rawResponse": "{\n  \"title\": \"사천 짜계치볶이\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"사천짜파게티 하나\",\n      \"displayName\": \"사천짜파게티\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 사천짜파게티 하나 준비해주고\",\n          \"timestamp\": \"0:03\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"사천짜파게티 하나\",\n          \"timestamp\": \"0:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 2컵 반(약 450ml)\",\n      \"displayName\": \"물\",\n      \"amount\": \"2.5\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 2컵 반에\",\n          \"timestamp\": \"0:04\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 2컵 반(약 450ml)에\",\n          \"timestamp\": \"0:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"떡볶이떡 한 줌\",\n      \"displayName\": \"떡볶이떡\",\n      \"amount\": \"1\",\n      \"unit\": \"줌\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"떡볶이떡 한 줌\",\n          \"timestamp\": \"0:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"떡볶이떡 한 줌\",\n          \"timestamp\": \"0:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 1/2스푼\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"1/2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 반스푼\",\n          \"timestamp\": \"0:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장 1/2스푼\",\n          \"timestamp\": \"0:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 1스푼\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕 한스푼을 넣어준 뒤에\",\n          \"timestamp\": \"0:09\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"설탕 1스푼\",\n          \"timestamp\": \"0:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"체다 치즈 1장\",\n      \"displayName\": \"체다 치즈\",\n      \"amount\": \"1\",\n      \"unit\": \"장\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 체다치즈 한 장\",\n          \"timestamp\": \"0:16\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"체다 치즈 1장\",\n          \"timestamp\": \"0:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추 하나\",\n      \"displayName\": \"청양고추\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"땡초 하나\",\n          \"timestamp\": \"0:17\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"청양고추 하나\",\n          \"timestamp\": \"0:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 후라이\",\n      \"displayName\": \"계란 후라이\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 후라이와\",\n          \"timestamp\": \"0:18\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란 후라이 1개를 올림\",\n          \"timestamp\": \"0:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추를 넉넉하이 뿌려주면\",\n          \"timestamp\": \"0:19\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추 넉넉하게 뿌려주면\",\n          \"timestamp\": \"0:19\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 물 2컵 반(약 450ml)을 넣고 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"물 2컵 반에 물이 끓으면\",\n          \"timestamp\": \"0:04\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"물 2컵 반(약 450ml)에 물이 끓으면\",\n          \"timestamp\": \"0:04\"\n        }\n      ]\n    },\n    {\n      \"text\": \"물이 끓으면 사천짜파게티 면, 떡볶이떡 한 줌, 건더기 스프, 분말 스프를 모두 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"면과 떡볶이떡 한 줌, 짜파게티 건더기와 분말스프는 다 넣고\",\n          \"timestamp\": \"0:06\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"짜파게티 건더기 분말 스프는 다 넣고\",\n          \"timestamp\": \"0:07\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고추장 1/2스푼과 설탕 1스푼을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 반스푼, 설탕 한스푼을 넣어준 뒤에\",\n          \"timestamp\": \"0:08\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장 1/2스푼 설탕 1스푼\",\n          \"timestamp\": \"0:09\"\n        }\n      ]\n    },\n    {\n      \"text\": \"5분간 푹 끓여 국물이 자박자박해지고 윤기가 흐르도록 조려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"5분간 푹 끓여주면 국물이 자박자박하면서 윤기가 좔좔 흐르는 짜파게티로 될 겁니다.\",\n          \"timestamp\": \"0:11\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"5분간 푹 끓여주면 국물이 자박자박하면서 윤기가 좔좔 흐르는 짜파게티가 될 겁니다.\",\n          \"timestamp\": \"0:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"체다 치즈 1장, 청양고추 1개, 계란 후라이, 사천짜파게티 조미유를 올린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 체다치즈 한 장, 땡초 하나, 계란 후라이와 사천짜파게티 조미유\",\n          \"timestamp\": \"0:16\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"체다 치즈 1장 청양고추 하나 사천짜파게티 조미유\",\n          \"timestamp\": \"0:16\"\n        }\n      ]\n    },\n    {\n      \"text\": \"후추를 넉넉하게 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추를 넉넉하이 뿌려주면 역전승 할아버지에 팔아도 될 급의 사천 짜계치볶이가 완성됩니다.\",\n          \"timestamp\": \"0:19\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"후추 넉넉하게 뿌려주면 사천 짜계치볶이 완성!!!\",\n          \"timestamp\": \"0:19\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "사천 짜계치볶이",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "사천짜파게티 하나",
+          "displayName": "사천짜파게티",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 사천짜파게티 하나 준비해주고",
+              "timestamp": "0:03"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "사천짜파게티 하나",
+              "timestamp": "0:03"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "물 2컵 반(약 450ml)",
+          "displayName": "물",
+          "amount": "2.5",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 2컵 반에",
+              "timestamp": "0:04"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 2컵 반(약 450ml)에",
+              "timestamp": "0:04"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "떡볶이떡 한 줌",
+          "displayName": "떡볶이떡",
+          "amount": "1",
+          "unit": "줌",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "떡볶이떡 한 줌",
+              "timestamp": "0:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "떡볶이떡 한 줌",
+              "timestamp": "0:06"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "고추장 1/2스푼",
+          "displayName": "고추장",
+          "amount": "1/2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고추장 반스푼",
+              "timestamp": "0:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고추장 1/2스푼",
+              "timestamp": "0:08"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "설탕 1스푼",
+          "displayName": "설탕",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "설탕 한스푼을 넣어준 뒤에",
+              "timestamp": "0:09"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "설탕 1스푼",
+              "timestamp": "0:09"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "체다 치즈 1장",
+          "displayName": "체다 치즈",
+          "amount": "1",
+          "unit": "장",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 체다치즈 한 장",
+              "timestamp": "0:16"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "체다 치즈 1장",
+              "timestamp": "0:16"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "청양고추 하나",
+          "displayName": "청양고추",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "땡초 하나",
+              "timestamp": "0:17"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "청양고추 하나",
+              "timestamp": "0:17"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "계란 후라이",
+          "displayName": "계란 후라이",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 후라이와",
+              "timestamp": "0:18"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란 후라이 1개를 올림",
+              "timestamp": "0:18"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후추를 넉넉하이 뿌려주면",
+              "timestamp": "0:19"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "후추 넉넉하게 뿌려주면",
+              "timestamp": "0:19"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 물 2컵 반(약 450ml)을 넣고 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "물 2컵 반에 물이 끓으면",
+              "timestamp": "0:04"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "물 2컵 반(약 450ml)에 물이 끓으면",
+              "timestamp": "0:04"
+            }
+          ]
+        },
+        {
+          "text": "물이 끓으면 사천짜파게티 면, 떡볶이떡 한 줌, 건더기 스프, 분말 스프를 모두 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "면과 떡볶이떡 한 줌, 짜파게티 건더기와 분말스프는 다 넣고",
+              "timestamp": "0:06"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "짜파게티 건더기 분말 스프는 다 넣고",
+              "timestamp": "0:07"
+            }
+          ]
+        },
+        {
+          "text": "고추장 1/2스푼과 설탕 1스푼을 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고추장 반스푼, 설탕 한스푼을 넣어준 뒤에",
+              "timestamp": "0:08"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고추장 1/2스푼 설탕 1스푼",
+              "timestamp": "0:09"
+            }
+          ]
+        },
+        {
+          "text": "5분간 푹 끓여 국물이 자박자박해지고 윤기가 흐르도록 조려준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "5분간 푹 끓여주면 국물이 자박자박하면서 윤기가 좔좔 흐르는 짜파게티로 될 겁니다.",
+              "timestamp": "0:11"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "5분간 푹 끓여주면 국물이 자박자박하면서 윤기가 좔좔 흐르는 짜파게티가 될 겁니다.",
+              "timestamp": "0:11"
+            }
+          ]
+        },
+        {
+          "text": "체다 치즈 1장, 청양고추 1개, 계란 후라이, 사천짜파게티 조미유를 올린다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 체다치즈 한 장, 땡초 하나, 계란 후라이와 사천짜파게티 조미유",
+              "timestamp": "0:16"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "체다 치즈 1장 청양고추 하나 사천짜파게티 조미유",
+              "timestamp": "0:16"
+            }
+          ]
+        },
+        {
+          "text": "후추를 넉넉하게 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "후추를 넉넉하이 뿌려주면 역전승 할아버지에 팔아도 될 급의 사천 짜계치볶이가 완성됩니다.",
+              "timestamp": "0:19"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "후추 넉넉하게 뿌려주면 사천 짜계치볶이 완성!!!",
+              "timestamp": "0:19"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "진짜 맛있으니 이건 꼭 드셔보세요.",
+    "sourceChannelName": "자취요리신 simple cooking",
+    "sourceChannelId": "UCC9pQY_uaBSa0WOpMNJHbEQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/hZHUS5wW20j39kfLUfmeHDwvC8aG7kvNblsP_gXiclsXzf7ixDgAp5ml_2cjqTzMcpsKG9hwkA=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:04:24.962360Z"
+  },
+  "applyChecks": {
+    "short": true,
+    "embeddable": true,
+    "checkedAt": "2026-11-22T08:10:38Z"
   }
 }

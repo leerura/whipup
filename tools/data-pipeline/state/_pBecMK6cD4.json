@@ -1,19 +1,431 @@
 {
   "videoId": "_pBecMK6cD4",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/_pBecMK6cD4",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-11-20T13:05:39.779751+00:00",
-    "accountId": "account-c",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAccountId": "account-c",
-    "retryableRuns": 1,
-    "retryAt": "2026-11-20T13:05:56.217428+00:00"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-21T08:12:23.977263+00:00",
+    "rawResponse": "{\n  \"title\": \"감자멘보샤\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"감자 400g\",\n      \"displayName\": \"감자\",\n      \"amount\": \"400\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"감자 400g\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 감자를 최대한 얇게 슬라이스해 줄 거야\",\n          \"timestamp\": \"00:07\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"새우 600g\",\n      \"displayName\": \"새우\",\n      \"amount\": \"600\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"새우 600g\",\n          \"timestamp\": \"00:17\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 믹서기에 새우\",\n          \"timestamp\": \"00:18\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"옥수수전분 2spoons\",\n      \"displayName\": \"옥수수전분\",\n      \"amount\": \"2\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"옥수수전분 2spoons\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"옥수수 전분\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 0.3spoon\",\n      \"displayName\": \"소금\",\n      \"amount\": \"0.3\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"소금 0.3spoon\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소금\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"설탕 0.3spoon\",\n      \"displayName\": \"설탕\",\n      \"amount\": \"0.3\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"설탕 0.3spoon\",\n          \"timestamp\": \"00:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"설탕\",\n          \"timestamp\": \"00:21\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추 0.1spoon\",\n      \"displayName\": \"후추\",\n      \"amount\": \"0.1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추 0.1spoon\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"후추를 넣고\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쪽파 25g\",\n      \"displayName\": \"쪽파\",\n      \"amount\": \"25\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"쪽파 25g\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"잘게 썬 쪽파를 넣고\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"부침가루\",\n      \"displayName\": \"부침가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"부침가루\",\n          \"timestamp\": \"00:43\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 겉면에 부침가루를 얇게 뿌려준 다음\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"170도 기름\",\n      \"displayName\": \"기름\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"170도 기름에 넣고\",\n          \"timestamp\": \"00:48\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식용유\",\n      \"displayName\": \"식용유\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그럼 감자 겉면에 식용유를 충분히 뿌린 다음에 에어프라이어에서 구워도 된단다\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마요네즈 3spoons\",\n      \"displayName\": \"마요네즈\",\n      \"amount\": \"3\",\n      \"unit\": \"spoons\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"마요네즈 3spoons\",\n          \"timestamp\": \"01:02\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마요네즈에\",\n          \"timestamp\": \"01:02\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"스리라차 1spoon\",\n      \"displayName\": \"스리라차\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스리라차 1spoon\",\n          \"timestamp\": \"01:03\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"스리라차\",\n          \"timestamp\": \"01:03\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리고당 1spoon\",\n      \"displayName\": \"올리고당\",\n      \"amount\": \"1\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"올리고당 1spoon\",\n          \"timestamp\": \"01:04\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"올리고당\",\n          \"timestamp\": \"01:04\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"식초 0.3spoon\",\n      \"displayName\": \"식초\",\n      \"amount\": \"0.3\",\n      \"unit\": \"spoon\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"식초 0.3spoon\",\n          \"timestamp\": \"01:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"레몬즙이나 식초를 넣고\",\n          \"timestamp\": \"01:05\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"파슬리\",\n      \"displayName\": \"파슬리\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"파슬리\",\n          \"timestamp\": \"01:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"스리라차 마요소스 위에 파슬리 가루를 뿌림\",\n          \"timestamp\": \"01:11\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"감자 400g을 채칼로 물에 바로 최대한 얇게 슬라이스해 담가 전분기를 뺀 뒤 체에 밭쳐 물기를 건져둔다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 감자를 최대한 얇게 슬라이스해 줄 거야... 이렇게 하면 붙은 감자를 일일이 떼지 않아도 되고 전분기가 빠져서 더 맛있게 만들 수 있단다\",\n          \"timestamp\": \"00:07\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"물에 감자를 얇게 슬라이스하여 헹군 후 체에 건져 물기를 뺌\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"text\": \"믹서기에 새우 600g, 옥수수전분 2스푼, 소금 0.3스푼, 설탕 0.3스푼, 후추 0.1스푼을 넣고 새우 식감이 남도록 적당히 갈아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그리고 믹서기에 새우, 옥수수 전분, 소금, 설탕, 후추를 넣고 갈아준 다음... 그럼 조금만 갈아주면 돼\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"믹서기/핸드블렌더로 새우와 양념을 갈아줌\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"갈아둔 새우 반죽에 잘게 썬 쪽파 25g을 넣고 골고루 버무려 새우 반죽을 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"잘게 썬 쪽파를 넣고 버무려서 새우 반죽을 만들어줘\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"text\": \"얇게 썬 감자 위에 새우 반죽을 듬뿍 올리고 다른 감자 슬라이스로 덮어 샌드위치 모양으로 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 아까 얇게 썬 감자 위에 새우 반죽을 듬뿍 올리고 다시 감자로 덮어줄 거야\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"text\": \"감자 겉면에 부침가루를 체로 얇게 뿌려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마지막으로 겉면에 부침가루를 얇게 뿌려준 다음\",\n          \"timestamp\": \"00:45\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"체망을 이용해 부침가루를 감자멘보샤 겉면에 뿌림\",\n          \"timestamp\": \"00:43\"\n        }\n      ]\n    },\n    {\n      \"text\": \"170도 기름에 넣고 겉면이 노릇노릇하게 익을 때까지 튀겨준다 (또는 식용유를 충분히 뿌린 후 에어프라이어에 굽는다).\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"170도 기름에 넣고 겉면이 노릇노릇하게 익을 때까지 튀겨주면 감자멘보샤 끝\",\n          \"timestamp\": \"00:48\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"그럼 감자 겉면에 식용유를 충분히 뿌린 다음에 에어프라이어에서 구워도 된단다\",\n          \"timestamp\": \"00:56\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 마요네즈 3스푼, 스리라차 1스푼, 올리고당 1스푼, 식초(또는 레몬즙) 0.3스푼을 넣고 섞어 스리라차 마요소스를 만들고 취향에 따라 파슬리를 뿌려 곁들인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마요네즈에 스리라차, 올리고당, 레몬즙이나 식초를 넣고 섞어서 만든 스리라차 마요소스를 찍어 먹으면\",\n          \"timestamp\": \"01:02\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"소스 볼에 소스를 붓고 파슬리를 뿌림\",\n          \"timestamp\": \"01:09\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"감자를 담그는 물의 양은 별도로 언급되지 않음\",\n    \"부침가루와 튀김용 기름의 정량은 명시되지 않음\",\n    \"소스에 식초 대신 레몬즙을 사용할 수 있다고 음성으로 언급됨\"\n  ]\n}",
+    "result": {
+      "title": "감자멘보샤",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "감자 400g",
+          "displayName": "감자",
+          "amount": "400",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "감자 400g",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "SPEECH",
+              "text": "먼저 감자를 최대한 얇게 슬라이스해 줄 거야",
+              "timestamp": "00:07"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "새우 600g",
+          "displayName": "새우",
+          "amount": "600",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "새우 600g",
+              "timestamp": "00:17"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그리고 믹서기에 새우",
+              "timestamp": "00:18"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "옥수수전분 2spoons",
+          "displayName": "옥수수전분",
+          "amount": "2",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "옥수수전분 2spoons",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "SPEECH",
+              "text": "옥수수 전분",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "소금 0.3spoon",
+          "displayName": "소금",
+          "amount": "0.3",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "소금 0.3spoon",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소금",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "설탕 0.3spoon",
+          "displayName": "설탕",
+          "amount": "0.3",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "설탕 0.3spoon",
+              "timestamp": "00:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "설탕",
+              "timestamp": "00:21"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "후추 0.1spoon",
+          "displayName": "후추",
+          "amount": "0.1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추 0.1spoon",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "후추를 넣고",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "쪽파 25g",
+          "displayName": "쪽파",
+          "amount": "25",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "쪽파 25g",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "잘게 썬 쪽파를 넣고",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "부침가루",
+          "displayName": "부침가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "부침가루",
+              "timestamp": "00:43"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 겉면에 부침가루를 얇게 뿌려준 다음",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "170도 기름",
+          "displayName": "기름",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "170도 기름에 넣고",
+              "timestamp": "00:48"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "식용유",
+          "displayName": "식용유",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그럼 감자 겉면에 식용유를 충분히 뿌린 다음에 에어프라이어에서 구워도 된단다",
+              "timestamp": "00:56"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "마요네즈 3spoons",
+          "displayName": "마요네즈",
+          "amount": "3",
+          "unit": "spoons",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "마요네즈 3spoons",
+              "timestamp": "01:02"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마요네즈에",
+              "timestamp": "01:02"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        },
+        {
+          "rawText": "스리라차 1spoon",
+          "displayName": "스리라차",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스리라차 1spoon",
+              "timestamp": "01:03"
+            },
+            {
+              "type": "SPEECH",
+              "text": "스리라차",
+              "timestamp": "01:03"
+            }
+          ],
+          "sourceId": "ingredient-12"
+        },
+        {
+          "rawText": "올리고당 1spoon",
+          "displayName": "올리고당",
+          "amount": "1",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "올리고당 1spoon",
+              "timestamp": "01:04"
+            },
+            {
+              "type": "SPEECH",
+              "text": "올리고당",
+              "timestamp": "01:04"
+            }
+          ],
+          "sourceId": "ingredient-13"
+        },
+        {
+          "rawText": "식초 0.3spoon",
+          "displayName": "식초",
+          "amount": "0.3",
+          "unit": "spoon",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "식초 0.3spoon",
+              "timestamp": "01:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "레몬즙이나 식초를 넣고",
+              "timestamp": "01:05"
+            }
+          ],
+          "sourceId": "ingredient-14"
+        },
+        {
+          "rawText": "파슬리",
+          "displayName": "파슬리",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "파슬리",
+              "timestamp": "01:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "스리라차 마요소스 위에 파슬리 가루를 뿌림",
+              "timestamp": "01:11"
+            }
+          ],
+          "sourceId": "ingredient-15"
+        }
+      ],
+      "steps": [
+        {
+          "text": "감자 400g을 채칼로 물에 바로 최대한 얇게 슬라이스해 담가 전분기를 뺀 뒤 체에 밭쳐 물기를 건져둔다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 감자를 최대한 얇게 슬라이스해 줄 거야... 이렇게 하면 붙은 감자를 일일이 떼지 않아도 되고 전분기가 빠져서 더 맛있게 만들 수 있단다",
+              "timestamp": "00:07"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "물에 감자를 얇게 슬라이스하여 헹군 후 체에 건져 물기를 뺌",
+              "timestamp": "00:08"
+            }
+          ]
+        },
+        {
+          "text": "믹서기에 새우 600g, 옥수수전분 2스푼, 소금 0.3스푼, 설탕 0.3스푼, 후추 0.1스푼을 넣고 새우 식감이 남도록 적당히 갈아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "그리고 믹서기에 새우, 옥수수 전분, 소금, 설탕, 후추를 넣고 갈아준 다음... 그럼 조금만 갈아주면 돼",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "믹서기/핸드블렌더로 새우와 양념을 갈아줌",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "갈아둔 새우 반죽에 잘게 썬 쪽파 25g을 넣고 골고루 버무려 새우 반죽을 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "잘게 썬 쪽파를 넣고 버무려서 새우 반죽을 만들어줘",
+              "timestamp": "00:27"
+            }
+          ]
+        },
+        {
+          "text": "얇게 썬 감자 위에 새우 반죽을 듬뿍 올리고 다른 감자 슬라이스로 덮어 샌드위치 모양으로 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 아까 얇게 썬 감자 위에 새우 반죽을 듬뿍 올리고 다시 감자로 덮어줄 거야",
+              "timestamp": "00:31"
+            }
+          ]
+        },
+        {
+          "text": "감자 겉면에 부침가루를 체로 얇게 뿌려준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마지막으로 겉면에 부침가루를 얇게 뿌려준 다음",
+              "timestamp": "00:45"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "체망을 이용해 부침가루를 감자멘보샤 겉면에 뿌림",
+              "timestamp": "00:43"
+            }
+          ]
+        },
+        {
+          "text": "170도 기름에 넣고 겉면이 노릇노릇하게 익을 때까지 튀겨준다 (또는 식용유를 충분히 뿌린 후 에어프라이어에 굽는다).",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "170도 기름에 넣고 겉면이 노릇노릇하게 익을 때까지 튀겨주면 감자멘보샤 끝",
+              "timestamp": "00:48"
+            },
+            {
+              "type": "SPEECH",
+              "text": "그럼 감자 겉면에 식용유를 충분히 뿌린 다음에 에어프라이어에서 구워도 된단다",
+              "timestamp": "00:56"
+            }
+          ]
+        },
+        {
+          "text": "볼에 마요네즈 3스푼, 스리라차 1스푼, 올리고당 1스푼, 식초(또는 레몬즙) 0.3스푼을 넣고 섞어 스리라차 마요소스를 만들고 취향에 따라 파슬리를 뿌려 곁들인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마요네즈에 스리라차, 올리고당, 레몬즙이나 식초를 넣고 섞어서 만든 스리라차 마요소스를 찍어 먹으면",
+              "timestamp": "01:02"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "소스 볼에 소스를 붓고 파슬리를 뿌림",
+              "timestamp": "01:09"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "감자를 담그는 물의 양은 별도로 언급되지 않음",
+        "부침가루와 튀김용 기름의 정량은 명시되지 않음",
+        "소스에 식초 대신 레몬즙을 사용할 수 있다고 음성으로 언급됨"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "멘보샤, 제발 빵 말고 감자로 만들어 보세요!",
+    "sourceChannelName": "1분요리 뚝딱이형",
+    "sourceChannelId": "UC0htUSwcxfSGNfK_5Q28JkA",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/MHTy5jXZQPwKwrGtAV-gLL6ei9YTOgR8Z6GESkhAAIz0kkG4d6B6vu6CUPNNsLOzqcGxGfBK=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:12:21.783052Z"
+  },
+  "applyChecks": {
+    "short": true,
+    "embeddable": true,
+    "checkedAt": "2026-11-22T08:11:01Z"
   }
 }

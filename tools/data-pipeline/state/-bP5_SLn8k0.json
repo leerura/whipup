@@ -1,19 +1,330 @@
 {
   "videoId": "-bP5_SLn8k0",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/-bP5_SLn8k0",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-11-20T13:08:45.931420+00:00",
-    "accountId": "account-c",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryableRuns": 1,
-    "retryKind": "transient",
-    "retryAt": "2026-11-20T13:09:02.689521+00:00",
-    "retryAccountId": "account-c"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-21T08:14:30.710246+00:00",
+    "rawResponse": "{\n  \"title\": \"양배추 우삼겹 덮밥\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"양배추\",\n      \"displayName\": \"양배추\",\n      \"amount\": \"1/2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"먼저 동글동글한 양배추를 준비해주세요\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양배추는 반으로 갈라주고요 약 1cm 정도 두께로 먹기 좋게 썰어주면\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"진간장 3숟갈\",\n      \"displayName\": \"진간장\",\n      \"amount\": \"3\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"진간장 3숟갈\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"진간장 3숟갈\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"맛술 3숟갈\",\n      \"displayName\": \"맛술\",\n      \"amount\": \"3\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"맛술 3숟갈\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"맛술 3숟갈\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리고당 3숟갈\",\n      \"displayName\": \"올리고당\",\n      \"amount\": \"3\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"올리고당 3숟갈\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"올리고당 3숟갈\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"굴소스 3숟갈\",\n      \"displayName\": \"굴소스\",\n      \"amount\": \"3\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"굴소스 3숟갈\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"굴소스 3숟갈\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 1숟갈\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"1\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘 1숟갈 추가하면 끝!\",\n          \"timestamp\": \"00:33\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"다진마늘 1숟갈\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리브오일 3숟갈\",\n      \"displayName\": \"올리브오일\",\n      \"amount\": \"3\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"올리브오일 이번에도 3숟갈 두르고요\",\n          \"timestamp\": \"00:36\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이번에도 3숟갈 두르고요\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"우삼겹\",\n      \"displayName\": \"우삼겹\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고소한 우삼겹을 노릇하게 볶아줍니다\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고소한 우삼겹을 노릇하게 볶아줍니다\",\n          \"timestamp\": \"00:38\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"흰쌀밥 (또는 현미밥)\",\n      \"displayName\": \"밥\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 덮밥용 그릇에 흰쌀밥을 담아줄 건데 다이어트 빡세게 하는 분들은 현미밥을 추천드려요!\",\n          \"timestamp\": \"00:54\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"흰쌀밥을 담아줄 건데 다이어트 빡세게 하는 분들은 현미밥을 추천드려요!\",\n          \"timestamp\": \"00:55\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"노른자\",\n      \"displayName\": \"계란 노른자\",\n      \"amount\": \"1\",\n      \"unit\": \"알\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고소한 노른자 한 알씩 올려주면\",\n          \"timestamp\": \"01:01\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고소한 노른자 한 알씩 올려주면\",\n          \"timestamp\": \"01:01\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"송송 썬 파\",\n      \"displayName\": \"대파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란 노른자 옆에 썬 파를 고명으로 올린다\",\n          \"timestamp\": \"01:03\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"양배추를 반으로 가른 뒤 약 1cm 정도 두께로 먹기 좋게 채 썰어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양배추는 반으로 갈라주고요 약 1cm 정도 두께로 먹기 좋게 썰어주면\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볼에 진간장 3숟갈, 맛술 3숟갈, 올리고당 3숟갈, 굴소스 3숟갈, 다진마늘 1숟갈을 넣고 섞어 양념 소스를 만든다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소스는 숫자 3만 기억하면 끝이에요 진간장 3숟갈 맛술 3숟갈 올리고당 3숟갈 굴소스 3숟갈 그리고 마지막에 구수한 끝맛을 위해서 다진마늘 1숟갈 추가하면 끝!\",\n          \"timestamp\": \"00:25\"\n        }\n      ]\n    },\n    {\n      \"text\": \"달궈진 팬에 올리브오일 3숟갈을 두르고 우삼겹을 넣어 노릇하게 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"달궈진 팬에 올리브오일 이번에도 3숟갈 두르고요 고소한 우삼겹을 노릇하게 볶아줍니다\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"text\": \"우삼겹이 노릇하게 익으면 썰어둔 양배추를 모두 넣고 약 3분간 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"바로 먹을 수 있을 정도로 우삼겹이 노릇하게 익었다면 미리 썰어둔 양배추 모두 넣어주고요 우삼겹에서 나온 기름은 양배추가 자연스럽게 흡수하면서 맛있게 볶을 수 있을 거예요 이대로 3분 정도 볶아주다가\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"text\": \"만들어둔 소스를 모두 붓고 1분간 더 볶아준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만들어둔 소스 모두 부어주고요 1분 더 볶아줍니다\",\n          \"timestamp\": \"00:50\"\n        }\n      ]\n    },\n    {\n      \"text\": \"덮밥용 그릇에 밥(흰쌀밥 또는 현미밥)을 담고, 그 위에 볶은 우삼겹 양배추를 올려준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 덮밥용 그릇에 흰쌀밥을 담아줄 건데 다이어트 빡세게 하는 분들은 현미밥을 추천드려요! 여기에 양배추 볶음 올려주고\",\n          \"timestamp\": \"00:54\"\n        }\n      ]\n    },\n    {\n      \"text\": \"달걀 노른자 1알과 썬 파를 고명으로 올려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고소한 노른자 한 알씩 올려주면 12kg 감량할 때 먹었던 다이어트 특식 우삼겹 양배추 볶음 완성이예요!\",\n          \"timestamp\": \"01:01\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"노른자 옆에 썬 파를 얹어 마무리한다\",\n          \"timestamp\": \"01:03\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"우삼겹의 정확한 중량(g/근)은 영상에서 언급되지 않음\",\n    \"고명으로 올라간 썬 파의 명칭 및 분량은 음성이나 자막으로 언급되지 않고 시각적으로만 등장함\"\n  ]\n}",
+    "result": {
+      "title": "양배추 우삼겹 덮밥",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "양배추",
+          "displayName": "양배추",
+          "amount": "1/2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "먼저 동글동글한 양배추를 준비해주세요",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양배추는 반으로 갈라주고요 약 1cm 정도 두께로 먹기 좋게 썰어주면",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "진간장 3숟갈",
+          "displayName": "진간장",
+          "amount": "3",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "진간장 3숟갈",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "진간장 3숟갈",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "맛술 3숟갈",
+          "displayName": "맛술",
+          "amount": "3",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "맛술 3숟갈",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "맛술 3숟갈",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "올리고당 3숟갈",
+          "displayName": "올리고당",
+          "amount": "3",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "올리고당 3숟갈",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "올리고당 3숟갈",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "굴소스 3숟갈",
+          "displayName": "굴소스",
+          "amount": "3",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "굴소스 3숟갈",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "굴소스 3숟갈",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "다진마늘 1숟갈",
+          "displayName": "다진마늘",
+          "amount": "1",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "다진마늘 1숟갈 추가하면 끝!",
+              "timestamp": "00:33"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "다진마늘 1숟갈",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "올리브오일 3숟갈",
+          "displayName": "올리브오일",
+          "amount": "3",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "올리브오일 이번에도 3숟갈 두르고요",
+              "timestamp": "00:36"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "이번에도 3숟갈 두르고요",
+              "timestamp": "00:36"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "우삼겹",
+          "displayName": "우삼겹",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고소한 우삼겹을 노릇하게 볶아줍니다",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고소한 우삼겹을 노릇하게 볶아줍니다",
+              "timestamp": "00:38"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "흰쌀밥 (또는 현미밥)",
+          "displayName": "밥",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 덮밥용 그릇에 흰쌀밥을 담아줄 건데 다이어트 빡세게 하는 분들은 현미밥을 추천드려요!",
+              "timestamp": "00:54"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "흰쌀밥을 담아줄 건데 다이어트 빡세게 하는 분들은 현미밥을 추천드려요!",
+              "timestamp": "00:55"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "노른자",
+          "displayName": "계란 노른자",
+          "amount": "1",
+          "unit": "알",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고소한 노른자 한 알씩 올려주면",
+              "timestamp": "01:01"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고소한 노른자 한 알씩 올려주면",
+              "timestamp": "01:01"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "송송 썬 파",
+          "displayName": "대파",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란 노른자 옆에 썬 파를 고명으로 올린다",
+              "timestamp": "01:03"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "양배추를 반으로 가른 뒤 약 1cm 정도 두께로 먹기 좋게 채 썰어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "양배추는 반으로 갈라주고요 약 1cm 정도 두께로 먹기 좋게 썰어주면",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "볼에 진간장 3숟갈, 맛술 3숟갈, 올리고당 3숟갈, 굴소스 3숟갈, 다진마늘 1숟갈을 넣고 섞어 양념 소스를 만든다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "소스는 숫자 3만 기억하면 끝이에요 진간장 3숟갈 맛술 3숟갈 올리고당 3숟갈 굴소스 3숟갈 그리고 마지막에 구수한 끝맛을 위해서 다진마늘 1숟갈 추가하면 끝!",
+              "timestamp": "00:25"
+            }
+          ]
+        },
+        {
+          "text": "달궈진 팬에 올리브오일 3숟갈을 두르고 우삼겹을 넣어 노릇하게 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "달궈진 팬에 올리브오일 이번에도 3숟갈 두르고요 고소한 우삼겹을 노릇하게 볶아줍니다",
+              "timestamp": "00:35"
+            }
+          ]
+        },
+        {
+          "text": "우삼겹이 노릇하게 익으면 썰어둔 양배추를 모두 넣고 약 3분간 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "바로 먹을 수 있을 정도로 우삼겹이 노릇하게 익었다면 미리 썰어둔 양배추 모두 넣어주고요 우삼겹에서 나온 기름은 양배추가 자연스럽게 흡수하면서 맛있게 볶을 수 있을 거예요 이대로 3분 정도 볶아주다가",
+              "timestamp": "00:40"
+            }
+          ]
+        },
+        {
+          "text": "만들어둔 소스를 모두 붓고 1분간 더 볶아준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "만들어둔 소스 모두 부어주고요 1분 더 볶아줍니다",
+              "timestamp": "00:50"
+            }
+          ]
+        },
+        {
+          "text": "덮밥용 그릇에 밥(흰쌀밥 또는 현미밥)을 담고, 그 위에 볶은 우삼겹 양배추를 올려준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 덮밥용 그릇에 흰쌀밥을 담아줄 건데 다이어트 빡세게 하는 분들은 현미밥을 추천드려요! 여기에 양배추 볶음 올려주고",
+              "timestamp": "00:54"
+            }
+          ]
+        },
+        {
+          "text": "달걀 노른자 1알과 썬 파를 고명으로 올려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고소한 노른자 한 알씩 올려주면 12kg 감량할 때 먹었던 다이어트 특식 우삼겹 양배추 볶음 완성이예요!",
+              "timestamp": "01:01"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "노른자 옆에 썬 파를 얹어 마무리한다",
+              "timestamp": "01:03"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "우삼겹의 정확한 중량(g/근)은 영상에서 언급되지 않음",
+        "고명으로 올라간 썬 파의 명칭 및 분량은 음성이나 자막으로 언급되지 않고 시각적으로만 등장함"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-c"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "4개월 12키로 감량, 이걸로 뺐습니다! (양배추 덮밥)",
+    "sourceChannelName": "김진순 점심시간",
+    "sourceChannelId": "UC9She1e6OWUpwJpwZtbqhjQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/BvOrdVOmTRlMEFygfbeuka_30BrSZenSof2_yC4RCxF0gEKvRzJTn6NEzMTJYQSe8aBxV9iMbQ=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:14:28.244924Z"
   }
 }

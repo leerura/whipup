@@ -1,19 +1,277 @@
 {
   "videoId": "C3hEjXK9kGk",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/C3hEjXK9kGk",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 2,
-    "startedAt": "2026-11-20T13:22:25.441237+00:00",
-    "accountId": "account-b",
-    "error": "504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}",
-    "retryReason": "transient_backoff",
-    "retryableRuns": 1,
-    "retryKind": "transient",
-    "retryAt": "2026-11-20T13:25:53.730848+00:00",
-    "retryAccountId": "account-b"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-21T08:13:48.682032+00:00",
+    "rawResponse": "{\n  \"title\": \"고깃집 쌈장\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"된장 6숟갈\",\n      \"displayName\": \"된장\",\n      \"amount\": \"6\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"된장 여섯 숟갈에\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"된장 6숟갈에\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추장 2숟갈\",\n      \"displayName\": \"고추장\",\n      \"amount\": \"2\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추장 두 숟갈\",\n          \"timestamp\": \"00:16\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"고추장 2숟갈\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"마늘\",\n      \"displayName\": \"마늘\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 마늘 향을 최대한 살리기 위해서 칼로 마늘을 거칠게 다져주고요\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 마늘 향을 최대한 살리기 위해서 칼로 마늘을 거칠게 다져주고요!\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"청양고추\",\n      \"displayName\": \"청양고추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"취향에 따라 청양고추도 잘게 썰어서 넣어줍니다\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"취향에 따라 청양고추도 잘게 썰어서 넣어줍니다\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"볶은깨 2숟갈\",\n      \"displayName\": \"볶은깨\",\n      \"amount\": \"2\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"추가로 볶은 깨 두 숟갈\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"추가로 볶은깨 2숟갈\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참기름 2숟갈\",\n      \"displayName\": \"참기름\",\n      \"amount\": \"2\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참기름 두 숟갈\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"참기름 2숟갈\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리고당 2숟갈\",\n      \"displayName\": \"올리고당\",\n      \"amount\": \"2\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"올리고당 두 숟갈 모두 같은 비율로 넣어주고요\",\n          \"timestamp\": \"00:29\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"올리고당 2숟갈 모두 같은 비율로 넣어주고요\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"사이다 5숟갈\",\n      \"displayName\": \"사이다\",\n      \"amount\": \"5\",\n      \"unit\": \"숟갈\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"사이다를 다섯 숟갈 넣어줄게요\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"사이다를 5숟갈 넣어줄게요!\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"볼에 된장 6숟갈과 고추장 2숟갈을 넣는다 (3:1 비율).\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"저희가 가장 선호하는 황금 비율은 된장 여섯 숟갈에 고추장 두 숟갈 즉 3대1 비율입니다\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"저희가 가장 선호하는 황금 비율은 된장 6숟갈에 고추장 2숟갈 즉 3대1 비율입니다\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"마늘 향을 살리기 위해 칼로 마늘을 거칠게 다져서 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에 마늘 향을 최대한 살리기 위해서 칼로 마늘을 거칠게 다져주고요\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"여기에 마늘 향을 최대한 살리기 위해서 칼로 마늘을 거칠게 다져주고요!\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"취향에 따라 청양고추를 잘게 썰어서 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"취향에 따라 청양고추도 잘게 썰어서 넣어줍니다\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"취향에 따라 청양고추도 잘게 썰어서 넣어줍니다\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"볶은깨 2숟갈, 참기름 2숟갈, 올리고당 2숟갈을 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"추가로 볶은 깨 두 숟갈 참기름 두 숟갈 올리고당 두 숟갈 모두 같은 비율로 넣어주고요\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"추가로 볶은깨 2숟갈 참기름 2숟갈 올리고당 2숟갈 모두 같은 비율로 넣어주고요\",\n          \"timestamp\": \"00:26\"\n        }\n      ]\n    },\n    {\n      \"text\": \"사이다 5숟갈을 넣고 골고루 섞어준 후 용기에 담아 보관한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"사이다를 다섯 숟갈 넣어줄게요 사이다는 쌈장의 되직한 농도를 잡아주고 짜고 텁텁한 소스를 단맛으로 부드럽게 섞어주는데요 이대로 용기에 담아 두었다가 고기 먹을 때 꺼내서 쌈 싸 먹으면\",\n          \"timestamp\": \"00:32\"\n        },\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"사이다를 5숟갈 넣어줄게요! 사이다는 쌈장의 되직한 농도를 잡아주고 짜고 텁텁한 소스를 단맛으로 부드럽게 섞어주는데요 이대로 용기에 담아 두었다가\",\n          \"timestamp\": \"00:32\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "고깃집 쌈장",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "된장 6숟갈",
+          "displayName": "된장",
+          "amount": "6",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "된장 여섯 숟갈에",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "된장 6숟갈에",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "고추장 2숟갈",
+          "displayName": "고추장",
+          "amount": "2",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고추장 두 숟갈",
+              "timestamp": "00:16"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "고추장 2숟갈",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "마늘",
+          "displayName": "마늘",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 마늘 향을 최대한 살리기 위해서 칼로 마늘을 거칠게 다져주고요",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 마늘 향을 최대한 살리기 위해서 칼로 마늘을 거칠게 다져주고요!",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "청양고추",
+          "displayName": "청양고추",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "취향에 따라 청양고추도 잘게 썰어서 넣어줍니다",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "취향에 따라 청양고추도 잘게 썰어서 넣어줍니다",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "볶은깨 2숟갈",
+          "displayName": "볶은깨",
+          "amount": "2",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "추가로 볶은 깨 두 숟갈",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "추가로 볶은깨 2숟갈",
+              "timestamp": "00:26"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "참기름 2숟갈",
+          "displayName": "참기름",
+          "amount": "2",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "참기름 두 숟갈",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "참기름 2숟갈",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "올리고당 2숟갈",
+          "displayName": "올리고당",
+          "amount": "2",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "올리고당 두 숟갈 모두 같은 비율로 넣어주고요",
+              "timestamp": "00:29"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "올리고당 2숟갈 모두 같은 비율로 넣어주고요",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "사이다 5숟갈",
+          "displayName": "사이다",
+          "amount": "5",
+          "unit": "숟갈",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "사이다를 다섯 숟갈 넣어줄게요",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "사이다를 5숟갈 넣어줄게요!",
+              "timestamp": "00:32"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        }
+      ],
+      "steps": [
+        {
+          "text": "볼에 된장 6숟갈과 고추장 2숟갈을 넣는다 (3:1 비율).",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "저희가 가장 선호하는 황금 비율은 된장 여섯 숟갈에 고추장 두 숟갈 즉 3대1 비율입니다",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "저희가 가장 선호하는 황금 비율은 된장 6숟갈에 고추장 2숟갈 즉 3대1 비율입니다",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "마늘 향을 살리기 위해 칼로 마늘을 거칠게 다져서 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에 마늘 향을 최대한 살리기 위해서 칼로 마늘을 거칠게 다져주고요",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "여기에 마늘 향을 최대한 살리기 위해서 칼로 마늘을 거칠게 다져주고요!",
+              "timestamp": "00:20"
+            }
+          ]
+        },
+        {
+          "text": "취향에 따라 청양고추를 잘게 썰어서 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "취향에 따라 청양고추도 잘게 썰어서 넣어줍니다",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "취향에 따라 청양고추도 잘게 썰어서 넣어줍니다",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "볶은깨 2숟갈, 참기름 2숟갈, 올리고당 2숟갈을 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "추가로 볶은 깨 두 숟갈 참기름 두 숟갈 올리고당 두 숟갈 모두 같은 비율로 넣어주고요",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "추가로 볶은깨 2숟갈 참기름 2숟갈 올리고당 2숟갈 모두 같은 비율로 넣어주고요",
+              "timestamp": "00:26"
+            }
+          ]
+        },
+        {
+          "text": "사이다 5숟갈을 넣고 골고루 섞어준 후 용기에 담아 보관한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "사이다를 다섯 숟갈 넣어줄게요 사이다는 쌈장의 되직한 농도를 잡아주고 짜고 텁텁한 소스를 단맛으로 부드럽게 섞어주는데요 이대로 용기에 담아 두었다가 고기 먹을 때 꺼내서 쌈 싸 먹으면",
+              "timestamp": "00:32"
+            },
+            {
+              "type": "SUBTITLE",
+              "text": "사이다를 5숟갈 넣어줄게요! 사이다는 쌈장의 되직한 농도를 잡아주고 짜고 텁텁한 소스를 단맛으로 부드럽게 섞어주는데요 이대로 용기에 담아 두었다가",
+              "timestamp": "00:32"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-b"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "알바생도 모르는, 줄서는 고깃집 쌈장 황금비율‼️",
+    "sourceChannelName": "김진순 점심시간",
+    "sourceChannelId": "UC9She1e6OWUpwJpwZtbqhjQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/BvOrdVOmTRlMEFygfbeuka_30BrSZenSof2_yC4RCxF0gEKvRzJTn6NEzMTJYQSe8aBxV9iMbQ=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:13:46.376262Z"
+  },
+  "applyChecks": {
+    "short": true,
+    "embeddable": true,
+    "checkedAt": "2026-11-22T08:10:20Z"
   }
 }

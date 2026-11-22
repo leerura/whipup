@@ -1,19 +1,254 @@
 {
   "videoId": "gxYdRsfAFhI",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/gxYdRsfAFhI",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 2,
-    "startedAt": "2026-11-20T13:22:01.524468+00:00",
-    "accountId": "account-a",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAccountId": "account-a",
-    "retryableRuns": 1,
-    "retryAt": "2026-11-20T13:22:42.787008+00:00"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-21T08:15:06.060086+00:00",
+    "rawResponse": "{\n  \"title\": \"위트빅스 다이어트 케이크 (티라미수)\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"딸기\",\n      \"displayName\": \"딸기\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"요새 딸기가 진짜 싸졌는데 여전히 맛있으니까\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"딸기를 칼로 얇게 썬다\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"바나나\",\n      \"displayName\": \"바나나\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": true,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"만약 꾸덕한 바나나 푸딩 좋아하면 바나나도 좀 썰어도 되고\",\n          \"timestamp\": \"00:15\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"바나나 껍질을 벗겨 슬라이스한다\",\n          \"timestamp\": \"00:17\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"위트빅스 1블록\",\n      \"displayName\": \"위트빅스\",\n      \"amount\": \"1\",\n      \"unit\": \"블록\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"위트빅스 1블록\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이렇게 작게 부숴서 불리면\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"무가당 요거트 2컵\",\n      \"displayName\": \"무가당 요거트\",\n      \"amount\": \"2\",\n      \"unit\": \"컵\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"무가당 요거트 2컵\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"무가당 요거트에\",\n          \"timestamp\": \"00:27\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"저당 바닐라시럽 2\",\n      \"displayName\": \"저당 바닐라시럽\",\n      \"amount\": \"2\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"저당 바닐라시럽 2\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"속세맛 더해줄 저당 바닐라시럽 넣고 잘 섞어주면\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"무가당 코코아가루\",\n      \"displayName\": \"무가당 코코아가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"무가당 코코아가루\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 무가당 코코아가루도 티라미수처럼 넉넉히 뿌려서\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"딸기를 적당한 두께로 슬라이스하고, 취향에 따라 바나나도 얇게 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"요새 딸기가 진짜 싸졌는데 여전히 맛있으니까 들어가기 전에 얼른 먹어야 돼 만약 꾸덕한 바나나 푸딩 좋아하면 바나나도 좀 썰어도 되고\",\n          \"timestamp\": \"00:10\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"도마 위에서 딸기와 바나나를 칼로 썬다\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"text\": \"밀폐용기에 위트빅스 1블록을 손으로 잘게 부수어 바닥에 고르게 깐다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"위트빅스 1블록\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이렇게 작게 부숴서 불리면 진짜 촉촉한 케이크 시트 저리가라 만들 수 있어\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"무가당 요거트 2컵에 저당 바닐라시럽을 넣고 스푼으로 잘 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"무가당 요거트 2컵\",\n          \"timestamp\": \"00:26\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"저당 바닐라시럽 2\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"속세맛 더해줄 저당 바닐라시럽 넣고 잘 섞어주면\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"부숴 둔 위트빅스 위에 섞어둔 요거트를 붓고, 그 위에 썰어둔 딸기와 바나나를 얹는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"위트빅스 위에 요거트를 붓고 딸기와 바나나를 가지런히 올린다\",\n          \"timestamp\": \"00:36\"\n        }\n      ]\n    },\n    {\n      \"text\": \"무가당 코코아가루를 티라미수처럼 넉넉히 체나 파우더 통을 이용해 골고루 뿌린다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"무가당 코코아가루\",\n          \"timestamp\": \"00:41\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 무가당 코코아가루도 티라미수처럼 넉넉히 뿌려서\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    },\n    {\n      \"text\": \"용기 뚜껑을 닫고 냉장고에서 반나절 동안 보관하여 숙성시킨다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"반나절 동안 냉장보관\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"반나절만 재우면 되니까\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": [\n    \"저당 바닐라시럽의 자막에 적힌 숫자 '2'의 정확한 계량 단위(큰술/스푼 등)가 명시되지 않음 (영상에서는 스푼으로 각각 1스푼씩 요거트 용기에 넣는 모습이 보임)\"\n  ]\n}",
+    "result": {
+      "title": "위트빅스 다이어트 케이크 (티라미수)",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "딸기",
+          "displayName": "딸기",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "요새 딸기가 진짜 싸졌는데 여전히 맛있으니까",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "딸기를 칼로 얇게 썬다",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "바나나",
+          "displayName": "바나나",
+          "amount": null,
+          "unit": null,
+          "optional": true,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "만약 꾸덕한 바나나 푸딩 좋아하면 바나나도 좀 썰어도 되고",
+              "timestamp": "00:15"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "바나나 껍질을 벗겨 슬라이스한다",
+              "timestamp": "00:17"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "위트빅스 1블록",
+          "displayName": "위트빅스",
+          "amount": "1",
+          "unit": "블록",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "위트빅스 1블록",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이렇게 작게 부숴서 불리면",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "무가당 요거트 2컵",
+          "displayName": "무가당 요거트",
+          "amount": "2",
+          "unit": "컵",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "무가당 요거트 2컵",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "SPEECH",
+              "text": "무가당 요거트에",
+              "timestamp": "00:27"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "저당 바닐라시럽 2",
+          "displayName": "저당 바닐라시럽",
+          "amount": "2",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "저당 바닐라시럽 2",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "속세맛 더해줄 저당 바닐라시럽 넣고 잘 섞어주면",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "무가당 코코아가루",
+          "displayName": "무가당 코코아가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "무가당 코코아가루",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 무가당 코코아가루도 티라미수처럼 넉넉히 뿌려서",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        }
+      ],
+      "steps": [
+        {
+          "text": "딸기를 적당한 두께로 슬라이스하고, 취향에 따라 바나나도 얇게 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "요새 딸기가 진짜 싸졌는데 여전히 맛있으니까 들어가기 전에 얼른 먹어야 돼 만약 꾸덕한 바나나 푸딩 좋아하면 바나나도 좀 썰어도 되고",
+              "timestamp": "00:10"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "도마 위에서 딸기와 바나나를 칼로 썬다",
+              "timestamp": "00:12"
+            }
+          ]
+        },
+        {
+          "text": "밀폐용기에 위트빅스 1블록을 손으로 잘게 부수어 바닥에 고르게 깐다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "위트빅스 1블록",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이렇게 작게 부숴서 불리면 진짜 촉촉한 케이크 시트 저리가라 만들 수 있어",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "무가당 요거트 2컵에 저당 바닐라시럽을 넣고 스푼으로 잘 섞어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "무가당 요거트 2컵",
+              "timestamp": "00:26"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "저당 바닐라시럽 2",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "속세맛 더해줄 저당 바닐라시럽 넣고 잘 섞어주면",
+              "timestamp": "00:30"
+            }
+          ]
+        },
+        {
+          "text": "부숴 둔 위트빅스 위에 섞어둔 요거트를 붓고, 그 위에 썰어둔 딸기와 바나나를 얹는다.",
+          "evidences": [
+            {
+              "type": "VISUAL_ACTION",
+              "text": "위트빅스 위에 요거트를 붓고 딸기와 바나나를 가지런히 올린다",
+              "timestamp": "00:36"
+            }
+          ]
+        },
+        {
+          "text": "무가당 코코아가루를 티라미수처럼 넉넉히 체나 파우더 통을 이용해 골고루 뿌린다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "무가당 코코아가루",
+              "timestamp": "00:41"
+            },
+            {
+              "type": "SPEECH",
+              "text": "이제 무가당 코코아가루도 티라미수처럼 넉넉히 뿌려서",
+              "timestamp": "00:41"
+            }
+          ]
+        },
+        {
+          "text": "용기 뚜껑을 닫고 냉장고에서 반나절 동안 보관하여 숙성시킨다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "반나절 동안 냉장보관",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SPEECH",
+              "text": "반나절만 재우면 되니까",
+              "timestamp": "00:44"
+            }
+          ]
+        }
+      ],
+      "unresolved": [
+        "저당 바닐라시럽의 자막에 적힌 숫자 '2'의 정확한 계량 단위(큰술/스푼 등)가 명시되지 않음 (영상에서는 스푼으로 각각 1스푼씩 요거트 용기에 넣는 모습이 보임)"
+      ]
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-a"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "버터떡이고 뭐고 이게 최고입니다",
+    "sourceChannelName": "유지만 yuziman",
+    "sourceChannelId": "UCslni4iVQ-e784AU83eVcnQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/h9Vt4_UB_kTv6ijmpNN2Hw-Sv-2ACsIfI1rnEXDzx_6fDBVGeX2nJcDCEBgYBBrOJbmylUR4IeI=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:15:03.728730Z"
+  },
+  "applyChecks": {
+    "short": true,
+    "embeddable": true,
+    "checkedAt": "2026-11-22T08:11:12Z"
   }
 }

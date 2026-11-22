@@ -1,18 +1,382 @@
 {
   "videoId": "XNJa9L8sk4o",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/XNJa9L8sk4o",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 2,
-    "startedAt": "2026-11-20T13:22:19.610239+00:00",
-    "accountId": "account-d",
-    "error": "504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}",
-    "retryReason": "transient_backoff",
-    "retryKind": "transient",
-    "retryAt": "2026-11-20T13:25:47.895966+00:00",
-    "retryAccountId": "account-d"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-21T08:12:45.685176+00:00",
+    "rawResponse": "{\n  \"title\": \"오리고기 들기름 샐러드 파스타\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"스파게티면 60g\",\n      \"displayName\": \"스파게티면\",\n      \"amount\": \"60\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스파게티면 60g, 소금 1 12분\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"파스타면부터 삶아줬어\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"소금 1스푼\",\n      \"displayName\": \"소금\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스파게티면 60g, 소금 1 12분\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"바로 끓는 물에 소금 1스푼 넣고\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"오리고기 100g\",\n      \"displayName\": \"오리고기\",\n      \"amount\": \"100\",\n      \"unit\": \"g\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"오리고기 100g\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"들기름이랑 찰떡인 오리고기로 바꿨고\",\n          \"timestamp\": \"00:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"간장 1.5~2\",\n      \"displayName\": \"간장\",\n      \"amount\": \"1.5~2\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 1.5~2\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"간장\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"알룰로스 1\",\n      \"displayName\": \"알룰로스\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"알룰로스 1\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"알룰로스\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"들기름 1\",\n      \"displayName\": \"들기름\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"들기름 1\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"들기름 넣고\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추, 깨\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"난 그냥 후추랑\",\n          \"timestamp\": \"00:34\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깨\",\n      \"displayName\": \"깨\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추, 깨\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김가루, 깨\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"깨 조금 뿌려서\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"깨도 뿌셔주면\",\n          \"timestamp\": \"00:45\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"깻잎 1줌\",\n      \"displayName\": \"깻잎\",\n      \"amount\": \"1\",\n      \"unit\": \"줌\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깻잎 1줌\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"샐러드에 어울릴만한 야채 한 줌도 넣어주고\",\n          \"timestamp\": \"00:37\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고추 1\",\n      \"displayName\": \"고추\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고추 1\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고추는 너무 맵지 않게 최대한 작게 자르기!\",\n          \"timestamp\": \"00:40\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"김가루\",\n      \"displayName\": \"김가루\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김가루, 깨\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"감칠맛 치트키 김가루랑\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"끓는 물에 소금 1스푼을 넣고 스파게티면 60g을 12분간 삶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"스파게티면 60g, 소금 1 12분\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"바로 끓는 물에 소금 1스푼 넣고 파스타면부터 삶아줬어\",\n          \"timestamp\": \"00:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"팬에 오리고기 100g을 굽는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"오리고기 100g\",\n          \"timestamp\": \"00:18\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"난 들기름이랑 찰떡인 오리고기로 바꿨고\",\n          \"timestamp\": \"00:20\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"달궈진 팬에 오리고기를 올려 노릇하게 굽기\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"삶은 면을 찬물에 가볍게 헹군 뒤 물기를 완전히 털어낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 면을 찬물에 가볍게 헹구고 물기를 완전히! 털어주면 거의 다 됐어\",\n          \"timestamp\": \"00:23\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"채반에 받쳐 찬물로 헹구고 물기를 탈탈 털어내기\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"그릇에 면을 담고 간장 1.5~2스푼, 알룰로스 1스푼, 들기름 1스푼, 후추, 깨를 넣고 잘 섞어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"간장 1.5~2 알룰로스 1 들기름 1\",\n          \"timestamp\": \"00:28\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"후추, 깨\",\n          \"timestamp\": \"00:34\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"소스가 쏙 스며들게 간장, 알룰로스, 들기름 넣고 난 그냥 후추랑 깨 뿌려서 잘 섞어줬어\",\n          \"timestamp\": \"00:29\"\n        }\n      ]\n    },\n    {\n      \"text\": \"깻잎 1줌을 먹기 좋은 크기로 썰어 올리고, 고추 1개를 최대한 잘게 잘라 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"깻잎 1줌 고추 1\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"샐러드에 어울릴만한 야채 한 줌도 넣어주고 고추는 너무 맵지 않게 최대한 작게 자르기!\",\n          \"timestamp\": \"00:37\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"가위로 깻잎을 자르고 고추를 잘게 썰어 면 위에 올리기\",\n          \"timestamp\": \"00:39\"\n        }\n      ]\n    },\n    {\n      \"text\": \"구워둔 오리고기를 올리고 김가루와 깨를 부셔서 얹어 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"김가루, 깨\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"감칠맛 치트키 김가루랑 깨도 뿌셔주면\",\n          \"timestamp\": \"00:44\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"김가루와 깨를 손으로 부숴 올리고 오리고기 토핑과 함께 완성\",\n          \"timestamp\": \"00:44\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "오리고기 들기름 샐러드 파스타",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "스파게티면 60g",
+          "displayName": "스파게티면",
+          "amount": "60",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스파게티면 60g, 소금 1 12분",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "파스타면부터 삶아줬어",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "소금 1스푼",
+          "displayName": "소금",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스파게티면 60g, 소금 1 12분",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "바로 끓는 물에 소금 1스푼 넣고",
+              "timestamp": "00:15"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "오리고기 100g",
+          "displayName": "오리고기",
+          "amount": "100",
+          "unit": "g",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "오리고기 100g",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "들기름이랑 찰떡인 오리고기로 바꿨고",
+              "timestamp": "00:20"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "간장 1.5~2",
+          "displayName": "간장",
+          "amount": "1.5~2",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 1.5~2",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SPEECH",
+              "text": "간장",
+              "timestamp": "00:29"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "알룰로스 1",
+          "displayName": "알룰로스",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "알룰로스 1",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SPEECH",
+              "text": "알룰로스",
+              "timestamp": "00:30"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "들기름 1",
+          "displayName": "들기름",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "들기름 1",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "SPEECH",
+              "text": "들기름 넣고",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추, 깨",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "SPEECH",
+              "text": "난 그냥 후추랑",
+              "timestamp": "00:34"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "깨",
+          "displayName": "깨",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추, 깨",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김가루, 깨",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SPEECH",
+              "text": "깨 조금 뿌려서",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "SPEECH",
+              "text": "깨도 뿌셔주면",
+              "timestamp": "00:45"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "깻잎 1줌",
+          "displayName": "깻잎",
+          "amount": "1",
+          "unit": "줌",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깻잎 1줌",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "샐러드에 어울릴만한 야채 한 줌도 넣어주고",
+              "timestamp": "00:37"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "고추 1",
+          "displayName": "고추",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고추 1",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고추는 너무 맵지 않게 최대한 작게 자르기!",
+              "timestamp": "00:40"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "김가루",
+          "displayName": "김가루",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김가루, 깨",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SPEECH",
+              "text": "감칠맛 치트키 김가루랑",
+              "timestamp": "00:44"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "끓는 물에 소금 1스푼을 넣고 스파게티면 60g을 12분간 삶는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "스파게티면 60g, 소금 1 12분",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "바로 끓는 물에 소금 1스푼 넣고 파스타면부터 삶아줬어",
+              "timestamp": "00:15"
+            }
+          ]
+        },
+        {
+          "text": "팬에 오리고기 100g을 굽는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "오리고기 100g",
+              "timestamp": "00:18"
+            },
+            {
+              "type": "SPEECH",
+              "text": "난 들기름이랑 찰떡인 오리고기로 바꿨고",
+              "timestamp": "00:20"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "달궈진 팬에 오리고기를 올려 노릇하게 굽기",
+              "timestamp": "00:19"
+            }
+          ]
+        },
+        {
+          "text": "삶은 면을 찬물에 가볍게 헹군 뒤 물기를 완전히 털어낸다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 면을 찬물에 가볍게 헹구고 물기를 완전히! 털어주면 거의 다 됐어",
+              "timestamp": "00:23"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "채반에 받쳐 찬물로 헹구고 물기를 탈탈 털어내기",
+              "timestamp": "00:23"
+            }
+          ]
+        },
+        {
+          "text": "그릇에 면을 담고 간장 1.5~2스푼, 알룰로스 1스푼, 들기름 1스푼, 후추, 깨를 넣고 잘 섞어준다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "간장 1.5~2 알룰로스 1 들기름 1",
+              "timestamp": "00:28"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "후추, 깨",
+              "timestamp": "00:34"
+            },
+            {
+              "type": "SPEECH",
+              "text": "소스가 쏙 스며들게 간장, 알룰로스, 들기름 넣고 난 그냥 후추랑 깨 뿌려서 잘 섞어줬어",
+              "timestamp": "00:29"
+            }
+          ]
+        },
+        {
+          "text": "깻잎 1줌을 먹기 좋은 크기로 썰어 올리고, 고추 1개를 최대한 잘게 잘라 넣는다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "깻잎 1줌 고추 1",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "SPEECH",
+              "text": "샐러드에 어울릴만한 야채 한 줌도 넣어주고 고추는 너무 맵지 않게 최대한 작게 자르기!",
+              "timestamp": "00:37"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "가위로 깻잎을 자르고 고추를 잘게 썰어 면 위에 올리기",
+              "timestamp": "00:39"
+            }
+          ]
+        },
+        {
+          "text": "구워둔 오리고기를 올리고 김가루와 깨를 부셔서 얹어 마무리한다.",
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "김가루, 깨",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "SPEECH",
+              "text": "감칠맛 치트키 김가루랑 깨도 뿌셔주면",
+              "timestamp": "00:44"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "김가루와 깨를 손으로 부숴 올리고 오리고기 토핑과 함께 완성",
+              "timestamp": "00:44"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "파스타계의 신흥강자",
+    "sourceChannelName": "유지만 yuziman",
+    "sourceChannelId": "UCslni4iVQ-e784AU83eVcnQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/h9Vt4_UB_kTv6ijmpNN2Hw-Sv-2ACsIfI1rnEXDzx_6fDBVGeX2nJcDCEBgYBBrOJbmylUR4IeI=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:12:43.550720Z"
+  },
+  "applyChecks": {
+    "short": true,
+    "embeddable": true,
+    "checkedAt": "2026-11-22T08:10:54Z"
   }
 }

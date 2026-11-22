@@ -1,19 +1,262 @@
 {
   "videoId": "ZaUOvsYVeio",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/ZaUOvsYVeio",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
-    "retryCount": 1,
-    "startedAt": "2026-11-20T13:12:28.620767+00:00",
-    "accountId": "account-d",
-    "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
-    "retryReason": "transient_backoff",
-    "retryableRuns": 1,
-    "retryKind": "transient",
-    "retryAt": "2026-11-20T13:12:42.338502+00:00",
-    "retryAccountId": "account-d"
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-21T08:45:11.586849+00:00",
+    "rawResponse": "{\n  \"title\": \"순두부 계란국\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"물 500ml\",\n      \"displayName\": \"물\",\n      \"amount\": \"500\",\n      \"unit\": \"ml\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"냄비에 물 500ml\",\n          \"timestamp\": \"0:06\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냄비에 물 500ml 부어주고\",\n          \"timestamp\": \"0:06\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"국간장 1스푼\",\n      \"displayName\": \"국간장\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"국간장 1스푼\",\n          \"timestamp\": \"0:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"국간장 1스푼\",\n          \"timestamp\": \"0:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치액 1스푼\",\n      \"displayName\": \"참치액\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치액 1스푼\",\n          \"timestamp\": \"0:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"육수가루 1포\",\n      \"displayName\": \"육수가루\",\n      \"amount\": \"1\",\n      \"unit\": \"포\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"육수가루 1포 넣어주고,\",\n          \"timestamp\": \"0:09\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"육수가루 1포 넣어주고\",\n          \"timestamp\": \"0:09\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"조미김\",\n      \"displayName\": \"조미김\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"이 조미김입니다\",\n          \"timestamp\": \"0:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에서 킥이 이 조미김입니다\",\n          \"timestamp\": \"0:11\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"조미김 1봉지를 비벼서 부순 후 냄비에 넣는 모습\",\n          \"timestamp\": \"0:13\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"순두부 1봉\",\n      \"displayName\": \"순두부\",\n      \"amount\": \"1\",\n      \"unit\": \"봉\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"순두부 1봉\",\n          \"timestamp\": \"0:15\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"순두부 1봉 반으로 잘라서\",\n          \"timestamp\": \"0:15\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"풀어둔 달걀 2알\",\n      \"displayName\": \"달걀\",\n      \"amount\": \"2\",\n      \"unit\": \"알\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"2알 양옆으로\",\n          \"timestamp\": \"0:21\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"풀어둔 달걀 2알 양옆으로 잘 부어주고,\",\n          \"timestamp\": \"0:20\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"쪽파\",\n      \"displayName\": \"쪽파\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"SUBTITLE\",\n          \"text\": \"마무리 쪽파\",\n          \"timestamp\": \"0:24\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마무리 쪽파 골고루 뿌려주면 완성입니다.\",\n          \"timestamp\": \"0:24\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"냄비에 물 500ml를 붓고, 국간장 1스푼, 참치액 1스푼, 육수가루 1포를 넣는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냄비에 물 500ml 부어주고, 국간장 1스푼, 참치액 1스푼, 육수가루 1포 넣어주고,\",\n          \"timestamp\": \"0:06\"\n        }\n      ]\n    },\n    {\n      \"text\": \"조미김을 봉지째 잘 부셔서 냄비에 넣어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"여기에서 킥이 이 조미김입니다. 맛의 풍미가 3배는 더 깊어지는데, 잘 부셔서 넣어주세요.\",\n          \"timestamp\": \"0:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"순두부 1봉을 반으로 잘라 냄비에 넣은 후 칼로 먹기 좋은 크기로 잘라준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"순두부 1봉 반으로 잘라서 냄비에 넣은 칼로 잘라줄게요. 이게 잘라서 가져오면 오다가 다 깨지더라구요.\",\n          \"timestamp\": \"0:15\"\n        }\n      ]\n    },\n    {\n      \"text\": \"풀어둔 달걀 2알을 냄비 양옆으로 둘러 부어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"풀어둔 달걀 2알 양옆으로 잘 부어주고,\",\n          \"timestamp\": \"0:20\"\n        }\n      ]\n    },\n    {\n      \"text\": \"숟가락으로 1분간 골고루 저어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"숟가락으로 1분간 잘 저어주세요.\",\n          \"timestamp\": \"0:23\"\n        }\n      ]\n    },\n    {\n      \"text\": \"송송 썬 쪽파를 골고루 뿌려 마무리한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"마무리 쪽파 골고루 뿌려주면 완성입니다.\",\n          \"timestamp\": \"0:24\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "순두부 계란국",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "물 500ml",
+          "displayName": "물",
+          "amount": "500",
+          "unit": "ml",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "냄비에 물 500ml",
+              "timestamp": "0:06"
+            },
+            {
+              "type": "SPEECH",
+              "text": "냄비에 물 500ml 부어주고",
+              "timestamp": "0:06"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "국간장 1스푼",
+          "displayName": "국간장",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "국간장 1스푼",
+              "timestamp": "0:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "국간장 1스푼",
+              "timestamp": "0:08"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "참치액 1스푼",
+          "displayName": "참치액",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "참치액 1스푼",
+              "timestamp": "0:08"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "육수가루 1포",
+          "displayName": "육수가루",
+          "amount": "1",
+          "unit": "포",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "육수가루 1포 넣어주고,",
+              "timestamp": "0:09"
+            },
+            {
+              "type": "SPEECH",
+              "text": "육수가루 1포 넣어주고",
+              "timestamp": "0:09"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "조미김",
+          "displayName": "조미김",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "이 조미김입니다",
+              "timestamp": "0:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "여기에서 킥이 이 조미김입니다",
+              "timestamp": "0:11"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "조미김 1봉지를 비벼서 부순 후 냄비에 넣는 모습",
+              "timestamp": "0:13"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "순두부 1봉",
+          "displayName": "순두부",
+          "amount": "1",
+          "unit": "봉",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "순두부 1봉",
+              "timestamp": "0:15"
+            },
+            {
+              "type": "SPEECH",
+              "text": "순두부 1봉 반으로 잘라서",
+              "timestamp": "0:15"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "풀어둔 달걀 2알",
+          "displayName": "달걀",
+          "amount": "2",
+          "unit": "알",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "2알 양옆으로",
+              "timestamp": "0:21"
+            },
+            {
+              "type": "SPEECH",
+              "text": "풀어둔 달걀 2알 양옆으로 잘 부어주고,",
+              "timestamp": "0:20"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "쪽파",
+          "displayName": "쪽파",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "SUBTITLE",
+              "text": "마무리 쪽파",
+              "timestamp": "0:24"
+            },
+            {
+              "type": "SPEECH",
+              "text": "마무리 쪽파 골고루 뿌려주면 완성입니다.",
+              "timestamp": "0:24"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        }
+      ],
+      "steps": [
+        {
+          "text": "냄비에 물 500ml를 붓고, 국간장 1스푼, 참치액 1스푼, 육수가루 1포를 넣는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "냄비에 물 500ml 부어주고, 국간장 1스푼, 참치액 1스푼, 육수가루 1포 넣어주고,",
+              "timestamp": "0:06"
+            }
+          ]
+        },
+        {
+          "text": "조미김을 봉지째 잘 부셔서 냄비에 넣어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "여기에서 킥이 이 조미김입니다. 맛의 풍미가 3배는 더 깊어지는데, 잘 부셔서 넣어주세요.",
+              "timestamp": "0:11"
+            }
+          ]
+        },
+        {
+          "text": "순두부 1봉을 반으로 잘라 냄비에 넣은 후 칼로 먹기 좋은 크기로 잘라준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "순두부 1봉 반으로 잘라서 냄비에 넣은 칼로 잘라줄게요. 이게 잘라서 가져오면 오다가 다 깨지더라구요.",
+              "timestamp": "0:15"
+            }
+          ]
+        },
+        {
+          "text": "풀어둔 달걀 2알을 냄비 양옆으로 둘러 부어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "풀어둔 달걀 2알 양옆으로 잘 부어주고,",
+              "timestamp": "0:20"
+            }
+          ]
+        },
+        {
+          "text": "숟가락으로 1분간 골고루 저어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "숟가락으로 1분간 잘 저어주세요.",
+              "timestamp": "0:23"
+            }
+          ]
+        },
+        {
+          "text": "송송 썬 쪽파를 골고루 뿌려 마무리한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "마무리 쪽파 골고루 뿌려주면 완성입니다.",
+              "timestamp": "0:24"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
+    "retryCount": 0,
+    "accountId": "account-d"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "바쁜아침 최고의 음식",
+    "sourceChannelName": "살림팝",
+    "sourceChannelId": "UCqp72t-eSw3AFSesyjzk59g",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/FWQw9Hkbyc3vfy84PM9gzpHYF-M9evLVXqFVqd0o3Lf0I8p69XT9ms-pYKdhXBj5DASG0za86KI=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:45:09.022659Z"
+  },
+  "applyChecks": {
+    "short": true,
+    "embeddable": true,
+    "checkedAt": "2026-11-22T08:10:58Z"
   }
 }

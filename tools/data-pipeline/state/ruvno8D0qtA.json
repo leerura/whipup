@@ -1,21 +1,357 @@
 {
   "videoId": "ruvno8D0qtA",
-  "status": "WAITING_RETRY",
+  "status": "EXTRACTION_READY",
   "stages": {},
   "sourceUrl": "https://www.youtube.com/shorts/ruvno8D0qtA",
   "pipelineVersion": 3,
   "extraction": {
-    "status": "WAITING_RETRY",
+    "status": "COMPLETED",
+    "pipeline": {
+      "type": "V3_RECIPE_SOURCE_EXTRACTION",
+      "version": 1,
+      "model": "gemini-3.8-flash"
+    },
+    "completedAt": "2026-11-21T08:23:51.029951+00:00",
+    "rawResponse": "{\n  \"title\": \"얼큰계란탕\",\n  \"description\": null,\n  \"servings\": null,\n  \"ingredients\": [\n    {\n      \"rawText\": \"컵누들 매콤한맛 1개\",\n      \"displayName\": \"컵누들 매콤한맛\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"컵누들 매콤한맛 1개\",\n          \"timestamp\": \"00:08\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"컵누들 하나를 든든하게 먹으려면\",\n          \"timestamp\": \"00:08\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"계란 2\",\n      \"displayName\": \"계란\",\n      \"amount\": \"2\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"계란 2\",\n          \"timestamp\": \"00:11\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 2개 잘 풀어주고\",\n          \"timestamp\": \"00:12\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"대파 1줌\",\n      \"displayName\": \"대파\",\n      \"amount\": \"1\",\n      \"unit\": \"줌\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"대파 1줌\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"야채는 대파 1줌 송송 썰고\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"양파 1/2\",\n      \"displayName\": \"양파\",\n      \"amount\": \"0.5\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"양파 1/2\",\n          \"timestamp\": \"00:14\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"양파 작은 거 반 개 채 썰기만 하면\",\n          \"timestamp\": \"00:16\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"올리브오일 1\",\n      \"displayName\": \"올리브오일\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"올리브오일 1\",\n          \"timestamp\": \"00:19\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"냄비에 올리브오일 1스푼을 두름\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"고춧가루 1\",\n      \"displayName\": \"고춧가루\",\n      \"amount\": \"1\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"고춧가루 1\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 1스푼\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"다진마늘 0.5\",\n      \"displayName\": \"다진마늘\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"다진마늘 0.5\",\n          \"timestamp\": \"00:22\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"다진마늘 반스푼 넣고\",\n          \"timestamp\": \"00:23\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"물 용기선\",\n      \"displayName\": \"물\",\n      \"amount\": \"용기 선까지\",\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"물 용기선\",\n          \"timestamp\": \"00:27\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"용기 선까지 물 맞춰 부어주고\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"분말스프\",\n      \"displayName\": \"분말스프\",\n      \"amount\": \"1\",\n      \"unit\": \"개\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"분말스프\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"스프 하나 넣고\",\n          \"timestamp\": \"00:31\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"참치액 0.5\",\n      \"displayName\": \"참치액\",\n      \"amount\": \"0.5\",\n      \"unit\": \"스푼\",\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"참치액 0.5\",\n          \"timestamp\": \"00:30\"\n        },\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"참치액 반스푼 추가!\",\n          \"timestamp\": \"00:33\"\n        }\n      ]\n    },\n    {\n      \"rawText\": \"후추\",\n      \"displayName\": \"후추\",\n      \"amount\": null,\n      \"unit\": null,\n      \"optional\": false,\n      \"evidences\": [\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"면, 계란, 후추\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"조리 중 또는 완성 전 후추를 뿌림\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    }\n  ],\n  \"steps\": [\n    {\n      \"text\": \"계란 2개를 볼에 깨 넣고 잘 풀어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 2개 잘 풀어주고\",\n          \"timestamp\": \"00:12\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란 2개를 그릇에 깨고 젓가락으로 푼다\",\n          \"timestamp\": \"00:11\"\n        }\n      ]\n    },\n    {\n      \"text\": \"대파 1줌은 송송 썰고, 작은 양파 반 개는 채 썰어 준비한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"야채는 대파 1줌 송송 썰고 양파 작은거 반개 채 썰기만 하면 끝이야\",\n          \"timestamp\": \"00:14\"\n        }\n      ]\n    },\n    {\n      \"text\": \"냄비에 올리브오일 1스푼을 두르고 대파와 양파를 넣어 볶는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"냄비에 올리브오일, 대파, 양파 넣고 볶다가\",\n          \"timestamp\": \"00:19\"\n        }\n      ]\n    },\n    {\n      \"text\": \"고춧가루 1스푼과 다진 마늘 0.5스푼을 넣고 약불에서 볶아 고추기름을 낸다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"고춧가루 1스푼, 다진마늘 반스푼 넣고 약불로 고추기름 내면\",\n          \"timestamp\": \"00:22\"\n        }\n      ]\n    },\n    {\n      \"text\": \"컵누들 용기 표시선까지 맞춘 물을 냄비에 붓는다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"용기 선까지 물 맞춰 부어주고\",\n          \"timestamp\": \"00:28\"\n        }\n      ]\n    },\n    {\n      \"text\": \"컵누들 분말스프 1개와 참치액 0.5스푼을 넣고 끓인다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"깊은 국물 맛의 비밀은 스프 하나 넣고 부족한 간은 참치액으로 채우는 거야\",\n          \"timestamp\": \"00:30\"\n        }\n      ]\n    },\n    {\n      \"text\": \"컵누들 면을 넣고 살짝 풀어준다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"이제 면 넣고 면이 살짝 풀어지면\",\n          \"timestamp\": \"00:35\"\n        }\n      ]\n    },\n    {\n      \"text\": \"풀어둔 계란물을 둘러 넣고 잘 익을 때까지 끓인 후 후추를 뿌려 완성한다.\",\n      \"evidences\": [\n        {\n          \"type\": \"SPEECH\",\n          \"text\": \"계란 둘러서 잘 익을 때까지 끓여줘\",\n          \"timestamp\": \"00:38\"\n        },\n        {\n          \"type\": \"ON_SCREEN_TEXT\",\n          \"text\": \"면, 계란, 후추\",\n          \"timestamp\": \"00:35\"\n        },\n        {\n          \"type\": \"VISUAL_ACTION\",\n          \"text\": \"계란물을 붓고 끓이다 후추를 톡톡 뿌림\",\n          \"timestamp\": \"00:41\"\n        }\n      ]\n    }\n  ],\n  \"unresolved\": []\n}",
+    "result": {
+      "title": "얼큰계란탕",
+      "description": null,
+      "servings": null,
+      "ingredients": [
+        {
+          "rawText": "컵누들 매콤한맛 1개",
+          "displayName": "컵누들 매콤한맛",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "컵누들 매콤한맛 1개",
+              "timestamp": "00:08"
+            },
+            {
+              "type": "SPEECH",
+              "text": "컵누들 하나를 든든하게 먹으려면",
+              "timestamp": "00:08"
+            }
+          ],
+          "sourceId": "ingredient-1"
+        },
+        {
+          "rawText": "계란 2",
+          "displayName": "계란",
+          "amount": "2",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "계란 2",
+              "timestamp": "00:11"
+            },
+            {
+              "type": "SPEECH",
+              "text": "계란 2개 잘 풀어주고",
+              "timestamp": "00:12"
+            }
+          ],
+          "sourceId": "ingredient-2"
+        },
+        {
+          "rawText": "대파 1줌",
+          "displayName": "대파",
+          "amount": "1",
+          "unit": "줌",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "대파 1줌",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "야채는 대파 1줌 송송 썰고",
+              "timestamp": "00:14"
+            }
+          ],
+          "sourceId": "ingredient-3"
+        },
+        {
+          "rawText": "양파 1/2",
+          "displayName": "양파",
+          "amount": "0.5",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "양파 1/2",
+              "timestamp": "00:14"
+            },
+            {
+              "type": "SPEECH",
+              "text": "양파 작은 거 반 개 채 썰기만 하면",
+              "timestamp": "00:16"
+            }
+          ],
+          "sourceId": "ingredient-4"
+        },
+        {
+          "rawText": "올리브오일 1",
+          "displayName": "올리브오일",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "올리브오일 1",
+              "timestamp": "00:19"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "냄비에 올리브오일 1스푼을 두름",
+              "timestamp": "00:19"
+            }
+          ],
+          "sourceId": "ingredient-5"
+        },
+        {
+          "rawText": "고춧가루 1",
+          "displayName": "고춧가루",
+          "amount": "1",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "고춧가루 1",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 1스푼",
+              "timestamp": "00:22"
+            }
+          ],
+          "sourceId": "ingredient-6"
+        },
+        {
+          "rawText": "다진마늘 0.5",
+          "displayName": "다진마늘",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "다진마늘 0.5",
+              "timestamp": "00:22"
+            },
+            {
+              "type": "SPEECH",
+              "text": "다진마늘 반스푼 넣고",
+              "timestamp": "00:23"
+            }
+          ],
+          "sourceId": "ingredient-7"
+        },
+        {
+          "rawText": "물 용기선",
+          "displayName": "물",
+          "amount": "용기 선까지",
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "물 용기선",
+              "timestamp": "00:27"
+            },
+            {
+              "type": "SPEECH",
+              "text": "용기 선까지 물 맞춰 부어주고",
+              "timestamp": "00:28"
+            }
+          ],
+          "sourceId": "ingredient-8"
+        },
+        {
+          "rawText": "분말스프",
+          "displayName": "분말스프",
+          "amount": "1",
+          "unit": "개",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "분말스프",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "스프 하나 넣고",
+              "timestamp": "00:31"
+            }
+          ],
+          "sourceId": "ingredient-9"
+        },
+        {
+          "rawText": "참치액 0.5",
+          "displayName": "참치액",
+          "amount": "0.5",
+          "unit": "스푼",
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "참치액 0.5",
+              "timestamp": "00:30"
+            },
+            {
+              "type": "SPEECH",
+              "text": "참치액 반스푼 추가!",
+              "timestamp": "00:33"
+            }
+          ],
+          "sourceId": "ingredient-10"
+        },
+        {
+          "rawText": "후추",
+          "displayName": "후추",
+          "amount": null,
+          "unit": null,
+          "optional": false,
+          "evidences": [
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "면, 계란, 후추",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "조리 중 또는 완성 전 후추를 뿌림",
+              "timestamp": "00:41"
+            }
+          ],
+          "sourceId": "ingredient-11"
+        }
+      ],
+      "steps": [
+        {
+          "text": "계란 2개를 볼에 깨 넣고 잘 풀어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 2개 잘 풀어주고",
+              "timestamp": "00:12"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란 2개를 그릇에 깨고 젓가락으로 푼다",
+              "timestamp": "00:11"
+            }
+          ]
+        },
+        {
+          "text": "대파 1줌은 송송 썰고, 작은 양파 반 개는 채 썰어 준비한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "야채는 대파 1줌 송송 썰고 양파 작은거 반개 채 썰기만 하면 끝이야",
+              "timestamp": "00:14"
+            }
+          ]
+        },
+        {
+          "text": "냄비에 올리브오일 1스푼을 두르고 대파와 양파를 넣어 볶는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "냄비에 올리브오일, 대파, 양파 넣고 볶다가",
+              "timestamp": "00:19"
+            }
+          ]
+        },
+        {
+          "text": "고춧가루 1스푼과 다진 마늘 0.5스푼을 넣고 약불에서 볶아 고추기름을 낸다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "고춧가루 1스푼, 다진마늘 반스푼 넣고 약불로 고추기름 내면",
+              "timestamp": "00:22"
+            }
+          ]
+        },
+        {
+          "text": "컵누들 용기 표시선까지 맞춘 물을 냄비에 붓는다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "용기 선까지 물 맞춰 부어주고",
+              "timestamp": "00:28"
+            }
+          ]
+        },
+        {
+          "text": "컵누들 분말스프 1개와 참치액 0.5스푼을 넣고 끓인다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "깊은 국물 맛의 비밀은 스프 하나 넣고 부족한 간은 참치액으로 채우는 거야",
+              "timestamp": "00:30"
+            }
+          ]
+        },
+        {
+          "text": "컵누들 면을 넣고 살짝 풀어준다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "이제 면 넣고 면이 살짝 풀어지면",
+              "timestamp": "00:35"
+            }
+          ]
+        },
+        {
+          "text": "풀어둔 계란물을 둘러 넣고 잘 익을 때까지 끓인 후 후추를 뿌려 완성한다.",
+          "evidences": [
+            {
+              "type": "SPEECH",
+              "text": "계란 둘러서 잘 익을 때까지 끓여줘",
+              "timestamp": "00:38"
+            },
+            {
+              "type": "ON_SCREEN_TEXT",
+              "text": "면, 계란, 후추",
+              "timestamp": "00:35"
+            },
+            {
+              "type": "VISUAL_ACTION",
+              "text": "계란물을 붓고 끓이다 후추를 톡톡 뿌림",
+              "timestamp": "00:41"
+            }
+          ]
+        }
+      ],
+      "unresolved": []
+    },
+    "structuralErrors": [],
     "retryCount": 0,
-    "startedAt": "2026-11-15T09:41:27.583618+00:00",
-    "accountId": "account-c",
-    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 22h18m32.034326756s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '80312s'}]}}",
-    "retryReason": "quota_retry_info",
-    "retryKind": "quota",
-    "retryAt": "2026-11-16T08:00:00.030246+00:00",
-    "retryAccountId": "account-c",
-    "quotaAccounts": {
-      "account-c": "2026-11-16T08:00:00.030246+00:00"
-    }
+    "accountId": "account-a"
+  },
+  "sourceMetadata": {
+    "sourceTitle": "진짜 별거 없는데 하룰라라 가는 맛",
+    "sourceChannelName": "유지만 yuziman",
+    "sourceChannelId": "UCslni4iVQ-e784AU83eVcnQ",
+    "sourceChannelThumbnailUrl": "https://yt3.googleusercontent.com/h9Vt4_UB_kTv6ijmpNN2Hw-Sv-2ACsIfI1rnEXDzx_6fDBVGeX2nJcDCEBgYBBrOJbmylUR4IeI=s88-c-k-c0x00ffffff-no-rj",
+    "sourceMetadataFetchedAt": "2026-11-21T08:23:48.624337Z"
+  },
+  "applyChecks": {
+    "short": true,
+    "embeddable": true,
+    "checkedAt": "2026-11-22T08:11:28Z"
   }
 }
