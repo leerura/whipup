@@ -171,6 +171,16 @@ def ingredient_notes(display: str, raw: str, mapping, rules: Rules, catalog: Cat
     return []
 
 
+_QUANTITY_WORDS = re.compile(r"계량|분량|중량|정량|수량|수치|단위|개수|무게|정확한 양|의 양|양은|양이|양과|양을")
+_CONTENT_WORDS = re.compile(r"종류|명칭|부위|대신|넣어도|여부|배합|추정|연출|시간|온도|불 세기|순서|공개되지")
+
+
+def is_quantity_only_note(note: str) -> bool:
+    """A Gemini note that only says an amount or unit was not given. Amounts may stay empty, so it does
+    not block publishing (user decision 2026-11-22); notes about kind, part, substitutes or method still do."""
+    return bool(_QUANTITY_WORDS.search(note)) and not _CONTENT_WORDS.search(note)
+
+
 def quality_review(ingredients: list[dict], steps: list[str], state: dict | None, meta: dict, rules: Rules) -> list[str]:
     """Checks shared by new recipes and draft promotions (spec: 자동 품질 검사)."""
     review = []
@@ -179,7 +189,8 @@ def quality_review(ingredients: list[dict], steps: list[str], state: dict | None
         review.append("쇼츠·임베드 여부를 아직 확인하지 않음(apply.py fetch)")
     gemini_notes = ((state or {}).get("extraction") or {}).get("result", {}).get("unresolved") or []
     for note in gemini_notes:
-        review.append(f"Gemini가 남긴 불확실한 점: {note}")
+        if not is_quantity_only_note(note):
+            review.append(f"Gemini가 남긴 불확실한 점: {note}")
     required_count = sum(1 for item in ingredients if not item["optional"])
     if required_count < rules.min_required:
         review.append(f"필수 재료가 {required_count}개뿐임(기준 {rules.min_required}개 이상)")

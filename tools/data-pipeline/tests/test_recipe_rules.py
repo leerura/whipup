@@ -163,6 +163,15 @@ class BuildTests(Base):
         cup = [dict(FOUR[0], unit="cup")] + FOUR[1:]
         self.assertEqual(self.build(_state(cup)).outcome, REVIEW)
 
+    def test_quantity_only_gemini_note_does_not_block(self):
+        unsure = _state(FOUR)
+        unsure["extraction"]["result"]["unresolved"] = ["양파, 후추, 밥의 계량 수치는 명시되지 않음"]
+        self.assertEqual(self.build(unsure).outcome, PUBLISH)
+        for note in ("팬에 두르는 기름의 정확한 양과 종류는 언급되지 않음", "샤브용 고기의 부위 및 정확한 중량은 언급되지 않음",
+                     "소스에 식초 대신 레몬즙을 사용할 수 있다고 언급됨", "통깨 사용 여부가 언급되지 않음"):
+            unsure["extraction"]["result"]["unresolved"] = [note]
+            self.assertEqual(self.build(unsure).outcome, REVIEW, note)
+
     def test_deleted_video_is_skipped(self):
         outcome = build("gone0000001", _state(FOUR), self.rules, self.catalog, {}, Counter(), {"gone0000001": "abc1234"})
         self.assertEqual(outcome.outcome, SKIP)
@@ -204,7 +213,7 @@ class DraftTests(Base):
         self.assertFalse(evaluate_draft("x", draft, _state(FOUR, checks=False), self.rules, self.catalog).ready)
         self.assertFalse(evaluate_draft("x", draft, None, self.rules, self.catalog).ready)
         unsure = _state(FOUR)
-        unsure["extraction"]["result"]["unresolved"] = ["양 단위가 없음"]
+        unsure["extraction"]["result"]["unresolved"] = ["기름 종류를 알 수 없음"]
         self.assertFalse(evaluate_draft("x", draft, unsure, self.rules, self.catalog).ready)
 
     def test_unlock_ranking_counts_sole_blockers(self):
