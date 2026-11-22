@@ -16,6 +16,18 @@ import retry
 import state
 
 
+class ClassificationValidationTests(unittest.TestCase):
+    def test_classification_is_required_only_for_new_extractions(self):
+        from validator import validate_source_extraction
+        base = {"title": "볶음밥", "ingredients": [{"sourceId": "ingredient-1", "rawText": "계란", "displayName": "계란",
+                                                  "amount": None, "unit": None, "optional": False, "evidences": []}],
+                "steps": [{"text": "볶는다", "evidences": []}], "unresolved": []}
+        self.assertEqual(validate_source_extraction(base), [])
+        self.assertEqual(len(validate_source_extraction(base, require_classification=True)), 4)
+        full = {**base, "recipeName": "계란볶음밥", "dishType": "RICE", "mainIngredients": ["계란"], "requiresCooking": True}
+        self.assertEqual(validate_source_extraction(full, require_classification=True), [])
+
+
 class PipelineQueueTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
@@ -57,9 +69,10 @@ class PipelineQueueTests(unittest.TestCase):
         self.assertTrue(pipeline._eligible("fresh123", "account-a", False))
 
     def test_duplicate_urls_are_video_id_deduplicated(self):
-        urls = self.root / "urls.txt"
-        urls.write_text("# skip\nhttps://youtu.be/abc123\nhttps://youtube.com/shorts/abc123\n", encoding="utf-8")
-        self.assertEqual(pipeline.read_urls(urls), [("abc123", "https://youtu.be/abc123")])
+        urls = self.root / "queue.jsonl"
+        urls.write_text('{"videoId": "abc123", "url": "https://youtu.be/abc123"}\n'
+                        '{"videoId": "abc123", "url": "https://youtube.com/shorts/abc123"}\n', encoding="utf-8")
+        self.assertEqual(pipeline.read_urls(urls, self.root / "none.json"), [("abc123", "https://youtu.be/abc123")])
 
     def test_concurrent_claims_only_have_one_winner(self):
         winners = []
@@ -115,8 +128,8 @@ class PipelineQueueTests(unittest.TestCase):
         self.assertNotIn("lease", state.load_video("abc123"))
 
     def test_dashboard_snapshot_has_progress_and_worker_state(self):
-        urls = self.root / "urls.txt"
-        urls.write_text("https://youtu.be/abc123\n", encoding="utf-8")
+        urls = self.root / "queue.jsonl"
+        urls.write_text('{"videoId": "abc123", "url": "https://youtu.be/abc123"}\n', encoding="utf-8")
         state.save_video({"videoId": "abc123", "status": "EXTRACTION_READY", "extraction": {"status": "COMPLETED"}})
         state.save_workers({"account-a-run": {"accountId": "account-a", "status": "IDLE"}})
         snapshot = dashboard.queue_snapshot(urls)
@@ -125,7 +138,7 @@ class PipelineQueueTests(unittest.TestCase):
         self.assertEqual(snapshot["workers"]["account-a-run"]["accountId"], "account-a")
 
     def test_dashboard_explains_missing_account_configuration(self):
-        urls = self.root / "urls.txt"
+        urls = self.root / "queue.jsonl"
         urls.write_text("", encoding="utf-8")
         state.save_runtime_status({"status": "NO_CONFIGURED_ACCOUNTS"})
         page = dashboard._page(dashboard.queue_snapshot(urls))

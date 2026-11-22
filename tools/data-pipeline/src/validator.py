@@ -4,14 +4,24 @@ import re
 
 
 SOURCE_FIELDS = ("displayName", "rawText", "amount", "unit")
+# Dish types, in the order of the target table in docs/v5/development/pipeline-overhaul.md.
+DISH_TYPES = ("RICE", "SOUP", "STEW", "NOODLE", "STIR_FRY_SIDE", "GRILL_BRAISE_STEAM", "EGG", "PANCAKE_FRIED",
+              "BREAD", "CURRY", "SALAD", "OTHER")
+# Fields added in extraction version 2. Older checkpoints do not have them.
+CLASSIFICATION_FIELDS = ("recipeName", "dishType", "mainIngredients", "requiresCooking")
 
 
 def _is_nonempty_string(value: object) -> bool:
     return isinstance(value, str) and bool(value.strip())
 
 
-def validate_source_extraction(extraction: dict) -> list[str]:
-    """Check only the shape Codex needs to apply Gemini's source facts."""
+def validate_source_extraction(extraction: dict, require_classification: bool = False,
+                               check_classification: bool = True) -> list[str]:
+    """Check only the shape Codex needs to apply Gemini's source facts.
+
+    Classification fields (extraction version 2) are checked when present, and required only when
+    `require_classification` is set, so version 1 checkpoints stay valid.
+    """
     errors: list[str] = []
     if not _is_nonempty_string(extraction.get("title")):
         errors.append("title is required")
@@ -47,6 +57,30 @@ def validate_source_extraction(extraction: dict) -> list[str]:
         errors.append("steps must be an array of objects with non-empty text")
     if not isinstance(extraction.get("unresolved", []), list):
         errors.append("unresolved must be an array")
+    if check_classification:
+        errors += classification_errors(extraction, require_classification)
+    return errors
+
+
+def classification_errors(extraction: dict, required: bool = False) -> list[str]:
+    errors = []
+    ingredients = extraction.get("ingredients") if isinstance(extraction.get("ingredients"), list) else []
+    for name in CLASSIFICATION_FIELDS:
+        if name not in extraction and required:
+            errors.append(f"{name} is required")
+    if "recipeName" in extraction and not _is_nonempty_string(extraction["recipeName"]):
+        errors.append("recipeName must be a non-empty string")
+    if "dishType" in extraction and extraction["dishType"] not in DISH_TYPES:
+        errors.append("dishType must be one of " + "|".join(DISH_TYPES))
+    if "mainIngredients" in extraction:
+        names = {i.get("displayName") for i in ingredients if isinstance(i, dict)}
+        value = extraction["mainIngredients"]
+        if not isinstance(value, list) or not 1 <= len(value) <= 3:
+            errors.append("mainIngredients must list 1 to 3 ingredients")
+        elif any(name not in names for name in value):
+            errors.append("mainIngredients must copy displayName values from ingredients")
+    if "requiresCooking" in extraction and not isinstance(extraction["requiresCooking"], bool):
+        errors.append("requiresCooking must be a boolean")
     return errors
 
 

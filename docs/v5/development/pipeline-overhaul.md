@@ -75,6 +75,24 @@
 - **기존 공개 레시피는 지우지 않는다.** 현재 규칙과 맞지 않는 공개 레시피는 보고서에 목록으로만 보여 준다.
 - 레시피 파일은 Python 검증기(`recipe_rules.validate_recipe`, 백엔드 `DatasetLoader` 규칙과 같음)를 통과해야 쓴다. 레시피와 영상은 키가 아니라 `shortsReference`의 영상 ID로 맞춘다.
 
+## 3단계 추출 프롬프트와 큐 정리
+
+- **추출 결과 분류 필드(추출 버전 2).** Gemini가 레시피 원문과 함께 다음을 돌려준다. 버전 1 체크포인트에는 없으며, 다시 추출하지 않는다.
+  - `recipeName`: 메뉴에 보일 짧은 요리 이름(약 9자, 꾸밈말·해시태그 없음). 반영 도구는 승인한 이름(`names.json`)이 없으면 이 이름을, 그것도 규칙에 안 맞으면 영상 제목을 쓰고, 둘 다 안 되면 이름 승인을 요청한다.
+  - `dishType`: 요리 종류 하나. 위 목표 비율 표와 같은 분류다: `RICE` 밥류, `SOUP` 국·탕, `STEW` 찌개·전골, `NOODLE` 면·파스타, `STIR_FRY_SIDE` 볶음·반찬, `GRILL_BRAISE_STEAM` 구이·조림·찜, `EGG` 계란 요리, `PANCAKE_FRIED` 전·부침·튀김, `BREAD` 샌드위치·토스트·빵, `CURRY` 카레·스튜, `SALAD` 샐러드·무침, `OTHER` 그 밖(디저트·음료 등). 2단계 분류와 수집 예산에 쓴다.
+  - `mainIngredients`: 요리를 정하는 재료 1~3개(재료 목록의 `displayName`을 그대로). 양념·기름·물은 넣지 않는다. 알림의 핵심 재료 판단에 쓸 수 있다.
+  - `requiresCooking`: 불이나 기기(가스레인지, 전자레인지, 오븐, 에어프라이어, 밥솥, 끓는 물)를 쓰면 `true`. `false`면 사람 확인으로 보낸다. 값이 없는 버전 1 결과에는 기존 단어 기준 검사를 쓴다.
+  - 분류 필드 형식이 틀리면 레시피를 버리지 않고 사람 확인으로 보낸다. 분류 필드는 체크포인트에만 있고 레시피 파일(`data/recipes`)에는 넣지 않는다(백엔드가 모르는 필드를 거부한다).
+- **영상 대기열** `tools/data-pipeline/input/queue.jsonl`: 한 줄에 영상 하나인 JSON(`videoId`, `url`, `source`: `manual`·`discover-channel`·`discover-search`, 있으면 `addedAt`, `batch`, `channel`, `title`, `views`, `subscribers`, `query`). 항목은 지우지 않아서 제출한 모든 영상의 기록이 된다. 추출하지 않을 영상은 주석으로 막지 않고 `rules/exclusions.json`에 이유와 함께 넣으며, 파이프라인은 제외 목록에 있는 영상을 건너뛴다. 채널·검색어 정보는 2단계 수율 분석에 쓴다. 예전 `shorts-urls.txt`는 이 형식으로 옮겼고 주석으로 막혀 있던 판단은 모두 제외 목록으로 옮겼다.
+- 영상을 손으로 넣을 때는 `python3 src/video_queue.py add <URL> [--note 메모]`를 쓴다(영상 ID, 출처, 날짜를 채운다). 제외 목록을 읽을 수 없으면 파이프라인은 "제외 없음"으로 보지 않고 마지막으로 읽은 목록을 쓰며, 처음부터 읽을 수 없으면 추출을 멈추고 대시보드에 알린다.
+- Gemini `recipeName`은 9자 이하 한글 이름이고 꾸밈말(초간단, 레시피, "3분" 등)이 붙어 있지 않을 때만 그대로 쓴다. 같은 이름 개수는 띄어쓰기를 무시하고 센다. 조리 여부는 Gemini가 `false`라고 하거나 조리 단계에 가열 단어가 없으면 사람 확인으로 보낸다.
+- **실시간 상태 파일**(`state/workers.json`, `state/runtime.json`, `state/.*.lock`)은 Git에서 추적하지 않는다. 영상별 체크포인트(`state/<영상 ID>.json`)는 계속 추적한다.
+- **이 변경을 파이프라인이 도는 컴퓨터에 처음 반영할 때**는 파이프라인을 멈춘 뒤 받는다. 실행 중에 받으면 잠금 파일이 지워져 같은 영상을 두 번 추출할 수 있다.
+  1. `docker compose stop recipe-pipeline`
+  2. `git checkout -- tools/data-pipeline/state/workers.json tools/data-pipeline/state/runtime.json`
+  3. `git pull`
+  4. `docker compose up -d --build recipe-pipeline` (이미지가 `src/`를 복사하므로 다시 빌드해야 새 대기열을 읽는다)
+
 ## 자동 품질 검사
 
 공개 전에 자동으로 확인한다: 쇼츠 여부와 임베드 가능 여부, 출처(채널명·사진), 필수 재료 3개 이하, 조리 과정이 사실상 없음(섞기만 하는 수준), 영어 단위, 이름 길이 규칙, 단계가 문자열인지.

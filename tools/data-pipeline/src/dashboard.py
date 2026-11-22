@@ -15,11 +15,16 @@ WORKING, QUOTA, IDLE, RETRY, DONE, FAILED = "working", "quota", "idle", "retry",
 
 def queue_snapshot(input_file: Path) -> dict:
     """URL 목록과 checkpoint 파일에서 읽기 전용 현황을 만든다."""
-    from pipeline import read_urls
+    from video_queue import ExclusionsUnreadable, read_urls
 
     counts: dict[str, int] = {}
     total = 0
-    for video_id, _url in read_urls(input_file):
+    try:
+        items = read_urls(input_file)
+    except ExclusionsUnreadable:
+        items = []
+        counts["EXCLUSIONS_UNREADABLE"] = 1
+    for video_id, _url in items:
         total += 1
         state_file = STATE_DIR / f"{video_id}.json"
         try:
@@ -128,6 +133,8 @@ def _page(snapshot: dict, now: datetime | None = None) -> str:
     notice = ""
     if runtime.get("status") == "NO_CONFIGURED_ACCOUNTS":
         notice = "<p class='notice'>유효한 계정 설정이 없습니다. tools/data-pipeline/accounts/account-a.env에 GEMINI_API_KEY를 입력하면 자동으로 worker가 시작됩니다.</p>"
+    if runtime.get("status") == "EXCLUSIONS_UNREADABLE" or "EXCLUSIONS_UNREADABLE" in snapshot["counts"]:
+        notice += "<p class='notice'>rules/exclusions.json을 읽을 수 없어 추출을 멈췄습니다. 파일을 고치면 자동으로 다시 시작합니다.</p>"
 
     rows = []
     for entry in current_workers(snapshot["workers"]):
@@ -163,7 +170,7 @@ def _page(snapshot: dict, now: datetime | None = None) -> str:
 
 
 def start_dashboard(host: str, port: int, input_file: Path | None = None) -> ThreadingHTTPServer:
-    source = input_file or Path(__file__).resolve().parents[1] / "input" / "shorts-urls.txt"
+    source = input_file or Path(__file__).resolve().parents[1] / "input" / "queue.jsonl"
 
     class Handler(BaseHTTPRequestHandler):
         def do_GET(self):

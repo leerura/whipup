@@ -28,9 +28,9 @@ from pathlib import Path
 
 from recipe_rules import (DATA_DIR, ROOT, RULES_DIR, Catalog, Rules, check_rules, decided, hits_excluded_word, is_derived,
                           is_foreign_unit, is_group_name, load_rules, name_candidate, near_catalog_name, normalize_unit,
-                          plain_short_name, resolve, split_alternatives, strip_english, validate_recipe)
+                          name_key, plain_short_name, resolve, split_alternatives, strip_english, validate_recipe)
 from state import STATE_DIR, locked_video, save_video, write_json_atomic
-from validator import validate_source_extraction
+from validator import classification_errors, validate_source_extraction
 
 REPORT_FILE = ROOT / "reports" / "latest-apply.md"
 _VIDEO_ID = re.compile(r"(?:shorts/|youtu\.be/|[?&]v=)([A-Za-z0-9_-]{11})")
@@ -58,6 +58,7 @@ class Outcome:
     reasons: list[str] = field(default_factory=list)
     unresolved: list[str] = field(default_factory=list)
     recipe: dict | None = None
+    dish_type: str | None = None
 
 
 # ---------- reading ----------
@@ -195,7 +196,10 @@ def quality_review(ingredients: list[dict], steps: list[str], state: dict | None
     required_count = sum(1 for item in ingredients if not item["optional"])
     if required_count < rules.min_required:
         review.append(f"필수 재료가 {required_count}개뿐임(기준 {rules.min_required}개 이상)")
-    if not looks_like_cooking(steps):
+    cooking = (((state or {}).get("extraction") or {}).get("result") or {}).get("requiresCooking")
+    if cooking is False:
+        review.append("Gemini 판단: 가열·조리 없이 섞기·담기만 함")
+    elif not looks_like_cooking(steps):
         review.append("가열·조리 단계가 보이지 않음(섞기·담기만인지 확인)")
     if not (meta.get("sourceChannelName") and meta.get("sourceChannelThumbnailUrl")):
         review.append("채널 이름·사진이 없음")
@@ -219,10 +223,11 @@ def build(video_id: str, state: dict, rules: Rules, catalog: Catalog, taken: dic
     if deleted and video_id in deleted:
         outcome.reasons.append(f"git 기록상 사람이 지운 레시피(커밋 {deleted[video_id]}): exclusions.json에 이유를 기록할 것")
         return outcome
-    shape_errors = validate_source_extraction(result)
+    shape_errors = validate_source_extraction(result, check_classification=False)
     if shape_errors or not result.get("ingredients"):
         outcome.reasons.append("추출 결과 형식 오류: " + ("; ".join(shape_errors) or "재료 없음"))
         return outcome
+    outcome.dish_type = result.get("dishType")
 
     ingredients, requirements, unresolved, notes = map_ingredients(result, rules, catalog, video_id)
     outcome.unresolved = unresolved
@@ -235,11 +240,14 @@ def build(video_id: str, state: dict, rules: Rules, catalog: Catalog, taken: dic
     steps = [step["text"].strip() for step in result["steps"]]
     meta = state.get("sourceMetadata") or {}
     review = notes + quality_review(ingredients, steps, state, meta, rules)
-    name = rules.names.get(video_id) or plain_short_name(title, rules)
+    review += ["Gemini 분류 형식 오류: " + error for error in classification_errors(result)]
+    gemini_name = result.get("recipeName") if isinstance(result.get("recipeName"), str) else None
+    name = rules.names.get(video_id) or plain_short_name(gemini_name, rules) or plain_short_name(title, rules)
     if not name:
-        review.append(f"이름 승인 필요(rules/names.json, 후보: {name_candidate(title) or '-'})")
-    elif name_counts[name] >= 2:
-        review.append(f"같은 이름 '{name}' 레시피가 이미 {name_counts[name]}개 있음")
+        candidate = gemini_name or name_candidate(title) or "-"
+        review.append(f"이름 승인 필요(rules/names.json, 후보: {candidate})")
+    elif name_counts[name_key(name)] >= 2:
+        review.append(f"같은 이름 '{name}' 레시피가 이미 {name_counts[name_key(name)]}개 있음")
     key = recipe_key(video_id)
     if key in taken and taken[key] != video_id:
         review.append(f"레시피 키 '{key}'가 다른 영상({taken[key]})과 겹침")
@@ -377,7 +385,8 @@ def render_report(outcomes: list[Outcome], promotions: list[Promotion], ranking,
         lines += [f"## {LABELS[kind]} ({len(items)})", ""]
         for o in items:
             name = (o.recipe or {}).get("name", "")
-            lines.append(f"- `{o.video_id}` {o.title}" + (f" → **{name}**" if kind == PUBLISH else ""))
+            kind_label = f" [{o.dish_type}]" if o.dish_type else ""
+            lines.append(f"- `{o.video_id}` {o.title}{kind_label}" + (f" → **{name}**" if kind == PUBLISH else ""))
             lines += [f"  - {reason}" for reason in o.reasons]
         lines.append("")
     if ready:
@@ -414,7 +423,7 @@ def plan(args, rules: Rules, catalog: Catalog) -> int:
     deleted = {v: c for v, c in deleted_video_ids().items() if v not in dataset and v not in rules.exclusions}
     wanted = set(args.video) if args.video else None
     taken = {path.stem: video_id for video_id, (path, _) in dataset.items()}
-    name_counts = Counter(recipe["name"] for _, recipe in dataset.values())
+    name_counts = Counter(name_key(recipe["name"]) for _, recipe in dataset.values())
 
     outcomes = []
     for video_id, state in checkpoints.items():
@@ -422,7 +431,7 @@ def plan(args, rules: Rules, catalog: Catalog) -> int:
             continue
         outcome = build(video_id, state, rules, catalog, taken, name_counts, deleted)
         if outcome.outcome in (PUBLISH, WAIT_MASTER):
-            name_counts[outcome.recipe["name"]] += 1
+            name_counts[name_key(outcome.recipe["name"])] += 1
             taken[outcome.recipe["key"]] = video_id
         outcomes.append(outcome)
 

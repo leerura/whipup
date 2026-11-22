@@ -186,6 +186,34 @@ class BuildTests(Base):
         errors = check_rules(self.rules, self.catalog)
         self.assertTrue(any("unknown variant" in e for e in errors) and any("reason" in e for e in errors))
 
+    def _classified(self, **fields):
+        state = _state(FOUR, title="3분이면 끝! 존맛 간장계란밥 #shorts")
+        state["extraction"]["result"].update({"recipeName": "간장계란밥", "dishType": "RICE",
+                                              "mainIngredients": ["계란"], "requiresCooking": True, **fields})
+        return state
+
+    def test_gemini_recipe_name_replaces_name_approval(self):
+        outcome = self.build(self._classified())
+        self.assertEqual((outcome.outcome, outcome.recipe["name"], outcome.dish_type), (PUBLISH, "간장계란밥", "RICE"))
+        self.assertEqual(self.build(self._classified(recipeName="초간단 #존맛 간장계란밥")).outcome, REVIEW)
+
+    def test_either_gemini_or_heuristic_can_flag_no_cooking(self):
+        self.assertEqual(self.build(self._classified(requiresCooking=False)).outcome, REVIEW)
+        no_heat_words = self._classified()
+        no_heat_words["extraction"]["result"]["steps"] = [{"text": "재료를 모두 섞는다.", "evidences": []}]
+        self.assertEqual(self.build(no_heat_words).outcome, REVIEW)
+
+    def test_gemini_name_with_attached_modifier_or_latin_needs_approval(self):
+        for bad in ("초간단간장계란밥", "3분카레", "Aglio Olio", "계란밥레시피"):
+            self.assertEqual(self.build(self._classified(recipeName=bad)).outcome, REVIEW, bad)
+
+    def test_same_name_cap_ignores_spacing(self):
+        self.assertEqual(self.build(self._classified(recipeName="간장 계란밥"), names=Counter({"간장계란밥": 2})).outcome, REVIEW)
+
+    def test_bad_classification_goes_to_review_not_skip(self):
+        self.assertEqual(self.build(self._classified(dishType="BRUNCH")).outcome, REVIEW)
+        self.assertEqual(self.build(self._classified(mainIngredients=["트러플"])).outcome, REVIEW)
+
     def test_deleted_video_is_skipped(self):
         outcome = build("gone0000001", _state(FOUR), self.rules, self.catalog, {}, Counter(), {"gone0000001": "abc1234"})
         self.assertEqual(outcome.outcome, SKIP)

@@ -1,4 +1,4 @@
-"""채널의 Shorts 목록에서 레시피 후보 URL을 골라 shorts-urls.txt에 추가한다.
+"""채널의 Shorts 목록에서 레시피 후보 URL을 골라 대기열(input/queue.jsonl)에 추가한다.
 
 YouTube Data API 키 없이 공개 채널 페이지만 읽는다. 기본은 목록만 출력하고, --write를 주면 파일 끝에 추가한다.
 """
@@ -11,10 +11,10 @@ from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import quote
 
+from video_queue import QUEUE_FILE, append_entries, read_queue
 from youtube import _get_text, extract_video_id, is_short
 
 ROOT = Path(__file__).resolve().parents[1]
-URL_FILE = ROOT / "input" / "shorts-urls.txt"
 CHANNEL_FILE = ROOT / "input" / "discovery-channels.txt"
 DATASET_RECIPES = ROOT.parents[1] / "data" / "recipes"
 
@@ -202,14 +202,15 @@ def select_search(items: list[dict], known: set[str], min_views: int, max_second
     return chosen
 
 
+def _entry(item: dict, source: str, batch: str, **extra) -> dict:
+    return {"videoId": item["id"], "url": f"https://www.youtube.com/shorts/{item['id']}", "source": source,
+            "addedAt": date.today().isoformat(), "batch": batch, "channel": item.get("channel"),
+            "title": item.get("title"), "views": item.get("views"), **extra}
+
+
 def known_video_ids() -> set[str]:
-    """목록(주석 처리된 것 포함)과 최종 데이터에 이미 있는 영상 ID."""
-    ids: set[str] = set()
-    for line in URL_FILE.read_text(encoding="utf-8").splitlines():
-        text = line.strip().lstrip("#").strip()
-        m = re.search(r"(?:shorts/|v=|youtu\.be/)([A-Za-z0-9_-]{11})", text)
-        if m:
-            ids.add(m.group(1))
+    """대기열(제외된 것 포함)과 최종 데이터에 이미 있는 영상 ID."""
+    ids: set[str] = {entry["videoId"] for entry in read_queue()}
     for path in DATASET_RECIPES.glob("*.json"):
         reference = json.loads(path.read_text(encoding="utf-8")).get("shortsReference", "")
         m = re.search(r"(?:shorts/|v=|youtu\.be/)([A-Za-z0-9_-]{11})", reference)
@@ -291,13 +292,10 @@ def run_queries(args) -> int:
         print(f"  구독자 {item['subs']:>9,}  조회 {views:>9}  [{query}] {item['channel']} · {item['title']}  https://www.youtube.com/shorts/{item['id']}")
     print(f"총 {len(picked)}개")
     if args.write and picked:
-        lines = [f"# 자동 수집 {date.today().isoformat()} (검색어, 구독자 {args.min_subs:,} 이상)"]
-        for query, item in picked:
-            lines.append(f"# {item['channel']} · {item['title']} · 구독자 {item['subs']:,} · 검색어 {query}")
-            lines.append(f"https://www.youtube.com/shorts/{item['id']}")
-        with URL_FILE.open("a", encoding="utf-8") as f:
-            f.write("\n" + "\n".join(lines) + "\n")
-        print(f"{URL_FILE.name}에 {len(picked)}개를 추가했습니다.")
+        batch = f"자동 수집 {date.today().isoformat()} (검색어, 구독자 {args.min_subs:,} 이상)"
+        added = append_entries([_entry(item, "discover-search", batch, query=query, subscribers=item["subs"])
+                                for query, item in picked])
+        print(f"{QUEUE_FILE.name}에 {added}개를 추가했습니다.")
     return 0
 
 
@@ -308,7 +306,7 @@ def main() -> int:
     parser.add_argument("--min-subs", type=int, default=300_000, help="검색 방식에서 채널 구독자 수 하한")
     parser.add_argument("--per-query", type=int, default=10, help="검색어당 최대 후보 수(구독자 수 순)")
     parser.add_argument("--per-channel", type=int, default=12, help="채널당 최대 후보 수(조회수 순)")
-    parser.add_argument("--write", action="store_true", help="shorts-urls.txt 끝에 추가")
+    parser.add_argument("--write", action="store_true", help="대기열(input/queue.jsonl) 끝에 추가")
     args = parser.parse_args()
 
     if args.query:
@@ -339,13 +337,10 @@ def main() -> int:
         print(f"  {item['views']:>9,}  {note.split('(')[0].strip()}  {item['title']}  https://www.youtube.com/shorts/{item['id']}")
     print(f"총 {len(picked)}개")
     if args.write and picked:
-        lines = [f"# 자동 수집 {date.today().isoformat()} (조회수 {min_views:,} 이상)"]
-        for note, item in picked:
-            lines.append(f"# {note.split('(')[0].strip()} · {item['title']} · 조회수 {item['views']:,}")
-            lines.append(f"https://www.youtube.com/shorts/{item['id']}")
-        with URL_FILE.open("a", encoding="utf-8") as f:
-            f.write("\n" + "\n".join(lines) + "\n")
-        print(f"{URL_FILE.name}에 {len(picked)}개를 추가했습니다.")
+        batch = f"자동 수집 {date.today().isoformat()} (조회수 {min_views:,} 이상)"
+        added = append_entries([_entry(dict(item, channel=note.split("(")[0].strip()), "discover-channel", batch)
+                                for note, item in picked])
+        print(f"{QUEUE_FILE.name}에 {added}개를 추가했습니다.")
     return 0
 
 

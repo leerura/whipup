@@ -247,13 +247,26 @@ def name_candidate(title: str) -> str:
     return re.sub(r"\s+", " ", text).strip(" -|·,!?.")
 
 
+_NAME_MODIFIERS = ("간단", "자취", "꿀팁", "대박", "최고", "끝판왕", "필살", "만드는")
 _PLAIN_NAME = re.compile(r"^[가-힣A-Za-z0-9 ]+$")
 
 
 def plain_short_name(title: str, rules: Rules) -> str | None:
-    """A title usable as a name without review: short, letters and digits only."""
+    """A name usable without review: short, Korean, digits/spaces only, and no channel-style
+    modifier (초간단, 레시피, "3분" ...) anywhere in it, even when written without spaces."""
     text = (title or "").strip()
-    return text if 0 < len(text) <= rules.max_name_length and _PLAIN_NAME.match(text) else None
+    if not (0 < len(text) <= rules.max_name_length and _PLAIN_NAME.match(text)):
+        return None
+    if not re.search(r"[가-힣]", text) or re.search(r"[A-Za-z]", text):
+        return None
+    if any(word in text.replace(" ", "") for word in _MODIFIERS + _NAME_MODIFIERS) or re.search(r"\d\s*분", text):
+        return None
+    return text
+
+
+def name_key(name: str) -> str:
+    """Names that differ only in spacing count as the same name."""
+    return re.sub(r"\s+", "", name or "")
 
 
 _RECIPE_KEYS = frozenset({"key", "name", "status", "shortsReference", "ingredients", "requirements", "steps",

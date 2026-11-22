@@ -14,6 +14,7 @@ services:
     volumes:
       - ./tools/data-pipeline/input:/workspace/tools/data-pipeline/input
       - ./tools/data-pipeline/state:/workspace/tools/data-pipeline/state
+      - ./tools/data-pipeline/rules:/workspace/tools/data-pipeline/rules:ro
       - ./tools/data-pipeline/accounts:/workspace/tools/data-pipeline/accounts:ro
 
   backend:

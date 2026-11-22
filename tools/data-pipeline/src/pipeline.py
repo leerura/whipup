@@ -18,33 +18,14 @@ from gemini_client import GeminiClient
 from retry import resolve_retry_at, retry_decision
 from state import claim_video, heartbeat, load_video, recover_stale_claims, release_claim, save_runtime_status, save_video, update_worker
 from validator import validate_source_extraction
+from video_queue import QUEUE_FILE, ExclusionsUnreadable, read_urls
 from youtube import extract_video_id, fetch_source_metadata, is_short
 
 ROOT = Path(__file__).resolve().parents[1]
-INPUT_FILE = ROOT / "input" / "shorts-urls.txt"
 ACCOUNTS_DIR = ROOT / "accounts"
 POLL_SECONDS = int(os.environ.get("PIPELINE_POLL_SECONDS", "20"))
 LEASE_SECONDS = 15 * 60
-EXTRACTION_VERSION = 1
-
-
-def read_urls(path: Path = INPUT_FILE) -> list[tuple[str, str]]:
-    if not path.exists():
-        return []
-    results, seen = [], set()
-    for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
-        url = line.strip()
-        if not url or url.startswith("#"):
-            continue
-        try:
-            video_id = extract_video_id(url)
-        except ValueError as exc:
-            print(f"[input:{line_number}] ignored invalid URL: {exc}", flush=True)
-            continue
-        if video_id not in seen:
-            seen.add(video_id)
-            results.append((video_id, url))
-    return results
+EXTRACTION_VERSION = 2  # 2: recipeName, dishType, mainIngredients, requiresCooking
 
 
 def load_accounts(directory: Path = ACCOUNTS_DIR) -> list[dict[str, str]]:
@@ -224,7 +205,7 @@ def process_claimed_video(video_id: str, source_url: str, client: GeminiClient, 
         result = dict(result)
         if isinstance(result.get("ingredients"), list):
             result["ingredients"] = _assign_source_ids(result["ingredients"])
-        errors = validate_source_extraction(result)
+        errors = validate_source_extraction(result, require_classification=True)
         source_metadata = fetch_source_metadata(video_id)
         current = load_video(video_id)
         current["sourceMetadata"] = source_metadata
@@ -249,7 +230,12 @@ def worker(account: dict[str, str], model: str, run_id: str, stop: threading.Eve
     client = GeminiClient(model=model, api_key=account["apiKey"])
     _set_worker(worker_id, accountId=account_id, status="IDLE", runId=run_id)
     while not stop.is_set():
-        items = read_urls()
+        try:
+            items = read_urls()
+        except ExclusionsUnreadable as exc:
+            _set_worker(worker_id, accountId=account_id, status="WAITING_EXCLUSIONS", currentVideoId=None, lastError=str(exc))
+            stop.wait(POLL_SECONDS)
+            continue
         recover_stale_claims([video_id for video_id, _ in items], lease_seconds=LEASE_SECONDS)
         quota_until = _account_quota_until(items, account_id)
         if quota_until:
@@ -281,8 +267,16 @@ def run(model: str) -> None:
             time.sleep(POLL_SECONDS)
     save_runtime_status({"status": "RUNNING", "accountCount": len(accounts), "updatedAt": datetime.now(timezone.utc).isoformat()})
     run_id = str(uuid.uuid4())
-    _prepare_for_run(read_urls())
-    print(f"Watching {INPUT_FILE}; {len(accounts)} account worker(s); dashboard http://localhost:8081", flush=True)
+    while True:
+        try:
+            _prepare_for_run(read_urls())
+            break
+        except ExclusionsUnreadable as exc:
+            save_runtime_status({"status": "EXCLUSIONS_UNREADABLE", "message": str(exc), "updatedAt": datetime.now(timezone.utc).isoformat()})
+            print(f"{exc}; waiting for rules/exclusions.json to be fixed", flush=True)
+            time.sleep(POLL_SECONDS)
+    save_runtime_status({"status": "RUNNING", "accountCount": len(accounts), "updatedAt": datetime.now(timezone.utc).isoformat()})
+    print(f"Watching {QUEUE_FILE}; {len(accounts)} account worker(s); dashboard http://localhost:8081", flush=True)
     stop = threading.Event()
     threads = [threading.Thread(target=worker, args=(account, model, run_id, stop), daemon=True) for account in accounts]
     for thread in threads:
