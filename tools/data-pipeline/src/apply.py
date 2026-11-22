@@ -26,7 +26,7 @@ from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
 
-from recipe_rules import (DATA_DIR, ROOT, RULES_DIR, Catalog, Rules, check_rules, hits_excluded_word, is_derived,
+from recipe_rules import (DATA_DIR, ROOT, RULES_DIR, Catalog, Rules, check_rules, decided, hits_excluded_word, is_derived,
                           is_foreign_unit, is_group_name, load_rules, name_candidate, near_catalog_name, normalize_unit,
                           plain_short_name, resolve, split_alternatives, strip_english, validate_recipe)
 from state import STATE_DIR, locked_video, save_video, write_json_atomic
@@ -125,14 +125,14 @@ def deleted_video_ids(repo_root: Path = DATA_DIR.parent) -> dict[str, str]:
     return found
 
 
-def map_ingredients(result: dict, rules: Rules, catalog: Catalog) -> tuple[list[dict], list[dict], list[str], list[str]]:
+def map_ingredients(result: dict, rules: Rules, catalog: Catalog, video_id: str = "") -> tuple[list[dict], list[dict], list[str], list[str]]:
     """(ingredients, requirements, unresolved required names, review notes) for one extraction."""
     ingredients, requirements, unresolved, notes = [], [], [], []
     for item in result["ingredients"]:
         display = (item.get("displayName") or item.get("rawText") or "").strip()
         raw = item.get("rawText") or display
         optional = bool(item.get("optional")) or is_derived(display, rules)
-        mapping = resolve(display, rules, catalog)
+        mapping = decided(video_id, item["sourceId"], display, rules, catalog) or resolve(display, rules, catalog)
         ingredients.append({
             "key": item["sourceId"],
             "variant": mapping.variant if mapping else None,
@@ -150,7 +150,8 @@ def map_ingredients(result: dict, rules: Rules, catalog: Catalog) -> tuple[list[
                                               "allowedVariants": list(mapping.allowed)}]})
         else:
             unresolved.append(display)
-        notes.extend(ingredient_notes(display, raw, mapping, rules, catalog))
+        if not (mapping and mapping.via == "decision"):
+            notes.extend(ingredient_notes(display, raw, mapping, rules, catalog))
     return ingredients, requirements, unresolved, notes
 
 
@@ -223,7 +224,7 @@ def build(video_id: str, state: dict, rules: Rules, catalog: Catalog, taken: dic
         outcome.reasons.append("추출 결과 형식 오류: " + ("; ".join(shape_errors) or "재료 없음"))
         return outcome
 
-    ingredients, requirements, unresolved, notes = map_ingredients(result, rules, catalog)
+    ingredients, requirements, unresolved, notes = map_ingredients(result, rules, catalog, video_id)
     outcome.unresolved = unresolved
     policy_hits = [name for name in unresolved
                    if hits_excluded_word(name, rules) and not split_alternatives(strip_english(name))]
@@ -278,7 +279,7 @@ class Promotion:
         return bool(self.filled) and not self.unresolved and not self.review
 
 
-def fill_draft(draft: dict, rules: Rules, catalog: Catalog) -> tuple[dict, list[str], list[str]]:
+def fill_draft(draft: dict, rules: Rules, catalog: Catalog, video_id: str = "") -> tuple[dict, list[str], list[str]]:
     """Fill mappings only where the draft has none; hand-made mappings, names and steps are kept.
 
     A filled ingredient also takes the catalog display name (guideline 2). Returns
@@ -290,23 +291,27 @@ def fill_draft(draft: dict, rules: Rules, catalog: Catalog) -> tuple[dict, list[
     for item in updated["ingredients"]:
         if item["optional"] or item.get("variant") or item.get("acceptedOwnedVariants"):
             continue
-        mapping = resolve(item["displayName"], rules, catalog)
-        if not mapping or ingredient_notes(item["displayName"], item.get("rawText") or "", mapping, rules, catalog):
-            unresolved.append(item["displayName"])
-            continue
+        mapping = decided(video_id, item["key"], item["displayName"], rules, catalog)
+        if mapping is None:
+            mapping = resolve(item["displayName"], rules, catalog)
+            if not mapping or ingredient_notes(item["displayName"], item.get("rawText") or "", mapping, rules, catalog):
+                unresolved.append(item["displayName"])
+                continue
         before = item["displayName"]
         item["variant"] = mapping.variant
+        item["acceptedOwnedVariants"] = list(mapping.accepted)
         item["displayName"] = mapping.display_name
         filled.append(before if before == mapping.display_name else f"{before}→{mapping.display_name}")
         if item["key"] not in roles:
-            updated["requirements"].append({"options": [{"ingredient": item["key"], "substitutes": [], "allowedVariants": []}]})
+            updated["requirements"].append({"options": [{"ingredient": item["key"], "substitutes": [],
+                                                         "allowedVariants": list(mapping.allowed)}]})
     if not unresolved:
         updated["status"] = "PUBLISHED"
     return updated, filled, unresolved
 
 
 def evaluate_draft(video_id: str, draft: dict, state: dict | None, rules: Rules, catalog: Catalog) -> Promotion:
-    updated, filled, unresolved = fill_draft(draft, rules, catalog)
+    updated, filled, unresolved = fill_draft(draft, rules, catalog, video_id)
     review = []
     if not unresolved:
         if state is None:
@@ -497,7 +502,7 @@ def fetch_targets(rules: Rules, catalog: Catalog, wanted: set[str] | None) -> li
         result = state["extraction"]["result"]
         if validate_source_extraction(result) or not result.get("ingredients"):
             continue
-        _, _, unresolved, _ = map_ingredients(result, rules, catalog)
+        _, _, unresolved, _ = map_ingredients(result, rules, catalog, video_id)
         if any(hits_excluded_word(n, rules) and not split_alternatives(strip_english(n)) for n in unresolved):
             continue
         targets.append(video_id)

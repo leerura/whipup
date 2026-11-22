@@ -39,6 +39,8 @@ def _fixture(root: Path) -> tuple[Path, Path]:
                                    "derivedIngredientWords": {"words": ["면수"]}, "minRequiredIngredients": 4,
                                    "maxNameLength": 9})
     _write(rules / "names.json", {"names": {"named000001": "간장계란밥"}})
+    _write(rules / "recipe-mappings.json", {"recipes": {"decided0001": {"soy2": {
+        "acceptedOwnedVariants": ["dark-soy", "brewed-soy"], "reason": "양념장 간장"}}}})
     _write(rules / "exclusions.json", {"videos": {"excluded0001": {"category": "USER_REMOVED"}}})
     return data, rules
 
@@ -171,6 +173,18 @@ class BuildTests(Base):
                      "소스에 식초 대신 레몬즙을 사용할 수 있다고 언급됨", "통깨 사용 여부가 언급되지 않음"):
             unsure["extraction"]["result"]["unresolved"] = [note]
             self.assertEqual(self.build(unsure).outcome, REVIEW, note)
+
+    def test_approved_decision_resolves_group_name_for_that_recipe_only(self):
+        with_soy = _state(FOUR + [_ingredient("soy2", "간장")])
+        decided_outcome = self.build(with_soy, video_id="decided0001")
+        self.assertEqual(decided_outcome.outcome, PUBLISH, decided_outcome.reasons)
+        self.assertEqual(decided_outcome.recipe["ingredients"][-1]["acceptedOwnedVariants"], ["dark-soy", "brewed-soy"])
+        self.assertEqual(self.build(with_soy, video_id="other000001").outcome, REVIEW)
+
+    def test_decision_needs_known_variants_and_reason(self):
+        self.rules.decisions["bad"] = {"x": {"acceptedOwnedVariants": ["nope"]}}
+        errors = check_rules(self.rules, self.catalog)
+        self.assertTrue(any("unknown variant" in e for e in errors) and any("reason" in e for e in errors))
 
     def test_deleted_video_is_skipped(self):
         outcome = build("gone0000001", _state(FOUR), self.rules, self.catalog, {}, Counter(), {"gone0000001": "abc1234"})

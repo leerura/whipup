@@ -33,6 +33,7 @@ class Rules:
     max_name_length: int
     names: dict[str, str]
     exclusions: dict[str, dict]
+    decisions: dict[str, dict] = None  # video ID -> ingredient key -> approved mapping
 
 
 def load_rules(rules_dir: Path = RULES_DIR) -> Rules:
@@ -53,6 +54,7 @@ def load_rules(rules_dir: Path = RULES_DIR) -> Rules:
         max_name_length=int(policy.get("maxNameLength", 9)),
         names=dict(names),
         exclusions=dict(exclusions),
+        decisions=read("recipe-mappings.json", {"recipes": {}})["recipes"],
     )
 
 
@@ -62,7 +64,7 @@ class Mapping:
     accepted: tuple[str, ...]
     display_name: str
     allowed: tuple[str, ...] = ()
-    via: str = "catalog"  # catalog | alias | alternative
+    via: str = "catalog"  # catalog | alias | alternative | decision
 
 
 @dataclass
@@ -94,9 +96,35 @@ class Catalog:
 
 
 def check_rules(rules: Rules, catalog: Catalog) -> list[str]:
-    """Every alias must point at a catalog name, so a renamed catalog entry fails loudly."""
-    return [f"aliases.json: '{source}' -> '{target}' is not a catalog name"
-            for source, target in rules.aliases.items() if _norm(target) not in catalog.variant_by_name]
+    """Rules must point at catalog entries, so a renamed catalog entry fails loudly."""
+    errors = [f"aliases.json: '{source}' -> '{target}' is not a catalog name"
+              for source, target in rules.aliases.items() if _norm(target) not in catalog.variant_by_name]
+    for video_id, items in (rules.decisions or {}).items():
+        for key, decision in items.items():
+            where = f"recipe-mappings.json: {video_id}.{key}"
+            variant = decision.get("variant")
+            keys = ([variant] if variant else []) + decision.get("acceptedOwnedVariants", []) + decision.get("allowedVariants", [])
+            errors += [f"{where}: unknown variant '{k}'" for k in keys if k not in catalog.group_of]
+            if not variant and not decision.get("acceptedOwnedVariants"):
+                errors.append(f"{where}: needs variant or acceptedOwnedVariants")
+            if decision.get("allowedVariants") and (not variant or any(
+                    catalog.group_of.get(k) != catalog.group_of.get(variant) for k in decision["allowedVariants"])):
+                errors.append(f"{where}: allowedVariants must be other kinds of the exact variant")
+            if not decision.get("reason"):
+                errors.append(f"{where}: reason is required")
+    return errors
+
+
+def decided(video_id: str, key: str, display: str, rules: Rules, catalog: Catalog) -> "Mapping | None":
+    """A mapping a person approved for this one recipe ingredient (rules/recipe-mappings.json)."""
+    decision = ((rules.decisions or {}).get(video_id) or {}).get(key)
+    if not decision:
+        return None
+    variant = decision.get("variant")
+    names = {k: n for k, n in catalog.variant_by_name.values()}
+    shown = decision.get("displayName") or (names.get(variant) if variant else display)
+    return Mapping(variant, tuple(decision.get("acceptedOwnedVariants", [])), shown,
+                   tuple(decision.get("allowedVariants", [])), via="decision")
 
 
 _ENGLISH_PAREN = re.compile(r"^(.*?)\s*\(([A-Za-z][A-Za-z ,'\-]*)\)\s*$")
