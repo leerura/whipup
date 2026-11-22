@@ -45,6 +45,7 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
   Set<String> _registeredIngredients = const {};
   bool _isRetrying = false;
   int _homeRevision = 0;
+  int _recommendationRevision = 0;
 
   @override
   void initState() {
@@ -195,13 +196,42 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
   }
 
   Future<void> _showRecipeDetail(int recipeId) async {
+    var inventoryChanged = false;
     await Navigator.of(context).push<void>(
       MaterialPageRoute<void>(
-        builder: (context) =>
-            RecipeDetailScreen(apiClient: _apiClient, recipeId: recipeId),
+        builder: (context) => RecipeDetailScreen(
+          apiClient: _apiClient,
+          recipeId: recipeId,
+          onInventoryChanged: () => inventoryChanged = true,
+        ),
       ),
     );
-    if (mounted) setState(() => _homeRevision++);
+    if (!mounted) return;
+    setState(() {
+      _homeRevision++;
+      // 재료를 바꾼 경우에만 추천 목록을 다시 읽는다(위치는 유지하는 조용한 새로고침).
+      if (inventoryChanged) _recommendationRevision++;
+    });
+    if (inventoryChanged) await _syncOwnedIngredients();
+  }
+
+  /// 상세에서 재료를 바꾼 뒤 "내 재료 n개 기준" 개수를 서버 상태에 맞춘다.
+  /// 실패하면 기존 값을 유지한다.
+  Future<void> _syncOwnedIngredients() async {
+    try {
+      final response = await _apiClient
+          .getOwnedIngredientApi()
+          .getOwnedIngredients();
+      final data = response.data;
+      if (data == null || !mounted) return;
+      setState(() {
+        _registeredIngredients = Set<String>.unmodifiable(
+          data.items.map((ingredient) => ingredient.name),
+        );
+      });
+    } catch (error) {
+      debugPrint('Failed to sync owned ingredients: $error');
+    }
   }
 
   void _showSettings() => setState(() => _stage = _OnboardingStage.settings);
@@ -267,6 +297,7 @@ class _OnboardingFlowState extends State<OnboardingFlow> {
           key: const ValueKey(_OnboardingStage.recommendations),
           apiClient: _apiClient,
           ownedIngredientCount: _registeredIngredients.length,
+          refreshRevision: _recommendationRevision,
           onRegisterIngredients: _showOwnedIngredients,
           onHomeSelected: _showHome,
           onIngredientsSelected: _showOwnedIngredients,

@@ -22,11 +22,16 @@ class RecipeDetailScreen extends StatefulWidget {
   const RecipeDetailScreen({
     required this.apiClient,
     required this.recipeId,
+    this.onInventoryChanged,
     super.key,
   });
 
   final ApiClient apiClient;
   final int recipeId;
+
+  /// 이 화면에서 재료를 실제로 담거나 뺐을 때(이미 보유 중이던 경우 포함) 알린다.
+  /// 호출한 화면이 돌아온 뒤 목록을 다시 읽는 데 쓴다.
+  final VoidCallback? onInventoryChanged;
 
   @override
   State<RecipeDetailScreen> createState() => _RecipeDetailScreenState();
@@ -57,6 +62,11 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen> {
     setState(() {
       _recipeFuture = _fetchRecipe();
     });
+  }
+
+  void _inventoryChanged() {
+    widget.onInventoryChanged?.call();
+    _retry();
   }
 
   @override
@@ -92,7 +102,7 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen> {
           return _RecipeDetailContent(
             apiClient: widget.apiClient,
             recipe: snapshot.requireData,
-            onChanged: _retry,
+            onChanged: _inventoryChanged,
           );
         },
       ),

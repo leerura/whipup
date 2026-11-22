@@ -14,6 +14,7 @@ class RecommendationScreen extends StatefulWidget {
     super.key,
     required this.apiClient,
     this.ownedIngredientCount = 8,
+    this.refreshRevision = 0,
     this.onRegisterIngredients,
     this.onHomeSelected,
     this.onIngredientsSelected,
@@ -23,6 +24,9 @@ class RecommendationScreen extends StatefulWidget {
 
   final ApiClient apiClient;
   final int ownedIngredientCount;
+
+  /// 값이 바뀌면 목록을 조용히 다시 읽는다(탭·검색어·스크롤 위치 유지).
+  final int refreshRevision;
   final VoidCallback? onRegisterIngredients;
   final VoidCallback? onHomeSelected;
   final VoidCallback? onIngredientsSelected;
@@ -49,6 +53,50 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
     _debounce?.cancel();
     _searchController.dispose();
     super.dispose();
+  }
+
+  @override
+  void didUpdateWidget(RecommendationScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.refreshRevision != oldWidget.refreshRevision) {
+      _refreshSilently();
+    }
+  }
+
+  /// 현재 목록을 그대로 보인 채 같은 탭·검색어로 다시 읽어 교체한다.
+  /// 로딩 표시로 바꾸지 않으므로 스크롤 위치가 유지되고, 실패하면 기존 목록을 둔다.
+  Future<void> _refreshSilently() async {
+    final requestId = ++_requestId;
+    final query = _searchController.text.trim();
+    try {
+      final List<RecommendationItem> items;
+      if (query.isEmpty) {
+        final response = await widget.apiClient
+            .getRecommendationApi()
+            .getRecipeRecommendations(mode: _selectedMode);
+        final data = response.data;
+        if (data == null) {
+          throw StateError('The recommendation response body is empty.');
+        }
+        items = data.items.toList(growable: false);
+      } else {
+        final response = await widget.apiClient.getRecipeApi().searchRecipes(
+          query: query,
+          scope: _selectedMode == RecommendationMode.AVAILABLE
+              ? RecipeSearchScope.AVAILABLE
+              : RecipeSearchScope.ALL,
+        );
+        items = response.data?.items.toList(growable: false) ?? const [];
+      }
+      if (!mounted || requestId != _requestId) return;
+      setState(() {
+        _items = items;
+        _isLoading = false;
+        _hasLoadError = false;
+      });
+    } catch (error) {
+      debugPrint('Failed to refresh recommendations: $error');
+    }
   }
 
   Future<void> _search() async {
