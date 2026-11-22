@@ -151,7 +151,7 @@ def is_short(video_id: str) -> bool | None:
     request = Request(f"https://www.youtube.com/shorts/{video_id}", headers=_PAGE_HEADERS)
     try:
         with build_opener(_NoRedirect).open(request, timeout=15) as response:
-            return response.status == 200
+            return True if response.status == 200 else None
     except HTTPError as error:
         if 300 <= error.code < 400 and "/watch" in (error.headers.get("Location") or ""):
             return False

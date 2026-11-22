@@ -23,13 +23,13 @@ def load_video(video_id: str) -> dict[str, Any]:
     return value
 
 
-def save_video(state: dict[str, Any]) -> None:
-    path = STATE_DIR / f"{state['videoId']}.json"
+def write_json_atomic(path: Path, value: Any) -> None:
+    """Write JSON through a temp file and os.replace, so readers never see half a file."""
     path.parent.mkdir(parents=True, exist_ok=True)
     descriptor, temporary = tempfile.mkstemp(prefix=f".{path.name}.", dir=path.parent)
     try:
         with os.fdopen(descriptor, "w", encoding="utf-8") as stream:
-            json.dump(state, stream, ensure_ascii=False, indent=2)
+            json.dump(value, stream, ensure_ascii=False, indent=2)
             stream.write("\n")
             stream.flush()
             os.fsync(stream.fileno())
@@ -37,6 +37,10 @@ def save_video(state: dict[str, Any]) -> None:
     finally:
         if os.path.exists(temporary):
             os.unlink(temporary)
+
+
+def save_video(state: dict[str, Any]) -> None:
+    write_json_atomic(STATE_DIR / f"{state['videoId']}.json", state)
 
 
 @contextmanager
