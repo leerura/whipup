@@ -19,6 +19,7 @@ class WhippyHeader extends StatelessWidget {
             child: Align(
               alignment: Alignment.centerLeft,
               child: InkWell(
+                key: const ValueKey('whippy-logo'),
                 onTap: onHomeTap,
                 borderRadius: BorderRadius.circular(8),
                 child: Padding(

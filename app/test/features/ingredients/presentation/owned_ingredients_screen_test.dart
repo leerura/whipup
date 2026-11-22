@@ -36,11 +36,11 @@ void main() {
     );
     await tester.pumpAndSettle();
 
-    expect(find.text('whippy'), findsOneWidget);
+    expect(find.byKey(const ValueKey('whippy-logo')), findsOneWidget);
     expect(find.byTooltip('알림'), findsNothing);
     expect(find.byIcon(Icons.person_rounded), findsNothing);
 
-    await tester.tap(find.text('whippy'));
+    await tester.tap(find.byKey(const ValueKey('whippy-logo')));
     expect(homeTaps, 1);
   });
 }

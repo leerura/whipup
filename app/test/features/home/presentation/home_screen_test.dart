@@ -26,6 +26,16 @@ void main() {
               );
               return;
             }
+            if (options.path == '/api/v1/me/daily-menu') {
+              handler.resolve(
+                Response<Map<String, dynamic>>(
+                  requestOptions: options,
+                  statusCode: 200,
+                  data: {'items': <Object>[]},
+                ),
+              );
+              return;
+            }
             handler.reject(
               DioException(
                 requestOptions: options,
@@ -47,8 +57,12 @@ void main() {
       await tester.pumpAndSettle();
 
       expect(find.text('재료함이 비어 있어요'), findsOneWidget);
-      expect(requestedPaths, ['/api/v1/me/ingredients']);
-      await tester.tap(find.text('whippy'));
+      // 홈은 보유 재료와 오늘 메뉴만 읽고, 추천은 읽지 않는다.
+      expect(requestedPaths, [
+        '/api/v1/me/ingredients',
+        '/api/v1/me/daily-menu',
+      ]);
+      await tester.tap(find.byKey(const ValueKey('whippy-logo')));
       expect(homeTaps, 1);
     },
   );
@@ -87,13 +101,13 @@ void main() {
       ),
     );
     await tester.pumpAndSettle();
-    expect(find.text('whippy'), findsOneWidget);
+    expect(find.byKey(const ValueKey('whippy-logo')), findsOneWidget);
     expect(find.text('재료'), findsOneWidget);
 
     await tester.ensureVisible(find.text('재료 다시 담기'));
     await tester.tap(find.text('재료 다시 담기'));
     expect(registerTaps, 1);
-    expect(find.text('whippy'), findsOneWidget);
+    expect(find.byKey(const ValueKey('whippy-logo')), findsOneWidget);
     expect(find.text('재료'), findsOneWidget);
     await tester.drag(find.byType(ListView), const Offset(0, -160));
     await tester.pumpAndSettle();

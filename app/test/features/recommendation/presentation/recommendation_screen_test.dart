@@ -85,7 +85,7 @@ void main() {
 
     await tester.ensureVisible(find.text('재료 등록하기'));
     await tester.tap(find.text('재료 등록하기'));
-    await tester.tap(find.text('whippy'));
+    await tester.tap(find.byKey(const ValueKey('whippy-logo')));
     expect(registrationTaps, 1);
     expect(homeTaps, 1);
   });
