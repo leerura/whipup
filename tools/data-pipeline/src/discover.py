@@ -254,8 +254,37 @@ def select(items: list[dict], known: set[str], min_views: int) -> list[dict]:
     return chosen
 
 
+def blocked_dish_types(args) -> tuple:
+    """(taxonomy, codes over target) unless --allow-over-target. Doc: 목표 비율을 넘으면 신규 수집을 멈춘다."""
+    if getattr(args, "allow_over_target", False):
+        return (None, set())
+    try:
+        from collection import Taxonomy, load_rows, over_target
+        taxonomy = Taxonomy.load()
+        blocked = over_target(load_rows(taxonomy), taxonomy)
+    except (OSError, ValueError, KeyError) as exc:
+        print(f"[경고] 요리 종류 비율을 계산하지 못해 종류로 거르지 않습니다: {exc}")
+        return (None, set())
+    if blocked:
+        print("목표 비율을 넘어 거르는 종류: " + ", ".join(taxonomy.label(c) for c in sorted(blocked)))
+    return (taxonomy, blocked)
+
+
+def is_blocked(title: str, blocked: tuple) -> bool:
+    """True when the title classifies into an over-target type. Printed so a person can audit what was dropped."""
+    taxonomy, codes = blocked
+    if not codes:
+        return False
+    code = taxonomy.classify_name(title)
+    if code in codes:
+        print(f"  [종류 초과로 제외: {taxonomy.label(code).split('(')[0]}] {title}")
+        return True
+    return False
+
+
 def run_queries(args) -> int:
     known = known_video_ids()
+    blocked = blocked_dish_types(args)
     subs_cache: dict[str, int | None] = {}
     picked: list[tuple[str, dict]] = []
     for query in args.query:
@@ -263,7 +292,7 @@ def run_queries(args) -> int:
         if not items:
             print(f"[오류] '{query}': 검색 결과를 읽지 못했습니다. 페이지 구조가 바뀌었을 수 있습니다.")
             return 1
-        candidates = select_search(items, known, args.min_views or 0)
+        candidates = [i for i in select_search(items, known, args.min_views or 0) if not is_blocked(i["title"], blocked)]
         qualified = []
         for item in candidates[:30]:
             if not item.get("shelf") and is_short(item["id"]) is not True:
@@ -307,6 +336,9 @@ def main() -> int:
     parser.add_argument("--per-query", type=int, default=10, help="검색어당 최대 후보 수(구독자 수 순)")
     parser.add_argument("--per-channel", type=int, default=12, help="채널당 최대 후보 수(조회수 순)")
     parser.add_argument("--write", action="store_true", help="대기열(input/queue.jsonl) 끝에 추가")
+    parser.add_argument("--channel", action="append", default=[], help="이 채널 ID만 본다(여러 번 가능). 없으면 discovery-channels.txt")
+    parser.add_argument("--allow-over-target", action="store_true",
+                        help="목표 비율을 넘은 요리 종류(예: 밥류)도 고른다. 기본은 제목으로 분류해 걸러낸다")
     args = parser.parse_args()
 
     if args.query:
@@ -314,13 +346,16 @@ def main() -> int:
     min_views = 100_000 if args.min_views is None else args.min_views
     known = known_video_ids()
     picked: list[tuple[str, dict]] = []
-    for channel_id, note in read_channels():
+    blocked = blocked_dish_types(args)
+    channels = [(c, "") for c in args.channel] if args.channel else read_channels()
+    for channel_id, note in channels:
         html = _get_text(f"https://www.youtube.com/channel/{channel_id}/shorts?hl=ko")
         items = parse_shorts(html)
         if not items:
             print(f"[오류] {note or channel_id}: Shorts 목록을 읽지 못했습니다. 페이지 구조가 바뀌었을 수 있습니다.")
             return 1
-        candidates = sorted(select(items, known, min_views), key=lambda i: -i["views"])
+        candidates = [i for i in sorted(select(items, known, min_views), key=lambda i: -i["views"])
+                      if not is_blocked(i["title"], blocked)]
         chosen = []
         for item in candidates:
             if len(chosen) >= args.per_channel:

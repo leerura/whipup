@@ -164,9 +164,23 @@ def _page(snapshot: dict, now: datetime | None = None) -> str:
     return (
         "<!doctype html><html lang='ko'><head><meta charset='utf-8'><meta http-equiv='refresh' content='5'>"
         f"<title>Recipe pipeline</title><style>{STYLE}</style></head><body>"
-        f"<h1>Recipe pipeline</h1><p class='sub'>URL {snapshot['total']}개 · 5초마다 갱신</p>{notice}"
+        f"<h1>Recipe pipeline</h1><p class='sub'>URL {snapshot['total']}개 · 5초마다 갱신 · <a href='/metrics'>수집 지표</a></p>{notice}"
         f"{workers_html}<div class='queue'>{queue}</div></body></html>"
     )
+
+
+def _metrics_page() -> str:
+    """Stage-2 metrics (docs/v5/development/pipeline-overhaul.md 지표), rendered from the same report as the CLI."""
+    try:
+        from collection import Taxonomy, load_rows, render_metrics
+        from recipe_rules import Catalog
+        taxonomy = Taxonomy.load()
+        report = render_metrics(load_rows(taxonomy), taxonomy, Catalog.load())
+    except Exception as exc:  # the live queue page must keep working even if metrics cannot be built
+        report = f"지표를 만들 수 없습니다: {exc}"
+    return ("<!doctype html><html lang='ko'><head><meta charset='utf-8'><title>Recipe metrics</title>"
+            f"<style>{STYLE} pre{{white-space:pre-wrap;font-size:13px}}</style></head><body>"
+            f"<p><a href='/'>← 대기열</a></p><pre>{html.escape(report)}</pre></body></html>")
 
 
 def start_dashboard(host: str, port: int, input_file: Path | None = None) -> ThreadingHTTPServer:
@@ -174,10 +188,13 @@ def start_dashboard(host: str, port: int, input_file: Path | None = None) -> Thr
 
     class Handler(BaseHTTPRequestHandler):
         def do_GET(self):
-            if self.path not in {"/", "/index.html"}:
+            if self.path == "/metrics":
+                body = _metrics_page().encode("utf-8")
+            elif self.path in {"/", "/index.html"}:
+                body = _page(queue_snapshot(source)).encode("utf-8")
+            else:
                 self.send_error(404)
                 return
-            body = _page(queue_snapshot(source)).encode("utf-8")
             self.send_response(200)
             self.send_header("Content-Type", "text/html; charset=utf-8")
             self.send_header("Content-Length", str(len(body)))
