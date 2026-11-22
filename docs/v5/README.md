@@ -18,4 +18,5 @@ V5는 V4를 이어 받아 앱 1.0.0 출시 이후의 개선을 다룬다. V4의 
 
 ## 문서
 
+- [V5 UX와 화면 상태](ux/ux.md)
 - [브랜치와 릴리스](development/branch-and-release.md)
